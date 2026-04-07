@@ -1,7 +1,10 @@
 # Rebuildable runtime state
-system/indexes/
-system/runs/
-system/leases/
+system/indexes/*
+!system/indexes/.gitkeep
+system/runs/*
+!system/runs/.gitkeep
+system/leases/*
+!system/leases/.gitkeep
 
 # Local-only machine state
 .local-state/
