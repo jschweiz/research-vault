@@ -30,10 +30,10 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d48b28837e6816
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:37.927108Z
+fetched_at: 2026-04-07T21:15:00.613472Z
 short_summary: # Claude Code leaks 🤖, inside DeepMind 🧠, inference engineering 🧑‍💻 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-01T10:59:12+00:00 ## Email Body Anthropic recently published a version of the Claude Code npm package that included a source map file with entirety of Claude Code's source code ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [MiniMax] [4] TLDR 2026-04-01
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T20:06:56.274192Z
+lightweight_enriched_at: 2026-04-07T21:15:25.630060Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6de3b25d47dbd77f01b61c7c1af446b2b9ad604484370a14516ada4bbd480b8f
 lightweight_enrichment_error: null

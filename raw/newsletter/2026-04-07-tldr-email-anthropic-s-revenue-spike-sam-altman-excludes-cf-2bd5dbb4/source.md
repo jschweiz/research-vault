@@ -32,10 +32,10 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:37.870821Z
+fetched_at: 2026-04-07T21:15:00.516845Z
 short_summary: # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-07T10:59:25+00:00 ## Email Body Anthropic's annual revenue run-rate has spiked to more than $30 billion. OpenAI's annual revenue run-rate is around $24 billion ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [QA Wolf] [4] TLDR 2026-04-07 ✂
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T20:09:28.613156Z
+lightweight_enriched_at: 2026-04-07T21:16:13.436027Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8a59840296c61911c3c9f2c6c5d3ba0701188324484e8eed9c0d6d780b9dffad
 lightweight_enrichment_error: null

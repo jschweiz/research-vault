@@ -21,6 +21,7 @@ tags:
   - cursor
   - software development
   - google deepmind
+  - technology
 status: active
 asset_paths:
   - original.html
@@ -31,10 +32,10 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d52ff6ce9d2f51
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:37.902634Z
+fetched_at: 2026-04-07T21:15:00.567887Z
 short_summary: # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-03T10:59:24+00:00 ## Email Body OpenAI has acquired TBPN, an online talk show with by-the-minute analysis of technology news and executive interviews, averaging around 70K viewers ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [Wispr] [4] TLDR 2026-04-03 YOU TALK 4X
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T20:07:56.117453Z
+lightweight_enriched_at: 2026-04-07T21:15:50.555290Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f3039a6c8c6e414acd4e957f4a6600b8faa816331aac384a352407f8d310dd2d
 lightweight_enrichment_error: null
