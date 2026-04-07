@@ -21,6 +21,25 @@ The intended loop is:
 
 The wiki is primarily an LLM-maintained artifact. Humans may guide it, but you should assume that maintaining it is part of your role.
 
+## Staged Pipeline Rules
+
+This vault follows a strict four-stage ingest model:
+
+1. `fetching`
+   Deterministic discovery, normalization, raw file writes, and newsletter decomposition only.
+   No LLM-generated metadata belongs here.
+2. `lightweight enrichment`
+   A one-time-per-content-hash local Ollama pass for small metadata only.
+   Think short summary, missing authors, and light tags.
+3. `enrichment`
+   Codex-agent work for cross-links, synthesis, wiki maintenance, Q&A, and health checks.
+4. `indexing`
+   Rebuild helper indexes from durable files only.
+   Indexing must never invent metadata or hidden knowledge.
+
+If you are modifying ingest logic, preserve these boundaries.
+Do not silently move generation into fetch or indexing.
+
 ## Start Here
 
 When you begin work in this repo:
@@ -32,6 +51,25 @@ When you begin work in this repo:
 
 At this scale, do not default to inventing a separate RAG pipeline.
 Careful direct reads plus lightweight local indexes are usually enough.
+
+`system/config/sources.json` is the canonical list of dedicated ingestion sources for the automated Mac pipeline.
+If a task is about changing source ingestion behavior, edit that file deliberately and preserve raw kind correctness:
+
+- website sources should write `blog-post` raw documents
+- Gmail newsletter sources should write `newsletter` raw documents
+- newsletter child docs may then emit `blog-post`, `article`, or `news`
+- paper sources such as alphaXiv should write `paper` raw documents
+
+Important default source fields:
+
+- `classification_mode`
+- `decomposition_mode`
+
+For example:
+
+- website sources normally use `classification_mode = fixed`
+- Gmail newsletter sources normally use `classification_mode = written_content_auto`
+- newsletter sources that should split issues into child docs use `decomposition_mode = newsletter_entries`
 
 ## Ownership Model
 
@@ -72,13 +110,46 @@ These files are rebuildable or operational and should normally be produced by th
 ## Content Rules
 
 - Preserve YAML frontmatter keys and IDs when editing canonical Markdown files.
+- New raw IDs are readable and should stay stable:
+  `YYYY-MM-DD-source-slug-title-slug-hash8`
 - Prefer additive edits over destructive rewrites.
 - Do not rename document folders, IDs, or slugs casually; links and manifests may depend on them.
 - Do not store secrets, API keys, tokens, cookies, or paired-device credentials in this repo.
+- Do not add arbitrary runtime source definitions unless the task explicitly calls for them; prefer updating `system/config/sources.json` deliberately.
 - If adding binaries such as PDFs or MP3s, keep them in the relevant document or brief folder instead of scattering them at the root.
 - If source material has related images or originals, prefer storing them locally with the source so multimodal agents can reference them.
 - Maintain backlinks, cross-references, and concept structure when updating the wiki.
 - Do not let durable conclusions exist only in ephemeral chat output if they belong in the knowledge base.
+
+### Raw Document Expectations
+
+Canonical raw metadata lives in `source.md` frontmatter.
+Key fields include:
+
+- `source_id`
+- `source_pipeline_id`
+- `external_key`
+- `canonical_url`
+- `doc_role`
+- `parent_id`
+- `index_visibility`
+- `fetched_at`
+- `short_summary`
+- `lightweight_enrichment_status`
+
+Do not create parallel metadata stores when frontmatter should be the source of truth.
+
+### Newsletter Modeling
+
+When a newsletter source emits child docs:
+
+- keep the original email as the parent provenance record
+- keep `doc_role = primary` on the parent
+- keep `doc_role = derived` on each child
+- use `parent_id` on children
+- allow the parent to be hidden from default indexes when children exist
+
+Do not delete the parent issue just because child entries were created.
 
 ## Working Modes
 
@@ -89,6 +160,7 @@ Use this when filing new source material.
 - Put primary evidence into `raw/`.
 - Preserve provenance: title, source, URL, authors, dates, and related local assets when available.
 - Normalize messy source text into a readable Markdown representation.
+- Prefer deterministic classification into `blog-post`, `article`, `news`, `newsletter`, or `paper`.
 
 ### Compile Mode
 
@@ -98,6 +170,30 @@ Use this when updating the knowledge graph in Markdown form.
 - Create or improve concept pages.
 - Add backlinks and cross-links.
 - Group related evidence into coherent articles or category pages.
+- Respect that wiki compile is a separate downstream action from ingest.
+- The backend will rebuild `system/indexes/pages.json` and `system/indexes/graph.json` after you finish.
+- Do not rewrite `raw/**` in normal compile mode.
+
+### Health-Check Mode
+
+Use this to improve integrity without silently changing the wiki.
+
+- Inspect the vault for inconsistent naming or taxonomy.
+- Look for missing metadata, duplicate or stale pages, and weak links.
+- Suggest article candidates and follow-up questions.
+- Write findings under `outputs/health-checks/`.
+- Web search is allowed for fact-gap verification, but the vault comes first.
+
+### Answer Mode
+
+Use this when producing durable outputs against the vault.
+
+- Start from the vault, not the open web.
+- Use local helper tools or shell commands when they reduce context stuffing.
+- Write reports under `outputs/answers/`.
+- Write slide decks under `outputs/slides/`.
+- Write chart bundles under `outputs/charts/`.
+- Do not silently file the result into the wiki; filing is a separate explicit step.
 
 ### Q&A Mode
 
@@ -106,6 +202,7 @@ Use this when the user asks a question against the vault.
 - Read the relevant wiki pages first.
 - Follow links back to the most relevant raw evidence.
 - Prefer writing the answer to a persistent file when the result is non-trivial.
+- Prefer filing reusable outputs into the vault instead of leaving value only in chat.
 - Default output targets:
   - `outputs/answers/` for Markdown reports
   - `outputs/slides/` for Marp decks
@@ -119,21 +216,47 @@ If a generated answer has durable value:
 - connect it to existing concepts,
 - file it back into `wiki/` so future work compounds.
 
-### Health-Check Mode
+When filing an output back into the wiki:
 
-Use this to improve integrity rather than answer one question.
+- keep durable claims grounded in the source output artifact,
+- add backlinks from destination wiki pages to that output when relevant,
+- keep writes limited to `wiki/**`.
 
-Look for:
+## Codex Runner Contract
 
-- inconsistent naming or taxonomy,
-- missing metadata,
-- duplicate or overlapping pages,
-- unlinked raw documents,
-- stale summaries,
-- opportunities for new article candidates,
-- interesting follow-up questions worth exploring.
+The app may invoke Codex non-interactively to operate on this vault.
+Those runs use local run bundles outside the synced repo:
 
-Write health-check findings under `outputs/health-checks/` unless the task calls for direct fixes.
+- `.local-state/codex-enrichment/runs/<run-id>/manifest.json`
+- `.local-state/codex-enrichment/runs/<run-id>/prompt.md`
+- `.local-state/codex-enrichment/runs/<run-id>/final-schema.json`
+- `.local-state/codex-enrichment/runs/<run-id>/events.jsonl`
+- `.local-state/codex-enrichment/runs/<run-id>/final.json`
+- `.local-state/codex-enrichment/runs/<run-id>/stderr.log`
+
+Compile staleness also lives outside the vault:
+
+- `.local-state/codex-enrichment/compile-state.json`
+
+When you are the Codex process operating from this vault:
+
+- read `README.md` and this file first,
+- obey the allowed write scope from the prompt,
+- keep the workflow vault-first and web-second,
+- return the required structured JSON summary,
+- avoid changing app code or local state unless the prompt explicitly allows it.
+
+## Indexes And Generated Files
+
+Treat these as rebuildable:
+
+- `system/indexes/items.json`
+- `system/indexes/pages.json`
+- `system/indexes/graph.json`
+- `system/runs/run-log.jsonl`
+
+These files help the frontend and agents navigate the vault, but they are not canonical content.
+If the information can be reconstructed from raw docs or wiki pages, it should not exist only in the indexes.
 
 ## Git Rules
 

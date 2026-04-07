@@ -1,0 +1,105 @@
+{
+  "sources": [
+    {
+      "config_json": {
+        "allowed_hosts": [
+          "openai.com"
+        ],
+        "article_path_prefixes": [
+          "/index/"
+        ],
+        "discovery_mode": "rss_feed",
+        "website_url": "https://openai.com/news/"
+      },
+      "description": "OpenAI official website posts discovered from the public site feed.",
+      "enabled": true,
+      "id": "openai-website",
+      "max_items": 20,
+      "name": "OpenAI Website",
+      "raw_kind": "blog-post",
+      "tags": [
+        "openai",
+        "official",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "config_json": {
+        "allowed_hosts": [
+          "www.anthropic.com",
+          "anthropic.com"
+        ],
+        "article_path_prefixes": [
+          "/research/"
+        ],
+        "discovery_mode": "website_index",
+        "exclude_patterns": [
+          "^/research$",
+          "^/research/team/"
+        ],
+        "website_url": "https://www.anthropic.com/research"
+      },
+      "description": "Anthropic research posts discovered from the official research index.",
+      "enabled": true,
+      "id": "anthropic-research",
+      "max_items": 20,
+      "name": "Anthropic Research",
+      "raw_kind": "blog-post",
+      "tags": [
+        "anthropic",
+        "official",
+        "research",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "url": "https://www.anthropic.com/research"
+    },
+    {
+      "config_json": {
+        "senders": [
+          "dan@tldrnewsletter.com",
+          "hi@tldrnewsletter.com",
+          "newsletter@tldrnewsletter.com"
+        ]
+      },
+      "description": "TLDR newsletter emails pulled from Gmail.",
+      "enabled": true,
+      "id": "tldr-email",
+      "max_items": 20,
+      "name": "TLDR Email",
+      "raw_kind": "newsletter",
+      "tags": [
+        "newsletter",
+        "tldr",
+        "email",
+        "ai"
+      ],
+      "type": "gmail_newsletter",
+      "url": null
+    },
+    {
+      "config_json": {
+        "senders": [
+          "noreply@medium.com"
+        ]
+      },
+      "description": "Medium digest emails pulled from Gmail.",
+      "enabled": true,
+      "id": "medium-email",
+      "max_items": 20,
+      "name": "Medium Email",
+      "raw_kind": "newsletter",
+      "tags": [
+        "newsletter",
+        "medium",
+        "email"
+      ],
+      "type": "gmail_newsletter",
+      "url": null
+    }
+  ]
+}
