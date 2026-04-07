@@ -5,6 +5,7 @@ title: OpenAI acquires TBPN
 source_url: https://openai.com/index/openai-acquires-tbpn
 source_name: OpenAI Website
 authors:
+  - OpenAI
 published_at: 2026-04-02T10:30:00Z
 ingested_at: 2026-04-07T19:35:29.386828Z
 content_hash: 419ff77c4928843ccc0a3a8fda4b576114971bdd8f1df4f50994d876bc42dca5
@@ -13,6 +14,10 @@ tags:
   - official
   - website
   - blog-post
+  - acquisition
+  - ai
+  - media
+  - technology
 status: active
 asset_paths:
 source_id: openai-website
@@ -23,11 +28,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:29.386841Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:04:51.371739Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 419ff77c4928843ccc0a3a8fda4b576114971bdd8f1df4f50994d876bc42dca5
 lightweight_enrichment_error: null
 ---
 OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.

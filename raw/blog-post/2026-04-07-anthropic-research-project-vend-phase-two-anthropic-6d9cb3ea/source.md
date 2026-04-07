@@ -5,6 +5,8 @@ title: Project Vend: Phase two \ Anthropic
 source_url: https://www.anthropic.com/research/project-vend-2
 source_name: Anthropic Research
 authors:
+  - Anthropic
+  - Andon Labs
 published_at: null
 ingested_at: 2026-04-07T19:35:48.264562Z
 content_hash: 6e570d291540d6e78ba9807dc90f6cb779bb953016ea8970a1c732826cf1ec43
@@ -14,6 +16,10 @@ tags:
   - research
   - website
   - blog-post
+  - project vend
+  - ai agents
+  - llm
+  - business simulation
 status: active
 asset_paths:
   - original.html
@@ -25,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:48.264564Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Subscribe to the Frontier Red Team newsletter Get updates on our latest red-teaming research and findings. In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:06:22.139461Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6e570d291540d6e78ba9807dc90f6cb779bb953016ea8970a1c732826cf1ec43
 lightweight_enrichment_error: null
 ---
 Subscribe to the Frontier Red Team newsletter

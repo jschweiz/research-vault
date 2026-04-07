@@ -6,6 +6,7 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d4ceb9642a0426
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - Alvis Ng
 published_at: 2026-04-02T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.137511Z
 content_hash: 7880a4a19a66be336cfd6b039051713ebde586526574a90eee4531bfd81dd2c7
@@ -13,6 +14,11 @@ tags:
   - newsletter
   - medium
   - email
+  - ai
+  - learning
+  - software development
+  - agentic engineering
+  - llms
 status: active
 asset_paths:
   - original.html
@@ -24,11 +30,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.137514Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 ## Email Body Stories for Brasegalou @brasegalou (https://medium.com/@brasegalou?source=email-2ff910271eac-1775095416813-digest.reader-------------------------533648c2_f28d_41d3_a211_7b3ad81094cb) ·Become a member (https://medium.com/plans?source=email-2ff910271eac-1775095416813-digest.reader-------------------------533648c2_f28d_41d3_a211_7b3ad81094cb) Today's highlight
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:07:13.361142Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: fa374afe5944347744ed22883d0a46b114b9f414567294b4daf63841780e75d7
 lightweight_enrichment_error: null
 ---
 # Nobody Wants to Learn AI | Alvis Ng

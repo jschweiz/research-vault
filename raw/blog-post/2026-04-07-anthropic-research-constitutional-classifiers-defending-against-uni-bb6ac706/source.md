@@ -14,6 +14,11 @@ tags:
   - research
   - website
   - blog-post
+  - constitutional classifiers
+  - jailbreaks
+  - ai safety
+  - red teaming
+  - llm defense
 status: active
 asset_paths:
   - original.html
@@ -25,11 +30,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:55.034784Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Constitutional Classifiers: Defending against universal jailbreaks A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:31.152752Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: fb777166be796a5e895f8c470bf8a72cacc90a214aefc74b67f7240bb086e03a
 lightweight_enrichment_error: null
 ---
 Constitutional Classifiers: Defending against universal jailbreaks

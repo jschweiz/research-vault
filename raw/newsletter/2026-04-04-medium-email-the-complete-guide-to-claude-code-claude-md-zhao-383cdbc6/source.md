@@ -6,6 +6,11 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d5738504bb7676
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - zhaozhiming
+  - Dr.Preethi Balaji
+  - Dr. Ashish Bamania
+  - Marina Wyss
+  - Nikhil Anand
 published_at: 2026-04-04T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.099646Z
 content_hash: d1df84109fc2300857275fdbc3d71bf66f0c28c4f1446ec0975dd72a19e782e4
@@ -13,6 +18,12 @@ tags:
   - newsletter
   - medium
   - email
+  - ai advances
+  - coding
+  - reinforcement learning
+  - personal growth
+  - machine learning
+  - nlp
 status: active
 asset_paths:
   - original.html
@@ -24,11 +35,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.099649Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 ## Email Body Stories for Brasegalou @brasegalou (https://medium.com/@brasegalou?source=email-2ff910271eac-1775268074313-digest.reader-------------------------4d60d63d_e833_4e27_96f0_19d44ef23eff) ·Become a member (https://medium.com/plans?source=email-2ff910271eac-1775268074313-digest.reader-------------------------4d60d63d_e833_4e2
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:08:14.294495Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: fc1153920f63f947530745abcc77fcd1b288cee855da1b4022223715604e02e5
 lightweight_enrichment_error: null
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances

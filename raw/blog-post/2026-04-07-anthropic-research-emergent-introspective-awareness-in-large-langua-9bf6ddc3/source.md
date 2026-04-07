@@ -5,6 +5,7 @@ title: Emergent introspective awareness in large language models \ Anthropic
 source_url: https://www.anthropic.com/research/introspection
 source_name: Anthropic Research
 authors:
+  - Anthropic
 published_at: null
 ingested_at: 2026-04-07T19:35:53.806863Z
 content_hash: 32960844a2e216c328400a16b29e5c2ffdcab82809c4066081a575a802424667
@@ -14,6 +15,11 @@ tags:
   - research
   - website
   - blog-post
+  - introspection
+  - large language models
+  - ai research
+  - claude
+  - transparency
 status: active
 asset_paths:
   - original.html
@@ -25,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:53.806866Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses?
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:37.807025Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 32960844a2e216c328400a16b29e5c2ffdcab82809c4066081a575a802424667
 lightweight_enrichment_error: null
 ---
 Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses? Models will sometimes answer questions like these, but it’s hard to know what to make of their answers. Can AI systems really introspect—that is, can they consider their own thoughts? Or do they just make up plausible-sounding answers when they’re asked to do so?

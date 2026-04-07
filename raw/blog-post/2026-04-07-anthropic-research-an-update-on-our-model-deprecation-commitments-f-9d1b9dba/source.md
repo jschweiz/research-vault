@@ -5,6 +5,7 @@ title: An update on our model deprecation commitments for Claude Opus 3 \ Anthro
 source_url: https://www.anthropic.com/research/deprecation-updates-opus-3
 source_name: Anthropic Research
 authors:
+  - Anthropic
 published_at: null
 ingested_at: 2026-04-07T19:36:33.599852Z
 content_hash: da40379f5f2ae6ac038f09f3fa8d6eb0a08d5fa698805f6c6d90e1bde884f712
@@ -14,6 +15,10 @@ tags:
   - research
   - website
   - blog-post
+  - model deprecation
+  - claude opus 3
+  - ai safety
+  - model preservation
 status: active
 asset_paths:
   - original.html
@@ -25,11 +30,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:33.599856Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: An update on our model deprecation commitments for Claude Opus 3 As we develop increasingly capable AI models, it’s currently necessary to deprecate and retire our past models due to the cost and complexity of maintaining public access. However, model deprecation carries some downsides.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:17.168605Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: da40379f5f2ae6ac038f09f3fa8d6eb0a08d5fa698805f6c6d90e1bde884f712
 lightweight_enrichment_error: null
 ---
 An update on our model deprecation commitments for Claude Opus 3

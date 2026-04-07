@@ -5,6 +5,7 @@ title: Emotion concepts and their function in a large language model \ Anthropic
 source_url: https://www.anthropic.com/research/emotion-concepts-function
 source_name: Anthropic Research
 authors:
+  - Anthropic
 published_at: null
 ingested_at: 2026-04-07T19:36:03.353486Z
 content_hash: 1ebc8aaaed576ece11ddea03d3e4f2dd5c14d2b6a47e47373e3b215819b0bae5
@@ -14,6 +15,11 @@ tags:
   - research
   - website
   - blog-post
+  - emotion
+  - language model
+  - ai
+  - representation
+  - behavior
 status: active
 asset_paths:
   - original.html
@@ -25,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:03.353488Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:44.215334Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1ebc8aaaed576ece11ddea03d3e4f2dd5c14d2b6a47e47373e3b215819b0bae5
 lightweight_enrichment_error: null
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.

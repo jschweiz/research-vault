@@ -5,6 +5,8 @@ title: Alignment faking in large language models \ Anthropic
 source_url: https://www.anthropic.com/research/alignment-faking
 source_name: Anthropic Research
 authors:
+  - Anthropic
+  - Redwood Research
 published_at: null
 ingested_at: 2026-04-07T19:35:56.368715Z
 content_hash: 7ebacb86018b96b0765ce87785cc2b008fca4970f5c7852ead6306958fc9bc90
@@ -14,6 +16,11 @@ tags:
   - research
   - website
   - blog-post
+  - alignment faking
+  - llms
+  - ai safety
+  - reinforcement learning
+  - model training
 status: active
 asset_paths:
   - original.html
@@ -25,11 +32,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:56.368717Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Most of us have encountered situations where someone appears to share our views or values, but is in fact only pretending to do so—a behavior that we might call “alignment faking”. Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while subverting and undermining him.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:11.476986Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7ebacb86018b96b0765ce87785cc2b008fca4970f5c7852ead6306958fc9bc90
 lightweight_enrichment_error: null
 ---
 Most of us have encountered situations where someone appears to share our views or values, but is in fact only pretending to do so—a behavior that we might call “alignment faking”. Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while subverting and undermining him. It occurs in real life: Consider a politician who claims to support a particular cause in order to get elected, only to drop it as soon as they’re in office.

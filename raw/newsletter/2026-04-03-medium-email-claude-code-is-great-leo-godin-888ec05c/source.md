@@ -6,6 +6,11 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d5211f632f23f3
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - Leo Godin
+  - Nikolaus Correll
+  - Alex Punnen
+  - Jeremy Arancio
+  - Ida Silfverskiöld
 published_at: 2026-04-03T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.119112Z
 content_hash: 788dc6117a6b16c1986a1cbd365a4ac7668119bda9e728d95f05f95ec7042171
@@ -13,6 +18,12 @@ tags:
   - newsletter
   - medium
   - email
+  - ai
+  - coding
+  - data science
+  - llm
+  - agentic ai
+  - vector databases
 status: active
 asset_paths:
   - original.html
@@ -24,11 +35,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.119116Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 ## Email Body Stories for Brasegalou @brasegalou (https://medium.com/@brasegalou?source=email-2ff910271eac-1775182213775-digest.reader-------------------------02e5cbb1_3b16_4cc6_ad14_bbe0302e2193) ·Become a member (https://medium.com/plans?source=email-2ff910271eac-1775182213775-digest.reader-------------------------02e5cbb1_3b16_4cc6_ad14_bbe0302e2193) Today's highlights L
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:07:42.859758Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 714514be221cc8d664d2677ebde19fb7882eb60b6749eec9d034874b7c39c8f3
 lightweight_enrichment_error: null
 ---
 # Claude Code is Great | Leo Godin

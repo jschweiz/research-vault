@@ -6,6 +6,7 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d47c53cad69e0d
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - A. Rahman
 published_at: 2026-04-01T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.160901Z
 content_hash: 29bc795b6a7ebd302f6e0cd4fc4f2d5de612ccf5ecc0547a2956292ec3c75b26
@@ -13,6 +14,9 @@ tags:
   - newsletter
   - medium
   - email
+  - python
+  - programming
+  - coding
 status: active
 asset_paths:
   - original.html
@@ -24,11 +28,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.160905Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:06:44.251591Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e88b6f0a923d14f0bedac411a1f5c1b0e15cc22a7f182a890f77b53a43bf5497
 lightweight_enrichment_error: null
 ---
 # Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A. Rahman in CodeToDeploy

@@ -6,6 +6,8 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d4ddc63e42649c
 source_name: TLDR Email
 authors:
   - TLDR <dan@tldrnewsletter.com>
+  - Dan Ni
+  - Stephen Flanders
 published_at: 2026-04-02T11:03:01Z
 ingested_at: 2026-04-07T19:36:37.915298Z
 content_hash: 561070acb33bf53b491c80b4bc2d4a19aa61892780b5384de212c67c15868ac4
@@ -14,6 +16,11 @@ tags:
   - tldr
   - email
   - ai
+  - spacex
+  - openai
+  - ipo
+  - spec layer
+  - agent systems
 status: active
 asset_paths:
   - original.html
@@ -25,11 +32,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:37.915300Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # SpaceX files IPO 💰, OpenAI shares sink 📉, the spec layer 👨‍💻 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-02T11:03:01+00:00 ## Email Body SpaceX has confidentially filed IPO paperwork with the Securities and Exchange Commission. The company is aiming to raise between $40-$80 billion ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [Littlebird] [4] TLDR 2026-04-02
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:07:26.153951Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 32f473f292024e38c1a21c45a0f754c66ada1250b733308a48da992f0f628a1f
 lightweight_enrichment_error: null
 ---
 # SpaceX files IPO 💰, OpenAI shares sink 📉, the spec layer 👨‍💻

@@ -5,6 +5,7 @@ title: A “diff” tool for AI: Finding behavioral differences in new models \ 
 source_url: https://www.anthropic.com/research/diff-tool
 source_name: Anthropic Research
 authors:
+  - Anthropic Fellows
 published_at: null
 ingested_at: 2026-04-07T19:36:26.277249Z
 content_hash: d862a594f8fbe22a999971b4d177d5a457c33062466de26a08786a3c655faf68
@@ -14,6 +15,11 @@ tags:
   - research
   - website
   - blog-post
+  - model diffing
+  - ai safety
+  - model alignment
+  - cross-architecture comparison
+  - model auditing
 status: active
 asset_paths:
   - original.html
@@ -25,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:26.277252Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:04.427279Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d862a594f8fbe22a999971b4d177d5a457c33062466de26a08786a3c655faf68
 lightweight_enrichment_error: null
 ---
 A “diff” tool for AI: Finding behavioral differences in new models

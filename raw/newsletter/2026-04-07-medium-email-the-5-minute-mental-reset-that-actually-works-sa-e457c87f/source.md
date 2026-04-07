@@ -6,6 +6,7 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d66ab627cf3725
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - Sam Liberty
 published_at: 2026-04-07T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.047685Z
 content_hash: d2e5878f0674bac2cf37405a5556b8f112ac57f3862612fdf3a4ec18c28c6729
@@ -13,6 +14,9 @@ tags:
   - newsletter
   - medium
   - email
+  - mental reset
+  - awareness
+  - self-improvement
 status: active
 asset_paths:
   - original.html
@@ -24,11 +28,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.047689Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 ## Email Body Stories for Brasegalou @brasegalou (https://medium.com/@brasegalou?source=email-2ff910271eac-1775527068377-digest.reader-------------------------895de6af_c6f8_41c6_9c04_ebcd65e92cce) ·Become a member (https://medium.com/plans?source=email-2ff910271eac-1775527068377-digest.reader-------------------------895de6af_c6
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:09:16.723275Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a004120607e29671b1b4c70d1eabf24d651a69652dd07f5c7e62900089e95f25
 lightweight_enrichment_error: null
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness

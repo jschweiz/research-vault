@@ -13,6 +13,10 @@ tags:
   - newsletter
   - medium
   - email
+  - agentic ai
+  - long-term memory
+  - ai
+  - agentic workflows
 status: active
 asset_paths:
   - original.html
@@ -24,11 +28,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.081920Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-05T06:40:00+00:00 ## Email Body Stories for Brasegalou @brasegalou (https://medium.com/@brasegalou?source=email-2ff910271eac-1775354635775-digest.reader-------------------------d43953d6_9df7_4b5b_b65e_c0c7621d8a01) ·Become a member (https://medium.com/plans?source=email-2ff910271eac-1775354635775-digest.reader-------------------------d43953d6_9df7_4b5b
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:08:30.286907Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 667037a2e63d2bfdda4879820392c619b8ab5305f67041d38bc642144562f6ae
 lightweight_enrichment_error: null
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding

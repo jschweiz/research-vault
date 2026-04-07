@@ -5,6 +5,7 @@ title: Vibe physics: The AI grad student \ Anthropic
 source_url: https://www.anthropic.com/research/vibe-physics
 source_name: Anthropic Research
 authors:
+  - Matthew Schwartz
 published_at: null
 ingested_at: 2026-04-07T19:36:19.760154Z
 content_hash: aae1d2e50e4764c353ee7a52ca037204c5df074636a6810714ee3597154382d7
@@ -14,6 +15,10 @@ tags:
   - research
   - website
   - blog-post
+  - ai
+  - physics
+  - machine learning
+  - theoretical physics
 status: active
 asset_paths:
   - original.html
@@ -25,11 +30,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:19.760156Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. Can AI do theoretical physics?
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:06:30.444366Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aae1d2e50e4764c353ee7a52ca037204c5df074636a6810714ee3597154382d7
 lightweight_enrichment_error: null
 ---
 Subscribe to Anthropic Science

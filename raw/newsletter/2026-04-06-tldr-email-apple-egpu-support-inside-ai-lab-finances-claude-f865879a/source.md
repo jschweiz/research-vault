@@ -6,6 +6,8 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d627761e563067
 source_name: TLDR Email
 authors:
   - TLDR <dan@tldrnewsletter.com>
+  - Dan Ni
+  - Stephen Flanders
 published_at: 2026-04-06T11:04:43Z
 ingested_at: 2026-04-07T19:36:37.888458Z
 content_hash: 14e693067b10d2505d13105ac3f2db07f991cc76761914e0faba1e8d80f70e9d
@@ -14,6 +16,12 @@ tags:
   - tldr
   - email
   - ai
+  - apple
+  - nvidia
+  - egpu
+  - claude
+  - system prompts
+  - finances
 status: active
 asset_paths:
   - original.html
@@ -25,11 +33,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:37.888463Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-06T11:04:43+00:00 ## Email Body Apple has signed drivers for Nvidia eGPUs. Users can now pair their eGPUs with Macs for AI LLM processing without having to use workarounds ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [Clerk] [4] TLDR 2026-0
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:08:59.429108Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4644984a58b82e033bf87f48a8f9fdb96abe03b8b2f62a67460dea7eaef14834
 lightweight_enrichment_error: null
 ---
 # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖

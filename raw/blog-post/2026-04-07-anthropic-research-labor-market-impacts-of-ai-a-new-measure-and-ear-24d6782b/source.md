@@ -5,6 +5,7 @@ title: Labor market impacts of AI: A new measure and early evidence \ Anthropic
 source_url: https://www.anthropic.com/research/labor-market-impacts
 source_name: Anthropic Research
 authors:
+  - Anthropic
 published_at: null
 ingested_at: 2026-04-07T19:36:31.659166Z
 content_hash: 8b9dddb7be2139e302e8c0e5d098366606488a84374d48c2b5878212233ff6bd
@@ -14,6 +15,11 @@ tags:
   - research
   - website
   - blog-post
+  - ai
+  - labor market
+  - exposure
+  - occupational change
+  - employment
 status: active
 asset_paths:
   - original.html
@@ -25,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:31.659170Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what's feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:06:04.429618Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8b9dddb7be2139e302e8c0e5d098366606488a84374d48c2b5878212233ff6bd
 lightweight_enrichment_error: null
 ---
 Key findings

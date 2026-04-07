@@ -5,6 +5,12 @@ title: How Australia Uses Claude: Findings from the Anthropic Economic Index \ A
 source_url: https://www.anthropic.com/research/how-australia-uses-claude
 source_name: Anthropic Research
 authors:
+  - Peter McCrory
+  - Keir Bradwell
+  - Ria Strasser Galvis
+  - Ryan Heller
+  - Eva Lyubich
+  - Jennifer Marintez
 published_at: null
 ingested_at: 2026-04-07T19:36:08.393835Z
 content_hash: db482f0239f838f6d4ca2498fd04e2f5d1ecc2cd17d3ee27a5b7a0197f12e14c
@@ -14,6 +20,11 @@ tags:
   - research
   - website
   - blog-post
+  - claude
+  - australia
+  - ai adoption
+  - economic index
+  - usage patterns
 status: active
 asset_paths:
   - original.html
@@ -25,11 +36,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:08.393837Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: How Australia Uses Claude: Findings from the Anthropic Economic Index Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:52.329503Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: db482f0239f838f6d4ca2498fd04e2f5d1ecc2cd17d3ee27a5b7a0197f12e14c
 lightweight_enrichment_error: null
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index

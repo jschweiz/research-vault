@@ -6,6 +6,8 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 source_name: TLDR Email
 authors:
   - TLDR <dan@tldrnewsletter.com>
+  - Dan Ni
+  - Stephen Flanders
 published_at: 2026-04-07T10:59:25Z
 ingested_at: 2026-04-07T19:36:37.870816Z
 content_hash: b901543a5f2055ee83794bb6e2908bbf8a18e5031ae0aac9e419110badf39583
@@ -14,6 +16,12 @@ tags:
   - tldr
   - email
   - ai
+  - revenue
+  - anthropic
+  - openai
+  - meta
+  - cfo
+  - software engineering
 status: active
 asset_paths:
   - original.html
@@ -25,11 +33,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:37.870821Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖 Sender: TLDR <dan@tldrnewsletter.com> Published At: 2026-04-07T10:59:25+00:00 ## Email Body Anthropic's annual revenue run-rate has spiked to more than $30 billion. OpenAI's annual revenue run-rate is around $24 billion ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Sign Up [1] |Advertise [2]|View Online [3] TLDR TOGETHER WITH [QA Wolf] [4] TLDR 2026-04-07 ✂
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:09:28.613156Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8a59840296c61911c3c9f2c6c5d3ba0701188324484e8eed9c0d6d780b9dffad
 lightweight_enrichment_error: null
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖

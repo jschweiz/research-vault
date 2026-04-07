@@ -5,6 +5,10 @@ title: Update on the OpenAI Foundation
 source_url: https://openai.com/index/update-on-the-openai-foundation
 source_name: OpenAI Website
 authors:
+  - N
+  - o
+  - n
+  - e
 published_at: 2026-03-24T09:00:00Z
 ingested_at: 2026-04-07T19:35:36.731467Z
 content_hash: aed135abdc798fd399ae6de4b9d2955eb7f10e18a5ee2b70b7e53cd7db586f49
@@ -13,6 +17,10 @@ tags:
   - official
   - website
   - blog-post
+  - foundation
+  - investment
+  - disease
+  - community
 status: active
 asset_paths:
 source_id: openai-website
@@ -23,11 +31,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:36.731472Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:04:29.395278Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aed135abdc798fd399ae6de4b9d2955eb7f10e18a5ee2b70b7e53cd7db586f49
 lightweight_enrichment_error: null
 ---
 The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.

@@ -6,6 +6,11 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d618506ae886de
 source_name: Medium Email
 authors:
   - Medium Daily Digest <noreply@medium.com>
+  - Han HELOIR YAN, Ph.D.
+  - Sumit Pandey
+  - Florent Poux, Ph.D.
+  - Thomas Oppong
+  - Kuriko Iwai
 published_at: 2026-04-06T06:40:00Z
 ingested_at: 2026-04-07T19:36:42.065774Z
 content_hash: 463b335e454c6a91790090ee1f57211a269a463e5093e9c1e2bee8719c08b67b
@@ -13,6 +18,13 @@ tags:
   - newsletter
   - medium
   - email
+  - claude code
+  - llm
+  - architecture
+  - data science
+  - 3d reconstruction
+  - rag system
+  - ai advances
 status: active
 asset_paths:
   - original.html
@@ -24,11 +36,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:42.065777Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:08:48.263384Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ed470eaf3fc99f420b914cbb2e17155001f3afbb184800be9c35de1ee8373a49
 lightweight_enrichment_error: null
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture. | Han HELOIR YAN, Ph.D. ☕️ in Data Science Collective

@@ -5,6 +5,7 @@ title: Introducing our Science Blog \ Anthropic
 source_url: https://www.anthropic.com/research/introducing-anthropic-science
 source_name: Anthropic Research
 authors:
+  - Anthropic
 published_at: null
 ingested_at: 2026-04-07T19:36:16.097467Z
 content_hash: b0706e64f1d4b29511a9d4d32f53b28612bf7bed06703bda1d0f22e5975111cb
@@ -14,6 +15,9 @@ tags:
   - research
   - website
   - blog-post
+  - ai
+  - science
+  - blog
 status: active
 asset_paths:
   - original.html
@@ -25,11 +29,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:16.097471Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re launching a new blog about AI and science.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-07T20:05:56.082040Z
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b0706e64f1d4b29511a9d4d32f53b28612bf7bed06703bda1d0f22e5975111cb
 lightweight_enrichment_error: null
 ---
 Subscribe to Anthropic Science
