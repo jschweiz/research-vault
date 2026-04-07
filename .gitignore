@@ -1,0 +1,18 @@
+# Rebuildable runtime state
+system/indexes/
+system/runs/
+system/leases/
+
+# Local-only machine state
+.local-state/
+.cache/
+.tmp/
+
+# Obsidian local noise
+.obsidian/cache/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# OS noise
+.DS_Store
