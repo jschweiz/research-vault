@@ -69,6 +69,10 @@
           "/news/"
         ],
         "discovery_mode": "website_index",
+        "required_categories": [
+          "Research"
+        ],
+        "script_entry_parser": "mistral_news_posts",
         "website_url": "https://mistral.ai/news?category=research"
       },
       "custom_pipeline_id": "mistral-research",
