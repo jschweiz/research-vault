@@ -301,6 +301,7 @@ In the default setup this includes:
 
 - `openai-website`
 - `anthropic-research`
+- `mistral-research`
 - `tldr-email`
 - `medium-email`
 - `alphaxiv-paper`

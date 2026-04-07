@@ -59,6 +59,37 @@
       "url": "https://www.anthropic.com/research"
     },
     {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "mistral.ai",
+          "www.mistral.ai"
+        ],
+        "article_path_prefixes": [
+          "/news/"
+        ],
+        "discovery_mode": "website_index",
+        "website_url": "https://mistral.ai/news?category=research"
+      },
+      "custom_pipeline_id": "mistral-research",
+      "decomposition_mode": "none",
+      "description": "Mistral research posts discovered from the official news page filtered to Research.",
+      "enabled": true,
+      "id": "mistral-research",
+      "max_items": 20,
+      "name": "Mistral Research",
+      "raw_kind": "blog-post",
+      "tags": [
+        "mistral",
+        "official",
+        "research",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "url": "https://mistral.ai/news?category=research"
+    },
+    {
       "config_json": {
         "senders": [
           "dan@tldrnewsletter.com",
