@@ -33,10 +33,10 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T21:23:44.060736Z
-short_summary: # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖 ## Big Tech & Startups ### [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](https://links.tldrnewsletter.com/ZPmNRf) Anthropic's annual revenue run-rate has spiked from roughly $9 billion at the end of 2025 to more than $30 billion. Fewer than 135 S&P companies booked at least $30 billion in sales in the past 12 months.
+short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:24:14.829606Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-07T21:39:24.308486Z
+lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: e4f7650e5223c46eebcce273ee47f12885084ae9afd9a7946cccb641fd1c7125
 lightweight_enrichment_error: null
 ---

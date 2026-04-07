@@ -1,0 +1,140 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Zhengxi Lu",
+        "id": "01985c84-befd-71b5-995c-e0c5ab8ac063",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiyuan Yao",
+        "id": "01985c82-5ca2-7719-b60a-7cd2b83e9909",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinyang Wu",
+        "id": "01985c82-0382-7363-be21-9293e6ae8f44",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chengcheng Han",
+        "id": "01985c81-e5a9-7243-8f51-88c95bf73e88",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qi Gu",
+        "id": "01985c84-6973-7e6f-84e5-307050625c1d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xunliang Cai",
+        "id": "01985c81-ec40-765b-a600-e386a45011fc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiming Lu",
+        "id": "01985c81-eea8-77fc-aab8-a5b2bf5ca3b2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jun Xiao",
+        "id": "01985c81-e774-7ac2-b5d6-1937ecd8704c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yueting Zhuang",
+        "id": "01985c81-e774-7328-bafb-5e4dfeac4b73",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongliang Shen",
+        "id": "01985c81-eea8-73ae-a1dc-ae01f7eca48e",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Fri Apr 03 2026 02:13:21 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Thu Apr 02 2026 17:03:05 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d511d-d065-788f-bb15-a8562d561925",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 105,
+        "questions_count": 0,
+        "total_votes": 31,
+        "upvotes_count": 105,
+        "visits_count": {
+          "all": 1385,
+          "last24Hours": 595,
+          "last30Days": 1385,
+          "last7Days": 1385,
+          "last90Days": 1385
+        }
+      },
+      "podcast_path": "019d511d-d065-788f-bb15-a8562d561925/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "Official code for \"SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization\"",
+          "language": "Python",
+          "stars": 19,
+          "url": "https://github.com/ZJU-REAL/SkillZero"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.02268"
+      },
+      "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "cs.LG",
+        "deep-reinforcement-learning",
+        "fine-tuning",
+        "multi-modal-learning",
+        "tool-use",
+        "transfer-learning",
+        "transformers",
+        "zero-shot-learning"
+      ],
+      "universal_paper_id": "2604.02268",
+      "updated_at": "Fri Apr 03 2026 02:13:21 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at this https URL.",
+      "created_at": "Fri Apr 03 2026 02:13:21 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d511d-d09e-7393-8942-1927dfb3aa94",
+      "imageURL": "image/2604.02268v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Thu Apr 02 2026 17:03:05 GMT+0000 (Coordinated Universal Time)",
+      "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+      "universal_paper_id": "2604.02268",
+      "updated_at": "Fri Apr 03 2026 02:13:21 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.02268v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

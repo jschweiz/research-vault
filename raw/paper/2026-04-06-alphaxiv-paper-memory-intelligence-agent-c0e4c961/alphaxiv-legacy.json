@@ -1,0 +1,136 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Jingyang Qiao",
+        "id": "01985c82-0fcf-707f-b0b4-b08b78218103",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weicheng Meng",
+        "id": "01985c85-178a-72ee-9af2-35da7aa101b8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Cheng",
+        "id": "01985c81-e843-7c17-8a84-0a5e15699b4a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhihang Lin",
+        "id": "01985c81-e34e-7b5f-ad77-78b5f1df1724",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhizhong Zhang",
+        "id": "01985c81-f152-7246-928c-4ee912e152f9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xin Tan",
+        "id": "01985c81-e1bb-7a25-adb9-6a5f1acc6427",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingyu Gong",
+        "id": "01985c82-7ca5-7015-a20a-8e83f2cff559",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kun Shao",
+        "id": "01985c81-fa9e-7cb9-ac53-59da667f32ca",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuan Xie",
+        "id": "01985c81-d85a-7df4-ac50-6896c4a62d92",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:46:01 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 07:59:52 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d5-2846-740f-ac03-efc7c9c1cc17",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 54,
+          "last24Hours": 54,
+          "last30Days": 54,
+          "last7Days": 54,
+          "last90Days": 54
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "Memory Intelligence Agent",
+          "language": "Python",
+          "stars": 50,
+          "url": "https://github.com/ECNU-SII/MIA"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04503"
+      },
+      "title": "Memory Intelligence Agent",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "continual-learning",
+        "cs.AI",
+        "cs.MA",
+        "multi-agent-learning",
+        "online-learning",
+        "reasoning",
+        "reinforcement-learning",
+        "representation-learning",
+        "self-supervised-learning",
+        "tool-use"
+      ],
+      "universal_paper_id": "2604.04503",
+      "updated_at": "Tue Apr 07 2026 02:46:01 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Deep research agents (DRAs) integrate LLM reasoning with external tools. Memory systems enable DRAs to leverage historical experiences, which are essential for efficient reasoning and autonomous evolution. Existing methods rely on retrieving similar trajectories from memory to aid reasoning, while suffering from key limitations of ineffective memory evolution and increasing storage and retrieval costs. To address these problems, we propose a novel Memory Intelligence Agent (MIA) framework, consisting of a Manager-Planner-Executor architecture. Memory Manager is a non-parametric memory system that can store compressed historical search trajectories. Planner is a parametric memory agent that can produce search plans for questions. Executor is another agent that can search and analyze information guided by the search plan. To build the MIA framework, we first adopt an alternating reinforcement learning paradigm to enhance cooperation between the Planner and the Executor. Furthermore, we enable the Planner to continuously evolve during test-time learning, with updates performed on-the-fly alongside inference without interrupting the reasoning process. Additionally, we establish a bidirectional conversion loop between parametric and non-parametric memories to achieve efficient memory evolution. Finally, we incorporate a reflection and an unsupervised judgment mechanisms to boost reasoning and self-evolution in the open world. Extensive experiments across eleven benchmarks demonstrate the superiority of MIA.",
+      "created_at": "Tue Apr 07 2026 02:46:01 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d5-2876-75f2-84bc-a968c3d9b335",
+      "imageURL": "image/2604.04503v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 07:59:52 GMT+0000 (Coordinated Universal Time)",
+      "title": "Memory Intelligence Agent",
+      "universal_paper_id": "2604.04503",
+      "updated_at": "Tue Apr 07 2026 02:46:01 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04503v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

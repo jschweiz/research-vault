@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/long-running-Claude
 source_name: Anthropic Research
 authors:
   - Siddharth Mishra-Sharma
-published_at: null
+published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:18.030480Z
 content_hash: 9ab6c8dcbea82b79f3ea4b3212bcf364e0e0bc8967b2f0334f8bda1e2012d813
 tags:

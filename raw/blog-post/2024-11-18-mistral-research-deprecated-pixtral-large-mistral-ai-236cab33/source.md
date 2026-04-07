@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/pixtral-large
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:20.938251Z
+fetched_at: 2026-04-07T21:41:03.118657Z
 short_summary: Pixtral Large in short: - Frontier-class multimodal performance - State-of-the-art on MathVista, DocVQA, VQAv2 - Extends Mistral Large 2 without compromising text performance - 123B multimodal decoder, 1B parameter vision encoder - 128K context window: fits minimum of 30 high-resolution images - Use: Today we announce Pixtral Large, a 124B open-weights multimodal model built on top of Mistral Large 2. Pixtral Large is the second model in our multimodal family and demonstrates frontier-level imag
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:28.348053Z

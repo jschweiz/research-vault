@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/deprecation-updates-opus-3
 source_name: Anthropic Research
 authors:
   - Anthropic
-published_at: null
+published_at: 2026-02-25T00:00:00Z
 ingested_at: 2026-04-07T19:36:33.599852Z
 content_hash: da40379f5f2ae6ac038f09f3fa8d6eb0a08d5fa698805f6c6d90e1bde884f712
 tags:

@@ -1,0 +1,118 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Gabriel Sarch",
+        "id": "01985c81-e842-7c6f-a5a6-70d67e5fe9de",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Linrong Cai",
+        "id": "01985c82-a6a5-7ebb-ae7b-82781285af7f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qunzhong Wang",
+        "id": "01985c82-ab49-71b8-a6a7-986fa24eac0c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haoyang Wu",
+        "id": "01985c84-66af-74eb-9431-d4d03072daae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Danqi Chen",
+        "id": "01985c81-d858-7ed6-903f-4ab7fc172425",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhuang Liu",
+        "id": "01985c81-db51-71e3-baf2-bd89e8f7ab2c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:40:23 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:56:25 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65cf-fe30-789b-80f1-86b12f36f98a",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 11,
+        "questions_count": 0,
+        "total_votes": 4,
+        "upvotes_count": 11,
+        "visits_count": {
+          "all": 109,
+          "last24Hours": 109,
+          "last30Days": 109,
+          "last7Days": 109,
+          "last90Days": 109
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/zlab-princeton/vero"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04917"
+      },
+      "title": "Vero: An Open RL Recipe for General Visual Reasoning",
+      "topics": [
+        "agents",
+        "Computer Science",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "data-curation",
+        "fine-tuning",
+        "generative-models",
+        "multi-modal-learning",
+        "reinforcement-learning",
+        "transfer-learning",
+        "vision-language-models",
+        "visual-reasoning"
+      ],
+      "universal_paper_id": "2604.04917",
+      "updated_at": "Tue Apr 07 2026 02:40:23 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "What does it take to build a visual reasoner that works across charts, science, spatial understanding, and open-ended tasks? The strongest vision-language models (VLMs) show such broad visual reasoning is within reach, but the recipe behind them remains unclear, locked behind proprietary reinforcement learning (RL) pipelines with non-public data. We introduce Vero, a family of fully open VLMs that matches or exceeds existing open-weight models across diverse visual reasoning tasks. We scale RL data and rewards across six broad task categories, constructing Vero-600K, a 600K-sample dataset from 59 datasets, and designing task-routed rewards that handle heterogeneous answer formats. Vero achieves state-of-the-art performance, improving over four base models by 3.7-5.5 points on average across VeroEval, our suite of 30 challenging benchmarks. Starting from Qwen3-VL-8B-Instruct, Vero outperforms Qwen3-VL-8B-Thinking on 23 of 30 benchmarks without additional proprietary thinking data. When trained from the same base model, Vero-600K exceeds existing RL datasets across task categories. Systematic ablations reveal that different task categories elicit qualitatively distinct reasoning patterns that transfer poorly in isolation, suggesting that broad data coverage is the primary driver of strong RL scaling. All data, code, and models are released.",
+      "created_at": "Tue Apr 07 2026 02:40:23 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65cf-fe5f-7f9c-b461-e85e5f739c88",
+      "imageURL": "image/2604.04917v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Apr 06 2026 17:56:25 GMT+0000 (Coordinated Universal Time)",
+      "title": "Vero: An Open RL Recipe for General Visual Reasoning",
+      "universal_paper_id": "2604.04917",
+      "updated_at": "Tue Apr 07 2026 02:40:23 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04917v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

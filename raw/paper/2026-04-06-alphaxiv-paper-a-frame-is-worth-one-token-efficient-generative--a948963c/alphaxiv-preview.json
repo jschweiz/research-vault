@@ -1,0 +1,99 @@
+{
+  "abstract": "Anticipating diverse future states is a central challenge in video world modeling. Discriminative world models produce a deterministic prediction that implicitly averages over possible futures, while existing generative world models remain computationally expensive. Recent work demonstrates that predicting the future in the feature space of a vision foundation model (VFM), rather than a latent space optimized for pixel reconstruction, requires significantly fewer world model parameters. However, most such approaches remain discriminative. In this work, we introduce DeltaTok, a tokenizer that encodes the VFM feature difference between consecutive frames into a single continuous \"delta\" token, and DeltaWorld, a generative world model operating on these tokens to efficiently generate diverse plausible futures. Delta tokens reduce video from a three-dimensional spatio-temporal representation to a one-dimensional temporal sequence, for example yielding a 1,024x token reduction with 512x512 frames. This compact representation enables tractable multi-hypothesis training, where many futures are generated in parallel and only the best is supervised. At inference, this leads to diverse predictions in a single forward pass. Experiments on dense forecasting tasks demonstrate that DeltaWorld forecasts futures that more closely align with real-world outcomes, while having over 35x fewer parameters and using 2,000x fewer FLOPs than existing generative world models. Code and weights: this https URL.",
+  "author_info": [],
+  "authors": [
+    "Tommie Kerssies",
+    "Gabriele Berton",
+    "Ju He",
+    "Qihang Yu",
+    "Wufei Ma",
+    "Daan de Geus",
+    "Gijs Dubbelman",
+    "Liang-Chieh Chen"
+  ],
+  "canonical_id": "2604.04913v1",
+  "first_publication_date": "2026-04-06T17:55:05.000Z",
+  "full_authors": [
+    {
+      "full_name": "Tommie Kerssies",
+      "id": "01985c82-580d-756e-a177-e76b6cc59e1c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Gabriele Berton",
+      "id": "01985c81-ed0e-7e23-b2f1-83b70d5c32f6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ju He",
+      "id": "01985c82-0ef4-7d2b-bc1d-cff9c75c6e44",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qihang Yu",
+      "id": "01985c81-dc26-75a9-b4c0-bd04c9efcab7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wufei Ma",
+      "id": "01985c81-e5aa-7127-98c2-9ebda07ac93e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Daan de Geus",
+      "id": "01985c82-0ab5-7f0d-9706-bd5fc0c7e46d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Gijs Dubbelman",
+      "id": "01985c82-16b9-7410-917e-c8ced3d22e1a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Liang-Chieh Chen",
+      "id": "01985c81-db51-705f-a929-bb65fd477e28",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 4,
+  "github_url": "https://github.com/amazon-far/deltatok",
+  "id": "019d65d0-64d9-7de9-92fd-a1a1afd79dcc",
+  "image_url": "image/2604.04913v1.png",
+  "metrics": {
+    "public_total_votes": 7,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 58,
+      "last_7_days": 58
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65d0-64d9-7de9-92fd-a1a1afd79dcc",
+  "paper_summary": null,
+  "publication_date": "2026-04-06T17:55:05.000Z",
+  "title": "A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "generative-models",
+    "inference-optimization",
+    "lightweight-models",
+    "model-compression",
+    "representation-learning",
+    "sequence-modeling",
+    "transformers",
+    "video-understanding"
+  ],
+  "universal_paper_id": "2604.04913",
+  "updated_at": "2026-04-07T02:40:49.369Z",
+  "version_id": "019d65d0-6518-767c-ab44-770fe563bf14"
+}

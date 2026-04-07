@@ -1,0 +1,60 @@
+{
+  "state": "done",
+  "translations": {
+    "de": {
+      "error": null,
+      "requestedAt": 1775550980647,
+      "state": "done",
+      "updatedAt": 1775550993951
+    },
+    "en": {
+      "error": null,
+      "requestedAt": 1775550980593,
+      "state": "done",
+      "updatedAt": 1775550980592
+    },
+    "es": {
+      "error": null,
+      "requestedAt": 1775550980645,
+      "state": "done",
+      "updatedAt": 1775550993248
+    },
+    "fr": {
+      "error": null,
+      "requestedAt": 1775550980646,
+      "state": "done",
+      "updatedAt": 1775550994069
+    },
+    "hi": {
+      "error": null,
+      "requestedAt": 1775550980646,
+      "state": "done",
+      "updatedAt": 1775550992473
+    },
+    "ja": {
+      "error": null,
+      "requestedAt": 1775550980604,
+      "state": "done",
+      "updatedAt": 1775550990621
+    },
+    "ko": {
+      "error": null,
+      "requestedAt": 1775550980645,
+      "state": "done",
+      "updatedAt": 1775550994254
+    },
+    "ru": {
+      "error": null,
+      "requestedAt": 1775550980645,
+      "state": "done",
+      "updatedAt": 1775550993297
+    },
+    "zh": {
+      "error": null,
+      "requestedAt": 1775550980603,
+      "state": "done",
+      "updatedAt": 1775550993739
+    }
+  },
+  "updatedAt": 1775550980577
+}

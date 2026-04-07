@@ -1,0 +1,551 @@
+{
+  "abstract": "We introduce JoyAI-LLM Flash, an efficient Mixture-of-Experts (MoE) language model designed to redefine the trade-off between strong performance and token efficiency in the sub-50B parameter regime. JoyAI-LLM Flash is pretrained on a massive corpus of 20 trillion tokens and further optimized through a rigorous post-training pipeline, including supervised fine-tuning (SFT), Direct Preference Optimization (DPO), and large-scale reinforcement learning (RL) across diverse environments. To improve token efficiency, JoyAI-LLM Flash strategically balances \\emph{thinking} and \\emph{non-thinking} cognitive modes and introduces FiberPO, a novel RL algorithm inspired by fibration theory that decomposes trust-region maintenance into global and local components, providing unified multi-scale stability control for LLM policy optimization. To enhance architectural sparsity, the model comprises 48B total parameters while activating only 2.7B parameters per forward pass, achieving a substantially higher sparsity ratio than contemporary industry leading models of comparable scale. To further improve inference throughput, we adopt a joint training-inference co-design that incorporates dense Multi-Token Prediction (MTP) and Quantization-Aware Training (QAT). We release the checkpoints for both JoyAI-LLM-48B-A3B Base and its post-trained variants on Hugging Face to support the open-source community.",
+  "author_info": [],
+  "authors": [
+    "Aichen Cai",
+    "Anmeng Zhang",
+    "Anyu Li",
+    "Bo Zhang",
+    "Bohua Cai",
+    "Chang Li",
+    "Changjian Jiang",
+    "Changkai Lu",
+    "Chao Xue",
+    "Chaocai Liang",
+    "Cheng Zhang",
+    "Dongkai Liu",
+    "Fei Wang",
+    "Guoqiang Huang",
+    "Haijian Ke",
+    "Han Lin",
+    "Hao Wang",
+    "Ji Miao",
+    "Jiacheng Zhang",
+    "Jialong Shi",
+    "Jifeng Zhu",
+    "Jingjing Qian",
+    "Junhui Luo",
+    "Junwu Xiong",
+    "Lam So",
+    "Liang Huang",
+    "Ming Ke",
+    "Mingyang Li",
+    "Panfeng Shi",
+    "Peng Hao",
+    "Qi Wang",
+    "Qian Lai",
+    "Qiaoqiao Yuan",
+    "Qingyu Yin",
+    "Qiong Cao",
+    "Qixiang Wang",
+    "Rongcheng Bian",
+    "Rongduo Han",
+    "Shaoqiang Zheng",
+    "Shi Hu",
+    "Shi Suo",
+    "Shijie Ren",
+    "Shijin Zhang",
+    "Shiying Fan",
+    "Shuai Xie",
+    "Tianyi Zhang",
+    "Wei Liu",
+    "Wentao Tan",
+    "Xianghan Meng",
+    "Xiaodong He",
+    "Xing Pan",
+    "Xiran Wang",
+    "Xuyang Peng",
+    "Ya Zhang",
+    "Yang Liu",
+    "Yangyang Duan",
+    "Yanxu Chen",
+    "Yicheng Gong",
+    "Yidan Huang",
+    "Yifei Liu",
+    "Yinhao Bai",
+    "Yongqiang Liu",
+    "Yuesong Zhang",
+    "Yuqi Zhang",
+    "Zerui Xie",
+    "Zhenfang Wang",
+    "Zhennan Shen",
+    "Zheyuan Liu",
+    "Zhuwei Zeng"
+  ],
+  "canonical_id": "2604.03044v1",
+  "first_publication_date": "2026-04-03T13:52:38.000Z",
+  "full_authors": [
+    {
+      "full_name": "Aichen Cai",
+      "id": "019d61b0-8ac9-7f36-9ab7-34aa22a74a57",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Anmeng Zhang",
+      "id": "019cfea9-cecf-7635-91af-a15e75d5f559",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Anyu Li",
+      "id": "019d61b0-8ace-70a4-bad7-dd0b914f1848",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bo Zhang",
+      "id": "01985c81-e5a9-77c5-9ec1-1bb7171f6086",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bohua Cai",
+      "id": "01985c83-faea-77fe-9b22-db87acea86ac",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chang Li",
+      "id": "01985c82-213c-737e-bd97-3c32e5f5a9a4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Changjian Jiang",
+      "id": "01985c82-7bbe-78d5-87ef-ca9bd7c4e30e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Changkai Lu",
+      "id": "019d61b0-8adc-7c75-8afe-ebe91df05a93",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chao Xue",
+      "id": "01985c82-3e1b-7b91-b5c2-c7e9227e384c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chaocai Liang",
+      "id": "019d61b0-8adf-7d5d-9cae-7b0379d0e389",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Cheng Zhang",
+      "id": "01985c81-df57-7f71-a0b0-b42befc3b5cc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dongkai Liu",
+      "id": "01985c83-faea-7e3b-9caa-ce6cf1cd02d4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fei Wang",
+      "id": "01985c81-ec41-74ff-b169-be9bab278872",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Guoqiang Huang",
+      "id": "01985c83-fcce-7a90-8010-381977f0b3e9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Haijian Ke",
+      "id": "019d61b0-8aed-7483-b7ec-86e277aa260a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Han Lin",
+      "id": "01985c82-16b8-7a2b-92d9-5a6e12cfa2ba",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hao Wang",
+      "id": "01985c81-d85a-7736-9271-8a00429b9fd1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ji Miao",
+      "id": "01985c85-6dd3-70ad-98fb-d95b22f8fe97",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiacheng Zhang",
+      "id": "01985c82-669e-7bbd-a4a8-949316e2efb9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jialong Shi",
+      "id": "01985c83-2d50-7cf6-a171-edb3bdfedde1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jifeng Zhu",
+      "id": "01985c84-2dd8-7e6a-b1fd-b3e3ef4faab1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jingjing Qian",
+      "id": "01985c83-2552-71d1-9a7f-a6c73a6bfeda",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junhui Luo",
+      "id": "019ad836-79b1-7a7f-9194-db0ce87566b8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junwu Xiong",
+      "id": "01985c81-ec41-778b-b3ee-959c638a64ea",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lam So",
+      "id": "019d61b0-8b00-719d-a06e-9074651db745",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Liang Huang",
+      "id": "01985c82-2959-73fd-9d10-77874c324071",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ming Ke",
+      "id": "019d61b0-8b0b-7c85-8f44-e3c56d053e82",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mingyang Li",
+      "id": "01985c82-30ee-73e3-a8f6-b8547c7456ad",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Panfeng Shi",
+      "id": "019d61b0-8b0e-7c56-aa7b-1e53186676c4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Peng Hao",
+      "id": "01985c82-1a98-76e9-844b-e75e4b61c43b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qi Wang",
+      "id": "01985c81-ed0e-7c86-b288-437496f69634",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qian Lai",
+      "id": "019d61b0-8b18-79ed-bc4d-383655ecbfd4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qiaoqiao Yuan",
+      "id": "019d61b0-8b1a-73e2-8459-54af11bab3cb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qingyu Yin",
+      "id": "01985c81-f234-776f-997f-ee20d61bfa0a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qiong Cao",
+      "id": "01985c82-071b-796c-97c0-f9688f6874aa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qixiang Wang",
+      "id": "019bdf3c-a1f3-7c5b-b75e-1e93d1a22fcc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rongcheng Bian",
+      "id": "01985c83-faea-7dbe-8979-089a4d560c8c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rongduo Han",
+      "id": "0198a6ab-1466-7338-9e15-549e4ca955fa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shaoqiang Zheng",
+      "id": "019d61b0-8b21-7069-9f97-173e074838cb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shi Hu",
+      "id": "01985c83-0349-796a-ac7a-109249ad8abc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shi Suo",
+      "id": "019d61b0-8b2a-7ea4-97b6-0c4bd81d7c03",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shijie Ren",
+      "id": "01985c84-dbbe-769f-b00c-60c7de3311ba",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shijin Zhang",
+      "id": "01985c83-b46d-7273-87bf-9868c9c1bf2f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shiying Fan",
+      "id": "019d61b0-8b2e-7ffe-825b-add08957b10e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuai Xie",
+      "id": "01985c81-f818-7623-9a50-f3503bdade66",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianyi Zhang",
+      "id": "01985c81-e01e-7a63-9630-b1bc114f8f5b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wei Liu",
+      "id": "01985c81-e4e6-74c2-bbf7-6a8bac6fb966",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wentao Tan",
+      "id": "01985c82-37ed-7b21-a33e-88141af40a79",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xianghan Meng",
+      "id": "01985c84-b59c-7254-a2b1-723bcc3a02d1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaodong He",
+      "id": "01985c81-e0eb-78a3-ae0c-9778b4a67d72",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xing Pan",
+      "id": "01985c82-4735-74d9-aeb8-3127a16912a4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiran Wang",
+      "id": "01985c82-c67a-7b0e-82ea-9e10c38238a1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xuyang Peng",
+      "id": "01985c83-faea-7e5a-a453-9bc7c43fdc06",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ya Zhang",
+      "id": "01985c81-e34f-725b-a815-106f620d9af4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yang Liu",
+      "id": "01985c81-d97f-7fc7-894f-d0c0732d7bc8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yangyang Duan",
+      "id": "019d61b0-8b4c-7a20-956d-4e6095abbe2c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yanxu Chen",
+      "id": "01985c82-6a8e-7f66-b461-78802f0a9a50",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yicheng Gong",
+      "id": "01985c83-0017-754b-a6c5-8cf29a89f3c4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yidan Huang",
+      "id": "0199abcc-0fb9-7c33-99fe-879145f3eaad",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yifei Liu",
+      "id": "01985c82-6c59-74f1-9f62-d6130c45fedf",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yinhao Bai",
+      "id": "01985c82-a0aa-750d-b3c5-81e12e8828ce",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yongqiang Liu",
+      "id": "01985c82-e7e4-7e6c-890e-7625bd5efcc6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuesong Zhang",
+      "id": "01985c82-d561-713a-8545-461a59662180",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuqi Zhang",
+      "id": "01985c82-38d4-7119-a7c6-4e56cf1cae08",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zerui Xie",
+      "id": "019d61b0-8b5f-7b2f-af88-0d5e0457bfaa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhenfang Wang",
+      "id": "01985c83-faea-7c56-b091-145a60307ec3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhennan Shen",
+      "id": "01985c82-9fc9-7545-a2a8-349bf29d06f5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zheyuan Liu",
+      "id": "01985c81-eea8-7200-a65b-6d686a33b3b6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhuwei Zeng",
+      "id": "019a88c8-e878-7646-8771-f403654ee50f",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d61b0-8a93-7b11-9434-8c366e558132",
+  "image_url": "image/2604.03044v1.png",
+  "metrics": {
+    "public_total_votes": 14,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 174,
+      "last_7_days": 174
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d61b0-8a93-7b11-9434-8c366e558132",
+  "paper_summary": {
+    "keyInsights": [
+      "Strategic design can balance \"thinking\" and \"non-thinking\" cognitive modes, enabling significantly reduced token consumption during inference.",
+      "A sparse Mixture-of-Experts architecture can maintain strong performance while dramatically reducing the number of active parameters per forward pass.",
+      "Decomposing trust-region maintenance in RL into global and local components, as with FiberPO, provides robust multi-scale stability control for LLM policy optimization."
+    ],
+    "originalProblem": [
+      "Existing Large Language Models (LLMs) suffer from poor token efficiency and high computational costs during inference.",
+      "Achieving a balance between strong model performance and operational efficiency has been a persistent challenge for LLM deployment.",
+      "Current Reinforcement Learning from Human Feedback (RLHF) methods for LLM alignment face multi-scale instability issues, limiting effective policy optimization."
+    ],
+    "results": [
+      "Demonstrated competitive or superior performance across various benchmarks, such as 65.6% accuracy on LiveCodeBench v6 while using 85% fewer tokens than GLM-4.7-Flash-Thinking.",
+      "The FiberPO algorithm achieved stable RL training, reducing mean response length by 42% (from 7,902 to 4,543 tokens) while improving accuracy on AIME 2024.",
+      "Inference optimizations yielded a 1.87x speedup using Multi-Token Prediction and up to a 28% throughput gain with W4AFP8 quantization, showing effective trade-offs between speed and accuracy."
+    ],
+    "solution": [
+      "Implemented a 48B-parameter Mixture-of-Experts (MoE) architecture, activating only 3.28B parameters per token for high sparsity and reduced computational cost.",
+      "Developed a joint training-inference co-design incorporating Multi-Token Prediction (MTP) for speculative decoding and Quantization-Aware Training (QAT) for optimized deployment.",
+      "Introduced FiberPO, a novel reinforcement learning algorithm based on fibration theory, to provide unified multi-scale stability control for LLM alignment during post-training."
+    ],
+    "summary": "JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational efficiency without compromising performance. The model, leveraging a Mixture-of-Experts design and novel policy optimization, consistently achieves competitive or superior benchmark results with significantly reduced token consumption compared to existing state-of-the-art models."
+  },
+  "publication_date": "2026-04-03T13:52:38.000Z",
+  "title": "JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency",
+  "topics": [
+    "Computer Science",
+    "cs.AI",
+    "cs.CL",
+    "efficient-transformers",
+    "fine-tuning",
+    "inference-optimization",
+    "lightweight-models",
+    "model-compression",
+    "optimization-methods",
+    "parameter-efficient-training",
+    "reinforcement-learning",
+    "text-generation",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.03044",
+  "updated_at": "2026-04-06T07:27:33.011Z",
+  "version_id": "019d61b0-8b6d-7c62-8d4c-b908acc13d79"
+}

@@ -135,6 +135,35 @@
       ],
       "type": "gmail_newsletter",
       "url": null
+    },
+    {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "www.alphaxiv.org",
+          "alphaxiv.org"
+        ],
+        "article_path_prefixes": [
+          "/abs/"
+        ],
+        "discovery_mode": "website_index",
+        "website_url": "https://www.alphaxiv.org/"
+      },
+      "custom_pipeline_id": "alphaxiv-paper",
+      "decomposition_mode": "none",
+      "description": "alphaXiv paper listings normalized into paper raw documents.",
+      "enabled": true,
+      "id": "alphaxiv-paper",
+      "max_items": 20,
+      "name": "alphaXiv Papers",
+      "raw_kind": "paper",
+      "tags": [
+        "paper",
+        "alphaxiv",
+        "research"
+      ],
+      "type": "website",
+      "url": "https://www.alphaxiv.org/"
     }
   ]
 }

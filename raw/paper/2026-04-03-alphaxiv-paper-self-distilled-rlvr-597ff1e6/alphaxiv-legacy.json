@@ -1,0 +1,132 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Chenxu Yang",
+        "id": "01985c82-897d-7874-b00e-1ae4cccbc593",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chuanyu Qin",
+        "id": "01985c82-7bbf-7e59-8ad2-28e2f12d38d6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qingyi Si",
+        "id": "01985c82-222d-74cc-8f8a-4c3954dd4be5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Minghui Chen",
+        "id": "01985c82-ce70-7306-8a74-b82f77ac8792",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Naibin Gu",
+        "id": "01985c83-11ba-7bf2-96cc-d28e72ce35f8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dingyu Yao",
+        "id": "01985c85-73e9-71da-8c56-43242910391c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zheng Lin",
+        "id": "01985c81-e843-7402-b701-0fa89615b799",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiping Wang",
+        "id": "01985c82-456a-7917-9f6a-0c542a4a3488",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaqi Wang",
+        "id": "01985c81-dc26-7ce9-be81-37f8e9503364",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nan Duan",
+        "id": "01985c81-e1bb-76b4-a63f-47082b8e531f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Fri Apr 03 2026 15:50:07 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6086-b0ee-70bb-9a73-f40ebf136f94",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 51,
+        "questions_count": 0,
+        "total_votes": 21,
+        "upvotes_count": 51,
+        "visits_count": {
+          "all": 1040,
+          "last24Hours": 898,
+          "last30Days": 1040,
+          "last7Days": 1040,
+          "last90Days": 1040
+        }
+      },
+      "podcast_path": "019d6086-b0ee-70bb-9a73-f40ebf136f94/podcast.mp3",
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.03128"
+      },
+      "title": "Self-Distilled RLVR",
+      "topics": [
+        "agents",
+        "Computer Science",
+        "cs.CL",
+        "cs.LG",
+        "deep-reinforcement-learning",
+        "fine-tuning",
+        "knowledge-distillation",
+        "optimization-methods",
+        "text-generation",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.03128",
+      "updated_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose \\textbf{RLSD} (\\textbf{RL}VR with \\textbf{S}elf-\\textbf{D}istillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
+      "created_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6086-b131-734a-86cd-85f6423a901b",
+      "imageURL": "image/2604.03128v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Fri Apr 03 2026 15:50:07 GMT+0000 (Coordinated Universal Time)",
+      "title": "Self-Distilled RLVR",
+      "universal_paper_id": "2604.03128",
+      "updated_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.03128v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

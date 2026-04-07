@@ -1,0 +1,301 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Xinlei Yu",
+        "id": "01985c82-85d8-7a1c-8f25-9dd451f6f9e6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhangquan Chen",
+        "id": "01985c83-f7f0-71c2-8b23-2ad094cf8a54",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongbo He",
+        "id": "01985c82-456b-7923-a473-c3f7a8ff9d53",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianyu Fu",
+        "id": "01985c81-e5a9-770f-bde3-66da232bbb09",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cheng Yang",
+        "id": "01985c81-d97e-7cc9-b70b-b872f0f095d4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chengming Xu",
+        "id": "01985c81-f313-742d-b159-c7ab16ebdc58",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yue Ma",
+        "id": "01985c81-e774-72be-928d-be1ad0acbb30",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaobin Hu",
+        "id": "01985c81-e01d-7ba4-abd9-9893501f228a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhe Cao",
+        "id": "01985c82-3304-76c8-a4dd-7392be791cd1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jie Xu",
+        "id": "01985c81-ef77-748a-8dd7-511054ddd7ec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guibin Zhang",
+        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiale Tao",
+        "id": "01985c82-8064-758a-80f8-8c8ed3ffa5ec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiayi Zhang",
+        "id": "01985c81-e4e5-74d9-bc52-f6629fb08016",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Siyuan Ma",
+        "id": "01985c82-045c-7414-9ef7-db127750df20",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kaituo Feng",
+        "id": "01985c82-7471-747f-bc54-0d2580022b4e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haojie Huang",
+        "id": "01985c82-063d-7649-b09d-7f056657240b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Youxing Li",
+        "id": "019d5109-3bae-748e-96a3-ce3f692e93c2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ronghao Chen",
+        "id": "01985c84-53ae-710f-87c8-c0ecbfdc3c8a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huacan Wang",
+        "id": "01985c84-3860-7579-aa2b-41d387c1cc74",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chenglin Wu",
+        "id": "01985c81-e4e5-7dda-8c40-0293e3143bac",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zikun Su",
+        "id": "019d5109-3bb3-7c78-8f7b-3ce50f7ca01b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaogang Xu",
+        "id": "01985c81-de91-7edf-a20e-6153dd15dafd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kelu Yao",
+        "id": "01985c82-64e8-75d7-b5ea-45b9cacb75b0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kun Wang",
+        "id": "01985c81-e775-7378-ae47-bae233d20e37",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chen Gao",
+        "id": "01985c81-f234-7ef3-a6fa-2e37d5b245dc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yue Liao",
+        "id": "01985c81-fca4-71b0-8858-b408652439ee",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ruqi Huang",
+        "id": "01985c81-db51-766b-95de-f6f13759f047",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tao Jin",
+        "id": "01985c81-df57-7d28-9316-9fd5e0f3f153",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cheng Tan",
+        "id": "01985c81-ed0d-7dae-b041-b1523e77f8b7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiangning Zhang",
+        "id": "01985c81-f063-7334-ab4b-9458e463470b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenqi Ren",
+        "id": "01985c82-0fce-7138-aae9-4d5df189115d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanwei Fu",
+        "id": "01985c81-f313-7d10-8cc4-4b125fa64ad6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yong Liu",
+        "id": "01985c81-e0ec-769b-a33b-9147cbfdcc76",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Wang",
+        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiangyu Yue",
+        "id": "01985c81-e01e-746e-8839-acc5518ff7c9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu-Gang Jiang",
+        "id": "01985c81-f233-7dc3-9346-2c43af82cef6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuicheng Yan",
+        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Fri Apr 03 2026 01:50:52 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Thu Apr 02 2026 13:36:37 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d5109-3b7f-73f9-a4be-07c3791fda3c",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 112,
+        "questions_count": 0,
+        "total_votes": 41,
+        "upvotes_count": 112,
+        "visits_count": {
+          "all": 1310,
+          "last24Hours": 327,
+          "last30Days": 1310,
+          "last7Days": 1310,
+          "last90Days": 1310
+        }
+      },
+      "podcast_path": "019d5109-3b7f-73f9-a4be-07c3791fda3c/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "A paper list of Awesome Latent Space.",
+          "language": "",
+          "stars": 418,
+          "url": "https://github.com/YU-deep/Awesome-Latent-Space"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.02029"
+      },
+      "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
+      "topics": [
+        "Computer Science",
+        "cs.AI",
+        "generative-models",
+        "multi-modal-learning",
+        "optimization-methods",
+        "reasoning",
+        "representation-learning",
+        "sequence-modeling",
+        "text-generation",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.02029",
+      "updated_at": "Fri Apr 03 2026 01:50:52 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Latent space is rapidly emerging as a native substrate for language-based models. While modern systems are still commonly understood through explicit token-level generation, an increasing body of work shows that many critical internal processes are more naturally carried out in continuous latent space than in human-readable verbal traces. This shift is driven by the structural limitations of explicit-space computation, including linguistic redundancy, discretization bottlenecks, sequential inefficiency, and semantic loss. This survey aims to provide a unified and up-to-date landscape of latent space in language-based models. We organize the survey into five sequential perspectives: Foundation, Evolution, Mechanism, Ability, and Outlook. We begin by delineating the scope of latent space, distinguishing it from explicit or verbal space and from the latent spaces commonly studied in generative visual models. We then trace the field's evolution from early exploratory efforts to the current large-scale expansion. To organize the technical landscape, we examine existing work through the complementary lenses of mechanism and ability. From the perspective of Mechanism, we identify four major lines of development: Architecture, Representation, Computation, and Optimization. From the perspective of Ability, we show how latent space supports a broad capability spectrum spanning Reasoning, Planning, Modeling, Perception, Memory, Collaboration, and Embodiment. Beyond consolidation, we discuss the key open challenges, and outline promising directions for future research. We hope this survey serves not only as a reference for existing work, but also as a foundation for understanding latent space as a general computational and systems paradigm for next-generation intelligence.",
+      "created_at": "Fri Apr 03 2026 01:50:52 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d5109-3bd5-7d34-9b85-b544868b9f6f",
+      "imageURL": "image/2604.02029v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Thu Apr 02 2026 13:36:37 GMT+0000 (Coordinated Universal Time)",
+      "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
+      "universal_paper_id": "2604.02029",
+      "updated_at": "Fri Apr 03 2026 01:50:52 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.02029v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

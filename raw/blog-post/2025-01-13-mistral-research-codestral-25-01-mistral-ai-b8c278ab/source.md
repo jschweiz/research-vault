@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/codestral-2501
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:19.330900Z
+fetched_at: 2026-04-07T21:41:01.462108Z
 short_summary: Among all the innovations in AI over the past year, code generation has arguably been the most significant. Akin to how the assembly line streamlined manufacturing and the calculator transformed mathematics, coding models represent a significant step change in software development.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:35.577390Z

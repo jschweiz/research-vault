@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/emotion-concepts-function
 source_name: Anthropic Research
 authors:
   - Anthropic
-published_at: null
+published_at: 2026-04-02T00:00:00Z
 ingested_at: 2026-04-07T19:36:03.353486Z
 content_hash: 1ebc8aaaed576ece11ddea03d3e4f2dd5c14d2b6a47e47373e3b215819b0bae5
 tags:

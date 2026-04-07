@@ -32,10 +32,10 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T21:23:44.229882Z
-short_summary: # Claude Code leaks 🤖, inside DeepMind 🧠, inference engineering 🧑‍💻 ## Big Tech & Startups ### [Entire Claude Code CLI source code leaks thanks to exposed map file](https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file) Anthropic recently published a version of the Claude Code npm package that included a source map file that could be used to access the entirety of Claude Code's source code. More than 512,000 lines of code were leaked on a public G
+short_summary: TLDR roundup on Claude Code leaks, inside DeepMind, inference engineering ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:23:52.395843Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-07T21:39:24.229987Z
+lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 439cf848170159fc40de55016fdd750c0a05f79c2563ab7f1feedc65bdb5a476
 lightweight_enrichment_error: null
 ---

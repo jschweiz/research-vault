@@ -1,0 +1,21 @@
+{
+  "abstract": "Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. $T^2$ modernizes pretraining scaling laws with pass@$k$ modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from $T^2$ are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well-outside of the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that $T^2$ scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making $T^2$ scaling meaningful in modern deployments.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775078252000,
+  "googleCitationId": null,
+  "groupId": "019d51de-624f-7bf5-aab4-25e1967e0ca4",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775078252000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.01411",
+  "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
+  "type": "public",
+  "universalId": "2604.01411",
+  "uploader": null,
+  "versionId": "019d51de-62ae-71c0-a1b7-2e58006147af",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

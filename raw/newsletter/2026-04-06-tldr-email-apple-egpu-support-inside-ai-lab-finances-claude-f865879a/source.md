@@ -34,10 +34,10 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T21:23:44.105532Z
-short_summary: # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖 ## Big Tech & Startups ### [An Inside Look at OpenAI and Anthropic's Finances Ahead of Their IPOs](https://links.tldrnewsletter.com/twN9vX) OpenAI and Anthropic are racing toward potentially record-breaking IPOs by the end of the year. OpenAI expects to burn $85 billion in 2028.
+short_summary: TLDR roundup on Apple eGPU support, inside AI lab finances, Claude Code system prompts. Includes 8 editorial stories across 4 sections, plus 5 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:24:08.879429Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-07T21:39:24.286241Z
+lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 4676cfe3d99b0164b1dcbad0a37cb2a2a0eb898a061e067a7812b7d7d845976c
 lightweight_enrichment_error: null
 ---

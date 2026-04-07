@@ -6,7 +6,7 @@ source_url: https://mistral.ai/news/voxtral-tts
 source_name: Mistral Research
 authors:
   - Mistral AI
-published_at: null
+published_at: 2026-03-23T16:00:00Z
 ingested_at: 2026-04-07T21:21:45.459796Z
 content_hash: 7966f0aaf13bcdd0f7ac1b9f3c6fbbb140398355b0c485e654336974e51774fa
 tags:
@@ -30,10 +30,10 @@ canonical_url: https://mistral.ai/news/voxtral-tts
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:27:47.112933Z
+fetched_at: 2026-04-07T21:40:32.288973Z
 short_summary: Voxtral Text-to-Speech Speaking of Voxtral Today we’re releasing Voxtral TTS, our first text-to-speech model with state-of-the-art performance in multilingual voice generation. The model is lightweight at 4B parameters, making Voxtral-powered agents natural, reliable, and cost-effective at scale.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:22:03.518094Z
+lightweight_enriched_at: 2026-04-07T21:41:20.652759Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7966f0aaf13bcdd0f7ac1b9f3c6fbbb140398355b0c485e654336974e51774fa
 lightweight_enrichment_error: null

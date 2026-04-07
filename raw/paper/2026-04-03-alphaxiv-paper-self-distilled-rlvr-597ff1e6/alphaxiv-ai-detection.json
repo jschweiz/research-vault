@@ -1,0 +1,749 @@
+{
+  "fractionAi": 0.23685598,
+  "fractionAiAssisted": 0.026288025,
+  "fractionHuman": 0.736856,
+  "headline": "Mostly Human, AI Detected",
+  "predictionShort": "Mixed",
+  "state": "done",
+  "updatedAt": 1775586036345,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.20575012,
+      "confidence": "Medium",
+      "endIndex": 1953,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "Self-Distilled RLVR\nChenxu Yang\n1,2,\u2217\n, Chuanyu Qin\n1,2,\u2217\n, Qingyi Si\n3,\u2217\n, Minghui Chen\n1,2\n, Naibin Gu\n1,2\n,\nDingyu Yao\n1,2\n, Zheng Lin\n1,2,\u2020\n, Weiping Wang\n1\n, Jiaqi Wang\n3\n, Nan Duan\n3\n1\nInstitute of Information Engineering, Chinese Academy of Sciences, Beijing, China, \n2\nSchool of\nCyber Security, University of Chinese Academy of Sciences, Beijing, China, \n3\nJD.COM\n\u2217\nEqual contribution., \n\u2020\nCorresponding author.\nAbstract\nOn-policy distillation (OPD) has become a popular training paradigm in the LLM community.\nThis paradigm selects a larger model as the teacher to provide dense, fine-grained signals for\neach sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR),\nwhich only obtains sparse signals from verifiable outcomes in the environment. Recently, the\ncommunity has explored on-policy self-distillation (OPSD), where the same model serves as both\nteacher and student, with the teacher receiving additional privileged information such as reference\nanswers to enable self-evolution. This paper demonstrates that learning signals solely derived\nfrom the privileged teacher result in severe information leakage and unstable long-term training.\nAccordingly, we identify the optimal niche for self-distillation and propose RLSD (RLVR with\nSelf-Distillation). Specifically, we leverage self-distillation to obtain token-level policy differences\nfor determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable\nupdate directions from environmental feedback (e.g., response correctness). This enables RLSD\nto simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence\nceiling and superior training stability.\nEmail: yangchenxu@iie.ac.cn; linzheng@iie.ac.cn; siqingyi.phoebus@jd.com\n(a) Average performance dynamics on the validation set. (b) Performance comparison on reasoning tasks.\nFigure 1 Performance on the trained Qwen3-VL-8B-Instruct model. "
+    },
+    {
+      "aiAssistanceScore": 0.26388234,
+      "confidence": "Medium",
+      "endIndex": 2372,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1952,
+      "text": " In (a), OPSD reaches its peak performance early\nand degrades, whereas RLSD inherits the training stability of GRPO while achieving a higher convergence ceiling. In\n(b), GRPO and RLSD report results at 200 training steps, while GRPO (2\u00d7steps) reports results at 400 steps; RLSD\nat 200 steps already surpasses GRPO trained for twice as many steps, demonstrating faster convergence.\n1\narXiv:2604.03128v1 [cs.LG] 3 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.26388234,
+      "confidence": "Medium",
+      "endIndex": 1490,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "Table 1 Comparison of training paradigms for post-training LLMs.\nMethod Trajectory Efficiency Leakage Risk Signal Direction Anchoring\nSFT \u2717Off-policy \u2713High \u2713N/A \u2713 Rich \u2717Teacher\nRLVR (GRPO) \u2713On-policy \u2713High \u2713N/A \u2717 Weak \u2713Environment\nOPD \u2713On-policy \u2717Low \u2713N/A \u2713 Rich \u2717Teacher\nOPSD \u2713On-policy \u2713High \u2717Severe \u2713 Rich \u2717Teacher\nRLSD (Ours) \u2713On-policy \u2713High \u2713N/A \u2713 Rich \u2713Environment\n1 Introduction\nReinforcement learning with verifiable rewards (RLVR) methods such as GRPO [1] have become a central\nparadigm for training large reasoning models [2, 3], where each trajectory receives only a single scalar signal\ndetermined by the outcome from the environment. On-policy distillation (OPD) [4, 5] complements this by\nleveraging a stronger teacher model to provide dense, token-level logits as learning signals along the student\u2019s\nown sampled trajectories, enriching the trajectory-level supervision to the token level and thereby achieving\nfaster convergence. Recent work has shown that OPD from advanced teachers can match or even outperform\nRLVR [6], establishing it as an equally compelling paradigm (see Table 1 for a systematic comparison).\nDespite its effectiveness, OPD relies on a separate, typically much larger teacher model, incurring substantial\ncomputational overhead. Moreover, since OPD requires computing token-level distributions over a shared\nvocabulary, the teacher and student models must share the same vocabulary, significantly reducing the\npractical scalability of this paradigm. "
+    },
+    {
+      "aiAssistanceScore": 0.42534438,
+      "confidence": "Low",
+      "endIndex": 3851,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1489,
+      "text": " On-policy self-distillation (OPSD) [7, 8] offers an appealing alternative:\na single model serves as both teacher and student, where the teacher is the same model conditioned on\nprivileged information r (such as a verified reasoning trace or environmental feedback) and the student\noperates solely on the input query. OPSD achieves several-fold improvements in token efficiency over GRPO\nwithout requiring any external model. However, we prove this efficiency gain is fragile: as illustrated by the\nred curve in Figure 1(a), performance peaks early and subsequently deteriorates, accompanied by systematic\nprivileged information leakage, where the model explicitly appeals to an invisible reference solution during\ninference despite never having access to it (see Figure 2 for a representative example). These phenomena\nraise a natural question: why does OPD work while OPSD fails?\nWe trace the answer to a structural distinction between the two settings. In OPD, teacher and student\nobserve the same input (information-symmetric), so the teacher\u2019s dense signal reflects superior reasoning\nunder shared information access. In OPSD, the teacher conditions on privileged information that the student\ncannot observe (information-asymmetric), creating a fundamental mismatch. We prove that this asymmetry\nrenders the OPSD objective ill-posed : it contains an irreducible mutual information gap I(Y\nt\n; R | X, Y\n<t\n) > 0\nthat the student can never eliminate, regardless of its capacity (Theorem 1). At the gradient level, we show\nthat while the expected OPSD gradient is benign, the per-sample gradients carry an r-specific deviation whose\nvariance is proportional to this mutual information. These theoretical findings are directly corroborated by\nour diagnostic experiments: the on-policy KL divergence between teacher and student stagnates under OPSD\nwith no sustained reduction, whereas the same metric decreases steadily under OPD, as shown in Figure 3.\nEarly in training, the beneficial gradient component dominates, producing rapid improvement; as the student\napproaches the teacher\u2019s marginal distribution, the deviation takes over, and its path-dependent accumulation\ndrives the model toward encoding x \u2192 r correlations in its parameters. This two-phase dynamic precisely\naccounts for the observed pattern of early gains followed by progressive degradation.\n"
+    },
+    {
+      "aiAssistanceScore": 0.3948674,
+      "confidence": "Low",
+      "endIndex": 4734,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 3850,
+      "text": "\nOur analysis pinpoints the root cause: in all distribution-matching formulations, the teacher\u2019s privileged\nevaluation P\nT \n(y\nt \n| r) enters the gradient direction, making leakage structurally unavoidable regardless of how\nthe distillation target is compressed. Yet the evidence ratio P\nT \n(y\nt\n)/P\nS \n(y\nt\n) also carries a useful signal: it\nmeasures how much the privileged information revises the model\u2019s belief about each token. The challenge is\ntherefore not to discard this signal, but to change how it is used. A key insight underlying our design is that\nthe signals governing update direction and update magnitude have asymmetric requirements: the directional\nsignal can be sparse but must be reliable, as an erroneous direction harms the policy; the magnitude signal,\nby contrast, benefits from being as dense as possible to enable fine-grained discrimination among tokens.\n2"
+    },
+    {
+      "aiAssistanceScore": 0.3948674,
+      "confidence": "Low",
+      "endIndex": 1599,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "We propose RLVR with Self-Distillation (RLSD), which instantiates this principle by repurposing the teacher\nfrom a generative target to a magnitude evaluator. Specifically, the environment reward determines the\ndirection of each token\u2019s update (reinforcement or penalization), while the teacher\u2019s evidence ratio modulates\nonly the magnitude. This decoupling anchors gradient directions exclusively to the reliable environment\nreward, while retaining the teacher\u2019s dense, token-level assessment for fine-grained credit discrimination across\ntoken positions. Notably, prior approaches to token-level credit assignment, such as value-function estimation\nin PPO [9] and various credit assignment methods [10, 11], typically require training auxiliary networks or\nincur substantial additional overhead, yet still produce noisy estimates. In contrast, self-distillation provides\na natural and virtually cost-free source of per-token credit information, requiring only a single additional\nforward pass. As summarized in Table 1, RLSD is the only paradigm that simultaneously achieves on-policy\ntraining, high token efficiency, rich update signals, and environment-anchored optimization, while serving as\na drop-in replacement for the uniform advantage in standard GRPO without any auxiliary loss or model.\nOur contributions are as follows:\n\u2022 We identify the root cause of OPSD\u2019s failure through controlled experiments and formal analysis, prov-\ning that distribution matching under information asymmetry induces an irreducible gap that drives\nprivileged information leakage through the gradient structure.\n"
+    },
+    {
+      "aiAssistanceScore": 0.38905343,
+      "confidence": "Low",
+      "endIndex": 3075,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 1598,
+      "text": "\n\u2022 We propose RLSD, a new training paradigm that unifies the strengths of RLVR and OPSD: the reliable\nenvironment reward governs update directions, while the privileged teacher provides rich, token-level\nmodulation of update magnitudes.\n\u2022 Extensive experiments demonstrate that RLSD achieves the best average accuracy across five multi-\nmodal reasoning benchmarks, outperforming the base LLM by 4.69%, sustaining improvement beyond\nthe point where self-distillation degrades.\n2 Preliminaries\nGRPO. Consider a language model \u03c0\n\u03b8 \ntrained to solve reasoning tasks. Given a question x, the model\ngenerates a response y = (y\n1\n, . . . , y\nT \n) autoregressively. In the RLVR setting, a verifier provides a binary\nreward R(x, y) \u2208 {0, 1} indicating whether the response is correct. Group Relative Policy Optimization\n(GRPO) [1] samples a group of G responses {y\n(1)\n, . . . , y\n(G)\n} from the current policy for each question x, and\ncomputes a sequence-level advantage for each response relative to the group:\nA\n(i) \n= \nR(x, y\n(i)\n) \u2212 \u03bc\nG\n\u03c3\nG\n, (1)\nwhere \u03bc\nG \nand \u03c3\nG \nare the mean and standard deviation of the rewards within the group. The policy is then\nupdated via a clipped surrogate objective:\nL\nGRPO\n(\u03b8) = E\n\uf8ee\n\uf8f0 \n1\nG\nG\nX\ni=1\n1\n|y\n(i)\n|\n|y\n(i)\n|\nX\nt=1\nmin\n\u0010\n\u03c1\n(i)\nt \nA\n(i)\n, clip\n\u0010\n\u03c1\n(i)\nt \n, 1 \u2212 \u03f5, 1 + \u03f5\n\u0011\nA\n(i)\n\u0011\n\uf8f9\n\uf8fb \n, (2)\nwhere \u03c1\n(i)\nt \n= \u03c0\n\u03b8 \n(y\n(i)\nt \n| x, y\n(i)\n<t\n)/\u03c0\n\u03b8\nold \n(y\n(i)\nt \n| x, y\n(i)\n<t\n) is the importance sampling ratio between the current and old\npolici"
+    },
+    {
+      "aiAssistanceScore": 0.31598908,
+      "confidence": "Low",
+      "endIndex": 4104,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 3074,
+      "text": "ies. A key limitation of GRPO is that all tokens within a response share the same advantage A\n(i)\n, as\nthe reward signal is provided only at the sequence level.\nOPD and OPSD. On-Policy Distillation (OPD) [4] addresses the sparse reward problem by having the student\n\u03c0\n\u03b8 \nsample its own trajectories while a separate, typically larger, teacher model \u03c0\n\u02c6\n\u03b8 \nprovides dense token-level\nsupervision. While effective, maintaining a distinct teacher model throughout training introduces significant\ncomputational overhead. On-Policy Self-Distillation (OPSD) [7, 8] eliminates this requirement by instantiat-\ning both roles from a single model \u03c0\n\u03b8 \n: the teacher gains its informational advantage not from greater capacity,\nbut from conditioning on privileged information r (e.g., a verified reasoning trace).\nBoth methods share the same training paradigm. Given a dataset S = {(x\ni\n, r\ni\n)}\nN\ni=1\n, the student generates\non-policy rollouts \u02c6y \u223c P\nS \n(\u00b7 | x), and training minimizes the per-token divergence between teacher and student\n3"
+    },
+    {
+      "aiAssistanceScore": 0.31598908,
+      "confidence": "Low",
+      "endIndex": 820,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "OPSD-tuned Model Output (\u2717):\nI need to determine if the sample mean is within $1 of the population mean. To do this, I must first\ncalculate both means. . . . <Omitted> . . . Given that the reference solution uses 9 values, I will assume\nthe sample has 9 prices . . . <Omitted>. . . But wait, the reference solution says \"No\", which contradicts\nmy calculation. Let me re-examine. . . .\nFigure 2 A representative example illustrating the privileged information leakage exhibited by the OPSD-trained\nmodel, where the model appeals to an invisible reference solution during inference.\n(a) Leakage occurrence dynamics. (b) Performance on the validation set \n(c) KL Divergence comparison.\nFigure 3 Leakage, KL divergence, and validation performance of OPSD and its ablated variants.\ndistributions along the student\u2019s trajector"
+    },
+    {
+      "aiAssistanceScore": 0.44371727,
+      "confidence": "Low",
+      "endIndex": 2333,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 819,
+      "text": "ry. The two frameworks differ only in how the teacher is defined:\nStudent: P\nS \n(\u00b7 | y\n<t\n) \u225c \u03c0\n\u03b8 \n(\u00b7 | x, y\n<t\n), (3)\nOPD Teacher: P\nT \n(\u00b7 | y\n<t\n) \u225c \u03c0\n\u02c6\n\u03b8 \n(\u00b7 | x, y\n<t\n), (4)\nOPSD Teacher: P\nT \n(\u00b7 | y\n<t\n) \u225c \u03c0\n\u03b8 \n(\u00b7 | x, r, y\n<t\n). (5)\nThe shared training objective is:\nL\nOP(S)D\n(\u03b8) = E\n(x,r)\u223cS \nE\n\u02c6y\u223cP\nS \n(\u00b7|x)\n\uf8ee\n\uf8f0 \n1\n|\u02c6y|\n|\u02c6y|\nX\nt=1\nD(P\nT \n\u2225 P\nS \n)\n\uf8f9\n\uf8fb \n, (6)\nwhere D is a divergence measure such as the generalized Jensen-Shannon divergence. Gradients are backprop-\nagated only through P\nS \n, while P\nT \nserves as a fixed target. OPSD achieves high token efficiency by providing\ndense, per-token supervision without requiring an external teacher model.\n3 Why Does OPD Work While OPSD Fails?\n3.1 Empirical Observations: Leakage and Performance Degradation\nBefore the formal analysis in \u00a73.2, we document the empirical phenomena that motivate it.\nPrivileged information leakage. We first observe that OPSD-trained models systematically reference privi-\nleged information that is unavailable at inference time. Figure 2 presents a representative example in which\nthe model explicitly appeals to an invisible \u201creference solution\u201d during generation. Such behavior is not an\nisolated failure. As we quantify in the following analysis, this leakage intensifies progressively over the course\nof training.\nPerformance degradation. Figure 3(a) tracks the frequency of privileged information leakage over 100\ntraining steps and reveals a monotonically increasing trend: the model becomes progressively more reliant on\n4"
+    },
+    {
+      "aiAssistanceScore": 0.44371727,
+      "confidence": "Low",
+      "endIndex": 39,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "information it cannot access at test ti"
+    },
+    {
+      "aiAssistanceScore": 0.443413,
+      "confidence": "Low",
+      "endIndex": 2076,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 38,
+      "text": "ime. Figure 3(b) reports the corresponding validation accuracy, which\npeaks within the first 10\u201320 steps and subsequently declines, consistent with the escalating leakage.\nKL divergence stagnation. A further diagnostic contrasts the on-policy KL divergence between teacher and\nstudent for OPD and OPSD (Figure 3(c)). Under OPD, the KL divergence decreases steadily throughout\ntraining, reflecting genuine convergence. Under OPSD, the divergence drops briefly in the first few steps but\nthen plateaus at a level comparable to its initial value, exhibiting no sustained reduction. This stagnation\nsuggests the existence of an irreducible gap in the OPSD objective that prevents meaningful convergence, a\nhypothesis we formalize in the next subsection.\nThese observations raise two questions: why does OPSD induce leakage, and why does it fail to reduce the\nKL divergence? We address both in the following theoretical analysis.\n3.2 OPSD\u2019s Failure: An Ill-Posed Objective\nWe formalize the structural deficiency of the distribution matching paradigm underlying OPSD and related\nmethods. Our analysis proceeds at two levels: the objective function (\u00a73.2.1) and the gradient dynamics\n(\u00a73.2.2).\n3.2.1 The Irreducible Mutual Information Gap\nLet r denote the privileged information, drawn from the conditional distribution P (r | x). Since any given\nquestion x admits multiple semantically valid reasoning paths, P (r | x) is a non-degenerate distribution with\nnon-zero entropy. Even when each training instance x\ni \nis paired with a single reference trace r\ni\n, from the\nepistemic perspective of the student, which can neither observe r nor deterministically derive it from x, the\nprivileged information remains an uncertain latent variable, and P (r | x) should be treated as non-degenerate\nwithin the probabilistic modeling framework.\nAn optimal student policy that cannot condition on r should recover the marginal teacher distribution via\nthe law of total probability:\nP \n\u2217\nS \n(y\nt \n| x, y\n<t\n) = E\nr\u223cP (r|x,y\n<t\n)\n[P\nT \n(y\nt \n| x, r, y\n<t\n)] "
+    },
+    {
+      "aiAssistanceScore": 0.6023748,
+      "confidence": "Low",
+      "endIndex": 3379,
+      "label": "AI-Generated",
+      "pageIndex": 4,
+      "startIndex": 2075,
+      "text": " . (7)\nLetting \n\u00af\nP\nT \n(y\nt\n) \u225c E\nr \n[P\nT \n(y\nt \n| x, r, y\n<t\n)] denote this marginal, the ideal distillation objective is:\nL\n\u2217\n(\u03b8) = E\nx\nh\nD\nKL\n\u0010 \n\u00af\nP\nT \n(\u00b7) P\nS \n(\u00b7 | x)\n\u0011i\n. (8)\nHowever, the OPSD objective enforces a per-sample match P\nS \n(\u00b7 | x) \u2192 P\nT \n(\u00b7 | x, r) for each concrete pair\n(x, r):\nL\nOPSD\n(\u03b8) = E\nx \nE\nr\u223cP (r|x)\n[D\nKL\n(P\nT \n(\u00b7 | x, r) \u2225 P\nS \n(\u00b7 | x))] . (9)\nThis forces a conditionally independent parameterization (P\nS \ndoes not take r as input) to match a condition-\nally dependent target (P\nT \ndepends on r), constituting a fundamentally ill-posed requirement.\nTheorem 1 (KL Decomposition). The OPSD objective and the ideal objective satisfy the identity:\nL\nOPSD \n= L\n\u2217 \n+ I(Y\nt\n; R | X, Y\n<t\n), (10)\nwhere I(Y\nt\n; R | X, Y\n<t\n) denotes the conditional mutual information between the current token Y\nt \nand the\nprivileged information R under the teacher distribution.\nThe proof is deferred to Appendix A.1. The mutual information term quantifies the extent to which the\nteacher\u2019s token-level prediction depends on the privileged information that is, by construction, inaccessible\nto the student. Critically, I(Y\nt\n; R | X, Y\n<t\n) is independent of \u03b8: it is entirely determined by the teacher\u2019s\nconditional distributions and P (r | x). The student\u2019s optimization cannot eliminate this "
+    },
+    {
+      "aiAssistanceScore": 0.41085893,
+      "confidence": "Low",
+      "endIndex": 3670,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3378,
+      "text": " gap. Within the\nfeasible set F = {Q : Q(\u00b7 | x, y\n<t\n) does not condition on r}, the global optimum is P \n\u2217\nS \n= \n\u00af\nP\nT \n, at which the\nresidual loss equals I(Y\nt\n; R | X, Y\n<t\n) > 0, a strictly positive, irreducible lower bound that grows with the\ninformativeness of the privileged signal.\n5"
+    },
+    {
+      "aiAssistanceScore": 0.41085893,
+      "confidence": "Low",
+      "endIndex": 1786,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "This result provides a formal explanation for the KL stagnation observed in Figure 3(c): the OPSD divergence\nplateaus because the student quickly reaches the vicinity of \n\u00af\nP\nT \n, after which the residual I(Y\nt\n; R | X, Y\n<t\n) > 0\ncannot be reduced through legitimate optimization. The dashed line in Figure 3(c), marking the OPSD KL\nat step 1, visually confirms that this loss floor is effectively reached within the earliest steps. More critically,\nthis irreducible residual actively corrupts the optimization process. Under a biased objective, the optimizer\ncontinues to receive a non-vanishing loss signal and is driven to absorb harmful noise into the model param-\neters. As we will explain in the next section, this residual term directly contaminates the gradient direction,\nsteering parameter updates away from genuine reasoning improvement and toward encoding spurious corre-\nlations between the input and the privileged information. Since the student\u2019s architecture precludes direct\nconditioning on r, the only available pathway is to encode statistical correlations between x and r in the\nparameters \u03b8, effectively learning a mapping x \u2192 r. This is the mathematical origin of privileged informa-\ntion leakage. In contrast, OPD employs an external teacher whose predictions do not condition on privileged\ninformation inaccessible to the student, so the mutual information gap does not arise, and the KL divergence\ndecreases steadily.\n3.2.2 Gradient Structure: The Mechanism of Leakage\nTheorem 1 establishes that I(Y\nt\n; R | X) is \u03b8-independent, which may suggest that it exerts no influence on\ngradients. We demonstrate that, while this holds for the expected gradient, the per-sample gradients carry a\ndeviation term whose variance is directly governed by this mutual informa"
+    },
+    {
+      "aiAssistanceScore": 0.3760829,
+      "confidence": "Low",
+      "endIndex": 2799,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1785,
+      "text": "ation.\nBenign expected gradient. Since I(Y\nt\n; R | X) does not depend on \u03b8, we have \u2207\n\u03b8 \nL\nOPSD \n= \u2207\n\u03b8 \nL\n\u2217 \n=\n\u2212 \nP\nv \n\u00af\nP\nT \n(v)\u2207\n\u03b8 \nlog P\nS \n(v). At the population level, the OPSD gradient is identical to that of the ideal marginal\nmatching objective.\nPathological per-sample gradients. In practice, optimization operates on concrete samples (x, r):\ng(\u03b8; r) = \u2212 \nX\nv\u2208V\nP\nT \n(v | r) \u00b7 \u2207\n\u03b8 \nlog P\nS \n(v). (11)\nProposition 1 (Per-Sample Gradient Decomposition). For any specific realization of r, the per-sample\ngradient admits the decomposition:\ng(\u03b8; r) = \u2212 \nX\nv\n\u00af\nP\nT \n(v) \u2207\n\u03b8 \nlog P\nS \n(v)\n| \n{z }\ng\n\u2217\n(\u03b8): marginal matching\n+ \u2212 \nX\nv\n\u0002\nP\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v)\n\u0003 \n\u2207\n\u03b8 \nlog P\nS \n(v)\n| \n{z }\n\u03b4(\u03b8; r): r-specific deviation\n, (12)\nsatisfying: (i) E\nr \n[\u03b4(\u03b8; r)] = 0, and (ii) E\nr \n[\u2225\u03b4(\u03b8; r)\u2225\n2\n] = \nP\nv \nVar\nr \n[P\nT \n(v | r)] \u00b7 \u2225\u2207\n\u03b8 \nlog P\nS \n(v)\u2225\n2\n. The devia-\ntion vanishes identically when I(Y\nt\n; R | X) = 0 and its variance increases monotonically with the mutual\ninformation.\nThe proof is provided in Append"
+    },
+    {
+      "aiAssistanceScore": 0.37036783,
+      "confidence": "Low",
+      "endIndex": 4213,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 2798,
+      "text": "dix A.2. Property (i) may suggest that the deviation is innocuous on average;\nhowever, any optimizer that computes gradients on individual samples or mini-batches, such as SGD and\nAdam [12], is inherently path-dependent. The zero-mean perturbations in nonlinear optimization do not\nnecessarily cancel over the course of training.\nTwo-phase training dynamics. The decomposition in Proposition 1 partitions the per-sample gradient into\na beneficial component g\n\u2217 \nand a deviation component \u03b4. Their relative magnitudes evolve over training and\ngive rise to two distinct regimes that precisely correspond to the empirical phenomena reported in \u00a73.1.\nEarly in training, the student P\nS \nis far from the teacher\u2019s marginal \n\u00af\nP\nT \n, so the beneficial component dominates:\n\u2225g\n\u2217\n(\u03b8)\u2225 \u226b \u2225\u03b4(\u03b8; r)\u2225. In this regime, the gradient predominantly drives marginal matching, and the student\nrapidly acquires general reasoning capabilities. This corresponds to the steep rise in validation accuracy\nobserved during the first 10\u201320 steps in Figure 3(b). As training progresses and P\nS \napproaches \n\u00af\nP\nT \n, the\nbeneficial component \u2225g\n\u2217\n(\u03b8)\u2225 diminishes toward zero. The deviation component \u2225\u03b4(\u03b8; r)\u2225, however, remains\nbounded away from zero: its variance is governed by I(Y\nt\n; R | X), which is independent of \u03b8 and therefore\ndoes not decay with optimization progress. Parameter updates thus become increasingly dominated by \u03b4, and\n6"
+    },
+    {
+      "aiAssistanceScore": 0.37036783,
+      "confidence": "Low",
+      "endIndex": 649,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "the path-dependent accumulation of these perturbations drives the model toward regions of parameter space\nthat encode x \u2192 r correlations, triggering a self-reinforcing degradation. This transition marks the onset of\nthe performance decline in Figure 3(b) and the monotonically increasing leakage counts in Figure 3(a).\nLeakage bandwidth: controlled experiments. The gradient decomposition not only explains the failure of\nstandard OPSD, but also makes a precise prediction: any variant in which the teacher\u2019s privileged evaluation\nP\nT \n(\u00b7 | r) enters the gradient direction will suffer from leakage, regardless of how the distillation target is\ncomp"
+    },
+    {
+      "aiAssistanceScore": 0.4773148,
+      "confidence": "Low",
+      "endIndex": 2461,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 648,
+      "text": "pressed. To test this prediction, we design two ablated variants alongside standard OPSD: (i) Teacher\u2019s\nTop-1, which retains only the teacher\u2019s most probable token arg max\nv \nP\nT \n(v | r) as the target, and (ii) Student\u2019s\nTop-1, which restricts the target support to the student\u2019s most probable token arg max\nv \nP\nS \n(v). We report\nleakage counts and validation accuracy for all three variants over 100 training steps in Figure 3(a,b).\nAll three variants confirm the prediction: leakage increases in every case. The gradient framework explains\nboth the universality and the ordering of severity through the concept of leakage bandwidth, which we define\nas the effective number of token positions at which r-specific information enters the gradient direction. Full\nOPSD operates over the entire vocabulary V: the teacher\u2019s privileged preference P\nT \n(v | r) weights the\ngradient contribution of every token, yielding the widest bandwidth. Teacher\u2019s Top-1 collapses the target to\na single token arg max\nv \nP\nT \n(v | r) that is entirely determined by r, narrowing the bandwidth but producing the\nmost concentrated injection of privileged information, which explains why it exhibits the most severe leakage.\nStudent\u2019s Top-1 restricts the target support to arg max\nv \nP\nS \n(v), yielding the narrowest bandwidth; yet the\ngradient weight P\nT \n(v\n\u2217\nS \n| r)/P\nS \n(v\n\u2217\nS \n) at the selected token remains a function of r, so leakage persists, albeit\nat the lowest rate. In all three cases, the directional dependence of the gradient on r is irreducible (proof\nin Appendix A.3), explaining the universal occurrence of leakage observed in Figure 3(a). The performance\ndegradation in Figure 3(b) follows directly: stronger leakage accelerates the transition from the first training\nphase to the second and produces more rapid d"
+    },
+    {
+      "aiAssistanceScore": 0.44447705,
+      "confidence": "Low",
+      "endIndex": 4513,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 2460,
+      "text": "decline.\nWe further analyze the implications of shared-parameter coupling in Appendix A.4, where we show that\nthe interaction between gradient-level leakage and teacher drift under shared parameters gives rise to an\nimpossibility trilemma: objective stability, sustained improvement, and leakage-free training cannot hold\nsimultaneously under any parameter management strategy.\n4 RLSD: Self-Distillation as RLVR\u2019s Wingman\nThe preceding analysis identifies a precise root cause: distribution matching fails because privileged informa-\ntion enters the gradient direction, contaminating the optimization trajectory. Yet the same quantity at the\nheart of this failure, the evidence ratio P\nT \n(y\nt\n)/P\nS \n(y\nt\n), also carries a useful signal: it measures how much the\nprivileged information revises the model\u2019s belief about each token. The challenge, then, is not to discard this\nsignal, but to change how it is used. We propose RLVR with Self-Distillation (RLSD), which repurposes the\nteacher\u2019s role entirely: instead of serving as a generative target for distribution matching, the discrepancy\nbetween P\nT \nand P\nS \nis used as a token-level credit assignment signal within the policy gradient framework.\nThe privileged information influences only how much credit each token receives, not which tokens are\nreinforced or penalized, nor the direction of parameter updates.\n4.1 From Distribution Matching to Credit Assignment\nStep 1: Privileged information gain. Given a student-sampled trajectory y = (y\n1\n, . . . , y\nT \n), we compute the\nlog-probability of each token under both the student context (x only) and the teacher context (x and r), and\ndefine the privileged information gain at each position:\n\u2206\nt \n= sg(log P\nT \n(y\nt\n) \u2212 log P\nS \n(y\nt\n)) , (13)\nwhere sg denotes the stop-gradient operator. Since teacher and student share the same model, \u2206\nt \nisolates the\nmarginal contribution of the privileged information r to the prediction of y\nt\n. A large positive \u2206\nt \nindicates that\nr strongly supports this token; a negative value indicates that r disfav"
+    },
+    {
+      "aiAssistanceScore": 0.29123673,
+      "confidence": "Medium",
+      "endIndex": 4767,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 4512,
+      "text": "vors it. Crucially, \u2206\nt \nprovides a dense,\ntoken-level signal that naturally reflects how much each token is informed by the privileged information,\nmaking it a principled and lightweight basis for fine-grained credit assignment within a trajectory. The\n7"
+    },
+    {
+      "aiAssistanceScore": 0.29123673,
+      "confidence": "Medium",
+      "endIndex": 597,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "Question x\nPolicy\nmodel \ud835\udf0b\n!\nModel Outputs\n\ud835\udc42\n!\n... \n\u2713\n\u2717\n...\n\ud835\udc42\n\"\n\ud835\udc42\n#$!\n\ud835\udc42\n#\nToken-Level Dense Signal\nStudent Mode\n\ud835\udf0b\n! \n\" x, y\nPrivileged r\nTeacher Mode\n\ud835\udf0b\n! \n\" x, r, y\n\u2206\n\"\n= sg(logP\n#\n(y\n\"\n) \u2212 logP\n$\n(y\n\"\n))\nCorrectness from environment\nVerifier\nR(x, y)\nAdvantage\nA = (R \u2212 \ud835\udf07)/\ud835\udf0e\nw\n\" \n= exp(sign(A) \" \u2206\n\"\n) = (\n\ud835\udc43\n#\n\ud835\udc43\n$\n)\n%&'((*)\nControl the magnitude \nControl the\ndirection\nToken-Level\nAdvantages\n...\n...\n\u00d7\n\u25b2\n...\n...\nA\n!\nA\n\"\nA\n%\nA\n#\n...\n...\n#\n\ud835\udc68\n\ud835\udfcf\n#\n\ud835\udc68\n\ud835\udfd0\n#\n\ud835\udc68\n\ud835\udc8f\n#\n\ud835\udc68\n\ud835\udc6e\nUpdate Policy\nTeacher supports \nTeacher disfavors\nP\n!\n/P\n\"\n\ud835\udc64\n!\n! \n\ud835\udc64\n!\n\" \n... \n\ud835\udc64\n!\n|+|\n\ud835\udc64\n\"\n! \n\ud835\udc64\n\"\n\" \n... \n\ud835\udc64\n\"\n|+|\n"
+    },
+    {
+      "aiAssistanceScore": 0.6199417,
+      "confidence": "Low",
+      "endIndex": 2256,
+      "label": "AI-Generated",
+      "pageIndex": 7,
+      "startIndex": 596,
+      "text": "\n\ud835\udc64\n,\n! \n\ud835\udc64\n,\n\" \n... \n\ud835\udc64\n,\n|+|\n\ud835\udc64\n-\n! \n\ud835\udc64\n-\n\" \n... \n\ud835\udc64\n-\n|+|\nOPSD\u2019s Core Practice\nRLSD\u2019s Practice\nGRPO\u2019s Core Practice \nRLSD\u2019s Practice\nFigure 4 An overview of our RLSD method.\nstop-gradient ensures that \u2206\nt \nserves purely as a weighting signal and does not introduce auxiliary gradient\npathways.\nStep 2: Direction-aware evidence reweighting. We construct a per-token weight from the privileged informa-\ntion gain, modulated by the sign of the sequence-level advantage:\nw\nt \n= exp(sign(A) \u00b7 \u2206\nt\n) =\n\u0012 \nP\nT \n(y\nt\n)\nP\nS \n(y\nt\n)\n\u0013\nsign(A)\n. (14)\nThis formulation admits a natural Bayesian interpretation. P\nS \n(y\nt\n) represents the model\u2019s prior assessment\nof token y\nt\n, based solely on the question x. P\nT \n(y\nt\n) represents the posterior assessment after observing the\nprivileged information r. The ratio P\nT \n(y\nt\n)/P\nS \n(y\nt\n) is therefore an evidence ratio: the factor by which the\nprivileged information revises the model\u2019s belief about each token. Under mild modeling assumptions, this\nratio can be shown to equal the Bayesian belief update P (r | x, y\n\u2264t\n)/P (r | x, y\n<t\n), i.e., the degree to which\ngenerating y\nt \nincreases the posterior probability that the privileged information r is consistent with the\ntrajectory (Theorem 4 in Appendix A.5).\nThe sign(A) exponent implements direction-aware credit assignment. When A > 0, w\nt \n= P\nT \n/P\nS \n: tokens that\nthe privileged information supports receive larger weights, concentrating positive credit on the tokens most\naligned with the correct reasoning trace. When A < 0, w\nt \n= P\nS \n/P\nT \n: the ratio is inverted, so tokens that the\nprivileged information disfavors bear greater blame, while tokens it"
+    },
+    {
+      "aiAssistanceScore": 0.5925538,
+      "confidence": "Low",
+      "endIndex": 3313,
+      "label": "AI-Generated",
+      "pageIndex": 7,
+      "startIndex": 2255,
+      "text": "t supports receive attenuated punishment.\nSince exp(\u00b7) > 0 for all inputs, the weight is strictly positive, guaranteeing that the sign of the token-level\nadvantage is never flipped by the reweighting. The environment reward retains exclusive authority over\nwhether a trajectory is reinforced or penalized; the teacher only modulates the relative magnitude across\ntokens within a trajectory.\nThis design parallels the importance sampling ratio \u03c0\n\u03b8 \n/\u03c0\nold \nused in GRPO for policy updates. GRPO uses\nthe ratio between current and old policies to control the step size of updates; RLSD uses the ratio between\nposterior and prior to control the credit distribution across tokens. Both are importance ratios operating\nwithin the same policy gradient framework, yielding a structurally unified formulation.\nStep 3: Clipped credit assignment. Following the design philosophy of the clipped surrogate objective in\nPPO [9] and GRPO, we clip the evidence weights to bound the maximum influence of any single token:\n\u02c6\nA\nt \n= A \u00b7 clip(w\nt\n, 1 \u2212 \u03f5\nw\n, 1 + \u03f5\nw\n) , (15)\n8"
+    },
+    {
+      "aiAssistanceScore": 0.5925538,
+      "confidence": "Low",
+      "endIndex": 455,
+      "label": "AI-Generated",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "Algorithm 1 RLSD: Reinforcement Learning with Self-Distillation\nRequire: Policy \u03c0\n\u03b8 \n, dataset S = {(x\ni\n, r\ni\n)}\nN\ni=1\n, verifier R(\u00b7, \u00b7), group size G, mixing coefficient \u03bb, clip bounds\n\u03f5\nw\n1: for each training iteration do\n2: Sample a batch of questions {x} from S\n3: for each question x with privileged information r do\n4: // Step 1: On-policy rollout\n5: Sample G responses {y\n(1)\n, . . . , y\n(G)\n} \u223c \u03c0\n\u03b8 \n(\u00b7 | x)\n6: // Step 2: Sequence-level advantag"
+    },
+    {
+      "aiAssistanceScore": 0.481276,
+      "confidence": "Low",
+      "endIndex": 1498,
+      "label": "AI-Generated",
+      "pageIndex": 8,
+      "startIndex": 454,
+      "text": "ge from environment\n7: for i = 1, . . . , G do\n8: Obtain reward R(x, y\n(i)\n) \u2208 {0, 1} from the verifier\n9: end for\n10: Compute A\n(i) \n= \nR(x,y\n(i)\n)\u2212\u03bc\nG\n\u03c3\nG \n\u25b7 Group-relative advantage\n11: // Step 3: Token-level credit assignment via self-distillation\n12: for i = 1, . . . , G do\n13: Compute teacher logits via forward pass with (x, r, y\n(i)\n) \u25b7 Single extra forward pass\n14: for t = 1, . . . , |y\n(i)\n| do\n15: \u2206\nt \n\u2190 sg\n\u0010\nlog \u03c0\n\u03b8 \n(y\n(i)\nt \n| x, r, y\n(i)\n<t\n) \u2212 log \u03c0\n\u03b8 \n(y\n(i)\nt \n| x, y\n(i)\n<t\n)\n\u0011\n16: w\nt \n\u2190 exp\n\nsign(A\n(i)\n) \u00b7 \u2206\nt\n\u0001\n17: \n\u02c6\nA\n(i)\nt \n\u2190 A\n(i) \n\u00b7 ((1 \u2212 \u03bb) + \u03bb \u00b7 clip(w\nt\n, 1 \u2212 \u03f5\nw\n, 1 + \u03f5\nw\n))\n18: end for\n19: end for\n20: end for\n21: // Step 4: Policy update\n22: Update \u03b8 by maximizing L\nRLSD\n(\u03b8) = \n1\nG\nP\nG\ni=1 \n1\n|y\n(i)\n|\nP\n|y\n(i)\n|\nt=1 \n\u02c6\nA\n(i)\nt\n23: end for\nwhere \u03f5\nw \nbounds the per-token credit deviation. The clipping in Eq. (15) serves an analogous role to the\nimportance ratio clipping in GRPO: while GRPO clips the policy update step size, RLSD clips the credit\nredistribution magnitude. Both mechanisms act as trust-"
+    },
+    {
+      "aiAssistanceScore": 0.38154295,
+      "confidence": "Low",
+      "endIndex": 2512,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 1497,
+      "text": "-region constraints that stabilize training. In practice,\nto avoid an abrupt transition at the start of training, we linearly interpolate between the uniform advantage\nand the reweighted advantage over the training steps using \u03bb \u2208 [0, 1], gradually shifting to the uniform\nadvantage. The final objective of RLSD is as follows:\nL\nRLSD\n(\u03b8) = E\n\uf8f1\n\uf8f2\n\uf8f3\n1\nG\nG\nX\ni=1\n1\n|y\n(i)\n|\n|y\n(i)\n|\nX\nt=1\nmin\nh\nw\nt\nA\n(i)\n, clip(w\nt\n, 1 \u2212 \u03f5\nw\n, 1 + \u03f5\nw\n) A\n(i)\ni\n\uf8fc\n\uf8fd\n\uf8fe \n, (16)\n4.2 Integration with GRPO\nThe modified advantage \n\u02c6\nA\nt \nis a drop-in replacement for the uniform advantage in the standard GRPO\nobjective. The complete training procedure is summarized in Algorithm 1.\nNo auxiliary distillation loss is introduced; the only modification to the standard GRPO pipeline is the\ninternal redistribution of credit within each trajectory. The additional computational cost amounts to one\nforward pass per response to obtain the teacher logits, which is negligible relative to the rollout generation\nthat dominates wall-clock time.\n9"
+    },
+    {
+      "aiAssistanceScore": 0.38154295,
+      "confidence": "Low",
+      "endIndex": 477,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "4.3 A Unified Token-Level Advantage Perspective\nTo situate RLSD within the broader landscape, we observe that GRPO, on-policy self-distillation, and RLSD\ncan all be expressed as instances of a single policy gradient template:\n\u2206\u03b8 \u221d E\ny\u223cP\nS \n(\u00b7|x)\n\uf8ee\n\uf8f0\n|y|\nX\nt=1\n\u02c6\nA\nt \n\u2207\n\u03b8 \nlog P\nS \n(y\nt \n| x, y\n<t\n)\n\uf8f9\n\uf8fb \n, (17)\nwhere the methods differ solely in how they define the token-level advantage \n\u02c6\nA\nt\n.\nGRPO assigns a uniform advantage across all tokens: \n\u02c6\nA\nt \n= A, where A is the "
+    },
+    {
+      "aiAssistanceScore": 0.31455725,
+      "confidence": "Low",
+      "endIndex": 2531,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 476,
+      "text": " sequence-level advantage from\nthe verifier. This ensures that the optimization direction is fully grounded in the environment reward, but\nprovides no token-level discrimination: every token within a trajectory receives identical credit regardless of\nits contribution to the final answer.\nOn-policy self-distillation methods replace the environment reward with a dense teacher signal. The specific\nform of \n\u02c6\nA\nt \ndepends on the divergence measure: minimizing the reverse KL D\nKL\n(P\nS \n\u2225P\nT \n) via the log-derivative\ntrick yields \n\u02c6\nA\nt \n= \u2206\nt \n= log P\nT \n(y\nt\n) \u2212 log P\nS \n(y\nt\n). The environment reward R(x, y) is entirely absent from \n\u02c6\nA\nt\n:\neven when a trajectory produces a wrong answer (A < 0), tokens favored by the teacher (\u2206\nt \n> 0) still receive\npositive advantage, decoupling the optimization direction from the verifiable correctness signal.\nRLSD resolves this tension by combining both sources of information. Its advantage (Eq. 15) uses the envi-\nronment reward to determine the direction (sign) of each token\u2019s update, while using the teacher\u2019s privileged\nassessment to determine the magnitude (relative credit) within a trajectory. We provide a formal proof that\nthese properties render RLSD structurally immune to privileged information leakage in Appendix A.6, and\nverify that RLSD simultaneously satisfies all three desiderata of the impossibility trilemma (Appendix A.4).\n5 Experiment\n5.1 Experimental Setup\nTraining Data and Benchmarks. We train our models on MMFineReason-123K [13], a challenging subset\nderived from the MMFineReason-1.8M corpus via difficulty-based filtering. Specifically, inference is performed\non each training sample using Qwen3-VL-4B-Thinking with four independent rollouts, and only samples\nwhere the model fails on all attempts are retained. This conservative criterion discards trivial examples and\nconcentrates training signal on challenging problems, yielding faster convergence and more efficient use of\ncomputational resources.\nWe evaluate on five multimodal reasoning benchmarks spanning diverse mathe"
+    },
+    {
+      "aiAssistanceScore": 0.18841529,
+      "confidence": "Medium",
+      "endIndex": 4266,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2530,
+      "text": "ematical and general reasoning\ncapabilities. MMMU [14] is a massive multi-discipline benchmark covering college-level subjects across science,\nengineering, and humanities, requiring both perception and domain knowledge. MathVista [15] assesses math-\nematical reasoning grounded in visual contexts. MathVision [16] extends mathematical reasoning evaluation\nto more complex and competition-level visual problems. ZeroBench [17] is a challenging benchmark specifi-\ncally designed to be unsolvable by current frontier models, providing a stress test for reasoning robustness.\nWeMath [18] evaluates fine-grained mathematical problem-solving abilities with structured difficulty levels.\nTogether, these benchmarks provide a comprehensive and rigorous assessment of both the breadth and depth\nof multimodal reasoning performance. For all benchmarks, we report accuracy (%) as the evaluation metric.\nModels and Baselines. We conduct experiments on Qwen3-VL-8B-Instruct [19] as our base model. We\ncompare RLSD against the following baselines. GRPO [1] is a standard RLVR method that estimates token-\nlevel advantages from sparse scalar outcome rewards at the sequence level, serving as our primary RL baseline.\nOPSD [7] is an on-policy self-distillation method where a single model acts as both teacher and student,\nwith the teacher conditioned on privileged information (e.g., verified reasoning traces) to provide dense per-\ntoken supervision. SDPO [8] extends self-distillation to the reinforcement learning with rich feedback setting,\ntreating the current model conditioned on environment feedback as a self-teacher to derive dense credit\nassignment signals. GRPO+OPSD is a straightforward combination baseline that performs model updates\n10"
+    },
+    {
+      "aiAssistanceScore": 0.18841529,
+      "confidence": "Medium",
+      "endIndex": 184,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "Table 2 Multimodal reasoning results on the Qwen3-VL-8B-Instruct model. Bold indicates the best result among all\nmodels. Avg. is computed over the five selected benchmarks.\nMethod MMMU"
+    },
+    {
+      "aiAssistanceScore": 0.15716152,
+      "confidence": "Medium",
+      "endIndex": 1314,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 183,
+      "text": "U MathVista MathVision ZeroBench Wemath Avg.\nBase LLM 62.44 73.80 47.37 19.76 54.10 51.49\nGRPO 65.11 76.20 48.82 22.60 56.57 53.86\nOPSD 63.82 75.10 47.53 21.06 54.95 52.49\nSDPO 65.11 74.00 47.27 25.15 52.19 \n52.74\nGRPO+OPSD 63.22 75.90 48.52 22.16 54.76 52.91\nRLSD (Ours) 67.22 78.10 52.73 24.85 58.00 56.18\n(a) Training reward dynamics comparison. (b) Training entropy dynamics comparison. (c) Clip ratios on credit assignment\nFigure 5 Training dynamics on the multimodel reasoning tasks.\nby linearly interpolating the GRPO and OPSD objectives with a tuned weighting coefficient, aiming to\nsimultaneously leverage sparse environment rewards and dense self-distillation signals. We also include the\nBase LLM (i.e., Qwen3-VL-8B-Instruct without any post-training) as a reference to quantify the overall gains\nfrom post-training.\nImplementation Details. We implement our method based on the VERL [20] and EasyR1 [21] frameworks.\nDuring training, the model\u2019s maximum context length is set to 8192, with a maximum prompt length of\n4096 and a maximum response length of 4096. The same prompt and response length settings are used\nconsis"
+    },
+    {
+      "aiAssistanceScore": 0.23218228,
+      "confidence": "Medium",
+      "endIndex": 2994,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1313,
+      "text": "stently during both training and evaluation. For GRPO, GRPO+OPSD, and RLSD, the learning rate\nis fixed at 1 \u00d7 10\n\u22126\n; for OPSD and SDPO, the learning rate is set to 1 \u00d7 10\n\u22125 \nfollowing their original\nimplementations. The training batch size is set to 256, and for each prompt, we sample 8 rollouts with a\nsampling temperature of 1.0. For all GRPO-based methods, we use clipping thresholds of \u03f5\nlow \n= 0.2 and\n\u03f5\nhigh \n= 0.28, and omit both the KL penalty loss and entropy regularization loss from the objective function.\nThe hyperparameter \u03bb in our RLSD is initialized at 0.5 and linearly decayed to 0 over the first 50 training\nsteps, and \u03f5\nw \nis set to 0.2. To maintain a stable self-distillation signal, the teacher model parameters are\nsynchronized with the student model every 10 training steps and kept frozen in between. Regarding the\nprivileged information required by different methods: OPSD requires verified reasoning traces, for which we\nuse reasoning trajectories distilled from Qwen3-VL-235B-A22B-Thinking and verified as correct within the\nMMFineReason-123K dataset; SDPO follows its original setting in the paper, using a successful previous\nrollout as privileged context; RLSD requires only the final ground-truth answer without any reasoning\ntrace, making it the least demanding in terms of privileged information. All experiments are conducted on 4\ncompute nodes, each equipped with 8 NVIDIA H200 140GB GPUs.\n5.2 Experimental Results\n5.2.1 Main Results\nTable 2 presents the evaluation results across five multimodal reasoning benchmarks. RLSD achieves the\nhighest average accuracy in both maximum length settings (56.18% at 4K and 52.78% at 2K), outperforming\n11"
+    },
+    {
+      "aiAssistanceScore": 0.23218228,
+      "confidence": "Medium",
+      "endIndex": 47,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "\u274c\n\u2705\nFigure 6 Token-level credit heatmaps under "
+    },
+    {
+      "aiAssistanceScore": 0.4994319,
+      "confidence": "Medium",
+      "endIndex": 2174,
+      "label": "AI-Generated",
+      "pageIndex": 11,
+      "startIndex": 46,
+      "text": " RLSD for two multimodal reasoning examples. Top: in a correct\ntrajectory, larger credit is concentrated on the decisive counting and subtraction steps. Bottom: in an incorrect\ntrajectory, the strongest blame is assigned to the misread bar-model relation and the derived wrong answer. Green\ndenotes larger token-level credit magnitude and red denotes smaller token-level credit magnitude.\nthe Base LLM by 4.69% and GRPO by 2.32% on average under the 4K setting. Compared to GRPO, RLSD\nbenefits from dense token-level credit assignment, yielding notable gains on challenging mathematical datasets\nsuch as MathVista (+1.9%) and MathVision (+3.91%), where fine-grained discrimination of reasoning steps\nmatters most. RLSD also consistently outperforms the self-distillation baselines (OPSD and SDPO) in\naverage accuracy. This empirical gap is consistent with our theoretical diagnosis in Section 3.2: while\nOPSD suffers from privileged information leakage due to distribution matching under information asymmetry,\nRLSD extracts the dense teacher signal while anchoring the update direction to the verifier reward, thereby\nproducing more robust reasoning improvements.\n5.2.2 Training Dynamics\nFigure 5 illustrates the training dynamics over 200 optimization steps. As shown in Figure 5(a), RLSD\ndemonstrates a steeper initial ascent and converges to a higher accuracy reward ceiling compared to standard\nGRPO, while avoiding the late-stage performance collapse observed in OPSD. Figure 5(b) reveals that GRPO\nsuffers from rapid entropy collapse due to its uniform sequence-level reward, whereas RLSD maintains a\nconsistently higher entropy level by selectively strengthening critical reasoning tokens without uniformly\nsuppressing alternatives at every position. Finally, Figure 5(c) confirms that the clipped credit assignment\nmechanism is actively engaged, with clip ratios stabilizing around 3%\u20136%, successfully bounding the teacher\u2019s\nper-token influence and acting as a trust-region constraint analogous to the importance ratio clipping in\nPPO/GRPO.\n5.2.3 Case Study\nFigure 6 provides a qualitative view of how RLSD redistribute"
+    },
+    {
+      "aiAssistanceScore": 0.5167966,
+      "confidence": "Low",
+      "endIndex": 2430,
+      "label": "AI-Generated",
+      "pageIndex": 11,
+      "startIndex": 2173,
+      "text": "es sequence-level reward to the token level.\nIn the correct cube-counting example, RLSD assigns larger credit to the tokens that actually determine\ncorrectness, such as identifying the relevant yellow cube and executing the final subtraction, while down-\n12"
+    },
+    {
+      "aiAssistanceScore": 0.5167966,
+      "confidence": "Low",
+      "endIndex": 2009,
+      "label": "AI-Generated",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "weighting generic narration like \u201cLooking at the image, I see . . . \u201d. In contrast, in the incorrect bar-model\nexample, RLSD concentrates the strongest blame on the misread relation \u201c3x = 28.5\u201d and the derived wrong\nanswer \u201cx = 9.5\u201d, whereas neutral setup tokens receive comparatively smaller penalties.\nThis behavior is consistent with the design goal of RLSD. The environment reward still determines whether\na trajectory is reinforced or penalized, but the privileged teacher modulates the relative magnitude of token-\nlevel credit according to each token\u2019s contribution to the final outcome. The resulting update pattern is\nneither uniform like GRPO nor distribution matching like OPSD; instead, it acts as targeted token-level\ncredit assignment anchored to verifier-grounded correctness.\n6 Related Work\n6.1 Credit Assignment in RLVR\nReinforcement learning with verifiable rewards (RLVR) methods such as GRPO [1] have become a standard\nparadigm for post-training reasoning models because they optimize against automatically checkable outcomes\nwithout human preference labels [1, 2]. Their central limitation is that the verifier provides a sequence-level\nsignal, so every token in a rollout inherits the same advantage regardless of whether it corresponds to a pivotal\ndeduction or a stylistic filler. This makes long-horizon reasoning fundamentally a credit assignment problem.\nA common response is to introduce process reward models (PRMs) or step-level value estimators that score\nintermediate reasoning steps [22\u201327]. Some of these methods rely on costly human step annotations, while\nothers replace them with automated or implicit supervision; in either case, they require auxiliary reward\nmodeling and extra computation beyond the base policy.\nMore recent work seeks fine-grained credit assignment while staying strictly within a verifier-only RLVR\npipeline. These methods reshape token-level updates using model-internal proxies such as entropy, uncer-\ntainty, key-token statistics, attention dynami"
+    },
+    {
+      "aiAssistanceScore": 0.32684788,
+      "confidence": "Low",
+      "endIndex": 4246,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2008,
+      "text": "ics, or outcome sensitivity [10, 11, 28\u201333]. While they show that\nuniform sequence-level advantages are unnecessarily coarse, they estimate token importance entirely from\nintrinsic heuristics. Our method is complementary in motivation yet fundamentally different in mechanism:\nrather than relying on heuristic proxies, we extract rigorous token-level assessments via self-distillation under\nprivileged context, while keeping the update direction anchored to the verifier reward.\n6.2 On-Policy Distillation\nDistillation has also been explored as an alternative source of dense token-level supervision for reasoning\nmodels. In on-policy distillation (OPD), a stronger teacher evaluates the student\u2019s own rollouts and provides\ntoken-level targets along on-policy trajectories [4, 5]; recent reports suggest that strong teacher-guided distil-\nlation can even rival or complement RL-based post-training [6]. However, standard OPD requires maintaining\nan external, typically larger teacher throughout training. To eliminate this overhead, recent self-distillation\nmethods let the same model act as both student and teacher, with the teacher conditioned on privileged in-\nformation such as reference solutions or verifier feedback [7, 8]. Closely related on-policy distillation variants\nhave also been explored for continual learning from demonstrations, context internalization, and reasoning\ncompression, where the teacher is conditioned on demonstrations, auxiliary context, or conciseness instruc-\ntions [34\u201336].\nThe shared design choice across these methods is to retain a distribution-matching objective between a\nprivileged or context-conditioned teacher and a less-informed student. Our work starts from a similar setting\nbut departs from that paradigm. We show that when the teacher\u2019s prediction depends on latent information\nunavailable to the student, matching the teacher distribution becomes structurally ill-posed and can induce\nprivileged information leakage and unstable long-run training. RLSD therefore does not use the teacher as\na generative target; instead, it repurposes the privileged discrepancy only as a scalar multiplier for credit\nassignment, decoupling dense token-level magnitude from the optimization direction.\n13"
+    },
+    {
+      "aiAssistanceScore": 0.32684788,
+      "confidence": "Low",
+      "endIndex": 316,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "7 Conclusion\nIn this work, we identified the fundamental limitation of on-policy self-distillation (OPSD): the information\nasymmetry between teacher and student renders the distribution-matching objective structurally ill-posed,\ninducing an irreducible mutual information gap that drives privileged information leaka"
+    },
+    {
+      "aiAssistanceScore": 0.2620325,
+      "confidence": "Low",
+      "endIndex": 2221,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 315,
+      "text": "age and progressive\nperformance degradation. We formalized this deficiency at both the objective level and the gradient level,\nexplaining the empirically observed pattern of early gains followed by systematic collapse. Based on this\nanalysis, we proposed RLSD, a new training paradigm that moves beyond distribution matching between the\nprior and posterior: instead of forcing the student to imitate the teacher\u2019s conditional distribution, RLSD\nrepurposes the discrepancy between them to provide fine-grained control over per-token update magnitudes,\nwhile anchoring the update directions to the environment reward. This design simultaneously inherits the rich,\ntoken-level supervision of OPSD and the reliable environmental grounding of RLVR, unifying the strengths\nof both paradigms within a single framework.\n8 Limitations and Future Work\nThis paper focuses primarily on the theoretical analysis of OPSD\u2019s structural limitations and the motivation\nand validation of the RLSD paradigm. To enable faster release, this version provides limited experiments,\nvalidating around multimodal reasoning scenarios. However, we have preliminarily validated RLSD across a\nbroader range of settings, including pure text reasoning, video understanding, and additional model families\nbeyond the Qwen series, and observed consistent gains. We will include these in the forthcoming version.\nReferences\n[1] Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang,\nY. K. Li, Y. Wu, and Daya Guo. Deepseekmath: Pushing the limits of mathematical reasoning in open language\nmodels, 2024. URL https://arxiv.org/abs/2402.03300.\n[2] DeepSeek-AI, Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Ruoyu Zhang, Runxin Xu, Qihao Zhu,\nShirong Ma, Peiyi Wang, Xiao Bi, Xiaokang Zhang, Xingkai Yu, Yu Wu, Z. F. Wu, Zhibin Gou, Zhihong Shao,\nZhuoshu Li, Ziyi Gao, Aixin Liu, Bing Xue, Bing"
+    },
+    {
+      "aiAssistanceScore": 0.26513028,
+      "confidence": "Medium",
+      "endIndex": 3432,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 2220,
+      "text": "gxuan Wang, Bochao Wu, Bei Feng, Chengda Lu, Chenggang\nZhao, Chengqi Deng, Chenyu Zhang, Chong Ruan, Damai Dai, Deli Chen, Dongjie Ji, Erhang Li, Fangyun Lin,\nFucong Dai, Fuli Luo, Guangbo Hao, Guanting Chen, Guowei Li, H. Zhang, Han Bao, Hanwei Xu, Haocheng\nWang, Honghui Ding, Huajian Xin, Huazuo Gao, Hui Qu, Hui Li, Jianzhong Guo, Jiashi Li, Jiawei Wang,\nJingchang Chen, Jingyang Yuan, Junjie Qiu, Junlong Li, J. L. Cai, Jiaqi Ni, Jian Liang, Jin Chen, Kai Dong,\nKai Hu, Kaige Gao, Kang Guan, Kexin Huang, Kuai Yu, Lean Wang, Lecong Zhang, Liang Zhao, Litong Wang,\nLiyue Zhang, Lei Xu, Leyi Xia, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Meng Li, Miaojun Wang,\nMingming Li, Ning Tian, Panpan Huang, Peng Zhang, Qiancheng Wang, Qinyu Chen, Qiushi Du, Ruiqi Ge,\nRuisong Zhang, Ruizhe Pan, Runji Wang, R. J. Chen, R. L. Jin, Ruyi Chen, Shanghao Lu, Shangyan Zhou,\nShanhuang Chen, Shengfeng Ye, Shiyu Wang, Shuiping Yu, Shunfeng Zhou, Shuting Pan, S. S. Li, Shuang Zhou,\nShaoqing Wu, Shengfeng Ye, Tao Yun, Tian Pei, Tianyu Sun, T. Wang, Wangding Zeng, Wanjia Zhao, Wen\nLiu, Wenfeng Liang, Wenjun Gao, Wenqin Yu, Wentao Zhang, W. L. Xiao, Wei An, Xiaodong Liu, Xiaohan\nWang, Xiaokang Chen, Xiaotao Nie, Xin C"
+    },
+    {
+      "aiAssistanceScore": 0.3120094,
+      "confidence": "Medium",
+      "endIndex": 4466,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 3431,
+      "text": "Cheng, Xin Liu, Xin Xie, Xingchao Liu, Xinyu Yang, Xinyuan Li,\nXuecheng Su, Xuheng Lin, X. Q. Li, Xiangyue Jin, Xiaojin Shen, Xiaosha Chen, Xiaowen Sun, Xiaoxiang Wang,\nXinnan Song, Xinyi Zhou, Xianzu Wang, Xinxia Shan, Y. K. Li, Y. Q. Wang, Y. X. Wei, Yang Zhang, Yanhong\nXu, Yao Li, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yi Yu, Yichao Zhang, Yifan Shi, Yiliang Xiong, Ying He,\nYishi Piao, Yisong Wang, Yixuan Tan, Yiyang Ma, Yiyuan Liu, Yongqiang Guo, Yuan Ou, Yuduan Wang, Yue\nGong, Yuheng Zou, Yujia He, Yunfan Xiong, Yuxiang Luo, Yuxiang You, Yuxuan Liu, Yuyang Zhou, Y. X. Zhu,\nYanhong Xu, Yanping Huang, Yaohui Li, Yi Zheng, Yuchen Zhu, Yunxian Ma, Ying Tang, Yukun Zha, Yuting\nYan, Z. Z. Ren, Zehui Ren, Zhangli Sha, Zhe Fu, Zhean Xu, Zhenda Xie, Zhengyan Zhang, Zhewen Hao, Zhicheng\nMa, Zhigang Yan, Zhiyu Wu, Zihui Gu, Zijia Zhu, Zijun Liu, Zilin Li, Ziwei Xie, Ziyang Song, Zizheng Pan, Zhen\nHuang, Zhipeng Xu, Zhongyu Zhang, and Zhen Zhang. Deepseek-r1: Incentivizing reasoning capability in llms\nvia reinforcement learning, "
+    },
+    {
+      "aiAssistanceScore": 0.13968718,
+      "confidence": "Medium",
+      "endIndex": 4818,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 4465,
+      "text": " 2025. URL https://arxiv.org/abs/2501.12948.\n[3] Kimi Team, Tongtong Bai, Yifan Bai, Yiping Bao, S. H. Cai, Yuan Cao, Y. Charles, H. S. Che, Cheng Chen,\nGuanduo Chen, Huarong Chen, Jia Chen, Jiahao Chen, Jianlong Chen, Jun Chen, Kefan Chen, Liang Chen,\nRuijue Chen, Xinhao Chen, Yanru Chen, Yanxu Chen, Yicun Chen, Yimin Chen, Yingjiang Chen, Yuankun\n14"
+    },
+    {
+      "aiAssistanceScore": 0.13968718,
+      "confidence": "Medium",
+      "endIndex": 895,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "Chen, Yujie Chen, Yutian Chen, Zhirong Chen, Ziwei Chen, Dazhi Cheng, Minghan Chu, Jialei Cui, Jiaqi Deng,\nMuxi Diao, Hao Ding, Mengfan Dong, Mengnan Dong, Yuxin Dong, Yuhao Dong, Angang Du, Chenzhuang Du,\nDikang Du, Lingxiao Du, Yulun Du, Yu Fan, Shengjun Fang, Qiulin Feng, Yichen Feng, Garimugai Fu, Kelin\nFu, Hongcheng Gao, Tong Gao, Yuyao Ge, Shangyi Geng, Chengyang Gong, Xiaochen Gong, Zhuoma Gongque,\nQizheng Gu, Xinran Gu, Yicheng Gu, Longyu Guan, Yuanying Guo, Xiaoru Hao, Weiran He, Wenyang He,\nYunjia He, Chao Hong, Hao Hu, Jiaxi Hu, Yangyang Hu, Zhenxing Hu, Ke Huang, Ruiyuan Huang, Weixiao\nHuang, Zhiqi Huang, Tao Jiang, Zhejun Jiang, Xinyi Jin, Yu Jing, Guokun Lai, Aidi Li, C. Li, Cheng Li, Fang Li,\nGuanghe Li, Guanyu Li, Haitao Li, Haoyang Li, Jia Li, Jingwei Li, Junxiong Li, Lincan Li, Mo Li, Weihong Li,\nWentao Li, Xinhang Li, Xinhao Li, Yang Li, Yanhao Li, Yiwei Li, Yuxia"
+    },
+    {
+      "aiAssistanceScore": 0.21640904,
+      "confidence": "Low",
+      "endIndex": 2143,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 894,
+      "text": "ao Li, Zhaowei Li, Zheming Li, Weilong\nLiao, Jiawei Lin, Xiaohan Lin, Zhishan Lin, Zichao Lin, Cheng Liu, Chenyu Liu, Hongzhang Liu, Liang Liu,\nShaowei Liu, Shudong Liu, Shuran Liu, Tianwei Liu, Tianyu Liu, Weizhou Liu, Xiangyan Liu, Yangyang Liu,\nYanming Liu, Yibo Liu, Yuanxin Liu, Yue Liu, Zhengying Liu, Zhongnuo Liu, Enzhe Lu, Haoyu Lu, Zhiyuan\nLu, Junyu Luo, Tongxu Luo, Yashuo Luo, Long Ma, Yingwei Ma, Shaoguang Mao, Yuan Mei, Xin Men, Fanqing\nMeng, Zhiyong Meng, Yibo Miao, Minqing Ni, Kun Ouyang, Siyuan Pan, Bo Pang, Yuchao Qian, Ruoyu Qin,\nZeyu Qin, Jiezhong Qiu, Bowen Qu, Zeyu Shang, Youbo Shao, Tianxiao Shen, Zhennan Shen, Juanfeng Shi,\nLidong Shi, Shengyuan Shi, Feifan Song, Pengwei Song, Tianhui Song, Xiaoxi Song, Hongjin Su, Jianlin Su,\nZhaochen Su, Lin Sui, Jinsong Sun, Junyao Sun, Tongyu Sun, Flood Sung, Yunpeng Tai, Chuning Tang, Heyi\nTang, Xiaojuan Tang, Zhengyang Tang, Jiawen Tao, Shiyuan Teng, Chaoran Tian, Pengfei Tian, Ao Wang,\nBowen Wang, Chensi Wang, Chuang Wang, Congcong Wang, Dingkun Wang, Dinglu Wang, Dongliang Wang,\nFeng Wang, Hailong Wang, Haiming Wang, Hengzhi Wang, Huaqing Wang, Hui Wang, Jiahao Wang, Jinhong\nWang, Jiuzheng Wang, Kaixin Wang, Linian Wang, Qibin Wang, Shengjie Wang, Shuyi Wang, Si Wang,"
+    },
+    {
+      "aiAssistanceScore": 0.19152506,
+      "confidence": "Low",
+      "endIndex": 3391,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 2142,
+      "text": ", Wei\nWang, Xiaochen Wang, Xinyuan Wang, Yao Wang, Yejie Wang, Yipu Wang, Yiqin Wang, Yucheng Wang, Yuzhi\nWang, Zhaoji Wang, Zhaowei Wang, Zhengtao Wang, Zhexu Wang, Zihan Wang, Zizhe Wang, Chu Wei, Ming\nWei, Chuan Wen, Zichen Wen, Chengjie Wu, Haoning Wu, Junyan Wu, Rucong Wu, Wenhao Wu, Yuefeng Wu,\nYuhao Wu, Yuxin Wu, Zijian Wu, Chenjun Xiao, Jin Xie, Xiaotong Xie, Yuchong Xie, Yifei Xin, Bowei Xing,\nBoyu Xu, Jianfan Xu, Jing Xu, Jinjing Xu, L. H. Xu, Lin Xu, Suting Xu, Weixin Xu, Xinbo Xu, Xinran Xu,\nYangchuan Xu, Yichang Xu, Yuemeng Xu, Zelai Xu, Ziyao Xu, Junjie Yan, Yuzi Yan, Guangyao Yang, Hao\nYang, Junwei Yang, Kai Yang, Ningyuan Yang, Ruihan Yang, Xiaofei Yang, Xinlong Yang, Ying Yang, Yi Yang,\nYi Yang, Zhen Yang, Zhilin Yang, Zonghan Yang, Haotian Yao, Dan Ye, Wenjie Ye, Zhuorui Ye, Bohong Yin,\nChengzhen Yu, Longhui Yu, Tao Yu, Tianxiang Yu, Enming Yuan, Mengjie Yuan, Xiaokun Yuan, Yang Yue,\nWeihao Zeng, Dunyuan Zha, Haobing Zhan, Dehao Zhang, Hao Zhang, Jin Zhang, Puqi Zhang, Qiao Zhang,\nRui Zhang, Xiaobin Zhang, Y. Zhang, Yadong Zhang, Yangkun Zhang, Yichi Zhang, Yizhi Zhang, Yongting\nZhang, Yu Zhang, Yushun Zhang, Yutao Zhang, Yutong Zhang, Zheng Zhang, Chenguang Zhao, Feifan Zhao,\nJinxiang Zhao, Shuai Zhao, Xiangyu "
+    },
+    {
+      "aiAssistanceScore": 0.10480149,
+      "confidence": "Medium",
+      "endIndex": 4629,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 3390,
+      "text": " Zhao, Yikai Zhao, Zijia Zhao, Huabin Zheng, Ruihan Zheng, Shaojie Zheng,\nTengyang Zheng, Junfeng Zhong, Longguang Zhong, Weiming Zhong, M. Zhou, Runjie Zhou, Xinyu Zhou, Zaida\nZhou, Jinguo Zhu, Liya Zhu, Xinhao Zhu, Yuxuan Zhu, Zhen Zhu, Jingze Zhuang, Weiyu Zhuang, Ying Zou, and\nXinxing Zu. Kimi k2.5: Visual agentic intelligence, 2026. URL https://arxiv.org/abs/2602.02276.\n[4] Rishabh Agarwal, Nino Vieillard, Yongchao Zhou, Piotr Stanczyk, Sabela Ramos Garea, Matthieu Geist, and\nOlivier Bachem. On-policy distillation of language models: Learning from self-generated mistakes. In The\nTwelfth International Conference on Learning Representations, 2024. URL https://openreview.net/forum?\nid=3zKtaqxLhW.\n[5] Kevin Lu and Thinking Machines Lab. On-policy distillation. \nThinking Machines Lab: Connectionism, 2025.\ndoi: 10.64434/tml.20251026. https://thinkingmachines.ai/blog/on-policy-distillation.\n[6] Core Team, Bangjun Xiao, Bingquan Xia, Bo Yang, Bofei Gao, Bowen Shen, Chen Zhang, Chenhong He, Chiheng\nLou, Fuli Luo, Gang Wang, Gang Xie, Hailin Zhang, Hanglong Lv, Hanyu Li, Heyu Chen, Hongshen Xu, Houbin\nZhang, Huaqiu Liu, Jiangshan Duo, Jianyu Wei, Jiebao Xiao, Jinhao Dong, Jun Shi, Junhao Hu, Kainan Bao,\nKang Zhou, Lei Li, Li"
+    },
+    {
+      "aiAssistanceScore": 0.09958595,
+      "confidence": "Medium",
+      "endIndex": 5737,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 4628,
+      "text": "iang Zhao, Linghao Zhang, Peidian Li, Qianli Chen, Shaohui Liu, Shihua Yu, Shijie Cao,\nShimao Chen, Shouqiu Yu, Shuo Liu, Tianling Zhou, Weijiang Su, Weikun Wang, Wenhan Ma, Xiangwei Deng,\nBohan Mao, Bowen Ye, Can Cai, Chenghua Wang, Chengxuan Zhu, Chong Ma, Chun Chen, Chunan Li, Dawei\nZhu, Deshan Xiao, Dong Zhang, Duo Zhang, Fangyue Liu, Feiyu Yang, Fengyuan Shi, Guoan Wang, Hao Tian,\nHao Wu, Heng Qu, Hongfei Yi, Hongxu An, Hongyi Guan, Xing Zhang, Yifan Song, Yihan Yan, Yihao Zhao,\nYingchun Lai, Yizhao Gao, Yu Cheng, Yuanyuan Tian, Yudong Wang, Zhen Tang, Zhengju Tang, Zhengtao Wen,\nZhichao Song, Zhixian Zheng, Zihan Jiang, Jian Wen, Jiarui Sun, Jiawei Li, Jinlong Xue, Jun Xia, Kai Fang,\nMenghang Zhu, Nuo Chen, Qian Tu, Qihao Zhang, Qiying Wang, Rang Li, Rui Ma, Shaolei Zhang, Shengfan\nWang, Shicheng Li, Shuhao Gu, Shuhuai Ren, Sirui Deng, Tao Guo, Tianyang Lu, Weiji Zhuang, Weikang Zhang,\nWeimin Xiong, Wenshan Huang, Wenyu Yang, Xin Zhang, Xing Yong, Xu Wang, Xueyang Xie, Yilin Jiang,\nYixin Yang, Yongzhe He, Yu Tu, Yuanliang Dong, Yuchen Liu, Yue Ma, Yue Yu, Yuxing Xiang, Zhaojun Huang,\n15"
+    },
+    {
+      "aiAssistanceScore": 0.09958595,
+      "confidence": "Medium",
+      "endIndex": 209,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "Zhenru Lin, Zhipeng Xu, Zhiyang Chen, Zhonghua Deng, Zihan Zhang, and Zihao Yue. Mimo-v2-flash technical\nreport, 2026. URL https://arxiv.org/abs/2601.02780.\n[7] Siyan Zhao, Zhihui Xie, Mengchen Liu, Jing Huang"
+    },
+    {
+      "aiAssistanceScore": 0.064100124,
+      "confidence": "Medium",
+      "endIndex": 1599,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 208,
+      "text": "g, Guan Pang, Feiyu Chen, and Aditya Grover. Self-distilled\nreasoner: On-policy self-distillation for large language models, 2026. URL https://arxiv.org/abs/2601.18734.\n[8] Jonas H\u00fcbotter, Frederike L\u00fcbeck, Lejs Behric, Anton Baumann, Marco Bagatella, Daniel Marta, Ido Hakimi,\nIdan Shenfeld, Thomas Kleine Buening, Carlos Guestrin, and Andreas Krause. Reinforcement learning via\nself-distillation, 2026. URL https://arxiv.org/abs/2601.20802.\n[9] John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. Proximal policy optimization\nalgorithms, 2017. URL https://arxiv.org/abs/1707.06347.\n[10] Can Xie, Ruotong Pan, Xiangyu Wu, Yunfei Zhang, Jiayi Fu, Tingting Gao, and Guorui Zhou. Unlocking\nexploration in rlvr: Uncertainty-aware advantage shaping for deeper reasoning. arXiv preprint arXiv:2510.10649,\n2025.\n[11] Ziheng Li, Liu Kang, Feng Xiao, Luxi Xing, Qingyi Si, Zhuoran Li, Weikang Gong, Deqing Yang, Yanghua Xiao,\nand Hongcheng Guo. Outcome-grounded advantage reshaping for fine-grained credit assignment in mathematical\nreasoning. arXiv preprint arXiv:2601.07408, 2026.\n[12] Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization, 2017. URL https://arxiv.\norg/abs/1412.6980.\n[13] Honglin Lin, Zheng Liu, Yun Zhu, Chonghan Qin, Juekai Lin, Xiaoran Shang, Conghui He, Wentao Zhang, and\nLijun Wu. Mmfinereason: Closing the multimodal reasoni"
+    },
+    {
+      "aiAssistanceScore": 0.03351151,
+      "confidence": "High",
+      "endIndex": 2782,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 1598,
+      "text": "ing gap via open data-centric methods, 2026. URL\nhttps://arxiv.org/abs/2601.21821.\n[14] Xiang Yue, Yuansheng Ni, Kai Zhang, Tianyu Zheng, Ruoqi Liu, Ge Zhang, Samuel Stevens, Dongfu Jiang,\nWeiming Ren, Yuxuan Sun, Cong Wei, Botao Yu, Ruibin Yuan, Renliang Sun, Ming Yin, Boyuan Zheng, Zhenzhu\nYang, Yibo Liu, Wenhao Huang, Huan Sun, Yu Su, and Wenhu Chen. Mmmu: A massive multi-discipline\nmultimodal understanding and reasoning benchmark for expert agi, 2024. URL https://arxiv.org/abs/2311.\n16502.\n[15] Pan Lu, Hritik Bansal, Tony Xia, Jiacheng Liu, Chunyuan Li, Hannaneh Hajishirzi, Hao Cheng, Kai-Wei Chang,\nMichel Galley, and Jianfeng Gao. Mathvista: Evaluating mathematical reasoning of foundation models in visual\ncontexts, 2024. URL https://arxiv.org/abs/2310.02255.\n[16] Ke Wang, Junting Pan, Weikang Shi, Zimu Lu, Mingjie Zhan, and Hongsheng Li. Measuring multimodal math-\nematical reasoning with math-vision dataset, 2024. URL https://arxiv.org/abs/2402.14804.\n[17] Jonathan Roberts, Mohammad Reza Taesiri, Ansh Sharma, Akash Gupta, Samuel Roberts, Ioana Croitoru,\nSimion-Vlad Bogolin, Jialu Tang, Florian Langer, Vyas Raina, Vatsal Raina, Hanyi Xiong, Vishaal Udandarao,\nJi"
+    },
+    {
+      "aiAssistanceScore": 0.047019057,
+      "confidence": "Medium",
+      "endIndex": 3926,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 2781,
+      "text": "ingyi Lu, Shiyang Chen, Sam Purkis, Tianshuo Yan, Wenye Lin, Gyungin Shin, Qiaochu Yang, Anh Totti\nNguyen, David I. Atkinson, Aaditya Baranwal, Alexandru Coca, Mikah Dang, Sebastian Dziadzio, Jakob D.\nKunz, Kaiqu Liang, Alexander Lo, Brian Pulfer, Steven Walton, Charig Yang, Kai Han, and Samuel Albanie.\nZerobench: An impossible visual benchmark for contemporary large multimodal models, 2025. URL https:\n//arxiv.org/abs/2502.09696.\n[18] Runqi Qiao, Qiuna Tan, Guanting Dong, Minhui Wu, Chong Sun, Xiaoshuai Song, Zhuoma GongQue, Shanglin\nLei, Zhe Wei, Miaoxuan Zhang, Runfeng Qiao, Yifan Zhang, Xiao Zong, Yida Xu, Muxi Diao, Zhimin Bao,\nChen Li, and Honggang Zhang. We-math: Does your large multimodal model achieve human-like mathematical\nreasoning?, 2024. URL https://arxiv.org/abs/2407.01284.\n[19] Shuai Bai, Yuxuan Cai, Ruizhe Chen, Keqin Chen, Xionghui Chen, Zesen Cheng, Lianghao Deng, Wei Ding,\nChang Gao, Chunjiang Ge, Wenbin Ge, Zhifang Guo, Qidong Huang, Jie Huang, Fei Huang, Binyuan Hui,\nShutong Jiang, Zhaohai Li, Mingsheng Li, Mei Li, Kaixin Li, Zicheng Lin, Junyang Lin, Xuejing Liu, Jiawei Liu,\nChenglong Liu, Yang Liu, Dayihe"
+    },
+    {
+      "aiAssistanceScore": 0.04576169,
+      "confidence": "Medium",
+      "endIndex": 4440,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 3925,
+      "text": "eng Liu, Shixuan Liu, Dunjie Lu, Ruilin Luo, Chenxu Lv, Rui Men, Lingchen\nMeng, Xuancheng Ren, Xingzhang Ren, Sibo Song, Yuchong Sun, Jun Tang, Jianhong Tu, Jianqiang Wan, Peng\nWang, Pengfei Wang, Qiuyue Wang, Yuxuan Wang, Tianbao Xie, Yiheng Xu, Haiyang Xu, Jin Xu, Zhibo Yang,\nMingkun Yang, Jianxin Yang, An Yang, Bowen Yu, Fei Zhang, Hang Zhang, Xi Zhang, Bo Zheng, Humen\nZhong, Jingren Zhou, Fan Zhou, Jing Zhou, Yuanzhi Zhu, and Ke Zhu. Qwen3-vl technical report, 2025. URL\nhttps://arxiv.org/abs/2511.21631.\n16"
+    },
+    {
+      "aiAssistanceScore": 0.04576169,
+      "confidence": "Medium",
+      "endIndex": 784,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "[20] Guangming Sheng, Chi Zhang, Zilingfeng Ye, Xibin Wu, Wang Zhang, Ru Zhang, Yanghua Peng, Haibin Lin,\nand Chuan Wu. Hybridflow: A flexible and efficient rlhf framework. In Proceedings of the Twentieth European\nConference on Computer Systems, page 1279\u20131297. ACM, March 2025. doi: 10.1145/3689031.3696075. URL\nhttp://dx.doi.org/10.1145/3689031.3696075.\n[21] Yaowei Zheng, Junting Lu, Shenzhi Wang, Zhangchi Feng, Dongdong Kuang, Yuwen Xiong, and Richong Zhang.\nEasyr1: An efficient, scalable, multi-modality rl training framework. https://github.com/hiyouga/EasyR1,\n2025.\n[22] Hunter Lightman, Vineet Kosaraju, Yuri Burda, Harrison Edwards, Bowen Baker, Teddy Lee, Jan Leike, John\nSchulman, Ilya Sutskever, and Karl Cobbe. Let\u2019s verify step by step. In The Twelfth International Co"
+    },
+    {
+      "aiAssistanceScore": 0.10636357,
+      "confidence": "Medium",
+      "endIndex": 2211,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 783,
+      "text": "onference\non Learning Representations, 2024. URL https://openreview.net/forum?id=v8L0pN6EOi.\n[23] Peiyi Wang, Lei Li, Zhihong Shao, Runxin Xu, Damai Dai, Yifei Li, Deli Chen, Yu Wu, and Zhifang Sui. Math-\nshepherd: Verify and reinforce llms step-by-step without human annotations. In Proceedings of the 62nd Annual\nMeeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 9426\u20139439, 2024.\n[24] Liangchen Luo, Yinxiao Liu, Rosanne Liu, Samrat Phatale, Meiqi Guo, Harsh Lara, Yunxuan Li, Lei Shu, Yun\nZhu, Lei Meng, et al. Improve mathematical reasoning in language models by automated process supervision.\narXiv preprint arXiv:2406.06592, 2024.\n[25] Guoxin Chen, Minpeng Liao, Chengxi Li, and Kai Fan. Step-level value preference optimization for mathematical\nreasoning. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 7889\u20137903, 2024.\n[26] Lunjun Zhang, Arian Hosseini, Hritik Bansal, Mehran Kazemi, Aviral Kumar, and Rishabh Agarwal. Generative\nverifiers: Reward modeling as next-token prediction. arXiv preprint arXiv:2408.15240, 2024.\n[27] Ganqu Cui, Lifan Yuan, Zefan Wang, Hanbin Wang, Yuchen Zhang, Jiacheng Chen, Wendi Li, Bingxiang He,\nYuchen Fan, Tianyu Yu, et al. Process reinforcement through implicit rewards. arXiv preprint arXiv:2502.01456,\n2025.\n[28] Daixuan Cheng, Shaohan Huang, Xuekai Zhu, Bo Dai, Xin Zhao, Zhenliang Zhang, and Furu Wei. Reasonin"
+    },
+    {
+      "aiAssistanceScore": 0.12717241,
+      "confidence": "Medium",
+      "endIndex": 3604,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 2210,
+      "text": "ng\nwith exploration: An entropy perspective. In Proceedings of the AAAI Conference on Artificial Intelligence,\nvolume 40, pages 30377\u201330385, 2026.\n[29] Shenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xiong-Hui Chen, Jianxin\nYang, Zhenru Zhang, et al. Beyond the 80/20 rule: High-entropy minority tokens drive effective reinforcement\nlearning for llm reasoning. In The Thirty-ninth Annual Conference on Neural Information Processing Systems.\n[30] Minghan Chen, Guikun Chen, Wenguan Wang, and Yi Yang. Seed-grpo: Semantic entropy enhanced grpo for\nuncertainty-aware policy optimization. arXiv preprint arXiv:2505.12346, 2025.\n[31] Wei Sun, Wen Yang, Pu Jian, Qianlong Du, Fuwei Cui, Shuo Ren, and Jiajun Zhang. Ktae: A model-free\nalgorithm to key-tokens advantage estimation in mathematical reasoning, 2025. URL https://arxiv.org/abs/\n2505.16826.\n[32] Yang Li, Zhichen Dong, Yuhan Sun, Weixun Wang, Shaopan Xiong, Yijia Luo, Jiashun Liu, Han Lu, Jiamang\nWang, Wenbo Su, et al. Attention illuminates llm reasoning: The preplan-and-anchor rhythm enables fine-grained\npolicy optimization. arXiv preprint arXiv:2510.13554, 2025.\n[33] Xinzhu Chen, Xuesheng Li, Zhongxiang Sun, and Weijie Yu. Beyond high-entropy exploration: Correctness-aware\nlow-entropy segment-based advantage shaping for reasoning llms. arXiv preprint arXiv:2512.00908, 2025.\n[34] Idan Shenfeld, Mehul "
+    },
+    {
+      "aiAssistanceScore": 0.26375327,
+      "confidence": "Low",
+      "endIndex": 4153,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 3603,
+      "text": " Damani, Jonas H\u00fcbotter, and Pulkit Agrawal. Self-distillation enables continual learning.\nIn ICLR 2026 Workshop on Lifelong Agents: Learning, Aligning, Evolving, 2026. URL https://openreview.\nnet/forum?id=HlWA3V6iKF.\n[35] Tianzhu Ye, Li Dong, Xun Wu, Shaohan Huang, and Furu Wei. On-policy context distillation for language\nmodels. arXiv preprint arXiv:2602.12275, 2026.\n[36] Hejian Sang, Yuanda Xu, Zhengze Zhou, Ran He, Zhipeng Wang, and Jiachen Sun. On-policy self-distillation\nfor reasoning compression. arXiv preprint arXiv:2603.05433, 2026.\n17"
+    },
+    {
+      "aiAssistanceScore": 0.26375327,
+      "confidence": "Low",
+      "endIndex": 527,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "A Deferred Proofs and Extended Analysis\nA.1 Proof of Theorem 1 (KL Decomposition)\nWe suppress conditioning on (x, y\n<t\n) throughout for notational clarity. Expanding L\nOPSD\n:\nL\nOPSD \n= E\nr\n\"\nX\nv\nP\nT \n(v | r) log \nP\nT \n(v | r)\nP\nS \n(v)\n#\n. (18)\nInserting \n\u00af\nP\nT \n(v)/ \n\u00af\nP\nT \n(v) into the logarithm and separating terms:\n= E\nr\n\"\nX\nv\nP\nT \n(v | r) log \nP\nT \n(v | r)\n\u00af\nP\nT \n(v)\n#\n+ E\nr\n\"\nX\nv\nP\nT \n(v | r) log \n\u00af\nP\nT \n(v)\nP\nS \n(v)\n#\n. (19)\nThe first term equals E\nr \n[D\nKL\n(P\nT \n(\u00b7 | r)\u2225 \n\u00af\nP\nT \n)] = I(Y\nt\n; R | X, Y\n<t\n) by the de"
+    },
+    {
+      "aiAssistanceScore": 0.39954567,
+      "confidence": "Low",
+      "endIndex": 1331,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 526,
+      "text": "efinition of conditional mutual\ninformation. For the second term, observe that log \n\u00af\nP\nT \n(v)\nP\nS \n(v) \ndoes not depend on r, so the expectation over r\nacts only on P\nT \n(v | r):\nE\nr\n\"\nX\nv\nP\nT \n(v | r) log \n\u00af\nP\nT \n(v)\nP\nS \n(v)\n#\n= \nX\nv\n\u00af\nP\nT \n(v) log \n\u00af\nP\nT \n(v)\nP\nS \n(v) \n= D\nKL\n( \n\u00af\nP\nT \n\u2225P\nS \n) = L\n\u2217\n. (20)\nCombining both terms yields L\nOPSD \n= L\n\u2217 \n+ I(Y\nt\n; R | X, Y\n<t\n).\nA.2 Proof of Proposition 1 (Per-Sample Gradient Decomposition)\nThe decomposition g(\u03b8; r) = g\n\u2217\n(\u03b8) + \u03b4(\u03b8; r) follows by adding and subtracting \n\u00af\nP\nT \n(v) inside the sum:\ng(\u03b8; r) = \u2212 \nX\nv\nP\nT \n(v | r) \u2207\n\u03b8 \nlog P\nS \n(v)\n= \u2212 \nX\nv\n\u00af\nP\nT \n(v) \u2207\n\u03b8 \nlog P\nS \n(v) \u2212 \nX\nv\n[P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v)] \u2207\n\u03b8 \nlog P\nS \n(v). (21)\nProperty (i). Since E\nr \n[P\nT \n(v | r)] = \n\u00af\nP\nT \n(v) by definition:\nE\nr \n[\u03b4(\u03b8; r)] = \u2212 \nX\nv\nE\nr \n[P\nT \n(v |"
+    },
+    {
+      "aiAssistanceScore": 0.49387765,
+      "confidence": "Low",
+      "endIndex": 2100,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 1330,
+      "text": "| r) \u2212 \n\u00af\nP\nT \n(v)] \u2207\n\u03b8 \nlog P\nS \n(v) = 0. (22)\nProperty (ii). Since \u2207\n\u03b8 \nlog P\nS \n(v) is independent of r:\nE\nr \n[\u2225\u03b4(\u03b8; r)\u2225\n2\n] = E\nr\n\uf8ee\n\uf8f0 \nX\nv\n[P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v)] \u2207\n\u03b8 \nlog P\nS \n(v)\n2\n\uf8f9\n\uf8fb\n= \nX\nv\nE\nr\n\u0002\n(P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v))\n2\n\u0003 \n\u2225\u2207\n\u03b8 \nlog P\nS \n(v)\u2225\n2\n+ \nX\nv\u0338 =v\n\u2032\nE\nr \n[(P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v))(P\nT \n(v\n\u2032 \n| r) \u2212 \n\u00af\nP\nT \n(v\n\u2032\n))] \u27e8\u2207\n\u03b8 \nlog P\nS \n(v), \u2207\n\u03b8 \nlog P\nS \n(v\n\u2032\n)\u27e9. (23)\nThe diagonal terms yield \nP\nv \nVar\nr \n[P\nT \n(v | r)]\u00b7\u2225\u2207\n\u03b8 \nlog P\nS \n(v)\u2225\n2\n. The cross terms are generally non-zero but are\nbounded by the same variances via the Cauchy\u2013Schwarz inequality. The stated result is exact for the diagonal\ncontribution and serves as a lower bound for the full expression. When I(Y\nt\n; R | X) = 0, P\nT \n(v | r) = \n\u00af\nP\nT \n(v)\nfor all r, so \u03b4 \u2261 0.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.49387765,
+      "confidence": "Low",
+      "endIndex": 153,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "A.3 Proof of Irreducibility of Leakage Across Pilot Variants\nWe derive the per-token gradient form for each variant and verify that the directional depen"
+    },
+    {
+      "aiAssistanceScore": 0.7293195,
+      "confidence": "Low",
+      "endIndex": 1329,
+      "label": "AI-Generated",
+      "pageIndex": 18,
+      "startIndex": 152,
+      "text": "ndence on r is\nirreducible in all three cases. In each variant, the student\u2019s policy gradient at token position t along trajectory\n\u02c6y can be expressed as \n\u02c6\nA\nt \n\u00b7 \u2207\n\u03b8 \nlog P\nS \n(y\nt \n| x, y\n<t\n), where \n\u02c6\nA\nt \ninvolves the teacher\u2019s privileged evaluation.\n(i) Full OPSD. The gradient sums over the entire vocabulary:\ng\nt\n(\u03b8; r) = \u2212 \nX\nv\u2208V\nP\nT \n(v | r) \u2207\n\u03b8 \nlog P\nS \n(v). (24)\nEvery token in V receives a gradient contribution weighted by P\nT \n(v | r), which encodes the teacher\u2019s\nprivileged preference. The deviation \u03b4\nt \n= \u2212 \nP\nv \n[P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v)] \u2207\n\u03b8 \nlog P\nS \n(v) operates over the full\nvocabulary, yielding the widest leakage bandwidth.\n(ii) Teacher\u2019s Top-1. The teacher distribution is collapsed to a point mass at v\n\u2217\nT \n= arg max\nv \nP\nT \n(v | r). The\neffective gradient becomes:\ng\nt\n(\u03b8; r) = \u2212\u2207\n\u03b8 \nlog P\nS \n(v\n\u2217\nT \n), (25)\nwhere v\n\u2217\nT \nis entirely determined by r. The deviation component \u03b4\nt \n= \u2212[\u2207\n\u03b8 \nlog P\nS \n(v\n\u2217\nT \n)\u2212\nP\nv \n\u00af\nP\nT \n(v)\u2207\n\u03b8 \nlog P\nS \n(v)]\nis concentrated on a single r-dependent token, making the gradient direction maximally sensitive to\nthe specific realization of r.\n(iii) Student\u2019s Top-1. The target is restricted to the student\u2019s most"
+    },
+    {
+      "aiAssistanceScore": 0.5065816,
+      "confidence": "Low",
+      "endIndex": 3009,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 1328,
+      "text": "t probable token v\n\u2217\nS \n= arg max\nv \nP\nS \n(v).\nThe gradient weight at this token is proportional to P\nT \n(v\n\u2217\nS \n| r)/P\nS \n(v\n\u2217\nS \n), which still depends on the\nteacher\u2019s privileged evaluation. Although the support is anchored to the student\u2019s distribution (nar-\nrowest bandwidth), the r-dependence of the gradient weight persists.\nIn all three variants, \n\u02c6\nA\nt \ninvolves P\nT \n(\u00b7 | r), ensuring that the deviation component \u03b4 carries r-specific in-\nformation into the parameter update direction. By Proposition 1, the deviation has zero mean but strictly\npositive variance whenever I(Y\nt\n; R | X) > 0, regardless of how the target distribution is compressed. The\nthree variants differ in how many tokens receive non-zero gradient weight (bandwidth), but the directional\ndependence on r is common to all, establishing the irreducibility of leakage.\nA.4 The Impossibility Trilemma Under Shared Parameters\nThe analysis in \u00a73.2.2 characterizes the per-step gradient pathology of distribution matching. In OPSD, the\ncoupling runs deeper: teacher and student share a single set of parameters \u03b8:\nP \n\u03b8\nS \n(\u00b7 | x, y\n<t\n) = \u03c0\n\u03b8 \n(\u00b7 | x, y\n<t\n), P \n\u03b8\nT \n(\u00b7 | x, r, y\n<t\n) = \u03c0\n\u03b8 \n(\u00b7 | x, r, y\n<t\n). (26)\nAlthough P\nT \nis treated with stop-gradient within each optimization step, every update to \u03b8 simultaneously\nalters both distributions. This entanglement couples the gradient-level leakage pathology with a macro-level\ntraining stability problem. We show that their interaction gives rise to an impossibility result.\nA.4.1 Strategy A: Frozen Teacher\nOne natural remedy is to fix the teacher at initialization: P \n\u03b8\n0\nT \n. The optimization objective at step k becomes:\nL\nA\n(\u03b8\nk\n) = E\nr\nh\nD\nKL"
+    },
+    {
+      "aiAssistanceScore": 0.573263,
+      "confidence": "Low",
+      "endIndex": 3515,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 3008,
+      "text": "L\n\u0010\nP \n\u03b8\n0\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nk\nS \n(\u00b7 | x)\n\u0011i\n. (27)\nBy Theorem 1, the global optimum is P \n\u2217\nS \n= \n\u00af\nP \n\u03b8\n0\nT \n, the marginal distribution of the frozen teacher.\nProposition 2 (Capacity Ceiling). As P \n\u03b8\nk\nS \n\u2192 \n\u00af\nP \n\u03b8\n0\nT \n, the distillation signal vanishes: \u2225\u2207\n\u03b8 \nL\nA\n(\u03b8\nk\n)\u2225 \u2192 0.\nThe student\u2019s representational capacity is strictly upper-bounded by the quality of the initial checkpoint \u03b8\n0\n,\nprecluding further improvement even when the model possesses sufficient capacity to learn a superior policy.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.573263,
+      "confidence": "Low",
+      "endIndex": 766,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "A.4.2 Strategy B: Online Teacher\nAlternatively, the teacher may evolve in tandem with the student, using P \n\u03b8\nk\nT \nat each step k:\n\u03b8\nk+1 \n= \u03b8\nk \n\u2212 \u03b7 \u2207\n\u03b8 \nL\nk\n(\u03b8\nk\n), where L\nk\n(\u03b8) \u225c E\nr\nh\nD\nKL\n\u0010\nP \n\u03b8\nk\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nS \n(\u00b7 | x)\n\u0011i\n. (28)\nAlthough P \n\u03b8\nk\nT \nis treated as a fixed target within each step via stop-gradient, the update \u03b8\nk \n\u2192 \u03b8\nk+1 \nshifts the\nteacher distribution for the subsequent iteration.\nTheorem 2 (Training Instability Under Online Teacher). Define the joint objective L(\u03b8) \u225c E\nr \n[D\nKL\n(P \n\u03b8\nT \n(\u00b7 |\nr)\u2225P \n\u03b8\nS \n(\u00b7 | x))]. The change from step k to k+1 decomposes as:\nL(\u03b8\nk+1\n) \u2212 L(\u03b8\nk\n) = \u2206\nS\n|{z}\n\u2264 0 (student improvement)\n+ \u2206\nT\n|{z}\nsign uncontrolled (teacher drift)\n, (29)\nwhere \u2206\nS \ncaptures the student\u2019s progress under the current tea"
+    },
+    {
+      "aiAssistanceScore": 0.6298105,
+      "confidence": "Low",
+      "endIndex": 1688,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 19,
+      "startIndex": 765,
+      "text": "acher and \u2206\nT \ncaptures the induced teacher\ndrift. When |\u2206\nT \n| > |\u2206\nS \n| with \u2206\nT \n> 0, the true objective worsens despite each step performing valid gradient\ndescent on its local surrogate.\nInsert and subtract E\nr \n[D\nKL\n(P \n\u03b8\nk\nT \n(\u00b7 | r)\u2225P \n\u03b8\nk+1\nS \n)] in L(\u03b8\nk+1\n) \u2212 L(\u03b8\nk\n). The exact expressions are:\n\u2206\nS \n= E\nr\nh\nD\nKL\n\u0010\nP \n\u03b8\nk\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nk+1\nS\n\u0011i\n\u2212 E\nr\nh\nD\nKL\n\u0010\nP \n\u03b8\nk\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nk\nS\n\u0011i\n, (30)\n\u2206\nT \n= E\nr\nh\nD\nKL\n\u0010\nP \n\u03b8\nk+1\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nk+1\nS\n\u0011i\n\u2212 E\nr\nh\nD\nKL\n\u0010\nP \n\u03b8\nk\nT \n(\u00b7 | r) \u2225 P \n\u03b8\nk+1\nS\n\u0011i\n. (31)\n\u2206\nS \n\u2264 0 follows from gradient descent on L\nk \nwith P \n\u03b8\nk\nT \nheld fixed. The sign of \u2206\nT \nis uncontrolled: the same\nupdate that improves P\nS \nsimultaneously perturbs P\nT \n, and the asymmetry of KL divergence provides no\nguarantee on the direction of this induced shift.\nA.4.3 Self-Reinforcing Feedback\nThe gradient-level leakage of \u00a73.2.2 and the teacher drift interact through a positive feedb"
+    },
+    {
+      "aiAssistanceScore": 0.6162649,
+      "confidence": "Low",
+      "endIndex": 3158,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 19,
+      "startIndex": 1687,
+      "text": "back loop.\nProposition 3 (Self-Reinforcing Feedback Loop). Define the model\u2019s sensitivity to privileged information as\nS(\u03b8) \u225c E\nr \n[D\nKL\n(P \n\u03b8\nT \n(\u00b7 | r)\u2225 \n\u00af\nP \n\u03b8\nT \n)] = I(Y\nt\n; R | X, Y\n<t\n). Under Strategy B, the following cycle operates:\n(i) The per-sample deviation \u03b4(\u03b8; r) drives parameters toward r-predictive features.\n(ii) These features are encoded in the shared \u03b8, enhancing the model\u2019s capacity to exploit r when operating\nas teacher.\n(iii) S(\u03b8\nk+1\n) \u2265 S(\u03b8\nk\n), amplifying Var\nr \n[P\nT \n(v | r)].\n(iv) By Proposition 1(ii), the deviation variance grows, reinforcing step (i).\nBy Proposition 1, g(\u03b8; r) = g\n\u2217\n(\u03b8) + \u03b4(\u03b8; r) with E\nr \n[\u03b4] = 0. Each stochastic update \u03b8\nk+1 \n= \u03b8\nk \n\u2212 \u03b7 g(\u03b8\nk\n; r\nk\n)\nintroduces a perturbation \u2212\u03b7 \u03b4(\u03b8\nk\n; r\nk\n) whose direction correlates with r\nk\n. Over multiple steps with varying\nr\nk\n, the path-dependent accumulation of these perturbations biases parameters toward regions that encode\nx \u2192 r correlations: parameter configurations for which \u03b4 aligns with such correlations yield lower subsequent\nloss, causing the optimizer to preferentially retain these drifts. The accumulated drift enriches the shared\nrepresentation \u03b8 with features predictive of r given x. Since teacher and student share \u03b8, these features\nbecome available to both roles simultaneously. At the subsequent step, the teacher P \n\u03b8\nk+1\nT \n(\u00b7 | x, r, y\n<t\n) more\neffectively leverages r through the newly encoded features, increasing the dispersion of P\nT \n(\u00b7 | r)"
+    },
+    {
+      "aiAssistanceScore": 0.6092627,
+      "confidence": "Low",
+      "endIndex": 3778,
+      "label": "AI-Generated",
+      "pageIndex": 19,
+      "startIndex": 3157,
+      "text": ") across\ndifferent realizations of r: S(\u03b8\nk+1\n) \u2265 S(\u03b8\nk\n). By Proposition 1(ii), the deviation variance E\nr \n[\u2225\u03b4\u2225\n2\n] grows with\nS(\u03b8), and the cycle restarts with a strictly larger deviation magnitude.\nLet \u03c1\nk \n\u225c E\nr \n[\u2225\u03b4(\u03b8\nk\n; r)\u2225\n2\n]\n\u000e\nE\nr \n[\u2225g(\u03b8\nk\n; r)\u2225\n2\n] denote the fraction of gradient variance attributable to the deviation\ncomponent. The feedback loop drives \u03c1\nk \nmonotonically upward: early in training, \u03c1\nk \nremains small since\n\u2225g\n\u2217\n\u2225 dominates; as \u2225g\n\u2217\n\u2225 \u2192 0 and \u2225\u03b4\u2225 grows via the loop, \u03c1\nk \n\u2192 1. At this point, parameter updates are\noverwhelmingly determined by the leakage signal, and training collapses.\n20"
+    },
+    {
+      "aiAssistanceScore": 0.6092627,
+      "confidence": "Low",
+      "endIndex": 885,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 0,
+      "text": "A.4.4 The Trilemma\nThe analyses of Strategies A and B, together with the gradient decomposition, yield the central impossibility\nresult of on-policy self-distillation.\nTheorem 3 (Impossibility Trilemma). In any distribution-matching framework where teacher and student\nshare parameters (i.e., P\nT \nand P\nS \nare parameterized by the same \u03b8), the following three properties cannot\nhold simultaneously:\n(a) Objective stability: the optimization target does not drift between successive steps (\u2206\nT \n= 0).\n(b) Sustained improvement: the distillation signal does not vanish (\u2225\u2207\n\u03b8 \nL\u2225\u0338 \u2192 0).\n(c) Leakage-free training: the deviation component does not drive parameter drift.\nStrategy A (frozen teacher) satisfies (a) by construction (P \n\u03b8\n0\nT \nis fixed, hence \u2206\nT \n= 0), but violates (b) by\nProposition 2. Strategy B (online teacher) satisfies (b) since the teacher continually evolves to pro"
+    },
+    {
+      "aiAssistanceScore": 0.5350455,
+      "confidence": "Low",
+      "endIndex": 2550,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 884,
+      "text": "ovide non-\nvanishing signal, but violates (a) by Theorem 2. Property (c) is violated under either strategy whenever\nI(Y\nt\n; R | X) > 0: by Proposition 1(ii), the per-sample deviation variance E\nr \n[\u2225\u03b4\u2225\n2\n] is strictly positive, inde-\npendently of the teacher management scheme. Under Strategy B, Proposition 3 further ensures that \u03c1\nk \nis\nmonotonically non-decreasing, so the leakage intensifies over the course of training. Hybrid strategies (e.g.,\nperiodic teacher snapshots) merely interpolate between (a) and (b): within each update interval, (a) holds\nbut (b) progressively degrades as the teacher becomes stale; refreshing the teacher restores (b) while dis-\nrupting (a). Property (c) remains unsatisfied throughout, as the underlying mutual information gap persists\nregardless of the snapshot schedule.\nA.5 Bayesian Interpretation of RLSD Evidence Weights\nThis section provides a formal probabilistic derivation of the RLSD evidence ratio w\nt \n= P\nT \n(y\nt\n)/P\nS \n(y\nt\n)\nintroduced in \u00a74.1, establishing that it corresponds to a sequential Bayesian belief update.\nA.5.1 Modeling Assumption\nAssumption 1 (Consistent Conditional Approximation). The shared model \u03c0\n\u03b8 \nprovides a consistent approx-\nimation to the true conditional distributions in the following sense:\nP\nS \n(y\nt \n| x, y\n<t\n) \u225c \u03c0\n\u03b8 \n(y\nt \n| x, y\n<t\n) \u2248 P (y\nt \n| x, y\n<t\n), (32)\nP\nT \n(y\nt \n| x, r, y\n<t\n) \u225c \u03c0\n\u03b8 \n(y\nt \n| x, r, y\n<t\n) \u2248 P (y\nt \n| x, r, y\n<t\n). (33)\nWhen the model has sufficient capacity and the privileged information r is provided via in-context condi-\ntioning, Assumption 1 is reasonable: a single architecture can faithfully represent both the prior predictive\ndistribution (with"
+    },
+    {
+      "aiAssistanceScore": 0.39779833,
+      "confidence": "Low",
+      "endIndex": 3412,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 2549,
+      "text": "hout r) and the posterior predictive distribution (with r). This parallels the standard as-\nsumption in Bayesian deep learning that a sufficiently expressive model family can approximate the true\nposterior predictive distribution.\nA.5.2 The Evidence Ratio as Belief Update\nTheorem 4 (RLSD Weights as Belief Update Ratios). Under Assumption 1, the token-level evidence ratio\nsatisfies the identity:\nw\nt \n= \nP\nT \n(y\nt \n| x, r, y\n<t\n)\nP\nS \n(y\nt \n| x, y\n<t\n) \n= \nP (r | x, y\n\u2264t\n)\nP (r | x, y\n<t\n) \n, (34)\ni.e., w\nt \nequals the ratio of the posterior belief in the privileged information r after observing token y\nt \nto the\nbelief before observing y\nt\n.\nProof. Apply Bayes\u2019 theorem to the joint distribution P (r, y\nt \n| x, y\n<t\n):\nP (y\nt \n| x, r, y\n<t\n) = \nP (r, y\nt \n| x, y\n<t\n)\nP (r | x, y\n<t\n) \n= \nP (r | x, y\n\u2264t\n) \u00b7 P (y\nt \n| x, y\n<t\n)\nP (r | x, y\n<t\n) \n. (35)\n21"
+    },
+    {
+      "aiAssistanceScore": 0.39779833,
+      "confidence": "Low",
+      "endIndex": 150,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 0,
+      "text": "Dividing both sides by P (y\nt \n| x, y\n<t\n) and applying Assumption 1:\nP\nT \n(y\nt \n| x, r, y\n<t\n)\nP\nS \n(y\nt \n| x, y\n<t\n) \n\u2248 \nP (y\nt \n| x, r, y\n<t\n)\nP (y"
+    },
+    {
+      "aiAssistanceScore": 0.49814814,
+      "confidence": "Low",
+      "endIndex": 1965,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 149,
+      "text": "y\nt \n| x, y\n<t\n) \n= \nP (r | x, y\n\u2264t\n)\nP (r | x, y\n<t\n) \n. (36)\nA.5.3 Interpretation\nTheorem 4 reveals that the RLSD weight w\nt \nis a sequential Bayesian evidence ratio: it quantifies the degree\nto which generating token y\nt \nupdates the belief that the privileged information r is consistent with the current\ntrajectory.\nConcretely, w\nt \n> 1 indicates that generating y\nt \nstrengthens the posterior belief in r, constituting positive\nevidence for the correct reasoning path. For instance, when solving 2x + 3 = 7, writing \u201c2x = 4\u201d substantially\nincreases the belief that the trajectory leads to the correct answer x = 2; RLSD assigns such tokens elevated\npositive credit. w\nt \n< 1 indicates that y\nt \nweakens the belief in r, constituting negative evidence. An erroneous\nstep such as \u201c5x = 7\u201d would sharply reduce the belief; in an incorrect trajectory, such tokens bear greater\nblame. w\nt \n= 1 indicates that y\nt \nis informationally neutral with respect to r, as is typical of formatting\nconnectives (e.g., \u201ctherefore,\u201d \u201cwe have\u201d) that carry no reasoning content; RLSD assigns these tokens the\nbaseline advantage.\nA.5.4 Telescoping to Sequence-Level Evidence\nTaking the product over all token positions yields a telescoping identity:\nT\nY\nt=1\nw\nt \n=\nT\nY\nt=1\nP (r | x, y\n\u2264t\n)\nP (r | x, y\n<t\n) \n= \nP (r | x, y)\nP (r | x) \n. (37)\nThe right-hand side is the sequence-level Bayesian evidence ratio: the total belief update after observing\nthe complete trajectory y. The per-token weights {w\nt\n}\nT\nt=1 \nthus provide a fine-grained decomposition of this\nsequence-level evidence into individual token contributions, elevating the granularity of credit assignment\nfrom the sequence level (as in GRPO) to the token level.\nA.5.5 Contrast with OPSD: Logical Attribution vs. Behavioral Cloning\nTheorem 4 clarifies a fundamental d"
+    },
+    {
+      "aiAssistanceScore": 0.69698614,
+      "confidence": "Medium",
+      "endIndex": 3690,
+      "label": "AI-Generated",
+      "pageIndex": 21,
+      "startIndex": 1964,
+      "text": "distinction between RLSD and distribution matching methods.\nOPSD performs behavioral cloning: it requires the student to replicate the teacher\u2019s output distribution\nP\nT \n(\u00b7 | x, r) at every token position. If the teacher, having observed the reference solution, favors a particular\nphrasing (e.g., \u201caccording to the hint\u201d), OPSD drives the student to adopt the same phrasing, even when it\ncarries no reasoning value. The objective is to minimize the distributional distance between P\nS \nand P\nT \n.\nRLSD performs logical credit attribution: it does not require the student to imitate any specific token choice\nof the teacher. The weight w\nt \nmeasures a single property: whether the token generated by the student\nconstitutes positive Bayesian evidence for the correct answer r. As long as a student-generated token increases\nthe posterior belief in r (w\nt \n> 1), it receives elevated credit regardless of whether it matches the teacher\u2019s\npreferred wording. RLSD is concerned not with what the student says, but with the informational contribution\nof what it says toward the correct derivation.\nIn information-theoretic terms, w\nt \nquantifies the per-token information gain toward the correct answer. RLSD\nallocates credit accordingly: tokens that advance the reasoning are rewarded, tokens that derail it are penal-\nized, and tokens that are informationally inert receive the baseline advantage. No imitation of the teacher\u2019s\ndistributional shape is involved at any point.\nA.5.6 Connection to the OPSD Gradient\nIt is instructive to note that the importance weight P\nT \n(v | r)/P\nS \n(v) appearing in the OPSD per-sample\ngradient (Proposition 1) is mathematically identical to the evidence ratio w\nt \nused in RLSD. This is not\n22"
+    },
+    {
+      "aiAssistanceScore": 0.69698614,
+      "confidence": "Medium",
+      "endIndex": 182,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 0,
+      "text": "coincidental: both methods operate on the same underlying quantity, but employ it in fundamentally different\nways.\nIn OPSD, P\nT \n/P\nS \nserves as a gradient weight that spans the enti"
+    },
+    {
+      "aiAssistanceScore": 0.73242575,
+      "confidence": "Medium",
+      "endIndex": 2366,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 181,
+      "text": "ire vocabulary V, driving P\nS \nto match\nthe shape of P\nT \n. The per-sample deviation [P\nT \n(v | r) \u2212 \n\u00af\nP\nT \n(v)] is inseparable from the expected signal\n(Proposition 1), causing r-specific patterns to infiltrate parameter updates.\nIn RLSD, P\nT \n/P\nS \nserves as a stop-gradient scalar credit multiplier applied only to the on-policy sampled token\ny\nt\n. It modulates the magnitude of the existing advantage but does not enter the gradient direction. The\nprivileged information influences only how much credit each token receives, not which tokens are reinforced\nor penalized, nor the direction of parameter updates.\nIt is precisely this change in usage, from distribution matching to credit assignment, from gradient weight to\nscalar multiplier, that transforms the same mathematical quantity from the source of leakage into a tool for\nprecise credit attribution.\nA.5.7 Limitations of the Bayesian Approximation\nThe Bayesian interpretation (Theorem 4) relies on Assumption 1, which may not hold exactly in practice.\nWhen the model\u2019s in-context conditioning is imperfect, e.g., when r is excessively long or the model has\nlimited capacity, the evidence ratio P\nT \n/P\nS \nbecomes a noisy approximation of the true belief update ratio.\nHowever, the structural guarantees of RLSD do not depend on Assumption 1. The direction anchoring prop-\nerty (sign( \n\u02c6\nA\nt\n) \u2261 sign(A), \u00a74.1) and the support set isolation (gradients act only on student-sampled tokens)\nare consequences of the algorithm design (stop-gradient, on-policy sampling, scalar modulation, clipping)\nand hold regardless of the quality of the Bayesian approximation. Similarly, the leakage-free guarantee estab-\nlished in Appendix A.6 and the resolution of the impossibility trilemma (Appendix A.4) are purely structural\nresults. This separation ensures that all theoretical guarantees remain valid even when the model is an\nimperfect Bayesian agent.\nA.6 Formal Leakage-Free Guarantee for RLSD\nBuilding on the Bayesian interpretation in Appendix A.5 and the diagnosis of distribution matching in \u00a73.2,\nthis section establishes that RLSD is structurally immune to privileged information leakage and verifies that\nit circumvents all"
+    },
+    {
+      "aiAssistanceScore": 0.5548288,
+      "confidence": "Low",
+      "endIndex": 3642,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 2365,
+      "text": "l three deficiencies identified in \u00a73.2.2 and Appendix A.4.\nA.6.1 Gradient Structure of RLSD\nThe RLSD policy gradient takes the form:\n\u2207\n\u03b8 \nJ\nRLSD\n(\u03b8) = E\nx \nE\ny\u223c\u03c0\n\u03b8 \n(\u00b7|x)\n\uf8ee\n\uf8f0 \n1\nG\nG\nX\ni=1\n1\n|y\n(i)\n|\n|y\n(i)\n|\nX\nt=1\n\u02c6\nA\n(i)\nt \n\u00b7 \u2207\n\u03b8 \nlog \u03c0\n\u03b8 \n(y\n(i)\nt \n| x, y\n(i)\n<t\n)\n\uf8f9\n\uf8fb \n, (38)\nwhere the token-level advantage is constructed as specified in Eqs. (13)\u2013(15). This gradient expression differs\nfrom the OPSD gradient in two structural properties.\nProperty 1: Direction anchoring. The token-level advantage \n\u02c6\nA\nt \nstrictly preserves the sign of the sequence-level\nadvantage A:\nsign( \n\u02c6\nA\nt\n) = sign(A) \u2200 t, (39)\nsince clip(w\nt\n, 1 \u2212 \u03f5\nw\n, 1 + \u03f5\nw\n) > 0. This ensures that the environment reward has exclusive authority over\nthe direction of policy updates: all tokens in correct trajectories are reinforced, and all tokens in incorrect\ntrajectories are penalized. The teacher\u2019s privileged information, channeled through w\nt\n, modulates only the\nrelative intensity of reinforcement or penalization across tokens within a trajectory, but can never flip the\ndirection. In contrast, the OPSD gradient direction at each token position is determined by P\nT \n(v | r) or its\ndifference from P\nS \n(v), so the teacher\u2019s privileged preference directly controls where the gradient points.\n23"
+    },
+    {
+      "aiAssistanceScore": 0.5548288,
+      "confidence": "Low",
+      "endIndex": 231,
+      "label": "AI-Generated",
+      "pageIndex": 23,
+      "startIndex": 0,
+      "text": "Property 2: Student-determined support. The expectation in the RLSD gradient is taken over trajectories\ny \u223c \u03c0\n\u03b8 \n(\u00b7 | x), sampled from the student\u2019s own policy without access to r. The log-derivative \u2207\n\u03b8 \nlog \u03c0\n\u03b8 \n(y\nt \n|\nx, y\n<t\n)"
+    },
+    {
+      "aiAssistanceScore": 0.65805495,
+      "confidence": "Medium",
+      "endIndex": 1925,
+      "label": "AI-Generated",
+      "pageIndex": 23,
+      "startIndex": 230,
+      "text": ") is evaluated only at tokens the student itself generates. The gradient\u2019s support, defined as the set of\ntoken sequences receiving non-zero gradient signal, is therefore identical to the support of \u03c0\n\u03b8 \n(\u00b7 | x).\nIn contrast, the OPSD per-sample gradient g(\u03b8; r) = \u2212 \nP\nv\u2208V \nP\nT \n(v | r)\u2207\n\u03b8 \nlog P\nS \n(v) ranges over the entire\nvocabulary V: tokens that the teacher strongly favors due to r receive P\nT \n(v | r)-weighted gradient contribu-\ntions, actively pulling unseen privileged patterns into the parameter updates. RLSD eliminates this channel\nentirely.\nA.6.2 Zero-Leakage Guarantee\nCombining the two structural properties yields the following guarantee.\nTheorem 5 (Leakage-Free Training Under RLSD). In the RLSD policy gradient objective, the privileged\ninformation r enters the computation only through the stop-gradient scalar w\nt\n, and w\nt \nis isolated at three\nlevels:\n(i) Directional isolation. By Property 1, sign( \n\u02c6\nA\nt\n) = sign(A), so r cannot influence the gradient sign of any\ntoken. The direction of parameter updates in \u03b8-space is fully determined by the student-sampled token\ny\nt \n(via \u2207\n\u03b8 \nlog \u03c0\n\u03b8 \n(y\nt \n| x, y\n<t\n)) and the environment correctness judgment (via sign(A)), neither of which\ncontains information about r.\n(ii) Support isolation. By Property 2, any token y\nleak \n/\u2208 supp(\u03c0\n\u03b8 \n(\u00b7 | x, y\n<t\n)) that exists only in the privileged\nmode has strictly zero sampling probability and contributes zero expected gradient.\n(iii) Magnitude boundedness. The weight w\nt \nis clipped to [1 \u2212 \u03f5\nw\n, 1 + \u03f5\nw\n] and further attenuated by the\nmixing coefficient \u03bb, strictly bounding its influence. As the student internalizes reasoning ability and\nP\nS \n\u2192 P\nT \n, the weights satisfy "
+    },
+    {
+      "aiAssistanceScore": 0.42039874,
+      "confidence": "Low",
+      "endIndex": 4154,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 1924,
+      "text": " w\nt \n\u2192 1, and RLSD automatically degrades to vanilla GRPO.\nConsequently, there exists no mathematical pathway through which patterns from the privileged information r\ncan be injected into the direction of parameter updates. The privileged information in RLSD influences only\nthe magnitude of token-level credit, not which tokens are reinforced or penalized, nor whether reinforcement\nor penalization occurs.\nA.6.3 Resolution of the Impossibility Trilemma\nAppendix A.4 establishes that distribution matching under shared parameters cannot simultaneously satisfy\nobjective stability (a), sustained improvement (b), and leakage-free training (c). We verify that RLSD satisfies\nall three.\n(a) Objective stability. RLSD optimizes the environment reward R(x, y) \u2208 {0, 1}, an external signal inde-\npendent of \u03b8. The teacher contributes only through the stop-gradient scalar w\nt\n, which does not constitute\npart of the optimization objective. The teacher drift term \u2206\nT \nfrom Theorem 2 is therefore inapplicable:\nthe optimization anchor is a fixed external reward, not a drifting internal distribution. Even as \u03b8 updates\ncause w\nt \nto change at subsequent steps, this affects only the credit magnitude, not the gradient direction\n(Property 1) or support (Property 2).\n(b) Sustained improvement. RLSD is architecturally designed as a curriculum-aware training strategy that\nseamlessly unifies two complementary learning phases. In the early stage, when the student\u2019s policy is far from\noptimal and token-level credit discrimination is most valuable, the self-distillation signal provides dense, fine-\ngrained guidance that accelerates convergence well beyond what uniform advantages can achieve. As training\nprogresses, the mixing coefficient \u03bb is linearly decayed to zero, smoothly transitioning RLSD into vanilla\nGRPO. This scheduled transition reflects a principled design choice: the teacher\u2019s dense credit assignment is\nmost beneficial when the student\u2019s policy is still coarse-grained and requires fine-grained steering, whereas in\nthe later stage, the environment reward alone suffices to drive continued improvement. Crucially, the GRPO\npolicy gradient remains non-zero as long as the student has not reached the optimal policy, e"
+    },
+    {
+      "aiAssistanceScore": 0.42955628,
+      "confidence": "Low",
+      "endIndex": 4384,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 4153,
+      "text": "ensuring that\ntraining does not stall after the transition. This two-phase structure, dense credit assignment for rapid early\nimprovement followed by standard RLVR for sustained long-term optimization, allows RLSD to inherit the\n24"
+    },
+    {
+      "aiAssistanceScore": 0.42955628,
+      "confidence": "Low",
+      "endIndex": 1346,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 0,
+      "text": "convergence ceiling of GRPO while substantially accelerating the path toward it. The explicit scheduling\nof \u03bb also provides practitioners with a transparent and controllable mechanism to balance the intensity of\nteacher guidance against training stability, making RLSD a practical and fully compatible enhancement to\nexisting RLVR pipelines.\n(c) Leakage-free training. By Theorem 5, the gradient direction is determined entirely by the environment\nreward and the student\u2019s on-policy samples. The deviation component \u03b4 from Proposition 1 does not arise,\nbecause RLSD does not perform distribution matching and therefore does not generate the [P\nT \n(v | r)\u2212 \n\u00af\nP\nT \n(v)]\nbias that drives the gradient direction in OPSD. The self-reinforcing feedback loop of Proposition 3 is likewise\nabsent: even if shared parameters cause S(\u03b8) to change, this affects only the numerical value of w\nt\n, which,\nafter clipping, enters \n\u02c6\nA\nt \nas a bounded scalar multiplier that does not alter the gradient direction or the\ntoken-level support.\nTable 3 summarizes the trilemma from the perspective of both OPSD strategies and RLSD.\nTable 3 Comparison of OPSD parameter management strategies and RLSD across the three desiderata identified in\nthe impossibility trilemma.\nProperty OPSD (Frozen Teacher) OPSD (Online Teacher) RLSD\n(a) Objective stability \u2713 \u00d7 \u2713\n(b) Sust"
+    }
+  ]
+}

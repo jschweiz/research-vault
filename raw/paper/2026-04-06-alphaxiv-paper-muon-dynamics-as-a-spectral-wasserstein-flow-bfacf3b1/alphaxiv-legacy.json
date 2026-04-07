@@ -1,0 +1,79 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Gabriel Peyr\u00e9",
+        "id": "01985c81-e287-7a01-9f21-13d53a86681d",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:46:53 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:41:12 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d5-f340-75a1-9c48-6fdd17f6fa1c",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 9,
+        "questions_count": 0,
+        "total_votes": 2,
+        "upvotes_count": 9,
+        "visits_count": {
+          "all": 113,
+          "last24Hours": 113,
+          "last30Days": 113,
+          "last7Days": 113,
+          "last90Days": 113
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04891"
+      },
+      "title": "Muon Dynamics as a Spectral Wasserstein Flow",
+      "topics": [
+        "bayesian-deep-learning",
+        "Computer Science",
+        "cs.AI",
+        "geometric-deep-learning",
+        "Mathematics",
+        "math.OC",
+        "optimization-methods",
+        "representation-learning",
+        "statistical-learning",
+        "Statistics",
+        "stat.ML"
+      ],
+      "universal_paper_id": "2604.04891",
+      "updated_at": "Tue Apr 07 2026 02:46:53 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Gradient normalization is central in deep-learning optimization because it stabilizes training and reduces sensitivity to scale. For deep architectures, parameters are naturally grouped into matrices or blocks, so spectral normalizations are often more faithful than coordinatewise Euclidean ones; Muon is the main motivating example of this paper. More broadly, we study a family of spectral normalization rules, ranging from ordinary gradient descent to Muon and intermediate Schatten-type schemes, in a mean-field regime where parameters are modeled by probability measures. We introduce a family of Spectral Wasserstein distances indexed by a norm gamma on positive semidefinite matrices. The trace norm recovers the classical quadratic Wasserstein distance, the operator norm recovers the Muon geometry, and intermediate Schatten norms interpolate between them. We develop the static Kantorovich formulation, prove comparison bounds with W2, derive a max-min representation, and obtain a conditional Brenier theorem. For Gaussian marginals, the problem reduces to a constrained optimization on covariance matrices, extending the Bures formula and yielding a closed form for commuting covariances in the Schatten family. For monotone norms, including all Schatten cases, we prove the equivalence between the static and dynamic Benamou-Brenier formulations, deduce that the resulting transport cost is a genuine metric equivalent to W2 in fixed dimension, and show that the induced Gaussian covariance cost is also a metric. We then interpret the associated normalized continuity equation as a Spectral Wasserstein gradient flow, identify its exact finite-particle counterpart as a normalized matrix flow, obtain first geodesic-convexity results, and show how positively homogeneous mean-field models induce a spectral unbalanced transport on the sphere.",
+      "created_at": "Tue Apr 07 2026 02:46:53 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d5-f37d-7409-a464-39c64d50f957",
+      "imageURL": "image/2604.04891v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 17:41:12 GMT+0000 (Coordinated Universal Time)",
+      "title": "Muon Dynamics as a Spectral Wasserstein Flow",
+      "universal_paper_id": "2604.04891",
+      "updated_at": "Tue Apr 07 2026 02:46:53 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04891v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

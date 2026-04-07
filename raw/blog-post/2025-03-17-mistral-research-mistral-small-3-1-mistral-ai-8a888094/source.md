@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-small-3-1
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:11.811681Z
+fetched_at: 2026-04-07T21:40:54.897088Z
 short_summary: Today we announce Mistral Small 3.1: the best model in its weight class. Building on [Mistral Small 3](https://mistral.ai/news/mistral-small-3), this new model comes with improved text performance, multimodal understanding, and an expanded context window of up to 128k tokens.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:56.616760Z

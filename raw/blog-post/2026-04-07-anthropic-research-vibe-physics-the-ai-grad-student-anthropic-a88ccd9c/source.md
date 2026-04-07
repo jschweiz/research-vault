@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/vibe-physics
 source_name: Anthropic Research
 authors:
   - Matthew Schwartz
-published_at: null
+published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:19.760154Z
 content_hash: aae1d2e50e4764c353ee7a52ca037204c5df074636a6810714ee3597154382d7
 tags:

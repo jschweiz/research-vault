@@ -7,7 +7,7 @@ source_name: Anthropic Research
 authors:
   - Anthropic
   - Andon Labs
-published_at: null
+published_at: 2025-12-18T00:00:00Z
 ingested_at: 2026-04-07T19:35:48.264562Z
 content_hash: 6e570d291540d6e78ba9807dc90f6cb779bb953016ea8970a1c732826cf1ec43
 tags:

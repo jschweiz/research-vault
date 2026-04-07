@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/economic-index-march-2026-report
 source_name: Anthropic Research
 authors:
   - Anthropic
-published_at: null
+published_at: 2026-03-24T00:00:00Z
 ingested_at: 2026-04-07T19:36:10.267956Z
 content_hash: 702904ee1bac7bf1dac6855e9e5fa88898d78320a3a9b104bfc7c1941d345ec3
 tags:

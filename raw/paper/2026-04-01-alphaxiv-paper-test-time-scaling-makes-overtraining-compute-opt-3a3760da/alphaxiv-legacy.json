@@ -1,0 +1,135 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Nicholas Roberts",
+        "id": "01985c82-00ef-71c8-82f2-f1ced37f1a96",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sungjun Cho",
+        "id": "01985c81-db50-7116-8354-1968f1933f8c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiqi Gao",
+        "id": "01985c82-a8ff-72a7-8919-7807d9341ac2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tzu-Heng Huang",
+        "id": "01985c82-00ef-7ce9-899e-9601b26a63a8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Albert Wu",
+        "id": "01985c83-40bb-7f11-9dbd-65bd6c11e12b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gabriel Orlanski",
+        "id": "01985c83-22ab-75ae-b46e-f64cf179358a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Avi Trost",
+        "id": "01985c83-3354-7c56-af91-2880cbec11d0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kelly Buchanan",
+        "id": "01985c82-340f-7375-a9e7-c88d650f6211",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aws Albarghouthi",
+        "id": "01985c82-3fdf-7a53-bcc8-1d1d09dd9ee6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Frederic Sala",
+        "id": "01985c81-e843-7bfc-bd6b-690a04628f51",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Fri Apr 03 2026 05:43:41 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 01 2026 21:17:32 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d51de-624f-7bf5-aab4-25e1967e0ca4",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 33,
+        "questions_count": 0,
+        "total_votes": 5,
+        "upvotes_count": 33,
+        "visits_count": {
+          "all": 336,
+          "last24Hours": 180,
+          "last30Days": 336,
+          "last7Days": 336,
+          "last90Days": 336
+        }
+      },
+      "podcast_path": "019d51de-624f-7bf5-aab4-25e1967e0ca4/podcast.mp3",
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.01411"
+      },
+      "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
+      "topics": [
+        "Computer Science",
+        "cs.CL",
+        "cs.LG",
+        "efficient-transformers",
+        "inference-optimization",
+        "ml-systems",
+        "model-deployment-systems",
+        "optimization-methods",
+        "parameter-efficient-training",
+        "Statistics",
+        "stat.ML",
+        "training-orchestration",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.01411",
+      "updated_at": "Fri Apr 03 2026 05:43:41 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. $T^2$ modernizes pretraining scaling laws with pass@$k$ modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from $T^2$ are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well-outside of the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that $T^2$ scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making $T^2$ scaling meaningful in modern deployments.",
+      "created_at": "Fri Apr 03 2026 05:43:41 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d51de-62ae-71c0-a1b7-2e58006147af",
+      "imageURL": "image/2604.01411v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Wed Apr 01 2026 21:17:32 GMT+0000 (Coordinated Universal Time)",
+      "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
+      "universal_paper_id": "2604.01411",
+      "updated_at": "Fri Apr 03 2026 05:43:41 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.01411v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

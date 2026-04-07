@@ -1,0 +1,560 @@
+{
+  "fractionAi": 0.03147166,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.96852833,
+  "headline": "Mostly Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775586333446,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.13329639,
+      "confidence": "Medium",
+      "endIndex": 1917,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nWeian Mao \n1\u2217 \nXi Lin \n3\u2217 \nWei Huang \n2\u2217 \nYuxin Xie \n1 \nTianfu Fu \n1\nBohan Zhuang \n3 \nSong Han \n1 2 \nYukang Chen \n2\nAbstract\nExtended reasoning in large language models\n(LLMs) creates severe KV cache memory bottle-\nnecks. Leading KV cache compression methods\nestimate KV importance using attention scores\nfrom recent post-RoPE queries. However, queries\nrotate with position during RoPE, making repre-\nsentative queries very few, leading to poor top-\nkey selection and unstable reasoning. To avoid\nthis issue, we turn to the pre-RoPE space, where\nwe observe that Q and K vectors are highly con-\ncentrated around fixed non-zero centers and re-\nmain stable across positions\u2014Q/K concentration.\nWe show that this concentration causes queries to\npreferentially attend to keys at specific distances\n(e.g., nearest keys), with the centers determining\nwhich distances are preferred via a trigonometric\nseries. Based on this, we propose TriAttention\nto estimate key importance by leveraging these\ncenters. Via the trigonometric series, we use the\ndistance preference characterized by these centers\nto score keys according to their positions, and also\nleverage Q/K norms as an additional signal for\nimportance estimation. On AIME25 with 32K-\ntoken generation, TriAttention matches Full At-\ntention reasoning accuracy while achieving 2.5\u00d7\nhigher throughput or 10.7\u00d7 KV memory reduc-\ntion, whereas leading baselines achieve only about\nhalf the accuracy at the same efficiency. TriAtten-\ntion enables OpenClaw deployment on a single\nconsumer GPU, where long context would other-\nwise cause out-of-memory with Full Attention.\nOur code is available at https://github.\ncom/WeianMao/triattention.\n1. Introduction\nLong reasoning in LLMs produces chain-of-thought se-\nquences spanning tens of thousands of tokens (Wei et al.,\n2022; DeepSeek-AI, 2025; Shao et al., "
+    },
+    {
+      "aiAssistanceScore": 0.23211004,
+      "confidence": "Medium",
+      "endIndex": 3510,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1916,
+      "text": " 2024; Chen et al.,\n1\nMIT \n2\nNVIDIA \n3\nZJU \n\u2217\nEqual contribution.\nFigure 1. Performance trade-offs on AIME25 (Qwen3-8B). (A) At\nequivalent accuracy (40.8%), TriAttention achieves 2.5\u00d7 higher\nthroughput than Full Attention. (B) TriAttention reduces KV cache\nmemory by 10.7\u00d7 while matching Full Attention accuracy.\n2025). KV cache grows proportionally, creating severe\nmemory bottlenecks. KV cache compression addresses this\nby retaining only the most important tokens, with impor-\ntance estimated from attention scores computed over recent\nqueries (Li et al., 2024b; Zhang et al., 2023; Devoto et al.,\n2025; Zhou et al., 2024; Tang et al., 2024; Shi et al., 2024).\nHowever, these methods are inherently unstable: only a\nfew queries are usable for importance estimation. They\noperate on post-RoPE queries, which rotate with position\nas illustrated in Figure 2(B); consequently, only the most\nrecent queries retain up-to-date orientations, forming a tiny\nobservation window. With so few representative queries, im-\nportant keys go undetected\u2014a token receiving low attention\nduring this short window may be permanently evicted, even\nif it becomes critical later. This is particularly challenging\nfor retrieval heads (Wu et al., 2025; Xiao et al., 2025), where\nrelevant tokens can remain dormant for long periods before\nbecoming essential. In reasoning, such loss breaks the chain\nof thought. Prior work confirms this limitation: increasing\nthe observation window does not help\u2014performance peaks\nat around 25 queries, a tiny fraction of typical long contexts,\nand declines thereafter (Zhang et al., "
+    },
+    {
+      "aiAssistanceScore": 0.23546512,
+      "confidence": "Medium",
+      "endIndex": 3787,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 3509,
+      "text": " 2025).\nWe therefore turn to the pre-RoPE space, where we observe\na notable phenomenon: across a large fraction of attention\nheads, Q and K vectors are highly concentrated around a\nfixed non-zero center, as shown in Figure 2(A)\u2014a property\n1\narXiv:2604.04921v1 [cs.CL] 6 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.23546512,
+      "confidence": "Medium",
+      "endIndex": 1841,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFigure 2. Q/K concentration and its implications for attention. (A) Pre-RoPE Q/K vectors at the dominant frequency band are highly\nconcentrated (high Mean Resultant Length R). (B) RoPE rotation disperses these vectors into arc patterns. In (A-B), three distinct input\nsequences are overlayed, showing this structure is stable across content. (C) This concentration holds across nearly all heads. (D) When\nQ/K are concentrated, attention logits can be accurately reconstructed using a trigonometric series (Pearson r = 0.72).\nwe term Q/K concentration. This concentration remains sta-\nble across positions and contexts, i.e., Figure 2(C). Because\npre-RoPE vectors\u2014before positional encoding is applied\u2014\nare unaffected by positional rotation, this stability is intrinsic\nrather than coincidental. Moreover, pre-RoPE vectors are di-\nrectly linked to attention through the RoPE formula, making\nthese centers meaningful for assessing KV importance.\nTo leverage these properties, we first demonstrate these cen-\nters relate to attention behavior via a trigonometric series.\nWhen Q/K are highly concentrated, they can be approxi-\nmated by their centers; substituting these centers into the\nRoPE formula, the attention logit reduces to a function that\ndepends only on Q-K distance\u2014a trigonometric series\u2014\nforming an attention-vs-distance curve. This curve usually\nexhibits peaks at specific Q-K distances, and verify that keys\nat those distances indeed receive higher attention in prac-\ntice, as demonstrated in Figure 2(D). This demonstrates that\nQ/K concentration causes attention to favor keys at specific\ndistances, with the centers determining which distances are\npreferred. Furthermore, this preference can be predicted\nusing trigonometric series computed from centers.\n"
+    },
+    {
+      "aiAssistanceScore": 0.2922167,
+      "confidence": "Low",
+      "endIndex": 3709,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1840,
+      "text": "\nWe apply this understanding to design TriAttention, a KV\ncache compression method. TriAttention scores keys and\nretains only the top-scoring ones to address the memory\nbottleneck. The key idea of our scoring function is to use the\nQ center together with the trigonometric series to evaluate\nimportance differences among keys arising from distance\npreferences. For the minority of heads where Q is less\nconcentrated, we incorporate Q/K norms as complementary\nsignals (Guo et al., 2024; Kobayashi et al., 2020; Li et al.,\n2024a). We automatically balance these two components\nusing a Q/K concentration metric.\nWe evaluate TriAttention on mathematical reasoning bench-\nmarks. On AIME25, at equivalent accuracy to Full Atten-\ntion, TriAttention achieves 2.5\u00d7 higher throughput or 10.7\u00d7\nKV memory reduction (Figure 1), while R-KV achieves\nonly about half the accuracy at the same efficiency. At fixed\nmemory budget, the advantage is equally pronounced: Tri-\nAttention nearly doubles the accuracy of R-KV on AIME25\n(32.9% vs. 17.5%) and AIME24 (42.1% vs. 25.4%). On\nMATH 500, with only 1,024 out of 32k tokens in the KV\ncache, TriAttention closely matches Full Attention (68.4%\nvs. 69.6%). These results demonstrate that leveraging Q/K\ncenters via the trigonometric series provides a more reliable\nsignal for KV importance than observation-based methods.\n2. Background and Related Work\nKV cache compression retains only a subset of KV pairs\nunder a fixed memory budget. The core challenge is im-\nportance estimation: determining which tokens will receive\nhigh attention from future queries. Existing methods ap-\nproach this problem by analyzing post-RoPE representa-\ntions, as we discuss in \u00a72.2. To understand why post-RoPE\nanalysis is limiting, we first review how RoPE works.\n2.1. Rotary Position Embedding\nRotary Position Embedding (RoPE) (Su et al., 2024; Hong\net al., "
+    },
+    {
+      "aiAssistanceScore": 0.25287363,
+      "confidence": "Low",
+      "endIndex": 4460,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 3708,
+      "text": " 2024; Barbero et al., 2025) encodes positional infor-\nmation as rotations in vector space and has become the dom-\ninant positional encoding in modern LLMs (Dubey et al.,\n2024; Jiang et al., 2023; Qwen Team, 2025; Peng et al.,\n2023; Team et al., 2025). For a d-dimensional vector, RoPE\ndivides it into d/2 two-dimensional subspaces indexed by\nf \u2208 {0, . . . , d/2 \u2212 1}. The f -th subspace rotates at fre-\nquency \u03c9\nf \n= \u03b8\n\u22122f /d \n(\u03b8 = 10000 typically); we refer to it\nas frequency band f . For frequency band f , RoPE applies a\nrotation by angle \u03c9\nf \np at position p:\n\u0012 \nx\n\u2032\n2f\nx\n\u2032\n2f +1\n\u0013\n=\n\u0012\ncos(\u03c9\nf \np) \u2212 sin(\u03c9\nf \np)\nsin(\u03c9\nf \np) cos(\u03c9\nf \np)\n\u0013 \u0012 \nx\n2f\nx\n2f +1\n\u0013\n(1)\nWe call the Q/K vectors before this rotation pre-RoPE, and\nafter rotation post-RoPE.\n2"
+    },
+    {
+      "aiAssistanceScore": 0.25287363,
+      "confidence": "Low",
+      "endIndex": 646,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFigure 3. Attention reconstruction correlation across three DeepSeek-R1 distilled LLMs, including Qwen3 (Qwen Team, 2025),\nQwen2.5 (Qwen Team, 2024), and Llama3 (Dubey et al., 2024). Distribution of per-head reconstruction Pearson correlation (\u00afr) across all\nattention heads. The red dashed line indicates the mean. All models show right-skewed distributions with means above 0.5.\n2.2. Post-RoPE Compression Methods\nKV cache compression methods (Cai et al., 2025; Ge et al.,\n2024; Feng et al., 2025; Behnam et al., 2025) estimate token\nimportance from post-RoPE representat"
+    },
+    {
+      "aiAssistanceScore": 0.34246126,
+      "confidence": "Low",
+      "endIndex": 2716,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 645,
+      "text": "tions. We categorize\nthem into heuristic, attention-based, and norm-based types.\nHeuristic methods. Early compression methods use heuris-\ntic rule-based attention patterns. StreamingLLM (Xiao et al.,\n2024; Gu et al., 2025) enables infinite-length streaming in-\nput by retaining only a small fixed-size cache: a few ini-\ntial \u201csink\u201d tokens plus a sliding window of recent tokens.\nThe sink tokens exploit the observation that initial posi-\ntions receive disproportionate attention regardless of their\ncontent\u2014discarding them causes attention scores to lose a\nstable \u201csink\u201d and degrades performance. While simple, such\nfixed rules cannot adapt to content-dependent importance,\nmotivating more sophisticated approaches.\nAttention-based methods. These methods use attention\nscores\u2014computed on post-RoPE Q/K\u2014to identify impor-\ntant tokens. H2O (Zhang et al., 2023) accumulates attention\nscores across decoding steps to identify \u201cheavy-hitter\u201d to-\nkens that consistently receive high attention. SnapKV (Li\net al., 2024b) computes attention within a local window\nand aggregates scores to predict which tokens will matter\nfor generation. Scissorhands (Liu et al., 2023) exploits the\n\u201cpersistence of importance\u201d hypothesis, using historical at-\ntention to guide eviction. R-KV (Cai et al., 2025) scores\ntokens by attention from the most recent queries, combined\nwith redundancy detection for reasoning models. LazyEvic-\ntion (Zhang et al., 2025) tracks token importance recurrence\nwithin an observation window to delay eviction decisions.\nNorm-based methods. VATP (Guo et al., 2024) observes\nthat attention scores alone are insufficient: attention sinks\nreceive high attention but have near-zero value norms, con-\ntributing little to the output. By incorporating value vector\nnorms, VATP provides a more nuanced importance measure.\n2.3. Limitations of Post-RoPE Methods\nBoth attention-based and norm-based methods can be\nviewed as operating in the post-RoPE space, where po-\nsitional rotations have already been applied. This shared\nfoundation leads to distinct but related limitat"
+    },
+    {
+      "aiAssistanceScore": 0.31480396,
+      "confidence": "Low",
+      "endIndex": 4294,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 2715,
+      "text": "tions.\nFor attention-based methods, the key constraint is that\nqueries rotate with position, limiting useful observations\nto a tiny window and causing important keys undetected.\nFor norm-based methods, the limitation is different: they\nleverage only vector magnitudes while ignoring directional\ninformation. Ideally, incorporating Q/K directions would\nimprove importance estimation\u2014attention depends on both\nnorms and the angle between Q and K. However, in post-\nRoPE space, directions are entangled with positional rota-\ntions: a vector\u2019s direction changes continuously with posi-\ntion, making directional information difficult to exploit.\n3. Pre-RoPE and Trigonometric Series\nAs outlined in the Introduction, we observe that Q and K vec-\ntors in pre-RoPE space are highly concentrated around non-\nzero centers, and this concentration remains stable across\npositions and contexts. This is not a property of specific\nhead types, but a prevalent phenomenon across models, as\nshown in Figure 2(A, C). In this section, we first charac-\nterize this concentration (\u00a73.1), then show how it enables\nattention patterns to be described by a trigonometric series\n(\u00a73.2), and finally validate this through experiments (\u00a73.3).\n3.1. The Pre-RoPE Concentration Phenomenon\nWe examine Q/K distributions in the pre-RoPE space. For\neach head, we identify its dominant frequency bands\u2014the\nfrequencies that contribute most to the attention logit (Zhou\net al., 2025) (see Appendix B.7)\u2014and visualize Q/K vectors\nin the corresponding 2D planes.\nObservation 3.1 (Prevalent Q/K Concentration). Q and K\n3"
+    },
+    {
+      "aiAssistanceScore": 0.31480396,
+      "confidence": "Low",
+      "endIndex": 127,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFull Attention Map\n\ud835\udc58\n\ud835\udc5e\nTrigonometric Series Score\n\ud835\udc58"
+    },
+    {
+      "aiAssistanceScore": 0.37488952,
+      "confidence": "Low",
+      "endIndex": 2015,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 126,
+      "text": "\ufffd\n\ud835\udc5e\n\ud835\udc46\n!\"#$\n(\ud835\udc58)\n'\n\ud835\udc46(\ud835\udc58)\nTrig Attention Map\n\ud835\udc58\n\ud835\udc5e\nRetain Top-B keys by \n'\n\ud835\udc46(\ud835\udc58)\nQ\n-\nK\n \nDistance\n\ud835\udc46\n%#&'\n(\ud835\udc58, \u2206)\nOffline Calibration\nNorm-based Score\n\ud835\udd3c[\ud835\udc5e\n(\n]\nFigure 4. Method overview. From left to right: offline calibration computes Q distribution centers; then during inference, original attention\nis scored by combining S\ntrig \nand norm-based components; the rightmost panel shows the attention map after pruning. We observe that\nsome heads exhibit distance preference\u2014distant keys tend to receive higher attention. However, we also find that certain keys, despite\nbeing far from the query, receive little attention due to their low norms. This motivates our two scoring components: S\ntrig \ncaptures distance\npreference, while the norm-based score identifies low-norm keys. In this example, S\ntrig \ncorrectly assigns low scores to nearby keys, while\nthe norm-based score identifies the earliest token (leftmost) as unimportant due to its low norm, despite its maximal distance. Together,\nthey accurately identify tokens that will not be attended to and prune them. See Appendix D for visualizations with real attention maps.\nvectors in pre-RoPE space are highly concentrated around\nnon-zero centers across most attention heads. This concen-\ntration is stable across different token positions and input\ncontexts, as illustrated in Figure 2(A).\nTo quantify this concentration, we use the Mean Resultant\nLength R = \u2225E[q]\u2225/E[\u2225q\u2225], which measures how tightly\nvectors concentrate around their mean direction (R \u2192 1\nindicates perfect concentration; R \u2192 0 indicates uniform\ndispersion). Figure 2(C) shows that across all heads in\nQwen3-8B, the vast majority exhibit R values approaching\n1.0, confirming that Q/K concentration is prevalent.\nThis widespread concentration has important implications:\nwhen Q/K vectors are approximately constant, the attention\ncomputation simplifies dramatic"
+    },
+    {
+      "aiAssistanceScore": 0.5184715,
+      "confidence": "Low",
+      "endIndex": 3112,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 2014,
+      "text": "ally, as we show next.\n3.2. Predictable Distance Preferences\nWhen Q/K vectors are highly concentrated, we can approxi-\nmate them by their centers. This approximation transforms\nthe attention computation into a trigonometric series that\ndepends only on Q-K distance, making attention patterns\npredictable from the centers alone.\nConsider the RoPE attention formula. For a query q at\nposition p\nq \nand Key k at position p\nk\n, RoPE rotates fre-\nquency band f at rate \u03c9\nf \n. The pre-softmax logit is (see\nAppendix B):\nlogit(q, k) = \nX\nf\n\u2225q\nf \n\u2225\u2225k\nf \n\u2225 cos(\u03c9\nf \n\u2206 + \u03d5\nf \n) (2)\nwhere \u2206 = p\nq \n\u2212 p\nk \nis the Q-K distance, q\nf \n, k\nf \n\u2208 C are\nthe pre-RoPE components in frequency band f , and \u03d5\nf \n=\narg(q\nf \n) \u2212 arg(k\nf \n) is their phase difference.\nWhen Q/K are concentrated, we approximate q\nf \n\u2248 \u00afq\nf \nand\nk\nf \n\u2248 \n\u00af\nk\nf \n(the centers). Since \u00afq\nf \nand \n\u00af\nk\nf \nare constants, the\nlogit becomes a function of distance alone:\nlogit(\u2206) \u2248 \nX\nf\n\u2225\u00afq\nf \n\u2225\u2225\n\u00af\nk\nf \n\u2225\n| \n{z }\namplitude\ncos(\u03c9\nf \n\u2206 + \n\u00af\n\u03d5\nf\n|{z}\nphase\n)\n= \nX\nf\n[a\nf \ncos(\u03c9\nf \n\u2206) + b\nf \nsin(\u03c9\nf \n\u2206)] (3)\nwhere coefficients a\nf \n, b\nf \nare determine"
+    },
+    {
+      "aiAssistanceScore": 0.3494134,
+      "confidence": "Low",
+      "endIndex": 4419,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3111,
+      "text": "ed by the Q/K centers.\nThis is a trigonometric series in Q-K distance \u2206.\nThough RoPE frequencies follow a geometric rather than\nharmonic progression, the principle is analogous to Fourier\nsynthesis: the learned Q/K centers determine the coeffi-\ncients, which in turn shape the attention-vs-distance curve.\nDifferent centers produce different curves\u2014some peak at\nsmall distances (local attention), others at large distances\n(attention sinks). In all cases, the distance preference is\nencoded in the Q/K centers and can be predicted via the\ntrigonometric series.\n3.3. Experimental Validation\nWe experimentally test whether Q/K concentration causes\nattention to follow the distance preferences described by\nthe trigonometric series. We compute the series from Q/K\ncenters and check if it reconstructs actual attention. Suc-\ncessful reconstruction confirms this causal link and shows\nthese preferences are predictable from the centers.\nWe test this on Qwen3-8B across all 1152 attention heads\n(36 layers \u00d7 32 heads) using a \u223c10K token sequence. For\nreconstruction, we compute the mean Q and K vectors from\na calibration dataset in the pre-RoPE space\u2014denoted E[q\nf \n]\nand E[k\nf \n] for frequency band f \u2014and substitute them into\nthe trigonometric series:\n\u02c6s(\u2206) = \nX\nf\n\u2225E[q\nf \n]\u2225\u2225E[k\nf \n]\u2225 cos(\u03c9\nf \n\u2206 + \u03d5\nf \n) (4)\n4"
+    },
+    {
+      "aiAssistanceScore": 0.3494134,
+      "confidence": "Low",
+      "endIndex": 372,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nwhere \u03d5\nf \n= arg(E[q\nf \n])\u2212arg(E[k\nf \n]) is the phase difference\nbetween the mean vectors. This yields a predicted attention\ncurve over Q-K distance \u2206 (Figure 2(D)).\nTo quantify prediction quality, we define the Reconstruc-\ntion Correlation \u00afr: the mean Pearson correlation between\npredicted and act"
+    },
+    {
+      "aiAssistanceScore": 0.3329188,
+      "confidence": "Low",
+      "endIndex": 2124,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 371,
+      "text": "tual attention logits. For each query, we\ncompute the correlation between its actual logits and the\npredicted curve, then average across all queries:\n\u00afr = \n1\nN\nN\nX\ni=1\n\u03c1(a\ni\n, \n\u02c6\ns) (5)\nHere a\ni \nis the vector of actual attention logits for query\ni, \n\u02c6\ns is the predicted logits from Equation 4, and \u03c1 is Pear-\nson correlation. Both a\ni \nand \n\u02c6\ns \nare evaluated at the same\nlogarithmically-spaced distances \u2206 = 1, 2, 4, 8, . . ., ensur-\ning balanced coverage across distance scales.\nFigure 2(D) shows an example. For the first head of the\nfirst layer\u2014chosen to avoid cherry-picking\u2014the prediction\nclosely tracks actual attention, achieving \u00afr = 0.72. Across\nall heads in three different architectures (Qwen3, Qwen2.5,\nLlama3), \u00afr peaks around 0.6\u20130.9 in the distribution, with\nmean values above 0.5; see Figure 3 for the full distributions.\nThe high correlation across many heads and architectures\nconfirms that the trigonometric series computed from Q/K\ncenters accurately predicts attention patterns. We further\nfind that Q/K concentration is a model-intrinsic property:\non Qwen3-8B, measuring MRL across Math, Coding, and\nChat domains yields nearly identical values (0.977\u20130.980),\nwith \u223c90% of heads exhibiting R > 0.95 regardless of\ndomain. The same holds across architectures, including\nMLA (Appendix I).\n4. TriAttention\nBased on the analysis in \u00a73, we propose a KV cache com-\npression method that scores key importance and retains only\nthe top-scoring keys (Figure 4). The scoring function com-\nbines two signals (\u00a74.1): the trigonometric series, which\ncaptures distance preferences, and norm information as a\ncomplement; the weight between them is adjusted based on\nQ/K concentration (\u00a74.2). Finally, we describe how to apply\nthis scoring for KV "
+    },
+    {
+      "aiAssistanceScore": 0.35242853,
+      "confidence": "Low",
+      "endIndex": 3672,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 2123,
+      "text": " cache pruning (\u00a74.3).\n4.1. Key Importance Scoring\nIn KV cache, keys are already cached. Let k\nf \n\u2208 C denote\nthe pre-RoPE of a key k in frequency band f , and \u2206 =\np\nq \n\u2212 p\nk \nthe Q-K distance.\nTrigonometric Series Score. Keys at different positions\nhave different distances to future queries. To estimate how\nmuch attention each key will receive, we use the Q center\nas a proxy for future queries\u2014justified by the Q/K concen-\ntration observed in \u00a73. The trigonometric series then gives\nthe expected attention at distance \u2206:\nS\ntrig\n(k, \u2206) = \nX\nf\n\u2225E[q\nf \n]\u2225 \u00b7 \u2225k\nf \n\u2225 \u00b7 cos(\u03c9\nf \n\u2206 + \u03d5\nf \n) (6)\nHere E[q\nf \n] \u2208 C is the Q center in frequency band f , com-\nputed from calibration data. Since keys in the cache are\nknown, we directly use their representations k\nf \n. The phase\n\u03d5\nf \n= arg(E[q\nf \n]) \u2212 arg(k\nf \n) is the angular difference be-\ntween the Q center and the current key.\nNorm-Based Score. The trigonometric series assumes Q/K\nare exactly at their centers. In practice, there is variation\naround the centers, and this variation affects attention. We\naccount for this with a norm-based term:\nS\n(0)\nnorm\n(k) = \nX\nf\nE[\u2225q\nf \n\u2225] \u00b7 \u2225k\nf \n\u2225 (7)\nHere E[\u2225q\nf \n\u2225] is the expected query norm in band f , com-\nputed from calibration data. Unlike methods that only con-\nsider \u2225k\u2225, we weight each frequency band by its expected\nquery contribution.\n4.2. Adaptive Weighting via Concentration\nThe trigonometric series score S\ntrig \nis most accurate when\nQ/K are highly concentrated; the norm-based score S\nnorm\nbecomes more important for the few heads where conc"
+    },
+    {
+      "aiAssistanceScore": 0.3279198,
+      "confidence": "Low",
+      "endIndex": 4618,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3671,
+      "text": "centra-\ntion is lower. We automatically balance these components\nusing Q/K concentration as a weighting factor.\nRecall that concentration is quantified by the Mean Resul-\ntant Length R\nf \n= \u2225E[q\nf \n]\u2225/E[\u2225q\nf \n\u2225] for each frequency\nband f . When R\nf \nis high, the trigonometric series is ac-\ncurate and S\ntrig \nis reliable; when R\nf \nis low, there is more\nvariation around the center and S\nnorm \nprovides useful com-\nplementary information.\nWe refine the norm-based score by scaling each frequency\nband by (1 \u2212 R\nf \n):\nS\nnorm\n(k) = \nX\nf\n(1 \u2212 R\nf \n) \u00b7 E[\u2225q\nf \n\u2225] \u00b7 \u2225k\nf \n\u2225 (8)\nThis can be rewritten as:\nS\nnorm\n(k) = \nX\nf\n(E[\u2225q\nf \n\u2225] \u2212 \u2225E[q\nf \n]\u2225) \u00b7 \u2225k\nf \n\u2225 (9)\nIntuitively, when R\nf \nis high (concentration is strong), (1 \u2212\nR\nf \n) is small, so S\nnorm \ncontributes little and S\ntrig \ndominates.\nWhen R\nf \nis low (concentration is weak), the full norm\ncontribution is preserved.\nThe final combined score is:\nS(k, \u2206) = S\ntrig\n(k, \u2206) + S\nnorm\n(k) (10)\n5"
+    },
+    {
+      "aiAssistanceScore": 0.3279198,
+      "confidence": "Low",
+      "endIndex": 215,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nTable 1. Reasoning performance on AIME24 and AIME25. Best results are in bold, second best are underlined. All methods are compared\nunder the "
+    },
+    {
+      "aiAssistanceScore": 0.2623273,
+      "confidence": "Low",
+      "endIndex": 1263,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 214,
+      "text": " same KV cache budget.\nMethod \nAIME24 AIME25\nQwen3-8B DS-Llama DS-Qwen GPT-OSS Qwen3-8B DS-Llama DS-Qwen GPT-OSS\nFull Attention 57.1 50.4 43.8 69.2 40.8 31.4 34.2 60.0\nSnapKV 34.6 5.0 34.6 48.3 20.0 6.7 25.0 36.7\nR-KV 25.4 25.8 34.6 49.6 17.5 11.2 23.3 39.2\nTriAttention 42.1 33.8 42.5 59.2 32.9 19.6 30.0 49.2\nA key may be queried from any future position, so its im-\nportance depends on all future query positions. We compute\nS(k, \u2206 + \u03b4) at multiple offsets and define the averaged\nimportance score as:\n\u02dc\nS(k) = \n1\n|D|\nX\n\u03b4\u2208D\nS(k, \u2206 + \u03b4) (11)\nwhere D = {1, 2, 4, . . . , 2\n16\n} is the set of future offsets.\n4.3. KV Cache Pruning\nWith the scoring function \n\u02dc\nS(k) defined, we score each key in\nthe cache independently and retain only the top-B. Before\nselection, we address two practical considerations: reducing\nthe computational overhead of frequent scoring, and han-\ndling Grouped-Query Attention (GQA) (Ainslie et al., 2023)\nwhere multiple query heads share each KV head.\nWindow-based Pruning. Scoring all keys at every decod-\ning step is compu"
+    },
+    {
+      "aiAssistanceScore": 0.3352547,
+      "confidence": "Low",
+      "endIndex": 2586,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1262,
+      "text": "utationally expensive. Instead, we trigger\npruning once every \u03b2 = 128 generated tokens: when the\n128-th token of each interval is generated, if the cache ex-\nceeds budget B, we score all keys, retain the top-B, and\nevict the rest. We call each 128-token interval a window,\nfollowing R-KV (Cai et al., 2025). This batched approach\nsignificantly reduces overhead.\nGrouped-Query Attention. In GQA, each KV head is\nshared by G query heads. Since \n\u02dc\nS depends on query statis-\ntics (E[q\nf \n] and E[\u2225q\nf \n\u2225]), each key receives G different\nscores. These scores operate at different scales across heads,\nmaking direct comparison unreliable.\nWe apply normalize-then-aggregate. Let \n\u02dc\nS\n(g)\n(k) denote the\nscore computed using statistics from query head g. We first\nz-score normalize within each head:\n\u02c6\nS\n(g)\n(k) = \n\u02dc\nS\n(g)\n(k) \u2212 \u03bc\ng\n\u03c3\ng\n(12)\nwhere \u03bc\ng \n, \u03c3\ng \nare the mean and standard deviation of\n{ \n\u02dc\nS\n(g)\n(k)}\nk \nover all keys. We then aggregate via maximum:\nS\nfinal\n(k) = max\ng\u2208{0,...,G\u22121}\n\u0010 \n\u02c6\nS\n(g)\n(k)\n\u0011\n(13)\nTable 2. Reasoning performance on MATH 500 with KV budget\nof 512. Best results are in bold, second best are underlined.\nMethod Qwen3-8B DS-Llama DS-Qwen GPT-OSS\nFull Attention 69.6 82.4 87.0 91.4\nSnapKV 49.2 65.5 66.4 68.2\nR-KV 46.4 76.9 71.6 77.4\nTriAttention 56.0 80.6 79.6 81.2\nA key is retained if any query h"
+    },
+    {
+      "aiAssistanceScore": 0.20047101,
+      "confidence": "Medium",
+      "endIndex": 4066,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 2585,
+      "text": "head deems it important. We\nretain the top-B keys by S\nfinal\n(k) and evict the rest.\n5. Experiments\n5.1. Experimental Setup\nModels. We evaluate on four reasoning-capable LLMs span-\nning different architectures and scales: Qwen3-8B (Qwen\nTeam, 2025), DeepSeek-R1-Distill-Llama-8B (DeepSeek-\nAI, 2025), DeepSeek-R1-Distill-Qwen-7B (DeepSeek-AI,\n2025), and GPT-OSS-20B (OpenAI, 2025). These mod-\nels are selected for their strong chain-of-thought reasoning\ncapabilities and diverse architectural foundations.\nBaselines. We compare against three methods: (1) Full\nAttention\u2014no pruning, serving as the performance upper\nbound; (2) SnapKV (Li et al., 2024b)\u2014selects important\ntokens based on historical attention scores from a local\nobservation window; (3) R-KV (Cai et al., 2025)\u2014a recent\nmethod combining attention-based importance scoring with\nredundancy detection for reasoning models. Additional\ncomparisons with other methods are in Appendix E.\nDatasets. We use three mathematical reasoning bench-\nmarks: AIME 2024 (Mathematical Association of Amer-\nica, 2024) (30 problems), AIME 2025 (Mathematical As-\nsociation of America, 2025) (30 problems), and MATH\n500 (Hendrycks et al., 2021) (500 problems). AIME prob-\nlems are challenging competition-level mathematics requir-\ning multi-step reasoning; MATH 500 covers diverse math-\nematical reasoning tasks. We further evaluate on general\ntasks (LongBench, RULER) in Appendix E.\nImplementation Details. Unless otherwise specified, ex-\n6"
+    },
+    {
+      "aiAssistanceScore": 0.20047101,
+      "confidence": "Medium",
+      "endIndex": 245,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFigure 5. Performance comparison on Qwen3-8B. (A\u2013C) Accuracy vs. KV cache budget on three mathematical reasoning benchmarks.\nTriAttention consistently outperforms R-KV acro"
+    },
+    {
+      "aiAssistanceScore": 0.1636211,
+      "confidence": "Medium",
+      "endIndex": 1996,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 244,
+      "text": "oss all budget levels. (D) Memory retention on Recursive State Query benchmark. Depth\nrefers to DFS recursion depth; deeper recursion requires retaining more intermediate states, increasing memory pressure.\nperiments are conducted on NVIDIA A100 80GB GPUs\nusing bfloat16 precision with FlashAttention-2 (Dao, 2024).\nGPT-OSS uses H100 GPUs with FlashAttention-3 (Shah\net al., 2024), as FlashAttention-3 requires Hopper architec-\nture. For generation, we set maximum length to 32,768\n(32k) tokens, temperature to 0.6, and top-p to 0.95. For\nAIME benchmarks, each problem is sampled 8 times and\nwe report the average pass rate; for MATH 500, we sample\nonce per problem. For KV cache compression, we follow\nthe same settings as R-KV: every 128 tokens decoded, a\ncompression round is triggered to prune the KV cache back\nto the specified budget. The default KV budget is 2048\ntokens. For DS-Llama and MATH 500, we use a budget of\n512 tokens due to shorter response lengths, ensuring that KV\ncache compression is actually exercised during generation.\n5.2. Results\n5.2.1. REASONING TASK PERFORMANCE\nWe evaluate TriAttention on standard mathematical reason-\ning benchmarks. Tables 1 and 2 present results on AIME and\nMATH 500 respectively. Across all models and datasets, Tri-\nAttention consistently achieves the best performance among\nKV cache compression methods, closely approaching Full\nAttention while outperforming all baselines.\nTo understand how performance varies with compression ag-\ngressiveness, we evaluate TriAttention and R-KV on Qwen3-\n8B across a range of KV budgets from 512 to 4096 tokens\non three benchmarks, as shown in Figure 5. TriAttention\nconsistently outperforms R-KV across all budget levels,\nwith the advantage being most pronounced"
+    },
+    {
+      "aiAssistanceScore": 0.2268885,
+      "confidence": "Medium",
+      "endIndex": 3942,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1995,
+      "text": "d at low-to-mid\nbudgets. On MATH 500, TriAttention matches Full Atten-\ntion at a budget of 1024 and slightly exceeds it at higher\nbudgets. On the more challenging AIME benchmarks, Tri-\nAttention maintains a substantial lead: with a budget of\n2048 on AIME25, TriAttention achieves 32.9% compared\nto R-KV\u2019s 17.5%\u2014a 15.4 percentage point gap. Notably,\nTriAttention matches or exceeds Full Attention with sig-\nnificantly compressed KV cache: on AIME25, it achieves\n43.3% with a budget of 4096, surpassing Full Attention.\n5.2.2. MEMORY RETENTION BENCHMARK\nKV cache pruning may cause LLMs to forget intermediate\nstates during long reasoning chains. To measure this effect,\nwe design a benchmark based on recursive simulation.\nWhy Recursion Tests Memory. Recursive algorithms nat-\nurally stress memory retention: the model must descend\nthrough nested calls, retain intermediate states, then back-\ntrack to produce results. Deeper recursion depth requires\nretaining more intermediate states, creating increasing mem-\nory pressure. If a KV cache pruning algorithm incorrectly\ndiscards these critical states, the model loses the informa-\ntion needed for backtracking, and errors cascade through all\nsubsequent steps (see Appendix C for an illustration). We\nuse depth-first search (DFS) (Reif, 1985) to instantiate this\nrecursive simulation; see Appendix C for task details.\nWe evaluate on Qwen3-8B with step counts from 6 to 20,\ncomparing Full Attention, R-KV, and TriAttention on 80\nsamples per step count. Both compression methods use a\nKV budget of 2048, as shown in Figure 5(D).\nUnder low-to-moderate memory pressure up to depth 16,\nTriAttention performs comparably to Full Attention, even\nslightly outperforming it at depths 8 and 12. Only beyond\ndepth 18 does TriAttention begin to lag behind. This sug-\ngests that Full Attention\u2019s KV cache contains redundancy\nunder typical workloads, and TriAttention effectively pre-\nserves the essential informatio"
+    },
+    {
+      "aiAssistanceScore": 0.21209583,
+      "confidence": "Medium",
+      "endIndex": 4262,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 3941,
+      "text": "on for memory retention.\nIn contrast, R-KV consistently underperforms both methods\nacross all depths. Most notably, R-KV exhibits catastrophic\naccuracy degradation starting at depth 16, dropping from ap-\nproximately 61% at depth 14 to 31% at depth 16. This sharp\ndecline indicates that the pruning of R-KV significantly\n7"
+    },
+    {
+      "aiAssistanceScore": 0.21209583,
+      "confidence": "Medium",
+      "endIndex": 832,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nTable 3. Ablation studies on Qwen3-8B with KV budget of 2048. (A) Effect of removing trigonometric series score S\ntrig\n. (B) Effect of\nremoving concentration-based weighting. (C) Cross-domain generalization: comparing calibration on coding vs. reasoning data, both\ntested on reasoning.\n(A) Trigonometric series score\nMethod AIME24 AIME25\nw/o S\ntrig \n18.8 21.2\nTriAttn. 42.1 32.9\n(B) Concentration-based weighting\nMethod AIME24 AIME25\nw/o R 41.3 28.7\nTriAttn. 42.1 32.9\n(C) Cross-domain calibration\nMethod AIME24 AIME25\nCoding 44.2 29.2\nReasoning 42.1 32.9\nTable 4. Throughput comparison on Qwen3-8B. At KV budgets achieving comparable accuracy to Full Attention, TriAttention shows\nsignificant throughput gains.\nMetric \nMATH 500 AIME24 AIME25\nFull Attn. TriAt"
+    },
+    {
+      "aiAssistanceScore": 0.23649968,
+      "confidence": "Medium",
+      "endIndex": 1963,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 831,
+      "text": "ttn. Full Attn. TriAttn. Full Attn. TriAttn.\nKV Budget \u2013 1024 \u2013 4096 \u2013 3072\nAccuracy \n69.6 68.4 57.1 54.6 40.8 40.8\nThroughput 222.8 1405.2 222.8 413.9 222.8 563.5\nSpeedup 6.3\u00d7 1.9\u00d7 2.5\u00d7\nTable 5. Comparison between R-KV and TriAttention at compara-\nble reasoning accuracy and memory.\nMetric \nComparable Accuracy Comparable Memory\nR-KV TriAttn. R-KV TriAttn.\nKV Budget 2048 1024 1024 1024\nMATH 500 68.2 68.4 60.4 68.4 \n\u21918.0\nAIME24 \n25.4 25.8 10.4 25.8 \n\u219115.4\nThroughput \n760.4 1405.2 \n\u2191644.88 \n1345.5 1405.2\nimpairs the model of retaining intermediate states.\n5.2.3. ABLATION STUDY\nEffect of Scoring Components. Our scoring function com-\nbines the trigonometric series score S\ntrig \nwith the norm-\nbased score S\nnorm\n. We validate both components by re-\nmoving each in turn. Removing S\ntrig \nand relying solely\non S\nnorm \nsubstantially degrades performance (Table 3A),\nconfirming that distance preferences from the trigonomet-\nric series are essential. Conversely, removing S\nnorm \nand\nrelying solely on S\ntrig \ndrops AIME24 accuracy from 45.8%\nto 40.4% (\u22125.4%), confirming that the norm-based score\nprovides complementary informatio"
+    },
+    {
+      "aiAssistanceScore": 0.33234116,
+      "confidence": "Low",
+      "endIndex": 3894,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 1962,
+      "text": "on about token salience.\nEffect of Adaptive Weighting. The Mean Resultant Length\nR balances the two scoring components based on Q/K con-\ncentration. We compare against a variant \u201cw/o R\u201d that\nreplaces S\nnorm \nwith S\n(0)\nnorm\n, removing the (1 \u2212 R\nf \n) weight-\ning. Table 3B shows that removing R consistently degrades\nperformance, validating the effectiveness of using Q/K con-\ncentration to adaptively weight the scoring components.\nCross-Domain Calibration. TriAttention requires offline\ncalibration to collect Q/K statistics. A natural concern is\nwhether these statistics overfit to the calibration domain.\nTo test generalization, we calibrate on coding data (Jain\net al., 2025) instead of reasoning data and evaluate on rea-\nsoning benchmarks (\u201cCoding\u201d in Table 3C). Table 3C shows\nthat cross-domain calibration achieves comparable accura-\ncies, demonstrating that the learned Q/K statistics generalize\nacross domains rather than overfitting to specific tasks.\nFuture Offset Design. Our scoring function evaluates key\nimportance at multiple future offsets D. We ablate two\naspects: the range/number of offsets, and the spacing strat-\negy (Table E). Increasing the maximum distance from 128\nto 4096 improves accuracy from 41.7% to 48.8% (+7.1%),\nconfirming that future offsets are beneficial. Geometric spac-\ning ({1, 2, 4, . . .}) dramatically outperforms linear spacing\n(45.8% vs. 28.7%, \u221217.1%), as near-distance positions re-\nquire denser sampling.\nCalibration Sensitivity. We test robustness to calibration\ndata quantity and quality (Table F). Performance is sta-\nble across calibration sizes from 50k to 960k tokens (45.4\u2013\n45.8%). Similarly, calibration data quality shows no clear\ncorrelation with accuracy: using Google homepage HTML\n(low quality) achieves 46.2%, comparable to ShareGPT chat\ndata (46.7%). This confirms that the Q/K statistics captured\nduring calibration are model-intrinsic properties, robust to\nthe choi"
+    },
+    {
+      "aiAssistanceScore": 0.2609539,
+      "confidence": "Low",
+      "endIndex": 4127,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 3893,
+      "text": "ice of calibration data.\n5.2.4. THROUGHPUT AND EFFICIENCY\nWe evaluate efficiency from two perspectives: comparison\nwith Full Attention and with prior compression methods.\nFollowing the evaluation protocol of R-KV (Cai et al., 2025),\n8"
+    },
+    {
+      "aiAssistanceScore": 0.2609539,
+      "confidence": "Low",
+      "endIndex": 1472,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nthroughput is measured as the average tokens generated per\nsecond over 16K decoding length on a single A100 80GB\nGPU at maximum batch size.\nComparison with Full Attention. At comparable accuracy,\nTriAttention achieves substantial efficiency gains (Figure 1,\nTable 4). On AIME25, at identical accuracy to Full Atten-\ntion (40.8%), TriAttention achieves 2.5\u00d7 higher through-\nput or 10.7\u00d7 KV memory reduction. On MATH 500, the\nthroughput gain reaches 6.3\u00d7 (1,405 vs. 223 tokens/s) while\nmaintaining comparable accuracy (68.4% vs. 69.6%).\nComparison with R-KV. Table 5 compares TriAttention\nwith R-KV under two settings. At comparable accuracy, Tri-\nAttention requires only half the KV budget (1,024 vs. 2,048\ntokens) while achieving 85% higher throughput (1,405 vs.\n760 tokens/s). At the same memory budget, TriAttention\nmaintains similar throughput but achieves higher accuracy\u2014\n8% on MATH 500 and 15% on AIME24. TriAttention\nprovides a strictly better accuracy-efficiency trade-off.\n6. Conclusion\nWe discover Q/K concentration in the pre-RoPE space:\nquery and key vectors cluster around fixed centers, causing\nattention to follow predictable distance preferences via a\ntrigonometric series. This concentration is a model-intrinsic\nproperty, consistent across domains and architectures. Tri-\nAttention leverages this finding to estimate key importance\nfrom stable Q/K centers, avoiding the instability"
+    },
+    {
+      "aiAssistanceScore": 0.14527075,
+      "confidence": "Medium",
+      "endIndex": 3307,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 1471,
+      "text": "y of post-\nRoPE methods. Experiments on both mathematical reason-\ning (AIME, MATH 500) and general tasks (LongBench,\nRULER) show TriAttention consistently outperforms all\nbaselines, matching Full Attention while achieving 2.5\u00d7\nthroughput and 10.7\u00d7 KV memory reduction.\nImpact Statement\nThis paper advances inference-time reasoning efficiency\nin LLMs. The proposed TriAttention cuts computational\ncost and latency without compromising accuracy, enabling\nmore efficient, accessible deployment of reasoning-capable\nLLMs. Its societal and ethical implications align with stan-\ndard ML efficiency improvements\u2014including sustainability\nand usability benefits\u2014and it introduces no new model ca-\npabilities, data sources, or application domains, thus raising\nno novel ethical concerns beyond those already established\nfor LLMs, with no further broader impacts.\nAcknowledgements\nWe thank MIT-IBM Watson AI Lab, Amazon, Dell, Hyundai\nMotor Company, MIT AI Hardware Program for supporting\nthis research.\nReferences\nAinslie, J., Lee-Thorp, J., de Jong, M., Zemlyanskiy, Y.,\nLebron, F., and Sanghai, S. Gqa: Training generalized\nmulti-query transformer models from multi-head check-\npoints. In Proceedings of the 2023 Conference on Em-\npirical Methods in Natural Language Processing, pp.\n4895\u20134901, 2023.\nBai, Y., Lv, X., Zhang, J., Lyu, H., Tang, J., Huang, Z.,\nDu, Z., Liu, X., Zeng, A., Hou, L., et al. Longbench: A\nbilingual, multitask benchmark for long context under-\nstanding. In Proceedings of the 62nd annual meeting of\nthe association for computational linguistics (volume 1:\nLong papers), pp. 3119\u20133137, 2024.\nBarbero, F., Vitvitskyi, A., Perivolaropoulos, C., Pascanu,\nR., and Veli \n\u02c7\nckovi \n\u00b4\nc, P. Round and round we go! what\nmakes rotary positional encodings useful? In Proceedings\nof the International Conference on Learning Represen"
+    },
+    {
+      "aiAssistanceScore": 0.018098613,
+      "confidence": "High",
+      "endIndex": 4702,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 3306,
+      "text": "nta-\ntions (ICLR), 2025.\nBehnam, P., Fu, Y., Zhao, R., Tsai, P.-A., Yu, Z., and Tu-\nmanov, A. RocketKV: Accelerating long-context LLM\ninference via two-stage KV cache compression. In Forty-\nsecond International Conference on Machine Learning,\n2025. URL https://openreview.net/forum?\nid=RyOpooIxDF.\nCai, Z., Zhang, Y., Gao, B., Liu, Y., Li, Y., Liu, T., Lu, K.,\nXiong, W., Dong, Y., Hu, J., et al. Pyramidkv: Dynamic\nkv cache compression based on pyramidal information\nfunneling. arXiv preprint arXiv:2406.02069, 2024.\nCai, Z., Xiao, W., Sun, H., Luo, C., Zhang, Y., Wan, K.,\nLi, Y., Zhou, Y., Chang, L.-W., Gu, J., et al. R-KV:\nRedundancy-aware KV cache compression for reasoning\nmodels. In The Thirty-ninth Annual Conference on Neural\nInformation Processing Systems, 2025.\nChen, Y., Huang, W., Shi, B., Hu, Q., Ye, H., Zhu, L., Liu,\nZ., Molchanov, P., Kautz, J., Qi, X., et al. Scaling rl to\nlong videos. arXiv preprint arXiv:2507.07966, 2025.\nDao, T. Flashattention-2: Faster attention with better paral-\nlelism and work partitioning. In The Twelfth International\nConference on Learning Representations, 2024.\nDeepSeek-AI. Deepseek-r1: Incentivizing reasoning capa-\nbility in llms via reinforcement learning. Nature, 645:\n633\u2013638, 2025.\nDevoto, A., Jeblick, M., and J \n\u00b4\negou, S. Expected attention:\nKv cache compression by estimating attention from future\nqueries distribution. arXiv preprint "
+    },
+    {
+      "aiAssistanceScore": 0.022381837,
+      "confidence": "High",
+      "endIndex": 4727,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 4701,
+      "text": " arXiv:2510.00636,\n2025.\n9"
+    },
+    {
+      "aiAssistanceScore": 0.022381837,
+      "confidence": "High",
+      "endIndex": 1343,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nDubey, A., Jauhri, A., Pandey, A., Kadian, A., Al-Dahle,\nA., Letman, A., Mathur, A., Schelten, A., Yang, A., Fan,\nA., et al. The llama 3 herd of models. arXiv preprint\narXiv:2407.21783, 2024.\nFeng, Y., Lv, J., Cao, Y., Xie, X., and Zhou, S. K. Ada-KV:\nOptimizing KV cache eviction by adaptive budget allo-\ncation for efficient LLM inference. In The Thirty-ninth\nAnnual Conference on Neural Information Processing\nSystems, 2025.\nGe, S., Zhang, Y., Liu, L., Zhang, M., Han, J., and Gao,\nJ. Model tells you what to discard: Adaptive KV cache\ncompression for LLMs. In The Twelfth International\nConference on Learning Representations, 2024.\nGu, X., Zhang, T., Li, Z., Qin, B., and Wang, Z. When\nattention sink emerges in language models: An empirical\nview. In Proceedings of the International Conference on\nLearning Representations (ICLR), 2025.\nGuo, Z., Kamigaito, H., and Watanabe, T. Attention score\nis not all you need for token importance indicator in kv\ncache reduction: Value also matters. In Proceedings of\nthe 2024 Conference on Empirical Methods in Natural\nLanguage Processing, pp. 21158\u201321166, 2024.\nHendrycks, D., Burns, C., Kadavath, S., Arora, A., Basart,\nS., Tang, E., Song, D., and Steinhardt, Jacob, J. Measur-\ning mathematical problem solving with the math "
+    },
+    {
+      "aiAssistanceScore": 0.022828896,
+      "confidence": "High",
+      "endIndex": 2662,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 1342,
+      "text": " dataset.\nNeurIPS, 2021.\nHong, X., Dai, C., Li, B., Wu, S., Wang, Z., Wu, H., Wang,\nD., Zhu, J., He, S., and Sun, J.-R. On the token distance\nmodeling ability of higher rope attention dimension. In\nProceedings of the 2024 Conference on Empirical Meth-\nods in Natural Language Processing (EMNLP), 2024.\nHsieh, C.-P., Sun, S., Kriman, S., Acharya, S., Rekesh, D.,\nJia, F., and Ginsburg, B. Ruler: What\u2019s the real context\nsize of your long-context language models? In First\nConference on Language Modeling, 2024.\nHu, J., Huang, W., Wang, W., Li, Z., Hu, T., Liu, Z., Chen,\nX., Xie, T., and Shan, Y. Raas: Reasoning-aware attention\nsparsity for efficient llm reasoning. In Findings of the\nAssociation for Computational Linguistics: ACL 2025,\npp. 2577\u20132590, 2025.\nJain, N., Han, K., Gu, A., Li, W.-D., Yan, F., Zhang, T.,\nWang, S., Solar-Lezama, A., Sen, K., and Stoica, I. Live-\ncodebench: Holistic and contamination free evaluation\nof large language models for code. In The Thirteenth\nInternational Conference on Learning Representations,\n2025.\nJiang, A. Q., Sablayrolles, A., Mensch, A., Bamford, C.,\nChaplot, D. S., de las Casas, D., Bressand, F., Lengyel,\nG., Lample, G., Saulnier, L., Lavaud, L. R., Lachaux,\nM.-A., Stock, P., Scao, T. L., Lavril, T., Wang, T.,\nLacroix, T., and Sayed, W. E. Mistral 7b. arXiv preprint\n"
+    },
+    {
+      "aiAssistanceScore": 0.012234523,
+      "confidence": "High",
+      "endIndex": 4047,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2661,
+      "text": "\narXiv:2310.06825, 2023.\nKobayashi, G., Kuribayashi, T., Yokoi, S., and Inui, K.\nAttention is not only a weight: Analyzing transformers\nwith vector norms. In Proceedings of the 2020 Conference\non Empirical Methods in Natural Language Processing\n(EMNLP), pp. 7057\u20137075, 2020.\nLi, H., Li, Y., Tian, A., Tang, T., Xu, Z., Chen, X., Hu, N.,\nDong, W., Li, Q., and Chen, L. A survey on large lan-\nguage model acceleration based on kv cache management.\narXiv preprint arXiv:2412.19442, 2024a.\nLi, Y., Huang, Y., Yang, B., Venkitesh, B., Locatelli, A.,\nYe, H., Cai, T., Lewis, P., and Chen, D. SnapKV: LLM\nknows what you are looking for before generation. In The\nThirty-eighth Annual Conference on Neural Information\nProcessing Systems, 2024b.\nLiu, Z., Desai, A., Liao, F., Wang, W., Xie, V., Xu, Z.,\nKyrillidis, A., and Shrivastava, A. Scissorhands: Exploit-\ning the persistence of importance hypothesis for llm kv\ncache compression at test time. In Oh, A., Naumann,\nT., Globerson, A., Saenko, K., Hardt, M., and Levine, S.\n(eds.), Advances in Neural Information Processing Sys-\ntems, volume 36, pp. 52342\u201352364. Curran Associates,\nInc., 2023.\nMardia, K. V. and Jupp, P. E. Directional Statistics. John\nWiley & Sons, 1999.\nMathematical Association of America. American invita-\ntional mathematics examination 2024, 2024.\nMathematical Association of America. American invita-\ntional mathematics "
+    },
+    {
+      "aiAssistanceScore": 0.01869212,
+      "confidence": "High",
+      "endIndex": 4675,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 4046,
+      "text": " examination 2025, 2025.\nOpenAI. gpt-oss-120b & gpt-oss-20b model card. arXiv\npreprint arXiv:2508.10925, 2025.\nOren, M., Hassid, M., Yarden, N., Adi, Y., and Schwartz,\nR. Transformers are multi-state rnns. In Proceedings of\nthe 2024 Conference on Empirical Methods in Natural\nLanguage Processing, pp. 18724\u201318741, 2024.\nPeng, B., Quesnelle, J., Fan, H., and Shippole, E. Yarn:\nEfficient context window extension of large language\nmodels. arXiv preprint arXiv:2309.00071, 2023.\nQwen Team. Qwen2.5 technical report. arXiv preprint\narXiv:2412.15115, 2024.\nQwen Team. Qwen3 technical report. arXiv preprint\narXiv:2505.09388, 2025.\n10"
+    },
+    {
+      "aiAssistanceScore": 0.01869212,
+      "confidence": "High",
+      "endIndex": 591,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nReif, J. H. Depth-first search is inherently sequential. Infor-\nmation Processing Letters, 20(5):229\u2013234, 1985.\nShah, J., Bikshandi, G., Zhang, Y., Thakkar, V., Ramani,\nP., and Dao, T. Flashattention-3: Fast and accurate atten-\ntion with asynchrony and low-precision. In Advances in\nNeural Information Processing Systems, volume 37, pp.\n68658\u201368685, 2024.\nShao, Z., Wang, P., Zhu, Q., Xu, R., Song, J., Bi, X., Zhang,\nH., Zhang, M., Li, Y., Wu, Y., et al. Deepseekmath: Push-\ning the limits of mathematical reasoning i"
+    },
+    {
+      "aiAssistanceScore": 0.017477598,
+      "confidence": "High",
+      "endIndex": 1811,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 590,
+      "text": "in open language\nmodels. arXiv preprint arXiv:2402.03300, 2024.\nShi, L., Zhang, H., Yao, Y., Li, Z., and Zhao, H. Keep\nthe cost down: A review on methods to optimize llm\u2019s\nkv-cache consumption. arXiv preprint arXiv:2407.18003,\n2024.\nSu, J., Ahmed, M., Lu, Y., Pan, S., Bo, W., and Liu, Y.\nRoformer: Enhanced transformer with rotary position\nembedding. Neurocomputing, 568:127063, 2024.\nTang, J., Zhao, Y., Zhu, K., Xiao, G., Kasikci, B., and Han,\nS. Quest: Query-aware sparsity for efficient long-context\nllm inference. arXiv preprint arXiv:2406.10774, 2024.\nTeam, G., Kamath, A., Ferret, J., Pathak, S., Vieillard,\nN., Merhej, R., Perrin, S., Matejovicova, T., Ram \n\u00b4\ne, A.,\nRivi \n`\nere, M., et al. Gemma 3 technical report. arXiv\npreprint arXiv:2503.19786, 2025.\nWei, J., Wang, X., Schuurmans, D., Bosma, M., ichter, b.,\nXia, F., Chi, E., Le, Q. V., and Zhou, D. Chain-of-thought\nprompting elicits reasoning in large language models. In\nKoyejo, S., Mohamed, S., Agarwal, A., Belgrave, D.,\nCho, K., and Oh, A. (eds.), Advances in Neural Informa-\ntion Processing Systems, volume 35, pp. 24824\u201324837.\nCurran Associates, Inc., 2022.\nWu, W., Wang, Y., Xiao, G., Peng, H., and Fu, Y. Retrieval\nhead mechanistically explains l"
+    },
+    {
+      "aiAssistanceScore": 0.12723006,
+      "confidence": "High",
+      "endIndex": 3095,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1810,
+      "text": "long-context factuality. In\nThe Thirteenth International Conference on Learning\nRepresentations, 2025.\nXiao, G., Tian, Y., Chen, B., Han, S., and Lewis, M. Ef-\nficient streaming language models with attention sinks.\nIn The Twelfth International Conference on Learning\nRepresentations, 2024.\nXiao, G., Tang, J., Zuo, J., Guo, J., Yang, S., Tang, H.,\nFu, Y., and Han, S. Duoattention: Efficient long-context\nLLM inference with retrieval and streaming heads. In\nThe Thirteenth International Conference on Learning\nRepresentations, 2025.\nZhang, H., Zhang, H., Ma, X., Zhang, J., and Guo, S. Lazye-\nviction: Lagged kv eviction with attention pattern obser-\nvation for efficient long reasoning, 2025.\nZhang, Z., Sheng, Y., Zhou, T., Chen, T., Zheng, L., Cai, R.,\nSong, Z., Tian, Y., R \n\u00b4\ne, C., Barrett, C., et al. H2o: Heavy-\nhitter oracle for efficient generative inference of large\nlanguage models. In Advances in Neural Information\nProcessing Systems, volume 36, pp. 34661\u201334710, 2023.\nZhou, Y., Song, S., Liu, B., Xi, Z., Jin, S., Fan, X., Zhang,\nZ., Li, W., and Huang, X. Elitekv: Scalable kv cache\ncompression via rope frequency selection and joint low-\nrank projection. arXiv preprint arXiv:2503.01586, 2025.\nZhou, Z., Ning, X., Hong, K., Fu, T., Xu, J., Li, S., Lou,\nY., Wang, L., Y"
+    },
+    {
+      "aiAssistanceScore": 0.7313197,
+      "confidence": "Medium",
+      "endIndex": 3221,
+      "label": "AI-Generated",
+      "pageIndex": 10,
+      "startIndex": 3094,
+      "text": "Yuan, Z., Li, X., et al. A survey on effi-\ncient inference for large language models. arXiv preprint\narXiv:2404.14294, 2024.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.7313197,
+      "confidence": "Medium",
+      "endIndex": 1914,
+      "label": "AI-Generated",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nAppendix\nA. Limitations and Future Work\nIn this work, we presented TriAttention, a novel KV cache compression mechanism that exploits the intrinsic stability of\nQ/K concentration in the pre-RoPE space to estimate key importance through trigonometric series. Our extensive evaluation\non complex reasoning benchmarks confirms that TriAttention effectively matches the accuracy of Full Attention, while\nsimultaneously achieving a 2.5\u00d7 increase in throughput and a 10.7\u00d7 reduction in KV memory footprint. While the current\nimplementation demonstrates substantial efficiency gains, further latency reductions can be realized through the design of a\ndedicated, hardware-aware inference kernel optimized for our unique compression operations. A primary avenue for future\nimprovement involves the development of a dedicated, high-performance inference kernel designed to further accelerate the\ncomputation of trigonometric series and the subsequent cache pruning process. Beyond these engineering optimizations, we\nplan to extend our evaluation to broader domains such as coding and agentic tasks, and to investigate refined compression\nstrategies, including head-specific budgets, to push the boundaries of efficiency even further.\nB. RoPE and Trigonometric Series Connection\nIn this appendix, we establish the mathematical connection between RoPE (Rotary Position Embedding) and trigonometric\nseries, explaining how attention heads can leverage RoPE to achieve distance-dependent attention patterns.\nB.1. RoPE as Complex Rotation\nRoPE applies position-dependent rotations to Query and Key vectors. For a 2D subspace corresponding to frequency \u03c9\nf \n,\nRoPE can be written in complex form:\n\u02dcq\nf \n(p) = q\nf \n\u00b7 e\ni\u03c9\nf \np\n, \n\u02dc\nk\nf \n(p) = k\nf \n\u00b7 e\ni\u03c9\nf \np \n(14)\nwhere q\nf \n, k\nf \n\u2208 C are the complex representations of Query and Key in frequency band f ,"
+    },
+    {
+      "aiAssistanceScore": 0.56546474,
+      "confidence": "Low",
+      "endIndex": 2849,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 1913,
+      "text": ", and p is the position.\nB.2. General Form of RoPE Attention\nThe dot product between Query at position p\nq \nand Key at position p\nk \nin frequency band f is:\nRe(\u02dcq\nf \n(p\nq \n) \u00b7 \n\u02dc\nk\nf \n(p\nk\n)) = Re(q\nf \nk\nf \n\u00b7 e\ni\u03c9\nf \n(p\nq \n\u2212p\nk \n)\n) (15)\nSumming over all frequency bands, the attention logit is:\n\u27e8q, k\u27e9\n\u2206 \n= \nX\nf\n\u2225q\nf \n\u2225\u2225k\nf \n\u2225 cos(\u03c9\nf \n\u2206 + \u03d5\nf \n) (16)\nwhere \u2206 = p\nq \n\u2212 p\nk \nis the relative position, and \u03d5\nf \n= arg(q\nf \n) \u2212 arg(k\nf \n) is the phase difference. Crucially, the coefficients\n\u2225q\nf \n\u2225\u2225k\nf \n\u2225 and phases \u03d5\nf \ndepend on the specific Q/K vectors, which vary across different tokens.\nB.3. Special Case: Constant Q/K Yields Trigonometric Series\nWhen pre-RoPE Q and K vectors are constant across tokens, the coefficients become fixed. Using the angle addition\nformula, the logit reduces to:\n\u27e8q, k\u27e9\n\u2206 \n= \nX\nf\n[a\nf \ncos(\u03c9\nf \n\u2206) + b\nf \nsin(\u03c9\nf \n\u2206)] (17)\nwhere the coefficients are now constants:\na\nf \n= \u2225q\nf \n\u2225\u2225k\nf \n\u2225 cos(\u03d5\nf \n) (18)"
+    },
+    {
+      "aiAssistanceScore": 0.4853982,
+      "confidence": "Low",
+      "endIndex": 3121,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 2848,
+      "text": ")\nb\nf \n= \u2212\u2225q\nf \n\u2225\u2225k\nf \n\u2225 sin(\u03d5\nf \n) (19)\nThis is a trigonometric series in \u2206. We note that RoPE frequencies follow a geometric progression \u03c9\nf \n= \u03b8\n\u22122f /d \n(where\n\u03b8 = 10000), not the harmonic progression \u03c9\nn \n= n\u03c9\n0 \nof classical Fourier series.\nThe key insight is that:\n12"
+    },
+    {
+      "aiAssistanceScore": 0.4853982,
+      "confidence": "Low",
+      "endIndex": 1400,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\n\u2022 The frequencies \u03c9\nf \nare predetermined by RoPE (geometric progression)\n\u2022 When Q/K are constant, the coefficients (a\nf \n, b\nf \n) become fixed constants\n\u2022 The model can \u201csynthesize\u201d arbitrary distance-dependent attention patterns by learning appropriate Q/K values\nB.4. From Q/K Concentration to Predictable Distance Preferences\nWhen Q/K vectors are highly concentrated around their centers\u2014as quantified by high Mean Resultant Length R\u2014the\nexpected attention logit can be approximated using these centers:\nE[\u27e8q, k\u27e9\n\u2206\n] \u2248 \nX\nf\n\u2225E[q\nf \n]\u2225\u2225E[k\nf \n]\u2225 cos(\u03c9\nf \n\u2206 + \u03d5\nf \n) (20)\nwhere \u03d5\nf \n= arg(E[q\nf \n]) \u2212 arg(E[k\nf \n]) is the phase difference between the mean vectors.\nThis approximation becomes accurate when concentration is high (i.e., R \u2192 1). In this regime, the Q/K centers fully\ndetermine the distance preference curve: different centers produce different attention-vs-distance curves, with peaks at\nspecific Q-K distances. Crucially, these preferences are predictable from the centers alone, without observing actual\nattention scores\u2014this is the key insight exploited by TriAttention.\nB.5. Mean Resultant Length\nThe Mean Resultant Length R is a standard measure from directional statistics (Mardia & Jupp, 1999) that quantifies how\ntightly a distribution of vectors concentrates around its mean direction. For a set of unit"
+    },
+    {
+      "aiAssistanceScore": 0.38624573,
+      "confidence": "Low",
+      "endIndex": 2775,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 1399,
+      "text": "t vectors {u\n1\n, . . . , u\nn\n}, the mean\nresultant length is defined as:\nR = \n1\nn\nn\nX\ni=1\nu\ni \n(21)\nFor vectors with varying magnitudes, such as Q/K vectors in attention heads, we generalize this to:\nR = \n\u2225E[q]\u2225\nE[\u2225q\u2225] \n(22)\nwhere expectations are taken over token positions. This ratio has intuitive bounds:\n\u2022 R = 1: All vectors point in exactly the same direction (perfect concentration)\n\u2022 R = 0: Vectors are uniformly distributed in all directions (no concentration)\nIn practice, we compute R\nf \nfor each frequency band f separately:\nR\nf \n= \n\u2225E[q\nf \n]\u2225\nE[\u2225q\nf \n\u2225] \n(23)\nHigh R\nf \nindicates that the trigonometric series approximation is accurate for band f , justifying the use of S\ntrig\n. The\nweighting factor (1 \u2212 R\nf \n) in S\nnorm \nensures that norm-based scoring contributes more when concentration is lower.\nB.6. Reconstruction Correlation\nTo validate that Q/K concentration enables predictable distance preferences, we measure how well the trigonometric series\nreconstructs actual attention patterns. We define the Reconstruction Correlation \u00afr as follows.\nFor a given attention head, let \u02c6s(\u2206) denote the predicted attention logit at distance \u2206, computed from Q/K centers via the\ntrigonometric series (Equation 4 in the main text). For each query i, let a\ni \n= (a\ni,1\n, a\ni,2\n, . . .) be its actual attention logits at\ndistances \u2206\n1\n, \u2206\n2\n, . . ., and let \n\u02c6\ns = (\u02c6s("
+    },
+    {
+      "aiAssistanceScore": 0.31321737,
+      "confidence": "Low",
+      "endIndex": 2959,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2774,
+      "text": "(\u2206\n1\n), \u02c6s(\u2206\n2\n), . . .) be the corresponding predictions.\nThe per-query correlation is the Pearson correlation coefficient:\nr\ni \n= \u03c1(a\ni\n, \n\u02c6\ns) = \nCov(a\ni\n, \n\u02c6\ns)\n\u03c3\na\ni \n\u03c3\n\u02c6\ns\n(24)\n13"
+    },
+    {
+      "aiAssistanceScore": 0.31321737,
+      "confidence": "Low",
+      "endIndex": 1513,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFigure A. Evaluating memory via recursive simulation. Left: With complete memory, all intermediate states are retained and correct\nvalues propagate upward. Right: When an intermediate state is lost (State\n2\n), the error propagates through all subsequent return values,\ncorrupting the final result.\nThe reconstruction correlation \u00afr is the average over all queries:\n\u00afr = \n1\nN\nN\nX\ni=1\nr\ni \n(25)\nDistance Sampling. To ensure balanced coverage across distance scales, we sample at logarithmically-spaced distances\n\u2206 \u2208 {1, 2, 4, 8, 16, . . .}. This prevents nearby distances (which are numerous) from dominating the correlation and ensures\nthat long-range attention patterns are adequately represented.\nB.7. Dominant Frequency Band Selection\nNot all frequency bands contribute equally to the attention logit. We define dominant bands as those contributing the most to\nthe expected attention score. For each head, we compute the expected contribution of band f as:\nC\nf \n= E[\u2225q\nf \n\u2225] \u00b7 E[\u2225k\nf \n\u2225] (26)\nwhere expectations are taken over a calibration dataset.\nWe rank bands by C\nf \nand select the Top-K bands (typically K = 2) for visualization. These dominant bands account for\nthe majority of the attention logit magnitude. Figures in the main text visualize Q/K distributions in the 2D complex planes\ncorresponding to these dominant bands.\nC. Recursive State Query Benchmark Details\nThis appendix provides details of the Recursive State Query be"
+    },
+    {
+      "aiAssistanceScore": 0.3684072,
+      "confidence": "Low",
+      "endIndex": 1937,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 1512,
+      "text": "enchmark used in \u00a75.2.2.\nC.1. Task Definition\nGiven an undirected graph G = (V, E) and a target step count k, the model simulates k steps of depth-first search starting\nfrom a designated node and reports:\n\u2022 Current node: The node where the traversal currently resides\n\u2022 Stack state: The complete path from the start node to the current node (in order)\n\u2022 Visited nodes: All nodes that have been visited during the traversal\n14"
+    },
+    {
+      "aiAssistanceScore": 0.3684072,
+      "confidence": "Low",
+      "endIndex": 996,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nS\ntrig\n(k, \u0394) \nS\nnorm\n(k)\nK1\n\u2713\nS\n\u0303\n=0.84\nK2\n\u2713\nS\n\u0303\n=0.71\nK3\n\u2717\u2717\nS\n\u0303\n=0.35\nK4\n\u2713\nS\n\u0303\n=0.68\nK5\n\u2717\u2717\nS\n\u0303\n=0.29\nK6\n\u2717\u2717\nS\n\u0303\n=0.22\nRetain Only Top-B keys by \n\u02dc\nS(k)\nScore \n\u02dc\nS(k)\n\ud835\udd3c[q\nf \n]\nk\nf\nFull Attention \nDistance-Preference Scoring\nKey Positions\nQuery and Key Distributions Trigonometric Series Score Norm-Based Score \nKV Cache Pruning\nQuery\u2013key Distance\nAttention Map after KV Pruning\nMethod\nE\nff\nect\nFigure B. Method visualization with real attention maps, corresponding to the schematic in Figure 4. Top row: The four stages of\nTriAttention. (1) We compute the Q/K centers E[q], E[k] from pre-RoPE distributions. (2) Using the trigonometric series, we compute\nS\ntrig \nwhich scores keys based on distance preference. (3) We add the norm-based score S\nnorm\n, weighted by concentration, to obtain the\nfinal score \n\u00af\nS(k)\n. (4) We retain top-scoring keys and evict the rest. Bottom row: Real attention maps illustrating the scenari"
+    },
+    {
+      "aiAssistanceScore": 0.32412183,
+      "confidence": "Low",
+      "endIndex": 2815,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 995,
+      "text": "io described in\nFigure 4. From left to right: original attention pattern showing distance preference; S\ntrig \nvisualization capturing the diagonal structure;\ncombined score \n\u00af\nS incorporating norm information; attention after KV cache pruning, preserving the essential pattern.\nC.2. Why DFS for Memory Evaluation\nDFS is well-suited for evaluating memory retention because:\n\u2022 \nHistory dependency: The stack state depends on the complete traversal history\u2014any intermediate information loss\ncauses errors\n\u2022 Uniform distribution: Information is uniformly distributed across the sequence rather than concentrated at the\nbeginning or end\n\u2022 Controllable difficulty: Task difficulty scales directly with step count\n\u2022 \nDeterministic: The algorithm is deterministic (neighbors selected in ascending order), providing unique ground truth\nC.3. Evaluation Metric\nWe use stack exact match as the primary metric, which requires the complete path to be correct in order. This is the strictest\nmetric and most sensitive to information loss caused by KV cache pruning.\nC.4. Why Recursion Tests Memory\nFigure A illustrates why recursive simulation effectively tests memory retention. Recursive algorithms require the model to\nfirst descend through nested calls, then backtrack to produce results. During backtracking, the model must recall intermediate\nstates from earlier in the sequence. If any state is forgotten, the error propagates through all subsequent return values,\ncorrupting the final result.\nD. Method Visualization\nFigure B provides a detailed visualization of the TriAttention pipeline with real attention maps, complementing the schematic\noverview in Figure 4.\nE. Comparison with Additional Baselines\nWe compare TriAttention with additional KV cache compression methods beyond SnapKV and R-KV evaluated in the main\ntext.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.32412183,
+      "confidence": "Low",
+      "endIndex": 296,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nTable A compares with LazyEviction (Zhang et al., 2025) on AIME24 using DeepSeek-R1-Distill-Qwen-7B at multiple\nKV budgets, alongside H2O (Zhang et al., 2023), TOVA (Oren et al., 2024), and RaaS (Hu et al., 2025) (results c"
+    },
+    {
+      "aiAssistanceScore": 0.20989801,
+      "confidence": "Low",
+      "endIndex": 1437,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 295,
+      "text": "cited\nfrom LazyEviction). TriAttention outperforms all methods at every budget, and matches Full Attention at 30% KV budget\n(46.7%).\nTable A. Comparison on AIME24 (DeepSeek-R1-Distill-Qwen-7B) at varying KV budgets. \n\u2217\nResults cited from LazyEviction.\nMethod 10% 20% 30%\nFullKV 46.7\nH2O\n\u2217 \n\u2013 \u2013 33.3\nTOVA\n\u2217 \n\u2013 \u2013 36.7\nRaaS\n\u2217 \n\u2013 \u2013 36.7\nR-KV\n\u2217 \n\u2013 \u2013 43.3\nLazyEviction 33.3 40.0 43.3\nTriAttention 40.0 43.3 46.7\nF. Evaluation on Diverse Benchmarks\nTo evaluate generalization beyond mathematical reasoning, we test on LongBench (Bai et al., 2024) (16 subtasks span-\nning QA, summarization, dialogue, retrieval, and code; Qwen3-8B, 50% KV budget) and RULER (Hsieh et al., 2024)\n(retrieval tasks, 4K context). We compare against StreamingLLM (Xiao et al., 2024), PyramidKV (Cai et al., 2024),\nKnormPress (Devoto et al., 2025), Ada-KV+SnapKV (Feng et al., 2025), and H2O (Zhang et al., 2023).\nTable B presents the full LongBench results. TriAttention achieves the highest average (48.1) across 16 subtasks, winning\n11 out of 16, and surpasses Ada-KV+SnapKV by +2.5 (48.1 vs. 45.6). On RULER (Table C), TriAttention outperforms all\nbaselines with 66.1, "
+    },
+    {
+      "aiAssistanceScore": 0.21597531,
+      "confidence": "Medium",
+      "endIndex": 3216,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 1436,
+      "text": " a +10.5 gap over SnapKV. We also compare with H2O, which requires O(n\n2\n) memory and cannot use\nFlashAttention; on the 12 LongBench subtasks where H2O fits in 48GB GPU memory (Table D), TriAttention wins 10 out\nof 12.\nG. Future Offset Design Ablation\nOur scoring function evaluates key importance at multiple future offsets D. We ablate two aspects: the range/number of\noffsets, and the spacing strategy (Table E).\nIncreasing the maximum distance from 128 to 4096 improves accuracy from 41.7% to 48.8% (+7.1%), confirming that\nfuture offsets are beneficial. Geometric spacing ({1, 2, 4, . . .}) dramatically outperforms linear spacing (45.8% vs. 28.7%,\n\u221217.1%), as near-distance positions require denser sampling.\nH. Calibration Data Sensitivity\nWe test robustness to calibration data quantity and quality (Table F).\nPerformance is stable across calibration sizes from 50k to 960k tokens (45.4\u201345.8%). Similarly, calibration data quality\nshows no clear correlation with accuracy: using Google homepage HTML (low quality) achieves 46.2%, comparable to\nShareGPT chat data (46.7%). This confirms that the Q/K statistics captured during calibration are model-intrinsic properties,\nrobust to the choice of calibration data.\nI. MLA Architecture Validation\nTo test whether Q/K concentration generalizes beyond standard attention architectures, we evaluate on GLM-4.7-Flash,\nwhich uses Multi-head Latent Attention (MLA) with 940 heads. Table G compares reconstruction quality (Pearson r) and\ndirectional concentration (MRL) between GQA and MLA architectures.\nThe MLA architecture shows comparable or stronger concentration and reconstruction quality compared to GQA. Notably,\n96.6% of MLA heads achieve R > 0.95 (vs. 84.7% for GQA), indicating that the Q/K concentration phenomenon is\n16"
+    },
+    {
+      "aiAssistanceScore": 0.21597531,
+      "confidence": "Medium",
+      "endIndex": 102,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nTable B. LongBench results (Q"
+    },
+    {
+      "aiAssistanceScore": 0.1335636,
+      "confidence": "Medium",
+      "endIndex": 746,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 101,
+      "text": "Qwen3-8B, 50% KV budget). 16 subtasks spanning QA, summarization, few-shot classification, retrieval,\ncounting, and code. Bold = best among compression methods.\nQA Summarization Few-shot Retr. Count Code\nMethod NarrQA Qasp MFQA HpQA 2Wik Musi GovR QMSu MNew TREC TriQA SSum PaRe PaCn LCC ReBe Avg\nFull Attn. 28.8 43.8 55.3 62.8 48.9 35.5 33.5 24.7 24.7 40.5 90.5 40.3 91.8 9.0 64.9 60.0 47.2\nSnapKV 26.9 37.0 45.5 59.2 46.3 33.1 32.2 23.0 23.4 40.5 89.9 41.0 91.1 7.5 66.4 59.9 45.2\nPyramidKV 25.9 30.4 39.1 52.2 39.9 29.7 29.9 22.2 21.9 33.5 90.0 40.7 93.4 8.0 65.7 60.2 42.7\nStreamingLLM 24.1 30.5 31.2 46.5 41.6 21.6 30.8 21.8 23.9 43.0 85.4 "
+    },
+    {
+      "aiAssistanceScore": 0.14455405,
+      "confidence": "Medium",
+      "endIndex": 1624,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 745,
+      "text": " 38.2 55.2 10.0 64.7 61.2 39.4\nKnormPress 17.6 24.4 40.3 29.2 26.4 14.9 28.8 21.6 20.9 50.0 81.6 41.2 79.1 7.1 31.7 47.5 35.1\nAda-KV+SnapKV \n27.0 36.8 45.0 59.6 47.5 34.1 31.8 23.0 23.6 46.0 90.1 40.9 90.8 8.0 65.6 59.6 45.6\nTriAttention 28.1 43.0 51.4 60.2 44.9 36.9 32.9 23.8 24.3 69.0 90.3 39.9 91.0 7.0 65.0 61.3 48.1\nTable C. RULER retrieval results (Qwen3-8B, 50% KV, 4K context). Bold = best among compression methods.\nMethod RULER Avg\nSnapKV 55.6\nPyramidKV \n40.7\nStreamingLLM 61.1\nTriAttention 66.1\narchitecture-general and potentially even more pronounced in MLA.\nJ. Real-World Deployment: Agentic Task on a Single GPU\nWe demonstrate TriAttention in a practical deployment scenario using OpenClaw, a multi-turn agent. We serve Qwen3-32B\nwith AWQ INT4 quantization on a single RTX 4090 (24GB), where model weights alone consume most of the GPU memory,\nleaving a very limi"
+    },
+    {
+      "aiAssistanceScore": 0.15835136,
+      "confidence": "Medium",
+      "endIndex": 2328,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1623,
+      "text": "ited budget for KV cache. This makes the setup particularly challenging for OpenClaw, since its prompt in\nthe first request has already exceeds 15k tokens, and each interaction round further expands the context as the agent reads\nand processes six markdown documents to produce a weekly report.\nWith full attention (baseline), the KV cache grows unboundedly during multi-turn interaction, causing an out-of-memory\nerror before the agent can complete the task. With TriAttention, KV cache compression keeps memory usage within budget\nthroughout the entire session, allowing the agent to successfully read all documents and generate the report. A screenshot of\nthe completed session is shown in Figure C.\n17"
+    },
+    {
+      "aiAssistanceScore": 0.15835136,
+      "confidence": "Medium",
+      "endIndex": 630,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nTable D. Comparison with H2O on LongBench subtasks where H2O fits in 48GB GPU memory (Qwen3-8B, 50% KV). H2O requires\nmaterializing the full O(n\n2\n) attention matrix and cannot use FlashAttention. Bold = best.\nMethod Qasp HpQA 2Wik Musi GovR QMSu MNew TREC TriQA SSum NarrQA MFQA Avg\nH2O 39.2 50.7 43.9 30.7 32.9 23.4 24.4 56.5 89.1 39.1 21.2 45.4 41.4\nTriAttention 43.0 60.2 44.9 36.9 32.9 23.8 24.3 69.0 90.3 39.9 28.1 51.4 45.4\nTable E. Future offset ablation on Qwen3-8B (AIME24). Top: effect of offset range. Bottom: spacing strategy comparison (17 off"
+    },
+    {
+      "aiAssistanceScore": 0.16201113,
+      "confidence": "Medium",
+      "endIndex": 1465,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 629,
+      "text": "fsets,\nrange [1, 65536]).\nMax Dist #Offsets Acc\n128 8 41.7\n4096 13 48.8\n8192 14 46.2\n65536 17 45.8\nLinear spacing 28.7\nGeometric spacing 45.8\nTable F. Calibration data sensitivity on Qwen3-8B (AIME24). Top: effect of calibration data size. Bottom: effect of calibration data\nquality.\nCalibration Acc\n50k tokens 45.4\n200k tokens 45.8\n960k tokens 45.8\nHTML (low qual.) 46.2\nCode (mid qual.) 43.3\nChat (high qual.) 46.7\nTable G. Cross-architecture comparison of reconstruction quality (Pearson r) and Q/K concentration (MRL) between GQA (Qwen3-8B)\nand MLA (GLM-4.7-Flash) architectures.\n(A) Reconstruction quality (Pearson r)\nThreshold Qwen3-8B (GQA) GLM-4.7 (MLA)\nr > 0.90 0.8% 1.7%\nr > 0.70 \n13.0% 23.1%\nr > 0.50 53.5% 51.6%\n(B) Q/K Concentration (MRL)\nThreshold Qwen3-8B (GQA) GLM-4.7 (MLA)\nR > 0.95 84.7% 96.6%\nR > 0.90 \n90.8% 99.8%\n18"
+    },
+    {
+      "aiAssistanceScore": 0.16201113,
+      "confidence": "Medium",
+      "endIndex": 338,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression\nFigure C. OpenClaw demo on a single RTX 4090 with Qwen3-32B (INT4). Full attention runs out of memory during multi-turn\ninteraction, while TriAttention completes the task within the GPU memory budget. Full video is available on our GitHub page:\nhttps://github.com/W"
+    }
+  ]
+}

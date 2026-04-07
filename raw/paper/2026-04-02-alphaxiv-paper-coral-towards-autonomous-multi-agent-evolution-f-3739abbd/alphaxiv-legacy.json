@@ -1,0 +1,182 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Ao Qu",
+        "id": "01985c82-4f4d-71f1-87a1-cd0c571e2017",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Han Zheng",
+        "id": "01985c82-953b-701d-b9cc-d216ec17b583",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zijian Zhou",
+        "id": "01985c82-7387-7db0-af30-74c4a470c672",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yihao Yan",
+        "id": "01985c82-4f4d-7bea-a038-03854ae997ed",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yihong Tang",
+        "id": "01985c82-2a92-7eaf-bf76-d2437b86d90a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shao Yong Ong",
+        "id": "019c4601-6a71-7919-8a57-a70c71eb9c29",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fenglu Hong",
+        "id": "01985c82-b990-7845-842b-0c072cc6f02d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kaichen Zhou",
+        "id": "01985c81-ec40-7e6e-9915-af04b8e20676",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chonghe Jiang",
+        "id": "01985c82-3619-777f-8552-6e6af5d1fe6f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Minwei Kong",
+        "id": "019a09be-8f8d-7faa-bc64-10445ed3b2a3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiacheng Zhu",
+        "id": "01985c81-e34e-7a4e-a5e1-4f6783e495ce",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuan Jiang",
+        "id": "01985c82-17c5-7999-955e-c077e44d495a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sirui Li",
+        "id": "01985c82-204d-74d0-8f6c-4a1beb40492a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cathy Wu",
+        "id": "01985c82-1c7b-7d8c-9076-d951d7a93171",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bryan Kian Hsiang Low",
+        "id": "01985c81-ef78-7ae7-beb6-38bd2ea576da",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinhua Zhao",
+        "id": "01985c81-eea9-7c49-b620-fd500d55c772",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Paul Pu Liang",
+        "id": "01985c81-f8f2-79de-853a-e8405003f943",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Fri Apr 03 2026 02:37:51 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Thu Apr 02 2026 05:59:06 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d5134-3e7c-759e-b352-329b5c646f37",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 54,
+        "questions_count": 0,
+        "total_votes": 11,
+        "upvotes_count": 54,
+        "visits_count": {
+          "all": 758,
+          "last24Hours": 522,
+          "last30Days": 758,
+          "last7Days": 758,
+          "last90Days": 758
+        }
+      },
+      "podcast_path": "019d5134-3e7c-759e-b352-329b5c646f37/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "CORAL is a robust, lightweight infrastructure for multi-agent autonomous self-evolution, built for autoresearch.",
+          "language": "Python",
+          "stars": 147,
+          "url": "https://github.com/Human-Agent-Society/CORAL"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.01658"
+      },
+      "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "cs.AI",
+        "deep-reinforcement-learning",
+        "evolutionary-algorithms",
+        "multi-agent-learning",
+        "optimization-methods",
+        "reasoning",
+        "tool-use",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.01658",
+      "updated_at": "Fri Apr 03 2026 02:37:51 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared persistent memory, asynchronous multi-agent execution, and heartbeat-based interventions. It also provides practical safeguards, including isolated workspaces, evaluator separation, resource management, and agent session and health management. Evaluated on diverse mathematical, algorithmic, and systems optimization tasks, CORAL sets new state-of-the-art results on 10 tasks, achieving 3-10 times higher improvement rates with far fewer evaluations than fixed evolutionary search baselines across tasks. On Anthropic's kernel engineering task, four co-evolving agents improve the best known score from 1363 to 1103 cycles. Mechanistic analyses further show how these gains arise from knowledge reuse and multi-agent exploration and communication. Together, these results suggest that greater agent autonomy and multi-agent evolution can substantially improve open-ended discovery. Code is available at this https URL.",
+      "created_at": "Fri Apr 03 2026 02:37:51 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d5134-3eb5-7678-b628-0fa53333a99a",
+      "imageURL": "image/2604.01658v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Thu Apr 02 2026 05:59:06 GMT+0000 (Coordinated Universal Time)",
+      "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+      "universal_paper_id": "2604.01658",
+      "updated_at": "Fri Apr 03 2026 02:37:51 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.01658v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

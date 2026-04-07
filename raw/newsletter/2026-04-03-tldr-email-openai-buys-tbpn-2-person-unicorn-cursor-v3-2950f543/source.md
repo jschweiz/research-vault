@@ -33,10 +33,10 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T21:23:44.144161Z
-short_summary: # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖 ## Big Tech & Startups ### [Gemma 4: Byte for byte, the most capable open models](https://simonwillison.net/2026/Apr/2/gemma-4) Google DeepMind has released four new vision-capable Apache 2.0-licensed reasoning models sized at 2B, 4B, and 31B, plus a 26B-A4B Mixture-of-Experts. The models are multi-modal beyond just images and can process video at variable resolutions.
+short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:24:02.976038Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-07T21:39:24.265471Z
+lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: e704b7c8869d33ce3f1ee301b8b053c5a55e53f3d091e30cca43e9994ec1fd84
 lightweight_enrichment_error: null
 ---

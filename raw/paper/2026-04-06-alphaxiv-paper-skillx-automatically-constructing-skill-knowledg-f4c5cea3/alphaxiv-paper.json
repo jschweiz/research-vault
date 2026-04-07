@@ -1,0 +1,21 @@
+{
+  "abstract": "Learning from experience is critical for building capable large language model (LLM) agents, yet prevailing self-evolving paradigms remain inefficient: agents learn in isolation, repeatedly rediscover similar behaviors from limited experience, resulting in redundant exploration and poor generalization. To address this problem, we propose SkillX, a fully automated framework for constructing a \\textbf{plug-and-play skill knowledge base} that can be reused across agents and environments. SkillX operates through a fully automated pipeline built on three synergistic innovations: \\textit{(i) Multi-Level Skills Design}, which distills raw trajectories into three-tiered hierarchy of strategic plans, functional skills, and atomic skills; \\textit{(ii) Iterative Skills Refinement}, which automatically revises skills based on execution feedback to continuously improve library quality; and \\textit{(iii) Exploratory Skills Expansion}, which proactively generates and validates novel skills to expand coverage beyond seed training data. Using a strong backbone agent (GLM-4.6), we automatically build a reusable skill library and evaluate its transferability on challenging long-horizon, user-interactive benchmarks, including AppWorld, BFCL-v3, and $\\tau^2$-Bench. Experiments show that SkillKB consistently improves task success and execution efficiency when plugged into weaker base agents, highlighting the importance of structured, hierarchical experience representations for generalizable agent learning. Our code will be publicly available soon at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775491773000,
+  "googleCitationId": null,
+  "groupId": "019d65bf-4671-7909-9268-425a0e1087c4",
+  "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "publicationDate": 1775491773000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04804",
+  "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
+  "type": "public",
+  "universalId": "2604.04804",
+  "uploader": null,
+  "versionId": "019d65bf-46b9-7a61-89bb-767b91d8a074",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

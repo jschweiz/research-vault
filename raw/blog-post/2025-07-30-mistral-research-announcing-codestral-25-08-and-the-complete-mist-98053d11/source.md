@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/codestral-25-08
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:27:59.873944Z
+fetched_at: 2026-04-07T21:40:44.038847Z
 short_summary: How the world’s leading enterprises are using integrated coding solutions from Mistral AI to cut development, review, and testing time by 50%—and why the playbook now fits every company that wants AI-native software development. AI-powered coding is taking off, but enterprise adoption still lags due to critical limitations Over the past year, AI coding assistants have introduced powerful capabilities, such as multi-file reasoning, contextual suggestions, and natural-language agents, all directly
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:33.810446Z

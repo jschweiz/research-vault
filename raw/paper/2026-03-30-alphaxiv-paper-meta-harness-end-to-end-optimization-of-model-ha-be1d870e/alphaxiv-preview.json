@@ -1,0 +1,107 @@
+{
+  "abstract": "The performance of large language model (LLM) systems depends not only on model weights, but also on their harness: the code that determines what information to store, retrieve, and present to the model. Yet harnesses are still designed largely by hand, and existing text optimizers are poorly matched to this setting because they compress feedback too aggressively. We introduce Meta-Harness, an outer-loop system that searches over harness code for LLM applications. It uses an agentic proposer that accesses the source code, scores, and execution traces of all prior candidates through a filesystem. On online text classification, Meta-Harness improves over a state-of-the-art context management system by 7.7 points while using 4x fewer context tokens. On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level problems by 4.7 points on average across five held-out models. On agentic coding, discovered harnesses surpass the best hand-engineered baselines on TerminalBench-2. Together, these results show that richer access to prior experience can enable automated harness engineering.",
+  "author_info": [],
+  "authors": [
+    "Yoonho Lee",
+    "Roshen Nair",
+    "Qizheng Zhang",
+    "Kangwook Lee",
+    "Omar Khattab",
+    "Chelsea Finn"
+  ],
+  "canonical_id": "2603.28052v1",
+  "first_publication_date": "2026-03-30T05:33:50.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yoonho Lee",
+      "id": "01985c81-d97e-7743-afc9-a96507000fa7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Roshen Nair",
+      "id": "019c1e75-20a2-7105-9731-9116a20c5763",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qizheng Zhang",
+      "id": "01985c82-4f4d-747a-b9b5-c6b829af77ae",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kangwook Lee",
+      "id": "01985c82-0013-7bc5-9e60-d1009901c005",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Omar Khattab",
+      "id": "01985c81-df57-7d94-bfa6-f13842811a2f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chelsea Finn",
+      "id": "01985c81-d858-7675-9109-e5797f339f85",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 53,
+  "github_url": "https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact",
+  "id": "019d41b7-1156-7866-b991-94545a578703",
+  "image_url": "image/2603.28052v1.png",
+  "metrics": {
+    "public_total_votes": 351,
+    "total_votes": 108,
+    "visits_count": {
+      "all": 7311,
+      "last_7_days": 6671
+    },
+    "x_likes": 1
+  },
+  "organization_info": [],
+  "paper_group_id": "019d41b7-1156-7866-b991-94545a578703",
+  "paper_summary": {
+    "keyInsights": [
+      "Full, uncompressed access to historical diagnostic data (raw code, execution traces, and evaluation scores) is critical for an agent to perform causal reasoning and targeted modifications in complex, stateful code-space search.",
+      "Direct optimization in the code space, enabled by an agentic proposer, facilitates algorithmic modifications and complete program rewrites, providing a natural regularization bias towards coherent solutions.",
+      "An agent, when provided with rich, granular feedback, can effectively identify and address complex, long-horizon failures in stateful programs, going beyond fixed templates or summary-based feedback."
+    ],
+    "originalProblem": [
+      "Harness engineering, which designs how large language models (LLMs) store, retrieve, and present information, is a largely manual, iterative process relying on human intuition and heuristics.",
+      "The performance of LLM systems is highly sensitive to harness design, with variations potentially causing up to a 6x difference in model performance on the same benchmark.",
+      "Existing text optimization methods are inadequate for complex harness logic due to aggressive feedback compression and limited context, which discards crucial information needed to diagnose long-horizon failures."
+    ],
+    "results": [
+      "Meta-Harness achieved 48.6% accuracy in online text classification, outperforming state-of-the-art hand-designed methods (ACE) by 7.7 points while using 4x fewer context tokens.",
+      "A single discovered retrieval harness improved accuracy on 200 IMO-level math problems by an average of 4.7 points across five held-out models (e.g., GPT-5.4n, Gemini-3F) compared to a 'No Retriever' baseline.",
+      "The system automatically discovered harnesses that achieved top-tier pass rates on TerminalBench-2, reaching 76.4% with Claude Opus 4.6 (ranking #2) and 37.6% with Claude Haiku 4.5 (ranking #1)."
+    ],
+    "solution": [
+      "Meta-Harness implements an outer-loop optimization procedure where an agentic proposer (a coding LLM) searches over task-specific harnesses.",
+      "The proposer has selective, uncompressed access to a growing filesystem containing the source code, detailed execution traces, and evaluation scores of all prior candidate harnesses.",
+      "The agent iteratively inspects this comprehensive history, reasons about failure modes, and proposes new harness candidates by modifying the Python code directly."
+    ],
+    "summary": "Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks."
+  },
+  "publication_date": "2026-03-30T05:33:50.000Z",
+  "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+  "topics": [
+    "agents",
+    "Computer Science",
+    "cs.AI",
+    "efficient-transformers",
+    "meta-learning",
+    "ml-systems",
+    "optimization-methods",
+    "reasoning",
+    "tool-use",
+    "transformers"
+  ],
+  "universal_paper_id": "2603.28052",
+  "updated_at": "2026-03-31T02:26:49.815Z",
+  "version_id": "019d41b7-1185-7c78-be8f-d11d778e4bb6"
+}

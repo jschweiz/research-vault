@@ -1,0 +1,122 @@
+{
+  "abstract": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE queries. However, queries rotate with position during RoPE, making representative queries very few, leading to poor top-key selection and unstable reasoning. To avoid this issue, we turn to the pre-RoPE space, where we observe that Q and K vectors are highly concentrated around fixed non-zero centers and remain stable across positions -- Q/K concentration. We show that this concentration causes queries to preferentially attend to keys at specific distances (e.g., nearest keys), with the centers determining which distances are preferred via a trigonometric series. Based on this, we propose TriAttention to estimate key importance by leveraging these centers. Via the trigonometric series, we use the distance preference characterized by these centers to score keys according to their positions, and also leverage Q/K norms as an additional signal for importance estimation. On AIME25 with 32K-token generation, TriAttention matches Full Attention reasoning accuracy while achieving 2.5x higher throughput or 10.7x KV memory reduction, whereas leading baselines achieve only about half the accuracy at the same efficiency. TriAttention enables OpenClaw deployment on a single consumer GPU, where long context would otherwise cause out-of-memory with Full Attention.",
+  "author_info": [],
+  "authors": [
+    "Weian Mao",
+    "Xi Lin",
+    "Wei Huang",
+    "Yuxin Xie",
+    "Tianfu Fu",
+    "Bohan Zhuang",
+    "Song Han",
+    "Yukang Chen"
+  ],
+  "canonical_id": "2604.04921v1",
+  "first_publication_date": "2026-04-06T17:58:42.000Z",
+  "full_authors": [
+    {
+      "full_name": "Weian Mao",
+      "id": "01985c82-42b3-7ca8-af5e-ee00b7b4a410",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xi Lin",
+      "id": "01985c81-e41c-77ca-9e52-3012ccc18b8d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wei Huang",
+      "id": "01985c81-e287-7611-97f9-520fe63d0516",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuxin Xie",
+      "id": "01985c83-0662-7b16-87a1-b3dac9d06120",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianfu Fu",
+      "id": "0199eae8-97c5-7afd-a403-d22359239ee5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bohan Zhuang",
+      "id": "01985c81-ef77-75db-86f5-2350b7123d38",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Song Han",
+      "id": "01985c81-d859-75cb-8d65-ad58a49278b7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yukang Chen",
+      "id": "01985c81-d859-7308-951c-4ee4af1000d1",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 2,
+  "github_url": "https://github.com/WeianMao/triattention",
+  "id": "019d65d7-4052-705a-a296-f3c8950354a6",
+  "image_url": "image/2604.04921v1.png",
+  "metrics": {
+    "public_total_votes": 13,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 164,
+      "last_7_days": 164
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65d7-4052-705a-a296-f3c8950354a6",
+  "paper_summary": {
+    "keyInsights": [
+      "Pre-RoPE Q/K vectors exhibit a stable and model-intrinsic concentration around specific centers, consistent across different token positions and input contexts.",
+      "This concentration allows the attention mechanism's distance preference to be accurately predicted by a trigonometric series derived from the Q/K centers.",
+      "Leveraging stable pre-RoPE properties offers a more reliable and accurate foundation for KV cache compression compared to approaches relying on dynamically rotating post-RoPE representations."
+    ],
+    "originalProblem": [
+      "Large language models (LLMs) performing long chain-of-thought reasoning face a severe KV cache memory bottleneck, limiting context length and inference speed.",
+      "Existing attention-based KV cache compression methods are unstable; the dynamic rotation of post-RoPE vectors creates a narrow observation window, leading to premature eviction of critical tokens.",
+      "Norm-based compression methods often disregard crucial directional information, which is vital for accurate attention computation."
+    ],
+    "results": [
+      "TriAttention achieved up to 6.3x higher throughput and 10.7x KV memory reduction, consistently matching or slightly exceeding the reasoning accuracy of full attention on benchmarks like AIME and MATH.",
+      "The method demonstrated superior accuracy over leading baselines (e.g., SnapKV, R-KV) across various LLMs (Qwen3-8B, DeepSeek-R1, GPT-OSS-20B) and KV cache budget levels.",
+      "The observed Q/K concentration and attention predictability generalize across diverse LLM architectures (GQA and MLA) and domains, with calibration statistics found to be robust and transferable."
+    ],
+    "solution": [
+      "The authors identified that Query (Q) and Key (K) vectors in the *pre-RoPE* space are highly concentrated around fixed, non-zero centers across most attention heads in various LLMs.",
+      "This Q/K concentration allows attention logits to be approximated by a trigonometric series that primarily depends on the Query-Key distance, enabling prediction of long-range attention patterns.",
+      "TriAttention combines a trigonometric series-based score (S_trig_) and an adaptively weighted norm-based score (S_norm_) to robustly estimate key importance for KV cache compression."
+    ],
+    "summary": "Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks."
+  },
+  "publication_date": "2026-04-06T17:58:42.000Z",
+  "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
+  "topics": [
+    "attention-mechanisms",
+    "Computer Science",
+    "cs.CL",
+    "cs.CV",
+    "efficient-transformers",
+    "hardware-aware-algorithms",
+    "inference-optimization",
+    "lightweight-models",
+    "model-compression",
+    "reasoning",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.04921",
+  "updated_at": "2026-04-07T02:48:18.770Z",
+  "version_id": "019d65d7-4083-75ac-aced-3f0d57e425d5"
+}

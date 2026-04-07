@@ -1,0 +1,21 @@
+{
+  "abstract": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775149385000,
+  "googleCitationId": null,
+  "groupId": "019d511d-d065-788f-bb15-a8562d561925",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775149385000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.02268",
+  "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+  "type": "public",
+  "universalId": "2604.02268",
+  "uploader": null,
+  "versionId": "019d511d-d09e-7393-8942-1927dfb3aa94",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

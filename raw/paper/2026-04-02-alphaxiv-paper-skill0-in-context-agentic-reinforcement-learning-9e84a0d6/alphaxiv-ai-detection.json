@@ -1,0 +1,632 @@
+{
+  "fractionAi": 0.06914828,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.9308517,
+  "headline": "Mostly Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775586301122,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.14136416,
+      "confidence": "Medium",
+      "endIndex": 2009,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "SKILL0: In-Context Agentic Reinforcement\nLearning for Skill Internalization\nZhengxi Lu\n1,2\u22c6\n, Zhiyuan Yao\n2\n, Jinyang Wu\n3\n, Chengcheng Han\n2\n, Qi Gu\n2\u2020\nXunliang Cai\n2\n, Weiming Lu\n1\n, Jun Xiao\n1\n, Yueting Zhuang\n1\n, Yongliang Shen\n1\u2020\n1\nZhejiang University \n2\nMeituan \n3\nTsinghua University\n{zhengxilu, syl}@zju.edu.cn guqi03@meituan.com\nAbstract\nAgent skills, structured packages of procedural knowledge and executable re-\nsources that agents dynamically load at inference time, have become a reliable\nmechanism for augmenting LLM agents. Yet inference-time skill augmentation is\nfundamentally limited: retrieval noise introduces irrelevant guidance, injected skill\ncontent imposes substantial token overhead, and the model never truly acquires the\nknowledge it merely follows. We ask whether skills can instead be internalized\ninto model parameters, enabling zero-shot autonomous behavior without any run-\ntime skill retrieval. We introduce SKILL0, an in-context reinforcement learning\nframework designed for skill internalization. SKILL0 introduces a training-time\ncurriculum that begins with full skill context and progressively withdraws it. Skills\nare grouped offline by category and rendered with interaction history into a compact\nvisual context, teaching he model tool invocation and multi-turn task completion.\nA Dynamic Curriculum then evaluates each skill file\u2019s on-policy helpfulness,\nretaining only those from which the current policy still benefits within a linearly\ndecaying budget, until the agent operates in a fully zero-shot setting. Extensive\nagentic experiments demonstrate that SKILL0 achieves substantial improvements\nover the standard RL baseline (+9.7% for ALFWorld and +6.6% for Search-QA),\nwhile maintaining a highly efficient context of fewer than 0.5k tokens per step. Our\ncode is available at https://github.com/ZJU-REAL/SkillZero.\n1 Introduction\n\u201cSkills at training, zero at inference.\u201d\n\u2014 SKILL0\nLarge Language Models (LLMs) (Guo et al.,\n2025b; Team et al., 2025; Yang et al., "
+    },
+    {
+      "aiAssistanceScore": 0.24629313,
+      "confidence": "Medium",
+      "endIndex": 2890,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 2008,
+      "text": " 2025;\nComanici et al., 2025; Team et al., 2026) have\ndemonstrated strong decision-making capabil-\nities across complex real-world tasks (Shen\net al., 2023; Shi et al., 2025; He et al., 2025;\nJimenez et al., 2023). With the emergence of\nagent scaffolds like Claude Code and Open-\nClaw, structured Agent Skills (Xu & Yan,\n2026; Li et al., 2026a; He et al., 2026) have\nbecome the standard mechanism for extending\nagent capabilities on specialized tasks.\n(b) Skill Internalization (Ours S kill 0)\n(a) Skill Augmentation (e.g. SkillRL)\nSkillBank\nSkillBank\nAgent\nPolicy\nSkill Evolve\nSimilarity\nOn-Policy Helpfulness\nZero-shot\nInference\n#Skills\nsteps\n#Skills\nsteps\nEnv\nEnv \nAgent\nPolicy\n \nFigure 1: Comparison of (a) Skill Augmentation\nmethods and (b) our Skill Internalization method.\n\u2217\nWork done during intership at Meituan. \n\u2020\nCorresponding author\narXiv:2604.02268v1 [cs.LG] 2 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.24629313,
+      "confidence": "Medium",
+      "endIndex": 413,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "The prevailing paradigm is inference-time skill augmentation: relevant skills are retrieved from a\nskill bank and injected into the model\u2019s context as natural language guidance at each step (Li et al.,\n2026b; Liang et al., 2026). This approach has proven effective and is now well-established, with\ngrowing ecosystems of skill libraries, retrieval pipelines, and evolution mechanisms (Xu & Yan, 2026;\nXia et al., "
+    },
+    {
+      "aiAssistanceScore": 0.5661819,
+      "confidence": "Low",
+      "endIndex": 2593,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 412,
+      "text": " 2026). Yet this practical success obscures a more fundamental limitation. First, retrieval\nnoise introduces irrelevant or misleading guidance that corrupts the agent\u2019s context (Yao et al., 2026a;\nWang et al., 2026b). Second, injected skill content imposes token overhead that compounds across\nmulti-turn interactions, limiting scalability (Liu et al., 2024; Hsieh et al., 2024). Third, and most\ncritically, a model that follows skill descriptions in its prompt is executing skills, not learning them:\ncompetence resides in the context, not in the model (Wang et al., 2025a; Han et al., 2026).\nThis observation suggests a different question: rather than asking how to better retrieve and inject\nskills, can skills be internalized into model parameters, rendering retrieval unnecessary at inference\ntime? Skill acquisition in humans follows a familiar progression: an explicit instruction phase\ngives way to an internalized phase in which the same behavior is executed autonomously from\nmemory (Anderson, 1982; Yuan et al., 2025). Inference-time skill augmentation permanently anchors\nagents in the first stage. Reinforcement learning offers a natural path to the second, driving the agent\nto consolidate effective strategies as intrinsic policy rather than reading them from context (Guo\net al., 2025a; Shao et al., 2024). Yet a naive application of RL fails in both directions: without skill\ncontext, the agent lacks the structured guidance necessary to learn complex multi-step behavior; with\nfull skill context throughout, the model remains dependent on external knowledge it has never been\nrequired to internalize. What is needed is a training regime that starts with skills and ends without\nthem, systematically transferring competence from context to parameters.\nWe propose SKILL0, the first RL framework that formulates skill internalization as an explicit\ntraining objective. SKILL0 realized this curriculum through In-Context Reinforcement Learning\n(ICRL): skills are provided as in-context guidance during training rollouts but removed entirely at\ninference, so that RL optimization directly drives the transition from context-dependent execution\nto autonomous behavior. "
+    },
+    {
+      "aiAssistanceScore": 0.25336358,
+      "confidence": "Low",
+      "endIndex": 4735,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 2592,
+      "text": " Concretely, skills are grouped offline by category and rendered with\ninteraction history into a compact visual context, teaching the model tool invocation and multi-turn\ntask completion. Dynamic Curriculum evaluates each skill file\u2019s on-policy helpfulness by comparing\nagent performance with and without it on a matched validation sub-task. Skills are retained only\nwhere the current policy still benefits, and discarded otherwise, until the budget reaches zero and the\nagent operates without any skill context. Extensive experiments demonstrate that SKILL0 achieves\nsubstantial improvements over strong baselines like AgentOCR (+9.7% for ALFWorld and +6.6% for\nSearch-QA), and competitive performance against skill-augmented methods like SkillRL. Notably, by\neliminating skill reliance at inference time, SKILL0 maintains a highly efficient context of fewer than\n0.5k tokens per step, significantly reducing inference overhead without sacrificing task performance.\n\u2022 We propose SKILL0, the first RL framework that formulates skill internalization as an\nexplicit training objective, moving agents from inference-time skill dependence to fully\nautonomous zero-shot behavior.\n\u2022 We introduce in-context reinforcement learning, which provides structured skill guidance\nduring training rollouts and removes it entirely at inference, directly optimizing the transition\nfrom context-dependent execution to intrinsic competence.\n\u2022 We propose Dynamic Curriculum, a helpfulness-driven annealing mechanism that withdraws\neach skill only when the current policy no longer benefits from it, replacing rigid schedules\nwith adaptive internalization.\n2 Related Work\n2.1 LLM Agents\nRecent advancements in instruction-tuned LLMs have enabled autonomous agents to operate across a\nwide range of dynamic, open-world environments, including code generation (Jimenez et al., 2023;\nWang et al., 2026a), GUI automation (Ye et al., 2025; Liu et al., 2026b), gameplay (Shridhar et al.,\n2020), and embodied control (Wang et al., 2023). With the recent development of reinforcement\nlearning for LLMs (Yu et al., 2025; Zheng et al., 2025; Yao et al., 2026b; Chen et al., "
+    },
+    {
+      "aiAssistanceScore": 0.21729201,
+      "confidence": "Low",
+      "endIndex": 4754,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 4734,
+      "text": " 2026), agentic RL\n2"
+    },
+    {
+      "aiAssistanceScore": 0.21729201,
+      "confidence": "Low",
+      "endIndex": 1554,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "SKILL.md\nDomains\nRelevance\n(a) Skill Grouping\nS\n1\nS\n2\nS\nk\nS\nN\n...\n(b) In-Context Reinforcement Learning\nAgent Loop\nEnvironment\n(1) Render\n(2) Compress\n(3) Rollout\n(4) Update\no\n1\no\n2\no\nG\nr \n1\nr \n2\nr \nG\nA \n1\nA \n2\nA \nG\no\nt\na\nt \nPolicy\nAgent\nx N turns \n...\n...\n...\n(c) Curriculum Learning\nAgent Loop\nAgent Loop\nAgent Loop\nDynamic\nFilter\nDynamic\nFilter\nBetter\nAlignment\nSkill\nInternalize\nInference Time\nSelf-\nCompress\nSelf-\nCompress\nSkill Markdowns Observations Visual Tokens\nFigure 2: Overview of SKILL0. (a) Relevance-Driven Skill Grouping; (b) In-Context Reinforcement\nLearning with skill-enhanced agent loop; (c) Dynamic curriculum learning during training process.\nhas emerged as a crucial post-training recipe for equipping LLM agents with robust decision-making\ncapabilities (Lu et al., 2026, 2025; Feng et al., 2025).\n2.2 Agentic Skills\nEarly memory-based approaches store raw trajectories directly into external databases during the\nsampling process, serving as references for experience replay (Zhao et al., 2024; Shinn et al., 2024).\nHowever, such raw trajectories are often lengthy, redundant, and noisy, making direct injection into\nthe context window inefficient (Chhikara et al., 2025). To address this limitation, a growing line of\nwork has explored skills\u2014reusable, abstracted, and structured behavioral primitives distilled from\nhistorical trajectories (Xu & Yan, 2026; Li et al., 2026a; He et al., 2026). Skills serve as a form of\nepisodic memory that agents can consult at decision time (Li et al., 2026b; Liu et al., 2026a; Liang\net al., "
+    },
+    {
+      "aiAssistanceScore": 0.2745793,
+      "confidence": "Low",
+      "endIndex": 2956,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 1553,
+      "text": " 2026), and have further been shown to provide efficient guidance within reinforcement learning\nframeworks (Xia et al., 2026; Wang et al., 2025a; Jiao et al., 2026). Despite these advances, existing\nmethods predominantly focus on skill extraction, organization, and retrieval, leaving the question of\nwhether skills can be internalized into model parameters largely unexplored.\n3 Method: SKILL0\n3.1 Agent Loop\nTask Definition. We formulate agent automation as a sequential decision-making problem. Given\na task instruction I, the agent generates a sequence of actions {a\n1\n, a\n2\n, . . . , a\nT \n} to complete the task.\nAt each step t, the agent operates within a structured environment E (e.g., an online simulator or\nretrieval engine), which provides a textual observation o\nt \ndescribing the current environmental state.\nThe agent then samples an action a\nt \nfrom policy \u03c0\n\u03b8 \n(a\nt\n|I, h\nt\n), where \u03b8 denotes model parameters and\nh\nt \nrepresents history up to time t.\nh\nt \n= {o\n1\n, o\n2\n, . . . , o\nt\n} (1)\nThe environment E transitions to the next state and returns the next observation o\nt+1 \n= E(o\nt\n, a\nt\n).\nThis rollout continues until the task is successfully completed or the max step threshold is reached.\nSkill Management. Following Xia et al. (2026), we organize reusable behavioral knowledge\ninto a hierarchical skill library SkillBank, structured into two levels: (1) General skills capture\n3"
+    },
+    {
+      "aiAssistanceScore": 0.2745793,
+      "confidence": "Low",
+      "endIndex": 590,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "universal strategic principles applicable across all task types, such as exploration strategies and\ngoal-tracking heuristics. (2) Task-specific skills store specialized knowledge for task category k,\nincluding domain-specific action sequences and preconditions.\nSkills are organized in a directory structure \u201cskills/{task_name}/{skill_category}.md\u201d,\nwhere each Markdown file S\nk \nstores a group of related skills sharing the same task and skill category\n(e.g., \u201cskills/search/entity_attribute_lookup.md\u201d). The complete library SkillBank =\n{S\nk\n}\nN\nk=1 \nthus contains N such files in total. "
+    },
+    {
+      "aiAssistanceScore": 0.2794816,
+      "confidence": "Medium",
+      "endIndex": 2501,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 589,
+      "text": " During training, rather than retrieving individual skills\nvia semantic similarity, we select a subset S \u2286 SkillBank of m skill files ranked by an on-policy\nhelpfulness criterion, which estimates the learning utility of each S\nk \nto the current policy \u03c0\n\u03b8 \n(detailed\nin Section 3.3). at the current training stage.\nContext Rendering. When expanding to more domains, token costs become a key challenge with\nboth the accumulated retrieved skills and interaction history. Inspired by Feng et al. (2026) and Shi\net al. (2026), we introduce a context rendering mechanism that maps the textual interaction context\n(including history h\nt \nand retrieved skills S) to a compact RGB image. Given compression ratio c\nt\n,\nthe rendered image is encoded and compressed by the vision encoder Enc into visual representations:\nV\nt \n= Enc(h\nt\n, S; c\nt\n) (2)\nwhere V\nt \n\u2208 R\nd \nserves as the compressed visual context embedding fed into the policy, significantly\nreducing token overhead while preserving the structural information necessary for decision-making.\nRather than treating the compression ratio c\nt \n\u2208 (0, 1] as a fixed hyperparameter, we allow the policy\nto self-generate c\nt \nat each step alongside the task action a\nt\n:\n(a\nt\n, c\nt\n) \u223c \u03c0\n\u03b8 \n(a\nt\n, c\nt \n| I, V\nt\n) (3)\n3.2 In-Context Reinforcement Learning (ICRL)\nSKILL0 introduces In-Context Reinforcement Learning (ICRL), which combines the sample efficiency\nand inductive bias of skill prompting with the exploration capability of reinforcement learning.\nThrough a dynamic online curriculum (Section 3.3), skills are progressively internalized into the\nmodel\u2019s parameters, eliminating the need for explicit skill retrieval at inference time.\nTo incentivize both efficient context compression and skill internalization within the agent loop, we\nintroduce a composite reward following Feng et al. (2026), which jointly optimizes task success and\ncompression efficiency. "
+    },
+    {
+      "aiAssistanceScore": 0.35295406,
+      "confidence": "Low",
+      "endIndex": 3800,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 2500,
+      "text": " Let I\nsucc\n(\u03c4 ) \u2208 {0, 1} denote the binary success indicator for trajectory \u03c4 ; the\ncomposite reward is defined as:\nr\ncomp\nt \n=\n\u001a\nln(c\nt\n), if I\nsucc\n(\u03c4 ) = 1,\n0, otherwise, \n\u02dcr\nt \n= r\nt \n+ \u03bb \u00b7 r\ncomp\nt \n(4)\nwhere c\nt \n\u2208 (0, 1] is the compression ratio at step t, and the logarithmic formulation reflects the\ndiminishing marginal returns of higher compression. r\nt \nevaluates whether the agent completes the\ntask correctly with skill enhancements at step t, and \u03bb \u2265 0 controls the trade-off between task\nperformance and compression efficiency.\nFor each query q \u223c D, \u03c0\n\u03b8\nold \nsamples a group of G trajectories {\u03c4\ni\n}\nG\ni=1\n. The training objective is:\nL\nSKILL0\n(\u03b8) = E\n\u03c4\ni\n\u223c\u03c0\n\u03b8\nold \n(q), q\u223cD\n1\nP\nG\ni=1 \n|\u03c4\ni\n|\nG\nX\ni=1\n|\u03c4\ni\n|\nX\nt=1\nclip(r\ni,t\n(\u03b8), A\ni\n, \u03f5) \u2212 \u03b2 \u00b7 D\nKL\n[\u03c0\n\u03b8 \n\u2225\u03c0\nref\n] (5)\nwhere the advantage A\ni \nis computed by normalizing the total rewards {\u02dcr(\u03c4\ni\n)}\nG\ni=1 \nwithin the sampled\ngroup, and r\ni,t\n(\u03b8) = \u03c0\n\u03b8 \n(\u03c4\ni,t \n| q, \u03c4\ni,<t\n)/\u03c0\n\u03b8\nold \n(\u03c4\ni,t \n| q, \u03c4\ni,<t\n) is the importance sampling ratio.\n3.3 Adaptive Curriculum Learning\nAs training progresses, the reliance on external skills undergoes a controlled annealing process to\navoid abrupt distribution shifts in the context space. We formulate this curriculum as a linear decay\nof the skill budget M \n(s) \nat each stage s \u2208 {1, . . . ,"
+    },
+    {
+      "aiAssistanceScore": 0.29589024,
+      "confidence": "Low",
+      "endIndex": 3862,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3799,
+      "text": ", N\nS \n}:\n|S\n(s)\n| \u2264 M \n(s) \n=\n\u0018\nN \u00b7 \nN\nS \n\u2212 s\nN\nS \n\u2212 1\n\u0019\n(6)\n4"
+    },
+    {
+      "aiAssistanceScore": 0.29589024,
+      "confidence": "Low",
+      "endIndex": 1466,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "This linear decay bounds the step-wise reduction of the skill context to M \n(s) \n\u2212 M \n(s+1) \n\u2248 \nN\nN\nS \n\u22121 \n. By\nconstraining changes to the active skill set S\n(s)\n, we strictly limit the deviation in the rendered visual\ncontext V\n(s)\nt \n= Enc(h\nt\n, S\n(s)\n; c\nt\n). This ensures the distribution shift of the policy \u03c0\n\u03b8 \n(a\nt\n, c\nt \n| I, V\n(s)\nt \n)\nremains smooth and stable, safely transitioning the agent to a fully self-reliant state (S\n(N\nS \n) \n= \u2205).\nBased on above design, our curriculum oper-\nates in two phases: (a) an offline Relevance-\nDriven Skill Grouping that associates each skill\nfile S\nk \nwith a dedicated validation sub-task;\nand (b) an online Helpfulness-Driven Dynamic\nCurriculum that adaptively selects the active\nskill subset S based on the current policy\u2019s\nlearning state during training process.\n(a) Relevance-Driven Skill Grouping. We\ndefine the relevance between a validation sub-\ntask and a skill file S\nk \nas whether the sub-\ntask\u2019s domain and objective align with the skill\ncategory encoded in S\nk\n. Based on this rel-\nevance, we partition the validation set (sub-\ntracted from training dataset) into N sub-tasks\n{T\nk\n}\nN\nk=1 \nprior to training, where T\nk \ngroups all\nvalidation instances whose skill requirements\ncorrespond to S\nk\n. This offline grouping en-\nsures each S\nk \nhas a dedicated sub-task for eval-\nuating its utility, forming the structural basis\nfor the subsequent dynamic curriculum.\n(b) Helpfulness-Driven Dynamic Curricu-\nlu"
+    },
+    {
+      "aiAssistanceScore": 0.24777727,
+      "confidence": "Low",
+      "endIndex": 2676,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 1465,
+      "text": "um. We split training process into N\nS \npro-\ngressive stages with a decreasing skill bud-\nget M (|M | = N\nS \n), gradually reducing the\nagent\u2019s reliance on external skill guidance un-\ntil it operates without any retrieved skills. We\nquantify the helpfulness metric \u2206\nk \nof each\nskill file S\nk \nto the current policy \u03c0\n\u03b8 \nby evaluat-\ning T\nk \nunder two conditions: with S\nk \nprovided\n(w/ skill) and without it (w/o skill) per d train-\ning steps. For stage s, we Filter, Rank, and\nSelect top-m (m \u2264 M \n(s)\n) files from the ac-\ntive skill pool by \u2206\nk \n(see Algorithm 1).\nAlgorithm 1 Curriculum Learning for SKILL0\nRequire: Initial policy \u03c0\n\u03b8 \n; reference model \u03c0\nref\n; train-\ning dataset D; total training steps T\ntotal\n; skill li-\nbrary SkillBank = {S\nk \n}\nN\nk=1\n; validation sub-tasks\n{T\nk \n}\nN\nk=1\n; number of stages N\nS \n; validation interval d.\nEnsure: Trained policy \u03c0\n\u03b8\n1: M \u2190\nh\nN,\nl \n(N\nS \n\u22122)\n(N\nS \n\u22121) \nN\nm\n, . . . ,\nl \n1\nN\nS \n\u22121 \nN\nm\n, 0\ni\n2: // Step 0: Initialize active skill subset\n3: S \u2190 SkillBank\n4: for stage s = 1, . . . , N\nS \ndo\n5: for step t = 1, . . . , \u230aT\ntotal\n/N\nS \n\u230b do\n6: if t mod d = 0 and M \n(s) \n> 0 then\n7: // Step 1: Helpfulness Evaluation for \u2200k\n8: Acc\nw/ skill\nk \n\u2190 Validate(\u03c0\n\u03b8 \n,"
+    },
+    {
+      "aiAssistanceScore": 0.11139935,
+      "confidence": "Medium",
+      "endIndex": 3801,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 2675,
+      "text": ", T\nk \n, S)\n9: Acc\nw/o skill\nk \n\u2190 Validate(\u03c0\n\u03b8 \n, T\nk \n, \u2205)\n10: \u2206\nk \n\u2190 Acc\nw/ skill\nk \n\u2212 Acc\nw/o skill\nk \n,\n11: // Step 2: Filter & Rank\n12: S \u2190 {S\nk \n| \u2206\nk \n> 0}\n13: Sort S by \u2206\nk \nin descending order\n14: // Step 3: Select top-M \n(s) \nskill files\n15: S \u2190 S[1 : M \n(s)\n]\n16: else if M \n(s) \n= 0 then\n17: S \u2190 \u2205\n18: end if\n19: // Step 4: Policy update via ICRL\n20: for q \u223c Batched(D) do\n21: Rollout trajectories {\u03c4\ni\n}\nG\ni=1 \nvia Eq. 3\n22: for each \u03c4\ni \ndo\n23: Compute reward \u02dcr(\u03c4\ni\n) via Eq. 4\n24: A\ni \n\u2190 Normalize\n\n{\u02dcr(\u03c4\ni\n)}\nG\ni=1\n\u0001\n25: end for\n26: \u03c0\n\u03b8 \n\u2190 \u03c0\n\u03b8 \n\u2212 \u2207\n\u03b8 \nL\nSKILL0 \n(\u03b8)\n27: end for\n28: end for\n29: end for\n4 Experiment\n4.1 Experiment Setup\nBenchmarks We evaluate our methods on ALFWorld (Shridhar et al., 2020) and Search-based\nQA (Jin et al., 2025). ALFWorld is a text-based game aligned with the ALFRED embodied AI\nbenchmark, including 3,827 task instances across six categories of common household activities:\nPick and Place (Pick), Look at Obj in Light (Look), Pick Clean then Place in Recep (Clean), Pick\nHeat then Place in Recep (Heat), Pick Cool then Place in Recep (Cool), and Pick Two Obj and\nPlace (Pick"
+    },
+    {
+      "aiAssistanceScore": 0.057874653,
+      "confidence": "High",
+      "endIndex": 4344,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3800,
+      "text": "k2). Search-based QA contains several widely-used search-augmented QA benchmarks,\nincluding single-hop QA datasets (NQ (Kwiatkowski et al., 2019), TriviaQA (Joshi et al., 2017), and\nPopQA (Mallen et al., 2023)) and multi-hop QA datasets (HotpotQA (Yang et al., 2018), 2Wiki (Ho\net al., 2020), MuSiQue (Trivedi et al., 2022), and Bamboogle (Press et al., 2023)).\nBaselines. We first compare SKILL0 with in-context skills prompting methods (with text and\nOCR-based history) and RL-based methods (GRPO (Shao et al., 2024), AgentOCR (Feng et al.,\n5"
+    },
+    {
+      "aiAssistanceScore": 0.057874653,
+      "confidence": "High",
+      "endIndex": 576,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "Table 1: Performance on ALFWorld and Search-QA tasks. We report the success rate (%) and\nthe average context token cost (k) per step. \n\u2020 \ndenotes models validated with skill augmentation; \n\u22c6\ndenotes methods that encodes visual context with reduced token overhead. We simply reproduce\nresults of SkillRL-3B without cold start and skill evolution. Best and second-best are highlighted.\nALFWorld Search-QA\nMethod Pick Look Clean Heat Cool Pick2 Avg\u2191 Cost\u2193 NQ Triv Pop Hotp 2Wk MuS Bam Avg\u2191 Cost\u2193\nQwen2.5-(VL)-3B-Instruct\nZero-Shot 27.0 24.3 4.5 20.5 10.2 0.0 15.2 1.21 9.4 31.3 1"
+    },
+    {
+      "aiAssistanceScore": 0.07591065,
+      "confidence": "Medium",
+      "endIndex": 1052,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 575,
+      "text": "19.8 15.0 14.8 4.7 16.8 15.9 0.48\nFew-Shot\n\u2020 \n44.1 45.1 30.5 44.1 9.2 3.3 29.3 2.30 11.8 30.9 20.2 13.7 18.4 4.5 25.6 17.9 0.86\nZero-Shot\n\u22c6 \n44.3 27.6 8.6 3.1 5.7 3.1 17.6 0.48 10.2 27.7 10.9 9.1 12.2 3.7 15.2 12.7 0.15\nFew-Shot\n\u22c6\u2020 \n57.1 25.3 4.5 5.5 10.2 9.4 23.8 0.88 11.1 26.2 14.2 15.4 13.4 3.0 19.2 14.6 0.36\nGRPO 92.6 85.7 70.6 86.6 79.3 65.0 79.9 1.02 39.3 60.6 41.1 37.4 34.6 15.4 26.4 36.4 0.61\nAgentOCR\n\u22c6 \n91.9 81.8 76.0 73.3 76.1 70.0 78.2 0.38 38.6 56.5 41.7 33.6 3"
+    },
+    {
+      "aiAssistanceScore": 0.12735933,
+      "confidence": "Medium",
+      "endIndex": 1525,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1051,
+      "text": "30.7 14.6 24.0 34.2 0.26\nEvolveR 77.3 24.5 47.9 41.7 24.6 22.5 44.1 1.89 43.4 58.4 43.4 37.3 38.1 13.7 32.8 38.2 \u2013\nSkillRL\n\u2020 \n91.9 100 82.9 87.4 78.7 70.0 82.4 2.21 38.6 57.6 40.3 33.6 31.1 13.3 58.1 38.9 0.87\nSKILL0\n\u22c6 \n95.6 80.4 100 86.7 78.7 75.2 87.9 0.38 39.8 57.5 42.3 35.1 33.7 13.3 63.7 40.8 0.18\nQwen2.5-(VL)-7B-Instruct\nZero-Shot 67.6 35.4 19.3 31.3 30.1 4.4 31.3 1.08 10.4 32.4 22.3 15.8 15.4 7.2 19.2 17.5 0.70\nFew-Shot\n\u2020 \n75.4 64.9 67.5 26.7 19.4 8.9 48.4 2.12 1"
+    },
+    {
+      "aiAssistanceScore": 0.1439374,
+      "confidence": "Medium",
+      "endIndex": 1998,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1524,
+      "text": "12.3 36.8 24.5 17.7 18.2 6.5 24.8 20.1 0.97\nZero-Shot\n\u22c6 \n46.0 35.6 19.1 7.1 5.5 5.4 21.1 0.52 6.9 30.4 12.0 10.5 9.1 5.5 24.0 14.0 0.26\nFew-Shot\n\u22c6\u2020 \n44.3 55.4 52.9 0.0 11.2 5.4 28.9 1.79 10.5 31.9 18.7 14.2 14.4 6.9 24.8 17.3 0.41\nGRPO 92.6 93.8 85.2 80.0 82.7 56.5 81.8 0.95 45.1 63.7 44.0 43.6 43.2 16.8 37.6 41.9 0.73\nAgentOCR\n\u22c6 \n95.6 96.2 78.1 73.2 72.4 72.0 81.2 0.43 43.1 61.0 45.4 40.8 38.3 15.7 36.8 40.1 0.36\nEvolveR 64.9 33.3 46.4 13.3 33.3 33.3 43.8 \u2013 43.5 63.4 4"
+    },
+    {
+      "aiAssistanceScore": 0.14165768,
+      "confidence": "Medium",
+      "endIndex": 2895,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1997,
+      "text": "45.9 38.2 42.0 15.6 54.4 43.1 \u2013\nSkillRL\n\u2020 \n97.9 71.4 90.0 90.0 95.5 87.5 89.9 \u2013 45.9 63.3 45.9 43.2 40.3 20.2 73.8 47.1 \u2013\nSKILL0\n\u22c6 \n100 85.8 94.6 81.9 85.7 80.1 89.8 0.41 42.7 61.1 45.3 40.0 38.3 16.4 66.9 44.4 0.34\n2026), EvolveR (Wu et al., 2025), and SkillRL (Xia et al., 2026)) across both benchmarks in Table 1.\nFor ALFWorld only (as shown in Table 5), we additionally report prompt-based agentic or memory-\nbased methods, including ReAct (Yao et al., 2022) and Reflexion (Shinn et al., 2024), as well as\nMem0 (Chhikara et al., 2025), ExpeL (Zhao et al., 2024), MemP (Fang et al., 2025), MemRL (Zhang\net al., 2026), and SimpleMem (Liu et al., 2026c). For search-augmented QA (as shown in Table 6),\nwe include Search-o1 (Li et al., 2025), Search-R1 (Jin et al., 2025), ZeroSearch (Sun et al., 2025),\nO\n2\n-Searcher (Mei et al., 2025), ParallelSearch (Zhao et al., 2025) and StepSearch (Wang et a"
+    },
+    {
+      "aiAssistanceScore": 0.17339592,
+      "confidence": "Medium",
+      "endIndex": 4455,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 2894,
+      "text": "al.,\n2025b). Some closed-source models are also included, such as GPT-4o (Hurst et al., 2024) and\nGemini-2.5-Pro (Comanici et al., 2025).\nImplementation details. We train the Qwen2.5-VL series using SKILL0 for at most 180 steps on 4\nH800 GPUs. For ALFWorld, we adopt the training data split from GiGPO (Feng et al., 2025), with\neach batch sampling 16 tasks and 8 rollouts per prompt, and a maximum prompt length of 3,072\ntokens. For Search-QA, we follow the experimental setup of Search-R1 (Jin et al., 2025), using\nE5 (Wang et al., 2022) as the retriever. The training data are drawn from NQ and HotpotQA, making\nthese two benchmarks in-domain, while the remaining datasets serve as out-of-domain evaluation.\nEach batch samples 128 tasks with a maximum prompt length of 4,096 tokens. For the curriculum\nlearning schedule, we set the validation subset size to 1,000, the number of curriculum stages to\nN\nS \n= 3, and initialize SkillBank from SkillRL (Xia et al., 2026) for both environments.\n4.2 Main Results\nMethod Performance. As shown in Table 1, SKILL0 demonstrates exceptional performance across\nboth ALFWorld and Search-QA. While introducing explicit skill prompts (Few-Shot) brings moderate\nimprovements over Zero-Shot baselines, the gains are limited, indicating that LLMs struggle to fully\nleverage skill descriptions without sufficient exploration. In contrast, without external skill prompting\nduring inference, SKILL0 (3B) achieves an average success rate of 87.9 on ALFWorld and 40.8 on\nSearch-QA, outperforming AgentOCR by +9.7 and +6.6 respective"
+    },
+    {
+      "aiAssistanceScore": 0.19756791,
+      "confidence": "Medium",
+      "endIndex": 4944,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 4454,
+      "text": "ely. Based on 7B models, it delivers\nscores of 89.8 on ALFWorld and 44.4 on Search-QA, substantially outperforming other RL-based\nmethods such as EvolveR, AgentOCR and GRPO. Furthermore, SKILL0 achieves competitive or\neven stronger performance against skill-augmented methods like SkillRL. These consistent gains over\nboth zero-shot and skill-augmented baselines demonstrate that our approach successfully internalizes\ncomplex reasoning and tool-use behaviors into the model\u2019s parameters.\n6"
+    },
+    {
+      "aiAssistanceScore": 0.19756791,
+      "confidence": "Medium",
+      "endIndex": 749,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "0 20 40 60 80 100\nSteps\n-2\n0\n2\n4\n6\n8\nReward\nAgentOCR\nSkill0\nFigure 3: Comparison of training dynamics with\nAgentOCR on Qwen2.5-VL-3B.\n0 24 48 72 96 120\nSteps\n0\n2\n4\n6\n8\n10\nReward\nAgentOCR\nSkill0\nFigure 4: Comparison of training dynamics with\nAgentOCR on Qwen2.5-VL-7B.\n0 30 60 90 120 150\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nAccuracy\n(a) Skill0\nw/ skill\nw/o skill\n0 30 60 90 120 150\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nAccuracy\n(b) Inference w/o skill (OCR)\nSkill0\nAgentOCR\n0 30 60 90 120 150\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nAccuracy\n(c) Inference w/o skill (Omni)\nSkill0\nGRPO\nSkillRL\nFigure 5: Training Dynamics Comparison. (a) Validation performance of SKILL0 (OCR) with and\nwithout skill augmentation, evaluated every 10 training steps"
+    },
+    {
+      "aiAssistanceScore": 0.18502936,
+      "confidence": "Medium",
+      "endIndex": 2786,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 748,
+      "text": "s. (b) Performance comparison between\nSKILL0 and AgentOCR, both evaluated without skill augmentation. (c) Performance comparison of\nSKILL0 (OCR) against GRPO (Text) and SkillRL (Text), all evaluated without skill augmentation.\nTable 5 and Table 6 provide broader comparisons: On ALFWorld, SKILL0 (89.8) largely outperforms\nmemory-augmented learning methods, including ExpeL (46.3), Mem0 (54.7), and MemRL (21.4).\nOn Search-based QA, SKILL0 (44.4) likewise surpasses search-based methods like Search-R1 (38.5),\nZeroSearch (39.1), and EvolveR (43.1), further highlighting its performance.\nToken Efficiency. Beyond strong task performance, SKILL0 achieves these results with a substan-\ntially lower context token cost. Due to visual context modeling and skill internalization, SKILL0\nfundamentally maintains an ultra-low average token cost per step. For instance, using 3B models,\nit consumes only 0.38k tokens per step on ALFWorld and 0.18k on Search-QA. This is a massive\nreduction compared to text-based or skill-augmented method like SkillRL, which costs 2.21k and\n0.87k tokens per step respectively (more than 5\u00d7 higher).\n4.3 Training Dynamics\nReward. Throughout RL optimization, SKILL0 maintains consistently higher reward curves on\nboth the 3B and 7B backbones compared to the AgentOCR baseline, as illustrated in Figure 3 and 4.\nMethod Comparison. We further monitor validation accuracy over the course of training in\nFigure 5. (a) demonstrates that when validated with skill augmentation, the model achieves faster\nearly-stage performance improvement; while validation without skill prompts yields lower initial\nperformance, it gradually catches up toward the end of optimization, revealing a clear trend of skill\ninternalization. To further validate this observation, (b) evaluates models without skill prompts\nat inference time under a strictly fair comparison setting: SKILL0 still outperforms AgentOCR,\nconfirming that the performance advantage stems from internalized knowledge rather than reliance on\nexplicit skill descriptio"
+    },
+    {
+      "aiAssistanceScore": 0.15432033,
+      "confidence": "Medium",
+      "endIndex": 3221,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 2785,
+      "text": "ons. For a broader comparison, (c) contrasts SKILL0 against standard text-based\nRL baselines under the same skill-free inference protocol. Unlike GRPO and SkillRL, which plateau\nrelatively early in training, SKILL0 continues to improve steadily throughout optimization, ultimately\nachieving the highest performance upper bound among all compared methods. We also provide\nsubtask dynamics of SKILL0 in Appendix B to further support it.\n7"
+    },
+    {
+      "aiAssistanceScore": 0.15432033,
+      "confidence": "Medium",
+      "endIndex": 570,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.1\n0.2\n0.3\n0.4\n0.5\nHelpfulness\nLook At Obj In Light\n0 20 40 60 80 100 120 140\nTraining Steps\n-0.20\n-0.15\n-0.10\n-0.05\n0.00\n0.05\nHelpfulness\nPick And Place\n0 20 40 60 80 100 120 140\nTraining Steps\n-0.05\n0.00\n0.05\n0.10\n0.15\nHelpfulness\nPick Clean Then Place In Recep\n0 20 40 60 80 100 120 140\nTraining Steps\n-0.15\n-0.10\n-0.05\n0.00\n0.05\n0.10\n0.15\n0.20\nHelpfulness\nPick Cool Then Place In Recep\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\nHelpfulness\nPick Heat Then Place In Recep\n0 20 40 60 80 100 120 140\nTrain"
+    },
+    {
+      "aiAssistanceScore": 0.1856492,
+      "confidence": "Medium",
+      "endIndex": 2109,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 569,
+      "text": "ning Steps\n-0.05\n0.00\n0.05\n0.10\n0.15\n0.20\nHelpfulness\nSuccess Rate\nFigure 6: Training Dynamics of Helpfulness, which are reported by \u2206\nk \nfor each sub-task k.\nFigure 7: Ablations of skill budget M .\n0 30 60 90 120 150\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nAccuracy\n(a) Inference w/ skill\nSkill0\n[3,3,3]\n0 30 60 90 120 150\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nAccuracy\n(b) Inference w/o skill\nSkill0\nFixed Full\n \nFigure 8: Ablations of skill budget during training process.\nHelpfulness. Figure 6 illustrates that the helpfulness of skills exhibits a consistent rise-then-fall\npattern across all sub-tasks throughout training. In the early stages, helpfulness remains low, as the\npolicy has not yet learned to leverage skill prompts via direct in-context prompting. As training\nprogresses, the policy gradually learns to ground its actions in the provided skill context, leading to\na steady increase in helpfulness. In the later stages, the dynamic curriculum progressively reduces\nthe skill budget, compelling the policy to internalize skill knowledge into its parameters rather than\nrelying on external prompts; consequently, \u2206\nk \nconverges back toward zero. This characteristic\ntrajectory empirically validates the synergistic working mechanism of ICRL and curriculum learning,\ndemonstrating that skills serve as effective yet transient scaffolding during policy optimization.\n4.4 Ablations\nSkill Budget M . Given N\nS \nas 3, the Skill Budget M for ALFWorld is calculated as [6, 3, 0] (and\n[5, 3, 0] for Search-QA) according to Algorithm"
+    },
+    {
+      "aiAssistanceScore": 0.1903506,
+      "confidence": "Medium",
+      "endIndex": 3359,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 2108,
+      "text": "m 1. This design enforces a hard upper bound that\ngradually anneals the number of available skills across curriculum stages, compelling the model to\nactively and flexibly prune less helpful skills within the Budget, thereby progressively internalizing\nskill knowledge. To validate the effectiveness of this design, we compare our [6, 3, 0] against other\nbudgets ([6, 6, 6], [3, 3, 3], and [0, 0, 0]) as well as a Fixed Full setting (without filter). Figure 7\nhighlights our superior skill internalization: while Fixed Full and [6, 6, 6] collapse by -12.3 and\n-13.3 when skill prompts are removed, our method even achieves a +1.6 gain. Training dynamics\nin Figure 8 (a) show that a static low budget ([3, 3, 3]) limits early exploration, leading to unstable\nlearning and lower peaks. Conversely, Figure 8 (b) demonstrates that our curriculum strategy\nconsistently outperforms Fixed Full in skill-free inference settings, likely due to the training-inference\ngap and the skill over-reliance induced by maintaining a constant full skill set throughout training.\nDynamic Curriculum. Table 2 validates the necessity of our three-step helpfulness-driven strategy\n(Filter & Rank & Select) (Algorithm 1, Step 1-3). It achieves the highest performance (87.9%\n8"
+    },
+    {
+      "aiAssistanceScore": 0.1903506,
+      "confidence": "Medium",
+      "endIndex": 276,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "Table 2: Ablations of Dynamic Skill Curriculum on ALF-\nWorld in different inference settings.\nMethod w/ S w/o S \u2206\nFilter & Rank & Select 86.3 87.9 \u21911.6\nw/o Filter 81.6 78.9 \u21932.7\nw/o Rank 76.6 62.9 \u219313.7\nTable 3: Impact of Validation Interval d\non ALFWorld and Search-QA (subse"
+    },
+    {
+      "aiAssistanceScore": 0.17175135,
+      "confidence": "Medium",
+      "endIndex": 2150,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 275,
+      "text": "et).\nd ALFWorld Search-QA\n10 87.9 48.9\n5 87.5 49.6\n20 78.1 42.3\nw/o S) and is the only setting to show a positive transfer (\u2206 = +1.6%) when skill prompts are\nremoved at inference. In contrast, simply using all skills up to the budget (\u201cw/o Filter\u201d) introduces\ncontext noise that drops performance by 2.7%. Worse, selecting skills randomly (\u201cw/o Rank\u201d) causes\na severe collapse (\u2206 = \u221213.7%, dropping to 62.9%), proving that retaining strictly helpful skills is\nessential for stable policy learning and preventing superficial prompt dependency.\nValidation Interval d. Table 3 explores the impact of the validation interval d used for helpfulness\nevaluation. While a smaller interval (d = 5) provides marginal gains on Search-QA, it incurs\nsignificantly higher computational overhead. We select d = 10 as the optimal trade-off, balancing\nhigh task performance with training efficiency.\nWe also provide more detailed ablation results in Table 4 to demonstrate our careful design.\n5 Conclusion\nIn this work, we proposed SKILL0, an in-context reinforcement learning framework that internalizes\nagent skills directly into model parameters via a Dynamic Curriculum mechanism, eliminating\nexternal skill reliance at inference time. Extensive experiments across ALFWorld and Search-QA\ndemonstrate substantial improvements over RL baselines (+9.7 and +6.6, respectively) with fewer\nthan 0.5k tokens per step, establishing skill internalization as a principled alternative to the retrieve-\nthen-prompt paradigm. We believe SKILL0 establishes skill internalization as a new principled and\nscalable paradigm, paving the way from tool-augmented toward truly autonomous LLM agents and\nself-sufficient intelligence.\nLimitations. SKILL0 relies on the quality of the initial SkillBank, and the offline relevance-driven\nskill grouping requires re-partitioning when applied to new task domains.\n9"
+    },
+    {
+      "aiAssistanceScore": 0.17175135,
+      "confidence": "Medium",
+      "endIndex": 133,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "References\nArash Ahmadian, Chris Cremer, Matthias Gall\u00e9, Marzieh Fadaee, Julia Kreutzer, Olivier Pietquin,\nAhmet \u00dcst\u00fcn, and Sara Hook"
+    },
+    {
+      "aiAssistanceScore": 0.08498338,
+      "confidence": "Medium",
+      "endIndex": 1553,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 132,
+      "text": "ker. Back to basics: Revisiting reinforce-style optimization for learning\nfrom human feedback in llms. In Proceedings of the 62nd Annual Meeting of the Association for\nComputational Linguistics (Volume 1: Long Papers), pp. 12248\u201312267, 2024.\nJohn R Anderson. Acquisition of cognitive skill. Psychological review, 89(4):369, 1982.\nJinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge,\nYu Han, Fei Huang, et al. Qwen technical report. arXiv preprint arXiv:2309.16609, 2023.\nYuxin Chen, Yu Wang, Yi Zhang, Ziang Ye, Zhengzhou Cai, Yaorui Shi, Qi Gu, Hui Su, Xunliang\nCai, Xiang Wang, An Zhang, and Tat-Seng Chua. Learning to self-verify makes language models\nbetter reasoners. arXiv preprint arXiv:2602.07594, 2026.\nPrateek Chhikara, Dev Khant, Saket Aryan, Taranjeet Singh, and Deshraj Yadav. Mem0: Building\nproduction-ready ai agents with scalable long-term memory. arXiv preprint arXiv:2504.19413,\n2025.\nGheorghe Comanici, Eric Bieber, Mike Schaekermann, Ice Pasupat, Noveen Sachdeva, Inderjit\nDhillon, Marcel Blistein, Ori Ram, Dan Zhang, Evan Rosen, et al. Gemini 2.5: Pushing the frontier\nwith advanced reasoning, multimodality, long context, and next generation agentic capabilities.\narXiv preprint arXiv:2507.06261, 2025.\nRunnan Fang, Yuan Liang, Xiaobin Wang, Jialong Wu, Shuofei Qiao, Pengjun Xie, Fei Huang,\nHuajun Chen, and Ningyu Zhang. Memp: Exploring agent procedural memor"
+    },
+    {
+      "aiAssistanceScore": 0.112117186,
+      "confidence": "Medium",
+      "endIndex": 2816,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 1552,
+      "text": "ry. arXiv preprint\narXiv:2508.06433, 2025.\nLang Feng, Zhenghai Xue, Tingcong Liu, and Bo An. Group-in-group policy optimization for llm\nagent training. arXiv preprint arXiv:2505.10978, 2025.\nLang Feng, Fuchao Yang, Feng Chen, Xin Cheng, Haiyang Xu, Zhenglin Wan, Ming Yan, and\nBo An. Agentocr: Reimagining agent history via optical self-compression. arXiv preprint\narXiv:2601.04786, 2026.\nDaya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu, Runxin Xu, Ruoyu\nZhang, Shirong Ma, Xiao Bi, et al. Deepseek-r1: Incentivizing reasoning capability in llms via\nreinforcement learning. arXiv preprint arXiv:2501.12948, 2025a.\nDaya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu, Runxin Xu, Ruoyu\nZhang, Shirong Ma, Xiao Bi, et al. Deepseek-r1: Incentivizing reasoning capability in llms via\nreinforcement learning. arXiv preprint arXiv:2501.12948, 2025b.\nTingxu Han, Yi Zhang, Wei Song, Chunrong Fang, Zhenyu Chen, Youcheng Sun, and Lijie Hu.\nSwe-skills-bench: Do agent skills actually help in real-world software engineering? arXiv preprint\narXiv:2603.15401, 2026.\nChaoyue He, Xin Zhou, Di Wang, Hong Xu, Wei Liu, and Chunyan Miao. Openclaw as language\ninfrastructure: A case-centered survey of a public agent ecosystem in the wi"
+    },
+    {
+      "aiAssistanceScore": 0.10446785,
+      "confidence": "Medium",
+      "endIndex": 3574,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2815,
+      "text": "ild. 2026.\nWei He, Yueqing Sun, Hongyan Hao, Xueyuan Hao, Zhikang Xia, Qi Gu, Chengcheng Han,\nDengchang Zhao, Hui Su, Kefeng Zhang, et al. Vitabench: Benchmarking llm agents with\nversatile interactive tasks in real-world applications. arXiv preprint arXiv:2509.26490, 2025.\nXanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, and Akiko Aizawa. Constructing a multi-hop\nqa dataset for comprehensive evaluation of reasoning steps. In Proceedings of the 28th International\nConference on Computational Linguistics, pp. 6609\u20136625, 2020.\nCheng-Ping Hsieh, Simeng Sun, Samuel Kriman, Shantanu Acharya, Dima Rekesh, Fei Jia, Yang\nZhang, and Boris Ginsburg. Ruler: What\u2019s the real context size of your long-context language\nmodels? arXiv preprint arXiv:2404.06654, 2024.\n10"
+    },
+    {
+      "aiAssistanceScore": 0.10446785,
+      "confidence": "Medium",
+      "endIndex": 605,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "Aaron Hurst, Adam Lerer, Adam P Goucher, Adam Perelman, Aditya Ramesh, Aidan Clark, AJ Os-\ntrow, Akila Welihinda, Alan Hayes, Alec Radford, et al. Gpt-4o system card. arXiv preprint\narXiv:2410.21276, 2024.\nZhengbo Jiao, Shaobo Wang, Zifan Zhang, Xuan Ren, Wei Wang, Bing Zhao, Hu Wei, and Linfeng\nZhang. Agentic proposing: Enhancing large language model reasoning via compositional skill\nsynthesis. arXiv preprint arXiv:2602.03279, 2026.\nCarlos E Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik\nNarasimhan. Swe-bench: Can language models resolve real-world github issu"
+    },
+    {
+      "aiAssistanceScore": 0.062108707,
+      "confidence": "Medium",
+      "endIndex": 1945,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 604,
+      "text": "ues? arXiv preprint\narXiv:2310.06770, 2023.\nBowen Jin, Hansi Zeng, Zhenrui Yue, Jinsung Yoon, Sercan Arik, Dong Wang, Hamed Zamani, and\nJiawei Han. Search-r1: Training llms to reason and leverage search engines with reinforcement\nlearning. arXiv preprint arXiv:2503.09516, 2025.\nMandar Joshi, Eunsol Choi, Daniel S Weld, and Luke Zettlemoyer. Triviaqa: A large scale distantly\nsupervised challenge dataset for reading comprehension. In Proceedings of the 55th Annual\nMeeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 1601\u2013\n1611, 2017.\nTom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris\nAlberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin, Kenton Lee, et al. Natural questions: a\nbenchmark for question answering research. Transactions of the Association for Computational\nLinguistics, 7:453\u2013466, 2019.\nHao Li, Chunjiang Mu, Jianhao Chen, Siyue Ren, Zhiyao Cui, Yiqun Zhang, Lei Bai, and Shuyue\nHu. Organizing, orchestrating, and benchmarking agent skills at ecosystem scale. arXiv preprint\narXiv:2603.02176, 2026a.\nXiangyi Li, Wenbo Chen, Yimin Liu, Shenghan Zheng, Xiaokun Chen, Yifeng He, Yubo Li, Bingran\nYou, Haotian Shen, Jiankai Sun, et al. Skillsbench: Benchmarking how well agent skills work\nacross diverse tasks. arXiv preprint arXiv:2602.12670, 202"
+    },
+    {
+      "aiAssistanceScore": 0.060525406,
+      "confidence": "Medium",
+      "endIndex": 3332,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1944,
+      "text": "26b.\nXiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and\nZhicheng Dou. Search-o1: Agentic search-enhanced large reasoning models. In Proceedings of the\n2025 Conference on Empirical Methods in Natural Language Processing, pp. 5420\u20135438, 2025.\nYuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin\nDeng, Yunzhi Yao, Mengru Wang, et al. Skillnet: Create, evaluate, and connect ai skills. arXiv\npreprint arXiv:2603.04448, 2026.\nChang Liu, Sibo Tian, Xiao Liang, and Minghui Zheng. Self-vla: A skill enhanced agentic vision-\nlanguage-action framework for contact-rich disassembly. arXiv preprint arXiv:2603.11080, 2026a.\nGuangyi Liu, Pengxiang Zhao, Yaozhen Liang, Qinyi Luo, Shunye Tang, Yuxiang Chai, Weifeng Lin,\nHan Xiao, WenHao Wang, Siheng Chen, et al. Memgui-bench: Benchmarking memory of mobile\ngui agents in dynamic environments. arXiv preprint arXiv:2602.06075, 2026b.\nJiaqi Liu, Yaofeng Su, Peng Xia, Siwei Han, Zeyu Zheng, Cihang Xie, Mingyu Ding, and Huaxiu\nYao. Simplemem: Efficient lifelong memory for llm agents. arXiv preprint arXiv:2601.02553,\n2026c.\nNelson F Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua, Fabio Petroni, and\nPercy Liang. Lost in the middle: How language models use long contexts. Transactions of the\nassociation for computational linguistics, 12:157\u2013173, 20"
+    },
+    {
+      "aiAssistanceScore": 0.045458164,
+      "confidence": "Medium",
+      "endIndex": 3882,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 3331,
+      "text": "024.\nZhengxi Lu, Jiabo Ye, Fei Tang, Yongliang Shen, Haiyang Xu, Ziwei Zheng, Weiming Lu, Ming\nYan, Fei Huang, Jun Xiao, et al. Ui-s1: Advancing gui automation via semi-online reinforcement\nlearning. arXiv preprint arXiv:2509.11543, 2025.\nZhengxi Lu, Yuxiang Chai, Yaxuan Guo, Xi Yin, Liang Liu, Hao Wang, Han Xiao, Shuai Ren,\nPengxiang Zhao, Guangyi Liu, et al. Ui-r1: Enhancing efficient action prediction of gui agents\nby reinforcement learning. In Proceedings of the AAAI Conference on Artificial Intelligence,\nvolume 40, pp. 17608\u201317616, 2026.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.045458164,
+      "confidence": "Medium",
+      "endIndex": 831,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "Alex Mallen, Akari Asai, Victor Zhong, Rajarshi Das, Daniel Khashabi, and Hannaneh Hajishirzi.\nWhen not to trust language models: Investigating effectiveness of parametric and non-parametric\nmemories. In Proceedings of the 61st annual meeting of the association for computational\nlinguistics (volume 1: Long papers), pp. 9802\u20139822, 2023.\nJianbiao Mei, Tao Hu, Daocheng Fu, Licheng Wen, Xuemeng Yang, Rong Wu, Pinlong Cai, Xinyu\nCai, Xing Gao, Yu Yang, et al. O\n2\n-searcher: A searching-based agent model for open-domain\nopen-ended question answering. arXiv preprint arXiv:2505.16582, 2025.\nOfir Press, Muru Zhang, Sewon Min, Ludwig Schmidt, Noah A Smith, and Mike Lewis. Measuring\nand narrowing the compositionality gap in language models. In Findings of the Association for\nComputational Linguistics: EMNLP 2023, pp. 5687\u20135711, 20"
+    },
+    {
+      "aiAssistanceScore": 0.046485778,
+      "confidence": "Medium",
+      "endIndex": 2201,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 830,
+      "text": "023.\nZhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang,\nMingchuan Zhang, YK Li, Yang Wu, et al. Deepseekmath: Pushing the limits of mathemat-\nical reasoning in open language models. arXiv preprint arXiv:2402.03300, 2024.\nYongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, and Yueting Zhuang. Hugginggpt:\nSolving ai tasks with chatgpt and its friends in hugging face. Advances in Neural Information\nProcessing Systems, 36:38154\u201338180, 2023.\nYaorui Shi, Shugui Liu, Yu Yang, Wenyu Mao, Yuxin Chen, Qi Gu, Hui Su, Xunliang Cai, Xiang\nWang, and An Zhang. Memocr: Layout-aware visual memory for efficient long-horizon reasoning.\narXiv preprint arXiv:2601.21468, 2026.\nZhengliang Shi, Shen Gao, Lingyong Yan, Yue Feng, Xiuyi Chen, Zhumin Chen, Dawei Yin, Suzan\nVerberne, and Zhaochun Ren. Tool learning in the wild: Empowering language models as automatic\ntool agents. In Proceedings of the ACM on Web Conference 2025, pp. 2222\u20132237, 2025.\nNoah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, and Shunyu\nYao. Reflexion: Language agents with verbal reinforcement learning, 2023. URL https://arxiv.\norg/abs/2303.11366, 8, 2024.\nMohit Shridhar, Xingdi Yuan, Marc-Alexandre C\u00f4t\u00e9, Yonatan Bisk, Adam Trischler, and Matthew\nHausknecht. Alfworld: Aligning text and embodied environments for interactive learni"
+    },
+    {
+      "aiAssistanceScore": 0.087702334,
+      "confidence": "Medium",
+      "endIndex": 3530,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 2200,
+      "text": "ing. arXiv\npreprint arXiv:2010.03768, 2020.\nHao Sun, Zile Qiao, Jiayan Guo, Xuanbo Fan, Yingyan Hou, Yong Jiang, Pengjun Xie, Yan Zhang,\nFei Huang, and Jingren Zhou. Zerosearch: Incentivize the search capability of llms without\nsearching. arXiv preprint arXiv:2505.04588, 2025.\nKimi Team, Yifan Bai, Yiping Bao, Y Charles, Cheng Chen, Guanduo Chen, Haiting Chen, Huarong\nChen, Jiahao Chen, Ningxin Chen, et al. Kimi k2: Open agentic intelligence. arXiv preprint\narXiv:2507.20534, 2025.\nMeituan LongCat Team, Anchun Gui, Bei Li, Bingyang Tao, Bole Zhou, Borun Chen, Chao Zhang,\nChen Gao, Chen Zhang, Chengcheng Han, et al. Longcat-flash-thinking-2601 technical report.\narXiv preprint arXiv:2601.16725, 2026.\nHarsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal. Musique: Multi-hop\nquestions via single-hop question composition. Transactions of the Association for Computational\nLinguistics, 10:539\u2013554, 2022.\nAozhe Wang, Yuchen Yan, Nan Zhou, Zhengxi Lu, Weiming Lu, Jun Xiao, Yueting Zhuang, and\nYongliang Shen. Code-a1: Adversarial evolving of code llm and test llm via reinforcement learning.\narXiv preprint arXiv:2603.15611, 2026a.\nGuanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, and\nAnima Anandkumar. Voyager: An open-ended embodied agent with large language mode"
+    },
+    {
+      "aiAssistanceScore": 0.06199837,
+      "confidence": "Medium",
+      "endIndex": 3816,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 3529,
+      "text": "els. arXiv\npreprint arXiv:2305.16291, 2023.\nJiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha\nGandhi, Panpan Xu, and Lin Lee Cheong. Reinforcement learning for self-improving agent with\nskill library. arXiv preprint arXiv:2512.17102, 2025a.\n12"
+    },
+    {
+      "aiAssistanceScore": 0.06199837,
+      "confidence": "Medium",
+      "endIndex": 916,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "Liang Wang, Nan Yang, Xiaolong Huang, Binxing Jiao, Linjun Yang, Daxin Jiang, Rangan Majumder,\nand Furu Wei. Text embeddings by weakly-supervised contrastive pre-training. arXiv preprint\narXiv:2212.03533, 2022.\nRuipeng Wang, Yuxin Chen, Yukai Wang, Chang Wu, Junfeng Fang, Xiaodong Cai, Qi Gu, Hui\nSu, An Zhang, Xiang Wang, et al. Agentnoisebench: Benchmarking robustness of tool-using llm\nagents under noisy condition. arXiv preprint arXiv:2602.11348, 2026b.\nZiliang Wang, Xuhui Zheng, Kang An, Cijun Ouyang, Jialu Cai, Yuhang Wang, and Yichao Wu.\nStepsearch: Igniting llms search ability via step-wise proximal policy optimization. arXiv preprint\narXiv:2505.15107, 2025b.\nRong Wu, Xiaoman Wang, Jianbiao Mei, Pinlong Cai, Daocheng Fu, Cheng Yang, Licheng Wen,\nXuemeng Yang, Yufan Shen, Yuxin Wang, et al. Evolver: Self-evolving llm agents through an\nexperience-driven lifecycle. arXiv preprint arXiv:2510.16079, 20"
+    },
+    {
+      "aiAssistanceScore": 0.085164316,
+      "confidence": "Medium",
+      "endIndex": 2286,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 915,
+      "text": "025.\nPeng Xia, Jianwen Chen, Hanyang Wang, Jiaqi Liu, Kaide Zeng, Yu Wang, Siwei Han, Yiyang\nZhou, Xujiang Zhao, Haifeng Chen, et al. Skillrl: Evolving agents via recursive skill-augmented\nreinforcement learning. arXiv preprint arXiv:2602.08234, 2026.\nRenjun Xu and Yang Yan. Agent skills for large language models: Architecture, acquisition, security,\nand the path forward. arXiv preprint arXiv:2602.12430, 2026.\nAn Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang\nGao, Chengen Huang, Chenxu Lv, et al. Qwen3 technical report. arXiv preprint arXiv:2505.09388,\n2025.\nZhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov,\nand Christopher D Manning. Hotpotqa: A dataset for diverse, explainable multi-hop question\nanswering. In Proceedings of the 2018 conference on empirical methods in natural language\nprocessing, pp. 2369\u20132380, 2018.\nShunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik R Narasimhan, and Yuan\nCao. React: Synergizing reasoning and acting in language models. In The eleventh international\nconference on learning representations, 2022.\nZhiyuan Yao, Zishan Xu, Yifu Guo, Zhiguang Han, Cheng Yang, Shuo Zhang, Weinan Zhang,\nXingshan Zeng, and Weiwen Liu. Toolace-mcp: Generalizing history-aware routing from mcp\ntools to the agent web. arXiv preprint arXiv:2601.08276, 202"
+    },
+    {
+      "aiAssistanceScore": 0.08711444,
+      "confidence": "Medium",
+      "endIndex": 3616,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2285,
+      "text": "26a.\nZhiyuan Yao, Yi-Kai Zhang, Yuxin Chen, Yueqing Sun, Zishan Xu, Yu Yang, Tianhao Hu, Qi Gu, Hui\nSu, and Xunliang Cai. Coba-rl: Capability-oriented budget allocation for reinforcement learning\nin llms. arXiv preprint arXiv:2602.03048, 2026b.\nJiabo Ye, Xi Zhang, Haiyang Xu, Haowei Liu, Junyang Wang, Zhaoqing Zhu, Ziwei Zheng, Feiyu\nGao, Junjie Cao, Zhengxi Lu, et al. Mobile-agent-v3: Fundamental agents for gui automation.\narXiv preprint arXiv:2508.15144, 2025.\nQiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Weinan Dai, Tiantian\nFan, Gaohong Liu, Lingjun Liu, et al. Dapo: An open-source llm reinforcement learning system at\nscale. arXiv preprint arXiv:2503.14476, 2025.\nLifan Yuan, Weize Chen, Yuchen Zhang, Ganqu Cui, Hanbin Wang, Ziming You, Ning Ding, Zhiyuan\nLiu, Maosong Sun, and Hao Peng. From f (x) and g(x) to f (g(x)): Llms learn new skills in rl by\ncomposing old ones, 2025. URL https://arxiv.org/abs/2509.25123.\nShengtao Zhang, Jiaqian Wang, Ruiwen Zhou, Junwei Liao, Yuchen Feng, Zhuo Li, Yujie Zheng,\nWeinan Zhang, Ying Wen, Zhiyu Li, et al. Memrl: Self-evolving agents via runtime reinforcement\nlearning on episodic memory. arXiv preprint arXiv:2601.03192, 2026.\nAndrew Zhao, Daniel Huang, Quentin Xu, Matthieu Lin, Yong-Jin Liu, and Gao Huang. Expel: Llm\nagents are experiential learne"
+    },
+    {
+      "aiAssistanceScore": 0.25881705,
+      "confidence": "Low",
+      "endIndex": 3722,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 3615,
+      "text": "ers. In Proceedings of the AAAI Conference on Artificial Intelligence,\nvolume 38, pp. 19632\u201319642, 2024.\n13"
+    },
+    {
+      "aiAssistanceScore": 0.25881705,
+      "confidence": "Low",
+      "endIndex": 434,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "Shu Zhao, Tan Yu, Anbang Xu, Japinder Singh, Aaditya Shukla, and Rama Akkiraju. Parallelsearch:\nTrain your llms to decompose query and search sub-queries in parallel with reinforcement learning.\narXiv preprint arXiv:2508.09303, 2025.\nChujie Zheng, Shixuan Liu, Mingze Li, Xiong-Hui Chen, Bowen Yu, Chang Gao, Kai Dang,\nYuqiong Liu, Rui Men, An Yang, et al. Group sequence policy optimization. arXiv preprint\narXiv:2507.18071, 2025.\n14"
+    },
+    {
+      "aiAssistanceScore": 0.25881705,
+      "confidence": "Low",
+      "endIndex": 352,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "A Theoretical Analysis\nBetween two stages s and s + 1, for constants L\nE \n, L\n\u03c0 \n> 0:\n\u2225V\n(s+1)\nt \n\u2212 V\n(s)\nt \n\u2225 \u2264 L\nE \n|S\n(s) \n\\ S\n(s+1)\n|, (7)\nD\nKL\nh\n\u03c0\n\u03b8 \n(\u00b7 | I, V\n(s)\nt \n) \n\u03c0\n\u03b8 \n(\u00b7 | I, V\n(s+1)\nt \n)\ni\n\u2264 L\n\u03c0 \n\u2225V\n(s+1)\nt \n\u2212 V\n(s)\nt \n\u2225. (8)\nUnder the linear budget schedule\nM \n(s) \n=\n\u0018\nN \u00b7 \nN\nS \n\u2212 s\nN\nS \n\u2212 1\n\u0019\n, (9)\nthe following bounds hold:\nV\n(s+1)\nt"
+    },
+    {
+      "aiAssistanceScore": 0.42464277,
+      "confidence": "Low",
+      "endIndex": 1245,
+      "label": "AI-Generated",
+      "pageIndex": 14,
+      "startIndex": 351,
+      "text": "t \n\u2212 V\n(s)\nt \n\u2264 L\nE\n\u0018 \nN\nN\nS \n\u2212 1\n\u0019\n(10)\nD\nKL\n\u0010\n\u03c0\n(s)\n\u03b8 \n\u2225 \u03c0\n(s+1)\n\u03b8\n\u0011\n\u2264 L\n\u03c0 \nL\nE\n\u0018 \nN\nN\nS \n\u2212 1\n\u0019\n(11)\nAt each stage transition, the linear decay ensures M \n(s) \n\u2212M \n(s+1) \nis uniformly bounded, so substituting\ninto the smoothness assumptions directly yields the result; this piecewise stationarity stabilizes PPO\nimportance ratios by preventing abrupt distributional shifts.\nUnder the budget constraint |S| \u2264 M \n(s)\n, if the utility admits a locally additive approximation:\nJ(S) \u2212 J(\u2205) \u2248 \nX\nS\nk \n\u2208S\n\u2206\nk\n, (12)\nthen the rule\nS\n\u2217(s) \n= arg max\nS\u2286S\n+\n, |S|\u2264M \n(s)\nX\nS\nk \n\u2208S\n\u2206\nk\n, S\n+ \n:= {S\nk \n: \u2206\nk \n> 0} (13)\nis locally optimal under the above approximation, since discarding \u2206\nk \n\u2264 0 skills and greedily\nselecting the top-M \n(s) \nremainder maximizes the additive objective. During training, internalized\nskills naturally decrease to 0 and are filtered out automatically, yielding a self-paced "
+    },
+    {
+      "aiAssistanceScore": 0.12069686,
+      "confidence": "Medium",
+      "endIndex": 1259,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 1244,
+      "text": " curriculum.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.12069686,
+      "confidence": "Medium",
+      "endIndex": 1225,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "B More Training Dynamics\nFigure 9 and Figure 10 present the per-subtask training dynamics of SKILL0 (Qwen2.5VL-3B) with\nand without skill context. Across both ALFWorld and Search-QA, the w/ skill result consistently\nachieves faster early-stage performance improvement. The skill-free result yields lower initial perfor-\nmance and gradually catches up toward the end of optimization, mirroring the skill internalization\ntrend observed in Figure 5. These fine-grained per-subtask dynamics further confirm that the progres-\nsive annealing of skills drives the model to internalize task-relevant knowledge into its parameters.\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nLook At Obj In Light\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nPick And Place\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nPick Clean Then Place In Recep\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nPick Cool Then Place In Recep\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nPick Heat Then Place In Recep\nw/o skill"
+    },
+    {
+      "aiAssistanceScore": 0.09798501,
+      "confidence": "Medium",
+      "endIndex": 2053,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 1224,
+      "text": "l\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.0\n0.2\n0.4\n0.6\n0.8\n1.0\nSuccess Rate\nPick Two Obj And Place\nw/o skill\nw/ skill\nFigure 9: Training dynamics of SKILL0 on Qwen2.5VL-3B, with ALFWorld accuracy reported.\n0 20 40 60 80 100 120 140\nTraining Steps\n0.09\n0.18\n0.27\n0.36\n0.45\n0.54\nSuccess Rate\nCompare\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.16\n0.24\n0.32\n0.40\n0.48\n0.56\nSuccess Rate\nDirect Retrieval\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.08\n0.16\n0.24\n0.32\n0.40\n0.48\nSuccess Rate\nEntity Attribute Lookup\nw/o skill\nw/ skill\n0 20 40 60 80 100 120 140\nTraining Steps\n0.05\n0.10\n0.15\n0.20\n0.25\n0.30\nSuccess Rate\nMulti Hop Reasoning\nw/o skill\nw/ skill\nFigure 10: Training dynamics of SKILL0 on Qwen2.5VL-3B, with SearchQA sub-tasks (split by skill\ncategories) accuracy reported.\n16"
+    },
+    {
+      "aiAssistanceScore": 0.09798501,
+      "confidence": "Medium",
+      "endIndex": 163,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "C Ablation Details\nWe provide detailed ablation results of our curriculum design in Table 4, as a supplement for Figure 7\nand Table 2.\nTable 4: Detailed Results of"
+    },
+    {
+      "aiAssistanceScore": 0.101471774,
+      "confidence": "Medium",
+      "endIndex": 677,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 162,
+      "text": "f Ablations.\nMethod Pick Look Clean Heat Cool Pick2 Avg vs. SKILL0\nSKILL0 (w/ S) 98.5 80.5 97.2 77.8 82.8 71.3 86.3\nSKILL0 (w/o S) 95.6 80.4 100 86.7 78.7 75.2 87.9\n\u2206 \u21932.9 \u21930.1 \u21912.8 \u21918.9 \u21934.1 \u21913.9 \u21911.6\nAblations on Skill Budget\n[6, 6, 6] (w/ S) 90.4 69.4 97.0 95.2 74.1 81.3 85.9 \u21930.4\n[6, 6, 6] (w/o S) 90.3 55.9 100.0 25.8 36.7 85.7 72.6 \u219315.3\n\u2206 \u21930.1 \u219313.5 \u21913.0 \u219369.4 \u219337.4 \u21914.4 \u219313.3\n[6, 4, 2, 1, 0] (w/ S) 81.9 65.3 88.5 88.6 83.9 30.4 70.3 \u219316.0\n[6, 4, 2, 1, 0] (w/o S) 80.4 66.8 87.9 93.7 58.5 40.7 71.1 \u219316.8\n"
+    },
+    {
+      "aiAssistanceScore": 0.05284737,
+      "confidence": "Medium",
+      "endIndex": 1393,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 676,
+      "text": "\n\u2206 \u21931.5 \u21911.5 \u21930.6 \u21915.1 \u219325.4 \u219110.3 \u21910.8\n[0, 0, 0] (w/o S) 95.7 67.8 80.1 63.6 83.2 61.1 78.9 \u21939.0\nAblations on Dynamic Curriculum (Filter & Rank & Select)\nw/o Filter (w/ S) 91.7 65.9 97.5 73.0 73.0 74.1 81.6 \u21934.7\nw/o Filter (w/o S) 91.0 45.0 98.3 65.5 71.9 71.5 78.9 \u21939.0\n\u2206 \u21930.7 \u219320.9 \u21910.8 \u21937.5 \u21931.1 \u21932.6 \u21932.7\nw/o Rank (w/ S) 92.0 62.4 93.4 86.7 46.1 68.4 76.6 \u21939.7\nw/o Rank (w/o S) 88.4 42.3 95.5 25.0 25.3 56.5 62.9 \u219325.0\n\u2206 \u21933.6 \u219320.1 \u21912.1 \u219361.7 \u219320.8 \u219311.9 \u219313.7\nD More Comparisons\nTable 5: Comparison on ALFWorld benchmark. \n\u2217 \ndenotes the results trained with GRPO.\nMethod Pick Look Clean Heat Cool Pick2 Avg\nClosed-source LLMs\nGPT-4o (Hurst et al., 2024) 75.3 60.8 31.2 56.7 21.6 49.8 48.0\nGemini-2.5-Pro (Coman"
+    },
+    {
+      "aiAssistanceScore": 0.11191307,
+      "confidence": "Medium",
+      "endIndex": 1988,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1392,
+      "text": "nici et al., 2025) 92.8 63.3 62.1 69.0 26.6 58.7 60.3\nQwen2.5-(VL)-3B-Instruct\nVanilla (Bai et al., 2023) 27.0 24.3 4.5 20.5 10.2 0.0 15.2\nGRPO (Shao et al., 2024) 92.6 85.7 70.6 86.6 79.3 65.0 79.9\nEvolveR (Wu et al., 2025) 77.3 24.5 47.9 41.7 24.6 22.5 44.1\nAgentOCR (Feng et al., 2026) 91.9 81.8 76.0 73.3 76.1 70.0 78.2\nSKILL0 (Ours) 95.6 80.4 100 86.7 78.7 75.2 87.9\nQwen2.5-(VL)-7B-Instruct\nVanilla (Bai et al., 2023) 33.4 21.6 19.3 6.90 2.80 3.20 14.8\nReAct (Yao et al., 2022) 48.5 35.4 34.3 13.2 18.2 17.6 31.2\nReflexion (Shinn et al., 2024) 62.0 41.6 44.9 30.9 36.3 23.8 42.7\nMem0 (Chhik"
+    },
+    {
+      "aiAssistanceScore": 0.1959965,
+      "confidence": "Low",
+      "endIndex": 2555,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1987,
+      "text": "kara et al., 2025) 54.0 55.0 26.9 36.4 20.8 7.69 33.6\nExpeL (Zhao et al., 2024) 21.0 67.0 55.0 52.0 71.0 6.00 46.3\nMemP (Fang et al., 2025) 54.3 38.5 48.1 56.2 32.0 16.7 41.4\nSimpleMem (Liu et al., 2026c) 64.5 33.3 20.0 12.5 33.3 3.84 29.7\nRLOO (Ahmadian et al., 2024) 87.6 78.2 87.3 81.3 71.9 48.9 75.5\nGRPO (Shao et al., 2024) 90.8 66.1 89.3 74.7 72.5 64.7 77.6\nMemRL (Zhang et al., 2026) 62.8 38.5 22.2 12.5 8.00 0.00 21.4\nEvolveR (Wu et al., 2025) 64.9 33.3 46.4 13.3 33.3 33.3 43.8\nMem0\n\u2217 \n(Chhikara et al., 2025) 78.1 54.8 56.1 31.0 65.0 26.9 54.7\nSimpleMem\n\u2217 \n("
+    },
+    {
+      "aiAssistanceScore": 0.23805177,
+      "confidence": "Low",
+      "endIndex": 2723,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 2554,
+      "text": "(Liu et al., 2026c) 89.5 36.3 60.0 50.0 64.9 26.3 62.5\nAgentOCR (Feng et al., 2026) 95.6 96.2 78.1 73.2 72.4 72.0 81.2\nSKILL0 (Ours) 100 85.8 94.6 81.9 85.7 80.1 89.8\n17"
+    },
+    {
+      "aiAssistanceScore": 0.23805177,
+      "confidence": "Low",
+      "endIndex": 990,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "Table 5 and Table 6 present extended comparisons against a broader set of baselines beyond those\nreported in Table 1. On ALFWorld, SKILL0 achieves average success rates of 87.9 (3B) and 89.8\n(7B), substantially outperforming memory-augmented approaches such as ExpeL (46.3), SimpleMem\n(62.5), Mem0 (54.7), and MemRL (21.4), as well as closed-source models including GPT-4o (48.0)\nand Gemini-2.5-Pro (60.3). On Search-QA, SKILL0 attains average scores of 40.8 (3B) and 44.4 (7B),\nsurpassing retrieval-augmented and search-based methods including RAG (27.0/30.4), Search-R1\n(32.5/38.5), ZeroSearch (31.7/39.1), and EvolveR (38.2/43.1). Notably, SKILL0 achieves particularly\nstrong performance on out-of-domain multi-hop datasets such as Bamboogle (63.7/66.9), highlighting\nits robust generalization to unseen reasoning tasks without any domain-specific adaptation.\nTable 6: Results on Search-based QA. \n\u2020 \nand \n\u22c6 \ndenote in-domain and out-of-domain respectively.\nMethod \nSingle-Hop QA Multi-H"
+    },
+    {
+      "aiAssistanceScore": 0.11814677,
+      "confidence": "Medium",
+      "endIndex": 1555,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 989,
+      "text": "Hop QA \nAvg.\nNQ\n\u2020 \nTriviaQA\n\u22c6 \nPopQA\n\u22c6 \nHotpotQA\n\u2020 \n2Wiki\n\u22c6 \nMuSiQue\n\u22c6 \nBamboogle\n\u22c6\nQwen2.5-(VL)-3B-Instruct\nVanilla 12.4 30.6 5.6 16.0 19.2 4.4 16.8 15.0\nCoT 15.0 33.6 3.6 16.2 18.0 3.6 12.8 14.7\nRAG 34.8 54.4 38.7 25.5 22.6 4.7 8.0 27.0\nRA-Agent 15.2 28.4 6.6 12.6 16.6 2.6 13.6 13.7\nIRCoT 11.1 31.2 20.0 16.4 17.1 6.7 24.0 18.1\nSearch-o1 16.6 31.0 8.2 14.8 22.4 5.2 22.4 17.2\nSFT 24.9 29.2 10.4 18.6 24.8 4.4 11.2 17.6\nR1-Instruct 21.0 44.9 17.1 20.8 27.5 6.0 19.2 22.4\nReject Sampling 29.4 48.8 33.2 24.0 23.3 5.9 21.0 26.5\nSearch-R1 34.1 54.5 37.8 32.4 31.9 10."
+    },
+    {
+      "aiAssistanceScore": 0.089128405,
+      "confidence": "Medium",
+      "endIndex": 2033,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 1554,
+      "text": ".3 26.4 32.5\nZeroSearch 41.4 57.4 44.8 27.4 30.0 9.8 11.1 31.7\nStepSearch - - - 34.5 32.0 17.4 34.4 \u2013\nEvolveR 43.4 58.4 43.4 37.3 38.1 13.7 32.8 38.2\nSKILL0 (Ours) 39.8 57.5 42.3 35.1 33.7 13.3 63.7 40.8\nQwen2.5-(VL)-7B-Instruct\nVanilla 11.6 35.6 1.2 16.4 22.2 4.8 14.4 15.2\nCoT 12.8 35.6 3.8 16.2 22.6 6.6 24.0 17.4\nRAG 34.9 58.5 39.2 29.9 23.5 5.8 20.8 30.4\nRA-Agent 21.2 40.2 8.8 19.6 19.6 7.6 28.0 20.7\nIRCoT 22.4 47.8 30.1 13.3 14.9 7.2 22.4 23.9\nSearch-o1 19.4 40.6 11.4 17"
+    },
+    {
+      "aiAssistanceScore": 0.18301706,
+      "confidence": "Medium",
+      "endIndex": 2832,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 2032,
+      "text": "7.0 27.0 8.6 30.4 22.1\nSFT 31.8 35.4 12.1 21.7 25.9 6.6 11.2 20.7\nR1-Instruct 27.0 53.7 19.9 23.7 29.2 7.2 29.3 27.1\nReject Sampling 36.0 59.2 38.0 33.1 29.6 12.3 35.5 34.8\nSearch-R1 39.3 61.0 39.7 37.0 41.4 14.6 36.8 38.5\nZeroSearch 43.6 61.8 51.5 34.6 35.2 18.4 27.8 39.1\nStepSearch \u2013 \u2013 \u2013 38.6 36.6 22.6 40.0 \u2013\nEvolveR 43.5 63.4 44.6 38.2 42.0 15.6 54.4 43.1\nSKILL0 (Ours) 42.7 61.1 45.3 40.0 38.3 16.4 66.9 44.4\nE Implementation Details\nWe follow the rendering configurations in Feng et al. (2026) to construct the visual context in SKILL0\nfor each benchmark, with the full prompts shown in Figure 11 and Figure 12. Text is rendered\nin a monospace font with a line spacing of 1.2 across both environments, with a font size of 10pt\nand a maximum width of 392px for ALFWorld, and 12pt with 560px for"
+    },
+    {
+      "aiAssistanceScore": 0.19678815,
+      "confidence": "Medium",
+      "endIndex": 3531,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 2831,
+      "text": "r Search-QA. To enable\nvisual disambiguation of different context components, we apply a semantic color coding scheme:\ntask instructions and general context are rendered in black, while for ALFWorld, observations are\nhighlighted in blue and actions in red; for Search-QA, the same convention is applied to <search>\nqueries and <information> results, respectively, allowing the vision encoder to clearly distinguish\nbetween perceived states, executed actions, and retrieved content at a glance. Table 7 presents\nrepresentative examples of the skill files stored in SkillBank, illustrating the structured procedural\nknowledge provided to the agent across both ALFWorld and Search-QA task categories.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.19678815,
+      "confidence": "Medium",
+      "endIndex": 1407,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "Prompt of SKILL0 on ALFWorld\nYou are an expert agent operating in the ALFRED embodied Environment. {skill_context} Your\ntask is to: {task_description}. Prior to this step, you have already taken {step_count} step(s).\nThe provided image shows the most recent {history_length} observations and the corresponding\nactions you took. You are now at step {current_step} and your current observation is: {cur-\nrent_observation}. Your admissible actions of the current situation are: [{admissible_actions}].\nNow it\u2019s your turn to take an action. You should first reason step-by-step about the current\nsituation. This reasoning process MUST be enclosed within <think> </think> tags. Once\nyou\u2019ve finished your reasoning, you should choose an admissible action for current step and\npresent it within <action> </action> tags.\nAdditionally, select an image compression factor larger than 1.0 for the next image. Higher\ncompression lowers cost, but too much compression harms image quality. You must\nprovide the next compression factor within <compression> </compression> tags (e.g.,\n<compression>1.1</compression>).\nFigure 11: Prompt template used by SKILL0 for the ALFWorld embodied task environment.\nPrompt of SKILL0 on Search-based QA\nYou are an expert agent tasked with answering the given question step-by-step. {skill_context}\nYour question: {task_description}. Prior to this step, you have already taken {step_coun"
+    },
+    {
+      "aiAssistanceScore": 0.4254089,
+      "confidence": "Low",
+      "endIndex": 2584,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 1406,
+      "text": "nt}\nstep(s). The image contains the full history:\n\u2022 Past queries are inside <search>...</search>\n\u2022 Past results are inside <information>...</information>\nNow it\u2019s your turn to respond for the current step. You should first conduct a reasoning process.\nAfter completing your reasoning, choose only one of the following actions (do not perform\nboth):\n1. If any required knowledge is missing or uncertain, you MUST call a search engine to\nget more external information using format: <search> your query </search>.\n2. Only if you have sufficient information to answer the question with high confidence,\nprovide your final answer within <answer> </answer> tags.\nAdditionally, select an image compression factor larger than 1.0 for the next image. Higher\ncompression lowers cost, but too much compression harms image quality. You must\nprovide the next compression factor within <compression> </compression> tags (e.g.,\n<compression>1.1</compression>).\nOutput format:\n1. Reasoning: state what you found in the image.\n2. <search>...</search> or <answer>...</answer>\n3. <compression>...</compression>\nFigure 12: Prompt template used by SKILL0 for the Search-based QA task environment.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.4254089,
+      "confidence": "Low",
+      "endIndex": 1058,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "Table 7: Representative Skills in SkillBank.\nSkill Title Principle (Actionable Pattern) When to Apply\nskills/ALFWorld/general.md\nSystematic Exploration Search every plausible surface or container exactly\nonce before revisiting; prioritize unseen locations.\nAnytime the goal count is not met\nand unexplored areas remain.\nImmediate Acquisition As soon as a required object becomes visible and reach-\nable, take it immediately before moving elsewhere.\nUpon first visual confirmation of a\ngoal-relevant object.\nskills/ALFWorld/pick_and_place.md\nGrab When Seen Whenever a needed object is visible and reachable,\nimmediately take it before moving elsewhere.\nUpon first sight of an unheld object\nmatching the goal specification.\nPlace Before More Search When holding a goal object and the target location is\nknown, navigate there and place it immediately.\nWhile carrying a required object and\nthe destination has been identified.\nskills/ALFWorld/look_at_obj_in_light.md\nSwitch Lamp On Issue the use desklamp command as soon as you\nreach it so the light condition is"
+    },
+    {
+      "aiAssistanceScore": 0.693493,
+      "confidence": "Low",
+      "endIndex": 3187,
+      "label": "AI-Generated",
+      "pageIndex": 19,
+      "startIndex": 1057,
+      "text": "s satisfied.\nUpon arriving at a desklamp that is\ncurrently off.\nGrab Target First If the target is visible but the desklamp is not, take the\ntarget immediately to carry it to the lamp.\nWhen the target is visible and not\nyet held, while desklamp location is\nunknown.\nskills/ALFWorld/clean.md\nPhase-Ordered Plan Execute in fixed sequence: (1) locate & acquire, (2)\nclean at sink, (3) navigate, (4) place.\nAs soon as the goal specifies the ob-\nject must be clean before placement.\nSink First for Cleaning Upon holding the target, go straight to the nearest sink\nand issue the clean command.\nOnce the target is in hand and its\nrequired state is clean.\nskills/ALFWorld/heat.md\nSecure Exact Target First Identify and pick up the exact object named in the goal\nbefore interacting with the microwave.\nAfter spotting any candidate object,\nbefore opening or using appliances.\nOpen Then Heat Upon reaching the microwave with the target in hand,\nopen the door, place the object, then heat.\nImmediately after navigating to the\nmicrowave with the target object\nheld.\nskills/ALFWorld/cool.md\nPrep Cooling Appliance Locate the fridge first and open it so it is ready before\nor immediately after grabbing the target.\nAs soon as the fridge comes into\nview or right after acquiring the tar-\nget object.\nEnforce Cooling Before\nPlacement\nDo not place the target object in its final location until\na cooling action has been successfully executed.\nWhen holding the correct object and\nbefore any placement action is at-\ntempted.\nskills/Search/general.md\nDecompose Then Search Break the question into minimal sub-questions and\nhandle each with its own targeted query before synthe-\nsizing.\nAny complex or multi-hop ques-\ntion requiring multiple intermediate\nfacts.\nExit When Evidence Is\nSolid\nStop issuing further queries once clear, corroborated\nevidence is found; avoid premature termination.\nAfter each read step\u2014answer only\nif confidence is justified, otherwise\nrefine search.\nskills/Search/direct_retrieval.md\nIsolate Core Query Strip the question to its key entity plus sought fact and\nsearch exactly that pair first.\nAt the start of any direct-retr"
+    },
+    {
+      "aiAssistanceScore": 0.9041372,
+      "confidence": "Medium",
+      "endIndex": 4640,
+      "label": "AI-Generated",
+      "pageIndex": 19,
+      "startIndex": 3186,
+      "text": "rieval\ntask.\nEvidence-Bound Answer Only state an answer explicitly supported by retrieved\ntext; continue searching rather than guess.\nBefore finalizing any factoid answer.\nskills/Search/multi_hop_reasoning.md\nTargeted Sequential\nSearches\nIssue separate, focused searches for each sub-question\ninstead of one broad query.\nAfter decomposition, when distinct\npieces of information must be col-\nlected individually.\nCollect-Then-Compare Retrieve concrete values for all items before perform-\ning any comparison or conclusion.\nFor comparative tasks involving\ndates, places, or quantitative at-\ntributes.\nskills/Search/entity_attribute_lookup.md\nDirect Attribute Query Include both the full entity name and target attribute\nin the first search to surface authoritative results.\nWhenever the entity\u2019s full, unam-\nbiguous name is provided in the\nquestion.\nTwo-Source Cross-Check \nConfirm the attribute in at least two independent, rep-\nutable sources to avoid hallucinations.\nAfter the first plausible answer ap-\npears or when the attribute seems\nuncommon or uncertain.\nskills/Search/compare.md\nParallel Attribute Lookup Independently retrieve the identical attribute for each\nentity via separate, focused searches.\nAfter identifying entities and the\ncomparison attribute.\nNormalize Before Compar-\ning\nConvert retrieved values to a common comparable\nform before judging equality or ordering.\nAfter gathering each entity\u2019s at-\ntribute but before drawing any con-\n"
+    }
+  ]
+}

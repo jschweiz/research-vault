@@ -1,0 +1,21 @@
+{
+  "abstract": "World models have garnered significant attention as a promising research direction in artificial intelligence, yet a clear and unified definition remains lacking. In this paper, we introduce OpenWorldLib, a comprehensive and standardized inference framework for Advanced World Models. Drawing on the evolution of world models, we propose a clear definition: a world model is a model or framework centered on perception, equipped with interaction and long-term memory capabilities, for understanding and predicting the complex world. We further systematically categorize the essential capabilities of world models. Based on this definition, OpenWorldLib integrates models across different tasks within a unified framework, enabling efficient reuse and collaborative inference. Finally, we present additional reflections and analyses on potential future directions for world model research. Code link: this https URL",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775485188000,
+  "googleCitationId": null,
+  "groupId": "019d65d2-2cf1-7623-9688-179eb39c3f6d",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775485188000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04707",
+  "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
+  "type": "public",
+  "universalId": "2604.04707",
+  "uploader": null,
+  "versionId": "019d65d2-2d9a-789e-92dd-e8ac5361fc1b",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

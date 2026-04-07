@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/introducing-anthropic-science
 source_name: Anthropic Research
 authors:
   - Anthropic
-published_at: null
+published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:16.097467Z
 content_hash: b0706e64f1d4b29511a9d4d32f53b28612bf7bed06703bda1d0f22e5975111cb
 tags:

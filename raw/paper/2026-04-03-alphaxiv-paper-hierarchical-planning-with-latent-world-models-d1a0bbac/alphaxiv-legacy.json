@@ -1,0 +1,137 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Wancong Zhang",
+        "id": "01985c82-fe8c-7ebb-b87a-a6f2d56eec77",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Basile Terver",
+        "id": "01985c81-fb81-7cfe-8225-85057d84f63c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Artem Zholus",
+        "id": "01985c81-e287-7c6e-8330-786de9cea31b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Soham Chitnis",
+        "id": "01985c85-c3f3-70a8-8642-b2b065eeee1e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Harsh Sutaria",
+        "id": "019d60ff-5db5-765c-9031-2f249b10f47a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mido Assran",
+        "id": "01985c82-a356-7831-829f-120c7f59b346",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Randall Balestriero",
+        "id": "01985c81-e287-7ced-b370-1a9d0540e3b6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Amir Bar",
+        "id": "01985c81-db50-71b7-8396-4b6c380091bd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Adrien Bardes",
+        "id": "01985c81-e774-7b44-810a-a75eec5b400a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yann LeCun",
+        "id": "01985c81-d97f-7a3d-b9ce-231516b7caee",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nicolas Ballas",
+        "id": "01985c81-dc26-7484-a2ed-cfb26e321c43",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Mon Apr 06 2026 04:14:01 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Fri Apr 03 2026 17:32:36 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d60ff-5da4-7739-94cc-8568d61fc564",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 12,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 12,
+        "visits_count": {
+          "all": 166,
+          "last24Hours": 142,
+          "last30Days": 166,
+          "last7Days": 166,
+          "last90Days": 166
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 4,
+          "url": "https://github.com/kevinghst/HWM_PLDM"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.03208"
+      },
+      "title": "Hierarchical Planning with Latent World Models",
+      "topics": [
+        "Computer Science",
+        "cs.LG"
+      ],
+      "universal_paper_id": "2604.03208",
+      "updated_at": "Mon Apr 06 2026 04:14:01 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Model predictive control (MPC) with learned world models has emerged as a promising paradigm for embodied control, particularly for its ability to generalize zero-shot when deployed in new environments. However, learned world models often struggle with long-horizon control due to the accumulation of prediction errors and the exponentially growing search space. In this work, we address these challenges by learning latent world models at multiple temporal scales and performing hierarchical planning across these scales, enabling long-horizon reasoning while substantially reducing inference-time planning complexity. Our approach serves as a modular planning abstraction that applies across diverse latent world-model architectures and domains. We demonstrate that this hierarchical approach enables zero-shot control on real-world non-greedy robotic tasks, achieving a 70% success rate on pick-&-place using only a final goal specification, compared to 0% for a single-level world model. In addition, across physics-based simulated environments including push manipulation and maze navigation, hierarchical planning achieves higher success while requiring up to 4x less planning-time compute.",
+      "created_at": "Mon Apr 06 2026 04:14:01 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d60ff-5dc8-7fbf-a60c-00319ed02acf",
+      "imageURL": "image/2604.03208v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Fri Apr 03 2026 17:32:36 GMT+0000 (Coordinated Universal Time)",
+      "title": "Hierarchical Planning with Latent World Models",
+      "universal_paper_id": "2604.03208",
+      "updated_at": "Mon Apr 06 2026 04:14:01 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.03208v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

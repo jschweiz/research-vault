@@ -7,7 +7,7 @@ source_name: Anthropic Research
 authors:
   - Anthropic
   - Redwood Research
-published_at: null
+published_at: 2024-12-18T00:00:00Z
 ingested_at: 2026-04-07T19:35:56.368715Z
 content_hash: 7ebacb86018b96b0765ce87785cc2b008fca4970f5c7852ead6306958fc9bc90
 tags:

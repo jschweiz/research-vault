@@ -33,10 +33,10 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T21:23:44.189923Z
-short_summary: # SpaceX files IPO 💰, OpenAI shares sink 📉, the spec layer 👨‍💻 ## Big Tech & Startups ### [Musk's SpaceX Files to Go Public in One of the Biggest IPOs Ever](https://links.tldrnewsletter.com/hxr2qZ) SpaceX has confidentially filed IPO paperwork with the Securities and Exchange Commission. The company is aiming to raise between $40 billion and $80 billion.
+short_summary: TLDR roundup on SpaceX files IPO, OpenAI shares sink, the spec layer ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:23:57.799848Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-07T21:39:24.248651Z
+lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: b14f32f496ababd737e626708847b2b31ecab690c76e5f88d0d4ee651e825cc2
 lightweight_enrichment_error: null
 ---

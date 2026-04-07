@@ -1,0 +1,138 @@
+{
+  "abstract": "Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. $T^2$ modernizes pretraining scaling laws with pass@$k$ modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from $T^2$ are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well-outside of the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that $T^2$ scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making $T^2$ scaling meaningful in modern deployments.",
+  "author_info": [],
+  "authors": [
+    "Nicholas Roberts",
+    "Sungjun Cho",
+    "Zhiqi Gao",
+    "Tzu-Heng Huang",
+    "Albert Wu",
+    "Gabriel Orlanski",
+    "Avi Trost",
+    "Kelly Buchanan",
+    "Aws Albarghouthi",
+    "Frederic Sala"
+  ],
+  "canonical_id": "2604.01411v1",
+  "first_publication_date": "2026-04-01T21:17:32.000Z",
+  "full_authors": [
+    {
+      "full_name": "Nicholas Roberts",
+      "id": "01985c82-00ef-71c8-82f2-f1ced37f1a96",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sungjun Cho",
+      "id": "01985c81-db50-7116-8354-1968f1933f8c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhiqi Gao",
+      "id": "01985c82-a8ff-72a7-8919-7807d9341ac2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tzu-Heng Huang",
+      "id": "01985c82-00ef-7ce9-899e-9601b26a63a8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Albert Wu",
+      "id": "01985c83-40bb-7f11-9dbd-65bd6c11e12b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Gabriel Orlanski",
+      "id": "01985c83-22ab-75ae-b46e-f64cf179358a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Avi Trost",
+      "id": "01985c83-3354-7c56-af91-2880cbec11d0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kelly Buchanan",
+      "id": "01985c82-340f-7375-a9e7-c88d650f6211",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Aws Albarghouthi",
+      "id": "01985c82-3fdf-7a53-bcc8-1d1d09dd9ee6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Frederic Sala",
+      "id": "01985c81-e843-7bfc-bd6b-690a04628f51",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d51de-624f-7bf5-aab4-25e1967e0ca4",
+  "image_url": "image/2604.01411v1.png",
+  "metrics": {
+    "public_total_votes": 33,
+    "total_votes": 5,
+    "visits_count": {
+      "all": 336,
+      "last_7_days": 336
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d51de-624f-7bf5-aab4-25e1967e0ca4",
+  "paper_summary": {
+    "keyInsights": [
+      "Optimal pretraining strategies fundamentally shift towards smaller, \"overtrained\" models when the total compute budget includes test-time scaling via repeated sampling.",
+      "The benefits of overtraining (relative to Chinchilla recommendations) are robust, translating to improved empirical performance in actual checkpoints and persisting even after post-training procedures like fine-tuning.",
+      "A unified framework for optimizing both training and inference compute is essential for efficient LLM development, as these phases are interdependent in modern deployment scenarios."
+    ],
+    "originalProblem": [
+      "Traditional pretraining scaling laws (e.g., Chinchilla) optimize pretraining loss but do not account for modern test-time scaling strategies like repeated sampling, leading to suboptimal overall resource allocation.",
+      "Test-time scaling laws focus on optimizing inference compute but treat pretrained models as fixed, failing to connect pretraining choices to inference costs and performance gains from repeated sampling.",
+      "There is no formal framework to guide the industry practice of \"overtraining\" smaller models (training on significantly more tokens than Chinchilla-optimal) to reduce per-query inference costs when repeated sampling is used."
+    ],
+    "results": [
+      "T2 scaling forecasts that optimal models at high compute scales are substantially smaller and more overtrained than Chinchilla-optimal models, with significantly higher tokens per parameter ratios, confirming pretraining should change.",
+      "Both T2 modeling approaches successfully extrapolate to the overtrained regime (with 2.8% and 8.4% relative absolute errors), and empirically, T2-predicted overtrained models consistently outperformed Chinchilla-optimal models on 8 downstream tasks.",
+      "The benefits of T2-guided overtraining persist after post-training (fine-tuning and SFT), with overtrained models continuing to outperform Chinchilla-optimized counterparts across tasks, despite a slightly \"subdued\" effect."
+    ],
+    "solution": [
+      "Introduced \"Train-to-Test (T2) scaling laws\" to jointly optimize model size (N), training tokens (D), and inference samples (k) under a combined training and inference compute budget.",
+      "Developed two complementary T2 modeling approaches: one as a parametric model of task loss (extending Chinchilla loss with a k-term) and another as a parametric model of task accuracy (using a Beta distribution for pass@k).",
+      "Incorporated an inference cost correction where the number of samples k is made dependent on model size N (k = C_inf / (2N)), allowing for joint optimization of N and D under combined compute constraints."
+    ],
+    "summary": "Researchers at the University of Wisconsin-Madison and Stanford University introduced Train-to-Test (T2) scaling laws, a framework that jointly optimizes language model size, training tokens, and inference samples under a unified compute budget. Their findings indicate that accounting for test-time scaling through repeated sampling makes training smaller models for longer periods (overtraining) compute-optimal, leading to superior performance compared to traditional scaling recommendations."
+  },
+  "publication_date": "2026-04-01T21:17:32.000Z",
+  "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
+  "topics": [
+    "Computer Science",
+    "cs.CL",
+    "cs.LG",
+    "efficient-transformers",
+    "inference-optimization",
+    "ml-systems",
+    "model-deployment-systems",
+    "optimization-methods",
+    "parameter-efficient-training",
+    "Statistics",
+    "stat.ML",
+    "training-orchestration",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.01411",
+  "updated_at": "2026-04-03T05:43:41.903Z",
+  "version_id": "019d51de-62ae-71c0-a1b7-2e58006147af"
+}

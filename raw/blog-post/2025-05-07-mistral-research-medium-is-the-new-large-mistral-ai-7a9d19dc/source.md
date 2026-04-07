@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/mistral-medium-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:09.809465Z
+fetched_at: 2026-04-07T21:40:53.343912Z
 short_summary: At Mistral AI, we are continuously pushing the frontier for both open models ([Mistral Small](https://mistral.ai/news/mistral-small-3-1), Mistral Large, Pixtral, many others) as well as enterprise models ([Mistral OCR](https://mistral.ai/news/mistral-ocr), Mistral Saba, Ministral 3B / 8B, and more). All the way from [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b), our models have consistently demonstrated performance of significantly higher-weight and more expensive models.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:00.755415Z

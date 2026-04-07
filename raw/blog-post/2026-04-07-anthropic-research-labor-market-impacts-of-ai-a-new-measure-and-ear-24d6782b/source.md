@@ -6,7 +6,7 @@ source_url: https://www.anthropic.com/research/labor-market-impacts
 source_name: Anthropic Research
 authors:
   - Anthropic
-published_at: null
+published_at: 2026-03-05T00:00:00Z
 ingested_at: 2026-04-07T19:36:31.659166Z
 content_hash: 8b9dddb7be2139e302e8c0e5d098366606488a84374d48c2b5878212233ff6bd
 tags:

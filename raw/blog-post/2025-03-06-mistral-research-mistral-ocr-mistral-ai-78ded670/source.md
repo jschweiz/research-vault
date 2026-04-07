@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-ocr
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:13.568475Z
+fetched_at: 2026-04-07T21:40:56.492144Z
 short_summary: Throughout history, advancements in information abstraction and retrieval have driven human progress. From hieroglyphs to papyri, the printing press to digitization, each leap has made human knowledge more accessible and actionable, fueling further innovation.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:52.015354Z

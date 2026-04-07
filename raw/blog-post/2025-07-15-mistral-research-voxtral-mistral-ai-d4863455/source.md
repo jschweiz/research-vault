@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/voxtral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:28:01.704316Z
+fetched_at: 2026-04-07T21:40:45.810244Z
 short_summary: Voice: the original UI. Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:26.400913Z

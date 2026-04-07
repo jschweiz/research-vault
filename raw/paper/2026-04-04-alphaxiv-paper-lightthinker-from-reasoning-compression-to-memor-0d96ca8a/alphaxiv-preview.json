@@ -1,0 +1,138 @@
+{
+  "abstract": "Large language models (LLMs) excel at complex reasoning, yet their efficiency is limited by the surging cognitive overhead of long thought traces. In this paper, we propose LightThinker, a method that enables LLMs to dynamically compress intermediate thoughts into compact semantic representations. However, static compression often struggles with complex reasoning where the irreversible loss of intermediate details can lead to logical bottlenecks. To address this, we evolve the framework into LightThinker++, introducing Explicit Adaptive Memory Management. This paradigm shifts to behavioral-level management by incorporating explicit memory primitives, supported by a specialized trajectory synthesis pipeline to train purposeful memory scheduling. Extensive experiments demonstrate the framework's versatility across three dimensions. (1) LightThinker reduces peak token usage by 70% and inference time by 26% with minimal accuracy loss. (2) In standard reasoning, LightThinker++ slashes peak token usage by 69.9% while yielding a +2.42% accuracy gain under the same context budget for maximum performance. (3) Most notably, in long-horizon agentic tasks, it maintains a stable footprint beyond 80 rounds (a 60%-70% reduction), achieving an average performance gain of 14.8% across different complex scenarios. Overall, our work provides a scalable direction for sustaining deep LLM reasoning over extended horizons with minimal overhead.",
+  "author_info": [],
+  "authors": [
+    "Yuqi Zhu",
+    "Jintian Zhang",
+    "Zhenjie Wan",
+    "Yujie Luo",
+    "Shuofei Qiao",
+    "Zhengke Gui",
+    "Da Zheng",
+    "Lei Liang",
+    "Huajun Chen",
+    "Ningyu Zhang"
+  ],
+  "canonical_id": "2604.03679v1",
+  "first_publication_date": "2026-04-04T10:46:09.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yuqi Zhu",
+      "id": "01985c82-38d4-79d5-b7f4-056183f94e2a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jintian Zhang",
+      "id": "01985c81-ef77-72bf-aafd-52986315a3c8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhenjie Wan",
+      "id": "019d65f9-53c5-7856-be75-b649995d7ba3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yujie Luo",
+      "id": "01985c82-4ab0-78d2-aa01-fb393bfc9a30",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuofei Qiao",
+      "id": "01985c81-f152-781f-bcc9-d48271151845",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhengke Gui",
+      "id": "01985c82-79e1-7af0-8e31-78d30963993a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Da Zheng",
+      "id": "01985c82-09af-78bf-9cf4-3481ecd5e5c5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lei Liang",
+      "id": "01985c81-f234-79db-b7bb-8f58101ef6ab",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huajun Chen",
+      "id": "01985c81-ef77-7ac5-b2ec-13761e73638c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ningyu Zhang",
+      "id": "01985c81-ef77-7dbe-a97a-1bc1185eac77",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 137,
+  "github_url": "https://github.com/zjunlp/LightThinker",
+  "id": "019d65f9-5386-7a8f-a166-c33947abd840",
+  "image_url": "image/2604.03679v1.png",
+  "metrics": {
+    "public_total_votes": 7,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 66,
+      "last_7_days": 66
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65f9-5386-7a8f-a166-c33947abd840",
+  "paper_summary": {
+    "keyInsights": [
+      "LLM-generated tokens serve both linguistic fluency and reasoning, indicating that the essential semantic content can be distilled from verbose sequences for efficiency.",
+      "Drawing inspiration from human cognitive economy, LLMs can benefit from retaining key conclusions or summaries in active memory, only revisiting detailed information when necessary.",
+      "Explicit memory management with reversible actions (\"expand\" and \"fold\") is crucial for \"hard-logic,\" dense reasoning steps to prevent irreversible information loss, unlike fixed-capacity implicit compression which is better suited for \"soft,\" redundant natural language reasoning."
+    ],
+    "originalProblem": [
+      "Large Language Models (LLMs) incur substantial computational and memory overhead in complex reasoning due to generating numerous tokens and the quadratic complexity of attention and linear growth of KV Cache.",
+      "Existing context management techniques, such as prompt engineering or real-time token pruning, often require extensive data construction or introduce significant inference latency.",
+      "Implicit compression methods, while efficient, risk irreversible information loss that can create \"logical bottlenecks\" in complex reasoning tasks requiring detailed intermediate steps."
+    ],
+    "results": [
+      "LightThinker reduced peak token usage by up to 70% and inference time by 26% on Qwen2.5-7B, achieving a 4.5x compression ratio with a minimal 1% accuracy drop compared to vanilla models.",
+      "LightThinker++ reduced average peak tokens and Dependency by 69.9% while maintaining accuracy comparable to baselines, and in a quality-focused setting, yielded a +2.42% average accuracy gain with a 45.0% peak memory reduction.",
+      "For long-horizon agentic tasks, LightThinker++ improved Pass@1 scores by 5.7% (on xbench), maintained a lean and stable active context footprint (60-70% reduction), and demonstrated up to 2.5x action efficiency compared to standard agentic baselines."
+    ],
+    "solution": [
+      "LightThinker, an initial framework, trains LLMs to implicitly compress lengthy thought steps into compact semantic representations using special \"gist tokens\" and a segmented attention mask.",
+      "LightThinker++ evolves this by introducing explicit, behavioral-level memory management through primitives like \"commit,\" \"expand,\" and \"fold,\" allowing dynamic archiving of semantic summaries or restoration of raw reasoning details.",
+      "A specialized environment-aware trajectory synthesis pipeline is used to train LLMs in purposeful memory scheduling, generating expert demonstrations that interleave reasoning with explicit memory operations."
+    ],
+    "summary": "LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts. LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memory management to maintain reasoning fidelity and reduce active context by 60-70% in long-horizon agentic tasks."
+  },
+  "publication_date": "2026-04-04T10:46:09.000Z",
+  "title": "LightThinker++: From Reasoning Compression to Memory Management",
+  "topics": [
+    "agents",
+    "Computer Science",
+    "cs.AI",
+    "cs.CL",
+    "cs.IR",
+    "cs.LG",
+    "cs.MM",
+    "efficient-transformers",
+    "inference-optimization",
+    "model-compression",
+    "optimization-methods",
+    "reasoning",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.03679",
+  "updated_at": "2026-04-07T03:25:31.910Z",
+  "version_id": "019d65f9-53de-716e-84d9-027f3b4487f0"
+}

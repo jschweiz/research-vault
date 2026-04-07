@@ -1,0 +1,184 @@
+{
+  "abstract": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared persistent memory, asynchronous multi-agent execution, and heartbeat-based interventions. It also provides practical safeguards, including isolated workspaces, evaluator separation, resource management, and agent session and health management. Evaluated on diverse mathematical, algorithmic, and systems optimization tasks, CORAL sets new state-of-the-art results on 10 tasks, achieving 3-10 times higher improvement rates with far fewer evaluations than fixed evolutionary search baselines across tasks. On Anthropic's kernel engineering task, four co-evolving agents improve the best known score from 1363 to 1103 cycles. Mechanistic analyses further show how these gains arise from knowledge reuse and multi-agent exploration and communication. Together, these results suggest that greater agent autonomy and multi-agent evolution can substantially improve open-ended discovery. Code is available at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Ao Qu",
+    "Han Zheng",
+    "Zijian Zhou",
+    "Yihao Yan",
+    "Yihong Tang",
+    "Shao Yong Ong",
+    "Fenglu Hong",
+    "Kaichen Zhou",
+    "Chonghe Jiang",
+    "Minwei Kong",
+    "Jiacheng Zhu",
+    "Xuan Jiang",
+    "Sirui Li",
+    "Cathy Wu",
+    "Bryan Kian Hsiang Low",
+    "Jinhua Zhao",
+    "Paul Pu Liang"
+  ],
+  "canonical_id": "2604.01658v1",
+  "first_publication_date": "2026-04-02T05:59:06.000Z",
+  "full_authors": [
+    {
+      "full_name": "Ao Qu",
+      "id": "01985c82-4f4d-71f1-87a1-cd0c571e2017",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Han Zheng",
+      "id": "01985c82-953b-701d-b9cc-d216ec17b583",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zijian Zhou",
+      "id": "01985c82-7387-7db0-af30-74c4a470c672",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yihao Yan",
+      "id": "01985c82-4f4d-7bea-a038-03854ae997ed",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yihong Tang",
+      "id": "01985c82-2a92-7eaf-bf76-d2437b86d90a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shao Yong Ong",
+      "id": "019c4601-6a71-7919-8a57-a70c71eb9c29",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fenglu Hong",
+      "id": "01985c82-b990-7845-842b-0c072cc6f02d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kaichen Zhou",
+      "id": "01985c81-ec40-7e6e-9915-af04b8e20676",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chonghe Jiang",
+      "id": "01985c82-3619-777f-8552-6e6af5d1fe6f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Minwei Kong",
+      "id": "019a09be-8f8d-7faa-bc64-10445ed3b2a3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiacheng Zhu",
+      "id": "01985c81-e34e-7a4e-a5e1-4f6783e495ce",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xuan Jiang",
+      "id": "01985c82-17c5-7999-955e-c077e44d495a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sirui Li",
+      "id": "01985c82-204d-74d0-8f6c-4a1beb40492a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Cathy Wu",
+      "id": "01985c82-1c7b-7d8c-9076-d951d7a93171",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bryan Kian Hsiang Low",
+      "id": "01985c81-ef78-7ae7-beb6-38bd2ea576da",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jinhua Zhao",
+      "id": "01985c81-eea9-7c49-b620-fd500d55c772",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Paul Pu Liang",
+      "id": "01985c81-f8f2-79de-853a-e8405003f943",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 147,
+  "github_url": "https://github.com/Human-Agent-Society/CORAL",
+  "id": "019d5134-3e7c-759e-b352-329b5c646f37",
+  "image_url": "image/2604.01658v1.png",
+  "metrics": {
+    "public_total_votes": 54,
+    "total_votes": 11,
+    "visits_count": {
+      "all": 758,
+      "last_7_days": 758
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d5134-3e7c-759e-b352-329b5c646f37",
+  "paper_summary": {
+    "keyInsights": [
+      "Granting LLM agents autonomy over evolutionary decisions and facilitating local verification steps leads to substantially more efficient search and higher improvement rates compared to fixed evolutionary algorithms.",
+      "Asynchronous multi-agent organization with shared persistent memory fosters emergent collaboration and diverse exploration, extending the search frontier beyond what single autonomous agents can achieve.",
+      "The systematic accumulation and sharing of knowledge, via agent-generated notes and reusable skills, is critical for driving successful and sustained discovery, especially in complex open-ended tasks."
+    ],
+    "originalProblem": [
+      "Existing LLM-powered evolutionary search relies on fixed heuristics and external rules, limiting agent autonomy and adaptability in complex, open-ended problem spaces where optimal search strategies are unknown.",
+      "Current multi-agent LLM systems often use 'vertical scaling' with human-defined roles and rigid communication, which is restrictive for truly open-ended discovery where optimal task decomposition and interaction patterns are not known in advance."
+    ],
+    "results": [
+      "A single CORAL agent outperformed fixed evolutionary search baselines on all 11 mathematical and systems optimization tasks, achieving new state-of-the-art results on 8 tasks and demonstrating a 3-10x higher improvement rate.",
+      "Multi-agent CORAL (4 agents) extended search performance on challenging stress-test problems, achieving an 18.3% cycle reduction in kernel engineering (a new SOTA) and a 5.0% score increase in polyominoes packing.",
+      "Analysis revealed that multi-agent gains stem from cross-agent information transfer (e.g., 36% of attempts on Kernel Engineering used cross-agent parents with higher improvement rates) and increased exploration diversity (low Jaccard similarity of strategies across agents)."
+    ],
+    "solution": [
+      "CORAL implements autonomous multi-agent evolution by empowering LLM agents with control over the retrieve, propose, evaluate, and update stages of the evolutionary loop, rather than relying on fixed external rules.",
+      "A shared persistent memory, structured as a file system, enables asynchronous multi-agent organization where agents explore solution spaces in parallel and indirectly exchange discoveries, notes, and reusable skills.",
+      "Heartbeat-based interventions (e.g., periodic consolidation, stagnation redirection) are incorporated to prevent agents from getting stuck, encourage knowledge contribution, and dynamically reorient search strategies."
+    ],
+    "summary": "The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kernel engineering."
+  },
+  "publication_date": "2026-04-02T05:59:06.000Z",
+  "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+  "topics": [
+    "agentic-frameworks",
+    "agents",
+    "Computer Science",
+    "cs.AI",
+    "deep-reinforcement-learning",
+    "evolutionary-algorithms",
+    "multi-agent-learning",
+    "optimization-methods",
+    "reasoning",
+    "tool-use",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.01658",
+  "updated_at": "2026-04-03T02:37:51.612Z",
+  "version_id": "019d5134-3eb5-7678-b628-0fa53333a99a"
+}

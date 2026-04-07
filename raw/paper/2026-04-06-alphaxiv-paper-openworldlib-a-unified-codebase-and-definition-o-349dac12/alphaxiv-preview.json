@@ -1,0 +1,351 @@
+{
+  "abstract": "World models have garnered significant attention as a promising research direction in artificial intelligence, yet a clear and unified definition remains lacking. In this paper, we introduce OpenWorldLib, a comprehensive and standardized inference framework for Advanced World Models. Drawing on the evolution of world models, we propose a clear definition: a world model is a model or framework centered on perception, equipped with interaction and long-term memory capabilities, for understanding and predicting the complex world. We further systematically categorize the essential capabilities of world models. Based on this definition, OpenWorldLib integrates models across different tasks within a unified framework, enabling efficient reuse and collaborative inference. Finally, we present additional reflections and analyses on potential future directions for world model research. Code link: this https URL",
+  "author_info": [],
+  "authors": [
+    "DataFlow Team",
+    "Bohan Zeng",
+    "Daili Hua",
+    "Kaixin Zhu",
+    "Yifan Dai",
+    "Bozhou Li",
+    "Yuran Wang",
+    "Chengzhuo Tong",
+    "Yifan Yang",
+    "Mingkun Chang",
+    "Jianbin Zhao",
+    "Zhou Liu",
+    "Hao Liang",
+    "Xiaochen Ma",
+    "Ruichuan An",
+    "Junbo Niu",
+    "Zimo Meng",
+    "Tianyi Bai",
+    "Meiyi Qiang",
+    "Huanyao Zhang",
+    "Zhiyou Xiao",
+    "Tianyu Guo",
+    "Qinhan Yu",
+    "Runhao Zhao",
+    "Zhengpin Li",
+    "Xinyi Huang",
+    "Yisheng Pan",
+    "Yiwen Tang",
+    "Yang Shi",
+    "Yue Ding",
+    "Xinlong Chen",
+    "Hongcheng Gao",
+    "Minglei Shi",
+    "Jialong Wu",
+    "Zekun Wang",
+    "Yuanxing Zhang",
+    "Xintao Wang",
+    "Pengfei Wan",
+    "Yiren Song",
+    "Mike Zheng Shou",
+    "Wentao Zhang"
+  ],
+  "canonical_id": "2604.04707v1",
+  "first_publication_date": "2026-04-06T14:19:48.000Z",
+  "full_authors": [
+    {
+      "full_name": "DataFlow Team",
+      "id": "019d65d2-2d23-7930-a614-749deceed890",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bohan Zeng",
+      "id": "01985c82-2623-7f6b-a3ef-502913731923",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Daili Hua",
+      "id": "01985c85-ad82-795c-9fb5-d372fc32ea1e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kaixin Zhu",
+      "id": "01985c82-bee7-7346-b7e8-efa7f3677121",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yifan Dai",
+      "id": "01985c83-8217-78e3-b21a-ad649314d184",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bozhou Li",
+      "id": "01985c81-f233-739f-8802-b9d286cefe9f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuran Wang",
+      "id": "01985c82-560f-79c7-a07a-6e9dfe675320",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chengzhuo Tong",
+      "id": "01985c82-953a-756b-b916-1a644a6c00ff",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yifan Yang",
+      "id": "01985c81-e1bb-7f3c-894a-80e83a32967c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mingkun Chang",
+      "id": "019bc4b2-e417-76b2-8f30-532267fb9cdc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jianbin Zhao",
+      "id": "0198a708-42be-74de-98cf-ee9a12494228",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhou Liu",
+      "id": "01985c83-561d-7a0c-b254-1581ba419e7f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hao Liang",
+      "id": "01985c81-f233-7493-903f-f3b27d600d31",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaochen Ma",
+      "id": "01985c82-39ba-7dac-97f1-96afb0c7a04d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ruichuan An",
+      "id": "01985c82-1a98-78bc-ad1d-7f6f78adab8f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junbo Niu",
+      "id": "01985c83-524f-77b0-81bc-c3c1965b996e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zimo Meng",
+      "id": "01985c82-4d83-7b2d-b23c-1d63a5a2c063",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianyi Bai",
+      "id": "01985c81-f233-7fcb-b4ea-f21585609ff6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Meiyi Qiang",
+      "id": "01985c84-53ae-7a6b-80ae-e1246bef753e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huanyao Zhang",
+      "id": "01985c85-776d-7545-ab16-41fea4bfd91d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhiyou Xiao",
+      "id": "01985c84-0a5e-754d-9987-c54cc5e39783",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianyu Guo",
+      "id": "01985c81-f817-7630-9879-35138e1fe07e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qinhan Yu",
+      "id": "01985c81-f152-7b2b-9d4c-2e813af8a9f2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Runhao Zhao",
+      "id": "01985c85-938a-7865-bb47-42e5cd0c9fdf",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhengpin Li",
+      "id": "01985c83-4423-77c2-86bc-f3be805f0e47",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xinyi Huang",
+      "id": "01985c82-570c-7310-8162-954a33c57a74",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yisheng Pan",
+      "id": "019d65d2-2d73-7b19-8191-878e6923fa51",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yiwen Tang",
+      "id": "01985c82-8b4e-7ecd-9f10-5d340895f73b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yang Shi",
+      "id": "01985c82-00ef-7681-9f4c-b7d693d493a3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yue Ding",
+      "id": "01985c82-1e68-7050-8917-1063e9e6a225",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xinlong Chen",
+      "id": "01985c82-9ee4-7b47-a259-8ef7c193987d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hongcheng Gao",
+      "id": "01985c81-f062-7856-afb5-581408101376",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Minglei Shi",
+      "id": "01985c82-31f9-7227-b243-2086959c4a58",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jialong Wu",
+      "id": "01985c81-ec40-7b55-ad96-3f51b6000d8f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zekun Wang",
+      "id": "01985c81-ed0e-78f9-9ee4-7646fd4943ef",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuanxing Zhang",
+      "id": "01985c82-3700-7e73-af9c-9747e2a118aa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xintao Wang",
+      "id": "01985c81-db50-77dc-b460-d9d4f7f91ea5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Pengfei Wan",
+      "id": "01985c81-e41c-794c-8805-fd8d324d45e1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yiren Song",
+      "id": "01985c81-f063-772e-9c64-049ee8948815",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mike Zheng Shou",
+      "id": "01985c81-e01d-786b-8235-1ea531087575",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wentao Zhang",
+      "id": "01985c81-edde-7fe0-bc00-050a798c0ad9",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 334,
+  "github_url": "https://github.com/OpenDCAI/OpenWorldLib",
+  "id": "019d65d2-2cf1-7623-9688-179eb39c3f6d",
+  "image_url": "image/2604.04707v1.png",
+  "metrics": {
+    "public_total_votes": 11,
+    "total_votes": 2,
+    "visits_count": {
+      "all": 107,
+      "last_7_days": 107
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65d2-2cf1-7623-9688-179eb39c3f6d",
+  "paper_summary": {
+    "keyInsights": [
+      "A clear, standardized definition of world models is crucial for unifying research efforts and distinguishing genuine world modeling capabilities from other generative tasks.",
+      "Modular architecture within OpenWorldLib, including dedicated modules for Operator, Synthesis, Reasoning, Representation, and Memory, enables robust integration and efficient reuse of diverse world model components.",
+      "The framework's support for tasks like interactive video generation, 3D scene reconstruction, multimodal reasoning, and Vision-Language-Action (VLA) demonstrates a practical approach to advancing AI systems capable of perceiving, understanding, and interacting with the physical world."
+    ],
+    "originalProblem": [
+      "The field of world models lacked a universally accepted, clear, and unified definition, leading to diverse interpretations and a fragmented research landscape.",
+      "Ambiguity in defining world model scope hindered systematic research, comparison of methods, and integration of diverse capabilities in AI.",
+      "A practical, unified inference framework was needed to standardize the invocation and integration of various world model-related tasks, accelerating development and application."
+    ],
+    "results": [
+      "OpenWorldLib successfully integrated and evaluated various interactive video generation models, showing that Hunyuan-WorldPlay achieved superior visual performance for navigation videos, while Cosmos offered higher quality and physical realism for complex interactive operations compared to WoW.",
+      "The framework's Reasoning module demonstrated the capacity for high-level cognitive tasks like spatial and general multimodal reasoning by interpreting diverse perceptual inputs (images, video, audio) to derive verifiable conclusions.",
+      "Evaluation of 3D generation revealed that while methods like VGGT and InfiniteVGGT could generate scenes from various views, challenges remained in maintaining geometric consistency and sharp details with significant camera movement; FlashWorld improved speed but faced similar quality trade-offs."
+    ],
+    "solution": [
+      "Proposed a standardized definition for world models as models centered on building internal representations from perception, equipped with action-conditioned simulation and long-term memory for understanding and predicting complex world dynamics.",
+      "Introduced OpenWorldLib, a comprehensive, modular inference framework with five core components (Operator, Synthesis, Reasoning, Representation, Memory) and a top-level Pipeline module, each with unified templates for extensibility.",
+      "Clarified the scope of world model tasks, distinguishing legitimate tasks (e.g., interactive video generation, 3D generation, VLA) from others that do not involve complex physical world understanding and interaction."
+    ],
+    "summary": "Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured development and comparison within the research community."
+  },
+  "publication_date": "2026-04-06T14:19:48.000Z",
+  "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
+  "topics": [
+    "agents",
+    "Computer Science",
+    "cs.CV",
+    "deep-reinforcement-learning",
+    "generative-models",
+    "inference-optimization",
+    "ml-systems",
+    "reasoning",
+    "representation-learning"
+  ],
+  "universal_paper_id": "2604.04707",
+  "updated_at": "2026-04-07T02:42:46.129Z",
+  "version_id": "019d65d2-2d9a-789e-92dd-e8ac5361fc1b"
+}

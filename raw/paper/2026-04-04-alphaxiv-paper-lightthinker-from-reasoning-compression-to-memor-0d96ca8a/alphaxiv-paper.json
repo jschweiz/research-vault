@@ -1,0 +1,21 @@
+{
+  "abstract": "Large language models (LLMs) excel at complex reasoning, yet their efficiency is limited by the surging cognitive overhead of long thought traces. In this paper, we propose LightThinker, a method that enables LLMs to dynamically compress intermediate thoughts into compact semantic representations. However, static compression often struggles with complex reasoning where the irreversible loss of intermediate details can lead to logical bottlenecks. To address this, we evolve the framework into LightThinker++, introducing Explicit Adaptive Memory Management. This paradigm shifts to behavioral-level management by incorporating explicit memory primitives, supported by a specialized trajectory synthesis pipeline to train purposeful memory scheduling. Extensive experiments demonstrate the framework's versatility across three dimensions. (1) LightThinker reduces peak token usage by 70% and inference time by 26% with minimal accuracy loss. (2) In standard reasoning, LightThinker++ slashes peak token usage by 69.9% while yielding a +2.42% accuracy gain under the same context budget for maximum performance. (3) Most notably, in long-horizon agentic tasks, it maintains a stable footprint beyond 80 rounds (a 60%-70% reduction), achieving an average performance gain of 14.8% across different complex scenarios. Overall, our work provides a scalable direction for sustaining deep LLM reasoning over extended horizons with minimal overhead.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775299569000,
+  "googleCitationId": null,
+  "groupId": "019d65f9-5386-7a8f-a166-c33947abd840",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775299569000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.03679",
+  "title": "LightThinker++: From Reasoning Compression to Memory Management",
+  "type": "public",
+  "universalId": "2604.03679",
+  "uploader": null,
+  "versionId": "019d65f9-53de-716e-84d9-027f3b4487f0",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}
