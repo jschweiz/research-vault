@@ -65,11 +65,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:04.053905Z
 short_summary: SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e04e774b5e9ae63671dec1a2b0acb23bf25ac08548568b0e8cc0de752fd52d34
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 

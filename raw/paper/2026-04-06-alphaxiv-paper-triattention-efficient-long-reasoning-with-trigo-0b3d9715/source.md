@@ -60,11 +60,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:00.695898Z
 short_summary: Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2b0d3e52d6cc3190796d40bdbdbb8af462357f914a4a90c619c9ecea7303a39f
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
 

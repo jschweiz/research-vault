@@ -56,11 +56,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:12.092916Z
 short_summary: Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 88621c8a36fcd4d2659974bbfed013b6e265ccbe772e09937e000bd9ec4bd986
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
 

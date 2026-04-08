@@ -54,11 +54,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:52.378560Z
 short_summary: Researchers from Amazon and Eindhoven University of Technology developed DeltaWorld, an efficient generative world model that employs 'delta tokens' to encode temporal changes and uses a Best-of-Many training objective. The system generates diverse future predictions with over 35 times fewer parameters and 2,000 times fewer FLOPs than prior generative models, while achieving superior predictive accuracy.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0839181fa6d5e5befbbc209048ac5b0a1e0f1cc57cdf1ad0dfea777b698442ff
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens
 

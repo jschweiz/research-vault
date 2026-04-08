@@ -36,10 +36,10 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:33.188992Z
 short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T09:37:14.161665Z
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: 6ce196cfe16e1d4009d40069b3e7351f152648565d578cfadf8431888db1573e
 lightweight_enrichment_error: null
 ---
 # Claude Code is Great | Leo Godin

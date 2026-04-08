@@ -64,11 +64,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:32.144187Z
 short_summary: LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts. LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memory management to maintain reasoning fidelity and reduce active context by 60-70% in long-horizon agentic tasks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: bac9eecbde5ba7d6f4b3b2353eb502b49b273ff22df528fc2e4ad49d2f4911bf
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # LightThinker++: From Reasoning Compression to Memory Management
 

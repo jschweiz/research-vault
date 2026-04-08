@@ -56,11 +56,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:01.511194Z
 short_summary: ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments indicate that underlying language model capabilities more significantly impact overall performance (0.154 range) than agent framework design, though sophisticated frameworks like MetaClaw can enhance execution-oriented tasks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 3e93896d7c72eb00ccb4f9b32ae348bc563f61befb4edbd82b73ddab7cc0501e
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # ClawArena: Benchmarking AI Agents in Evolving Information Environments
 

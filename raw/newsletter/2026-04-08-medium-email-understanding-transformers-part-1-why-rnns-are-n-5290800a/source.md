@@ -24,11 +24,11 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:32.413181Z
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T09:37:14.187859Z
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: cd0c143c58406c4cb9a1450db05c67c446e402b17b8b78cbf737a8f051e2091b
 lightweight_enrichment_error: null
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective

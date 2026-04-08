@@ -61,11 +61,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:17.333701Z
 short_summary: Princeton University researchers introduce Vero, a fully open reinforcement learning recipe and associated VLM family for general visual reasoning, demonstrating state-of-the-art performance among 8B-parameter models on a new 30-benchmark suite. The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sample dataset and task-routed reward functions.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 79a89c3dbdda88577df5c729b35c446c7f9d951511e0ea18422f794428c51fa9
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # Vero: An Open RL Recipe for General Visual Reasoning
 

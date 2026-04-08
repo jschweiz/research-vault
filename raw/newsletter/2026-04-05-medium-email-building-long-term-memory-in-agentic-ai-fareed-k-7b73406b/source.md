@@ -32,10 +32,10 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:32.852429Z
 short_summary: Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s everything you need to know".
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T09:37:14.172891Z
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: f43dae90082bcb7dc5a39d8fa5655fd5d2f4fe485e91df01879412ef395d2afe
 lightweight_enrichment_error: null
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding

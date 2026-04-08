@@ -32,10 +32,10 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:33.359383Z
 short_summary: Medium digest led by "Nobody Wants to Learn AI". Includes 15 highlighted stories, including "Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army".
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T09:37:14.155721Z
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: de140a3c25464392ff61b00f4e8e26912bbe5369ba0b63670d2a798024d928cc
 lightweight_enrichment_error: null
 ---
 # Nobody Wants to Learn AI | Alvis Ng

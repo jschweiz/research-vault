@@ -36,7 +36,7 @@ lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:05:04.427279Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a906af307ef0230b7e81727b135e1de96703b5e6865fc9322bfd3209c462c660
-lightweight_enrichment_error: Attempt to overwrite 'operation_run_id' in LogRecord
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.

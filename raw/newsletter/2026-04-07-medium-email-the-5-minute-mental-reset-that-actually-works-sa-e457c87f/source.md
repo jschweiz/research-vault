@@ -33,10 +33,10 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:32.540829Z
 short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T09:37:14.182634Z
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: d2cae282454b1feca55c593299075bcafb09d002d85fd10d2d1b5d1a82df5b71
 lightweight_enrichment_error: null
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness

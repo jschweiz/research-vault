@@ -86,11 +86,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:33.862150Z
 short_summary: A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7db6863ce7c78f4aece0a14d9e44037a618a88c6ac4d101e9042d22e44ec2139
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
 

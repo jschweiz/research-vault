@@ -89,11 +89,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:33.535298Z
 short_summary: Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured development and comparison within the research community.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0120f4f2964d072f4e3e1ee0a2c2dec6450c00a9a94c9e43df1b4127cdfd3467
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
 

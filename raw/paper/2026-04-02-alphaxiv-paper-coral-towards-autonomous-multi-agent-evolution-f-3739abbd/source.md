@@ -68,11 +68,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:41.561079Z
 short_summary: The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kernel engineering.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ed9a00331ef07eca6b8e4b7cb9f380ed13e8c9551dd070bcefba9e9f37142a12
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 # CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery
 
