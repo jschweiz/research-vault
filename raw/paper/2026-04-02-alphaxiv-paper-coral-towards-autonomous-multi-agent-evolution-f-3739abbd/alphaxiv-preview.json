@@ -126,16 +126,16 @@
       "username": null
     }
   ],
-  "github_stars": 147,
+  "github_stars": 306,
   "github_url": "https://github.com/Human-Agent-Society/CORAL",
   "id": "019d5134-3e7c-759e-b352-329b5c646f37",
   "image_url": "image/2604.01658v1.png",
   "metrics": {
-    "public_total_votes": 54,
-    "total_votes": 11,
+    "public_total_votes": 55,
+    "total_votes": 12,
     "visits_count": {
-      "all": 758,
-      "last_7_days": 758
+      "all": 924,
+      "last_7_days": 924
     },
     "x_likes": 0
   },

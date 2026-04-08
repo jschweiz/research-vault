@@ -109,8 +109,8 @@
     "id": "019c07b0-2732-79ce-8c48-83f6e8d4ad31",
     "image_url": "image/2601.20802v2.png",
     "metrics": {
-      "public_total_votes": 582,
-      "total_votes": 312,
+      "public_total_votes": 584,
+      "total_votes": 314,
       "visits_count": {
         "all": 10613,
         "last_7_days": 533
@@ -3304,8 +3304,8 @@
       "public_total_votes": 5,
       "total_votes": 0,
       "visits_count": {
-        "all": 12,
-        "last_7_days": 12
+        "all": 15,
+        "last_7_days": 14
       },
       "x_likes": 0
     },

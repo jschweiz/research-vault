@@ -1,6 +1,25 @@
 {
   "abstract": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at this https URL.",
-  "author_info": [],
+  "author_info": [
+    {
+      "avatar": null,
+      "blueskyUsername": null,
+      "githubUsername": null,
+      "googleScholarId": "wBu2GXEAAAAJ",
+      "id": "019cd093-1836-715e-8cea-dc8b3c7342d9",
+      "institution": "Zhejiang University",
+      "linkedinUsername": null,
+      "orcidId": null,
+      "publicEmail": null,
+      "realName": "Zhengxi Lu",
+      "reputation": 15,
+      "role": "user",
+      "username": "zhengxi-lu",
+      "verified": false,
+      "weeklyReputation": 0,
+      "xUsername": null
+    }
+  ],
   "authors": [
     "Zhengxi Lu",
     "Zhiyuan Yao",
@@ -82,11 +101,11 @@
   "id": "019d511d-d065-788f-bb15-a8562d561925",
   "image_url": "image/2604.02268v1.png",
   "metrics": {
-    "public_total_votes": 105,
-    "total_votes": 31,
+    "public_total_votes": 114,
+    "total_votes": 40,
     "visits_count": {
-      "all": 1385,
-      "last_7_days": 1385
+      "all": 1635,
+      "last_7_days": 1635
     },
     "x_likes": 0
   },

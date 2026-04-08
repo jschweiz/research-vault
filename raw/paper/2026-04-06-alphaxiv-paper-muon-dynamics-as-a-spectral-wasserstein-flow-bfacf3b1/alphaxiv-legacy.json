@@ -26,14 +26,14 @@
         "total_votes": 2,
         "upvotes_count": 9,
         "visits_count": {
-          "all": 113,
-          "last24Hours": 113,
-          "last30Days": 113,
-          "last7Days": 113,
-          "last90Days": 113
+          "all": 159,
+          "last24Hours": 125,
+          "last30Days": 159,
+          "last7Days": 159,
+          "last90Days": 159
         }
       },
-      "podcast_path": null,
+      "podcast_path": "019d65d5-f340-75a1-9c48-6fdd17f6fa1c/podcast.mp3",
       "resources": {},
       "source": {
         "name": "alphaXiv",

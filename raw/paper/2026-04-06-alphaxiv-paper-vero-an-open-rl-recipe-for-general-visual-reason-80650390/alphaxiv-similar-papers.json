@@ -3296,6 +3296,143 @@
     "version_id": "019c8b76-f65e-74b1-8b92-6dabb7a93cae"
   },
   {
+    "abstract": "Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Kaichen Zhang",
+      "Keming Wu",
+      "Zuhao Yang",
+      "Bo Li",
+      "Kairui Hu",
+      "Bin Wang",
+      "Ziwei Liu",
+      "Xingxuan Li",
+      "Lidong Bing"
+    ],
+    "canonical_id": "2511.16334v4",
+    "first_publication_date": "2025-11-20T13:11:45.000Z",
+    "full_authors": [
+      {
+        "full_name": "Kaichen Zhang",
+        "id": "01985c82-38d4-7272-90c8-924e8d1385a5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Keming Wu",
+        "id": "01985c82-7e88-7ab1-93ea-c12402808d26",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zuhao Yang",
+        "id": "01985c82-18b5-787e-8517-74ed25da6e9b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bo Li",
+        "id": "01985c81-d97f-7718-afcc-6dfb0abf944e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kairui Hu",
+        "id": "01985c82-38d4-74b8-a9c3-ea8bb52da857",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bin Wang",
+        "id": "01985c81-e5a9-7720-bead-85ce91550e2a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziwei Liu",
+        "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xingxuan Li",
+        "id": "01985c81-d97f-76ae-b4f6-166a1fb6515e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lidong Bing",
+        "id": "01985c81-e286-76da-9881-a060cf156af5",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 8,
+    "github_url": "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner",
+    "id": "019aa466-5364-73bf-93e9-10f40819297e",
+    "image_url": "image/2511.16334v4.png",
+    "metrics": {
+      "public_total_votes": 74,
+      "total_votes": 13,
+      "visits_count": {
+        "all": 1164,
+        "last_7_days": 34
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/nanyang-technological-university.png",
+        "name": "Nanyang Technological University"
+      },
+      {
+        "image": null,
+        "name": "MiroMind AI"
+      }
+    ],
+    "paper_group_id": "019aa466-5364-73bf-93e9-10f40819297e",
+    "paper_summary": {
+      "keyInsights": [
+        "Answer diversity in Supervised Fine-tuning (SFT) data, achieved through methods like multi-sampling and cross-domain mixing, critically enhances a model's overall reasoning performance, while aggressive filtering can be detrimental.",
+        "Distilling SFT data from a powerful teacher model (e.g., Qwen3-VL-235B-Instruct) significantly improves reasoning capabilities and data efficiency.",
+        "The Group Sequence Policy Optimization (GSPO) algorithm offers superior stability and faster convergence in multimodal Reinforcement Learning, and training with RL can lead to beneficial cross-domain transfer of textual reasoning abilities."
+      ],
+      "originalProblem": [
+        "Existing Large Multimodal Models (LMMs) often lack transparency and reproducibility in their training pipelines, especially for Reinforcement Learning (RL) components.",
+        "Detailed insights into data curation, training strategies, and comprehensive ablation analyses for LMMs are frequently not provided, hindering community understanding and further research.",
+        "A gap exists between the advanced capabilities of LMMs and the practical, replicable knowledge required to reproduce and build upon these models."
+      ],
+      "results": [
+        "OpenMMReasoner achieved an average accuracy of 54.3% across nine multimodal reasoning benchmarks, setting a new state-of-the-art for open-source models, with specific scores of 79.5% on MathVista and 63.8% on MathVerse.",
+        "The model demonstrated enhanced token efficiency, generating accurate responses with significantly fewer tokens compared to prior methods, such as using approximately 9,893 tokens on MathVision where another model used 17,876.",
+        "Reinforcement Learning training led to a notable improvement in textual reasoning, with the model's average textual reasoning score reaching 29.4%, a substantial increase from the 15.1% baseline."
+      ],
+      "solution": [
+        "A fully transparent, two-stage training recipe combining Supervised Fine-tuning (SFT) and Reinforcement Learning (RL) is developed for Large Multimodal Models, starting with Qwen2.5-VL-7B-Instruct.",
+        "The SFT stage employs a meticulous data curation pipeline, including distillation from a powerful teacher model (Qwen3-VL-235B-Instruct), diverse answer sampling (\u00d78), and cross-domain data mixing, without aggressive filtering.",
+        "The RL stage leverages Group Sequence Policy Optimization (GSPO) with a composite reward function emphasizing accuracy and an overlength penalty to ensure efficient, concise reasoning."
+      ],
+      "summary": "OpenMMReasoner introduces a transparent, two-stage Supervised Fine-tuning and Reinforcement Learning recipe for multimodal reasoning, establishing a new state-of-the-art for open-source models across nine diverse benchmarks. This approach improves token efficiency and boosts cross-domain textual reasoning capabilities, with all components released as open source."
+    },
+    "publication_date": "2025-12-05T01:45:30.000Z",
+    "title": "OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe",
+    "topics": [
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "data-curation",
+      "fine-tuning",
+      "multi-modal-learning",
+      "reasoning",
+      "reinforcement-learning",
+      "vision-language-models",
+      "visual-reasoning"
+    ],
+    "universal_paper_id": "2511.16334",
+    "updated_at": "2025-11-21T03:12:40.804Z",
+    "version_id": "019afe4e-1ad9-708b-ba97-c29cef8db4f8"
+  },
+  {
     "abstract": "Visual reasoning, a cornerstone of human intelligence, encompasses complex perceptual and logical processes essential for solving diverse visual problems. While advances in computer vision have produced powerful models for various perceptual tasks, leveraging these for general visual reasoning remains challenging. Prior work demonstrates that augmenting LLMs with vision models via supervised finetuning improves performance, but faces key limitations such as expensive data generation, reliance on careful data filtering, and poor generalization. To address these issues, we propose ReVPT to enhance multi-modal LLMs' abilities to reason about and use visual tools through reinforcement learning. We introduce a novel RL algorithm based on GRPO, designed to train models to reason with a suite of four visual tools. Through extensive experiments, we show that our method achieves state-of-the-art performance on several perception-heavy benchmarks, including SAT, CV-Bench, BLINK and MMStar, significantly outperforming the supervised and text-based RL finetuning baselines. Notably, Our ReVPT-3B and ReVPT-7B outperform the instruct models by 9.03% and 9.44% on CV-Bench. Finally, we bring to the community new insights on RL-based visual tool-usage through extensive ablations. Our code is available at this https URL.",
     "author_info": [],
     "authors": [
@@ -3440,143 +3577,6 @@
     "universal_paper_id": "2509.01656",
     "updated_at": "2025-09-03T01:47:00.045Z",
     "version_id": "01990d41-7e71-7502-8903-d440c19b07ad"
-  },
-  {
-    "abstract": "Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Kaichen Zhang",
-      "Keming Wu",
-      "Zuhao Yang",
-      "Bo Li",
-      "Kairui Hu",
-      "Bin Wang",
-      "Ziwei Liu",
-      "Xingxuan Li",
-      "Lidong Bing"
-    ],
-    "canonical_id": "2511.16334v4",
-    "first_publication_date": "2025-11-20T13:11:45.000Z",
-    "full_authors": [
-      {
-        "full_name": "Kaichen Zhang",
-        "id": "01985c82-38d4-7272-90c8-924e8d1385a5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Keming Wu",
-        "id": "01985c82-7e88-7ab1-93ea-c12402808d26",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zuhao Yang",
-        "id": "01985c82-18b5-787e-8517-74ed25da6e9b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Bo Li",
-        "id": "01985c81-d97f-7718-afcc-6dfb0abf944e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kairui Hu",
-        "id": "01985c82-38d4-74b8-a9c3-ea8bb52da857",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Bin Wang",
-        "id": "01985c81-e5a9-7720-bead-85ce91550e2a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ziwei Liu",
-        "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xingxuan Li",
-        "id": "01985c81-d97f-76ae-b4f6-166a1fb6515e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lidong Bing",
-        "id": "01985c81-e286-76da-9881-a060cf156af5",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 8,
-    "github_url": "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner",
-    "id": "019aa466-5364-73bf-93e9-10f40819297e",
-    "image_url": "image/2511.16334v4.png",
-    "metrics": {
-      "public_total_votes": 74,
-      "total_votes": 13,
-      "visits_count": {
-        "all": 1164,
-        "last_7_days": 34
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/nanyang-technological-university.png",
-        "name": "Nanyang Technological University"
-      },
-      {
-        "image": null,
-        "name": "MiroMind AI"
-      }
-    ],
-    "paper_group_id": "019aa466-5364-73bf-93e9-10f40819297e",
-    "paper_summary": {
-      "keyInsights": [
-        "Answer diversity in Supervised Fine-tuning (SFT) data, achieved through methods like multi-sampling and cross-domain mixing, critically enhances a model's overall reasoning performance, while aggressive filtering can be detrimental.",
-        "Distilling SFT data from a powerful teacher model (e.g., Qwen3-VL-235B-Instruct) significantly improves reasoning capabilities and data efficiency.",
-        "The Group Sequence Policy Optimization (GSPO) algorithm offers superior stability and faster convergence in multimodal Reinforcement Learning, and training with RL can lead to beneficial cross-domain transfer of textual reasoning abilities."
-      ],
-      "originalProblem": [
-        "Existing Large Multimodal Models (LMMs) often lack transparency and reproducibility in their training pipelines, especially for Reinforcement Learning (RL) components.",
-        "Detailed insights into data curation, training strategies, and comprehensive ablation analyses for LMMs are frequently not provided, hindering community understanding and further research.",
-        "A gap exists between the advanced capabilities of LMMs and the practical, replicable knowledge required to reproduce and build upon these models."
-      ],
-      "results": [
-        "OpenMMReasoner achieved an average accuracy of 54.3% across nine multimodal reasoning benchmarks, setting a new state-of-the-art for open-source models, with specific scores of 79.5% on MathVista and 63.8% on MathVerse.",
-        "The model demonstrated enhanced token efficiency, generating accurate responses with significantly fewer tokens compared to prior methods, such as using approximately 9,893 tokens on MathVision where another model used 17,876.",
-        "Reinforcement Learning training led to a notable improvement in textual reasoning, with the model's average textual reasoning score reaching 29.4%, a substantial increase from the 15.1% baseline."
-      ],
-      "solution": [
-        "A fully transparent, two-stage training recipe combining Supervised Fine-tuning (SFT) and Reinforcement Learning (RL) is developed for Large Multimodal Models, starting with Qwen2.5-VL-7B-Instruct.",
-        "The SFT stage employs a meticulous data curation pipeline, including distillation from a powerful teacher model (Qwen3-VL-235B-Instruct), diverse answer sampling (\u00d78), and cross-domain data mixing, without aggressive filtering.",
-        "The RL stage leverages Group Sequence Policy Optimization (GSPO) with a composite reward function emphasizing accuracy and an overlength penalty to ensure efficient, concise reasoning."
-      ],
-      "summary": "OpenMMReasoner introduces a transparent, two-stage Supervised Fine-tuning and Reinforcement Learning recipe for multimodal reasoning, establishing a new state-of-the-art for open-source models across nine diverse benchmarks. This approach improves token efficiency and boosts cross-domain textual reasoning capabilities, with all components released as open source."
-    },
-    "publication_date": "2025-12-05T01:45:30.000Z",
-    "title": "OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "data-curation",
-      "fine-tuning",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "vision-language-models",
-      "visual-reasoning"
-    ],
-    "universal_paper_id": "2511.16334",
-    "updated_at": "2025-11-21T03:12:40.804Z",
-    "version_id": "019afe4e-1ad9-708b-ba97-c29cef8db4f8"
   },
   {
     "abstract": "Reinforcement learning (RL) provides a principled framework for improving Vision-Language Models (VLMs) on complex reasoning tasks. However, existing RL approaches often rely on human-annotated labels or task-specific heuristics to define verifiable rewards, both of which are costly and difficult to scale. We introduce VisPlay, a self-evolving RL framework that enables VLMs to autonomously improve their reasoning abilities using large amounts of unlabeled image data. Starting from a single base VLM, VisPlay assigns the model into two interacting roles: an Image-Conditioned Questioner that formulates challenging yet answerable visual questions, and a Multimodal Reasoner that generates silver responses. These roles are jointly trained with Group Relative Policy Optimization (GRPO), which incorporates diversity and difficulty rewards to balance the complexity of generated questions with the quality of the silver answers. VisPlay scales efficiently across two model families. When trained on Qwen2.5-VL and MiMo-VL, VisPlay achieves consistent improvements in visual reasoning, compositional generalization, and hallucination reduction across eight benchmarks, including MM-Vet and MMMU, demonstrating a scalable path toward self-evolving multimodal intelligence. The project page is available at this https URL",
@@ -5051,8 +5051,8 @@
     "id": "0196ebcd-ef00-71ea-9df2-db295fea52cd",
     "image_url": "image/2505.13886v8.png",
     "metrics": {
-      "public_total_votes": 40,
-      "total_votes": 2,
+      "public_total_votes": 41,
+      "total_votes": 3,
       "visits_count": {
         "all": 1626,
         "last_7_days": 31
@@ -6899,6 +6899,78 @@
     "version_id": "019c8823-9cde-77e0-a8d8-644734067b62"
   },
   {
+    "abstract": "Visual reasoning over structured data such as tables is a critical capability for modern vision-language models (VLMs), yet current benchmarks remain limited in scale, diversity, or reasoning depth, especially when it comes to rendered table images. Addressing this gap, we introduce Visual-TableQA, a large-scale, open-domain multimodal dataset specifically designed to evaluate and enhance visual reasoning over complex tabular data. Our generation pipeline is modular, scalable, and fully autonomous, involving multiple reasoning LLMs collaborating across distinct roles: generation, validation, and inspiration. Visual-TableQA comprises 2.5k richly structured LaTeX-rendered tables and 6k reasoning-intensive QA pairs, all produced at a cost of under USD 100. To promote diversity and creativity, our pipeline performs multi-model collaborative data generation via cross-model prompting ('inspiration') and LLM-jury filtering. Stronger models seed layouts and topics that weaker models elaborate, collectively distilling diverse reasoning patterns and visual structures into the dataset. Empirical results show that models fine-tuned on Visual-TableQA generalize robustly to external benchmarks, outperforming several proprietary models despite the dataset's synthetic nature. The full pipeline and resources are publicly available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Boammani Aser Lompo",
+      "Marc Haraoui"
+    ],
+    "canonical_id": "2509.07966v1",
+    "first_publication_date": "2025-09-09T17:52:26.000Z",
+    "full_authors": [
+      {
+        "full_name": "Boammani Aser Lompo",
+        "id": "01985c84-448d-743e-baec-b408e7906f5c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Marc Haraoui",
+        "id": "01993127-af43-798f-ab6a-9b9f44f80d3c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/AI-4-Everyone/Visual-TableQA",
+    "id": "01993127-af2a-7261-a87e-4c39bc61239a",
+    "image_url": "image/2509.07966v1.png",
+    "metrics": {
+      "public_total_votes": 9,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 126,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "01993127-af2a-7261-a87e-4c39bc61239a",
+    "paper_summary": {
+      "keyInsights": [
+        "High-quality synthetic datasets, when designed with rich visual complexity and reasoning depth (like Visual-TableQA), can effectively train VLMs for generalized visual reasoning beyond specific tasks.",
+        "Emphasis on visual layout understanding, symbolic interpretation, and multi-step reasoning within a dataset fosters more transferable skills in VLMs compared to datasets focused solely on visual recognition or pure textual reasoning.",
+        "An LLM-driven generation pipeline, incorporating cross-model inspiration and an LLM jury for quality control, offers a cost-efficient and scalable method for creating diverse multimodal benchmarks."
+      ],
+      "originalProblem": [
+        "Existing table-based Question Answering (QA) datasets either rely on purely textual tables, ignoring visual layout complexities, or offer limited visual diversity and reasoning depth for image-based tables.",
+        "A lack of scalable, open-domain benchmarks for visual reasoning over rendered tabular data hinders the development of generalizable vision-language models (VLMs).",
+        "Traditional manual annotation for large-scale multimodal datasets is prohibitively expensive and time-consuming, limiting the creation of sufficiently diverse and complex benchmarks."
+      ],
+      "results": [
+        "Fine-tuning open-source models on Visual-TableQA led to significant generalization gains on external benchmarks, with Qwen2.5-VL-7B-Instruct showing increases from 49.23% to 60.95% on ReachQA and 25.10% to 49.77% on MATH-Vision.",
+        "Fine-tuned open-source models, such as Qwen2.5-VL-7B-Instruct, surpassed proprietary models like GPT-4o, GPT-4o-mini, and Gemini 2.5 Pro on several evaluated benchmarks.",
+        "Visual-TableQA, despite being roughly three times smaller in sample count than ReachQA, yielded significantly larger gains in reasoning performance (an average gain of +17.68 points on ReachQA's Reasoning task, compared to +4.4 points from ReachQA's own fine-tuning)."
+      ],
+      "solution": [
+        "A fully autonomous, modular, and scalable pipeline leverages reasoning Large Language Models (LLMs) to generate LaTeX-rendered table images and complex, multi-step QA pairs.",
+        "LaTeX serves as an intermediate textual representation, which reduces generation costs and enables the creation of highly diverse and complex visual table structures, including merged cells and hierarchical headers.",
+        "An LLM 'reasoning jury' and subsequent human evaluation ensure high quality and coherence of the generated tables and QA pairs, particularly for reasoning-intensive questions."
+      ],
+      "summary": "Researchers introduce Visual-TableQA, a large-scale, open-domain multimodal dataset designed to improve and evaluate visual reasoning over complex table images. The dataset, generated using an LLM-driven autonomous pipeline, demonstrates that fine-tuning on Visual-TableQA significantly enhances visual-language model performance across various reasoning benchmarks, enabling some open-source models to surpass certain proprietary counterparts."
+    },
+    "publication_date": "2025-09-09T17:52:26.000Z",
+    "title": "Visual-TableQA: Open-Domain Benchmark for Reasoning over Table Images",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "universal_paper_id": "2509.07966",
+    "updated_at": "2025-09-10T01:05:08.394Z",
+    "version_id": "01993127-af46-77ea-828a-4fee07fbade9"
+  },
+  {
     "abstract": "While many vision-language models (VLMs) are developed to answer well-defined, straightforward questions with highly specified targets, as in most benchmarks, they often struggle in practice with complex open-ended tasks, which usually require multiple rounds of exploration and reasoning in the visual space. Such visual thinking paths not only provide step-by-step exploration and verification as an AI detective but also produce better interpretations of the final answers. However, these paths are challenging to evaluate due to the large exploration space of intermediate steps. To bridge the gap, we develop an evaluation suite, ``Visual Reasoning with multi-step EXploration (V-REX)'', which is composed of a benchmark of challenging visual reasoning tasks requiring native multi-step exploration and an evaluation protocol. V-REX covers rich application scenarios across diverse domains. V-REX casts the multi-step exploratory reasoning into a Chain-of-Questions (CoQ) and disentangles VLMs' capability to (1) Planning: breaking down an open-ended task by selecting a chain of exploratory questions; and (2) Following: answering curated CoQ sequentially to collect information for deriving the final answer. By curating finite options of questions and answers per step, V-REX achieves a reliable quantitative and fine-grained analysis of the intermediate steps. By assessing SOTA proprietary and open-sourced VLMs, we reveal consistent scaling trends, significant differences between planning and following abilities, and substantial room for improvement in multi-step exploratory reasoning.",
     "author_info": [],
     "authors": [
@@ -7108,78 +7180,6 @@
     "universal_paper_id": "2501.03675",
     "updated_at": "2025-03-03T19:37:51.441Z",
     "version_id": "019506f6-03c8-7e8d-a929-87e9e270ef0d"
-  },
-  {
-    "abstract": "Visual reasoning over structured data such as tables is a critical capability for modern vision-language models (VLMs), yet current benchmarks remain limited in scale, diversity, or reasoning depth, especially when it comes to rendered table images. Addressing this gap, we introduce Visual-TableQA, a large-scale, open-domain multimodal dataset specifically designed to evaluate and enhance visual reasoning over complex tabular data. Our generation pipeline is modular, scalable, and fully autonomous, involving multiple reasoning LLMs collaborating across distinct roles: generation, validation, and inspiration. Visual-TableQA comprises 2.5k richly structured LaTeX-rendered tables and 6k reasoning-intensive QA pairs, all produced at a cost of under USD 100. To promote diversity and creativity, our pipeline performs multi-model collaborative data generation via cross-model prompting ('inspiration') and LLM-jury filtering. Stronger models seed layouts and topics that weaker models elaborate, collectively distilling diverse reasoning patterns and visual structures into the dataset. Empirical results show that models fine-tuned on Visual-TableQA generalize robustly to external benchmarks, outperforming several proprietary models despite the dataset's synthetic nature. The full pipeline and resources are publicly available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Boammani Aser Lompo",
-      "Marc Haraoui"
-    ],
-    "canonical_id": "2509.07966v1",
-    "first_publication_date": "2025-09-09T17:52:26.000Z",
-    "full_authors": [
-      {
-        "full_name": "Boammani Aser Lompo",
-        "id": "01985c84-448d-743e-baec-b408e7906f5c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Marc Haraoui",
-        "id": "01993127-af43-798f-ab6a-9b9f44f80d3c",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/AI-4-Everyone/Visual-TableQA",
-    "id": "01993127-af2a-7261-a87e-4c39bc61239a",
-    "image_url": "image/2509.07966v1.png",
-    "metrics": {
-      "public_total_votes": 9,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 126,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "01993127-af2a-7261-a87e-4c39bc61239a",
-    "paper_summary": {
-      "keyInsights": [
-        "High-quality synthetic datasets, when designed with rich visual complexity and reasoning depth (like Visual-TableQA), can effectively train VLMs for generalized visual reasoning beyond specific tasks.",
-        "Emphasis on visual layout understanding, symbolic interpretation, and multi-step reasoning within a dataset fosters more transferable skills in VLMs compared to datasets focused solely on visual recognition or pure textual reasoning.",
-        "An LLM-driven generation pipeline, incorporating cross-model inspiration and an LLM jury for quality control, offers a cost-efficient and scalable method for creating diverse multimodal benchmarks."
-      ],
-      "originalProblem": [
-        "Existing table-based Question Answering (QA) datasets either rely on purely textual tables, ignoring visual layout complexities, or offer limited visual diversity and reasoning depth for image-based tables.",
-        "A lack of scalable, open-domain benchmarks for visual reasoning over rendered tabular data hinders the development of generalizable vision-language models (VLMs).",
-        "Traditional manual annotation for large-scale multimodal datasets is prohibitively expensive and time-consuming, limiting the creation of sufficiently diverse and complex benchmarks."
-      ],
-      "results": [
-        "Fine-tuning open-source models on Visual-TableQA led to significant generalization gains on external benchmarks, with Qwen2.5-VL-7B-Instruct showing increases from 49.23% to 60.95% on ReachQA and 25.10% to 49.77% on MATH-Vision.",
-        "Fine-tuned open-source models, such as Qwen2.5-VL-7B-Instruct, surpassed proprietary models like GPT-4o, GPT-4o-mini, and Gemini 2.5 Pro on several evaluated benchmarks.",
-        "Visual-TableQA, despite being roughly three times smaller in sample count than ReachQA, yielded significantly larger gains in reasoning performance (an average gain of +17.68 points on ReachQA's Reasoning task, compared to +4.4 points from ReachQA's own fine-tuning)."
-      ],
-      "solution": [
-        "A fully autonomous, modular, and scalable pipeline leverages reasoning Large Language Models (LLMs) to generate LaTeX-rendered table images and complex, multi-step QA pairs.",
-        "LaTeX serves as an intermediate textual representation, which reduces generation costs and enables the creation of highly diverse and complex visual table structures, including merged cells and hierarchical headers.",
-        "An LLM 'reasoning jury' and subsequent human evaluation ensure high quality and coherence of the generated tables and QA pairs, particularly for reasoning-intensive questions."
-      ],
-      "summary": "Researchers introduce Visual-TableQA, a large-scale, open-domain multimodal dataset designed to improve and evaluate visual reasoning over complex table images. The dataset, generated using an LLM-driven autonomous pipeline, demonstrates that fine-tuning on Visual-TableQA significantly enhances visual-language model performance across various reasoning benchmarks, enabling some open-source models to surpass certain proprietary counterparts."
-    },
-    "publication_date": "2025-09-09T17:52:26.000Z",
-    "title": "Visual-TableQA: Open-Domain Benchmark for Reasoning over Table Images",
-    "topics": [
-      "Computer Science",
-      "cs.CL",
-      "cs.CV"
-    ],
-    "universal_paper_id": "2509.07966",
-    "updated_at": "2025-09-10T01:05:08.394Z",
-    "version_id": "01993127-af46-77ea-828a-4fee07fbade9"
   },
   {
     "abstract": "We explore multi-step reasoning in vision-language models (VLMs). The problem is challenging, as reasoning data consisting of multiple steps of visual and language processing are barely available. To overcome the challenge, we first introduce a least-to-most visual reasoning paradigm, which interleaves steps of decomposing a question into sub-questions and invoking external tools for resolving sub-questions. Based on the paradigm, we further propose a novel data synthesis approach that can automatically create questions and multi-step reasoning paths for an image in a bottom-up manner. Our approach divides the complex synthesis task into a few simple sub-tasks, and (almost entirely) relies on open-sourced models to accomplish the sub-tasks. Therefore, the entire synthesis process is reproducible and cost-efficient, and the synthesized data is quality guaranteed. With the approach, we construct $50$k visual reasoning examples. Then, we develop a visual reasoner through supervised fine-tuning, which is capable of generally enhancing the reasoning abilities of a wide range of existing VLMs in a plug-and-play fashion. Extensive experiments indicate that the visual reasoner can consistently and significantly improve four VLMs on four VQA benchmarks. Our code and dataset are available at this https URL.",
@@ -7541,99 +7541,6 @@
     "version_id": "0199e15a-9818-702f-8169-c4558cbe46e8"
   },
   {
-    "abstract": "Accurate chart comprehension represents a critical challenge in advancing multimodal learning systems, as extensive information is compressed into structured visual representations. However, existing vision-language models (VLMs) frequently struggle to generalize on unseen charts because it requires abstract, symbolic, and quantitative reasoning over structured visual representations. In this work, we introduce Chart-RL, an effective reinforcement learning (RL) method that employs mathematically verifiable rewards to enhance chart question answering in VLMs. Our experiments demonstrate that Chart-RL consistently outperforms supervised fine-tuning (SFT) across different chart understanding benchmarks, achieving relative improvements of 16.7% on MutlChartQA, and 11.5% on ChartInsights. We conduct robustness analysis, where Chart-RL achieves enhanced performance in 18 of 25 perturbed chart categories, demonstrating strong consistency and reasoning capability across visual variations. Furthermore, we demonstrate that task difficulty and inherent complexity are more critical than data quantity in RL training. For instance, Chart-RL trained on merely 10 complex chart-query examples significantly outperforms models trained on over 6,000 simple examples. Additionally, training on challenging reasoning tasks not only improves in-domain generalization relative to simpler tasks, but also facilitate strong transfer to out-of-domain visual mathematical problems.",
-    "author_info": [],
-    "authors": [
-      "Xin Zhang",
-      "Xingyu Li",
-      "Rongguang Wang",
-      "Ruizhong Miao",
-      "Zheng Wang",
-      "Dan Roth",
-      "Chenyang Li"
-    ],
-    "canonical_id": "2603.06958v1",
-    "first_publication_date": "2026-03-07T00:26:52.000Z",
-    "full_authors": [
-      {
-        "full_name": "Xin Zhang",
-        "id": "01985c81-dc26-7548-a13e-3d7fd6bfaef9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xingyu Li",
-        "id": "01985c81-df58-7b99-8e80-c36562668e66",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Rongguang Wang",
-        "id": "01985c82-a76f-73fd-9128-548527b8616a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ruizhong Miao",
-        "id": "01985c84-c8f8-74ed-8426-35deb2d8f871",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zheng Wang",
-        "id": "01985c81-e4e5-7d79-b4fd-2e016a16afcf",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dan Roth",
-        "id": "01985c82-3511-7ff8-bf7f-ce45ce4d47d9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chenyang Li",
-        "id": "01985c82-2958-7141-88c8-d69ee9b80f97",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019cd655-5ec2-7581-9705-a8f394844f22",
-    "image_url": "image/2603.06958v1.png",
-    "metrics": {
-      "public_total_votes": 2,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 6,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019cd655-5ec2-7581-9705-a8f394844f22",
-    "paper_summary": null,
-    "publication_date": "2026-03-07T00:26:52.000Z",
-    "title": "Chart-RL: Generalized Chart Comprehension via Reinforcement Learning with Verifiable Rewards",
-    "topics": [
-      "Computer Science",
-      "cs.CL",
-      "cs.LG",
-      "data-curation",
-      "few-shot-learning",
-      "multi-modal-learning",
-      "reinforcement-learning",
-      "transfer-learning",
-      "vision-language-models",
-      "visual-qa",
-      "visual-reasoning"
-    ],
-    "universal_paper_id": "2603.06958",
-    "updated_at": "2026-03-10T06:00:44.994Z",
-    "version_id": "019cd655-5ee5-7249-9650-70a384f0379c"
-  },
-  {
     "abstract": "Recent advances in vision-language models (VLMs) have made them highly effective at reasoning tasks. However, the principles underlying the construction of performant VL reasoning training datasets remain poorly understood. In this work, we introduce several data curation approaches and study their impacts on VL reasoning capabilities by carefully controlling training and evaluation setups. We analyze the effects of context (image and question pair) sources, implement targeted data interventions, and explore scaling up images, questions, and chain-of-thought (CoT) solutions. Our findings reveal that (a) context source strategies significantly affect VLM performance, (b) interventions such as auxiliary signals from image captions and the inclusion of text-only reasoning yield substantial gains, and (c) scaling all data dimensions (e.g., unique questions per image and unique CoTs per image-question pair) consistently improves reasoning capability. Motivated by these insights, we introduce HoneyBee, a large-scale, high-quality CoT reasoning dataset with 2.5M examples consisting 350K image-question pairs. VLMs trained with HoneyBee outperform state-of-the-art models across model sizes. For instance, a HoneyBee-trained VLM with 3B parameters outperforms the SOTA model and the base model by 7.8% and 24.8%, respectively, on MathVerse. Furthermore, we propose a test-time scaling strategy that reduces decoding cost by 73% without sacrificing accuracy. Overall, this work presents improved strategies for VL reasoning dataset curation research.",
     "author_info": [],
     "authors": [
@@ -7890,6 +7797,186 @@
     "universal_paper_id": "2512.03043/sso-callback",
     "updated_at": "2025-12-04T14:42:12.128Z",
     "version_id": "019ae9d0-4652-71cf-8bac-f0b40839131e"
+  },
+  {
+    "abstract": "Accurate chart comprehension represents a critical challenge in advancing multimodal learning systems, as extensive information is compressed into structured visual representations. However, existing vision-language models (VLMs) frequently struggle to generalize on unseen charts because it requires abstract, symbolic, and quantitative reasoning over structured visual representations. In this work, we introduce Chart-RL, an effective reinforcement learning (RL) method that employs mathematically verifiable rewards to enhance chart question answering in VLMs. Our experiments demonstrate that Chart-RL consistently outperforms supervised fine-tuning (SFT) across different chart understanding benchmarks, achieving relative improvements of 16.7% on MutlChartQA, and 11.5% on ChartInsights. We conduct robustness analysis, where Chart-RL achieves enhanced performance in 18 of 25 perturbed chart categories, demonstrating strong consistency and reasoning capability across visual variations. Furthermore, we demonstrate that task difficulty and inherent complexity are more critical than data quantity in RL training. For instance, Chart-RL trained on merely 10 complex chart-query examples significantly outperforms models trained on over 6,000 simple examples. Additionally, training on challenging reasoning tasks not only improves in-domain generalization relative to simpler tasks, but also facilitate strong transfer to out-of-domain visual mathematical problems.",
+    "author_info": [],
+    "authors": [
+      "Xin Zhang",
+      "Xingyu Li",
+      "Rongguang Wang",
+      "Ruizhong Miao",
+      "Zheng Wang",
+      "Dan Roth",
+      "Chenyang Li"
+    ],
+    "canonical_id": "2603.06958v1",
+    "first_publication_date": "2026-03-07T00:26:52.000Z",
+    "full_authors": [
+      {
+        "full_name": "Xin Zhang",
+        "id": "01985c81-dc26-7548-a13e-3d7fd6bfaef9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xingyu Li",
+        "id": "01985c81-df58-7b99-8e80-c36562668e66",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Rongguang Wang",
+        "id": "01985c82-a76f-73fd-9128-548527b8616a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ruizhong Miao",
+        "id": "01985c84-c8f8-74ed-8426-35deb2d8f871",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zheng Wang",
+        "id": "01985c81-e4e5-7d79-b4fd-2e016a16afcf",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dan Roth",
+        "id": "01985c82-3511-7ff8-bf7f-ce45ce4d47d9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chenyang Li",
+        "id": "01985c82-2958-7141-88c8-d69ee9b80f97",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019cd655-5ec2-7581-9705-a8f394844f22",
+    "image_url": "image/2603.06958v1.png",
+    "metrics": {
+      "public_total_votes": 2,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 6,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019cd655-5ec2-7581-9705-a8f394844f22",
+    "paper_summary": null,
+    "publication_date": "2026-03-07T00:26:52.000Z",
+    "title": "Chart-RL: Generalized Chart Comprehension via Reinforcement Learning with Verifiable Rewards",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "cs.LG",
+      "data-curation",
+      "few-shot-learning",
+      "multi-modal-learning",
+      "reinforcement-learning",
+      "transfer-learning",
+      "vision-language-models",
+      "visual-qa",
+      "visual-reasoning"
+    ],
+    "universal_paper_id": "2603.06958",
+    "updated_at": "2026-03-10T06:00:44.994Z",
+    "version_id": "019cd655-5ee5-7249-9650-70a384f0379c"
+  },
+  {
+    "abstract": "We introduce OpenVLThinker, one of the first open-source large vision-language models (LVLMs) to exhibit sophisticated chain-of-thought reasoning, achieving notable performance gains on challenging visual reasoning tasks. While text-based reasoning models (e.g., Deepseek R1) show promising results in text-only tasks, distilling their reasoning into LVLMs via supervised fine-tuning (SFT) often results in performance degradation due to imprecise visual grounding. Conversely, purely reinforcement learning (RL)-based methods face a large search space, hindering the emergence of reflective behaviors in smaller models (e.g., 7B LVLMs). Surprisingly, alternating between SFT and RL ultimately results in significant performance improvements after a few iterations. Our analysis reveals that the base model rarely exhibits reasoning behaviors initially, but SFT effectively surfaces these latent actions and narrows the RL search space, accelerating the development of reasoning capabilities. Each subsequent RL stage further refines the model's reasoning skills, producing higher-quality SFT data for continued self-improvement. OpenVLThinker-7B consistently advances performance across six benchmarks demanding mathematical and general reasoning, notably improving MathVista by 3.8%, EMMA by 2.4%, and HallusionBench by 1.6%. Beyond demonstrating the synergy between SFT and RL for complex reasoning tasks, our findings provide early evidence towards achieving R1-style reasoning in multimodal contexts. The code, model and data are held at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Yihe Deng",
+      "Hritik Bansal",
+      "Fan Yin",
+      "Nanyun Peng",
+      "Wei Wang",
+      "Kai-Wei Chang"
+    ],
+    "canonical_id": "2503.17352/metadatav3",
+    "first_publication_date": "2025-03-21T17:52:43.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yihe Deng",
+        "id": "01985c82-071b-7b15-8cc4-3318594da5df",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hritik Bansal",
+        "id": "01985c81-eb74-78cb-b5dc-309e54eff6f5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fan Yin",
+        "id": "01985c82-282d-71e3-a526-311f345c9c9c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nanyun Peng",
+        "id": "01985c81-d85a-7db8-8eaf-4bb4583275e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Wang",
+        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kai-Wei Chang",
+        "id": "01985c81-d85a-71ad-97c5-44bd7f7cb1d2",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 132,
+    "github_url": "https://github.com/yihedeng9/OpenVLThinker",
+    "id": "019d5c3d-40c0-7f2e-8145-db8ef044bbbe",
+    "image_url": "image/2503.17352/metadatav3.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 0,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d5c3d-40c0-7f2e-8145-db8ef044bbbe",
+    "paper_summary": null,
+    "publication_date": "2025-11-11T08:13:33.000Z",
+    "title": "OpenVLThinker: Complex Vision-Language Reasoning via Iterative SFT-RL Cycles",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.CL",
+      "cs.CV",
+      "data-curation",
+      "deep-reinforcement-learning",
+      "fine-tuning",
+      "multi-modal-learning",
+      "reasoning",
+      "transfer-learning",
+      "transformers",
+      "vision-language-models"
+    ],
+    "universal_paper_id": "2503.17352/metadata",
+    "updated_at": "2026-04-05T06:03:31.392Z",
+    "version_id": "019d5c3d-40df-7c9c-988b-fa0ce2423e5f"
   },
   {
     "abstract": "We present GLM-4.1V-Thinking, GLM-4.5V, and GLM-4.6V, a family of vision-language models (VLMs) designed to advance general-purpose multimodal understanding and reasoning. In this report, we share our key findings in the development of the reasoning-centric training framework. We first develop a capable vision foundation model with significant potential through large-scale pre-training, which arguably sets the upper bound for the final performance. We then propose Reinforcement Learning with Curriculum Sampling (RLCS) to unlock the full potential of the model, leading to comprehensive capability enhancement across a diverse range of tasks, including STEM problem solving, video understanding, content recognition, coding, grounding, GUI-based agents, and long document interpretation. In a comprehensive evaluation across 42 public benchmarks, GLM-4.5V achieves state-of-the-art performance on nearly all tasks among open-source models of similar size, and demonstrates competitive or even superior results compared to closed-source models such as Gemini-2.5-Flash on challenging tasks including Coding and GUI Agents. Meanwhile, the smaller GLM-4.1V-9B-Thinking remains highly competitive-achieving superior results to the much larger Qwen2.5-VL-72B on 29 benchmarks. We open-source both GLM-4.1V-9B-Thinking and GLM-4.5V. We further introduce the GLM-4.6V series, open-source multimodal models with native tool use and a 128K context window. A brief overview is available at this https URL. Code, models and more information are released at this https URL.",
@@ -8597,681 +8684,171 @@
     "version_id": "019bdda9-04f1-7f5a-b76e-431155311466"
   },
   {
-    "abstract": "Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at this https URL.",
+    "abstract": "Reinforcement learning (RL) provides a principled framework for improving Vision-Language Models (VLMs) on complex reasoning tasks. However, existing RL approaches often rely on human-annotated labels or task-specific heuristics to define verifiable rewards, both of which are costly and difficult to scale. We introduce VisPlay, a self-evolving RL framework that enables VLMs to autonomously improve their reasoning abilities using large amounts of unlabeled image data. Starting from a single base VLM, VisPlay assigns the model into two interacting roles: an Image-Conditioned Questioner that formulates challenging yet answerable visual questions, and a Multimodal Reasoner that generates silver responses. These roles are jointly trained with Group Relative Policy Optimization (GRPO), which incorporates diversity and difficulty rewards to balance the complexity of generated questions with the quality of the silver answers. VisPlay scales efficiently across two model families. When trained on Qwen2.5-VL and MiMo-VL, VisPlay achieves consistent improvements in visual reasoning, compositional generalization, and hallucination reduction across eight benchmarks, including MM-Vet and MMMU, demonstrating a scalable path toward self-evolving multimodal intelligence. The project page is available at this https URL",
     "author_info": [],
     "authors": [
-      "Kaichen Zhang",
-      "Keming Wu",
-      "Zuhao Yang",
-      "Kairui Hu",
-      "Bin Wang",
-      "Ziwei Liu",
-      "Xingxuan Li",
-      "Lidong Bing"
+      "Yicheng He",
+      "Chengsong Huang",
+      "Zongxia Li",
+      "Jiaxin Huang",
+      "Yonghui Yang"
     ],
-    "canonical_id": "2511.16334/sso-callbackv1",
-    "first_publication_date": "2025-11-20T13:11:45.000Z",
+    "canonical_id": "2511.15661/sso-callbackv2",
+    "first_publication_date": "2025-11-19T17:55:15.000Z",
     "full_authors": [
       {
-        "full_name": "Kaichen Zhang",
-        "id": "01985c82-38d4-7272-90c8-924e8d1385a5",
+        "full_name": "Yicheng He",
+        "id": "01985c83-39ce-70f1-b428-3e5d511400e9",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Keming Wu",
-        "id": "01985c82-7e88-7ab1-93ea-c12402808d26",
+        "full_name": "Chengsong Huang",
+        "id": "01985c81-ec41-7646-8e34-8b8e995812c0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zuhao Yang",
-        "id": "01985c82-18b5-787e-8517-74ed25da6e9b",
+        "full_name": "Zongxia Li",
+        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Kairui Hu",
-        "id": "01985c82-38d4-74b8-a9c3-ea8bb52da857",
+        "full_name": "Jiaxin Huang",
+        "id": "01985c81-d97f-782c-b5d4-5b9355c7127c",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Bin Wang",
-        "id": "01985c81-e5a9-7720-bead-85ce91550e2a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ziwei Liu",
-        "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xingxuan Li",
-        "id": "01985c81-d97f-76ae-b4f6-166a1fb6515e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lidong Bing",
-        "id": "01985c81-e286-76da-9881-a060cf156af5",
+        "full_name": "Yonghui Yang",
+        "id": "01985c82-f6ec-731b-bc60-5f2ea6734f6b",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 111,
-    "github_url": "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner",
-    "id": "019ae374-0092-79bd-b422-6376df45a637",
-    "image_url": "image/2511.16334/sso-callbackv1.png",
+    "github_stars": 33,
+    "github_url": "https://github.com/bruno686/VisPlay",
+    "id": "019b1797-1670-7983-8a26-0d43a4018aa7",
+    "image_url": "image/2511.15661/sso-callbackv2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 3,
+        "all": 18,
         "last_7_days": 0
       },
       "x_likes": 0
     },
-    "organization_info": [
-      {
-        "image": "images/organizations/tsinghua.png",
-        "name": "Tsinghua University"
-      },
-      {
-        "image": "images/organizations/nanyang-technological-university.png",
-        "name": "Nanyang Technological University"
-      },
-      {
-        "image": null,
-        "name": "MiroMind AI"
-      }
-    ],
-    "paper_group_id": "019ae374-0092-79bd-b422-6376df45a637",
+    "organization_info": [],
+    "paper_group_id": "019b1797-1670-7983-8a26-0d43a4018aa7",
     "paper_summary": null,
-    "publication_date": "2025-11-20T13:11:45.000Z",
-    "title": "OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe",
+    "publication_date": "2025-11-20T12:43:54.000Z",
+    "title": "VisPlay: Self-Evolving Vision-Language Models from Images",
     "topics": [
       "Computer Science",
       "cs.AI",
       "cs.CL",
-      "data-curation",
-      "fine-tuning",
-      "reasoning",
-      "reinforcement-learning",
-      "transformers",
-      "vision-language-models"
-    ],
-    "universal_paper_id": "2511.16334/sso-callback",
-    "updated_at": "2025-12-03T09:03:41.714Z",
-    "version_id": "019ae374-00b9-73e3-a3e5-ddc592acf503"
-  },
-  {
-    "abstract": "We open-source MiMo-VL-7B-SFT and MiMo-VL-7B-RL, two powerful vision-language models delivering state-of-the-art performance in both general visual understanding and multimodal reasoning. MiMo-VL-7B-RL outperforms Qwen2.5-VL-7B on 35 out of 40 evaluated tasks, and scores 59.4 on OlympiadBench, surpassing models with up to 78B parameters. For GUI grounding applications, it sets a new standard with 56.1 on OSWorld-G, even outperforming specialized models such as UI-TARS. Our training combines four-stage pre-training (2.4 trillion tokens) with Mixed On-policy Reinforcement Learning (MORL) integrating diverse reward signals. We identify the importance of incorporating high-quality reasoning data with long Chain-of-Thought into pre-training stages, and the benefits of mixed RL despite challenges in simultaneous multi-domain optimization. We also contribute a comprehensive evaluation suite covering 50+ tasks to promote reproducibility and advance the field. The model checkpoints and full evaluation suite are available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Xiaomi LLM-Core Team",
-      "Zihao Yue",
-      "Zhenru Lin",
-      "Yifan Song",
-      "Weikun Wang",
-      "Shuhuai Ren",
-      "Shuhao Gu",
-      "Shicheng Li",
-      "Peidian Li",
-      "Liang Zhao",
-      "Lei Li",
-      "Kainan Bao",
-      "Hao Tian",
-      "Hailin Zhang",
-      "Gang Wang",
-      "Dawei Zhu",
-      "Cici",
-      "Chenhong He",
-      "Bowen Ye",
-      "Bowen Shen",
-      "Zihan Zhang",
-      "Zihan Jiang",
-      "Zhixian Zheng",
-      "Zhichao Song",
-      "Zhenbo Luo",
-      "Yue Yu",
-      "Yudong Wang",
-      "Yuanyuan Tian",
-      "Yu Tu",
-      "Yihan Yan",
-      "Yi Huang",
-      "Xu Wang",
-      "Xinzhe Xu",
-      "Xingchen Song",
-      "Xing Zhang",
-      "Xing Yong",
-      "Xin Zhang",
-      "Xiangwei Deng",
-      "Wenyu Yang",
-      "Wenhan Ma",
-      "Weiwei Lv",
-      "Weiji Zhuang",
-      "Wei Liu",
-      "Sirui Deng",
-      "Shuo Liu",
-      "Shimao Chen",
-      "Shihua Yu",
-      "Shaohui Liu",
-      "Shande Wang",
-      "Rui Ma",
-      "Qiantong Wang",
-      "Peng Wang",
-      "Nuo Chen",
-      "Menghang Zhu",
-      "Kangyang Zhou",
-      "Kang Zhou",
-      "Kai Fang",
-      "Jun Shi",
-      "Jinhao Dong",
-      "Jiebao Xiao",
-      "Jiaming Xu",
-      "Huaqiu Liu",
-      "Hongshen Xu",
-      "Heng Qu",
-      "Haochen Zhao",
-      "Hanglong Lv",
-      "Guoan Wang",
-      "Duo Zhang",
-      "Dong Zhang",
-      "Di Zhang",
-      "Chong Ma",
-      "Chang Liu",
-      "Can Cai",
-      "Bingquan Xia"
-    ],
-    "canonical_id": "2506.03569/sso-callbackv1",
-    "first_publication_date": "2025-06-04T04:32:54.000Z",
-    "full_authors": [
-      {
-        "full_name": "Xiaomi LLM-Core Team",
-        "id": "01985c85-5495-7de1-9206-8d99ea5e759a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zihao Yue",
-        "id": "01985c82-48ec-72b8-9eb3-a76de1217f84",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenru Lin",
-        "id": "01985c81-f8f1-7ef2-9124-b8c709c3cb2c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yifan Song",
-        "id": "01985c82-4b94-779c-b97e-5fe6d7ac0dcc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weikun Wang",
-        "id": "01985c82-49d0-7afb-a49f-200bd1e3629c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuhuai Ren",
-        "id": "01985c82-2a92-7961-a483-27ad0547a432",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuhao Gu",
-        "id": "01985c81-f312-7ecc-9fb7-3743aead2b1b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shicheng Li",
-        "id": "01985c81-e5a9-7e00-8d73-efcfe937cc5b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peidian Li",
-        "id": "01985c85-5495-7f7f-b131-146863535f63",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Liang Zhao",
-        "id": "01985c81-e01e-745e-a013-b7997cc1d9a1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lei Li",
-        "id": "01985c81-dc26-72f4-95ce-83871d0ba4d7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kainan Bao",
-        "id": "01985c85-5495-7bfe-8c28-f70e4f40faf9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hao Tian",
-        "id": "01985c81-ed0e-7c65-82d7-3a5cf9bd2fa5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hailin Zhang",
-        "id": "01985c81-e4e5-7d1e-9a31-e3539448feb9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Gang Wang",
-        "id": "01985c81-e41c-7c2c-8099-58feabf34151",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dawei Zhu",
-        "id": "01985c82-3d3a-7229-bec4-1122851338d3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Cici",
-        "id": "01985c85-5495-7211-b081-6f3a06c7b867",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chenhong He",
-        "id": "01985c85-5495-7827-8b9b-b43892f10b53",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Bowen Ye",
-        "id": "01985c83-6e03-732e-a1a2-5338ff5c7ec9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Bowen Shen",
-        "id": "01985c82-4b94-77b4-8380-042cfe6bfe90",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zihan Zhang",
-        "id": "01985c81-ef78-7291-8ce0-d15ab2ea13ac",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zihan Jiang",
-        "id": "01985c81-f312-747f-8ce2-80734a97d2e0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhixian Zheng",
-        "id": "01985c85-8b63-7e39-a1d4-2e49da0ec932",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhichao Song",
-        "id": "01985c84-f048-7b73-8524-5639c72f29f0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenbo Luo",
-        "id": "01985c82-e705-7bd2-b26d-46b19bbbf4ec",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yue Yu",
-        "id": "01985c81-e287-72d4-9a31-c0fce5052d15",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yudong Wang",
-        "id": "01985c82-3b7c-72ec-83a5-393b5e50db6f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuanyuan Tian",
-        "id": "01985c81-f818-75da-be1b-1625c61ad90a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu Tu",
-        "id": "01985c84-307d-7827-abcb-8e2d91fb6be6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yihan Yan",
-        "id": "01985c83-3f03-7d39-910b-48772763e1fb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yi Huang",
-        "id": "01985c81-fe57-7bd4-9a0b-4f4c351683cc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xu Wang",
-        "id": "01985c82-11a7-79ae-a916-121504bd5523",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xinzhe Xu",
-        "id": "01985c84-dd86-7945-99ef-4603c8f8042e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xingchen Song",
-        "id": "01985c82-4ab0-79ea-be46-c45ecae9b9f6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xing Zhang",
-        "id": "01985c81-e41c-7c1d-b50c-8e744ef29dd8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xing Yong",
-        "id": "01985c85-5495-77a2-bef2-96aad782248c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xin Zhang",
-        "id": "01985c81-dc26-7548-a13e-3d7fd6bfaef9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiangwei Deng",
-        "id": "01985c82-e297-77cf-9947-87d8f400c96d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wenyu Yang",
-        "id": "01985c82-560e-7af7-bb83-da589bc6116c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wenhan Ma",
-        "id": "01985c84-7a5f-7137-a58b-bf412ee96f28",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weiwei Lv",
-        "id": "01985c82-7f75-766c-a5ca-9557813ffc50",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weiji Zhuang",
-        "id": "01985c83-a139-7b7b-8d3d-c3fe93e5d7a1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Liu",
-        "id": "01985c81-e4e6-74c2-bbf7-6a8bac6fb966",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sirui Deng",
-        "id": "01985c84-7a5f-703b-8946-275527ff19d1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuo Liu",
-        "id": "01985c82-17c6-72b7-993d-e0c38bde0048",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shimao Chen",
-        "id": "01985c82-8b4f-7169-8c34-a63df98b1a2b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shihua Yu",
-        "id": "01985c85-5495-7849-8e85-40cf35c09914",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shaohui Liu",
-        "id": "01985c81-e41c-7699-9292-81295957f6e5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shande Wang",
-        "id": "01985c85-8b63-74a3-b199-aa09c491df82",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Rui Ma",
-        "id": "01985c81-f818-7705-8f86-6106aee0fead",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qiantong Wang",
-        "id": "01985c84-2f98-788d-91e1-2affca041178",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peng Wang",
-        "id": "01985c81-db50-735b-baec-fc4bf0a8763d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Nuo Chen",
-        "id": "01985c81-f818-7907-8dc2-fa2ea459b1c7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Menghang Zhu",
-        "id": "01985c85-5495-7dd9-9838-4ed42889ca7f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kangyang Zhou",
-        "id": "01985c85-5495-791a-a24d-15387c516bdb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kang Zhou",
-        "id": "01985c82-41b5-7fcf-bad9-9f35d07e63e6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kai Fang",
-        "id": "01985c82-ad9d-76c2-9b03-8cd0ed75bc51",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jun Shi",
-        "id": "01985c82-1a98-7e82-ae26-88922d1fa5e9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jinhao Dong",
-        "id": "01985c83-1619-7050-83a6-b8886e4cb43b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiebao Xiao",
-        "id": "01985c85-5495-76be-9044-11af2db5a0ab",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaming Xu",
-        "id": "01985c81-f313-79e2-b501-688b5f2df46d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Huaqiu Liu",
-        "id": "01985c82-b801-7158-8cdc-93bbf7b64a08",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hongshen Xu",
-        "id": "01985c81-f062-72c4-b206-37e5e0326fd1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Heng Qu",
-        "id": "01985c83-eac7-714d-9fdc-f140339d4386",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Haochen Zhao",
-        "id": "01985c82-8063-7ac3-9cbb-0e755d92a950",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hanglong Lv",
-        "id": "01985c82-8153-795b-9dea-72e3a3941674",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Guoan Wang",
-        "id": "01985c81-f9c8-7ece-8453-f387e68108ed",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Duo Zhang",
-        "id": "01985c82-0b9a-71d6-a3b2-9ed510c60ddc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dong Zhang",
-        "id": "01985c81-eea9-768e-a892-0d33e7b2b271",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Di Zhang",
-        "id": "01985c81-e41c-70d1-9faa-4dae606c25e0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chong Ma",
-        "id": "01985c81-f062-7587-83da-d4dcc52e1db6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chang Liu",
-        "id": "01985c81-e01e-7319-b367-9f0e82441c1c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Can Cai",
-        "id": "01985c85-5495-7460-babc-07603a58e13a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Bingquan Xia",
-        "id": "01985c85-5495-7b2e-9608-d722647d39f3",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 617,
-    "github_url": "https://github.com/XiaomiMiMo/MiMo-VL",
-    "id": "019b9731-9fad-71e4-9cff-b3336e27347c",
-    "image_url": "image/2506.03569/sso-callbackv1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 3,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/xiaomi.svg+xml",
-        "name": "Xiaomi"
-      }
-    ],
-    "paper_group_id": "019b9731-9fad-71e4-9cff-b3336e27347c",
-    "paper_summary": null,
-    "publication_date": "2025-06-04T04:32:54.000Z",
-    "title": "MiMo-VL Technical Report",
-    "topics": [
-      "chain-of-thought",
-      "Computer Science",
-      "cs.CL",
-      "deep-reinforcement-learning",
+      "cs.CV",
+      "cs.LG",
       "fine-tuning",
       "generative-models",
       "multi-modal-learning",
       "reasoning",
-      "transformers",
+      "reinforcement-learning",
+      "self-supervised-learning",
       "vision-language-models"
     ],
-    "universal_paper_id": "2506.03569/sso-callback",
-    "updated_at": "2026-01-07T06:42:50.413Z",
-    "version_id": "019b9731-a05b-78e1-9846-812dec87c5c5"
+    "universal_paper_id": "2511.15661/sso-callback",
+    "updated_at": "2025-12-13T12:02:16.304Z",
+    "version_id": "019b1797-169b-7aad-9e2a-1849f9358908"
+  },
+  {
+    "abstract": "Vision-language models (VLMs) trained via reinforcement learning with verifiable reward (RLVR) have shown notable progress in scaling test-time compute effectively. In this work, we investigate how synthesized RL data can further improve RLVR. To this end, we propose \\textbf{SynthRL}-a scalable and guaranteed pipeline for automatic data scaling in reasoning-oriented RL training. SynthRL comprises three key stages: (1) selecting seed questions with appropriate distribution, (2) augmenting them into more challenging variants while preserving the original answers, and (3) a guaranteed verification stage that ensures near-perfect correctness and difficulty enhancement. Our empirical experiments demonstrate SynthRL's scalability and effectiveness. When applied to the MMK12 dataset, SynthRL synthesizes over 3.3K additional verifiable, challenging questions from approximately 8K seed samples. Models trained with our synthesized data achieve consistent gains across five out-of-domain visual math reasoning benchmarks, with a significant improvement over baseline models trained on seed data alone. Notably, detailed analysis reveals that the gains are more pronounced on the most challenging evaluation samples, highlighting SynthRL's effectiveness in eliciting deeper and more complex reasoning patterns.",
+    "author_info": [],
+    "authors": [
+      "Zijian Wu",
+      "Jinjie Ni",
+      "Xiangyan Liu",
+      "Zichen Liu",
+      "Hang Yan",
+      "Michael Qizhe Shieh"
+    ],
+    "canonical_id": "2506.2096v1",
+    "first_publication_date": "2025-06-02T17:45:16.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zijian Wu",
+        "id": "01985c82-1a98-7737-ac83-025f2a1f5e9b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinjie Ni",
+        "id": "01985c82-4d83-73c0-bdf1-92769ca23f97",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiangyan Liu",
+        "id": "01985c82-78f1-7f17-9346-3c5c2c473c8a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zichen Liu",
+        "id": "01985c82-4e66-7bda-9d51-10e29b894d43",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hang Yan",
+        "id": "01985c81-de91-7481-9d2f-15895de3bc23",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Michael Qizhe Shieh",
+        "id": "01985c84-34df-71c7-8776-a8a53a01ac1c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 67,
+    "github_url": "https://github.com/NUS-TRAIL/SynthRL",
+    "id": "019a870b-cc5f-7177-a83b-976663c4542d",
+    "image_url": "image/2506.2096v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 0,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019a870b-cc5f-7177-a83b-976663c4542d",
+    "paper_summary": null,
+    "publication_date": "2025-06-02T17:45:16.000Z",
+    "title": "SynthRL: Scaling Visual Reasoning with Verifiable Data Synthesis",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "cs.CV",
+      "cs.LG",
+      "domain-adaptation",
+      "multi-modal-learning",
+      "reasoning",
+      "reinforcement-learning",
+      "synthetic-data",
+      "transformers",
+      "vision-language-models",
+      "visual-reasoning"
+    ],
+    "universal_paper_id": "2506.2096",
+    "updated_at": "2025-11-15T10:24:48.735Z",
+    "version_id": "019a870b-cd5a-7a22-9611-719d5a69fe49"
   },
   {
     "abstract": "We present GLM-4.1V-Thinking and GLM-4.5V, a family of vision-language models (VLMs) designed to advance general-purpose multimodal understanding and reasoning. In this report, we share our key findings in the development of the reasoning-centric training framework. We first develop a capable vision foundation model with significant potential through large-scale pre-training, which arguably sets the upper bound for the final performance. We then propose Reinforcement Learning with Curriculum Sampling (RLCS) to unlock the full potential of the model, leading to comprehensive capability enhancement across a diverse range of tasks, including STEM problem solving, video understanding, content recognition, coding, grounding, GUI-based agents, and long document interpretation. In a comprehensive evaluation across 42 public benchmarks, GLM-4.5V achieves state-of-the-art performance on nearly all tasks among open-source models of similar size, and demonstrates competitive or even superior results compared to closed-source models such as Gemini-2.5-Flash on challenging tasks including Coding and GUI Agents. Meanwhile, the smaller GLM-4.1V-9B-Thinking remains highly competitive-achieving superior results to the much larger Qwen2.5-VL-72B on 29 benchmarks. We open-source both GLM-4.1V-9B-Thinking and GLM-4.5V. Code, models and more information are released at this https URL.",
@@ -9944,140 +9521,95 @@
     "version_id": "019ab55f-cdfc-766d-88cd-7b0475bcec37"
   },
   {
-    "abstract": "Reinforcement learning (RL) provides a principled framework for improving Vision-Language Models (VLMs) on complex reasoning tasks. However, existing RL approaches often rely on human-annotated labels or task-specific heuristics to define verifiable rewards, both of which are costly and difficult to scale. We introduce VisPlay, a self-evolving RL framework that enables VLMs to autonomously improve their reasoning abilities using large amounts of unlabeled image data. Starting from a single base VLM, VisPlay assigns the model into two interacting roles: an Image-Conditioned Questioner that formulates challenging yet answerable visual questions, and a Multimodal Reasoner that generates silver responses. These roles are jointly trained with Group Relative Policy Optimization (GRPO), which incorporates diversity and difficulty rewards to balance the complexity of generated questions with the quality of the silver answers. VisPlay scales efficiently across two model families. When trained on Qwen2.5-VL and MiMo-VL, VisPlay achieves consistent improvements in visual reasoning, compositional generalization, and hallucination reduction across eight benchmarks, including MM-Vet and MMMU, demonstrating a scalable path toward self-evolving multimodal intelligence. The project page is available at this https URL",
+    "abstract": "We introduce Skywork-R1V3, an advanced, open-source vision-language model (VLM) that pioneers a new approach to visual reasoning. Its key innovation lies in effectively transferring reasoning skills from text-only Large Language Models (LLMs) to visual tasks. The strong performance of Skywork-R1V3 primarily stems from our elaborate post-training RL framework, which effectively activates and enhances the model's reasoning ability, without the need for additional continue pre-training. Through this framework, we further uncover the fundamental role of the connector module in achieving robust cross-modal alignment for multimodal reasoning models. In addition, we introduce a unique indicator of reasoning capability, the entropy of critical reasoning tokens, which has proven highly effective for checkpoint selection during RL training. Skywork-R1V3 achieves state-of-the-art results on MMMU, significantly improving from 64.3% to 76.0%. This performance matches entry-level human capabilities. Remarkably, our RL-powered post-training approach enables even the 38B parameter model to rival top closed-source VLMs. The implementation successfully transfers mathematical reasoning to other subject-related reasoning tasks. We also include an analysis of curriculum learning and reinforcement finetuning strategies, along with a broader discussion on multimodal reasoning. Skywork-R1V3 represents a significant leap in multimodal reasoning, showcasing RL as a powerful engine for advancing open-source VLM capabilities.",
     "author_info": [],
     "authors": [
-      "Yicheng He",
-      "Chengsong Huang",
-      "Zongxia Li",
-      "Jiaxin Huang",
-      "Yonghui Yang"
+      "Wei Shen",
+      "Jiangbo Pei",
+      "Yi Peng",
+      "Xuchen Song",
+      "Yang Liu",
+      "Jian Peng",
+      "Haofeng Sun",
+      "Yunzhuo Hao",
+      "Peiyu Wang",
+      "Jianhao Zhang",
+      "Yahui Zhou"
     ],
-    "canonical_id": "2511.15661/sso-callbackv2",
-    "first_publication_date": "2025-11-19T17:55:15.000Z",
+    "canonical_id": "2507.6167v3",
+    "first_publication_date": "2025-07-08T16:47:16.000Z",
     "full_authors": [
       {
-        "full_name": "Yicheng He",
-        "id": "01985c83-39ce-70f1-b428-3e5d511400e9",
+        "full_name": "Wei Shen",
+        "id": "01985c81-de91-7e96-9b39-f5c1715bc7e5",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Chengsong Huang",
-        "id": "01985c81-ec41-7646-8e34-8b8e995812c0",
+        "full_name": "Jiangbo Pei",
+        "id": "01985c82-ea9a-7554-ab41-8942697199ee",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zongxia Li",
-        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
+        "full_name": "Yi Peng",
+        "id": "01985c82-dfec-7632-beef-0b546c2fdd47",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Jiaxin Huang",
-        "id": "01985c81-d97f-782c-b5d4-5b9355c7127c",
+        "full_name": "Xuchen Song",
+        "id": "01985c82-222d-75e6-95f1-1b681e3454aa",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yonghui Yang",
-        "id": "01985c82-f6ec-731b-bc60-5f2ea6734f6b",
+        "full_name": "Yang Liu",
+        "id": "01985c81-d97f-7fc7-894f-d0c0732d7bc8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jian Peng",
+        "id": "01985c81-df57-7707-96a5-5b6de98ea837",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haofeng Sun",
+        "id": "01985c84-c1cb-76e0-8591-e59352ffcafb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yunzhuo Hao",
+        "id": "01985c83-1a9d-7234-8e02-797d77a00224",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peiyu Wang",
+        "id": "01985c83-2f04-7ce5-8cfb-101a64614c28",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jianhao Zhang",
+        "id": "01985c82-282e-76e3-a760-8665783ed890",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yahui Zhou",
+        "id": "01985c81-f8f2-7117-ae28-a30a5f595c40",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 33,
-    "github_url": "https://github.com/bruno686/VisPlay",
-    "id": "019b1797-1670-7983-8a26-0d43a4018aa7",
-    "image_url": "image/2511.15661/sso-callbackv2.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 18,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019b1797-1670-7983-8a26-0d43a4018aa7",
-    "paper_summary": null,
-    "publication_date": "2025-11-20T12:43:54.000Z",
-    "title": "VisPlay: Self-Evolving Vision-Language Models from Images",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.CV",
-      "cs.LG",
-      "fine-tuning",
-      "generative-models",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "self-supervised-learning",
-      "vision-language-models"
-    ],
-    "universal_paper_id": "2511.15661/sso-callback",
-    "updated_at": "2025-12-13T12:02:16.304Z",
-    "version_id": "019b1797-169b-7aad-9e2a-1849f9358908"
-  },
-  {
-    "abstract": "Vision-language models (VLMs) trained via reinforcement learning with verifiable reward (RLVR) have shown notable progress in scaling test-time compute effectively. In this work, we investigate how synthesized RL data can further improve RLVR. To this end, we propose \\textbf{SynthRL}-a scalable and guaranteed pipeline for automatic data scaling in reasoning-oriented RL training. SynthRL comprises three key stages: (1) selecting seed questions with appropriate distribution, (2) augmenting them into more challenging variants while preserving the original answers, and (3) a guaranteed verification stage that ensures near-perfect correctness and difficulty enhancement. Our empirical experiments demonstrate SynthRL's scalability and effectiveness. When applied to the MMK12 dataset, SynthRL synthesizes over 3.3K additional verifiable, challenging questions from approximately 8K seed samples. Models trained with our synthesized data achieve consistent gains across five out-of-domain visual math reasoning benchmarks, with a significant improvement over baseline models trained on seed data alone. Notably, detailed analysis reveals that the gains are more pronounced on the most challenging evaluation samples, highlighting SynthRL's effectiveness in eliciting deeper and more complex reasoning patterns.",
-    "author_info": [],
-    "authors": [
-      "Zijian Wu",
-      "Jinjie Ni",
-      "Xiangyan Liu",
-      "Zichen Liu",
-      "Hang Yan",
-      "Michael Qizhe Shieh"
-    ],
-    "canonical_id": "2506.2096v1",
-    "first_publication_date": "2025-06-02T17:45:16.000Z",
-    "full_authors": [
-      {
-        "full_name": "Zijian Wu",
-        "id": "01985c82-1a98-7737-ac83-025f2a1f5e9b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jinjie Ni",
-        "id": "01985c82-4d83-73c0-bdf1-92769ca23f97",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiangyan Liu",
-        "id": "01985c82-78f1-7f17-9346-3c5c2c473c8a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zichen Liu",
-        "id": "01985c82-4e66-7bda-9d51-10e29b894d43",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hang Yan",
-        "id": "01985c81-de91-7481-9d2f-15895de3bc23",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Michael Qizhe Shieh",
-        "id": "01985c84-34df-71c7-8776-a8a53a01ac1c",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 67,
-    "github_url": "https://github.com/NUS-TRAIL/SynthRL",
-    "id": "019a870b-cc5f-7177-a83b-976663c4542d",
-    "image_url": "image/2506.2096v1.png",
+    "github_stars": 3165,
+    "github_url": "https://github.com/SkyworkAI/Skywork-R1V",
+    "id": "019d6af3-d350-7dc9-a446-6a6361c33f29",
+    "image_url": "image/2507.6167v3.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
@@ -10088,113 +9620,700 @@
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019a870b-cc5f-7177-a83b-976663c4542d",
+    "paper_group_id": "019d6af3-d350-7dc9-a446-6a6361c33f29",
     "paper_summary": null,
-    "publication_date": "2025-06-02T17:45:16.000Z",
-    "title": "SynthRL: Scaling Visual Reasoning with Verifiable Data Synthesis",
+    "publication_date": "2025-07-10T15:41:04.000Z",
+    "title": "Skywork-R1V3 Technical Report",
     "topics": [
       "Computer Science",
       "cs.CL",
       "cs.CV",
-      "cs.LG",
-      "domain-adaptation",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "synthetic-data",
-      "transformers",
-      "vision-language-models",
-      "visual-reasoning"
-    ],
-    "universal_paper_id": "2506.2096",
-    "updated_at": "2025-11-15T10:24:48.735Z",
-    "version_id": "019a870b-cd5a-7a22-9611-719d5a69fe49"
-  },
-  {
-    "abstract": "We introduce OpenVLThinker, one of the first open-source large vision-language models (LVLMs) to exhibit sophisticated chain-of-thought reasoning, achieving notable performance gains on challenging visual reasoning tasks. While text-based reasoning models (e.g., Deepseek R1) show promising results in text-only tasks, distilling their reasoning into LVLMs via supervised fine-tuning (SFT) often results in performance degradation due to imprecise visual grounding. Conversely, purely reinforcement learning (RL)-based methods face a large search space, hindering the emergence of reflective behaviors in smaller models (e.g., 7B LVLMs). Surprisingly, alternating between SFT and RL ultimately results in significant performance improvements after a few iterations. Our analysis reveals that the base model rarely exhibits reasoning behaviors initially, but SFT effectively surfaces these latent actions and narrows the RL search space, accelerating the development of reasoning capabilities. Each subsequent RL stage further refines the model's reasoning skills, producing higher-quality SFT data for continued self-improvement. OpenVLThinker-7B consistently advances performance across six benchmarks demanding mathematical and general reasoning, notably improving MathVista by 3.8%, EMMA by 2.4%, and HallusionBench by 1.6%. Beyond demonstrating the synergy between SFT and RL for complex reasoning tasks, our findings provide early evidence towards achieving R1-style reasoning in multimodal contexts. The code, model and data are held at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Yihe Deng",
-      "Hritik Bansal",
-      "Fan Yin",
-      "Nanyun Peng",
-      "Wei Wang",
-      "Kai-Wei Chang"
-    ],
-    "canonical_id": "2503.17352/metadatav3",
-    "first_publication_date": "2025-03-21T17:52:43.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yihe Deng",
-        "id": "01985c82-071b-7b15-8cc4-3318594da5df",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hritik Bansal",
-        "id": "01985c81-eb74-78cb-b5dc-309e54eff6f5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fan Yin",
-        "id": "01985c82-282d-71e3-a526-311f345c9c9c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Nanyun Peng",
-        "id": "01985c81-d85a-7db8-8eaf-4bb4583275e8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Wang",
-        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kai-Wei Chang",
-        "id": "01985c81-d85a-71ad-97c5-44bd7f7cb1d2",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 132,
-    "github_url": "https://github.com/yihedeng9/OpenVLThinker",
-    "id": "019d5c3d-40c0-7f2e-8145-db8ef044bbbe",
-    "image_url": "image/2503.17352/metadatav3.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 0,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d5c3d-40c0-7f2e-8145-db8ef044bbbe",
-    "paper_summary": null,
-    "publication_date": "2025-11-11T08:13:33.000Z",
-    "title": "OpenVLThinker: Complex Vision-Language Reasoning via Iterative SFT-RL Cycles",
-    "topics": [
-      "chain-of-thought",
-      "Computer Science",
-      "cs.CL",
-      "cs.CV",
-      "data-curation",
       "deep-reinforcement-learning",
       "fine-tuning",
       "multi-modal-learning",
       "reasoning",
       "transfer-learning",
+      "vision-language-models"
+    ],
+    "universal_paper_id": "2507.6167",
+    "updated_at": "2026-04-08T02:37:37.488Z",
+    "version_id": "019d6af3-d376-7d37-b7d6-0fd4754c733c"
+  },
+  {
+    "abstract": "We open-source MiMo-VL-7B-SFT and MiMo-VL-7B-RL, two powerful vision-language models delivering state-of-the-art performance in both general visual understanding and multimodal reasoning. MiMo-VL-7B-RL outperforms Qwen2.5-VL-7B on 35 out of 40 evaluated tasks, and scores 59.4 on OlympiadBench, surpassing models with up to 78B parameters. For GUI grounding applications, it sets a new standard with 56.1 on OSWorld-G, even outperforming specialized models such as UI-TARS. Our training combines four-stage pre-training (2.4 trillion tokens) with Mixed On-policy Reinforcement Learning (MORL) integrating diverse reward signals. We identify the importance of incorporating high-quality reasoning data with long Chain-of-Thought into pre-training stages, and the benefits of mixed RL despite challenges in simultaneous multi-domain optimization. We also contribute a comprehensive evaluation suite covering 50+ tasks to promote reproducibility and advance the field. The model checkpoints and full evaluation suite are available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Xiaomi LLM-Core Team",
+      "Zihao Yue",
+      "Zhenru Lin",
+      "Yifan Song",
+      "Weikun Wang",
+      "Shuhuai Ren",
+      "Shuhao Gu",
+      "Shicheng Li",
+      "Peidian Li",
+      "Liang Zhao",
+      "Lei Li",
+      "Kainan Bao",
+      "Hao Tian",
+      "Hailin Zhang",
+      "Gang Wang",
+      "Dawei Zhu",
+      "Cici",
+      "Chenhong He",
+      "Bowen Ye",
+      "Bowen Shen",
+      "Zihan Zhang",
+      "Zihan Jiang",
+      "Zhixian Zheng",
+      "Zhichao Song",
+      "Zhenbo Luo",
+      "Yue Yu",
+      "Yudong Wang",
+      "Yuanyuan Tian",
+      "Yu Tu",
+      "Yihan Yan",
+      "Yi Huang",
+      "Xu Wang",
+      "Xinzhe Xu",
+      "Xingchen Song",
+      "Xing Zhang",
+      "Xing Yong",
+      "Xin Zhang",
+      "Xiangwei Deng",
+      "Wenyu Yang",
+      "Wenhan Ma",
+      "Weiwei Lv",
+      "Weiji Zhuang",
+      "Wei Liu",
+      "Sirui Deng",
+      "Shuo Liu",
+      "Shimao Chen",
+      "Shihua Yu",
+      "Shaohui Liu",
+      "Shande Wang",
+      "Rui Ma",
+      "Qiantong Wang",
+      "Peng Wang",
+      "Nuo Chen",
+      "Menghang Zhu",
+      "Kangyang Zhou",
+      "Kang Zhou",
+      "Kai Fang",
+      "Jun Shi",
+      "Jinhao Dong",
+      "Jiebao Xiao",
+      "Jiaming Xu",
+      "Huaqiu Liu",
+      "Hongshen Xu",
+      "Heng Qu",
+      "Haochen Zhao",
+      "Hanglong Lv",
+      "Guoan Wang",
+      "Duo Zhang",
+      "Dong Zhang",
+      "Di Zhang",
+      "Chong Ma",
+      "Chang Liu",
+      "Can Cai",
+      "Bingquan Xia"
+    ],
+    "canonical_id": "2506.03569/sso-callbackv1",
+    "first_publication_date": "2025-06-04T04:32:54.000Z",
+    "full_authors": [
+      {
+        "full_name": "Xiaomi LLM-Core Team",
+        "id": "01985c85-5495-7de1-9206-8d99ea5e759a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihao Yue",
+        "id": "01985c82-48ec-72b8-9eb3-a76de1217f84",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenru Lin",
+        "id": "01985c81-f8f1-7ef2-9124-b8c709c3cb2c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yifan Song",
+        "id": "01985c82-4b94-779c-b97e-5fe6d7ac0dcc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weikun Wang",
+        "id": "01985c82-49d0-7afb-a49f-200bd1e3629c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuhuai Ren",
+        "id": "01985c82-2a92-7961-a483-27ad0547a432",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuhao Gu",
+        "id": "01985c81-f312-7ecc-9fb7-3743aead2b1b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shicheng Li",
+        "id": "01985c81-e5a9-7e00-8d73-efcfe937cc5b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peidian Li",
+        "id": "01985c85-5495-7f7f-b131-146863535f63",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Liang Zhao",
+        "id": "01985c81-e01e-745e-a013-b7997cc1d9a1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lei Li",
+        "id": "01985c81-dc26-72f4-95ce-83871d0ba4d7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kainan Bao",
+        "id": "01985c85-5495-7bfe-8c28-f70e4f40faf9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hao Tian",
+        "id": "01985c81-ed0e-7c65-82d7-3a5cf9bd2fa5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hailin Zhang",
+        "id": "01985c81-e4e5-7d1e-9a31-e3539448feb9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gang Wang",
+        "id": "01985c81-e41c-7c2c-8099-58feabf34151",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dawei Zhu",
+        "id": "01985c82-3d3a-7229-bec4-1122851338d3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cici",
+        "id": "01985c85-5495-7211-b081-6f3a06c7b867",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chenhong He",
+        "id": "01985c85-5495-7827-8b9b-b43892f10b53",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bowen Ye",
+        "id": "01985c83-6e03-732e-a1a2-5338ff5c7ec9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bowen Shen",
+        "id": "01985c82-4b94-77b4-8380-042cfe6bfe90",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihan Zhang",
+        "id": "01985c81-ef78-7291-8ce0-d15ab2ea13ac",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihan Jiang",
+        "id": "01985c81-f312-747f-8ce2-80734a97d2e0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhixian Zheng",
+        "id": "01985c85-8b63-7e39-a1d4-2e49da0ec932",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhichao Song",
+        "id": "01985c84-f048-7b73-8524-5639c72f29f0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenbo Luo",
+        "id": "01985c82-e705-7bd2-b26d-46b19bbbf4ec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yue Yu",
+        "id": "01985c81-e287-72d4-9a31-c0fce5052d15",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yudong Wang",
+        "id": "01985c82-3b7c-72ec-83a5-393b5e50db6f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuanyuan Tian",
+        "id": "01985c81-f818-75da-be1b-1625c61ad90a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Tu",
+        "id": "01985c84-307d-7827-abcb-8e2d91fb6be6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yihan Yan",
+        "id": "01985c83-3f03-7d39-910b-48772763e1fb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yi Huang",
+        "id": "01985c81-fe57-7bd4-9a0b-4f4c351683cc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xu Wang",
+        "id": "01985c82-11a7-79ae-a916-121504bd5523",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xinzhe Xu",
+        "id": "01985c84-dd86-7945-99ef-4603c8f8042e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xingchen Song",
+        "id": "01985c82-4ab0-79ea-be46-c45ecae9b9f6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xing Zhang",
+        "id": "01985c81-e41c-7c1d-b50c-8e744ef29dd8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xing Yong",
+        "id": "01985c85-5495-77a2-bef2-96aad782248c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xin Zhang",
+        "id": "01985c81-dc26-7548-a13e-3d7fd6bfaef9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiangwei Deng",
+        "id": "01985c82-e297-77cf-9947-87d8f400c96d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenyu Yang",
+        "id": "01985c82-560e-7af7-bb83-da589bc6116c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenhan Ma",
+        "id": "01985c84-7a5f-7137-a58b-bf412ee96f28",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiwei Lv",
+        "id": "01985c82-7f75-766c-a5ca-9557813ffc50",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiji Zhuang",
+        "id": "01985c83-a139-7b7b-8d3d-c3fe93e5d7a1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Liu",
+        "id": "01985c81-e4e6-74c2-bbf7-6a8bac6fb966",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sirui Deng",
+        "id": "01985c84-7a5f-703b-8946-275527ff19d1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuo Liu",
+        "id": "01985c82-17c6-72b7-993d-e0c38bde0048",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shimao Chen",
+        "id": "01985c82-8b4f-7169-8c34-a63df98b1a2b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shihua Yu",
+        "id": "01985c85-5495-7849-8e85-40cf35c09914",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shaohui Liu",
+        "id": "01985c81-e41c-7699-9292-81295957f6e5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shande Wang",
+        "id": "01985c85-8b63-74a3-b199-aa09c491df82",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Rui Ma",
+        "id": "01985c81-f818-7705-8f86-6106aee0fead",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qiantong Wang",
+        "id": "01985c84-2f98-788d-91e1-2affca041178",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Wang",
+        "id": "01985c81-db50-735b-baec-fc4bf0a8763d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nuo Chen",
+        "id": "01985c81-f818-7907-8dc2-fa2ea459b1c7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Menghang Zhu",
+        "id": "01985c85-5495-7dd9-9838-4ed42889ca7f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kangyang Zhou",
+        "id": "01985c85-5495-791a-a24d-15387c516bdb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kang Zhou",
+        "id": "01985c82-41b5-7fcf-bad9-9f35d07e63e6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kai Fang",
+        "id": "01985c82-ad9d-76c2-9b03-8cd0ed75bc51",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jun Shi",
+        "id": "01985c82-1a98-7e82-ae26-88922d1fa5e9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinhao Dong",
+        "id": "01985c83-1619-7050-83a6-b8886e4cb43b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiebao Xiao",
+        "id": "01985c85-5495-76be-9044-11af2db5a0ab",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaming Xu",
+        "id": "01985c81-f313-79e2-b501-688b5f2df46d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huaqiu Liu",
+        "id": "01985c82-b801-7158-8cdc-93bbf7b64a08",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hongshen Xu",
+        "id": "01985c81-f062-72c4-b206-37e5e0326fd1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Heng Qu",
+        "id": "01985c83-eac7-714d-9fdc-f140339d4386",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haochen Zhao",
+        "id": "01985c82-8063-7ac3-9cbb-0e755d92a950",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hanglong Lv",
+        "id": "01985c82-8153-795b-9dea-72e3a3941674",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guoan Wang",
+        "id": "01985c81-f9c8-7ece-8453-f387e68108ed",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Duo Zhang",
+        "id": "01985c82-0b9a-71d6-a3b2-9ed510c60ddc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dong Zhang",
+        "id": "01985c81-eea9-768e-a892-0d33e7b2b271",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Di Zhang",
+        "id": "01985c81-e41c-70d1-9faa-4dae606c25e0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chong Ma",
+        "id": "01985c81-f062-7587-83da-d4dcc52e1db6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chang Liu",
+        "id": "01985c81-e01e-7319-b367-9f0e82441c1c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Can Cai",
+        "id": "01985c85-5495-7460-babc-07603a58e13a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bingquan Xia",
+        "id": "01985c85-5495-7b2e-9608-d722647d39f3",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 617,
+    "github_url": "https://github.com/XiaomiMiMo/MiMo-VL",
+    "id": "019b9731-9fad-71e4-9cff-b3336e27347c",
+    "image_url": "image/2506.03569/sso-callbackv1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 3,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/xiaomi.svg+xml",
+        "name": "Xiaomi"
+      }
+    ],
+    "paper_group_id": "019b9731-9fad-71e4-9cff-b3336e27347c",
+    "paper_summary": null,
+    "publication_date": "2025-06-04T04:32:54.000Z",
+    "title": "MiMo-VL Technical Report",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.CL",
+      "deep-reinforcement-learning",
+      "fine-tuning",
+      "generative-models",
+      "multi-modal-learning",
+      "reasoning",
       "transformers",
       "vision-language-models"
     ],
-    "universal_paper_id": "2503.17352/metadata",
-    "updated_at": "2026-04-05T06:03:31.392Z",
-    "version_id": "019d5c3d-40df-7c9c-988b-fa0ce2423e5f"
+    "universal_paper_id": "2506.03569/sso-callback",
+    "updated_at": "2026-01-07T06:42:50.413Z",
+    "version_id": "019b9731-a05b-78e1-9846-812dec87c5c5"
+  },
+  {
+    "abstract": "Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Kaichen Zhang",
+      "Keming Wu",
+      "Zuhao Yang",
+      "Kairui Hu",
+      "Bin Wang",
+      "Ziwei Liu",
+      "Xingxuan Li",
+      "Lidong Bing"
+    ],
+    "canonical_id": "2511.16334/sso-callbackv1",
+    "first_publication_date": "2025-11-20T13:11:45.000Z",
+    "full_authors": [
+      {
+        "full_name": "Kaichen Zhang",
+        "id": "01985c82-38d4-7272-90c8-924e8d1385a5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Keming Wu",
+        "id": "01985c82-7e88-7ab1-93ea-c12402808d26",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zuhao Yang",
+        "id": "01985c82-18b5-787e-8517-74ed25da6e9b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kairui Hu",
+        "id": "01985c82-38d4-74b8-a9c3-ea8bb52da857",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bin Wang",
+        "id": "01985c81-e5a9-7720-bead-85ce91550e2a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziwei Liu",
+        "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xingxuan Li",
+        "id": "01985c81-d97f-76ae-b4f6-166a1fb6515e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lidong Bing",
+        "id": "01985c81-e286-76da-9881-a060cf156af5",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 111,
+    "github_url": "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner",
+    "id": "019ae374-0092-79bd-b422-6376df45a637",
+    "image_url": "image/2511.16334/sso-callbackv1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 3,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/tsinghua.png",
+        "name": "Tsinghua University"
+      },
+      {
+        "image": "images/organizations/nanyang-technological-university.png",
+        "name": "Nanyang Technological University"
+      },
+      {
+        "image": null,
+        "name": "MiroMind AI"
+      }
+    ],
+    "paper_group_id": "019ae374-0092-79bd-b422-6376df45a637",
+    "paper_summary": null,
+    "publication_date": "2025-11-20T13:11:45.000Z",
+    "title": "OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe",
+    "topics": [
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "data-curation",
+      "fine-tuning",
+      "reasoning",
+      "reinforcement-learning",
+      "transformers",
+      "vision-language-models"
+    ],
+    "universal_paper_id": "2511.16334/sso-callback",
+    "updated_at": "2025-12-03T09:03:41.714Z",
+    "version_id": "019ae374-00b9-73e3-a3e5-ddc592acf503"
   }
 ]

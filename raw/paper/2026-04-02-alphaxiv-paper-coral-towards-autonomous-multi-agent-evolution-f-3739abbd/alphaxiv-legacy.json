@@ -117,16 +117,16 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 54,
+        "public_total_votes": 55,
         "questions_count": 0,
-        "total_votes": 11,
-        "upvotes_count": 54,
+        "total_votes": 12,
+        "upvotes_count": 55,
         "visits_count": {
-          "all": 758,
-          "last24Hours": 522,
-          "last30Days": 758,
-          "last7Days": 758,
-          "last90Days": 758
+          "all": 924,
+          "last24Hours": 458,
+          "last30Days": 924,
+          "last7Days": 924,
+          "last90Days": 924
         }
       },
       "podcast_path": "019d5134-3e7c-759e-b352-329b5c646f37/podcast.mp3",
@@ -134,7 +134,7 @@
         "github": {
           "description": "CORAL is a robust, lightweight infrastructure for multi-agent autonomous self-evolution, built for autoresearch.",
           "language": "Python",
-          "stars": 147,
+          "stars": 306,
           "url": "https://github.com/Human-Agent-Society/CORAL"
         }
       },

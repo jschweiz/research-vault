@@ -50,11 +50,11 @@
   "image_url": "https://www.alphaxiv.org/image/2604.02029v1.png",
   "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
   "metrics": {
-    "public_total_votes": 112,
-    "total_votes": 41,
+    "public_total_votes": 119,
+    "total_votes": 48,
     "visits_count": {
-      "all": 1310,
-      "last_7_days": 1310
+      "all": 1385,
+      "last_7_days": 1385
     },
     "x_likes": 0
   },

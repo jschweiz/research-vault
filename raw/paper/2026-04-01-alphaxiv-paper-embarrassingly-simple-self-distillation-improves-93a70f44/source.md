@@ -13,7 +13,7 @@ authors:
   - Yizhe Zhang
 published_at: 2026-04-01T17:39:50Z
 ingested_at: 2026-04-07T21:41:31.278396Z
-content_hash: 033f579dcc11cae0f644e0d0f258636a86e4639a22f1de0fb7c9ebd9f98ef89a
+content_hash: 6fae824ffae0e94db077bb0a8ae744d7f2de40a561e9c5e8cb942b1609c548f3
 tags:
   - paper
   - alphaxiv
@@ -25,6 +25,15 @@ tags:
   - instruction-tuning
   - knowledge-distillation
   - model-interpretation
+  - Computer Science
+  - cs.CL
+  - self-supervised-learning
+  - text-generation
+  - transformers
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -45,12 +54,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.01193
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:41:31.278403Z
-short_summary: # Embarrassingly Simple Self-Distillation Improves Code Generation ## alphaXiv Summary A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:44:08.137086Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 033f579dcc11cae0f644e0d0f258636a86e4639a22f1de0fb7c9ebd9f98ef89a
+fetched_at: 2026-04-08T09:26:25.790314Z
+short_summary: A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Embarrassingly Simple Self-Distillation Improves Code Generation
@@ -103,10 +112,10 @@ A method called Simple Self-Distillation (SSD) enables large language models to 
 
 ## Metrics
 
-- Visits (all): 3248
-- Visits (last 7 days): 3248
-- Total votes: 60
-- Public total votes: 173
+- Visits (all): 3509
+- Visits (last 7 days): 3509
+- Total votes: 71
+- Public total votes: 184
 - X likes: 0
 
 ## Abstract

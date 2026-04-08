@@ -299,11 +299,11 @@
   "id": "019d65d2-2cf1-7623-9688-179eb39c3f6d",
   "image_url": "image/2604.04707v1.png",
   "metrics": {
-    "public_total_votes": 11,
-    "total_votes": 2,
+    "public_total_votes": 13,
+    "total_votes": 4,
     "visits_count": {
-      "all": 107,
-      "last_7_days": 107
+      "all": 176,
+      "last_7_days": 176
     },
     "x_likes": 0
   },

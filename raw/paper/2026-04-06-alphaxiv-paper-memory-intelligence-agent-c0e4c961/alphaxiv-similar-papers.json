@@ -384,8 +384,8 @@
     "id": "019b9149-7883-7a5f-a3e8-24d4466b31f0",
     "image_url": "image/2601.01885v1.png",
     "metrics": {
-      "public_total_votes": 310,
-      "total_votes": 152,
+      "public_total_votes": 311,
+      "total_votes": 153,
       "visits_count": {
         "all": 5182,
         "last_7_days": 186
@@ -1801,126 +1801,6 @@
     "version_id": "019cdabd-e110-7e15-aeaf-c92440d99bf8"
   },
   {
-    "abstract": "Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as isolated subroutines. This creates two coupled challenges: strategic blindness on the forward path of the memory cycle, where construction and retrieval are driven by local heuristics rather than explicit strategic reasoning, and sparse, delayed supervision on the backward path, where downstream failures rarely translate into direct repairs of the memory bank. To address these challenges, we propose MemMA, a plug-and-play multi-agent framework that coordinates the memory cycle along both the forward and backward paths. On the forward path, a Meta-Thinker produces structured guidance that steers a Memory Manager during construction and directs a Query Reasoner during iterative retrieval. On the backward path, MemMA introduces in-situ self-evolving memory construction, which synthesizes probe QA pairs, verifies the current memory, and converts failures into repair actions before the memory is finalized. Extensive experiments on LoCoMo show that MemMA consistently outperforms existing baselines across multiple LLM backbones and improves three different storage backends in a plug-and-play manner. Our code is publicly available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Minhua Lin",
-      "Zhiwei Zhang",
-      "Hanqing Lu",
-      "Hui Liu",
-      "Xianfeng Tang",
-      "Qi He",
-      "Xiang Zhang",
-      "Suhang Wang"
-    ],
-    "canonical_id": "2603.18718v1",
-    "first_publication_date": "2026-03-19T10:15:59.000Z",
-    "full_authors": [
-      {
-        "full_name": "Minhua Lin",
-        "id": "01985c82-3a9b-7871-9855-00f69c64b467",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiwei Zhang",
-        "id": "01985c82-37ee-7713-820b-826591f5807c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hanqing Lu",
-        "id": "01985c81-fb81-73d1-89ad-bd3d275feaff",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hui Liu",
-        "id": "01985c81-d97f-70d0-bd2f-36446659b426",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xianfeng Tang",
-        "id": "01985c81-fb81-7054-a272-df5ee6b1bfc9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qi He",
-        "id": "01985c81-fb81-7314-b22f-6df7f26cd6c0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiang Zhang",
-        "id": "01985c81-e01e-7ab1-8d07-f39f8fad838d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Suhang Wang",
-        "id": "01985c81-f062-7196-a4ee-455bc9ca0022",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/ventr1c/memma",
-    "id": "019d08c3-e5a5-7655-9d62-42fd78e8856b",
-    "image_url": "image/2603.18718v1.png",
-    "metrics": {
-      "public_total_votes": 15,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 84,
-        "last_7_days": 26
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d08c3-e5a5-7655-9d62-42fd78e8856b",
-    "paper_summary": {
-      "keyInsights": [
-        "Explicitly coordinating the entire memory cycle, rather than optimizing individual stages, is crucial for improving the performance of long-horizon LLM agents.",
-        "Strategic guidance from a 'Meta-Thinker' effectively mitigates 'strategic blindness' in memory construction (e.g., resolving conflicts) and enables more effective iterative retrieval.",
-        "Providing immediate, localized feedback and repair signals through 'in-situ self-evolution' can overcome the challenge of sparse and delayed credit assignment in memory maintenance."
-      ],
-      "originalProblem": [
-        "Memory-augmented LLM agents often treat memory construction, retrieval, and utilization as isolated stages, leading to suboptimal performance due to \"strategic blindness.\"",
-        "Myopic memory construction decisions result in redundant, contradictory, or incomplete memory banks, while aimless retrieval frequently fails to surface necessary evidence.",
-        "The backward path of the memory cycle suffers from sparse and delayed feedback, making it challenging to identify and repair specific memory construction errors that lead to later task failures."
-      ],
-      "results": [
-        "MemMA improved overall accuracy by 5.92% (to 81.58% ACC) on the LoCoMo dataset when using GPT-4o-mini and the LightMem backend, significantly outperforming existing baselines.",
-        "The framework consistently enhanced the performance of three different memory storage backends (Single-Agent, A-Mem, LightMem), validating its plug-and-play adaptability across diverse systems.",
-        "Ablation studies confirmed that iterative retrieval (causing the largest drop) and in-situ self-evolution were the most critical components, affirming the benefits of coordinating both forward and backward memory cycle paths."
-      ],
-      "solution": [
-        "MemMA introduces a plug-and-play multi-agent framework that coordinates the memory cycle along both its forward and backward paths, separating strategic reasoning from low-level execution.",
-        "The forward path employs a planner-worker architecture with a Meta-Thinker providing strategic guidance for memory construction and an iterative, diagnosis-guided Query Reasoner for retrieval.",
-        "The backward path features an in-situ self-evolution mechanism that generates synthetic probes after each conversational session to verify provisional memory, diagnose failures, and propose targeted repairs before memory is committed."
-      ],
-      "summary": "MemMA is a multi-agent framework designed to coordinate the entire memory cycle for long-horizon LLM agents, enhancing memory construction and retrieval through reasoning-aware processes and in-situ self-evolution. This approach achieved an overall accuracy improvement of 5.92% with GPT-4o-mini on a conversational memory benchmark, demonstrating enhanced reliability in complex reasoning tasks."
-    },
-    "publication_date": "2026-03-19T10:15:59.000Z",
-    "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.AI",
-      "multi-agent-learning",
-      "reasoning",
-      "self-supervised-learning",
-      "tool-use"
-    ],
-    "universal_paper_id": "2603.18718",
-    "updated_at": "2026-03-20T01:02:29.285Z",
-    "version_id": "019d08c3-e627-71bc-8e7b-a6f52d831ab2"
-  },
-  {
     "abstract": "The rapid evolution of Large Language Model (LLM) agents has necessitated robust memory systems to support cohesive long-term interaction and complex reasoning. Benefiting from the strong capabilities of LLMs, recent research focus has shifted from simple context extension to the development of dedicated agentic memory systems. However, existing approaches typically rely on rigid retrieval granularity, accumulation-heavy maintenance strategies, and coarse-grained update mechanisms. These design choices create a persistent mismatch between stored information and task-specific reasoning demands, while leading to the unchecked accumulation of logical inconsistencies over time. To address these challenges, we propose Adaptive Memory via Multi-Agent Collaboration (AMA), a novel framework that leverages coordinated agents to manage memory across multiple granularities. AMA employs a hierarchical memory design that dynamically aligns retrieval granularity with task complexity. Specifically, the Constructor and Retriever jointly enable multi-granularity memory construction and adaptive query routing. The Judge verifies the relevance and consistency of retrieved content, triggering iterative retrieval when evidence is insufficient or invoking the Refresher upon detecting logical conflicts. The Refresher then enforces memory consistency by performing targeted updates or removing outdated entries. Extensive experiments on challenging long-context benchmarks show that AMA significantly outperforms state-of-the-art baselines while reducing token consumption by approximately 80% compared to full-context methods, demonstrating its effectiveness in maintaining retrieval precision and long-term memory consistency.",
     "author_info": [],
     "authors": [
@@ -2047,6 +1927,126 @@
     "universal_paper_id": "2601.20352",
     "updated_at": "2026-01-29T02:57:20.446Z",
     "version_id": "019c2735-63f0-7246-81f1-e8f0e5184488"
+  },
+  {
+    "abstract": "Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as isolated subroutines. This creates two coupled challenges: strategic blindness on the forward path of the memory cycle, where construction and retrieval are driven by local heuristics rather than explicit strategic reasoning, and sparse, delayed supervision on the backward path, where downstream failures rarely translate into direct repairs of the memory bank. To address these challenges, we propose MemMA, a plug-and-play multi-agent framework that coordinates the memory cycle along both the forward and backward paths. On the forward path, a Meta-Thinker produces structured guidance that steers a Memory Manager during construction and directs a Query Reasoner during iterative retrieval. On the backward path, MemMA introduces in-situ self-evolving memory construction, which synthesizes probe QA pairs, verifies the current memory, and converts failures into repair actions before the memory is finalized. Extensive experiments on LoCoMo show that MemMA consistently outperforms existing baselines across multiple LLM backbones and improves three different storage backends in a plug-and-play manner. Our code is publicly available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Minhua Lin",
+      "Zhiwei Zhang",
+      "Hanqing Lu",
+      "Hui Liu",
+      "Xianfeng Tang",
+      "Qi He",
+      "Xiang Zhang",
+      "Suhang Wang"
+    ],
+    "canonical_id": "2603.18718v1",
+    "first_publication_date": "2026-03-19T10:15:59.000Z",
+    "full_authors": [
+      {
+        "full_name": "Minhua Lin",
+        "id": "01985c82-3a9b-7871-9855-00f69c64b467",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiwei Zhang",
+        "id": "01985c82-37ee-7713-820b-826591f5807c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hanqing Lu",
+        "id": "01985c81-fb81-73d1-89ad-bd3d275feaff",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hui Liu",
+        "id": "01985c81-d97f-70d0-bd2f-36446659b426",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xianfeng Tang",
+        "id": "01985c81-fb81-7054-a272-df5ee6b1bfc9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qi He",
+        "id": "01985c81-fb81-7314-b22f-6df7f26cd6c0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiang Zhang",
+        "id": "01985c81-e01e-7ab1-8d07-f39f8fad838d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Suhang Wang",
+        "id": "01985c81-f062-7196-a4ee-455bc9ca0022",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/ventr1c/memma",
+    "id": "019d08c3-e5a5-7655-9d62-42fd78e8856b",
+    "image_url": "image/2603.18718v1.png",
+    "metrics": {
+      "public_total_votes": 15,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 84,
+        "last_7_days": 26
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d08c3-e5a5-7655-9d62-42fd78e8856b",
+    "paper_summary": {
+      "keyInsights": [
+        "Explicitly coordinating the entire memory cycle, rather than optimizing individual stages, is crucial for improving the performance of long-horizon LLM agents.",
+        "Strategic guidance from a 'Meta-Thinker' effectively mitigates 'strategic blindness' in memory construction (e.g., resolving conflicts) and enables more effective iterative retrieval.",
+        "Providing immediate, localized feedback and repair signals through 'in-situ self-evolution' can overcome the challenge of sparse and delayed credit assignment in memory maintenance."
+      ],
+      "originalProblem": [
+        "Memory-augmented LLM agents often treat memory construction, retrieval, and utilization as isolated stages, leading to suboptimal performance due to \"strategic blindness.\"",
+        "Myopic memory construction decisions result in redundant, contradictory, or incomplete memory banks, while aimless retrieval frequently fails to surface necessary evidence.",
+        "The backward path of the memory cycle suffers from sparse and delayed feedback, making it challenging to identify and repair specific memory construction errors that lead to later task failures."
+      ],
+      "results": [
+        "MemMA improved overall accuracy by 5.92% (to 81.58% ACC) on the LoCoMo dataset when using GPT-4o-mini and the LightMem backend, significantly outperforming existing baselines.",
+        "The framework consistently enhanced the performance of three different memory storage backends (Single-Agent, A-Mem, LightMem), validating its plug-and-play adaptability across diverse systems.",
+        "Ablation studies confirmed that iterative retrieval (causing the largest drop) and in-situ self-evolution were the most critical components, affirming the benefits of coordinating both forward and backward memory cycle paths."
+      ],
+      "solution": [
+        "MemMA introduces a plug-and-play multi-agent framework that coordinates the memory cycle along both its forward and backward paths, separating strategic reasoning from low-level execution.",
+        "The forward path employs a planner-worker architecture with a Meta-Thinker providing strategic guidance for memory construction and an iterative, diagnosis-guided Query Reasoner for retrieval.",
+        "The backward path features an in-situ self-evolution mechanism that generates synthetic probes after each conversational session to verify provisional memory, diagnose failures, and propose targeted repairs before memory is committed."
+      ],
+      "summary": "MemMA is a multi-agent framework designed to coordinate the entire memory cycle for long-horizon LLM agents, enhancing memory construction and retrieval through reasoning-aware processes and in-situ self-evolution. This approach achieved an overall accuracy improvement of 5.92% with GPT-4o-mini on a conversational memory benchmark, demonstrating enhanced reliability in complex reasoning tasks."
+    },
+    "publication_date": "2026-03-19T10:15:59.000Z",
+    "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.AI",
+      "multi-agent-learning",
+      "reasoning",
+      "self-supervised-learning",
+      "tool-use"
+    ],
+    "universal_paper_id": "2603.18718",
+    "updated_at": "2026-03-20T01:02:29.285Z",
+    "version_id": "019d08c3-e627-71bc-8e7b-a6f52d831ab2"
   },
   {
     "abstract": "Self-evolving memory serves as the trainable parameters for Large Language Models (LLMs)-based agents, where extraction (distilling insights from experience) and management (updating the memory bank) must be tightly coordinated. Existing methods predominately optimize memory management while treating memory extraction as a static process, resulting in poor generalization, where agents accumulate instance-specific noise rather than robust memories. To address this, we propose Unified Memory Extraction and Management (UMEM), a self-evolving agent framework that jointly optimizes a Large Language Model to simultaneous extract and manage memories. To mitigate overfitting to specific instances, we introduce Semantic Neighborhood Modeling and optimize the model with a neighborhood-level marginal utility reward via GRPO. This approach ensures memory generalizability by evaluating memory utility across clusters of semantically related queries. Extensive experiments across five benchmarks demonstrate that UMEM significantly outperforms highly competitive baselines, achieving up to a 10.67% improvement in multi-turn interactive tasks. Futhermore, UMEM maintains a monotonic growth curve during continuous evolution. Codes and models will be publicly released.",
@@ -2552,70 +2552,6 @@
     "version_id": "019c45fd-b24f-7843-9712-84636f221c5e"
   },
   {
-    "abstract": "Planning has been a cornerstone of artificial intelligence for solving complex problems, and recent progress in LLM-based multi-agent frameworks have begun to extend this capability. However, the role of human-like memory within these frameworks remains largely unexplored. Understanding how agents coordinate through memory is critical for natural language planning, where iterative reasoning, constraint tracking, and error correction drive the success. Inspired by working memory model in cognitive psychology, we present EvoMem, a multi-agent framework built on a dual-evolving memory mechanism. The framework consists of three agents (Constraint Extractor, Verifier, and Actor) and two memory modules: Constraint Memory (CMem), which evolves across queries by storing task-specific rules and constraints while remains fixed within a query, and Query-feedback Memory (QMem), which evolves within a query by accumulating feedback across iterations for solution refinement. Both memory modules are reset at the end of each query session. Evaluations on trip planning, meeting planning, and calendar scheduling show consistent performance improvements, highlighting the effectiveness of EvoMem. This success underscores the importance of memory in enhancing multi-agent planning.",
-    "author_info": [],
-    "authors": [
-      "Wenzhe Fan",
-      "Ning Yan",
-      "Masood Mortazavi"
-    ],
-    "canonical_id": "2511.01912v2",
-    "first_publication_date": "2025-11-01T01:38:07.000Z",
-    "full_authors": [
-      {
-        "full_name": "Wenzhe Fan",
-        "id": "01985c82-b198-7db4-a724-9b974c96e1f3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ning Yan",
-        "id": "01985c82-590c-7fe6-b365-8eac7577a0b5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Masood Mortazavi",
-        "id": "01985c82-590b-72dd-a4fc-17de6ebfe638",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019a71fe-3a5d-776a-a067-a9273ec45e18",
-    "image_url": "image/2511.01912v2.png",
-    "metrics": {
-      "public_total_votes": 8,
-      "total_votes": 4,
-      "visits_count": {
-        "all": 120,
-        "last_7_days": 4
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019a71fe-3a5d-776a-a067-a9273ec45e18",
-    "paper_summary": null,
-    "publication_date": "2025-12-08T18:05:49.000Z",
-    "title": "EvoMem: Improving Multi-Agent Planning with Dual-Evolving Memory",
-    "topics": [
-      "agent-based-systems",
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.LG",
-      "cs.MA",
-      "multi-agent-learning",
-      "reasoning",
-      "transformers"
-    ],
-    "universal_paper_id": "2511.01912",
-    "updated_at": "2025-11-11T08:17:57.853Z",
-    "version_id": "019b217a-2c0c-7f3b-8cf5-80d962223f72"
-  },
-  {
     "abstract": "Deploying Multimodal Large Language Models as the brain of embodied agents remains challenging, particularly under long-horizon observations and limited context budgets. Existing memory assisted methods often rely on textual summaries, which discard rich visual and spatial details and remain brittle in non-stationary environments. In this work, we propose a non-parametric memory framework that explicitly disentangles episodic and semantic memory for embodied exploration and question answering. Our retrieval-first, reasoning-assisted paradigm recalls episodic experiences via semantic similarity and verifies them through visual reasoning, enabling robust reuse of past observations without rigid geometric alignment. In parallel, we introduce a program-style rule extraction mechanism that converts experiences into structured, reusable semantic memory, facilitating cross-environment generalization. Extensive experiments demonstrate state-of-the-art performance on embodied question answering and exploration benchmarks, yielding a 7.3% gain in LLM-Match and an 11.4% gain in LLM MatchXSPL on A-EQA, as well as +7.7% success rate and +6.8% SPL on GOAT-Bench. Analyses reveal that our episodic memory primarily improves exploration efficiency, while semantic memory strengthens complex reasoning of embodied agents.",
     "author_info": [],
     "authors": [
@@ -2695,6 +2631,70 @@
     "version_id": "019d18e1-0cff-7fa9-96dd-b5c65a261812"
   },
   {
+    "abstract": "Planning has been a cornerstone of artificial intelligence for solving complex problems, and recent progress in LLM-based multi-agent frameworks have begun to extend this capability. However, the role of human-like memory within these frameworks remains largely unexplored. Understanding how agents coordinate through memory is critical for natural language planning, where iterative reasoning, constraint tracking, and error correction drive the success. Inspired by working memory model in cognitive psychology, we present EvoMem, a multi-agent framework built on a dual-evolving memory mechanism. The framework consists of three agents (Constraint Extractor, Verifier, and Actor) and two memory modules: Constraint Memory (CMem), which evolves across queries by storing task-specific rules and constraints while remains fixed within a query, and Query-feedback Memory (QMem), which evolves within a query by accumulating feedback across iterations for solution refinement. Both memory modules are reset at the end of each query session. Evaluations on trip planning, meeting planning, and calendar scheduling show consistent performance improvements, highlighting the effectiveness of EvoMem. This success underscores the importance of memory in enhancing multi-agent planning.",
+    "author_info": [],
+    "authors": [
+      "Wenzhe Fan",
+      "Ning Yan",
+      "Masood Mortazavi"
+    ],
+    "canonical_id": "2511.01912v2",
+    "first_publication_date": "2025-11-01T01:38:07.000Z",
+    "full_authors": [
+      {
+        "full_name": "Wenzhe Fan",
+        "id": "01985c82-b198-7db4-a724-9b974c96e1f3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ning Yan",
+        "id": "01985c82-590c-7fe6-b365-8eac7577a0b5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Masood Mortazavi",
+        "id": "01985c82-590b-72dd-a4fc-17de6ebfe638",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019a71fe-3a5d-776a-a067-a9273ec45e18",
+    "image_url": "image/2511.01912v2.png",
+    "metrics": {
+      "public_total_votes": 8,
+      "total_votes": 4,
+      "visits_count": {
+        "all": 120,
+        "last_7_days": 4
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019a71fe-3a5d-776a-a067-a9273ec45e18",
+    "paper_summary": null,
+    "publication_date": "2025-12-08T18:05:49.000Z",
+    "title": "EvoMem: Improving Multi-Agent Planning with Dual-Evolving Memory",
+    "topics": [
+      "agent-based-systems",
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.LG",
+      "cs.MA",
+      "multi-agent-learning",
+      "reasoning",
+      "transformers"
+    ],
+    "universal_paper_id": "2511.01912",
+    "updated_at": "2025-11-11T08:17:57.853Z",
+    "version_id": "019b217a-2c0c-7f3b-8cf5-80d962223f72"
+  },
+  {
     "abstract": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions. Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of reasoning and memory that underlies human cognition. To address this gap, we propose MemGen, a dynamic generative memory framework that equips agents with a human-esque cognitive faculty. It consists of a \\textit{memory trigger}, which monitors the agent's reasoning state to decide explicit memory invocation, and a \\textit{memory weaver}, which takes the agent's current state as stimulus to construct a latent token sequence as machine-native memory to enrich its reasoning. In this way, MemGen enables agents to recall and augment latent memory throughout reasoning, producing a tightly interwoven cycle of memory and cognition. Extensive experiments across eight benchmarks show that MemGen surpasses leading external memory systems such as ExpeL and AWM by up to $38.22\\%$, exceeds GRPO by up to $13.44\\%$, and exhibits strong cross-domain generalization ability. More importantly, we find that without explicit supervision, MemGen spontaneously evolves distinct human-like memory faculties, including planning memory, procedural memory, and working memory, suggesting an emergent trajectory toward more naturalistic forms of machine cognition.",
     "author_info": [],
     "authors": [
@@ -2761,96 +2761,6 @@
     "universal_paper_id": "2509.24704/metadata",
     "updated_at": "2025-09-30T16:06:00.094Z",
     "version_id": "01999b5f-a2cc-74dd-bc8a-a6a8a165f206"
-  },
-  {
-    "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
-    "author_info": [],
-    "authors": [
-      "Yi Yu",
-      "Liuyi Yao",
-      "Yuexiang Xie",
-      "Qingquan Tan",
-      "Jiaqi Feng",
-      "Yaliang Li",
-      "Libing Wu"
-    ],
-    "canonical_id": "2601.01885.pdfv1",
-    "first_publication_date": "2026-01-05T08:24:16.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yi Yu",
-        "id": "01985c81-ef77-7a09-8578-14c58d92a4b9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Liuyi Yao",
-        "id": "01985c81-f9c8-73da-a6be-367f06278ae1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuexiang Xie",
-        "id": "01985c81-e34e-7d1b-bef2-1969ad002c0d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qingquan Tan",
-        "id": "019b9149-78a0-7b59-b9cb-d9ad059f9c43",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaqi Feng",
-        "id": "01985c82-2ed7-7d15-9cee-6616476fea6d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yaliang Li",
-        "id": "01985c81-e34e-7603-ae55-d71b816be5e8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Libing Wu",
-        "id": "01985c82-4656-7ee5-be37-a0920fa7de4f",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019ba645-4c45-7aa1-b7b6-5b63ffbeae28",
-    "image_url": "image/2601.01885.pdfv1.png",
-    "metrics": {
-      "public_total_votes": 3,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 13,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019ba645-4c45-7aa1-b7b6-5b63ffbeae28",
-    "paper_summary": null,
-    "publication_date": "2026-01-05T08:24:16.000Z",
-    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.CL",
-      "reasoning",
-      "reinforcement-learning",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2601.01885.pdf",
-    "updated_at": "2026-01-10T04:58:38.021Z",
-    "version_id": "019ba645-4c7d-76ee-ac14-4263c14a5ce2"
   },
   {
     "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
@@ -2973,6 +2883,203 @@
     "version_id": "019b9955-eef6-7fd5-af83-8dcff68c4770"
   },
   {
+    "abstract": "The evolution of recommender systems has shifted preference storage from rating matrices and dense embeddings to semantic memory in the agentic era. Yet existing agents rely on isolated memory, overlooking crucial collaborative signals. Bridging this gap is hindered by the dual challenges of distilling vast graph contexts without overwhelming reasoning agents with cognitive load, and evolving the collaborative memory efficiently without incurring prohibitive computational costs. To address this, we propose MemRec, a framework that architecturally decouples reasoning from memory management to enable efficient collaborative augmentation. MemRec introduces a dedicated, cost-effective LM_Mem to manage a dynamic collaborative memory graph, serving synthesized, high-signal context to a downstream LLM_Rec. The framework operates via a practical pipeline featuring efficient retrieval and cost-effective asynchronous graph propagation that evolves memory in the background. Extensive experiments on four benchmarks demonstrate that MemRec achieves state-of-the-art performance. Furthermore, architectural analysis confirms its flexibility, establishing a new Pareto frontier that balances reasoning quality, cost, and privacy through support for diverse deployments, including local open-source models. Code:this https URL and Homepage: this https URL",
+    "author_info": [],
+    "authors": [
+      "Weixin Chen",
+      "Yuhan Zhao",
+      "Jingyuan Huang",
+      "Zihe Ye",
+      "Clark Mingxuan Ju",
+      "Tong Zhao",
+      "Neil Shah",
+      "Li Chen",
+      "Yongfeng Zhang"
+    ],
+    "canonical_id": "2601.08816/sso-callbackv1",
+    "first_publication_date": "2026-01-13T18:51:16.000Z",
+    "full_authors": [
+      {
+        "full_name": "Weixin Chen",
+        "id": "01985c82-1c7b-7d03-8ee9-e4b415c23fff",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuhan Zhao",
+        "id": "01985c82-937b-79aa-82a4-91b81d81a58d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingyuan Huang",
+        "id": "01985c82-7471-76a1-94c9-09f5625f6276",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihe Ye",
+        "id": "01985c84-9291-7a9a-81bb-d5a0e9a42542",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Clark Mingxuan Ju",
+        "id": "01985c83-8050-70f1-abe8-0a4c4a4df38a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tong Zhao",
+        "id": "01985c82-1c7b-73b1-9e25-ee200df0780e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Neil Shah",
+        "id": "01985c82-222d-7d55-b70b-3f75eaf6716a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Li Chen",
+        "id": "01985c81-d97f-7c1a-b111-85ec56e6e3e7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongfeng Zhang",
+        "id": "01985c81-e0eb-7226-91c9-9ab65d99a513",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 25,
+    "github_url": "https://github.com/rutgerswiselab/MemRec",
+    "id": "019bd89e-bf46-7b36-8d6a-998ffe34c83d",
+    "image_url": "image/2601.08816/sso-callbackv1.png",
+    "metrics": {
+      "public_total_votes": 3,
+      "total_votes": 1,
+      "visits_count": {
+        "all": 5,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019bd89e-bf46-7b36-8d6a-998ffe34c83d",
+    "paper_summary": null,
+    "publication_date": "2026-01-13T18:51:16.000Z",
+    "title": "MemRec: Collaborative Memory-Augmented Agentic Recommender System",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.IR",
+      "graph-neural-networks",
+      "ml-systems",
+      "optimization-methods",
+      "privacy-preserving-ml",
+      "recommender-systems",
+      "transformers"
+    ],
+    "universal_paper_id": "2601.08816/sso-callback",
+    "updated_at": "2026-01-19T23:37:20.966Z",
+    "version_id": "019bd89e-bf7a-73ef-a642-6fad16fd38e6"
+  },
+  {
+    "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
+    "author_info": [],
+    "authors": [
+      "Yi Yu",
+      "Liuyi Yao",
+      "Yuexiang Xie",
+      "Qingquan Tan",
+      "Jiaqi Feng",
+      "Yaliang Li",
+      "Libing Wu"
+    ],
+    "canonical_id": "2601.01885.pdfv1",
+    "first_publication_date": "2026-01-05T08:24:16.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yi Yu",
+        "id": "01985c81-ef77-7a09-8578-14c58d92a4b9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Liuyi Yao",
+        "id": "01985c81-f9c8-73da-a6be-367f06278ae1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuexiang Xie",
+        "id": "01985c81-e34e-7d1b-bef2-1969ad002c0d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qingquan Tan",
+        "id": "019b9149-78a0-7b59-b9cb-d9ad059f9c43",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaqi Feng",
+        "id": "01985c82-2ed7-7d15-9cee-6616476fea6d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yaliang Li",
+        "id": "01985c81-e34e-7603-ae55-d71b816be5e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Libing Wu",
+        "id": "01985c82-4656-7ee5-be37-a0920fa7de4f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019ba645-4c45-7aa1-b7b6-5b63ffbeae28",
+    "image_url": "image/2601.01885.pdfv1.png",
+    "metrics": {
+      "public_total_votes": 3,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 13,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019ba645-4c45-7aa1-b7b6-5b63ffbeae28",
+    "paper_summary": null,
+    "publication_date": "2026-01-05T08:24:16.000Z",
+    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.CL",
+      "reasoning",
+      "reinforcement-learning",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2601.01885.pdf",
+    "updated_at": "2026-01-10T04:58:38.021Z",
+    "version_id": "019ba645-4c7d-76ee-ac14-4263c14a5ce2"
+  },
+  {
     "abstract": "Memory mechanism is a core component of LLM-based agents, enabling reasoning and knowledge discovery over long-horizon contexts. Existing agent memory systems are typically designed within isolated paradigms (e.g., explicit, parametric, or latent memory) with tightly coupled retrieval methods that hinder cross-paradigm generalization and fusion. In this work, we take a first step toward unifying heterogeneous memory paradigms within a single memory system. We propose MemAdapter, a memory retrieval framework that enables fast alignment across agent memory paradigms. MemAdapter adopts a two-stage training strategy: (1) training a generative subgraph retriever from the unified memory space, and (2) adapting the retriever to unseen memory paradigms by training a lightweight alignment module through contrastive learning. This design improves the flexibility for memory retrieval and substantially reduces alignment cost across paradigms. Comprehensive experiments on three public evaluation benchmarks demonstrate that the generative subgraph retriever consistently outperforms five strong agent memory systems across three memory paradigms and agent model scales. Notably, MemAdapter completes cross-paradigm alignment within 13 minutes on a single GPU, achieving superior performance over original memory retrievers with less than 5% of training compute. Furthermore, MemAdapter enables effective zero-shot fusion across memory paradigms, highlighting its potential as a plug-and-play solution for agent memory systems.",
     "author_info": [],
     "authors": [
@@ -3088,113 +3195,6 @@
     "universal_paper_id": "2602.08369",
     "updated_at": "2026-02-10T05:23:49.185Z",
     "version_id": "019c4601-7f6c-7780-b698-07b3d3d46e6d"
-  },
-  {
-    "abstract": "The evolution of recommender systems has shifted preference storage from rating matrices and dense embeddings to semantic memory in the agentic era. Yet existing agents rely on isolated memory, overlooking crucial collaborative signals. Bridging this gap is hindered by the dual challenges of distilling vast graph contexts without overwhelming reasoning agents with cognitive load, and evolving the collaborative memory efficiently without incurring prohibitive computational costs. To address this, we propose MemRec, a framework that architecturally decouples reasoning from memory management to enable efficient collaborative augmentation. MemRec introduces a dedicated, cost-effective LM_Mem to manage a dynamic collaborative memory graph, serving synthesized, high-signal context to a downstream LLM_Rec. The framework operates via a practical pipeline featuring efficient retrieval and cost-effective asynchronous graph propagation that evolves memory in the background. Extensive experiments on four benchmarks demonstrate that MemRec achieves state-of-the-art performance. Furthermore, architectural analysis confirms its flexibility, establishing a new Pareto frontier that balances reasoning quality, cost, and privacy through support for diverse deployments, including local open-source models. Code:this https URL and Homepage: this https URL",
-    "author_info": [],
-    "authors": [
-      "Weixin Chen",
-      "Yuhan Zhao",
-      "Jingyuan Huang",
-      "Zihe Ye",
-      "Clark Mingxuan Ju",
-      "Tong Zhao",
-      "Neil Shah",
-      "Li Chen",
-      "Yongfeng Zhang"
-    ],
-    "canonical_id": "2601.08816/sso-callbackv1",
-    "first_publication_date": "2026-01-13T18:51:16.000Z",
-    "full_authors": [
-      {
-        "full_name": "Weixin Chen",
-        "id": "01985c82-1c7b-7d03-8ee9-e4b415c23fff",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuhan Zhao",
-        "id": "01985c82-937b-79aa-82a4-91b81d81a58d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jingyuan Huang",
-        "id": "01985c82-7471-76a1-94c9-09f5625f6276",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zihe Ye",
-        "id": "01985c84-9291-7a9a-81bb-d5a0e9a42542",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Clark Mingxuan Ju",
-        "id": "01985c83-8050-70f1-abe8-0a4c4a4df38a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tong Zhao",
-        "id": "01985c82-1c7b-73b1-9e25-ee200df0780e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Neil Shah",
-        "id": "01985c82-222d-7d55-b70b-3f75eaf6716a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Li Chen",
-        "id": "01985c81-d97f-7c1a-b111-85ec56e6e3e7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yongfeng Zhang",
-        "id": "01985c81-e0eb-7226-91c9-9ab65d99a513",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 25,
-    "github_url": "https://github.com/rutgerswiselab/MemRec",
-    "id": "019bd89e-bf46-7b36-8d6a-998ffe34c83d",
-    "image_url": "image/2601.08816/sso-callbackv1.png",
-    "metrics": {
-      "public_total_votes": 3,
-      "total_votes": 1,
-      "visits_count": {
-        "all": 5,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019bd89e-bf46-7b36-8d6a-998ffe34c83d",
-    "paper_summary": null,
-    "publication_date": "2026-01-13T18:51:16.000Z",
-    "title": "MemRec: Collaborative Memory-Augmented Agentic Recommender System",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.IR",
-      "graph-neural-networks",
-      "ml-systems",
-      "optimization-methods",
-      "privacy-preserving-ml",
-      "recommender-systems",
-      "transformers"
-    ],
-    "universal_paper_id": "2601.08816/sso-callback",
-    "updated_at": "2026-01-19T23:37:20.966Z",
-    "version_id": "019bd89e-bf7a-73ef-a642-6fad16fd38e6"
   },
   {
     "abstract": "Existing memory systems enable Large Language Models (LLMs) to support long-horizon human-LLM interactions by persisting historical interactions beyond limited context windows. However, while recent approaches have succeeded in constructing effective memories, they often disrupt the inherent logical and temporal relationships within interaction sessions, resulting in fragmented memory units and degraded reasoning performance. In this paper, we propose MetaMem, a novel framework that augments memory systems with a self-evolving meta-memory, aiming to teach LLMs how to effectively utilize memorized knowledge. During meta-memory optimization, MetaMem iteratively distills transferable knowledge utilization experiences across different tasks by self-reflecting on reasoning processes and performing actions to update the current meta-memory state. The accumulated meta-memory units serve as explicit knowledge utilization experiences, guiding the LLM to systematically identify and integrate critical evidence from scattered memory fragments. Extensive experiments demonstrate the effectiveness of MetaMem, which significantly outperforms strong baselines by over 3.6%. All codes and datasets are available at this https URL.",
@@ -3316,68 +3316,103 @@
     "version_id": "019c54fa-e695-799a-83a1-14d58b531230"
   },
   {
-    "abstract": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions. Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of reasoning and memory that underlies human cognition. To address this gap, we propose MemGen, a dynamic generative memory framework that equips agents with a human-esque cognitive faculty. It consists of a \\textit{memory trigger}, which monitors the agent's reasoning state to decide explicit memory invocation, and a \\textit{memory weaver}, which takes the agent's current state as stimulus to construct a latent token sequence as machine-native memory to enrich its reasoning. In this way, MemGen enables agents to recall and augment latent memory throughout reasoning, producing a tightly interwoven cycle of memory and cognition. Extensive experiments across eight benchmarks show that MemGen surpasses leading external memory systems such as ExpeL and AWM by up to $38.22\\%$, exceeds GRPO by up to $13.44\\%$, and exhibits strong cross-domain generalization ability. More importantly, we find that without explicit supervision, MemGen spontaneously evolves distinct human-like memory faculties, including planning memory, procedural memory, and working memory, suggesting an emergent trajectory toward more naturalistic forms of machine cognition.",
+    "abstract": "Memory is critical for AI agents, yet the widely-adopted static memory, aiming to create readily available memory in advance, is inevitably subject to severe information loss. To address this limitation, we propose a novel framework called \\textbf{general agentic memory (GAM)}. GAM follows the principle of \"\\textbf{just-in time (JIT) compilation}\" where it focuses on creating optimized contexts for its client at runtime while keeping only simple but useful memory during the offline stage. To this end, GAM employs a duo-design with the following components. 1) \\textbf{Memorizer}, which highlights key historical information using a lightweight memory, while maintaining complete historical information within a universal page-store. 2) \\textbf{Researcher}, which retrieves and integrates useful information from the page-store for its online request guided by the pre-constructed memory. This design allows GAM to effectively leverage the agentic capabilities and test-time scalability of frontier large language models (LLMs), while also facilitating end-to-end performance optimization through reinforcement learning. In our experimental study, we demonstrate that GAM achieves substantial improvement on various memory-grounded task completion scenarios against existing memory systems.",
     "author_info": [],
     "authors": [
-      "Guibin Zhang",
-      "Muxin Fu",
-      "Shuicheng Yan"
+      "B.Y. Yan",
+      "Chaofan Li",
+      "Hongjin Qian",
+      "Shuqi Lu",
+      "Zheng Liu"
     ],
-    "canonical_id": "2509.24704/nfkkaj8pncka.phpv2",
-    "first_publication_date": "2025-09-29T12:33:13.000Z",
+    "canonical_id": "2511.18423/si09vfn0xf1g.htmlv1",
+    "first_publication_date": "2025-11-23T12:29:33.000Z",
     "full_authors": [
       {
-        "full_name": "Guibin Zhang",
-        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "full_name": "B.Y. Yan",
+        "id": "019ab8cf-c5b7-7091-8ae1-c161a6f1cf15",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Muxin Fu",
-        "id": "01985c85-971a-7de8-a1b9-b8bc6684466b",
+        "full_name": "Chaofan Li",
+        "id": "01985c82-250d-72cf-a700-193a62945192",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shuicheng Yan",
-        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "full_name": "Hongjin Qian",
+        "id": "01985c82-07f1-7c1f-99b6-150283cc417e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuqi Lu",
+        "id": "01985c82-5e6a-7a19-8527-3bcfce6ca662",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zheng Liu",
+        "id": "01985c81-df57-773b-bf3a-fdfc2341e09a",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 309,
-    "github_url": "https://github.com/KANABOON1/MemGen",
-    "id": "019c75c0-4cfe-727a-8c33-e8f730f04841",
-    "image_url": "image/2509.24704/nfkkaj8pncka.phpv2.png",
+    "github_stars": null,
+    "github_url": null,
+    "id": "019ac40f-afac-7b29-bbdc-63da2f8ec1b6",
+    "image_url": "image/2511.18423/si09vfn0xf1g.htmlv1.png",
     "metrics": {
       "public_total_votes": 1,
-      "total_votes": 0,
+      "total_votes": 1,
       "visits_count": {
         "all": 1,
         "last_7_days": 0
       },
       "x_likes": 0
     },
-    "organization_info": [],
-    "paper_group_id": "019c75c0-4cfe-727a-8c33-e8f730f04841",
+    "organization_info": [
+      {
+        "image": "images/organizations/renmin.png",
+        "name": "Renmin University of China"
+      },
+      {
+        "image": "images/organizations/peking.png",
+        "name": "Peking University"
+      },
+      {
+        "image": null,
+        "name": "Beijing Academy of Artificial Intelligence"
+      },
+      {
+        "image": null,
+        "name": "Hong Kong Polytechnic University"
+      }
+    ],
+    "paper_group_id": "019ac40f-afac-7b29-bbdc-63da2f8ec1b6",
     "paper_summary": null,
-    "publication_date": "2025-10-12T02:37:44.000Z",
-    "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
+    "publication_date": "2025-11-23T12:29:33.000Z",
+    "title": "General Agentic Memory Via Deep Research",
     "topics": [
       "agentic-frameworks",
       "agents",
       "Computer Science",
+      "cs.AI",
       "cs.CL",
-      "generative-models",
-      "machine-psychology",
+      "cs.IR",
+      "cs.LG",
+      "information-extraction",
       "reasoning",
       "reinforcement-learning",
       "representation-learning",
-      "self-supervised-learning"
+      "test-time-inference",
+      "tool-use",
+      "transformers"
     ],
-    "universal_paper_id": "2509.24704/nfkkaj8pncka.php",
-    "updated_at": "2026-02-19T11:54:22.846Z",
-    "version_id": "019c75c0-4d0d-7cbb-82ac-a18e8dfc8550"
+    "universal_paper_id": "2511.18423/si09vfn0xf1g.html",
+    "updated_at": "2025-11-27T06:45:53.708Z",
+    "version_id": "019ac40f-afc1-77d0-8a67-fd6f020bc8ff"
   },
   {
     "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
@@ -3746,6 +3781,70 @@
     "version_id": "019ac40f-c017-7418-99b8-fae2d58aef77"
   },
   {
+    "abstract": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions. Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of reasoning and memory that underlies human cognition. To address this gap, we propose MemGen, a dynamic generative memory framework that equips agents with a human-esque cognitive faculty. It consists of a \\textit{memory trigger}, which monitors the agent's reasoning state to decide explicit memory invocation, and a \\textit{memory weaver}, which takes the agent's current state as stimulus to construct a latent token sequence as machine-native memory to enrich its reasoning. In this way, MemGen enables agents to recall and augment latent memory throughout reasoning, producing a tightly interwoven cycle of memory and cognition. Extensive experiments across eight benchmarks show that MemGen surpasses leading external memory systems such as ExpeL and AWM by up to $38.22\\%$, exceeds GRPO by up to $13.44\\%$, and exhibits strong cross-domain generalization ability. More importantly, we find that without explicit supervision, MemGen spontaneously evolves distinct human-like memory faculties, including planning memory, procedural memory, and working memory, suggesting an emergent trajectory toward more naturalistic forms of machine cognition.",
+    "author_info": [],
+    "authors": [
+      "Guibin Zhang",
+      "Muxin Fu",
+      "Shuicheng Yan"
+    ],
+    "canonical_id": "2509.24704/nfkkaj8pncka.phpv2",
+    "first_publication_date": "2025-09-29T12:33:13.000Z",
+    "full_authors": [
+      {
+        "full_name": "Guibin Zhang",
+        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Muxin Fu",
+        "id": "01985c85-971a-7de8-a1b9-b8bc6684466b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuicheng Yan",
+        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 309,
+    "github_url": "https://github.com/KANABOON1/MemGen",
+    "id": "019c75c0-4cfe-727a-8c33-e8f730f04841",
+    "image_url": "image/2509.24704/nfkkaj8pncka.phpv2.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019c75c0-4cfe-727a-8c33-e8f730f04841",
+    "paper_summary": null,
+    "publication_date": "2025-10-12T02:37:44.000Z",
+    "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.CL",
+      "generative-models",
+      "machine-psychology",
+      "reasoning",
+      "reinforcement-learning",
+      "representation-learning",
+      "self-supervised-learning"
+    ],
+    "universal_paper_id": "2509.24704/nfkkaj8pncka.php",
+    "updated_at": "2026-02-19T11:54:22.846Z",
+    "version_id": "019c75c0-4d0d-7cbb-82ac-a18e8dfc8550"
+  },
+  {
     "abstract": "Self-evolving memory systems are unprecedentedly reshaping the evolutionary paradigm of large language model (LLM)-based agents. Prior work has predominantly relied on manually engineered memory architectures to store trajectories, distill experience, and synthesize reusable tools, enabling agents to evolve on the fly within environment interactions. However, this paradigm is fundamentally constrained by the staticity of the memory system itself: while memory facilitates agent-level evolving, the underlying memory architecture cannot be meta-adapted to diverse task contexts. To address this gap, we propose MemEvolve, a meta-evolutionary framework that jointly evolves agents' experiential knowledge and their memory architecture, allowing agent systems not only to accumulate experience but also to progressively refine how they learn from it. To ground MemEvolve in prior research and foster openness in future self-evolving systems, we introduce EvolveLab, a unified self-evolving memory codebase that distills twelve representative memory systems into a modular design space (encode, store, retrieve, manage), providing both a standardized implementation substrate and a fair experimental arena. Extensive evaluations on four challenging agentic benchmarks demonstrate that MemEvolve achieves (I) substantial performance gains, improving frameworks such as SmolAgent and Flash-Searcher by up to $17.06\\%$; and (II) strong cross-task and cross-LLM generalization, designing memory architectures that transfer effectively across diverse benchmarks and backbone models.",
     "author_info": [],
     "authors": [
@@ -3853,105 +3952,6 @@
     "universal_paper_id": "2512.18746/sso-callback",
     "updated_at": "2025-12-25T10:04:29.093Z",
     "version_id": "019b54f7-9062-77de-a373-0bee5989663e"
-  },
-  {
-    "abstract": "Memory is critical for AI agents, yet the widely-adopted static memory, aiming to create readily available memory in advance, is inevitably subject to severe information loss. To address this limitation, we propose a novel framework called \\textbf{general agentic memory (GAM)}. GAM follows the principle of \"\\textbf{just-in time (JIT) compilation}\" where it focuses on creating optimized contexts for its client at runtime while keeping only simple but useful memory during the offline stage. To this end, GAM employs a duo-design with the following components. 1) \\textbf{Memorizer}, which highlights key historical information using a lightweight memory, while maintaining complete historical information within a universal page-store. 2) \\textbf{Researcher}, which retrieves and integrates useful information from the page-store for its online request guided by the pre-constructed memory. This design allows GAM to effectively leverage the agentic capabilities and test-time scalability of frontier large language models (LLMs), while also facilitating end-to-end performance optimization through reinforcement learning. In our experimental study, we demonstrate that GAM achieves substantial improvement on various memory-grounded task completion scenarios against existing memory systems.",
-    "author_info": [],
-    "authors": [
-      "B.Y. Yan",
-      "Chaofan Li",
-      "Hongjin Qian",
-      "Shuqi Lu",
-      "Zheng Liu"
-    ],
-    "canonical_id": "2511.18423/si09vfn0xf1g.htmlv1",
-    "first_publication_date": "2025-11-23T12:29:33.000Z",
-    "full_authors": [
-      {
-        "full_name": "B.Y. Yan",
-        "id": "019ab8cf-c5b7-7091-8ae1-c161a6f1cf15",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chaofan Li",
-        "id": "01985c82-250d-72cf-a700-193a62945192",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hongjin Qian",
-        "id": "01985c82-07f1-7c1f-99b6-150283cc417e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuqi Lu",
-        "id": "01985c82-5e6a-7a19-8527-3bcfce6ca662",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zheng Liu",
-        "id": "01985c81-df57-773b-bf3a-fdfc2341e09a",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019ac40f-afac-7b29-bbdc-63da2f8ec1b6",
-    "image_url": "image/2511.18423/si09vfn0xf1g.htmlv1.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 1,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/renmin.png",
-        "name": "Renmin University of China"
-      },
-      {
-        "image": "images/organizations/peking.png",
-        "name": "Peking University"
-      },
-      {
-        "image": null,
-        "name": "Beijing Academy of Artificial Intelligence"
-      },
-      {
-        "image": null,
-        "name": "Hong Kong Polytechnic University"
-      }
-    ],
-    "paper_group_id": "019ac40f-afac-7b29-bbdc-63da2f8ec1b6",
-    "paper_summary": null,
-    "publication_date": "2025-11-23T12:29:33.000Z",
-    "title": "General Agentic Memory Via Deep Research",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.IR",
-      "cs.LG",
-      "information-extraction",
-      "reasoning",
-      "reinforcement-learning",
-      "representation-learning",
-      "test-time-inference",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2511.18423/si09vfn0xf1g.html",
-    "updated_at": "2025-11-27T06:45:53.708Z",
-    "version_id": "019ac40f-afc1-77d0-8a67-fd6f020bc8ff"
   },
   {
     "abstract": "Effective memory management is essential for large language model (LLM) agents handling long-term interactions. Current memory frameworks typically treat agents as passive \"recorders\" and retrieve information without understanding its deeper implications. They may fail in scenarios requiring conflict detection and complex decision-making. To bridge this critical gap, we propose a novel actionable memory framework called ActMem that integrates memory retrieval with active causal reasoning. ActMem transforms unstructured dialogue history into a structured causal and semantic graph. By leveraging counterfactual reasoning and commonsense completion, it enables agents to deduce implicit constraints and resolve potential conflicts between past states and current intentions. Furthermore, we introduce a comprehensive dataset ActMemEval to evaluate agent reasoning capabilities in logic-driven scenarios, moving beyond the fact-retrieval focus of existing memory benchmarks. Experiments demonstrate that ActMem significantly outperforms state-of-the-art baselines in handling complex, memory-dependent tasks, paving the way for more consistent and reliable intelligent assistants.",
@@ -4483,98 +4483,6 @@
     "universal_paper_id": "2509.25911/rdl89emnadbt.jsp",
     "updated_at": "2026-02-19T11:54:27.478Z",
     "version_id": "019c75c0-5f33-7187-914c-9b3f0e083b65"
-  },
-  {
-    "abstract": "Large language model (LLM) agents are constrained by limited context windows, necessitating external memory systems for long-term information understanding. Current memory-augmented agents typically depend on pre-defined instructions and tools for memory updates. However, language models may lack the ability to determine which information to store, how to structure it, and when to update it, especially as memory systems become more complex. This results in suboptimal memory construction and information loss. To this end, we propose Mem-alpha, a reinforcement learning framework that trains agents to effectively manage complex memory systems through interaction and feedback. We also construct a specialized training dataset spanning diverse multi-turn interaction patterns paired with comprehensive evaluation questions designed to teach effective memory management. During training, agents process sequential information chunks, learn to extract and store relevant content, then update the memory system. The reward signal derives from downstream question-answering accuracy over the full interaction history, directly optimizing for memory construction. To illustrate the effectiveness of our training framework, we design a memory architecture comprising core, episodic, and semantic components, equipped with multiple tools for memory operations. Empirical evaluation demonstrates that Mem-alpha achieves significant improvements over existing memory-augmented agent baselines. Despite being trained exclusively on instances with a maximum length of 30k tokens, our agents exhibit remarkable generalization to sequences exceeding 400k tokens, over 13x the training length, highlighting the robustness of Mem-alpha.",
-    "author_info": [],
-    "authors": [
-      "Yu Wang",
-      "Ryuichi Takanobu",
-      "Zhiqi Liang",
-      "Yuzhen Mao",
-      "Yuanzhe Hu",
-      "Julian McAuley",
-      "Xiaojian Wu"
-    ],
-    "canonical_id": "2509.25911/4vandthr12pw.jspv1",
-    "first_publication_date": "2025-09-30T08:02:34.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yu Wang",
-        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ryuichi Takanobu",
-        "id": "01985c81-f312-78f0-8ffa-ed6040836511",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiqi Liang",
-        "id": "01999daa-b12a-7cd3-9857-e7d29ce2410e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuzhen Mao",
-        "id": "01985c82-ec4d-7a1b-b553-5d07350182c0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuanzhe Hu",
-        "id": "01985c82-37ee-78ce-823f-d6c71dd8a02d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Julian McAuley",
-        "id": "01985c81-eaa7-7ec4-a76b-eca78b0e7823",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaojian Wu",
-        "id": "01985c82-5a09-7516-89c8-b8a893003dad",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 171,
-    "github_url": "https://github.com/wangyu-ustc/Mem-alpha",
-    "id": "019c75c0-53db-7dc3-b605-9a7482abb3eb",
-    "image_url": "image/2509.25911/4vandthr12pw.jspv1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 0,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75c0-53db-7dc3-b605-9a7482abb3eb",
-    "paper_summary": null,
-    "publication_date": "2025-09-30T08:02:34.000Z",
-    "title": "Mem-\u03b1: Learning Memory Construction via Reinforcement Learning",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "conversational-ai",
-      "cs.CL",
-      "information-extraction",
-      "reinforcement-learning",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2509.25911/4vandthr12pw.jsp",
-    "updated_at": "2026-02-19T11:54:24.603Z",
-    "version_id": "019c75c0-53f4-71f0-a891-731c7f700fe4"
   },
   {
     "abstract": "We introduce Agentic Reasoning, a framework that enhances large language model (LLM) reasoning by integrating external tool-using agents. Agentic Reasoning dynamically leverages web search, code execution, and structured memory to address complex problems requiring deep research. A key innovation in our framework is the Mind-Map agent, which constructs a structured knowledge graph to store reasoning context and track logical relationships, ensuring coherence in long reasoning chains with extensive tool usage. Additionally, we conduct a comprehensive exploration of the Web-Search agent, leading to a highly effective search mechanism that surpasses all prior approaches. When deployed on DeepSeek-R1, our method achieves a new state-of-the-art (SOTA) among public models and delivers performance comparable to OpenAI Deep Research, the leading proprietary model in this domain. Extensive ablation studies validate the optimal selection of agentic tools and confirm the effectiveness of our Mind-Map and Web-Search agents in enhancing LLM reasoning. The code is at: this https URL",

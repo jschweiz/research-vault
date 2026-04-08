@@ -11,9 +11,11 @@ authors:
   - Yuxin Xie
   - Tianfu Fu
   - Bohan Zhuang
+  - Song Han
+  - Yukang Chen
 published_at: 2026-04-06T17:58:42Z
 ingested_at: 2026-04-07T21:42:08.648109Z
-content_hash: b5c73cbd79491ec1c5de0f1fd217c185fc733687669ef8906aa2f3d0985eb67b
+content_hash: 2b0d3e52d6cc3190796d40bdbdbb8af462357f914a4a90c619c9ecea7303a39f
 tags:
   - paper
   - alphaxiv
@@ -25,6 +27,17 @@ tags:
   - efficient-transformers
   - hardware-aware-algorithms
   - inference-optimization
+  - Computer Science
+  - cs.CL
+  - cs.CV
+  - lightweight-models
+  - model-compression
+  - reasoning
+  - transformers
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -36,6 +49,8 @@ asset_paths:
   - alphaxiv-paper.json
   - alphaxiv-preview.json
   - alphaxiv-similar-papers.json
+  - alphaxiv-transcript.json
+  - alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04921
@@ -43,12 +58,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04921
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:42:08.648116Z
-short_summary: # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression ## alphaXiv Summary Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:47:59.461718Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: b5c73cbd79491ec1c5de0f1fd217c185fc733687669ef8906aa2f3d0985eb67b
+fetched_at: 2026-04-08T09:26:00.695898Z
+short_summary: Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
@@ -104,10 +119,10 @@ Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compre
 
 ## Metrics
 
-- Visits (all): 164
-- Visits (last 7 days): 164
-- Total votes: 1
-- Public total votes: 13
+- Visits (all): 279
+- Visits (last 7 days): 279
+- Total votes: 4
+- Public total votes: 16
 - X likes: 0
 
 ## Abstract
@@ -158,6 +173,8 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d65d7-4052-705a-a296-f3c8950354a6/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d7-4052-705a-a296-f3c8950354a6/transcript.json
+- Transcript lines: 16
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
 
 ## AI Detection
 

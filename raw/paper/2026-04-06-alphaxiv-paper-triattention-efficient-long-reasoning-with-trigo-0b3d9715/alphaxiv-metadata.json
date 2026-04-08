@@ -28,11 +28,11 @@
   "image_url": "https://www.alphaxiv.org/image/2604.04921v1.png",
   "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
   "metrics": {
-    "public_total_votes": 13,
-    "total_votes": 1,
+    "public_total_votes": 16,
+    "total_votes": 4,
     "visits_count": {
-      "all": 164,
-      "last_7_days": 164
+      "all": 279,
+      "last_7_days": 279
     },
     "x_likes": 0
   },
@@ -136,7 +136,7 @@
     "reasoning",
     "transformers"
   ],
-  "transcript_line_count": 0,
+  "transcript_line_count": 16,
   "transcript_url": "https://paper-podcasts.alphaxiv.org/019d65d7-4052-705a-a296-f3c8950354a6/transcript.json",
   "updated_at": "2026-04-07T02:48:18.770000+00:00",
   "version_id": "019d65d7-4083-75ac-aced-3f0d57e425d5",

@@ -12,7 +12,7 @@
     "Kun Shao",
     "Yuan Xie"
   ],
-  "canonical_id": "2604.04503v1",
+  "canonical_id": "2604.04503v2",
   "first_publication_date": "2026-04-06T07:59:52.000Z",
   "full_authors": [
     {
@@ -73,13 +73,13 @@
   "github_stars": 50,
   "github_url": "https://github.com/ECNU-SII/MIA",
   "id": "019d65d5-2846-740f-ac03-efc7c9c1cc17",
-  "image_url": "image/2604.04503v1.png",
+  "image_url": "image/2604.04503v2.png",
   "metrics": {
-    "public_total_votes": 5,
-    "total_votes": 0,
+    "public_total_votes": 6,
+    "total_votes": 1,
     "visits_count": {
-      "all": 54,
-      "last_7_days": 54
+      "all": 87,
+      "last_7_days": 87
     },
     "x_likes": 0
   },
@@ -87,28 +87,28 @@
   "paper_group_id": "019d65d5-2846-740f-ac03-efc7c9c1cc17",
   "paper_summary": {
     "keyInsights": [
-      "Decoupling explicit historical memory (non-parametric) from internalized planning knowledge (parametric) effectively mitigates long-context issues and improves memory efficiency.",
-      "Synergistic training and dynamic feedback between planning and execution agents significantly enhance multi-turn reasoning and task completion reliability.",
-      "Continuous self-evolution in unsupervised environments is achievable through selective memory compression, parameter updates, and a robust LLM-based peer-review evaluation system."
+      "Decoupling memory management and execution through a multi-agent architecture (Manager-Planner-Executor) improves reasoning efficiency and robustness, mitigating long-context limitations.",
+      "A bidirectional conversion loop between non-parametric episodic memory and parametric strategic knowledge facilitates efficient memory evolution and reduces computational overhead.",
+      "An alternating RL training approach combined with an unsupervised evaluation framework enables agents to continuously improve planning and execution strategies without explicit ground-truth supervision."
     ],
     "originalProblem": [
-      "Existing deep research agents struggle with attention dilution and noise from long-context memory, leading to inefficient retrieval and storage costs.",
-      "Traditional memory systems primarily store factual knowledge, lacking process-oriented memory crucial for guiding complex planning and exploration strategies.",
-      "Suboptimal collaboration between untrained planning and execution agents, compounded by ineffective few-shot example selection, limits performance in multi-turn reasoning."
+      "Deep research agents face ineffective memory evolution, struggling to consolidate historical experiences into refined strategies.",
+      "Existing memory systems for LLMs incur high storage and retrieval costs due to long contexts, often leading to diluted attention and noise.",
+      "Current systems primarily capture factual knowledge, lacking process-oriented memory needed for guiding complex search path planning and strategy reuse."
     ],
     "results": [
-      "MIA achieved an average accuracy of 53.6% on multimodal datasets, surpassing previous memory-based methods by an average of 5.46 percentage points, and maintained competitive performance against larger closed-source general models.",
-      "On text-only datasets, MIA attained an average accuracy of 53.5%, improving upon the Memento baseline by an average of 7.5 percentage points.",
-      "Ablation studies confirmed that each proposed module, including the Manager-Planner-Executor architecture, reflection mechanism, alternating RL training, and online TTL, individually contributes to improved reasoning accuracy, totaling an 8.94% increase on multimodal and 12.38% on text-only benchmarks."
+      "MIA achieved an average accuracy of 53.6% on multimodal datasets and 53.5% on text-only datasets, surpassing previous memory-based methods by 5.5 and 7.5 percentage points, respectively.",
+      "The framework consistently enhanced the performance of closed-source LLMs (e.g., GPT-5.4, Gemini-3-Flash) on tasks like LiveVQA and HotpotQA, with GPT-5.4 showing up to an 8.9% accuracy gain.",
+      "An unsupervised self-evolution mechanism allowed MIA to accumulate useful experience and progressively solve previously failed problems, achieving performance comparable to or superior to supervised baselines."
     ],
     "solution": [
-      "MIA introduces a Manager-Planner-Executor architecture that utilizes a non-parametric Memory Manager to store compressed, high-value historical search trajectories, and a parametric Planner to generate plans, with an Executor performing actions.",
-      "A two-stage alternating Reinforcement Learning (RL) strategy trains the Planner and Executor for synergistic cooperation, enhancing plan interpretation and execution.",
-      "An online Test-Time Learning (TTL) mechanism enables continuous self-evolution during inference, leveraging an unsupervised evaluation framework that mimics a scientific peer-review process to update memory and parameters without ground-truth labels."
+      "MIA introduces a Manager-Planner-Executor architecture that decouples historical memory storage, strategic planning, and dynamic execution.",
+      "It employs a dual-memory system with a non-parametric Memory Manager storing compressed trajectories and a parametric Planner internalizing high-value experiences through training.",
+      "The framework utilizes a two-stage alternating Reinforcement Learning paradigm and continual test-time learning for the Planner, enabling autonomous adaptation in unsupervised environments."
     ],
-    "summary": "The Memory Intelligence Agent (MIA) framework enhances deep research agents by integrating brain-inspired memory mechanisms, a Manager-Planner-Executor architecture, and a novel unsupervised self-evolution capability. It achieves an average accuracy of 53.6% on multimodal datasets and 53.5% on text-only datasets, outperforming previous memory-based methods by 5.46 and 7.5 percentage points, respectively."
+    "summary": "The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based methods, also enabling unsupervised self-evolution."
   },
-  "publication_date": "2026-04-06T07:59:52.000Z",
+  "publication_date": "2026-04-07T16:26:16.000Z",
   "title": "Memory Intelligence Agent",
   "topics": [
     "agentic-frameworks",
@@ -127,5 +127,5 @@
   ],
   "universal_paper_id": "2604.04503",
   "updated_at": "2026-04-07T02:46:01.542Z",
-  "version_id": "019d65d5-2876-75f2-84bc-a968c3d9b335"
+  "version_id": "019d6b02-d1f8-77b3-9807-b54ade53e953"
 }

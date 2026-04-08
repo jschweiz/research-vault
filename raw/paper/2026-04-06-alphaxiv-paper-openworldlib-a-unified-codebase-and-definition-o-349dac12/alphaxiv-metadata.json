@@ -54,11 +54,11 @@
   "image_url": "https://www.alphaxiv.org/image/2604.04707v1.png",
   "license": "http://creativecommons.org/licenses/by/4.0/",
   "metrics": {
-    "public_total_votes": 11,
-    "total_votes": 2,
+    "public_total_votes": 13,
+    "total_votes": 4,
     "visits_count": {
-      "all": 107,
-      "last_7_days": 107
+      "all": 176,
+      "last_7_days": 176
     },
     "x_likes": 0
   },
@@ -161,7 +161,7 @@
     "reasoning",
     "representation-learning"
   ],
-  "transcript_line_count": 0,
+  "transcript_line_count": 20,
   "transcript_url": "https://paper-podcasts.alphaxiv.org/019d65d2-2cf1-7623-9688-179eb39c3f6d/transcript.json",
   "updated_at": "2026-04-07T02:42:46.129000+00:00",
   "version_id": "019d65d2-2d9a-789e-92dd-e8ac5361fc1b",

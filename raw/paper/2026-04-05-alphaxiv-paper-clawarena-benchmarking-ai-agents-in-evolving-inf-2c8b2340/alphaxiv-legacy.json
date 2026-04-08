@@ -1,0 +1,151 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Haonian Ji",
+        "id": "01985c84-0199-7dfe-b177-1416ca655e24",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kaiwen Xiong",
+        "id": "01985c83-b704-7105-9cef-ab154fa93fad",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Siwei Han",
+        "id": "01985c82-8064-7167-a930-ff66a01a42f2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Xia",
+        "id": "01985c82-3305-7be5-ae91-842218f29e05",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shi Qiu",
+        "id": "01985c81-f312-72fb-9fb7-6d54fde3b222",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yiyang Zhou",
+        "id": "01985c82-071b-7a2f-a9d1-d83bd372a5ef",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaqi Liu",
+        "id": "01985c81-ef77-72be-af8f-b5782b67ffd5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinlong Li",
+        "id": "01985c82-063e-7144-9289-df91444bed0a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bingzhou Li",
+        "id": "019cff2e-f58d-7193-8b1d-5366383eb99a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zeyu Zheng",
+        "id": "01985c81-ddbe-79b4-8f05-8d0f36d1242f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cihang Xie",
+        "id": "01985c81-e34e-7b4b-a8da-4a513c2361ac",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huaxiu Yao",
+        "id": "01985c81-e287-781e-b71b-3daf858a058d",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:54:15 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Sun Apr 05 2026 17:55:23 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65dc-b043-70b0-8cb7-b5cdacb96183",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 6,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 6,
+        "visits_count": {
+          "all": 82,
+          "last24Hours": 71,
+          "last30Days": 82,
+          "last7Days": 82,
+          "last90Days": 82
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 3,
+          "url": "https://github.com/aiming-lab/ClawArena"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04202"
+      },
+      "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "continual-learning",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "human-ai-interaction",
+        "reasoning",
+        "test-time-inference"
+      ],
+      "universal_paper_id": "2604.04202",
+      "updated_at": "Tue Apr 07 2026 02:54:15 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves. In practice, evidence is scattered across heterogeneous sources that often contradict one another, new information can invalidate earlier conclusions, and user preferences surface through corrections rather than explicit instructions. Existing benchmarks largely assume static, single-authority settings and do not evaluate whether agents can keep up with this complexity. We introduce ClawArena, a benchmark for evaluating AI agents in evolving information environments. Each scenario maintains a complete hidden ground truth while exposing the agent only to noisy, partial, and sometimes contradictory traces across multi-channel sessions, workspace files, and staged updates. Evaluation is organized around three coupled challenges: multi-source conflict reasoning, dynamic belief revision, and implicit personalization, whose interactions yield a 14-category question taxonomy. Two question formats, multi-choice (set-selection) and shell-based executable checks, test both reasoning and workspace grounding. The current release contains 64 scenarios across 8 professional domains, totaling 1{,}879 evaluation rounds and 365 dynamic updates. Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect performance, that self-evolving skill frameworks can partially close model-capability gaps, and that belief revision difficulty is determined by update design strategy rather than the mere presence of updates. Code is available at this https URL.",
+      "created_at": "Tue Apr 07 2026 02:54:15 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65dc-b081-7036-b3bf-27189cb11a51",
+      "imageURL": "image/2604.04202v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Sun Apr 05 2026 17:55:23 GMT+0000 (Coordinated Universal Time)",
+      "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+      "universal_paper_id": "2604.04202",
+      "updated_at": "Tue Apr 07 2026 02:54:15 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04202v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

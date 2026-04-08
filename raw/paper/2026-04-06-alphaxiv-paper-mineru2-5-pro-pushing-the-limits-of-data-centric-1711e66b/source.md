@@ -11,9 +11,46 @@ authors:
   - Fan Wu
   - Zhiyuan Zhao
   - Tao Chu
+  - Yuan Qu
+  - Zhenjiang Jin
+  - Weijun Zeng
+  - Ziyang Miao
+  - Bangrui Xu
+  - Junbo Niu
+  - Mengzhang Cai
+  - Jiantao Qiu
+  - Qintong Zhang
+  - Dongsheng Ma
+  - Yuefeng Sun
+  - Hejun Dong
+  - Wenzheng Zhang
+  - Jutao Xiao
+  - Jiayong Shi
+  - Pengyu Liao
+  - Xiaomeng Zhao
+  - Huaping Zhong
+  - Liqun Wei
+  - Jing Yu
+  - Jie Yang
+  - Wei Li
+  - Shasha Wang
+  - Qianqian Wu
+  - Xuanhe Zhou
+  - Weijia Li
+  - Zhenxiang Li
+  - Zhongying Tu
+  - Jiang Wu
+  - Lijun Wu
+  - Chao Xu
+  - Kai Chen
+  - Wentao Zhang
+  - Yu Qiao
+  - Bowen Zhou
+  - Dahua Lin
+  - Conghui He
 published_at: 2026-04-06T15:44:18Z
 ingested_at: 2026-04-07T21:42:45.558112Z
-content_hash: d26d03c93477141ec9b80618b4c8945cd7a6695438439ff8b8740ba56e4b4e44
+content_hash: 80fdb684c68393c2f126d2f61dd6fee73d538dd45be397c4147219686984d429
 tags:
   - paper
   - alphaxiv
@@ -25,8 +62,14 @@ tags:
   - summary
   - document parsing
   - data engineering
+  - Computer Science
+  - cs.CL
+  - cs.CV
+  - github
+  - transcript
 status: active
 asset_paths:
+  - alphaxiv-ai-detection.json
   - alphaxiv-legacy.json
   - alphaxiv-metadata.json
   - alphaxiv-overview-status.json
@@ -35,6 +78,8 @@ asset_paths:
   - alphaxiv-paper.json
   - alphaxiv-preview.json
   - alphaxiv-similar-papers.json
+  - alphaxiv-transcript.json
+  - alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04771
@@ -42,12 +87,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04771
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:42:45.558121Z
-short_summary: # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale ## alphaXiv Summary Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:46:56.574365Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: d26d03c93477141ec9b80618b4c8945cd7a6695438439ff8b8740ba56e4b4e44
+fetched_at: 2026-04-08T09:28:10.600654Z
+short_summary: Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining the original 1.2B-parameter architecture.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
@@ -62,6 +107,8 @@ Researchers from Shanghai Artificial Intelligence Laboratory advanced document p
 - Source paper: https://arxiv.org/abs/2604.04771
 - PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.04771v1.pdf
 - Cover image: https://www.alphaxiv.org/image/2604.04771v1.png
+- GitHub: https://github.com/opendatalab/MinerU
+- GitHub stars: 0
 - Paper ID: 2604.04771
 - Canonical ID: 2604.04771v1
 - Paper group ID: 019d65bf-f725-70ff-9b02-154aff67da82
@@ -128,8 +175,8 @@ Researchers from Shanghai Artificial Intelligence Laboratory advanced document p
 
 ## Metrics
 
-- Visits (all): 96
-- Visits (last 7 days): 96
+- Visits (all): 128
+- Visits (last 7 days): 128
 - Total votes: 0
 - Public total votes: 8
 - X likes: 0
@@ -184,6 +231,21 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d65bf-f725-70ff-9b02-154aff67da82/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65bf-f725-70ff-9b02-154aff67da82/transcript.json
+- Transcript lines: 18
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
+
+## AI Detection
+
+- State: done
+- Prediction: Human
+- Headline: Mostly Human Written
+- Fraction AI: 0.07296856
+- Fraction AI-assisted: 0
+- Fraction human: 0.92703146
+
+## Resources
+
+- GitHub repository: https://github.com/opendatalab/MinerU
 
 ## Similar Papers
 

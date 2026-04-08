@@ -11,9 +11,13 @@ authors:
   - Minghui Chen
   - Naibin Gu
   - Dingyu Yao
+  - Zheng Lin
+  - Weiping Wang
+  - Jiaqi Wang
+  - Nan Duan
 published_at: 2026-04-03T15:50:07Z
 ingested_at: 2026-04-07T21:41:24.144696Z
-content_hash: bebeb329b369059d7f3dd00371a63b2768ef9b0b3410b05e2724bf51bc23d47b
+content_hash: ae0405b2edce649c664b9f265f8c23be29d4e870818cedf27e9b7a46e2e83845
 tags:
   - paper
   - alphaxiv
@@ -25,6 +29,15 @@ tags:
   - deep-reinforcement-learning
   - fine-tuning
   - knowledge-distillation
+  - Computer Science
+  - cs.CL
+  - cs.LG
+  - optimization-methods
+  - text-generation
+  - transformers
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -45,12 +58,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03128
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:41:24.144703Z
-short_summary: # Self-Distilled RLVR ## alphaXiv Summary Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:45:59.568111Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: bebeb329b369059d7f3dd00371a63b2768ef9b0b3410b05e2724bf51bc23d47b
+fetched_at: 2026-04-08T09:25:51.916625Z
+short_summary: Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and preventing information leakage.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Self-Distilled RLVR
@@ -105,10 +118,10 @@ Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fund
 
 ## Metrics
 
-- Visits (all): 1040
-- Visits (last 7 days): 1040
-- Total votes: 21
-- Public total votes: 51
+- Visits (all): 1498
+- Visits (last 7 days): 1498
+- Total votes: 33
+- Public total votes: 63
 - X likes: 0
 
 ## Abstract

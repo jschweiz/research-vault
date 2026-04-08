@@ -1,0 +1,149 @@
+{
+  "abstract": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves. In practice, evidence is scattered across heterogeneous sources that often contradict one another, new information can invalidate earlier conclusions, and user preferences surface through corrections rather than explicit instructions. Existing benchmarks largely assume static, single-authority settings and do not evaluate whether agents can keep up with this complexity. We introduce ClawArena, a benchmark for evaluating AI agents in evolving information environments. Each scenario maintains a complete hidden ground truth while exposing the agent only to noisy, partial, and sometimes contradictory traces across multi-channel sessions, workspace files, and staged updates. Evaluation is organized around three coupled challenges: multi-source conflict reasoning, dynamic belief revision, and implicit personalization, whose interactions yield a 14-category question taxonomy. Two question formats, multi-choice (set-selection) and shell-based executable checks, test both reasoning and workspace grounding. The current release contains 64 scenarios across 8 professional domains, totaling 1{,}879 evaluation rounds and 365 dynamic updates. Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect performance, that self-evolving skill frameworks can partially close model-capability gaps, and that belief revision difficulty is determined by update design strategy rather than the mere presence of updates. Code is available at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Haonian Ji",
+    "Kaiwen Xiong",
+    "Siwei Han",
+    "Peng Xia",
+    "Shi Qiu",
+    "Yiyang Zhou",
+    "Jiaqi Liu",
+    "Jinlong Li",
+    "Bingzhou Li",
+    "Zeyu Zheng",
+    "Cihang Xie",
+    "Huaxiu Yao"
+  ],
+  "canonical_id": "2604.04202v1",
+  "first_publication_date": "2026-04-05T17:55:23.000Z",
+  "full_authors": [
+    {
+      "full_name": "Haonian Ji",
+      "id": "01985c84-0199-7dfe-b177-1416ca655e24",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kaiwen Xiong",
+      "id": "01985c83-b704-7105-9cef-ab154fa93fad",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Siwei Han",
+      "id": "01985c82-8064-7167-a930-ff66a01a42f2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Peng Xia",
+      "id": "01985c82-3305-7be5-ae91-842218f29e05",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shi Qiu",
+      "id": "01985c81-f312-72fb-9fb7-6d54fde3b222",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yiyang Zhou",
+      "id": "01985c82-071b-7a2f-a9d1-d83bd372a5ef",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiaqi Liu",
+      "id": "01985c81-ef77-72be-af8f-b5782b67ffd5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jinlong Li",
+      "id": "01985c82-063e-7144-9289-df91444bed0a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bingzhou Li",
+      "id": "019cff2e-f58d-7193-8b1d-5366383eb99a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zeyu Zheng",
+      "id": "01985c81-ddbe-79b4-8f05-8d0f36d1242f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Cihang Xie",
+      "id": "01985c81-e34e-7b4b-a8da-4a513c2361ac",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huaxiu Yao",
+      "id": "01985c81-e287-781e-b71b-3daf858a058d",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 3,
+  "github_url": "https://github.com/aiming-lab/ClawArena",
+  "id": "019d65dc-b043-70b0-8cb7-b5cdacb96183",
+  "image_url": "image/2604.04202v1.png",
+  "metrics": {
+    "public_total_votes": 6,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 82,
+      "last_7_days": 82
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65dc-b043-70b0-8cb7-b5cdacb96183",
+  "paper_summary": {
+    "keyInsights": [
+      "The intrinsic capabilities of the base language model have a more dominant impact on overall agent performance (0.154 range) compared to the design of the agent framework (0.092 range).",
+      "Self-evolving agent frameworks, exemplified by MetaClaw, can improve performance, especially in execution-oriented tasks and during mid-scenario updates, potentially mitigating some underlying model limitations.",
+      "Belief revision difficulty is primarily driven by the strategic design of updates, with concentrated and targeted contradictions leading to greater performance drops than merely a high volume of distributed updates."
+    ],
+    "originalProblem": [
+      "Existing AI agent benchmarks operate on simplified assumptions, typically using static environments with a single source of truth, failing to mirror real-world complexities.",
+      "Agents struggle with resolving conflicting information originating from multiple heterogeneous sources (e.g., chat, files) and discerning source reliability.",
+      "Current evaluation methods do not adequately assess an agent's ability to revise prior beliefs in response to new, evolving information or to learn and apply implicit user preferences over time."
+    ],
+    "results": [
+      "MetaClaw, a skill-driven self-evolving framework built on OpenClaw, achieved the highest overall score of 0.603 with GPT-5.1, surpassing OpenClaw by 4.1% and demonstrating superior Execution Evaluation.",
+      "Language models showed a clear capability gradient with OpenClaw, from Claude Opus 4.6 (0.735) as the top performer, followed by Sonnet 4.6 (0.708), Haiku 4.5 (0.614), and GPT-5.2 (0.581).",
+      "Error analysis revealed that workspace grounding capabilities (executable checks) are largely uncorrelated with abstract reasoning (multi-choice scores), indicating distinct challenges, and model-level biases like narrative anchoring can propagate across frameworks."
+    ],
+    "solution": [
+      "ClawArena provides a benchmark of 64 scenarios across 8 professional domains, featuring a hidden ground truth and noisy, partial, and potentially contradictory observable information via multi-channel histories and files.",
+      "It integrates evaluation across multi-source conflict reasoning, dynamic belief revision, and implicit personalization, using a 14-category question taxonomy to capture diverse failure modes.",
+      "Scenarios are constructed with empirical distributions to ensure authenticity and include both multi-choice set-selection questions and shell-based executable checks for comprehensive assessment of abstract reasoning and workspace grounding."
+    ],
+    "summary": "ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments indicate that underlying language model capabilities more significantly impact overall performance (0.154 range) than agent framework design, though sophisticated frameworks like MetaClaw can enhance execution-oriented tasks."
+  },
+  "publication_date": "2026-04-05T17:55:23.000Z",
+  "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+  "topics": [
+    "agentic-frameworks",
+    "agents",
+    "Computer Science",
+    "continual-learning",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "human-ai-interaction",
+    "reasoning",
+    "test-time-inference"
+  ],
+  "universal_paper_id": "2604.04202",
+  "updated_at": "2026-04-07T02:54:15.107Z",
+  "version_id": "019d65dc-b081-7036-b3bf-27189cb11a51"
+}

@@ -13,7 +13,7 @@ authors:
   - Chelsea Finn
 published_at: 2026-03-30T05:33:50Z
 ingested_at: 2026-04-07T21:41:53.929060Z
-content_hash: db0c39df76447e2a0ded57fd4bcc3d1452dcea342500cf13259057ca3ad93f9d
+content_hash: 88621c8a36fcd4d2659974bbfed013b6e265ccbe772e09937e000bd9ec4bd986
 tags:
   - paper
   - alphaxiv
@@ -25,8 +25,18 @@ tags:
   - meta-learning
   - ml-systems
   - optimization-methods
+  - Computer Science
+  - cs.AI
+  - reasoning
+  - tool-use
+  - transformers
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
+  - alphaxiv-ai-detection.json
   - alphaxiv-legacy.json
   - alphaxiv-metadata.json
   - alphaxiv-overview-status.json
@@ -44,12 +54,12 @@ canonical_url: https://www.alphaxiv.org/abs/2603.28052
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:41:53.929069Z
-short_summary: # Meta-Harness: End-to-End Optimization of Model Harnesses ## alphaXiv Summary Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:43:58.450726Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: db0c39df76447e2a0ded57fd4bcc3d1452dcea342500cf13259057ca3ad93f9d
+fetched_at: 2026-04-08T09:27:12.092916Z
+short_summary: Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
@@ -102,10 +112,10 @@ Meta-Harness provides an end-to-end optimization framework for LLM harnesses, th
 
 ## Metrics
 
-- Visits (all): 7311
-- Visits (last 7 days): 6671
-- Total votes: 108
-- Public total votes: 351
+- Visits (all): 7779
+- Visits (last 7 days): 6475
+- Total votes: 117
+- Public total votes: 360
 - X likes: 1
 
 ## Abstract
@@ -159,6 +169,15 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/transcript.json
 - Transcript lines: 17
 - Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
+
+## AI Detection
+
+- State: done
+- Prediction: Mixed
+- Headline: Mostly Human, AI Detected
+- Fraction AI: 0.16178553
+- Fraction AI-assisted: 0
+- Fraction human: 0.83821446
 
 ## Resources
 

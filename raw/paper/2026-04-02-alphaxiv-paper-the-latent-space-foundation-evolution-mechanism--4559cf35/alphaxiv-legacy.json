@@ -237,16 +237,16 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 112,
+        "public_total_votes": 119,
         "questions_count": 0,
-        "total_votes": 41,
-        "upvotes_count": 112,
+        "total_votes": 48,
+        "upvotes_count": 119,
         "visits_count": {
-          "all": 1310,
-          "last24Hours": 327,
-          "last30Days": 1310,
-          "last7Days": 1310,
-          "last90Days": 1310
+          "all": 1385,
+          "last24Hours": 202,
+          "last30Days": 1385,
+          "last7Days": 1385,
+          "last90Days": 1385
         }
       },
       "podcast_path": "019d5109-3b7f-73f9-a4be-07c3791fda3c/podcast.mp3",

@@ -11,9 +11,14 @@ authors:
   - Soham Chitnis
   - Harsh Sutaria
   - Mido Assran
+  - Randall Balestriero
+  - Amir Bar
+  - Adrien Bardes
+  - Yann LeCun
+  - Nicolas Ballas
 published_at: 2026-04-03T17:32:36Z
 ingested_at: 2026-04-07T21:42:53.013251Z
-content_hash: 8230fb0023ba570610ed6eccbba332f39144b3201b8fa64ce18b41aca5393cbb
+content_hash: 50b3ec313bf35af62cca58bf5b15e4f21fea55f4151a487c3221a7421513ff6c
 tags:
   - paper
   - alphaxiv
@@ -25,8 +30,12 @@ tags:
   - summary
   - hierarchical planning
   - latent world models
+  - Computer Science
+  - cs.LG
+  - transcript
 status: active
 asset_paths:
+  - alphaxiv-ai-detection.json
   - alphaxiv-legacy.json
   - alphaxiv-metadata.json
   - alphaxiv-overview-status.json
@@ -35,6 +44,8 @@ asset_paths:
   - alphaxiv-paper.json
   - alphaxiv-preview.json
   - alphaxiv-similar-papers.json
+  - alphaxiv-transcript.json
+  - alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.03208
@@ -42,12 +53,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03208
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:42:53.013256Z
-short_summary: # Hierarchical Planning with Latent World Models ## alphaXiv Summary Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:45:27.774370Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 8230fb0023ba570610ed6eccbba332f39144b3201b8fa64ce18b41aca5393cbb
+fetched_at: 2026-04-08T09:27:42.405037Z
+short_summary: Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Hierarchical Planning with Latent World Models
@@ -97,10 +108,10 @@ Hierarchical Planning with Latent World Models (HWM) introduces a top-down hiera
 
 ## Metrics
 
-- Visits (all): 166
-- Visits (last 7 days): 166
-- Total votes: 1
-- Public total votes: 12
+- Visits (all): 219
+- Visits (last 7 days): 219
+- Total votes: 3
+- Public total votes: 14
 - X likes: 0
 
 ## Abstract
@@ -151,6 +162,17 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d60ff-5da4-7739-94cc-8568d61fc564/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d60ff-5da4-7739-94cc-8568d61fc564/transcript.json
+- Transcript lines: 18
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
+
+## AI Detection
+
+- State: done
+- Prediction: Human
+- Headline: Fully Human Written
+- Fraction AI: 0
+- Fraction AI-assisted: 0
+- Fraction human: 1
 
 ## Resources
 

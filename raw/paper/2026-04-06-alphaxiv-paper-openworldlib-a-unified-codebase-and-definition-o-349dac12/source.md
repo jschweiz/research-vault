@@ -11,9 +11,44 @@ authors:
   - Kaixin Zhu
   - Yifan Dai
   - Bozhou Li
+  - Yuran Wang
+  - Chengzhuo Tong
+  - Yifan Yang
+  - Mingkun Chang
+  - Jianbin Zhao
+  - Zhou Liu
+  - Hao Liang
+  - Xiaochen Ma
+  - Ruichuan An
+  - Junbo Niu
+  - Zimo Meng
+  - Tianyi Bai
+  - Meiyi Qiang
+  - Huanyao Zhang
+  - Zhiyou Xiao
+  - Tianyu Guo
+  - Qinhan Yu
+  - Runhao Zhao
+  - Zhengpin Li
+  - Xinyi Huang
+  - Yisheng Pan
+  - Yiwen Tang
+  - Yang Shi
+  - Yue Ding
+  - Xinlong Chen
+  - Hongcheng Gao
+  - Minglei Shi
+  - Jialong Wu
+  - Zekun Wang
+  - Yuanxing Zhang
+  - Xintao Wang
+  - Pengfei Wan
+  - Yiren Song
+  - Mike Zheng Shou
+  - Wentao Zhang
 published_at: 2026-04-06T14:19:48Z
 ingested_at: 2026-04-07T21:42:38.094023Z
-content_hash: 8dd1fec5e5a8b9d6f806a93f48e3e1527c61dbd750189de7fdd3fe12df83ddab
+content_hash: 0120f4f2964d072f4e3e1ee0a2c2dec6450c00a9a94c9e43df1b4127cdfd3467
 tags:
   - paper
   - alphaxiv
@@ -25,6 +60,14 @@ tags:
   - generative-models
   - inference-optimization
   - ml-systems
+  - Computer Science
+  - cs.CV
+  - reasoning
+  - representation-learning
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -35,6 +78,8 @@ asset_paths:
   - alphaxiv-paper.json
   - alphaxiv-preview.json
   - alphaxiv-similar-papers.json
+  - alphaxiv-transcript.json
+  - alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04707
@@ -42,12 +87,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04707
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:42:38.094028Z
-short_summary: # OpenWorldLib: A Unified Codebase and Definition of Advanced World Models ## alphaXiv Summary Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured developmen
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:47:30.531968Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 8dd1fec5e5a8b9d6f806a93f48e3e1527c61dbd750189de7fdd3fe12df83ddab
+fetched_at: 2026-04-08T09:26:33.535298Z
+short_summary: Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured development and comparison within the research community.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
@@ -134,10 +179,10 @@ Researchers from Peking University, Kuaishou Technology, and other institutions 
 
 ## Metrics
 
-- Visits (all): 107
-- Visits (last 7 days): 107
-- Total votes: 2
-- Public total votes: 11
+- Visits (all): 176
+- Visits (last 7 days): 176
+- Total votes: 4
+- Public total votes: 13
 - X likes: 0
 
 ## Abstract
@@ -188,6 +233,8 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d65d2-2cf1-7623-9688-179eb39c3f6d/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d2-2cf1-7623-9688-179eb39c3f6d/transcript.json
+- Transcript lines: 20
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
 
 ## Resources
 

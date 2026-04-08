@@ -17,8 +17,8 @@
     "public_total_votes": 9,
     "total_votes": 2,
     "visits_count": {
-      "all": 113,
-      "last_7_days": 113
+      "all": 159,
+      "last_7_days": 159
     },
     "x_likes": 0
   },
@@ -140,7 +140,7 @@
     "Statistics",
     "stat.ML"
   ],
-  "transcript_line_count": 0,
+  "transcript_line_count": 16,
   "transcript_url": "https://paper-podcasts.alphaxiv.org/019d65d5-f340-75a1-9c48-6fdd17f6fa1c/transcript.json",
   "updated_at": "2026-04-07T02:46:53.504000+00:00",
   "version_id": "019d65d5-f37d-7409-a464-39c64d50f957",

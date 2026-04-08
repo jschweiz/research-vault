@@ -1,0 +1,125 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Guhao Feng",
+        "id": "01985c82-282d-7822-8ad9-7c8f123e5203",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shengjie Luo",
+        "id": "01985c82-42b4-758d-b020-0af17e728ce1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kai Hua",
+        "id": "01985c85-11fd-7e91-9124-85deb1cebfec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ge Zhang",
+        "id": "01985c81-db51-7728-9b52-7cedbf6c15f5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Di He",
+        "id": "01985c82-0013-7dc2-94cc-2c9170c4c2ca",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenhao Huang",
+        "id": "01985c81-e5aa-7ec9-b06b-ea3dcf465a0a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianle Cai",
+        "id": "01985c81-e5a9-772c-84d8-09b5221effad",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:55:20 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 17:59:44 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b04-0a6f-7458-8574-e0d84a7b168e",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 0,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 0,
+        "visits_count": {
+          "all": 111,
+          "last24Hours": 111,
+          "last30Days": 111,
+          "last7Days": 111,
+          "last90Days": 111
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 7,
+          "url": "https://github.com/ByteDance-Seed/In-Place-TTT"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.06169"
+      },
+      "title": "In-Place Test-Time Training",
+      "topics": [
+        "Computer Science",
+        "continual-learning",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "efficient-transformers",
+        "fine-tuning",
+        "inference-optimization",
+        "online-learning",
+        "parameter-efficient-training",
+        "Statistics",
+        "stat.ML",
+        "test-time-inference",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.06169",
+      "updated_at": "Wed Apr 08 2026 02:55:20 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "The static ``train then deploy\" paradigm fundamentally limits Large Language Models (LLMs) from dynamically adapting their weights in response to continuous streams of new information inherent in real-world tasks. Test-Time Training (TTT) offers a compelling alternative by updating a subset of model parameters (fast weights) at inference time, yet its potential in the current LLM ecosystem is hindered by critical barriers including architectural incompatibility, computational inefficiency and misaligned fast weight objectives for language modeling. In this work, we introduce In-Place Test-Time Training (In-Place TTT), a framework that seamlessly endows LLMs with Test-Time Training ability. In-Place TTT treats the final projection matrix of the ubiquitous MLP blocks as its adaptable fast weights, enabling a ``drop-in\" enhancement for LLMs without costly retraining from scratch. Furthermore, we replace TTT's generic reconstruction objective with a tailored, theoretically-grounded objective explicitly aligned with the Next-Token-Prediction task governing autoregressive language modeling. This principled objective, combined with an efficient chunk-wise update mechanism, results in a highly scalable algorithm compatible with context parallelism. Extensive experiments validate our framework's effectiveness: as an in-place enhancement, it enables a 4B-parameter model to achieve superior performance on tasks with contexts up to 128k, and when pretrained from scratch, it consistently outperforms competitive TTT-related approaches. Ablation study results further provide deeper insights on our design choices. Collectively, our results establish In-Place TTT as a promising step towards a paradigm of continual learning in LLMs.",
+      "created_at": "Wed Apr 08 2026 02:55:20 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b04-0aaf-770a-b058-6e9744eb97ca",
+      "imageURL": "image/2604.06169v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 17:59:44 GMT+0000 (Coordinated Universal Time)",
+      "title": "In-Place Test-Time Training",
+      "universal_paper_id": "2604.06169",
+      "updated_at": "Wed Apr 08 2026 02:55:20 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.06169v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

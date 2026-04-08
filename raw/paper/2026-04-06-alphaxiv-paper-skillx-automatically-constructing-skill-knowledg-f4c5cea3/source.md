@@ -11,9 +11,14 @@ authors:
   - Wuguannan Yao
   - Runnan Fang
   - Shuofei Qiao
+  - Kexin Cao
+  - Guozhou Zheng
+  - Xiang Qi
+  - Peng Zhang
+  - Shumin Deng
 published_at: 2026-04-06T16:09:33Z
 ingested_at: 2026-04-07T21:43:15.155557Z
-content_hash: 52a09ce64f0f4cbd5a8242f686f9b4ead57110f13f9e63c7e06631d941ca8d32
+content_hash: e04e774b5e9ae63671dec1a2b0acb23bf25ac08548568b0e8cc0de752fd52d34
 tags:
   - paper
   - alphaxiv
@@ -25,8 +30,24 @@ tags:
   - cs.cl
   - cs.ir
   - cs.lg
+  - Computer Science
+  - cs.AI
+  - cs.CL
+  - cs.IR
+  - cs.LG
+  - cs.MA
+  - generative-models
+  - online-learning
+  - reinforcement-learning
+  - representation-learning
+  - tool-use
+  - transfer-learning
+  - github
+  - audio
+  - summary
 status: active
 asset_paths:
+  - alphaxiv-ai-detection.json
   - alphaxiv-legacy.json
   - alphaxiv-metadata.json
   - alphaxiv-overview-status.json
@@ -42,12 +63,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04804
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:43:15.155563Z
-short_summary: # SkillX: Automatically Constructing Skill Knowledge Bases for Agents ## alphaXiv Summary SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex ben
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:47:44.953785Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 52a09ce64f0f4cbd5a8242f686f9b4ead57110f13f9e63c7e06631d941ca8d32
+fetched_at: 2026-04-08T09:27:04.053905Z
+short_summary: SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents
@@ -109,10 +130,10 @@ SkillX is an automated framework that builds a plug-and-play skill knowledge bas
 
 ## Metrics
 
-- Visits (all): 63
-- Visits (last 7 days): 63
-- Total votes: 2
-- Public total votes: 8
+- Visits (all): 124
+- Visits (last 7 days): 124
+- Total votes: 3
+- Public total votes: 9
 - X likes: 0
 
 ## Abstract
@@ -163,6 +184,15 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d65bf-4671-7909-9268-425a0e1087c4/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65bf-4671-7909-9268-425a0e1087c4/transcript.json
+
+## AI Detection
+
+- State: done
+- Prediction: Human
+- Headline: Fully Human Written
+- Fraction AI: 0
+- Fraction AI-assisted: 0
+- Fraction human: 1
 
 ## Resources
 

@@ -1,0 +1,155 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Donghu Kim",
+        "id": "01985c82-7470-733c-9819-bbde26789e44",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Youngdo Lee",
+        "id": "01985c84-4117-738b-985e-e8eea511acc6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Minho Park",
+        "id": "01985c82-4f4d-743b-9a6c-6830bea6a258",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kinam Kim",
+        "id": "01985c83-29cd-7dfd-b666-67773f848731",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "I Made Aswin Nahendra",
+        "id": "019d667a-54c9-71b0-bb18-7caeb2407fd2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Takuma Seno",
+        "id": "01985c82-7470-7d74-a949-71a9dd0d0200",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sehee Min",
+        "id": "01985c84-75ed-7d6f-88e5-797e3d23ea4b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Daniel Palenicek",
+        "id": "01985c82-38d4-7a13-8707-2e4c0d3bdc0c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Florian Vogt",
+        "id": "01985c83-fdaf-7986-9908-17d0a3374873",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Danica Kragic",
+        "id": "01985c81-df57-7f8d-92cd-454a1c3cf902",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jan Peters",
+        "id": "01985c81-e287-7c64-abde-e60eab3bcf2d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jaegul Choo",
+        "id": "01985c81-db50-7efe-8234-4a81454c02c6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hojoon Lee",
+        "id": "01985c82-7470-70ae-becf-40150b82ffb0",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 05:46:26 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 09:03:41 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d667a-5472-7eaf-bbe9-68cafbe41f5a",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 6,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 6,
+        "visits_count": {
+          "all": 78,
+          "last24Hours": 68,
+          "last30Days": 78,
+          "last7Days": 78,
+          "last90Days": 78
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 6,
+          "url": "https://github.com/Holiday-Robot/FlashSAC"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04539"
+      },
+      "title": "FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control",
+      "topics": [
+        "Computer Science",
+        "cs.LG",
+        "cs.RO",
+        "deep-reinforcement-learning",
+        "optimization-methods",
+        "reinforcement-learning",
+        "robotic-control",
+        "transfer-learning"
+      ],
+      "universal_paper_id": "2604.04539",
+      "updated_at": "Tue Apr 07 2026 05:46:26 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Reinforcement learning (RL) is a core approach for robot control when expert demonstrations are unavailable. On-policy methods such as Proximal Policy Optimization (PPO) are widely used for their stability, but their reliance on narrowly distributed on-policy data limits accurate policy evaluation in high-dimensional state and action spaces. Off-policy methods can overcome this limitation by learning from a broader state-action distribution, yet suffer from slow convergence and instability, as fitting a value function over diverse data requires many gradient updates, causing critic errors to accumulate through bootstrapping. We present FlashSAC, a fast and stable off-policy RL algorithm built on Soft Actor-Critic. Motivated by scaling laws observed in supervised learning, FlashSAC sharply reduces gradient updates while compensating with larger models and higher data throughput. To maintain stability at increased scale, FlashSAC explicitly bounds weight, feature, and gradient norms, curbing critic error accumulation. Across over 60 tasks in 10 simulators, FlashSAC consistently outperforms PPO and strong off-policy baselines in both final performance and training efficiency, with the largest gains on high-dimensional tasks such as dexterous manipulation. In sim-to-real humanoid locomotion, FlashSAC reduces training time from hours to minutes, demonstrating the promise of off-policy RL for sim-to-real transfer.",
+      "created_at": "Tue Apr 07 2026 05:46:26 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d667a-54ee-7058-8cba-607b61d19588",
+      "imageURL": "image/2604.04539v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Apr 06 2026 09:03:41 GMT+0000 (Coordinated Universal Time)",
+      "title": "FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control",
+      "universal_paper_id": "2604.04539",
+      "updated_at": "Tue Apr 07 2026 05:46:26 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04539v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

@@ -3,88 +3,98 @@
 - alphaXiv: https://www.alphaxiv.org/abs/2604.04917
 - Source paper: https://arxiv.org/abs/2604.04917
 
-The field of Vision-Language Models (VLMs) has seen substantial progress, with models like Qwen-VL and GPT-4V demonstrating advanced reasoning capabilities across a wide range of visual tasks. While earlier models primarily relied on supervised fine-tuning (SFT) on massive datasets of paired images and text, the most performant recent models have increasingly adopted reinforcement learning (RL) to refine their reasoning processes. These models use techniques such as chain-of-thought (CoT) to "think" through a problem before arriving at an answer, using RL to optimize for correctness and reasoning quality.
+## Transparency in Visual Reasoning
 
-However, the state-of-the-art in VLM reasoning is often obscured by proprietary development pipelines. Many frontier models are trained using non-public datasets and undisclosed reward mechanisms, making it difficult for the research community to understand which design choices truly drive performance. Conversely, many existing open-source RL efforts focus on narrow domains like mathematical reasoning, which often fails to generalize to broader visual tasks such as spatial understanding or chart interpretation.
+The advancement of Vision-Language Models (VLMs) has shifted from simple image tagging to complex reasoning. Modern models are increasingly expected to interpret scientific diagrams, solve spatial puzzles, and navigate user interfaces. Reinforcement Learning (RL) has become a primary driver for these capabilities, allowing models to refine their logic by learning from the rewards associated with their own generated responses. However, as the performance of these models improves, the transparency regarding their training often decreases.
 
-Vero, an initiative from researchers at Princeton University, addresses this gap by providing a fully open RL recipe for general visual reasoning. By releasing the training data, reward code, and model weights, the project aims to establish a transparent framework for building versatile visual reasoners.
+Many state-of-the-art visual reasoners rely on proprietary RL pipelines. These pipelines utilize non-public datasets, undisclosed reward structures, and complex multi-stage training procedures that are difficult for the broader research community to replicate or study systematically. This lack of openness makes it challenging to understand why a model succeeds or fails, or how specific training data affects its reasoning behavior.
 
-![Vero Performance Overview](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v1/x1.png)
-*Figure 1: Vero demonstrates improvements across a broad spectrum of visual reasoning tasks, outperforming existing open-weight models and matching proprietary training recipes through its multi-task RL pipeline.*
+![Vero Performance Overview](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x1.png)
+*Figure 1: An overview of the Vero project, showcasing the Vero-600K dataset, the VeroEval suite, and the significant performance improvements achieved by the RL recipe across various model families.*
 
-## Vero-600K: A Diverse Foundation for Visual RL
+Vero addresses this gap by providing a fully open RL recipe for general visual reasoning. By releasing the model weights, the training code, and a massive curated dataset (Vero-600K), this work establishes a transparent foundation for developing and evaluating multimodal reasoners. The central finding is that broad visual understanding can be achieved through a single-stage RL process that emphasizes data diversity and flexible, task-specific reward functions.
 
-A primary finding of the Vero project is that training on a single domain—such as visual mathematics—does not reliably improve a model's performance on other visual tasks. In fact, narrow specialization often results in "negative transfer," where the model's performance on general tasks degrades as it over-optimizes for a specific reasoning style.
+## Curating a Diverse Knowledge Base: Vero-600K
 
-To solve this, the researchers constructed Vero-600K, a diverse dataset containing 600,000 samples across six core categories:
-1.  **STEM:** Reasoning over scientific diagrams, mathematical figures, and medical images.
-2.  **Spatial & Action:** Understanding 3D configurations, UI navigation, and planning sequences of actions.
-3.  **Knowledge & Recognition:** Combining visual recognition with external knowledge to answer complex queries.
-4.  **Chart & OCR:** Extracting and analyzing structured information from charts, tables, and documents.
-5.  **Grounding, Counting & Search:** Localizing specific objects, performing visual search, and accurately counting items.
-6.  **Captioning & Instruction Following:** Describing images in detail and adhering to specific stylistic or structural instructions.
+A significant challenge in training generalist visual reasoners is the heterogeneity of visual tasks. A model needs to excel at numeric calculations in STEM images while simultaneously maintaining the ability to describe scenes or follow complex spatial instructions. To facilitate this, the researchers developed Vero-600K, a dataset of 600,000 samples derived from 59 distinct sources.
 
-The dataset was curated from over 250 candidate sources through a rigorous pipeline. Heuristic filtering removed low-resolution images and binary questions (where a model might guess the answer with 50% accuracy). Manual inspection ensured that the remaining samples were unambiguous and verifiable. Finally, large language models (LLMs) were used to normalize ground-truth answers and filter out questions that were irrelevant to the image or poorly phrased.
+![Vero-600K Dataset Composition](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x2.png)
+*Figure 2: The distribution of the Vero-600K dataset across six core task categories, highlighting the diversity of the 59 datasets included.*
 
-![Vero-600K Data Distribution](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v1/x2.png)
-*Figure 2: The Vero-600K dataset is balanced across six major task categories, ensuring that the model develops a broad repertoire of visual reasoning skills rather than specializing in a single domain.*
+The dataset is organized into six broad categories:
+1.  **STEM**: Covers mathematical diagrams, scientific figures, and medical imagery where answers are often numeric or symbolic.
+2.  **Spatial & Action**: Focuses on 3D spatial understanding, robotic action sequences, and UI navigation.
+3.  **Knowledge & Recognition**: Combines visual recognition with external commonsense or factual knowledge.
+4.  **Chart & OCR**: Involves extracting and reasoning over data in documents, tables, and infographics.
+5.  **Grounding, Counting & Search**: Requires the model to localize objects using bounding boxes or provide precise counts.
+6.  **Captioning & Instruction Following**: Evaluates the model's ability to provide open-ended descriptions and adhere to formatting constraints.
+
+The curation process was meticulous. Starting with over 250 candidate datasets, the authors applied a multi-stage filtering pipeline. First, heuristic selection removed small or low-resolution datasets. Second, manual quality control ensured that at least 95% of the samples were correct and unambiguous. Finally, an automated filtering stage used high-capacity models to remove questions that were irrelevant to the image or unverifiable. This rigorous process ensures that the model learns from high-quality signal rather than noise or ambiguous labels.
+
+![Task Category Samples](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x4.png)
+*Figure 3: Examples of the diverse visual reasoning tasks contained within the Vero-600K dataset, spanning from chart analysis to spatial robotics.*
 
 ## The Reinforcement Learning Recipe
 
-Vero utilizes a single-stage RL pipeline based on Group Relative Policy Optimization (GRPO), which is particularly effective for training models to reason because it allows for comparing multiple outputs for the same prompt. The researchers further refined this into Group Sequence Policy Optimization (GSPO), which stabilizes training by using sequence-level ratios rather than per-token ratios.
+The Vero models are trained using a structured response format designed to encourage chain-of-thought (CoT) reasoning. Each response consists of a reasoning trace enclosed in `<think>...</think>` tags, followed by a final answer in `<answer>...</answer>` tags. For objective questions, the answer is further structured using `\boxed{}` notation.
 
-The core of the Vero recipe is its "task-routed" reward system. Because visual reasoning tasks are highly heterogeneous, a single reward function (like simple string matching) is insufficient. Vero employs ten distinct reward functions tailored to specific task requirements:
-- **String Match and Multiple Choice:** For standard discrete answers.
-- **Numeric Verification:** For math and STEM tasks, accounting for precision and formatting.
-- **Grounding & Pointing:** Using Intersection over Union (IoU) or distance-based metrics to reward accurate spatial localization.
-- **Web Action:** Rewarding the correct sequence of clicks and interactions for UI tasks.
-- **LLM-as-Judge:** For open-ended tasks like captioning, a separate judge model (Qwen3-32B) scores responses on a scale from 1 to 10 based on detail, accuracy, and helpfulness.
+The RL training aims to maximize the expected reward $R(a, y^*)$ for a generated answer $a$ given a ground-truth $y^*$, a visual input $v$, and a text query $q$. The model learns a policy $\pi_{\theta}$ to generate a response $y = (z, a)$, where $z$ represents the thinking process and $a$ is the final answer.
 
-The total reward $R(y, y^*)$ for a generated response $y$ given the ground truth $y^*$ is calculated as:
-$$
-R(y, y^*) = R_{\text{acc}}(y, y^*) + R_{\text{fmt}}(y) + R_{\text{overlong}}(y)
-$$
-where $R_{\text{acc}}$ is the accuracy reward from the task-routed functions, $R_{\text{fmt}}$ penalizes format errors (such as missing the `<think>` or `<answer>` tags), and $R_{\text{overlong}}$ prevents the model from generating unnecessarily long responses.
+The core algorithm used is Group Relative Policy Optimization (GRPO), with a specific enhancement called GSPO (Group Sequence Policy Optimization). Unlike standard RL methods that calculate rewards at every single step, GSPO uses sequence-level ratios to stabilize training across diverse tasks. This helps prevent the model from becoming overly sensitive to the high variance of rewards in a multi-task environment.
 
-![Vero Reward Types](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v1/x5.png)
-*Figure 3: Overview of the different reward types used in Vero, ranging from programmatic checks for grounding and numbers to LLM-based evaluation for open-ended chat.*
+The total reward is calculated using a weighted combination of accuracy, formatting, and length penalties:
 
-## Performance Across the Visual Reasoning Spectrum
+$$R(y, y^*) = (1 - \alpha) R_{\text{acc}}(y, y^*) + \alpha R_{\text{fmt}}(y) + R_{\text{overlong}}(y)$$
 
-The Vero recipe was applied to several base models, including Qwen3-VL and MiMo-VL. The resulting models, Vero-Qwen3T-8B and Vero-Qwen3I-8B, set a new standard for open 8B-parameter visual reasoners. They achieved consistent improvements across all 30 benchmarks in the VeroEval suite, with notable gains in spatial reasoning and chart analysis.
+In this equation, $\alpha = 0.2$ balances formatting and accuracy. The $R_{\text{overlong}}(y)$ term acts as a soft penalty to prevent the model from generating unnecessarily long reasoning traces that consume excessive computation without improving accuracy. The formatting reward $R_{\text{fmt}}(y)$ ensures the model adheres to the structured tags, which is critical for parsing the results during automated evaluation.
 
-One significant finding is that Vero training outperformed proprietary RL recipes. For instance, when the Vero recipe was applied to the MiMo-VL base model, it outperformed the official "RL" version of MiMo-VL (trained by the original developers using proprietary data) on several categories, including STEM and Knowledge & Recognition. This demonstrates that a carefully curated open dataset and a multi-route reward system can match or exceed the performance of closed-source pipelines.
+## Task-Routed Reward Functions
 
-![Training Curves](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v1/x6.png)
-*Figure 4: RL training curves showing consistent performance gains across all six task categories compared to prior open RL efforts.*
+One of the most innovative aspects of Vero is its approach to rewards. In traditional RL for LLMs (like mathematical reasoning), a single reward function (e.g., a math verifier) is often sufficient. However, for a generalist VLM, a "one-size-fits-all" reward is inadequate. How do you score a bounding box using the same logic as a scientific calculation or a creative image caption?
 
-A key challenge in multi-task RL is maintaining "visual chat" ability. Models trained solely on structured tasks (like math or counting) often become unhelpful in open-ended conversation, providing short, robotic answers. By including the "Captioning & Instruction Following" category and using an LLM-as-judge with strict anti-hacking guidelines, Vero models maintain high-quality conversational abilities while simultaneously improving their structured reasoning performance.
+Vero solves this through **task-routed rewards**. The system automatically identifies the type of task and routes the model's response to one of ten specialized reward functions:
 
-## Cognitive Profiles and the Mechanics of Thought
+*   **Binary Rewards**: Used for string matching and multiple-choice questions.
+*   **Numeric Rewards**: Employs a math verifier with a tolerance for different decimal or symbolic formats.
+*   **Grounding Rewards**: Uses Hungarian matching to compare predicted bounding boxes with ground truth, scoring based on Intersection over Union (IoU).
+*   **Web Action Rewards**: Checks for matches in structured JSON fields for UI navigation tasks.
+*   **Instruction Following**: Scores the response based on whether it satisfied specific constraints (e.g., word count, forbidden words).
+*   **LLM-as-judge**: For open-ended captioning, a high-capacity model scores the response on a $1 \to 10$ scale against a reference, following strict guidelines to prevent "reward hacking" (where the model learns to please the judge without actually being correct).
 
-Because Vero models use a thinking-based approach, researchers could analyze the "thinking traces" generated before the final answer. This analysis revealed that the models adapt their cognitive strategies based on the task.
+![Overview of Reward Types](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x5.png)
+*Figure 4: The task-routed reward system, demonstrating how different evaluation logic is applied to different task types, such as grounding, ordering, or open-ended descriptions.*
 
-For example, when solving STEM problems, the models exhibit a high degree of "backtracking" and "reflective verification"—checking their work as they proceed through a multi-step calculation. In contrast, for grounding and search tasks, the thinking traces show a pattern of "directed visual search" and "spatial organization," where the model systematically scans regions of the image to find the target object.
+## Performance and Generalization
 
-The researchers also extracted specific skills from these traces, such as "apply triangle angle sum" or "identify nutrient sources." A classification model could accurately predict the task category simply by looking at the thinking trace, confirming that the RL process cultivates a diverse and domain-specific skill repertoire.
+To evaluate the effectiveness of this recipe, the authors created **VeroEval**, a suite of 30 benchmarks. The results show that the Vero training recipe consistently improves performance across different base models, including Qwen2.5 and Qwen3.
 
-![Reasoning Lengths](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v1/x8.png)
-*Figure 5: Different task categories elicit different reasoning behaviors. Spatial and chart tasks typically require significantly longer thinking processes than simple recognition tasks.*
+A key finding was the impact of **data mixtures**. The researchers tested whether it is better to weight tasks by their difficulty, the length of their reasoning, or their image resolution. Surprisingly, a simple **uniform mixture**—where all task categories are sampled equally—performed the best. This suggests that for general visual reasoning, balanced exposure to different skill sets is more important than specialized weighting.
 
-## Ablations and Design Choices
+![Data Mixture and Transfer Matrix](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x10.png)
+*Figure 5: The transfer matrix shows that training on only one category (e.g., Chart & OCR) often leads to performance drops in others (e.g., Grounding). The "Mix Full" strategy at the far right eliminates this negative transfer, achieving gains across all categories.*
 
-The Vero paper provides several critical insights through ablation studies:
-- **RL vs. SFT:** While SFT on the Vero-600K dataset improves performance, RL provides much more substantial and uniform gains across all tasks. RL allows the model to explore different reasoning paths and learn which ones lead to the correct answer, which is more effective than simply mimicking a single demonstration.
-- **Task-Routed Rewards:** Using task-specific rewards is essential. A model trained with a unified "one-size-fits-all" reward function (like standard math verification) performed significantly worse, particularly on open-ended tasks and grounding.
-- **Data Mixture:** A uniform mixture of all task categories was found to be the most robust. Over-weighting "difficult" tasks (where the base model has low accuracy) often led to instability, as the model struggled to find high-reward samples to learn from.
+The ablation studies also highlighted a phenomenon of "negative transfer." When models were trained exclusively on one domain, such as captioning, their performance on other domains like spatial reasoning often collapsed. By mixing all tasks together during a single RL stage, Vero avoids this collapse and allows the model to develop a more robust, versatile reasoning capability.
+
+## Analyzing the "Thinking" Process
+
+By looking inside the `<think>` tags, the researchers discovered that different visual tasks elicit distinct "cognitive styles." Visual reasoning is not a monolithic process; rather, the model adapts its internal logic to the requirements of the task.
+
+For instance, STEM and Chart tasks typically generate much longer reasoning traces than Knowledge or Recognition tasks. In STEM problems, the model frequently engages in "backtracking"—re-evaluating its previous steps when a contradiction is found. In contrast, Grounding tasks (finding objects) lead to reasoning traces focused on "visual search" and spatial coordinate mapping, with very little backtracking.
+
+![Reasoning Word Lengths](https://paper-assets.alphaxiv.org/figures-normalized/figures/2604.04917v2/x11.png)
+*Figure 6: The average number of reasoning words generated by the model varies significantly by category, with Spatial and STEM tasks requiring much more internal "thought" than simple recognition.*
+
+These findings suggest that "visual thinking" is highly contextual. A generalist model doesn't just learn more facts; it learns how to change its thinking strategy based on the image it sees. By providing an open recipe, Vero allows researchers to study these emergent behaviors in detail, moving beyond simple accuracy scores to a deeper understanding of how AI "perceives" and "reasons."
 
 ## Conclusion
 
-Vero demonstrates that general visual reasoning can be effectively improved through a single-stage reinforcement learning pipeline using entirely open resources. By moving beyond narrow specialization and embracing a diverse, multi-task approach with task-specific rewards, the researchers have created a recipe that empowers the broader AI community to build and study advanced multimodal reasoners. The project highlights that performance in modern VLMs is driven as much by the structure of the training distribution and the precision of the reward signals as it is by the underlying architecture. By open-sourcing these components, Vero provides a foundation for more transparent and collaborative research in the next generation of visual-language understanding.
+Vero represents a significant step toward making advanced multimodal RL more accessible and scientifically rigorous. By combining a massive, high-quality dataset (Vero-600K) with a flexible, task-routed reward system, the authors demonstrate that it is possible to train general-purpose visual reasoners without relying on proprietary secrets.
+
+The work underscores that the "recipe" for high-performance VLMs depends heavily on data diversity and the ability to reward a wide variety of behaviors—from the precision of a bounding box to the logical coherence of a scientific proof. As the field moves toward more autonomous and capable agents, open efforts like Vero provide the transparency needed to ensure these models are not just powerful, but also understood.
 
 ## Relevant Citations
 
-- Group sequence policy optimization: This paper introduces Group Sequence Policy Optimization (GSPO), the core reinforcement learning algorithm used to train Vero. The main paper explicitly states its method integrates advances from GSPO and includes an ablation study showing that GSPO outperforms other RL algorithms like GRPO, making it a foundational component of the Vero recipe.
-- Qwen3-vl technical report: This report details the Qwen3-VL models, which serve as the primary base models for training Vero. The main performance claims of the Vero paper are centered on significantly improving over the Qwen3-VL-Instruct and outperforming the Qwen3-VL-Thinking variants, making this a crucial reference for understanding the starting point and key comparison.
-- Openmmreasoner: Pushing the frontiers for multimodal reasoning with an open and general recipe: This work is a key example of a prior fully open RL recipe for VLMs, but with a narrow focus on visual math. The Vero paper repeatedly contrasts its own broad, multi-domain approach with the specialized scope of OpenMMReasoner to highlight its main contribution of achieving general visual reasoning across diverse tasks.
-- VL-Rethinker: Incentivizing self-reflection of vision-language models with reinforcement learning: This paper is cited as a significant prior work on fully open RL for VLMs and is used as a direct baseline in performance comparisons. The Vero paper argues that its broad data coverage allows it to generalize better than narrowly-trained models like VL-Rethinker, making this a key point of comparison to establish state-of-the-art performance.
+- Group sequence policy optimization: Vero's reinforcement learning (RL) algorithm is directly built upon Group Sequence Policy Optimization (GSPO), which is central to the paper's methodology. The authors state they integrate advances from GSPO and their ablations confirm its effectiveness over other RL algorithms for their multi-task setting.
+- Openmmreasoner: Pushing the frontiers for multimodal reasoning with an open and general recipe: This paper is cited as a key example of prior fully open reinforcement learning efforts for VLMs. The Vero authors contrast their work with OpenMMReasoner's narrow focus on visual math to motivate their own contribution of a broad, multi-domain RL recipe for general visual reasoning.
+- VL-Rethinker: Incentivizing self-reflection of vision-language models with reinforcement learning: VL-Rethinker is another important, fully open RL-trained VLM that the paper compares against, both in performance tables and training curves. It helps establish the landscape of existing open recipes and serves as a benchmark to demonstrate the superior generalization of Vero's multi-task approach.
+- Qwen3-vl technical report: The Qwen3-VL models are the primary base models that Vero is built upon and evaluated against. This citation is crucial for understanding the starting point of the Vero models and for contextualizing the significant performance gains achieved through the paper's open RL recipe.

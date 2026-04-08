@@ -11,9 +11,20 @@ authors:
   - Yihao Yan
   - Yihong Tang
   - Shao Yong Ong
+  - Fenglu Hong
+  - Kaichen Zhou
+  - Chonghe Jiang
+  - Minwei Kong
+  - Jiacheng Zhu
+  - Xuan Jiang
+  - Sirui Li
+  - Cathy Wu
+  - Bryan Kian Hsiang Low
+  - Jinhua Zhao
+  - Paul Pu Liang
 published_at: 2026-04-02T05:59:06Z
 ingested_at: 2026-04-07T21:41:46.384262Z
-content_hash: 4a940e0fb9fef774b97c097304fafab647e3f1b0d13612e7ebd6dd20986c5419
+content_hash: ed9a00331ef07eca6b8e4b7cb9f380ed13e8c9551dd070bcefba9e9f37142a12
 tags:
   - paper
   - alphaxiv
@@ -25,8 +36,19 @@ tags:
   - deep-reinforcement-learning
   - evolutionary-algorithms
   - multi-agent-learning
+  - Computer Science
+  - cs.AI
+  - optimization-methods
+  - reasoning
+  - tool-use
+  - transformers
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
+  - alphaxiv-ai-detection.json
   - alphaxiv-legacy.json
   - alphaxiv-metadata.json
   - alphaxiv-overview-status.json
@@ -44,12 +66,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.01658
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:41:46.384274Z
-short_summary: # CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery ## alphaXiv Summary The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kerne
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:44:32.063454Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4a940e0fb9fef774b97c097304fafab647e3f1b0d13612e7ebd6dd20986c5419
+fetched_at: 2026-04-08T09:26:41.561079Z
+short_summary: The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kernel engineering.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery
@@ -65,7 +87,7 @@ The CORAL framework introduces an autonomous multi-agent evolutionary system, em
 - PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.01658v1.pdf
 - Cover image: https://www.alphaxiv.org/image/2604.01658v1.png
 - GitHub: https://github.com/Human-Agent-Society/CORAL
-- GitHub stars: 147
+- GitHub stars: 306
 - Paper ID: 2604.01658
 - Canonical ID: 2604.01658v1
 - Paper group ID: 019d5134-3e7c-759e-b352-329b5c646f37
@@ -114,10 +136,10 @@ The CORAL framework introduces an autonomous multi-agent evolutionary system, em
 
 ## Metrics
 
-- Visits (all): 758
-- Visits (last 7 days): 758
-- Total votes: 11
-- Public total votes: 54
+- Visits (all): 924
+- Visits (last 7 days): 924
+- Total votes: 12
+- Public total votes: 55
 - X likes: 0
 
 ## Abstract
@@ -169,6 +191,15 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d5134-3e7c-759e-b352-329b5c646f37/transcript.json
 - Transcript lines: 19
 - Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
+
+## AI Detection
+
+- State: done
+- Prediction: Mixed
+- Headline: Mostly Human, AI Detected
+- Fraction AI: 0.24912539
+- Fraction AI-assisted: 0
+- Fraction human: 0.75087464
 
 ## Resources
 

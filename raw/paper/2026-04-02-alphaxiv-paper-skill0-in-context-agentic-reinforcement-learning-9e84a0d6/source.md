@@ -11,9 +11,13 @@ authors:
   - Chengcheng Han
   - Qi Gu
   - Xunliang Cai
+  - Weiming Lu
+  - Jun Xiao
+  - Yueting Zhuang
+  - Yongliang Shen
 published_at: 2026-04-02T17:03:05Z
 ingested_at: 2026-04-07T21:41:39.019232Z
-content_hash: 578066b991d61ffcecb497af946f0c66fe8a42d90a3d5f0e98bc8da2a7b3a726
+content_hash: 958846b513262026ffbdbe7312d0d9010f72eee25a81f8a48ca5587d42747e87
 tags:
   - paper
   - alphaxiv
@@ -25,6 +29,16 @@ tags:
   - deep-reinforcement-learning
   - fine-tuning
   - multi-modal-learning
+  - Computer Science
+  - cs.LG
+  - tool-use
+  - transfer-learning
+  - transformers
+  - zero-shot-learning
+  - github
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -45,12 +59,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.02268
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:41:39.019238Z
-short_summary: # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization ## alphaXiv Summary The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context t
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:44:44.463416Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 578066b991d61ffcecb497af946f0c66fe8a42d90a3d5f0e98bc8da2a7b3a726
+fetched_at: 2026-04-08T09:26:08.802153Z
+short_summary: The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context token costs by over 5 times compared to skill-augmented methods.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization
@@ -108,10 +122,10 @@ The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enab
 
 ## Metrics
 
-- Visits (all): 1385
-- Visits (last 7 days): 1385
-- Total votes: 31
-- Public total votes: 105
+- Visits (all): 1635
+- Visits (last 7 days): 1635
+- Total votes: 40
+- Public total votes: 114
 - X likes: 0
 
 ## Abstract

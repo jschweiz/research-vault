@@ -1,0 +1,740 @@
+{
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "headline": "Fully Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775614953696,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.0995089,
+      "confidence": "Medium",
+      "endIndex": 1932,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nChenxi Wang \n* 1 2 \nZhuoyun Yu \n* 1 2 \nXin Xie \n2 \nWuguannan Yao \n2 \nRunnan Fang \n1 \nShuofei Qiao \n1 \nKexin Cao \n1\nGuozhou Zheng \n1 \nXiang Qi \n2 \nPeng Zhang \n2 \nShumin Deng \n1\nAbstract\nLearning from experience is critical for building\ncapable large language model (LLM) agents, yet\nprevailing self-evolving paradigms remain inef-\nficient: agents learn in isolation, repeatedly re-\ndiscover similar behaviors from limited experi-\nence, resulting in redundant exploration and poor\ngeneralization. To address this problem, we pro-\npose SkillX, a fully automated framework for\nconstructing a plug-and-play skill knowledge\nbase that can be reused across agents and en-\nvironments. SkillX operates through a fully\nautomated pipeline built on three synergistic in-\nnovations: (i) Multi-Level Skills Design, which\ndistills raw trajectories into three-tiered hierar-\nchy of strategic plans, functional skills, and\natomic skills; (ii) Iterative Skills Refinement,\nwhich automatically revises skills based on ex-\necution feedback to continuously improve library\nquality; and (iii) Exploratory Skills Expansion,\nwhich proactively generates and validates novel\nskills to expand coverage beyond seed training\ndata. Using a strong backbone agent (GLM-\n4.6), we automatically build a reusable skill li-\nbrary and evaluate its transferability on challeng-\ning long-horizon, user-interactive benchmarks,\nincluding AppWorld, BFCL-v3, and \u03c4 \n2\n-Bench.\nExperiments show that SkillKB consistently im-\nproves task success and execution efficiency when\nplugged into weaker base agents, highlighting\nthe importance of structured, hierarchical experi-\nence representations for generalizable agent learn-\ning. Our code will be publicly available soon at\nhttps://github.com/zjunlp/SkillX.\n1. Introduction\nLarge language model (LLM) based agents (OpenAI, 2025;\nDeepSeek-AI, 2025; Team et al., "
+    },
+    {
+      "aiAssistanceScore": 0.22951865,
+      "confidence": "Low",
+      "endIndex": 3760,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1931,
+      "text": " 2025b; Yang et al., 2025)\n1\nZhejiang University \n2\nAnt Digital Technologies, Ant Group.\nCorrespondence to: Shumin Deng <231sm@zju.edu.cn>.\nPreprint. April 7, 2026.\nClaude Skills\nLong-context progressively revealed\nComplex system environment\nMulti-round interaction\n...\nSkillX (Ours)\nMulti-level skills stored as items\nLightweight system environment\nOnly need one-time loading\nPrompt\n1x\n...\nAdaption\nFigure 1. Claude Skills follow a long-context, progressively dis-\nclosed format, which requires a complex sandboxing system and\nmultiple interactions, thereby posing challenges to robust reason-\ning. In contrast, SkillX adopts a hierarchical, itemized represen-\ntation that can be stored and retrieved via a lightweight retrieval\nmodule and injected into the system prompt in one time, making it\neasier to transfer across base models.\nhave recently demonstrated remarkable progress in long-\nhorizon decision making with tools, enabling complex be-\nhaviors such as API calling (Trivedi et al., 2024; Patil et al.,\n2025; Li et al., 2025), web navigation (Yao et al., 2023;\nZhou et al., 2024; Mialon et al., 2023), scientific discov-\nery (Ou et al., 2025; Liu et al., 2025; Qiao et al., 2025;\nNovikov et al., 2025), and interactive assistants (Barres\net al., 2025; Yao et al., 2024; He et al., 2025). Despite these\nadvances, most agents still approach each new task largely\nfrom scratch, relying on direct reasoning or limited task-\nspecific demonstrations. This paradigm is costly, brittle,\nand fundamentally at odds with how intelligent systems are\nexpected to accumulate and reuse experience over time.\nA natural resolution is to enable agents to learn from ex-\nperience (Sutton, 2025). Recent work has explored self-\nevolving agents that iteratively reflect on past executions\nand improve their behavior over time (Wang et al., "
+    },
+    {
+      "aiAssistanceScore": 0.42227554,
+      "confidence": "Low",
+      "endIndex": 4293,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 3759,
+      "text": " 2025c;\nFang et al., 2025c; Zhao et al., 2024; Xu et al., 2025; Cao\net al., 2025). While promising, these approaches often fail\nto deliver scalable and transferable gains. In practice, expe-\nrience learning typically suffers from three structural limita-\ntions. (1) Isolated Learning: agents execute the same tasks\nrepeatedly and re-extract similar experiences independently,\nleading to substantial redundancy. (2) Weak Generalization\nof Experience: in complex environments, high-quality train-\n1\narXiv:2604.04804v1 [cs.CL] 6 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.42227554,
+      "confidence": "Low",
+      "endIndex": 1317,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\ning data are scarce, so the mined experiences often transfer\npoorly to new tasks. (3) Model Capability Bottleneck: when\nexperience is harvested solely through an agent\u2019s own ex-\nploration and reflection, what can be extracted is ultimately\ncapped by the agent\u2019s current capability frontier. These chal-\nlenges point to a more fundamental question: What form\nof experience can be broadly reusable across agents of\nvarying capabilities and across diverse environments?\nExisting work has proposed multiple representations of ex-\nperience, such as insights (Cao et al., 2025; Ouyang et al.,\n2025), workflows (Wang et al., 2025c;b; Han et al., 2025), or\ntrajectories (Zhao et al., 2024; Fang et al., 2025c). However,\nnone of these representations simultaneously offer strong\ntransferability, efficient retrieval, and direct executability.\nInspired by Claude Skills (Anthropic, 2025), we argue that\nskills provide a more suitable abstraction: they encapsulate\nreusable competencies that directly support task execution.\nNonetheless, prior skill-based designs often rely on long-\ncontext, progressive disclosure, which place heavy demands\non reasoning and environment instrumentation, limiting ro-\nbustness and practical reuse, as illustrated in Figure 1.\n"
+    },
+    {
+      "aiAssistanceScore": 0.23031346,
+      "confidence": "Medium",
+      "endIndex": 3476,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1316,
+      "text": "\nIn this work, we introduce SkillX, a fully automated\nframework for constructing a plug-and-play skill knowl-\nedge base from agent experience. Our core insight is that\ntransferable experience should be organized hierarchically,\nrather than as monolithic behaviors. SkillX therefore\nrepresents experience at three complementary levels: (i)\nPlanning Skills, which capture high-level task organiza-\ntion; (ii) Functional Skills, which implement reusable, tool-\nbased subroutines; and (iii) Atomic Skills, which encode\nexecution-oriented usage patterns and constraints. This\nmulti-level design yields skills that are concise, composable,\nand robust to distributional shifts. SkillX builds such a\nskill library through a fully automated pipeline. A strong\nbackbone agent first performs rollouts on training tasks and\ndistills multi-level skills from successful trajectories. The\nextracted skills are then iteratively refined through con-\nsolidation and validation, improving library quality over\ntime. Finally, SkillX performs experience-guided explo-\nration to proactively expand the skill space by targeting\nunder-utilized tools and failure-prone behaviors, enabling\ngeneralization beyond the initial training distribution.\nTo build a reliable, plug-and-play skill library, we instantiate\nSkillX with a strong agent backbone, GLM-4.6 (Team\net al., 2025a), and pre-build a skill library on challenging,\nuser-interactive, long-horizon benchmarks, including: Ap-\npWorld (Trivedi et al., 2024), BFCL-v3 (Patil et al., 2025),\nand \u03c4 \n2\n-Bench (Barres et al., 2025). Our experiments show\nthat this plug-and-play skill library can be directly plugged\ninto base agents (e.g., Qwen3-32B (Yang et al., 2025)),\nyielding around a 10% performance improvement while also\nimproving execution efficiency. We further demonstrate the\nadvantages of our multi-level skill design for experience\nrepresentation, and show that both iterative refinement and\nskill expansion provide additional gains. In a nutshell, we\nconclude our contributions as:\n\u2022 We propose a hierarchical skill representation that trans-\nforms raw trajectories into reusable planning, functional,\nand atomic skills.\n"
+    },
+    {
+      "aiAssistanceScore": 0.22062324,
+      "confidence": "Medium",
+      "endIndex": 5053,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 3475,
+      "text": "\n\u2022 \nWe present SkillX, a fully automated and extensible\nframework for pre-building plug-and-play skill libraries\nfor LLM agents, featuring iterative refinement and skill\nexpansion.\n\u2022 We release the resulting plug-and-play skill library and\nprovide strong empirical evidence across multiple agent\nbenchmarks that it can directly enhance the capabilities\nof weaker agents.\n2. Preliminaries\nAgent Definition We consider a general interactive setting\nwhere an agent solves tasks by acting in an environment. An\nenvironment is defined as E = (S, A, P), where A is the\nset of executable actions, S is the set of observable states,\nand P(s\n\u2032 \n| s, a) is the transition dynamics. At time step t,\nthe agent receives an observation o\nt \n\u2208 O and produces an\naction a\nt \n\u2208 A. Following the ReAct style formulation, the\nagent therefore selects an action \u02c6a\nt \n\u2208 \n\u02c6\nA conditioned on its\ncontext c\nt \n= (o\n1\n, \u02c6a\n1\n, . . . , o\nt\u22121\n, \u02c6a\nt\u22121\n, o\nt\n):\n\u02c6a\nt \n\u223c \u03c0(\u00b7 | c\nt\n), \u02c6a\nt \n\u2208 \n\u02c6\nA. (1)\nExecuting \u02c6a\nt \n\u2208 A yields a new observation via the environ-\nment. The final trajectory is \u03c4 = (o\n1\n, \u02c6a\n1\n, . . . , o\nT \n, \u02c6a\nT \n).\nLLM Agent and Skill-Conditioned Execution. Let Q\nbe the tasks set. We write q \u2208 Q for sampling a task, and let\nR(\u03c4, q) \u2208 {0, 1} be a task-dependent success indicator. We\nmodel the LLM agent as a policy \u03c0 that induces a trajectory\ndistribution. Without external skills, the agent generates\ntrajectories by direct reasoning:\n\u03c4 \u223c \u03c0(\u00b7 | q), q \u2208 Q. (2)\nTo reduce redundant exploration and improve task com-\npletion, we equip the agent with a skills library D =\n{s\n1\n, . . . , "
+    },
+    {
+      "aiAssistanceScore": 0.1734921,
+      "confidence": "Medium",
+      "endIndex": 5625,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 5052,
+      "text": " s\n|D|\n} \nand a skill retriever that recalls a set of rel-\nevant skills for the current task. Concretely, given q \u2208 Q,\na retrieval function (typically implemented via semantic-\nsimilarity retrieval) \u03c1 : Q \u2192 2\nD \n. returns a skill subset\nS\nq \n= \u03c1(q), S\nq \n\u2286 D. The LLM agent then generates a\ntrajectory by conditioning on the retrieved skill set:\n\u03c4 \n\u2032 \n\u223c \u03c0(\u00b7 | S\nq \n, q), q \u2208 Q. (3)\nOur objective is to design the skills library D and the usage\nwithin \u03c0 such that the expected success rate is improved:\nE\nq\u2208Q, \u03c4 \n\u2032\n\u223c\u03c0(\u00b7|S\nq \n,q)\nR(\u03c4 \n\u2032\n, q) > E\nq\u2208Q, \u03c4 \u223c\u03c0(\u00b7|q)\nR(\u03c4, q). (4)\n2"
+    },
+    {
+      "aiAssistanceScore": 0.1734921,
+      "confidence": "Medium",
+      "endIndex": 971,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\n3. SkillX Design and Implementation\n3.1. Multi-Level Skills Design\nIn tool-centric agent scenarios, we structure the skills re-\nquired by the model into three levels (see Figure 2):\nD = S\nplan \n\u2295 S\nfunc \n\u2295 S\natomic\n, (5)\ncorresponding to planning skills, functional skills, and\natomic skills, respectively. In a given environment E, let\nT denote the set of tool actions. (i) Atomic skill s\natomic \nis\naligned with a single tool t \u2208 T and is modeled as an ex-\ntended semantic specification of t, e.g., as enriched descrip-\ntions, constraints, or usage patterns that refine the effective\nbehavior of t. (ii) Functional skill s\nfunc \nabstracts a subtask\nand can be regarded as a macro-operation that accomplishes\na sub-query. We assume each task q admits a decomposition\ninto n subtasks, {q\nsubtask,1\n, q\nsubtask,2\n, . . . , q\nsubtask,n\n} and each\ns\nfunc \ncorresponds to skills to accomplish q\nsubtask,i\n. "
+    },
+    {
+      "aiAssistanceScore": 0.13437647,
+      "confidence": "Medium",
+      "endIndex": 3083,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 970,
+      "text": " Specifi-\ncally, s\nfunc \nis grounded in a set of tool actions, which can\nbe instantiated as a composition of tools T\nfunc \n\u2286 T . (iii)\nplanning skill s\nplan \naligns with the organizational structure\nof the subtasks (e.g., ordering, dependencies, and branch-\ning), specifying how functional skills should be composed\nto solve q. Next, we describe the extraction methods for the\nthree skill levels.\n3.2. Rollout and Skills Extraction\nGiven a task q, we first perform m-sized rollouts, reusing\nthe agent\u2019s inference procedure to collect trajectories. We\nthen extract the multi-level skills from these trajectories,\nwith skill extractor f . Details of the inference procedure are\nprovided in Section 4.\nPlanning Skills Extraction. Given a successful trajectory,\nwe extract the planning skill s\nplan \nby compressing the tra-\njectory into an ordered set of high-level steps. During this\ncompression, we explicitly filter out non-essential transi-\ntions such as exploration, backtracking, and trial-and-error\nbehaviors that are incidental to the final solution but detri-\nmental to skill reuse. Moreover, for excessively long or\nverbose environment feedback, we apply summarization\nto obtain compact state descriptions, which improves the\nstability and fidelity of the extracted high-level skills.\nFunctional Skills Extraction. We leverage the previously\nextracted planning skill s\nplan \nto guide the extraction of func-\ntional skills. Concretely, given a plan and its corresponding\ntrajectory, we iteratively prompt the model to extract the\nfunctional skill s\nfunc \nthat aligns with the objective of each\nsubtask q\nsubtask,i\n. Formally, each s\nfunc \nis represented with\nthree key fields: name (the skill name), document (a de-\nscription of inputs, outputs and usage notes), and content\n(the tool invocation pattern for completing subtask q\nsubtask,i\n).\nAtomic Skills Extraction. Atomic skills are single tool\nspecifications that extend the original tool schema with\nreusable, execution-oriented usage patterns. They serve\nas a low-level complement when higher-level functional\nskills s\nfunc \nare missing or incomplete. "
+    },
+    {
+      "aiAssistanceScore": 0.033519976,
+      "confidence": "High",
+      "endIndex": 4778,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 3082,
+      "text": " We prompt the model\nto distill s\natomic \nfrom trajectories the invocation patterns,\ntypical parameter configurations, and practical notes, espe-\ncially constraints and common failure modes observed in\nreal usage. The representation of s\natomic \nis unified with s\nfunc\n.\n3.3. Iterative Skills Refinement\nWith only a limited amount of seed training data, a key\nquestion is whether we can maximize the utility of the avail-\nable supervision to extract additional skills and continuously\nimprove existing ones. Inspired by prior works (Cai et al.,\n2025b;a; Yuksekgonul et al., 2024), we adopt a text-based\niterative optimization paradigm for the skill library. Con-\ncretely, at k-th iteration, we start from the current skill\nlibrary D\n(k)\n, repeatedly rollouts from the training set, then\nextract multi-level skills. We subsequently apply a refine-\nment operator \u03d5, including: Skills Merge and Skills Filter.\nFinally, we update the skill library D\n(k) \nwith the refined\nskills to obtain skill library D\n(k+1)\n, including three update\noperations: add, modify or keep.\nIterative Skills Library Construction. We construct the\nskill library in an iterative manner. Let D\n(0) \n= \u2205 be an\ninitial empty library. In iteration k = 0, 1, . . . , we roll\nout the agent augmented with the current library D\n(k) \non\ntasks sampled from the training set Q\ntrain \nto obtain a set of\ntrajectories\n\u03c4 \n(k) \n\u223c \u03c0(\u00b7 | \u03c1\nD\n(k) \n(q), q), q \u2208 Q\ntrain\n, (6)\nand denote K\n(k) \n= {\u03c4 \n(k)\n1 \n, . . . , \u03c4 \n(k)\nN\nk \n}. A skill extractor f\nproduces a variable-size set of candidate skills from each\ntrajectory, S\n(k)\ni \n= f (\u03c4 \n(k)\ni \n) and we aggregate all the skills\nextracted from the batch via S\n(k) \n= \nS\nN\nk\ni=1 \nS\n(k)\ni \n. "
+    },
+    {
+      "aiAssistanceScore": 0.04462696,
+      "confidence": "Medium",
+      "endIndex": 5273,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 4777,
+      "text": " Addition-\nally, we define a refinement operator \u03d5 to merge and filter\nthe skills. The library is then updated as\nD\n(k+1) \n\u225c D\n(k) \n\u222a \u03d5\n\u0010\nS\n(k)\n\u0011\n= D\n(k) \n\u222a \u03d5\nN\nk\n[\ni=1\nS\n(k)\ni\n!\n. (7)\nLet Q\ntest \ndenote a test distribution. We aim to iteratively\nimprove the library such that the performance of the induced\nskill-conditioned agent is maximized on Q\ntest\n:\nmax\nk \nE\nq\u223cQ\ntest\nh\nE\n\u03c4 \u223c\u03c0(\u00b7|\u03c1\nD\n(k) \n(q),q)\n\u0002\nR(\u03c4, q)\n\u0003\ni\n, (8)\nand we stop the iteration when this test performance no\nlonger improves.\n3"
+    },
+    {
+      "aiAssistanceScore": 0.04462696,
+      "confidence": "Medium",
+      "endIndex": 1555,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nSkills Library\nMulti-Level Skills Design\nTask: Name the artist most recommended to me on Spotify.\nPlanning Skills\nFunctional Skills\nAtomic Skills\nStep 1: Authenticate with Spotify\nStep 2: Fetch all personalized song recommendations\n......\nStep 5: Return the most recommended artist's name\nSkill Name: spotify authenticate with stored credentials\n----------------------------------------------------------------------------\nSkill Document:\nDescription: This skill handles the authentication ...\nParameters: username : str, account_name: str, optional\nOutputs: str: The access token for the authenticated....\nNotes: If the default 'account_name' is not specified...\n-----------------------------------------------------------------------------\nSkill Content:\npasswords =apis.supervisor.show_account_passwords()\nspotify_password = None.\n.....\nlogin_result = apis.spotify.login...\nSkill Name: List all APIs in an app\n----------------------------------------------------------------------------\nSkill Document:\nDescription: Explore all APIs under a specific app\nParameters: app_name: str\nOutputs: List: A list of APIs available within the app.\nNotes: 1. Do not invent or assume APIs....\n----------------------------------------------------------------------------\nSkill Content: apis.api_docs.show_api_descriptions...\nSkills Refinement\nSkills Filter Skills Merge\nGeneral Filter\nTool-Specific Filter\nCluster Similar Skills\nMerge Skill Clusters\nDecompose Complex Skills\nSkills Expansion\nExperie"
+    },
+    {
+      "aiAssistanceScore": 0.13832246,
+      "confidence": "Medium",
+      "endIndex": 3663,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 1554,
+      "text": "ence Guiding Exploration \nSynthesis Tasks\nAbstract Experience\nSummarize\nTask &\nReference\nTrajectory\nExploration\nTrajectory\nRollout and Skills Extraction\nExperience Guide\nTasks Generate\nModify & Add\n& Keep Skills\nTraining Tasks\nPseudo Plans\nTrajectory\nRetrieved\nPlanning Skills\nSample a task\nExtract Rollout\nRewrite\nRetrieved Functional\n& Atomic Skills\nFigure 2. SkillX provides an automated, iterative pipeline for constructing a skills library, integrating skills extraction. skills expansion\nand skills refinement. The skills library is organized into three levels: planning skills, functional skills, and atomic skills.\nSkills Merge. After extracting skills from each trajectory,\nwe often obtain many functionally redundant skills that, de-\nspite surface differences, correspond to the same underlying\nskill pattern. How to update a single skill when multiple\nheterogeneous update directions are available? We merge\nskills from an optimization-based perspective. For a spe-\ncific skill s with current embedding, we first retrieve and\ncluster a set of semantically similar skills using cosine simi-\nlarity. The resulting cluster can be interpreted as providing\nmultiple complementary update directions for the same un-\nderlying skill, a multi-dimensional refinement of s. Let\nZ(s) = {1, . . . , z} index the semantically similar skills as-\nsociated with skill s. Each neighbor i induces a candidate\nupdate direction \u03b4\ni\n, yielding a candidate updated state\ns\n\u2032\ni \n= s + \u03b4\ni\n, i \u2208 Z(s). (9)\nWe then aggregate these candidate directions into the final\ndirection. The simplest form is to merge the directions:\n\u03b4\nagg \n= \nP\ni\u2208Z(s) \n\u03b4\ni\n. The final update is applied as\ns\n+ \n= s + \u03b4\nagg\n. (10)\nSpecifically, we treat the semantically similar skills as multi-\nple update views of the same skill, and we use the combined\ndirection as the final update direction. Finally, we merge\nsemantically similar skills into a single skill. If the merged\nskill becomes overly complex, we further decompose it into\nmore modular, reusable skills.\nSkills Filter. We enforce skill quality via a strict two-stage\nfiltering procedure"
+    },
+    {
+      "aiAssistanceScore": 0.21306576,
+      "confidence": "Medium",
+      "endIndex": 4830,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3662,
+      "text": "e. (1) General Filter. This stage removes\nskills that are unlikely to be portable or compositional, in-\ncluding those that depend on extraneous Python packages,\nexpose overly idiosyncratic function-style definitions, or\noverly-encapsulated skills. (2) Tool-specific Filter. This\nstage mitigates tool-use hallucinations by validating each\nskill against the environment-provided tool schema, reject-\ning skills that reference non-existent tools, invalid parame-\nters, or schema-incompatible argument structures. Together,\nthese filters maintain a high-precision skill library while pre-\nserving flexibility across heterogeneous agent benchmarks.\nSkills Library Update. After completing Skill Merge and\nSkill Filter, we perform concrete updates to the skill library\nD\nk \nfor the k-th iteration, including three types: add new\nskills, modify existing skills, and keep skills unchanged.\nFurthermore, the entire pipeline can be executed iteratively\nover multiple rounds. Through this continual update process,\nthe skill library progressively improves in coverage, quality,\nand compositional richness, enabling increasingly effective\nskill reuse for downstream agent tasks.\n4"
+    },
+    {
+      "aiAssistanceScore": 0.21306576,
+      "confidence": "Medium",
+      "endIndex": 1160,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\n3.4. Exploratory Skills Expansion\nWhile skills distilled from a seed training set Q\ntrain \ncan\nalready improve an agent\u2019s performance, relying solely on\nscarce demonstrations is insufficient in complex environ-\nments with large tool spaces (e.g., (Trivedi et al., 2024)\nexposes hundreds of APIs). Inspired by Zhai et al. (2025),\nwe adopt an Experience Guiding Exploration scheme to\nbroaden coverage beyond what is observed in the seed data,\nencouraging the agent to interact with the environment and\nexercise a wider range of tools. We guide exploration using\nexperience collected from rollouts on the seed set (e.g., tools\nthe agent already uses reliably, tools with high failure rates,\nand tools that are never invoked), thereby prioritizing under-\nexplored or failure-prone tools to improve sample efficiency.\nAfter collecting exploratory trajectories, we synthesize new\ntasks Q\nsyn \nfrom these interactions, and then rerun our skill\nacquisition and refinement pipeline on the resulting data to\niteratively expand the skill library. Compared to the ran-\ndom exploration strategy (Zhai et a"
+    },
+    {
+      "aiAssistanceScore": 0.16827197,
+      "confidence": "Medium",
+      "endIndex": 3110,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 1159,
+      "text": "al., 2025), our approach\ndiscovers a more diverse set of skills.\n4. SkillX Usage\nPlanning Skills Retrieval and Pseudo-Plan Rewriting.\nFor a novel and complex agent task q, directly retrieving\npast experiences based solely on task similarity may lead\nto a mismatch between retrieved experiences and the ac-\ntual execution trajectory. This issue becomes particularly\npronounced in environments where execution dynamics are\nstrongly influenced by user profiles, contextual constraints,\nor other external factors. To improve retrieval relevance,\ninspired by (Gao et al., 2022), we first retrieve high-level\nplanning skills associated with similar tasks P(q) = \u03c1(q),\nwhere \u03c1 is a similarity retrieval function and P(q) is the\nretrieved planning skills. Then we prompt the model to\nself-rewrite a task-specific pseudo-plan conditioned on the\ncurrent task \u02dcp(q) = LLM\nrewrite\n\nq, P(q)\n\u0001\n. This rewritten\npseudo-plan serves as an intermediate retrieval query to bet-\nter align subsequent skill retrieval with the current execution\nsetting. To mitigate hallucination risks and prevent specula-\ntive content from affecting agent behavior, the pseudo-plan\nis not injected into the final system prompt.\nFunctional and Atomic Skills Retrieve. Given the rewrit-\nten pseudo-plan \u02dcp(q) = {step\n1\n, step\n2\n, . . . , step\np\n}, we treat\neach step as a retrieval query to retrieve functional and\natomic skills. For step\ni\n, we first retrieve relevant skills\nS\ni \n= \u03c1(step\ni\n) and then remove duplicates across steps,\nS\n\u2032 \n= dedup\n\u0010 \nS\np\ni=1 \nS\ni\n\u0011\n. To keep the context concise\nand task-relevant, we further ask the LLM to self-filter\nthe retrieved candidates and retain only applicable skills\nS\nq \n= LLM select(q, \u02dcp(q), S\n\u2032\n), where S\nq \nis the final skill\nset used for solving the query q.\n5. Experiment\n5.1. Experimental Settings\nBenchmarks and Metrics. We conduct the evaluation on\ncomplex, long-horizon, user-interactive agent benchmarks,\nincluding BFCL-v3 (Patil e"
+    },
+    {
+      "aiAssistanceScore": 0.15409702,
+      "confidence": "Medium",
+      "endIndex": 4760,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3109,
+      "text": "et al., 2025), AppWorld (Trivedi\net al., 2024), and \u03c4 \n2\n-bench (Barres et al., 2025). For BFCL-\nv3, we use the base multi-turn category and randomly split it\ninto 50 training instances and 150 test instances. AppWorld\nprovides 90 training instances and the Test Normal category\nas test set. \u03c4 \n2\n-bench defines training and test splits for\neach sub-domain. Additional details are provided in the\nAppendix A.1. For AppWorld and BFCL-v3, we report\nAvg@4 and Pass@4, the average success rate over four\nindependent runs and the probability of succeeding at least\nonce across four runs, respectively. Following the (Barres\net al., 2025) evaluation setup, we report Pass\u02c6 1, the pass rate\nover running four times.\nModels and Baselines. To assess the effectiveness of\nSkillX, we evaluate three Agentic base models that\nvary in model size and reasoning style (thinking and non-\nthinking), including Qwen3-32B (Yang et al., 2025), Kimi-\nK2-Instruct-0905 (Team et al., 2025b), and GLM-4.6 (Team\net al., 2025a). Among them, GLM-4.6 has been reported\nto exhibit strong native agentic capabilities in agent mid-\ntraining, serving as a competitive backbone for our study.\nWe compare against four representative baselines: (1) No-\nmemory, which performs inference without retrieving any\nprior experience; (2) A-Mem (Xu et al., 2025), a system\nthat dynamically manages structured episodic memories;\n(3) AWM (Wang et al., 2025c), which reuses modular work-\nflows distilled from historical trajectories; and (4) ExpeL\n(Zhao et al., 2024), which retrieves relevant past trajectories\nas few-shot demonstrations and incorporates distilled in-\nsights to improve LLM perfor"
+    },
+    {
+      "aiAssistanceScore": 0.15295303,
+      "confidence": "Medium",
+      "endIndex": 5701,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 4759,
+      "text": "rmance. For a fair comparison,\nall methods retrieve experience only based on the user\u2019s\ninitial query and insert the retrieved content into the system\nprompt following a unified protocol. Full baseline details\nare provided in the Appendix A.2.\nImplementation Details. To construct SkillX, we use\nGLM-4.6 (Team et al., 2025a) independently rollouts four\ntimes per training task, followed by skill extraction, skill\nrefinement, and skill expansion. The maximum number of\nrefinement iterations is set to 3. For efficiency, we limit\nenvironment exploration to one rollout per training task; the\nsampling temperature is 1.0 during exploration. We use\nQwen3-Embedding-8B (Zhang et al., 2025d) for both skill\ndeduplication and skill retrieval, with a minimum cosine\nsimilarity threshold of 0.45 for retrieval. During solving new\ntasks, we use the same model for both Pseudo-Plan rewriting\nand action execution. For the other baselines, we evaluate\n5"
+    },
+    {
+      "aiAssistanceScore": 0.15295303,
+      "confidence": "Medium",
+      "endIndex": 258,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nModel Methods \nBFCL-V3 AppWorld \u03c4 \n2\n-Bench\nAvg@4 Pass@4 Avg@4 Pass@4 Retail Airline Telecom\nQwen3-32B\nNo Memory\n\u2217 \n53.67 73.33 27.68 47.62 53.75 38.75 36.25\nA-Mem\n\u2217 \n53.67 73.00 26.79 50.59"
+    },
+    {
+      "aiAssistanceScore": 0.08423856,
+      "confidence": "Medium",
+      "endIndex": 718,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 257,
+      "text": "9 53.12 38.75 38.12\nAWM\n\u2217 \n55.67 76.00 30.80 55.95 55.00 40.00 38.12\nAWM\n\u2021 \n56.67 76.33 34.45 56.25 57.50 41.25 40.62\nExpeL\n\u2217 \n57.33 77.67 32.87 58.93 56.25 42.50 39.38\nExpeL\n\u2021 \n59.33 78.83 32.94 58.78 58.12 43.75 41.25\nSkillX\n\u2021 \n63.67 82.00 35.12 58.93 66.87 47.50 43.75\nKimi-K2-Instruct-0905\nNo Memory\n\u2217 \n65.17 78.00 46.88 70.24 75.62 51.25 78.12\nA-Mem\n\u2217 \n65.17 76.67 46.58 72.62 76.25 52.50 76.87\nAWM\n\u2217 \n65.33 79.00 49.70 76.19 76.25 53.75 77.50\nAWM\n\u2021 \n64.67"
+    },
+    {
+      "aiAssistanceScore": 0.04576406,
+      "confidence": "Medium",
+      "endIndex": 1435,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 717,
+      "text": "7 79.17 50.60 76.49 76.25 53.75 77.50\nExpeL\n\u2217 \n66.33 79.33 52.53 78.57 77.50 55.50 78.75\nExpeL\n\u2021 \n66.00 79.67 52.98 78.87 77.50 56.25 79.37\nSkillX\n\u2021 \n66.83 81.33 56.40 81.55 78.12 58.75 82.50\nGLM-4.6\nNo Memory\n\u2217 \n76.67 83.33 60.27 83.33 76.25 70.00 70.63\nA-Mem\n\u2217 \n76.50 83.00 60.57 83.93 76.88 70.00 68.75\nAWM\n\u2217 \n77.17 84.00 62.20 84.52 77.50 71.25 70.63\nExpeL\n\u2217 \n78.83 85.33 64.14 85.12 77.50 72.50 71.25\nSkillX\n\u2217 \n79.50 86.00 64.88 88.69 82.50 76.25 71.88\nTable 1. Main results of SkillX on three benchmarks. Methods with \u2217 mean that the experience extraction model is aligned with the\ninference model. Methods with \u2021 mean that GLM-4.6 is used for experience extraction, while inference still relies on the original "
+    },
+    {
+      "aiAssistanceScore": 0.09115607,
+      "confidence": "Medium",
+      "endIndex": 3623,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1434,
+      "text": " model.\ntwo settings: (1) Distillation paradigm: a strong agent\n(GLM-4.6) is used to extract experiences to build an expe-\nrience repository, and the execution model then performs\ninference; (2) Self-evolution paradigm: the experience ex-\ntraction model is kept consistent to the execution model to\nenable self-extraction, following the original experimental\nprotocol of each method. Additional implementation details\nare provided in the Appendix A.3.\n5.2. Main Results\nSkillX \nBoost Agentic Performance of Base LLMs. As\nshown in Table 1, SkillX improves the base model\u2019s per-\nformance. In particular, Qwen3-32B gains roughly around\n10 points across multiple benchmarks. For K2 (Kimi-K2-\nInstruct-0905), we observe a clear improvement on App-\nWorld, whereas the gains are modest on the other two tool\ncall intensive benchmarks. We infer this is because K2 re-\nlies more heavily on the original tool schema and does not\neffectively leverage the additional contextual information.\nMulti-Level Skills Design Outperform Other Forms\nof Experience Representation. When the experience\nextraction model is aligned with the execution model,\nSkillX consistently outperforms all baseline methods, as\nindicated by the methods with \u2217 in Table 1. Among them,\nExpeL retrieves past trajectories and uses them as few-shot\ndemonstrations, which provides a more direct performance\ngain than the other baselines. However, the agent capabil-\nity required for multi-level skill decoupling offers a more\nadvantageous form of experience representation.\nSuboptimal Experience Representations Hinder Trans-\nfer Performance. We further evaluate the GLM-4.6 ex-\ntracted experience with AWM and ExpeL on the weaker\nmodels, see the results of methods with \u2021 in Table 1. How-\never, the performance still lagged behind that of SkillX.\nThis indicates that distilling experience from a strong\nmodel is effective, but the form of experience represen-\ntation is even more critical. Consequently, suboptimal\nexperience representation can hinder effective experience\ntransfer. These results further demonstrate the advantage of\nSkillX in transferring experience across base models.\nSkillX can Expand Base Model\u2019s Capability Bou"
+    },
+    {
+      "aiAssistanceScore": 0.15396146,
+      "confidence": "Medium",
+      "endIndex": 4328,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 3622,
+      "text": "undary.\nWe observe that experience-based learning leads to substan-\ntial Pass@4 improvements for the weaker models, K2 and\nQwen3-32B. This suggests that, in practice, the most direct\nway to extend the capability boundary of a base model is to\ndistill knowledge from a stronger model (Yue et al., 2025).\nIn contrast, for the stronger model GLM-4.6, neither the\nbaseline nor SkillX yields a significant gain in Pass@4.\nThis indicates that stronger models already possess robust\ncapabilities in exploration, planning, and tool use, leav-\ning limited headroom for further capability expansion via\nexperience-based augmentation. Nevertheless, the modest\nimprovements still support the effectiveness of SkillX.\n6"
+    },
+    {
+      "aiAssistanceScore": 0.15396146,
+      "confidence": "Medium",
+      "endIndex": 1387,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nFigure 3. Comprehensive Analysis of SkillX. (a) Performance of Multi-skills: Models exhibit varying performance under different\nskill composition. (b) Execution efficiency of Multi-skills: Jointly composing all skills yields the best execution efficiency. (c) Iterative\noptimization: Iterative skill refinement further improves performance. (d) Skill expansion strategies: Experience-guided expansion\nachieves the best on scalability and performance gains. (e) Analysis of Input tokens: Properly balancing input tokens is crucial for\ncontrolling inference cost. (f) Analysis of Execution steps: Experience-based learning reduces the number of execution steps.\n5.3. Analysis\nWhich skill is more effective? We analyze the behaviors\nof our multi-level skill across models on AppWorld, and\nthe results are shown in Figure 3 (a) and Figure 3 (b). (i)\nPlanning skills consistently reduce the number of execu-\ntion steps across all models, with particularly pronounced\ngains for weaker models such as Qwen3-32B and K2, espe-\ncially when combined with Functional Skills. We attribute\nthis to their limited exploration capability in complex en-\nvironments. Notably, for Qwen3-32B, adding Functional\nand Atomic Skills can even hurt performance, as the model\ntends to over-imitate retrieved skills rather than adapt them\nto novel "
+    },
+    {
+      "aiAssistanceScore": 0.053095683,
+      "confidence": "Medium",
+      "endIndex": 3759,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1386,
+      "text": " tasks. For stronger models, pseudo-planning may\nfail to faithfully capture underlying environment dynamics\nin complex scenarios, and can therefore become counterpro-\nductive. (ii) Functional skills contribute the most to overall\nperformance improvements: equipping K2 and GLM-4.6\nwith Functional and Atomic Skills alone already yields ob-\nservable gains, highlighting the advantage of skills as an\neffective representation of experience. (iii) Atomic skills\nprovide crucial clarifications for key APIs. When they are\nabsent, performance drops substantially, further validating\nthe need to supplement tool schemas and to cover tools miss-\ning from Functional Skills. Finally, we find that GLM-4.6\nbenefits the most from using all skill types; K2 performs best\nwith Functional + Atomic Skills; and Qwen3-32B achieves\nits best performance when only Planning Skills are enabled.\nThis further demonstrates that multi-level skills can compre-\nhensively cover the capabilities required for diverse models\nto execute agent tasks.\nIterative Refinement Strategies Further Enhances\nSkillX Performance. We evaluate effectiveness of\nmulti-round iterative refinement for the skill library of\nSkillX on AppWorld (Figure 3 (c)). Overall, multiple\niterations further improve performance on both training and\ntest sets. Leveraging existing training data, the process\ncontinually improves various aspects of skills, such as doc-\numentation and content. Besides, it can slightly expand\nthe size of the skill library ( Figure 3 (d)). However, when\ntraining data are limited, text-only optimization can lead to\noverfitting. Thus, selecting an appropriate number of update\nrounds is crucial to obtain a higher-quality skill library.\nSkill Expansion Strategies Improve Generalization.\nWe compare two skill expansion strategies: random ex-\nploration and experience-guided expansion. The results\nare as shown in Figure 3 (d). In terms of skill growth, the\nexperience-guided strategy yields substantially more novel\nskills, as random exploration treats past executions in iso-\nlation and repeatedly rediscovers already identified skills.\nEmpirically, the experience guided strategy yields perfor-\nmance improvement through skill expansion. Overall, our\nresults indicate that in complex environments, particularly\nunder scarce training data, skill expansion is a crucial com-\nponent of experience lea"
+    },
+    {
+      "aiAssistanceScore": 0.08771534,
+      "confidence": "Medium",
+      "endIndex": 3767,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 3758,
+      "text": "arning.\n7"
+    },
+    {
+      "aiAssistanceScore": 0.08771534,
+      "confidence": "Medium",
+      "endIndex": 1341,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nSkillX Enhances Agent Execution Efficiency. Learn-\ning from experience not only improves the performance of\nthe base model, but also enhances the execution efficiency\nof the agent. Our experiments further corroborate this ef-\nfect (see Figure 3 (e) and Figure 3 (f)). Although we do\nnot achieve the minimum number of execution steps or the\nfewest input tokens, we obtain the best overall performance\n(see Table 1). These results further highlight the advantages\nof our multi-level skill design and skills library construction.\n6. Further Analysis\n6.1. Evaluating SkillX Across Other Base Models\nWe further evaluate SkillX on stronger base models, in-\ncluding DeepSeek-V3.2 and GPT-4.1, which are at least\ncomparable to, and in some cases stronger than GLM-\n4.6. We find that SkillX provides consistent performance\ngains, whether the skills are extracted by these stronger\nmodels themselves or constructed using GLM-4.6.\nMethods \nBFCL-v3 Appworld\nAvg@4 Pass@4 Avg@4 Pass@4\nDeepSeek-V3.2\nNo Memory 64.33 81.33 61.90 84.08\nSkillX\nGLM-Extract 67.17 83.33 64.28 86.90\nSelf-Extract 67.83 84.67 65.48 88.39\nGPT-4.1\nNo Memory 49.66 58.39 66.37 82.74\nSkillX\nGLM-Extract 60.00 69.33 66.82 84.52\nSelf-Extract 50.67 56.67 68.60 82.14\nTable 2. Performance of SkillX on other base models"
+    },
+    {
+      "aiAssistanceScore": 0.1494519,
+      "confidence": "Medium",
+      "endIndex": 2885,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 1340,
+      "text": "s.\n6.2. Ablation Study on Three Components of SkillX\nWe conduct ablation studies on the three key components\nof SkillX, i.e., multi-level skills design, skills refinement,\nand skills expansion, as shown in Table 3. The results in\nTable 3 suggest that SkillX is robust to its underlying\nexperience representation, while iterative refinement and\nskill expansion can offer further improvements depending\non the model and the particular combination of components.\nPlease note that we do not perform ablations of skills itera-\ntion and skills expansion on \u03c4 \n2\n-Bench. This is because \u03c4 \n2\n-\nBench is a user-interactive benchmark whose tool schemas\nare relatively simple in both number and dependency struc-\nture, and its training set already covers many task patterns\ndirectly. More broadly, for user-centric benchmarks of\nthis type (e.g., dialogue benchmarks), it remains an open\nquestion whether experience learning centered around tool-\nschema-based skills is the most appropriate formulation.\nTherefore, we believe that component studies on skill itera-\ntion and skill expansion are less suitable for \u03c4 \n2\n-Bench, and\nwe do not include them in our ablation experiments.\nModel Methods \nBFCL-V3 AppWorld\nAvg@4 Pass@4 Avg@4 Pass@4\nGLM-4.6\nNo Memory 76.67 83.33 60.27 83.33\nVanilla-Iter1 78.50 85.33 62.35 83.33\nVanilla-Iter2 79.50 86.00 64.29 85.12\nVanilla-Iter3 78.83 84.67 61.46 85.71\nExpand-Iter1 78.50 85.33 64.58 83.93\nExpand-Iter2 78.83 85.33 64.88 87.50\nExpand-Iter3 78.83 84.67 64.88 88.69\nTable 3. Ablation results of SkillX on three compo"
+    },
+    {
+      "aiAssistanceScore": 0.20232745,
+      "confidence": "Medium",
+      "endIndex": 4775,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 2884,
+      "text": "onents.\nSpecifically, Vanilla-Iter1 uses only the multi-level skills design;\nVanilla-Iter2 and Vanilla-Iter3 additionally incorporate skills re-\nfinement; Expand-Iter1 uses the multi-level skills design together\nwith skills expansion; Expand-Iter2 and Expand-Iter3 combine\nmulti-level skills design, skills refinement, and skills expansion.\n6.3. Case Study\nWe also provide qualitative cases to illustrate how agents\nleverage SkillX and how retrieved skills shape their be-\nhavior when solving unseen tasks. Detailed cases are pre-\nsented in Appendix B. These cases show that skill libraries\nhelp agents avoid common failures such as incorrect API\ncall sequences, missing prerequisite checks, and the inabil-\nity to handle conversational topic shifts. By framing domain\nknowledge as reusable skills, agents can complete complex\nmulti-step tasks that the baseline method fails, reducing\ntrial and error from multiple failed attempts to successful\nexecution on the first attempt.\n7. Related Work\nEncoding For Agent Experience. With the advent of\nthe experience era (Sutton, 2025), agents can achieve self-\nevolving (Gao et al., 2025; Fang et al., 2025b; Xia et al.,\n2026) by encoding past experience and reusing it in con-\ntext (Dou et al., 2026) to guide future behavior. Existing\napproaches to text token-level experience encoding (Zhang\net al., 2025b; Hu et al., 2025) can be broadly grouped into\nthree categories: (i) Case-based Experience: Agents directly\nstore successful task-execution trajectories and retrieve them\nlater as few-shot examples to new problem solving (Zhao\net al., 2024; Zheng et al., 2024; Zhou et al., 2025). (ii)\nStrategy-based Experience: By summarizing and contrast-\ning successful versus failed trajectories, agents distill higher-\nlevel insights or workflows (Cao et al., 2025; Ouyang et al.,\n2025; Cai et al., 2025a; Wang et al., 2025c; Tang et al., 2025;\nZhang e"
+    },
+    {
+      "aiAssistanceScore": 0.2742547,
+      "confidence": "Low",
+      "endIndex": 5008,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 4774,
+      "text": "et al., 2025a). (iii) Skill-based Experience: Trajec-\ntories are segmented and distilled into modular, reusable\nskills, such as textual skills or programmatic skills (Wang\net al., 2025b;a; 2024; Fang et al., 2025c; Han et al., 2025;\n8"
+    },
+    {
+      "aiAssistanceScore": 0.2742547,
+      "confidence": "Low",
+      "endIndex": 1209,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nChen et al., 2026; Zheng et al., 2026; Wang et al., 2026a;\nZhou et al., 2026a; Zhang et al., 2026b; Ni et al., 2026;\nZhou et al., 2026b). However, it remains unclear which\nunified experience representation is both easily pluggable\nand consistently effective, especially in diverse and complex\nagentic tool-use scenarios (Trivedi et al., 2024; Yao et al.,\n2024; Patil et al., 2025; Barres et al., 2025; He et al., 2025;\nLi et al., 2025; Zheng et al., 2025; Jiang et al., 2026; Xing\net al., 2026; Li, 2026; Li et al., 2026). In this work, we adopt\na hybrid representation, high-level planning coupled with\ntextual skills, which yields substantial improvements for the\nbase model.\nAgent Experience Knowledge Base Construction. The\nconstruction pipeline of an experience knowledge base typi-\ncally consists of two steps: static construction and dynamic\nupdating. (i) Static construction repeatedly attempts tasks\non a training set or human-curated information sources, ex-\ntracts experience, and iteratively refines it until performance\nplateaus (Zhang et al., 2025c; Cai et al., 2025b; Anthropic,\n2025; Wang et al., 2026b; Gallego, 2026; Yang e"
+    },
+    {
+      "aiAssistanceScore": 0.19916478,
+      "confidence": "Medium",
+      "endIndex": 3148,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 1208,
+      "text": "et al., 2026a).\n(ii) Dynamic updating updates the ExperienceKB immedi-\nately after executing new tasks, enabling experience reuse\nin subsequent tasks (Latimer et al., 2025; Fang et al., 2025a;\nCao et al., 2025; Du et al., 2025; Yang et al., 2026b; Yao\net al., 2025; Zhang et al., 2026a; Liang et al., 2026).\nWhile dynamic updating is central to continual learning\nfrom experience, pre-building a strong static ExperienceKB\nremains necessary in practice. However, under the task-\nscarcity challenge in complex agent settings (Patil et al.,\n2025; Barres et al., 2025; He et al., 2025; Li et al., 2025),\nwe further extend skills by combining task synthesis (Zhai\net al., 2025; Mai et al., 2025; Shi et al., 2025; Ramrakhya\net al., 2025; Guo et al., 2025) to construct more challenging\ntasks. To our knowledge, this is the first work to provide\na directly reusable skill knowledge base together with an\nautomated pipeline for skill construction.\n8. Conclusion\nWe introduced SkillX, an automated framework for build-\ning a plug-and-play skill library for LLM-based agents.\nTo enable more efficient experience transfer, we design a\nmulti-level skills, including planning skills, functional skills,\nand atomic skills from the perspective of tool granularity.\nSkillX iteratively refines and expands the library through\nthree core components: i) skills extraction, which rolls out\nan agent with the current library and extracts multi-level\nskills; ii) skills refinement, which iteratively improves skills\nusing execution feedback, while maintaining quality via\nskill merging and strict filtering; and iii) exploratory skills\nexpansion, which proactively broadens coverage beyond\nthe seed training set. Our experiments demonstrate that\nSkillX transfers effectively to other models and provides\nadvantages in experience representation. Finally, we will re-\nlease the optimized skill library constructed by SkillX to\nfacilitate further community explor"
+    },
+    {
+      "aiAssistanceScore": 0.09028385,
+      "confidence": "Medium",
+      "endIndex": 5225,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 3147,
+      "text": "ration.\nImpact Statements\nThis work advances generalizable agent learning by trans-\nforming isolated trial-and-error experience into a reusable,\nstructured skill knowledge base that can be shared across\nagents and environments. By enabling weaker agents to\nbenefit from skills distilled by stronger ones, the proposed\nframework reduces redundant exploration, improves sample\nefficiency, and lowers the computational and environmental\ncosts of training LLM agents. The plug-and-play design pro-\nmotes modularity and reproducibility, supporting broader\nadoption in long-horizon, user-interactive applications. Po-\ntential risks include over-reliance on pre-built skills and the\npropagation of biases present in source agents; however, the\nautomated refinement and expansion mechanisms provide\na pathway to mitigate stagnation and encourage continual\nadaptation.\nLimitations\nCross-environment transfer. SkillX is currently most nat-\nurally applicable when skills can be grounded in a relatively\nstable tool environment. The extracted skills are associ-\nated with specific tool schemas, which makes direct reuse\nacross substantially different domains or tool ecosystems\nless straightforward.\nUser-interactive settings. The current study focuses mainly\non tool-using agent environments. More user interactive\nscenarios, particularly dialogue scenarios without function\ncalls, are not yet the primary focus of this work.\nAcknowledgement\nThis work was supported by the Yongjiang Talent Introduc-\ntion Programme (2021A-156-G), the Ant Group through\nCCF-Ant Research Fund (CCF-AFSG RF20250515), and\nInformation Technology Center and State Key Lab of\nCAD&CG, Zhejiang University. This work was supported\nby Ant Group and Zhejiang University - Ant Group Joint\nLaboratory of Knowledge Graph.\nReferences\nAnthropic. skills. https://github.com/anthropics/skills,\n2025. URL https://github.com/anthropics/\nskills. GitHub repository.\nBarres, V., Dong, H., Ray, S., Si, X., and Narasimhan, K.\n\u03c4 \n2\n-bench: Evaluating conversational agents in a dual-\ncontrol environment, 2025. URL https://arxiv.\n9"
+    },
+    {
+      "aiAssistanceScore": 0.09028385,
+      "confidence": "Medium",
+      "endIndex": 81,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\norg/abs/2506."
+    },
+    {
+      "aiAssistanceScore": 0.019158328,
+      "confidence": "High",
+      "endIndex": 1180,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 80,
+      "text": ".07982.\nCai, Y., Cai, S., Shi, Y., Xu, Z., Chen, L., Qin, Y., Tan,\nX., Li, G., Li, Z., Lin, H., Mao, Y., Li, K., and Sun,\nX. Training-free group relative policy optimization.\nCoRR, abs/2510.08191, 2025a. doi: 10.48550/ARXIV.\n2510.08191. URL https://doi.org/10.48550/\narXiv.2510.08191.\nCai, Z., Guo, X., Pei, Y., Feng, J., Chen, J., Zhang, Y.,\nMa, W., Wang, M., and Zhou, H. FLEX: continuous\nagent evolution via forward learning from experience.\nCoRR, abs/2511.06449, 2025b. doi: 10.48550/ARXIV.\n2511.06449. URL https://doi.org/10.48550/\narXiv.2511.06449.\nCao, Z., Deng, J., Yu, L., Zhou, W., Liu, Z., Ding, B., and\nZhao, H. Remember me, refine me: A dynamic pro-\ncedural memory framework for experience-driven agent\nevolution, 2025. URL https://arxiv.org/abs/\n2512.10696.\nChen, T., Li, Y., Solodko, M., Wang, S., Jiang, N., Cui,\nT., Hao, J., Ko, J., Abdali, S., Xu, L., Zheng, S., Fan,\nH., Cameron, P., Wagle, J., and Koishida, K. Cua-skill:\nDevelop skills for computer using agent, 2026. URL\nhttps://arxiv.org/abs/2601.21123.\nDeepSeek-AI. Deepseek-v3.2: Pushing the frontier of open\nlarge language m"
+    },
+    {
+      "aiAssistanceScore": 0.0145316,
+      "confidence": "High",
+      "endIndex": 2297,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 1179,
+      "text": "models. CoRR, abs/2512.02556, 2025.\ndoi: 10.48550/ARXIV.2512.02556. URL https://\ndoi.org/10.48550/arXiv.2512.02556.\nDou, S., Zhang, M., Yin, Z., Huang, C., Shen, Y., Wang,\nJ., Chen, J., Ni, Y., Ye, J., Zhang, C., Xie, H., Hu, J.,\nWang, S., Wang, W., Xiao, Y., Liu, Y., Xu, Z., Guo, Z.,\nZhou, P., Gui, T., Wu, Z., Qiu, X., Zhang, Q., Huang,\nX., Jiang, Y.-G., Wang, D., and Yao, S. Cl-bench: A\nbenchmark for context learning, 2026. URL https:\n//arxiv.org/abs/2602.03587.\nDu, X., Li, L., Zhang, D., and Song, L. Memr\n3\n: Memory\nretrieval via reflective reasoning for llm agents, 2025.\nURL https://arxiv.org/abs/2512.20237.\nFang, J., Deng, X., Xu, H., Jiang, Z., Tang, Y., Xu, Z.,\nDeng, S., Yao, Y., Wang, M., Qiao, S., Chen, H., and\nZhang, N. Lightmem: Lightweight and efficient memory-\naugmented generation, 2025a. URL https://arxiv.\norg/abs/2510.18866.\nFang, J., Peng, Y., Zhang, X., Wang, Y., Yi, X., Zhang,\nG., Xu, Y., Wu, B., Liu, S., Li, Z., Ren, Z., Aletras,\nN., Wang, X., Zhou, H., and Meng, Z. A comprehen-\nsive survey of self-evolving AI agents: A new paradigm\nbridging foundation models and lifelong agentic sy"
+    },
+    {
+      "aiAssistanceScore": 0.021490397,
+      "confidence": "High",
+      "endIndex": 3192,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2296,
+      "text": "ystems.\nCoRR, abs/2508.07407, 2025b. doi: 10.48550/ARXIV.\n2508.07407. URL https://doi.org/10.48550/\narXiv.2508.07407.\nFang, R., Liang, Y., Wang, X., Wu, J., Qiao, S., Xie, P.,\nHuang, F., Chen, H., and Zhang, N. Memp: Exploring\nagent procedural memory. CoRR, abs/2508.06433, 2025c.\ndoi: 10.48550/ARXIV.2508.06433. URL https://\ndoi.org/10.48550/arXiv.2508.06433.\nGallego, V. Distilling feedback into memory-as-a-tool, 2026.\nURL https://arxiv.org/abs/2601.05960.\nGao, H., Geng, J., Hua, W., Hu, M., Juan, X., Liu, H., Liu,\nS., Qiu, J., Qi, X., Wu, Y., Wang, H., Xiao, H., Zhou,\nY., Zhang, S., Zhang, J., Xiang, J., Fang, Y., Zhao, Q.,\nLiu, D., Ren, Q., Qian, C., Wang, Z., Hu, M., Wang,\nH., Wu, Q., Ji, H., and Wang, M. A survey of self-\nevolving agents: On path to artificial super intelligence.\nCoRR, abs/2507.21046, 2025. doi: 10.48550/ARXIV.\n2507.21046. URL https://doi.org/10.48550/\narXiv.2507."
+    },
+    {
+      "aiAssistanceScore": 0.015381934,
+      "confidence": "High",
+      "endIndex": 4135,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 3191,
+      "text": ".21046.\nGao, L., Ma, X., Lin, J., and Callan, J. Precise zero-shot\ndense retrieval without relevance labels, 2022. URL\nhttps://arxiv.org/abs/2212.10496.\nGuo, J., Yang, L., Chen, P., Xiao, Q., Wang, Y., Juan, X.,\nQiu, J., Shen, K., and Wang, M. Genenv: Difficulty-\naligned co-evolution between llm agents and environment\nsimulators, 2025. URL https://arxiv.org/abs/\n2512.19682.\nHan, D., Couturier, C., D\n\u00b4\n\u0131az, D. M., Zhang, X., R \n\u00a8\nuhle,\nV., and Rajmohan, S. Legomem: Modular procedu-\nral memory for multi-agent LLM systems for work-\nflow automation. CoRR, abs/2510.04851, 2025. doi:\n10.48550/ARXIV.2510.04851. URL https://doi.\norg/10.48550/arXiv.2510.04851.\nHe, W., Sun, Y., Hao, H., Hao, X., Xia, Z., Gu, Q., Han, C.,\nZhao, D., Su, H., Zhang, K., Gao, M., Su, X., Cai, X., Cai,\nX., Yang, Y., and Zhao, Y. Vitabench: Benchmarking llm\nagents with versatile interactive tasks in real-world ap-\nplications, 2025. URL https://arxiv.org/abs/\n2509."
+    },
+    {
+      "aiAssistanceScore": 0.015786158,
+      "confidence": "High",
+      "endIndex": 4671,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 4134,
+      "text": ".26490.\nHu, Y., Liu, S., Yue, Y., Zhang, G., Liu, B., Zhu, F., Lin, J.,\nGuo, H., Dou, S., Xi, Z., Jin, S., Tan, J., Yin, Y., Liu, J.,\nZhang, Z., Sun, Z., Zhu, Y., Sun, H., Peng, B., Cheng,\nZ., Fan, X., Guo, J., Yu, X., Zhou, Z., Hu, Z., Huo, J.,\nWang, J., Niu, Y., Wang, Y., Yin, Z., Hu, X., Liao, Y.,\nLi, Q., Wang, K., Zhou, W., Liu, Y., Cheng, D., Zhang,\nQ., Gui, T., Pan, S., Zhang, Y., Torr, P., Dou, Z., Wen,\nJ.-R., Huang, X., Jiang, Y.-G., and Yan, S. Memory in the\nage of ai agents, 2025. URL https://arxiv.org/\nabs/2512.13564.\n10"
+    },
+    {
+      "aiAssistanceScore": 0.015786158,
+      "confidence": "High",
+      "endIndex": 458,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nJiang, G., Su, Z., Qu, X., and Fung, Y. R. Xskill: Contin-\nual learning from experience and skills in multimodal\nagents, 2026. URL https://arxiv.org/abs/\n2603.12056.\nLatimer, C., Boschi, N., Neeser, A., Bartholomew, C., Sri-\nvastava, G., Wang, X., and Ramakrishnan, N. Hind-\nsight is 20/20: Building agent memory that retains, re-\ncalls, and reflects, 2025. URL https://arxiv.org/\nabs/2512."
+    },
+    {
+      "aiAssistanceScore": 0.01741129,
+      "confidence": "High",
+      "endIndex": 1525,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 457,
+      "text": ".12818.\nLi, J., Zhao, W., Zhao, J., Zeng, W., Wu, H., Wang, X., Ge,\nR., Cao, Y., Huang, Y., Liu, W., Liu, J., Su, Z., Guo, Y.,\nZhou, F., Zhang, L., Michelini, J., Wang, X., Yue, X.,\nZhou, S., Neubig, G., and He, J. The tool decathlon:\nBenchmarking language agents for diverse, realistic, and\nlong-horizon task execution, 2025. URL https://\narxiv.org/abs/2510.25726.\nLi, X. When single-agent with skills replace multi-agent\nsystems and when they fail. CoRR, abs/2601.04748, 2026.\ndoi: 10.48550/ARXIV.2601.04748. URL https://\ndoi.org/10.48550/arXiv.2601.04748.\nLi, X., Chen, W., Liu, Y., Zheng, S., Chen, X., He, Y.,\nLi, Y., You, B., Shen, H., Sun, J., Wang, S., Zeng, Q.,\nWang, D., Zhao, X., Wang, Y., Chaim, R. B., Di, Z.,\nGao, Y., He, J., He, Y., Jing, L., Kong, L., Lan, X., Li,\nJ., Li, S., Li, Y., Lin, Y., Liu, X., Liu, X., Lyu, H., Ma,\nZ., Wang, B., Wang, R., Wang, T., Ye, W., Zhang, Y.,\nXing, H., Xue, Y., Dillmann, S., and Lee, H. Skillsbench:\nBenchmarking how well agent skills work across diverse\ntasks. CoRR, abs/2602.12670, 2026. doi: 10.48550/\nARXIV.2602."
+    },
+    {
+      "aiAssistanceScore": 0.021335995,
+      "confidence": "High",
+      "endIndex": 2608,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1524,
+      "text": ".12670. URL https://doi.org/10.\n48550/arXiv.2602.12670.\nLiang, Y., Zhong, R., Xu, H., Jiang, C., Zhong, Y., Fang, R.,\nGu, J.-C., Deng, S., Yao, Y., Wang, M., Qiao, S., Xu, X.,\nWu, T., Wang, K., Liu, Y., Bi, Z., Lou, J., Jiang, Y. E.,\nZhu, H., Yu, G., Hong, H., Huang, L., Xue, H., Wang, C.,\nWang, Y., Shan, Z., Chen, X., Tu, Z., Xiong, F., Xie, X.,\nZhang, P., Gui, Z., Liang, L., Zhou, J., Wu, C., Shang, J.,\nGong, Y., unyu Lin, Xu, C., Deng, H., Zhang, W., Ding,\nK., Zhang, Q., Huang, F., Zhang, N., Pan, J. Z., Qi, G.,\nWang, H., and Chen, H. Skillnet: Create, evaluate, and\nconnect ai skills, 2026. URL https://arxiv.org/\nabs/2603.04448.\nLiu, Z., Cai, Y., Zhu, X., Zheng, Y., Chen, R., Wen, Y.,\nWang, Y., E, W., and Chen, S. Ml-master: Towards\nai-for-ai via integration of exploration and reasoning.\nCoRR, abs/2506.16499, 2025. doi: 10.48550/ARXIV.\n2506.16499. URL https://doi.org/10.48550/\narXiv.2506.16499.\nMai, S., Zhai, Y., Chen, Z., Chen, C., Zou, A., Tao, S.,\nLiu, Z., and Ding, B. Cues: A curiosity-driven and\nenvironment-grounded synthesis framework for agentic rl,\nDecember"
+    },
+    {
+      "aiAssistanceScore": 0.015683372,
+      "confidence": "High",
+      "endIndex": 3739,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 2607,
+      "text": "r 2025. URL https://arxiv.org/abs/\n2512.01311.\nMialon, G., Fourrier, C., Swift, C., Wolf, T., LeCun, Y.,\nand Scialom, T. Gaia: a benchmark for general ai as-\nsistants, 2023. URL https://arxiv.org/abs/\n2311.12983.\nNi, J., Liu, Y., Liu, X., Sun, Y., Zhou, M., Cheng, P.,\nWang, D., Zhao, E., Jiang, X., and Jiang, G. Trace2skill:\nDistill trajectory-local lessons into transferable agent\nskills, 2026. URL https://arxiv.org/abs/\n2603.25158.\nNovikov, A., Vu, N., Eisenberger, M., Dupont, E., Huang,\nP., Wagner, A. Z., Shirobokov, S., Kozlovskii, B., Ruiz, F.\nJ. R., Mehrabian, A., Kumar, M. P., See, A., Chaudhuri,\nS., Holland, G., Davies, A., Nowozin, S., Kohli, P., and\nBalog, M. Alphaevolve: A coding agent for scientific\nand algorithmic discovery. CoRR, abs/2506.13131, 2025.\ndoi: 10.48550/ARXIV.2506.13131. URL https://\ndoi.org/10.48550/arXiv.2506.13131.\nOpenAI. System Card for o3-mini, 2025. URL https://\nopenai.com/index/o3-mini-system-card/.\nAccessed on December 11, 2025.\nOu, Y., Luo, Y., Zheng, J., Wei, L., Qiao, S., Zhang, J.,\nZheng, D., Chen, H., and Zhang, N. Automind: Adap-\ntive knowledgeable agent for automated data sc"
+    },
+    {
+      "aiAssistanceScore": 0.01218263,
+      "confidence": "High",
+      "endIndex": 4750,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 3738,
+      "text": "cience.\nCoRR, abs/2506.10974, 2025. doi: 10.48550/ARXIV.\n2506.10974. URL https://doi.org/10.48550/\narXiv.2506.10974.\nOuyang, S., Yan, J., Hsu, I., Chen, Y., Jiang, K., Wang, Z.,\nHan, R., Le, L. T., Daruki, S., Tang, X., Tirumalashetty,\nV., Lee, G., Rofouei, M., Lin, H., Han, J., Lee, C., and\nPfister, T. Reasoningbank: Scaling agent self-evolving\nwith reasoning memory. CoRR, abs/2509.25140, 2025.\ndoi: 10.48550/ARXIV.2509.25140. URL https://\ndoi.org/10.48550/arXiv.2509.25140.\nPatil, S. G., Mao, H., Cheng-Jie Ji, C., Yan, F., Suresh,\nV., Stoica, I., and E. Gonzalez, J. The berkeley func-\ntion calling leaderboard (bfcl): From tool use to agentic\nevaluation of large language models. In Forty-second\nInternational Conference on Machine Learning, 2025.\nQiao, S., Zhao, Y., Qiu, Z., Wang, X., Zhang, J.,\nBin, Z., Zhang, N., Jiang, Y., Xie, P., Huang, F.,\nand Chen, H. Scaling generalist data-analytic agents.\nCoRR, abs/2509.25084, 2025. doi: 10.48550/ARXIV.\n2509.25084. URL https://doi.org/10.48550/\narXiv.2509."
+    },
+    {
+      "aiAssistanceScore": 0.028573891,
+      "confidence": "High",
+      "endIndex": 4759,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 4749,
+      "text": ".25084.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.028573891,
+      "confidence": "High",
+      "endIndex": 992,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nRamrakhya, R., Szot, A., Attia, O., Yang, Y., Nguyen, A.,\nMazoure, B., Gan, Z., Agrawal, H., and Toshev, A. Scal-\ning synthetic task generation for agents via exploration.\nCoRR, abs/2509.25047, 2025. doi: 10.48550/ARXIV.\n2509.25047. URL https://doi.org/10.48550/\narXiv.2509.25047.\nShi, D., Cao, J., Chen, Q., Sun, W., Li, W., Lu, H., Dong,\nF., Qin, T., Zhu, K., Liu, M., Yang, J., Zhang, G.,\nLiu, J., Zhang, C., Wang, J., Jiang, Y. E., and Zhou,\nW. Taskcraft: Automated generation of agentic tasks.\nCoRR, abs/2506.10055, 2025. doi: 10.48550/ARXIV.\n2506.10055. URL https://doi.org/10.48550/\narXiv.2506.10055.\nSutton, Richard S., D. S. Welcome to the Era of Experience,\nApril 2025.\nTang, X., Qin, T., Peng, T., Zhou, Z., Shao, D., Du, T., Wei,\nX., Xia, P., Wu, F., Zhu, H., et al. Agent kb: Leveraging\ncross-domain experience for agentic problem solving.\narXiv preprint arXiv:2507.06229, 2025. URL https:\n//arXiv.org/abs/2507."
+    },
+    {
+      "aiAssistanceScore": 0.090464436,
+      "confidence": "Medium",
+      "endIndex": 2034,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 991,
+      "text": ".06229.\nTeam, ., Zeng, A., Lv, X., Zheng, Q., Hou, Z., Chen, B.,\nXie, C., Wang, C., Yin, D., Zeng, H., Zhang, J., Wang, K.,\nZhong, L., Liu, M., Lu, R., Cao, S., Zhang, X., Huang,\nX., Wei, Y., Cheng, Y., An, Y., Niu, Y., Wen, Y., Bai, Y.,\nDu, Z., Wang, Z., Zhu, Z., Zhang, B., Wen, B., Wu, B.,\nXu, B., Huang, C., Zhao, C., Cai, C., Yu, C., Li, C., Ge,\nC., Huang, C., Zhang, C., Xu, C., Zhu, C., Li, C., Yin,\nC., Lin, D., Yang, D., Jiang, D., Ai, D., Zhu, E., Wang,\nF., Pan, G., Wang, G., Sun, H., Li, H., Li, H., Hu, H.,\nZhang, H., Peng, H., Tai, H., Zhang, H., Wang, H., Yang,\nH., Liu, H., Zhao, H., Liu, H., Yan, H., Liu, H., Chen, H.,\nLi, J., Zhao, J., Ren, J., Jiao, J., Zhao, J., Yan, J., Wang,\nJ., Gui, J., Zhao, J., Liu, J., Li, J., Li, J., Lu, J., Wang,\nJ., Yuan, J., Li, J., Du, J., Du, J., Liu, J., Zhi, J., Gao, J.,\nWang, K., Yang, L., Xu, L., Fan, L., Wu, L., Ding, L.,\nWang, L., Zhang, M., Li, M., Xu, M., Zhao, M., Zhai,\nM., Du, P., Dong, Q., Lei, S., Tu, S., Yang, S., Lu, S.,\nLi, S., Li, S., Shuang-Li, Yang, S., Yi, S., Yu, T.,"
+    },
+    {
+      "aiAssistanceScore": 0.07212139,
+      "confidence": "Medium",
+      "endIndex": 3105,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 2033,
+      "text": ", Tian,\nW., Wang, W., Yu, W., Tam, W. L., Liang, W., Liu, W.,\nWang, X., Jia, X., Gu, X., Ling, X., Wang, X., Fan, X.,\nPan, X., Zhang, X., Zhang, X., Fu, X., Zhang, X., Xu, Y.,\nWu, Y., Lu, Y., Wang, Y., Zhou, Y., Pan, Y., Zhang, Y.,\nWang, Y., Li, Y., Su, Y., Geng, Y., Zhu, Y., Yang, Y., Li,\nY., Wu, Y., Li, Y., Liu, Y., Wang, Y., Li, Y., Zhang, Y.,\nLiu, Z., Yang, Z., Zhou, Z., Qiao, Z., Feng, Z., Liu, Z.,\nZhang, Z., Wang, Z., Yao, Z., Wang, Z., Liu, Z., Chai, Z.,\nLi, Z., Zhao, Z., Chen, W., Zhai, J., Xu, B., Huang, M.,\nWang, H., Li, J., Dong, Y., and Tang, J. Glm-4.5: Agentic,\nreasoning, and coding (arc) foundation models, 2025a.\nURL https://arxiv.org/abs/2508.06471.\nTeam, K., Bai, Y., Bao, Y., Chen, G., Chen, J., Chen, N.,\nChen, R., Chen, Y., Chen, Y., Chen, Y., Chen, Z., Cui, J.,\nDing, H., Dong, M., Du, A., Du, C., Du, D., Du, Y., Fan,\nY., Feng, Y., Fu, K., Gao, B., Gao, H., Gao, P., Gao, T.,\nGu, X., Guan, L., Guo, H., Guo, J., Hu, H., Hao, X., He,\nT., He, W., He, W., Hong, C., Hu, Y., Hu, Z., Huang, W.,\nHuang, Z., Huang, Z., Jiang, T., Jiang, Z., Jin, X.,"
+    },
+    {
+      "aiAssistanceScore": 0.06140331,
+      "confidence": "Medium",
+      "endIndex": 4117,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 3104,
+      "text": ", Kang,\nY., Lai, G., Li, C., Li, F., Li, H., Li, M., Li, W., Li, Y., Li,\nY., Li, Z., Li, Z., Lin, H., Lin, X., Lin, Z., Liu, C., Liu, C.,\nLiu, H., Liu, J., Liu, J., Liu, L., Liu, S., Liu, T. Y., Liu, T.,\nLiu, W., Liu, Y., Liu, Y., Liu, Y., Liu, Y., Liu, Z., Lu, E.,\nLu, L., Ma, S., Ma, X., Ma, Y., Mao, S., Mei, J., Men, X.,\nMiao, Y., Pan, S., Peng, Y., Qin, R., Qu, B., Shang, Z.,\nShi, L., Shi, S., Song, F., Su, J., Su, Z., Sun, X., Sung, F.,\nTang, H., Tao, J., Teng, Q., Wang, C., Wang, D., Wang,\nF., Wang, H., Wang, J., Wang, J., Wang, J., Wang, S.,\nWang, S., Wang, Y., Wang, Y., Wang, Y., Wang, Y., Wang,\nY., Wang, Z., Wang, Z., Wang, Z., Wei, C., Wei, Q., Wu,\nW., Wu, X., Wu, Y., Xiao, C., Xie, X., Xiong, W., Xu,\nB., Xu, J., Xu, J., Xu, L. H., Xu, L., Xu, S., Xu, W., Xu,\nX., Xu, Y., Xu, Z., Yan, J., Yan, Y., Yang, X., Yang, Y.,\nYang, Z., Yang, Z., Yang, Z., Yao, H., Yao, X., Ye, W., Ye,\nZ., Yin, B., Yu, L., Yuan, E., Yuan, H., Yuan, M., Zhan,\nH., Zhang, D., Zhang, H., Zhang, W., Zhang, X., Zhang,\nY., "
+    },
+    {
+      "aiAssistanceScore": 0.0107871005,
+      "confidence": "High",
+      "endIndex": 5358,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 4116,
+      "text": " Zhang, Y., Zhang, Y., Zhang, Y., Zhang, Y., Zhang,\nY., Zhang, Z., Zhao, H., Zhao, Y., Zheng, H., Zheng, S.,\nZhou, J., Zhou, X., Zhou, Z., Zhu, Z., Zhuang, W., and\nZu, X. Kimi k2: Open agentic intelligence, 2025b. URL\nhttps://arxiv.org/abs/2507.20534.\nTrivedi, H., Khot, T., Hartmann, M., Manku, R., Dong, V.,\nLi, E., Gupta, S., Sabharwal, A., and Balasubramanian, N.\nAppworld: A controllable world of apps and people for\nbenchmarking interactive coding agents. In Ku, L., Mar-\ntins, A., and Srikumar, V. (eds.), Proceedings of the 62nd\nAnnual Meeting of the Association for Computational Lin-\nguistics (Volume 1: Long Papers), ACL 2024, Bangkok,\nThailand, August 11-16, 2024, pp. 16022\u201316076. As-\nsociation for Computational Linguistics, 2024. doi: 10.\n18653/V1/2024.ACL-LONG.850. URL https://doi.\norg/10.18653/v1/2024.acl-long.850.\nWang, G., Xie, Y., Jiang, Y., Mandlekar, A., Xiao, C.,\nZhu, Y., Fan, L., and Anandkumar, A. Voyager: An\nopen-ended embodied agent with large language models.\nTrans. Mach. Learn. Res., 2024, 2024. URL https:\n//openreview.net/forum?id=ehfRiF0R3a.\nWang, J., Yan, Q., Wang, Y., Tian, Y., Mishra, S. S., Xu,\nZ., Gandhi, M., Xu, P., and Cheong, L. L. Reinforce-\nment learning for self-improving agent with skill li"
+    },
+    {
+      "aiAssistanceScore": 0.015234927,
+      "confidence": "High",
+      "endIndex": 5597,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 5357,
+      "text": "ibrary.\nCoRR, abs/2512.17102, 2025a. doi: 10.48550/ARXIV.\n2512.17102. URL https://doi.org/10.48550/\narXiv.2512.17102.\nWang, J., Ming, Y., Ke, Z., Joty, S., Albarghouthi, A., and\nSala, F. Skillorchestra: Learning to route agents via skill\n12"
+    },
+    {
+      "aiAssistanceScore": 0.015234927,
+      "confidence": "High",
+      "endIndex": 737,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\ntransfer. CoRR, abs/2602.19672, 2026a. doi: 10.48550/\nARXIV.2602.19672. URL https://doi.org/10.\n48550/arXiv.2602.19672.\nWang, Q., Cheng, Z., Zhang, S., Liu, F., Xu, R., Lian, H.,\nWang, K., Yu, X., Yin, J., Hu, S., Hu, Y., Zhang, S., Liu,\nY., Chen, R., and Wang, H. Memgovern: Enhancing\ncode agents through learning from governed human ex-\nperiences, 2026b. URL https://arxiv.org/abs/\n2601.06789.\nWang, Z. Z., Gandhi, A., Neubig, G., and Fried,\nD. Inducing programmatic skills for agentic tasks.\nCoRR, abs/2504.06821, 2025b. doi: 10.48550/ARXIV.\n2504.06821. URL https://doi.org/10.48550/\narXiv.2504.06821.\nWang, Z. Z., Mao, J., Fried, D., and Neubig, G. Agent\nworkflow m"
+    },
+    {
+      "aiAssistanceScore": 0.04037116,
+      "confidence": "High",
+      "endIndex": 1786,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 736,
+      "text": "memory. In Forty-second International Con-\nference on Machine Learning, ICML 2025, Vancou-\nver, BC, Canada, July 13-19, 2025. OpenReview.net,\n2025c. URL https://openreview.net/forum?\nid=NTAhi2JEEE.\nXia, P., Chen, J., Yang, X., Tu, H., Liu, J., Xiong, K., Han,\nS., Qiu, S., Ji, H., Zhou, Y., Zheng, Z., Xie, C., and\nYao, H. Metaclaw: Just talk \u2013 an agent that meta-learns\nand evolves in the wild, 2026. URL https://arxiv.\norg/abs/2603.17187.\nXing, H., Zhuang, H., Zhao, X., Huang, Y., Tang, Z., and\nZhang, X. Recipes for agents: Understanding skills and\ntheir open questions. Preprint, ResearchGate. doi, 10,\n2026.\nXu, W., Liang, Z., Mei, K., Gao, H., Tan, J., and Zhang,\nY. A-mem: Agentic memory for llm agents, 2025. URL\nhttps://arxiv.org/abs/2502.12110.\nYang, A., Li, A., Yang, B., Zhang, B., Hui, B., Zheng,\nB., Yu, B., Gao, C., Huang, C., Lv, C., Zheng, C., Liu,\nD., Zhou, F., Huang, F., Hu, F., Ge, H., Wei, H., Lin,\nH., Tang, J., Yang, J., Tu, J., Zhang, J., Yang, J., Yang,\nJ., Zhou, J., Zhou, J., Lin, J., Dang, K., Bao, K., Yang,\nK., Yu, L.,"
+    },
+    {
+      "aiAssistanceScore": 0.03289846,
+      "confidence": "High",
+      "endIndex": 3033,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 1785,
+      "text": ", Deng, L., Li, M., Xue, M., Li, M., Zhang,\nP., Wang, P., Zhu, Q., Men, R., Gao, R., Liu, S., Luo,\nS., Li, T., Tang, T., Yin, W., Ren, X., Wang, X., Zhang,\nX., Ren, X., Fan, Y., Su, Y., Zhang, Y., Zhang, Y., Wan,\nY., Liu, Y., Wang, Z., Cui, Z., Zhang, Z., Zhou, Z., and\nQiu, Z. Qwen3 technical report, 2025. URL https:\n//arxiv.org/abs/2505.09388.\nYang, C., Sun, Z., Wei, W., and Hu, W. Beyond static\nsummarization: Proactive memory extraction for llm\nagents, 2026a. URL https://arxiv.org/abs/\n2601.04463.\nYang, Y., Li, J., Pan, Q., Zhan, B., Cai, Y., Du, L., Zhou,\nJ., Chen, K., Chen, Q., Li, X., Zhang, B., and He, L.\nAutoskill: Experience-driven lifelong learning via skill\nself-evolution, 2026b. URL https://arxiv.org/\nabs/2603.01145.\nYao, S., Chen, H., Yang, J., and Narasimhan, K. Web-\nshop: Towards scalable real-world web interaction with\ngrounded language agents, 2023. URL https://\narxiv.org/abs/2207.01206.\nYao, S., Shinn, N., Razavi, P., and Narasimhan, K. \u03c4 -bench:\nA benchmark for tool-agent-user interaction in real-world\ndomains, 2024. URL https://arxiv.org/abs/\n2406.12045.\nYao, Y., Qin, J., Zhang, N., Xu, H., Zhu, Y., Yu, Z., Wang,\nM., Tang, Y., Gu, J.-C., Deng, S., Peng, N., and Chen,\nH. Rethinking knowledge editing in reasonin"
+    },
+    {
+      "aiAssistanceScore": 0.018243013,
+      "confidence": "High",
+      "endIndex": 4105,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 3032,
+      "text": "ng era. Au-\nthorea Preprints, 2025. URL https://doi.org/10.\n36227/techrxiv.176240454.46531513/v1.\nYue, Y., Chen, Z., Lu, R., Zhao, A., Wang, Z., Yue, Y.,\nSong, S., and Huang, G. Does reinforcement learn-\ning really incentivize reasoning capacity in llms beyond\nthe base model?, 2025. URL https://arxiv.org/\nabs/2504.13837.\nYuksekgonul, M., Bianchi, F., Boen, J., Liu, S., Huang, Z.,\nGuestrin, C., and Zou, J. Textgrad: Automatic \u201ddifferen-\ntiation\u201d via text, 2024. URL https://arxiv.org/\nabs/2406.07496.\nZhai, Y., Tao, S., Chen, C., Zou, A., Chen, Z., Fu, Q., Mai,\nS., Yu, L., Deng, J., Cao, Z., Liu, Z., Ding, B., and Zhou, J.\nAgentevolver: Towards efficient self-evolving agent sys-\ntem, 2025. URL https://arxiv.org/abs/2511.\n10395.\nZhang, G., Fu, M., Wan, G., Yu, M., Wang, K., and Yan, S.\nG-memory: Tracing hierarchical memory for multi-agent\nsystems, 2025a. URL https://arxiv.org/abs/\n2506.07398.\nZhang, G., Ren, H., Zhan, C., Zhou, Z., Wang, J., Zhu, H.,\nZhou, W., and Yan, S. Memevolve: Meta-evolution of\nagent memory systems, 2025b. URL https://arxiv.\norg/abs/2512."
+    },
+    {
+      "aiAssistanceScore": 0.015800368,
+      "confidence": "High",
+      "endIndex": 4534,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 4104,
+      "text": ".18746.\nZhang, H., Fan, S., Zou, H. P., Chen, Y., Wang, Z., Zhou,\nJ., Li, C., Huang, W.-C., Yao, Y., Zheng, K., Liu, X., Li,\nX., and Yu, P. S. Evoskills: Self-evolving agent skills\nvia co-evolutionary verification, 2026a. URL https:\n//arxiv.org/abs/2604.01687.\nZhang, H., Long, Q., Bao, J., Feng, T., Zhang, W., Yue, H.,\nand Wang, W. Memskill: Learning and evolving memory\nskills for self-evolving agents. CoRR, abs/2602.02474,\n13"
+    },
+    {
+      "aiAssistanceScore": 0.015800368,
+      "confidence": "High",
+      "endIndex": 702,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\n2026b. doi: 10.48550/ARXIV.2602.02474. URL https:\n//doi.org/10.48550/arXiv.2602.02474.\nZhang, Q., Hu, C., Upasani, S., Ma, B., Hong, F., Kamanuru,\nV., Rainton, J., Wu, C., Ji, M., Li, H., Thakker, U., Zou,\nJ., and Olukotun, K. Agentic context engineering: Evolv-\ning contexts for self-improving language models, 2025c.\nURL https://arxiv.org/abs/2510.04618.\nZhang, Y., Li, M., Long, D., Zhang, X., Lin, H., Yang,\nB., Xie, P., Yang, A., Liu, D., Lin, J., Huang, F., and\nZhou, J. Qwen3 embedding: Advancing text embed-\nding and reranking through foundation models. arXiv\npreprint arXiv:2506.05176, 2025d. URL https://\narxiv.org/abs/2506."
+    },
+    {
+      "aiAssistanceScore": 0.01128324,
+      "confidence": "High",
+      "endIndex": 1855,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 701,
+      "text": ".05176.\nZhao, A., Huang, D., Xu, Q., Lin, M., Liu, Y., and Huang,\nG. Expel: LLM agents are experiential learners. In\nWooldridge, M. J., Dy, J. G., and Natarajan, S. (eds.),\nThirty-Eighth AAAI Conference on Artificial Intelligence,\nAAAI 2024, Thirty-Sixth Conference on Innovative Appli-\ncations of Artificial Intelligence, IAAI 2024, Fourteenth\nSymposium on Educational Advances in Artificial Intelli-\ngence, EAAI 2014, February 20-27, 2024, Vancouver,\nCanada, pp. 19632\u201319642. AAAI Press, 2024. doi:\n10.1609/AAAI.V38I17.29936. URL https://doi.\norg/10.1609/aaai.v38i17.29936.\nZheng, D., Du, L., Su, J., Tian, Y., Zhu, Y., Zhang, J., Wei,\nL., Zhang, N., and Chen, H. Knowledge augmented\ncomplex problem solving with large language models: A\nsurvey. CoRR, abs/2505.03418, 2025. doi: 10.48550/\nARXIV.2505.03418. URL https://doi.org/10.\n48550/arXiv.2505.03418.\nZheng, L., Wang, R., Wang, X., and An, B. Synapse:\nTrajectory-as-exemplar prompting with memory for com-\nputer control. In The Twelfth International Conference on\nLearning Representations, ICLR 2024, Vienna, Austria,\nMay 7-11, 2024. OpenReview.net, 2024. URL https:\n//openreview.net/forum?id=Pc8AU"
+    },
+    {
+      "aiAssistanceScore": 0.08151302,
+      "confidence": "High",
+      "endIndex": 3000,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 1854,
+      "text": "U1aF5e.\nZheng, Y., Zhang, Z., Ma, C., Yu, Y., Zhu, J., Wu, Y., Xu,\nT., Dong, B., Zhu, H., Huang, R., and Yu, G. Skillrouter:\nSkill routing for llm agents at scale, 2026. URL https:\n//arxiv.org/abs/2603.22455.\nZhou, H., Chen, Y., Guo, S., Yan, X., Lee, K. H., Wang,\nZ., Lee, K. Y., Zhang, G., Shao, K., Yang, L., and\nWang, J. Memento: Fine-tuning llm agents without\nfine-tuning llms, 2025. URL https://arxiv.org/\nabs/2508.16153.\nZhou, H., Guo, S., Liu, A., Yu, Z., Gong, Z., Zhao, B.,\nChen, Z., Zhang, M., Chen, Y., Li, J., Yang, R., Liu,\nQ., Yu, X., Zhou, J., Wang, N., Sun, C., and Wang, J.\nMemento-skills: Let agents design agents, 2026a. URL\nhttps://arxiv.org/abs/2603.18743.\nZhou, S., Xu, F. F., Zhu, H., Zhou, X., Lo, R., Sridhar,\nA., Cheng, X., Ou, T., Bisk, Y., Fried, D., Alon, U.,\nand Neubig, G. Webarena: A realistic web environment\nfor building autonomous agents, 2024. URL https:\n//arxiv.org/abs/2307.13854.\nZhou, T., Liu, D., Yuan, L., Shao, J., and Hu,\nX. Colleague.skill: Automated ai skill gener-\nation via expert knowledge distillation, 2026b.\nURL https://github.com/titanwings/\ncolleague-skill/blob/main/colleague_\nskill.pdf.\n14"
+    },
+    {
+      "aiAssistanceScore": 0.08151302,
+      "confidence": "High",
+      "endIndex": 99,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nA. Detailed Experiments Setting"
+    },
+    {
+      "aiAssistanceScore": 0.31887206,
+      "confidence": "Low",
+      "endIndex": 2632,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 98,
+      "text": "gs\nA.1. Benchmark Details\nBFCL-v3 Berkeley Function Calling Leaderboard V3 (BFCL-v3) (Patil et al., 2025) is a benchmark for evaluating\nfunction calling and tool use in large language models. It emphasizes multi-turn interaction and multi-step reasoning. The\nbenchmark contains over 1,800 test instances and supports multiple programming languages, including Python, Java, and\nJavaScript. Models are required to generate valid API calls and handle non-trivial interaction patterns. Evaluation considers\nboth structural validity and functional correctness. We first check whether the generated code is syntactically valid using\nAbstract Syntax Tree analysis, and then execute it to verify that the outputs match the expected results. A task is considered\nsuccessful only when the agent produces all required function calls with correct syntax and returns the correct computational\noutcomes. In this work, we report Avg@4, which measures the average task success rate across four independent trials, and\nPass@4, which measures the probability that at least one of the four trials succeeds.\nAppworld AppWorld (Trivedi et al., 2024) is a benchmark suite for evaluating function calling agents and interactive\ncoding systems in realistic application environments. It simulates an ecosystem of nine widely used applications, such as\nemail services, music streaming platforms, and payment systems, and provides 457 API endpoints together with activity\ndata from around 100 virtual users. Tasks in AppWorld are typically long-horizon and require executing extended sequences\nof interdependent actions. Many tasks involve discovering appropriate APIs rather than directly reusing familiar patterns,\nwhich places additional demands on exploration and planning. The benchmark also exhibits a noticeable distribution gap\nbetween training and test sets, where API usage patterns and task structures in the test set differ from those observed during\ntraining. In addition, task execution is tightly coupled with the evolving environment state. Intermediate actions modify\nthe system state and influence future decisions, which increases sensitivity to planning errors and makes robust multi-step\nreasoning more difficult. Evaluation is based on state-driven unit tests that assess task completion from multiple aspects.\nAppWorld provides both task-level and scenario-level metrics. In this work, we use Task Goal Completion as the primary\nmeasure of performance. Following the standard protocol, we report Avg@4 and Pass@4 across four independent t"
+    },
+    {
+      "aiAssistanceScore": 0.47995132,
+      "confidence": "Low",
+      "endIndex": 5154,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 2631,
+      "text": "trials.\n\u03c4 \n2\n-Bench \u03c4 \n2\n-Bench \n(Barres et al., 2025) evaluates tool use in conversational agent settings, with a strong emphasis on\nuser-agent interaction. The benchmark simulates multi-turn dialogues between a user and an agent, aiming to reflect realistic\nconversational behavior. Agents must track dialogue context across turns, interpret user requests, select and invoke APIs\nappropriately, and follow domain-specific business rules. The tasks cover domains such as airline customer service and retail\ncustomer service. The interactive nature of the benchmark requires agents to respond to user feedback, maintain coherent\ndialogue flow, and coordinate tool use with the ongoing conversation. Performance is assessed based on task completion\naccuracy, correctness of tool use, and compliance with policies. In this work, we conduct four independent trials per task\nand report Pass@1 on each of the three domains.\nA.2. Baseline Details\nA-Mem A-Mem (Xu et al., 2025) is an agentic memory framework that equips LLM-based agents with the ability to\nmaintain and utilize long-term knowledge over extended interactions. The method organizes accumulated experiences into a\nmemory-centric structure, enabling agents to selectively retain, retrieve, and revise stored information according to task\nobjectives and observed outcomes. Rather than treating memory as a passive log, A-Mem emphasizes autonomous memory\nmanagement driven by the agent\u2019s goals and interaction context. In our experiments, we reproduce A-Mem based on its\npublicly available implementation, with minor prompt adaptations to support memory writing and organization during task\ninteractions.\nAWM AWM (Agent Workflow Memory) (Wang et al., 2025c) is a memory-augmented agent framework that focuses on\ndiscovering reusable workflow patterns from past task executions. The method stores completed task trajectories as episodic\nexperiences and derives higher-level procedural knowledge by analyzing multiple successful examples. Experience retrieval\nfollows a lightweight lexical matching strategy. Textual representations of task queries and stored experiences are mapped\nto sparse term-based vectors, and relevance is measured using cosine similarity. A small set of highly relevant experiences\nis selected for downstream analysis, with subsampling applied when multiple candidates exhibit comparable similarity.\nWorkflow induction is performed by prompting a language model to analyze the retrieved successful trajectories and\nsummarize recurring action pat"
+    },
+    {
+      "aiAssistanceScore": 0.32509705,
+      "confidence": "Low",
+      "endIndex": 5366,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 5153,
+      "text": "tterns. Rather than relying on explicit symbolic rules or predefined workflow schemas, AWM\ncaptures reusable procedural structures directly from empirical task executions. Retrieved experiences are incorporated\n15"
+    },
+    {
+      "aiAssistanceScore": 0.32509705,
+      "confidence": "Low",
+      "endIndex": 2104,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nas conversational message objects (e.g., HumanMessage and AIMessage), enabling the language model to process\nexemplar interactions naturally within the dialogue context.\nExpeL ExpeL (Zhao et al., 2024) is an experience-driven learning framework that improves agent performance by\nreflecting on past successes and failures. The method stores task execution trajectories and generates experiential knowledge\nby contrasting successful and unsuccessful outcomes for the same task. In our experiments, we reproduce ExpeL by\ncollecting both successful trajectories (reward \u2265 1.0) and failed trajectories (reward < 1.0). For each successful example, a\nsmall number of failed trajectories from the same task type are selected for comparative analysis. A large language model is\nprompted to analyze the paired trajectories and generate natural-language critiques that highlight key decision differences\nand improvement suggestions. These critiques are retained as unstructured textual experiences and reused as guidance in\nsubsequent tasks.\nA.3. Implementation Details\nSkills Extraction. During the experience extraction stage, which comprises both reasoning and experience extraction, we\nemploy GLM-4.6 with a temperature of 0.9. For each task in the training set, we independently sample four trajectories.\nEnvironment feedback exceeding 1500 tokens is summarized. We cluster the extracted skills using DBSCAN (Density-Based\nSpatial Clustering of Applications with Noise) with a cosine similarity threshold of 0.9. For each cluster, we truncate the\nskill set to at most 15 skills. Skill updates are performed with up to three iterative refinement rounds. During the skill\nexpansion stage, we set the exploration model temperature to 1.0 and perform 1 time to explore environment for each\ntraining task.\nSkills Usage. We build a skill semantic vector store using FAISS with an HNSW index under cosine similarity (via\nL2-normalized embeddings and inner-product search). At query time, we first perform a broad retrieval of the Top -100\nnearest s"
+    },
+    {
+      "aiAssistanceScore": 0.2481789,
+      "confidence": "Medium",
+      "endIndex": 2750,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 2103,
+      "text": "skills. Candidates are then filtered by a hybrid relevance threshold: we keep only results whose cosine similarity is\nat least 0.45, and also within 0.08 of the best match for that query, ensuring both a minimum quality floor and adaptive\nselectivity. To reduce near-duplicate skills, we apply semantic deduplication by removing items whose pairwise cosine\nsimilarity exceeds 0.95, retaining the higher-scoring representative. Finally, we return up to 8 skills after applying Maximal\nMarginal Relevance (MMR) for diversity-aware selection, using a relevance\u2013diversity trade-off weight of 0.75 to emphasize\nrelevance while mitigating redundancy.\n16"
+    },
+    {
+      "aiAssistanceScore": 0.2481789,
+      "confidence": "Medium",
+      "endIndex": 1071,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nB. Case Study For SkillX\nWe present case studies across three diverse benchmarks: AppWorld (Trivedi et al., 2024), BFCL (Patil et al., 2025), and\n\u03c4 \n2\n-bench (Barres et al., 2025). These cases show that skill libraries help agents avoid common failures such as incorrect\nAPI call sequences, missing prerequisite checks, and the inability to handle conversational topic shifts. By framing domain\nknowledge as reusable skills, agents can complete complex multi-step tasks that the baseline method fails, reducing trial and\nerror from multiple failed attempts to successful execution on the first attempt.\nFigure 4. AppWorld benchmark case study: Updating Spotify playlist based on roommates\u2019 suggestions. SkillX successfully\nhandles API call sequences (pagination pattern for playlist retrieval) and cross-app integration (integrating Spotify and Phone APIs),\nwhile the baseline without multi-level skills fails due to incorrect API call sequences and inability to complete cross-app integration tasks.\n17"
+    },
+    {
+      "aiAssistanceScore": 0.2481789,
+      "confidence": "Medium",
+      "endIndex": 507,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nFigure 5. BFCL benchmark case study: Vehicle engine start safety check and Twitter posting. SkillX follows prerequisite\nsequences (lock doors \u2192 press brake pedal \u2192 start engine) and properly authenticates before posting tweets, while the baseline without\nmulti-level skills fails by calling APIs without prerequisites and encountering tool calling errors.\nFigure 6. \u03c4 \n2\n-bench case study: Requesting delay flight compensation in airline d"
+    },
+    {
+      "aiAssistanceScore": 0.21459673,
+      "confidence": "Medium",
+      "endIndex": 785,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 506,
+      "text": "domain. SkillX handles topic shifts, retrieves user\nreservations without reservation numbers, verifies flight delays, and executes the compensation workflow, while the baseline without\nmulti-level skills fails to recognize topic shifts and cannot retrieve reservation details.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.21459673,
+      "confidence": "Medium",
+      "endIndex": 2010,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nC. Main Prompt Use For SkillX\nIn this section, we provide the prompts of SkillX used for skill extraction, planning, filtering, and merging operations.\nC.1. General Filter Prompt\nGeneral Filter Prompt\nYou are a coding expert. Given a predefined skill, evaluate whether its quality is good or bad.\nEvaluation guidelines:\n1. Domain specificity: Check whether the skill includes domain-specific library names APIs, e.g., {api}.\n2. \nOver-encapsulation: Check whether the skill\u2019s implementation merely calls a single other skill (i.e., it is just a thin wrapper).\n3. No-Python-libraries: Check whether additional Python libraries are introduced in the skill.\n4. Reusability: Check whether the parameters are specific.\n5. No-Functional style: Check whether a functional style is being used (e.g., the presence of return).\nBad Example1\n{example}\nBad Example2\n{example}\nGood Example\n{example}\nOnly return \u201dgood\u201d or \u201dbad\u201d. Don\u2019t return any other words.\nTable 4. Prompt for filtering skills based on quality criteria.\nC.2. Tool Summary Prompt\nTool Summary Prompt\nYou are an AI assistant specialized in analyzing agent trajectories.\nYour task is to summarize a single interaction: based on the environment feedback from the current step, extract and summarize\nthe key information in no more than 50 words.\nInputs Description\n1. The AI assistant\u2019s reasoning and action\n2. The resulting environment feedback after the action\nSummary Guidelines\n1. Summarize what the environment feedback conveys in light of the AI assistant\u2019s intent.\n2. Preserve details that are tightly relevant to the intent verbatim when possible; compress other redundant information.\n3. Summarize only factual content from the environment feedback\u2014do not invent anything.\n4. Write the summary in the tone of the environment feedback.\nOutput Format\n<feedback>\nYour summary of the environment feedback\n</feedback>\nTable 5. Prompt for summarizing environment feedback from agent interac"
+    },
+    {
+      "aiAssistanceScore": 0.4074846,
+      "confidence": "Low",
+      "endIndex": 2019,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 2009,
+      "text": "ctions.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.4074846,
+      "confidence": "Low",
+      "endIndex": 2203,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nC.3. Tool Schema Filter Prompt\nTool Schema Filter Prompt\nYou are a tool-invocation expert. Based on the tool specifications, verify whether the provided tool invocations are correct.\nInput\n1. Tool invocation content: may include one or multiple tool calls.\n2. Tool specifications: including tool description, parameters, return schema, and other usage notes.\nJudging Guidelines\n1. Parameter validation: Check whether the invocation parameters comply with the specifications (e.g., missing required\nparameters, unsupported/nonexistent parameters, wrong types or formats, invalid values, etc.).\n2. \nCall dependency: For multiple tool calls, verify that their order does not violate logical dependencies. If there is no\ndependency between the calls, ignore this check.\n3. Comment\u2013function alignment: Ensure the logic described in any comments matches what the tool is designed to do.\n4. Output Format: Provide your reasoning and conclude with either \u2019correct\u2019 or \u2019fail\u2019, wrapped in <answer></answer>.\nTable 6. Prompt for validating tool invocations against specifications.\nC.4. Plan Extract Prompt\nPlan Extract Prompt\nYou are a Planning Expert.\nYour job is to analyze an agent\u2019s API interaction history and the user\u2019s task, then distill them into a concise, reusable plan. This\nplan should serve as a reference for handling similar tasks more effectively in the future.\nOBJECTIVES\n1. Understand Capabilities\n\u2022 Analyze the recorded API calls to identify the actual functional capabilities demonstrated.\n2. Abstract into a Plan\n\u2022 \nFor each feasible task supported by those capabilities, produce a concise, reusable step-by-step plan that can be applied to\nsimilar tasks.\nPlanning Creation Rules\n1. Focus\n\u2022 \nDo not simply restate each API function step-by-step using technical jargon. Instead, describe the underlying sub-goal behind\neach action segment.\n2. Remove Non-Essential Steps\n\u2022 Exclude capability exploration, debugging, and failed steps.\n3. Reusability\n\u2022 The plan must be precise enough for other models to reuse.\n4. Conciseness\n\u2022 Merge steps from the interaction history that share the same objective into a single sub-step in the"
+    },
+    {
+      "aiAssistanceScore": 0.28513947,
+      "confidence": "Low",
+      "endIndex": 2976,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 2202,
+      "text": "e plan.\n\u2022 Use a compact writing style for each sub-step, while listing the key APIs involved in that step (one or more).\n\u2022 Do not omit any critical, potentially required API keys.\nOUTPUT FORMAT\nFor each task, output exactly one plan and follow this format strictly:\n<plan>\n# step 1: A natural, specific, concise sub-task goal; key APIs used (one or more).\n# step 2: ...\n...\n</plan>\nGOOD EXAMPLES\n{examples}\nCHECKLIST BEFORE FINALIZING\n\u2713 Reusability \u2014 Ensure no critical steps are missing, and the step order is correct.\n\u2713 Conciseness \u2014 Confirm there are no redundant or unnecessary steps.\n\u2713 Agent-centered \u2014 Make sure the plan reads like actionable instructions that other models can reliably follow.\nTable 7. Prompt for extracting reusable plans from agent trajectories.\n20"
+    },
+    {
+      "aiAssistanceScore": 0.28513947,
+      "confidence": "Low",
+      "endIndex": 1373,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nC.5. Merge Prompt\nMerge Prompt\nYou are a code expert. Your task is to analyze a list of skills, merge skills that are meaningfully similar, and decompose complex\nskills into smaller atomic skills while preserving behavior and intent.\nInput Description\nThe user will provide a list of skills.\nSkill Definition Rule\n\u2022 Skill is a dictionary with four keys: name, document, content and tools.\n1. name: the skill\u2019s name.\n2. document: the skill\u2019s functionality, the key parameters, the final output of the skill, and any important notes.\n3. content: the concrete implementation of the skill.\n4. tools: the key tools used in the skill (list).\n\u2022 \nThe skill is abstract, modular, and reusable. Specifically, the skill name must be generic under one application (e.g., {good\nexample} instead of {bad example}. The skill must use parameters instead of hard-coded values (e.g., specific email\naddress {email address}). The skill body must be self-contained.\n\u2022 Explicitly declare the key parameters and the final output data types using type hints. Example: Parameters: param:\nstr; Outputs: output: list[dict]:\n\u2022 Include a detailed description of the skill with input and output explanation.\n\u2022 The skill should not be similar to the existing skills in the skills library.\n\u2022 \nThe skill must involve multiple processing "
+    },
+    {
+      "aiAssistanceScore": 0.22317797,
+      "confidence": "Medium",
+      "endIndex": 3213,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 1372,
+      "text": " steps. Simply using the result of an API call without additional logic does not\nqualify as a valid skill.\n\u2022 Never call other skills from the skills library or any previously defined skills.\n\u2022 Do not import any Python packages.\n\u2022 Avoid a functional style; there\u2019s no need to use return.\nGood skill:\n```json\n{\n\u201dname\u201d: {name},\n\u201ddocument\u201d: {document},\n\u201dcontent\u201d: {content},\n\u201dtools\u201d: {tools}\n}\n```\nFocus\n1. Focus on skills with similar names and similar skillality.\n2. Carefully analyze the concrete implementation differences between similar skills.\nMerge Guidelines\n1. \nGenerality: Merge skills that have similar names and similar skillality. The merged skill should use a generic name, and its\nNotes and implementation should cover all plausible variants and edge cases.\n2. Atomicity: If skills have a containment relationship (one skill\u2019s skillality subsumes or builds on another), follow the skill\ndefinitions to preserve atomicity and avoid merging.\n3. \nMerge Constraints: Any merged skill must comply with the skill definition rules, especially atomicity and reusability, and\nshould avoid being tied to a specific task or scenario.\nDecompose Guidelines\n1. Atomicity: Only decompose skills whose skillality is overly complex (e.g., they include skillality already covered by other\nprovided skills) into smaller sub-skills.\n2. Generality: The decomposed skills must follow the skill-definition rules and remain reusable\u2014avoid coupling them to any\nspecific task or scenario.\nOutput Format\nOutput a list containing the skills (with one or multiple skills) from merging and/or decomposing the skills in the input skill list\nas follows:\n<skill>\n[\n\u201dskill 1\u201d,\n...\n]\n</skill>\nNote: You don\u2019t necessarily need to both merge and decompose. You may choose to only merge them into a single skill.\nTable 8. Prompt for merging and decomposing skills.\n21"
+    },
+    {
+      "aiAssistanceScore": 0.22317797,
+      "confidence": "Medium",
+      "endIndex": 313,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\nC.6. Atomic Skill Extract Prompt\nAtomic Skill Extract Prompt\nAn agent system is provided with a skills library and has tried to solve the task multiple times with a successful solution. Review\nthe task-solving attempt and extract generalizable s"
+    },
+    {
+      "aiAssistanceScore": 0.39868093,
+      "confidence": "Low",
+      "endIndex": 2528,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 312,
+      "text": "skills.\n1. Inputs Description\n\u2022 User Task\n\u2022 Trajectory: A record of an agent\u2019s interactions successfully with the environment as it attempts to complete a user task.\n\u2022 skills library: A collection of all currently available skills that can be directly reused.\n\u2022 Specific-Tool: Given a specific tool, extract only one reusable skill for the specified tool.\n2. Skill Definition Rule\n\u2022 Skill is a dictionary with four keys: name, document, content and tools.\n1. name: the specific tool\u2019s name.\n2. document: the tool\u2019s functionality, the key parameters, the final output of the skill, and any important notes.\n3. content: the tool\u2019s usage examples, and examples of combining it with other tools (if applicable).\n4. tools: the key tools used in the content (list).\n\u2022 The skill is centered around a specific tool, describing its core functionality, important notes, and common usage examples.\n\u2022 \nExplicitly declare the key parameters and the final output data types using type hints. Example: Parameters: param:\nstr; Outputs: output: dict:\n\u2022 Include a detailed description of the skill with input and output explanation.\n\u2022 The skill should not be similar to the existing skills in the skills library.\n\u2022 \nThe parameters used in content must be reusable instead of hard-coded values (e.g., specific email address \u201djay@gmail.com\u201d)\n\u2022 The usage examples of content may involve one or more tool uses.\n\u2022 The document must clearly and thoroughly document all relevant details of the specific tool use.\n\u2022 Never call other skills from the skills library or any previously defined skills.\n\u2022 Do not import any Python packages.\n\u2022 Avoid a functional style and Python code style; there\u2019s no need to use return.\n3. Update Existing Skills\nYour goal is to ensure the system retains actionable skills that help it behave correctly in the future.\nYou have three options: [modify, add, keep]\n\u2022 \nmodify: revise an existing skill to make it more effective (e.g., improving documents). Only change content when necessary,\nand ensure the resulting skill remains broadly general-purpose.\n\u2022 add: introduce a new skill only when the existing skills library is missing the specified tool.\n\u2022 keep: Preserve the skill unchanged when there are no clear i"
+    },
+    {
+      "aiAssistanceScore": 0.16317686,
+      "confidence": "Medium",
+      "endIndex": 3446,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 2527,
+      "text": "issues.\nCommon actions:\n\u2022 add a new skill\n\u2022 update a skill\u2019s usage instructions/documentation\n\u2022 revise a skill\u2019s variable/parameter definitions to make it more generalizable\n\u2022 keep a skill unchanged\n4. Requirements for each skill that is modified or added.\n\u2022 \nAvoid duplication: If a skills library is provided, do not add new skills that are similar to existing ones\u2014use keep or modify\ninstead.\n\u2022 Ensure domain specificity: The skill must contain domain-specific tool.\n\u2022 Specific-Tool guided extraction: Only focus on the specified tool in the trajectory when extracting skills.\n5. Good Skill Example\n{example}\n6. Output Format\nYou will finish by returning in this JSON format as follows:\n```json\n[\n{\n\u201doption\u201d: \u201dmodify\u201d,\n\u201dskill\u201d: \u201dthe modified skill\u201d,\n\u201dmodified from\u201d: \u201dspotify get all user playlists\u201d # specify the skill name of existing skills that is modified\n},\n{\n\u201doption\u201d: \u201dadd\u201d,\n\u201dskill\u201d: \u201dthe added skill\u201d,\n},\n22"
+    },
+    {
+      "aiAssistanceScore": 0.16317686,
+      "confidence": "Medium",
+      "endIndex": 1273,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\n{\n\u201doption\u201d: \u201dkeep\u201d,\n\u201dskill name\u201d: \u201dthe kept skill name\u201d,\n}, ...\n]\n```\nNote that your updated skills may not need to cover all the options. You can only use one type of updates or choose to remain all\nskills unchanged.\n7. CHECKLIST BEFORE FINALIZING\n\u2713 Reusability \u2014 Ensure no critical steps are missing, each skill is modular, all parameters are abstract rather than specific.\n\u2713 Optimality \u2014 Ensure each skill meets the required definition standards.\n\u2713 Agent-centered \u2014 Add helpful notes in each skill to guide other models in using it correctly.\n\u2713 Specific-Tool focus \u2014 Whether the extracted skill doesn\u2019t center around this Tool?\nTable 9. Prompt for atomic skill extraction based on specific tools.\nC.7. Functional Skill Extract Prompt\nFunctional Skill Extract Prompt\nAn agent system is provided with a skills library and has tried to solve the task multiple times with a successful solution. Review\nthe task-solving attempt and extract generalizable skills.\n1. Inputs Description\n\u2022 User Task\n\u2022 Trajectory: A record of an agent\u2019s interactions successfully with the environment as it attempts to complete a user task.\n\u2022 skills library: A collection of all currently available skills that can be directly r"
+    },
+    {
+      "aiAssistanceScore": 0.3293381,
+      "confidence": "Medium",
+      "endIndex": 3254,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 1272,
+      "text": "reused.\n\u2022 Specific-step: Given a concrete step, extract only one reusable skill for the specified step.\n2. Skill Definition Rule\n\u2022 Skill is a dictionary with four keys: name, document, content and tools.\n1. name: the skill\u2019s name.\n2. document: the skill\u2019s functionality, the key parameters, the final output of the skill and any important notes.\n3. content: the concrete implementation of the skill.\n4. tools: the key tools used in the skill (list).\n\u2022 \nThe skill is abstract, modular, and reusable. Specifically, the skill name must be generic under one application (e.g., spotify\nget songs by genre instead of get pop songs). The skill must use parameters instead of hard-coded values (e.g.,\nspecific email address \u201djay@gmail.com\u201d). The skill body must be self-contained.\n\u2022 Explicitly declare the key parameters and the final output data types using type hints. Example: Parameters: param:\nstr; Outputs: output: list[dict]:\n\u2022 Include a detailed description of the skill with input and output explanation.\n\u2022 The skill should not be similar to the existing skills in the skills library.\n\u2022 \nThe skill must involve multiple processing steps. Simply using the result of an API call without additional logic does not\nqualify as a valid skill.\n\u2022 Never call other skills from the skills library or any previously defined skills.\n\u2022 Do not import any Python packages.\n\u2022 Avoid a functional style; there\u2019s no need to use return.\n3. Update Existing Skills\nYour goal is to ensure the system retains actionable skills that help it behave correctly in the future.\nYou have three options: [modify, add, keep]\n\u2022 \nmodify: revise an existing skill to make it more effective (e.g., improving documents). Only change content when necessary,\nand ensure the resulting skill remains broadly reusable/general-purpose.\n\u2022 add: introduce a new skill only when existing skills cannot support a critical step, in order to improve future performance.\n\u2022 keep: Preserve the skill unchanged when there are no clear i"
+    },
+    {
+      "aiAssistanceScore": 0.38157874,
+      "confidence": "Low",
+      "endIndex": 3555,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 3253,
+      "text": "issues.\nCommon actions:\n\u2022 add a new skill\n\u2022 update a skill\u2019s usage instructions/documentation\n\u2022 revise a skill\u2019s variable/parameter definitions to make it more generalizable\n\u2022 if a skill is overly complex, refactor it into more modular skills (involving both modify and add)\n\u2022 keep a skill unchanged\n23"
+    },
+    {
+      "aiAssistanceScore": 0.38157874,
+      "confidence": "Low",
+      "endIndex": 1846,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 0,
+      "text": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents\n4. Requirements for each skill that is modified or added.\n\u2022 Avoid duplication: If a skills library is provided, do not add new skills that are similar to existing ones\u2014use keep or modify\ninstead.\n\u2022 Exclude non-solution behavior: Do not include capability exploration, debugging activities, or any failed/incorrect steps.\n\u2022 Ensure domain specificity: The skill must reference domain-specific libraries/APIs, e.g., {api}.\n\u2022 Avoid over-wrapping: Verify the implementation is not merely a thin wrapper around another skill (i.e., not just calling a\nsingle underlying skill without meaningful additional logic).\n\u2022 Specific-step guided extraction: Only focus on the specified step in the trajectory when extracting skills.\n5. Good Skill Example\n{example}\n6. Output Format\nYou will finish by returning in this JSON format as follows:\n```json\n[\n{\n\u201doption\u201d: \u201dmodify\u201d,\n\u201dskill\u201d: \u201dthe modified skill\u201d,\n\u201dmodified from\u201d: \u201dspotify get all user playlists\u201d # specify the skill name of existing skills that is modified\n},\n{\n\u201doption\u201d: \u201dadd\u201d,\n\u201dskill\u201d: \u201dthe added skill\u201d,\n},\n{\n\u201doption\u201d: \u201dkeep\u201d,\n\u201dskill name\u201d: \u201dthe kept skill name\u201d,\n}, ...\n]\n```\nNote that your updated skills may not need to cover all the options. You can only use one type of updates or choose to remain all\nskills unchanged.\n7. CHECKLIST BEFORE FINALIZING\n\u2713 Reusability \u2014 Ensure no critical steps are missing, each skill is modular, all parameters are abstract rather than specific.\n\u2713 Optimality \u2014 Ensure each skill meets the required definition standards.\n\u2713 Agent-centered \u2014 Add helpful notes in each skill to guide other models in using it correctly.\n\u2713 Specific-step focus \u2014 Whether the extracted skill includes any content that does not belong to this step?\nTable 10. Prompt for functional skill extraction based on specific ste"
+    }
+  ]
+}

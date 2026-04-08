@@ -1,0 +1,686 @@
+{
+  "fractionAi": 0.24912539,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.75087464,
+  "headline": "Mostly Human, AI Detected",
+  "predictionShort": "Mixed",
+  "state": "done",
+  "updatedAt": 1775610343932,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.21568067,
+      "confidence": "Low",
+      "endIndex": 973,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nCORAL: Towards Autonomous Multi-Agent Evolution\nfor Open-Ended Discovery\nAo Qu\n1,8\u2217 \nHan Zheng\n1\u2217 \nZijian Zhou\n2,3\u2217 \nYihao Yan Yihong Tang\n4\nShao Yong Ong\n2 \nFenglu Hong\n5,6 \nKaichen Zhou\n1 \nChonghe Jiang\n1,8\nMinwei Kong\n8 \nJiacheng Zhu\n7\u2021 \nXuan Jiang\n9\u2021 \nSirui Li\n10\u2021\nCathy Wu\n1\u2020 \nBryan Kian Hsiang Low\n2,8\u2020 \nJinhua Zhao\n1,8\u2020 \nPaul Pu Liang\n1,8\u2020\n1\nMIT \n2\nNUS \n3\nMiniMax \n4\nMcGill \n5\nStanford \n6\nSambaNova \n7\nMeta\n8\nSingapore-MIT Alliance for Research and Technology \n9\nAmazon \n10\nMicrosoft\n\u2217 Equal contribution (alphabetical order) \u2020 Joint advising \u2021 Work done outside the authors\u2019 employment.\n0.0 2.5 5.0 7.5 10.0 12.5 15.0 17.5\nWall-clock time (hours)\n0.50\n0.60\n0.70\n0.80\n0.90\n1.00\n1.10\n1.20\nScore (Best Known = 1.0)\nOpenEvolve\nCORAL (1 agent)\nCORAL (4 agents) \n1350 cycles (109.4x)\n1103 cycles (133.9x)\n2740 cycles (53.9x)\nBest Known 1363 cycles (108.4x)\n0 10\n0.00\n0.20\n0.40\n0.60\n0.80\n1.00\n1.20\nFull range\nModel Evals \nBest Cycles \nSpeedup Imp. "
+    },
+    {
+      "aiAssistanceScore": 0.21460307,
+      "confidence": "Low",
+      "endIndex": 2361,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 972,
+      "text": " Rate\nBest Known \nAnthropic 1363 108.4x\nOpenEvolve \nOpus 4.6 363 2740 53.9x 3% (12/363)\nCORAL (1 agent) \nOpus 4.6 \n56 1350 109.4x 43% (24/56)\nCORAL (4 agents) \nOpus 4.6 596 \n1103 133.9x \n9% (54/596)\nCORAL outperforms previous SOTA on Anthropic s kernel engineering task by 20%\nThe task is to optimize a GPU kernel to minimize execution cycles from a 147,734-cycle baseline. Score = baseline /\ncycles, normalized so the previous best known result (1,363 cycles) equals 1.0. All methods use Claude Opus 4.6.\nAbstract\nLarge language model (LLM)-based evolution is a promising approach\nfor open-ended discovery, where progress requires sustained search and\nknowledge accumulation. Existing methods still rely heavily on fixed\nheuristics and hard-coded exploration rules, which limit the autonomy of\nLLM agents. We present CORAL, the first framework for autonomous\nmulti-agent evolution on open-ended problems. CORAL replaces rigid\ncontrol with long-running agents that explore, reflect, and collaborate\nthrough shared persistent memory, asynchronous multi-agent execution,\nand heartbeat-based interventions. It also provides practical safeguards,\nincluding isolated workspaces, evaluator separation, resource manage-\nment, and agent session and health management. Evaluated on diverse\nCorrespondence: qua@mit.edu, hanzheng@mit.edu, zhou zijian@u.nus.edu\n1\narXiv:2604.01658v1 [cs.AI] 2 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.21460307,
+      "confidence": "Low",
+      "endIndex": 261,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nmathematical, algorithmic, and systems optimization tasks, CORAL sets\nnew state-of-the-art results on 10 tasks, achieving 3\u201310\u00d7 higher improve-\nment rates with far fewer evaluations than fixed evolutionary search\nbaselines across tasks. "
+    },
+    {
+      "aiAssistanceScore": 0.2691781,
+      "confidence": "Low",
+      "endIndex": 2100,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 260,
+      "text": " On Anthropic\u2019s kernel engineering task, four co-\nevolving agents improve the best known score from 1363 to 1103 cycles.\nMechanistic analyses further show how these gains arise from knowledge\nreuse and multi-agent exploration and communication. Together, these\nresults suggest that greater agent autonomy and multi-agent evolution\ncan substantially improve open-ended discovery. Code is available at\nhttps://github.com/Human-Agent-Society/CORAL.\n1 Introduction\nMany important scientific problems do not come with ground-truth answers (Mang et al.,\n2025). What is the best heuristic for a logistics problem (Chen et al., 2025; Zheng et al.,\n2026)? How should one write the most efficient kernel (Ouyang et al., 2025a)? In these\nsettings, the objective is clear, but the optimal solution is unknown. As a result, one-shot\ngeneration is insufficient. Strong solutions must be discovered through iterative proposal,\ntesting, revision, and progress over time.\nRecent advances in LLM-powered agents have made this paradigm increasingly effective.\nSystems such as FunSearch (Romera-Paredes et al., 2024), AlphaEvolve (Novikov et al.,\n2025), and more (Lange et al., 2025; Agrawal et al., 2025; Cemri et al., 2026) show that LLMs\ncan be embedded in evaluator-guided evolutionary search loops for open-ended discovery.\nRather than attempting to solve the problem in a single pass, these methods place the LLM\ninside an outer-loop search procedure: the model proposes candidate programs conditioned\non previously high-scoring solutions, external evaluators execute and score these candidates\nunder task-specific objectives, and a predetermined evolutionary algorithm governs parent\nselection and population updates. This type of LLM-based evolution has proven effective\nacross mathematical discovery, algorithm design, and systems optimization tasks.\n"
+    },
+    {
+      "aiAssistanceScore": 0.33527905,
+      "confidence": "Low",
+      "endIndex": 3585,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 2099,
+      "text": "\nFixed\nEvolutionary Search\nMemory\nLLM\n+ search algorithm\nRetrieve\nPropose\nEvaluate\nUpdate\nAutonomous\nSingle-Agent Evolution\nMemory\nAgent\nRetrieve\nPropose\nEvaluate\nUpdate\nAutonomous\nMulti-Agent Evolution\nRetrieve\nPropose\nEvaluate\nUpdate \nAgent\nRetrieve\nPropose\nEvaluate\nUpdate \nAgent\nRetrieve\nPropose\nEvaluate\nUpdate \nAgent\nRetrieve\nPropose\nEvaluate\nUpdate \nAgent\nMemory\nshared\nRetrieve \nContext selected by fixed rules. Agent chooses what to inspect. Agent reads from shared memory.\nPropose \nModel proposes from given context. Agent plans, implements, and tests. Multiple agents propose in parallel.\nEvaluate \nTriggered by a fixed loop. Agent decides when to evaluate. Each agent schedules eval.\nUpdate \nUpdated by fixed rules. Agent decides what to store. Agents write to shared memory.\nFixed Partial autonomy Full autonomy\nFigure 1: Comparison of three paradigms for LLM-based open-ended discovery.\nHowever, current progress has largely been achieved with fixed evolutionary search, where\nkey search decisions are independent of the agents, including which parent solutions to\ninspect and build on, when to run intermediate tests, and what knowledge to externalize\nand reuse later. For challenging open-ended problems, these choices are integral to the\nevolutionary algorithm and can substantially affect performance. This naturally leads to\nthe following question: Can stronger performance emerge when a greater part of the\nevolutionary algorithm is delegated to autonomous agents?\n2"
+    },
+    {
+      "aiAssistanceScore": 0.33527905,
+      "confidence": "Low",
+      "endIndex": 613,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nThe rigidity of these strategies is further amplified in multi-agent systems. Much of the\nexisting literature relies on vertical scaling: humans decompose the task, assign specialized\nroles, and define a fixed communication structure (Hong et al., 2024; Li et al., 2023; Wu\net al., 2024). While this paradigm has produced strong systems such as Sakana AI\u2019s AI\nScientist (Lu et al., 2024) and Google\u2019s AI Co-Scientist (Gottweis et al., 2025), it assumes\nthat the optimal decomposition and interaction topology are known in advance. For open-\nended problems, that assumption is restrictive. "
+    },
+    {
+      "aiAssistanceScore": 0.33549362,
+      "confidence": "Low",
+      "endIndex": 2974,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 612,
+      "text": " This raises a further question: Can multiple\nautonomous agents scale more effectively through horizontal parallelism, by exploring\nin parallel, exchanging discoveries, and building on each other\u2019s progress over time?\nFigure 1 illustrates the progression across these three paradigms.\nAs a key step towards this new paradigm, we introduce CORAL, a framework for au-\ntonomous multi-agent evolution on open-ended problems. CORAL shifts decision-making\nfrom fixed algorithms to the agents themselves, supported by a shared persistent memory\nfor continuous evolution. Agents iteratively refine solutions by retrieving, contributing,\nand distilling knowledge in the form of notes and reusable skills into a collective repository.\nBy incorporating heartbeat mechanisms for periodic reflection and redirection, CORAL\nensures robust exploration and knowledge accumulation, providing a task-agnostic archi-\ntecture compatible with diverse agent implementations. Empirically, CORAL establishes\nnew SOTA on 8 of 11 tasks in mathematical and systems optimization, with a 2.5\u00d7 higher\nimprovement rate and 10\u00d7 fewer evaluations than fixed evolutionary search baselines. On\nthe stress-test Kernel Engineering task, four co-evolving agents push the score from 1, 363\nto 1, 103 cycles (a 20% gain), surpassing the previous best result. Ablation studies confirm\nthat both agent autonomy and multi-agent evolution contribute to these gains.\nOur contributions are threefold. First, we formulate autonomous evolution as a distinct\nparadigm for open-ended discovery and distinguish autonomous single-agent and multi-\nagent evolution from prior fixed evolutionary search. Second, we introduce CORAL, a\nframework that realizes this paradigm through shared persistent memory, asynchronous\nmulti-agent organization, and heartbeat-based interventions for long-horizon search. Third,\nacross mathematical, algorithmic, and systems optimization tasks, we show that CORAL\nsubstantially outperforms fixed evolutionary search baselines, and ablations and trajectory\nanalyses show the importance of knowledge accumulation and multi-agent evolution.\n2 Related Work\nLLM-Driven Evolutionary Search. A growing line of work embeds LLMs as mutation\noperators within evaluator-guided evolutionary loops. FunSearch (Romera-Paredes et al.,\n2024) introduced this paradigm, and AlphaEvolve (Novikov et al., "
+    },
+    {
+      "aiAssistanceScore": 0.4287264,
+      "confidence": "Low",
+      "endIndex": 4668,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 2973,
+      "text": " 2025) extended it to full\ncodebases with MAP-Elites. Subsequent systems refine the search orchestration through\nadaptive sampling, island-based architectures, and Pareto-based selection (Sharma, 2025;\nLange et al., 2025; Khrulkov et al., 2025; Assump c\u00b8 \u02dcao et al., 2026; Yan et al., 2026; Agrawal\net al., 2025), while AdaEvolve (Cemri et al., 2026) and EvoX (Liu et al., 2026a) make the\nsearch strategy itself adaptive. A complementary direction fine-tunes the generator at test\ntime (Wang et al., 2025; Yuksekgonul et al., 2026) or builds experience libraries from solver\nfeedback (Ouyang et al., 2025b; Kong et al., 2025). All these systems follow a fixed pipeline:\nselect parents via predefined heuristics, construct a prompt, and call the LLM to produce\na mutation. The LLM has no agency over what to explore next. CORAL removes this\nscaffolding and lets the agent decide what to explore and what knowledge to carry forward.\nAutonomous LLM Agents. A separate line of work grants LLM agents the autonomy\nto carry out open-ended tasks without rigid external scaffolding. Autonomous coding\nagents (Yang et al., 2024; Wang et al., 2024) navigate codebases, execute code, and iteratively\ndebug within sandboxed environments, while the AI Scientist (Lu et al., 2024) automates the\nfull research cycle. Self-improvement techniques such as verbal self-feedback (Shinn et al.,\n2023; Madaan et al., 2023), interleaved reasoning and tool use (Yao et al., 2023), and learned\nmemory consolidation (Zhou et al., 2026; Yu et al., 2026) further extend agent capabilities\nover long horizons. Recent position papers argue for elevating deployment-time adaptation\nto an autonomous evolver agent (Gao et al., "
+    },
+    {
+      "aiAssistanceScore": 0.2813283,
+      "confidence": "Low",
+      "endIndex": 4715,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 4667,
+      "text": " 2025). These systems demonstrate the power of\n3"
+    },
+    {
+      "aiAssistanceScore": 0.2813283,
+      "confidence": "Low",
+      "endIndex": 1993,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nagent autonomy, but they target one-off task completion rather than sustained, goal-driven\noptimisation. CORAL brings this autonomy into the evolutionary loop, replacing rigid\nsearch heuristics with agent-level intelligence at each evolution step.\nMulti-Agent Collaboration. Multi-agent LLM systems decompose complex tasks through\nrole assignment and structured communication (Wu et al., 2023; LangChain, 2024; Qian et al.,\n2024; Hong et al., 2024), or explore emergent cooperation via role-playing and dynamic\ngroup formation (Li et al., 2023; Chen et al., 2024). In existing evolutionary systems such as\nFunSearch and AlphaEvolve, parallelism is limited to running multiple stateless evaluation\nworkers concurrently with no memory across steps. CORAL introduces long-lived, stateful\nagents that communicate asynchronously through shared knowledge (scored attempts,\nnotes, and skills), enabling emergent behaviours such as technique diffusion, spontaneous\nconsensus, and cross-referencing, none of which are hardcoded.\n3 Coral: A Framework for Autonomous Multi-Agent Evolution\n3.1 Preliminaries: Problem Formulation for Open-Ended Discovery\nWe consider open-ended discovery tasks, where the optimal solution is unknown and\nincreasingly strong candidate solutions must be discovered through iterative search under\nevaluator feedback. A task instance is specified by a task description x and an evaluator E,\nwhere evaluating a candidate solution y returns E(x, y) := (s, f ), with s denoting the score\nof y and f denoting auxiliary feedback such as sub-score breakdowns or textual critique\nfrom an LLM-powered evaluator.\nLet M\nt \ndenote the shared persistent memory available at search step t, such as prior\ncandidate solutions and their evaluation outcomes. At an abstract level, each improvement\nstep consists of four stages:\n1. RETRIEVE: construct a working context \n\u02c6\nM\nt \nfrom M\nt\n;\n2. PROPOSE: generate a candidate solution y\nt+1 \nconditioned on x and \n\u02c6\nM\nt\n;\n3. "
+    },
+    {
+      "aiAssistanceScore": 0.20274228,
+      "confidence": "Medium",
+      "endIndex": 4068,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 1992,
+      "text": " EVALUATE: obtain score and feedback (s\nt+1\n, f\nt+1\n) = E(x, y\nt+1\n);\n4. UPDATE: incorporate new information into shared persistent memory to form M\nt+1\n.\n3.2 From Fixed Search to Autonomous Multi-Agent Evolution\nMost prior LLM-based methods for open-ended discovery follow fixed evolutionary search,\nwhere the four stages in Section 3.1 are instantiated by externally specified rules (Figure 1).\nIn this paradigm, RETRIEVE and UPDATE are governed by fixed procedures, while the LLM\nmainly acts in PROPOSE, typically generating a candidate from a constructed context in\na single forward pass, and EVALUATE is handled by the task evaluator. For example, in\nAlphaEvolve (Novikov et al., 2025), the working context \n\u02c6\nM\nt \nis constructed from M\nt \nusing\npredetermined selection rules inspired by MAP-Elites and island models. This paradigm is\neffective, but it leaves key search decisions outside the agent. The agent does not decide\nwhat evidence to inspect, when to verify intermediate results, how to react to failure, or\nwhat knowledge to preserve for reuse. For open-ended discovery, however, these choices\nare often part of the problem itself.\nThis motivates autonomous single-agent evolution. Here, a single agent controls a much\nlarger portion of the search process: it can decide what to retrieve, when to run local tests,\nwhen to invoke the evaluator, and what to write back to persistent memory. The same four\nstages still apply, but their timing and realization are no longer fixed externally (Figure 1).\nWe further extend this idea to autonomous multi-agent evolution, where multiple agents run\nasynchronously while coordinating through shared persistent memory (Figure 1). Rather\nthan relying on predefined roles or a communication structure, agents interact indirectly\nthrough shared persistent memory. This increases exploration diversity and allows multiple\nagents to inspire each other.\nWe advocate autonomous multi-agent evolution as a promising paradigm for open-ended\ndiscovery and introduce CORAL as a lightweight infrastructure to realize it. CORAL dele-\n4"
+    },
+    {
+      "aiAssistanceScore": 0.20274228,
+      "confidence": "Medium",
+      "endIndex": 67,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nFigure 2: Overview of the CORAL framework. "
+    },
+    {
+      "aiAssistanceScore": 0.088144235,
+      "confidence": "Medium",
+      "endIndex": 1991,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 66,
+      "text": " Autonomous agents operate in isolated\nworktrees, iteratively propose and evaluate candidate solutions, and accumulate shared\npersistent memory (attempts, notes, skills) through a hub. Heartbeat-driven periodic\nreflections help agents consolidate discoveries and reorient search over long horizons.\ngates much more of the search process to autonomous agents, while keeping the evaluator\nas an API accessible to the agent, with the grader details hidden. This added flexibility also\nintroduces systems challenges: agents must remain persistent over long horizons, avoid\ndrift, accumulate reusable knowledge, and operate safely without overloading compute\nresources or hacking the evaluator. To address these challenges, CORAL introduces three\ncore mechanisms: shared persistent memory, asynchronous multi-agent organization, and\nheartbeat-based interventions, along with several execution safeguards (see Appendix C.7).\n3.3 Core Mechanisms of CORAL\nShared Persistent Memory as File System. CORAL\u2019s shared persistent memory M is\nstructured as a file system with symbolic links to an agent\u2019s workspace (also a file system) to\nmaintain consistency. Functioning much like a library, an agent can retrieve and contribute\nto the shared file system via the CORAL CLI tool (see Appendix C.2) and directly use\nBash tool to access it. Agents can even help \u2018organize\u2018 the shared persistent memory by\ncategorizing shared knowledge into sub-folders. This design allows progressive disclosure\nfor agents, saving their contexts, while also being easy to maintain and highly extensible. To\nprovide some bootstrapping structure for the agents, we define three root folders storing\ndifferent types of knowledge, explained below. Please refer to Appendix C.4 for examples.\nattempts/ \nrecords historical evaluations and solutions. Agents can browse this space to\nunderstand high-performing solutions and retrieve their solutions for comparison.\n5"
+    },
+    {
+      "aiAssistanceScore": 0.088144235,
+      "confidence": "Medium",
+      "endIndex": 539,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nnotes/ records observations, learnings, and reflections from all agents. Each note is stored\nas a markdown file in the directory or a subdirectory determined by the agent who creates\nthe note. Agents have full access to all notes.\nskills/ records reusable procedures, tools, scripts, and implementation patterns transfer-\nable across attempts. Following standard practice, a skill consists of a natural-language\ndescription (e.g., SKILL.md) together with executable artifacts such as functions and example\nscripts. "
+    },
+    {
+      "aiAssistanceScore": 0.11062234,
+      "confidence": "Medium",
+      "endIndex": 2910,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 538,
+      "text": " Agents are provided with a skill creator skill as a guide to create new skills.\nMulti-Agent Organization. CORAL naturally extends from a single autonomous agent to a\npopulation of N agents that run asynchronously. Each agent i maintains its own local context\nC\n(i)\nt \nand executes in an isolated workspace while sharing access to the same evaluator and\nshared persistent memory M via symbolic link, i.e., shortcut pointers to the original files.\nThis design allows each agent to freely work on its own without interference.\nUnlike many peer-to-peer multi-agent systems where agents directly talk to each\nother (LangChain, 2024), coordination between agents occurs primarily through shared\npersistent memory. Similar to the single-agent scenario, each agent may autonomously\nread and write to a shared workspace. As agents generate attempts, notes, and skills, they\nwrite artifacts W\n(i)\nt \nto M, which may later be retrieved by other agents as part of their own\ncontext \n\u02c6\nM\n(j)\nt \n. This way, one agent\u2019s discoveries can influence another agent\u2019s future search\nthrough what it writes to the shared workspace, without requiring a messaging protocol.\nThis organization increases exploration diversity by allowing agents to pursue different\nlocal directions in parallel while still benefiting from shared accumulation.\nHeartbeat: Reflection, Consolidation and Redirection. As CORAL does not enforce the\nfixed-search workflow, agents may inadvertently fall into local minima, where they decide\nto work on micro-optimizations instead of trying out innovative ideas. Agents may also\nforget to consult and contribute to shared persistent memory. To encourage desirable\nbehavior, CORAL imposes a heartbeat mechanism that functions like a Reminder App,\nperiodically prompting the agents to exercise self-reflection and pivoting for new ideas\nwhen existing approaches plateau. A heartbeat event may be predefined or created by the\nagents themselves. Each event is attached to a trigger, which can be the number of intervals,\ntime passed, or a change in eval score. When triggered at step t, the heartbeat applies a\nmodification to the agent\u2019s local context C\n(i)\nt \n\u2192 C\n\u2032(i)\nt \nand thereby steers subsequent behavior.\nCORAL implements three heartbeat types. The first is a per-iteration reflection heartbeat,\nwhich encourages the agent to record useful notes during ongoing work. "
+    },
+    {
+      "aiAssistanceScore": 0.21715376,
+      "confidence": "Medium",
+      "endIndex": 4469,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 2909,
+      "text": " This heartbeat\nhelps the agent capture observations as they arise. The second is a periodic consolidation\nheartbeat, triggered after a fixed number of attempts, which prompts the agent to review\nprogress, organize and refine accumulated notes, and distill reusable procedures into skills.\nIn other words, while the first supports note-taking during work, the second focuses on\norganizing those notes and building skills from them. The third is a stagnation-triggered\nredirection heartbeat, activated when the agent shows no improvement for several rounds,\nwhich prompts it to reassess the current direction and decide whether to continue, revise its\nstrategy, or pivot to a different line of search. Together, these heartbeat mechanisms promote\nexplicit memory formation and reduce myopic local search.\n4 Experiments\n4.1 Experimental Setup\nTasks. We evaluate CORAL on two benchmark suites and two stress-test problems. The\nbenchmark suites follow the experiment set-up in EvoX (Liu et al., 2026a) and TTT-Discover\n(Yuksekgonul et al., 2026), consisting of 6 mathematical optimization tasks (e.g., circle\npacking, Erd \n\u02dd\nos minimum overlap) and 5 systems optimization tasks (e.g., expert placement\nload balancing, GPU placement, cross-cloud transfer). These suites are used for both single-\nagent and multi-agent experiments. The two challenging stress-test problems are further\nused for multi-agent evaluation: Anthropic\u2019s kernel engineering (Anthropic, 2025), a VLIW\nSIMD tree-traversal task with an official best score of 1,363 cycles, and the Polyominoes\n6"
+    },
+    {
+      "aiAssistanceScore": 0.21715376,
+      "confidence": "Medium",
+      "endIndex": 399,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nTable 1: Single-agent CORAL vs. fixed evolutionary search baselines on mathematical\nand systems optimization tasks. OE = OpenEvolve, SE = ShinkaEvolve. All methods use\nClaude Opus 4.6. For Final Score, \u2191 means higher is better and \u2193 means lower is better. For\nImprovement Rate, higher is better. For # Evals, lower is better. Cyan cells surpass previous\nSOTA on final score. "
+    },
+    {
+      "aiAssistanceScore": 0.26434115,
+      "confidence": "Low",
+      "endIndex": 1093,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 398,
+      "text": " Best results are bolded. CORAL\u2019s autonomous evolution significantly\noutperforms fixed evolutionary search, achieving the best final score on all 11 tasks and\nestablishing new SOTA on 8 tasks.\nTask\nFinal Score Impr. Rate (%) # Evals\nSOTA OE SE EvoX CORAL OE SE EvoX CORAL OE SE EvoX CORAL\nMath\nCircle-Pack. \u2191 2.6359 2.6293 2.6001 2.6320 2.6360 7.0 19.4 27.1 100.0 100 62 48 11\nSignal Proc. \u2191 0.7429 0.6420 0.8171 0.7306 0.8229 11.8 8.6 21.1 30.3 85 58 71 56\nErd\u02ddos Over. \u2193 \n0.38088 0.38188 0.38156 0.38125 0.38089 9.5 15.7 27.8 36.8 84 89 36 19\nMMD-16-2 \u2193 12.89 12.92 12.89 12.96 12.89 8.2 9.8 33.3 83.3 97 82 18 6\nMMD-14-3 \u2193 4.16 4.21 4.46 4.46 4.16 25.0 9.4 24.5 75.0 12 96 53 8\n3rd-Autocorr. "
+    },
+    {
+      "aiAssistanceScore": 0.120143026,
+      "confidence": "Medium",
+      "endIndex": 1809,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1092,
+      "text": " \u2193 \n1.4557 1.4731 1.4812 1.5552 1.4557 6.2 32.4 12.0 60.0 97 37 75 5\nSystem\n \nEPLB \u2191 0.145 0.127 0.129 0.146 0.149 8.3 12.6 10.0 78.9 60 87 100 19\nPRISM \u2191 26.26 26.26 26.26 26.26 26.26 31.6 18.8 25.0 100.0 19 32 16 3\nLLM-SQL \u2191 \n0.730 0.716 0.724 0.726 0.731 6.7 23.8 6.0 53.3 100 21 83 15\nTxn Sched. \u2191 \n4348 3774 3802 3984 4566 10.1 16.0 16.0 27.3 99 25 94 22\nCloudcast \u2193 \n632.7 627.2 627.8 623.5 618.4 7.2 20.8 12.3 33.3 69 24 65 9\npacking problem from Frontier-CS (Mang et al., 2025), which is one of the hardest among all\n172 problems in the benchmark.\nBaselines and models. For single-agent experiments, we compare CORAL against\nOpenEvolve (Sharma, 2025), ShinkaEvolve (Lange et al., 2025), and EvoX (Liu et al., "
+    },
+    {
+      "aiAssistanceScore": 0.24484147,
+      "confidence": "Low",
+      "endIndex": 3772,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1808,
+      "text": " 2026a),\nall given the same seed programs, evaluators, and budgets. All single-agent methods\nand the stress-test multi-agent experiments use Claude Code + Opus 4.6. For multi-agent\nexperiments on the math and systems suites, we use a fully open-source stack (MiniMax\nM2.5 (MiniMax, 2026) + OpenCode (OpenCode, 2025)) to verify that CORAL\u2019s gains gener-\nalize beyond proprietary models and agents. No internet access is provided.\nBudget and evaluation. All runs on the math and systems suites are given a 3-hour wall-\nclock budget or 100 iterations for the baseline methods, whichever is longer. For fairness,\nwe run CORAL for the minimum duration among all baseline runs. Stress-test problems\nrun until convergence due to difficulty. All results are averaged over 4 independent trials.\nWe report:\n\u2022 Final score: the best score achieved within the evaluation budget (primary metric).\n\u2022 Improvement rate: fraction of evaluations that yield an improvement on the best score.\n\u2022 Number of evaluations: number of evaluations required to reach the final score.\nSOTA denotes the best previously known results (human or AI).\n4.2 Autonomous Evolution Outperforms Fixed Evolutionary Search\nAs shown in Table 1, CORAL achieves the best final score on all 11 tasks, establishing new\nSOTA on 8 tasks. Among baselines, EvoX (Liu et al., 2026a) is the strongest competitor due\nto its meta-evolved search strategy, yet CORAL still outperforms it on every task. All three\nbaselines trail CORAL by a wide margin on improvement rate and evaluation efficiency.\nCORAL\u2019s improvement rate is 3 \u2013 10\u00d7 higher, and it typically converges within 5 \u2013 20\nevaluations versus 60 \u2013 100 for fixed evolutionary search methods. This means CORAL\nwastes far fewer evaluations on unproductive candidates. We attribute this to CORAL\u2019s\nautonomous design. fixed evolutionary search baselines select candidates for mutation\nbased on predefined heuristics and follow a fixed pipeline at each evolution step. "
+    },
+    {
+      "aiAssistanceScore": 0.21711533,
+      "confidence": "Low",
+      "endIndex": 4125,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 3771,
+      "text": " CORAL\nagents instead decide what to explore next based on their own analysis of prior attempts\nand evaluation feedback, choosing which aspects of a solution to modify, when to pivot to a\ndifferent approach, and when a candidate is ready for evaluation. This autonomy over the\nevolutionary process is reflected directly in the gap in improvement rates.\n7"
+    },
+    {
+      "aiAssistanceScore": 0.21711533,
+      "confidence": "Low",
+      "endIndex": 785,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nTable 2: Multi-agent co-evolution vs. single-agent CORAL. Bolded Gain (%) values denote\nthe relative improvement of 4-Agents over 1-Agent. Multi-Agent evolution can significantly\nimprove the search frontier, especially on tasks where single-agent runs plateau early.\nRuntime Task\nFinal Score Impr. Rate (%) # Evals\nSOTA 1-Agent 4-Agent Gain (%) 1-Agent 4-Agent 1-Agent 4-Agent\nClaude Code +\nOpus 4.6\nPolynominoes \u2191 87.0 80.2 84.2 4.99 42.4 19.4 33 67\nStress\nKernel Eng. \u2193 1363 1350 1103 18.30 43.0 9.0 56 596\nMath\n \nOpenCode +\nMiniMax M2.5\nCircle-Pack. \u2191 2.6359 2.3531 2.5391 7.90 20.7 28.3 29 46\nSignal Proc. \u2191 0.7429 0.7174 0.7383 2.91 30.5 19.8 59 253\nErd\u02ddos Over. \u2193 0.38088 0.39237 0.38311 2.36 16.7 6.9 42 58\nMMD-16-2 \u2193 12.89 12.91 12.89 0.15 32.4 11.5 34 "
+    },
+    {
+      "aiAssistanceScore": 0.2334644,
+      "confidence": "Low",
+      "endIndex": 1747,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 784,
+      "text": " 103\nMMD-14-3 \u2193 4.16 4.53 4.19 7.51 63.6 15.0 11 80\n3rd-Autocorr \u2193 \n1.4557 1.5337 1.4931 2.65 42.9 22.1 7 59\nSystem\nOpenCode +\nMiniMax M2.5\nEPLB \u2191 0.145 0.128 0.129 0.78 50.0 65.4 6 26\nPRISM \u2191 26.26 25.85 26.26 1.59 32.6 31.7 46 82\nLLM-SQL \u2191 0.730 0.693 0.730 5.34 83.3 71.7 6 46\nTxn Sched. \u2191 4348 3704 3774 1.89 50.0 66.7 16 24\nCloudcast \u2193 632.7 849.4 672.8 20.80 72.7 66.7 11 12\n4.3 Multi-Agent Evolution Extends the Search Frontier\nMulti-agent gains over strong single-agent autonomy. While single-agent CORAL al-\nready outperforms all fixed evolutionary search baselines, 4-agent co-evolution pushes\nperformance even further (Table 2). The largest improvements appear on the stress-test\nproblems, where single-agent runs tend to plateau early, with co-evolution achieving an\n18.3% cycle reduction on Kernel Engineering and a 5.0% score increase on Polyominoes.\nNotably, without web search, CORAL already establishes a new SOTA on the Kernel\nEngineering task. "
+    },
+    {
+      "aiAssistanceScore": 0.24426296,
+      "confidence": "Low",
+      "endIndex": 4079,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 1746,
+      "text": " With web search enabled, CORAL also achieves a new SOTA (89.4) on\nthe Polyominoes problem, although for fairness, we report the non-web-search results in\nTable 2; the full web-enabled results are provided in Appendix B.1. These gains do not\narise solely from additional compute: single-agent runs exhibit higher per-eval improve-\nment rates, yet co-evolution achieves better final scores by exploring more diverse search\ntrajectories. This is enabled by CORAL\u2019s asynchronous shared persistent memory, where\nmultiple agents independently explore different regions of the solution space and share\ndiscoveries through persistent attempts, notes, and skills. Useful techniques diffuse across\nagents organically without requiring explicit coordination protocols.\nGeneralization to open-source models. The multi-agent gains are not tied to proprietary\nmodels. When evaluated on the math and systems suites using a fully open-source stack\n(MiniMax M2.5 + OpenCode), 4-agent co-evolution consistently improves final scores over\nthe single-agent counterpart across most tasks (Table 2). These results show that CORAL\u2019s\norganizational advantages arise from the co-evolution mechanism itself rather than model-\nspecific capabilities, and that the benefits of distributed exploration and shared persistent\nmemory transfer to open-source settings.\n4.4 Analysis\n4.4.1 Why Autonomous Evolution Works\nTo understand why autonomous evolution is effective, we analyze agent trajectories qualita-\ntively and quantitatively. Detailed results are reported in Appendix B.2. Across tasks, local\nverification and knowledge accumulation are strongly associated with performance:\nLocal verification. Agents often execute code and run tests locally before submitting\nfor external evaluation, allowing them to debug and validate candidates within a single\niteration. Attempts with local execution improve more often than the average attempt on\nthe same task. This effect is the strongest on tasks involving compiled code: on Transaction\n(61% local test rate) and Kernel Engineering (57%) (see Table 4 and 5), local execution often\ncatches compilation failures before an evaluation is consumed. By contrast, tasks with\nnon-reproducible or hidden evaluations show much lower local test rates; for example,\nPrism (0%) relies on grader-generated randomized tests.\n8"
+    },
+    {
+      "aiAssistanceScore": 0.24426296,
+      "confidence": "Low",
+      "endIndex": 156,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nKnowledge accumulation. Knowledge accumulation through notes and skills also helps,\nbut its role differs sharply across task types. "
+    },
+    {
+      "aiAssistanceScore": 0.1802268,
+      "confidence": "Medium",
+      "endIndex": 2399,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 155,
+      "text": " On standard tasks, agents create only 0.05\nknowledge artifacts per attempt, and knowledge access yields only a small gain (+2 per-\ncentage points over attempts without knowledge access). On advanced tasks, agents create\nover 10\u00d7 more knowledge per attempt (0.55 and 0.68), and knowledge access is much more\nstrongly associated with improvement: 55% on Kernel Engineering versus 26% on standard\ntasks (see Table 4). The knowledge itself also differs in quality. On standard tasks, notes are\noften lightweight progress logs, such as records of parameter changes. On advanced tasks,\nthey capture reusable insights: for example, Kernel Engineering notes identify architectural\nbottlenecks such as VALU or record cases where relaxing WAR dependencies hurts perfor-\nmance, while Polyominoes includes a \u201cwhat NEVER worked\u201d folder to document failed\napproaches and avoid revisiting unpromising design strategies across attempts.\nAgents also proactively inspect prior attempts, compare implementations, and look for\npatterns when deciding what to try next. However, whether this form of inspection is more\neffective than retrieval in earlier fixed evolutionary search methods is difficult to isolate, so\nwe leave it to future work.\n4.4.2 Why Multi-Agent Organization Helps\nWe analyze 4-agent runs on Kernel Engineering (596 attempts) and Polyominoes (67 at-\ntempts) across three dimensions.\nCross-agent information transfer. Building on another agent\u2019s work is very effective. On\nKernel Engineering, 36% of attempts use another agent\u2019s commit as their parent, and these\nimprove at 17% versus 9% for all attempts. The majority (66%) of new records originate\nfrom a cross-agent parent. On Polyominoes, direct code transfer is rarer (12%) but still very\npowerful (50% versus a 19% average improvement rate); transfer instead occurs more often\nthrough shared notes and skills, with 87% of rounds referencing knowledge committed by\nother agents. The two tasks exhibit complementary information transfer modes: Kernel\nEngineering agents transfer more through referencing others\u2019 code, whereas Polyominoes\nagents transfer more through knowledge.\nExploration diversity. We extract strategy keywords from attempt titles and compute\npairwise Jaccard similarity. "
+    },
+    {
+      "aiAssistanceScore": 0.31739715,
+      "confidence": "Low",
+      "endIndex": 4028,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 2398,
+      "text": " On Kernel Engineering, agents average 0.43 pairwise overlap;\non Polyominoes, 0.31. More than half of each agent\u2019s strategy vocabulary is unique, meaning\nthat the population collectively explores substantially more of the search space than any\nindividual agent.\nContribution balance. On Kernel Engineering, all four agents produce 130\u2013165 attempts\nwith 10\u201316 improvements each, and all four independently reach the best score of 1103\ncycles. Records are evenly split (14/15/10/15). Leader tenure is more skewed: agent-1\nholds the best score for 45% of the run. On Polyominoes, contributions are less balanced:\nagent-3 sets 6 of 13 records, and agent-4 leads for 34% of the total time.\n4.4.3 Ablations\nTable 3: Ablation study on\nknowledge accumulation and\nmulti-agent co-evolution. All\nruns use Claude Code + Opus\n4.6. Best results are bolded.\nKnowledge Accumulation (1-Agent)\nTask w/ Know. w/o Know.\nKernel Eng. \u2193 1350 1601\nPolyominoes \u2191 80.2 77.3\nTxn Sched. \u2191 4566 4444\nCo-evolution (4-Agent)\nTask Co-evol. Indep. Best\nKernel Eng. \u2193 1103 1180\nPolyominoes \u2191 84.2 80.8\nTxn Sched. \u2191 4694 4629\nWe ablate two core components of CORAL: knowledge\naccumulation and multi-agent co-evolution. Table 3 re-\nports results on three stress-test tasks using Claude Code\n+ Opus 4.6.\nKnowledge accumulation. Disabling note and skill cre-\nation degrades final scores across all three tasks, with the\nlargest drop on Kernel Engineering (1350 \u2192 1601 cycles,\nan 18.6% regression). This confirms that knowledge ar-\ntifacts causally contribute to search quality, rather than\nbeing merely correlated with improvement.\nCo-evolution vs. independent runs. T"
+    },
+    {
+      "aiAssistanceScore": 0.14252833,
+      "confidence": "Medium",
+      "endIndex": 4150,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 4027,
+      "text": "To test whether\nmulti-agent evolution gains come from co-evolution or\nsimply from running more agents, we compare 4-agent\n9"
+    },
+    {
+      "aiAssistanceScore": 0.14252833,
+      "confidence": "Medium",
+      "endIndex": 2097,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nco-evolution against the best-of-4 independent single-agent runs. Co-evolution outperforms\nindependent best on all three tasks. This shows that the gains from multi-agent evolution\nare not reducible to additional compute.\n5 Conclusion\nWe introduced CORAL, a framework for autonomous multi-agent evolution for open-ended\nproblems. By replacing rigid evolutionary search heuristics with autonomous agents that\ncontrol retrieval, proposal, evaluation, and knowledge accumulation, while coordinating\nthrough shared persistent memory, CORAL achieves substantially stronger performance\nacross mathematical, algorithmic, and systems optimization tasks. A single autonomous\nagent already outperforms fixed evolutionary-search baselines, and multi-agent evolution\npushes the frontier further: four agents discover solutions that no single agent finds, even\nwhen the latter is given four times the compute. More broadly, our results suggest that\nautonomous agents are becoming a promising paradigm for open-ended discovery. Recent\nconcurrent open-source projects (Karpathy, 2026; Liu et al., 2026c; rllm-org, 2026) and\nemerging studies (Chen et al., 2026) point in a similar direction, and together with the\nempirical evidence in this work, they suggest that we may be approaching a turning point\nin how AI systems tackle problems that require iterative search, learning from feedback,\nand accumulation of knowledge over time. This progress is both exciting and unsettling,\nas it creates new opportunities for scientific and engineering discovery while also raising\nimportant challenges for the research community (Appendix A). We hope CORAL can\nserve as a systematic exploratory study, a strong baseline framework, and an extensible\ninfrastructure that supports future work on autonomous discovery systems.\nReferences\nLakshya A Agrawal, Shangyin Tan, Dilara Soylu, Noah Ziems, Rishi Khare, Krista Opsahl-\nOng, Arnav Singhvi, Herumb Shandilya, Michael J Ryan, Meng Jiang, Christopher Potts,\nKoushik Sen, Alexandros G. Dimakis, Ion Stoica, Dan Klein, Matei Zaharia, and Omar\nKhattab. "
+    },
+    {
+      "aiAssistanceScore": 0.03726628,
+      "confidence": "High",
+      "endIndex": 3432,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2096,
+      "text": " GEPA: Reflective prompt evolution can outperform reinforcement learning.\narXiv preprint arXiv:2507.19457, 2025.\nAnthropic. Performance take-home assignment, 2025. https://github.com/anthropics/\noriginal performance takehome.\nGustavo Assump c\u00b8 \u02dcao et al. CodeEvolve: An open source evolutionary coding agent for\nalgorithm discovery and optimization. arXiv preprint, 2026.\nMert Cemri, Shu Liu, Shubham Agarwal, Monishwaran Maheswaran, Zhifei Li, Qiuyang\nMang, Ashwin Naren, Kurt Keutzer, Alexandros G. Dimakis, Koushik Sen, Matei Zaharia,\nand Ion Stoica. AdaEvolve: Adaptive LLM driven zeroth-order optimization. arXiv\npreprint arXiv:2602.20133, 2026.\nHongzheng Chen, Yingheng Wang, Yaohui Cai, Hins Hu, Jiajie Li, Shirley Huang, Chen-\nhui Deng, Rongjian Liang, Shufeng Kong, Haoxing Ren, et al. Heurigym: An agen-\ntic benchmark for llm-crafted heuristics in combinatorial optimization. arXiv preprint\narXiv:2506.07972, 2025.\nTerry Chen, Zhifan Ye, Bing Xu, Zihao Ye, Timmy Liu, Ali Hassani, Tianqi Chen, An-\ndrew Kerr, Haicheng Wu, Yang Xu, Yu-Jung Chen, Hanfeng Chen, Aditya Kane, Ronny\nKrashinsky, Ming-Yu Liu, Vinod Grover, Luis Ceze, Roger Bringmann, John Tran, Wei\nLiu, Fung Xie, Michael Lightstone, and Humphrey Shi. Avo: Agentic variation operators\nfor autonomous evolutionary search, 2026. URL https://arxiv.org/abs/2603.24517.\n"
+    },
+    {
+      "aiAssistanceScore": 0.028816614,
+      "confidence": "High",
+      "endIndex": 3754,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 3431,
+      "text": "\nWeize Chen, Yusheng Su, Jingwei Zuo, Cheng Yang, Chenfei Yuan, Chi-Min Chan, Heyang\nYu, Yaxi Lu, Yi-Hsin Hung, Chen Qian, Yujia Qin, Xin Cong, Ruobing Xie, Zhiyuan Liu,\nMaosong Sun, and Jie Zhou. AgentVerse: Facilitating multi-agent collaboration and\nexploring emergent behaviors. arXiv preprint arXiv:2308.10848, 2024.\n10"
+    },
+    {
+      "aiAssistanceScore": 0.028816614,
+      "confidence": "High",
+      "endIndex": 1054,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nHaoyuan Gao et al. A survey of self-evolving agents: On path to artificial super intelligence.\narXiv preprint arXiv:2507.21046, 2025.\nJuraj Gottweis, Wei-Hung Weng, Alexander Daryin, Tao Tu, Anil Palepu, Petar Sirkovic,\nArtiom Myaskovsky, Felix Weissenberger, Keran Rong, Ryutaro Tanno, et al. Towards an\nai co-scientist. arXiv preprint arXiv:2502.18864, 2025.\nSirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang,\nJinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran,\nLingfeng Xiao, Chenglin Wu, and J \n\u00a8\nurgen Schmidhuber. MetaGPT: Meta programming\nfor a multi-agent collaborative framework. arXiv preprint arXiv:2308.00352, 2024.\nAndrej Karpathy. autoresearch: Ai agents running research on single-gpu nanochat train-\ning automatically. https://github.com/karpathy/autoresearch, March 2026. GitHub\nrepository. Accessed: 2026-03-31.\nValentin Khrulkov, Artem Galichin, Dmitry Bashkirov, Dmitry Vinichenko, Oleg Travkin,\nRoman Alferov, Artem Kuznetsov, and Ivan Oseledets. "
+    },
+    {
+      "aiAssistanceScore": 0.030582178,
+      "confidence": "High",
+      "endIndex": 2358,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1053,
+      "text": " GigaEvo: An open source\noptimization framework powered by LLMs and evolution algorithms. arXiv preprint\narXiv:2511.17592, 2025.\nMinwei Kong, Ao Qu, Xiaotong Guo, Wenbin Ouyang, Chonghe Jiang, Han Zheng, Yining\nMa, Dingyi Zhuang, Yuhan Tang, Junyi Li, Shenhao Wang, Haris Koutsopoulos, Hai\nWang, Cathy Wu, and Jinhua Zhao. AlphaOPT: Formulating optimization programs with\nself-improving LLM experience library. arXiv preprint arXiv:2510.18428, 2025.\nLangChain. LangGraph: Build resilient language agents as graphs, 2024. https://github.\ncom/langchain-ai/langgraph.\nRobert Tjarko Lange, Yuki Imajuku, and Edoardo Cetin. ShinkaEvolve: Towards open-ended\nand sample-efficient program evolution. arXiv preprint arXiv:2509.19349, 2025.\nGuohao Li, Hasan Hammoud, Hani Itani, Dmitrii Khizbullin, and Bernard Ghanem. Camel:\nCommunicative agents for\u201d mind\u201d exploration of large language model society. Advances\nin neural information processing systems, 36:51991\u201352008, 2023.\nShu Liu, Shubham Agarwal, Monishwaran Maheswaran, Mert Cemri, Zhifei Li, Qiuyang\nMang, Ashwin Naren, Ethan Boneh, Audrey Cheng, Melissa Z. Pan, Alexander Du, Kurt\nKeutzer, Alvin Cheung, Alexandros G. Dimakis, Koushik Sen, Matei Zaharia, and Ion\nStoica. EvoX: Meta-evolution for automated discovery. arXiv preprint arXiv:2602.23413,\n2026a.\n"
+    },
+    {
+      "aiAssistanceScore": 0.04768093,
+      "confidence": "Medium",
+      "endIndex": 3539,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 2357,
+      "text": "\nShu Liu, Mert Cemri, Shubham Agarwal, Alexander Krentsel, Ashwin Naren, Qiuyang\nMang, Zhifei Li, Akshat Gupta, Monishwaran Maheswaran, Audrey Cheng, Melissa\nPan, Ethan Boneh, Kannan Ramchandran, Koushik Sen, Alexandros G. Dimakis, Matei\nZaharia, and Ion Stoica. Skydiscover: A flexible framework for ai-driven scientific and\nalgorithmic discovery, 2026b. URL https://skydiscover-ai.github.io/blog.html.\nTengxiao Liu, Yuqing Yang, Xi Ye, and Danqi Chen. Can coding agents optimize algorithms\nautonomously? https://tengxiaoliu.github.io/autoevolver/, March 2026c. Project\npage. Accessed: 2026-04-01.\nChris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, and David Ha. The\nAI scientist: Towards fully automated open-ended scientific discovery. arXiv preprint\narXiv:2408.06292, 2024.\nAman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegr-\neffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bod-\nhisattwa Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, and\nPeter Clark. Self-refine: Iterative refinement with self-feedback. In Advances in Neural\nInformation Processing Systems, volume 36, 2023.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.04768093,
+      "confidence": "Medium",
+      "endIndex": 253,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nQiuyang Mang, Wenhao Chai, Zhifei Li, Huanzhi Mao, Shang Zhou, Alexander Du,\nHanchen Li, Shu Liu, Edwin Chen, Yichuan Wang, et al. Frontiercs: Evolving challenges\nfor evolving intelligence. arXiv preprint arXiv:2512.15699, 2025.\n"
+    },
+    {
+      "aiAssistanceScore": 0.057815786,
+      "confidence": "Medium",
+      "endIndex": 1630,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 252,
+      "text": "\nMiniMax. MiniMax M2.5: Built for real-world productivity, 2026. https://www.minimax.\nio/news/minimax-m25.\nAlexander Novikov, Ng \n\u02c6\nan V \n\u02dc\nu, Marvin Eisenberger, Emilien Dupont, Po-Sen Huang,\nAdam Zsolt Wagner, Sergey Shirobokov, Borislav Kozlovskii, Francisco JR Ruiz, Abbas\nMehrabian, et al. Alphaevolve: A coding agent for scientific and algorithmic discovery.\narXiv preprint arXiv:2506.13131, 2025.\nOpenCode. OpenCode: The open source AI coding agent, 2025. https://opencode.ai.\nAnne Ouyang, Simon Guo, Simran Arora, Alex L Zhang, William Hu, Christopher Re, and\nAzalia Mirhoseini. Kernelbench: Can llms write efficient gpu kernels? In Forty-second\nInternational Conference on Machine Learning, 2025a.\nSiru Ouyang, Jun Yan, I Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T Le,\nSamira Daruki, Xiangru Tang, et al. Reasoningbank: Scaling agent self-evolving with\nreasoning memory. arXiv preprint arXiv:2509.25140, 2025b.\nChen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize\nChen, Yusheng Su, Xin Cong, Juyuan Xu, Dahai Li, Zhiyuan Liu, and Maosong Sun. Chat-\nDev: Communicative agents for software development. arXiv preprint arXiv:2307.07924,\n2024.\nrllm-org. Hive. https://github.com/rllm-org/hive, 2026. GitHub repository. An open-\nsource platform where AI agents collaboratively evolve shared artifacts. Accessed: 2026-\n04-01.\n"
+    },
+    {
+      "aiAssistanceScore": 0.060905784,
+      "confidence": "Medium",
+      "endIndex": 3026,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 1629,
+      "text": "\nBernardino Romera-Paredes, Mohammadamin Barekatain, Alexander Novikov, Matej Balog,\nM. Pawan Kumar, Emilien Dupont, Francisco J. R. Ruiz, Jordan S. Ellenberg, Pengming\nWang, Omar Fawzi, Pushmeet Kohli, and Alhussein Fawzi. Mathematical discoveries\nfrom program search with large language models. Nature, 625(7995):468\u2013475, 2024. doi:\n10.1038/s41586-023-06924-6.\nAaditya Sharma. OpenEvolve: An open-source evolutionary coding agent. arXiv preprint,\n2025. https://github.com/codelion/openevolve.\nNoah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu Yao.\nReflexion: Language agents with verbal reinforcement learning. In Advances in Neural\nInformation Processing Systems, volume 36, 2023.\nXingyao Wang et al. OpenHands: An open platform for AI software developers as generalist\nagents. arXiv preprint arXiv:2407.16741, 2024.\nYuxiang Wang, Shan Su, Zhiwei Zeng, Enhong Xu, Lei Ren, Xiao Yang, Zhi Huang, Xiangnan\nHe, Liang Ma, Baolin Peng, Hao Cheng, Pengcheng He, Weizhu Chen, Shuming Wang,\nSimon S. Du, and Yelong Shen. ThetaEvolve: Test-time learning on open problems. arXiv\npreprint arXiv:2511.23473, 2025.\nQingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang,\nXiaoyun Zhang, Shaokun Zhang, Jiale Liu, Ahmed Hassan Awadallah, Ryen W. White,\nDoug Burger, and Chi Wang. AutoGen: Enabling next-gen LLM applications via multi-\nagent conversation. "
+    },
+    {
+      "aiAssistanceScore": 0.03275201,
+      "confidence": "High",
+      "endIndex": 3322,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 3025,
+      "text": " arXiv preprint arXiv:2308.08155, 2023.\nQingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Erkang Zhu, Li Jiang,\nXiaoyun Zhang, Shaokun Zhang, Jiale Liu, et al. Autogen: Enabling next-gen llm applica-\ntions via multi-agent conversations. In First conference on language modeling, 2024.\n12"
+    },
+    {
+      "aiAssistanceScore": 0.03275201,
+      "confidence": "High",
+      "endIndex": 1107,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nMinhao Yan, Baolin Peng, Benjamin Coleman, Zihao Chen, Zhiwei Xie, Zhicheng He,\nNoveen Sachdeva, Ian Ye, Wei Wang, Chi Wang, Ed H. Chi, Wang Kang, Deborah Z.\nCheng, and Bolin Wang. PACEvolve: Enabling long-horizon progress-aware consistent\nevolution. arXiv preprint arXiv:2601.10657, 2026.\nJohn Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Liber, Shunyu Yao, Karthik\nNarasimhan, and Ofir Press. SWE-agent: Agent-computer interfaces enable automated\nsoftware engineering. arXiv preprint arXiv:2405.15793, 2024.\nShunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and\nYuan Cao. ReAct: Synergizing reasoning and acting in language models. In International\nConference on Learning Representations, 2023.\nHongli Yu, Tinghong Chen, Jiangtao Feng, Jiangjie Chen, Weinan Dai, Qiying Yu, Ya-\nQin Zhang, Wei-Ying Ma, Jingjing Liu, Mingxuan Wang, and Hao Zhou. Memagent:\nReshaping long-context LLM with multi-conv RL-based memory agent. In The Fourteenth\nInternational Conference on Learning Representations, 2026. URL https://openreview.net/\nforum?id=k5nIOvYGCL.\n"
+    },
+    {
+      "aiAssistanceScore": 0.10918764,
+      "confidence": "Medium",
+      "endIndex": 1893,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 1106,
+      "text": "\nMert Yuksekgonul, Daniel Koceja, Xiang Li, Federico Bianchi, Jack McCaleb, Xinyun Wang,\nJan Kautz, Yejin Choi, James Zou, Carlos Guestrin, et al. Learning to discover at test time.\narXiv preprint arXiv:2601.16175, 2026.\nHan Zheng, Yining Ma, Brandon Araki, and Cathy Wu. Learning-guided prioritized\nplanning for lifelong multi-agent path finding in warehouse automation. Journal of\nArtificial Intelligence Research, 85:1\u201330, 2026. doi: 10.1613/jair.1.20611.\nZijian Zhou, Ao Qu, Zhaoxuan Wu, Sunghwan Kim, Alok Prakash, Daniela Rus, Bryan\nKian Hsiang Low, and Paul Pu Liang. MEM1: Learning to synergize memory and\nreasoning for efficient long-horizon agents. In The Fourteenth International Conference on\nLearning Representations, 2026. URL https://openreview.net/forum?id=XY8AaxDSLb.\n13"
+    },
+    {
+      "aiAssistanceScore": 0.10918764,
+      "confidence": "Medium",
+      "endIndex": 1121,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nLLM Usage Disclosure\nWe used LLMs for minor writing assistance, including grammar correction and language\npolishing. The agents in CORAL are instantiated with LLMs, which serve as the back-\nbone for all agent behaviors and experiments described in the paper. The core research\nideas, methodology, experimental design, implementation, analysis, and conclusions were\ndeveloped and carried out by the authors. No LLM was used to generate research ideas,\nexperimental results, figures, or evaluations.\nA Limitations and Future Directions\nWhile CORAL has proved significantly effective across a wide range of challenging tasks,\nthe current version still has several limitations. First, CORAL relies on frontier foundation\nmodels that can handle relatively complex coding-agent workflows, which makes full\ndeployment on local devices difficult. An exciting direction for future work is therefore to\ntrain customized small models tailored to CORAL. Second, multi-agent evolution currently\nlacks bootstrapped heterogeneity: all agents are initialized identically and given access\nto the same information. "
+    },
+    {
+      "aiAssistanceScore": 0.15467922,
+      "confidence": "Medium",
+      "endIndex": 3461,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 1120,
+      "text": " Future work could inject distinct personalities, roles, or private\ninformation into different agents to encourage greater behavioral diversity and, in turn, a\nmore efficient evolutionary process. Third, our current setting assumes the availability of a\nreasonably well-specified evaluator. However, for many important open-ended problems,\nevaluators are themselves difficult to obtain, incomplete, or even fundamentally ambiguous.\nIn such settings, evaluation may also need to co-evolve with the solutions, for example\nthrough iterative refinement of the evaluator, learned critics, or human-agent negotiation\nover what constitutes progress.\nB Additional Experiment Results\nB.1 New State-of-the-Art on Polyominoes Packing\nFigure 3 visualizes the Polyominoes packing solutions. The Polyominoes packing problem,\ndrawn from the Frontier-CS benchmark (Mang et al., 2025), requires packing all polyominoes\nas tightly as possible into a grid to minimize unused area. This is the hardest among all 172\nproblems in the benchmark.\nA single-attempt baseline using Claude Opus 4.6 achieves 56.0% coverage. In contrast,\nCORAL with 4 agent running Claude Opus 4.6 via Claude Code with web search access\nachieves 89.4% coverage, surpassing the previous SOTA of 87%.\nB.2 Trajectory Statistics for Autonomous Self-Evolution\nTo better understand why autonomous self-evolution is effective, we report additional\nstatistics over agent trajectories. The metrics characterize how agents use local verification,\ninspect prior work, and create or consume reusable knowledge during search. Specifically,\nImpr. Rate denotes the fraction of attempts that improve over the current best solution\nfor the same task. Local Test denotes the fraction of attempts in which the agent executes\nor verifies a candidate locally before external evaluation, and Test\u2192Impr. denotes the\nimprovement rate among such attempts. Attempt Inspect denotes the fraction of attempts\nin which the agent explicitly inspects prior attempts or related artifacts, such as candidate\nsolutions, evaluator feedback, or execution traces. Know. Created denotes the average\nnumber of reusable knowledge entries written per attempt. Know. Access denotes the\nfraction of attempts that read from the knowledge repository, and Read\u2192Impr. denotes\nthe improvement rate among attempts that access knowledge. "
+    },
+    {
+      "aiAssistanceScore": 0.18226267,
+      "confidence": "Low",
+      "endIndex": 3709,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 3460,
+      "text": " For standard-level tasks, we\naggregate attempts from all four runs when performing this analysis in order to reduce\npotential statistical bias. The analysis is conducted through a combination of rule-based\nfiltering and LLM-based classification.\n14"
+    },
+    {
+      "aiAssistanceScore": 0.18226267,
+      "confidence": "Low",
+      "endIndex": 1603,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nFigure 3: Polyominoes packing: single-attempt baseline (left, 56.0%) vs. CORAL (right,\n89.4%) uses Claude Opus 4.6 via Claude Code with web search access. The CORAL solution\nsurpasses the previous best known score of 87%.\nTable 4 summarizes these statistics for standard tasks on average and for two advanced\nbenchmarks. Table 5 further reports task-level statistics across a broader set of benchmarks.\nOverall, the results show that both local verification and knowledge reuse are strongly\nassociated with successful improvement, although the frequency of these behaviors varies\nsubstantially across tasks. In particular, tasks that support cheap and reliable local testing\ntend to benefit more from verification, while tasks with richer reusable intermediate insights\nexhibit higher knowledge creation and access rates. For tasks marked with \n\u2217\n, the number of\nattempts is smaller than 30, so their statistics should be interpreted with caution.\nTask Type Task \nImpr.\nRate\nLocal\nTest\nTest\u2192\nImpr.\nAttempt\nInspect\nKnow.\nCreated\nKnow.\nAccess\nRead\u2192\nImpr.\nStandard Average 24% 24% 37% 25% 0.05 7% 26%\nAdvanced Polyominoes 30% 11% 40% 17% 0.55 30% 38%\nAdvanced Kernel Eng. 43% 57% 47% 47% 0.68 17% 55%\nTable 4: Trajectory statistics for standard tasks on average and for two advanced benchmarks.\nC Additional Implementation Details\nThis section provides comprehensive implementation details of the CORAL system, sup-\nplementing the high-level design presented in Section 3. We begin with an overview of the\nsoftware architecture (Figure 4), then describe each component in detail.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.18226267,
+      "confidence": "Low",
+      "endIndex": 53,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nTask \nLocal\nTest\nTest\u2192\nImpr.\n"
+    },
+    {
+      "aiAssistanceScore": 0.21955658,
+      "confidence": "Low",
+      "endIndex": 715,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 52,
+      "text": "\nKnow.\nCreated\nKnow.\nAccess\nRead\u2192\nImpr.\nCircle Packing (\u2191)\n\u2217 \n100% 100% 0.64 55% 100%\nCloudcast (\u2193)\n\u2217 \n30% 0% 0.20 30% 33%\nEPLB (\u2191) 39% 93% 0.08 11% 25%\nLLM-SQL (\u2191)\n\u2217 \n9% 50% 0.23 23% 20%\nmin max min dist (n = 16, d = 2) (\u2193) 35% 42% 0.09 12% 50%\nmin max min dist (n = 14, d = 3) (\u2193) 46% 46% 0.07 9% 56%\nPRISM (\u2191)\n\u2217 \n0% N/A 0.18 18% 50%\nSignal Processing (\u2191) 7% 37% 0.03 4% 12%\nThird Autocorr. Ineq. (\u2193) 31% 23% 0.05 14% 17%\nTransaction (\u2191) 61% 20% 0.06 6% 17%\nErd\u02ddos Min Overlap (\u2193)\n\u2217 \n52% 43% 0.32 37% 40%\nTable 5: Task-level trajectory statistics under autonomous self-evolution. Tasks marked with\n\u2217 \nhave fewer than 30 attempts and may be less representative.\n"
+    },
+    {
+      "aiAssistanceScore": 0.14289413,
+      "confidence": "Medium",
+      "endIndex": 2381,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 714,
+      "text": "\nC O N F I G U R AT I O N\ndataclass \nCoralConfig\n@classmethod from_yaml(path) -> CoralConfig\nmerge_dotlist(overrides) -> CoralConfig\nTaskConfig GraderConfig AgentConfig SharingConfig WorkspaceConfig RunConfig\nAG E N T SYS T E M\nAgentManager\nstart_all() -> list[AgentHandle] monitor_loop() stop_all() resume_all()\nProtocol \nAgentRuntime\nstart(...) -> Handle\nextract_session_id()\ninstruction_filename\ndataclass \nAgentHandle\nagent_id, process,\nworktree\nstop() interrupt()\nalive: bool\nHeartbeatRunner\ncheck(local, global,\nstall) ->\nlist[Action]\nWO R K S PAC E S E T U P\ndataclass ProjectPaths\nrun_dir, coral_dir,\nrepo_dir, agents_dir\nworkspace\ncreate_project(cfg) -> Paths\ncreate_agent_worktree()\nsetup_shared_state()\nsetup_agent_settings()\nG R A D E R H I E R A R C H Y\nProtocol \nGraderInterface\ngrade(codebase_path, tasks) -> ScoreBundle\nABC \nBaseGrader\ngrade() [abstract] grade_sync() -> ScoreBundle\n_make_score() _make_bundle()\nABC \nTaskGrader\nevaluate() -> float | Bundle\nrun_program(filename)\nscore(value) -> ScoreBundle\nfail(explanation) ->\nScoreBundle\nFunctionGrader\nfunc: Callable\ngrade() -> ScoreBundle\nwraps (path, tasks) -> Score\nH U B \u2014 S H A R E D S TAT E ( .C O R A L / P U B L I C / )\nattempts\nwrite_attempt()\nget_leaderboard()\nnotes\nlist_notes()\nsearch_notes()\nskills\nlist_skills()\nread_skill()\ncheckpoint\ncheckpoint()\ncheckpoint_history()\nC O R E T Y P E S\ndataclass Task\nid, name,\ndescription\ndataclass Score\nvalue, name\nto_float()\ndataclass ScoreBundle\nscores, feedback\ncompute_aggregated()\ndataclass Attempt\ncommit_hash,\nagent_id, score,\nstatus, feedback\nreads config loads grader\nsymlinks to hub returns ScoreBundle\nFigure 4: Architecture of CORAL. "
+    },
+    {
+      "aiAssistanceScore": 0.38305596,
+      "confidence": "Medium",
+      "endIndex": 3332,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 2380,
+      "text": " The system is organized into six modules: Config-\nuration parses YAML task definitions; the Agent System manages agent lifecycles and\nheartbeat-driven interventions; the Grader Hierarchy provides a pluggable evaluation inter-\nface; Workspace Setup creates isolated per-agent worktrees with symlinks to shared state;\nthe Hub stores shared persistent memory (attempts, notes, skills); and Core Types define\nthe data model. Arrows indicate primary data flow: configuration is consumed by both\nthe agent system and grader loader; workspace setup creates symlinks into the hub; and\ngraders return ScoreBundle objects defined in core types.\nC.1 Prompts\nEach agent in CORAL receives a structured instruction document (CORAL.md) that is au-\ntomatically generated at startup and placed in the agent\u2019s worktree. This document is\nthe agent\u2019s sole source of task-level instructions and system interface documentation. We\npresent the key prompt templates below.\n16"
+    },
+    {
+      "aiAssistanceScore": 0.38305596,
+      "confidence": "Medium",
+      "endIndex": 1262,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nC.1.1 Agent Instruction Prompt (CORAL.md)\nThe instruction file is instantiated from one of two templates (multi-agent or single-agent)\nby substituting task-specific fields: {task name}, {task description}, {score direction},\n{shared dir}, and {agent id}. Box C.1.1 shows the multi-agent template (abridged).\nAgent Instruction Prompt \u2014 Multi-Agent Template\n# Task: {task name}\n{task description\n}\n## How This Works\nYou are one of several agents working on this task in parallel. These agents are your colleagues. Each agent\nhas its own git worktree (your own branch, your own working copy), but you all share a .coral/ directory where\nattempts, notes, and skills are visible to everyone.\nCORAL owns git --- you never run git commands directly. Instead, you edit files and then run coral eval -m\n\"description\". This stages your changes, commits them, runs the grader, and records the result. The score is\na number --- {score direction}. All agents can see all attempts, so you\u2019re effectively a research team with\nfull transparency.\nHave a collaborative mindset: frequently check in with your agent mates, learn from what they have done well,\nand actively contribute your findings.\n## Orientation\nBefore you write any code, get oriented:\n1. "
+    },
+    {
+      "aiAssistanceScore": 0.6027764,
+      "confidence": "Low",
+      "endIndex": 3248,
+      "label": "AI-Generated",
+      "pageIndex": 16,
+      "startIndex": 1261,
+      "text": " Read the task description above carefully.\n2. Read the key files to understand the current state of the code.\n3. Check the leaderboard: coral log\n4. Check recent activity: coral log --recent\n5. Inspect top attempts: coral show <hash>\n6. Search for prior art: coral log --search \"keywords\"\n7. Read notes: {shared dir\n}/notes/ for findings from other agents.\n8. Check available skills: ls {shared dir}/skills/\n# Workflow\nYour job is a loop: plan \u2192 edit \u2192 eval \u2192 repeat.\n## 1. Plan --- Review what worked (coral log), inspect top attempts (coral show), check notes and skills from\nother agents. Think creatively. Keep plans lightweight.\n## 2. Edit --- Make focused changes. One idea per eval. Bias toward speed.\n## 3. Evaluate --- coral eval -m \"what you changed and why\". After every eval, update or create a note in\n{shared dir\n}/notes/ and a skill in {shared dir}/skills/.\n## 4. Read Results & Iterate --- Use coral checkout <hash> to navigate to any previous attempt. Then go back\nto Plan.\n## 5. Share Knowledge --- Write notes and skills directly to {shared dir\n}/. Do NOT git add or commit these\nfiles.\n## Ground Rules\n\u2022 You are fully autonomous. Do not ask for permission.\n\u2022 Never run git commands directly. Use coral eval/checkout/revert/diff.\n\u2022 Never touch .coral/ with git.\n\u2022 Eval messages are your paper trail --- write like lab notebook entries.\n\u2022 Eval early and often.\nYou are {agent id\n}.\nSingle-agent variant. The single-agent template omits collaborative language and instead\nemphasizes persistence: \u201cYou should never stop until you reach / beat the best score.\u201d It also\nmakes skill creation mandatory after every evaluation (vs. a strong recommendation in the\nmulti-agent template) and references notes as \u201cfrom previous runs\u201d rather than \u201cfrom other\nagents.\u201d\nC.1.2 Heartbeat Prompts\nThe heartbeat mechanism (Section 3) delivers structured intervention prompts when trigger\nconditions are met. CORAL includes three built-in heartbeat prompts, shown in Boxes C.1.2\u2013\nC.1.2.\n"
+    },
+    {
+      "aiAssistanceScore": 0.6168367,
+      "confidence": "Low",
+      "endIndex": 3646,
+      "label": "AI-Generated",
+      "pageIndex": 16,
+      "startIndex": 3247,
+      "text": "\nHeartbeat Prompt: Reflect (triggered every 1 eval, per-agent)\nPause and reflect on your recent work. Write a note in {shared dir}/notes/.\n1. Anchor in concrete results --- Review your recent attempts (coral log -n 5 --recent). What specific changes\nled to score improvements or regressions?\nExample: \u2018\u2018Attempt abc123 improved score from 0.72 to 0.78 by adding batch normalization after each conv\n17"
+    },
+    {
+      "aiAssistanceScore": 0.6168367,
+      "confidence": "Low",
+      "endIndex": 1676,
+      "label": "AI-Generated",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nlayer.\u2019\u2019\n2. Examine surprises --- What surprised you? What didn\u2019t go as expected? Surprises reveal gaps in your mental\nmodel.\n3. Analyze causes --- For your most significant result (good or bad): why did it happen? What\u2019s the underlying\nmechanism?\n4. Assess confidence --- How certain are you about your current approach? What evidence would change your\nmind?\n5. Plan next experiment --- Based on this reflection, what\u2019s one specific thing to try next? What do you\nexpect to happen?\nSave your note in the most appropriate location within {shared dir\n}/notes/ (e.g.,\nnotes/architecture/normalization/batch-vs-layer.md). If you\u2019ve discovered a reusable technique, create a\nskill in {shared dir}/skills/.\nHeartbeat Prompt: Consolidate (triggered every 10 evals, global counter)\nPause your current work and synthesize the shared knowledge base. Your goal is to create or update knowledge\nartifacts --- not just reorganize files. Required outputs: (1) a synthesis note in notes/ synthesis/; (2) the\nconnections map at notes/ connections.md; (3) the open questions list at notes/ open-questions.md.\nStep 1: Read and absorb --- Browse {shared dir}/notes/ and build a mental map of what\u2019s known.\nStep 2: Synthesize findings --- For any topic with 3+ notes, create a synthesis note that states the conclusion\nupfront, cites specific attempts as evidence, explains why something works, and notes confidence level and\nconditions.\nStep 3: Map connections --- Update notes/ connections.md with cross-category patterns.\nStep 4: Document contradictions and gaps --- Update notes/ open-questions.md.\nStep 5: Organize structure --- Reorganize into hierarchy if needed.\n"
+    },
+    {
+      "aiAssistanceScore": 0.5953167,
+      "confidence": "Medium",
+      "endIndex": 3765,
+      "label": "AI-Generated",
+      "pageIndex": 17,
+      "startIndex": 1675,
+      "text": "\nStep 6: Extract skills --- Promote well-validated techniques to {shared dir\n}/skills/.\nHeartbeat Prompt: Pivot (triggered after 5 non-improving evals, plateau detection)\nYou have not improved your score in several consecutive evals. You are likely stuck in a local optimum. It\u2019s\ntime to try something fundamentally different.\nStep 1: Diagnose the ceiling --- Run coral log --agent {agent id\n}. Are scores flat? Oscillating? What is the\ntheoretical limit of your current approach?\nStep 2: Study what\u2019s different at the top --- Run coral log -n 10. Inspect the top 3 attempts via coral show\n<hash> --- especially from other agents. What\u2019s their core idea?\nStep 3: Choose a new direction --- Try a fundamentally different approach: different algorithm family, different\nproblem formulation, different representation, or techniques from other domains.\nStep 4: Start fresh from a strong base --- Run coral checkout <hash> to reset to the best-scoring attempt.\nBuild the new approach from that foundation.\nStep 5: Commit quickly --- Make a minimal implementation and eval immediately. Give the new approach at least\n2--3 evals before judging.\nWrite a note documenting: what approach you were stuck on, why it plateaued, and what new direction you\u2019re\ntrying.\nThe goal is not to find the best tweak --- it\u2019s to find a better mountain to climb.\nC.2 APIs and System Interfaces\nCORAL exposes its functionality to agents through a command-line interface (CLI) with\n17 commands organized into four categories. Agents interact with CORAL exclusively\nthrough these commands. Table 6 provides a complete reference.\nEvaluation pipeline. When an agent runs coral eval -m \"msg\", the system executes the\nfollowing sequence:\n1. Stage & commit: Run git add -A followed by git commit -m \"msg\" in the agent\u2019s\nworktree.\n2. Load grader: Dynamically import class Grader from .coral/private/eval/grader.py\n(hidden from agents).\n3. \nGrade: Spawn the grader in a child process with a hard timeout (configurable per task,\ndefault 300 s). The grader returns a ScoreBundle containing a numeric score and textual\nfeedback.\n"
+    },
+    {
+      "aiAssistanceScore": 0.38871053,
+      "confidence": "Low",
+      "endIndex": 3996,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 3764,
+      "text": "\n4. Determine status: Compare the score against the agent\u2019s previous best: improved if\nstrictly better, baseline if equal, regressed if worse, crashed if the grader returned None,\nor timeout if the grader exceeded the time limit.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.38871053,
+      "confidence": "Low",
+      "endIndex": 1873,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nTable 6: Complete CLI reference. Commands are grouped by function. Agent-facing\ncommands are available within agent worktrees; orchestration commands are used by the\nhuman operator.\nCategory Command Description\nWorkflow\n \ncoral eval -m \"msg\" Stage, commit, grade, record attempt\ncoral diff Show uncommitted changes\ncoral revert Undo last commit\ncoral checkout <hash> Reset worktree to a previous attempt\nQuery\n \ncoral log Leaderboard (top 20 by score)\ncoral show <hash> Attempt detail (with --diff)\ncoral notes List/search/read shared notes\ncoral skills List/read shared skills\ncoral runs List all runs with metadata\nOrch.\n \ncoral start -c task.yaml Launch agents (with dotlist overrides)\ncoral resume Resume from previous run\ncoral stop Graceful shutdown\ncoral status Agent health + leaderboard\nHeart.\n \ncoral heartbeat View heartbeat config\ncoral heartbeat set Add/update action\ncoral heartbeat remove Remove action\ncoral heartbeat reset Reset to defaults\n5. Record attempt: Write an Attempt JSON record to .coral/public/attempts/\n<hash>.json.\n6. \nCheckpoint: Snapshot the current shared persistent memory (notes, skills) with a hash\nfor versioning.\n7. Increment counter: Update the global evaluation counter at .coral/public/eval count.\nC.3 User Interface\nCORAL includes a web-based dashboard for real-time monitoring, launched via coral\nui or coral start -c task.yaml run.ui=true. The dashboard is built as a React single-\npage application served by a Starlette (async Python) backend. Example screenshots are\npresented in Figure 5.\nThe backend exposes REST endpoints for querying attempts, leaderboard rankings, notes,\nskills, agent logs, and run status. A Server-Sent Events (SSE) endpoint provides live updates\nby polling the .coral/ directory every 2 seconds for new attempts, note modifications, log\ngrowth, and evaluation counter changes. "
+    },
+    {
+      "aiAssistanceScore": 0.5090624,
+      "confidence": "Medium",
+      "endIndex": 2233,
+      "label": "AI-Generated",
+      "pageIndex": 18,
+      "startIndex": 1872,
+      "text": " The dashboard displays: (1) a live leaderboard\nwith score trajectories across agents; (2) per-agent conversation logs parsed from NDJSON\nfiles into structured turns (thinking, tool calls, results); (3) shared notes and skills browsers;\n(4) run status including agent health and evaluation counts; and (5) a run switcher for\nnavigating across tasks and runs.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.5090624,
+      "confidence": "Medium",
+      "endIndex": 711,
+      "label": "AI-Generated",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\n(a) Overview page of the CORAL user interface. The interface shows the optimization trajectory\nover attempts, together with a detailed table of all submitted attempts, their scores, timestamps, and\nstatuses. It also displays per-agent summaries and recent activity.\n(b) Knowledge page of the CORAL user interface. The interface presents the shared persistent\nmemory containing notes and skills. Notes record observations, analysis, and intermediate findings\nfrom previous attempts, while skills store reusable procedures, tools, and implementation patterns.\nFigure 5: CORAL user interface. The interface supports both trajectory monitoring and\nknowledge inspection during experiments.\n20"
+    },
+    {
+      "aiAssistanceScore": 0.5090624,
+      "confidence": "Medium",
+      "endIndex": 1141,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nC.4 Shared Persistent Memory\nThe shared persistent memory described in Section 3 is implemented as a structured filesys-\ntem within the .coral/public/ directory.\nShared persistent memory Directory Layout\n.coral/\n|-- public/ (symlinked into each worktree)\n| |-- attempts/ Attempt JSON files, keyed by commit hash\n| | -- <hash>.json {commit hash, agent id, score, status, ...}\n| |-- notes/ Markdown files with YAML frontmatter\n| | |-- *.md Hierarchically organized by topic\n| | |-- \nsynthesis/ Consolidated knowledge (from heartbeat)\n| | |-- connections.md Cross-category pattern map\n| | -- open-questions.md Gaps and contradictions\n| |-- skills/ Reusable tools and procedures\n| | |-- <name>/SKILL.md Description + YAML metadata\n| | -- <name>/scripts/ Executable artifacts\n| |-- heartbeat/ Per-agent and global heartbeat configs\n| |-- sessions.json Saved agent session IDs for resume\n| -- eval count Global evaluation counter\n-- private/ (hidden from agents)\n-- eval/grader.py Grader implementation\nSymlink architecture. The shared persistent memory is exposed to each agent\u2019s isolated\nworktree through symbolic links. "
+    },
+    {
+      "aiAssistanceScore": 0.68081844,
+      "confidence": "Medium",
+      "endIndex": 2667,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 1140,
+      "text": " When using the Claude Code runtime, the agent\u2019s\n.claude/notes symlinks to .coral/public/notes/, and similarly for skills, attempts, and\nheartbeat configurations. This allows agents to use their runtime\u2019s native file access tools\n(Read, Write, Bash) to interact with the shared persistent memory, while the actual storage\nremains centralized. A .gitignore rule in each worktree prevents agents from accidentally\ncommitting shared persistent memory.\nConcurrency model. Because agents operate asynchronously and each attempt is written\nto a unique file keyed by commit hash, no explicit locking is required for attempt recording.\nNotes and skills use unique filenames to minimize write conflicts. In practice, we observe\nno file-level conflicts across agents.\nArtifact examples. We show one real example of each artifact type from a 4-agent run on\nthe Kernel Engineering task (663 total attempts). Box C.4 shows an attempt record, Box C.4\nshows a note, and Box C.4 shows a skill.\nExample Attempt Record (.coral/public/attempts/00d466e...json)\n{\n\"commit hash\": \"00d466e3...\",\n\"agent id\": \"agent-2\",\n\"title\": \"Pre-compute idx=2*idx+1 before hash, index\nupdate just adds direction. Same VALU count but\nmultiply add decoupled from hash critical path ---\ncan overlap with hash stages since it only depends\non idx.\",\n\"score\": 1274.0,\n\"status\": \"improved\",\n\"parent hash\": \"08e3b759...\",\n\"timestamp\": \"2026-03-14T14:55:16+00:00\",\n\"feedback\": \"eval: Cycles: 1,274 | Speedup: 115.96x |\nBaseline: 147,734 | Best known: 1,363 | NEW RECORD!\"\n"
+    },
+    {
+      "aiAssistanceScore": 0.8425632,
+      "confidence": "Medium",
+      "endIndex": 2990,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 2666,
+      "text": "\n}\nExample Note (insights/depth0-alu-xor-breakthrough-1181.md)\n\u2014\ncreator: agent-1\ncreated: 2026-03-15T01:00:00+00:00\n\u2014\n# Depth-0 ALU XOR breakthrough: 1187 \u2192 1181\nConverting depth-0 XOR (rounds 0,11) from 1 VALU to 8\nper-lane ALU per chunk. Saves 64 VALU, costs 512 ALU.\nALU has headroom (floor 1046), VALU is bottleneck.\n21"
+    },
+    {
+      "aiAssistanceScore": 0.8425632,
+      "confidence": "Medium",
+      "endIndex": 609,
+      "label": "AI-Generated",
+      "pageIndex": 21,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\n## Why it works\nDepth-0 XOR is fully independent (no preceding\nFLOW/vselect deps). The 8 ALU ops pack into 1 cycle\n(12 ALU slots). No extra dependency edges created.\n## Why depth-1 XOR fails (1183, regression)\nDepth-1 XOR follows vselect (FLOW). Converting it\ncreates 8 ALU deps on the vselect output instead of\n1 VALU dep. More edges = harder scheduling.\n## Current engine floors\n- VALU: 6944/6 = 1158 (binding)\n- ALU: 12544/12 = 1046\n- Gap: 1181 - 1158 = 23 cycles\n## What to try next\n- Convert depth-3 LT ops to ALU (saves 192 VALU)\n- 2 LTs optimal: VALU 1136, ALU 1131 (balanced!)\n"
+    },
+    {
+      "aiAssistanceScore": 0.50433934,
+      "confidence": "Low",
+      "endIndex": 2260,
+      "label": "AI-Generated",
+      "pageIndex": 21,
+      "startIndex": 608,
+      "text": "\n- 3 LTs: ALU becomes bottleneck at 1174\nExample Skill (skills/column-stats-sort/SKILL.md, from LLM-SQL task)\n\u2014\nname: column-stats-sort\ndescription: Column reordering based on stats + row\nsorting ascending=False\ncreator: agent-4\ncreated: 2026-03-29T04:50:00\n\u2014\n# Column Stats Sort Skill\n## What it does\nReorders columns based on a scoring function that\nprioritizes columns with high unique value count\nand long average string length for prefix caching.\n## Column Scoring Formula\navg length sq = avg length ** 2\nscore = avg length sq * (avg rows per group - 1)\n## Results\n- Score: 0.7018\n- avg hit rate: 0.6864\n- runtime: 0.27s\n## When to use it\nAs a baseline before trying more advanced approaches.\nC.5 Heartbeat Mechanism\nConfiguration. Each heartbeat action is specified by four fields, summarized in Table 7.\nTable 7: Heartbeat action configuration fields and default settings.\nAction every trigger scope Purpose\nreflect 1 interval local Structured self-reflection\nconsolidate 10 interval global Knowledge synthesis\npivot 5 plateau local Redirect from local optima\nTrigger mechanism. The agent manager\u2019s monitoring loop polls\n.coral/public/attempts/ every 5 seconds. For each new attempt, it updates per-agent\ntracking state: local eval count, best score, and consecutive evals without improvement (for\nplateau detection). The HeartbeatRunner then checks all configured actions:\n\u2022 Interval triggers: fire when count mod every = 0 (using either the local or global eval\ncounter depending on scope).\n\u2022 Plateau triggers: fire when evals since improvement \u2265 every, with a cooldown that\nprevents re-firing until another every evals of continued stalling.\n"
+    },
+    {
+      "aiAssistanceScore": 0.38826296,
+      "confidence": "Low",
+      "endIndex": 2613,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 2259,
+      "text": "\nDelivery mechanism. When heartbeat actions are triggered, the manager interrupts the\nagent via SIGINT (triggering graceful session saving in the Claude Code runtime), then\nresumes the agent with a combined prompt containing: (1) evaluation results (score, commit\nhash, status, feedback), and (2) the rendered heartbeat prompt(s) with {shared dir} and\n22"
+    },
+    {
+      "aiAssistanceScore": 0.38826296,
+      "confidence": "Low",
+      "endIndex": 1686,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nPer-Run Workspace Layout\nresults/<task>/<timestamp>/\n|-- .coral/ shared persistent memory\n|-- repo/ Per-run clone of source repository\n-- agents/\n|-- agent-1/ Git worktree (own branch)\n| |-- .claude/notes \u2192 .coral/public/notes/\n| |-- .claude/skills \u2192 .coral/public/skills/\n| |-- .coral dir Breadcrumb to .coral/ path\n| -- CLAUDE.md Generated instruction file\n|-- agent-2/ (same structure)\n-- ...\nFigure 6: Per-run workspace layout. Each agent has an isolated git worktree with symlinks\nto the shared .coral/public/ directory. The \u2192 symbol denotes symbolic links.\n{agent id} substituted. This injects context into an ongoing trajectory without discarding\naccumulated session state.\nAgent-modifiable heartbeats. Agents can customize their heartbeat configuration at run-\ntime via coral heartbeat set/remove. For example, an agent may increase the reflection\ninterval to every=3 if per-eval reflection is too frequent, or add a custom action with a\ndomain-specific prompt. Protected actions (reflect, consolidate) cannot be deleted, ensur-\ning minimum knowledge externalization.\nC.6 Multi-Agent Coordination\nWorkspace isolation. Each agent operates in its own git worktree, created as a branch\noff a per-run repository clone. This ensures concurrent agents cannot interfere with each\nother\u2019s code state. The per-run clone is created from the user\u2019s source repository at coral\nstart time, providing run-level independence. Figure 6 illustrates the workspace layout.\nAgent lifecycle. The AgentManager manages the full lifecycle:\n1. Create the project directory structure (clone repo, set up .coral/).\n2. Seed heartbeat configurations (global and per-agent defaults).\n"
+    },
+    {
+      "aiAssistanceScore": 0.4156029,
+      "confidence": "Low",
+      "endIndex": 3039,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 1685,
+      "text": "\n3. For each agent: create worktree, install symlinks, write .coral agent id breadcrumb,\ngenerate CORAL.md, and spawn the agent runtime process.\n4. Enter the monitoring loop: detect new attempts, check heartbeat triggers, deliver heart-\nbeat prompts, restart dead agents, handle graceful shutdown (SIGINT \u2192 SIGTERM \u2192\nSIGKILL).\nSession persistence. Agent session IDs are extracted from runtime log files and saved to\n.coral/public/sessions.json \nduring shutdown. On coral resume, the manager validates\nsaved sessions (checking existence on the current machine) and resumes agents with their\nprior context. Invalid sessions (e.g., from a different machine) trigger a fresh start with a\n5-point orientation prompt summarizing prior run state (number of attempts, best score,\ninstructions to review the leaderboard).\nDead agent restart. If an agent process terminates unexpectedly (max-turns exhaustion or\ncrash), the monitoring loop detects the exit within 5 seconds and automatically restarts the\nagent with a prompt containing the latest evaluation results.\nC.7 Execution Safeguards\n\u2022 \nEvaluator isolation. Grader code is copied to .coral/private/eval/ at run initialization\nand is inaccessible to agents. Agents can submit candidates and observe scores, but\ncannot inspect or modify the evaluation logic. This reduces opportunities for reward\nhacking.\n23"
+    },
+    {
+      "aiAssistanceScore": 0.4156029,
+      "confidence": "Low",
+      "endIndex": 895,
+      "label": "AI-Generated",
+      "pageIndex": 23,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\n\u2022 Workspace guard. Each worktree\u2019s .gitignore excludes .coral/ and runtime directories\nfrom git operations. A .coral dir breadcrumb file records the path to the shared per-\nsistent memory, used by the evaluation pipeline to locate the shared persistent memory\nregardless of working directory.\n\u2022 Process management. Manager and agent PIDs are recorded at\n.coral/public/manager.pid and agent.pids, enabling coral stop to locate and\nterminate all processes. Graceful shutdown sends SIGINT (session save) before\nSIGTERM/SIGKILL.\n\u2022 Evaluation timeout. Each grader invocation runs in a child process with a configurable\nhard timeout (default 300 s). Timeouts are recorded with status timeout and a null score.\nD Task Interface and Configurations\nD.1 Task Interface\nCORAL provides a unified task interface that decouples the evolution loop from task-\nspecific evaluation logic. "
+    },
+    {
+      "aiAssistanceScore": 0.3468737,
+      "confidence": "Low",
+      "endIndex": 3051,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 894,
+      "text": " A task is fully specified by a YAML configuration file (task.yaml)\nand a grader implementation (eval/grader.py).\nConfiguration schema. The task.yaml file consists of six sections:\n\u2022 task: Task metadata including name, description (the full problem statement provided to\nagents), files (key files to highlight), seed (initial files to copy into the workspace), and\ntips (evaluation-specific hints such as timeout and scoring details).\n\u2022 grader: Evaluation configuration including timeout (seconds), direction (maximize or\nminimize), args (task-specific arguments passed to the grader), and private (files copied\nto .coral/private/ and hidden from agents).\n\u2022 \nagents: Agent configuration including count, runtime (e.g., claude code), model,\nmax turns, heartbeat (action list), and research (enable web search).\n\u2022 workspace: results dir, repo path (seed code), and setup (shell commands, e.g., uv\nsync).\n\u2022 run: verbose, ui (web dashboard), tmux.\n\u2022 sharing: Flags for sharing attempts, notes, skills across agents.\nGrader interface. Task-specific evaluation logic is implemented as a Python class inherit-\ning from TaskGrader. Box D.1 shows the minimal grader pattern.\nGrader Implementation Pattern\nfrom coral.grader import TaskGrader\nclass Grader(TaskGrader):\ndef evaluate(self) -> float | ScoreBundle:\n# Run the agent\u2019s program in a subprocess\nresult = self.run program(\"solution.py\")\nif result.returncode != 0:\nreturn self.fail(result.stderr)\nscore = float(result.stdout.strip())\nreturn self.score(score, \"Explanation of score\")\n# Available helpers:\n# self.run program(filename) --- execute file with timeout\n# self.run script(code) --- run inline Python\n# self.run script json(code) --- run script returning JSON\n# self.read eval(path) --- read from .coral/private/eval/\n# self.codebase path --- agent\u2019s worktree directory\n# self.private dir --- .coral/private/ directory\n# self.args --- task-specific arguments from config\nScore representation. Evaluation results are represented as a ScoreBundle containing\nnamed Score objects, an aggregated numeric score (weighted average), optional feedback\ntext, and an is public flag controlling agent visibility.\n24"
+    },
+    {
+      "aiAssistanceScore": 0.3468737,
+      "confidence": "Low",
+      "endIndex": 24,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\n"
+    },
+    {
+      "aiAssistanceScore": 0.4034189,
+      "confidence": "Medium",
+      "endIndex": 1781,
+      "label": "AI-Generated",
+      "pageIndex": 24,
+      "startIndex": 23,
+      "text": "\nTask scaffolding. coral init <path> scaffolds a new task directory with a template\ntask.yaml, empty eval/grader.py, and seed/ directory. coral validate <path> tests the\ngrader against the seed code without launching agents.\nD.2 Task Configurations\nWe provide representative configurations for three evaluation tasks, illustrating the range of\ntask types supported by CORAL. Box D.2 shows a mathematical optimization task, Box D.2\nshows a systems optimization task, and Box D.2 shows the Kernel Engineering task.\nTask Configuration: Erd\u02ddos Minimum Overlap (Mathematical Optimization)\ntask:\nname: \"Erdos Minimum Overlap Problem\"\ndescription: |\nFind a step function h: [0,2] -> [0,1] that minimizes\nthe maximum overlap integral C 5 = min h max k\nint h(x)(1-h(x+k)) dx, subject to h(x) in [0,1]\nand int h(x) dx = 1. ...\nfiles: [\"initial program.py\"]\ntips: |\nEval timeout is 1100s. The evaluator verifies\nh in [0,1], int h = 1, and recomputes C 5.\ngrader:\ntimeout: 600\ndirection: maximize\nargs: {program file: \"initial program.py\"\n}\nagents:\ncount: 1\nruntime: claude code\nmodel: claude-opus-4-6\nTask Configuration: Transaction Scheduling (Systems Optimization)\ntask:\nname: \"Transaction Scheduling --- Minimize Makespan\"\ndescription: |\nImprove get best schedule to find better schedules\nfor transactional workloads. Score: 1,000,000 /\n(1 + total makespan). ...\nfiles: [\"initial program.py\"]\ngrader:\ntimeout: 600\ndirection: maximize\nargs: {program file: \"initial program.py\"\n}\nagents:\ncount: 1\nmodel: claude-opus-4-6\nresearch: false # no web search (pure algorithmic)\nTask Configuration: VLIW SIMD Kernel Builder (Anthropic\u2019s Kernel Engineering)\ntask:\nname: \"Kernel Builder\"\ndescription: |\nOptimize a VLIW SIMD kernel for tree traversal.\nBaseline: \u02dc147,734 cycles. "
+    },
+    {
+      "aiAssistanceScore": 0.40131283,
+      "confidence": "Medium",
+      "endIndex": 2537,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 1780,
+      "text": " Best known: \u02dc1,363 cycles.\nfiles: [\"kernel builder.py\"]\ntips: |\nScore is linearly interpolated: 0.0 at baseline,\n1.0 at best known. Correctness is mandatory.\ngrader:\ntimeout: 600\ndirection: minimize\nargs: {program file: \"kernel builder.py\"}\nTask diversity. Across our evaluation, tasks span mathematical optimization (6 tasks: circle\npacking, Erd \n\u02dd\nos overlap, signal processing, autocorrelation inequalities, min-max distance),\nsystems optimization (5 tasks: EPLB, PRISM, LLM-SQL, transaction scheduling, Cloudcast),\nand stress-test problems (Kernel Engineering, Polyominoes). Grading approaches include\nsubprocess execution with JSON result parsing, constraint validation, benchmark-relative\nscoring, and delegation to external evaluation frameworks.\n25"
+    },
+    {
+      "aiAssistanceScore": 0.40131283,
+      "confidence": "Medium",
+      "endIndex": 1334,
+      "label": "Human Written",
+      "pageIndex": 25,
+      "startIndex": 0,
+      "text": "Preprint. Under review.\nTable 8: Evaluator bug fixes applied to the ADRS benchmark evaluators. All bugs were\npresent in the original implementations; our fixes ensure correct scoring.\nTask Bug Fix\nPRISM Failed placements silently skipped Append worst-case penalty (10\n6\n) for failures\nTxn Sched. Invalid schedules scored > 0 Return score 0 for invalid schedules\nEPLB Experts with 0 replicas skipped; 3-run averag-\ning masked issues\nPenalize by concentrating load on slot 0; remove redun-\ndant averaging\nLLM-SQL Mixed-type DataFrame crashes Convert all values to string dtype\nD.3 Evaluator Corrections\nThe systems optimization tasks in our evaluation follow the ADRS folder in the SkyDiscover\nrepository (Liu et al., 2026b), which provides evaluator implementations originally from\nthe Sky-Discover repository. During integration and testing, we discovered and corrected\nseveral bugs in these evaluators that could lead to incorrect scoring. We document all\ncorrections here for reproducibility; all fixes are available in our public repository. Table 8\nsummarizes the corrections, and we describe each in detail below.\nPRISM: failed placements silently skipped. The original PRISM evaluator catches\nTimeoutError and general exceptions during GPU placement evaluation but simply calls\ncontinue, skipping the failed test case entirely. "
+    },
+    {
+      "aiAssistanceScore": 0.5675046,
+      "confidence": "Medium",
+      "endIndex": 3561,
+      "label": "AI-Generated",
+      "pageIndex": 25,
+      "startIndex": 1333,
+      "text": " This means a solution that crashes on dif-\nficult inputs can achieve an artificially high average score by only being graded on easy\ncases. Our fix appends a worst-case penalty value (10\n6\n, corresponding to maximum load\nimbalance) for each failed placement, ensuring that failures are reflected in the final score.\nTransaction Scheduling: invalid schedules scored above zero. The transaction schedul-\ning evaluator computes a score via score = 10\n6\n/(1 + makespan) regardless of whether\nthe schedule is valid (i.e., respects read-write and write-write conflict ordering). Invalid\nschedules thus received positive scores proportional to their makespan, rewarding incorrect\nsolutions. Our fix gates the formula on a validity check: invalid schedules receive a score of\n0.\nEPLB: dropped experts and redundant averaging. The EPLB (Expert-Parallel Load Bal-\nancing) evaluator had two issues. First, when an expert had zero replicas assigned, the\nevaluator skipped it instead of penalizing the imbalance. This allowed solutions that simply\ndrop difficult-to-balance experts to appear well-balanced. Our fix concentrates all of the\ndropped expert\u2019s load onto a single physical slot (the worst-case imbalance). Second, the\ngrader averaged results over 3 redundant runs of the same deterministic evaluator, which\nadded noise without value. We removed this averaging and use a single evaluation.\nLLM-SQL: type handling. The seed program column analysis assumed homogeneous\ncolumn types in the input DataFrame, but real datasets contain mixed types (integers,\nstrings, nulls) that cause prefix-matching to crash. Our fixes convert all DataFrame values\nto string dtype before analysis.\nE Experimental Details\nE.1 Setup Details\nHardware. All experiments were conducted on Linux machines. Mathematical and sys-\ntems optimization tasks were run on CPU-only instances, as these tasks do not require GPU\nacceleration. The Kernel Engineering and Polyominoes stress-test tasks were similarly run\non CPU instances, as evaluation involves simulation rather than GPU computation.\nModels. Our primary backbone model is Claude Opus 4.6 (claude-opus-4-6), used for\nboth CORAL agents and all baselines (OpenEvolve, ShinkaEvolve, EvoX). For the open-\n26"
+    },
+    {
+      "aiAssistanceScore": 0.5675046,
+      "confidence": "Medium",
+      "endIndex": 10,
+      "label": "AI-Generated",
+      "pageIndex": 26,
+      "startIndex": 0,
+      "text": "Preprint. "
+    },
+    {
+      "aiAssistanceScore": 0.5826325,
+      "confidence": "Medium",
+      "endIndex": 1985,
+      "label": "AI-Generated",
+      "pageIndex": 26,
+      "startIndex": 9,
+      "text": " Under review.\nsource generalization experiments, we use MiniMax M2.5 with the OpenCode (OpenCode,\n2025) runtime. No internet access is provided to agents unless the task configuration\nexplicitly enables the research flag.\nBaselines. We compare against three fixed evolutionary search baselines:\n\u2022 OpenEvolve (Sharma, 2025): Open-source implementation of AlphaEvolve with static\nelite populations and diversity maintenance.\n\u2022 ShinkaEvolve (Lange et al., 2025): Adaptive sampling with bandit-based selection.\n\u2022 EvoX (Liu et al., 2026a): Meta-evolved search strategy with co-evolutionary outer loop.\nAll baselines receive identical seed programs, evaluators, and wall-clock budgets. For the\nmathematical and systems suites, we follow the protocol defined in the SkyDiscover GitHub\nrepository (Liu et al., 2026b).\nEvaluation protocol. For the mathematical and systems optimization suites (Table 1), all\nmethods are given a 3-hour wall-clock budget, averaged over 4 independent runs. For\nthe stress-test problems (Table 2), experiments terminate when there is no improvement\nover 100 evaluations or 2 hours, whichever comes first. Multi-agent experiments use 4\nagents with matched wall-clock time. The single-agent Bo4 baseline reports the best score\nacross 4 independent single-agent runs, approximating 4\u00d7 compute without multi-agent\ncoordination.\nConfiguration. Unless otherwise noted, all CORAL experiments use the default heartbeat\nconfiguration (Table 7). Agents are configured with max turns=200. Agents are initialized\nidentically in multi-agent experiments (no role specialization).\nE.2 Cost and Efficiency\nAPI costs. For a typical 3-hour single-agent run on a mathematical optimization task using\nClaude Opus 4.6, total API cost ranges from approximately $30\u201360 USD depending on task\ncomplexity. Multi-agent runs with 4 agents incur approximately 3\u20134\u00d7 the single-agent cost.\nContext caching in the Claude API reduces costs for repeated context windows within a\nsession.\n"
+    },
+    {
+      "aiAssistanceScore": 0.68821895,
+      "confidence": "Medium",
+      "endIndex": 2654,
+      "label": "AI-Generated",
+      "pageIndex": 26,
+      "startIndex": 1984,
+      "text": "\nEvaluation efficiency. CORAL agents typically perform fewer evaluation calls than struc-\ntured baselines within the same wall-clock budget, because each agent step involves reason-\ning and implementation before submission. However, the improvement rate (fraction of\nevaluations yielding a score improvement) is substantially higher (Table 1), indicating more\nefficient use of each evaluation call.\nInfrastructure overhead. The CORAL infrastructure (manager, monitoring loop, file\nwatching) adds negligible overhead\u2014the monitoring loop polls every 5 seconds and heart-\nbeat prompt rendering is instantaneous. The dominant costs are LLM API calls and grader\nexecution.\n27"
+    }
+  ]
+}

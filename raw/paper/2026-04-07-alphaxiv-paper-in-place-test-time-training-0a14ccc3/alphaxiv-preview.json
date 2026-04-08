@@ -1,0 +1,118 @@
+{
+  "abstract": "The static ``train then deploy\" paradigm fundamentally limits Large Language Models (LLMs) from dynamically adapting their weights in response to continuous streams of new information inherent in real-world tasks. Test-Time Training (TTT) offers a compelling alternative by updating a subset of model parameters (fast weights) at inference time, yet its potential in the current LLM ecosystem is hindered by critical barriers including architectural incompatibility, computational inefficiency and misaligned fast weight objectives for language modeling. In this work, we introduce In-Place Test-Time Training (In-Place TTT), a framework that seamlessly endows LLMs with Test-Time Training ability. In-Place TTT treats the final projection matrix of the ubiquitous MLP blocks as its adaptable fast weights, enabling a ``drop-in\" enhancement for LLMs without costly retraining from scratch. Furthermore, we replace TTT's generic reconstruction objective with a tailored, theoretically-grounded objective explicitly aligned with the Next-Token-Prediction task governing autoregressive language modeling. This principled objective, combined with an efficient chunk-wise update mechanism, results in a highly scalable algorithm compatible with context parallelism. Extensive experiments validate our framework's effectiveness: as an in-place enhancement, it enables a 4B-parameter model to achieve superior performance on tasks with contexts up to 128k, and when pretrained from scratch, it consistently outperforms competitive TTT-related approaches. Ablation study results further provide deeper insights on our design choices. Collectively, our results establish In-Place TTT as a promising step towards a paradigm of continual learning in LLMs.",
+  "author_info": [],
+  "authors": [
+    "Guhao Feng",
+    "Shengjie Luo",
+    "Kai Hua",
+    "Ge Zhang",
+    "Di He",
+    "Wenhao Huang",
+    "Tianle Cai"
+  ],
+  "canonical_id": "2604.06169v1",
+  "first_publication_date": "2026-04-07T17:59:44.000Z",
+  "full_authors": [
+    {
+      "full_name": "Guhao Feng",
+      "id": "01985c82-282d-7822-8ad9-7c8f123e5203",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shengjie Luo",
+      "id": "01985c82-42b4-758d-b020-0af17e728ce1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kai Hua",
+      "id": "01985c85-11fd-7e91-9124-85deb1cebfec",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ge Zhang",
+      "id": "01985c81-db51-7728-9b52-7cedbf6c15f5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Di He",
+      "id": "01985c82-0013-7dc2-94cc-2c9170c4c2ca",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wenhao Huang",
+      "id": "01985c81-e5aa-7ec9-b06b-ea3dcf465a0a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianle Cai",
+      "id": "01985c81-e5a9-772c-84d8-09b5221effad",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 7,
+  "github_url": "https://github.com/ByteDance-Seed/In-Place-TTT",
+  "id": "019d6b04-0a6f-7458-8574-e0d84a7b168e",
+  "image_url": "image/2604.06169v1.png",
+  "metrics": {
+    "public_total_votes": 0,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 111,
+      "last_7_days": 111
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6b04-0a6f-7458-8574-e0d84a7b168e",
+  "paper_summary": {
+    "keyInsights": [
+      "Existing MLP blocks in Transformer architectures can be effectively repurposed as 'fast weights' for dynamic adaptation, avoiding architectural modifications and costly pretraining from scratch.",
+      "Decoupling Test-Time Training updates from the attention mechanism allows for significantly more efficient chunk-wise processing, leveraging hardware parallelism while maintaining performance.",
+      "An objective specifically aligned with Next-Token Prediction significantly enhances the effectiveness of fast weights for autoregressive language models, as theoretically shown to increase logits for correct future tokens."
+    ],
+    "originalProblem": [
+      "Large Language Models operate under a static 'train then deploy' paradigm, preventing dynamic adaptation to new information or evolving contexts during inference.",
+      "Existing Test-Time Training (TTT) methods for dynamic adaptation often introduce specialized layers incompatible with standard LLM architectures, requiring prohibitive pretraining.",
+      "Canonical TTT update rules are computationally inefficient due to sequential per-token updates and misaligned generic self-supervised objectives for autoregressive language modeling."
+    ],
+    "results": [
+      "In-Place TTT consistently improved RULER benchmark scores for pre-trained LLMs (Qwen3-4B/14B, LLaMA-3.1-8B), showing up to +2.7% gain at 64k context lengths and maintaining advantage during extrapolation to 256k context.",
+      "Models pre-trained from scratch with In-Place TTT achieved lower validation perplexity than all competitive baselines across varying context lengths (2k to 32k) on Pile and Proof-Pile-2 datasets.",
+      "The framework introduced negligible overhead in prefill throughput and peak memory consumption, demonstrating its practicality and scalability for integration into LLMs."
+    ],
+    "solution": [
+      "In-Place TTT repurposes existing Multi-Layer Perceptron (MLP) blocks within Transformer architectures, specifically designating the final projection matrix (W_down) as adaptable 'fast weights' for in-place updates, enabling a 'drop-in' enhancement.",
+      "An efficient chunk-wise update strategy is implemented, decoupling TTT from attention to allow for larger chunk sizes and leverage modern parallel hardware without compromising performance.",
+      "A novel, theoretically-grounded learning objective is introduced, explicitly tailored for the Next-Token Prediction (NTP) task of language modeling, encouraging fast weights to store predictively useful information."
+    ],
+    "summary": "In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead."
+  },
+  "publication_date": "2026-04-07T17:59:44.000Z",
+  "title": "In-Place Test-Time Training",
+  "topics": [
+    "Computer Science",
+    "continual-learning",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "efficient-transformers",
+    "fine-tuning",
+    "inference-optimization",
+    "online-learning",
+    "parameter-efficient-training",
+    "Statistics",
+    "stat.ML",
+    "test-time-inference",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.06169",
+  "updated_at": "2026-04-08T02:55:20.175Z",
+  "version_id": "019d6b04-0aaf-770a-b058-6e9744eb97ca"
+}

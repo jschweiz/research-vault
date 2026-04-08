@@ -1,0 +1,983 @@
+{
+  "fractionAi": 0.07296856,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.92703146,
+  "headline": "Mostly Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775615070445,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.26538023,
+      "confidence": "Low",
+      "endIndex": 1268,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric\nDocument Parsing at Scale\nBin Wang\n1\u2217\u2021\n, Tianyao He\n1\u2217\n, Linke Ouyang\n1\u2217\n, Fan Wu\n1\u2217\n, Zhiyuan Zhao\n1\u2217\n, Tao Chu\n1\u2217\nYuan Qu\n1\u2217\n, Zhenjiang Jin\n1\u2217\n, Weijun Zeng\n1\u2217\n, Ziyang Miao\n1\u2217\n, Bangrui Xu\n1\u2217\n, Junbo Niu\n1,2\u2217\nMengzhang Cai\n1\n, Jiantao Qiu\n1\n, Qintong Zhang\n1,2\n, Dongsheng Ma\n1\n, Yuefeng Sun\n1\n, Hejun Dong\n1\nWenzheng Zhang\n1,2\n, Jutao Xiao\n1\n, Jiayong Shi\n1\n, Pengyu Liao\n1\n, Xiaomeng Zhao\n1\n, Huaping Zhong\n4\nLiqun Wei\n1\n, Jing Yu\n1\n, Jie Yang\n1\n, Wei Li\n1\n, Shasha Wang\n1\n, Qianqian Wu\n1\n, Xuanhe Zhou\n1,3\nWeijia Li\n1\n, Zhenxiang Li\n1\n, Zhongying Tu\n1\n, Jiang Wu\n1\n, Lijun Wu\n1\n, Chao Xu\n1\n, Kai Chen\n1\nWentao Zhang\n1,2\n, Yu Qiao\n1\n, Bowen Zhou\n1\n, Dahua Lin\n1 \n, Conghui He\n1 \n1\nShanghai Artificial Intelligence Laboratory, \n2\nPeking University, \n3\nShanghai Jiao Tong University,\n4\nSenseTime\nCurrent document parsing methods compete primarily on model architecture innovation, while\nsystematic engineering of training data remains underexplored. Yet SOTA models of different\narchitectures and parameter scales exhibit highly consistent failure patterns on the same set of\nhard samples, suggesting that the performance bottleneck stems from shared deficiencies in\ntraining data rather than architecture itself. "
+    },
+    {
+      "aiAssistanceScore": 0.24161161,
+      "confidence": "Medium",
+      "endIndex": 2874,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1267,
+      "text": " Building on this finding, we present MinerU2.5-\nPro, which advances the state of the art solely through data engineering and training strategy\noptimization while keeping the 1.2B-parameter architecture of MinerU2.5 completely fixed.\nAt its core is a Data Engine co-designed around coverage, informativeness, and annotation\naccuracy: Diversity-and-Difficulty-Aware Sampling expands training data from under 10M\nto 65.5M samples while correcting distribution shift; Cross-Model Consistency Verification\nleverages output agreement among heterogeneous models to assess sample difficulty and\ngenerate reliable annotations; the Judge-and-Refine pipeline improves annotation quality\nfor hard samples through render-then-verify iterative correction. A three-stage progressive\ntraining strategy\u2014large-scale pre-training, hard sample fine-tuning, and GRPO alignment\u2014\nsequentially exploits these data at different quality tiers. On the evaluation front, we fix\nelement-matching biases in OmniDocBench v1.5 and introduce a Hard subset, establishing the\nmore discriminative OmniDocBench v1.6 protocol. Without any architectural modification,\nMinerU2.5-Pro achieves 95.69 on OmniDocBench v1.6, improving over the same-architecture\nbaseline by 2.71 points and surpassing all existing methods including models with over 200\u00d7\nmore parameters.\n* Equal contribution  Corresponding author \u2021 Project leader\nCorrespondence: Conghui He, heconghui@pjlab.org.cn\nCode: https://github.com/opendatalab/MinerU\nModel: https://huggingface.co/opendatalab/MinerU2.5-Pro-2604-1.2B\nDate: April 7, 2026\n1\narXiv:2604.04771v1 [cs.CV] 6 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.24161161,
+      "confidence": "Medium",
+      "endIndex": 218,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nContents\n1 Introduction 3\n2 Related Work 4\n2.1 Document Parsing Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "aiAssistanceScore": 0.07301987,
+      "confidence": "Medium",
+      "endIndex": 1312,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 217,
+      "text": " 4\n2.2 Data-Centric AI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.3 Document Parsing Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n3 Data Engine 6\n3.1 Diversity-and-Difficulty-Aware Data Sampling . . . . . . . . . . . . . . . . . . . . . . . . 6\n3.2 Cross-Model Consistency Verification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8\n3.3 Judge-and-Refine Annotation Pipeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9\n3.4 Targeted Expert Annotation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9\n4 Progressive Training Strategy 10\n4.1 Stage 1: Document Parsing Pre-training . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.2 Stage 2: High-Quality Supervised Fine-Tuning . . . . . . . . . . . . . . . . . . . . . . . . 11\n4.3 Stage 3: Reinforcement Learning with GRPO . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5 OmniDocBench v1.6 12\n5.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "aiAssistanceScore": 0.0610578,
+      "confidence": "Medium",
+      "endIndex": 2322,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1311,
+      "text": " 12\n5.2 Multi-Granularity Adaptive Matching . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\n5.3 Hard Subset and Three-Tier Evaluation Protocol . . . . . . . . . . . . . . . . . . . . . . . 14\n6 Experiments 14\n6.1 Evaluation Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\n6.2 End-to-End Document Parsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\n6.3 Element-Specific Parsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16\n7 Conclusion 17\nA Prompt Design and Task Examples 23\nA.1 Layout Detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nA.2 Text Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24\nA.3 Formula Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24\nA.4 Table Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    },
+    {
+      "aiAssistanceScore": 0.048926245,
+      "confidence": "Medium",
+      "endIndex": 3077,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 2321,
+      "text": " 24\nA.5 Image-Aware Parsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25\nB Extended Parsing Capabilities 25\nC OmniDocBench v1.6 Detailed Results 27\nC.1 Detailed Results on Base Subset . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27\nC.2 Detailed Results on Hard Subset . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27\nD Qualitative Comparison with SOTA Methods 27\nD.1 Table Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\nD.2 Formula Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\nD.3 Image-Aware Parsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\n2"
+    },
+    {
+      "aiAssistanceScore": 0.048926245,
+      "confidence": "Medium",
+      "endIndex": 295,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nOmniDocBench v1.6 \n[Full Overall]\nText Block [Full] \nFormula [Full] \nTable [Full] Reading Order [Full]\nEnd-to-End Performance\nOmniDocBench v1.6 \n[Base Overall] \nOmniDocBench v1.6 \n[Hard Overall]\nSingle-task Performance\n"
+    },
+    {
+      "aiAssistanceScore": 0.12599672,
+      "confidence": "Medium",
+      "endIndex": 884,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 294,
+      "text": "\nMinerU2.5-Pro\ndots.ocr\nGemini 3 Pro\nMinerU2.5\nGPT-5.2\nDolphin-v2\nGLM-OCR\nQwen3-VL-235B\nPaddleOCR-VL-1.5\nLogics-Parsing-v2\nOvis2.6-30B-A3B\nDeepSeek-OCR 2\nOpenDoc-0.1B\nHunyuanOCR\nYoutu-Parsing\nFireRed-OCR\nOCRVerse\nMonkeyOCR-pro-3B\n95.69 \n95.15 \n94.87 \n93.68 \n93.62 \n93.27 \n93.20 \n92.98 \n92.85\n90.64 \n90.50 \n90.17 \n89.87 \n89.78 \n89.34 \n88.44 \n88.43\n86.52\n70\n75\n80\n85\n90\n95\n100\n95.69\n96.19 \n96.12 \n95.72 \n94.87 \n94.56 \n94.16 \n94.14 \n93.23 \n93.04 \n92.96\n85\n90\n95\n100\n96.12 \n94.08\n92.01 92.01 \n91.99 \n91.65 \n90.39 \n89.95 \n89.89 \n89.81 \n88.67\n80\n85\n90\n95\n100\n96.49 \n96.37 \n96.28 \n96.24 \n95.93\n90\n"
+    },
+    {
+      "aiAssistanceScore": 0.2639332,
+      "confidence": "Low",
+      "endIndex": 2185,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 883,
+      "text": "\n92\n94\n96\n98\n100\n97.29 \n96.99 \n96.69\n95.83 \n95.59\n90\n92\n94\n96\n98\n100\n93.42 \n92.83 \n92.02 \n91.67 \n91.01\n80\n85\n90\n95\n100\n88.39 \n87.97 \n87.04 87.01 \n86.91\n70\n75\n80\n85\n90\n95\n100\n1-Edit CDM \nTEDS \n1-Edit\n96.37\n97.29 \n93.42 \n89.97\n94.08\nFigure 1: Performance comparison on OmniDocBench v1.6 Base/Hard/Full. Built upon MinerU2.5\nwith its 1.2B-parameter architecture entirely unchanged, MinerU2.5-Pro improves the overall score\nfrom 92.98 to 95.69 solely through data engineering and training strategy optimization, outperforming\nboth specialized document parsing models (e.g. GLM-OCR, PaddleOCR-VL-1.5, Youtu-Parsing) and\ngeneral-purpose VLMs (e.g. Gemini 3 Pro, Qwen3-VL-235B). Detailed results are presented in Table 2.\n1 Introduction\nDocument parsing converts unstructured documents such as PDFs into structured, machine-readable\nformats (e.g. Markdown), serving as critical infrastructure for LLM training data pipelines [49 , 29, 35 ]\nand retrieval-augmented generation systems [ 15 , 37 , 48 ]. As end-to-end approaches based on vision-\nlanguage models (VLMs) progressively replace traditional pipeline systems [2, 39, 25], research has\nfocused predominantly on architectural innovation and inference efficiency optimization, driving\nrapid score convergence among leading models on standard benchmarks.\n"
+    },
+    {
+      "aiAssistanceScore": 0.4160511,
+      "confidence": "Low",
+      "endIndex": 3453,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 2184,
+      "text": "\nYet this convergence raises a deeper question: what constitutes the remaining performance bottleneck?\nOur cross-analysis of parsing results from multiple SOTA models\u2014spanning different architectures\nand parameter scales\u2014on large-scale real-world PDFs reveals a striking pattern: these models exhibit\nhighly similar failure modes on the same hard samples, with certain parsing errors shared across all\ntested systems. Since these systematic failures transcend any particular architecture, they point to a\ncommon root cause: the current performance bottleneck in document parsing stems primarily from\nshared deficiencies in training data, not from model architecture itself.\nThis data bottleneck manifests in two interrelated dimensions. First, insufficient coverage: taking\nMinerU2.5 as an example, its training data totals less than 10M pages with distributions concentrated\non high-frequency categories, severely underrepresenting long-tail scenarios such as complex nested\ntables and dense formula layouts. Second, an annotation quality paradox: the hard samples that\ncontribute most to model improvement\u2014data that no mainstream model can consistently parse\ncorrectly\u2014are precisely those for which automatic annotation is least reliable. Structural annotations for\n3"
+    },
+    {
+      "aiAssistanceScore": 0.4160511,
+      "confidence": "Low",
+      "endIndex": 1111,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\ncomplex tables and L\nA\nT\nE\nX transcriptions of dense formulas are highly error-prone, and this annotation\nnoise propagates directly into model behavior during supervised fine-tuning. These two issues are\ndeeply intertwined: simply scaling data volume cannot break through the performance ceiling, as\nadded data only amplifies existing distribution biases and annotation noise.\nThis cross-analysis also reveals blind spots in the existing evaluation framework. OmniDocBench v1.5\ncontains relatively few hard samples, and its element-matching logic exhibits systematic preferences\nfor specific output formats, introducing scoring artifacts that complicate fair cross-system comparison.\nWe accordingly introduce OmniDocBench v1.6, which corrects these matching biases and incorporates\na dedicated Hard subset to establish a Base/Hard/Full three-tier evaluation protocol.\nBased on this analysis, we argue that as model architectures mature, systematic data engineering\nbecomes the primary lever for advancing document parsing performance. "
+    },
+    {
+      "aiAssistanceScore": 0.29727906,
+      "confidence": "Low",
+      "endIndex": 3217,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 1110,
+      "text": " To test this hypothesis, we\nbuild MinerU2.5-Pro\u2014retaining the identical 1.2B-parameter decoupled coarse-to-fine architecture\nof MinerU2.5 [25] and focusing all optimization on the Data Engine and training strategy, ensuring\nthat all performance gains are attributable to data-level improvements. On OmniDocBench v1.6,\nMinerU2.5-Pro achieves 95.69 (baseline 92.98, +2.71), surpassing all existing methods without any\narchitectural modification.\nOur contributions are summarized as follows:\n\u2022 \nA Data Engine co-designed around coverage, informativeness, and annotation accuracy. It\ncomprises three core components\u2014Diversity-and-Difficulty-Aware Sampling (DDAS), Cross-\nModel Consistency Verification (CMCV), and a Judge-and-Refine annotation pipeline\u2014that\ntogether expand training data from under 10M to 65.5M pages while systematically improving\nannotation quality through a closed-loop progression from sampling to refinement.\n\u2022 A three-stage progressive training strategy\u2014large-scale pre-training, high-quality hard sample\nfine-tuning, and GRPO format alignment\u2014matched to the data quality tiers produced by the Data\nEngine. With these data and training improvements alone, a 1.2B-parameter model achieves 95.69\non OmniDocBench v1.6, surpassing all existing methods without any architectural modification.\n\u2022 OmniDocBench v1.6, an upgraded evaluation protocol that corrects element-matching biases in\nv1.5 through Multi-Granularity Adaptive Matching and introduces a Hard subset, establishing a\nBase/Hard/Full three-tier framework for fairer and more discriminative evaluation.\n2 Related Work\n2.1 Document Parsing Methods\nExisting document parsing methods fall into three paradigms based on their overall system architec-\nture.\nPipeline-based methods. These methods decompose document parsing into independent subtasks\u2014\nlayout detection, text recognition, table extraction, formula recognition\u2014and execute them in a\ncascade [35 , 50 , 21 , 28 , 7]. This modular design enables independent optimization of each component\nbut is prone to error propagation across stages and information loss between modules.\n"
+    },
+    {
+      "aiAssistanceScore": 0.19789732,
+      "confidence": "Medium",
+      "endIndex": 3596,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3216,
+      "text": "\nEnd-to-end VLM methods. These methods directly map document images to structured output,\ncircumventing cascading errors. Nougat [ 2 ], built on the Donut architecture [16 ], established a strong\nbaseline for the image-to-markup paradigm on academic documents; GOT-OCR 2.0 [39 ] unified\nscene text and document OCR within a single model. Subsequent works such as Ocean-OCR [3 ],\n4"
+    },
+    {
+      "aiAssistanceScore": 0.19789732,
+      "confidence": "Medium",
+      "endIndex": 1743,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nolmOCR [ 29 ], and dots.ocr [ 18 ] employ native-resolution visual encoders to further improve perfor-\nmance. However, native-resolution processing incurs O(N\n2\n) token complexity, creating efficiency\nbottlenecks on high-resolution documents.\nDecoupled VLM methods. These methods separate layout analysis from content recognition, com-\nbining the controllability of pipeline approaches with the semantic modeling power of VLMs. Early\nworks such as Dolphin [12 ] and MonkeyOCR [19] demonstrated the viability of this paradigm but face\nlimitations in resolution handling or system complexity. MinerU2.5 [ 25] unifies layout analysis and\ncontent recognition within a single model while supporting native-resolution parsing [ 26 ], achieving a\nfavorable balance among resolution fidelity, computational efficiency, and deployment complexity at a\n1.2B parameter scale. Subsequent works extend the decoupled paradigm along various axes: multi-\ntoken prediction for throughput [ 11 ], diffusion-based decoding for improved parsing efficiency and\nrobustness [9], non-planar document handling [ 8], in-the-wild robustness [ 32], and high-compression\nvision-text mappings [40 ]. General-purpose VLMs such as Gemini-2.5 Pro [ 5] and Qwen2.5-VL-72B [ 1]\nalso achieve competitive results, though their large parameter scales hinder cost-effective deployment\nat production scale.\nAcross these works, the main line of methodological evolution focuses on architecture design and\ninference efficiency, while systematic engineering of training data\u2014co-optimizing coverage, informa-\ntiveness, and annotation accuracy\u2014has not been adequately explored as an independent research\nproblem. "
+    },
+    {
+      "aiAssistanceScore": 0.20498733,
+      "confidence": "Medium",
+      "endIndex": 3988,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 1742,
+      "text": " Our work addresses this dimension and is largely complementary to the architectural\nadvances above.\n2.2 Data-Centric AI\nData-Centric AI [24, 47 ] advocates systematically improving data quality while keeping the model\nfixed, and has been validated in vision-language pretraining [14 ] and large language model fine-\ntuning [ 53 ]. In document parsing, however, data engineering remains fragmented: olmOCR [ 29 ]\nemphasizes data scale expansion over quality stratification; DocGenome [42] is restricted to academic\npapers and lacks difficulty differentiation; existing technical reports [ 25, 11 , 8] describe training data\nbut treat it as a prerequisite for model training rather than an independent research subject.\nOur work treats data construction for document parsing as a standalone systematic research prob-\nlem, co-optimizing coverage, informativeness, and annotation accuracy within a unified framework.\nMethodologically, our CMCV approach draws on the core principles of ensemble-based active learn-\ning [30 ] and query-by-committee [ 13 ] by leveraging multi-model disagreement to quantify sample\ninformativeness. Beyond standard disagreement-based selection, CMCV couples difficulty information\nwith downstream annotation strategies in a closed loop and addresses the document-parsing-specific\nchallenge of unreliable hard sample annotation through the Judge-and-Refine pipeline.\n2.3 Document Parsing Evaluation\nDocument parsing evaluation involves both metric design and evaluation protocol. At the metric\nlevel, text recognition commonly uses edit distance [17], table structure recovery uses TEDS [51], and\nformula recognition has recently shifted from BLEU to CDM (Character Detection Matching) [ 36 ].\nOmniDocBench [27 ] integrates all three metrics and is currently the most comprehensive document\nparsing evaluation benchmark; OCRBench [ 20] and CC-OCR [ 44] focus on evaluating multimodal\nmodels\u2019 overall OCR capabilities.\nAt the protocol level, however, the critical impact of element-matching strategies on evaluation fairness\nremains largely overlooked. End-to-end systems vary in output granularity, segmentation strategies,\nand format conventions, and the choice of matching algorithm systematically affects evaluation\n5"
+    },
+    {
+      "aiAssistanceScore": 0.20498733,
+      "confidence": "Medium",
+      "endIndex": 80,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\n(1) "
+    },
+    {
+      "aiAssistanceScore": 0.2153298,
+      "confidence": "Low",
+      "endIndex": 1540,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 79,
+      "text": " Diversity-and-Difficulty-Aware Sampling\n(3) Annotation Pipeline for Hard Case\nPDF Pool\nViT-Base\nEmbedding\nK-Means\nClustering \nText \nFormula\nTable\nLayout\nDiverse \nDifficulty\n~ 60M\nPages\nMinerU 2.5\nPaddleOCR-VL-1.5\nQwen3-VL-30B\nOutput of\nSOTA Models\n\ud835\udc79\n\ud835\udfcf\n\ud835\udc79\n\ud835\udfd0\nText \nEDIT\nTable \nTEDS\nFormula \nCDM\nPairwise\nmetrics\nEasy ~60%\nMedium ~25%\nHard ~ 15%\nConsistency\nJudge and Refine Annotation\nTargeted Expert Annotation\nBalanced Sampling\nOriginal\nImage\nHard\nRendered\nImage\nJudger\nRefiner\nPaired Inputs\nError Location\nError Reason\nCorrect\nand\nRefine\nN\nRe-render\nRe-compare\nHard\nGemini\n3 pro\n+\nManual Expert\nAnnotation\nUncertain\nRefine\nUncertain Refine\nHigh-value\nHard\nQA\n1\ufe0f\u20e3\n2\ufe0f\u20e3\n(2) Cross-Model Consistency Verification\n\ud835\udc79\n\ud835\udc8f\nPre-Training\nFine-Training\nRL-Training\nMinerU2.5-Pro Data Engine\nAnnotation\nPDF Pool\nEasy Med.\nHard Hard\n\uff5e65.5M\n\uff5e192K\n(1) (2) \n(2) (3)\nFigure 2: Overview of the Data Engine pipeline. The system co-optimizes three dimensions\u2014Coverage,\nInformativeness, and Accuracy\u2014through four synergistic stages: Diversity-and-Difficulty-Aware Sam-\npling (DDAS), Cross-Model Consistency Verification (CMCV), Judge-and-Refine annotation correction,\nand targeted expert annotation.\nscores. We identify such systematic biases in OmniDocBench v1.5 and rectify them in v1.6 through\nMulti-Granularity Adaptive Matching (detailed in Section 5).\n3 Data Engine\nTo address the data deficiencies identified above, we first examine the limitations of existing data\npipel"
+    },
+    {
+      "aiAssistanceScore": 0.17471536,
+      "confidence": "Medium",
+      "endIndex": 3405,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1539,
+      "text": "lines. MinerU2.5 [25] built a data pipeline comprising cluster-based sampling, Iterative Model\nInference Consistency (IMIC) hard sample mining, and model-based annotation refinement, but these\ncomponents lack co-design across coverage, informativeness, and accuracy: sampling is not informed\nby difficulty, annotation refinement applies a uniform strategy regardless of sample difficulty, and\nhard samples mined by IMIC still face unreliable automatic annotation. Similar limitations exist in\nPaddleOCR-VL-1.5\u2019s Uncertainty-Aware Cluster Sampling (UACS) [8].\nThe Data Engine of MinerU2.5-Pro is co-designed around these three dimensions and comprises four\nsynergistic components. DDAS expands data coverage through task-aware clustering and corrects\ndistribution shift (Section 3.1); CMCV performs difficulty stratification on sampled data via multi-\nmodel cross-validation, identifying high-informativeness samples (Section 3.2); the Judge-and-Refine\npipeline improves annotation accuracy for hard samples through render-then-verify iterative correction\n(Section 3.3); samples that still exceed automatic correction capability are routed to expert annotation\nto guarantee final quality (Section 3.4). The four components form a coarse-to-fine quality progression,\nenabling data scale expansion (under 10M \u2192 65.5M) and annotation quality improvement to proceed\nin tandem. The overall pipeline is illustrated in Figure 2.\n3.1 Diversity-and-Difficulty-Aware Data Sampling\nTraining data for document parsing faces a typical long-tail distribution problem: high-frequency\ncategories (e.g. standard academic papers, single-column reports) dominate the data pool, while\nlong-tail scenarios such as complex nested tables, dense formula layouts, and unconventional multi-\ncolumn layouts are severely underrepresented. As noted above, existing approaches [ 25 , 8 ] rely on\n6"
+    },
+    {
+      "aiAssistanceScore": 0.17471536,
+      "confidence": "Medium",
+      "endIndex": 199,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nPage-level sampling\n1\nElement-level sampling\n2\nViT-Base\nEmbedding\nK-Means\nPage-Legel Clusters\nPDF Pool\nCMCV\nEasy\nMedium\nHar"
+    },
+    {
+      "aiAssistanceScore": 0.2586077,
+      "confidence": "Medium",
+      "endIndex": 2508,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 198,
+      "text": "rd\n...\nInvalid\nDown Sample\nRatio Sample\nUp Sample\nDrop \n~ 60M Pages\nPage Data\nLayout\nDetection\nTxt \nText Clusters\nFormula Clusters\nTable Clusters\nSample\nCMCV\nFinal Sample\nSFT Data\nLayout\nText\nFormula\nTable\nFigure 3: The DDAS pipeline operates at two granularity levels. Upper: Page-level sampling for\nlayout detection data\u2014pages from the PDF pool are embedded via ViT-base, clustered, and resampled\nby jointly weighting cluster diversity and CMCV-derived difficulty, yielding about 60M pages with\nbalanced distribution and difficulty coverage. Lower: Element-level sampling\u2014the selected pages\nare parsed by layout detection models into text, formula, and table blocks; each element type is\nindependently clustered and assessed by CMCV, then sampled to balance both diversity and difficulty\nat the element granularity. The two levels are combined to produce the final training data for layout,\ntext, formula, and table subtasks.\nsingle-model signals for difficulty estimation, which cannot distinguish model-specific weaknesses\nfrom universally hard samples.\nWe propose Diversity-and-Difficulty-Aware Sampling (DDAS), which jointly optimizes diversity and\ndifficulty at both page-level and element-level granularity. The overall pipeline is shown in Figure 3.\nStage 1: Page-level sampling. We extract visual features (ViT-base, 512-dim) from all pages in the\nPDF document pool, perform K-Means clustering, and uniformly sample from each cluster center\nto form an initial candidate set. We then run page-level CMCV (Section 3.2) on this candidate set to\nobtain difficulty labels for each page. Based on statistical analysis of the difficulty distribution within\neach cluster, we adjust sampling weights: clusters dominated by Easy samples receive lower weight,\nclusters with diverse difficulty distributions receive higher weight, and clusters dominated by invalid\ncontent (non-target languages, blank pages, etc.) are filtered out. Using the adjusted weights, we\nexpand sampling from the original document pool to obtain the page-level candidate set and complete\npage-level CMCV difficulty annotation for all data.\nStage 2: Element-level sampling. From the page-level candidate set, we extract block-level elements\n(text blocks, formula blocks, table blocks) using MinerU2.5 and PaddleOCR-VL layout detection\nmo"
+    },
+    {
+      "aiAssistanceScore": 0.2765963,
+      "confidence": "Medium",
+      "endIndex": 2848,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 2507,
+      "text": "odels. For each element type, we extract visual features and perform independent clustering, while\nsimultaneously running block-level CMCV to obtain element difficulty labels. At this point, all four\nsubtasks\u2014layout, text, formula, and table\u2014have complete information along both the clustering\n(diversity) and CMCV (difficulty) dimensions.\n7"
+    },
+    {
+      "aiAssistanceScore": 0.2765963,
+      "confidence": "Medium",
+      "endIndex": 2087,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nFinal sampling. We perform balanced sampling in the joint cluster-difficulty space across all four\nsubtasks: along the diversity dimension, large clusters are downsampled and small clusters are\nupsampled to correct long-tail shift; along the difficulty dimension, the proportions of Medium and\nHard samples are upweighted to enhance training signal informativeness. The final output is an SFT\ntraining set that covers all subtasks and balances diversity with difficulty.\nBy coupling clustering with CMCV at both page-level and element-level granularity, DDAS enables\nsampling decisions to simultaneously account for data distribution and training value, maximizing\ntraining signal density while controlling total data volume.\n3.2 Cross-Model Consistency Verification\nDDAS relies on difficulty labels to guide sampling weight allocation, and subsequent annotation\nrefinement and expert annotation also require difficulty information to determine resource investment\nstrategies. However, ground truth is unavailable for massive unlabeled data. IMIC in MinerU2.5 [ 25]\nand UACS in PaddleOCR-VL-1.5 [8] use output consistency from multiple inferences of a single model\nas a difficulty proxy. This paradigm captures only the epistemic uncertainty of a single model and\ncannot distinguish between model-specific blind spots and universally hard problems\u2014the former\ncan be directly rectified via cross-model consensus, while the latter necessitates additional quality\nrefinement or even human intervention. This distinction is critical for annotation strategy selection.\nWe propose Cross-Model Consistency Verification (CMCV), which extends difficulty assessment from\nsingle-model introspection to multi-model cross-validation. The underlying assumption is empirically\nvalidated: when multiple heterogeneous models produce consistent outputs for a given sample, the\nresult is highly likely to be correct; when all models diverge substantially, the sample is genuinely\ndifficult and none of the models can parse it reli"
+    },
+    {
+      "aiAssistanceScore": 0.29726332,
+      "confidence": "Medium",
+      "endIndex": 4284,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 2086,
+      "text": "iably. Based on this assumption, we run K heterogeneous\nSOTA document parsing models (MinerU2.5, PaddleOCR-VL, Qwen3-VL-30B) independently on the\ncandidate data produced by DDAS, compute task-specific pairwise consistency metrics (text: edit\ndistance; table: TEDS; formula: CDM), and classify each sample into three difficulty tiers based on\nconsistency patterns. Since MinerU2.5 is the target model to be improved, we anchor the difficulty\ntaxonomy on its performance relative to external models:\n\u2022 Easy: MinerU2.5\u2019s output is highly consistent with at least one external model. Model consensus\nindicates the parsing result is reliable, and any model\u2019s output can serve directly as annotation.\n\u2022 Medium: The two external models agree with each other, but MinerU2.5 differs significantly\nfrom both. The external consensus serves as a reliable pseudo-label.\n\u2022 Hard: All three models\u2019 outputs exhibit significant pairwise disagreement, and no reliable\nannotation can be obtained through model consensus.\nThese three data categories play different roles in training. Easy data is abundant and reliably anno-\ntated, forming the backbone for building foundational capabilities, but the model has largely mastered\nthese scenarios and their marginal training value is limited. Medium data has the highest training\nvalue\u2014it precisely pinpoints MinerU2.5\u2019s capability gaps relative to peers, while the successful parsing\nby external models proves these samples are learnable, and the external consensus directly provides\nreliable annotations without further correction. Hard data is critical for capability breakthroughs, but\nits annotations are unreliable and require subsequent Judge-and-Refine correction (Section 3.3) or\nexpert annotation (Section 3.4) before safe use. The respective strengths and constraints of these three\ncategories naturally motivate the annotation strategy design in the following sections.\nCMCV thus enables rapid difficulty assessment on massive unlabeled data without human annotation,\nmaking large-scale data expansion and iteration feasible. Since Medium data is scarce but most\nvaluable, we prioritize its proportion during DDAS sampling. The optimal ratio among the three\n8"
+    },
+    {
+      "aiAssistanceScore": 0.29726332,
+      "confidence": "Medium",
+      "endIndex": 223,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\ncategories varies by subtask\u2014formula and table recognition are more sensitive to Hard samples, while\ntext recognition benefits more from Medium sam"
+    },
+    {
+      "aiAssistanceScore": 0.20252308,
+      "confidence": "Medium",
+      "endIndex": 2586,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 222,
+      "text": "mples.\n3.3 Judge-and-Refine Annotation Pipeline\nCMCV provides reliable automatic annotations for Easy and Medium samples. However, Hard\nsamples\u2014data on which all models fail to reach consensus\u2014would introduce annotation noise that\ndegrades rather than improves model performance if directly used for training. Improving annotation\nquality for these critical samples without relying on large-scale human annotation is the core challenge\nin advancing the Data Engine from \u201cfiltering\u201d to \u201crefinement.\u201d\nA natural approach is to introduce test-time compute through an iterative judge-then-correct mecha-\nnism that lets the model examine and refine its own parsing results. However, naive self-reflection\nsuffers from a form of confirmation bias in document parsing: when a model is asked to check its\nown output, it tends to accept the result as correct and overlook existing errors. The root cause lies\nin the asymmetry of cross-modal mapping\u2014models excel at generating structured sequences from\ndocument images but struggle to infer visual appearance from structured sequences. For complex\nstructural mappings such as L\nA\nT\nE\nX formulas and HTML tables, the model cannot accurately judge how\nan output sequence will render visually in implicit space, losing the ability to detect structural errors.\nTo break this bottleneck, we incorporate render-then-verify into the iterative correction loop: we compile\nL\nA\nT\nE\nX formulas and render HTML tables into images, then feed both the original document image\nand the rendered image to the model as paired inputs alongside the judge-and-refine prompt. This\ndesign offers two advantages. First, it fills in the missing mapping from structured text to visual\nlayout, reducing the cognitive load on the model during cross-modal alignment. Second, the error-\namplification effect of rendering translates subtle, text-domain structural flaws (e.g. missing alignment\nsymbols, unclosed tags) into salient visual anomalies or layout collapse, enabling the model to localize\ndefects as intuitively as a human proofreader.\nBased on this design, we build a visual-comparison-driven Judge-and-Refine iterative correction\npipeline. The pipeline uses Qwen3-VL-235B as the Judge-Refine model\u2014chosen for its strong multi-\nmodal reasoning capability and its independence from the CMCV model pool, which avoids systematic\nbias in error detec"
+    },
+    {
+      "aiAssistanceScore": 0.26583922,
+      "confidence": "Low",
+      "endIndex": 4006,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 2585,
+      "text": "ction. Multi-round error localization and targeted correction are driven through direct\nvisual comparison between the original document image and the rendered image. After processing\nthrough this pipeline, a subset of extremely complex cases still exceeds automatic correction capability;\nthese samples are routed to the expert annotation workflow.\n3.4 Targeted Expert Annotation\nAfter DDAS sampling, CMCV difficulty stratification, and Judge-and-Refine correction, Easy and\nMedium samples have reliable annotations, but a portion of Hard samples still exceeds automatic\ncorrection capability. For these samples, we introduce expert human annotation to guarantee final\nquality. Annotation budget allocation is prioritized based on intermediate outputs from Judge-and-\nRefine:\n1. \nSamples where Judge confidence is high but Refine correction is uncertain receive top priority\u2014\nerror locations have already been identified by Judge, and annotators need only perform local\ncorrections, maximizing annotation efficiency.\n2. Priority is given to the subtask categories where the current model is weakest (determined by\nCMCV disagreement patterns), maximizing the marginal contribution of limited annotation\nbudget to overall performance.\nHuman annotation follows an AI pre-annotation and expert review-and-correction workflow. For\npre-annotation, we use Gemini 3 Pro\u2014chosen for its strong multimodal reasoning capability and\n9"
+    },
+    {
+      "aiAssistanceScore": 0.26583922,
+      "confidence": "Low",
+      "endIndex": 721,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable 1: Training configurations for the three-stage progressive strategy. All three stages share the same\nmodel architecture and resolution settings; they differ in data source, data scale, and optimization\nhyperparameters, reflecting the progression from broad coverage (Stage 1) to targeted refinement\n(Stage 2) to metric-level alignment (Stage 3).\nCategory Parameter Stage 1 Stage 2 Stage 3\nVision \nMax Resolution 2048\u00d728\u00d728 2048\u00d728\u00d728 2048\u00d728\u00d728\n#Tokens per Image 64\u20132048 64\u20132048 64\u20132048\nData \nDataset Type \nLayout & OCR\n\u2020\n& Image Analysis\nLayout & OCR\n\u2020\n& Image Analysis\nLayout & Text &\nFormula & Table\n#Samples 65.5M \n3.9M\n(192K human-lab"
+    },
+    {
+      "aiAssistanceScore": 0.28079543,
+      "confidence": "Medium",
+      "endIndex": 2595,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 720,
+      "text": "beled) \n192K\nModel \nTrainable All All All\nSequence Length 8192 8192 8192\nTraining\nBatch Size 256 128 512\nViT Learning Rate 1 \u00d7 10\n\u22124 \n5 \u00d7 10\n\u22126 \n1 \u00d7 10\n\u22127\nMLP/LLM Learning Rate 1 \u00d7 10\n\u22123 \n5 \u00d7 10\n\u22125 \n1 \u00d7 10\n\u22125\nEpoch 1 1 1\n\u2020\nOCR collectively refers to text recognition, formula recognition, and table recognition.\nits independence from the CMCV model pool, thereby avoiding data leakage. Automated QA tools\nfurther ensure annotation consistency. Compared to MinerU2.5\u2019s human annotation process [ 25 ],\nannotation targets shift from random sampling to a precisely targeted subset identified through\nthree-stage filtering, significantly improving annotation resource utilization.\nThe Data Engine produces a stratified dataset: approximately 65.5M Easy and Medium samples,\nautomatically annotated via CMCV, are used for Stage 1 pre-training; 192K expert-annotated Hard\nsamples are used for Stage 2 fine-tuning and Stage 3 GRPO alignment.\n4 Progressive Training Strategy\nMinerU2.5-Pro inherits MinerU2.5\u2019s [ 25 ] 1.2B-parameter decoupled coarse-to-fine architecture (NaViT-\n675M vision encoder + Qwen2-0.5B language model) without any structural modification. The model\nis initialized from MinerU2.5\u2019s Stage 0 checkpoint, which provides foundational vision-language\nalignment and OCR capabilities [25].\nFrom this shared starting point, MinerU2.5-Pro employs a three-stage progressive training strategy that\nsequentially leverages data at different quality tiers produced by the Data Engine: Stage 1 pre-trains\non large-scale CMCV auto-annotated data to build comprehensive foundational capabilities; Stage 2\nfine-tunes on high-quality expert-annotated data to strengthen hard scenarios; Stage 3 aligns output\nformat and structural conventions through reinforcement learning. The three stages progress from\ndata scale to data quality, with training configurations summarized in Tab"
+    },
+    {
+      "aiAssistanceScore": 0.25120184,
+      "confidence": "Medium",
+      "endIndex": 3134,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2594,
+      "text": "ble 1.\n4.1 Stage 1: Document Parsing Pre-training\nTraining data. The training set consists of Easy and Medium samples produced by the Data Engine,\nwith annotations derived from CMCV multi-model consensus. The data covers four core subtasks\ntotaling approximately 65.5M samples: text recognition 21M, layout analysis 14M, formula recognition\n13M, and table recognition 11.5M, plus 6M image analysis samples (charts, text-embedded images,\netc.). The ratio among subtasks is adjusted based on their weights in the OmniDocBench overall score\n10"
+    },
+    {
+      "aiAssistanceScore": 0.25120184,
+      "confidence": "Medium",
+      "endIndex": 1350,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nand the baseline model\u2019s performance gaps.\nTraining configuration. All parameters are trainable. The language model uses a learning rate of\n1 \u00d7 10\n\u22123\n, the vision encoder uses 1 \u00d7 10\n\u22124\n, batch size is 256, and training runs for 1 epoch. Compared\nto MinerU2.5\u2019s Stage 1 pre-training (6.9M samples/epoch \u00d7 2 epochs) [ 25], this stage expands data\nscale by nearly an order of magnitude (6.9M \u2192 65.5M), with data quality also systematically improved\nthrough DDAS distribution correction and CMCV annotation filtering.\n4.2 Stage 2: High-Quality Supervised Fine-Tuning\nStage 1 builds comprehensive foundational capabilities, but performance gaps remain on Hard samples.\nThis stage uses high-quality expert-annotated data for precise fine-tuning, strengthening hard scenarios\nwhile maintaining generalization on regular scenarios through mixed Stage 1 replay data.\nTraining data. The training set comprises two parts: (1) 192K high-quality Hard samples produced\nthrough the expert annotation pipeline; (2) replay data sampled proportionally from the Stage 1\ntraining set to prevent catastrophic forgetting. The mixing ratio (Hard:Replay) is differentiated by\nsubtask: layout analysis 6:1, text recognition 1:50, formula recognition 1:25, table recognition 1:10, and\nimage analysis"
+    },
+    {
+      "aiAssistanceScore": 0.26118347,
+      "confidence": "Medium",
+      "endIndex": 3613,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 1349,
+      "text": "s 1:4. This non-uniform mixing strategy reflects differences in hard sample volume and\nbaseline performance across subtasks\u2014layout analysis has more hard samples and a strong Stage 1\nfoundation, requiring less replay; text recognition has scarce hard samples and needs more replay data\nto maintain generalization.\nTraining configuration. Building on the Stage 1 model, we adopt a lower learning rate of 5 \u00d7 10\n\u22125\n,\nbatch size of 128, and train for 1 epoch. The reduced learning rate protects foundational capabilities\nacquired in Stage 1 while fine-tuning decision boundaries on hard scenarios.\n4.3 Stage 3: Reinforcement Learning with GRPO\nThe first two stages optimize content recognition accuracy through supervised learning, but cross-\nentropy loss optimizes each token prediction independently and weights all tokens equally, without\ndirectly reflecting sequence-level or structure-level evaluation metrics (edit distance, CDM, TEDS, IoU).\nThis stage bridges the gap between training objectives and evaluation metrics through reinforcement\nlearning that directly optimizes task-level metrics.\nWe use Group Relative Policy Optimization (GRPO) [ 31 ] for alignment. For each input, G groups of\ncandidate outputs are sampled, rewards are computed directly using task-specific automatic evaluation\nmetrics, and policy updates are guided by within-group relative advantages, eliminating the need for\na separate reward model.\nReward design. Reward functions are designed separately for four subtasks, directly adopting the\nsame metrics used in evaluation as reward signals: edit distance for text recognition, CDM for formula\nrecognition, TEDS for table recognition, and category IoU for layout detection. This design directly\naligns training optimization objectives with final evaluation metrics.\nTraining data. Training data is generated from Stage 2 model rollouts and filtered based on reward\ndistribution: samples with excessively high rewards (model saturated, no effective learning signal)\nand excessively low rewards (samples too hard or annotations erroneous) are removed, retaining\nthe mid-reward range to maximize effective policy gradient signal. All training data comes from the\nhigh-quality expert-annotated set to ensure reward signal reliability.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.26118347,
+      "confidence": "Medium",
+      "endIndex": 136,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nFigure 4: Examples of element-matching bias in OmniDocBench "
+    },
+    {
+      "aiAssistanceScore": 0.35571888,
+      "confidence": "Low",
+      "endIndex": 1256,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 135,
+      "text": " v1.5. Semantically correct predictions\nreceive low scores due to granularity mismatch between predicted and ground-truth segmentation.\nTraining configuration. Building on the Stage 2 model, we adopt a learning rate of 1 \u00d7 10\n\u22125\n, batch\nsize of 512, and train for 1 epoch, with G = 16 rollouts per sample. Following DAPO [46], we apply\nclip-higher to stabilize advantage estimation and dynamic sampling to discard zero-variance rollout\ngroups.\n5 OmniDocBench v1.6\n5.1 Motivation\nAs leading document parsing models converge on OmniDocBench v1.5, two fundamental issues limit\nits effectiveness as a benchmark:\nMatching strategy bias. v1.5 employs fixed-granularity one-to-one element matching, which silently\npenalizes systems whose output segmentation differs from the ground truth\u2014even when the parsed\ncontent is entirely correct. As illustrated in Figure 4, consider a multi-line formula annotated as a single\nblock spanning k lines: if a model produces the identical L\nA\nT\nE\nX but segments it into k\u22121 or k separate\nblocks, v1.5 scores drop sharply from full marks to near zero despite semantically perfect output. A\n12"
+    },
+    {
+      "aiAssistanceScore": 0.35571888,
+      "confidence": "Low",
+      "endIndex": 978,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nsimilar issue affects dense text: a region annotated as one block may be predicted line-by-line or even\nrecognized as a table; in the latter case v1.5 assigns zero credit because no text element remains to\nmatch. These granularity-dependent scoring artifacts make cross-system comparisons unreliable.\nInsufficient hard sample coverage. Through the large-scale difficulty stratification provided by\nour Data Engine (Section 3), we find that samples labeled as Hard are virtually absent from the v1.5\nevaluation set. The benchmark predominantly measures performance on low-to-medium difficulty\ndocuments, causing top models to cluster tightly with diminishing discriminative power.\nTo address these issues, we upgrade OmniDocBench to v1.6: we propose Multi-Granularity Adaptive\nMatching (MGAM) to eliminate matching bias (Section 5.2), and expand the evaluation set with a\ndedicated Hard subset (Section "
+    },
+    {
+      "aiAssistanceScore": 0.3205133,
+      "confidence": "Low",
+      "endIndex": 2637,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 977,
+      "text": " 5.3).\n5.2 Multi-Granularity Adaptive Matching\nWe propose Multi-Granularity Adaptive Matching (MGAM), which eliminates matching bias through\nadaptive granularity adjustment on the prediction side. The core principle is to keep the ground truth\nunchanged and search for the optimal segmentation granularity only on the prediction side. Given\na set of ground truth elements G = {g\n1\n, g\n2\n, . . . , g\nm\n} and prediction elements P = {p\n1\n, p\n2\n, . . . , p\nn\n},\nMGAM generates candidate matching solutions through three stages and selects the global optimum:\nStage 1: Direct Bipartite Matching. We directly solve optimal bipartite matching between P and G\nat original granularity. Using the cost matrix C\nij \n= 1 \u2212 sim(p\ni\n, g\nj\n) as input, the Hungarian algorithm\nsolves for the minimum-cost matching M\n\u2217\n1 \n= arg min\nM \n\u2211\n(i,j)\u2208M \nC\nij\n, yielding the first candidate\nmatching and its aggregate score S\n1\n.\nStage 2: Prediction Splitting + Bipartite Matching. Each prediction element p\ni \nis split at L\nA\nT\nE\nX line-\nbreak delimiters (e.g. \\\\, \\newline, and equivalent symbols) to produce a fine-grained prediction set\nP\n\u2032 \n= {p\n\u2032\n1\n, p\n\u2032\n2\n, . . . , p\n\u2032\nn\n\u2032 \n} (n\n\u2032 \n\u2265 n). Prediction elements without splittable delimiters remain unchanged.\nBipartite matching is re-solved on P\n\u2032 \nand G, yielding candidate matching M\n\u2217\n2 \nand aggregate score S\n2\n.\nStage 3: Partition Enumeration + Bipartite Matching. Stage 2 splitting may be too fine\u2014annotation\ngranularity is not necessarily per-line but may be any intermediate granularity between 1 and k lines.\nTo cover all possible merging schemes, we enumerate all valid ordered partitions of consecutive\nsubsequences of "
+    },
+    {
+      "aiAssistanceScore": 0.24524803,
+      "confidence": "Medium",
+      "endIndex": 3496,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2636,
+      "text": " P\n\u2032\n. Specifically, for n\n\u2032 \nfine-grained prediction elements, there are n\n\u2032 \n\u2212 1 gaps between\nadjacent elements, and each gap can be either \u201csplit\u201d or \u201cmerged,\u201d producing 2\nn\n\u2032 \n\u22121 \npartition schemes.\nEach partition \u03c0 = (B\n1\n, B\n2\n, . . . , B\nK \n) divides P \n\u2032 \ninto K consecutive blocks, where the k-th block is\nB\nk \n=\nr\nk\nM\nt=l\nk\np\n\u2032\nt \n(1)\nwith \nL \ndenoting concatenation in original order. For each partition, we perform bipartite matching\nbetween the merged block set {B\n1\n, . . . , B\nK \n} and G, selecting the partition with the best matching score\nas candidate matching M\n\u2217\n3 \nand aggregate score S\n3\n.\nGlobal Optimum Selection. The final matching is the one with the best aggregate score among\nthe three stages: M\n\u2217 \n= arg max\nk\u2208{1,2,3} \nS\nk\n, and the task-specific metric (e.g. CDM for formulas, edit\ndistance for text) is computed based on M\n\u2217\n.\n13"
+    },
+    {
+      "aiAssistanceScore": 0.24524803,
+      "confidence": "Medium",
+      "endIndex": 829,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nDense text matching. The granularity mismatch problem is not limited to formulas. For dense text\nregions, prediction and annotation sides similarly differ in whether multiple text segments are merged\ninto one large text box or split into multiple small ones. We reuse the MGAM algorithm for text\nelements with edit distance as the similarity metric. Additionally, if a model recognizes text in a region\nas a table (not uncommon for dense structured text), we convert the table back to plain text and include\nit in the same matching pipeline, avoiding unfair penalties due to format preference differences.\nWith MGAM, the evaluation becomes neutral to output granularity and format preferences, removing\na systematic source of scoring variance across sys"
+    },
+    {
+      "aiAssistanceScore": 0.18953568,
+      "confidence": "Medium",
+      "endIndex": 2914,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 828,
+      "text": "stems.\n5.3 Hard Subset and Three-Tier Evaluation Protocol\nTo fill the coverage gap for hard scenarios, we construct a Hard subset of 296 pages selected from\nthe pool of data labeled as Hard during Data Engine difficulty stratification. Samples are chosen to\ncover the most challenging scenario categories in document parsing, including complex nested tables,\ndense mathematical formula layouts, and unconventional layout structures. All Hard subset samples\nare excluded from every training stage of MinerU2.5-Pro (including Judge-and-Refine training data)\nand are annotated by professional teams with inter-annotator cross-validation to ensure ground truth\nquality.\nOmniDocBench v1.6 establishes a Base/Hard/Full three-tier evaluation protocol:\n\u2022 \nBase (1,355 pages): retains the original v1.5 evaluation set to maintain comparability with\nhistorical results.\n\u2022 Hard (296 pages): the newly added hard sample subset, providing more sensitive measurement\nwhere top models saturate on standard evaluations.\n\u2022 Full (1,651 pages): the complete union of both, providing comprehensive performance assess-\nment.\n6 Experiments\nThis section evaluates MinerU2.5-Pro against both leading general-purpose VLMs and current SOTA\ndocument-parsing-specific models [ 5, 43 , 33, 11 , 8, 32, 41 , 40, 25 ]. All competing models are re-\nevaluated under a unified environment using the same evaluation code.\n6.1 Evaluation Setup\nOmniDocBench v1.6. We evaluate on OmniDocBench v1.6 using the Base/Hard/Full three-tier\nprotocol described in Section 5.3. The overall score follows the same formula as MinerU2.5 [25 ],\naveraging text (edit distance), table (TEDS), and formula (CDM) metrics. We additionally report\nsub-metrics: Text Edit\u2193, Formula CDM\u2191, Table TEDS\u2191, Table TEDS-S\u2191, Read Order Edit\u2193.\nElement-specific evaluation. To more accurately measure content recognition capability (excluding\nthe confounding effect of layout detection errors), we crop document images based on ground truth\nlayout boxes and separately evaluate text recognition, formula recognition, and table recognition as\nindividual mod"
+    },
+    {
+      "aiAssistanceScore": 0.17233129,
+      "confidence": "Low",
+      "endIndex": 3155,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 2913,
+      "text": "dules.\n6.2 End-to-End Document Parsing\nAs shown in Table 2, MinerU2.5-Pro ranks first on Full with 95.69, improving over the same-architecture\nMinerU2.5 baseline (92.98) by 2.71 points\u2014confirming that all gains are data-driven. On the Base\n14"
+    },
+    {
+      "aiAssistanceScore": 0.17233129,
+      "confidence": "Low",
+      "endIndex": 569,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nModel Type Methods Param Overall\u2191 Text\nEdit\n\u2193 Formula\nCDM\n\u2191 Table\nTEDS\n\u2191 Table\nTEDS-S\n\u2191 Read Order\nEdit\n\u2193\nSpecialized\nVLMs\nMinerU2.5-Pro 1.2B 95.69 0.036 97.29 93.42 95.92 0.120\nGLM-OCR [11] 0.9B 95.15 0.044 96.99 92.83 95.39 0.133\nPaddleOCR-VL-1.5 [8] 0.9B 94.87 0.038 96.69 91.67 94.37 0.130\nPaddleOCR-VL [6] 0.9B 94.11 0.040 95.70 90.65 93.74 0.135\nYoutu-Parsing [45] 2.5B 93.68 0.044 93.45 92.02 95.00 0.116\nLogics-Parsing-v2 [4] 4B 93.27 0.041 95.47 88.42 91.98 0.137\nFireRed-OCR [41] 2B "
+    },
+    {
+      "aiAssistanceScore": 0.14748482,
+      "confidence": "Medium",
+      "endIndex": 1063,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 568,
+      "text": " 93.20 0.037 95.27 88.04 91.06 0.131\nMinerU2.5 [25] 1.2B 92.98 0.045 95.59 87.88 91.47 0.130\nOpenDoc-0.1B [10] 0.1B 90.64 0.049 92.93 83.88 87.45 0.140\ndots.ocr [18] 3B 90.50 0.048 89.12 87.18 90.58 0.138\nDeepSeek-OCR 2 [40] 3B 90.17 0.050 91.59 83.89 87.75 0.144\nHunyuanOCR [32] 1B 89.87 0.089 87.44 91.01 93.23 0.171\nDolphin-v2 [12] 3B 89.34 0.069 90.53 84.40 87.44 0.150\nOCRVerse [52] 4B 88.44 0.063 89.14 82.44 86.27 0.163\nMonkeyOCR-pro-3B [19] 3B 88.43 0.074 88.33 84.35 88.62 0.189\nGeneral"
+    },
+    {
+      "aiAssistanceScore": 0.23853989,
+      "confidence": "Low",
+      "endIndex": 1719,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 1062,
+      "text": "l\nVLMs\nOvis2.6-30B-A3B [22, 23] 30B 93.62 0.035 94.93 89.44 92.40 0.135\nGemini 3 Pro \u2013 92.85 0.064 95.83 89.15 92.96 0.165\nGemini 3 Flash \u2013 92.58 0.066 95.03 89.29 93.51 0.173\nQwen3-VL-235B [43] 235B 89.78 0.063 92.53 83.07 86.75 0.166\nGPT-5.2 \u2013 86.52 0.114 88.00 82.95 87.93 0.193\nInternVL3.5-241B [38] 241B 83.61 0.130 89.52 74.35 79.78 0.215\nTable 2: Performance comparison of document parsing methods on OmniDocBench v1.6 Full across\ntext, formula, table, and reading order extraction tasks.\nTable 3: Training stage ablation on OmniDocBench v1.6.\nStage Base Hard Full \u2206Full Text\u2193 CDM\u2191 TEDS\u2191\nMinerU2.5 (baseline) 93.23 91.65 92.98 \u2014 0.045 95.59 87.88\nSta"
+    },
+    {
+      "aiAssistanceScore": 0.3193637,
+      "confidence": "Low",
+      "endIndex": 3035,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 1718,
+      "text": "age 1: Large-Scale SFT 94.54 93.10 94.29 +1.31 0.039 96.40 90.37\n+ Stage 2: Hard-Sample SFT 95.60 93.84 95.25 +0.96 0.036 96.48 92.87\n+ Stage 3: GRPO 96.12 94.08 95.69 +0.45 0.036 97.29 93.42\nsubset, the top three models (GLM-OCR 96.19, MinerU2.5-Pro 96.12, PaddleOCR-VL-1.5 95.72) are\nwithin 0.5 points, indicating near-saturation on standard scenarios. On the Hard subset, MinerU2.5-\nPro leads at 94.08, exceeding both GLM-OCR and PaddleOCR-VL-1.5 (both at 92.01) by 2.07 points,\ndemonstrating the Data Engine\u2019s advantage in hard scenario robustness and validating the Hard\nsubset\u2019s discriminative power.\nAcross sub-metrics, MinerU2.5-Pro achieves the best scores in formula recognition (CDM 97.29), table\nrecognition (TEDS 93.42, TEDS-S 95.92), and reading order (0.120). Notably, Gemini 3 Pro/Flash\nbenefit substantially from the corrected matching in OmniDocBench v1.6 (Full 92.85/92.58), narrowing\nthe gap with specialized models, yet specialized models at only 0.9B\u20131.2B parameters maintain an\noverall lead.\nTraining stage ablation. Table 3 reports the incremental contribution of each training stage.\nStage 1 (large-scale SFT) contributes the largest single-stage gain (+1.31), indicating that the Data\nEngine\u2019s optimization of data coverage and annotation quality is the primary driver of performance\nimprove"
+    },
+    {
+      "aiAssistanceScore": 0.23238464,
+      "confidence": "Low",
+      "endIndex": 3615,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 3034,
+      "text": "ement. Stage 2 (hard sample fine-tuning) adds +0.96, with the most notable contribution in\ntable recognition (TEDS 90.37 \u2192 92.87, +2.50). Stage 3 (GRPO) contributes +0.45, primarily reflected\nin formula CDM improvement (96.48 \u2192 97.29, +0.81), driven by reinforcement learning\u2019s direct\noptimization of task-level metrics. The cumulative improvement on the Hard subset (91.65 \u2192 94.08,\n+2.43) is comparable to the Base subset (93.23 \u2192 96.12, +2.89), indicating that the progressive training\nstrategy achieves balanced capability improvement across both hard and standard scenarios.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.23238464,
+      "confidence": "Low",
+      "endIndex": 506,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable 4: Text recognition (Edit Distance\u2193) on OmniDocBench v1.6.\nModel Type Base\u2193 Hard\u2193 Full\u2193\nMinerU2.5-Pro Decoupled 0.015 0.048 0.019\nQwen3.5-397B [33] General 0.016 \n0.052 0.020\nGLM-OCR [11] Decoupled 0.016 0.053 0.021\nQwen3-VL-235B [43] General 0.017 0.049 \n0.021\nPaddleOCR-VL-1.5 [8] Decoupled 0.018 0.056 0.022\nMinerU2.5 [25] Decoupled 0.023 0.066 0.028\nPaddleOCR-VL [6] Decoupled 0.019 0.057 0.023\nDeepSeek-OCR 2 [40] End-t"
+    },
+    {
+      "aiAssistanceScore": 0.15996946,
+      "confidence": "Medium",
+      "endIndex": 1147,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 505,
+      "text": "to-End 0.057 0.130 0.066\nFireRed-OCR [41] End-to-End 0.135 0.176 0.140\nTable 5: Formula recognition (CDM\u2191) across multiple benchmarks. CPE, HWE, SCE, and SPE are\nthe Complex Printed, Handwritten, Screen-Captured, and Simple Printed Expression subsets from\nUniMERNet [34], respectively.\nModel \nOmniDoc Public Inhouse\nBase Hard CPE HWE SCE SPE LaTeX-80M Chinese Fuzzy\nMinerU2.5-Pro 99.20 98.79 98.97 95.38 97.04 99.44 97.23 95.28 94.90\nPaddleOCR-VL-1.5 [8] 98.76 97.22 98.84 92.27 94.95 99.27 92.77 94.06 89.73\nGLM-OCR [11] 98.75 98.28 96.74 95.10 97.77 98.42 95.39 94.35 93.75\nPaddleOCR-VL [6] 98.72 97.64 98.93 \n94.45 95.88 99.30 93.67 94.35 "
+    },
+    {
+      "aiAssistanceScore": 0.27188742,
+      "confidence": "Medium",
+      "endIndex": 2134,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 1146,
+      "text": " 91.56\nQwen3.5-397B [33] 98.19 97.25 98.32 97.59 95.87 99.41 95.17 78.24 90.53\nQwen3-VL-235B [43] 97.72 98.13 97.47 94.23 96.21 98.46 95.33 92.69 93.59\nMinerU2.5 [25] 97.25 98.67 97.79 94.42 96.65 98.57 96.23 95.50 94.92\nFireRed-OCR [41] 96.71 94.54 94.35 85.42 89.94 96.75 83.41 87.94 87.77\nDeepSeek-OCR 2 [40] 95.95 93.39 91.97 81.67 77.19 95.51 72.04 87.82 85.13\n6.3 Element-Specific Parsing\nLayout detection accuracy in end-to-end evaluation cascades into content recognition scores, and\ndifferences in output granularity and segmentation strategies across models prevent precise matching\nof a small number of elements. To more fairly evaluate pure content recognition capability, we crop\ndocument images based on ground truth layout boxes and test text, formula, and table recognition\nas individual modules. Note that end-to-end models do not receive element category priors in this\nsetting, which may partially explain their larger performance gap compared to decoupled two-stage\nmo"
+    },
+    {
+      "aiAssistanceScore": 0.2073149,
+      "confidence": "Medium",
+      "endIndex": 3184,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 2133,
+      "text": "odels.\nText recognition. As shown in Table 4, MinerU2.5-Pro ranks first on Full with an edit distance of\n0.019, a 30.5% reduction from the MinerU2.5 baseline (0.028). Hundred-billion-scale general VLMs\n(Qwen3.5-397B, Qwen3-VL-235B) demonstrate competitive text recognition performance comparable\nto specialized models, while end-to-end models (DeepSeek-OCR 2, FireRed-OCR) show significant\ndegradation without category priors.\nFormula recognition. Table 5 reports CDM scores across 9 benchmarks. MinerU2.5-Pro achieves the\nbest score in 5 dimensions and the second-highest in the remaining four. Specifically, it falls short on\nHWE (handwritten formulas) against Qwen3.5-397B (95.38 vs. 97.59) and on SCE against GLM-OCR\n(97.04 vs. 97.77), while only trailing slightly behind MinerU2.5 on Chinese and Fuzzy subsets. On\nOmniDocBench Base, CDM reaches 99.20 (out of 100), approaching the performance ceiling for formula\nrecognition. While Qwen3.5-397B excels on handwritten formulas, it reveals a notable weakness on\nChinese formulas (Chinese 78.24).\n16"
+    },
+    {
+      "aiAssistanceScore": 0.2073149,
+      "confidence": "Medium",
+      "endIndex": 303,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable 6: Table recognition (TEDS & TEDS-S\u2191) across multiple benchmarks.\nModel Type \nOmniDoc Base OmniDoc Hard CCOCR OCRBv2 Inhouse Overall\nTEDS TEDS-S TEDS TEDS-S TEDS TEDS-S TEDS TEDS-S TEDS TEDS-S TEDS TEDS-S\nMinerU2.5-Pro De"
+    },
+    {
+      "aiAssistanceScore": 0.13766472,
+      "confidence": "Medium",
+      "endIndex": 736,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 302,
+      "text": "ecoup. 95.67 97.42 92.46 94.67 88.49 91.90 93.56 96.27 82.70 89.65 91.10 94.48\nGLM-OCR [11] Decoup. 96.14 97.60 90.49 93.47 89.17 92.58 91.19 94.44 79.41 87.65 89.71 93.52\nGemini 3 Pro General 94.42 97.37 88.16 91.34 86.47 90.10 91.73 94.96 75.91 85.26 88.21 92.65\nPaddleOCR-VL-1.5 [8] Decoup. 93.85 95.57 88.28 91.79 76.34 81.38 82.64 86.91 72.66 81.93 82.91 87.60\nQwen3.5-397B [33] General 93.76 96.27 89.67 93.19 88.87 91.89 88.11 "
+    },
+    {
+      "aiAssistanceScore": 0.15834878,
+      "confidence": "Medium",
+      "endIndex": 1259,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 735,
+      "text": " 91.21 77.49 85.53 87.60 91.57\nQwen3-VL-235B [43] General 92.92 95.48 87.55 91.80 87.38 91.22 88.81 92.94 74.39 83.94 86.64 91.44\nMinerU2.5 [25] Decoup. 92.87 95.33 88.28 91.80 84.35 88.25 92.32 95.31 76.95 85.98 87.94 92.17\nPaddleOCR-VL [6] Decoup. 92.31 94.64 89.21 92.02 81.54 85.80 82.29 85.79 74.88 82.92 83.67 87.85\nFireRed-OCR [41] E2E 88.12 90.29 86.11 89.58 82.24 86.62 86.93 90.34 69.57 79.02 83.02 87.47\nDeepSeek-OCR 2 [40] E2E 79.27 82.46 75.07 80.06 66.98 72.74 84.38 88.70 57.70 69.35 74.59 80.35\nTable recogni"
+    },
+    {
+      "aiAssistanceScore": 0.19402671,
+      "confidence": "Medium",
+      "endIndex": 3111,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1258,
+      "text": "ition. As shown in Table 6, MinerU2.5-Pro ranks first in both Overall TEDS (91.10) and\nTEDS-S (94.48), improving over MinerU2.5 by 3.16 and 2.31 percentage points, respectively. The\nadvantage is most pronounced on the Hard subset (TEDS 92.46 vs. MinerU2.5\u2019s 88.28, +4.18), indicating\nthat the Data Engine\u2019s hard sample mining and expert annotation contribute most to table recognition.\nGLM-OCR is slightly better on OmniDocBench Base (96.14) and CCOCR (89.17) but is less stable than\nMinerU2.5-Pro across benchmarks. PaddleOCR-VL-1.5 shows notable performance drops on CCOCR\n(TEDS 76.34) and Inhouse (TEDS 72.66), suggesting limited table recognition generalization.\n7 Conclusion\nWe present MinerU2.5-Pro, which improves the OmniDocBench v1.6 overall score from 92.98 to 95.69\nsolely through systematic data engineering while keeping the 1.2B-parameter model architecture\ncompletely fixed, surpassing all existing methods. This result demonstrates that at the current stage\nwhere architectures are maturing, co-optimizing training data coverage, informativeness, and an-\nnotation accuracy yields greater performance gains than architectural improvements alone. To this\nend, we contribute a Data Engine that expands training data from under 10M to 65.5M pages while\nsystematically improving annotation quality, a three-stage progressive training strategy matched to\ndata quality tiers, and the OmniDocBench v1.6 three-tier evaluation protocol that corrects evaluation\nbiases. These tools and methodologies provide the community with a performance improvement\npathway that is orthogonal to and complementary with architectural innovation.\nLimitations and Future Directions\nFundamental challenges in evaluation. OmniDocBench v1.6 improves scoring fairness through\ncorrected matching strategies, but the element-matching paradigm itself has inherent limitat"
+    },
+    {
+      "aiAssistanceScore": 0.123919636,
+      "confidence": "Medium",
+      "endIndex": 4238,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 3110,
+      "text": "tions. The\nambiguity is twofold: at the format level, the same content can be expressed in multiple equivalent\nnotations (e.g. HTML vs. Markdown for tables, different L\nA\nT\nE\nX commands for the same formula); at\nthe structural level, the same visual layout can be legitimately represented with different element\ntypes\u2014for instance, a bilingual word list with aligned Chinese and English columns is equally valid as\nline-by-line text pairs or as a two-column table, and even human annotators may disagree on which\nrepresentation is \u201ccorrect.\u201d Developing semantic-equivalence-aware evaluation methods that account\nfor both format and structural ambiguity remains an open problem.\nEvaluation coverage and domain adaptation. OmniDocBench v1.6 aims to cover mainstream appli-\ncation scenarios; for vertical domains with higher precision requirements (e.g. finance, legal, medical),\nconstructing domain-specific evaluation sets is a necessary complement. Furthermore, as model\ncapabilities approach human-level performance, ensuring the precision of evaluation set annotations\nthemselves becomes an increasingly pressing challenge.\n17"
+    },
+    {
+      "aiAssistanceScore": 0.123919636,
+      "confidence": "Medium",
+      "endIndex": 663,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nFrom parsing accuracy to structural understanding. This work focuses on content accuracy in docu-\nment parsing. However, for downstream applications, structural relationships within documents\u2014\nsuch as hierarchical relationships between headings and body text, semantic bindings between fig-\nures/tables and referring text, and cross-page content continuity\u2014are equally critical for document\nretrieval and downstream semantic understanding. Advancing parsing from \u201ccontent extraction\u201d to\n\u201cstructured semantic understanding\u201d represents a natural next step for document parsing research.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.123919636,
+      "confidence": "Medium",
+      "endIndex": 410,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nReferences\n[1] Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang,\nJun Tang, et al. Qwen2. 5-vl technical report. arXiv preprint arXiv:2502.13923, 2025.\n[2] Lukas Blecher, Guillem Cucurull, Thomas Scialom, and Robert Stojnic. Nougat: Neural optical understanding\nfor academic docum"
+    },
+    {
+      "aiAssistanceScore": 0.06972233,
+      "confidence": "Medium",
+      "endIndex": 1714,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 409,
+      "text": "ments. arXiv preprint arXiv:2308.13418, 2023.\n[3] \nSong Chen, Xinyu Guo, Yadong Li, Tao Zhang, Mingan Lin, Dongdong Kuang, Youwei Zhang, Lingfeng\nMing, Fengyu Zhang, Yuran Wang, et al. Ocean-ocr: Towards general ocr application via a vision-language\nmodel. arXiv preprint arXiv:2501.15558, 2025.\n[4] Xiangyang Chen, Shuzhao Li, Xiuwen Zhu, Yongfan Chen, Fan Yang, Cheng Fang, Lin Qu, Xiaoxiao Xu,\nHu Wei, and Minggang Wu. Logics-parsing technical report, 2025. URL https://arxiv.org/abs/2509.19760.\n[5] Gheorghe Comanici, Eric Bieber, Mike Schaekermann, Ice Pasupat, Noveen Sachdeva, Inderjit Dhillon, Marcel\nBlistein, Ori Ram, Dan Zhang, Evan Rosen, et al. Gemini 2.5: Pushing the frontier with advanced reasoning,\nmultimodality, long context, and next generation agentic capabilities. arXiv preprint arXiv:2507.06261, 2025.\n[6] Cheng Cui, Ting Sun, Suyin Liang, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Xueqing Wang, Changda\nZhou, Hongen Liu, Manhui Lin, et al. Paddleocr-vl: Boosting multilingual document parsing via a 0.9 b\nultra-compact vision-language model. arXiv preprint arXiv:2510.14528, 2025.\n[7] Cheng Cui, Ting Sun, Manhui Lin, Tingquan Gao, Yubo Zhang, Jiaxuan Liu, Xueqing Wang, Zelun Zhang,\nChangda Zhou, Hongen Liu, et al. Paddleocr 3.0 technical report. arXiv preprint arXiv:2507.05595, "
+    },
+    {
+      "aiAssistanceScore": 0.07113422,
+      "confidence": "Medium",
+      "endIndex": 3004,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 1713,
+      "text": " 2025.\n[8] Cheng Cui, Ting Sun, Suyin Liang, Tingquan Gao, Zelun Zhang, Jiaxuan Liu, Xueqing Wang, Changda Zhou,\nHongen Liu, Manhui Lin, et al. Paddleocr-vl-1.5: Towards a multi-task 0.9 b vlm for robust in-the-wild\ndocument parsing. arXiv preprint arXiv:2601.21957, 2026.\n[9] Hejun Dong, Junbo Niu, Bin Wang, Weijun Zeng, Wentao Zhang, and Conghui He. Mineru-diffusion:\nRethinking document ocr as inverse rendering via diffusion decoding. arXiv preprint arXiv:2603.22458, 2026.\n[10] Yongkun Du, Zhineng Chen, Yazhen Xie, Weikang Bai, Hao Feng, Wei Shi, Yuchen Su, Can Huang, and\nYu-Gang Jiang. Unirec-0.1b: Unified text and formula recognition with 0.1b parameters. arXiv preprint\narXiv:2512.21095, 2025.\n[11] \nShuaiqi Duan, Yadong Xue, Weihan Wang, Zhe Su, Huan Liu, Sheng Yang, Guobing Gan, Guo Wang, Zihan\nWang, Shengdong Yan, et al. Glm-ocr technical report. arXiv preprint arXiv:2603.10910, 2026.\n[12] \nHao Feng, Shu Wei, Xiang Fei, Wei Shi, Yingdong Han, Lei Liao, Jinghui Lu, Binghong Wu, Qi Liu, Chunhui\nLin, Jingqun Tang, Hao Liu, and Can Huang. Dolphin: Document image parsing via heterogeneous anchor\nprompting. In Proceedings of the 65th Annual Meeting of the Association for Computational Linguistics (ACL), 2025.\n[13] Yoav Freund, H Sebastian Seung, Eli Shamir, and Naftali Ti"
+    },
+    {
+      "aiAssistanceScore": 0.05515506,
+      "confidence": "Medium",
+      "endIndex": 4168,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 3003,
+      "text": "ishby. Selective sampling using the query by\ncommittee algorithm. Machine learning, 28(2):133\u2013168, 1997.\n[14] Samir Yitzhak Gadre, Gabriel Ilharco, Alex Fang, Jonathan Hayase, Georgios Smyrnis, Thao Nguyen, Ryan\nMarten, Mitchell Wortsman, Dhruba Ghosh, Jieyu Zhang, et al. Datacomp: In search of the next generation\nof multimodal datasets. Advances in Neural Information Processing Systems, 36:27092\u201327112, 2023.\n[15] Zirui Guo, Xubin Ren, Lingrui Xu, Jiahao Zhang, and Chao Huang. Rag-anything: All-in-one rag framework.\narXiv preprint arXiv:2510.12323, 2025.\n[16] \nGeewook Kim, Teakgyu Hong, Moonbin Yim, Jinyoung Park, Jinyeong Yim, Wonseok Hwang, Sangdoo Yun,\nDongyoon Han, and Seunghyun Park. Donut: Document understanding transformer without ocr. arXiv\npreprint arXiv:2111.15664, 7(15):2, 2021.\n[17] Vladimir I Levenshtein et al. Binary codes capable of correcting deletions, insertions, and reversals. In Soviet\nphysics doklady, volume 10, pages 707\u2013710. Soviet Union, 1966.\n[18] \nYumeng Li, Guang Yang, Hao Liu, Bowen Wang, and Colin Zhang. dots. ocr: Multilingual document layout\nparsing in a single vision-language model. arXiv preprint arXiv:2512.02498, "
+    },
+    {
+      "aiAssistanceScore": 0.02983228,
+      "confidence": "High",
+      "endIndex": 4176,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 4167,
+      "text": " 2025.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.02983228,
+      "confidence": "High",
+      "endIndex": 1335,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\n[19] Zhang Li, Yuliang Liu, Qiang Liu, Zhiyin Ma, Ziyang Zhang, Shuo Zhang, Zidun Guo, Jiarui Zhang, Xinyu\nWang, and Xiang Bai. Monkeyocr: Document parsing with a structure-recognition-relation triplet paradigm.\narXiv preprint arXiv:2506.05218, 2025.\n[20] Yuliang Liu, Zhang Li, Mingxin Huang, Biao Yang, Wenwen Yu, Chunyuan Li, Xu-Cheng Yin, Cheng-Lin Liu,\nLianwen Jin, and Xiang Bai. Ocrbench: on the hidden mystery of ocr in large multimodal models. Science\nChina Information Sciences, 67(12):220102, 2024.\n[21] Nikolaos Livathinos, Christoph Auer, Maksym Lysak, Ahmed Nassar, Michele Dolfi, Panos Vagenas, Ce-\nsar Berrospi Ramis, Matteo Omenetti, Kasper Dinkla, Yusik Kim, et al. Docling: An efficient open-source\ntoolkit for ai-driven document conversion. arXiv preprint arXiv:2501.17887, 2025.\n[22] Shiyin Lu, Yang Li, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, and Han-Jia Ye. Ovis: Structural\nembedding alignment for multimodal large language model, 2024. URL https://arxiv.org/abs/2405.\n20797.\n[23] Shiyin Lu, Yang Li, Yu Xia, Yuwei Hu, Shanshan Zhao, Yanqing Ma, Zhichao Wei, Yinglun Li, Lunhao Duan,\nJianshan Zhao, Yuxuan Han, Haijun Li, Wanying Chen, Junke Tang, Chengkun Hou, Zhixing Du, Tianli Zhou,\nWenjie Zhang, Huping Ding, Jiahe Li, We"
+    },
+    {
+      "aiAssistanceScore": 0.04099031,
+      "confidence": "High",
+      "endIndex": 2699,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 1334,
+      "text": "en Li, Gui Hu, Yiliang Gu, Siran Yang, Jiamang Wang, Hailong Sun,\nYibo Wang, Hui Sun, Jinlong Huang, Yuping He, Shengze Shi, Weihong Zhang, Guodong Zheng, Junpeng\nJiang, Sensen Gao, Yi-Feng Wu, Sijia Chen, Yuhui Chen, Qing-Guo Chen, Zhao Xu, Weihua Luo, and Kaifu\nZhang. Ovis2.5 technical report. arXiv:2508.11737, 2025.\n[24] Andrew Ng, Dillon Laird, and Lynn He. Data-centric ai competition. DeepLearning AI. Available online:\nhttps://https-deeplearning-ai. github. io/data-centric-comp/(accessed on 9 December 2021), 2021.\n[25] Junbo Niu, Zheng Liu, Zhuangcheng Gu, Bin Wang, Linke Ouyang, Zhiyuan Zhao, Tao Chu, Tianyao He,\nFan Wu, Qintong Zhang, Zhenjiang Jin, Guang Liang, Rui Zhang, Wenzheng Zhang, Yuan Qu, Zhifei Ren,\nYuefeng Sun, Yuanhong Zheng, Dongsheng Ma, Zirui Tang, Boyu Niu, Ziyang Miao, Hejun Dong, Siyi Qian,\nJunyuan Zhang, Jingzhou Chen, Fangdong Wang, Xiaomeng Zhao, Liqun Wei, Wei Li, Shasha Wang, Ruiliang\nXu, Yuanyuan Cao, Lu Chen, Qianqian Wu, Huaiyu Gu, Lindong Lu, Keming Wang, Dechen Lin, Guanlin\nShen, Xuanhe Zhou, Linfeng Zhang, Yuhang Zang, Xiaoyi Dong, Jiaqi Wang, Bo Zhang, Lei Bai, Pei Chu,\nWeijia Li, Jiang Wu, Lijun Wu, Zhenxiang Li, Guangyu Wang, Zhongying Tu, Chao Xu, Kai Chen, Yu Qiao,\nBowen Zhou, Dahua Lin, Wentao Zhang, and Conghui He. Mineru2.5: A decoupled vision-language model\nfor efficient high-resolution document par"
+    },
+    {
+      "aiAssistanceScore": 0.030480431,
+      "confidence": "High",
+      "endIndex": 4082,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 2698,
+      "text": "rsing. arXiv preprint arXiv:2509.22186, 2025.\n[26] \nJunbo Niu, Yuanhong Zheng, Ziyang Miao, Hejun Dong, Chunjiang Ge, Hao Liang, Ma Lu, Bohan Zeng,\nQiahao Zheng, Conghui He, et al. Native visual understanding: Resolving resolution dilemmas in vision-\nlanguage models. arXiv preprint arXiv:2506.12776, 2025.\n[27] \nLinke Ouyang, Yuan Qu, Hongbin Zhou, Jiawei Zhu, Rui Zhang, Qunshu Lin, Bin Wang, Zhiyuan Zhao,\nMan Jiang, Xiaomeng Zhao, et al. Omnidocbench: Benchmarking diverse pdf document parsing with com-\nprehensive annotations. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition,\npages 24838\u201324848, 2025.\n[28] Vik Paruchuri. Marker. https://github.com/datalab-to/marker, 2025. Accessed:2025-09-25.\n[29] \nJake Poznanski, Aman Rangapur, Jon Borchardt, Jason Dunkelberger, Regan Huff, Daniel Lin, Christopher\nWilhelm, Kyle Lo, and Luca Soldaini. olmocr: Unlocking trillions of tokens in pdfs with vision language\nmodels. arXiv preprint arXiv:2502.18443, 2025.\n[30] \nH Sebastian Seung, Manfred Opper, and Haim Sompolinsky. Query by committee. In Proceedings of the fifth\nannual workshop on Computational learning theory, pages 287\u2013294, 1992.\n[31] Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang,\nYK Li, Yang Wu, et al. Deepseekmath: Pushing the limits of mathematical reasoning in open language\nmo"
+    },
+    {
+      "aiAssistanceScore": 0.09404,
+      "confidence": "Medium",
+      "endIndex": 4343,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 4081,
+      "text": "odels. arXiv preprint arXiv:2402.03300, 2024.\n[32] \nHunyuan Vision Team, Pengyuan Lyu, Xingyu Wan, Gengluo Li, Shangpin Peng, Weinong Wang, Liang Wu,\nHuawen Shen, Yu Zhou, Canhui Tang, et al. Hunyuanocr technical report. arXiv preprint arXiv:2511.19575,\n2025.\n20"
+    },
+    {
+      "aiAssistanceScore": 0.09404,
+      "confidence": "Medium",
+      "endIndex": 1090,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\n[33] Qwen Team. Qwen3.5: Accelerating productivity with native multimodal agents, February 2026. URL\nhttps://qwen.ai/blog?id=qwen3.5.\n[34] Bin Wang, Zhuangcheng Gu, Guang Liang, Chao Xu, Bo Zhang, Botian Shi, and Conghui He. Unimernet: A\nuniversal network for real-world mathematical expression recognition. arXiv preprint arXiv:2404.15254, 2024.\n[35] Bin Wang, Chao Xu, Xiaomeng Zhao, Linke Ouyang, Fan Wu, Zhiyuan Zhao, Rui Xu, Kaiwen Liu, Yuan Qu,\nFukai Shang, Bo Zhang, Liqun Wei, Zhihao Sui, Wei Li, Botian Shi, Yu Qiao, Dahua Lin, and Conghui He.\nMineru: An open-source solution for precise document content extraction. arXiv preprint arXiv:2409.18839,\n2024.\n[36] Bin Wang, Fan Wu, Linke Ouyang, Zhuangcheng Gu, Rui Zhang, Renqiu Xia, Botian Shi, Bo Zhang, and\nConghui He. Image over text: Transforming formula recognition evaluation with character detection\nmatching. In Proceedings of the Computer Vision and Pattern Recognition Conference, pages 19681\u201319690, 2025.\n[37] Shu Wang, Yingli Zhou, and Yixiang "
+    },
+    {
+      "aiAssistanceScore": 0.109114006,
+      "confidence": "Medium",
+      "endIndex": 2298,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 1089,
+      "text": " Fang. Bookrag: A hierarchical structure-aware index-based approach\nfor retrieval-augmented generation on complex documents. arXiv preprint arXiv:2512.03413, 2025.\n[38] Weiyun Wang, Zhangwei Gao, Lixin Gu, Hengjun Pu, Long Cui, Xingguang Wei, Zhaoyang Liu, Linglin\nJing, Shenglong Ye, Jie Shao, Zhaokai Wang, Zhe Chen, Hongjie Zhang, Ganlin Yang, Haomin Wang, Qi Wei,\nJinhui Yin, Wenhao Li, Erfei Cui, Guanzhou Chen, Zichen Ding, Changyao Tian, Zhenyu Wu, Jingjing\nXie, Zehao Li, Bowen Yang, Yuchen Duan, Xuehui Wang, Zhi Hou, Haoran Hao, Tianyi Zhang, Songze Li,\nXiangyu Zhao, Haodong Duan, Nianchen Deng, Bin Fu, Yinan He, Yi Wang, Conghui He, Botian Shi, Junjun\nHe, Yingtong Xiong, Han Lv, Lijun Wu, Wenqi Shao, Kaipeng Zhang, Huipeng Deng, Biqing Qi, Jiaye Ge,\nQipeng Guo, Wenwei Zhang, Songyang Zhang, Maosong Cao, Junyao Lin, Kexian Tang, Jianfei Gao, Haian\nHuang, Yuzhe Gu, Chengqi Lyu, Huanze Tang, Rui Wang, Haijun Lv, Wanli Ouyang, Limin Wang, Min Dou,\nXizhou Zhu, Tong Lu, Dahua Lin, Jifeng Dai, Weijie Su, Bowen Zhou, Kai Chen, Yu Qiao, Wenhai Wang, and\nGen Luo. Internvl3.5: Advancing open-source multimodal models in versatility, reasoning, and efficiency,\n2025. URL https://arxiv.org/abs/2508.1"
+    },
+    {
+      "aiAssistanceScore": 0.089706175,
+      "confidence": "Medium",
+      "endIndex": 3327,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 2297,
+      "text": "18265.\n[39] Haoran Wei, Chenglong Liu, Jinyue Chen, Jia Wang, Lingyu Kong, Yanming Xu, Zheng Ge, Liang Zhao,\nJianjian Sun, Yuang Peng, Chunrui Han, and Xiangyu Zhang. General ocr theory: Towards ocr-2.0 via a\nunified end-to-end model. arXiv preprint arXiv:2409.01704, 2024.\n[40] Haoran Wei, Yaofeng Sun, and Yukun Li. Deepseek-ocr: Contexts optical compression. arXiv preprint\narXiv:2510.18234, 2025.\n[41] \nHao Wu, Haoran Lou, Xinyue Li, Zuodong Zhong, Zhaojun Sun, Phellon Chen, Xuanhe Zhou, Kai Zuo,\nYibo Chen, Xu Tang, Yao Hu, Boxiang Zhou, Jian Wu, Yongji Wu, Wenxin Yu, Yingmiao Liu, Yuhao Huang,\nManjie Xu, Gang Liu, Yidong Ma, Zhichao Sun, and Changhao Qiao. Firered-ocr technical report, 2026. URL\nhttps://arxiv.org/abs/2603.01840.\n[42] \nRenqiu Xia, Song Mao, Xiangchao Yan, Hongbin Zhou, Bo Zhang, Haoyang Peng, Jiahao Pi, Daocheng Fu,\nWenjie Wu, Hancheng Ye, et al. Docgenome: An open large-scale scientific document benchmark for training\nand testing multi-modal large language models. arXiv preprint arXiv:2406.11633, "
+    },
+    {
+      "aiAssistanceScore": 0.061116755,
+      "confidence": "Medium",
+      "endIndex": 4460,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 3326,
+      "text": " 2024.\n[43] \nAn Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang Gao, Chengen\nHuang, Chenxu Lv, Chujie Zheng, Dayiheng Liu, Fan Zhou, Fei Huang, Feng Hu, Hao Ge, Haoran Wei,\nHuan Lin, Jialong Tang, Jian Yang, Jianhong Tu, Jianwei Zhang, Jianxin Yang, Jiaxi Yang, Jing Zhou, Jingren\nZhou, Junyang Lin, Kai Dang, Keqin Bao, Kexin Yang, Le Yu, Lianghao Deng, Mei Li, Mingfeng Xue, Mingze\nLi, Pei Zhang, Peng Wang, Qin Zhu, Rui Men, Ruize Gao, Shixuan Liu, Shuang Luo, Tianhao Li, Tianyi\nTang, Wenbiao Yin, Xingzhang Ren, Xinyu Wang, Xinyu Zhang, Xuancheng Ren, Yang Fan, Yang Su, Yichang\nZhang, Yinger Zhang, Yu Wan, Yuqiong Liu, Zekun Wang, Zeyu Cui, Zhenru Zhang, Zhipeng Zhou, and\nZihan Qiu. Qwen3 technical report, 2025. URL https://arxiv.org/abs/2505.09388.\n[44] Zhibo Yang, Jun Tang, Zhaohai Li, Pengfei Wang, Jianqiang Wan, Humen Zhong, Xuejing Liu, Mingkun\nYang, Peng Wang, Shuai Bai, et al. Cc-ocr: A comprehensive and challenging ocr benchmark for evaluating\nlarge multimodal models in literacy. In Proceedings of the IEEE/CVF International Conference on Computer Vision,\npages 21744\u201321754, "
+    },
+    {
+      "aiAssistanceScore": 0.06875375,
+      "confidence": "Medium",
+      "endIndex": 4674,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 4459,
+      "text": " 2025.\n[45] \nKun Yin, Yunfei Wu, Bing Liu, Zhongpeng Cai, Xiaotian Li, Huang Chen, Xin Li, Haoyu Cao, Yinsong Liu,\nDeqiang Jiang, Xing Sun, Yunsheng Wu, Qianyu Li, Antai Guo, Yanzhen Liao, Yanqiu Qu, Haodong Lin,\n21"
+    },
+    {
+      "aiAssistanceScore": 0.06875375,
+      "confidence": "Medium",
+      "endIndex": 1136,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nChengxu He, and Shuangyin Liu. Youtu-parsing: Perception, structuring and recognition via high-parallelism\ndecoding, 2026. URL https://arxiv.org/abs/2601.20430.\n[46] Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Weinan Dai, Tiantian Fan,\nGaohong Liu, Lingjun Liu, et al. Dapo: An open-source llm reinforcement learning system at scale. arXiv\npreprint arXiv:2503.14476, 2025.\n[47] \nDaochen Zha, Zaid Pervaiz Bhat, Kwei-Herng Lai, Fan Yang, and Xia Hu. Data-centric ai: Perspectives\nand challenges. In Proceedings of the 2023 SIAM international conference on data mining (SDM), pages 945\u2013948.\nSIAM, 2023.\n[48] Junyuan Zhang, Qintong Zhang, Bin Wang, Linke Ouyang, Zichen Wen, Ying Li, Ka-Ho Chow, Conghui\nHe, and Wentao Zhang. Ocr hinders rag: Evaluating the cascading impact of ocr on retrieval-augmented\ngeneration. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 17443\u201317453,\n2025.\n[49] Qintong Zhang, Bin Wang, Victor Shea-Jay Huang, Junyuan Zhang, Zhengren Wang, Hao Liang, Conghui\nHe, and Wentao Z"
+    },
+    {
+      "aiAssistanceScore": 0.2202236,
+      "confidence": "Medium",
+      "endIndex": 2194,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 1135,
+      "text": "Zhang. Document parsing unveiled: Techniques, challenges, and prospects for structured\ninformation extraction. arXiv preprint arXiv:2410.21169, 2024.\n[50] \nZhiyuan Zhao, Hengrui Kang, Bin Wang, and Conghui He. Doclayout-yolo: Enhancing document layout anal-\nysis through diverse synthetic data and global-to-local adaptive perception. arXiv preprint arXiv:2410.12628,\n2024.\n[51] Xu Zhong, Elaheh ShafieiBavani, and Antonio Jimeno Yepes. Image-based table recognition: data, model,\nand evaluation. In European conference on computer vision, pages 564\u2013580. Springer, 2020.\n[52] \nYufeng Zhong, Lei Chen, Xuanle Zhao, Wenkang Han, Liming Zheng, Jing Huang, Deyang Jiang, Yilin Cao,\nLin Ma, and Zhixiong Zeng. Ocrverse: Towards holistic ocr in end-to-end vision-language models, 2026.\nURL https://arxiv.org/abs/2601.21639.\n[53] \nChunting Zhou, Pengfei Liu, Puxin Xu, Srinivasan Iyer, Jiao Sun, Yuning Mao, Xuezhe Ma, Avia Efrat, Ping\nYu, Lili Yu, et al. Lima: Less is more for alignment. Advances in Neural Information Processing Systems, 36:\n55006\u201355021, 2023.\n22"
+    },
+    {
+      "aiAssistanceScore": 0.2202236,
+      "confidence": "Medium",
+      "endIndex": 408,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nAppendix\nA Prompt Design and Task Examples\nThis section provides the prompt formats, output specifications, and representative examples for each\ntask supported by MinerU2.5-Pro. All tasks share a unified prompt interface: a single <image> token\nfollowed by a plain-text task suffix, requiring no few-shot examples or structured meta"
+    },
+    {
+      "aiAssistanceScore": 0.6012698,
+      "confidence": "Low",
+      "endIndex": 2155,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 407,
+      "text": "adata.\nTask Prompt Convention. The five task suffixes and their output formats are summarized below:\n\u2022 Layout Detection (\u00a7A.1) \u2014 localizes content regions and outputs bounding boxes with category\nlabels and rotation flags.\n\u2022 Text Recognition (\u00a7A.2) \u2014 transcribes cropped text regions into plain text.\n\u2022 Formula Recognition (\u00a7A.3) \u2014 converts cropped formula regions into L\nA\nTEX markup.\n\u2022 Table Recognition (\u00a7A.4) \u2014 serializes cropped tables into an OTSL-based token sequence with\ncell content, subsequently converted to HTML.\n\u2022 \nImage Analysis (\u00a7A.5) \u2014 classifies image regions and extracts captions and embedded content.\nA.1 Layout Detection\nLayout Detection serves as the entry point of the document parsing pipeline, responsible for localizing\nall content regions on a page and assigning each a semantic category. The model takes a downsampled\npage image and produces a sequence of structured region descriptors.\nPrompt.\n<image>\\nLayout Detection:\nOutput Format. The output is a newline-delimited sequence of region descriptors, where each region\nfollows the format:\n<|box_start|>x1 y1 x2 y2<|box_end|><|ref_start|>category<|ref_end|><|rotate_dir|>\nHere, x1 y1 x2 y2 are the normalized bounding box coordinates (scaled to a [0, 999] grid), category\nis the semantic label of the region (e.g., title, text, header, footer, table, figure, formula), and\n<|rotate dir|> indicates the text orientation (<|rotate up|> for standard upright text, with other\ndirections for rotated content). Regions are emitted in natural reading order (top-to-bottom, left-to-\nright for left-to-right scripts).\nExample. Given a document title page, the model outputs:\n<|box_start|>705 112 899 146<|box_end|><|ref_start|>header<|ref_end|><|rotate_up|>\n<|box_start|>030 34"
+    },
+    {
+      "aiAssistanceScore": 0.6947517,
+      "confidence": "Medium",
+      "endIndex": 2755,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 2154,
+      "text": "43 132 397<|box_end|><|ref_start|>title<|ref_end|><|rotate_up|>\n<|box_start|>212 330 491 382<|box_end|><|ref_start|>title<|ref_end|><|rotate_up|>\n<|box_start|>214 389 767 441<|box_end|><|ref_start|>title<|ref_end|><|rotate_up|>\n<|box_start|>219 494 359 523<|box_end|><|ref_start|>text<|ref_end|><|rotate_up|>\n<|box_start|>654 940 907 975<|box_end|><|ref_start|>footer<|ref_end|><|rotate_up|>\nThis output identifies six regions\u2014one header, three title blocks, one text block, and one footer\u2014each\nwith precise spatial coordinates and upright orientation. Additional examples are provided in Figure 5.\n23"
+    },
+    {
+      "aiAssistanceScore": 0.6947517,
+      "confidence": "Medium",
+      "endIndex": 1035,
+      "label": "AI-Generated",
+      "pageIndex": 23,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nA.2 Text Recognition\nText Recognition transcribes cropped text regions into plain text. Each region is an original-resolution\ncrop produced by Stage 1 Layout Detection.\nPrompt.\n<image>\\nText Recognition:\nOutput Format. The output is a plain-text string corresponding to the content of the cropped\ntext region. No special tokens or markup are used\u2014the model generates raw text as-is, including\nwhitespace, punctuation, and any inline symbols present in the source image. Additional examples\nare provided in Figure 6.\nA.3 Formula Recognition\nFormula Recognition converts cropped formula regions into L\nA\nT\nE\nX markup. The model supports both\ninline and display-style formulas, as well as multi-line equation environments.\nPrompt.\n<image>\\nFormula Recognition:\nOutput Format. The output is a L\nA\nT\nE\nX math string. Display-style (block) formulas are wrapped\nin \\[. . . \\] delimiters. Equation numbers, when present in the source image, are preserved via\n\\tag{. ."
+    },
+    {
+      "aiAssistanceScore": 0.5670727,
+      "confidence": "Low",
+      "endIndex": 2452,
+      "label": "AI-Generated",
+      "pageIndex": 23,
+      "startIndex": 1034,
+      "text": ". . }. The model generates standard L\nA\nT\nE\nX math commands and environments (e.g., \\frac,\n\\mathrm, \\quad), ensuring the output is directly compilable.\nExample: Single Display Formula. Given a cropped equation region, the model outputs:\n\\[L = 0.004 \\ln (2D/d) \\quad (\\mu \\mathrm{H} / \\mathrm{cm}) \\tag{4-2-10}\\]\nThe equation number (4-2-10) from the original document is captured via \\tag{}.\nMulti-line Formulas. Multi-line equations are handled through the collaboration of Layout Detection\nand Formula Recognition. Layout Detection first identifies an equation block region encompassing\nthe entire multi-line group, within which individual single-line formulas are separately localized. Each\nline is then independently cropped and recognized by Formula Recognition. The final multi-line output\nis produced by concatenating the individual L\nA\nT\nE\nX results in reading order, faithfully reproducing the\noriginal equation group without requiring the model to generate multi-line environments in a single\npass. Additional examples are provided in Figure 7.\nA.4 Table Recognition\nTable Recognition converts cropped table regions into a structured token sequence based on OTSL\n(Optimized Table Structure Language). Cell content is transcribed as plain text, with inline formulas\nin L\nA\nT\nE\nX when present. The OTSL output is subsequently converted to HTML for downstream\nconsumption.\nPrompt.\n<image>\\nTable Recognition:\n24"
+    },
+    {
+      "aiAssistanceScore": 0.5670727,
+      "confidence": "Low",
+      "endIndex": 559,
+      "label": "AI-Generated",
+      "pageIndex": 24,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nOutput Format. The output is a flat token sequence representing the table structure row by row. Each\ncell is delimited by <fcel>, and rows are separated by <nl>. Cell content may contain plain text, L\nA\nT\nE\nX\ninline math (\\(. . . \\)), or a mixture of both. The OTSL representation is compact and unambiguous,\nsupporting regular grids as well as cells with complex content. After generation, the OTSL sequence is\nprogrammatically converted to HTML for rendering and downstream integra"
+    },
+    {
+      "aiAssistanceScore": 0.4884705,
+      "confidence": "Low",
+      "endIndex": 2062,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 558,
+      "text": "ation.\nExample. Given a cropped table with two rows (a header row of time values and a data row of\nconcentration values), the model outputs:\n<fcel>\\( \\frac{t}{\\min} \\)<fcel>3<fcel>5<fcel>7<fcel>10<fcel>15<fcel>21<fcel>25<nl>\n<fcel>\\( \\frac{1/c}{{\\mathrm{\\;{mol}}}\u02c6{-1}\\cdot {\\mathrm{{dm}}}\u02c6{3}} \\)<fcel>135.1\n<fcel>157.7<fcel>181.8<fcel>215.5<fcel>275.5<fcel>347.2<fcel>393.2<nl>\nEach <fcel> token introduces a cell, and <nl> marks the end of a row. The first column contains\nL\nA\nTEX-formatted headers with units, while the remaining columns hold numeric values.\nAdditional examples are provided in Figure 8.\nA.5 Image-Aware Parsing\nImage Analysis classifies cropped image regions and extracts their embedded content. Unlike other\nrecognition tasks that target a single modality, Image Analysis first determines the semantic type of\nthe image and then extracts structured content accordingly\u2014text, formulas, tables, or a combination\nthereof.\nPrompt.\n<image>\\nImage Analysis:\nOutput Format. The output consists of four structured fields delimited by special tokens:\n<|class_start|>class<|class_end|>\n<|sub_class_start|>sub_class<|sub_class_end|>\n<|caption_start|>caption<|caption_end|>\n<|content_start|>content<|content_end|>\nHere, class is the primary image category (e.g., pure formula, natural image, chart), sub class\nprovides a finer-grained label, caption captures any associated caption text (left empty if absent), and\ncontent contains the extracted textual or structured content from within the i"
+    },
+    {
+      "aiAssistanceScore": 0.28782615,
+      "confidence": "Medium",
+      "endIndex": 2700,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 2061,
+      "text": "image.\nExample. Given a cropped figure region containing a standalone formula, the model outputs:\n<|class_start|>pure_formula<|class_end|>\n<|sub_class_start|>pure_formula<|sub_class_end|>\n<|caption_start|><|caption_end|>\n<|content_start|>p + q = 1<|content_end|>\nThe image is classified as pure formula with no caption, and the formula content is directly extracted.\nAdditional examples are provided in Figure 9.\nB Extended Parsing Capabilities\nBeyond improvements in recognition accuracy, MinerU2.5-Pro extends the parsing capabilities of\nMinerU2.5 in several practical dimensions. These features target real-world deployment scenarios\n25"
+    },
+    {
+      "aiAssistanceScore": 0.28782615,
+      "confidence": "Medium",
+      "endIndex": 1737,
+      "label": "Human Written",
+      "pageIndex": 25,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nwhere documents are multi-page, richly illustrated, and structurally complex. While they do not affect\nOmniDocBench scores (which focus on single-page content recognition), they substantially improve\nend-to-end parsing completeness and usability.\nImage-aware parsing. MinerU2.5 crops all image regions without further processing, discarding\npotentially valuable information such as chart data, embedded text, and diagram content. MinerU2.5-\nPro introduces image-aware parsing (\u00a7A.5) that first classifies each image region into fine-grained\nsubtypes (chart, text image, table-like image, general image) and then applies differentiated extraction\nstrategies: charts are parsed into structured tables, text images undergo OCR, and table-like images are\nrecognized as tables. This framework is readily extensible to additional image types; however, we have\nnot yet applied Data Engine optimization to image analysis data in this release, leaving significant\nroom for future improvement.\nTruncated paragraph merging. Layout Detection tends to segment each spatially distinct text block\nas an independent region, which can split semantically continuous paragraphs into multiple fragments.\nCommon causes include column boundaries in multi-column layouts, figures or tables interrupting\na paragraph, and unusually wide line spacing. To address this, MinerU2.5-Pro performs truncated\nparagraph merging as part of the Layout Detection task. Since Layout Detection already establishes\nreading order, and truncation necessarily occurs between consecutive regions in that order, the problem\nreduces to a binary classification at each adjacent-region boundary: merge or no m"
+    },
+    {
+      "aiAssistanceScore": 0.41293466,
+      "confidence": "Low",
+      "endIndex": 3822,
+      "label": "Human Written",
+      "pageIndex": 25,
+      "startIndex": 1736,
+      "text": "merge. This binary\nlabel is integrated directly into the layout output sequence, allowing truncated paragraphs to be\nreassembled during final Markdown rendering without affecting downstream recognition tasks. The\nmerging process is illustrated in Figure 10.\nTo construct training data for this capability, we annotate merge decisions on top of existing layout\nground truth. For each pair of adjacent text or list item regions, we first apply rule-based filtering\nusing sentence length, leading numbering patterns, and terminal punctuation to eliminate obvious\nnon-merge cases. For the remaining candidates, we highlight the two regions in red and green on\nthe page image and query Gemini 3 Flash with both the annotated image and the text content of\neach region, asking it to judge whether merging is appropriate based on layout context and textual\ncoherence. To reduce API cost, only the first and last sentences are provided for long paragraphs.\nCross-page table merging. When a table is split across a page break, MinerU2.5-Pro automatically\ndetects and merges the fragments. The system first applies rule-based heuristics to identify candidate\npairs: if the last table on a page and the first table on the next page share compatible column counts\nand structural patterns, they are flagged for merging. For flagged pairs, the model receives the last\nrow(s) of the upper table and the first data row(s) of the lower table as a structured text prompt:\nPlease merge the next two tables.\n## Table 1 (Previous Page - Last Table)\n**Last Row(s) Data:**\n[[{content of table 1}]]\n## Table 2 (Current Page - First Table)\n**First Data Row(s):**\n[[{content of table 2}]]\nThe model outputs a per-column binary decision list indicating whether each column should be directly\nconcatenated (0) or semantically merged (1). Direct concatenation applies when cells are cleanly split at the\npage boundary (e.g. a single cell\u2019s content is broken across two rows), while semantic merging preserves\nboth rows as distinct data. A typical semantic merging process is shown in Figure 11. This fine-grained,\n26"
+    },
+    {
+      "aiAssistanceScore": 0.41293466,
+      "confidence": "Low",
+      "endIndex": 204,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\ncolumn-level strategy handles the common case where some columns require concatenation and others\ndo not within the same table s"
+    },
+    {
+      "aiAssistanceScore": 0.22907646,
+      "confidence": "Medium",
+      "endIndex": 2245,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 203,
+      "text": "split.\nIn-table image detection. Tables in real-world documents frequently contain embedded images (e.g.,\nproduct photos, diagrams, icons). MinerU2.5-Pro detects these through a three-step process:\n1. Detection. Layout Detection identifies image regions that fall spatially within a table bounding\nbox. Each detected in-table image is replaced with a special placeholder token in the table crop,\neffectively masking the image region.\n2. Recognition. The masked table image is fed to Table Recognition, which generates the OTSL\nsequence with placeholder tokens marking the positions of masked images.\n3. Restoration. In the final output, placeholder tokens are resolved back to references to the original\nimage regions, producing HTML table cells that contain <img> tags with unique identifiers\nlinking to the extracted image content blocks.\nThis approach allows the table structure and textual content to be recognized without interference from\nembedded images, while preserving the spatial correspondence between images and their containing\ncells in the final output. Representative examples are shown in Figure 12.\nC OmniDocBench v1.6 Detailed Results\nThis section reports per-model detailed results on the OmniDocBench v1.6 Base and Hard subsets. The\nevaluation protocol and matching corrections are described in Section 5.\nC.1 Detailed Results on Base Subset\nTable 7 reports detailed evaluation results for all models on the OmniDocBench v1.6 Base subset.\nOn the Base subset, top model scores are tightly clustered: the top 6 Overall scores fall within 94.49\u2013\n96.19, a range of only 1.70 points. MinerU2.5-Pro ranks second at 96.12, only 0.07 points behind\nGLM-OCR, while leading in Text Edit Distance (0.033 vs. 0.039), Table TEDS (94.49 vs. 94.36), and\nReading Order (0.109 vs. 0.122).\nC.2 Detailed Results on Hard Subset\nTable 8 reports detailed evaluation results for all models on the OmniDocBench v1.6 Hard subset.\nRankings on the Hard subset differ markedly from Base, validating its effectiveness in differentiating\nmodel capabili"
+    },
+    {
+      "aiAssistanceScore": 0.1561035,
+      "confidence": "Medium",
+      "endIndex": 3100,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 2244,
+      "text": "ities. Key observations: (1) MinerU2.5-Pro leads at 94.08, ahead of the second-place\nPaddleOCR-VL (92.48) by 1.60 points, achieving the best scores in Formula CDM (97.54), Table TEDS\n(89.91), and Reading Order (0.170). (2) GLM-OCR ranks first on Base (96.19) but drops to third on\nHard (92.01), a decline of 4.18 points; HunyuanOCR drops from Base (92.45) to Hard (82.69), a decline\nof 9.76 points. In contrast, MinerU2.5-Pro declines by only 2.04 points, demonstrating the strongest\nrobustness. (3) Gemini 3 Pro/Flash perform well on Hard (91.99), narrowing the gap with specialized\nmodels, benefiting from their strong capabilities on hard formulas (CDM 97.23/96.68).\nD Qualitative Comparison with SOTA Methods\nThis section presents qualitative comparisons of parsing results between MinerU2.5-Pro and current\nSOTA methods on representative scenarios.\n27"
+    },
+    {
+      "aiAssistanceScore": 0.1561035,
+      "confidence": "Medium",
+      "endIndex": 318,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable 7: Detailed results on OmniDocBench v1.6 Base subset.\nModel Overall\u2191 Text Edit\u2193 Formula CDM\u2191 Table TEDS\u2191 TEDS-S\u2191 Read Order\u2193\nGLM-OCR 96.19 0.039 98.10 94.36 96.59 0.122\nMinerU2.5-Pro 96.12 0.033 97.16 94.49 96.63 0.109\nPaddleOCR-VL-1.5 "
+    },
+    {
+      "aiAssistanceScore": 0.16054836,
+      "confidence": "Low",
+      "endIndex": 867,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 317,
+      "text": " 95.72 0.032 97.18 93.17 95.31 0.118\nYoutu-Parsing 94.87 0.038 94.32 94.07 96.56 0.101\nOvis 94.56 0.031 95.11 91.64 94.33 0.125\nPaddleOCR-VL 94.49 0.035 95.43 91.51 94.39 0.123\nLogics-Parsing-v2 94.16 0.036 95.06 91.04 93.92 0.127\nFireRed-OCR 94.14 0.030 95.63 89.76 92.41 0.120\nMinerU2.5 93.23 0.042 94.81 89.06 92.24 0.120\nOpenDoc-0.1B 93.04 0.039 94.05 88.93 91.99 0.126\nGemini 3 Pro 92.96 0.060 95.11 89.80 93.36 0.157\nGemini 3 Flash 92.58 0.062 94.19 89.74 93.82 0.163\nHunyuanOCR 92.45 0.082 91.09 94.44 95.76 0.156\nDeepSeek-OCR-2.0 91.50 0.046 "
+    },
+    {
+      "aiAssistanceScore": 0.2233782,
+      "confidence": "Low",
+      "endIndex": 1423,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 866,
+      "text": " 93.02 86.13 89.75 0.134\ndots.ocr 90.91 0.041 88.85 88.02 90.99 0.126\nDolphin-2.0 90.42 0.064 89.98 87.67 90.31 0.137\nQwen3-VL-235B 90.08 0.062 91.86 84.61 87.89 0.157\nOCRverse 89.36 0.054 88.77 84.67 88.19 0.152\nMonkeyOCR-pro-3B 89.15 0.067 86.87 87.22 90.49 0.181\nDolphin-1.5 87.24 0.091 86.32 84.47 87.55 0.157\nGPT-5.2 86.83 0.120 88.62 83.82 88.31 0.188\nMistral-OCR 86.36 0.095 89.28 79.34 83.32 0.161\nPOINTS-Reader 86.20 0.095 89.69 78.37 81.43 0.184\nNanonets-OCR-s 86.10 0.099 86.43 81.75 85.41 0.192\nolmOCR 85.89 0.135 87.00 84.17 87.64 0.205\nInternV"
+    },
+    {
+      "aiAssistanceScore": 0.22249685,
+      "confidence": "Medium",
+      "endIndex": 2468,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 1422,
+      "text": "VL 3.5 83.76 0.137 89.39 75.58 80.53 0.214\nD.1 Table Recognition\nMinerU2.5-Pro demonstrates superior accuracy on complex tables, particularly rotated tables and\ntables with long merged cells. As shown in Figure 13 and Figure 14, MinerU2.5-Pro correctly recovers\nthe table structure and content, while competing models exhibit noticeable structural errors such as\nmisaligned rows and lost cell boundaries.\nD.2 Formula Recognition\nThe decoupled row-by-row formula analysis of MinerU2.5-Pro yields high accuracy on multi-line\nformulas, substantially outperforming end-to-end approaches that must generate entire equation\ngroups in a single pass. MinerU2.5-Pro also achieves more accurate recognition on complex matrices.\nRepresentative comparisons are shown in Figure 15 and Figure 16.\nD.3 Image-Aware Parsing\nMinerU2.5-Pro\u2019s image-aware parsing extracts structured content from chart and diagram regions that\nother models typically leave as opaque image placeholders. Figure 17 and Figure 18 compare parsing\nresults across different chart types.\n28"
+    },
+    {
+      "aiAssistanceScore": 0.22249685,
+      "confidence": "Medium",
+      "endIndex": 314,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable 8: Detailed results on OmniDocBench v1.6 Hard subset.\nModel Overall\u2191 Text Edit\u2193 Formula CDM\u2191 Table TEDS\u2191 TEDS-S\u2191 Read Order\u2193\nMinerU2.5-Pro 94.08 0.052 97.54 89.91 93.61 0.170\nPaddleOCR-VL 92.48 0.066 96.24 87.84 91.60 0.189\nGLM-OCR "
+    },
+    {
+      "aiAssistanceScore": 0.14625953,
+      "confidence": "Medium",
+      "endIndex": 866,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 313,
+      "text": " 92.01 0.066 94.81 87.81 91.44 0.186\nPaddleOCR-VL-1.5 92.01 0.065 95.74 86.75 91.30 0.181\nGemini 3 Flash 91.99 0.085 96.68 87.83 92.51 0.214\nGemini 3 Pro 91.99 0.083 97.23 87.03 91.68 0.198\nMinerU2.5 91.65 0.062 97.12 84.00 88.97 0.178\nOvis 90.39 0.056 94.56 82.21 86.07 0.184\nLogics-Parsing-v2 89.95 0.062 96.28 79.81 85.61 0.184\nFireRed-OCR 89.89 0.073 94.57 82.40 86.64 0.183\nYoutu-Parsing 89.81 0.076 91.75 85.30 89.90 0.185\ndots.ocr 88.67 0.081 89.65 84.42 89.25 0.196\nQwen3-VL-235B 88.45 0.065 93.85 78.01 83.00 0.210\nDeepSeek-OCR-2.0 86.23 0.067 "
+    },
+    {
+      "aiAssistanceScore": 0.1641578,
+      "confidence": "Low",
+      "endIndex": 1423,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 865,
+      "text": " 88.81 76.53 81.19 0.191\nGPT-5.2 86.07 0.087 86.79 80.10 86.70 0.213\nDolphin-2.0 85.29 0.094 91.61 73.68 78.04 0.210\nMonkeyOCR-pro-3B 85.07 0.109 91.18 74.92 82.48 0.228\nOCRverse 84.79 0.106 89.86 75.11 79.99 0.215\nolmOCR 84.34 0.157 89.58 79.17 85.65 0.269\nInternVL 3.5 83.44 0.098 89.77 70.30 77.35 0.222\nDolphin-1.5 83.38 0.106 89.30 71.43 75.86 0.215\nMistral-OCR 82.85 0.104 90.62 68.36 73.08 0.219\nOpenDoc-0.1B 82.69 0.100 90.73 67.32 72.55 0.206\nHunyuanOCR 82.69 0.120 80.32 79.76 84.92 0.243\nNanonets-OCR-s 76.90 0.154 70.99 75.05 81.56 0.309\nPOINTS-R"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 1467,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 1422,
+      "text": "Reader 74.86 0.103 75.23 59.60 64.19 0.263\n29"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 264,
+      "label": "Human Written",
+      "pageIndex": 29,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nVertical Layout\nImage Layout\nFigure 5: Layout Detection examples. The model localizes content regions with bounding boxes,\ncategory labels, and rotation flags on diverse document pages.\n30"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 203,
+      "label": "Human Written",
+      "pageIndex": 30,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nHandwritten Text\nVertical Text\nFigure 6: Text Recognition examples across Chinese, English, and mixed-language text regions.\n31"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 226,
+      "label": "Human Written",
+      "pageIndex": 31,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nRegular Formula\nHandwritten Formula\nFigure 7: Formula Recognition examples including single-line display formulas and complex multi-line\nequations.\n32"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 316,
+      "label": "Human Written",
+      "pageIndex": 32,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nHandwritten Tables with background line interference\nTable with Complex Formula\nTable with Blank Cells\nFigure 8: Table Recognition examples showing OTSL token output and the corresponding rendered\nHTML for tables with varying complexity.\n33"
+    },
+    {
+      "aiAssistanceScore": 0.18545896,
+      "confidence": "Low",
+      "endIndex": 281,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nImage Analysis\nImage Analysis\nImage Analysis\n<|class_start|>flowchart<|class_end|>\n<|sub_class_start|>flowchart<|sub_class_en\nd|>\n<|caption_start|>\u98de\u4e66\u6d41\u7a0b\u7ba1\u7406\u6d41\u7a0b\u56fe\uff0c\u6db5\u76d6\n\u5ba1\u6279\u4e0e\u6c47\u62a5\u4e24\u4e2a\u4e3b\u8981\u6a21\u5757\u53ca\u5176\u5b50\u529f\u80fd\n<|caption_end|>\n<|content_st"
+    },
+    {
+      "aiAssistanceScore": 0.20824963,
+      "confidence": "Medium",
+      "endIndex": 1215,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 280,
+      "text": "tart|>\n```mermaid\ngraph TD\nA[\u98de\u4e66\u6d41\u7a0b\u7ba1\u7406] --> B[\u5ba1\u6279]\nA --> C[\u6c47\u62a5]\nB --> D[\u52a0\u73ed]\nB --> E[\u4f11\u5047]\nB --> F[\u62a5\u9500]\nC --> G[\u9879\u76ee\u8fdb\u5c55]\nC --> H[\u65e5\u62a5\u5468\u62a5]\nD --> I[\u51fa\u5dee]\nE --> J[\u7269\u54c1\u9886\u53d6]\nF --> K[\u66f4\u591a]\nG --> L[\u62dc\u8bbf\u8bb0\u5f55]\nH --> M[\u66f4\u591a]\n```\n<|content_end|>\nrender\n<|class_start|>text_image<|c\nlass_end|>\n<|sub_class_start|>text_ima\nge<|sub_class_end|>\n<|caption_start|>\u5ba3\u4f20\u6d77\u62a5\uff0c\n\u4e3b\u9898\u4e3a\u201c\u6625\u5929\u91cc\u7684\u5f3a\u519b\u53f7\u89d2\u201d\uff0c\n\u5305\u542b\u519b\u4eba\u526a\u5f71\u3001\u5766\u514b\u526a\u5f71\u53ca\n\u2018\u4e2d\u56fd\u519b\u53f7\u2019\u6807\u8bc6\n<|caption_end|>\n<|content_start|>\n\u6625\u5929\u91cc\u7684\n\u5f3a\u519b\u53f7\u89d2\n\u8fd9\u90e8\u52a8\u753b\u91cc\uff0c\n\u4e00\u5b9a\u6709\u4f60\u594b\u8fdb\u7684\u8eab\u5f71\n\u4e2d\u56fd\u519b\u53f7\n<|content_end|>\n<|class_start|>text_image<|class_end|>\n<|sub_class_start|>text_image<|sub_class_end|>\n<|caption_start|>Street photo with visible Bank of China signage\nand promotional banners for BRICS Co. and Johannesburg\nBranch<|caption_end|>\n<|content_start|>\n\u4e2d\u56fd\u94f6\u884c BANK OF CHINA \u7ea6\u7ff0\u5185\u65af\u5821\u5206\u884c\nJOHANNESBURG BRANCH \u670d\u52a1\u91d1 BRICS Coor\nfor a Bett Africa\n<|content_end|>\nFigure 9: Image-aware parsing examples. The model classifies image regions into fine-grained subtypes\nand extracts structured content accordingly.\n34"
+    },
+    {
+      "aiAssistanceScore": 0.20824963,
+      "confidence": "Medium",
+      "endIndex": 370,
+      "label": "Human Written",
+      "pageIndex": 34,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTruncated Paragraph Merging\n[\u56fe\u7247]\ntruncated\nparagraph\ntoken pairs\ntruncated\nparagraph\ntoken pairs\nparagraph\nmerged\nparagraph\nmerged\nFigure 10: Illustration of truncated paragraph merging. In multi-column and complex layouts, Layout\nDetection splits continuous paragraphs into separate bounding b"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 486,
+      "label": "AI-Generated",
+      "pageIndex": 34,
+      "startIndex": 369,
+      "text": "boxes. The merge label predicted by\nthe model reassembles them into coherent paragraphs during Markdown rendering.\n35"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 392,
+      "label": "AI-Generated",
+      "pageIndex": 35,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nCross Page Table Recognition and Merging\n[\u56fe\u7247]\npre-page table \nnext-page table\nFigure 11: Cross-page table merging example. The model performs semantic understanding at the\njunction of two table fragments identified by rule-based heuristics, producing per-column merge\ndecisions to reconstruct the complete table. \n36"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 313,
+      "label": "AI-Generated",
+      "pageIndex": 36,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nTable With Image\nTable With Image\nFigure 12: In-table image detection and recognition. Embedded images within table cells are masked\nwith placeholders during Table Recognition and restored as <img> references in the final HTML output.\n37"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 314,
+      "label": "AI-Generated",
+      "pageIndex": 37,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-Pro\nImage\nMinerU2.5\nPaddle-VL1.5\nGLM-OCR\nFigure 13: Qualitative comparison on rotated table recognition. MinerU2.5-Pro correctly recovers the\nrotated structure, while competing models produce misaligned rows or missing cells.\n38"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 295,
+      "label": "AI-Generated",
+      "pageIndex": 38,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-ProImage\nGLM-OCRPaddle-VL1.5\nFigure 14: Qualitative comparison on tables with long merged cells. MinerU2.5-Pro preserves the span\nstructure, whereas other models incorrectly split or duplicate merged cells.\n39"
+    },
+    {
+      "aiAssistanceScore": 0.55729693,
+      "confidence": "Medium",
+      "endIndex": 309,
+      "label": "AI-Generated",
+      "pageIndex": 39,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-ProImage\nGLM-OCRPaddle-VL1.5\nFigure 15: Qualitative comparison on complex matrix recognition. MinerU2.5-Pro accurately captures\nthe matrix structure and alignment, while other models exhibit symbol errors or structural coll"
+    },
+    {
+      "aiAssistanceScore": 0.39621004,
+      "confidence": "Low",
+      "endIndex": 317,
+      "label": "Human Written",
+      "pageIndex": 39,
+      "startIndex": 308,
+      "text": "lapse.\n40"
+    },
+    {
+      "aiAssistanceScore": 0.39621004,
+      "confidence": "Low",
+      "endIndex": 310,
+      "label": "Human Written",
+      "pageIndex": 40,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-ProImage\nGLM-OCRPaddle-VL1.5\nFigure 16: Qualitative comparison on multi-line formula recognition. The row-by-row analysis of\nMinerU2.5-Pro faithfully reproduces each line, whereas competing models merge or misalign lines.\n41"
+    },
+    {
+      "aiAssistanceScore": 0.39621004,
+      "confidence": "Low",
+      "endIndex": 333,
+      "label": "Human Written",
+      "pageIndex": 41,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-ProImage\nQwen3-VL-235B-A22BPaddle-VL1.5\nFigure 17: Qualitative comparison on image-aware chart parsing (Part 1). MinerU2.5-Pro extracts\nstructured content from diverse chart types, while other models either ignore or misinterpret chart\ncontent.\n42"
+    },
+    {
+      "aiAssistanceScore": 0.39621004,
+      "confidence": "Low",
+      "endIndex": 296,
+      "label": "Human Written",
+      "pageIndex": 42,
+      "startIndex": 0,
+      "text": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale\nMinerU2.5-ProImage\nQwen3-VL-235B-A22BPaddle-VL1.5\nFigure 18: Qualitative comparison on image-aware chart parsing (Part 2). Additional chart types\ndemonstrating the generalization of MinerU2.5-Pro\u2019s image analysis pipelin"
+    }
+  ]
+}

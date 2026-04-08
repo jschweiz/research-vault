@@ -261,19 +261,19 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 11,
+        "public_total_votes": 13,
         "questions_count": 0,
-        "total_votes": 2,
-        "upvotes_count": 11,
+        "total_votes": 4,
+        "upvotes_count": 13,
         "visits_count": {
-          "all": 107,
-          "last24Hours": 107,
-          "last30Days": 107,
-          "last7Days": 107,
-          "last90Days": 107
+          "all": 176,
+          "last24Hours": 134,
+          "last30Days": 176,
+          "last7Days": 176,
+          "last90Days": 176
         }
       },
-      "podcast_path": null,
+      "podcast_path": "019d65d2-2cf1-7623-9688-179eb39c3f6d/podcast.mp3",
       "resources": {
         "github": {
           "description": "Unified Codebase for Advanced World Models.",

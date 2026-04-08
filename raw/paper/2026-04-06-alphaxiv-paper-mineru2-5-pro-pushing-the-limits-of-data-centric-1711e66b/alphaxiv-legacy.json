@@ -278,15 +278,22 @@
         "total_votes": 0,
         "upvotes_count": 8,
         "visits_count": {
-          "all": 96,
-          "last24Hours": 96,
-          "last30Days": 96,
-          "last7Days": 96,
-          "last90Days": 96
+          "all": 128,
+          "last24Hours": 69,
+          "last30Days": 128,
+          "last7Days": 128,
+          "last90Days": 128
         }
       },
-      "podcast_path": null,
-      "resources": {},
+      "podcast_path": "019d65bf-f725-70ff-9b02-154aff67da82/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/opendatalab/MinerU"
+        }
+      },
       "source": {
         "name": "alphaXiv",
         "url": "https://arxiv.org/abs/2604.04771"

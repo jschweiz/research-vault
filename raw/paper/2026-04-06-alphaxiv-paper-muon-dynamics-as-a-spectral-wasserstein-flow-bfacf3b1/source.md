@@ -8,7 +8,7 @@ authors:
   - Gabriel Peyré
 published_at: 2026-04-06T17:41:12Z
 ingested_at: 2026-04-07T21:42:23.328772Z
-content_hash: ff3c0b2b6352291cb8e94522f2637cfefc8bc2826dc22d76da035b9e6bdb506a
+content_hash: c53c3b83de0b246ec2c9e2c5e81eb8891282cfd14f077413d47730f5cca35e18
 tags:
   - paper
   - alphaxiv
@@ -20,6 +20,17 @@ tags:
   - mathematics
   - math.oc
   - optimization-methods
+  - Computer Science
+  - cs.AI
+  - Mathematics
+  - math.OC
+  - representation-learning
+  - statistical-learning
+  - Statistics
+  - stat.ML
+  - audio
+  - transcript
+  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -30,6 +41,8 @@ asset_paths:
   - alphaxiv-paper.json
   - alphaxiv-preview.json
   - alphaxiv-similar-papers.json
+  - alphaxiv-transcript.json
+  - alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04891
@@ -37,12 +50,12 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04891
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:42:23.328781Z
-short_summary: # Muon Dynamics as a Spectral Wasserstein Flow ## alphaXiv Summary This research develops a mathematical framework for matrix-normalized deep learning optimizers by introducing Spectral Wasserstein distances, which provide a unified geometric interpretation for gradient descent, Muon, and intermediate Schatten-type normalizations. The work establishes these distances as bona fide metrics and identifies their associated gradient flows, rigorously connecting continuous-time dynamics to discrete op
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:47:08.051679Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ff3c0b2b6352291cb8e94522f2637cfefc8bc2826dc22d76da035b9e6bdb506a
+fetched_at: 2026-04-08T09:26:49.011583Z
+short_summary: This research develops a mathematical framework for matrix-normalized deep learning optimizers by introducing Spectral Wasserstein distances, which provide a unified geometric interpretation for gradient descent, Muon, and intermediate Schatten-type normalizations. The work establishes these distances as bona fide metrics and identifies their associated gradient flows, rigorously connecting continuous-time dynamics to discrete optimization algorithms.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Muon Dynamics as a Spectral Wasserstein Flow
@@ -89,8 +102,8 @@ This research develops a mathematical framework for matrix-normalized deep learn
 
 ## Metrics
 
-- Visits (all): 113
-- Visits (last 7 days): 113
+- Visits (all): 159
+- Visits (last 7 days): 159
 - Total votes: 2
 - Public total votes: 9
 - X likes: 0
@@ -143,6 +156,8 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d65d5-f340-75a1-9c48-6fdd17f6fa1c/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d5-f340-75a1-9c48-6fdd17f6fa1c/transcript.json
+- Transcript lines: 16
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
 
 ## Similar Papers
 

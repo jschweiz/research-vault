@@ -75,16 +75,16 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 105,
+        "public_total_votes": 114,
         "questions_count": 0,
-        "total_votes": 31,
-        "upvotes_count": 105,
+        "total_votes": 40,
+        "upvotes_count": 114,
         "visits_count": {
-          "all": 1385,
-          "last24Hours": 595,
-          "last30Days": 1385,
-          "last7Days": 1385,
-          "last90Days": 1385
+          "all": 1635,
+          "last24Hours": 584,
+          "last30Days": 1635,
+          "last7Days": 1635,
+          "last90Days": 1635
         }
       },
       "podcast_path": "019d511d-d065-788f-bb15-a8562d561925/podcast.mp3",
@@ -135,6 +135,25 @@
     "pdf_info": {
       "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.02268v1.pdf"
     },
-    "verified_authors": []
+    "verified_authors": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "wBu2GXEAAAAJ",
+        "id": "019cd093-1836-715e-8cea-dc8b3c7342d9",
+        "institution": "Zhejiang University",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Zhengxi Lu",
+        "reputation": 15,
+        "role": "user",
+        "username": "zhengxi-lu",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      }
+    ]
   }
 }

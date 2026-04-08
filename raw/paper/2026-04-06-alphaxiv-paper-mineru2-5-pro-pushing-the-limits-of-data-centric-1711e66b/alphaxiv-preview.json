@@ -308,16 +308,16 @@
       "username": null
     }
   ],
-  "github_stars": null,
-  "github_url": null,
+  "github_stars": 0,
+  "github_url": "https://github.com/opendatalab/MinerU",
   "id": "019d65bf-f725-70ff-9b02-154aff67da82",
   "image_url": "image/2604.04771v1.png",
   "metrics": {
     "public_total_votes": 8,
     "total_votes": 0,
     "visits_count": {
-      "all": 96,
-      "last_7_days": 96
+      "all": 128,
+      "last_7_days": 128
     },
     "x_likes": 0
   },
