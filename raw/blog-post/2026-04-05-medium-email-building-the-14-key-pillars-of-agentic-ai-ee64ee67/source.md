@@ -19,7 +19,7 @@ tags:
   - ai
   - machine learning
   - long-term memory
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d5c5ea63d230bf::link::https://medium.com/@fareedkhandev/building
 canonical_url: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986
 doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.408680Z
 short_summary: # Building the 14 Key Pillars of Agentic AI Source newsletter: Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-05T06:40:00+00:00 Entry Number: 3 Canonical URL: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986 ## Newsletter Context Section: Today's highlights > Fareed Khan in Level Up Coding · 82 min read · 1.2K claps · 11 responses Parallelism, Ensembles, Retrie
 lightweight_enrichment_status: succeeded

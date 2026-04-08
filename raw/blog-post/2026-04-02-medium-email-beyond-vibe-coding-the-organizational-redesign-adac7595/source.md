@@ -19,7 +19,7 @@ tags:
   - ai advances
   - roles
   - apprenticeship
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d4ceb9642a0426::link::https://medium.com/@krzysztof.kornel/beyon
 canonical_url: https://medium.com/@krzysztof.kornel/beyond-vibe-coding-the-organizational-redesign-f5dfb40fac39
 doc_role: derived
 parent_id: 2026-04-02-medium-email-nobody-wants-to-learn-ai-alvis-ng-2a719b68
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.748098Z
 short_summary: # Beyond Vibe Coding: The Organizational Redesign Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@krzysztof.kornel/beyond-vibe-coding-the-organizational-redesign-f5dfb40fac39 ## Newsletter Context Section: Today's highlights > Krzysztof K. Zdeb in AI Advances · 12 min read · 343 claps · 1 response New roles, better metrics, the apprenticeship problem…
 lightweight_enrichment_status: succeeded

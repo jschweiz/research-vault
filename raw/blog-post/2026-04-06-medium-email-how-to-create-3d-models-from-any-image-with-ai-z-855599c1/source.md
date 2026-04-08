@@ -19,7 +19,7 @@ tags:
   - ai
   - image processing
   - zero-shot reconstruction
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@florentpoux/how-to-cre
 canonical_url: https://medium.com/@florentpoux/how-to-create-3d-models-from-any-image-with-ai-zero-shot-3d-reconstruction-21d3023ad81b
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.661251Z
 short_summary: # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction) Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 lightweight_enrichment_status: succeeded

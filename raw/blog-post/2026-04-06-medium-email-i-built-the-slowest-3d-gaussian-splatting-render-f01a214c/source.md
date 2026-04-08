@@ -19,7 +19,7 @@ tags:
   - renderer
   - python
   - ai
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@SaschaKirch/i-built-th
 canonical_url: https://medium.com/@SaschaKirch/i-built-the-slowest-3d-gaussian-splatting-renderer-on-purpose-a8170b90d9b4
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.805601Z
 short_summary: # I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 lightweight_enrichment_status: succeeded

@@ -19,7 +19,7 @@ tags:
   - satellite
   - remote sensing
   - earth engine
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d5738504bb7676::link::https://medium.com/@preet.balaji20/can-ai-
 canonical_url: https://medium.com/@preet.balaji20/can-ai-satellite-embeddings-outperform-traditional-remote-sensing-classification-4ab2670ba327
 doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.151372Z
 short_summary: # Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification? Source newsletter: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 Entry Number: 2 Canonical URL: https://medium.com/@preet.balaji20/can-ai-satellite-embeddings-outperform-traditional-remote-sensing-classification-4ab2670ba327 ## Newsletter Context Section: Today's highlights > Dr.Preethi Balaji · 9
 lightweight_enrichment_status: succeeded

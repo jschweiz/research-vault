@@ -20,7 +20,7 @@ tags:
   - software development
   - ai
   - ide
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@han.heloir/cursor-3-is
 canonical_url: https://medium.com/@han.heloir/cursor-3-is-not-an-ide-update-its-a-bet-that-you-ll-manage-agents-not-write-code-0d2bc51f0dcb
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:28.087261Z
 short_summary: # Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
 lightweight_enrichment_status: succeeded

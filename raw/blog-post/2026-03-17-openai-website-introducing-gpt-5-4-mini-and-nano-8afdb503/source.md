@@ -34,7 +34,7 @@ canonical_url: https://openai.com/index/introducing-gpt-5-4-mini-and-nano
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:39.631845Z
+fetched_at: 2026-04-08T09:23:52.555794Z
 short_summary: GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:09.633034Z

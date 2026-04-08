@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-saba
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:57.980730Z
+fetched_at: 2026-04-08T09:25:17.037329Z
 short_summary: Making AI ubiquitous requires addressing every culture and language. As AI proliferates globally, many of our customers worldwide have expressed a strong desire for models that are not just fluent but native to regional parlance.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:45.322491Z

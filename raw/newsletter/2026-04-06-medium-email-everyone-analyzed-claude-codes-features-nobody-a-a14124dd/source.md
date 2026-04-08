@@ -29,18 +29,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d618506ae886de
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d618506ae886de
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.594771Z
-short_summary: # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:54.909841Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 7ff92578705b152cf55b1688c2e569a11f8ada474185184c7e68b1177f19a945
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:32.699108Z
+short_summary: Medium digest led by "Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture". Includes 15 highlighted stories, including "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture. | Han HELOIR YAN, Ph.D. ☕️ in Data Science Collective

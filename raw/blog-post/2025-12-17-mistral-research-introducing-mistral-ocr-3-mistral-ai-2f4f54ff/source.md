@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/mistral-ocr-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:39.003133Z
+fetched_at: 2026-04-08T09:24:55.043938Z
 short_summary: Achieving a new frontier for both accuracy and efficiency in document processing. Tuesday 8:30 pm.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:30:00.468715Z

@@ -20,7 +20,7 @@ tags:
   - aeo
   - ab testing
   - digital marketing
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d4ceb9642a0426::link::https://medium.com/@kaitlin-mcmichael/upgr
 canonical_url: https://medium.com/@kaitlin-mcmichael/upgrading-your-seo-testing-framework-for-aeo-3d36ff84ade6
 doc_role: derived
 parent_id: 2026-04-02-medium-email-nobody-wants-to-learn-ai-alvis-ng-2a719b68
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.709700Z
 short_summary: # Upgrading your SEO testing framework for AEO Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@kaitlin-mcmichael/upgrading-your-seo-testing-framework-for-aeo-3d36ff84ade6 ## Newsletter Context Section: Today's highlights > Kaitlin R. McMichael in The Crawl Space Blog | SEO, Digital Marketing & Corporate Culture · 13 min read · 47 claps · 8 responses A
 lightweight_enrichment_status: succeeded

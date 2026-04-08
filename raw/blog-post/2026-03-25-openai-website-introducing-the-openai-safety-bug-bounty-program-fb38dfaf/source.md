@@ -23,7 +23,7 @@ canonical_url: https://openai.com/index/safety-bug-bounty
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:34.587078Z
+fetched_at: 2026-04-08T09:23:46.172843Z
 short_summary: OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:34.372848Z

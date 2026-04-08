@@ -18,7 +18,7 @@ tags:
   - data engineering
   - incremental loading
   - data strategies
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -26,7 +26,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@husseinjundi/data-engi
 canonical_url: https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.965661Z
 short_summary: # Data Engineering: Incremental Data Loading Strategies Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 3 Canonical URL: https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0 ## Newsletter Context Section: Today's highlights > Hussein Jundi in Data Engineer Things · 9 min read · 227 claps · 7 respons
 lightweight_enrichment_status: succeeded

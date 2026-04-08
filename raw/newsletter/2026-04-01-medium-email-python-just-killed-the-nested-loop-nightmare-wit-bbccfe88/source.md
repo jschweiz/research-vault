@@ -31,10 +31,10 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.376941Z
-short_summary: # Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.
+short_summary: Medium digest led by "Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol". Includes 15 highlighted stories, including "How to Generate 3D Models from Images with Python".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:22.149731Z
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: 2026-04-08T09:07:03.041747Z
+lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: aa19f8d2d9016de2c3b8bfc6899bce01df9ac0ddf4a362bbe189a2acc60f240c
 lightweight_enrichment_error: null
 ---

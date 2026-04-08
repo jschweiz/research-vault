@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/mistral-small-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:59.876124Z
+fetched_at: 2026-04-08T09:25:18.661514Z
 short_summary: Today we’re introducing Mistral Small 3, a latency-optimized 24B-parameter model released under the Apache 2.0 license. Mistral Small 3 is competitive with larger models such as Llama 3.3 70B or Qwen 32B, and is an excellent open replacement for opaque proprietary models like GPT4o-mini.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:28:41.103645Z

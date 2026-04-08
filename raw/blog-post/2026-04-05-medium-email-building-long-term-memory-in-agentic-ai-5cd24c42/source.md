@@ -20,7 +20,7 @@ tags:
   - ai
   - hitl
   - feedback loop
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5c5ea63d230bf::link::https://medium.com/@fareedkhandev/building
 canonical_url: https://medium.com/@fareedkhandev/building-long-term-memory-in-agentic-ai-2941b0cca3bf
 doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.368389Z
 short_summary: # Building Long-Term Memory in Agentic AI Source newsletter: Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-05T06:40:00+00:00 Entry Number: 1 Canonical URL: https://medium.com/@fareedkhandev/building-long-term-memory-in-agentic-ai-2941b0cca3bf ## Newsletter Context Section: Today's highlights > Fareed Khan in Level Up Coding · 36 min read · 1K claps · 19 responses HITL, InMemory Feature, Feedback Loo
 lightweight_enrichment_status: succeeded

@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/equipping-workers-with-insights-about-co
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:41.238925Z
+fetched_at: 2026-04-08T09:23:53.361642Z
 short_summary: New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:06.286649Z

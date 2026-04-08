@@ -18,7 +18,7 @@ tags:
   - reading
   - literature
   - the decameron
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -26,7 +26,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@nikolaus.correll/why-r
 canonical_url: https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.885808Z
 short_summary: # Why reading “The Decameron” is as useful as ever Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 2 Canonical URL: https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452 ## Newsletter Context Section: Today's highlights > Nikolaus Correll · 9 min read · 383 claps · 6 responses We like to think we are living through a rupture that…
 lightweight_enrichment_status: succeeded

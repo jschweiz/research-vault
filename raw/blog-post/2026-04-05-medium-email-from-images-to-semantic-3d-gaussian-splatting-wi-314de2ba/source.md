@@ -20,7 +20,7 @@ tags:
   - 3d
   - semantic scanning
   - ai
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5c5ea63d230bf::link::https://medium.com/@florentpoux/from-image
 canonical_url: https://medium.com/@florentpoux/from-images-to-semantic-3d-gaussian-splatting-with-python-complete-guide-ff9d3d240847
 doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.471556Z
 short_summary: # From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide Source newsletter: Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-05T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@florentpoux/from-images-to-semantic-3d-gaussian-splatting-with-python-complete-guide-ff9d3d240847 ## Newsletter Context Section: Today's highlights > Florent Poux, Ph.D. in Data Science Collec
 lightweight_enrichment_status: succeeded

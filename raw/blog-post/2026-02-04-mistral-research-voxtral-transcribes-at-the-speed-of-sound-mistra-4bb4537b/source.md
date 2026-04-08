@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/voxtral-transcribe-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:37.326192Z
+fetched_at: 2026-04-08T09:24:53.212200Z
 short_summary: Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:30:07.692676Z

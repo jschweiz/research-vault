@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/devstral-2507
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:47.205943Z
+fetched_at: 2026-04-08T09:25:04.320205Z
 short_summary: Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. These models are released under the collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, with a strong emphasis on generalization to different prompts and agentic scaffolds.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:20.445560Z

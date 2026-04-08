@@ -19,7 +19,7 @@ tags:
   - aging
   - mistakes
   - reflection
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@thomas-oppong/what-peo
 canonical_url: https://medium.com/@thomas-oppong/what-people-in-their-80s-wish-they-d-done-differently-at-your-age-214744e98f93
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.684328Z
 short_summary: # What People in Their 80’s Wish They’d Done Differently at Your Age Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 lightweight_enrichment_status: succeeded

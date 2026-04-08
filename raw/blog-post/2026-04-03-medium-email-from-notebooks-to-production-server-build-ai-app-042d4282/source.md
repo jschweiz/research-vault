@@ -20,7 +20,7 @@ tags:
   - python
   - deployment
   - software engineering
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@jeremyarancio/from-not
 canonical_url: https://medium.com/@jeremyarancio/from-notebooks-to-production-server-build-ai-applications-the-right-way-8037203b7028
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.930379Z
 short_summary: # From Notebooks to Production Server: Build AI Applications The Right Way Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 4 Canonical URL: https://medium.com/@jeremyarancio/from-notebooks-to-production-server-build-ai-applications-the-right-way-8037203b7028 ## Newsletter Context Section: Today's highlights > Jeremy Arancio in Level Up Coding · 13 min read · 154 claps · 2 responses Develop
 lightweight_enrichment_status: succeeded

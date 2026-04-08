@@ -20,7 +20,7 @@ tags:
   - search
   - database
   - architecture
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5738504bb7676::link::https://medium.com/@itinasharma/vector-dat
 canonical_url: https://medium.com/@itinasharma/vector-databases-exist-because-sql-has-one-blind-spot-aa4bca0ee7b2
 doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.270759Z
 short_summary: # Vector Databases Exist Because SQL Has One Blind Spot Source newsletter: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@itinasharma/vector-databases-exist-because-sql-has-one-blind-spot-aa4bca0ee7b2 ## Newsletter Context Section: Today's highlights > Tina Sharma in The Quantastic Journal · 12 min read · 612 claps · 5 responses Th
 lightweight_enrichment_status: succeeded

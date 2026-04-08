@@ -28,7 +28,7 @@ canonical_url: https://openai.com/index/codex-flexible-pricing-for-teams
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:30.094201Z
+fetched_at: 2026-04-08T09:23:41.230725Z
 short_summary: Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:48.619837Z

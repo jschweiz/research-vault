@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/mistral-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:42.369494Z
+fetched_at: 2026-04-08T09:24:58.654342Z
 short_summary: Introducing Mistral 3 The next generation of open multimodal and multilingual AI Today, we announce Mistral 3, the next generation of Mistral models. Mistral 3 includes three state-of-the-art small, dense models (14B, 8B, and 3B) and Mistral Large 3 – our most capable model to date – a sparse mixture-of-experts trained with 41B active and 675B total parameters.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:41.139707Z

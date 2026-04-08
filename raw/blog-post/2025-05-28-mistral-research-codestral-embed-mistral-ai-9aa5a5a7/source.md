@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/codestral-embed
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:50.556905Z
+fetched_at: 2026-04-08T09:25:07.783594Z
 short_summary: We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:10.302702Z

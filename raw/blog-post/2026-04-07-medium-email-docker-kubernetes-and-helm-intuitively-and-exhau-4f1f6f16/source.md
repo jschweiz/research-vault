@@ -20,7 +20,7 @@ tags:
   - helm
   - software development
   - technology
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@danielwarfield1/docker
 canonical_url: https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:28.013982Z
 short_summary: # Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 5 Canonical URL: https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab ## Newsletter Context Section: Today's highlights > Daniel Warfield in Intuitively and Exhaust
 lightweight_enrichment_status: succeeded

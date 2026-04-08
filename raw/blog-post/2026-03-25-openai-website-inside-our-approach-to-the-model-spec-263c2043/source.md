@@ -31,7 +31,7 @@ canonical_url: https://openai.com/index/our-approach-to-the-model-spec
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:33.854805Z
+fetched_at: 2026-04-08T09:23:45.387863Z
 short_summary: Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:32.135288Z

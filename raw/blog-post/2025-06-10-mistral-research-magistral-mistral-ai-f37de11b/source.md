@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/magistral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:48.688945Z
+fetched_at: 2026-04-08T09:25:06.055679Z
 short_summary: Stands to reason. Magistral Announcing Magistral — the first reasoning model by Mistral AI — excelling in domain-specific, transparent, and multilingual reasoning.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:15.864105Z

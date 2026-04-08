@@ -21,7 +21,7 @@ tags:
   - machine learning
   - security
   - cost optimization
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -29,7 +29,7 @@ external_key: 19d4ceb9642a0426::link::https://medium.com/@kuriko-iwai/aws-vpc-fo
 canonical_url: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
 doc_role: derived
 parent_id: 2026-04-02-medium-email-nobody-wants-to-learn-ai-alvis-ng-2a719b68
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.688995Z
 short_summary: # AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 5 Canonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124 ## Newsletter Context Section: Today's highlights > Kuriko Iwai · 12 min read · 235 claps · 2 responses Master VPC configurations with 4 essential AWS VPC…
 lightweight_enrichment_status: succeeded

@@ -20,7 +20,7 @@ tags:
   - parallelization
   - map-reduce
   - scaling
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5738504bb7676::link::https://medium.com/@linafaik/scaling-langg
 canonical_url: https://medium.com/@linafaik/scaling-langgraph-agents-parallelization-subgraphs-and-map-reduce-trade-offs-5af5c357b995
 doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.232386Z
 short_summary: # Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs Source newsletter: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@linafaik/scaling-langgraph-agents-parallelization-subgraphs-and-map-reduce-trade-offs-5af5c357b995 ## Newsletter Context Section: Today's highlights > Lina Faik · 12 min read · 204 clap
 lightweight_enrichment_status: succeeded

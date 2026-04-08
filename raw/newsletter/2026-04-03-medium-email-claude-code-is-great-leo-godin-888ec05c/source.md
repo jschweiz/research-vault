@@ -28,18 +28,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d5211f632f23f3
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5211f632f23f3
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:26.849566Z
-short_summary: # Claude Code is Great | Leo Godin ## Today's highlights ### [Claude Code is Great](https://medium.com/@leo-godin/claude-code-is-great-6db35d8685f0) > Leo Godin · 11 min read · 1.5K claps · 51 responses You Just Need to Learn How to Use It ### [Why reading “The Decameron” is as useful as ever](https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452) > Nikolaus Correll · 9 min read · 383 claps · 6 responses We like to think we are living through a rupture
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:33.241740Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 6ce196cfe16e1d4009d40069b3e7351f152648565d578cfadf8431888db1573e
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:33.188992Z
+short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Claude Code is Great | Leo Godin

@@ -19,7 +19,7 @@ tags:
   - embedding pipelines
   - ai
   - machine learning
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@kuriko-iwai/the-mathem
 canonical_url: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.970508Z
 short_summary: # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004 ## Newsletter Context Section: Today's highlights > Kuriko Iwai · 15 min read · 379 claps · 6 responses Explor
 lightweight_enrichment_status: succeeded

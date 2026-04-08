@@ -24,18 +24,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d5c5ea63d230bf
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5c5ea63d230bf
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.348178Z
-short_summary: # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding ## Today's highlights ### [Building Long-Term Memory in Agentic AI](https://medium.com/@fareedkhandev/building-long-term-memory-in-agentic-ai-2941b0cca3bf) > Fareed Khan in Level Up Coding · 36 min read · 1K claps · 19 responses HITL, InMemory Feature, Feedback Loop and more ### [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](https://medium.com/@vutrinh274/i-spent-5-hours-learning-unity-catal
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:47.333104Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: f43dae90082bcb7dc5a39d8fa5655fd5d2f4fe485e91df01879412ef395d2afe
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:32.852429Z
+short_summary: Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s everything you need to know".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding

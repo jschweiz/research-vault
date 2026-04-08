@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/openai-to-acquire-astral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:38.923015Z
+fetched_at: 2026-04-08T09:23:50.992484Z
 short_summary: Accelerates Codex growth to power the next generation of Python developer tools
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:18.097966Z

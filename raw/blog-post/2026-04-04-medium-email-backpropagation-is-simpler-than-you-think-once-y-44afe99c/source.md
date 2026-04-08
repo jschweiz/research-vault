@@ -19,7 +19,7 @@ tags:
   - neural networks
   - ai
   - machine learning
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d5738504bb7676::link::https://medium.com/@nikhilanandnj/the-most
 canonical_url: https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9
 doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.213825Z
 short_summary: # Backpropagation is simpler than you think (once you see this) Source newsletter: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 Entry Number: 5 Canonical URL: https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9 ## Newsletter Context Section: Today's highlights > Nikhil Anand in AI Advances · 8 min read · 595 claps · 1 respons
 lightweight_enrichment_status: succeeded

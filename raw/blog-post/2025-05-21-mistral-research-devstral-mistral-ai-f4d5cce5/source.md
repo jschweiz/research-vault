@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/devstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:52.007947Z
+fetched_at: 2026-04-08T09:25:09.561597Z
 short_summary: Today we introduce Devstral, our agentic LLM for software engineering tasks. Devstral is built under a collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, and outperforms all open-source models on SWE-Bench Verified by a large margin.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:29:05.310037Z

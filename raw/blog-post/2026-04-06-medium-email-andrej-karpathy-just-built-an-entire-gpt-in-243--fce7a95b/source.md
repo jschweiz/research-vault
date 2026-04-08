@@ -19,7 +19,7 @@ tags:
   - python
   - deep learning
   - ai
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@sumit.ai/andrej-karpat
 canonical_url: https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.639029Z
 short_summary: # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 lightweight_enrichment_status: succeeded

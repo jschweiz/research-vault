@@ -20,7 +20,7 @@ tags:
   - macos
   - linux
   - technology
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@farkonas/windows-vs-ma
 canonical_url: https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:28.118950Z
 short_summary: # Windows vs macOS vs Linux: the time to switch is now Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6 ## Newsletter Context Section: Today's highlights > Kostas Farkonas in Turn On | Press Play · 14 min read · 2.1K claps · 112 respons
 lightweight_enrichment_status: succeeded

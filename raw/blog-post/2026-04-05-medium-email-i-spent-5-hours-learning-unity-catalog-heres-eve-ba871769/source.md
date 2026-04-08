@@ -19,7 +19,7 @@ tags:
   - databricks
   - data engineering
   - ai
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d5c5ea63d230bf::link::https://medium.com/@vutrinh274/i-spent-5-h
 canonical_url: https://medium.com/@vutrinh274/i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-to-know-cebdfe8b0d69
 doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.387272Z
 short_summary: # I spent 5 hours learning Unity Catalog. Here’s everything you need to know.
 lightweight_enrichment_status: succeeded

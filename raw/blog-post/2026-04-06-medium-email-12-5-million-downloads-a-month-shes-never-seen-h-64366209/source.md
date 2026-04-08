@@ -20,7 +20,7 @@ tags:
   - developer
   - claude
   - data science
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@canartuc/12-5-million-
 canonical_url: https://medium.com/@canartuc/12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-screen-d6c52b1c1aac
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.768132Z
 short_summary: # 12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.
 lightweight_enrichment_status: succeeded

@@ -32,7 +32,7 @@ canonical_url: https://openai.com/index/accelerating-the-next-phase-ai
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:31.686133Z
+fetched_at: 2026-04-08T09:23:42.823926Z
 short_summary: OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:42.920000Z

@@ -32,7 +32,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:23:44.060736Z
+fetched_at: 2026-04-08T09:25:26.914127Z
 short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:39:24.308486Z

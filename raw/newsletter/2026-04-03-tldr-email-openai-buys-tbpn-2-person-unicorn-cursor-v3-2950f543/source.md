@@ -32,7 +32,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d52ff6ce9d2f51
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:23:44.144161Z
+fetched_at: 2026-04-08T09:25:27.067352Z
 short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:39:24.265471Z

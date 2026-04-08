@@ -25,18 +25,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d66ab627cf3725
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d66ab627cf3725
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.892635Z
-short_summary: # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness ## Today's highlights ### [The 5-Minute Mental Reset That Actually Works](https://medium.com/@sa-liberty/the-5-minute-mental-reset-that-actually-works-928116f8b78e) > Sam Liberty in Age of Awareness · 10 min read · 6.1K claps · 336 responses An evidence-based routine you can try right now ### [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](https://medium.com/@vivedhaelango/why-yo
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:04:00.476177Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: d2cae282454b1feca55c593299075bcafb09d002d85fd10d2d1b5d1a82df5b71
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:32.540829Z
+short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness

@@ -24,18 +24,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d4ceb9642a0426
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d4ceb9642a0426
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:26.605037Z
-short_summary: # Nobody Wants to Learn AI | Alvis Ng ## Today's highlights ### [Nobody Wants to Learn AI](https://medium.com/@iamalvisng/nobody-wants-to-learn-ai-a7c984d6d0da) > Alvis Ng · 7 min read · 1.1K claps · 36 responses The “lifelong learner” identity isn’t aspiration. It’s… ### [Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.](https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969) > Phil | Rentier Digital · 12 min read
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:27.476085Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: de140a3c25464392ff61b00f4e8e26912bbe5369ba0b63670d2a798024d928cc
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:33.359383Z
+short_summary: Medium digest led by "Nobody Wants to Learn AI". Includes 15 highlighted stories, including "Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # Nobody Wants to Learn AI | Alvis Ng

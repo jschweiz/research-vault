@@ -18,7 +18,7 @@ tags:
   - cli
   - coding
   - commands
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -26,7 +26,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@minervee/10-underrated
 canonical_url: https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.019427Z
 short_summary: # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a ## Newsletter Context Section: Today's highlights > Minervee in Coding Nexus · 5 min read · 337 claps · 5 responses All from Useful to Real Fun
 lightweight_enrichment_status: succeeded

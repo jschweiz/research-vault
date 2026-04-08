@@ -20,7 +20,7 @@ tags:
   - ai
   - coding
   - software construction
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@alexcpn/vibe-coding-pr
 canonical_url: https://medium.com/@alexcpn/vibe-coding-prompts-are-all-you-need-1902215294bb
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.909360Z
 short_summary: # Vibe Coding — Prompts Are All You Need? Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 3 Canonical URL: https://medium.com/@alexcpn/vibe-coding-prompts-are-all-you-need-1902215294bb ## Newsletter Context Section: Today's highlights > Alex Punnen in Towards AI · 9 min read · 549 claps · 22 responses Using Software Construction Techniques like Test…
 lightweight_enrichment_status: succeeded

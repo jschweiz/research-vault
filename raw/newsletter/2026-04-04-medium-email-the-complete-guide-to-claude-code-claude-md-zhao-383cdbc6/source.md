@@ -28,18 +28,18 @@ status: active
 asset_paths:
   - original.html
 source_id: medium-email
-source_pipeline_id: medium-email
+source_pipeline_id: null
 external_key: 19d5738504bb7676
 canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5738504bb7676
 doc_role: primary
 parent_id: null
-index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.109257Z
-short_summary: # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances ## Today's highlights ### [The Complete Guide to Claude Code: CLAUDE.md](https://medium.com/@zhaozhiming/the-complete-guide-to-claude-code-claude-md-743d4cbac757) > zhaozhiming in AI Advances · 17 min read · 992 claps · 12 responses A comprehensive guide to the CLAUDE.md file in Claude… ### [Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?](https://medium.com/@preet.balaji20/can-ai-satell
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:40.177234Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 5b6c9cf402fd624d546b62d2d5ca90b3b3d99c0c88989f39659ed1baee21a614
+index_visibility: visible
+fetched_at: 2026-04-08T09:25:33.030549Z
+short_summary: Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances

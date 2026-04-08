@@ -30,13 +30,13 @@ canonical_url: https://www.anthropic.com/research/diff-tool
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:26.277252Z
+fetched_at: 2026-04-08T09:24:35.146640Z
 short_summary: A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.
 lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:05:04.427279Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a906af307ef0230b7e81727b135e1de96703b5e6865fc9322bfd3209c462c660
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: Attempt to overwrite 'operation_run_id' in LogRecord
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.

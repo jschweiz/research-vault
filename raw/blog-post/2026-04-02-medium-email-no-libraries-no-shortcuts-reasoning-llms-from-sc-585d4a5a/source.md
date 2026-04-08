@@ -20,7 +20,7 @@ tags:
   - machine learning
   - deep learning
   - ai
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d4ceb9642a0426::link::https://medium.com/@ashishabraham02/no-lib
 canonical_url: https://medium.com/@ashishabraham02/no-libraries-no-shortcuts-reasoning-models-from-scratch-with-pytorch-part-1-bdc5bcb42042
 doc_role: derived
 parent_id: 2026-04-02-medium-email-nobody-wants-to-learn-ai-alvis-ng-2a719b68
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.672409Z
 short_summary: # No Libraries No Shortcuts: Reasoning LLMs from Scratch with PyTorch — Part 1 Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 4 Canonical URL: https://medium.com/@ashishabraham02/no-libraries-no-shortcuts-reasoning-models-from-scratch-with-pytorch-part-1-bdc5bcb42042 ## Newsletter Context Section: Today's highlights > Ashish Abraham in Towards AI · 26 min read · 321 claps · 2 responses
 lightweight_enrichment_status: succeeded

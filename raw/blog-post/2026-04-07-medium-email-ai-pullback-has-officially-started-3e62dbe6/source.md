@@ -19,7 +19,7 @@ tags:
   - pullback
   - mental reset
   - awareness
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@wlockett/ai-pullback-h
 canonical_url: https://medium.com/@wlockett/ai-pullback-has-officially-started-fb6dfa5e4128
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:28.046691Z
 short_summary: # AI Pullback Has Officially Started Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@wlockett/ai-pullback-has-officially-started-fb6dfa5e4128 ## Newsletter Context Section: Today's highlights > Will Lockett · 6 min read · 8K claps · 291 responses People are beginning to confront the reality of AI…
 lightweight_enrichment_status: succeeded

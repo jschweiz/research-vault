@@ -19,7 +19,7 @@ tags:
   - code
   - architecture
   - data science
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@han.heloir/everyone-an
 canonical_url: https://medium.com/@han.heloir/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.617819Z
 short_summary: # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 lightweight_enrichment_status: succeeded

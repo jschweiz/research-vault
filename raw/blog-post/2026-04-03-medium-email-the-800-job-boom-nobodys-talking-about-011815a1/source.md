@@ -18,7 +18,7 @@ tags:
   - job boom
   - ai
   - economy
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -26,7 +26,7 @@ external_key: 19d5211f632f23f3::link::https://medium.com/@gregdessau/the-800-job
 canonical_url: https://medium.com/@gregdessau/the-800-job-boom-nobodys-talking-about-ddd2597b21aa
 doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:26.992893Z
 short_summary: # The 800% Job Boom Nobody’s Talking About Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 7 Canonical URL: https://medium.com/@gregdessau/the-800-job-boom-nobodys-talking-about-ddd2597b21aa ## Newsletter Context Section: Today's highlights > Greg Dessau in Human Offset · 5 min read · 1.6K claps · 112 responses The bottleneck isn’t building AI anymore. It’s making…
 lightweight_enrichment_status: succeeded

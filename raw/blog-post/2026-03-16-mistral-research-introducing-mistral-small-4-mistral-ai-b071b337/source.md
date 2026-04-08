@@ -28,7 +28,7 @@ canonical_url: https://mistral.ai/news/mistral-small-4
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:33.997257Z
+fetched_at: 2026-04-08T09:24:49.443426Z
 short_summary: Introducing Mistral Small 4 Today, we are announcing Mistral Small 4. This model is the next major release in the Mistral Small family.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:30:13.607631Z

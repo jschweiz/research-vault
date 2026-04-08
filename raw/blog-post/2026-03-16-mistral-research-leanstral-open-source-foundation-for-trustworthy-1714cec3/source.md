@@ -29,7 +29,7 @@ canonical_url: https://mistral.ai/news/leanstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:40:35.551037Z
+fetched_at: 2026-04-08T09:24:51.209822Z
 short_summary: AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T21:30:21.441836Z

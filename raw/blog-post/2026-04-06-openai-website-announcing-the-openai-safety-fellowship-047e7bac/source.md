@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/introducing-openai-safety-fellowship
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:27.943904Z
+fetched_at: 2026-04-08T09:23:38.805355Z
 short_summary: A pilot program to support independent safety and alignment research and develop the next generation of talent
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: 2026-04-07T20:04:53.915662Z

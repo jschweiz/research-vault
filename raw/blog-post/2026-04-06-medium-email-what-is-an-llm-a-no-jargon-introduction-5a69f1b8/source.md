@@ -19,7 +19,7 @@ tags:
   - ai
   - introduction
   - machine learning
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -27,7 +27,7 @@ external_key: 19d618506ae886de::link::https://medium.com/@hamzamlwh/what-is-an-l
 canonical_url: https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduction-adc39a129254
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.707664Z
 short_summary: # What Is an LLM? A No-Jargon Introduction Source newsletter: Everyone Analyzed Claude Code’s Features.
 lightweight_enrichment_status: succeeded

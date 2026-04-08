@@ -20,7 +20,7 @@ tags:
   - structure
   - retrieval
   - coding
-status: active
+status: archived
 asset_paths:
 source_id: medium-email
 source_pipeline_id: medium-email
@@ -28,7 +28,7 @@ external_key: 19d66ab627cf3725::link::https://medium.com/@vivedhaelango/why-your
 canonical_url: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
-index_visibility: visible
+index_visibility: hidden
 fetched_at: 2026-04-08T09:00:27.939093Z
 short_summary: # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything) Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 2 Canonical URL: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0 ## Newsletter Context Section: Today's highlights > Vivedha Elango in L
 lightweight_enrichment_status: succeeded
