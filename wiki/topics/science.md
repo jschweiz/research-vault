@@ -9,7 +9,7 @@ source_refs:
   - 2026-04-07-anthropic-research-introducing-our-science-blog-anthropic-77bcdf2c
 backlinks:
   - page:2026-04-07-anthropic-research-introducing-our-science-blog-anthropic-77bcdf2c
-updated_at: 2026-04-08T07:14:52.326772Z
+updated_at: 2026-04-08T08:37:23.646106Z
 managed: true
 ---
 # Science
@@ -44,7 +44,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Introducing our Science Blog \ Anthropic](../sources/introducing-our-science-blog-anthropic-adf36e.md)
+- [Introducing our Science Blog](../sources/introducing-our-science-blog-adf36e.md)
 
 ## Map Links
 

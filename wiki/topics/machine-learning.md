@@ -27,7 +27,7 @@ backlinks:
   - topic:physics
   - topic:theoretical-physics
   - topic:world-models
-updated_at: 2026-04-08T07:14:52.408759Z
+updated_at: 2026-04-08T08:37:22.019120Z
 managed: true
 ---
 # Machine Learning
@@ -72,7 +72,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Hierarchical Planning with Latent World Models](../sources/hierarchical-planning-with-latent-world-models-47379e.md)
 - [SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization](../sources/skill0-in-context-agentic-reinforcement-learning-for-skill-inter-b7a513.md)
 - [Test-Time Scaling Makes Overtraining Compute-Optimal](../sources/test-time-scaling-makes-overtraining-compute-optimal-7627f8.md)
-- [Vibe physics: The AI grad student \ Anthropic](../sources/vibe-physics-the-ai-grad-student-anthropic-50a654.md)
+- [Vibe physics: The AI grad student](../sources/vibe-physics-the-ai-grad-student-50a654.md)
 
 ## Map Links
 

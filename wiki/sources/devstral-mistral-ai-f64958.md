@@ -11,7 +11,7 @@ backlinks:
   - topic:github-issues
   - topic:llm
   - topic:performance
-updated_at: 2026-04-08T07:14:52.228626Z
+updated_at: 2026-04-08T08:37:21.700708Z
 managed: true
 ---
 # Devstral | Mistral AI
@@ -49,7 +49,7 @@ Today we introduce Devstral, our agentic LLM for software engineering tasks. Dev
 - [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Mistral, Official)
 - [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
 - [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
-- [Project Vend: Phase two \ Anthropic](project-vend-phase-two-anthropic-4913b6.md) (shared topics: Llm, Official)
+- [Project Vend: Phase two](project-vend-phase-two-4913b6.md) (shared topics: Llm, Official)
 - [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
 
 ## Radar

@@ -18,7 +18,7 @@ backlinks:
   - topic:efficiency
   - topic:fine-tuning
   - topic:science
-updated_at: 2026-04-08T07:14:52.197518Z
+updated_at: 2026-04-08T08:37:22.524393Z
 managed: true
 ---
 # Data Curation
@@ -61,7 +61,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Vero: An Open RL Recipe for General Visual Reasoning](../sources/vero-an-open-rl-recipe-for-general-visual-reasoning-a332b2.md)
-- [Introducing our Science Blog \ Anthropic](../sources/introducing-our-science-blog-anthropic-adf36e.md)
+- [Introducing our Science Blog](../sources/introducing-our-science-blog-adf36e.md)
 
 ## Map Links
 

@@ -10,7 +10,7 @@ source_refs:
 backlinks:
   - page:2026-04-07-anthropic-research-vibe-physics-the-ai-grad-student-anthropic-a88ccd9c
   - topic:theoretical-physics
-updated_at: 2026-04-08T07:14:52.368877Z
+updated_at: 2026-04-08T08:37:23.709253Z
 managed: true
 ---
 # Physics
@@ -45,7 +45,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Vibe physics: The AI grad student \ Anthropic](../sources/vibe-physics-the-ai-grad-student-anthropic-50a654.md)
+- [Vibe physics: The AI grad student](../sources/vibe-physics-the-ai-grad-student-50a654.md)
 
 ## Map Links
 

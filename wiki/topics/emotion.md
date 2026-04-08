@@ -12,7 +12,7 @@ backlinks:
   - topic:behavior
   - topic:language-model
   - topic:representation
-updated_at: 2026-04-08T07:14:52.302621Z
+updated_at: 2026-04-08T08:37:23.132619Z
 managed: true
 ---
 # Emotion
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Emotion concepts and their function in a large language model \ Anthropic](../sources/emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md)
+- [Emotion concepts and their function in a large language model](../sources/emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md)
 
 ## Map Links
 

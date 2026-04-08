@@ -27,7 +27,7 @@ backlinks:
   - topic:introspection
   - topic:jax
   - topic:large-language-models
-updated_at: 2026-04-08T07:14:52.274051Z
+updated_at: 2026-04-08T08:37:22.505201Z
 managed: true
 ---
 # Claude
@@ -67,9 +67,9 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖](../sources/apple-egpu-support-inside-ai-lab-finances-claude-code-system-pro-3416ba.md)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
-- [Long-running Claude for scientific computing \ Anthropic](../sources/long-running-claude-for-scientific-computing-anthropic-0fdf5f.md)
-- [Emergent introspective awareness in large language models \ Anthropic](../sources/emergent-introspective-awareness-in-large-language-models-anthro-9268fb.md)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-0fdf5f.md)
+- [Emergent introspective awareness in large language models](../sources/emergent-introspective-awareness-in-large-language-models-9268fb.md)
 
 ## Map Links
 

@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 page_type: source-note
-title: Labor market impacts of AI: A new measure and early evidence \ Anthropic
+title: Labor market impacts of AI: A new measure and early evidence
 aliases:
-  - Labor market impacts of AI: A new measure and early evidence \ Anthropic
+  - Labor market impacts of AI: A new measure and early evidence
 source_refs:
   - 2026-04-07-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 backlinks:
@@ -13,10 +13,10 @@ backlinks:
   - topic:exposure
   - topic:labor-market
   - topic:occupational-change
-updated_at: 2026-04-08T07:14:52.370359Z
+updated_at: 2026-04-08T08:37:25.358926Z
 managed: true
 ---
-# Labor market impacts of AI: A new measure and early evidence \ Anthropic
+# Labor market impacts of AI: A new measure and early evidence
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -47,12 +47,12 @@ Key findings - We introduce a new measure of AI displacement risk, observed expo
 
 ## Related Research
 
-- [Anthropic Economic Index report: Learning curves \ Anthropic](anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md) (shared topics: Anthropic, Labor Market, Official)
-- [Emotion concepts and their function in a large language model \ Anthropic](emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md) (shared topics: Anthropic, Official)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Official)
-- [Vibe physics: The AI grad student \ Anthropic](vibe-physics-the-ai-grad-student-anthropic-50a654.md) (shared topics: Anthropic, Official)
-- [Long-running Claude for scientific computing \ Anthropic](long-running-claude-for-scientific-computing-anthropic-0fdf5f.md) (shared topics: Anthropic, Official)
-- [Introducing our Science Blog \ Anthropic](introducing-our-science-blog-anthropic-adf36e.md) (shared topics: Anthropic, Official)
+- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-e5dad7.md) (shared topics: Anthropic, Labor Market, Official)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Official)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-50a654.md) (shared topics: Anthropic, Official)
+- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-0fdf5f.md) (shared topics: Anthropic, Official)
+- [Introducing our Science Blog](introducing-our-science-blog-adf36e.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

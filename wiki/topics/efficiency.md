@@ -28,7 +28,7 @@ backlinks:
   - topic:information-retrieval
   - topic:reinforcement-learning
   - topic:science
-updated_at: 2026-04-08T07:14:52.231311Z
+updated_at: 2026-04-08T08:37:22.076449Z
 managed: true
 ---
 # Efficiency
@@ -75,7 +75,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [TriAttention: Efficient Long Reasoning with Trigonometric KV Compression](../sources/triattention-efficient-long-reasoning-with-trigonometric-kv-comp-d601e8.md)
 - [LightThinker++: From Reasoning Compression to Memory Management](../sources/lightthinker-from-reasoning-compression-to-memory-management-cb5236.md)
 - [JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency](../sources/joyai-llm-flash-advancing-mid-scale-llms-with-token-efficiency-ea0c5b.md)
-- [Introducing our Science Blog \ Anthropic](../sources/introducing-our-science-blog-anthropic-adf36e.md)
+- [Introducing our Science Blog](../sources/introducing-our-science-blog-adf36e.md)
 
 ## Map Links
 

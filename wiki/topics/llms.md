@@ -15,7 +15,7 @@ backlinks:
   - topic:alignment-faking
   - topic:learning
   - topic:model-training
-updated_at: 2026-04-08T07:14:52.425560Z
+updated_at: 2026-04-08T08:37:22.660856Z
 managed: true
 ---
 # Llms
@@ -55,7 +55,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Nobody Wants to Learn AI | Alvis Ng](../sources/nobody-wants-to-learn-ai-alvis-ng-2087f9.md)
-- [Alignment faking in large language models \ Anthropic](../sources/alignment-faking-in-large-language-models-anthropic-dfde09.md)
+- [Alignment faking in large language models](../sources/alignment-faking-in-large-language-models-dfde09.md)
 
 ## Map Links
 

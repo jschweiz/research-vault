@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-alignment-faking-in-large-language-models-anthro-c2cfd72b
 page_type: source-note
-title: Alignment faking in large language models \ Anthropic
+title: Alignment faking in large language models
 aliases:
-  - Alignment faking in large language models \ Anthropic
+  - Alignment faking in large language models
 source_refs:
   - 2026-04-07-anthropic-research-alignment-faking-in-large-language-models-anthro-c2cfd72b
 backlinks:
@@ -13,10 +13,10 @@ backlinks:
   - topic:llms
   - topic:model-training
   - topic:reinforcement-learning
-updated_at: 2026-04-08T07:14:52.420755Z
+updated_at: 2026-04-08T08:37:25.350082Z
 managed: true
 ---
-# Alignment faking in large language models \ Anthropic
+# Alignment faking in large language models
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -47,9 +47,9 @@ Most of us have encountered situations where someone appears to share our views 
 
 ## Related Research
 
-- [A “diff” tool for AI: Finding behavioral differences in new models \ Anthropic](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models--38aa43.md) (shared topics: Ai Safety, Anthropic)
-- [An update on our model deprecation commitments for Claude Opus 3 \ Anthropic](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md) (shared topics: Ai Safety, Anthropic)
-- [Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic](constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md) (shared topics: Ai Safety, Anthropic)
+- [A “diff” tool for AI: Finding behavioral differences in new models](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-38aa43.md) (shared topics: Ai Safety, Anthropic)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md) (shared topics: Ai Safety, Anthropic)
+- [Constitutional Classifiers: Defending against universal jailbreaks](constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md) (shared topics: Ai Safety, Anthropic)
 - [Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖](anthropic-s-revenue-spike-sam-altman-excludes-cfo-how-meta-build-54c6cb.md) (shared topics: Anthropic)
 - [The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances](the-complete-guide-to-claude-code-claude-md-zhaozhiming-in-ai-ad-b15b8c.md) (shared topics: Reinforcement Learning)
 - [JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency](joyai-llm-flash-advancing-mid-scale-llms-with-token-efficiency-ea0c5b.md) (shared topics: Reinforcement Learning)

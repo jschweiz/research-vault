@@ -21,7 +21,7 @@ backlinks:
   - topic:github-issues
   - topic:performance
   - topic:project-vend
-updated_at: 2026-04-08T07:14:52.430540Z
+updated_at: 2026-04-08T08:37:22.601623Z
 managed: true
 ---
 # Llm
@@ -62,7 +62,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Claude Code is Great | Leo Godin](../sources/claude-code-is-great-leo-godin-5908d1.md)
-- [Project Vend: Phase two \ Anthropic](../sources/project-vend-phase-two-anthropic-4913b6.md)
+- [Project Vend: Phase two](../sources/project-vend-phase-two-4913b6.md)
 - [Devstral | Mistral AI](../sources/devstral-mistral-ai-f64958.md)
 
 ## Map Links

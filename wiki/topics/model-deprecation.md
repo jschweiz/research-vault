@@ -11,7 +11,7 @@ backlinks:
   - page:2026-04-07-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
   - topic:claude-opus-3
   - topic:model-preservation
-updated_at: 2026-04-08T07:14:52.415390Z
+updated_at: 2026-04-08T08:37:24.510157Z
 managed: true
 ---
 # Model Deprecation
@@ -46,7 +46,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [An update on our model deprecation commitments for Claude Opus 3 \ Anthropic](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
+- [An update on our model deprecation commitments for Claude Opus 3](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
 
 ## Map Links
 

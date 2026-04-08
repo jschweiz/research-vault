@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 page_type: source-note
-title: Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic
+title: Constitutional Classifiers: Defending against universal jailbreaks
 aliases:
-  - Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic
+  - Constitutional Classifiers: Defending against universal jailbreaks
 source_refs:
   - 2026-04-07-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 backlinks:
@@ -14,10 +14,10 @@ backlinks:
   - topic:jailbreaks
   - topic:llm-defense
   - topic:safety
-updated_at: 2026-04-08T07:14:52.319351Z
+updated_at: 2026-04-08T08:37:21.713371Z
 managed: true
 ---
-# Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic
+# Constitutional Classifiers: Defending against universal jailbreaks
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -48,9 +48,9 @@ Constitutional Classifiers: Defending against universal jailbreaks A [new paper]
 ## Related Research
 
 - [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Ai Safety, Safety)
-- [A “diff” tool for AI: Finding behavioral differences in new models \ Anthropic](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models--38aa43.md) (shared topics: Ai Safety, Anthropic)
-- [An update on our model deprecation commitments for Claude Opus 3 \ Anthropic](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md) (shared topics: Ai Safety, Anthropic)
-- [Alignment faking in large language models \ Anthropic](alignment-faking-in-large-language-models-anthropic-dfde09.md) (shared topics: Ai Safety, Anthropic)
+- [A “diff” tool for AI: Finding behavioral differences in new models](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-38aa43.md) (shared topics: Ai Safety, Anthropic)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md) (shared topics: Ai Safety, Anthropic)
+- [Alignment faking in large language models](alignment-faking-in-large-language-models-dfde09.md) (shared topics: Ai Safety, Anthropic)
 - [Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖](anthropic-s-revenue-spike-sam-altman-excludes-cfo-how-meta-build-54c6cb.md) (shared topics: Anthropic)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Safety)
 

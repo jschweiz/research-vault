@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 page_type: source-note
-title: An update on our model deprecation commitments for Claude Opus 3 \ Anthropic
+title: An update on our model deprecation commitments for Claude Opus 3
 aliases:
-  - An update on our model deprecation commitments for Claude Opus 3 \ Anthropic
+  - An update on our model deprecation commitments for Claude Opus 3
 source_refs:
   - 2026-04-07-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 backlinks:
@@ -14,10 +14,10 @@ backlinks:
   - topic:claude-opus-3
   - topic:model-deprecation
   - topic:model-preservation
-updated_at: 2026-04-08T07:14:52.392136Z
+updated_at: 2026-04-08T08:37:21.673067Z
 managed: true
 ---
-# An update on our model deprecation commitments for Claude Opus 3 \ Anthropic
+# An update on our model deprecation commitments for Claude Opus 3
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -48,12 +48,12 @@ An update on our model deprecation commitments for Claude Opus 3 As we develop i
 
 ## Related Research
 
-- [Emotion concepts and their function in a large language model \ Anthropic](emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md) (shared topics: Anthropic, Official)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Official)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Official)
 - [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Ai Safety, Official)
 - [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Ai Safety, Official)
-- [Anthropic Economic Index report: Learning curves \ Anthropic](anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md) (shared topics: Anthropic, Official)
-- [Vibe physics: The AI grad student \ Anthropic](vibe-physics-the-ai-grad-student-anthropic-50a654.md) (shared topics: Anthropic, Official)
+- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-e5dad7.md) (shared topics: Anthropic, Official)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-50a654.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

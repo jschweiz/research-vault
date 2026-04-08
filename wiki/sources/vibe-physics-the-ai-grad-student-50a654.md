@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-vibe-physics-the-ai-grad-student-anthropic-a88ccd9c
 page_type: source-note
-title: Vibe physics: The AI grad student \ Anthropic
+title: Vibe physics: The AI grad student
 aliases:
-  - Vibe physics: The AI grad student \ Anthropic
+  - Vibe physics: The AI grad student
 source_refs:
   - 2026-04-07-anthropic-research-vibe-physics-the-ai-grad-student-anthropic-a88ccd9c
 backlinks:
@@ -20,10 +20,10 @@ backlinks:
   - topic:machine-learning
   - topic:physics
   - topic:theoretical-physics
-updated_at: 2026-04-08T07:14:52.361178Z
+updated_at: 2026-04-08T08:37:25.329811Z
 managed: true
 ---
-# Vibe physics: The AI grad student \ Anthropic
+# Vibe physics: The AI grad student
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -54,10 +54,10 @@ Subscribe to Anthropic Science Features on AI-assisted discoveries, practical wo
 
 ## Related Research
 
-- [Introducing our Science Blog \ Anthropic](introducing-our-science-blog-anthropic-adf36e.md) (shared topics: Anthropic, Official, Website)
+- [Introducing our Science Blog](introducing-our-science-blog-adf36e.md) (shared topics: Anthropic, Official, Website)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Website)
 - [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Website)
-- [Emotion concepts and their function in a large language model \ Anthropic](emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md) (shared topics: Anthropic, Official)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md) (shared topics: Anthropic, Official)
 - [Gradient Labs gives every bank customer an AI account manager](gradient-labs-gives-every-bank-customer-an-ai-account-manager-ee52e4.md) (shared topics: Official, Website)
 - [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Website)
 

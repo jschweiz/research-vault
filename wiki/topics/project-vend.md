@@ -11,7 +11,7 @@ backlinks:
   - page:2026-04-07-anthropic-research-project-vend-phase-two-anthropic-6d9cb3ea
   - topic:ai-agents
   - topic:business-simulation
-updated_at: 2026-04-08T07:14:52.295642Z
+updated_at: 2026-04-08T08:37:24.421159Z
 managed: true
 ---
 # Project Vend
@@ -46,7 +46,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Project Vend: Phase two \ Anthropic](../sources/project-vend-phase-two-anthropic-4913b6.md)
+- [Project Vend: Phase two](../sources/project-vend-phase-two-4913b6.md)
 
 ## Map Links
 

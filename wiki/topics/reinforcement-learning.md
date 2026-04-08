@@ -18,7 +18,7 @@ backlinks:
   - page:2026-04-07-anthropic-research-alignment-faking-in-large-language-models-anthro-c2cfd72b
   - topic:alignment-faking
   - topic:model-training
-updated_at: 2026-04-08T07:14:52.293442Z
+updated_at: 2026-04-08T08:37:22.217985Z
 managed: true
 ---
 # Reinforcement Learning
@@ -62,7 +62,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 - [The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances](../sources/the-complete-guide-to-claude-code-claude-md-zhaozhiming-in-ai-ad-b15b8c.md)
 - [JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency](../sources/joyai-llm-flash-advancing-mid-scale-llms-with-token-efficiency-ea0c5b.md)
-- [Alignment faking in large language models \ Anthropic](../sources/alignment-faking-in-large-language-models-anthropic-dfde09.md)
+- [Alignment faking in large language models](../sources/alignment-faking-in-large-language-models-dfde09.md)
 
 ## Map Links
 

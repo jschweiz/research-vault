@@ -12,7 +12,7 @@ backlinks:
   - topic:employment
   - topic:exposure
   - topic:labor-market
-updated_at: 2026-04-08T07:14:52.343656Z
+updated_at: 2026-04-08T08:37:24.446923Z
 managed: true
 ---
 # Occupational Change
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Labor market impacts of AI: A new measure and early evidence \ Anthropic](../sources/labor-market-impacts-of-ai-a-new-measure-and-early-evidence-anth-5344c3.md)
+- [Labor market impacts of AI: A new measure and early evidence](../sources/labor-market-impacts-of-ai-a-new-measure-and-early-evidence-5344c3.md)
 
 ## Map Links
 

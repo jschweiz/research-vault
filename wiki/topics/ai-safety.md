@@ -46,7 +46,7 @@ backlinks:
   - topic:reinforcement-learning
   - topic:safety
   - topic:website
-updated_at: 2026-04-08T07:14:52.380952Z
+updated_at: 2026-04-08T08:37:23.419955Z
 managed: true
 ---
 # Ai Safety
@@ -88,9 +88,9 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Inside our approach to the Model Spec](../sources/inside-our-approach-to-the-model-spec-aad9dd.md)
 - [Helping developers build safer AI experiences for teens](../sources/helping-developers-build-safer-ai-experiences-for-teens-3546fe.md)
 - [How we monitor internal coding agents for misalignment](../sources/how-we-monitor-internal-coding-agents-for-misalignment-26d158.md)
-- [A “diff” tool for AI: Finding behavioral differences in new models \ Anthropic](../sources/a-diff-tool-for-ai-finding-behavioral-differences-in-new-models--38aa43.md)
-- [An update on our model deprecation commitments for Claude Opus 3 \ Anthropic](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
-- [Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
+- [A “diff” tool for AI: Finding behavioral differences in new models](../sources/a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-38aa43.md)
+- [An update on our model deprecation commitments for Claude Opus 3](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
+- [Constitutional Classifiers: Defending against universal jailbreaks](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
 
 ## Map Links
 

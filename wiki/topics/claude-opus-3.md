@@ -12,7 +12,7 @@ backlinks:
   - topic:ai-safety
   - topic:model-deprecation
   - topic:model-preservation
-updated_at: 2026-04-08T07:14:52.389721Z
+updated_at: 2026-04-08T08:37:24.772095Z
 managed: true
 ---
 # Claude Opus 3
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [An update on our model deprecation commitments for Claude Opus 3 \ Anthropic](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
+- [An update on our model deprecation commitments for Claude Opus 3](../sources/an-update-on-our-model-deprecation-commitments-for-claude-opus-3-4bffb3.md)
 
 ## Map Links
 

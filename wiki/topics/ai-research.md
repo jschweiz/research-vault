@@ -12,7 +12,7 @@ backlinks:
   - topic:claude
   - topic:introspection
   - topic:large-language-models
-updated_at: 2026-04-08T07:14:52.269117Z
+updated_at: 2026-04-08T08:37:24.865817Z
 managed: true
 ---
 # Ai Research
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Emergent introspective awareness in large language models \ Anthropic](../sources/emergent-introspective-awareness-in-large-language-models-anthro-9268fb.md)
+- [Emergent introspective awareness in large language models](../sources/emergent-introspective-awareness-in-large-language-models-9268fb.md)
 
 ## Map Links
 

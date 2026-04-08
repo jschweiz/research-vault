@@ -85,7 +85,7 @@ backlinks:
   - topic:science
   - topic:theoretical-physics
   - topic:website
-updated_at: 2026-04-08T07:14:52.167453Z
+updated_at: 2026-04-08T08:37:22.137285Z
 managed: true
 ---
 # Anthropic
@@ -125,11 +125,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖](../sources/anthropic-s-revenue-spike-sam-altman-excludes-cfo-how-meta-build-54c6cb.md)
-- [Emotion concepts and their function in a large language model \ Anthropic](../sources/emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
-- [Anthropic Economic Index report: Learning curves \ Anthropic](../sources/anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md)
-- [Vibe physics: The AI grad student \ Anthropic](../sources/vibe-physics-the-ai-grad-student-anthropic-50a654.md)
-- [Long-running Claude for scientific computing \ Anthropic](../sources/long-running-claude-for-scientific-computing-anthropic-0fdf5f.md)
+- [Emotion concepts and their function in a large language model](../sources/emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
+- [Anthropic Economic Index report: Learning curves](../sources/anthropic-economic-index-report-learning-curves-e5dad7.md)
+- [Vibe physics: The AI grad student](../sources/vibe-physics-the-ai-grad-student-50a654.md)
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-0fdf5f.md)
 
 ## Map Links
 

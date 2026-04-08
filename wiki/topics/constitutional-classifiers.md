@@ -11,7 +11,7 @@ backlinks:
   - page:2026-04-07-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
   - topic:jailbreaks
   - topic:llm-defense
-updated_at: 2026-04-08T07:14:52.228000Z
+updated_at: 2026-04-08T08:37:24.711723Z
 managed: true
 ---
 # Constitutional Classifiers
@@ -46,7 +46,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
+- [Constitutional Classifiers: Defending against universal jailbreaks](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
 
 ## Map Links
 

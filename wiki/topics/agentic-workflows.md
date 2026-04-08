@@ -18,7 +18,7 @@ backlinks:
   - topic:medium
   - topic:memory
   - topic:newsletter
-updated_at: 2026-04-08T07:14:52.405060Z
+updated_at: 2026-04-08T08:37:22.544215Z
 managed: true
 ---
 # Agentic Workflows
@@ -58,7 +58,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Representative Signals
 
 - [Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding](../sources/building-long-term-memory-in-agentic-ai-fareed-khan-in-level-up--04dcc5.md)
-- [Long-running Claude for scientific computing \ Anthropic](../sources/long-running-claude-for-scientific-computing-anthropic-0fdf5f.md)
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-0fdf5f.md)
 
 ## Map Links
 

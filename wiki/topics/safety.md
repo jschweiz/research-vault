@@ -42,7 +42,7 @@ backlinks:
   - topic:teen
   - topic:video-generation
   - topic:website
-updated_at: 2026-04-08T07:14:52.401552Z
+updated_at: 2026-04-08T08:37:22.464301Z
 managed: true
 ---
 # Safety
@@ -90,7 +90,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Helping developers build safer AI experiences for teens](../sources/helping-developers-build-safer-ai-experiences-for-teens-3546fe.md)
 - [Creating with Sora Safely](../sources/creating-with-sora-safely-29e034.md)
 - [OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first](../sources/openai-japan-announces-japan-teen-safety-blueprint-to-put-teen-s-3c55db.md)
-- [Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
+- [Constitutional Classifiers: Defending against universal jailbreaks](../sources/constitutional-classifiers-defending-against-universal-jailbreak-82d86c.md)
 
 ## Map Links
 

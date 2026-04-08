@@ -15,7 +15,7 @@ backlinks:
   - topic:llms
   - topic:model-training
   - topic:reinforcement-learning
-updated_at: 2026-04-08T07:14:52.386355Z
+updated_at: 2026-04-08T08:37:24.852305Z
 managed: true
 ---
 # Alignment Faking
@@ -51,7 +51,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Alignment faking in large language models \ Anthropic](../sources/alignment-faking-in-large-language-models-anthropic-dfde09.md)
+- [Alignment faking in large language models](../sources/alignment-faking-in-large-language-models-dfde09.md)
 
 ## Map Links
 

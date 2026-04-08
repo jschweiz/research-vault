@@ -12,7 +12,7 @@ backlinks:
   - topic:cross-architecture-comparison
   - topic:model-alignment
   - topic:model-diffing
-updated_at: 2026-04-08T07:14:52.206236Z
+updated_at: 2026-04-08T08:37:23.785743Z
 managed: true
 ---
 # Model Auditing
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [A “diff” tool for AI: Finding behavioral differences in new models \ Anthropic](../sources/a-diff-tool-for-ai-finding-behavioral-differences-in-new-models--38aa43.md)
+- [A “diff” tool for AI: Finding behavioral differences in new models](../sources/a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-38aa43.md)
 
 ## Map Links
 

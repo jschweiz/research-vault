@@ -239,7 +239,7 @@ backlinks:
   - topic:vulnerabilities
   - topic:wage-gap
   - topic:website
-updated_at: 2026-04-08T07:14:52.298253Z
+updated_at: 2026-04-08T08:37:21.786798Z
 managed: true
 ---
 # Official
@@ -283,7 +283,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Industrial policy for the Intelligence Age](../sources/industrial-policy-for-the-intelligence-age-045aa4.md)
 - [OpenAI acquires TBPN](../sources/openai-acquires-tbpn-ceb257.md)
 - [Codex now offers more flexible pricing for teams](../sources/codex-now-offers-more-flexible-pricing-for-teams-4821c6.md)
-- [Emotion concepts and their function in a large language model \ Anthropic](../sources/emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md)
+- [Emotion concepts and their function in a large language model](../sources/emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md)
 - [Gradient Labs gives every bank customer an AI account manager](../sources/gradient-labs-gives-every-bank-customer-an-ai-account-manager-ee52e4.md)
 
 ## Map Links

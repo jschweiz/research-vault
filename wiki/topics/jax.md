@@ -10,7 +10,7 @@ source_refs:
 backlinks:
   - page:2026-04-07-anthropic-research-long-running-claude-for-scientific-computing-ant-20a930ae
   - topic:agentic-workflows
-updated_at: 2026-04-08T07:14:52.220200Z
+updated_at: 2026-04-08T08:37:23.882364Z
 managed: true
 ---
 # Jax
@@ -45,7 +45,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Long-running Claude for scientific computing \ Anthropic](../sources/long-running-claude-for-scientific-computing-anthropic-0fdf5f.md)
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-0fdf5f.md)
 
 ## Map Links
 

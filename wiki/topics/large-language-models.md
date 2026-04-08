@@ -11,7 +11,7 @@ backlinks:
   - page:2026-04-07-anthropic-research-emergent-introspective-awareness-in-large-langua-9bf6ddc3
   - topic:ai-research
   - topic:introspection
-updated_at: 2026-04-08T07:14:52.252914Z
+updated_at: 2026-04-08T08:37:24.561743Z
 managed: true
 ---
 # Large Language Models
@@ -46,7 +46,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Emergent introspective awareness in large language models \ Anthropic](../sources/emergent-introspective-awareness-in-large-language-models-anthro-9268fb.md)
+- [Emergent introspective awareness in large language models](../sources/emergent-introspective-awareness-in-large-language-models-9268fb.md)
 
 ## Map Links
 

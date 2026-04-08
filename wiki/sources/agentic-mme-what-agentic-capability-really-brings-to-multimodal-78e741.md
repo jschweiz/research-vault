@@ -15,7 +15,7 @@ backlinks:
   - topic:evaluations
   - topic:multimodal
   - topic:search
-updated_at: 2026-04-08T07:14:52.324644Z
+updated_at: 2026-04-08T08:37:25.343523Z
 managed: true
 ---
 # Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?

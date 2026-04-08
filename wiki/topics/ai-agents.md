@@ -12,7 +12,7 @@ backlinks:
   - topic:business-simulation
   - topic:llm
   - topic:project-vend
-updated_at: 2026-04-08T07:14:52.249232Z
+updated_at: 2026-04-08T08:37:24.902643Z
 managed: true
 ---
 # Ai Agents
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Project Vend: Phase two \ Anthropic](../sources/project-vend-phase-two-anthropic-4913b6.md)
+- [Project Vend: Phase two](../sources/project-vend-phase-two-4913b6.md)
 
 ## Map Links
 

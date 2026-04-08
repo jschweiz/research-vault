@@ -12,7 +12,7 @@ backlinks:
   - topic:ai-adoption
   - topic:claude
   - topic:economic-index
-updated_at: 2026-04-08T07:14:52.357777Z
+updated_at: 2026-04-08T08:37:24.208970Z
 managed: true
 ---
 # Australia
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
 
 ## Map Links
 

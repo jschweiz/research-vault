@@ -16,7 +16,7 @@ backlinks:
   - topic:australia
   - topic:labor-market
   - topic:learning-curves
-updated_at: 2026-04-08T07:14:52.320186Z
+updated_at: 2026-04-08T08:37:23.468094Z
 managed: true
 ---
 # Economic Index
@@ -53,8 +53,8 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
-- [Anthropic Economic Index report: Learning curves \ Anthropic](../sources/anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](../sources/how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md)
+- [Anthropic Economic Index report: Learning curves](../sources/anthropic-economic-index-report-learning-curves-e5dad7.md)
 
 ## Map Links
 

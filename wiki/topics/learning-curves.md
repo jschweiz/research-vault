@@ -12,7 +12,7 @@ backlinks:
   - topic:ai-adoption
   - topic:economic-index
   - topic:labor-market
-updated_at: 2026-04-08T07:14:52.382307Z
+updated_at: 2026-04-08T08:37:23.847323Z
 managed: true
 ---
 # Learning Curves
@@ -47,7 +47,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [Anthropic Economic Index report: Learning curves \ Anthropic](../sources/anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md)
+- [Anthropic Economic Index report: Learning curves](../sources/anthropic-economic-index-report-learning-curves-e5dad7.md)
 
 ## Map Links
 

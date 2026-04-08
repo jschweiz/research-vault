@@ -23,7 +23,7 @@ backlinks:
   - topic:medium
   - topic:memory
   - topic:newsletter
-updated_at: 2026-04-08T07:14:52.372238Z
+updated_at: 2026-04-08T08:37:25.319769Z
 managed: true
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding

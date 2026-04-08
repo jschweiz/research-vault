@@ -12,7 +12,7 @@ backlinks:
   - topic:coding
   - topic:devstral
   - topic:models
-updated_at: 2026-04-08T07:14:52.224057Z
+updated_at: 2026-04-08T08:37:21.694514Z
 managed: true
 ---
 # Upgrading agentic coding capabilities with the new Devstral models | Mistral AI
@@ -49,7 +49,7 @@ Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. Th
 - [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Coding, Devstral, Mistral, Official)
 - [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Agents, Official)
 - [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-07aa9d.md) (shared topics: Mistral, Official)
-- [Long-running Claude for scientific computing \ Anthropic](long-running-claude-for-scientific-computing-anthropic-0fdf5f.md) (shared topics: Agents, Official)
+- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-0fdf5f.md) (shared topics: Agents, Official)
 - [Introducing GPT-5.4 mini and nano](introducing-gpt-5-4-mini-and-nano-2054cd.md) (shared topics: Coding, Official)
 - [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Mistral, Official)
 

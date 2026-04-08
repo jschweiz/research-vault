@@ -1,9 +1,9 @@
 ---
 id: page:2026-04-07-anthropic-research-long-running-claude-for-scientific-computing-ant-20a930ae
 page_type: source-note
-title: Long-running Claude for scientific computing \ Anthropic
+title: Long-running Claude for scientific computing
 aliases:
-  - Long-running Claude for scientific computing \ Anthropic
+  - Long-running Claude for scientific computing
 source_refs:
   - 2026-04-07-anthropic-research-long-running-claude-for-scientific-computing-ant-20a930ae
 backlinks:
@@ -18,10 +18,10 @@ backlinks:
   - topic:anthropic
   - topic:claude
   - topic:jax
-updated_at: 2026-04-08T07:14:52.410222Z
+updated_at: 2026-04-08T08:37:25.342232Z
 managed: true
 ---
-# Long-running Claude for scientific computing \ Anthropic
+# Long-running Claude for scientific computing
 
 System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
 
@@ -52,12 +52,12 @@ Subscribe to Anthropic Science Features on AI-assisted discoveries, practical wo
 
 ## Related Research
 
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Claude, Official)
-- [Emergent introspective awareness in large language models \ Anthropic](emergent-introspective-awareness-in-large-language-models-anthro-9268fb.md) (shared topics: Anthropic, Claude, Official)
-- [Emotion concepts and their function in a large language model \ Anthropic](emotion-concepts-and-their-function-in-a-large-language-model-an-e4fef4.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-0b98d0.md) (shared topics: Anthropic, Claude, Official)
+- [Emergent introspective awareness in large language models](emergent-introspective-awareness-in-large-language-models-9268fb.md) (shared topics: Anthropic, Claude, Official)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-e4fef4.md) (shared topics: Anthropic, Official)
 - [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Agents, Official)
-- [Anthropic Economic Index report: Learning curves \ Anthropic](anthropic-economic-index-report-learning-curves-anthropic-e5dad7.md) (shared topics: Anthropic, Official)
-- [Vibe physics: The AI grad student \ Anthropic](vibe-physics-the-ai-grad-student-anthropic-50a654.md) (shared topics: Anthropic, Official)
+- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-e5dad7.md) (shared topics: Anthropic, Official)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-50a654.md) (shared topics: Anthropic, Official)
 
 ## Radar
 
