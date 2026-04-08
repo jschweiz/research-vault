@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-long-running-claude-for-scientific-computing-ant-20a930ae
 kind: blog-post
-title: Long-running Claude for scientific computing \ Anthropic
+title: Long-running Claude for scientific computing
 source_url: https://www.anthropic.com/research/long-running-Claude
 source_name: Anthropic Research
 authors:
   - Siddharth Mishra-Sharma
 published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:18.030480Z
-content_hash: 9ab6c8dcbea82b79f3ea4b3212bcf364e0e0bc8967b2f0334f8bda1e2012d813
+content_hash: 4a7ec16cfa385ea55334c3efd19ac21d305082c0ffb0f2124115f5e10f4e2e51
 tags:
   - anthropic
   - official

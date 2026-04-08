@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-introducing-our-science-blog-anthropic-77bcdf2c
 kind: blog-post
-title: Introducing our Science Blog \ Anthropic
+title: Introducing our Science Blog
 source_url: https://www.anthropic.com/research/introducing-anthropic-science
 source_name: Anthropic Research
 authors:
   - Anthropic
 published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:16.097467Z
-content_hash: b0706e64f1d4b29511a9d4d32f53b28612bf7bed06703bda1d0f22e5975111cb
+content_hash: 00cd166fc0448c28c5e1ebae5f3fe39d8ff2b0776aee04b16c7a8077a2b8aac2
 tags:
   - anthropic
   - official

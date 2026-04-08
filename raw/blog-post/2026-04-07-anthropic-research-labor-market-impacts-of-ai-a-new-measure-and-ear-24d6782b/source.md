@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 kind: blog-post
-title: Labor market impacts of AI: A new measure and early evidence \ Anthropic
+title: Labor market impacts of AI: A new measure and early evidence
 source_url: https://www.anthropic.com/research/labor-market-impacts
 source_name: Anthropic Research
 authors:
   - Anthropic
 published_at: 2026-03-05T00:00:00Z
 ingested_at: 2026-04-07T19:36:31.659166Z
-content_hash: 8b9dddb7be2139e302e8c0e5d098366606488a84374d48c2b5878212233ff6bd
+content_hash: d117ebb2d53d94451b15f00376aced464064bc2a59d42182965f0640cf2e473d
 tags:
   - anthropic
   - official

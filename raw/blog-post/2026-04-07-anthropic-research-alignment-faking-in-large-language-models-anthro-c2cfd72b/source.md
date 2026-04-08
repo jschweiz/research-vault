@@ -1,7 +1,7 @@
 ---
 id: 2026-04-07-anthropic-research-alignment-faking-in-large-language-models-anthro-c2cfd72b
 kind: blog-post
-title: Alignment faking in large language models \ Anthropic
+title: Alignment faking in large language models
 source_url: https://www.anthropic.com/research/alignment-faking
 source_name: Anthropic Research
 authors:
@@ -9,7 +9,7 @@ authors:
   - Redwood Research
 published_at: 2024-12-18T00:00:00Z
 ingested_at: 2026-04-07T19:35:56.368715Z
-content_hash: 7ebacb86018b96b0765ce87785cc2b008fca4970f5c7852ead6306958fc9bc90
+content_hash: fd5f89d338153164b35578911f3d5a34e87abcad50338e706cc9c5aaa4aa8ab3
 tags:
   - anthropic
   - official

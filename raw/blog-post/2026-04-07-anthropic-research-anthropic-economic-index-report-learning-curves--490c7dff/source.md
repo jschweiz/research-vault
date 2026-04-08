@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-anthropic-economic-index-report-learning-curves--490c7dff
 kind: blog-post
-title: Anthropic Economic Index report: Learning curves \ Anthropic
+title: Anthropic Economic Index report: Learning curves
 source_url: https://www.anthropic.com/research/economic-index-march-2026-report
 source_name: Anthropic Research
 authors:
   - Anthropic
 published_at: 2026-03-24T00:00:00Z
 ingested_at: 2026-04-07T19:36:10.267956Z
-content_hash: 702904ee1bac7bf1dac6855e9e5fa88898d78320a3a9b104bfc7c1941d345ec3
+content_hash: 4ddd37cebd0132fb5d147dad0211afe3891e7ff0624acc1d63113f07b53bd20f
 tags:
   - anthropic
   - official

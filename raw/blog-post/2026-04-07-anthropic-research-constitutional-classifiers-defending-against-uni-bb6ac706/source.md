@@ -1,13 +1,13 @@
 ---
 id: 2026-04-07-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 kind: blog-post
-title: Constitutional Classifiers: Defending against universal jailbreaks \ Anthropic
+title: Constitutional Classifiers: Defending against universal jailbreaks
 source_url: https://www.anthropic.com/research/constitutional-classifiers
 source_name: Anthropic Research
 authors:
 published_at: 2025-02-03T00:00:00Z
 ingested_at: 2026-04-07T19:35:55.034782Z
-content_hash: fb777166be796a5e895f8c470bf8a72cacc90a214aefc74b67f7240bb086e03a
+content_hash: 45071ee0d0923ec29868060dbced5998f23a97429f73c54552a1aabdfca47459
 tags:
   - anthropic
   - official

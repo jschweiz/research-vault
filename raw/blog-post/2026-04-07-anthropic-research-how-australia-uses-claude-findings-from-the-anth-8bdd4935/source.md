@@ -1,7 +1,7 @@
 ---
 id: 2026-04-07-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 kind: blog-post
-title: How Australia Uses Claude: Findings from the Anthropic Economic Index \ Anthropic
+title: How Australia Uses Claude: Findings from the Anthropic Economic Index
 source_url: https://www.anthropic.com/research/how-australia-uses-claude
 source_name: Anthropic Research
 authors:
@@ -13,7 +13,7 @@ authors:
   - Jennifer Marintez
 published_at: 2026-03-31T00:00:00Z
 ingested_at: 2026-04-07T19:36:08.393835Z
-content_hash: db482f0239f838f6d4ca2498fd04e2f5d1ecc2cd17d3ee27a5b7a0197f12e14c
+content_hash: b2f5f24f678b94e15973655531cce957244cae9f1f8a1770ec4ed0e4f87fe54c
 tags:
   - anthropic
   - official

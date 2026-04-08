@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 kind: blog-post
-title: A “diff” tool for AI: Finding behavioral differences in new models \ Anthropic
+title: A “diff” tool for AI: Finding behavioral differences in new models
 source_url: https://www.anthropic.com/research/diff-tool
 source_name: Anthropic Research
 authors:
   - Anthropic Fellows
 published_at: 2026-03-13T00:00:00Z
 ingested_at: 2026-04-07T19:36:26.277249Z
-content_hash: d862a594f8fbe22a999971b4d177d5a457c33062466de26a08786a3c655faf68
+content_hash: a906af307ef0230b7e81727b135e1de96703b5e6865fc9322bfd3209c462c660
 tags:
   - anthropic
   - official

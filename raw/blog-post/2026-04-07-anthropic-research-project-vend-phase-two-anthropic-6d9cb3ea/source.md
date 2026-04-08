@@ -1,7 +1,7 @@
 ---
 id: 2026-04-07-anthropic-research-project-vend-phase-two-anthropic-6d9cb3ea
 kind: blog-post
-title: Project Vend: Phase two \ Anthropic
+title: Project Vend: Phase two
 source_url: https://www.anthropic.com/research/project-vend-2
 source_name: Anthropic Research
 authors:
@@ -9,7 +9,7 @@ authors:
   - Andon Labs
 published_at: 2025-12-18T00:00:00Z
 ingested_at: 2026-04-07T19:35:48.264562Z
-content_hash: 6e570d291540d6e78ba9807dc90f6cb779bb953016ea8970a1c732826cf1ec43
+content_hash: 1cb6971efe3d5a2962c24dc744555a04096d896f53e03b630bab75354f05b231
 tags:
   - anthropic
   - official

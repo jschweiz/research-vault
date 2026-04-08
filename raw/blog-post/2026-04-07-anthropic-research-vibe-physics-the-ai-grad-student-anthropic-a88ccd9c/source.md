@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-vibe-physics-the-ai-grad-student-anthropic-a88ccd9c
 kind: blog-post
-title: Vibe physics: The AI grad student \ Anthropic
+title: Vibe physics: The AI grad student
 source_url: https://www.anthropic.com/research/vibe-physics
 source_name: Anthropic Research
 authors:
   - Matthew Schwartz
 published_at: 2026-03-23T00:00:00Z
 ingested_at: 2026-04-07T19:36:19.760154Z
-content_hash: aae1d2e50e4764c353ee7a52ca037204c5df074636a6810714ee3597154382d7
+content_hash: 60a683a687b634c17b74a347f9a5f83313e14664b11f7f8a73a46057c3849e30
 tags:
   - anthropic
   - official

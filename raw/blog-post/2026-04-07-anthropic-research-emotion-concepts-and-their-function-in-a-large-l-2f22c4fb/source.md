@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 kind: blog-post
-title: Emotion concepts and their function in a large language model \ Anthropic
+title: Emotion concepts and their function in a large language model
 source_url: https://www.anthropic.com/research/emotion-concepts-function
 source_name: Anthropic Research
 authors:
   - Anthropic
 published_at: 2026-04-02T00:00:00Z
 ingested_at: 2026-04-07T19:36:03.353486Z
-content_hash: 1ebc8aaaed576ece11ddea03d3e4f2dd5c14d2b6a47e47373e3b215819b0bae5
+content_hash: 5ae1e2bad81a13e119d91a8f268c38e69b005adffd7de7962b2d31d2182de931
 tags:
   - anthropic
   - official

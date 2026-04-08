@@ -1,14 +1,14 @@
 ---
 id: 2026-04-07-anthropic-research-emergent-introspective-awareness-in-large-langua-9bf6ddc3
 kind: blog-post
-title: Emergent introspective awareness in large language models \ Anthropic
+title: Emergent introspective awareness in large language models
 source_url: https://www.anthropic.com/research/introspection
 source_name: Anthropic Research
 authors:
   - Anthropic
 published_at: 2025-10-29T00:00:00Z
 ingested_at: 2026-04-07T19:35:53.806863Z
-content_hash: 32960844a2e216c328400a16b29e5c2ffdcab82809c4066081a575a802424667
+content_hash: 37dcf373ffc9baea138bbe8d2a761b89576349a3fbae8d04fb224a86c190190d
 tags:
   - anthropic
   - official
