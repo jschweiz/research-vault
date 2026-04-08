@@ -32,11 +32,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:48.264564Z
 short_summary: Subscribe to the Frontier Red Team newsletter Get updates on our latest red-teaming research and findings. In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper.
-lightweight_enrichment_status: succeeded
+lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:06:22.139461Z
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 6e570d291540d6e78ba9807dc90f6cb779bb953016ea8970a1c732826cf1ec43
-lightweight_enrichment_error: null
+lightweight_enrichment_input_hash: 1cb6971efe3d5a2962c24dc744555a04096d896f53e03b630bab75354f05b231
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 Subscribe to the Frontier Red Team newsletter
 Get updates on our latest red-teaming research and findings.

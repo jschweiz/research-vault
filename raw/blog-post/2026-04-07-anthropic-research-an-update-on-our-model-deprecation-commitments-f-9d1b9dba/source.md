@@ -31,11 +31,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:33.599856Z
 short_summary: An update on our model deprecation commitments for Claude Opus 3 As we develop increasingly capable AI models, it’s currently necessary to deprecate and retire our past models due to the cost and complexity of maintaining public access. However, model deprecation carries some downsides.
-lightweight_enrichment_status: succeeded
+lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:05:17.168605Z
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: da40379f5f2ae6ac038f09f3fa8d6eb0a08d5fa698805f6c6d90e1bde884f712
-lightweight_enrichment_error: null
+lightweight_enrichment_input_hash: 2cd3ad95abe948dc209731233fbff95eb2c6e4c9c70da1374dac9642b38a9c2f
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 An update on our model deprecation commitments for Claude Opus 3
 As we develop increasingly capable AI models, it’s currently necessary to deprecate and retire our past models due to the cost and complexity of maintaining public access. However, model deprecation carries some downsides. These include costs to users who value particular models, limitations on research, and potential risks both to AI safety and to the welfare of the models themselves.

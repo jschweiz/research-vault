@@ -32,11 +32,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:03.353488Z
 short_summary: All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake.
-lightweight_enrichment_status: succeeded
+lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:05:44.215334Z
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 1ebc8aaaed576ece11ddea03d3e4f2dd5c14d2b6a47e47373e3b215819b0bae5
-lightweight_enrichment_error: null
+lightweight_enrichment_input_hash: 5ae1e2bad81a13e119d91a8f268c38e69b005adffd7de7962b2d31d2182de931
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.
 In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior. These correspond to specific patterns of artificial “neurons” which activate in situations—and promote behaviors—that the model has learned to associate with the concept of a particular emotion (e.g., “happy” or “afraid”). The patterns themselves are organized in a fashion that echoes human psychology, with more similar emotions corresponding to more similar representations. In contexts where you might expect a certain emotion to arise for a human, the corresponding representations are active. Note that none of this tells us whether language models actually feel anything or have subjective experiences. But our key finding is that these representations are functional, in that they influence the model’s behavior in ways that matter.

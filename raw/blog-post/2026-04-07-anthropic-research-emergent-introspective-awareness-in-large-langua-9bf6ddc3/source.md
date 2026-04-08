@@ -32,11 +32,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:53.806866Z
 short_summary: Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses?
-lightweight_enrichment_status: succeeded
+lightweight_enrichment_status: failed
 lightweight_enriched_at: 2026-04-07T20:05:37.807025Z
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 32960844a2e216c328400a16b29e5c2ffdcab82809c4066081a575a802424667
-lightweight_enrichment_error: null
+lightweight_enrichment_input_hash: 37dcf373ffc9baea138bbe8d2a761b89576349a3fbae8d04fb224a86c190190d
+lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
 ---
 Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses? Models will sometimes answer questions like these, but it’s hard to know what to make of their answers. Can AI systems really introspect—that is, can they consider their own thoughts? Or do they just make up plausible-sounding answers when they’re asked to do so?
 Understanding whether AI systems can truly introspect has important implications for their transparency and reliability. If models can accurately report on their own internal mechanisms, this could help us understand their reasoning and debug behavioral issues. Beyond these immediate practical considerations, probing for high-level cognitive capabilities like introspection can shape our understanding of what these systems are and how they work. Using interpretability techniques, we’ve started to investigate this question scientifically, and found some surprising results.
