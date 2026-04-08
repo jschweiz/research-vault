@@ -37,11 +37,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:08.393837Z
 short_summary: How Australia Uses Claude: Findings from the Anthropic Economic Index Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:05:52.329503Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:07:38.926881Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b2f5f24f678b94e15973655531cce957244cae9f1f8a1770ec4ed0e4f87fe54c
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index
 Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. To mark the occasion, we thought we’d look more closely into how Australians are using Claude.

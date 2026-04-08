@@ -11,11 +11,6 @@ authors:
   - Soham Chitnis
   - Harsh Sutaria
   - Mido Assran
-  - Randall Balestriero
-  - Amir Bar
-  - Adrien Bardes
-  - Yann LeCun
-  - Nicolas Ballas
 published_at: 2026-04-03T17:32:36Z
 ingested_at: 2026-04-07T21:42:53.013251Z
 content_hash: 50b3ec313bf35af62cca58bf5b15e4f21fea55f4151a487c3221a7421513ff6c
@@ -30,9 +25,6 @@ tags:
   - summary
   - hierarchical planning
   - latent world models
-  - Computer Science
-  - cs.LG
-  - transcript
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -54,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:42.405037Z
-short_summary: Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Hierarchical Planning with Latent World Models ## alphaXiv Summary Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:09:52.839193Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 50b3ec313bf35af62cca58bf5b15e4f21fea55f4151a487c3221a7421513ff6c
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Hierarchical Planning with Latent World Models
 

@@ -31,11 +31,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:19.760156Z
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. Can AI do theoretical physics?
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:06:30.444366Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:08:23.681310Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 60a683a687b634c17b74a347f9a5f83313e14664b11f7f8a73a46057c3849e30
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

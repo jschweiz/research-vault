@@ -25,15 +25,6 @@ tags:
   - meta-learning
   - ml-systems
   - optimization-methods
-  - Computer Science
-  - cs.AI
-  - reasoning
-  - tool-use
-  - transformers
-  - github
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -55,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:20.060690Z
-short_summary: Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Meta-Harness: End-to-End Optimization of Model Harnesses ## alphaXiv Summary Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:08:35.416070Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 88621c8a36fcd4d2659974bbfed013b6e265ccbe772e09937e000bd9ec4bd986
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
 

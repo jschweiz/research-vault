@@ -11,17 +11,6 @@ authors:
   - Yihao Yan
   - Yihong Tang
   - Shao Yong Ong
-  - Fenglu Hong
-  - Kaichen Zhou
-  - Chonghe Jiang
-  - Minwei Kong
-  - Jiacheng Zhu
-  - Xuan Jiang
-  - Sirui Li
-  - Cathy Wu
-  - Bryan Kian Hsiang Low
-  - Jinhua Zhao
-  - Paul Pu Liang
 published_at: 2026-04-02T05:59:06Z
 ingested_at: 2026-04-07T21:41:46.384262Z
 content_hash: ed9a00331ef07eca6b8e4b7cb9f380ed13e8c9551dd070bcefba9e9f37142a12
@@ -36,16 +25,6 @@ tags:
   - deep-reinforcement-learning
   - evolutionary-algorithms
   - multi-agent-learning
-  - Computer Science
-  - cs.AI
-  - optimization-methods
-  - reasoning
-  - tool-use
-  - transformers
-  - github
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -67,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:41.561079Z
-short_summary: The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kernel engineering.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery ## alphaXiv Summary The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kerne
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:09:06.684391Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ed9a00331ef07eca6b8e4b7cb9f380ed13e8c9551dd070bcefba9e9f37142a12
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery
 

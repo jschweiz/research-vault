@@ -11,7 +11,6 @@ authors:
   - Ge Zhang
   - Di He
   - Wenhao Huang
-  - Tianle Cai
 published_at: 2026-04-07T17:59:44Z
 ingested_at: 2026-04-08T09:26:55.783108Z
 content_hash: a1914694e73f7fcb0f8d52d465677a642b1b3b9aba9c00cf137395e7c5aed83c
@@ -19,23 +18,13 @@ tags:
   - paper
   - alphaxiv
   - research
-  - Computer Science
+  - computer science
   - continual-learning
-  - cs.AI
-  - cs.CL
-  - cs.LG
+  - cs.ai
+  - cs.cl
+  - cs.lg
   - efficient-transformers
   - fine-tuning
-  - inference-optimization
-  - online-learning
-  - parameter-efficient-training
-  - Statistics
-  - stat.ML
-  - test-time-inference
-  - transformers
-  - github
-  - audio
-  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -54,12 +43,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:55.783115Z
-short_summary: In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # In-Place Test-Time Training ## alphaXiv Summary In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:12:40.866188Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a1914694e73f7fcb0f8d52d465677a642b1b3b9aba9c00cf137395e7c5aed83c
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # In-Place Test-Time Training
 

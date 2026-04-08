@@ -11,8 +11,6 @@ authors:
   - Qihang Yu
   - Wufei Ma
   - Daan de Geus
-  - Gijs Dubbelman
-  - Liang-Chieh Chen
 published_at: 2026-04-06T17:55:05Z
 ingested_at: 2026-04-07T21:43:21.505060Z
 content_hash: 0839181fa6d5e5befbbc209048ac5b0a1e0f1cc57cdf1ad0dfea777b698442ff
@@ -27,14 +25,6 @@ tags:
   - lightweight-models
   - model-compression
   - representation-learning
-  - Computer Science
-  - cs.CV
-  - sequence-modeling
-  - transformers
-  - video-understanding
-  - github
-  - audio
-  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -53,12 +43,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:52.378560Z
-short_summary: Researchers from Amazon and Eindhoven University of Technology developed DeltaWorld, an efficient generative world model that employs 'delta tokens' to encode temporal changes and uses a Best-of-Many training objective. The system generates diverse future predictions with over 35 times fewer parameters and 2,000 times fewer FLOPs than prior generative models, while achieving superior predictive accuracy.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens ## alphaXiv Summary Researchers from Amazon and Eindhoven University of Technology developed DeltaWorld, an efficient generative world model that employs 'delta tokens' to encode temporal changes and uses a Best-of-Many training objective. The system generates diverse future predictions with over 35 times fewer parameters and 2,000 times fewer FLOPs than prior generative models, while achieving superior predictiv
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:10:39.513733Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0839181fa6d5e5befbbc209048ac5b0a1e0f1cc57cdf1ad0dfea777b698442ff
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens
 

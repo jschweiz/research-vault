@@ -30,11 +30,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:16.097471Z
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re launching a new blog about AI and science.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:05:56.082040Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:07:44.367792Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 00cd166fc0448c28c5e1ebae5f3fe39d8ff2b0776aee04b16c7a8077a2b8aac2
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

@@ -11,37 +11,6 @@ authors:
   - Tianyu Fu
   - Cheng Yang
   - Chengming Xu
-  - Yue Ma
-  - Xiaobin Hu
-  - Zhe Cao
-  - Jie Xu
-  - Guibin Zhang
-  - Jiale Tao
-  - Jiayi Zhang
-  - Siyuan Ma
-  - Kaituo Feng
-  - Haojie Huang
-  - Youxing Li
-  - Ronghao Chen
-  - Huacan Wang
-  - Chenglin Wu
-  - Zikun Su
-  - Xiaogang Xu
-  - Kelu Yao
-  - Kun Wang
-  - Chen Gao
-  - Yue Liao
-  - Ruqi Huang
-  - Tao Jin
-  - Cheng Tan
-  - Jiangning Zhang
-  - Wenqi Ren
-  - Yanwei Fu
-  - Yong Liu
-  - Yu Wang
-  - Xiangyu Yue
-  - Yu-Gang Jiang
-  - Shuicheng Yan
 published_at: 2026-04-02T13:36:37Z
 ingested_at: 2026-04-07T21:42:16.356067Z
 content_hash: 7db6863ce7c78f4aece0a14d9e44037a618a88c6ac4d101e9042d22e44ec2139
@@ -56,15 +25,6 @@ tags:
   - optimization-methods
   - reasoning
   - representation-learning
-  - Computer Science
-  - cs.AI
-  - sequence-modeling
-  - text-generation
-  - transformers
-  - github
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -85,12 +45,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:33.862150Z
-short_summary: A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook ## alphaXiv Summary A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:09:40.780777Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7db6863ce7c78f4aece0a14d9e44037a618a88c6ac4d101e9042d22e44ec2139
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
 

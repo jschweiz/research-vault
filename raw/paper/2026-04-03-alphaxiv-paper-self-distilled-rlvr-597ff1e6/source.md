@@ -11,10 +11,6 @@ authors:
   - Minghui Chen
   - Naibin Gu
   - Dingyu Yao
-  - Zheng Lin
-  - Weiping Wang
-  - Jiaqi Wang
-  - Nan Duan
 published_at: 2026-04-03T15:50:07Z
 ingested_at: 2026-04-07T21:41:24.144696Z
 content_hash: ae0405b2edce649c664b9f265f8c23be29d4e870818cedf27e9b7a46e2e83845
@@ -29,15 +25,6 @@ tags:
   - deep-reinforcement-learning
   - fine-tuning
   - knowledge-distillation
-  - Computer Science
-  - cs.CL
-  - cs.LG
-  - optimization-methods
-  - text-generation
-  - transformers
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -59,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:25:51.916625Z
-short_summary: Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and preventing information leakage.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Self-Distilled RLVR ## alphaXiv Summary Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:10:03.176068Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ae0405b2edce649c664b9f265f8c23be29d4e870818cedf27e9b7a46e2e83845
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Self-Distilled RLVR
 

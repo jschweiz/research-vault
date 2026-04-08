@@ -32,11 +32,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:31.659170Z
 short_summary: Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what's feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:06:04.429618Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:07:54.336768Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d117ebb2d53d94451b15f00376aced464064bc2a59d42182965f0640cf2e473d
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 Key findings
 - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily

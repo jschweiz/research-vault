@@ -11,9 +11,6 @@ authors:
   - Zhihang Lin
   - Zhizhong Zhang
   - Xin Tan
-  - Jingyu Gong
-  - Kun Shao
-  - Yuan Xie
 published_at: 2026-04-07T16:26:16Z
 ingested_at: 2026-04-07T21:43:42.636384Z
 content_hash: 621875a5b54d5755a30be4b4be79a082cf34875df824c0cd60ec7066c7704d8f
@@ -28,18 +25,6 @@ tags:
   - cs.ai
   - cs.ma
   - multi-agent-learning
-  - Computer Science
-  - cs.AI
-  - cs.MA
-  - online-learning
-  - reasoning
-  - reinforcement-learning
-  - representation-learning
-  - self-supervised-learning
-  - tool-use
-  - github
-  - audio
-  - summary
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -58,12 +43,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:26.186700Z
-short_summary: The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based methods, also enabling unsupervised self-evolution.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Memory Intelligence Agent ## alphaXiv Summary The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based methods, also enabling unsupervised self-evolution.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:11:01.800951Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 621875a5b54d5755a30be4b4be79a082cf34875df824c0cd60ec7066c7704d8f
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Memory Intelligence Agent
 

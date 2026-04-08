@@ -33,11 +33,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:35:56.368717Z
 short_summary: Most of us have encountered situations where someone appears to share our views or values, but is in fact only pretending to do so—a behavior that we might call “alignment faking”. Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while subverting and undermining him.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:05:11.476986Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:06:37.043654Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fd5f89d338153164b35578911f3d5a34e87abcad50338e706cc9c5aaa4aa8ab3
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 Most of us have encountered situations where someone appears to share our views or values, but is in fact only pretending to do so—a behavior that we might call “alignment faking”. Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while subverting and undermining him. It occurs in real life: Consider a politician who claims to support a particular cause in order to get elected, only to drop it as soon as they’re in office.
 Could AI models also display alignment faking? When models are trained using reinforcement learning, they’re rewarded for outputs that accord with certain pre-determined principles. But what if a model, via its prior training, has principles or preferences that conflict with what’s later rewarded in reinforcement learning? Imagine, for example, a model that learned early in training to adopt a partisan slant, but which is later trained to be politically neutral. In such a situation, a sophisticated enough model might “play along”, pretending to be aligned with the new principles—only later revealing that its original preferences remain.

@@ -11,12 +11,6 @@ authors:
   - Peng Xia
   - Shi Qiu
   - Yiyang Zhou
-  - Jiaqi Liu
-  - Jinlong Li
-  - Bingzhou Li
-  - Zeyu Zheng
-  - Cihang Xie
-  - Huaxiu Yao
 published_at: 2026-04-05T17:55:23Z
 ingested_at: 2026-04-08T09:28:01.511188Z
 content_hash: 3e93896d7c72eb00ccb4f9b32ae348bc563f61befb4edbd82b73ddab7cc0501e
@@ -26,17 +20,11 @@ tags:
   - research
   - agentic-frameworks
   - agents
-  - Computer Science
+  - computer science
   - continual-learning
-  - cs.AI
-  - cs.CL
-  - cs.LG
-  - human-ai-interaction
-  - reasoning
-  - test-time-inference
-  - github
-  - audio
-  - summary
+  - cs.ai
+  - cs.cl
+  - cs.lg
 status: active
 asset_paths:
   - alphaxiv-legacy.json
@@ -55,12 +43,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:01.511194Z
-short_summary: ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments indicate that underlying language model capabilities more significantly impact overall performance (0.154 range) than agent framework design, though sophisticated frameworks like MetaClaw can enhance execution-oriented tasks.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # ClawArena: Benchmarking AI Agents in Evolving Information Environments ## alphaXiv Summary ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments indicate that underlying language model capabilities more significantly impact overall performance (0.154 range) than agent framework design, though sophisticated frameworks like MetaClaw can
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:10:28.058057Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3e93896d7c72eb00ccb4f9b32ae348bc563f61befb4edbd82b73ddab7cc0501e
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # ClawArena: Benchmarking AI Agents in Evolving Information Environments
 

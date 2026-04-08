@@ -19,6 +19,7 @@ tags:
   - learning curves
   - ai adoption
   - labor market
+  - usage diversification
 status: active
 asset_paths:
   - original.html
@@ -31,11 +32,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:10.267958Z
 short_summary: The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:05:24.447162Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:06:59.604184Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4ddd37cebd0132fb5d147dad0211afe3891e7ff0624acc1d63113f07b53bd20f
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
 This latest report studies Claude usage in February 2026, building on the economic primitives framework introduced in our [previous report](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report) (which used data from November 2025). Our sample covers February 5 to February 12, three months following the release of Claude Opus 4.5 and coincident with the release of Claude Opus 4.6.

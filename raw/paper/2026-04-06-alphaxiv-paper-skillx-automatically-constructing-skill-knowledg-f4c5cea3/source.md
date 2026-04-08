@@ -11,11 +11,6 @@ authors:
   - Wuguannan Yao
   - Runnan Fang
   - Shuofei Qiao
-  - Kexin Cao
-  - Guozhou Zheng
-  - Xiang Qi
-  - Peng Zhang
-  - Shumin Deng
 published_at: 2026-04-06T16:09:33Z
 ingested_at: 2026-04-07T21:43:15.155557Z
 content_hash: e04e774b5e9ae63671dec1a2b0acb23bf25ac08548568b0e8cc0de752fd52d34
@@ -30,21 +25,6 @@ tags:
   - cs.cl
   - cs.ir
   - cs.lg
-  - Computer Science
-  - cs.AI
-  - cs.CL
-  - cs.IR
-  - cs.LG
-  - cs.MA
-  - generative-models
-  - online-learning
-  - reinforcement-learning
-  - representation-learning
-  - tool-use
-  - transfer-learning
-  - github
-  - audio
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -64,12 +44,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:27:04.053905Z
-short_summary: SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # SkillX: Automatically Constructing Skill Knowledge Bases for Agents ## alphaXiv Summary SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex ben
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:12:03.880720Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e04e774b5e9ae63671dec1a2b0acb23bf25ac08548568b0e8cc0de752fd52d34
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 

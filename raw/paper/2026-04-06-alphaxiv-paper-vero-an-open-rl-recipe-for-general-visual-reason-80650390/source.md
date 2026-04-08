@@ -25,20 +25,6 @@ tags:
   - cs.cv
   - data-curation
   - fine-tuning
-  - Computer Science
-  - cs.AI
-  - cs.CL
-  - cs.CV
-  - generative-models
-  - multi-modal-learning
-  - reinforcement-learning
-  - transfer-learning
-  - vision-language-models
-  - visual-reasoning
-  - github
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -60,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:17.333701Z
-short_summary: Princeton University researchers introduce Vero, a fully open reinforcement learning recipe and associated VLM family for general visual reasoning, demonstrating state-of-the-art performance among 8B-parameter models on a new 30-benchmark suite. The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sample dataset and task-routed reward functions.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Vero: An Open RL Recipe for General Visual Reasoning ## alphaXiv Summary Princeton University researchers introduce Vero, a fully open reinforcement learning recipe and associated VLM family for general visual reasoning, demonstrating state-of-the-art performance among 8B-parameter models on a new 30-benchmark suite. The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sample dataset and ta
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:12:30.315926Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 79a89c3dbdda88577df5c729b35c446c7f9d951511e0ea18422f794428c51fa9
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Vero: An Open RL Recipe for General Visual Reasoning
 

@@ -31,11 +31,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-07T19:36:18.030482Z
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. In this post, Siddharth Mishra-Sharma, a researcher on the Discovery team, explains how to apply multi-day agentic coding workflows—test oracles, persistent memory, and orchestration patterns—to scientific computing tasks even outside of one’s domain.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: 2026-04-07T20:06:13.160606Z
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:08:03.812056Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4a7ec16cfa385ea55334c3efd19ac21d305082c0ffb0f2124115f5e10f4e2e51
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

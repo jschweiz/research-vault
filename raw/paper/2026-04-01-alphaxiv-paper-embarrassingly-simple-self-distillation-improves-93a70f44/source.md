@@ -25,15 +25,6 @@ tags:
   - instruction-tuning
   - knowledge-distillation
   - model-interpretation
-  - Computer Science
-  - cs.CL
-  - self-supervised-learning
-  - text-generation
-  - transformers
-  - github
-  - audio
-  - transcript
-  - summary
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -55,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:26:25.790314Z
-short_summary: A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # Embarrassingly Simple Self-Distillation Improves Code Generation ## alphaXiv Summary A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:08:52.586446Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6fae824ffae0e94db077bb0a8ae744d7f2de40a561e9c5e8cb942b1609c548f3
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # Embarrassingly Simple Self-Distillation Improves Code Generation
 

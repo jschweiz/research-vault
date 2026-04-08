@@ -11,43 +11,6 @@ authors:
   - Fan Wu
   - Zhiyuan Zhao
   - Tao Chu
-  - Yuan Qu
-  - Zhenjiang Jin
-  - Weijun Zeng
-  - Ziyang Miao
-  - Bangrui Xu
-  - Junbo Niu
-  - Mengzhang Cai
-  - Jiantao Qiu
-  - Qintong Zhang
-  - Dongsheng Ma
-  - Yuefeng Sun
-  - Hejun Dong
-  - Wenzheng Zhang
-  - Jutao Xiao
-  - Jiayong Shi
-  - Pengyu Liao
-  - Xiaomeng Zhao
-  - Huaping Zhong
-  - Liqun Wei
-  - Jing Yu
-  - Jie Yang
-  - Wei Li
-  - Shasha Wang
-  - Qianqian Wu
-  - Xuanhe Zhou
-  - Weijia Li
-  - Zhenxiang Li
-  - Zhongying Tu
-  - Jiang Wu
-  - Lijun Wu
-  - Chao Xu
-  - Kai Chen
-  - Wentao Zhang
-  - Yu Qiao
-  - Bowen Zhou
-  - Dahua Lin
-  - Conghui He
 published_at: 2026-04-06T15:44:18Z
 ingested_at: 2026-04-07T21:42:45.558112Z
 content_hash: 80fdb684c68393c2f126d2f61dd6fee73d538dd45be397c4147219686984d429
@@ -62,11 +25,6 @@ tags:
   - summary
   - document parsing
   - data engineering
-  - Computer Science
-  - cs.CL
-  - cs.CV
-  - github
-  - transcript
 status: active
 asset_paths:
   - alphaxiv-ai-detection.json
@@ -88,12 +46,12 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: 2026-04-08T09:28:10.600654Z
-short_summary: Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining the original 1.2B-parameter architecture.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale ## alphaXiv Summary Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: 2026-04-08T10:11:20.232052Z
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 80fdb684c68393c2f126d2f61dd6fee73d538dd45be397c4147219686984d429
-lightweight_enrichment_error: "Attempt to overwrite 'operation_run_id' in LogRecord"
+lightweight_enrichment_error: null
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
 
