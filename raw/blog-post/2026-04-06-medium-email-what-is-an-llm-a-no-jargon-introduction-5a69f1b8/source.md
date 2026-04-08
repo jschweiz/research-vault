@@ -5,22 +5,22 @@ title: What Is an LLM? A No-Jargon Introduction
 source_url: https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduction-adc39a129254
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Han HELOIR YAN, Ph.D.
-published_at: 2026-04-06T06:40:00Z
-ingested_at: 2026-04-08T09:00:27.707660Z
+- Medium Daily Digest <noreply@medium.com>
+- Han HELOIR YAN, Ph.D.
+published_at: '2026-04-06T06:40:00Z'
+ingested_at: '2026-04-08T09:00:27.707660Z'
 content_hash: a0795ef315bf1a97ff46049451acd3699cad586f0def83378f70e1895b91b647
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - llm
-  - ai
-  - introduction
-  - machine learning
+- newsletter
+- medium
+- email
+- blog-post
+- llm
+- ai
+- introduction
+- machine learning
 status: archived
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d618506ae886de::link::https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduction-adc39a129254
@@ -28,13 +28,27 @@ canonical_url: https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduc
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.707664Z
-short_summary: # What Is an LLM? A No-Jargon Introduction Source newsletter: Everyone Analyzed Claude Code’s Features.
+fetched_at: '2026-04-08T09:00:27.707664Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:02:50.813593Z
+lightweight_enriched_at: '2026-04-08T14:08:53.376987Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a0795ef315bf1a97ff46049451acd3699cad586f0def83378f70e1895b91b647
+lightweight_enrichment_input_hash: 8f1c0b0121db77ed31862e4e580ddc94a7895f5e1d291a25da29716ce3cbfc6d
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d73c75d2c16477392d578b91aa3950ffb7b1bd27fbe3ece05d130a793442710e
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topic of language models with a foundational introduction.
+  evidence_quotes:
+  - What Is an LLM? A No-Jargon Introduction
+  - llm, ai, introduction, machine learning
 ---
 # What Is an LLM? A No-Jargon Introduction
 

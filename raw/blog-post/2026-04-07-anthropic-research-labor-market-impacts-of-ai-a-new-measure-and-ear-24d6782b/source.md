@@ -1,28 +1,28 @@
 ---
 id: 2026-04-07-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 kind: blog-post
-title: Labor market impacts of AI: A new measure and early evidence
+title: 'Labor market impacts of AI: A new measure and early evidence'
 source_url: https://www.anthropic.com/research/labor-market-impacts
 source_name: Anthropic Research
 authors:
-  - Anthropic
-published_at: 2026-03-05T00:00:00Z
-ingested_at: 2026-04-07T19:36:31.659166Z
-content_hash: d117ebb2d53d94451b15f00376aced464064bc2a59d42182965f0640cf2e473d
+- Anthropic
+published_at: '2026-03-05T00:00:00Z'
+ingested_at: '2026-04-07T19:36:31.659166Z'
+content_hash: 190a5b0cdc924b61fc8849634edb64372de66d217797e2ba8e0b07d63760a6fd
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - ai
-  - labor market
-  - exposure
-  - occupational change
-  - employment
+- anthropic
+- official
+- research
+- website
+- blog-post
+- ai
+- labor market
+- exposure
+- occupational change
+- employment
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/labor-market-impacts
@@ -30,13 +30,16 @@ canonical_url: https://www.anthropic.com/research/labor-market-impacts
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:31.659170Z
-short_summary: Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what's feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:07:54.336768Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: d117ebb2d53d94451b15f00376aced464064bc2a59d42182965f0640cf2e473d
+fetched_at: '2026-04-08T15:09:53.443873Z'
+short_summary: 'Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what''s feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to'
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Key findings
 - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily
@@ -149,6 +152,9 @@ See Fujita, et al. (2024).
 Corrections
 Updated Mar 8, 2026: Corrected Figure 7, which incorrectly reversed the labels between top quartile and zero exposure group inflow rates.
 Related content
+Emotion concepts and their function in a large language model
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+[Read more](/research/emotion-concepts-function)
 Anthropic Economic Index report: Learning curves
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 [Read more](/research/economic-index-march-2026-report)

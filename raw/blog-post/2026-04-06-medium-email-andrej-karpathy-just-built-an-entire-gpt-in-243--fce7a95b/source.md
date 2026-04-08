@@ -5,22 +5,22 @@ title: Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 source_url: https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Medium Daily Digest
-published_at: 2026-04-06T06:40:00Z
-ingested_at: 2026-04-08T09:00:27.639024Z
+- Medium Daily Digest <noreply@medium.com>
+- Medium Daily Digest
+published_at: '2026-04-06T06:40:00Z'
+ingested_at: '2026-04-08T09:00:27.639024Z'
 content_hash: 0d48d82f1de195e69e5a3760eb77e0d56f8f3eb2f19858338f2e6a5c2a1aa9b5
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - gpt
-  - python
-  - deep learning
-  - ai
+- newsletter
+- medium
+- email
+- blog-post
+- gpt
+- python
+- deep learning
+- ai
 status: archived
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d618506ae886de::link::https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
@@ -28,13 +28,28 @@ canonical_url: https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.639029Z
-short_summary: # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+fetched_at: '2026-04-08T09:00:27.639029Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:02:35.607015Z
+lightweight_enriched_at: '2026-04-08T14:08:20.406853Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 0d48d82f1de195e69e5a3760eb77e0d56f8f3eb2f19858338f2e6a5c2a1aa9b5
+lightweight_enrichment_input_hash: 5a09cecee40ccd481abed2fd8a2ec76a30e5c119ebf45a7683d25872d988edf6
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 12805097fed4f220b4237191e8966a5e81a01a7dc070d4ca18243de5e96f0d13
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models and research tooling through a highly relevant technical achievement.
+  evidence_quotes:
+  - Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
+  - Just pure Python and basic…
+  - gpt, python, deep learning, ai
 ---
 # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 

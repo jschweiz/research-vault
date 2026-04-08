@@ -5,23 +5,24 @@ title: Introducing Mistral 3 | Mistral AI
 source_url: https://mistral.ai/news/mistral-3
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-12-02T16:00:00Z
-ingested_at: 2026-04-07T21:27:57.937902Z
+- Mistral AI
+published_at: '2025-12-02T16:00:00Z'
+ingested_at: '2026-04-07T21:27:57.937902Z'
 content_hash: bdb9d7a201f2d61c287d7561682dc82bff69fd83e334b663c6d4914354b81c6a
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - model release
-  - multimodal ai
-  - open source
-  - large 3
+- mistral
+- official
+- research
+- website
+- blog-post
+- model release
+- multimodal ai
+- open source
+- large 3
+- ministral 3
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/mistral-3
@@ -29,13 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:58.654342Z
-short_summary: Introducing Mistral 3 The next generation of open multimodal and multilingual AI Today, we announce Mistral 3, the next generation of Mistral models. Mistral 3 includes three state-of-the-art small, dense models (14B, 8B, and 3B) and Mistral Large 3 – our most capable model to date – a sparse mixture-of-experts trained with 41B active and 675B total parameters.
+fetched_at: '2026-04-08T15:10:56.286865Z'
+short_summary: Mistral 3 introduces a family of open, multimodal, and multilingual AI models, including Mistral Large 3 and Ministral 3, emphasizing state-of-the-art performance-to-cost ratio and broad accessibility.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:41.139707Z
+lightweight_enriched_at: '2026-04-08T13:59:13.816418Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: bdb9d7a201f2d61c287d7561682dc82bff69fd83e334b663c6d4914354b81c6a
+lightweight_enrichment_input_hash: 4b4138303621c1d298c0b3fb50e9dc110741bafaa69d541ac66e04548d7959be
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Introducing Mistral 3
 The next generation of

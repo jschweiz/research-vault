@@ -5,24 +5,24 @@ title: Mistral OCR | Mistral AI
 source_url: https://mistral.ai/news/mistral-ocr
 source_name: Mistral Research
 authors:
-  - Mistral Research
-published_at: 2025-03-06T17:00:00Z
-ingested_at: 2026-04-07T21:28:13.568470Z
+- Mistral Research
+published_at: '2025-03-06T17:00:00Z'
+ingested_at: '2026-04-07T21:28:13.568470Z'
 content_hash: a327572daab5b860205705460f169d9fc31e4a047da3f25bbcb5eee5d7e7a54c
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - ocr
-  - api
-  - multimodal
-  - document_understanding
-  - multilingual
+- mistral
+- official
+- research
+- website
+- blog-post
+- ocr
+- api
+- multimodal
+- document_understanding
+- multilingual
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/mistral-ocr
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-ocr
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:15.309555Z
-short_summary: Throughout history, advancements in information abstraction and retrieval have driven human progress. From hieroglyphs to papyri, the printing press to digitization, each leap has made human knowledge more accessible and actionable, fueling further innovation.
+fetched_at: '2026-04-08T15:11:22.087412Z'
+short_summary: Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multilingual capabilities. It is designed to extract content from various document types and offers features like doc-as-prompt and self-hosting options.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:28:52.015354Z
+lightweight_enriched_at: '2026-04-08T13:56:22.369505Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a327572daab5b860205705460f169d9fc31e4a047da3f25bbcb5eee5d7e7a54c
+lightweight_enrichment_input_hash: 9870c0abb7f7a4dd5f7a01d742de7c48764f9cf2528421ec84011e01b96683a5
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Throughout history, advancements in information abstraction and retrieval have driven human progress. From hieroglyphs to papyri, the printing press to digitization, each leap has made human knowledge more accessible and actionable, fueling further innovation.
 Today, we’re at the precipice of the next big leap—to unlock the collective intelligence of all digitized information. Approximately [90%](https://resources.data.gov/glossary/unstructured-data/) of the world’s organizational data is stored as documents, and to harness this potential, we are introducing [Mistral OCR](https://docs.mistral.ai/capabilities/document/).

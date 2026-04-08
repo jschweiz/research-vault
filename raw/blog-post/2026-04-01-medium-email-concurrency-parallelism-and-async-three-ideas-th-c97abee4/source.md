@@ -1,21 +1,21 @@
 ---
 id: 2026-04-01-medium-email-concurrency-parallelism-and-async-three-ideas-th-c97abee4
 kind: blog-post
-title: Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t
+title: 'Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t'
 source_url: https://medium.com/@akovtun/concurrency-parallelism-and-async-three-ideas-that-sound-the-same-but-arent-47312e0be553
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-published_at: 2026-04-01T06:40:00Z
-ingested_at: 2026-04-08T09:00:26.503911Z
+- Medium Daily Digest <noreply@medium.com>
+published_at: '2026-04-01T06:40:00Z'
+ingested_at: '2026-04-08T09:00:26.503911Z'
 content_hash: 176dcd2f3ee6b973043e6d8592950a23fa9550794f4d88ed8aaefd6661b32854
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
+- newsletter
+- medium
+- email
+- blog-post
 status: active
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d47c53cad69e0d::link::https://medium.com/@akovtun/concurrency-parallelism-and-async-three-ideas-that-sound-the-same-but-arent-47312e0be553
@@ -23,13 +23,26 @@ canonical_url: https://medium.com/@akovtun/concurrency-parallelism-and-async-thr
 doc_role: derived
 parent_id: 2026-04-01-medium-email-python-just-killed-the-nested-loop-nightmare-wit-bbccfe88
 index_visibility: visible
-fetched_at: 2026-04-08T09:00:26.503916Z
-short_summary: # Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t Source newsletter: Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.
+fetched_at: '2026-04-08T09:00:26.503916Z'
+short_summary: '# Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t Source newsletter: Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:00:55.315987Z
+lightweight_enriched_at: '2026-04-08T14:03:50.506545Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 176dcd2f3ee6b973043e6d8592950a23fa9550794f4d88ed8aaefd6661b32854
+lightweight_enrichment_input_hash: 6247404b6ca3d52ff7c26e98a603608eeaa772c53fc6488baa309d8ce03a729d
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 23c45b40eda0e10ef52f3c14e85e10be3c0c1a0471ceeb1554f5c8622eec3c4c
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like concurrency and parallelism, making it highly relevant.
+  evidence_quotes:
+  - 'Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t'
 ---
 # Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t
 

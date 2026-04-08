@@ -5,23 +5,24 @@ title: Introducing Mistral OCR 3 | Mistral AI
 source_url: https://mistral.ai/news/mistral-ocr-3
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-12-17T15:00:00Z
-ingested_at: 2026-04-07T21:27:54.177133Z
+- Mistral AI
+published_at: '2025-12-17T15:00:00Z'
+ingested_at: '2026-04-07T21:27:54.177133Z'
 content_hash: 807b0489dfe3dd99b40261579f6b5c253bc37b04a6abdbf22306d6a9aabada50
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - ocr
-  - document processing
-  - ai
-  - document ai
+- mistral
+- official
+- research
+- website
+- blog-post
+- ocr
+- document processing
+- ai
+- document ai
+- handwriting
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/mistral-ocr-3
@@ -29,13 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-ocr-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:55.043938Z
-short_summary: Achieving a new frontier for both accuracy and efficiency in document processing. Tuesday 8:30 pm.
+fetched_at: '2026-04-08T15:10:48.769905Z'
+short_summary: Mistral OCR 3 offers state-of-the-art accuracy for document processing, significantly outperforming previous models by handling complex tables, handwriting, and various document types.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:30:00.468715Z
+lightweight_enriched_at: '2026-04-08T14:00:03.360700Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 807b0489dfe3dd99b40261579f6b5c253bc37b04a6abdbf22306d6a9aabada50
+lightweight_enrichment_input_hash: 3b142ffbe03da087d2548c46981b627ec52845ba2d480441347660b8c7719bbc
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Achieving a new frontier for both accuracy and efficiency in document processing.
 Tuesday 8:30 pm.

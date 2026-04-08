@@ -1,28 +1,28 @@
 ---
 id: 2026-04-07-anthropic-research-anthropic-economic-index-report-learning-curves--490c7dff
 kind: blog-post
-title: Anthropic Economic Index report: Learning curves
+title: 'Anthropic Economic Index report: Learning curves'
 source_url: https://www.anthropic.com/research/economic-index-march-2026-report
 source_name: Anthropic Research
 authors:
-  - Anthropic
-published_at: 2026-03-24T00:00:00Z
-ingested_at: 2026-04-07T19:36:10.267956Z
-content_hash: 4ddd37cebd0132fb5d147dad0211afe3891e7ff0624acc1d63113f07b53bd20f
+- Anthropic
+published_at: '2026-03-24T00:00:00Z'
+ingested_at: '2026-04-07T19:36:10.267956Z'
+content_hash: 2d034aacd16596178b63f98be5357267f94fe796f34f466c1211540af1340db3
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - economic index
-  - learning curves
-  - ai adoption
-  - labor market
-  - usage diversification
+- anthropic
+- official
+- research
+- website
+- blog-post
+- economic index
+- learning curves
+- ai adoption
+- labor market
+- usage diversification
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/economic-index-march-2026-report
@@ -30,13 +30,16 @@ canonical_url: https://www.anthropic.com/research/economic-index-march-2026-repo
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:10.267958Z
+fetched_at: '2026-04-08T15:10:09.949447Z'
 short_summary: The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:06:59.604184Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4ddd37cebd0132fb5d147dad0211afe3891e7ff0624acc1d63113f07b53bd20f
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
 This latest report studies Claude usage in February 2026, building on the economic primitives framework introduced in our [previous report](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report) (which used data from November 2025). Our sample covers February 5 to February 12, three months following the release of Claude Opus 4.5 and coincident with the release of Claude Opus 4.6.
@@ -135,6 +138,9 @@ Footnotes
 - These results are similar however we define high tenure.
 - Our sampling period overlapped with the release of our Super Bowl advertisements, which brought many first-time users.
 Related content
+Emotion concepts and their function in a large language model
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+[Read more](/research/emotion-concepts-function)
 Introducing our Science Blog
 We’re launching a new blog about AI and science. We’ll share research happening at Anthropic and elsewhere, collaborations with external researchers and labs, and discuss practical workflows for scientists using AI in their own work.
 [Read more](/research/introducing-anthropic-science)

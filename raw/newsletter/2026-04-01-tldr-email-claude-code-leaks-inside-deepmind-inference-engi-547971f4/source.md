@@ -5,25 +5,25 @@ title: Claude Code leaks 🤖, inside DeepMind 🧠, inference engineering 🧑�
 source_url: https://mail.google.com/mail/u/0/#inbox/19d48b28837e6816
 source_name: TLDR Email
 authors:
-  - TLDR <dan@tldrnewsletter.com>
-  - Dan Ni
-  - Stephen Flanders
-  - TLDR
-published_at: 2026-04-01T10:59:12Z
-ingested_at: 2026-04-07T19:36:37.927106Z
+- TLDR <dan@tldrnewsletter.com>
+- Dan Ni
+- Stephen Flanders
+- TLDR
+published_at: '2026-04-01T10:59:12Z'
+ingested_at: '2026-04-07T19:36:37.927106Z'
 content_hash: 439cf848170159fc40de55016fdd750c0a05f79c2563ab7f1feedc65bdb5a476
 tags:
-  - newsletter
-  - tldr
-  - email
-  - ai
-  - claude code
-  - inference engineering
-  - deepmind
-  - minimax
+- newsletter
+- tldr
+- email
+- ai
+- claude code
+- inference engineering
+- deepmind
+- minimax
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: tldr-email
 source_pipeline_id: null
 external_key: 19d48b28837e6816
@@ -31,13 +31,28 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d48b28837e6816
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:27.460970Z
+fetched_at: '2026-04-08T09:25:27.460970Z'
 short_summary: TLDR roundup on Claude Code leaks, inside DeepMind, inference engineering ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:39:24.229987Z
+lightweight_enriched_at: '2026-04-08T14:13:36.149262Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
-lightweight_enrichment_input_hash: 439cf848170159fc40de55016fdd750c0a05f79c2563ab7f1feedc65bdb5a476
+lightweight_enrichment_input_hash: c43dc01845932ad173ef4975e40d58d384debf8b5d7bb543be48f019c5aa1875
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 86ae18b57726503f23f420c5dd2a32ae59bd09904b68c394a3ae555122959875
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, inference engineering, and DeepMind, making it highly relevant.
+  evidence_quotes:
+  - TLDR roundup on Claude Code leaks, inside DeepMind, inference engineering ‍.
+  - Inside the Claude Code source
+  - What is inference engineering? Deepdive
 ---
 # Claude Code leaks 🤖, inside DeepMind 🧠, inference engineering 🧑‍💻
 

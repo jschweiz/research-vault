@@ -5,22 +5,22 @@ title: Introducing our Science Blog
 source_url: https://www.anthropic.com/research/introducing-anthropic-science
 source_name: Anthropic Research
 authors:
-  - Anthropic
-published_at: 2026-03-23T00:00:00Z
-ingested_at: 2026-04-07T19:36:16.097467Z
-content_hash: 00cd166fc0448c28c5e1ebae5f3fe39d8ff2b0776aee04b16c7a8077a2b8aac2
+- Anthropic
+published_at: '2026-03-23T00:00:00Z'
+ingested_at: '2026-04-07T19:36:16.097467Z'
+content_hash: c27f015e7d977bb69c2f1deb5d007142b46adc07b491acc6e313eccc2731e0f8
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - ai
-  - science
-  - blog
+- anthropic
+- official
+- research
+- website
+- blog-post
+- ai
+- science
+- blog
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/introducing-anthropic-science
@@ -28,13 +28,16 @@ canonical_url: https://www.anthropic.com/research/introducing-anthropic-science
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:16.097471Z
+fetched_at: '2026-04-08T15:10:14.148793Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re launching a new blog about AI and science.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:07:44.367792Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 00cd166fc0448c28c5e1ebae5f3fe39d8ff2b0776aee04b16c7a8077a2b8aac2
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
@@ -48,5 +51,6 @@ We’re publishing two pieces alongside this introduction: Matthew Schwartz’s 
 Anthropic has several initiatives aimed at accelerating scientific progress. Our [AI for Science](https://www.anthropic.com/news/ai-for-science-program) program provides API credits to researchers working on high-impact projects across biology, physics, chemistry, and other fields. [Claude for Life Sciences](https://www.anthropic.com/news/claude-for-life-sciences) is dedicated to making Claude useful for life sciences researchers and R&D teams, with partnerships across research institutions, pharma, and biotech. We recently shared some early [results of these programs](https://www.anthropic.com/news/accelerating-scientific-research). And we’re a [core partner](https://www.anthropic.com/news/genesis-mission-partnership) in the [Genesis Mission](http://genesis.energy.gov/), a multi-billion-dollar initiative across industry, academia, and government to accelerate American science with AI.
 Beyond these dedicated efforts, researchers across Anthropic are working to improve our models' core scientific capabilities and safely accelerate AI-assisted discovery. Many come from biophysics, chemistry, and neuroscience. We'll be reporting on their work and on efforts elsewhere in the field.
 If you have something you want to see covered here, please reach out to us at scienceblog@anthropic.com.
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

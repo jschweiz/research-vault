@@ -5,27 +5,27 @@ title: Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system p
 source_url: https://mail.google.com/mail/u/0/#inbox/19d627761e563067
 source_name: TLDR Email
 authors:
-  - TLDR <dan@tldrnewsletter.com>
-  - Dan Ni
-  - Stephen Flanders
-  - TLDR
-published_at: 2026-04-06T11:04:43Z
-ingested_at: 2026-04-07T19:36:37.888458Z
+- TLDR <dan@tldrnewsletter.com>
+- Dan Ni
+- Stephen Flanders
+- TLDR
+published_at: '2026-04-06T11:04:43Z'
+ingested_at: '2026-04-07T19:36:37.888458Z'
 content_hash: 4676cfe3d99b0164b1dcbad0a37cb2a2a0eb898a061e067a7812b7d7d845976c
 tags:
-  - newsletter
-  - tldr
-  - email
-  - ai
-  - apple
-  - nvidia
-  - egpu
-  - claude
-  - system prompts
-  - finances
+- newsletter
+- tldr
+- email
+- ai
+- apple
+- nvidia
+- egpu
+- claude
+- system prompts
+- finances
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: tldr-email
 source_pipeline_id: null
 external_key: 19d627761e563067
@@ -33,13 +33,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d627761e563067
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:26.991634Z
+fetched_at: '2026-04-08T15:11:40.433822Z'
 short_summary: TLDR roundup on Apple eGPU support, inside AI lab finances, Claude Code system prompts. Includes 8 editorial stories across 4 sections, plus 5 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:39:24.286241Z
+lightweight_enriched_at: '2026-04-08T14:14:51.319357Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
-lightweight_enrichment_input_hash: 4676cfe3d99b0164b1dcbad0a37cb2a2a0eb898a061e067a7812b7d7d845976c
+lightweight_enrichment_input_hash: bab2e0e7a3fee092069a35267f9862fe98a5daf274360c40de4f20e3c9c9db1e
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖
 

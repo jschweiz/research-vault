@@ -5,28 +5,28 @@ title: Claude Code is Great | Leo Godin
 source_url: https://mail.google.com/mail/u/0/#inbox/19d5211f632f23f3
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Leo Godin
-  - Nikolaus Correll
-  - Alex Punnen
-  - Jeremy Arancio
-  - Ida Silfverskiöld
-published_at: 2026-04-03T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.119112Z
+- Medium Daily Digest <noreply@medium.com>
+- Leo Godin
+- Nikolaus Correll
+- Alex Punnen
+- Jeremy Arancio
+- Ida Silfverskiöld
+published_at: '2026-04-03T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.119112Z'
 content_hash: 6ce196cfe16e1d4009d40069b3e7351f152648565d578cfadf8431888db1573e
 tags:
-  - newsletter
-  - medium
-  - email
-  - ai
-  - coding
-  - data science
-  - llm
-  - agentic ai
-  - vector databases
+- newsletter
+- medium
+- email
+- ai
+- coding
+- data science
+- llm
+- agentic ai
+- vector databases
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d5211f632f23f3
@@ -34,13 +34,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5211f632f23f3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:33.188992Z
+fetched_at: '2026-04-08T15:11:51.852049Z'
 short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.161665Z
+lightweight_enriched_at: '2026-04-08T14:14:05.918339Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: 6ce196cfe16e1d4009d40069b3e7351f152648565d578cfadf8431888db1573e
+lightweight_enrichment_input_hash: cc31c201533224711ebe5c4ae651ca381f4bc99205b6b5bb5dc37988e6927a83
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Claude Code is Great | Leo Godin
 

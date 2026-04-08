@@ -1,43 +1,43 @@
 ---
 id: 2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
 kind: paper
-title: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+title: 'MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale'
 source_url: https://www.alphaxiv.org/abs/2604.04771
 source_name: alphaXiv Papers
 authors:
-  - Bin Wang
-  - Tianyao He
-  - Linke Ouyang
-  - Fan Wu
-  - Zhiyuan Zhao
-  - Tao Chu
-published_at: 2026-04-06T15:44:18Z
-ingested_at: 2026-04-07T21:42:45.558112Z
+- Bin Wang
+- Tianyao He
+- Linke Ouyang
+- Fan Wu
+- Zhiyuan Zhao
+- Tao Chu
+published_at: '2026-04-06T15:44:18Z'
+ingested_at: '2026-04-07T21:42:45.558112Z'
 content_hash: 80fdb684c68393c2f126d2f61dd6fee73d538dd45be397c4147219686984d429
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - computer science
-  - cs.cl
-  - cs.cv
-  - audio
-  - summary
-  - document parsing
-  - data engineering
+- paper
+- alphaxiv
+- research
+- computer science
+- cs.cl
+- cs.cv
+- audio
+- summary
+- document parsing
+- data engineering
 status: active
 asset_paths:
-  - alphaxiv-ai-detection.json
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-ai-detection.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04771
@@ -45,13 +45,28 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04771
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:28:10.600654Z
-short_summary: # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale ## alphaXiv Summary Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t
+fetched_at: '2026-04-08T09:28:10.600654Z'
+short_summary: '# MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale ## alphaXiv Summary Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:11:20.232052Z
+lightweight_enriched_at: '2026-04-08T14:18:31.543247Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 80fdb684c68393c2f126d2f61dd6fee73d538dd45be397c4147219686984d429
+lightweight_enrichment_input_hash: 34b1833f95119162d7df4553b1078478e5baf1c16c0bb28536ccd09404d7ea1a
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 79f88b4b89dc82c7b0cc9466ee48347c4ff3425005972a548f5103f8c9266a28
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, evaluation, and research tooling through a specific framework and benchmark improvement.
+  evidence_quotes:
+  - 'MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale'
+  - This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t
+  - Performance gains in document parsing can be primarily driven by systematic data engineering, even with a fixed model architecture.
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
 

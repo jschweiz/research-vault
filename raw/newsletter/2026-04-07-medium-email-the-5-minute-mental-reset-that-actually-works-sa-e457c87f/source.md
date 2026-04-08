@@ -5,25 +5,25 @@ title: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awa
 source_url: https://mail.google.com/mail/u/0/#inbox/19d66ab627cf3725
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Sam Liberty
-published_at: 2026-04-07T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.047685Z
+- Medium Daily Digest <noreply@medium.com>
+- Sam Liberty
+published_at: '2026-04-07T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.047685Z'
 content_hash: d2cae282454b1feca55c593299075bcafb09d002d85fd10d2d1b5d1a82df5b71
 tags:
-  - newsletter
-  - medium
-  - email
-  - mental reset
-  - awareness
-  - self-improvement
-  - ai
-  - software development
-  - data engineering
-  - windows vs mac vs linux
+- newsletter
+- medium
+- email
+- mental reset
+- awareness
+- self-improvement
+- ai
+- software development
+- data engineering
+- windows vs mac vs linux
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d66ab627cf3725
@@ -31,13 +31,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d66ab627cf3725
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:32.540829Z
+fetched_at: '2026-04-08T15:11:47.246541Z'
 short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.182634Z
+lightweight_enriched_at: '2026-04-08T14:14:59.926076Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: d2cae282454b1feca55c593299075bcafb09d002d85fd10d2d1b5d1a82df5b71
+lightweight_enrichment_input_hash: 3954b15d5c981d9327346ce77cc3c368006c8b8e66f349962a61cb850eb5da0f
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
 

@@ -1,43 +1,57 @@
 ---
 id: 2026-04-02-alphaxiv-paper-skill0-in-context-agentic-reinforcement-learning-9e84a0d6
 kind: paper
-title: SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization
+title: 'SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization'
 source_url: https://www.alphaxiv.org/abs/2604.02268
 source_name: alphaXiv Papers
 authors:
-  - Zhengxi Lu
-  - Zhiyuan Yao
-  - Jinyang Wu
-  - Chengcheng Han
-  - Qi Gu
-  - Xunliang Cai
-published_at: 2026-04-02T17:03:05Z
-ingested_at: 2026-04-07T21:41:39.019232Z
-content_hash: 958846b513262026ffbdbe7312d0d9010f72eee25a81f8a48ca5587d42747e87
+- Zhengxi Lu
+- Zhiyuan Yao
+- Jinyang Wu
+- Chengcheng Han
+- Qi Gu
+- Xunliang Cai
+- Weiming Lu
+- Jun Xiao
+- Yueting Zhuang
+- Yongliang Shen
+published_at: '2026-04-02T17:03:05Z'
+ingested_at: '2026-04-07T21:41:39.019232Z'
+content_hash: b9f729e13a2680c4ab41a7153b54ff30d337febdc333557634d71154af472827
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - agentic-frameworks
-  - agents
-  - computer science
-  - cs.lg
-  - deep-reinforcement-learning
-  - fine-tuning
-  - multi-modal-learning
+- paper
+- alphaxiv
+- research
+- agentic-frameworks
+- agents
+- computer science
+- cs.lg
+- deep-reinforcement-learning
+- fine-tuning
+- multi-modal-learning
+- Computer Science
+- cs.LG
+- tool-use
+- transfer-learning
+- transformers
+- zero-shot-learning
+- github
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
-  - alphaxiv-ai-detection.json
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-ai-detection.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.02268
@@ -45,13 +59,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.02268
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:26:08.802153Z
-short_summary: # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization ## alphaXiv Summary The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context t
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:09:19.955599Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 958846b513262026ffbdbe7312d0d9010f72eee25a81f8a48ca5587d42747e87
+fetched_at: '2026-04-08T15:12:42.803418Z'
+short_summary: The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context token costs by over 5 times compared to skill-augmented methods.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization
 
@@ -108,10 +125,10 @@ The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enab
 
 ## Metrics
 
-- Visits (all): 1635
-- Visits (last 7 days): 1635
-- Total votes: 40
-- Public total votes: 114
+- Visits (all): 1762
+- Visits (last 7 days): 1762
+- Total votes: 43
+- Public total votes: 137
 - X likes: 0
 
 ## Abstract

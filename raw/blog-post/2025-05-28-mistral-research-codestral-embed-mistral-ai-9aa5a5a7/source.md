@@ -5,24 +5,24 @@ title: Codestral Embed | Mistral AI
 source_url: https://mistral.ai/news/codestral-embed
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-05-28T12:00:00Z
-ingested_at: 2026-04-07T21:28:06.624361Z
+- Mistral AI
+published_at: '2025-05-28T12:00:00Z'
+ingested_at: '2026-04-07T21:28:06.624361Z'
 content_hash: 5c318f590210176f18c538a758543d9f854a2b579bd7a901cf75eef5a7bd6f55
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - codestral embed
-  - code embedding
-  - mistral ai
-  - retrieval
-  - semantic search
+- mistral
+- official
+- research
+- website
+- blog-post
+- codestral embed
+- code embedding
+- mistral ai
+- retrieval
+- semantic search
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/codestral-embed
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/codestral-embed
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:07.783594Z
-short_summary: We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
+fetched_at: '2026-04-08T15:11:12.517005Z'
+short_summary: Codestral Embed is a new embedding model specialized for code, designed to excel at retrieval tasks on real-world code data. It supports various use cases like retrieval-augmented generation, semantic code search, and duplicate detection.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:10.302702Z
+lightweight_enriched_at: '2026-04-08T13:57:29.361362Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 5c318f590210176f18c538a758543d9f854a2b579bd7a901cf75eef5a7bd6f55
+lightweight_enrichment_input_hash: a809a8e16025f810fe1ec7192ddfec7f1f13f6e81fc27d304b2a2049752b9722
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
 Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.

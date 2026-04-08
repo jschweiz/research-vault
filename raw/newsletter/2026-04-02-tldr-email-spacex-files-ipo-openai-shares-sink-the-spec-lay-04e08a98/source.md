@@ -5,26 +5,26 @@ title: SpaceX files IPO 💰, OpenAI shares sink 📉, the spec layer 👨‍�
 source_url: https://mail.google.com/mail/u/0/#inbox/19d4ddc63e42649c
 source_name: TLDR Email
 authors:
-  - TLDR <dan@tldrnewsletter.com>
-  - Dan Ni
-  - Stephen Flanders
-published_at: 2026-04-02T11:03:01Z
-ingested_at: 2026-04-07T19:36:37.915298Z
+- TLDR <dan@tldrnewsletter.com>
+- Dan Ni
+- Stephen Flanders
+published_at: '2026-04-02T11:03:01Z'
+ingested_at: '2026-04-07T19:36:37.915298Z'
 content_hash: b14f32f496ababd737e626708847b2b31ecab690c76e5f88d0d4ee651e825cc2
 tags:
-  - newsletter
-  - tldr
-  - email
-  - ai
-  - spacex
-  - openai
-  - ipo
-  - spec layer
-  - agent systems
-  - crypto
+- newsletter
+- tldr
+- email
+- ai
+- spacex
+- openai
+- ipo
+- spec layer
+- agent systems
+- crypto
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: tldr-email
 source_pipeline_id: null
 external_key: 19d4ddc63e42649c
@@ -32,13 +32,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d4ddc63e42649c
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:27.244497Z
+fetched_at: '2026-04-08T15:11:41.661990Z'
 short_summary: TLDR roundup on SpaceX files IPO, OpenAI shares sink, the spec layer ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:39:24.248651Z
+lightweight_enriched_at: '2026-04-08T14:13:56.174837Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
-lightweight_enrichment_input_hash: b14f32f496ababd737e626708847b2b31ecab690c76e5f88d0d4ee651e825cc2
+lightweight_enrichment_input_hash: 6b7c04ee29a72850811b6bf3a02ce1041d46fe4e9afb1e44ad98705868b799e3
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # SpaceX files IPO 💰, OpenAI shares sink 📉, the spec layer 👨‍💻
 

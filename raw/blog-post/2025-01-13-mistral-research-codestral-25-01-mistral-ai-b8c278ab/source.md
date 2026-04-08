@@ -5,24 +5,24 @@ title: Codestral 25.01 | Mistral AI
 source_url: https://mistral.ai/news/codestral-2501
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-01-13T08:00:00Z
-ingested_at: 2026-04-07T21:28:19.330896Z
+- Mistral AI
+published_at: '2025-01-13T08:00:00Z'
+ingested_at: '2026-04-07T21:28:19.330896Z'
 content_hash: 8528cea98c5dc8a0a1744a76ef966b7d5e1df83c2013c3be08abe6e4588cd443
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - codestral
-  - mistral ai
-  - code generation
-  - sota
-  - ai
+- mistral
+- official
+- research
+- website
+- blog-post
+- codestral
+- mistral ai
+- code generation
+- sota
+- ai
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/codestral-2501
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/codestral-2501
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:20.470868Z
-short_summary: Among all the innovations in AI over the past year, code generation has arguably been the most significant. Akin to how the assembly line streamlined manufacturing and the calculator transformed mathematics, coding models represent a significant step change in software development.
+fetched_at: '2026-04-08T15:11:29.939992Z'
+short_summary: Mistral AI released Codestral 25.01, a new coding model that is faster and more efficient than its predecessor, leading in state-of-the-art performance for fill-in-the-middle (FIM) tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:28:35.577390Z
+lightweight_enriched_at: '2026-04-08T13:55:30.007335Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 8528cea98c5dc8a0a1744a76ef966b7d5e1df83c2013c3be08abe6e4588cd443
+lightweight_enrichment_input_hash: 6f5046de7a882139437ed1c4f45c1f3257d5deb1ab664533ffb98129e6c2c6ca
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Among all the innovations in AI over the past year, code generation has arguably been the most significant. Akin to how the assembly line streamlined manufacturing and the calculator transformed mathematics, coding models represent a significant step change in software development.
 Mistral AI has been at the forefront of this change with [Codestral](https://docs.mistral.ai/capabilities/code_generation/), a state of the art (SOTA) coding model released earlier this year. Lightweight, fast, and proficient in over 80 programming languages, Codestral is optimized for low-latency, high-frequency usecases and supports tasks such as fill-in-the-middle (FIM), code correction and test generation. Codestral has been used by thousands of developers as a highly capable coding companion, regularly boosting productivity several times over. And today, Codestral is getting a big upgrade.

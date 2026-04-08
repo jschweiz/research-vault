@@ -5,23 +5,25 @@ title: Upgrading agentic coding capabilities with the new Devstral models | Mist
 source_url: https://mistral.ai/news/devstral-2507
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-07-10T16:00:00Z
-ingested_at: 2026-04-07T21:28:03.306254Z
+- Mistral AI
+- All Hands AI
+published_at: '2025-07-10T16:00:00Z'
+ingested_at: '2026-04-07T21:28:03.306254Z'
 content_hash: c50c785914c7118128af0a1be1e15e5a7aed38ff6611bd09255c82ebb5b17b3c
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - devstral
-  - coding
-  - models
-  - ai
+- mistral
+- official
+- research
+- website
+- blog-post
+- devstral
+- coding
+- models
+- ai
+- open-source
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/devstral-2507
@@ -29,13 +31,16 @@ canonical_url: https://mistral.ai/news/devstral-2507
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:04.320205Z
-short_summary: Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. These models are released under the collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, with a strong emphasis on generalization to different prompts and agentic scaffolds.
+fetched_at: '2026-04-08T15:11:08.196072Z'
+short_summary: Mistral AI and All Hands AI released Devstral Medium and Small models, emphasizing generalization and performance for code agents. Devstral Small 1.1 sets a new state-of-the-art for open models without test-time scaling.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:20.445560Z
+lightweight_enriched_at: '2026-04-08T13:58:08.349912Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: c50c785914c7118128af0a1be1e15e5a7aed38ff6611bd09255c82ebb5b17b3c
+lightweight_enrichment_input_hash: 987c51d8f0e9e72ae8b50fe9fd6646d5632cb0e734e0292f5a6aa657862e951a
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. These models are released under the collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, with a strong emphasis on generalization to different prompts and agentic scaffolds.
 The new Devstral Small 1.1 is released under the Apache 2.0 license, and is state-of-the-art amongst open models for code agents. Devstral Medium is available through our API, and sets a new point on the cost/performance pareto frontier, surpassing Gemini 2.5 Pro and GPT 4.1 for a quarter of the price.

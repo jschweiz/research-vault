@@ -1,42 +1,42 @@
 ---
 id: 2026-04-03-alphaxiv-paper-joyai-llm-flash-advancing-mid-scale-llms-with-to-7299ba1c
 kind: paper
-title: JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency
+title: 'JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency'
 source_url: https://www.alphaxiv.org/abs/2604.03044
 source_name: alphaXiv Papers
 authors:
-  - Aichen Cai
-  - Anmeng Zhang
-  - Anyu Li
-  - Bo Zhang
-  - Bohua Cai
-  - Chang Li
-published_at: 2026-04-03T13:52:38Z
-ingested_at: 2026-04-07T21:43:00.761780Z
+- Aichen Cai
+- Anmeng Zhang
+- Anyu Li
+- Bo Zhang
+- Bohua Cai
+- Chang Li
+published_at: '2026-04-03T13:52:38Z'
+ingested_at: '2026-04-07T21:43:00.761780Z'
 content_hash: ed8fddf5e3a98d74dba05ff796f48bce97436ec60baa949093323c64fb7aaaf5
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - computer science
-  - cs.ai
-  - cs.cl
-  - efficient-transformers
-  - fine-tuning
-  - inference-optimization
-  - lightweight-models
+- paper
+- alphaxiv
+- research
+- computer science
+- cs.ai
+- cs.cl
+- efficient-transformers
+- fine-tuning
+- inference-optimization
+- lightweight-models
 status: active
 asset_paths:
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.03044
@@ -44,13 +44,28 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03044
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:43:00.761787Z
-short_summary: # JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency ## alphaXiv Summary JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational efficiency without compromising performance. The model, leveraging a Mixture-of-Experts design and novel policy optimization, consistently achieves competitive or superior benchmark results with significantly reduced token consumption compared to existin
+fetched_at: '2026-04-07T21:43:00.761787Z'
+short_summary: '# JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency ## alphaXiv Summary JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational efficiency without compromising performance. The model, leveraging a Mixture-of-Experts design and novel policy optimization, consistently achieves competitive or superior benchmark results with significantly reduced token consumption compared to existin'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:45:49.744620Z
+lightweight_enriched_at: '2026-04-08T14:17:10.300518Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ed8fddf5e3a98d74dba05ff796f48bce97436ec60baa949093323c64fb7aaaf5
+lightweight_enrichment_input_hash: ca0c6ab806c1c36141ec09c83644292028802554037acb4bf236f7cc944e3e0e
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b8db87cea0916da09284bf2070d0e24810599c7373ccea501cbc95b8841a72a5
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, evaluation, and efficiency through a novel LLM architecture and training methodology.
+  evidence_quotes:
+  - 'JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational '
+  - Demonstrated competitive or superior performance across various benchmarks, such as 65.6% accuracy on LiveCodeBench v6 while using 85% fewer tokens than GLM-4.7
+  - The FiberPO algorithm achieved stable RL training, reducing mean response length by 42% (from 7,902 to 4,543 tokens) while improving accuracy on AIME 2024.
 ---
 # JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency
 

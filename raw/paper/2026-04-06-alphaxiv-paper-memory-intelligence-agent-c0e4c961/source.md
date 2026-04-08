@@ -5,36 +5,36 @@ title: Memory Intelligence Agent
 source_url: https://www.alphaxiv.org/abs/2604.04503
 source_name: alphaXiv Papers
 authors:
-  - Jingyang Qiao
-  - Weicheng Meng
-  - Yu Cheng
-  - Zhihang Lin
-  - Zhizhong Zhang
-  - Xin Tan
-published_at: 2026-04-07T16:26:16Z
-ingested_at: 2026-04-07T21:43:42.636384Z
+- Jingyang Qiao
+- Weicheng Meng
+- Yu Cheng
+- Zhihang Lin
+- Zhizhong Zhang
+- Xin Tan
+published_at: '2026-04-07T16:26:16Z'
+ingested_at: '2026-04-07T21:43:42.636384Z'
 content_hash: 621875a5b54d5755a30be4b4be79a082cf34875df824c0cd60ec7066c7704d8f
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - agentic-frameworks
-  - agents
-  - computer science
-  - continual-learning
-  - cs.ai
-  - cs.ma
-  - multi-agent-learning
+- paper
+- alphaxiv
+- research
+- agentic-frameworks
+- agents
+- computer science
+- continual-learning
+- cs.ai
+- cs.ma
+- multi-agent-learning
 status: active
 asset_paths:
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04503
@@ -42,13 +42,28 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04503
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:28:26.186700Z
-short_summary: # Memory Intelligence Agent ## alphaXiv Summary The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based methods, also enabling unsupervised self-evolution.
+fetched_at: '2026-04-08T09:28:26.186700Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:11:01.800951Z
+lightweight_enriched_at: '2026-04-08T14:18:20.090612Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 621875a5b54d5755a30be4b4be79a082cf34875df824c0cd60ec7066c7704d8f
+lightweight_enrichment_input_hash: 7c3ddbfb28bbbdf4ec7d2b9f7fcf1a01bd9b97ab67adddc81dc0635ec055bf0b
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: befe1c23ec78a09d7a2d375445a00f1b9d8276102ac0f62659b00419c17c57b0
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, evaluation, and reasoning through the lens of memory intelligence agents and agentic frameworks.
+  evidence_quotes:
+  - The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor arch
+  - MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based meth
+  - MIA introduces a Manager-Planner-Executor architecture that decouples historical memory storage, strategic planning, and dynamic execution.
 ---
 # Memory Intelligence Agent
 

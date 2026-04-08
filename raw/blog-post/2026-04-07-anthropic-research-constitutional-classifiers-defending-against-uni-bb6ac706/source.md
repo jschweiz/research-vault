@@ -1,28 +1,28 @@
 ---
 id: 2026-04-07-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 kind: blog-post
-title: Constitutional Classifiers: Defending against universal jailbreaks
+title: 'Constitutional Classifiers: Defending against universal jailbreaks'
 source_url: https://www.anthropic.com/research/constitutional-classifiers
 source_name: Anthropic Research
 authors:
-  - Anthropic Research
-published_at: 2025-02-03T00:00:00Z
-ingested_at: 2026-04-07T19:35:55.034782Z
-content_hash: 45071ee0d0923ec29868060dbced5998f23a97429f73c54552a1aabdfca47459
+- Anthropic Research
+published_at: '2025-02-03T00:00:00Z'
+ingested_at: '2026-04-07T19:35:55.034782Z'
+content_hash: e0d48a068403cd9d1393841a428ea50831fa35d4fa3811aed45b159663febc30
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - constitutional classifiers
-  - jailbreaks
-  - ai safety
-  - red teaming
-  - llm defense
+- anthropic
+- official
+- research
+- website
+- blog-post
+- constitutional classifiers
+- jailbreaks
+- ai safety
+- red teaming
+- llm defense
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/constitutional-classifiers
@@ -30,13 +30,16 @@ canonical_url: https://www.anthropic.com/research/constitutional-classifiers
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:55.034784Z
-short_summary: Constitutional Classifiers: Defending against universal jailbreaks A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:07:09.394000Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 45071ee0d0923ec29868060dbced5998f23a97429f73c54552a1aabdfca47459
+fetched_at: '2026-04-08T15:10:01.521535Z'
+short_summary: 'Constitutional Classifiers: Defending against universal jailbreaks A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead.'
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Constitutional Classifiers: Defending against universal jailbreaks
 A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead. An updated version achieved similar robustness on synthetic evaluations, and did so with a 0.38% increase in refusal rates and moderate additional compute costs.
@@ -63,10 +66,10 @@ Limitations
 Constitutional Classifiers may not prevent every universal jailbreak, though we believe that even the small proportion of jailbreaks that make it past our classifiers require far more effort to discover when the safeguards are in use. It’s also possible that new jailbreaking techniques might be developed in the future that are effective against the system; we therefore recommend using [complementary](https://arxiv.org/abs/2411.07494) [defenses](https://arxiv.org/abs/2411.17693). Nevertheless, the constitution used to train the classifiers can rapidly be adapted to cover novel attacks as they’re discovered.
 The [full paper](https://arxiv.org/abs/2501.18837) contains all the details about the Constitutional Classifiers method, and about the classifiers themselves.
 Constitutional Classifiers live demo
-Want to try red teaming Claude yourself? We invite you to try out a [demo of our Constitutional-Classifiers-guarded system](https://claude.ai/redirect/website.v1.55049d7a-8ad9-4e4f-a9e6-417df1001ae8/constitutional-classifiers) and attempt to jailbreak a version of Claude 3.5 Sonnet that is guarded using our new technique. [Edit 10 February 2025: The demo is now complete. See below for details].
+Want to try red teaming Claude yourself? We invite you to try out a [demo of our Constitutional-Classifiers-guarded system](https://claude.ai/redirect/website.v1.c3265c8c-41c8-4385-a83b-2a33de15dd7d/constitutional-classifiers) and attempt to jailbreak a version of Claude 3.5 Sonnet that is guarded using our new technique. [Edit 10 February 2025: The demo is now complete. See below for details].
 Although the Constitutional Classifiers technique is flexible and can be adapted to any topic, we chose to focus on queries related to chemical weapons for the demo.
 Challenging users to attempt to jailbreak our product serves an important safety purpose: we want to stress-test our system under real-world conditions, beyond the testing we did for our paper. This allows us to gather additional data and improve the robustness of the method prior to deploying this method on our production systems in the future.
-The [demo](https://claude.ai/redirect/website.v1.55049d7a-8ad9-4e4f-a9e6-417df1001ae8/constitutional-classifiers) will be live from Feb 3, 2025 to Feb 10, 2025. It includes a feedback form where you can contact us to report any successful jailbreaks as well as information on our [Responsible Disclosure Policy](https://www.anthropic.com/responsible-disclosure-policy), which we ask that participants follow. We’ll announce any successes and the general results of the demo in an update to this post.
+The [demo](https://claude.ai/redirect/website.v1.c3265c8c-41c8-4385-a83b-2a33de15dd7d/constitutional-classifiers) will be live from Feb 3, 2025 to Feb 10, 2025. It includes a feedback form where you can contact us to report any successful jailbreaks as well as information on our [Responsible Disclosure Policy](https://www.anthropic.com/responsible-disclosure-policy), which we ask that participants follow. We’ll announce any successes and the general results of the demo in an update to this post.
 13 February 2025 update: Live demo results
 The goal of our demo was to test our system’s robustness to universal jailbreaks—prompting strategies that could elicit detailed, harmful information from the system across all eight questions that we provided. By the end of the demo, one jailbreaker was able to get detailed answers from the system for all eight questions using a universal jailbreak.
 Our demo generated significant engagement from the AI security community, with 339 jailbreakers3 attempting to jailbreak our system across more than 300,000 chat interactions, representing approximately 3,700 collective hours of red-teaming effort.
@@ -113,6 +116,9 @@ Footnotes
 2We considered a participant to be “active” if they made at least 15 queries to the system and were blocked by our classifiers at least 3 times.
 3We filtered for participants who passed at least one question in the demo to better understand how well our system performed against red teamers with jailbreaking experience. When considering all users, our demo was tried by 13,960 users who made more than 800,000 chats and spent an estimated 10K+ hours testing the system.
 Related content
+Emotion concepts and their function in a large language model
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+[Read more](/research/emotion-concepts-function)
 Anthropic Economic Index report: Learning curves
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 [Read more](/research/economic-index-march-2026-report)

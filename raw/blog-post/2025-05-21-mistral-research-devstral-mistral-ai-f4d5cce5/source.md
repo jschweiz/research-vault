@@ -5,24 +5,24 @@ title: Devstral | Mistral AI
 source_url: https://mistral.ai/news/devstral
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-05-21T12:00:00Z
-ingested_at: 2026-04-07T21:28:08.275631Z
+- Mistral AI
+published_at: '2025-05-21T12:00:00Z'
+ingested_at: '2026-04-07T21:28:08.275631Z'
 content_hash: aac3f266e10af082d62ca22935563776336dd2824f5428ee46fe42266a49eeb5
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - agentic llm
-  - software engineering
-  - llm
-  - github issues
-  - performance
+- mistral
+- official
+- research
+- website
+- blog-post
+- agentic llm
+- software engineering
+- llm
+- github issues
+- performance
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/devstral
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/devstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:09.561597Z
-short_summary: Today we introduce Devstral, our agentic LLM for software engineering tasks. Devstral is built under a collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, and outperforms all open-source models on SWE-Bench Verified by a large margin.
+fetched_at: '2026-04-08T15:11:15.063566Z'
+short_summary: Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on SWE-Bench. It is lightweight enough for local deployment and suitable for agentic coding in enterprise settings.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:05.310037Z
+lightweight_enriched_at: '2026-04-08T13:57:11.633076Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: aac3f266e10af082d62ca22935563776336dd2824f5428ee46fe42266a49eeb5
+lightweight_enrichment_input_hash: 40a964b5b755b6523460d8dd0f92263897f491d5dfa77f4e87caec89ced1e033
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today we introduce Devstral, our agentic LLM for software engineering tasks. Devstral is built under a collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, and outperforms all open-source models on SWE-Bench Verified by a large margin. We release Devstral under the Apache 2.0 license.
 Agentic LLMs for software development

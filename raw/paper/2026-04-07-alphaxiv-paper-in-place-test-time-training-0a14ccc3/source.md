@@ -5,36 +5,54 @@ title: In-Place Test-Time Training
 source_url: https://www.alphaxiv.org/abs/2604.06169
 source_name: alphaXiv Papers
 authors:
-  - Guhao Feng
-  - Shengjie Luo
-  - Kai Hua
-  - Ge Zhang
-  - Di He
-  - Wenhao Huang
-published_at: 2026-04-07T17:59:44Z
-ingested_at: 2026-04-08T09:26:55.783108Z
-content_hash: a1914694e73f7fcb0f8d52d465677a642b1b3b9aba9c00cf137395e7c5aed83c
+- Guhao Feng
+- Shengjie Luo
+- Kai Hua
+- Ge Zhang
+- Di He
+- Wenhao Huang
+- Tianle Cai
+published_at: '2026-04-07T17:59:44Z'
+ingested_at: '2026-04-08T09:26:55.783108Z'
+content_hash: cc1ce222725051190d3fe9056ed079e09ba6afa1c93d99b2c0e4a4fad8bf1e40
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - computer science
-  - continual-learning
-  - cs.ai
-  - cs.cl
-  - cs.lg
-  - efficient-transformers
-  - fine-tuning
+- paper
+- alphaxiv
+- research
+- computer science
+- continual-learning
+- cs.ai
+- cs.cl
+- cs.lg
+- efficient-transformers
+- fine-tuning
+- Computer Science
+- cs.AI
+- cs.CL
+- cs.LG
+- inference-optimization
+- online-learning
+- parameter-efficient-training
+- Statistics
+- stat.ML
+- test-time-inference
+- transformers
+- github
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.06169
@@ -42,13 +60,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.06169
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:26:55.783115Z
-short_summary: # In-Place Test-Time Training ## alphaXiv Summary In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:12:40.866188Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a1914694e73f7fcb0f8d52d465677a642b1b3b9aba9c00cf137395e7c5aed83c
+fetched_at: '2026-04-08T15:12:24.050202Z'
+short_summary: In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # In-Place Test-Time Training
 
@@ -105,10 +126,10 @@ In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large l
 
 ## Metrics
 
-- Visits (all): 111
-- Visits (last 7 days): 111
+- Visits (all): 226
+- Visits (last 7 days): 226
 - Total votes: 0
-- Public total votes: 0
+- Public total votes: 15
 - X likes: 0
 
 ## Abstract
@@ -159,6 +180,8 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d6b04-0a6f-7458-8574-e0d84a7b168e/podcast.mp3
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d6b04-0a6f-7458-8574-e0d84a7b168e/transcript.json
+- Transcript lines: 20
+- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
 
 ## Resources
 

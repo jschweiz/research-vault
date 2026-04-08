@@ -1,28 +1,28 @@
 ---
 id: 2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 kind: blog-post
-title: [Deprecated] Pixtral Large | Mistral AI
+title: '[Deprecated] Pixtral Large | Mistral AI'
 source_url: https://mistral.ai/news/pixtral-large
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2024-11-18T08:00:00Z
-ingested_at: 2026-04-07T21:28:20.938246Z
+- Mistral AI
+published_at: '2024-11-18T08:00:00Z'
+ingested_at: '2026-04-07T21:28:20.938246Z'
 content_hash: 9156ec6e005d04903d64b047a1df92bb4940a82acb05fd6c08320a8722222ac7
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - multimodal
-  - model
-  - performance
-  - vision
-  - benchmark
+- mistral
+- official
+- research
+- website
+- blog-post
+- multimodal
+- model
+- performance
+- vision
+- benchmark
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/pixtral-large
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/pixtral-large
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:22.140958Z
-short_summary: Pixtral Large in short: - Frontier-class multimodal performance - State-of-the-art on MathVista, DocVQA, VQAv2 - Extends Mistral Large 2 without compromising text performance - 123B multimodal decoder, 1B parameter vision encoder - 128K context window: fits minimum of 30 high-resolution images - Use: Today we announce Pixtral Large, a 124B open-weights multimodal model built on top of Mistral Large 2. Pixtral Large is the second model in our multimodal family and demonstrates frontier-level imag
+fetched_at: '2026-04-08T15:11:31.922606Z'
+short_summary: Pixtral Large is a 124B open-weights multimodal model built on Mistral Large 2, demonstrating frontier-class image understanding and state-of-the-art performance on multimodal benchmarks. It excels at understanding documents, charts, and natural images while maintaining strong text-only understanding.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:28:28.348053Z
+lightweight_enriched_at: '2026-04-08T13:55:09.020585Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 9156ec6e005d04903d64b047a1df92bb4940a82acb05fd6c08320a8722222ac7
+lightweight_enrichment_input_hash: acb1abc4b6a4e651e07507c4468c8a036b9d10047d0af3a4729a996c20ac265b
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Pixtral Large in short:
 - Frontier-class multimodal performance

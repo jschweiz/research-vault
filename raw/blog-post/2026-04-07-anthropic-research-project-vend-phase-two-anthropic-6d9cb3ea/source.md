@@ -1,29 +1,29 @@
 ---
 id: 2026-04-07-anthropic-research-project-vend-phase-two-anthropic-6d9cb3ea
 kind: blog-post
-title: Project Vend: Phase two
+title: 'Project Vend: Phase two'
 source_url: https://www.anthropic.com/research/project-vend-2
 source_name: Anthropic Research
 authors:
-  - Anthropic
-  - Andon Labs
-published_at: 2025-12-18T00:00:00Z
-ingested_at: 2026-04-07T19:35:48.264562Z
-content_hash: 1cb6971efe3d5a2962c24dc744555a04096d896f53e03b630bab75354f05b231
+- Anthropic
+- Andon Labs
+published_at: '2025-12-18T00:00:00Z'
+ingested_at: '2026-04-07T19:35:48.264562Z'
+content_hash: a078fa0840a9d03c90e01674b886c2dcbd05aa7871c105fed7d5496ef769026d
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - project vend
-  - ai agents
-  - llm
-  - business simulation
-  - andon labs
+- anthropic
+- official
+- research
+- website
+- blog-post
+- project vend
+- ai agents
+- llm
+- business simulation
+- andon labs
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/project-vend-2
@@ -31,13 +31,16 @@ canonical_url: https://www.anthropic.com/research/project-vend-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:48.264564Z
+fetched_at: '2026-04-08T15:09:57.927143Z'
 short_summary: Subscribe to the Frontier Red Team newsletter Get updates on our latest red-teaming research and findings. In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:08:14.282831Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 1cb6971efe3d5a2962c24dc744555a04096d896f53e03b630bab75354f05b231
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to the Frontier Red Team newsletter
 Get updates on our latest red-teaming research and findings.
@@ -123,5 +126,6 @@ We suspect that many of the problems that the models encountered stemmed from th
 It’s very hard to forecast exactly how things will go for AI agents in the real world; simulations (like Andon Labs’ [Vending-Bench](https://andonlabs.com/evals/vending-bench-2) evaluation) only get you so far. That’s in part why we set up Project Vend: it exposed us to the sheer variety of unexpected situations that can arise when an AI model is given autonomy.
 As society begins to plug AI models into more and more important functions, designing guardrails that are general enough to account for these behaviors—but which aren’t so restrictive that they hold back the model’s economic potential—will become one of our industry’s trickiest and most important challenges.
 Project Vend wouldn’t exist without our partners at [Andon Labs](https://andonlabs.com/), who built the hardware and software infrastructure behind the operation and kept our fridges and shelves stocked. We’re also very grateful to Keir Bradwell and Allison Lattanzio for doing the same in their respective offices, and to Amritha Kini and Ryan O’Holleran for some sales advice.
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Get updates on our latest red-teaming research and findings.

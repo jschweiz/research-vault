@@ -5,39 +5,52 @@ title: Self-Distilled RLVR
 source_url: https://www.alphaxiv.org/abs/2604.03128
 source_name: alphaXiv Papers
 authors:
-  - Chenxu Yang
-  - Chuanyu Qin
-  - Qingyi Si
-  - Minghui Chen
-  - Naibin Gu
-  - Dingyu Yao
-published_at: 2026-04-03T15:50:07Z
-ingested_at: 2026-04-07T21:41:24.144696Z
-content_hash: ae0405b2edce649c664b9f265f8c23be29d4e870818cedf27e9b7a46e2e83845
+- Chenxu Yang
+- Chuanyu Qin
+- Qingyi Si
+- Minghui Chen
+- Naibin Gu
+- Dingyu Yao
+- Zheng Lin
+- Weiping Wang
+- Jiaqi Wang
+- Nan Duan
+published_at: '2026-04-03T15:50:07Z'
+ingested_at: '2026-04-07T21:41:24.144696Z'
+content_hash: bd9f558b3df0f061c3d32b83e8b912d5e906024aac37ab8e5caa6a2bcaa6a5e3
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - agents
-  - computer science
-  - cs.cl
-  - cs.lg
-  - deep-reinforcement-learning
-  - fine-tuning
-  - knowledge-distillation
+- paper
+- alphaxiv
+- research
+- agents
+- computer science
+- cs.cl
+- cs.lg
+- deep-reinforcement-learning
+- fine-tuning
+- knowledge-distillation
+- Computer Science
+- cs.CL
+- cs.LG
+- optimization-methods
+- text-generation
+- transformers
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
-  - alphaxiv-ai-detection.json
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-ai-detection.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.03128
@@ -45,13 +58,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03128
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:51.916625Z
-short_summary: # Self-Distilled RLVR ## alphaXiv Summary Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:10:03.176068Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ae0405b2edce649c664b9f265f8c23be29d4e870818cedf27e9b7a46e2e83845
+fetched_at: '2026-04-08T15:12:08.853735Z'
+short_summary: Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and preventing information leakage.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Self-Distilled RLVR
 
@@ -105,10 +121,10 @@ Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fund
 
 ## Metrics
 
-- Visits (all): 1498
-- Visits (last 7 days): 1498
-- Total votes: 33
-- Public total votes: 63
+- Visits (all): 1815
+- Visits (last 7 days): 1815
+- Total votes: 37
+- Public total votes: 95
 - X likes: 0
 
 ## Abstract
@@ -161,15 +177,6 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d6086-b0ee-70bb-9a73-f40ebf136f94/transcript.json
 - Transcript lines: 19
 - Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
-
-## AI Detection
-
-- State: done
-- Prediction: Mixed
-- Headline: Mostly Human, AI Detected
-- Fraction AI: 0.23685598
-- Fraction AI-assisted: 0.026288025
-- Fraction human: 0.736856
 
 ## Similar Papers
 

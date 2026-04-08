@@ -28,11 +28,11 @@
   "image_url": "https://www.alphaxiv.org/image/2604.04921v1.png",
   "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
   "metrics": {
-    "public_total_votes": 16,
-    "total_votes": 4,
+    "public_total_votes": 31,
+    "total_votes": 6,
     "visits_count": {
-      "all": 279,
-      "last_7_days": 279
+      "all": 353,
+      "last_7_days": 353
     },
     "x_likes": 0
   },

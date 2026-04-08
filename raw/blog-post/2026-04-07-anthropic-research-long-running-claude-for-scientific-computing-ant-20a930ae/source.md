@@ -5,23 +5,23 @@ title: Long-running Claude for scientific computing
 source_url: https://www.anthropic.com/research/long-running-Claude
 source_name: Anthropic Research
 authors:
-  - Siddharth Mishra-Sharma
-published_at: 2026-03-23T00:00:00Z
-ingested_at: 2026-04-07T19:36:18.030480Z
-content_hash: 4a7ec16cfa385ea55334c3efd19ac21d305082c0ffb0f2124115f5e10f4e2e51
+- Siddharth Mishra-Sharma
+published_at: '2026-03-23T00:00:00Z'
+ingested_at: '2026-04-07T19:36:18.030480Z'
+content_hash: d7ee7d961626a52b42c68c36f58a96644520e38fb8dd9c6c3b6fc6159e5f5269
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - scientific computing
-  - agentic workflows
-  - claude
-  - jax
+- anthropic
+- official
+- research
+- website
+- blog-post
+- scientific computing
+- agentic workflows
+- claude
+- jax
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/long-running-Claude
@@ -29,13 +29,16 @@ canonical_url: https://www.anthropic.com/research/long-running-Claude
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:18.030482Z
+fetched_at: '2026-04-08T15:10:18.398212Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. In this post, Siddharth Mishra-Sharma, a researcher on the Discovery team, explains how to apply multi-day agentic coding workflows—test oracles, persistent memory, and orchestration patterns—to scientific computing tasks even outside of one’s domain.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:08:03.812056Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4a7ec16cfa385ea55334c3efd19ac21d305082c0ffb0f2124115f5e10f4e2e51
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
@@ -80,5 +83,6 @@ A side effect of the project was that I learned a surprising amount about Boltzm
 While the resulting solver is not production-grade (e.g., it doesn’t match the reference CLASS implementation to an acceptable accuracy in every regime), it demonstrates that agent-driven development can compress months or even years of researcher work into days.
 This kind of compression changes what counts as idle time. A universal experience in AI research is to launch an experiment (e.g., a training run) overnight and then have the satisfaction of seeing the results in the morning. Not running the experiment comes with an opportunity cost. These days, not running agents feels like it has a cost as well. If you have the compute and projects with well-defined success criteria, every night you don't have agents working for you is potential progress left on the table.
 We thank Eric Kauderer-Abrams for peer-review, as well as Xander Balwit, Ethan Dyer, and Rebecca Hiscott for providing helpful feedback.
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

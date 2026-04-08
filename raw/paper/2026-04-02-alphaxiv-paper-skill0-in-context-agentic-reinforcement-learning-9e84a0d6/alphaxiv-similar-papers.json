@@ -104,8 +104,8 @@
     "id": "019c45dc-fb22-7ae3-9f0c-a01b9e822ee0",
     "image_url": "image/2602.08234v1.png",
     "metrics": {
-      "public_total_votes": 403,
-      "total_votes": 162,
+      "public_total_votes": 405,
+      "total_votes": 164,
       "visits_count": {
         "all": 9163,
         "last_7_days": 441
@@ -298,8 +298,8 @@
     "id": "019d0919-2353-7f1d-8caf-89570bdb7990",
     "image_url": "image/2603.18743v1.png",
     "metrics": {
-      "public_total_votes": 229,
-      "total_votes": 69,
+      "public_total_votes": 231,
+      "total_votes": 71,
       "visits_count": {
         "all": 3785,
         "last_7_days": 531
@@ -670,8 +670,8 @@
     "id": "019c6452-3d34-7749-a665-6be2290343c8",
     "image_url": "image/2602.12670v3.png",
     "metrics": {
-      "public_total_votes": 195,
-      "total_votes": 85,
+      "public_total_votes": 196,
+      "total_votes": 86,
       "visits_count": {
         "all": 3819,
         "last_7_days": 264
@@ -2132,6 +2132,163 @@
     "version_id": "019cf935-3593-7b9c-9732-574cd29ef7fc"
   },
   {
+    "abstract": "Anthropic proposes the concept of skills for LLM agents to tackle multi-step professional tasks that simple tool invocations cannot address. A tool is a single, self-contained function, whereas a skill is a structured bundle of interdependent multi-file artifacts. Currently, skill generation is not only label-intensive due to manual authoring, but also may suffer from human--machine cognitive misalignment, which can lead to degraded agent performance, as evidenced by evaluations on SkillsBench. Therefore, we aim to enable agents to autonomously generate skills. However, existing self-evolving methods designed for tools cannot be directly applied to skills due to their increased complexity. To address these issues, we propose EvoSkills, a self-evolving skills framework that enables agents to autonomously construct complex, multi-file skill packages. Specifically, EvoSkills couples a Skill Generator that iteratively refines skills with a Surrogate Verifier that co-evolves to provide informative and actionable feedback without access to ground-truth test content. On SkillsBench, EvoSkills achieves the highest pass rate among five baselines on both Claude Code and Codex, and also exhibits strong generalization capabilities to six additional LLMs.",
+    "author_info": [],
+    "authors": [
+      "Hanrong Zhang",
+      "Shicheng Fan",
+      "Henry Peng Zou",
+      "Yankai Chen",
+      "Zhenting Wang",
+      "Jiayu Zhou",
+      "Chengze Li",
+      "Wei-Chieh Huang",
+      "Yifei Yao",
+      "Kening Zheng",
+      "Xue Liu",
+      "Xiaoxiao Li",
+      "Philip S. Yu"
+    ],
+    "canonical_id": "2604.01687v1",
+    "first_publication_date": "2026-04-02T06:43:20.000Z",
+    "full_authors": [
+      {
+        "full_name": "Hanrong Zhang",
+        "id": "01985c82-7471-7436-be16-b008de2ab9aa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shicheng Fan",
+        "id": "019c0cf6-1f4a-7652-bc12-087b39fe8375",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Henry Peng Zou",
+        "id": "01985c81-e41b-7667-8e1e-0a8ebb93d4fb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yankai Chen",
+        "id": "01985c82-7805-792f-a437-b67006d1269a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenting Wang",
+        "id": "01985c81-dc26-7d95-a0e4-57443182b1e9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiayu Zhou",
+        "id": "01985c82-1c7b-75a6-966f-0bcf69ace0c0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chengze Li",
+        "id": "01985c82-9b66-7b2d-93cd-c31a128c73d8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei-Chieh Huang",
+        "id": "01985c83-76c6-75f6-9c39-683d224bb92f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yifei Yao",
+        "id": "01985c82-7471-7cfa-8192-d7f1ba5ece21",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kening Zheng",
+        "id": "01985c82-8a62-7bb4-a274-77b719a6226c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xue Liu",
+        "id": "01985c82-0381-7e74-bf1c-4fd3a6de78bd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaoxiao Li",
+        "id": "01985c81-e0ec-7e9e-834c-f7ec30f6d001",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Philip S. Yu",
+        "id": "01985c81-d97f-756f-9960-c23741aeb025",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019d5133-23a8-7777-89af-96ec890f30cb",
+    "image_url": "image/2604.01687v1.png",
+    "metrics": {
+      "public_total_votes": 38,
+      "total_votes": 7,
+      "visits_count": {
+        "all": 304,
+        "last_7_days": 304
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d5133-23a8-7777-89af-96ec890f30cb",
+    "paper_summary": {
+      "keyInsights": [
+        "LLM agents can autonomously generate more effective and reliable skills than human experts, as these self-evolved skills better align with the agent's intrinsic reasoning and execution patterns.",
+        "A co-evolutionary framework, especially with an information-isolated surrogate verifier, provides crucial, actionable feedback for skill refinement without requiring direct ground-truth supervision.",
+        "Self-evolved skills demonstrate strong cross-model transferability, suggesting they encode reusable task structures rather than model-specific artifacts, making them broadly portable."
+      ],
+      "originalProblem": [
+        "Manual human authoring of 'agent skills' is labor-intensive, difficult to scale, and often leads to inconsistent performance due to 'human-machine cognitive misalignment'.",
+        "Existing self-evolving methods for LLM agents focus primarily on atomic tools or function APIs, lacking the capability to generate and refine complex, structured, multi-file skill packages.",
+        "Many self-evolution approaches require ground-truth supervision for failure diagnosis, limiting their applicability in real-world scenarios where such detailed feedback is unavailable."
+      ],
+      "results": [
+        "EvoSkills achieved a 71.1% pass rate on SkillsBench with Claude Opus 4.6, outperforming the no-skill baseline (30.6%) by +40.5 percentage points and human-curated skills (53.5%) by +17.6 percentage points.",
+        "Ablation studies confirmed that removing the surrogate verifier led to a substantial drop in pass rate by -30.0 percentage points, highlighting its critical role in targeted repairs.",
+        "Skills evolved by Claude Opus 4.6 showed strong transferability across six other LLM models, improving their respective no-skill baselines by +36 to +44 percentage points.",
+        "Self-evolved skills outperformed human-curated skills in 9 out of 11 professional domains, including significant gains in Finance (+56.9 pp) and Cybersecurity (+23.2 pp), and corrected degraded performance in Natural Science."
+      ],
+      "solution": [
+        "The EvoSkills framework introduces a co-evolutionary approach, employing a Skill Generator and an information-isolated Surrogate Verifier that iteratively refine skills and their verification mechanisms.",
+        "The Skill Generator autonomously generates and refines multi-file skill bundles by processing task instructions and structured failure diagnostics from the verifier.",
+        "The Surrogate Verifier independently generates and refines a suite of deterministic test assertions, providing dense, actionable feedback and escalating its tests when ground-truth failures occur despite surrogate success."
+      ],
+      "summary": "EvoSkills enables large language model agents to autonomously generate and iteratively refine complex, multi-file skill packages through a co-evolutionary verification framework. This approach yields skills that surpass human-authored versions and exhibit strong transferability across different LLM architectures, effectively bridging the cognitive gap between human-designed workflows and agent execution."
+    },
+    "publication_date": "2026-04-02T06:43:20.000Z",
+    "title": "EvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "evolutionary-algorithms",
+      "generative-models",
+      "meta-learning",
+      "multi-agent-learning",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2604.01687",
+    "updated_at": "2026-04-03T02:36:39.208Z",
+    "version_id": "019d5133-23fb-7e56-9026-bf5a2b6a5923"
+  },
+  {
     "abstract": "The performance of LLM-based agents depends not only on the agent itself but also on the quality of the tool interfaces it consumes. While prior work has focused heavily on agent fine-tuning, tool interfaces-including natural language descriptions and parameter schemas-remain largely human-oriented and often become a bottleneck, especially when agents must select from large candidate tool sets. Existing approaches to improving tool interfaces rely on execution traces, which are frequently unavailable in cold-start or privacy-constrained settings, and typically optimize each tool independently, limiting scalability and generalization to unseen tools. We propose Trace-Free+, a curriculum learning framework that progressively transfers supervision from trace-rich settings to trace-free deployment, encouraging the model to abstract reusable interface-usage patterns and tool usage outcomes. To support this approach, we construct a large-scale dataset of high-quality tool interfaces using a structured workflow over a diverse collection of tools. Experiments on StableToolBench and RestBench show consistent gains on unseen tools, strong cross-domain generalization, and robustness as the number of candidate tools scales to over 100, demonstrating that tool interface optimization is a practical and deployable complement to agent fine-tuning.",
     "author_info": [],
     "authors": [
@@ -3078,8 +3235,8 @@
     "id": "019cb248-7805-71bd-83a1-c64c0820a7af",
     "image_url": "image/2603.00718v2.png",
     "metrics": {
-      "public_total_votes": 32,
-      "total_votes": 5,
+      "public_total_votes": 33,
+      "total_votes": 6,
       "visits_count": {
         "all": 680,
         "last_7_days": 81
@@ -3373,6 +3530,112 @@
     "version_id": "019cbcef-5fc8-7d69-8f08-9a569261abf2"
   },
   {
+    "abstract": "Agentic reinforcement learning (RL) can benefit substantially from reusable experience, yet existing skill-based methods mainly extract trajectory-level guidance and often lack principled mechanisms for maintaining an evolving skill memory. We propose D2Skill, a dynamic dual-granularity skill bank for agentic RL that organizes reusable experience into task skills for high-level guidance and step skills for fine-grained decision support and error correction. D2Skill jointly trains the policy and skill bank through paired baseline and skill-injected rollouts under the same policy, using their performance gap to derive hindsight utility signals for both skill updating and policy optimization. Built entirely from training-time experience, the skill bank is continuously expanded through reflection and maintained with utility-aware retrieval and pruning. Experiments on ALFWorld and WebShop with Qwen2.5-7B-Instruct and Qwen3-4B-Instruct-2507 show that D2Skill consistently improves success rates over skill-free baselines by 10-20 points. Further ablations and analyses show that both dual-granularity skill modeling and dynamic skill maintenance are critical to these gains, while the learned skills exhibit higher utility, transfer across evaluation settings, and introduce only modest training overhead.",
+    "author_info": [],
+    "authors": [
+      "Songjun Tu",
+      "Chengdong Xu",
+      "Qichao Zhang",
+      "Yaocheng Zhang",
+      "Xiangyuan Lan",
+      "Linjing Li",
+      "Dongbin Zhao"
+    ],
+    "canonical_id": "2603.28716v1",
+    "first_publication_date": "2026-03-30T17:32:11.000Z",
+    "full_authors": [
+      {
+        "full_name": "Songjun Tu",
+        "id": "01985c83-5250-788a-a74e-cd89fcff0702",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chengdong Xu",
+        "id": "01995541-ddad-73eb-8b44-5dd5eabf7fce",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qichao Zhang",
+        "id": "01985c81-e5aa-7639-b5d5-7ddc001ad7c1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yaocheng Zhang",
+        "id": "01985c83-5250-767a-9fe1-9dd1b0ccef61",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiangyuan Lan",
+        "id": "01985c82-4f4c-7af4-8fbb-4a3eadfc8ab6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Linjing Li",
+        "id": "01985c81-f153-7994-929b-1455bff38142",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dongbin Zhao",
+        "id": "01985c81-e5aa-7385-a02b-abde97a6ae05",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 9,
+    "github_url": "https://github.com/TU2021/D2Skill-AgenticRL",
+    "id": "019d41f1-e278-7320-8a89-8592a6af5057",
+    "image_url": "image/2603.28716v1.png",
+    "metrics": {
+      "public_total_votes": 31,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 168,
+        "last_7_days": 122
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d41f1-e278-7320-8a89-8592a6af5057",
+    "paper_summary": {
+      "keyInsights": [
+        "Both high-level task guidance and fine-grained step-level support are crucial for optimal agent performance, as evidenced by the performance degradation when either skill granularity is ablated.",
+        "Dynamic management of the skill bank, including principled pruning based on utility, is essential to prevent performance degradation from skill accumulation and maintain retrieval efficiency.",
+        "Large Language Models (LLMs) can be highly effective as 'reflectors' for abstracting reusable skills from trajectories, even if they are not strong standalone agents for direct action generation."
+      ],
+      "originalProblem": [
+        "Existing skill-based agentic RL methods primarily derive skills from complete trajectories, offering coarse-grained guidance but limiting fine-grained error correction at individual interaction steps.",
+        "The continuous expansion of skill banks in agentic RL leads to scalability issues, increased retrieval latency, and the accumulation of redundant or ineffective skills without principled management.",
+        "Challenges in credit assignment due to partial observability and sparse rewards hinder efficient learning and knowledge transfer in long-horizon, complex decision-making tasks."
+      ],
+      "results": [
+        "D2Skill improved success rates by 10\u201320 percentage points over skill-free baselines on ALFWORLD and WEBSHOP benchmarks (e.g., 90.6% on ALFWORLD vs. 75.0% for GRPO).",
+        "The framework achieved comparable or faster training times (e.g., 25.6 hours on ALFWORLD vs. 49.2 hours for SkillRL) while delivering superior performance.",
+        "Ablation studies confirmed that dual-granularity skills, skill management, and the utility mechanism individually contribute to the overall performance gains."
+      ],
+      "solution": [
+        "D2Skill introduces a dual-granularity skill bank, distinguishing between high-level 'task skills' for strategic guidance and fine-grained 'step skills' for local error correction during interactions.",
+        "A dynamic skill bank maintenance system is implemented, utilizing reflection-driven generation and utility-aware retrieval and pruning mechanisms to keep the skill bank compact and effective.",
+        "A joint training paradigm is employed where policy and skill bank co-evolve, using performance gaps between skill-injected and baseline rollouts to generate hindsight utility signals for both skill updates and policy optimization."
+      ],
+      "summary": "Researchers at the Institute of Automation, Chinese Academy of Sciences, developed D2Skill, a framework for agentic reinforcement learning that employs a dynamic, dual-granularity skill bank to manage reusable knowledge. This system continuously generates and prunes both task-level and step-level skills, outperforming skill-free baselines by 10-20 points in success rate on ALFWORLD and WEBSHOP benchmarks and achieving up to 1.7 times faster training compared to prior skill-augmented methods."
+    },
+    "publication_date": "2026-03-30T17:32:11.000Z",
+    "title": "Dynamic Dual-Granularity Skill Bank for Agentic RL",
+    "topics": [
+      "Computer Science",
+      "cs.AI"
+    ],
+    "universal_paper_id": "2603.28716",
+    "updated_at": "2026-03-31T03:31:04.440Z",
+    "version_id": "019d41f1-e2aa-7205-bbc3-fcfc6cff7a6f"
+  },
+  {
     "abstract": "The dominant paradigm for improving mathematical reasoning in language models relies on Reinforcement Learning with verifiable rewards. Yet existing methods treat each problem instance in isolation without leveraging the reusable strategies that emerge and accumulate during training. To this end, we introduce ARISE (Agent Reasoning via Intrinsic Skill Evolution), a hierarchical reinforcement learning framework, in which a shared policy operates both to manage skills at high-level and to generate responses at low-level (denoted as a Skills Manager and a Worker, respectively). The Manager maintains a tiered skill library through a dedicated skill generation rollout that performs structured summarization of successful solution traces (after execution), while employing a policy-driven selection mechanism to retrieve relevant skills to condition future rollouts (before execution). A hierarchical reward design guides the co-evolution of reasoning ability and library quality. Experiments on two base models and seven benchmarks spanning both competition mathematics and Omni-MATH show that ARISE consistently outperforms GRPO-family algorithms and memory-augmented baselines, with particularly notable gains on out-of-distribution tasks. Ablation studies confirm that each component contributes to the observed improvements and that library quality and reasoning performance improve in tandem throughout training. Code is available at \\href{this https URL}{this https URL}.",
     "author_info": [],
     "authors": [
@@ -3467,163 +3730,6 @@
     "version_id": "019d2e1a-5e82-703a-9d88-e0fa1c171a13"
   },
   {
-    "abstract": "Anthropic proposes the concept of skills for LLM agents to tackle multi-step professional tasks that simple tool invocations cannot address. A tool is a single, self-contained function, whereas a skill is a structured bundle of interdependent multi-file artifacts. Currently, skill generation is not only label-intensive due to manual authoring, but also may suffer from human--machine cognitive misalignment, which can lead to degraded agent performance, as evidenced by evaluations on SkillsBench. Therefore, we aim to enable agents to autonomously generate skills. However, existing self-evolving methods designed for tools cannot be directly applied to skills due to their increased complexity. To address these issues, we propose EvoSkills, a self-evolving skills framework that enables agents to autonomously construct complex, multi-file skill packages. Specifically, EvoSkills couples a Skill Generator that iteratively refines skills with a Surrogate Verifier that co-evolves to provide informative and actionable feedback without access to ground-truth test content. On SkillsBench, EvoSkills achieves the highest pass rate among five baselines on both Claude Code and Codex, and also exhibits strong generalization capabilities to six additional LLMs.",
-    "author_info": [],
-    "authors": [
-      "Hanrong Zhang",
-      "Shicheng Fan",
-      "Henry Peng Zou",
-      "Yankai Chen",
-      "Zhenting Wang",
-      "Jiayu Zhou",
-      "Chengze Li",
-      "Wei-Chieh Huang",
-      "Yifei Yao",
-      "Kening Zheng",
-      "Xue Liu",
-      "Xiaoxiao Li",
-      "Philip S. Yu"
-    ],
-    "canonical_id": "2604.01687v1",
-    "first_publication_date": "2026-04-02T06:43:20.000Z",
-    "full_authors": [
-      {
-        "full_name": "Hanrong Zhang",
-        "id": "01985c82-7471-7436-be16-b008de2ab9aa",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shicheng Fan",
-        "id": "019c0cf6-1f4a-7652-bc12-087b39fe8375",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Henry Peng Zou",
-        "id": "01985c81-e41b-7667-8e1e-0a8ebb93d4fb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yankai Chen",
-        "id": "01985c82-7805-792f-a437-b67006d1269a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenting Wang",
-        "id": "01985c81-dc26-7d95-a0e4-57443182b1e9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiayu Zhou",
-        "id": "01985c82-1c7b-75a6-966f-0bcf69ace0c0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chengze Li",
-        "id": "01985c82-9b66-7b2d-93cd-c31a128c73d8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei-Chieh Huang",
-        "id": "01985c83-76c6-75f6-9c39-683d224bb92f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yifei Yao",
-        "id": "01985c82-7471-7cfa-8192-d7f1ba5ece21",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kening Zheng",
-        "id": "01985c82-8a62-7bb4-a274-77b719a6226c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xue Liu",
-        "id": "01985c82-0381-7e74-bf1c-4fd3a6de78bd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaoxiao Li",
-        "id": "01985c81-e0ec-7e9e-834c-f7ec30f6d001",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Philip S. Yu",
-        "id": "01985c81-d97f-756f-9960-c23741aeb025",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019d5133-23a8-7777-89af-96ec890f30cb",
-    "image_url": "image/2604.01687v1.png",
-    "metrics": {
-      "public_total_votes": 28,
-      "total_votes": 6,
-      "visits_count": {
-        "all": 255,
-        "last_7_days": 255
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d5133-23a8-7777-89af-96ec890f30cb",
-    "paper_summary": {
-      "keyInsights": [
-        "LLM agents can autonomously generate more effective and reliable skills than human experts, as these self-evolved skills better align with the agent's intrinsic reasoning and execution patterns.",
-        "A co-evolutionary framework, especially with an information-isolated surrogate verifier, provides crucial, actionable feedback for skill refinement without requiring direct ground-truth supervision.",
-        "Self-evolved skills demonstrate strong cross-model transferability, suggesting they encode reusable task structures rather than model-specific artifacts, making them broadly portable."
-      ],
-      "originalProblem": [
-        "Manual human authoring of 'agent skills' is labor-intensive, difficult to scale, and often leads to inconsistent performance due to 'human-machine cognitive misalignment'.",
-        "Existing self-evolving methods for LLM agents focus primarily on atomic tools or function APIs, lacking the capability to generate and refine complex, structured, multi-file skill packages.",
-        "Many self-evolution approaches require ground-truth supervision for failure diagnosis, limiting their applicability in real-world scenarios where such detailed feedback is unavailable."
-      ],
-      "results": [
-        "EvoSkills achieved a 71.1% pass rate on SkillsBench with Claude Opus 4.6, outperforming the no-skill baseline (30.6%) by +40.5 percentage points and human-curated skills (53.5%) by +17.6 percentage points.",
-        "Ablation studies confirmed that removing the surrogate verifier led to a substantial drop in pass rate by -30.0 percentage points, highlighting its critical role in targeted repairs.",
-        "Skills evolved by Claude Opus 4.6 showed strong transferability across six other LLM models, improving their respective no-skill baselines by +36 to +44 percentage points.",
-        "Self-evolved skills outperformed human-curated skills in 9 out of 11 professional domains, including significant gains in Finance (+56.9 pp) and Cybersecurity (+23.2 pp), and corrected degraded performance in Natural Science."
-      ],
-      "solution": [
-        "The EvoSkills framework introduces a co-evolutionary approach, employing a Skill Generator and an information-isolated Surrogate Verifier that iteratively refine skills and their verification mechanisms.",
-        "The Skill Generator autonomously generates and refines multi-file skill bundles by processing task instructions and structured failure diagnostics from the verifier.",
-        "The Surrogate Verifier independently generates and refines a suite of deterministic test assertions, providing dense, actionable feedback and escalating its tests when ground-truth failures occur despite surrogate success."
-      ],
-      "summary": "EvoSkills enables large language model agents to autonomously generate and iteratively refine complex, multi-file skill packages through a co-evolutionary verification framework. This approach yields skills that surpass human-authored versions and exhibit strong transferability across different LLM architectures, effectively bridging the cognitive gap between human-designed workflows and agent execution."
-    },
-    "publication_date": "2026-04-02T06:43:20.000Z",
-    "title": "EvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "evolutionary-algorithms",
-      "generative-models",
-      "meta-learning",
-      "multi-agent-learning",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2604.01687",
-    "updated_at": "2026-04-03T02:36:39.208Z",
-    "version_id": "019d5133-23fb-7e56-9026-bf5a2b6a5923"
-  },
-  {
     "abstract": "Recent studies have uncovered the potential of Large Language Models (LLMs) in addressing complex sequential decision-making tasks through the provision of high-level instructions. However, LLM-based agents lack specialization in tackling specific target problems, particularly in real-time dynamic environments. Additionally, deploying an LLM-based agent in practical scenarios can be both costly and time-consuming. On the other hand, reinforcement learning (RL) approaches train agents that specialize in the target task but often suffer from low sampling efficiency and high exploration costs. In this paper, we introduce a novel framework that addresses these challenges by training a smaller, specialized student RL agent using instructions from an LLM-based teacher agent. By incorporating the guidance from the teacher agent, the student agent can distill the prior knowledge of the LLM into its own model. Consequently, the student agent can be trained with significantly less data. Moreover, through further training with environment feedback, the student agent surpasses the capabilities of its teacher for completing the target task. We conducted experiments on challenging MiniGrid and Habitat environments, specifically designed for embodied AI research, to evaluate the effectiveness of our framework. The results clearly demonstrate that our approach achieves superior performance compared to strong baseline methods. Our code is available at this https URL.",
     "author_info": [],
     "authors": [
@@ -3702,112 +3808,6 @@
     "universal_paper_id": "2311.13373",
     "updated_at": "2025-03-03T19:53:02.910Z",
     "version_id": "018fba5a-2cd8-7e9a-8e91-e0502d11b2c2"
-  },
-  {
-    "abstract": "Agentic reinforcement learning (RL) can benefit substantially from reusable experience, yet existing skill-based methods mainly extract trajectory-level guidance and often lack principled mechanisms for maintaining an evolving skill memory. We propose D2Skill, a dynamic dual-granularity skill bank for agentic RL that organizes reusable experience into task skills for high-level guidance and step skills for fine-grained decision support and error correction. D2Skill jointly trains the policy and skill bank through paired baseline and skill-injected rollouts under the same policy, using their performance gap to derive hindsight utility signals for both skill updating and policy optimization. Built entirely from training-time experience, the skill bank is continuously expanded through reflection and maintained with utility-aware retrieval and pruning. Experiments on ALFWorld and WebShop with Qwen2.5-7B-Instruct and Qwen3-4B-Instruct-2507 show that D2Skill consistently improves success rates over skill-free baselines by 10-20 points. Further ablations and analyses show that both dual-granularity skill modeling and dynamic skill maintenance are critical to these gains, while the learned skills exhibit higher utility, transfer across evaluation settings, and introduce only modest training overhead.",
-    "author_info": [],
-    "authors": [
-      "Songjun Tu",
-      "Chengdong Xu",
-      "Qichao Zhang",
-      "Yaocheng Zhang",
-      "Xiangyuan Lan",
-      "Linjing Li",
-      "Dongbin Zhao"
-    ],
-    "canonical_id": "2603.28716v1",
-    "first_publication_date": "2026-03-30T17:32:11.000Z",
-    "full_authors": [
-      {
-        "full_name": "Songjun Tu",
-        "id": "01985c83-5250-788a-a74e-cd89fcff0702",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chengdong Xu",
-        "id": "01995541-ddad-73eb-8b44-5dd5eabf7fce",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qichao Zhang",
-        "id": "01985c81-e5aa-7639-b5d5-7ddc001ad7c1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yaocheng Zhang",
-        "id": "01985c83-5250-767a-9fe1-9dd1b0ccef61",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiangyuan Lan",
-        "id": "01985c82-4f4c-7af4-8fbb-4a3eadfc8ab6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Linjing Li",
-        "id": "01985c81-f153-7994-929b-1455bff38142",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dongbin Zhao",
-        "id": "01985c81-e5aa-7385-a02b-abde97a6ae05",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 9,
-    "github_url": "https://github.com/TU2021/D2Skill-AgenticRL",
-    "id": "019d41f1-e278-7320-8a89-8592a6af5057",
-    "image_url": "image/2603.28716v1.png",
-    "metrics": {
-      "public_total_votes": 27,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 157,
-        "last_7_days": 120
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d41f1-e278-7320-8a89-8592a6af5057",
-    "paper_summary": {
-      "keyInsights": [
-        "Both high-level task guidance and fine-grained step-level support are crucial for optimal agent performance, as evidenced by the performance degradation when either skill granularity is ablated.",
-        "Dynamic management of the skill bank, including principled pruning based on utility, is essential to prevent performance degradation from skill accumulation and maintain retrieval efficiency.",
-        "Large Language Models (LLMs) can be highly effective as 'reflectors' for abstracting reusable skills from trajectories, even if they are not strong standalone agents for direct action generation."
-      ],
-      "originalProblem": [
-        "Existing skill-based agentic RL methods primarily derive skills from complete trajectories, offering coarse-grained guidance but limiting fine-grained error correction at individual interaction steps.",
-        "The continuous expansion of skill banks in agentic RL leads to scalability issues, increased retrieval latency, and the accumulation of redundant or ineffective skills without principled management.",
-        "Challenges in credit assignment due to partial observability and sparse rewards hinder efficient learning and knowledge transfer in long-horizon, complex decision-making tasks."
-      ],
-      "results": [
-        "D2Skill improved success rates by 10\u201320 percentage points over skill-free baselines on ALFWORLD and WEBSHOP benchmarks (e.g., 90.6% on ALFWORLD vs. 75.0% for GRPO).",
-        "The framework achieved comparable or faster training times (e.g., 25.6 hours on ALFWORLD vs. 49.2 hours for SkillRL) while delivering superior performance.",
-        "Ablation studies confirmed that dual-granularity skills, skill management, and the utility mechanism individually contribute to the overall performance gains."
-      ],
-      "solution": [
-        "D2Skill introduces a dual-granularity skill bank, distinguishing between high-level 'task skills' for strategic guidance and fine-grained 'step skills' for local error correction during interactions.",
-        "A dynamic skill bank maintenance system is implemented, utilizing reflection-driven generation and utility-aware retrieval and pruning mechanisms to keep the skill bank compact and effective.",
-        "A joint training paradigm is employed where policy and skill bank co-evolve, using performance gaps between skill-injected and baseline rollouts to generate hindsight utility signals for both skill updates and policy optimization."
-      ],
-      "summary": "Researchers at the Institute of Automation, Chinese Academy of Sciences, developed D2Skill, a framework for agentic reinforcement learning that employs a dynamic, dual-granularity skill bank to manage reusable knowledge. This system continuously generates and prunes both task-level and step-level skills, outperforming skill-free baselines by 10-20 points in success rate on ALFWORLD and WEBSHOP benchmarks and achieving up to 1.7 times faster training compared to prior skill-augmented methods."
-    },
-    "publication_date": "2026-03-30T17:32:11.000Z",
-    "title": "Dynamic Dual-Granularity Skill Bank for Agentic RL",
-    "topics": [
-      "Computer Science",
-      "cs.AI"
-    ],
-    "universal_paper_id": "2603.28716",
-    "updated_at": "2026-03-31T03:31:04.440Z",
-    "version_id": "019d41f1-e2aa-7205-bbc3-fcfc6cff7a6f"
   },
   {
     "abstract": "LLM-driven agents demonstrate strong performance in sequential decision-making but often rely on on-the-fly reasoning, re-deriving solutions even in recurring scenarios. This insufficient experience reuse leads to computational redundancy and execution instability. To bridge this gap, we propose ProcMEM, a framework that enables agents to autonomously learn procedural memory from interaction experiences without parameter updates. By formalizing a Skill-MDP, ProcMEM transforms passive episodic narratives into executable Skills defined by activation, execution, and termination conditions to ensure executability. To achieve reliable reusability without capability degradation, we introduce Non-Parametric PPO, which leverages semantic gradients for high-quality candidate generation and a PPO Gate for robust Skill verification. Through score-based maintenance, ProcMEM sustains compact, high-quality procedural memory. Experimental results across in-domain, cross-task, and cross-agent scenarios demonstrate that ProcMEM achieves superior reuse rates and significant performance gains with extreme memory compression. Visualized evolutionary trajectories and Skill distributions further reveal how ProcMEM transparently accumulates, refines, and reuses procedural knowledge to facilitate long-term autonomy.",
@@ -4004,6 +4004,229 @@
     "version_id": "019c871a-8d79-7eeb-9aad-fbf108fb2c6b"
   },
   {
+    "abstract": "Learning from experience is critical for building capable large language model (LLM) agents, yet prevailing self-evolving paradigms remain inefficient: agents learn in isolation, repeatedly rediscover similar behaviors from limited experience, resulting in redundant exploration and poor generalization. To address this problem, we propose SkillX, a fully automated framework for constructing a \\textbf{plug-and-play skill knowledge base} that can be reused across agents and environments. SkillX operates through a fully automated pipeline built on three synergistic innovations: \\textit{(i) Multi-Level Skills Design}, which distills raw trajectories into three-tiered hierarchy of strategic plans, functional skills, and atomic skills; \\textit{(ii) Iterative Skills Refinement}, which automatically revises skills based on execution feedback to continuously improve library quality; and \\textit{(iii) Exploratory Skills Expansion}, which proactively generates and validates novel skills to expand coverage beyond seed training data. Using a strong backbone agent (GLM-4.6), we automatically build a reusable skill library and evaluate its transferability on challenging long-horizon, user-interactive benchmarks, including AppWorld, BFCL-v3, and $\\tau^2$-Bench. Experiments show that SkillKB consistently improves task success and execution efficiency when plugged into weaker base agents, highlighting the importance of structured, hierarchical experience representations for generalizable agent learning. Our code will be publicly available soon at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Chenxi Wang",
+      "Zhuoyun Yu",
+      "Xin Xie",
+      "Wuguannan Yao",
+      "Runnan Fang",
+      "Shuofei Qiao",
+      "Kexin Cao",
+      "Guozhou Zheng",
+      "Xiang Qi",
+      "Peng Zhang",
+      "Shumin Deng"
+    ],
+    "canonical_id": "2604.04804v1",
+    "first_publication_date": "2026-04-06T16:09:33.000Z",
+    "full_authors": [
+      {
+        "full_name": "Chenxi Wang",
+        "id": "01985c81-e5a9-7ee2-8abe-bf9dec1d5f82",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhuoyun Yu",
+        "id": "019877e7-347a-7bb6-ba86-c9d94b0d4a16",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xin Xie",
+        "id": "01985c81-e5aa-783d-8950-c762962291fa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wuguannan Yao",
+        "id": "019a891d-59c4-7e5e-a0a1-e1d44f1c0167",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Runnan Fang",
+        "id": "01985c82-3a9a-71bf-a1b1-9fb01ca6690e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuofei Qiao",
+        "id": "01985c81-f152-781f-bcc9-d48271151845",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kexin Cao",
+        "id": "01985c84-35c0-72a1-9be9-f046d5811bbd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guozhou Zheng",
+        "id": "01985c82-5a09-710f-b71d-ec3b1b3e7f99",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiang Qi",
+        "id": "01985c82-c4f8-7519-a93b-7fc4d01171c6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Zhang",
+        "id": "01985c81-db50-753a-930c-68431b6d461f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shumin Deng",
+        "id": "01985c81-ef77-786d-8b24-729067c5dd2b",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/zjunlp/SkillX",
+    "id": "019d65bf-4671-7909-9268-425a0e1087c4",
+    "image_url": "image/2604.04804v1.png",
+    "metrics": {
+      "public_total_votes": 20,
+      "total_votes": 5,
+      "visits_count": {
+        "all": 175,
+        "last_7_days": 175
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d65bf-4671-7909-9268-425a0e1087c4",
+    "paper_summary": {
+      "keyInsights": [
+        "A multi-level hierarchical skill design provides a more advantageous and effective experience representation than direct trajectory retrieval or workflows, boosting agent performance.",
+        "An iterative refinement process and experience-guided exploration strategy are crucial for continuously improving skill quality, coverage, and sample efficiency in complex environments.",
+        "Distilling knowledge from a strong backbone agent into a structured skill base can effectively transfer capabilities to weaker inference models, expanding their operational boundaries."
+      ],
+      "originalProblem": [
+        "LLM agents learn inefficiently from isolated experiences, leading to repeated rediscovery of behaviors and poor generalization of learned knowledge, especially in complex, data-scarce environments.",
+        "Existing experience representations lack simultaneous transferability, efficient retrieval, and direct executability, hindering effective reuse across tasks.",
+        "Prior skill-based systems often demand extensive context management and progressive disclosure, which limits their robustness and practical application."
+      ],
+      "results": [
+        "SkillX consistently boosted the performance of various base LLM agents, with weaker models like Qwen3-32B achieving approximately a 10% gain in task success rates.",
+        "The multi-level skill representation proved more effective than other experience representations, leading to superior performance and transferability across different base models.",
+        "The framework improved agent execution efficiency by reducing the number of execution steps and input tokens, and its experience-guided expansion generated more novel skills and performance gains compared to random exploration."
+      ],
+      "solution": [
+        "SkillX, an automated framework, constructs a plug-and-play skill knowledge base to facilitate the reuse of learned behaviors across different agents and environments.",
+        "It employs a multi-level hierarchical skill design (Planning, Functional, Atomic) for concise, composable, and robust experience representation.",
+        "The framework includes an iterative process of skill extraction, refinement (merging and filtering), and an experience-guided exploratory expansion for continuous improvement and broader coverage."
+      ],
+      "summary": "SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks."
+    },
+    "publication_date": "2026-04-06T16:09:33.000Z",
+    "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.IR",
+      "cs.LG",
+      "cs.MA",
+      "generative-models",
+      "online-learning",
+      "reinforcement-learning",
+      "representation-learning",
+      "tool-use",
+      "transfer-learning"
+    ],
+    "universal_paper_id": "2604.04804",
+    "updated_at": "2026-04-07T02:22:07.473Z",
+    "version_id": "019d65bf-46b9-7a61-89bb-767b91d8a074"
+  },
+  {
+    "abstract": "AI agents can extend their capabilities at inference time by loading reusable skills into context, yet equipping an agent with too many skills, particularly irrelevant ones, degrades performance. As community-driven skill repositories grow, agents need a way to selectively retrieve only the most relevant skills from a large library. We present SkillFlow, the first multi-stage retrieval pipeline designed for agent skill discovery, framing skill acquisition as an information retrieval problem over a corpus of ~36K community-contributed this http URL definitions indexed from GitHub. The pipeline progressively narrows a large candidate set through four stages: dense retrieval, two rounds of cross-encoder reranking, and LLM-based selection, balancing recall and precision at each stage. We evaluate SkillFlow on two coding benchmarks: SkillsBench, a benchmark of 87 tasks and 229 matched skills; and Terminal-Bench, a benchmark that provides only 89 tasks, and no matched skills. On SkillsBench, SkillFlow-retrieved skills raise Pass@1 from 9.2% to 16.4% (+78.3%, $p_{\\text{adj}} = 3.64 \\times 10^{-2}$), reaching 84.1% of the oracle ceiling, while on Terminal-Bench, agents readily use the retrieved skills (70.1% use rate) yet show no performance gain, revealing that retrieval alone is insufficient when the corpus lacks high-quality, executable skills for the target domain. SkillFlow demonstrates that framing skill acquisition as an information retrieval task is an effective strategy, and that the practical impact of skill-augmented agents hinges on corpus coverage and skill quality, particularly the density of runnable code and bundled artifacts.",
+    "author_info": [],
+    "authors": [
+      "Fangzhou Li",
+      "Pagkratios Tagkopoulos",
+      "Ilias Tagkopoulos"
+    ],
+    "canonical_id": "2504.06188v2",
+    "first_publication_date": "2025-04-08T16:33:24.000Z",
+    "full_authors": [
+      {
+        "full_name": "Fangzhou Li",
+        "id": "01985c82-8064-71e6-93a3-fd010e821403",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Pagkratios Tagkopoulos",
+        "id": "01985c84-e02f-7fd1-8dfe-5a3921044ddd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ilias Tagkopoulos",
+        "id": "01985c82-99ab-7d75-aa9d-578c6090cfcf",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "0196163f-d420-7b2d-85b8-7ba6e67d65a8",
+    "image_url": "image/2504.06188v2.png",
+    "metrics": {
+      "public_total_votes": 16,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 55,
+        "last_7_days": 18
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/davis.jpeg",
+        "name": "University of California, Davis"
+      },
+      {
+        "image": null,
+        "name": "USDA/NSF AI Institute for Next Generation Food Systems"
+      },
+      {
+        "image": null,
+        "name": "Process Integration and Predictive Analytics"
+      }
+    ],
+    "paper_group_id": "0196163f-d420-7b2d-85b8-7ba6e67d65a8",
+    "paper_summary": null,
+    "publication_date": "2026-03-27T19:31:36.000Z",
+    "title": "SkillFlow: Scalable and Efficient Agent Skill Retrieval System",
+    "topics": [
+      "agent-based-systems",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.MA",
+      "multi-agent-learning",
+      "optimization-methods",
+      "reinforcement-learning",
+      "transfer-learning"
+    ],
+    "universal_paper_id": "2504.06188",
+    "updated_at": "2025-04-09T02:09:52.700Z",
+    "version_id": "019d483c-033b-7568-9016-5e60cc1a6050"
+  },
+  {
     "abstract": "While skill-centric approaches leverage foundation models to enhance generalization in compositional tasks, they often rely on fixed skill libraries, limiting adaptability to new tasks without manual intervention. To address this, we propose Uni-Skill, a Unified Skill-centric framework that supports skill-aware planning and facilitates automatic skill evolution. Unlike prior methods that restrict planning to predefined skills, Uni-Skill requests for new skill implementations when existing ones are insufficient, ensuring adaptable planning with self-augmented skill library. To support automatic implementation of diverse skills requested by the planning module, we construct SkillFolder, a VerbNet-inspired repository derived from large-scale unstructured robotic videos. SkillFolder introduces a hierarchical skill taxonomy that captures diverse skill descriptions at multiple levels of abstraction. By populating this taxonomy with large-scale, automatically annotated demonstrations, Uni-Skill shifts the paradigm of skill acquisition from inefficient manual annotation to efficient offline structural retrieval. Retrieved examples provide semantic supervision over behavior patterns and fine-grained references for spatial trajectories, enabling few-shot skill inference without deployment-time demonstrations. Comprehensive experiments in both simulation and real-world settings verify the state-of-the-art performance of Uni-Skill over existing VLM-based skill-centric approaches, highlighting its advanced reasoning capabilities and strong zero-shot generalization across a wide range of novel tasks.",
     "author_info": [],
     "authors": [
@@ -4102,83 +4325,6 @@
     "universal_paper_id": "2603.02623",
     "updated_at": "2026-03-04T05:53:27.711Z",
     "version_id": "019cb768-8ad4-7485-974f-df73958ccd93"
-  },
-  {
-    "abstract": "AI agents can extend their capabilities at inference time by loading reusable skills into context, yet equipping an agent with too many skills, particularly irrelevant ones, degrades performance. As community-driven skill repositories grow, agents need a way to selectively retrieve only the most relevant skills from a large library. We present SkillFlow, the first multi-stage retrieval pipeline designed for agent skill discovery, framing skill acquisition as an information retrieval problem over a corpus of ~36K community-contributed this http URL definitions indexed from GitHub. The pipeline progressively narrows a large candidate set through four stages: dense retrieval, two rounds of cross-encoder reranking, and LLM-based selection, balancing recall and precision at each stage. We evaluate SkillFlow on two coding benchmarks: SkillsBench, a benchmark of 87 tasks and 229 matched skills; and Terminal-Bench, a benchmark that provides only 89 tasks, and no matched skills. On SkillsBench, SkillFlow-retrieved skills raise Pass@1 from 9.2% to 16.4% (+78.3%, $p_{\\text{adj}} = 3.64 \\times 10^{-2}$), reaching 84.1% of the oracle ceiling, while on Terminal-Bench, agents readily use the retrieved skills (70.1% use rate) yet show no performance gain, revealing that retrieval alone is insufficient when the corpus lacks high-quality, executable skills for the target domain. SkillFlow demonstrates that framing skill acquisition as an information retrieval task is an effective strategy, and that the practical impact of skill-augmented agents hinges on corpus coverage and skill quality, particularly the density of runnable code and bundled artifacts.",
-    "author_info": [],
-    "authors": [
-      "Fangzhou Li",
-      "Pagkratios Tagkopoulos",
-      "Ilias Tagkopoulos"
-    ],
-    "canonical_id": "2504.06188v2",
-    "first_publication_date": "2025-04-08T16:33:24.000Z",
-    "full_authors": [
-      {
-        "full_name": "Fangzhou Li",
-        "id": "01985c82-8064-71e6-93a3-fd010e821403",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Pagkratios Tagkopoulos",
-        "id": "01985c84-e02f-7fd1-8dfe-5a3921044ddd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ilias Tagkopoulos",
-        "id": "01985c82-99ab-7d75-aa9d-578c6090cfcf",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "0196163f-d420-7b2d-85b8-7ba6e67d65a8",
-    "image_url": "image/2504.06188v2.png",
-    "metrics": {
-      "public_total_votes": 16,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 55,
-        "last_7_days": 18
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/davis.jpeg",
-        "name": "University of California, Davis"
-      },
-      {
-        "image": null,
-        "name": "USDA/NSF AI Institute for Next Generation Food Systems"
-      },
-      {
-        "image": null,
-        "name": "Process Integration and Predictive Analytics"
-      }
-    ],
-    "paper_group_id": "0196163f-d420-7b2d-85b8-7ba6e67d65a8",
-    "paper_summary": null,
-    "publication_date": "2026-03-27T19:31:36.000Z",
-    "title": "SkillFlow: Scalable and Efficient Agent Skill Retrieval System",
-    "topics": [
-      "agent-based-systems",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.MA",
-      "multi-agent-learning",
-      "optimization-methods",
-      "reinforcement-learning",
-      "transfer-learning"
-    ],
-    "universal_paper_id": "2504.06188",
-    "updated_at": "2025-04-09T02:09:52.700Z",
-    "version_id": "019d483c-033b-7568-9016-5e60cc1a6050"
   },
   {
     "abstract": "The transition from monolithic large language models (LLMs) to modular, skill-equipped agents represents a fundamental architectural shift in artificial intelligence deployment. While general-purpose models demonstrate remarkable breadth in declarative knowledge, their utility in autonomous workflows is frequently constrained by insufficient specialized procedural expertise. This report investigates a systematic framework for automated acquisition of high-quality agent skills through mining of open-source repositories on platforms such as GitHub. We focus on the extraction of visualization and educational capabilities from state-of-the-art systems including TheoremExplainAgent and Code2Video, both utilizing the Manim mathematical animation engine. The framework encompasses repository structural analysis, semantic skill identification through dense retrieval, and translation to the standardized this http URL format. We demonstrate that systematic extraction from agentic repositories, combined with rigorous security governance and multi-dimensional evaluation metrics, enables scalable acquisition of procedural knowledge that augments LLM capabilities without requiring model retraining. Our analysis reveals that agent-generated educational content can achieve 40\\% gains in knowledge transfer efficiency while maintaining pedagogical quality comparable to human-crafted tutorials.",
@@ -4498,150 +4644,111 @@
     "version_id": "019cea36-b6f2-7c3f-b077-c5bf4e69d9fd"
   },
   {
-    "abstract": "Learning from experience is critical for building capable large language model (LLM) agents, yet prevailing self-evolving paradigms remain inefficient: agents learn in isolation, repeatedly rediscover similar behaviors from limited experience, resulting in redundant exploration and poor generalization. To address this problem, we propose SkillX, a fully automated framework for constructing a \\textbf{plug-and-play skill knowledge base} that can be reused across agents and environments. SkillX operates through a fully automated pipeline built on three synergistic innovations: \\textit{(i) Multi-Level Skills Design}, which distills raw trajectories into three-tiered hierarchy of strategic plans, functional skills, and atomic skills; \\textit{(ii) Iterative Skills Refinement}, which automatically revises skills based on execution feedback to continuously improve library quality; and \\textit{(iii) Exploratory Skills Expansion}, which proactively generates and validates novel skills to expand coverage beyond seed training data. Using a strong backbone agent (GLM-4.6), we automatically build a reusable skill library and evaluate its transferability on challenging long-horizon, user-interactive benchmarks, including AppWorld, BFCL-v3, and $\\tau^2$-Bench. Experiments show that SkillKB consistently improves task success and execution efficiency when plugged into weaker base agents, highlighting the importance of structured, hierarchical experience representations for generalizable agent learning. Our code will be publicly available soon at this https URL.",
+    "abstract": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available at this https URL.",
     "author_info": [],
     "authors": [
-      "Chenxi Wang",
-      "Zhuoyun Yu",
-      "Xin Xie",
-      "Wuguannan Yao",
-      "Runnan Fang",
-      "Shuofei Qiao",
-      "Kexin Cao",
-      "Guozhou Zheng",
-      "Xiang Qi",
-      "Peng Zhang",
-      "Shumin Deng"
+      "Yujian Liu",
+      "Jiabao Ji",
+      "Li An",
+      "Tommi Jaakkola",
+      "Yang Zhang",
+      "Shiyu Chang"
     ],
-    "canonical_id": "2604.04804v1",
-    "first_publication_date": "2026-04-06T16:09:33.000Z",
+    "canonical_id": "2604.04323v1",
+    "first_publication_date": "2026-04-06T00:10:30.000Z",
     "full_authors": [
       {
-        "full_name": "Chenxi Wang",
-        "id": "01985c81-e5a9-7ee2-8abe-bf9dec1d5f82",
+        "full_name": "Yujian Liu",
+        "id": "01985c81-e34e-7131-8aac-be37bd7a3ddc",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zhuoyun Yu",
-        "id": "019877e7-347a-7bb6-ba86-c9d94b0d4a16",
+        "full_name": "Jiabao Ji",
+        "id": "01985c82-40cb-7f5c-8637-11db63ca0ca8",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Xin Xie",
-        "id": "01985c81-e5aa-783d-8950-c762962291fa",
+        "full_name": "Li An",
+        "id": "01985c82-86c2-7e54-a21b-60bb3004ddd1",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wuguannan Yao",
-        "id": "019a891d-59c4-7e5e-a0a1-e1d44f1c0167",
+        "full_name": "Tommi Jaakkola",
+        "id": "01985c81-db50-795c-908f-3b109e669e95",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Runnan Fang",
-        "id": "01985c82-3a9a-71bf-a1b1-9fb01ca6690e",
+        "full_name": "Yang Zhang",
+        "id": "01985c81-e34e-7dd0-8afa-a9616001a992",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shuofei Qiao",
-        "id": "01985c81-f152-781f-bcc9-d48271151845",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kexin Cao",
-        "id": "01985c84-35c0-72a1-9be9-f046d5811bbd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Guozhou Zheng",
-        "id": "01985c82-5a09-710f-b71d-ec3b1b3e7f99",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiang Qi",
-        "id": "01985c82-c4f8-7519-a93b-7fc4d01171c6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peng Zhang",
-        "id": "01985c81-db50-753a-930c-68431b6d461f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shumin Deng",
-        "id": "01985c81-ef77-786d-8b24-729067c5dd2b",
+        "full_name": "Shiyu Chang",
+        "id": "01985c81-e01d-7c21-bdd1-517ba498fe4b",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": 0,
-    "github_url": "https://github.com/zjunlp/SkillX",
-    "id": "019d65bf-4671-7909-9268-425a0e1087c4",
-    "image_url": "image/2604.04804v1.png",
+    "github_url": "https://github.com/UCSB-NLP-Chang/Skill-Usage",
+    "id": "019d65c3-bce8-773f-b24f-b88e5db06719",
+    "image_url": "image/2604.04323v1.png",
     "metrics": {
-      "public_total_votes": 9,
-      "total_votes": 3,
+      "public_total_votes": 8,
+      "total_votes": 0,
       "visits_count": {
-        "all": 124,
-        "last_7_days": 124
+        "all": 46,
+        "last_7_days": 46
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019d65bf-4671-7909-9268-425a0e1087c4",
+    "paper_group_id": "019d65c3-bce8-773f-b24f-b88e5db06719",
     "paper_summary": {
       "keyInsights": [
-        "A multi-level hierarchical skill design provides a more advantageous and effective experience representation than direct trajectory retrieval or workflows, boosting agent performance.",
-        "An iterative refinement process and experience-guided exploration strategy are crucial for continuously improving skill quality, coverage, and sample efficiency in complex environments.",
-        "Distilling knowledge from a strong backbone agent into a structured skill base can effectively transfer capabilities to weaker inference models, expanding their operational boundaries."
+        "The benefits of agentic skills, while present in idealized scenarios, consistently degrade as evaluation settings become more realistic, with weaker models sometimes performing worse with irrelevant skills.",
+        "Key bottlenecks limiting skill utility include the agent's inability to reliably select relevant skills from a noisy pool, imperfect retrieval from large collections, and difficulty in adapting general skills to specific tasks.",
+        "Query-specific skill refinement significantly improves agent performance by enabling task-aware adaptation and synthesis of information from retrieved skills, recovering a substantial portion of lost utility."
       ],
       "originalProblem": [
-        "LLM agents learn inefficiently from isolated experiences, leading to repeated rediscovery of behaviors and poor generalization of learned knowledge, especially in complex, data-scarce environments.",
-        "Existing experience representations lack simultaneous transferability, efficient retrieval, and direct executability, hindering effective reuse across tasks.",
-        "Prior skill-based systems often demand extensive context management and progressive disclosure, which limits their robustness and practical application."
+        "Existing LLM agent skill benchmarks often relied on idealized conditions, providing pre-selected and hand-crafted skills directly to agents.",
+        "Agents face challenges in real-world scenarios, including independently selecting relevant skills from many options, retrieving skills from large unorganized repositories, and adapting general-purpose skills to specific queries.",
+        "The true utility and limitations of agentic skills in practical, less-than-ideal circumstances remained largely unquantified."
       ],
       "results": [
-        "SkillX consistently boosted the performance of various base LLM agents, with weaker models like Qwen3-32B achieving approximately a 10% gain in task success rates.",
-        "The multi-level skill representation proved more effective than other experience representations, leading to superior performance and transferability across different base models.",
-        "The framework improved agent execution efficiency by reducing the number of execution steps and input tokens, and its experience-guided expansion generated more novel skills and performance gains compared to random exploration."
+        "Agentic search, which allows LLMs to iteratively formulate queries, significantly outperformed direct semantic search by 18.7 percentage points in Recall@3 for skill retrieval.",
+        "Pass rates for Claude Opus on SKILLSBENCH degraded from 55.4% (curated + forced load) to 38.4% (retrieved without curated skills), closely approaching the no-skill baseline of 35.4%.",
+        "Query-specific refinement improved Claude's pass rate on SKILLSBENCH (retrieved w/ curated) from 40.1% to 48.2% and demonstrated broader applicability by enhancing performance on TERMINAL-BENCH 2.0 from 61.4% to 65.5%."
       ],
       "solution": [
-        "SkillX, an automated framework, constructs a plug-and-play skill knowledge base to facilitate the reuse of learned behaviors across different agents and environments.",
-        "It employs a multi-level hierarchical skill design (Planning, Functional, Atomic) for concise, composable, and robust experience representation.",
-        "The framework includes an iterative process of skill extraction, refinement (merging and filtering), and an experience-guided exploratory expansion for continuous improvement and broader coverage."
+        "Assembled a large dataset of 34,198 real-world skills to simulate realistic retrieval and adaptation conditions for LLM agents.",
+        "Developed a skill search engine and evaluated various retrieval strategies (keyword, semantic, hybrid, agentic search) to identify effective skill discovery methods.",
+        "Assessed LLM agent performance across six progressively realistic evaluation settings on SKILLSBENCH and TERMINAL-BENCH 2.0, introducing challenges of selection, retrieval, and adaptation.",
+        "Investigated query-specific and query-agnostic skill refinement strategies to improve skill utility by making retrieved content more relevant and actionable."
       ],
-      "summary": "SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks."
+      "summary": "This study systematically benchmarks the efficacy of LLM agentic skills under progressively realistic conditions, incorporating challenges like skill selection, retrieval from large repositories, and adaptation. It reveals that skill benefits significantly diminish in such settings but can be substantially recovered through query-specific skill refinement strategies."
     },
-    "publication_date": "2026-04-06T16:09:33.000Z",
-    "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
+    "publication_date": "2026-04-06T00:10:30.000Z",
+    "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
     "topics": [
       "agentic-frameworks",
       "agents",
       "Computer Science",
-      "cs.AI",
       "cs.CL",
-      "cs.IR",
-      "cs.LG",
-      "cs.MA",
-      "generative-models",
-      "online-learning",
-      "reinforcement-learning",
+      "fine-tuning",
+      "information-extraction",
       "representation-learning",
       "tool-use",
       "transfer-learning"
     ],
-    "universal_paper_id": "2604.04804",
-    "updated_at": "2026-04-07T02:22:07.473Z",
-    "version_id": "019d65bf-46b9-7a61-89bb-767b91d8a074"
+    "universal_paper_id": "2604.04323",
+    "updated_at": "2026-04-07T02:26:59.944Z",
+    "version_id": "019d65c3-bd30-719e-8827-b08c8d235c2e"
   },
   {
     "abstract": "Large language model (LLM) agents deployed for multi-step tasks frequently fail in predictable ways: attempting actions with unmet preconditions, issuing redundant commands, or mishandling environment constraints. While retrieval-augmented generation (RAG) can improve performance by providing runtime guidance, it requires maintaining external knowledge databases and adds computational overhead at every deployment. We propose a simple pipeline that converts inference-time retrieval into learned competence through distillation. Our approach: (1) extracts compact, reusable hints from agent failures, (2) uses these hints to generate improved teacher trajectories via one-shot retrieval at episode start, and (3) trains student models on these trajectories with hint strings removed, forcing internalization rather than memorization. Across two interactive benchmarks, ALFWorld (household tasks) and WebShop (online shopping), distilled students consistently outperform baseline agents, achieving up to 91% success on ALFWorld (vs. 79% for baselines) and improving WebShop scores to 72 (vs. 61 for baselines), while using 10-60% fewer tokens than retrieval-augmented teachers depending on the environment. The approach generalizes across model scales (7B/14B parameters) and agent architectures (ReAct/StateAct), demonstrating that retrieval benefits can be effectively internalized through targeted fine-tuning without permanent runtime dependencies.",
@@ -5150,84 +5257,6 @@
     "version_id": "019c1c79-7bf5-7457-bc34-9b635439ade7"
   },
   {
-    "abstract": "Training reliable tool-augmented agents remains a significant challenge, largely due to the difficulty of credit assignment in multi-step reasoning. While process-level reward models offer a promising direction, existing LLM-based judges often produce noisy and inconsistent signals because they lack fine-grained, task-specific rubrics to distinguish high-level planning from low-level execution. In this work, we introduce SCRIBE (Skill-Conditioned Reward with Intermediate Behavioral Evaluation), a reinforcement learning framework that intervenes at a novel mid-level abstraction. SCRIBE grounds reward modeling in a curated library of skill prototypes, transforming open-ended LLM evaluation into a constrained verification problem. By routing each subgoal to a corresponding prototype, the reward model is equipped with precise, structured rubrics that substantially reduce reward variance.\nExperimental results show that SCRIBE achieves state-of-the-art performance across a range of reasoning and tool-use benchmarks. In particular, it improves the AIME25 accuracy of a Qwen3-4B model from 43.3% to 63.3%, and significantly increases success rates in complex multi-turn tool interactions.\nFurther analysis of training dynamics reveals a co-evolution across abstraction levels, where mastery of mid-level skills consistently precedes the emergence of effective high-level planning behaviors. Finally, we demonstrate that SCRIBE is additive to low-level tool optimizations, providing a scalable and complementary pathway toward more autonomous and reliable tool-using agents.",
-    "author_info": [],
-    "authors": [
-      "Yuxuan Jiang",
-      "Francis Ferraro"
-    ],
-    "canonical_id": "2601.03555v1",
-    "first_publication_date": "2026-01-07T03:49:48.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yuxuan Jiang",
-        "id": "01985c82-2959-70ce-99b6-33e854752d82",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Francis Ferraro",
-        "id": "01985c82-3305-7909-be77-82457e2fc045",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
-    "image_url": "image/2601.03555v1.png",
-    "metrics": {
-      "public_total_votes": 3,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 37,
-        "last_7_days": 8
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
-    "paper_summary": {
-      "keyInsights": [
-        "Mid-level skill abstraction offers a stable and informative granularity for credit assignment, effectively bridging the gap between high-level planning and low-level execution in LLM agent training.",
-        "Direct optimization of mid-level skill mastery via structured rewards leads to a co-evolutionary effect, fostering the emergent development of higher-level strategic planning capabilities in LLMs.",
-        "Mid-level skill supervision is complementary to low-level tool optimizations, allowing for synergistic improvements when combined."
-      ],
-      "originalProblem": [
-        "Reliably assigning credit to intermediate actions in multi-step, multi-tool reasoning environments for Large Language Models (LLMs).",
-        "Existing Process-level Reward Models (PRMs) using LLMs as judges provide inconsistent and underspecified reward signals due to a lack of granular, task-specific rubrics.",
-        "This leads to noisy feedback during reinforcement learning, hindering robust agent training and potentially causing reward hacking."
-      ],
-      "results": [
-        "SCRIBE achieved state-of-the-art performance, with a Qwen3-4B-Instruct-2507 model reaching 95.8% accuracy on MATH500 and 63.3% on AIME25, alongside 51.3% overall on the BFCL v4 tool-use benchmark.",
-        "Analysis of training dynamics showed that improved mid-level execution, characterized by decreased uncertainty and increased plan separability, precedes the emergent development of high-level strategic planning abilities.",
-        "Combining SCRIBE's mid-level supervision with low-level tool optimization (FunRL) resulted in synergistic gains, achieving 33.4% accuracy on BFCL for the LLaMA-3.2-3B-Instruct model, an improvement over either method alone."
-      ],
-      "solution": [
-        "Introduce SCRIBE, a reinforcement learning framework that formalizes a three-level hierarchy for tool-use and intervenes at a \"mid-level abstraction\" focusing on reasoning skills.",
-        "Decompose reasoning trajectories into \bangle subgoal, skill, step \brangle triples, and then cluster these into canonical \"Skill Prototypes\" which include specific judging rubrics and common error traps.",
-        "Employ a lightweight Router to map student LLM trajectories to relevant Skill Prototypes, and a Judge LLM to evaluate subgoals using the prototype's precise criteria, generating consistent skill-conditioned process rewards for policy optimization via GRPO."
-      ],
-      "summary": "Researchers at UMBC developed SCRIBE, a framework enhancing tool-using language models by employing structured mid-level supervision through \"Skill Prototypes\" for more consistent reward modeling. This approach led to state-of-the-art performance, achieving 95.8% accuracy on MATH500 and 63.3% on AIME25, while also improving multi-turn tool interaction success on the BFCL v4 benchmark to 51.3%."
-    },
-    "publication_date": "2026-01-07T03:49:48.000Z",
-    "title": "SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models",
-    "topics": [
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "data-curation",
-      "fine-tuning",
-      "model-observability",
-      "reasoning",
-      "reinforcement-learning",
-      "tool-use"
-    ],
-    "universal_paper_id": "2601.03555",
-    "updated_at": "2026-01-08T03:16:26.256Z",
-    "version_id": "019b9b9b-043e-7f07-91dd-2dc85b100ffe"
-  },
-  {
     "abstract": "Skill Incremental Learning (SIL) is the process by which an embodied agent expands and refines its skill set over time by leveraging experience gained through interaction with its environment or by the integration of additional data. SIL facilitates efficient acquisition of hierarchical policies grounded in reusable skills for downstream tasks. However, as the skill repertoire evolves, it can disrupt compatibility with existing skill-based policies, limiting their reusability and generalization. In this work, we propose SIL-C, a novel framework that ensures skill-policy compatibility, allowing improvements in incrementally learned skills to enhance the performance of downstream policies without requiring policy re-training or structural adaptation. SIL-C employs a bilateral lazy learning-based mapping technique to dynamically align the subtask space referenced by policies with the skill space decoded into agent behaviors. This enables each subtask, derived from the policy's decomposition of a complex task, to be executed by selecting an appropriate skill based on trajectory distribution similarity. We evaluate SIL-C across diverse SIL scenarios and demonstrate that it maintains compatibility between evolving skills and downstream policies while ensuring efficiency throughout the learning process.",
     "author_info": [],
     "authors": [
@@ -5336,111 +5365,82 @@
     "version_id": "019bf322-85c7-78aa-b710-522b742c5362"
   },
   {
-    "abstract": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available at this https URL.",
+    "abstract": "Training reliable tool-augmented agents remains a significant challenge, largely due to the difficulty of credit assignment in multi-step reasoning. While process-level reward models offer a promising direction, existing LLM-based judges often produce noisy and inconsistent signals because they lack fine-grained, task-specific rubrics to distinguish high-level planning from low-level execution. In this work, we introduce SCRIBE (Skill-Conditioned Reward with Intermediate Behavioral Evaluation), a reinforcement learning framework that intervenes at a novel mid-level abstraction. SCRIBE grounds reward modeling in a curated library of skill prototypes, transforming open-ended LLM evaluation into a constrained verification problem. By routing each subgoal to a corresponding prototype, the reward model is equipped with precise, structured rubrics that substantially reduce reward variance.\nExperimental results show that SCRIBE achieves state-of-the-art performance across a range of reasoning and tool-use benchmarks. In particular, it improves the AIME25 accuracy of a Qwen3-4B model from 43.3% to 63.3%, and significantly increases success rates in complex multi-turn tool interactions.\nFurther analysis of training dynamics reveals a co-evolution across abstraction levels, where mastery of mid-level skills consistently precedes the emergence of effective high-level planning behaviors. Finally, we demonstrate that SCRIBE is additive to low-level tool optimizations, providing a scalable and complementary pathway toward more autonomous and reliable tool-using agents.",
     "author_info": [],
     "authors": [
-      "Yujian Liu",
-      "Jiabao Ji",
-      "Li An",
-      "Tommi Jaakkola",
-      "Yang Zhang",
-      "Shiyu Chang"
+      "Yuxuan Jiang",
+      "Francis Ferraro"
     ],
-    "canonical_id": "2604.04323v1",
-    "first_publication_date": "2026-04-06T00:10:30.000Z",
+    "canonical_id": "2601.03555v1",
+    "first_publication_date": "2026-01-07T03:49:48.000Z",
     "full_authors": [
       {
-        "full_name": "Yujian Liu",
-        "id": "01985c81-e34e-7131-8aac-be37bd7a3ddc",
+        "full_name": "Yuxuan Jiang",
+        "id": "01985c82-2959-70ce-99b6-33e854752d82",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Jiabao Ji",
-        "id": "01985c82-40cb-7f5c-8637-11db63ca0ca8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Li An",
-        "id": "01985c82-86c2-7e54-a21b-60bb3004ddd1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tommi Jaakkola",
-        "id": "01985c81-db50-795c-908f-3b109e669e95",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yang Zhang",
-        "id": "01985c81-e34e-7dd0-8afa-a9616001a992",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shiyu Chang",
-        "id": "01985c81-e01d-7c21-bdd1-517ba498fe4b",
+        "full_name": "Francis Ferraro",
+        "id": "01985c82-3305-7909-be77-82457e2fc045",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 0,
-    "github_url": "https://github.com/UCSB-NLP-Chang/Skill-Usage",
-    "id": "019d65c3-bce8-773f-b24f-b88e5db06719",
-    "image_url": "image/2604.04323v1.png",
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
+    "image_url": "image/2601.03555v1.png",
     "metrics": {
-      "public_total_votes": 2,
+      "public_total_votes": 3,
       "total_votes": 0,
       "visits_count": {
-        "all": 28,
-        "last_7_days": 28
+        "all": 37,
+        "last_7_days": 8
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019d65c3-bce8-773f-b24f-b88e5db06719",
+    "paper_group_id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
     "paper_summary": {
       "keyInsights": [
-        "The benefits of agentic skills, while present in idealized scenarios, consistently degrade as evaluation settings become more realistic, with weaker models sometimes performing worse with irrelevant skills.",
-        "Key bottlenecks limiting skill utility include the agent's inability to reliably select relevant skills from a noisy pool, imperfect retrieval from large collections, and difficulty in adapting general skills to specific tasks.",
-        "Query-specific skill refinement significantly improves agent performance by enabling task-aware adaptation and synthesis of information from retrieved skills, recovering a substantial portion of lost utility."
+        "Mid-level skill abstraction offers a stable and informative granularity for credit assignment, effectively bridging the gap between high-level planning and low-level execution in LLM agent training.",
+        "Direct optimization of mid-level skill mastery via structured rewards leads to a co-evolutionary effect, fostering the emergent development of higher-level strategic planning capabilities in LLMs.",
+        "Mid-level skill supervision is complementary to low-level tool optimizations, allowing for synergistic improvements when combined."
       ],
       "originalProblem": [
-        "Existing LLM agent skill benchmarks often relied on idealized conditions, providing pre-selected and hand-crafted skills directly to agents.",
-        "Agents face challenges in real-world scenarios, including independently selecting relevant skills from many options, retrieving skills from large unorganized repositories, and adapting general-purpose skills to specific queries.",
-        "The true utility and limitations of agentic skills in practical, less-than-ideal circumstances remained largely unquantified."
+        "Reliably assigning credit to intermediate actions in multi-step, multi-tool reasoning environments for Large Language Models (LLMs).",
+        "Existing Process-level Reward Models (PRMs) using LLMs as judges provide inconsistent and underspecified reward signals due to a lack of granular, task-specific rubrics.",
+        "This leads to noisy feedback during reinforcement learning, hindering robust agent training and potentially causing reward hacking."
       ],
       "results": [
-        "Agentic search, which allows LLMs to iteratively formulate queries, significantly outperformed direct semantic search by 18.7 percentage points in Recall@3 for skill retrieval.",
-        "Pass rates for Claude Opus on SKILLSBENCH degraded from 55.4% (curated + forced load) to 38.4% (retrieved without curated skills), closely approaching the no-skill baseline of 35.4%.",
-        "Query-specific refinement improved Claude's pass rate on SKILLSBENCH (retrieved w/ curated) from 40.1% to 48.2% and demonstrated broader applicability by enhancing performance on TERMINAL-BENCH 2.0 from 61.4% to 65.5%."
+        "SCRIBE achieved state-of-the-art performance, with a Qwen3-4B-Instruct-2507 model reaching 95.8% accuracy on MATH500 and 63.3% on AIME25, alongside 51.3% overall on the BFCL v4 tool-use benchmark.",
+        "Analysis of training dynamics showed that improved mid-level execution, characterized by decreased uncertainty and increased plan separability, precedes the emergent development of high-level strategic planning abilities.",
+        "Combining SCRIBE's mid-level supervision with low-level tool optimization (FunRL) resulted in synergistic gains, achieving 33.4% accuracy on BFCL for the LLaMA-3.2-3B-Instruct model, an improvement over either method alone."
       ],
       "solution": [
-        "Assembled a large dataset of 34,198 real-world skills to simulate realistic retrieval and adaptation conditions for LLM agents.",
-        "Developed a skill search engine and evaluated various retrieval strategies (keyword, semantic, hybrid, agentic search) to identify effective skill discovery methods.",
-        "Assessed LLM agent performance across six progressively realistic evaluation settings on SKILLSBENCH and TERMINAL-BENCH 2.0, introducing challenges of selection, retrieval, and adaptation.",
-        "Investigated query-specific and query-agnostic skill refinement strategies to improve skill utility by making retrieved content more relevant and actionable."
+        "Introduce SCRIBE, a reinforcement learning framework that formalizes a three-level hierarchy for tool-use and intervenes at a \"mid-level abstraction\" focusing on reasoning skills.",
+        "Decompose reasoning trajectories into \bangle subgoal, skill, step \brangle triples, and then cluster these into canonical \"Skill Prototypes\" which include specific judging rubrics and common error traps.",
+        "Employ a lightweight Router to map student LLM trajectories to relevant Skill Prototypes, and a Judge LLM to evaluate subgoals using the prototype's precise criteria, generating consistent skill-conditioned process rewards for policy optimization via GRPO."
       ],
-      "summary": "This study systematically benchmarks the efficacy of LLM agentic skills under progressively realistic conditions, incorporating challenges like skill selection, retrieval from large repositories, and adaptation. It reveals that skill benefits significantly diminish in such settings but can be substantially recovered through query-specific skill refinement strategies."
+      "summary": "Researchers at UMBC developed SCRIBE, a framework enhancing tool-using language models by employing structured mid-level supervision through \"Skill Prototypes\" for more consistent reward modeling. This approach led to state-of-the-art performance, achieving 95.8% accuracy on MATH500 and 63.3% on AIME25, while also improving multi-turn tool interaction success on the BFCL v4 benchmark to 51.3%."
     },
-    "publication_date": "2026-04-06T00:10:30.000Z",
-    "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
+    "publication_date": "2026-01-07T03:49:48.000Z",
+    "title": "SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models",
     "topics": [
-      "agentic-frameworks",
       "agents",
       "Computer Science",
-      "cs.CL",
+      "cs.AI",
+      "data-curation",
       "fine-tuning",
-      "information-extraction",
-      "representation-learning",
-      "tool-use",
-      "transfer-learning"
+      "model-observability",
+      "reasoning",
+      "reinforcement-learning",
+      "tool-use"
     ],
-    "universal_paper_id": "2604.04323",
-    "updated_at": "2026-04-07T02:26:59.944Z",
-    "version_id": "019d65c3-bd30-719e-8827-b08c8d235c2e"
+    "universal_paper_id": "2601.03555",
+    "updated_at": "2026-01-08T03:16:26.256Z",
+    "version_id": "019b9b9b-043e-7f07-91dd-2dc85b100ffe"
   },
   {
     "abstract": "The performance of LLM-based agents depends not only on the agent itself but also on the quality of the tool interfaces it consumes. While prior work has focused heavily on agent fine-tuning, tool interfaces-including natural language descriptions and parameter schemas-remain largely human-oriented and often become a bottleneck, especially when agents must select from large candidate tool sets. Existing approaches to improving tool interfaces rely on execution traces, which are frequently unavailable in cold-start or privacy-constrained settings, and typically optimize each tool independently, limiting scalability and generalization to unseen tools. We propose Trace-Free+, a curriculum learning framework that progressively transfers supervision from trace-rich settings to trace-free deployment, encouraging the model to abstract reusable interface-usage patterns and tool usage outcomes. To support this approach, we construct a large-scale dataset of high-quality tool interfaces using a structured workflow over a diverse collection of tools. Experiments on StableToolBench and RestBench show consistent gains on unseen tools, strong cross-domain generalization, and robustness as the number of candidate tools scales to over 100, demonstrating that tool interface optimization is a practical and deployable complement to agent fine-tuning.",
@@ -5638,6 +5638,119 @@
     "universal_paper_id": "2602.08234.pdf",
     "updated_at": "2026-02-17T03:20:28.316Z",
     "version_id": "019c699d-15e8-7809-8229-f87649807003"
+  },
+  {
+    "abstract": "Skill usage has become a core component of modern agent systems and can substantially improve agents' ability to complete complex tasks. In real-world settings, where agents must monitor and interact with numerous personal applications, web browsers, and other environment interfaces, skill libraries can scale to thousands of reusable skills. Scaling to larger skill sets introduces two key challenges. First, loading the full skill set saturates the context window, driving up token costs, hallucination, and latency.\nIn this paper, we present Graph of Skills (GoS), an inference-time structural retrieval layer for large skill libraries. GoS constructs an executable skill graph offline from skill packages, then at inference time retrieves a bounded, dependency-aware skill bundle through hybrid semantic-lexical seeding, reverse-weighted Personalized PageRank, and context-budgeted hydration. On SkillsBench and ALFWorld, GoS improves average reward by 43.6% over the vanilla full skill-loading baseline while reducing input tokens by 37.8%, and generalizes across three model families: Claude Sonnet, GPT-5.2 Codex, and MiniMax. Additional ablation studies across skill libraries ranging from 200 to 2,000 skills further demonstrate that GoS consistently outperforms both vanilla skills loading and simple vector retrieval in balancing reward, token efficiency, and runtime.",
+    "author_info": [],
+    "authors": [
+      "Dawei Li",
+      "Zongxia Li",
+      "Hongyang Du",
+      "Xiyang Wu",
+      "Shihang Gui",
+      "Yongbei Kuang",
+      "Lichao Sun"
+    ],
+    "canonical_id": "2604.05333v1",
+    "first_publication_date": "2026-04-07T02:09:11.000Z",
+    "full_authors": [
+      {
+        "full_name": "Dawei Li",
+        "id": "01985c82-2dc1-78c5-a526-15ea0a7784dd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zongxia Li",
+        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hongyang Du",
+        "id": "01985c82-045b-759b-bab2-6e016440bf95",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiyang Wu",
+        "id": "01985c82-0fce-72b1-ba01-e3f3ba0b804a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shihang Gui",
+        "id": "019d6b83-50b5-740a-954f-31b741f36010",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongbei Kuang",
+        "id": "019d6b83-50b7-79f7-9afe-61c2ad48362a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lichao Sun",
+        "id": "01985c81-df57-7d70-9c42-89c34064034b",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 3,
+    "github_url": "https://github.com/davidliuk/graph-of-skills",
+    "id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
+    "image_url": "image/2604.05333v1.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 7,
+        "last_7_days": 7
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
+    "paper_summary": {
+      "keyInsights": [
+        "Explicitly modeling and leveraging dependency and workflow structures via a graph is crucial for retrieving functionally complete skill bundles, overcoming the 'prerequisite gap' of semantic-only methods.",
+        "A hybrid approach combining both semantic and lexical signals for initial skill seeding significantly improves the quality of candidate skills before graph-based expansion.",
+        "Reverse-aware graph diffusion effectively propagates relevance from high-level matched skills back to their essential prerequisites, ensuring that necessary but semantically weak skills are included."
+      ],
+      "originalProblem": [
+        "Large skill libraries lead to context window saturation, increased token costs, and higher latency for LLM agents when the entire library is loaded.",
+        "Purely semantic skill retrieval often suffers from a 'prerequisite gap,' failing to retrieve all functionally necessary skills (e.g., parsers, converters) that are semantically distant from the primary task query.",
+        "Agents struggle with multi-step tasks when provided with incomplete or noisy skill sets, leading to lower task completion rates and inefficient planning."
+      ],
+      "results": [
+        "GoS consistently achieved the highest average reward across all benchmarks and LLM models, improving average reward by 43.6% compared to the Vanilla Skills baseline and outperforming Vector Skills in every tested scenario.",
+        "The method significantly enhanced efficiency, reducing input token usage by 37.8% on average compared to Vanilla Skills while maintaining similar token efficiency to Vector Skills, and also reduced agent runtime in most configurations.",
+        "GoS demonstrated improved scalability, with its performance advantage over baselines increasing with skill library size, notably between 500 and 2,000 skills, confirming its effectiveness for large-scale agent skill management."
+      ],
+      "solution": [
+        "An offline phase constructs a typed directed graph from the local skill corpus, normalizing skills into nodes and inducing dependency, workflow, semantic, and alternative relations as edges.",
+        "An online structural retrieval phase employs hybrid seed retrieval (combining semantic and lexical scores) and reverse-aware typed diffusion on the graph to identify relevant skills.",
+        "A budgeted reranking and hydration step materializes a compact, execution-complete skill bundle, prioritizing skills based on combined diffusion and query evidence scores, while adhering to context limits."
+      ],
+      "summary": "Graph of Skills (GoS) improves the performance and efficiency of Large Language Model agents when utilizing extensive skill libraries by implementing a dependency-aware structural retrieval layer. This method consistently yielded a 43.6% higher average reward and 37.8% reduction in input tokens compared to full-loading baselines, effectively overcoming limitations like context window saturation and the 'prerequisite gap' in semantic skill retrieval."
+    },
+    "publication_date": "2026-04-07T02:09:11.000Z",
+    "title": "Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "graph-neural-networks",
+      "inference-optimization",
+      "optimization-methods",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2604.05333",
+    "updated_at": "2026-04-08T05:14:21.201Z",
+    "version_id": "019d6b83-50c2-7f93-afaf-05135067013e"
   },
   {
     "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
@@ -6770,77 +6883,6 @@
     "version_id": "019c75c0-5435-7465-a76c-9adf59bb2593"
   },
   {
-    "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
-    "author_info": [],
-    "authors": [
-      "Simon Yu",
-      "Gang Li",
-      "Weiyan Shi",
-      "Peng Qi"
-    ],
-    "canonical_id": "2510.15863/8dnpc7580n97.phpv1",
-    "first_publication_date": "2025-10-17T17:56:00.000Z",
-    "full_authors": [
-      {
-        "full_name": "Simon Yu",
-        "id": "01985c82-e549-7292-bbb6-2595bc7d948c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Gang Li",
-        "id": "01985c81-e41c-7fe7-96db-c5487530f267",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weiyan Shi",
-        "id": "01985c81-f312-71c9-9c97-d85b8d0fcebe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peng Qi",
-        "id": "01985c82-09af-76ae-855f-b29862c47dcf",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019c75c0-542c-7f8e-a134-63a206ac248c",
-    "image_url": "image/2510.15863/8dnpc7580n97.phpv1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 0,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75c0-542c-7f8e-a134-63a206ac248c",
-    "paper_summary": null,
-    "publication_date": "2025-10-17T17:56:00.000Z",
-    "title": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.AI",
-      "cs.CL",
-      "meta-learning",
-      "reinforcement-learning",
-      "tool-use",
-      "transfer-learning"
-    ],
-    "universal_paper_id": "2510.15863/8dnpc7580n97.php",
-    "updated_at": "2026-02-19T11:54:24.684Z",
-    "version_id": "019c75c0-543f-76b2-943a-dbab4c18c4f4"
-  },
-  {
     "abstract": "Procedural memory enables large language model (LLM) agents to internalize \"how-to\" knowledge, theoretically reducing redundant trial-and-error. However, existing frameworks predominantly suffer from a \"passive accumulation\" paradigm, treating memory as a static append-only archive. To bridge the gap between static storage and dynamic reasoning, we propose $\\textbf{ReMe}$ ($\\textit{Remember Me, Refine Me}$), a comprehensive framework for experience-driven agent evolution. ReMe innovates across the memory lifecycle via three mechanisms: 1) $\\textit{multi-faceted distillation}$, which extracts fine-grained experiences by recognizing success patterns, analyzing failure triggers and generating comparative insights; 2) $\\textit{context-adaptive reuse}$, which tailors historical insights to new contexts via scenario-aware indexing; and 3) $\\textit{utility-based refinement}$, which autonomously adds valid memories and prunes outdated ones to maintain a compact, high-quality experience pool. Extensive experiments on BFCL-V3 and AppWorld demonstrate that ReMe establishes a new state-of-the-art in agent memory system. Crucially, we observe a significant memory-scaling effect: Qwen3-8B equipped with ReMe outperforms larger, memoryless Qwen3-14B, suggesting that self-evolving memory provides a computation-efficient pathway for lifelong learning. We release our code and the $\\texttt{this http URL}$ dataset to facilitate further research.",
     "author_info": [],
     "authors": [
@@ -6943,6 +6985,77 @@
       "Weiyan Shi",
       "Peng Qi"
     ],
+    "canonical_id": "2510.15863/8dnpc7580n97.phpv1",
+    "first_publication_date": "2025-10-17T17:56:00.000Z",
+    "full_authors": [
+      {
+        "full_name": "Simon Yu",
+        "id": "01985c82-e549-7292-bbb6-2595bc7d948c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gang Li",
+        "id": "01985c81-e41c-7fe7-96db-c5487530f267",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiyan Shi",
+        "id": "01985c81-f312-71c9-9c97-d85b8d0fcebe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Qi",
+        "id": "01985c82-09af-76ae-855f-b29862c47dcf",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019c75c0-542c-7f8e-a134-63a206ac248c",
+    "image_url": "image/2510.15863/8dnpc7580n97.phpv1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 0,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019c75c0-542c-7f8e-a134-63a206ac248c",
+    "paper_summary": null,
+    "publication_date": "2025-10-17T17:56:00.000Z",
+    "title": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.AI",
+      "cs.CL",
+      "meta-learning",
+      "reinforcement-learning",
+      "tool-use",
+      "transfer-learning"
+    ],
+    "universal_paper_id": "2510.15863/8dnpc7580n97.php",
+    "updated_at": "2026-02-19T11:54:24.684Z",
+    "version_id": "019c75c0-543f-76b2-943a-dbab4c18c4f4"
+  },
+  {
+    "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
+    "author_info": [],
+    "authors": [
+      "Simon Yu",
+      "Gang Li",
+      "Weiyan Shi",
+      "Peng Qi"
+    ],
     "canonical_id": "2510.15863/8dnpc7580n97.jspv1",
     "first_publication_date": "2025-10-17T17:56:00.000Z",
     "full_authors": [
@@ -7006,78 +7119,6 @@
     "universal_paper_id": "2510.15863/8dnpc7580n97.jsp",
     "updated_at": "2026-02-19T11:54:24.677Z",
     "version_id": "019c75c0-5452-7d1d-9a2a-69d25d53978a"
-  },
-  {
-    "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
-    "author_info": [],
-    "authors": [
-      "Simon Yu",
-      "Gang Li",
-      "Weiyan Shi",
-      "Peng Qi"
-    ],
-    "canonical_id": "2510.15863/iubl6mr9igfhv1",
-    "first_publication_date": "2025-10-17T17:56:00.000Z",
-    "full_authors": [
-      {
-        "full_name": "Simon Yu",
-        "id": "01985c82-e549-7292-bbb6-2595bc7d948c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Gang Li",
-        "id": "01985c81-e41c-7fe7-96db-c5487530f267",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weiyan Shi",
-        "id": "01985c81-f312-71c9-9c97-d85b8d0fcebe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peng Qi",
-        "id": "01985c82-09af-76ae-855f-b29862c47dcf",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019c75c0-5f46-76f9-803c-36a6b65c6a35",
-    "image_url": "image/2510.15863/iubl6mr9igfhv1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75c0-5f46-76f9-803c-36a6b65c6a35",
-    "paper_summary": null,
-    "publication_date": "2025-10-17T17:56:00.000Z",
-    "title": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.AI",
-      "cs.CL",
-      "meta-learning",
-      "reinforcement-learning",
-      "representation-learning",
-      "tool-use",
-      "transfer-learning"
-    ],
-    "universal_paper_id": "2510.15863/iubl6mr9igfh",
-    "updated_at": "2026-02-19T11:54:27.526Z",
-    "version_id": "019c75c0-5f60-7347-9d06-f8d4c8c7294a"
   },
   {
     "abstract": "Procedural memory enables large language model (LLM) agents to internalize \"how-to\" knowledge, theoretically reducing redundant trial-and-error. However, existing frameworks predominantly suffer from a \"passive accumulation\" paradigm, treating memory as a static append-only archive. To bridge the gap between static storage and dynamic reasoning, we propose $\\textbf{ReMe}$ ($\\textit{Remember Me, Refine Me}$), a comprehensive framework for experience-driven agent evolution. ReMe innovates across the memory lifecycle via three mechanisms: 1) $\\textit{multi-faceted distillation}$, which extracts fine-grained experiences by recognizing success patterns, analyzing failure triggers and generating comparative insights; 2) $\\textit{context-adaptive reuse}$, which tailors historical insights to new contexts via scenario-aware indexing; and 3) $\\textit{utility-based refinement}$, which autonomously adds valid memories and prunes outdated ones to maintain a compact, high-quality experience pool. Extensive experiments on BFCL-V3 and AppWorld demonstrate that ReMe establishes a new state-of-the-art in agent memory system. Crucially, we observe a significant memory-scaling effect: Qwen3-8B equipped with ReMe outperforms larger, memoryless Qwen3-14B, suggesting that self-evolving memory provides a computation-efficient pathway for lifelong learning. We release our code and the $\\texttt{this http URL}$ dataset to facilitate further research.",
@@ -7301,6 +7342,78 @@
     "universal_paper_id": "2512.10696/sso",
     "updated_at": "2026-02-17T15:41:07.026Z",
     "version_id": "019c6c43-2a88-7d55-bbc4-3192bb404d55"
+  },
+  {
+    "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
+    "author_info": [],
+    "authors": [
+      "Simon Yu",
+      "Gang Li",
+      "Weiyan Shi",
+      "Peng Qi"
+    ],
+    "canonical_id": "2510.15863/iubl6mr9igfhv1",
+    "first_publication_date": "2025-10-17T17:56:00.000Z",
+    "full_authors": [
+      {
+        "full_name": "Simon Yu",
+        "id": "01985c82-e549-7292-bbb6-2595bc7d948c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gang Li",
+        "id": "01985c81-e41c-7fe7-96db-c5487530f267",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weiyan Shi",
+        "id": "01985c81-f312-71c9-9c97-d85b8d0fcebe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Qi",
+        "id": "01985c82-09af-76ae-855f-b29862c47dcf",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019c75c0-5f46-76f9-803c-36a6b65c6a35",
+    "image_url": "image/2510.15863/iubl6mr9igfhv1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019c75c0-5f46-76f9-803c-36a6b65c6a35",
+    "paper_summary": null,
+    "publication_date": "2025-10-17T17:56:00.000Z",
+    "title": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.AI",
+      "cs.CL",
+      "meta-learning",
+      "reinforcement-learning",
+      "representation-learning",
+      "tool-use",
+      "transfer-learning"
+    ],
+    "universal_paper_id": "2510.15863/iubl6mr9igfh",
+    "updated_at": "2026-02-19T11:54:27.526Z",
+    "version_id": "019c75c0-5f60-7347-9d06-f8d4c8c7294a"
   },
   {
     "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",
@@ -7538,97 +7651,6 @@
     "universal_paper_id": "2602.02474.pdf",
     "updated_at": "2026-02-10T07:22:10.331Z",
     "version_id": "019c466d-da58-798c-be5e-eacab6574bcc"
-  },
-  {
-    "abstract": "Skill usage has become a core component of modern agent systems and can substantially improve agents' ability to complete complex tasks. In real-world settings, where agents must monitor and interact with numerous personal applications, web browsers, and other environment interfaces, skill libraries can scale to thousands of reusable skills. Scaling to larger skill sets introduces two key challenges. First, loading the full skill set saturates the context window, driving up token costs, hallucination, and latency.\nIn this paper, we present Graph of Skills (GoS), an inference-time structural retrieval layer for large skill libraries. GoS constructs an executable skill graph offline from skill packages, then at inference time retrieves a bounded, dependency-aware skill bundle through hybrid semantic-lexical seeding, reverse-weighted Personalized PageRank, and context-budgeted hydration. On SkillsBench and ALFWorld, GoS improves average reward by 43.6% over the vanilla full skill-loading baseline while reducing input tokens by 37.8%, and generalizes across three model families: Claude Sonnet, GPT-5.2 Codex, and MiniMax. Additional ablation studies across skill libraries ranging from 200 to 2,000 skills further demonstrate that GoS consistently outperforms both vanilla skills loading and simple vector retrieval in balancing reward, token efficiency, and runtime.",
-    "author_info": [],
-    "authors": [
-      "Dawei Li",
-      "Zongxia Li",
-      "Hongyang Du",
-      "Xiyang Wu",
-      "Shihang Gui",
-      "Yongbei Kuang",
-      "Lichao Sun"
-    ],
-    "canonical_id": "2604.05333v1",
-    "first_publication_date": "2026-04-07T02:09:11.000Z",
-    "full_authors": [
-      {
-        "full_name": "Dawei Li",
-        "id": "01985c82-2dc1-78c5-a526-15ea0a7784dd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zongxia Li",
-        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hongyang Du",
-        "id": "01985c82-045b-759b-bab2-6e016440bf95",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiyang Wu",
-        "id": "01985c82-0fce-72b1-ba01-e3f3ba0b804a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shihang Gui",
-        "id": "019d6b83-50b5-740a-954f-31b741f36010",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yongbei Kuang",
-        "id": "019d6b83-50b7-79f7-9afe-61c2ad48362a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lichao Sun",
-        "id": "01985c81-df57-7d70-9c42-89c34064034b",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 3,
-    "github_url": "https://github.com/davidliuk/graph-of-skills",
-    "id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
-    "image_url": "image/2604.05333v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 2,
-        "last_7_days": 2
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
-    "paper_summary": null,
-    "publication_date": "2026-04-07T02:09:11.000Z",
-    "title": "Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "graph-neural-networks",
-      "inference-optimization",
-      "optimization-methods",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2604.05333",
-    "updated_at": "2026-04-08T05:14:21.201Z",
-    "version_id": "019d6b83-50c2-7f93-afaf-05135067013e"
   },
   {
     "abstract": "We introduce \\emph{Memento-Skills}, a generalist, continually-learnable LLM agent system that functions as an \\emph{agent-designing agent}: it autonomously constructs, adapts, and improves task-specific agents through experience. The system is built on a memory-based reinforcement learning framework with \\emph{stateful prompts}, where reusable skills (stored as structured markdown files) serve as persistent, evolving memory. These skills encode both behaviour and context, enabling the agent to carry forward knowledge across interactions.\nStarting from simple elementary skills (like Web search and terminal operations), the agent continually improves via the \\emph{Read--Write Reflective Learning} mechanism introduced in \\emph{Memento~2}~\\cite{wang2025memento2}. In the \\emph{read} phase, a behaviour-trainable skill router selects the most relevant skill conditioned on the current stateful prompt; in the \\emph{write} phase, the agent updates and expands its skill library based on new experience. This closed-loop design enables \\emph{continual learning without updating LLM parameters}, as all adaptation is realised through the evolution of externalised skills and prompts.\nUnlike prior approaches that rely on human-designed agents, Memento-Skills enables a generalist agent to \\emph{design agents end-to-end} for new tasks. Through iterative skill generation and refinement, the system progressively improves its own capabilities. Experiments on the \\emph{General AI Assistants} benchmark and \\emph{Humanity's Last Exam} demonstrate sustained gains, achieving 26.2\\% and 116.2\\% relative improvements in overall accuracy, respectively. Code is available at this https URL.",

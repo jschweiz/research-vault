@@ -5,22 +5,22 @@ title: How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstructi
 source_url: https://medium.com/@florentpoux/how-to-create-3d-models-from-any-image-with-ai-zero-shot-3d-reconstruction-21d3023ad81b
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Florent Poux
-published_at: 2026-04-06T06:40:00Z
-ingested_at: 2026-04-08T09:00:27.661246Z
+- Medium Daily Digest <noreply@medium.com>
+- Florent Poux
+published_at: '2026-04-06T06:40:00Z'
+ingested_at: '2026-04-08T09:00:27.661246Z'
 content_hash: 009dcfa2011d469897259d291165b05d5304c23407026cac3f0d98e6d37ab85e
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - 3d modeling
-  - ai
-  - image processing
-  - zero-shot reconstruction
+- newsletter
+- medium
+- email
+- blog-post
+- 3d modeling
+- ai
+- image processing
+- zero-shot reconstruction
 status: archived
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d618506ae886de::link::https://medium.com/@florentpoux/how-to-create-3d-models-from-any-image-with-ai-zero-shot-3d-reconstruction-21d3023ad81b
@@ -28,13 +28,27 @@ canonical_url: https://medium.com/@florentpoux/how-to-create-3d-models-from-any-
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.661251Z
-short_summary: # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction) Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+fetched_at: '2026-04-08T09:00:27.661251Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:02:45.575815Z
+lightweight_enriched_at: '2026-04-08T14:08:40.548012Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 009dcfa2011d469897259d291165b05d5304c23407026cac3f0d98e6d37ab85e
+lightweight_enrichment_input_hash: 2a7af606e62ae06df9cf64d6b4fbf35d49198c4db29a40e9a6f213e9c3650ac6
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 338ce246fff808ae6d868bd343b75defea36d31520b1b7aea03e0b5dc60b0230
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topic of language models and AI, despite the lack of specific author or source preference data.
+  evidence_quotes:
+  - How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
+  - 'Tags: newsletter, medium, email, blog-post, 3d modeling, ai, image processing, zero-shot reconstruction'
 ---
 # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
 

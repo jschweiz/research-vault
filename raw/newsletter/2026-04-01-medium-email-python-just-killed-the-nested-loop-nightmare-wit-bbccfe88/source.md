@@ -5,24 +5,24 @@ title: Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. 
 source_url: https://mail.google.com/mail/u/0/#inbox/19d47c53cad69e0d
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - A. Rahman
-published_at: 2026-04-01T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.160901Z
+- Medium Daily Digest <noreply@medium.com>
+- A. Rahman
+published_at: '2026-04-01T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.160901Z'
 content_hash: aa19f8d2d9016de2c3b8bfc6899bce01df9ac0ddf4a362bbe189a2acc60f240c
 tags:
-  - newsletter
-  - medium
-  - email
-  - python
-  - programming
-  - coding
-  - data science
-  - ai
-  - system design
+- newsletter
+- medium
+- email
+- python
+- programming
+- coding
+- data science
+- ai
+- system design
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d47c53cad69e0d
@@ -30,13 +30,26 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d47c53cad69e0d
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:26.376941Z
+fetched_at: '2026-04-08T09:00:26.376941Z'
 short_summary: Medium digest led by "Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol". Includes 15 highlighted stories, including "How to Generate 3D Models from Images with Python".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:07:03.041747Z
+lightweight_enriched_at: '2026-04-08T14:13:27.357280Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: aa19f8d2d9016de2c3b8bfc6899bce01df9ac0ddf4a362bbe189a2acc60f240c
+lightweight_enrichment_input_hash: ae176aeb40e7ec551091fe6ddf34feb7f50f249d4a71e075cc8044e619dfe786
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cd3a97cdb3847745af8240a2008e2741a6eb36baa343928f4bdcdf56c77687d0
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.6
+  author_fit_score: 0.0
+  evidence_fit_score: 0.5
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its tags including 'ai' and 'python', aligning with the user's interest in language models and research tooling, but the specific content is a digest of many topics.
+  evidence_quotes:
+  - 'Tags: newsletter, medium, email, python, programming, coding, data science, ai, system design'
 ---
 # Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A. Rahman in CodeToDeploy
 

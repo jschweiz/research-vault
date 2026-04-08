@@ -1,33 +1,33 @@
 ---
 id: 2026-04-07-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 kind: blog-post
-title: How Australia Uses Claude: Findings from the Anthropic Economic Index
+title: 'How Australia Uses Claude: Findings from the Anthropic Economic Index'
 source_url: https://www.anthropic.com/research/how-australia-uses-claude
 source_name: Anthropic Research
 authors:
-  - Peter McCrory
-  - Keir Bradwell
-  - Ria Strasser Galvis
-  - Ryan Heller
-  - Eva Lyubich
-  - Jennifer Marintez
-published_at: 2026-03-31T00:00:00Z
-ingested_at: 2026-04-07T19:36:08.393835Z
-content_hash: b2f5f24f678b94e15973655531cce957244cae9f1f8a1770ec4ed0e4f87fe54c
+- Peter McCrory
+- Keir Bradwell
+- Ria Strasser Galvis
+- Ryan Heller
+- Eva Lyubich
+- Jennifer Marintez
+published_at: '2026-03-31T00:00:00Z'
+ingested_at: '2026-04-07T19:36:08.393835Z'
+content_hash: 7ceb37c1db7b9705a9a327c50f7ad8d551b0a27c4a566faf647b69c38e7189d6
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - claude
-  - australia
-  - ai adoption
-  - economic index
-  - usage patterns
+- anthropic
+- official
+- research
+- website
+- blog-post
+- claude
+- australia
+- ai adoption
+- economic index
+- usage patterns
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/how-australia-uses-claude
@@ -35,13 +35,16 @@ canonical_url: https://www.anthropic.com/research/how-australia-uses-claude
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:08.393837Z
-short_summary: How Australia Uses Claude: Findings from the Anthropic Economic Index Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:07:38.926881Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: b2f5f24f678b94e15973655531cce957244cae9f1f8a1770ec4ed0e4f87fe54c
+fetched_at: '2026-04-08T15:10:06.456889Z'
+short_summary: 'How Australia Uses Claude: Findings from the Anthropic Economic Index Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan.'
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index
 Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. To mark the occasion, we thought we’d look more closely into how Australians are using Claude.
@@ -83,6 +86,9 @@ url = {https://www.anthropic.com/research/australia-brief-economic-index-march-2
 Acknowledgements
 Keir Bradwell, Ria Strasser Galvis, Ryan Heller, Eva Lyubich, Jennifer Marintez, Maxim Massenkoff, Jared Mueller, Sarah Pollack
 Related content
+Emotion concepts and their function in a large language model
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+[Read more](/research/emotion-concepts-function)
 Anthropic Economic Index report: Learning curves
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 [Read more](/research/economic-index-march-2026-report)

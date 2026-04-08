@@ -5,24 +5,24 @@ title: Voxtral | Mistral AI
 source_url: https://mistral.ai/news/voxtral
 source_name: Mistral Research
 authors:
-  - Mistral Research
-published_at: 2025-07-15T12:00:00Z
-ingested_at: 2026-04-07T21:28:01.704312Z
+- Mistral Research
+published_at: '2025-07-15T12:00:00Z'
+ingested_at: '2026-04-07T21:28:01.704312Z'
 content_hash: ed8cc0391a0d4036aa868b4d7f96750ba1a2051c0818fe3b46dafcb5856b88b9
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - speech understanding
-  - audio models
-  - asr
-  - multilingual
-  - open source
+- mistral
+- official
+- research
+- website
+- blog-post
+- speech understanding
+- audio models
+- asr
+- multilingual
+- open source
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/voxtral
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/voxtral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:02.361252Z
-short_summary: Voice: the original UI. Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships.
+fetched_at: '2026-04-08T15:11:05.582913Z'
+short_summary: Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence. Voxtral bridges the gap between open-source ASR systems and proprietary APIs by offering superior accuracy and semantic understanding.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:26.400913Z
+lightweight_enriched_at: '2026-04-08T13:58:30.009527Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ed8cc0391a0d4036aa868b4d7f96750ba1a2051c0818fe3b46dafcb5856b88b9
+lightweight_enrichment_input_hash: 047c9a7d66f63d604f408956f221b8e61b66375bd300dcac780c8e88dad267ca
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Voice: the original UI.
 Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships. As digital systems become more capable, voice is returning as our most natural form of human-computer interaction.

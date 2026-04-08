@@ -5,26 +5,26 @@ title: OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 source_url: https://mail.google.com/mail/u/0/#inbox/19d52ff6ce9d2f51
 source_name: TLDR Email
 authors:
-  - TLDR <dan@tldrnewsletter.com>
-  - Dan Ni
-  - Stephen Flanders
-published_at: 2026-04-03T10:59:24Z
-ingested_at: 2026-04-07T19:36:37.902632Z
+- TLDR <dan@tldrnewsletter.com>
+- Dan Ni
+- Stephen Flanders
+published_at: '2026-04-03T10:59:24Z'
+ingested_at: '2026-04-07T19:36:37.902632Z'
 content_hash: e704b7c8869d33ce3f1ee301b8b053c5a55e53f3d091e30cca43e9994ec1fd84
 tags:
-  - newsletter
-  - tldr
-  - email
-  - ai
-  - openai
-  - tbpn
-  - cursor
-  - software development
-  - google deepmind
-  - technology
+- newsletter
+- tldr
+- email
+- ai
+- openai
+- tbpn
+- cursor
+- software development
+- google deepmind
+- technology
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: tldr-email
 source_pipeline_id: null
 external_key: 19d52ff6ce9d2f51
@@ -32,13 +32,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d52ff6ce9d2f51
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:27.067352Z
+fetched_at: '2026-04-08T15:11:41.067619Z'
 short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:39:24.265471Z
+lightweight_enriched_at: '2026-04-08T14:14:15.826828Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
-lightweight_enrichment_input_hash: e704b7c8869d33ce3f1ee301b8b053c5a55e53f3d091e30cca43e9994ec1fd84
+lightweight_enrichment_input_hash: b20c46afe70e4925149d5841fc63aa0bbd0feb38278511e56ddc38630dd2a34e
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 

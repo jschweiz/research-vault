@@ -5,24 +5,24 @@ title: Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding
 source_url: https://mail.google.com/mail/u/0/#inbox/19d5c5ea63d230bf
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Fareed Khan
-published_at: 2026-04-05T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.081917Z
+- Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
+published_at: '2026-04-05T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.081917Z'
 content_hash: f43dae90082bcb7dc5a39d8fa5655fd5d2f4fe485e91df01879412ef395d2afe
 tags:
-  - newsletter
-  - medium
-  - email
-  - agentic ai
-  - long-term memory
-  - ai
-  - agentic workflows
-  - rag
-  - claude
+- newsletter
+- medium
+- email
+- agentic ai
+- long-term memory
+- ai
+- agentic workflows
+- rag
+- claude
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d5c5ea63d230bf
@@ -30,13 +30,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5c5ea63d230bf
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:32.852429Z
+fetched_at: '2026-04-08T15:11:50.640175Z'
 short_summary: Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s everything you need to know".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.172891Z
+lightweight_enriched_at: '2026-04-08T14:14:33.420912Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: f43dae90082bcb7dc5a39d8fa5655fd5d2f4fe485e91df01879412ef395d2afe
+lightweight_enrichment_input_hash: e2cb415e8164c952c83435183146f4edf4747277792ac8834c8b8e6cb7fbb570
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding
 

@@ -5,23 +5,23 @@ title: A Practical Guide to Time Series Sales Volume Forecasting for Business
 source_url: https://medium.com/@weixinlow041/a-practical-guide-to-time-series-sales-volume-forecasting-for-business-f257eb10c474
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - A. Rahman
-published_at: 2026-04-01T06:40:00Z
-ingested_at: 2026-04-08T09:00:26.466099Z
+- Medium Daily Digest <noreply@medium.com>
+- A. Rahman
+published_at: '2026-04-01T06:40:00Z'
+ingested_at: '2026-04-08T09:00:26.466099Z'
 content_hash: 1921dc3f626beb89b4602e780818c69d8b7b703aba7232fae43f3433f2e6660f
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - time series
-  - forecasting
-  - sales volume
-  - python
-  - data science
+- newsletter
+- medium
+- email
+- blog-post
+- time series
+- forecasting
+- sales volume
+- python
+- data science
 status: active
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d47c53cad69e0d::link::https://medium.com/@weixinlow041/a-practical-guide-to-time-series-sales-volume-forecasting-for-business-f257eb10c474
@@ -29,13 +29,27 @@ canonical_url: https://medium.com/@weixinlow041/a-practical-guide-to-time-series
 doc_role: derived
 parent_id: 2026-04-01-medium-email-python-just-killed-the-nested-loop-nightmare-wit-bbccfe88
 index_visibility: visible
-fetched_at: 2026-04-08T09:00:26.466103Z
-short_summary: # A Practical Guide to Time Series Sales Volume Forecasting for Business Source newsletter: Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.
+fetched_at: '2026-04-08T09:00:26.466103Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:00:51.325417Z
+lightweight_enriched_at: '2026-04-08T14:03:38.266624Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 1921dc3f626beb89b4602e780818c69d8b7b703aba7232fae43f3433f2e6660f
+lightweight_enrichment_input_hash: d8f7fbf645c8ff4d2c34fc7b19def8070a1f63291499048bdd27eb7563983382
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 402a260f1685ebe3b79fd16dc6aec3450b3cef0f0c033eeb464dd6655fe6369e
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document is relevant to data science and forecasting but does not directly address the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_quotes:
+  - A Practical Guide to Time Series Sales Volume Forecasting for Business
+  - 'Tags: newsletter, medium, email, blog-post, time series, forecasting, sales volume, python, data science'
 ---
 # A Practical Guide to Time Series Sales Volume Forecasting for Business
 

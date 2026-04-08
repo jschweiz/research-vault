@@ -5,23 +5,23 @@ title: Why Your RAG System Fails Complex Questions? (And How Structure Fixes Eve
 source_url: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Vivedha Elango
-published_at: 2026-04-07T06:40:00Z
-ingested_at: 2026-04-08T09:00:27.939088Z
+- Medium Daily Digest <noreply@medium.com>
+- Vivedha Elango
+published_at: '2026-04-07T06:40:00Z'
+ingested_at: '2026-04-08T09:00:27.939088Z'
 content_hash: 761667d41cd4de133ba5d10181c92366f891b17f752d3deca43e4719f0e5d551
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - rag
-  - ai
-  - structure
-  - retrieval
-  - coding
+- newsletter
+- medium
+- email
+- blog-post
+- rag
+- ai
+- structure
+- retrieval
+- coding
 status: archived
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d66ab627cf3725::link::https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
@@ -29,13 +29,27 @@ canonical_url: https://medium.com/@vivedhaelango/why-your-rag-system-fails-compl
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.939093Z
-short_summary: # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything) Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 2 Canonical URL: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0 ## Newsletter Context Section: Today's highlights > Vivedha Elango in L
+fetched_at: '2026-04-08T09:00:27.939093Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:03:14.499766Z
+lightweight_enriched_at: '2026-04-08T14:12:59.230173Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 761667d41cd4de133ba5d10181c92366f891b17f752d3deca43e4719f0e5d551
+lightweight_enrichment_input_hash: 118f4acfb32cd9820e040618cdff2e1bc8538379cd0b815845590e3da93bf67e
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 106ee049cccfab21eae289fd98fbae9e03694f516324eb36f053df6d5e464daf
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, evaluation, and reasoning through the lens of RAG systems.
+  evidence_quotes:
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
+  - Understanding the Retrieval and Structuring (RAS)…
 ---
 # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
 

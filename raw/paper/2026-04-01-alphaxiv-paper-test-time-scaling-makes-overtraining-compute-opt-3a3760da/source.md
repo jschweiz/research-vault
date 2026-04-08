@@ -5,38 +5,38 @@ title: Test-Time Scaling Makes Overtraining Compute-Optimal
 source_url: https://www.alphaxiv.org/abs/2604.01411
 source_name: alphaXiv Papers
 authors:
-  - Nicholas Roberts
-  - Sungjun Cho
-  - Zhiqi Gao
-  - Tzu-Heng Huang
-  - Albert Wu
-  - Gabriel Orlanski
-published_at: 2026-04-01T21:17:32Z
-ingested_at: 2026-04-07T21:43:28.200365Z
+- Nicholas Roberts
+- Sungjun Cho
+- Zhiqi Gao
+- Tzu-Heng Huang
+- Albert Wu
+- Gabriel Orlanski
+published_at: '2026-04-01T21:17:32Z'
+ingested_at: '2026-04-07T21:43:28.200365Z'
 content_hash: e8e9ce9f8e3f79076dd8e0ebf3a51726f53f36e0a85fa4510010004172bf8d26
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - computer science
-  - cs.cl
-  - cs.lg
-  - efficient-transformers
-  - inference-optimization
-  - ml-systems
-  - model-deployment-systems
+- paper
+- alphaxiv
+- research
+- computer science
+- cs.cl
+- cs.lg
+- efficient-transformers
+- inference-optimization
+- ml-systems
+- model-deployment-systems
 status: active
 asset_paths:
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.01411
@@ -44,13 +44,28 @@ canonical_url: https://www.alphaxiv.org/abs/2604.01411
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:43:28.200372Z
-short_summary: # Test-Time Scaling Makes Overtraining Compute-Optimal ## alphaXiv Summary Researchers at the University of Wisconsin-Madison and Stanford University introduced Train-to-Test (T2) scaling laws, a framework that jointly optimizes language model size, training tokens, and inference samples under a unified compute budget. Their findings indicate that accounting for test-time scaling through repeated sampling makes training smaller models for longer periods (overtraining) compute-optimal, leading to
+fetched_at: '2026-04-07T21:43:28.200372Z'
+short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:44:17.949770Z
+lightweight_enriched_at: '2026-04-08T14:16:00.474440Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: e8e9ce9f8e3f79076dd8e0ebf3a51726f53f36e0a85fa4510010004172bf8d26
+lightweight_enrichment_input_hash: bf7289154d5ef60efddbfbf4f34186187e1a7e253e8a3279e41a2e601eec9662
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f8c433e2098704b0548bc5675eb529c3d0558d9fea80e21f0876355f39275fd1
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, evaluation, and optimization through the lens of scaling laws and inference optimization.
+  evidence_quotes:
+  - We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets.
+  - Optimal pretraining strategies fundamentally shift towards smaller, "overtrained" models when the total compute budget includes test-time scaling via repeated s
+  - 'A unified framework for optimizing both training and inference compute is essential for efficient LLM development, as these phases are interdependent in modern '
 ---
 # Test-Time Scaling Makes Overtraining Compute-Optimal
 

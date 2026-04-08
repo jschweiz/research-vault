@@ -5,24 +5,24 @@ title: Voxtral transcribes at the speed of sound. | Mistral AI
 source_url: https://mistral.ai/news/voxtral-transcribe-2
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2026-02-04T16:00:00Z
-ingested_at: 2026-04-07T21:27:52.446823Z
+- Mistral AI
+published_at: '2026-02-04T16:00:00Z'
+ingested_at: '2026-04-07T21:27:52.446823Z'
 content_hash: 02d4048278e72efc01a29e8498f276125abb1cedb01f65a5196206c5f104dd84
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - voxtral
-  - speech-to-text
-  - ai
-  - realtime
-  - multilingual
+- mistral
+- official
+- research
+- website
+- blog-post
+- voxtral
+- speech-to-text
+- ai
+- realtime
+- multilingual
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/voxtral-transcribe-2
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/voxtral-transcribe-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:53.212200Z
-short_summary: Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications.
+fetched_at: '2026-04-08T15:10:44.591431Z'
+short_summary: Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications. These models offer state-of-the-art transcription quality, speaker diarization, and multilingual support.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:30:07.692676Z
+lightweight_enriched_at: '2026-04-08T14:00:23.317753Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 02d4048278e72efc01a29e8498f276125abb1cedb01f65a5196206c5f104dd84
+lightweight_enrichment_input_hash: 4c62d67284cf58d451a5bc559ba053fd904d18fafda0ccff3a7fd6a55fe70452
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license.
 We're also launching an [audio playground in Mistral Studio](https://console.mistral.ai/build/audio/speech-to-text) to test transcription instantly, powered by Voxtral Transcribe 2, with diarization and timestamps.

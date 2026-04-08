@@ -5,24 +5,24 @@ title: Magistral | Mistral AI
 source_url: https://mistral.ai/news/magistral
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-06-10T12:00:00Z
-ingested_at: 2026-04-07T21:28:05.039255Z
+- Mistral AI
+published_at: '2025-06-10T12:00:00Z'
+ingested_at: '2026-04-07T21:28:05.039255Z'
 content_hash: 846aa9b4abe56c93618d33b82a9a3d53b8fb6b618c437cb3badfb5894c547c09
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - magistral
-  - reasoning model
-  - mistral ai
-  - open source
-  - multilingual
+- mistral
+- official
+- research
+- website
+- blog-post
+- magistral
+- reasoning model
+- mistral ai
+- open source
+- multilingual
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/magistral
@@ -30,13 +30,16 @@ canonical_url: https://mistral.ai/news/magistral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:06.055679Z
-short_summary: Stands to reason. Magistral Announcing Magistral — the first reasoning model by Mistral AI — excelling in domain-specific, transparent, and multilingual reasoning.
+fetched_at: '2026-04-08T15:11:10.431105Z'
+short_summary: Mistral AI announced Magistral, the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning. Magistral is released in two variants, Magistral Small and Magistral Medium, offering various applications from scientific simulation to enterprise decision-making.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:15.864105Z
+lightweight_enriched_at: '2026-04-08T13:57:49.633188Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 846aa9b4abe56c93618d33b82a9a3d53b8fb6b618c437cb3badfb5894c547c09
+lightweight_enrichment_input_hash: 14fe13c18c966cdaa7240035e3ba41aa874f3400f031f067fcaf2062d1236bae
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Stands to reason.
 Magistral

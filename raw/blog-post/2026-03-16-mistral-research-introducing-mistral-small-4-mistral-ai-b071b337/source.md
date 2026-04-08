@@ -5,22 +5,24 @@ title: Introducing Mistral Small 4 | Mistral AI
 source_url: https://mistral.ai/news/mistral-small-4
 source_name: Mistral Research
 authors:
-published_at: 2026-03-16T21:00:00Z
-ingested_at: 2026-04-07T21:27:48.923309Z
+- Mistral AI
+published_at: '2026-03-16T21:00:00Z'
+ingested_at: '2026-04-07T21:27:48.923309Z'
 content_hash: 4af177256972285adbfbfa2f35a428b2decb6cd0ada57c88ef6cb2561a7eedb7
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - model
-  - multimodal
-  - reasoning
-  - open-source
+- mistral
+- official
+- research
+- website
+- blog-post
+- model
+- multimodal
+- reasoning
+- open-source
+- architecture
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/mistral-small-4
@@ -28,13 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-small-4
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:49.443426Z
-short_summary: Introducing Mistral Small 4 Today, we are announcing Mistral Small 4. This model is the next major release in the Mistral Small family.
+fetched_at: '2026-04-08T15:10:39.124835Z'
+short_summary: Mistral Small 4 is a unified model that combines reasoning, multimodal, and instruct capabilities into a single, efficient architecture. It features configurable reasoning effort and native multimodality, optimized for performance and open-source deployment.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:30:13.607631Z
+lightweight_enriched_at: '2026-04-08T14:00:42.622410Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4af177256972285adbfbfa2f35a428b2decb6cd0ada57c88ef6cb2561a7eedb7
+lightweight_enrichment_input_hash: 33486f0b3857622304400dc9a3ca79f3936dc5777a30de6d7986d70873467778
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Introducing
 Mistral Small 4

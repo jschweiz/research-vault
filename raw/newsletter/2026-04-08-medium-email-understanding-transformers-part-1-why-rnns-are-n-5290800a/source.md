@@ -1,21 +1,21 @@
 ---
 id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 kind: newsletter
-title: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
+title: 'Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective'
 source_url: https://mail.google.com/mail/u/0/#inbox/19d6bd1bd2d2259a
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-published_at: 2026-04-08T06:40:00Z
-ingested_at: 2026-04-08T09:25:32.413174Z
+- Medium Daily Digest <noreply@medium.com>
+published_at: '2026-04-08T06:40:00Z'
+ingested_at: '2026-04-08T09:25:32.413174Z'
 content_hash: cd0c143c58406c4cb9a1450db05c67c446e402b17b8b78cbf737a8f051e2091b
 tags:
-  - newsletter
-  - medium
-  - email
+- newsletter
+- medium
+- email
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d6bd1bd2d2259a
@@ -23,13 +23,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6bd1bd2d2259a
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:32.413181Z
-short_summary: Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".
+fetched_at: '2026-04-08T15:11:46.659528Z'
+short_summary: 'Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.187859Z
+lightweight_enriched_at: '2026-04-08T14:15:19.307053Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: cd0c143c58406c4cb9a1450db05c67c446e402b17b8b78cbf737a8f051e2091b
+lightweight_enrichment_input_hash: 09cfdcebcc47fd00eb698d888cebe17df07a2f1bc567a77c1a4e845b50990fd4
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 

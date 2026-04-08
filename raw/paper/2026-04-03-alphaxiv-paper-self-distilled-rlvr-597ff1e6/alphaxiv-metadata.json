@@ -1,13 +1,6 @@
 {
   "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose \\textbf{RLSD} (\\textbf{RL}VR with \\textbf{S}elf-\\textbf{D}istillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
-  "ai_detection": {
-    "fraction_ai": 0.23685598,
-    "fraction_ai_assisted": 0.026288025,
-    "fraction_human": 0.736856,
-    "headline": "Mostly Human, AI Detected",
-    "prediction_short": "Mixed",
-    "state": "done"
-  },
+  "ai_detection": null,
   "alphaxiv_url": "https://www.alphaxiv.org/abs/2604.03128",
   "authors": [
     "Chenxu Yang",
@@ -30,11 +23,11 @@
   "image_url": "https://www.alphaxiv.org/image/2604.03128v1.png",
   "license": "http://creativecommons.org/licenses/by/4.0/",
   "metrics": {
-    "public_total_votes": 63,
-    "total_votes": 33,
+    "public_total_votes": 95,
+    "total_votes": 37,
     "visits_count": {
-      "all": 1498,
-      "last_7_days": 1498
+      "all": 1815,
+      "last_7_days": 1815
     },
     "x_likes": 0
   },
@@ -65,11 +58,11 @@
     "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes",
     "Reinforcement Learning Teachers of Test Time Scaling",
     "Learning beyond Teacher: Generalized On-Policy Distillation with Reward Extrapolation",
-    "On Teacher Hacking in Language Model Distillation",
     "A Survey of On-Policy Distillation for Large Language Models",
+    "On Teacher Hacking in Language Model Distillation",
     "Distill Not Only Data but Also Rewards: Can Smaller Language Models  Surpass Larger Ones?",
-    "Privileged Information Distillation for Language Models",
     "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
+    "Privileged Information Distillation for Language Models",
     "Semantic Soft Bootstrapping: Long Context Reasoning in LLMs without Reinforcement Learning",
     "GHPO: Adaptive Guidance for Stable and Efficient LLM Reinforcement Learning",
     "Asymmetric REINFORCE for off-Policy Reinforcement Learning: Balancing positive and negative rewards",

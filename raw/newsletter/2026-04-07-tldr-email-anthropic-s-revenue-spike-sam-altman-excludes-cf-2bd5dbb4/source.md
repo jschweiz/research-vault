@@ -5,26 +5,26 @@ title: Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta bui
 source_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 source_name: TLDR Email
 authors:
-  - TLDR <dan@tldrnewsletter.com>
-  - Dan Ni
-  - Stephen Flanders
-published_at: 2026-04-07T10:59:25Z
-ingested_at: 2026-04-07T19:36:37.870816Z
+- TLDR <dan@tldrnewsletter.com>
+- Dan Ni
+- Stephen Flanders
+published_at: '2026-04-07T10:59:25Z'
+ingested_at: '2026-04-07T19:36:37.870816Z'
 content_hash: e4f7650e5223c46eebcce273ee47f12885084ae9afd9a7946cccb641fd1c7125
 tags:
-  - newsletter
-  - tldr
-  - email
-  - ai
-  - revenue
-  - anthropic
-  - openai
-  - meta
-  - cfo
-  - software engineering
+- newsletter
+- tldr
+- email
+- ai
+- revenue
+- anthropic
+- openai
+- meta
+- cfo
+- software engineering
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: tldr-email
 source_pipeline_id: null
 external_key: 19d6798e228bebe1
@@ -32,13 +32,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:26.914127Z
+fetched_at: '2026-04-08T15:11:37.898333Z'
 short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:39:24.308486Z
+lightweight_enriched_at: '2026-04-08T14:15:10.693573Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
-lightweight_enrichment_input_hash: e4f7650e5223c46eebcce273ee47f12885084ae9afd9a7946cccb641fd1c7125
+lightweight_enrichment_input_hash: 6e7cd7912cd72313f6c13ea8cff39786012f33f2d52b4b92c1b67632d6ef9904
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖
 

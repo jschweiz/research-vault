@@ -1,27 +1,28 @@
 ---
 id: 2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
 kind: blog-post
-title: Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI
+title: 'Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI'
 source_url: https://mistral.ai/news/leanstral
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2026-03-16T16:00:00Z
-ingested_at: 2026-04-07T21:27:50.741522Z
+- Mistral AI
+published_at: '2026-03-16T16:00:00Z'
+ingested_at: '2026-04-07T21:27:50.741522Z'
 content_hash: 131cc074bfbda88d47770f29bd5a16b9fdd304fb5f03aa81f377e2897bd566ea
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - leanstral
-  - open-source
-  - code agent
-  - formal proof
+- mistral
+- official
+- research
+- website
+- blog-post
+- leanstral
+- open-source
+- code agent
+- formal proof
+- lean4
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/leanstral
@@ -29,13 +30,16 @@ canonical_url: https://mistral.ai/news/leanstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:51.209822Z
-short_summary: AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review.
+fetched_at: '2026-04-08T15:10:42.299416Z'
+short_summary: Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and mighty, allowing humans to dictate desired outcomes rather than debugging machine-generated logic.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:30:21.441836Z
+lightweight_enriched_at: '2026-04-08T14:01:06.140450Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 131cc074bfbda88d47770f29bd5a16b9fdd304fb5f03aa81f377e2897bd566ea
+lightweight_enrichment_input_hash: 358e05e57d829a7122cc4f2e4b104be89ff3fbb97c296546c7ba5d3a4e018cd6
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review. The time and specialized expertise required to manually verify become the primary impedance of engineering velocity.
 We envision a more helpful generation of coding agents to both carry out their tasks and formally prove their implementations against strict specifications. Instead of debugging machine-generated logic, humans dictate what they want. Today, we are taking the first major step toward that vision.

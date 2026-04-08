@@ -1,27 +1,27 @@
 ---
 id: 2026-04-07-anthropic-research-vibe-physics-the-ai-grad-student-anthropic-a88ccd9c
 kind: blog-post
-title: Vibe physics: The AI grad student
+title: 'Vibe physics: The AI grad student'
 source_url: https://www.anthropic.com/research/vibe-physics
 source_name: Anthropic Research
 authors:
-  - Matthew Schwartz
-published_at: 2026-03-23T00:00:00Z
-ingested_at: 2026-04-07T19:36:19.760154Z
-content_hash: 60a683a687b634c17b74a347f9a5f83313e14664b11f7f8a73a46057c3849e30
+- Matthew Schwartz
+published_at: '2026-03-23T00:00:00Z'
+ingested_at: '2026-04-07T19:36:19.760154Z'
+content_hash: 9e7f26b1e1114b934ddc8a9637464d3bd3cf951bdd7ab3bb53f1bdd69869e623
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - ai
-  - physics
-  - machine learning
-  - theoretical physics
+- anthropic
+- official
+- research
+- website
+- blog-post
+- ai
+- physics
+- machine learning
+- theoretical physics
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/vibe-physics
@@ -29,13 +29,16 @@ canonical_url: https://www.anthropic.com/research/vibe-physics
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:36:19.760156Z
+fetched_at: '2026-04-08T15:10:23.419777Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. Can AI do theoretical physics?
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:08:23.681310Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 60a683a687b634c17b74a347f9a5f83313e14664b11f7f8a73a46057c3849e30
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
@@ -55,7 +58,7 @@ and out would pop the paper. We are not there yet, of course. I tried giving thi
 To go about this scientifically, I encapsulated all the work. The rules were strict:
 My question was: is there a set of prompts, like instructions to a talented G2, that can guide an AI to produce a high-quality physics paper (one that is genuinely interesting and pushes the field forward)?
 I knew from experience that LLMs struggle with context and organization over long projects. So I started by asking Claude to come up with a plan of attack: what tasks needed to be done in what order. I also asked GPT 5.2 and Gemini 3.0. Then, I had all three LLMs merge the best ideas from each, using web interfaces and copying one to another. Next, I gave those merges to Claude, asking it to break the outline into detailed subsections. The result is [here](https://www-cdn.anthropic.com/2595299ccf7f8b9a9c74823c24faaa5d9b216804.pdf). There were 102 separate tasks across seven stages.
-From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.55049d7a-8ad9-4e4f-a9e6-417df1001ae8/code), using the extension in VS Code.
+From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.97ba0333-cada-4f52-8f3e-e7a213b24abb/code), using the extension in VS Code.
 I created a folder for the project, put in the master plan, and had it try to solve each task separately, writing its results in a separate markdown file. Some examples are [Task 1.1: Review BSZ Paper](https://www-cdn.anthropic.com/c993ead637f1a102fe1f5346e89f59e82c579b37.pdf) and [Task 1.2: Review Catani—Webber](https://www-cdn.anthropic.com/94b3c41e52e19ba450fe5e804400ebcf0a88f3d0.pdf).
 This organization step was enormously helpful. Instead of one long conversation or document, Claude maintained a tree of markdown files—one summary per stage, one detailed file per task. Given that LLMs work much better with things they can retrieve rather than things they have to hold in context, this allowed Claude to look things up rather than remember them. When I asked Claude to proceed to the next task, it would read its own previous summary, do the work, and write a new summary. I also had it edit the plan as it went, modifying earlier and later sections as it learned.
 Claude worked through the stages sequentially: kinematics, NLO structure, SCET factorization, anomalous dimensions, resummation, matching, and documentation. Each stage took 15–35 minutes of wall-clock time and about half that in actual compute. The whole thing took roughly 2.5 hours.
@@ -118,5 +121,6 @@ In addition to the growth in interest, the tools themselves have been steadily i
 | CPU hours for simulations | ~40 |
 | Human oversight time | ~50–60 hours |
 [Matthew Schwartz](https://www.physics.harvard.edu/people/facpages/schwartz) is a professor of physics at Harvard University. The paper discussed here is [available on arXiv](https://arxiv.org/abs/2601.02484).
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

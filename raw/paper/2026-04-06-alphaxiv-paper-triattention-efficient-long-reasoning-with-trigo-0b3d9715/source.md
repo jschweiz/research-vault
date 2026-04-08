@@ -1,43 +1,56 @@
 ---
 id: 2026-04-06-alphaxiv-paper-triattention-efficient-long-reasoning-with-trigo-0b3d9715
 kind: paper
-title: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+title: 'TriAttention: Efficient Long Reasoning with Trigonometric KV Compression'
 source_url: https://www.alphaxiv.org/abs/2604.04921
 source_name: alphaXiv Papers
 authors:
-  - Weian Mao
-  - Xi Lin
-  - Wei Huang
-  - Yuxin Xie
-  - Tianfu Fu
-  - Bohan Zhuang
-published_at: 2026-04-06T17:58:42Z
-ingested_at: 2026-04-07T21:42:08.648109Z
-content_hash: 2b0d3e52d6cc3190796d40bdbdbb8af462357f914a4a90c619c9ecea7303a39f
+- Weian Mao
+- Xi Lin
+- Wei Huang
+- Yuxin Xie
+- Tianfu Fu
+- Bohan Zhuang
+- Song Han
+- Yukang Chen
+published_at: '2026-04-06T17:58:42Z'
+ingested_at: '2026-04-07T21:42:08.648109Z'
+content_hash: dd70523f4dab8b48478acdf8f9b525ffaa592201bcf34b93989f8b66957030ba
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - attention-mechanisms
-  - computer science
-  - cs.cl
-  - cs.cv
-  - efficient-transformers
-  - hardware-aware-algorithms
-  - inference-optimization
+- paper
+- alphaxiv
+- research
+- attention-mechanisms
+- computer science
+- cs.cl
+- cs.cv
+- efficient-transformers
+- hardware-aware-algorithms
+- inference-optimization
+- Computer Science
+- cs.CL
+- cs.CV
+- lightweight-models
+- model-compression
+- reasoning
+- transformers
+- github
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
-  - alphaxiv-ai-detection.json
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
-  - alphaxiv-transcript.json
-  - alphaxiv-transcript.md
+- alphaxiv-ai-detection.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
+- alphaxiv-transcript.json
+- alphaxiv-transcript.md
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.04921
@@ -45,13 +58,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04921
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:26:00.695898Z
-short_summary: # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression ## alphaXiv Summary Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:12:15.050216Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 2b0d3e52d6cc3190796d40bdbdbb8af462357f914a4a90c619c9ecea7303a39f
+fetched_at: '2026-04-08T15:12:33.887473Z'
+short_summary: Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
 
@@ -106,10 +122,10 @@ Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compre
 
 ## Metrics
 
-- Visits (all): 279
-- Visits (last 7 days): 279
-- Total votes: 4
-- Public total votes: 16
+- Visits (all): 353
+- Visits (last 7 days): 353
+- Total votes: 6
+- Public total votes: 31
 - X likes: 0
 
 ## Abstract

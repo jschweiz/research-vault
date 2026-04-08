@@ -1,28 +1,28 @@
 ---
 id: 2026-04-07-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 kind: blog-post
-title: A “diff” tool for AI: Finding behavioral differences in new models
+title: 'A “diff” tool for AI: Finding behavioral differences in new models'
 source_url: https://www.anthropic.com/research/diff-tool
 source_name: Anthropic Research
 authors:
-  - Anthropic Fellows
-published_at: 2026-03-13T00:00:00Z
-ingested_at: 2026-04-07T19:36:26.277249Z
-content_hash: a906af307ef0230b7e81727b135e1de96703b5e6865fc9322bfd3209c462c660
+- Anthropic Fellows
+published_at: '2026-03-13T00:00:00Z'
+ingested_at: '2026-04-07T19:36:26.277249Z'
+content_hash: 2897ebcc4224668ecdf7b215b276d9b1fe04e26449e5b201fe7f57991db6fed2
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - model diffing
-  - ai safety
-  - model alignment
-  - cross-architecture comparison
-  - model auditing
+- anthropic
+- official
+- research
+- website
+- blog-post
+- model diffing
+- ai safety
+- model alignment
+- cross-architecture comparison
+- model auditing
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/diff-tool
@@ -30,13 +30,16 @@ canonical_url: https://www.anthropic.com/research/diff-tool
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:35.146640Z
-short_summary: A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:06:24.124698Z
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a906af307ef0230b7e81727b135e1de96703b5e6865fc9322bfd3209c462c660
+fetched_at: '2026-04-08T15:10:28.284335Z'
+short_summary: 'A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.'
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.
@@ -87,6 +90,9 @@ This post was authored by Thomas Jiralerspong (Anthropic Fellows Program) and Tr
 Footnotes
 - As with all Anthropic Fellows interpretability research, this paper analyzes the behavior of open-source models. We chose the four models in the study—Llama-3.1-8B-Instruct, Qwen3-8B, GPT-OSS-20B, and DeepSeek-R1-0528-Qwen3-8B—on the basis they would be well-suited to testing whether our Dedicated Feature Crosscoder could detect notable differences in model behavior.
 Related content
+Emotion concepts and their function in a large language model
+All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
+[Read more](/research/emotion-concepts-function)
 Anthropic Economic Index report: Learning curves
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 [Read more](/research/economic-index-march-2026-report)

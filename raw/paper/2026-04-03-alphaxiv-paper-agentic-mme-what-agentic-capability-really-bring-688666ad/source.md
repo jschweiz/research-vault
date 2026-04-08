@@ -1,40 +1,40 @@
 ---
 id: 2026-04-03-alphaxiv-paper-agentic-mme-what-agentic-capability-really-bring-688666ad
 kind: paper
-title: Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
+title: 'Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?'
 source_url: https://www.alphaxiv.org/abs/2604.03016
 source_name: alphaXiv Papers
 authors:
-  - Qianshan Wei
-  - Yishan Yang
-  - Siyi Wang
-  - Jinglin Chen
-  - Binyu Wang
-  - Jiaming Wang
-published_at: 2026-04-03T13:02:01Z
-ingested_at: 2026-04-07T21:43:35.459252Z
+- Qianshan Wei
+- Yishan Yang
+- Siyi Wang
+- Jinglin Chen
+- Binyu Wang
+- Jiaming Wang
+published_at: '2026-04-03T13:02:01Z'
+ingested_at: '2026-04-07T21:43:35.459252Z'
 content_hash: 4a81ac35e27bf8702b94edbeb3a0e691348134e23df370b118a9d55a2c644499
 tags:
-  - paper
-  - alphaxiv
-  - research
-  - agentic-frameworks
-  - agents
-  - computer science
-  - cs.ai
-  - data-curation
-  - model-observability
-  - multi-modal-learning
+- paper
+- alphaxiv
+- research
+- agentic-frameworks
+- agents
+- computer science
+- cs.ai
+- data-curation
+- model-observability
+- multi-modal-learning
 status: active
 asset_paths:
-  - alphaxiv-legacy.json
-  - alphaxiv-metadata.json
-  - alphaxiv-overview-status.json
-  - alphaxiv-overview.json
-  - alphaxiv-overview.md
-  - alphaxiv-paper.json
-  - alphaxiv-preview.json
-  - alphaxiv-similar-papers.json
+- alphaxiv-legacy.json
+- alphaxiv-metadata.json
+- alphaxiv-overview-status.json
+- alphaxiv-overview.json
+- alphaxiv-overview.md
+- alphaxiv-paper.json
+- alphaxiv-preview.json
+- alphaxiv-similar-papers.json
 source_id: alphaxiv-paper
 source_pipeline_id: alphaxiv-paper
 external_key: https://www.alphaxiv.org/abs/2604.03016
@@ -42,13 +42,28 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03016
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T21:43:35.459258Z
-short_summary: # Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence? ## alphaXiv Summary Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools to solve complex, real-world problems.
+fetched_at: '2026-04-07T21:43:35.459258Z'
+short_summary: '# Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence? ## alphaXiv Summary Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools to solve complex, real-world problems.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:45:18.412284Z
+lightweight_enriched_at: '2026-04-08T14:16:45.837947Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4a81ac35e27bf8702b94edbeb3a0e691348134e23df370b118a9d55a2c644499
+lightweight_enrichment_input_hash: f7985cf1c46477ca452c616a897f57a4a5b137efa4e0a1331ba70c0a7695e8f1
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 96e3ec2c836412b20ca670376f1678a8a62f72f52a4825c82964709030040f2c
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, evaluation, and reasoning through a new benchmark for multimodal agentic capabilities.
+  evidence_quotes:
+  - 'Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools '
+  - Evaluation reveals a substantial performance gap, with leading models reaching 56.3% overall accuracy compared to human 93.8%, especially struggling with multi-
+  - We introduce Agentic-MME, a process-verified benchmark for Multimodal Agentic Capabilities.
 ---
 # Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
 

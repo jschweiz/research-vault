@@ -5,24 +5,24 @@ title: Nobody Wants to Learn AI | Alvis Ng
 source_url: https://mail.google.com/mail/u/0/#inbox/19d4ceb9642a0426
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Alvis Ng
-published_at: 2026-04-02T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.137511Z
+- Medium Daily Digest <noreply@medium.com>
+- Alvis Ng
+published_at: '2026-04-02T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.137511Z'
 content_hash: de140a3c25464392ff61b00f4e8e26912bbe5369ba0b63670d2a798024d928cc
 tags:
-  - newsletter
-  - medium
-  - email
-  - ai
-  - learning
-  - software development
-  - agentic engineering
-  - llms
-  - rag
+- newsletter
+- medium
+- email
+- ai
+- learning
+- software development
+- agentic engineering
+- llms
+- rag
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d4ceb9642a0426
@@ -30,13 +30,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d4ceb9642a0426
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:33.359383Z
+fetched_at: '2026-04-08T15:11:52.571306Z'
 short_summary: Medium digest led by "Nobody Wants to Learn AI". Includes 15 highlighted stories, including "Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.155721Z
+lightweight_enriched_at: '2026-04-08T14:13:45.483934Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: de140a3c25464392ff61b00f4e8e26912bbe5369ba0b63670d2a798024d928cc
+lightweight_enrichment_input_hash: 0b2239f22a219f984e58eb8d0120a98a5ccc7222ad7303e76053a0d668cd265b
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Nobody Wants to Learn AI | Alvis Ng
 

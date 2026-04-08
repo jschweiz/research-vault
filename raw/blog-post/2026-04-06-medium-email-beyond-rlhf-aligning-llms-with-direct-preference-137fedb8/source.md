@@ -1,27 +1,27 @@
 ---
 id: 2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
 kind: blog-post
-title: Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)
+title: 'Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)'
 source_url: https://medium.com/@kuriko-iwai/beyond-rlhf-aligning-llms-with-direct-preference-optimization-dpo-79f968c9177f
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Han HELOIR YAN, Ph.D.
-published_at: 2026-04-06T06:40:00Z
-ingested_at: 2026-04-08T09:00:27.738080Z
+- Medium Daily Digest <noreply@medium.com>
+- Han HELOIR YAN, Ph.D.
+published_at: '2026-04-06T06:40:00Z'
+ingested_at: '2026-04-08T09:00:27.738080Z'
 content_hash: fe2040b76779aa296e9a33039667121c07ae1d60203fd109fc576c0e2d47d590
 tags:
-  - newsletter
-  - medium
-  - email
-  - blog-post
-  - llm
-  - dpo
-  - rlhf
-  - machine learning
-  - fine-tuning
+- newsletter
+- medium
+- email
+- blog-post
+- llm
+- dpo
+- rlhf
+- machine learning
+- fine-tuning
 status: archived
-asset_paths:
+asset_paths: []
 source_id: medium-email
 source_pipeline_id: medium-email
 external_key: 19d618506ae886de::link::https://medium.com/@kuriko-iwai/beyond-rlhf-aligning-llms-with-direct-preference-optimization-dpo-79f968c9177f
@@ -29,13 +29,27 @@ canonical_url: https://medium.com/@kuriko-iwai/beyond-rlhf-aligning-llms-with-di
 doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: hidden
-fetched_at: 2026-04-08T09:00:27.738086Z
-short_summary: # Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO) Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+fetched_at: '2026-04-08T09:00:27.738086Z'
+short_summary: '# Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO) Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:02:39.581561Z
+lightweight_enriched_at: '2026-04-08T14:08:26.860115Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: fe2040b76779aa296e9a33039667121c07ae1d60203fd109fc576c0e2d47d590
+lightweight_enrichment_input_hash: 83ffd857ed6bc4927e2b3634f3e931d7d834e664da2f8d0f49440a1d0d941ad4
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 453ffdf803d58848b82c1078cd15c143eab7206d5444784ffe0a0dc4e27a0c6d
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topic of language models and evaluation through a relevant technical topic.
+  evidence_quotes:
+  - 'Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)'
+  - llm, dpo, rlhf, machine learning, fine-tuning
 ---
 # Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)
 

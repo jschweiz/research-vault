@@ -1,32 +1,32 @@
 ---
 id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 kind: newsletter
-title: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
+title: 'The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances'
 source_url: https://mail.google.com/mail/u/0/#inbox/19d5738504bb7676
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - zhaozhiming
-  - Dr.Preethi Balaji
-  - Dr. Ashish Bamania
-  - Marina Wyss
-  - Nikhil Anand
-published_at: 2026-04-04T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.099646Z
+- Medium Daily Digest <noreply@medium.com>
+- zhaozhiming
+- Dr.Preethi Balaji
+- Dr. Ashish Bamania
+- Marina Wyss
+- Nikhil Anand
+published_at: '2026-04-04T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.099646Z'
 content_hash: 5b6c9cf402fd624d546b62d2d5ca90b3b3d99c0c88989f39659ed1baee21a614
 tags:
-  - newsletter
-  - medium
-  - email
-  - ai advances
-  - coding
-  - reinforcement learning
-  - personal growth
-  - machine learning
-  - nlp
+- newsletter
+- medium
+- email
+- ai advances
+- coding
+- reinforcement learning
+- personal growth
+- machine learning
+- nlp
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d5738504bb7676
@@ -34,13 +34,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5738504bb7676
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:33.030549Z
-short_summary: Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".
+fetched_at: '2026-04-08T15:11:51.240636Z'
+short_summary: 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.168622Z
+lightweight_enriched_at: '2026-04-08T14:14:25.047885Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: 5b6c9cf402fd624d546b62d2d5ca90b3b3d99c0c88989f39659ed1baee21a614
+lightweight_enrichment_input_hash: aeef0e92fcc28be7ac7c951833d085a845ee04bddd1405febb6547f23c4a4e67
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
 

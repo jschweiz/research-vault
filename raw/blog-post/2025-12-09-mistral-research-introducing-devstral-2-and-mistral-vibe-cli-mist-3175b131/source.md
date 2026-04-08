@@ -1,27 +1,28 @@
 ---
 id: 2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 kind: blog-post
-title: Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI
+title: 'Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI'
 source_url: https://mistral.ai/news/devstral-2-vibe-cli
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-12-09T12:00:00Z
-ingested_at: 2026-04-07T21:27:55.854309Z
+- Mistral AI
+published_at: '2025-12-09T12:00:00Z'
+ingested_at: '2026-04-07T21:27:55.854309Z'
 content_hash: 70267797a8a7abf5a27c81bd100dc309484bd529fb93dff0af2f287063db679c
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - devstral
-  - cli
-  - coding
-  - ai
+- mistral
+- official
+- research
+- website
+- blog-post
+- devstral
+- cli
+- coding
+- ai
+- mistral vibe cli
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/devstral-2-vibe-cli
@@ -29,13 +30,16 @@ canonical_url: https://mistral.ai/news/devstral-2-vibe-cli
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:24:56.779253Z
-short_summary: Content Today, we're releasing Devstral 2—our next-generation coding model family available in two sizes: Devstral 2 (123B) and Devstral Small 2 (24B). Devstral 2 ships under a modified MIT license, while Devstral Small 2 uses Apache 2.0.
+fetched_at: '2026-04-08T15:10:52.040532Z'
+short_summary: Mistral AI released Devstral 2, a next-generation open coding model, and the Mistral Vibe CLI, a command-line assistant for code automation.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:47.513619Z
+lightweight_enriched_at: '2026-04-08T13:59:31.897656Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 70267797a8a7abf5a27c81bd100dc309484bd529fb93dff0af2f287063db679c
+lightweight_enrichment_input_hash: e485b386ca21feadf88cab350f69861e6790a5893078f06acc3d6d596d895956
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Content
 Today, we're releasing Devstral 2—our next-generation coding model family available in two sizes: Devstral 2 (123B) and Devstral Small 2 (24B). Devstral 2 ships under a modified MIT license, while Devstral Small 2 uses Apache 2.0. Both are open-source and permissively licensed to accelerate distributed intelligence.

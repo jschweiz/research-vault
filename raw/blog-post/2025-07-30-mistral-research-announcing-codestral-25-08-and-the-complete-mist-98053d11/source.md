@@ -5,23 +5,24 @@ title: Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Ente
 source_url: https://mistral.ai/news/codestral-25-08
 source_name: Mistral Research
 authors:
-  - Mistral AI
-published_at: 2025-07-30T12:00:00Z
-ingested_at: 2026-04-07T21:27:59.873939Z
+- Mistral AI
+published_at: '2025-07-30T12:00:00Z'
+ingested_at: '2026-04-07T21:27:59.873939Z'
 content_hash: 77a5a86d34be895064c9b246e84d49686e3f8a808e18dc5669740cdc2c0262d9
 tags:
-  - mistral
-  - official
-  - research
-  - website
-  - blog-post
-  - coding stack
-  - enterprise
-  - ai development
-  - codestral
+- mistral
+- official
+- research
+- website
+- blog-post
+- coding stack
+- enterprise
+- ai development
+- codestral
+- agentic workflows
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: mistral-research
 source_pipeline_id: mistral-research
 external_key: https://mistral.ai/news/codestral-25-08
@@ -29,13 +30,16 @@ canonical_url: https://mistral.ai/news/codestral-25-08
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:00.539269Z
-short_summary: How the world’s leading enterprises are using integrated coding solutions from Mistral AI to cut development, review, and testing time by 50%—and why the playbook now fits every company that wants AI-native software development. AI-powered coding is taking off, but enterprise adoption still lags due to critical limitations Over the past year, AI coding assistants have introduced powerful capabilities, such as multi-file reasoning, contextual suggestions, and natural-language agents, all directly
+fetched_at: '2026-04-08T15:10:59.495977Z'
+short_summary: Mistral AI introduced the Mistral coding stack, which integrates code completion, semantic search, and agentic workflows into the IDE for enterprise software development. This stack is designed to provide a unified, secure, and controllable platform for AI-native coding across various environments.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-07T21:29:33.810446Z
+lightweight_enriched_at: '2026-04-08T13:58:52.306562Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 77a5a86d34be895064c9b246e84d49686e3f8a808e18dc5669740cdc2c0262d9
+lightweight_enrichment_input_hash: 811c9d78aeb260013a7a8f213099bfa56d6cfb25bb3a0a7aba071bdf80b033fa
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 How the world’s leading enterprises are using integrated coding solutions from Mistral AI to cut development, review, and testing time by 50%—and why the playbook now fits every company that wants AI-native software development.
 AI-powered coding is taking off, but enterprise adoption still lags due to critical limitations

@@ -5,24 +5,24 @@ title: Emergent introspective awareness in large language models
 source_url: https://www.anthropic.com/research/introspection
 source_name: Anthropic Research
 authors:
-  - Anthropic
-published_at: 2025-10-29T00:00:00Z
-ingested_at: 2026-04-07T19:35:53.806863Z
+- Anthropic
+published_at: '2025-10-29T00:00:00Z'
+ingested_at: '2026-04-07T19:35:53.806863Z'
 content_hash: 37dcf373ffc9baea138bbe8d2a761b89576349a3fbae8d04fb224a86c190190d
 tags:
-  - anthropic
-  - official
-  - research
-  - website
-  - blog-post
-  - introspection
-  - large language models
-  - ai research
-  - claude
-  - transparency
+- anthropic
+- official
+- research
+- website
+- blog-post
+- introspection
+- large language models
+- ai research
+- claude
+- transparency
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: anthropic-research
 source_pipeline_id: null
 external_key: https://www.anthropic.com/research/introspection
@@ -30,13 +30,28 @@ canonical_url: https://www.anthropic.com/research/introspection
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-07T19:35:53.806866Z
+fetched_at: '2026-04-07T19:35:53.806866Z'
 short_summary: Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses?
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T10:07:18.369566Z
+lightweight_enriched_at: '2026-04-08T14:10:35.474056Z'
 lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 37dcf373ffc9baea138bbe8d2a761b89576349a3fbae8d04fb224a86c190190d
+lightweight_enrichment_input_hash: 1898bbee0eb32afb5c40b724f3813ef34529360ae74deae058c794e2c03f29d4
 lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b1208ead054f049d611e7b7b5a5a5888e2e4f308084da2a48021f8646b00f0f3
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, evaluation, and reasoning through novel research on AI introspection.
+  evidence_quotes:
+  - Our [new research](https://transformer-circuits.pub/2025/introspection/index.html) provides evidence for some degree of introspective awareness in our current C
+  - Practically, if introspection becomes more reliable, it could offer a path to dramatically increasing the transparency of these systems—we could simply ask them
+  - Practically, if introspection becomes more reliable, it could offer a path to dramatically increasing the transparency of these systems—we could simply ask them
 ---
 Have you ever asked an AI model what’s on its mind? Or to explain how it came up with its responses? Models will sometimes answer questions like these, but it’s hard to know what to make of their answers. Can AI systems really introspect—that is, can they consider their own thoughts? Or do they just make up plausible-sounding answers when they’re asked to do so?
 Understanding whether AI systems can truly introspect has important implications for their transparency and reliability. If models can accurately report on their own internal mechanisms, this could help us understand their reasoning and debug behavioral issues. Beyond these immediate practical considerations, probing for high-level cognitive capabilities like introspection can shape our understanding of what these systems are and how they work. Using interpretability techniques, we’ve started to investigate this question scientifically, and found some surprising results.

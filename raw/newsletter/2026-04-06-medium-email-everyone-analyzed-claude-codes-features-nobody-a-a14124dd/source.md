@@ -5,29 +5,29 @@ title: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architect
 source_url: https://mail.google.com/mail/u/0/#inbox/19d618506ae886de
 source_name: Medium Email
 authors:
-  - Medium Daily Digest <noreply@medium.com>
-  - Han HELOIR YAN, Ph.D.
-  - Sumit Pandey
-  - Florent Poux, Ph.D.
-  - Thomas Oppong
-  - Kuriko Iwai
-published_at: 2026-04-06T06:40:00Z
-ingested_at: 2026-04-07T19:36:42.065774Z
+- Medium Daily Digest <noreply@medium.com>
+- Han HELOIR YAN, Ph.D.
+- Sumit Pandey
+- Florent Poux, Ph.D.
+- Thomas Oppong
+- Kuriko Iwai
+published_at: '2026-04-06T06:40:00Z'
+ingested_at: '2026-04-07T19:36:42.065774Z'
 content_hash: 7ff92578705b152cf55b1688c2e569a11f8ada474185184c7e68b1177f19a945
 tags:
-  - newsletter
-  - medium
-  - email
-  - claude code
-  - llm
-  - architecture
-  - data science
-  - 3d reconstruction
-  - rag system
-  - ai advances
+- newsletter
+- medium
+- email
+- claude code
+- llm
+- architecture
+- data science
+- 3d reconstruction
+- rag system
+- ai advances
 status: active
 asset_paths:
-  - original.html
+- original.html
 source_id: medium-email
 source_pipeline_id: null
 external_key: 19d618506ae886de
@@ -35,13 +35,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d618506ae886de
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: 2026-04-08T09:25:32.699108Z
+fetched_at: '2026-04-08T15:11:49.981758Z'
 short_summary: Medium digest led by "Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture". Includes 15 highlighted stories, including "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: 2026-04-08T09:37:14.176475Z
+lightweight_enriched_at: '2026-04-08T14:14:42.354010Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
-lightweight_enrichment_input_hash: 7ff92578705b152cf55b1688c2e569a11f8ada474185184c7e68b1177f19a945
+lightweight_enrichment_input_hash: 968be8bdcc97e1ad4f8b218c2a0db70cdfd6732d60217aaf3be8108a4ad66815
 lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture. | Han HELOIR YAN, Ph.D. ☕️ in Data Science Collective
 
