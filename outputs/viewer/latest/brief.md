@@ -1,6 +1,6 @@
 # Research Brief · 2026-04-09
 
-Published: 2026-04-09T16:21:55.404418+00:00
+Published: 2026-04-09T16:22:27.177967+00:00
 Coverage: 2026-04-08
 
 The vault has been re-ranked into a concise working brief.
