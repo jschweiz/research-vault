@@ -1,0 +1,41 @@
+name: Publish Viewer
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "outputs/viewer/**"
+      - ".github/workflows/publish-viewer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out vault
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload viewer bundle
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: outputs/viewer
+
+      - id: deployment
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
