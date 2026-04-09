@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-medium-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:16.961232Z'
+fetched_at: '2026-04-09T08:09:02.561970Z'
 short_summary: Mistral Medium 3 introduces a new class of models that balances state-of-the-art performance with significantly lower cost and simpler deployability for enterprise use.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:56:54.608038Z'

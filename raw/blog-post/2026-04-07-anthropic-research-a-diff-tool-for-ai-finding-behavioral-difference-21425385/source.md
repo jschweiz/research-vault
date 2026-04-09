@@ -30,7 +30,7 @@ canonical_url: https://www.anthropic.com/research/diff-tool
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:28.284335Z'
+fetched_at: '2026-04-09T08:08:13.820611Z'
 short_summary: 'A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.'
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

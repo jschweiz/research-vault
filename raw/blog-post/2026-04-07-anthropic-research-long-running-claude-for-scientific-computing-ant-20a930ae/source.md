@@ -29,7 +29,7 @@ canonical_url: https://www.anthropic.com/research/long-running-Claude
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:18.398212Z'
+fetched_at: '2026-04-09T08:08:07.274753Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. In this post, Siddharth Mishra-Sharma, a researcher on the Discovery team, explains how to apply multi-day agentic coding workflows—test oracles, persistent memory, and orchestration patterns—to scientific computing tasks even outside of one’s domain.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

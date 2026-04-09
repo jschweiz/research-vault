@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/pixtral-large
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:31.922606Z'
+fetched_at: '2026-04-09T08:09:21.319595Z'
 short_summary: Pixtral Large is a 124B open-weights multimodal model built on Mistral Large 2, demonstrating frontier-class image understanding and state-of-the-art performance on multimodal benchmarks. It excels at understanding documents, charts, and natural images while maintaining strong text-only understanding.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:55:09.020585Z'

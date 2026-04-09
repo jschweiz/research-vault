@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-saba
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:24.832778Z'
+fetched_at: '2026-04-09T08:09:11.233186Z'
 short_summary: Mistral Saba is a 24B parameter regional language model trained on Middle East and South Asian data, offering superior accuracy and speed for regional contexts. It supports Arabic and many Indian-origin languages, and can be deployed locally.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:56:02.560649Z'

@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/codestral-2501
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:29.939992Z'
+fetched_at: '2026-04-09T08:09:18.991958Z'
 short_summary: Mistral AI released Codestral 25.01, a new coding model that is faster and more efficient than its predecessor, leading in state-of-the-art performance for fill-in-the-middle (FIM) tasks.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:55:30.007335Z'

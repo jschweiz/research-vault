@@ -8,7 +8,7 @@ authors:
 - Matthew Schwartz
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-07T19:36:19.760154Z'
-content_hash: 9e7f26b1e1114b934ddc8a9637464d3bd3cf951bdd7ab3bb53f1bdd69869e623
+content_hash: f2d132054fb550ee4f4e283c642b57d51e447e224cfa5277c96a87f8e21d6ca6
 tags:
 - anthropic
 - official
@@ -29,7 +29,7 @@ canonical_url: https://www.anthropic.com/research/vibe-physics
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:23.419777Z'
+fetched_at: '2026-04-09T08:08:09.717104Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. Can AI do theoretical physics?
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -58,7 +58,7 @@ and out would pop the paper. We are not there yet, of course. I tried giving thi
 To go about this scientifically, I encapsulated all the work. The rules were strict:
 My question was: is there a set of prompts, like instructions to a talented G2, that can guide an AI to produce a high-quality physics paper (one that is genuinely interesting and pushes the field forward)?
 I knew from experience that LLMs struggle with context and organization over long projects. So I started by asking Claude to come up with a plan of attack: what tasks needed to be done in what order. I also asked GPT 5.2 and Gemini 3.0. Then, I had all three LLMs merge the best ideas from each, using web interfaces and copying one to another. Next, I gave those merges to Claude, asking it to break the outline into detailed subsections. The result is [here](https://www-cdn.anthropic.com/2595299ccf7f8b9a9c74823c24faaa5d9b216804.pdf). There were 102 separate tasks across seven stages.
-From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.97ba0333-cada-4f52-8f3e-e7a213b24abb/code), using the extension in VS Code.
+From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.66dc6240-de57-4013-8e2f-55ce282351c2/code), using the extension in VS Code.
 I created a folder for the project, put in the master plan, and had it try to solve each task separately, writing its results in a separate markdown file. Some examples are [Task 1.1: Review BSZ Paper](https://www-cdn.anthropic.com/c993ead637f1a102fe1f5346e89f59e82c579b37.pdf) and [Task 1.2: Review Catani—Webber](https://www-cdn.anthropic.com/94b3c41e52e19ba450fe5e804400ebcf0a88f3d0.pdf).
 This organization step was enormously helpful. Instead of one long conversation or document, Claude maintained a tree of markdown files—one summary per stage, one detailed file per task. Given that LLMs work much better with things they can retrieve rather than things they have to hold in context, this allowed Claude to look things up rather than remember them. When I asked Claude to proceed to the next task, it would read its own previous summary, do the work, and write a new summary. I also had it edit the plan as it went, modifying earlier and later sections as it learned.
 Claude worked through the stages sequentially: kinematics, NLO structure, SCET factorization, anomalous dimensions, resummation, matching, and documentation. Each stage took 15–35 minutes of wall-clock time and about half that in actual compute. The whole thing took roughly 2.5 hours.

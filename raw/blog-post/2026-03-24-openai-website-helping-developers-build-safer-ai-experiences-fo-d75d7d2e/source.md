@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/teen-safety-policies-gpt-oss-safeguard
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:28.864603Z'
+fetched_at: '2026-04-09T08:07:26.947238Z'
 short_summary: OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:02:46.349709Z'

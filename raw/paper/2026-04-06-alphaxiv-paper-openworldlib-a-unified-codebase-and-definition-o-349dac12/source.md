@@ -48,7 +48,7 @@ authors:
 - Wentao Zhang
 published_at: '2026-04-06T14:19:48Z'
 ingested_at: '2026-04-07T21:42:38.094023Z'
-content_hash: 73da92415ad9bfb223a448c30536959726aa75b1034b2ae0ed9d50cb385aff80
+content_hash: 31c611d33917815dfbbcf380774d4f2d6cb6a3934e2a82bf7085b7ef7d6446e4
 tags:
 - paper
 - alphaxiv
@@ -87,7 +87,7 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04707
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:52.775104Z'
+fetched_at: '2026-04-09T08:11:00.193359Z'
 short_summary: Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured development and comparison within the research community.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -182,10 +182,10 @@ Researchers from Peking University, Kuaishou Technology, and other institutions 
 
 ## Metrics
 
-- Visits (all): 219
-- Visits (last 7 days): 219
-- Total votes: 4
-- Public total votes: 23
+- Visits (all): 292
+- Visits (last 7 days): 292
+- Total votes: 7
+- Public total votes: 26
 - X likes: 0
 
 ## Abstract

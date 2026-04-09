@@ -31,7 +31,7 @@ canonical_url: https://mistral.ai/news/devstral-2507
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:08.196072Z'
+fetched_at: '2026-04-09T08:08:47.872919Z'
 short_summary: Mistral AI and All Hands AI released Devstral Medium and Small models, emphasizing generalization and performance for code agents. Devstral Small 1.1 sets a new state-of-the-art for open models without test-time scaling.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:58:08.349912Z'

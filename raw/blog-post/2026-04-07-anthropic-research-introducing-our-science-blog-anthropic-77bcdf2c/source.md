@@ -28,7 +28,7 @@ canonical_url: https://www.anthropic.com/research/introducing-anthropic-science
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:14.148793Z'
+fetched_at: '2026-04-09T08:08:05.043701Z'
 short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re launching a new blog about AI and science.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

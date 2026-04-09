@@ -81,19 +81,19 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 9,
+        "public_total_votes": 23,
         "questions_count": 0,
-        "total_votes": 3,
-        "upvotes_count": 9,
+        "total_votes": 8,
+        "upvotes_count": 23,
         "visits_count": {
-          "all": 124,
-          "last24Hours": 94,
-          "last30Days": 124,
-          "last7Days": 124,
-          "last90Days": 124
+          "all": 316,
+          "last24Hours": 192,
+          "last30Days": 316,
+          "last7Days": 316,
+          "last90Days": 316
         }
       },
-      "podcast_path": null,
+      "podcast_path": "019d65bf-4671-7909-9268-425a0e1087c4/podcast.mp3",
       "resources": {
         "github": {
           "description": "",

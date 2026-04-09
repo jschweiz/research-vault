@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-small-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:26.704708Z'
+fetched_at: '2026-04-09T08:09:15.501156Z'
 short_summary: Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust language and instruction following with very low latency, making it competitive with larger models.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:55:48.390449Z'

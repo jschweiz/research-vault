@@ -13,7 +13,7 @@ authors:
 - Zhuang Liu
 published_at: '2026-04-07T15:20:05Z'
 ingested_at: '2026-04-07T21:42:30.794012Z'
-content_hash: f4fdaec6d2bdd2fab38b23c16f11e29660c7718501cff19ea42e91727029279e
+content_hash: 1c3bc605db672b174daa068c919130b2a161c097581612d3f217189ffe881035
 tags:
 - paper
 - alphaxiv
@@ -59,7 +59,7 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04917
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:16.655509Z'
+fetched_at: '2026-04-09T08:10:30.976918Z'
 short_summary: Princeton University researchers introduce Vero, a fully open reinforcement learning recipe and associated VLM family for general visual reasoning, demonstrating state-of-the-art performance among 8B-parameter models on a new 30-benchmark suite. The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sample dataset and task-routed reward functions.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -123,10 +123,10 @@ Princeton University researchers introduce Vero, a fully open reinforcement lear
 
 ## Metrics
 
-- Visits (all): 320
-- Visits (last 7 days): 320
-- Total votes: 7
-- Public total votes: 29
+- Visits (all): 476
+- Visits (last 7 days): 476
+- Total votes: 13
+- Public total votes: 35
 - X likes: 0
 
 ## Abstract
@@ -192,3 +192,12 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 ## Resources
 
 - GitHub repository: https://github.com/zlab-princeton/vero
+
+## Similar Papers
+
+- VLM-R1: A Stable and Generalizable R1-style Large Vision-Language Model (2504.07615v2): VLM-R1 introduces an open-source framework that applies rule-based reinforcement learning to Vision-Language Models (VLMs), enhancing their visual reasoning and generalization abilities on tasks like Referring Expression Comprehension and Open-Vocabulary Object Detection. The approach demonstrates improved out-of-domain performance compared to supervised fine-tuning and showcases emergent reasoning behaviors.
+- Video-R1: Reinforcing Video Reasoning in MLLMs (2503.21776v4): Researchers introduced Video-R1, the first framework to apply a rule-based reinforcement learning paradigm for enhancing temporal reasoning capabilities in Multimodal Large Language Models (MLLMs) for video. Video-R1, leveraging a new temporal-aware RL algorithm and dedicated video reasoning datasets, consistently outperforms previous state-of-the-art models, achieving 37.1% accuracy on VSI-Bench, surpassing GPT-4o's 34.0%.
+- SFT or RL? An Early Investigation into Training R1-Like Reasoning Large  Vision-Language Models (2504.11468v1): A comparative study examines the effectiveness of Supervised Fine-Tuning (SFT) versus Reinforcement Learning (RL) for training reasoning-capable vision-language models, revealing that SFT can impede subsequent RL performance by inducing superficial reasoning patterns, while direct RL training through Group Relative Policy Optimization achieves state-of-the-art performance on multimodal reasoning benchmarks.
+- Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models (2409.17146v2): This work introduces Molmo, a family of state-of-the-art open-weight Vision-Language Models (VLMs), and PixMo, a comprehensive suite of VLM-independent training datasets. Molmo-72B achieves leading performance on academic benchmarks and human preference evaluations, demonstrating that high-performing VLMs can be built entirely from truly open data and models without relying on proprietary systems for data generation.
+- OpenVLThinker: Complex Vision-Language Reasoning via Iterative SFT-RL Cycles (2503.17352v3): Researchers at UCLA developed OpenVLThinker, an open-source large vision-language model, leveraging an iterative supervised fine-tuning and reinforcement learning cycle to achieve complex, multi-step reasoning. This model demonstrates competitive performance with proprietary LVLMs and surpasses other open-source models on challenging benchmarks, showing data efficiency with 10x less data.
+- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.

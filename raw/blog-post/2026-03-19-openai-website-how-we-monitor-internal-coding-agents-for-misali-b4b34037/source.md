@@ -26,7 +26,7 @@ canonical_url: https://openai.com/index/how-we-monitor-internal-coding-agents-mi
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:36.291035Z'
+fetched_at: '2026-04-09T08:07:34.252690Z'
 short_summary: How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:02:27.652515Z'

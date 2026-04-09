@@ -23,7 +23,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6bd1bd2d2259a
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:46.659528Z'
+fetched_at: '2026-04-09T08:09:43.499440Z'
 short_summary: 'Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".'
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:15:19.307053Z'

@@ -104,8 +104,8 @@
     "id": "019c45dc-fb22-7ae3-9f0c-a01b9e822ee0",
     "image_url": "image/2602.08234v1.png",
     "metrics": {
-      "public_total_votes": 405,
-      "total_votes": 164,
+      "public_total_votes": 406,
+      "total_votes": 165,
       "visits_count": {
         "all": 9163,
         "last_7_days": 441
@@ -298,8 +298,8 @@
     "id": "019d0919-2353-7f1d-8caf-89570bdb7990",
     "image_url": "image/2603.18743v1.png",
     "metrics": {
-      "public_total_votes": 231,
-      "total_votes": 71,
+      "public_total_votes": 232,
+      "total_votes": 72,
       "visits_count": {
         "all": 3785,
         "last_7_days": 531
@@ -670,8 +670,8 @@
     "id": "019c6452-3d34-7749-a665-6be2290343c8",
     "image_url": "image/2602.12670v3.png",
     "metrics": {
-      "public_total_votes": 196,
-      "total_votes": 86,
+      "public_total_votes": 197,
+      "total_votes": 87,
       "visits_count": {
         "all": 3819,
         "last_7_days": 264
@@ -1206,8 +1206,8 @@
     "id": "019c21d1-07a8-7fce-adaa-7d3cdbe9d385",
     "image_url": "image/2602.02474v1.png",
     "metrics": {
-      "public_total_votes": 142,
-      "total_votes": 50,
+      "public_total_votes": 143,
+      "total_votes": 51,
       "visits_count": {
         "all": 2038,
         "last_7_days": 177
@@ -1468,6 +1468,113 @@
     "version_id": "019cb6a8-a350-7fbe-9221-68c2454099dc"
   },
   {
+    "abstract": "Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration. Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse, repeatedly invoking one strong but costly option in multi-turn scenarios. We introduce SkillOrchestra, a framework for skill-aware orchestration. Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off. Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration, offering a principled alternative to data-intensive RL-based approaches. The code is available at: this https URL.",
+    "author_info": [],
+    "authors": [
+      "Jiayu Wang",
+      "Yifei Ming",
+      "Zixuan Ke",
+      "Shafiq Joty",
+      "Aws Albarghouthi",
+      "Frederic Sala"
+    ],
+    "canonical_id": "2602.19672v1",
+    "first_publication_date": "2026-02-23T10:17:25.000Z",
+    "full_authors": [
+      {
+        "full_name": "Jiayu Wang",
+        "id": "01985c81-e775-7c76-8a82-08bf03c602ab",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yifei Ming",
+        "id": "01985c81-e4e5-727f-8566-ffea517bacbb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zixuan Ke",
+        "id": "01985c82-4655-72a0-80fe-01c058cd9758",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shafiq Joty",
+        "id": "01985c81-d97f-7f97-9223-4c31d9f0e28e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aws Albarghouthi",
+        "id": "01985c82-3fdf-7a53-bcc8-1d1d09dd9ee6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Frederic Sala",
+        "id": "01985c81-e843-7bfc-bd6b-690a04628f51",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/jiayuww/SkillOrchestra",
+    "id": "019c8de9-06ae-7a42-9ee5-60df6a9d953c",
+    "image_url": "image/2602.19672v1.png",
+    "metrics": {
+      "public_total_votes": 102,
+      "total_votes": 28,
+      "visits_count": {
+        "all": 885,
+        "last_7_days": 44
+      },
+      "x_likes": 18
+    },
+    "organization_info": [],
+    "paper_group_id": "019c8de9-06ae-7a42-9ee5-60df6a9d953c",
+    "paper_summary": {
+      "keyInsights": [
+        "Explicitly modeling abstract skills and agent profiles in a structured \"Skill Handbook\" decouples orchestration knowledge from orchestrator parameters, enabling greater modularity and transferability.",
+        "An LLM-based skill discovery and refinement mechanism can automatically extract and organize fine-grained, reusable capabilities from execution traces.",
+        "Orchestration via a learned skill handbook and explicit performance-cost optimization mitigates the \"routing collapse\" issue, leading to more balanced and efficient agent utilization."
+      ],
+      "originalProblem": [
+        "Existing model routers make single-shot, input-level decisions, failing to handle dynamic, multi-turn interactions and evolving task requirements in compound AI systems.",
+        "Reinforcement Learning (RL)-based orchestrators suffer from high training costs, poor adaptability to new models/tools, and \"routing collapse\" where they over-rely on a single powerful agent, leading to inflated costs and suboptimal resource use.",
+        "Lack of a data-efficient, transferable, and stable orchestration framework that can effectively utilize diverse AI agents while optimizing performance-cost trade-offs."
+      ],
+      "results": [
+        "SkillOrchestra achieves superior effectiveness, outperforming RL-based Router-R1 by 10.0 EM points on QA tasks and ToolOrchestra by 8.0 percentage points in accuracy on the FRAMES agent orchestration benchmark.",
+        "It demonstrates enhanced efficiency and Pareto optimality, achieving higher accuracy at approximately 2x lower inference costs and 300x to 700x lower training costs compared to RL baselines.",
+        "The framework mitigates routing collapse, exhibiting balanced agent utilization by distributing calls across diverse models (e.g., Mixtral-8x22B 44.53%, Qwen2.5-7B 25.99%), and transfers orchestration knowledge effectively across different orchestrator backbones."
+      ],
+      "solution": [
+        "SkillOrchestra reframes orchestration as skill-grounded decision-making, introducing abstract \"skills\" that define task requirements and agent capabilities.",
+        "It constructs a reusable \"Skill Handbook\" through an LLM-based discovery and refinement process, detailing mode-level insights, skill definitions, and agent-specific performance/cost profiles.",
+        "At inference, an orchestrator uses the handbook, dynamically selecting operational modes and agents based on explicit competence-aware performance-cost trade-offs and relevant skills for the current state."
+      ],
+      "summary": "SkillOrchestra introduces a framework that orchestrates AI agents by explicitly learning and leveraging a \"Skill Handbook\" of capabilities and costs, moving beyond implicit policy optimization. This approach yields higher accuracy at lower costs, achieving up to a 10.0 exact match point improvement on QA tasks and an 8.0 percentage point increase in accuracy on complex agent orchestration benchmarks, while significantly reducing training and inference expenses by hundreds of times."
+    },
+    "publication_date": "2026-02-23T10:17:25.000Z",
+    "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.LG",
+      "explainable-ai",
+      "multi-agent-learning",
+      "optimization-methods",
+      "reinforcement-learning",
+      "tool-use"
+    ],
+    "universal_paper_id": "2602.19672",
+    "updated_at": "2026-02-24T04:29:45.006Z",
+    "version_id": "019c8de9-06e9-75a4-bf12-07011860d012"
+  },
+  {
     "abstract": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
     "author_info": [],
     "authors": [
@@ -1593,113 +1700,6 @@
     "universal_paper_id": "2603.25158",
     "updated_at": "2026-03-27T01:46:42.995Z",
     "version_id": "019d5b1b-a125-7b40-a1d6-6e0e2bad50a8"
-  },
-  {
-    "abstract": "Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration. Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse, repeatedly invoking one strong but costly option in multi-turn scenarios. We introduce SkillOrchestra, a framework for skill-aware orchestration. Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off. Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration, offering a principled alternative to data-intensive RL-based approaches. The code is available at: this https URL.",
-    "author_info": [],
-    "authors": [
-      "Jiayu Wang",
-      "Yifei Ming",
-      "Zixuan Ke",
-      "Shafiq Joty",
-      "Aws Albarghouthi",
-      "Frederic Sala"
-    ],
-    "canonical_id": "2602.19672v1",
-    "first_publication_date": "2026-02-23T10:17:25.000Z",
-    "full_authors": [
-      {
-        "full_name": "Jiayu Wang",
-        "id": "01985c81-e775-7c76-8a82-08bf03c602ab",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yifei Ming",
-        "id": "01985c81-e4e5-727f-8566-ffea517bacbb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zixuan Ke",
-        "id": "01985c82-4655-72a0-80fe-01c058cd9758",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shafiq Joty",
-        "id": "01985c81-d97f-7f97-9223-4c31d9f0e28e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Aws Albarghouthi",
-        "id": "01985c82-3fdf-7a53-bcc8-1d1d09dd9ee6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Frederic Sala",
-        "id": "01985c81-e843-7bfc-bd6b-690a04628f51",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/jiayuww/SkillOrchestra",
-    "id": "019c8de9-06ae-7a42-9ee5-60df6a9d953c",
-    "image_url": "image/2602.19672v1.png",
-    "metrics": {
-      "public_total_votes": 102,
-      "total_votes": 28,
-      "visits_count": {
-        "all": 885,
-        "last_7_days": 44
-      },
-      "x_likes": 18
-    },
-    "organization_info": [],
-    "paper_group_id": "019c8de9-06ae-7a42-9ee5-60df6a9d953c",
-    "paper_summary": {
-      "keyInsights": [
-        "Explicitly modeling abstract skills and agent profiles in a structured \"Skill Handbook\" decouples orchestration knowledge from orchestrator parameters, enabling greater modularity and transferability.",
-        "An LLM-based skill discovery and refinement mechanism can automatically extract and organize fine-grained, reusable capabilities from execution traces.",
-        "Orchestration via a learned skill handbook and explicit performance-cost optimization mitigates the \"routing collapse\" issue, leading to more balanced and efficient agent utilization."
-      ],
-      "originalProblem": [
-        "Existing model routers make single-shot, input-level decisions, failing to handle dynamic, multi-turn interactions and evolving task requirements in compound AI systems.",
-        "Reinforcement Learning (RL)-based orchestrators suffer from high training costs, poor adaptability to new models/tools, and \"routing collapse\" where they over-rely on a single powerful agent, leading to inflated costs and suboptimal resource use.",
-        "Lack of a data-efficient, transferable, and stable orchestration framework that can effectively utilize diverse AI agents while optimizing performance-cost trade-offs."
-      ],
-      "results": [
-        "SkillOrchestra achieves superior effectiveness, outperforming RL-based Router-R1 by 10.0 EM points on QA tasks and ToolOrchestra by 8.0 percentage points in accuracy on the FRAMES agent orchestration benchmark.",
-        "It demonstrates enhanced efficiency and Pareto optimality, achieving higher accuracy at approximately 2x lower inference costs and 300x to 700x lower training costs compared to RL baselines.",
-        "The framework mitigates routing collapse, exhibiting balanced agent utilization by distributing calls across diverse models (e.g., Mixtral-8x22B 44.53%, Qwen2.5-7B 25.99%), and transfers orchestration knowledge effectively across different orchestrator backbones."
-      ],
-      "solution": [
-        "SkillOrchestra reframes orchestration as skill-grounded decision-making, introducing abstract \"skills\" that define task requirements and agent capabilities.",
-        "It constructs a reusable \"Skill Handbook\" through an LLM-based discovery and refinement process, detailing mode-level insights, skill definitions, and agent-specific performance/cost profiles.",
-        "At inference, an orchestrator uses the handbook, dynamically selecting operational modes and agents based on explicit competence-aware performance-cost trade-offs and relevant skills for the current state."
-      ],
-      "summary": "SkillOrchestra introduces a framework that orchestrates AI agents by explicitly learning and leveraging a \"Skill Handbook\" of capabilities and costs, moving beyond implicit policy optimization. This approach yields higher accuracy at lower costs, achieving up to a 10.0 exact match point improvement on QA tasks and an 8.0 percentage point increase in accuracy on complex agent orchestration benchmarks, while significantly reducing training and inference expenses by hundreds of times."
-    },
-    "publication_date": "2026-02-23T10:17:25.000Z",
-    "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.LG",
-      "explainable-ai",
-      "multi-agent-learning",
-      "optimization-methods",
-      "reinforcement-learning",
-      "tool-use"
-    ],
-    "universal_paper_id": "2602.19672",
-    "updated_at": "2026-02-24T04:29:45.006Z",
-    "version_id": "019c8de9-06e9-75a4-bf12-07011860d012"
   },
   {
     "abstract": "Large Language Model (LLM)-based agents have demonstrated remarkable capabilities in complex reasoning and multi-turn interactions but struggle to continuously improve and adapt when deployed in new environments. One promising approach is implementing skill libraries that allow agents to learn, validate, and apply new skills. However, current skill library approaches rely primarily on LLM prompting, making consistent skill library implementation challenging. To overcome these challenges, we propose a Reinforcement Learning (RL)-based approach to enhance agents' self-improvement capabilities with a skill library. Specifically, we introduce Skill Augmented GRPO for self-Evolution (SAGE), a novel RL framework that systematically incorporates skills into learning. The framework's key component, Sequential Rollout, iteratively deploys agents across a chain of similar tasks for each rollout. As agents navigate through the task chain, skills generated from previous tasks accumulate in the library and become available for subsequent tasks. Additionally, the framework enhances skill generation and utilization through a Skill-integrated Reward that complements the original outcome-based rewards. Experimental results on AppWorld demonstrate that SAGE, when applied to supervised-finetuned model with expert experience, achieves 8.9% higher Scenario Goal Completion while requiring 26% fewer interaction steps and generating 59% fewer tokens, substantially outperforming existing approaches in both accuracy and efficiency.",
@@ -2071,8 +2071,8 @@
     "id": "019cb23f-d2a1-7724-ad6e-e7c3aec06f9f",
     "image_url": "image/2603.01145v2.png",
     "metrics": {
-      "public_total_votes": 68,
-      "total_votes": 12,
+      "public_total_votes": 69,
+      "total_votes": 13,
       "visits_count": {
         "all": 1055,
         "last_7_days": 136
@@ -2236,11 +2236,11 @@
     "id": "019d5133-23a8-7777-89af-96ec890f30cb",
     "image_url": "image/2604.01687v1.png",
     "metrics": {
-      "public_total_votes": 38,
-      "total_votes": 7,
+      "public_total_votes": 39,
+      "total_votes": 8,
       "visits_count": {
-        "all": 304,
-        "last_7_days": 304
+        "all": 395,
+        "last_7_days": 395
       },
       "x_likes": 0
     },
@@ -3595,8 +3595,8 @@
       "public_total_votes": 31,
       "total_votes": 0,
       "visits_count": {
-        "all": 168,
-        "last_7_days": 122
+        "all": 172,
+        "last_7_days": 99
       },
       "x_likes": 0
     },
@@ -4094,11 +4094,11 @@
     "id": "019d65bf-4671-7909-9268-425a0e1087c4",
     "image_url": "image/2604.04804v1.png",
     "metrics": {
-      "public_total_votes": 20,
-      "total_votes": 5,
+      "public_total_votes": 23,
+      "total_votes": 8,
       "visits_count": {
-        "all": 175,
-        "last_7_days": 175
+        "all": 316,
+        "last_7_days": 316
       },
       "x_likes": 0
     },
@@ -4699,11 +4699,11 @@
     "id": "019d65c3-bce8-773f-b24f-b88e5db06719",
     "image_url": "image/2604.04323v1.png",
     "metrics": {
-      "public_total_votes": 8,
-      "total_votes": 0,
+      "public_total_votes": 9,
+      "total_votes": 1,
       "visits_count": {
-        "all": 46,
-        "last_7_days": 46
+        "all": 92,
+        "last_7_days": 92
       },
       "x_likes": 0
     },
@@ -5135,6 +5135,192 @@
     "version_id": "019207aa-e020-7c0b-967b-b083771d8c06"
   },
   {
+    "abstract": "Training reliable tool-augmented agents remains a significant challenge, largely due to the difficulty of credit assignment in multi-step reasoning. While process-level reward models offer a promising direction, existing LLM-based judges often produce noisy and inconsistent signals because they lack fine-grained, task-specific rubrics to distinguish high-level planning from low-level execution. In this work, we introduce SCRIBE (Skill-Conditioned Reward with Intermediate Behavioral Evaluation), a reinforcement learning framework that intervenes at a novel mid-level abstraction. SCRIBE grounds reward modeling in a curated library of skill prototypes, transforming open-ended LLM evaluation into a constrained verification problem. By routing each subgoal to a corresponding prototype, the reward model is equipped with precise, structured rubrics that substantially reduce reward variance.\nExperimental results show that SCRIBE achieves state-of-the-art performance across a range of reasoning and tool-use benchmarks. In particular, it improves the AIME25 accuracy of a Qwen3-4B model from 43.3% to 63.3%, and significantly increases success rates in complex multi-turn tool interactions.\nFurther analysis of training dynamics reveals a co-evolution across abstraction levels, where mastery of mid-level skills consistently precedes the emergence of effective high-level planning behaviors. Finally, we demonstrate that SCRIBE is additive to low-level tool optimizations, providing a scalable and complementary pathway toward more autonomous and reliable tool-using agents.",
+    "author_info": [],
+    "authors": [
+      "Yuxuan Jiang",
+      "Francis Ferraro"
+    ],
+    "canonical_id": "2601.03555v1",
+    "first_publication_date": "2026-01-07T03:49:48.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yuxuan Jiang",
+        "id": "01985c82-2959-70ce-99b6-33e854752d82",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Francis Ferraro",
+        "id": "01985c82-3305-7909-be77-82457e2fc045",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
+    "image_url": "image/2601.03555v1.png",
+    "metrics": {
+      "public_total_votes": 3,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 37,
+        "last_7_days": 8
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
+    "paper_summary": {
+      "keyInsights": [
+        "Mid-level skill abstraction offers a stable and informative granularity for credit assignment, effectively bridging the gap between high-level planning and low-level execution in LLM agent training.",
+        "Direct optimization of mid-level skill mastery via structured rewards leads to a co-evolutionary effect, fostering the emergent development of higher-level strategic planning capabilities in LLMs.",
+        "Mid-level skill supervision is complementary to low-level tool optimizations, allowing for synergistic improvements when combined."
+      ],
+      "originalProblem": [
+        "Reliably assigning credit to intermediate actions in multi-step, multi-tool reasoning environments for Large Language Models (LLMs).",
+        "Existing Process-level Reward Models (PRMs) using LLMs as judges provide inconsistent and underspecified reward signals due to a lack of granular, task-specific rubrics.",
+        "This leads to noisy feedback during reinforcement learning, hindering robust agent training and potentially causing reward hacking."
+      ],
+      "results": [
+        "SCRIBE achieved state-of-the-art performance, with a Qwen3-4B-Instruct-2507 model reaching 95.8% accuracy on MATH500 and 63.3% on AIME25, alongside 51.3% overall on the BFCL v4 tool-use benchmark.",
+        "Analysis of training dynamics showed that improved mid-level execution, characterized by decreased uncertainty and increased plan separability, precedes the emergent development of high-level strategic planning abilities.",
+        "Combining SCRIBE's mid-level supervision with low-level tool optimization (FunRL) resulted in synergistic gains, achieving 33.4% accuracy on BFCL for the LLaMA-3.2-3B-Instruct model, an improvement over either method alone."
+      ],
+      "solution": [
+        "Introduce SCRIBE, a reinforcement learning framework that formalizes a three-level hierarchy for tool-use and intervenes at a \"mid-level abstraction\" focusing on reasoning skills.",
+        "Decompose reasoning trajectories into \bangle subgoal, skill, step \brangle triples, and then cluster these into canonical \"Skill Prototypes\" which include specific judging rubrics and common error traps.",
+        "Employ a lightweight Router to map student LLM trajectories to relevant Skill Prototypes, and a Judge LLM to evaluate subgoals using the prototype's precise criteria, generating consistent skill-conditioned process rewards for policy optimization via GRPO."
+      ],
+      "summary": "Researchers at UMBC developed SCRIBE, a framework enhancing tool-using language models by employing structured mid-level supervision through \"Skill Prototypes\" for more consistent reward modeling. This approach led to state-of-the-art performance, achieving 95.8% accuracy on MATH500 and 63.3% on AIME25, while also improving multi-turn tool interaction success on the BFCL v4 benchmark to 51.3%."
+    },
+    "publication_date": "2026-01-07T03:49:48.000Z",
+    "title": "SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models",
+    "topics": [
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "data-curation",
+      "fine-tuning",
+      "model-observability",
+      "reasoning",
+      "reinforcement-learning",
+      "tool-use"
+    ],
+    "universal_paper_id": "2601.03555",
+    "updated_at": "2026-01-08T03:16:26.256Z",
+    "version_id": "019b9b9b-043e-7f07-91dd-2dc85b100ffe"
+  },
+  {
+    "abstract": "Skill Incremental Learning (SIL) is the process by which an embodied agent expands and refines its skill set over time by leveraging experience gained through interaction with its environment or by the integration of additional data. SIL facilitates efficient acquisition of hierarchical policies grounded in reusable skills for downstream tasks. However, as the skill repertoire evolves, it can disrupt compatibility with existing skill-based policies, limiting their reusability and generalization. In this work, we propose SIL-C, a novel framework that ensures skill-policy compatibility, allowing improvements in incrementally learned skills to enhance the performance of downstream policies without requiring policy re-training or structural adaptation. SIL-C employs a bilateral lazy learning-based mapping technique to dynamically align the subtask space referenced by policies with the skill space decoded into agent behaviors. This enables each subtask, derived from the policy's decomposition of a complex task, to be executed by selecting an appropriate skill based on trajectory distribution similarity. We evaluate SIL-C across diverse SIL scenarios and demonstrate that it maintains compatibility between evolving skills and downstream policies while ensuring efficiency throughout the learning process.",
+    "author_info": [],
+    "authors": [
+      "Daehee Lee",
+      "Dongsu Lee",
+      "TaeYoon Kwack",
+      "Wonje Choi",
+      "Honguk Woo"
+    ],
+    "canonical_id": "2509.20612v3",
+    "first_publication_date": "2025-09-24T23:34:01.000Z",
+    "full_authors": [
+      {
+        "full_name": "Daehee Lee",
+        "id": "01985c82-d1e0-7e06-bdeb-18e0f961a735",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dongsu Lee",
+        "id": "01985c82-ca34-751d-b84e-2bad3d8a3382",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "TaeYoon Kwack",
+        "id": "01985c83-d074-7736-8203-e632726808de",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wonje Choi",
+        "id": "01985c82-d1e0-7078-93e0-9c7c19ca3a36",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Honguk Woo",
+        "id": "01985c82-d1e0-7ea7-acc5-9c4722280ee9",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 2,
+    "github_url": "https://github.com/L2dulgi/SIL-C",
+    "id": "0199a073-2ff8-770c-9f0e-3675485d5f6e",
+    "image_url": "image/2509.20612v3.png",
+    "metrics": {
+      "public_total_votes": 3,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 79,
+        "last_7_days": 9
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "Sungkyunkwan University"
+      },
+      {
+        "image": "images/organizations/the-university-of-texas-at-austin.jpeg",
+        "name": "The University of Texas at Austin"
+      }
+    ],
+    "paper_group_id": "0199a073-2ff8-770c-9f0e-3675485d5f6e",
+    "paper_summary": {
+      "keyInsights": [
+        "A 'lazy learning interface' can effectively mediate between an evolving skill library and fixed high-level policies, providing both forward and backward compatibility without policy re-training.",
+        "Instance-based classification using multimodal Gaussian prototypes and Mahalanobis distance enables robust skill validation, out-of-distribution detection, and effective skill hooking for dynamic adaptation.",
+        "Decoupling skill evolution from the re-training burden of downstream policies through such an interface allows for more modular, scalable, and sample-efficient lifelong learning in embodied agents."
+      ],
+      "originalProblem": [
+        "Maintaining compatibility between an agent's evolving skill set and its pre-existing hierarchical downstream policies in Skill Incremental Learning (SIL).",
+        "Updates to low-level skills can render previously learned high-level policies incompatible, limiting their reusability and generalization, and often necessitating expensive re-training.",
+        "Existing SIL methods typically assume synchronous updates or lack robust mechanisms for long-term skill reuse and accumulation without requiring policy re-training."
+      ],
+      "results": [
+        "SIL-C consistently achieved the highest Area Under the Curve (AUC) across various SIL scenarios, improving backward skill compatibility (BwSC) by 18.6 to 42.5 percentage points in normalized reward in the Franka Kitchen environment.",
+        "Demonstrated superior sample efficiency, outperforming baselines in few-shot imitation learning (e.g., improving overall AUC from 31.7% to 56.5% in a 1-shot setting) and showing robustness to sparse supervision.",
+        "Exhibited high modularity, enhancing initial policy performance across different environments and underlying skill learning algorithms, and maintained positive backward transfer even under extreme observation noise."
+      ],
+      "solution": [
+        "Proposed SIL-C, a hierarchical architecture integrating a novel 'lazy learning interface' to dynamically connect high-level policies and low-level skill decoders.",
+        "Implemented the interface as a two-stage, instance-based classifier with bilateral mechanisms for skill validation and intelligent skill hooking, operating across subtask and skill spaces.",
+        "Employed append-only prototype memories for interface modules and behavior cloning for policy learning, ensuring non-destructive skill updates and dynamic skill-policy alignment during inference without policy re-training."
+      ],
+      "summary": "A framework named SIL-C is presented, designed to maintain skill-policy compatibility in Skill Incremental Learning for embodied agents by enabling continuous skill acquisition and refinement without requiring re-training of existing hierarchical policies. It improved backward skill compatibility by an average of 18.6 to 42.5 percentage points in normalized reward in the Franka Kitchen environment and demonstrated superior sample efficiency in few-shot imitation learning settings."
+    },
+    "publication_date": "2026-01-14T18:11:20.000Z",
+    "title": "Policy Compatible Skill Incremental Learning via Lazy Learning Interface",
+    "topics": [
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.LG",
+      "meta-learning",
+      "reinforcement-learning",
+      "representation-learning",
+      "robotic-control",
+      "transfer-learning"
+    ],
+    "universal_paper_id": "2509.20612",
+    "updated_at": "2025-10-01T15:45:27.553Z",
+    "version_id": "019bf322-85c7-78aa-b710-522b742c5362"
+  },
+  {
     "abstract": "Large language model agents often fail to accumulate knowledge from experience, treating each task as an independent challenge. Recent methods extract experience as flattened textual knowledge, which cannot capture procedural logic of complex subtasks. They also lack maintenance mechanisms, causing repository degradation as experience accumulates. We introduce AutoRefine, a framework that extracts and maintains dual-form Experience Patterns from agent execution histories. For procedural subtasks, we extract specialized subagents with independent reasoning and memory. For static knowledge, we extract skill patterns as guidelines or code snippets. A continuous maintenance mechanism scores, prunes, and merges patterns to prevent repository degradation. Evaluated on ALFWorld, ScienceWorld, and TravelPlanner, AutoRefine achieves 98.4%, 70.4%, and 27.1% respectively, with 20-73% step reductions. On TravelPlanner, automatic extraction exceeds manually designed systems (27.1% vs 12.1%), demonstrating its ability to capture procedural coordination.",
     "author_info": [],
     "authors": [
@@ -5257,190 +5443,117 @@
     "version_id": "019c1c79-7bf5-7457-bc34-9b635439ade7"
   },
   {
-    "abstract": "Skill Incremental Learning (SIL) is the process by which an embodied agent expands and refines its skill set over time by leveraging experience gained through interaction with its environment or by the integration of additional data. SIL facilitates efficient acquisition of hierarchical policies grounded in reusable skills for downstream tasks. However, as the skill repertoire evolves, it can disrupt compatibility with existing skill-based policies, limiting their reusability and generalization. In this work, we propose SIL-C, a novel framework that ensures skill-policy compatibility, allowing improvements in incrementally learned skills to enhance the performance of downstream policies without requiring policy re-training or structural adaptation. SIL-C employs a bilateral lazy learning-based mapping technique to dynamically align the subtask space referenced by policies with the skill space decoded into agent behaviors. This enables each subtask, derived from the policy's decomposition of a complex task, to be executed by selecting an appropriate skill based on trajectory distribution similarity. We evaluate SIL-C across diverse SIL scenarios and demonstrate that it maintains compatibility between evolving skills and downstream policies while ensuring efficiency throughout the learning process.",
+    "abstract": "Skill usage has become a core component of modern agent systems and can substantially improve agents' ability to complete complex tasks. In real-world settings, where agents must monitor and interact with numerous personal applications, web browsers, and other environment interfaces, skill libraries can scale to thousands of reusable skills. Scaling to larger skill sets introduces two key challenges. First, loading the full skill set saturates the context window, driving up token costs, hallucination, and latency.\nIn this paper, we present Graph of Skills (GoS), an inference-time structural retrieval layer for large skill libraries. GoS constructs an executable skill graph offline from skill packages, then at inference time retrieves a bounded, dependency-aware skill bundle through hybrid semantic-lexical seeding, reverse-weighted Personalized PageRank, and context-budgeted hydration. On SkillsBench and ALFWorld, GoS improves average reward by 43.6% over the vanilla full skill-loading baseline while reducing input tokens by 37.8%, and generalizes across three model families: Claude Sonnet, GPT-5.2 Codex, and MiniMax. Additional ablation studies across skill libraries ranging from 200 to 2,000 skills further demonstrate that GoS consistently outperforms both vanilla skills loading and simple vector retrieval in balancing reward, token efficiency, and runtime.",
     "author_info": [],
     "authors": [
-      "Daehee Lee",
-      "Dongsu Lee",
-      "TaeYoon Kwack",
-      "Wonje Choi",
-      "Honguk Woo"
+      "Dawei Li",
+      "Zongxia Li",
+      "Hongyang Du",
+      "Xiyang Wu",
+      "Shihang Gui",
+      "Yongbei Kuang",
+      "Lichao Sun"
     ],
-    "canonical_id": "2509.20612v3",
-    "first_publication_date": "2025-09-24T23:34:01.000Z",
+    "canonical_id": "2604.05333v1",
+    "first_publication_date": "2026-04-07T02:09:11.000Z",
     "full_authors": [
       {
-        "full_name": "Daehee Lee",
-        "id": "01985c82-d1e0-7e06-bdeb-18e0f961a735",
+        "full_name": "Dawei Li",
+        "id": "01985c82-2dc1-78c5-a526-15ea0a7784dd",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Dongsu Lee",
-        "id": "01985c82-ca34-751d-b84e-2bad3d8a3382",
+        "full_name": "Zongxia Li",
+        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "TaeYoon Kwack",
-        "id": "01985c83-d074-7736-8203-e632726808de",
+        "full_name": "Hongyang Du",
+        "id": "01985c82-045b-759b-bab2-6e016440bf95",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wonje Choi",
-        "id": "01985c82-d1e0-7078-93e0-9c7c19ca3a36",
+        "full_name": "Xiyang Wu",
+        "id": "01985c82-0fce-72b1-ba01-e3f3ba0b804a",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Honguk Woo",
-        "id": "01985c82-d1e0-7ea7-acc5-9c4722280ee9",
+        "full_name": "Shihang Gui",
+        "id": "019d6b83-50b5-740a-954f-31b741f36010",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongbei Kuang",
+        "id": "019d6b83-50b7-79f7-9afe-61c2ad48362a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lichao Sun",
+        "id": "01985c81-df57-7d70-9c42-89c34064034b",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 2,
-    "github_url": "https://github.com/L2dulgi/SIL-C",
-    "id": "0199a073-2ff8-770c-9f0e-3675485d5f6e",
-    "image_url": "image/2509.20612v3.png",
+    "github_stars": 3,
+    "github_url": "https://github.com/davidliuk/graph-of-skills",
+    "id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
+    "image_url": "image/2604.05333v1.png",
     "metrics": {
       "public_total_votes": 3,
-      "total_votes": 0,
+      "total_votes": 2,
       "visits_count": {
-        "all": 79,
-        "last_7_days": 9
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": null,
-        "name": "Sungkyunkwan University"
-      },
-      {
-        "image": "images/organizations/the-university-of-texas-at-austin.jpeg",
-        "name": "The University of Texas at Austin"
-      }
-    ],
-    "paper_group_id": "0199a073-2ff8-770c-9f0e-3675485d5f6e",
-    "paper_summary": {
-      "keyInsights": [
-        "A 'lazy learning interface' can effectively mediate between an evolving skill library and fixed high-level policies, providing both forward and backward compatibility without policy re-training.",
-        "Instance-based classification using multimodal Gaussian prototypes and Mahalanobis distance enables robust skill validation, out-of-distribution detection, and effective skill hooking for dynamic adaptation.",
-        "Decoupling skill evolution from the re-training burden of downstream policies through such an interface allows for more modular, scalable, and sample-efficient lifelong learning in embodied agents."
-      ],
-      "originalProblem": [
-        "Maintaining compatibility between an agent's evolving skill set and its pre-existing hierarchical downstream policies in Skill Incremental Learning (SIL).",
-        "Updates to low-level skills can render previously learned high-level policies incompatible, limiting their reusability and generalization, and often necessitating expensive re-training.",
-        "Existing SIL methods typically assume synchronous updates or lack robust mechanisms for long-term skill reuse and accumulation without requiring policy re-training."
-      ],
-      "results": [
-        "SIL-C consistently achieved the highest Area Under the Curve (AUC) across various SIL scenarios, improving backward skill compatibility (BwSC) by 18.6 to 42.5 percentage points in normalized reward in the Franka Kitchen environment.",
-        "Demonstrated superior sample efficiency, outperforming baselines in few-shot imitation learning (e.g., improving overall AUC from 31.7% to 56.5% in a 1-shot setting) and showing robustness to sparse supervision.",
-        "Exhibited high modularity, enhancing initial policy performance across different environments and underlying skill learning algorithms, and maintained positive backward transfer even under extreme observation noise."
-      ],
-      "solution": [
-        "Proposed SIL-C, a hierarchical architecture integrating a novel 'lazy learning interface' to dynamically connect high-level policies and low-level skill decoders.",
-        "Implemented the interface as a two-stage, instance-based classifier with bilateral mechanisms for skill validation and intelligent skill hooking, operating across subtask and skill spaces.",
-        "Employed append-only prototype memories for interface modules and behavior cloning for policy learning, ensuring non-destructive skill updates and dynamic skill-policy alignment during inference without policy re-training."
-      ],
-      "summary": "A framework named SIL-C is presented, designed to maintain skill-policy compatibility in Skill Incremental Learning for embodied agents by enabling continuous skill acquisition and refinement without requiring re-training of existing hierarchical policies. It improved backward skill compatibility by an average of 18.6 to 42.5 percentage points in normalized reward in the Franka Kitchen environment and demonstrated superior sample efficiency in few-shot imitation learning settings."
-    },
-    "publication_date": "2026-01-14T18:11:20.000Z",
-    "title": "Policy Compatible Skill Incremental Learning via Lazy Learning Interface",
-    "topics": [
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.LG",
-      "meta-learning",
-      "reinforcement-learning",
-      "representation-learning",
-      "robotic-control",
-      "transfer-learning"
-    ],
-    "universal_paper_id": "2509.20612",
-    "updated_at": "2025-10-01T15:45:27.553Z",
-    "version_id": "019bf322-85c7-78aa-b710-522b742c5362"
-  },
-  {
-    "abstract": "Training reliable tool-augmented agents remains a significant challenge, largely due to the difficulty of credit assignment in multi-step reasoning. While process-level reward models offer a promising direction, existing LLM-based judges often produce noisy and inconsistent signals because they lack fine-grained, task-specific rubrics to distinguish high-level planning from low-level execution. In this work, we introduce SCRIBE (Skill-Conditioned Reward with Intermediate Behavioral Evaluation), a reinforcement learning framework that intervenes at a novel mid-level abstraction. SCRIBE grounds reward modeling in a curated library of skill prototypes, transforming open-ended LLM evaluation into a constrained verification problem. By routing each subgoal to a corresponding prototype, the reward model is equipped with precise, structured rubrics that substantially reduce reward variance.\nExperimental results show that SCRIBE achieves state-of-the-art performance across a range of reasoning and tool-use benchmarks. In particular, it improves the AIME25 accuracy of a Qwen3-4B model from 43.3% to 63.3%, and significantly increases success rates in complex multi-turn tool interactions.\nFurther analysis of training dynamics reveals a co-evolution across abstraction levels, where mastery of mid-level skills consistently precedes the emergence of effective high-level planning behaviors. Finally, we demonstrate that SCRIBE is additive to low-level tool optimizations, providing a scalable and complementary pathway toward more autonomous and reliable tool-using agents.",
-    "author_info": [],
-    "authors": [
-      "Yuxuan Jiang",
-      "Francis Ferraro"
-    ],
-    "canonical_id": "2601.03555v1",
-    "first_publication_date": "2026-01-07T03:49:48.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yuxuan Jiang",
-        "id": "01985c82-2959-70ce-99b6-33e854752d82",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Francis Ferraro",
-        "id": "01985c82-3305-7909-be77-82457e2fc045",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
-    "image_url": "image/2601.03555v1.png",
-    "metrics": {
-      "public_total_votes": 3,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 37,
-        "last_7_days": 8
+        "all": 18,
+        "last_7_days": 18
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019b9b9b-0410-76ed-9dc7-98165d87619d",
+    "paper_group_id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
     "paper_summary": {
       "keyInsights": [
-        "Mid-level skill abstraction offers a stable and informative granularity for credit assignment, effectively bridging the gap between high-level planning and low-level execution in LLM agent training.",
-        "Direct optimization of mid-level skill mastery via structured rewards leads to a co-evolutionary effect, fostering the emergent development of higher-level strategic planning capabilities in LLMs.",
-        "Mid-level skill supervision is complementary to low-level tool optimizations, allowing for synergistic improvements when combined."
+        "Explicitly modeling and leveraging dependency and workflow structures via a graph is crucial for retrieving functionally complete skill bundles, overcoming the 'prerequisite gap' of semantic-only methods.",
+        "A hybrid approach combining both semantic and lexical signals for initial skill seeding significantly improves the quality of candidate skills before graph-based expansion.",
+        "Reverse-aware graph diffusion effectively propagates relevance from high-level matched skills back to their essential prerequisites, ensuring that necessary but semantically weak skills are included."
       ],
       "originalProblem": [
-        "Reliably assigning credit to intermediate actions in multi-step, multi-tool reasoning environments for Large Language Models (LLMs).",
-        "Existing Process-level Reward Models (PRMs) using LLMs as judges provide inconsistent and underspecified reward signals due to a lack of granular, task-specific rubrics.",
-        "This leads to noisy feedback during reinforcement learning, hindering robust agent training and potentially causing reward hacking."
+        "Large skill libraries lead to context window saturation, increased token costs, and higher latency for LLM agents when the entire library is loaded.",
+        "Purely semantic skill retrieval often suffers from a 'prerequisite gap,' failing to retrieve all functionally necessary skills (e.g., parsers, converters) that are semantically distant from the primary task query.",
+        "Agents struggle with multi-step tasks when provided with incomplete or noisy skill sets, leading to lower task completion rates and inefficient planning."
       ],
       "results": [
-        "SCRIBE achieved state-of-the-art performance, with a Qwen3-4B-Instruct-2507 model reaching 95.8% accuracy on MATH500 and 63.3% on AIME25, alongside 51.3% overall on the BFCL v4 tool-use benchmark.",
-        "Analysis of training dynamics showed that improved mid-level execution, characterized by decreased uncertainty and increased plan separability, precedes the emergent development of high-level strategic planning abilities.",
-        "Combining SCRIBE's mid-level supervision with low-level tool optimization (FunRL) resulted in synergistic gains, achieving 33.4% accuracy on BFCL for the LLaMA-3.2-3B-Instruct model, an improvement over either method alone."
+        "GoS consistently achieved the highest average reward across all benchmarks and LLM models, improving average reward by 43.6% compared to the Vanilla Skills baseline and outperforming Vector Skills in every tested scenario.",
+        "The method significantly enhanced efficiency, reducing input token usage by 37.8% on average compared to Vanilla Skills while maintaining similar token efficiency to Vector Skills, and also reduced agent runtime in most configurations.",
+        "GoS demonstrated improved scalability, with its performance advantage over baselines increasing with skill library size, notably between 500 and 2,000 skills, confirming its effectiveness for large-scale agent skill management."
       ],
       "solution": [
-        "Introduce SCRIBE, a reinforcement learning framework that formalizes a three-level hierarchy for tool-use and intervenes at a \"mid-level abstraction\" focusing on reasoning skills.",
-        "Decompose reasoning trajectories into \bangle subgoal, skill, step \brangle triples, and then cluster these into canonical \"Skill Prototypes\" which include specific judging rubrics and common error traps.",
-        "Employ a lightweight Router to map student LLM trajectories to relevant Skill Prototypes, and a Judge LLM to evaluate subgoals using the prototype's precise criteria, generating consistent skill-conditioned process rewards for policy optimization via GRPO."
+        "An offline phase constructs a typed directed graph from the local skill corpus, normalizing skills into nodes and inducing dependency, workflow, semantic, and alternative relations as edges.",
+        "An online structural retrieval phase employs hybrid seed retrieval (combining semantic and lexical scores) and reverse-aware typed diffusion on the graph to identify relevant skills.",
+        "A budgeted reranking and hydration step materializes a compact, execution-complete skill bundle, prioritizing skills based on combined diffusion and query evidence scores, while adhering to context limits."
       ],
-      "summary": "Researchers at UMBC developed SCRIBE, a framework enhancing tool-using language models by employing structured mid-level supervision through \"Skill Prototypes\" for more consistent reward modeling. This approach led to state-of-the-art performance, achieving 95.8% accuracy on MATH500 and 63.3% on AIME25, while also improving multi-turn tool interaction success on the BFCL v4 benchmark to 51.3%."
+      "summary": "Graph of Skills (GoS) improves the performance and efficiency of Large Language Model agents when utilizing extensive skill libraries by implementing a dependency-aware structural retrieval layer. This method consistently yielded a 43.6% higher average reward and 37.8% reduction in input tokens compared to full-loading baselines, effectively overcoming limitations like context window saturation and the 'prerequisite gap' in semantic skill retrieval."
     },
-    "publication_date": "2026-01-07T03:49:48.000Z",
-    "title": "SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models",
+    "publication_date": "2026-04-07T02:09:11.000Z",
+    "title": "Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
     "topics": [
+      "agentic-frameworks",
       "agents",
       "Computer Science",
       "cs.AI",
-      "data-curation",
-      "fine-tuning",
-      "model-observability",
-      "reasoning",
-      "reinforcement-learning",
-      "tool-use"
+      "graph-neural-networks",
+      "inference-optimization",
+      "optimization-methods",
+      "tool-use",
+      "transformers"
     ],
-    "universal_paper_id": "2601.03555",
-    "updated_at": "2026-01-08T03:16:26.256Z",
-    "version_id": "019b9b9b-043e-7f07-91dd-2dc85b100ffe"
+    "universal_paper_id": "2604.05333",
+    "updated_at": "2026-04-08T05:14:21.201Z",
+    "version_id": "019d6b83-50c2-7f93-afaf-05135067013e"
   },
   {
     "abstract": "The performance of LLM-based agents depends not only on the agent itself but also on the quality of the tool interfaces it consumes. While prior work has focused heavily on agent fine-tuning, tool interfaces-including natural language descriptions and parameter schemas-remain largely human-oriented and often become a bottleneck, especially when agents must select from large candidate tool sets. Existing approaches to improving tool interfaces rely on execution traces, which are frequently unavailable in cold-start or privacy-constrained settings, and typically optimize each tool independently, limiting scalability and generalization to unseen tools. We propose Trace-Free+, a curriculum learning framework that progressively transfers supervision from trace-rich settings to trace-free deployment, encouraging the model to abstract reusable interface-usage patterns and tool usage outcomes. To support this approach, we construct a large-scale dataset of high-quality tool interfaces using a structured workflow over a diverse collection of tools. Experiments on StableToolBench and RestBench show consistent gains on unseen tools, strong cross-domain generalization, and robustness as the number of candidate tools scales to over 100, demonstrating that tool interface optimization is a practical and deployable complement to agent fine-tuning.",
@@ -5638,119 +5751,6 @@
     "universal_paper_id": "2602.08234.pdf",
     "updated_at": "2026-02-17T03:20:28.316Z",
     "version_id": "019c699d-15e8-7809-8229-f87649807003"
-  },
-  {
-    "abstract": "Skill usage has become a core component of modern agent systems and can substantially improve agents' ability to complete complex tasks. In real-world settings, where agents must monitor and interact with numerous personal applications, web browsers, and other environment interfaces, skill libraries can scale to thousands of reusable skills. Scaling to larger skill sets introduces two key challenges. First, loading the full skill set saturates the context window, driving up token costs, hallucination, and latency.\nIn this paper, we present Graph of Skills (GoS), an inference-time structural retrieval layer for large skill libraries. GoS constructs an executable skill graph offline from skill packages, then at inference time retrieves a bounded, dependency-aware skill bundle through hybrid semantic-lexical seeding, reverse-weighted Personalized PageRank, and context-budgeted hydration. On SkillsBench and ALFWorld, GoS improves average reward by 43.6% over the vanilla full skill-loading baseline while reducing input tokens by 37.8%, and generalizes across three model families: Claude Sonnet, GPT-5.2 Codex, and MiniMax. Additional ablation studies across skill libraries ranging from 200 to 2,000 skills further demonstrate that GoS consistently outperforms both vanilla skills loading and simple vector retrieval in balancing reward, token efficiency, and runtime.",
-    "author_info": [],
-    "authors": [
-      "Dawei Li",
-      "Zongxia Li",
-      "Hongyang Du",
-      "Xiyang Wu",
-      "Shihang Gui",
-      "Yongbei Kuang",
-      "Lichao Sun"
-    ],
-    "canonical_id": "2604.05333v1",
-    "first_publication_date": "2026-04-07T02:09:11.000Z",
-    "full_authors": [
-      {
-        "full_name": "Dawei Li",
-        "id": "01985c82-2dc1-78c5-a526-15ea0a7784dd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zongxia Li",
-        "id": "01985c82-8063-70d1-9a5d-defe4db06f4b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hongyang Du",
-        "id": "01985c82-045b-759b-bab2-6e016440bf95",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiyang Wu",
-        "id": "01985c82-0fce-72b1-ba01-e3f3ba0b804a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shihang Gui",
-        "id": "019d6b83-50b5-740a-954f-31b741f36010",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yongbei Kuang",
-        "id": "019d6b83-50b7-79f7-9afe-61c2ad48362a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lichao Sun",
-        "id": "01985c81-df57-7d70-9c42-89c34064034b",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 3,
-    "github_url": "https://github.com/davidliuk/graph-of-skills",
-    "id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
-    "image_url": "image/2604.05333v1.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 7,
-        "last_7_days": 7
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
-    "paper_summary": {
-      "keyInsights": [
-        "Explicitly modeling and leveraging dependency and workflow structures via a graph is crucial for retrieving functionally complete skill bundles, overcoming the 'prerequisite gap' of semantic-only methods.",
-        "A hybrid approach combining both semantic and lexical signals for initial skill seeding significantly improves the quality of candidate skills before graph-based expansion.",
-        "Reverse-aware graph diffusion effectively propagates relevance from high-level matched skills back to their essential prerequisites, ensuring that necessary but semantically weak skills are included."
-      ],
-      "originalProblem": [
-        "Large skill libraries lead to context window saturation, increased token costs, and higher latency for LLM agents when the entire library is loaded.",
-        "Purely semantic skill retrieval often suffers from a 'prerequisite gap,' failing to retrieve all functionally necessary skills (e.g., parsers, converters) that are semantically distant from the primary task query.",
-        "Agents struggle with multi-step tasks when provided with incomplete or noisy skill sets, leading to lower task completion rates and inefficient planning."
-      ],
-      "results": [
-        "GoS consistently achieved the highest average reward across all benchmarks and LLM models, improving average reward by 43.6% compared to the Vanilla Skills baseline and outperforming Vector Skills in every tested scenario.",
-        "The method significantly enhanced efficiency, reducing input token usage by 37.8% on average compared to Vanilla Skills while maintaining similar token efficiency to Vector Skills, and also reduced agent runtime in most configurations.",
-        "GoS demonstrated improved scalability, with its performance advantage over baselines increasing with skill library size, notably between 500 and 2,000 skills, confirming its effectiveness for large-scale agent skill management."
-      ],
-      "solution": [
-        "An offline phase constructs a typed directed graph from the local skill corpus, normalizing skills into nodes and inducing dependency, workflow, semantic, and alternative relations as edges.",
-        "An online structural retrieval phase employs hybrid seed retrieval (combining semantic and lexical scores) and reverse-aware typed diffusion on the graph to identify relevant skills.",
-        "A budgeted reranking and hydration step materializes a compact, execution-complete skill bundle, prioritizing skills based on combined diffusion and query evidence scores, while adhering to context limits."
-      ],
-      "summary": "Graph of Skills (GoS) improves the performance and efficiency of Large Language Model agents when utilizing extensive skill libraries by implementing a dependency-aware structural retrieval layer. This method consistently yielded a 43.6% higher average reward and 37.8% reduction in input tokens compared to full-loading baselines, effectively overcoming limitations like context window saturation and the 'prerequisite gap' in semantic skill retrieval."
-    },
-    "publication_date": "2026-04-07T02:09:11.000Z",
-    "title": "Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "graph-neural-networks",
-      "inference-optimization",
-      "optimization-methods",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2604.05333",
-    "updated_at": "2026-04-08T05:14:21.201Z",
-    "version_id": "019d6b83-50c2-7f93-afaf-05135067013e"
   },
   {
     "abstract": "Large language models (LLMs) are moving beyond static uses and are now powering agents that learn continually during their interaction with external environments. For example, agents can learn reusable skills while navigating web pages or toggling new tools. However, existing methods for skill learning often create skills that are over-specialized to a single website and fail to generalize. We introduce PolySkill, a new framework that enables agents to learn generalizable and compositional skills. The core idea, inspired by polymorphism in software engineering, is to decouple a skill's abstract goal (what it accomplishes) and its concrete implementation (how it is executed). Experiments show that our method (1) improves skill reuse by 1.7x on seen websites and (2) boosts success rates by up to 9.4% on Mind2Web and 13.9% on unseen websites, while reducing steps by over 20%. (3) In self-exploration settings without specified tasks, our framework improves the quality of proposed tasks and enables agents to learn generalizable skills that work across different sites. By enabling the agent to identify and refine its own goals, the PolySkill enhances the agent's ability to learn a better curriculum, leading to the acquisition of more generalizable skills compared to baseline methods. This work provides a practical path toward building agents capable of continual learning in adaptive environments. Our findings show that separating a skill's goal from its execution is a crucial step toward developing autonomous agents that can learn and generalize across the open web continuously.",

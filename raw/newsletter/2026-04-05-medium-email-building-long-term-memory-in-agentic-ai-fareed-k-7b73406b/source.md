@@ -30,7 +30,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5c5ea63d230bf
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:50.640175Z'
+fetched_at: '2026-04-09T08:09:46.324366Z'
 short_summary: Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s everything you need to know".
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:14:33.420912Z'

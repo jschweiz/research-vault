@@ -1,0 +1,97 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Yiwen Song",
+        "id": "01985c82-15ac-753f-b363-ae581763eebe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yale Song",
+        "id": "01985c81-eea8-767b-9565-fb4fcf72edd8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tomas Pfister",
+        "id": "01985c81-db50-7323-9bfd-84aa78905402",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinsung Yoon",
+        "id": "01985c81-eb73-7b86-96bc-8847b3915f38",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:06:47 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 18:00:00 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ad7-98d9-7cd4-b564-92d28869642d",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 4,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 4,
+        "visits_count": {
+          "all": 68,
+          "last24Hours": 68,
+          "last30Days": 68,
+          "last7Days": 68,
+          "last90Days": 68
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05018"
+      },
+      "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA",
+        "data-curation",
+        "generative-models",
+        "image-generation",
+        "reasoning",
+        "text-generation"
+      ],
+      "universal_paper_id": "2604.05018",
+      "updated_at": "Wed Apr 08 2026 02:06:47 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams. To evaluate performance, we present PaperWritingBench, the first standardized benchmark of reverse-engineered raw materials from 200 top-tier AI conference papers, alongside a comprehensive suite of automated evaluators. In side-by-side human evaluations, PaperOrchestra significantly outperforms autonomous baselines, achieving an absolute win rate margin of 50%-68% in literature review quality, and 14%-38% in overall manuscript quality.",
+      "created_at": "Wed Apr 08 2026 02:06:47 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ad7-9918-7af6-acd8-89d12afe6296",
+      "imageURL": "image/2604.05018v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Apr 06 2026 18:00:00 GMT+0000 (Coordinated Universal Time)",
+      "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
+      "universal_paper_id": "2604.05018",
+      "updated_at": "Wed Apr 08 2026 02:06:47 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05018v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

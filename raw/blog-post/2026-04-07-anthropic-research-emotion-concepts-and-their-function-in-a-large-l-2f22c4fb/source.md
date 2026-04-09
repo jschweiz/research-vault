@@ -30,7 +30,7 @@ canonical_url: https://www.anthropic.com/research/emotion-concepts-function
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:49.092651Z'
+fetched_at: '2026-04-09T08:07:44.432655Z'
 short_summary: All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:10:48.782950Z'

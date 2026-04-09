@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/codestral-25-08
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:59.495977Z'
+fetched_at: '2026-04-09T08:08:42.644373Z'
 short_summary: Mistral AI introduced the Mistral coding stack, which integrates code completion, semantic search, and agentic workflows into the IDE for enterprise software development. This stack is designed to provide a unified, secure, and controllable platform for AI-native coding across various environments.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:58:52.306562Z'

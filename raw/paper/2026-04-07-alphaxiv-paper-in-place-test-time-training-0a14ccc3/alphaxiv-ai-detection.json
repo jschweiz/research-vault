@@ -1,0 +1,596 @@
+{
+  "fractionAi": 0.04366527,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.9563347,
+  "headline": "Mostly Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775679723693,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.17621827,
+      "confidence": "Medium",
+      "endIndex": 1973,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "In-Place Test-Time Training\nGuhao Feng\n1,2,\u22c6\n, Shengjie Luo\n1,\u22c6\n, Kai Hua\n1\n, Ge Zhang\n1\n,\nDi He\n2,\u2020\n, Wenhao Huang\n1,\u2020\n, Tianle Cai\n1\n1\nByteDance Seed, \n2\nPeking University\n\u22c6\nEqual Contribution, \n\u2020\nCorresponding authors\nAbstract\nThe static \u201ctrain then deploy\" paradigm fundamentally limits Large Language Models (LLMs)\nfrom dynamically adapting their weights in response to continuous streams of new information\ninherent in real-world tasks. Test-Time Training (TTT) offers a compelling alternative by updating\na subset of model parameters (fast weights) at inference time, yet its potential in the current LLM\necosystem is hindered by critical barriers including architectural incompatibility, computational\ninefficiency and misaligned fast weight objectives for language modeling. In this work, we introduce\nIn-Place Test-Time Training (In-Place TTT), a framework that seamlessly endows LLMs with\nTest-Time Training ability. In-Place TTT treats the final projection matrix of the ubiquitous\nMLP blocks as its adaptable fast weights, enabling a \u201cdrop-in\" enhancement for LLMs without\ncostly retraining from scratch. Furthermore, we replace TTT\u2019s generic reconstruction objective\nwith a tailored, theoretically-grounded objective explicitly aligned with the Next-Token-Prediction\ntask governing autoregressive language modeling. This principled objective, combined with an\nefficient chunk-wise update mechanism, results in a highly scalable algorithm compatible with\ncontext parallelism. Extensive experiments validate our framework\u2019s effectiveness: as an in-place\nenhancement, it enables a 4B-parameter model to achieve superior performance on tasks with\ncontexts up to 128k, and when pretrained from scratch, it consistently outperforms competitive\nTTT-related approaches. Ablation study results further provide deeper insights on our design\nchoices. Collectively, our results establish In-Place TTT as a promising step towards a paradigm\nof continual learning in LLMs.\n"
+    },
+    {
+      "aiAssistanceScore": 0.23210184,
+      "confidence": "Medium",
+      "endIndex": 2888,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1972,
+      "text": "\nDate: April 8, 2026\nCorrespondence: Di He at dihe@pku.edu.cn and Wenhao Huang at huang.wenhao@bytedance.com\nCode: https://github.com/ByteDance-Seed/In-Place-TTT\n1 Introduction\nLarge Language Models (LLMs) have demonstrated remarkable capabilities across a range of complex\ntasks [ 8, 11, 39, 51]. This success is largely built on a static \u201ctrain then deploy\" paradigm, where a model first\nacquires knowledge from massive corpora and then kept fixed during inference. Yet this design imposes a\nfundamental limitation: once deployed, the model\u2019s weights cannot be updated, preventing dynamic adaptation\nto the specific context provided by streaming input tokens. Consequently, at test time, the model is constrained\nin its ability to process and reason over long-horizon, evolving tasks [ 9, 45], and to continuously learn from\nunbounded streams of experience like humans [44].\n1\narXiv:2604.06169v1 [cs.LG] 7 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.23210184,
+      "confidence": "Medium",
+      "endIndex": 1027,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "In-context learning [8, 56] offers a way to mitigate this problem via maintaining all past input tokens in the\ncontext. However, its effectiveness is tethered to the model\u2019s context window, restricted by the quadratic\ncomplexity of the de facto attention mechanism [52 ]. This bottleneck has spurred a line of research into\narchitectural solutions aimed at efficiently extending the context window [6, 10, 17, 42]. Differently, Test-Time\nTraining (TTT) has emerged as a new paradigm [3, 47, 48, 53, 63 ]. Instead of merely making a static model\nmore efficient, TTT enables the model to dynamically update the parameters and adapt to any specific\ncontext, directly targeting the aforementioned limitation. Specifically, TTT introduces a small subset of model\nparameters, called fast weights [43], which can be updated on the fly for each new input. By minimizing a\nself-supervised reconstruction objective, these fast weights compress and internalize contextual information,\nfunctioning as an expressive, online evolving state.\n"
+    },
+    {
+      "aiAssistanceScore": 0.2900906,
+      "confidence": "Medium",
+      "endIndex": 3152,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1026,
+      "text": "\nDespite its conceptual appeal, unleashing TTT\u2019s potential within the current LLM ecosystem is hindered by\ncritical barriers: (i) Existing TTT methods often rely on specialized layers beyond standard Transformer blocks,\nwhich usually demand costly pretraining from scratch to achieve satisfactory performance. [ 47 , 48, 53, 67];\n(ii) the canonical TTT mechanism is inherently sequential [47 , 48 ]. While existing works explore chunk-wise\nacceleration [3, 30, 49 , 63], TTT\u2019s role as the primary token mixer forces a reliance on small chunks to maintain\nperformance, thereby bottlenecking the massive parallelism required to saturate modern accelerators; and\n(iii) the prevalent use of a generic reconstruction objective for TTT\u2019s fast weights updating is not explicitly\ntailored for the causal, Next-Token Prediction task that governs autoregressive LMs, potentially hindering\ntheir ultimate performance.\nTo bridge this gap, we introduce In-Place Test-Time Training (In-Place TTT), a framework designed to\nseamlessly endow LLMs with Test-Time Training capabilities by directly addressing the aforementioned\nbarriers. Our core insight is to repurpose existing MLP blocks with an in-place design rather than introducing\na new, specialized layer (tackling barrier i). Specifically, In-Place TTT treats the final projection matrix\nof MLP blocks as their fast weights, updating it in-place during inference. This \u201cdrop-in\" design requires\nno modifications to the model\u2019s architecture, preserving the integrity of pre-trained weights and enabling\non-the-fly adaptation without costly retraining from scratch.\nTo tackle the computational inefficiency and objective misalignment, we further design a bespoke adaptation\nmechanism for language modeling. Following previous works [3, 30, 49, 63, 67 ], we replace the inefficient\nper-token updates with a scalable chunk-wise update rule (tackling barrier ii). Furthermore, our in-place\ndesign operates complementarily to the attention mechanism. This synergy obviates the need for small chunks\nrequired by standalone TTT layers, thereby ensuring high throughput on modern accelerators. "
+    },
+    {
+      "aiAssistanceScore": 0.29879546,
+      "confidence": "Medium",
+      "endIndex": 4906,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 3151,
+      "text": " Concurrently,\nwe move beyond the generic reconstruction targets of prior work [ 48, 67] and introduce a novel objective\nexplicitly aligned with the Next-Token Prediction (NTP) goal (tackling barrier iii). Grounded in a rigorous\ntheoretical analysis, we show this NTP-aligned objective encourages the fast weights to store predictively\nuseful information for autoregressive language modeling, leading to a highly effective and scalable algorithm.\nGrounded in these principled design choices, our In-Place TTT provides a practical and effective framework\nfor enhancing LLMs with dynamic, continual adaptation. We conduct extensive experiments on language\nmodeling tasks of various compute scales, using them as a practical proxy to probe the model\u2019s potential\non long-horizon, evolving tasks. Through relatively cheap continual training, our In-Place TTT enables\nQwen3-4B-Base to achieve superior performance on tasks with contexts up to 128k. Furthermore, we compare\nIn-Place TTT with competitive TTT-related methods by conducting pretraining from scratch on up to\n32k-length corpora, validating the architectural merit of our framework. Finally, ablation studies on state\nsize, chunk size, and fast weight objectives provide deeper insights, confirming the critical role of each design\nchoice. Collectively, our results establish In-Place TTT as a promising step towards a paradigm of continual\nlearning in LLMs.\n2 Preliminary: Test-Time Training\nThis section introduces Test-Time Training (TTT), a paradigm that enables models to adapt dynamically to\nnew data at inference time [47, 48, 67]. We will first elaborate on the TTT mechanism and then discuss the\nkey desiderata for successfully applying TTT to LLMs, which directly motivates our framework.\n2"
+    },
+    {
+      "aiAssistanceScore": 0.29879546,
+      "confidence": "Medium",
+      "endIndex": 445,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "The TTT mechanism. At its core, the TTT mechanism leverages fast weights [ 2, 43], denoted by W. These\nweights constitute a small neural network f\nW\n(\u00b7) : R\nd \n\u2192 R\nd\n, which is rapidly updated at test time. Unlike\nstandard model weights that are frozen after training, the fast weights W act as a dynamic memory,\ncontinuously storing and retrieving contextual information from the sequence.\nTo process an input sequence x = [x\n1\n, x\n2\n, . . . , "
+    },
+    {
+      "aiAssistanceScore": 0.5106092,
+      "confidence": "Medium",
+      "endIndex": 2337,
+      "label": "AI-Generated",
+      "pageIndex": 2,
+      "startIndex": 444,
+      "text": " x\nN \n], each token x\ni \n\u2208 R\nd \nis typically projected to derive the\nnecessary inputs for the TTT operations, such as a query (q\ni\n), a key (k\ni\n), and a value (v\ni\n). The TTT\nmechanism then operates through two core, sequential operations:\n1. Update Operation: The fast weights W are updated to associate a key k\ni \nwith its corresponding value\nv\ni\n. This is framed as a single optimization step that minimizes a loss function L(\u00b7, \u00b7) (e.g., Mean Squared\nError), which measures the discrepancy in this association. Intuitively, this step encodes the information\nfrom the (k\ni\n, v\ni\n) pair into the neural memory f\nW\n. Given a learning rate \u03b7, the update rule is:\nW\ni \n\u2190 W\ni\u22121 \n\u2212 \u03b7\u2207\nW\nL\n\nf\nW\ni\u22121 \n(k\ni\n), v\ni\n\u0001\n.\n2. \nApply Operation: The newly updated network f\nW\n, now parameterized by W\ni\n, is used to process a\nquery q\ni\n, i.e., o\ni \n= f\nW\ni \n(q\ni\n). This output o\ni \nis enriched with the contextual information from preceding\nkey-value pairs, as that information is now encoded in W\ni\n.\nWhile this two-step formulation describes the high-level mechanism of TTT, the specific implementation\ndetails can vary significantly. Indeed, numerous recent studies have investigated a rich design space, exploring\ndifferent loss functions, more sophisticated optimizers, and alternative neural memory parameterizations to\nimprove performance and efficiency [3 , 5, 32, 54]. These design choices critically influence how effectively\nthe fast weights can store, retrieve, and forget sequential information, positioning the TTT mechanism for\ndifferent data modalities and tasks.\nDesiderata for TTT within the LLM ecosystem. Despite its promise as a paradigm for dynamic adaptation,\nunleashing TTT\u2019s potential within the LLM ecosystem requires addressing several critical challenges. For\nTTT to be a viable and effective component, it must satisfy the following desiderata:\n\u2022 Architectural Compatibility."
+    },
+    {
+      "aiAssistanceScore": 0.3216453,
+      "confidence": "Low",
+      "endIndex": 4400,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 2336,
+      "text": ". We call an architecture compatible with LLM if it can warm start from a\npretrained checkpoint. However, current TTT mechanisms are often developed as standalone recurrent\nlayers designed to replace attention, rather than complement it [ 29, 47, 48 , 53 , 67 ]. This necessitates\ncostly pretraining from scratch, creating a significant barrier to adoption for the massive, billion-\nparameter models that dominate the LLM ecosystem. Therefore, a key desideratum is a \u201cdrop-in\" design\nthat requires no fundamental architectural modifications.\n\u2022 Computational Efficiency. The mechanism must be efficient on modern parallel accelerators. The\ncanonical per-token update rule of TTT is inherently sequential and, as a result, severely bottlenecks\nthe parallel processing capabilities of GPUs and TPUs [ 3, 47, 48]. This operational inefficiency makes\nfine-grained updates impractical for high-throughput language modeling. Consequently, an efficient TTT\nimplementation must move beyond per-token schemes and ensure scalability, for instance by adopting\nchunk-wise update mechanisms [3, 30, 36, 49].\n\u2022 \nTailored Learning Objective for Language Modeling. The predominant self-supervised objective in TTT\nis reconstruction, where the model learns to associate (k\ni\n,v\ni\n) pairs, and v\ni \nis typically derived from the\ninput token x\ni \nitself [ 29, 47, 48, 53, 67]. While this generic objective enables the TTT mechanism to\nstore information, its direct relevance to the ultimate goal of language modeling\u2014predicting the next\ntoken\u2014is not guaranteed. The choice of the target value v remains a critical, yet underexplored, design\ndecision that may be suboptimal for capturing the complex causal dependencies required for LLMs.\n3 In-Place Test-Time Training\nTo satisfy the desiderata outlined in section 2, we introduce In-Place Test-Time Training (In-Place TTT), a\nframework designed to unlock TTT capabilities for LLMs. We first present our overall framework, which\nresolves architectural incompatibility via an in-place design that repurposes existing MLP blocks, while\n3"
+    },
+    {
+      "aiAssistanceScore": 0.3216453,
+      "confidence": "Low",
+      "endIndex": 83,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "ensuring computational efficiency with a chunk-wise update mechanism (section 3.1)."
+    },
+    {
+      "aiAssistanceScore": 0.30294085,
+      "confidence": "Low",
+      "endIndex": 2081,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 82,
+      "text": ". We then detail our\nnovel LM-aligned objective, which is explicitly designed for LLMs by aligning with the Next-Token Prediction\n(NTP) goal (section 3.2). Following this, we provide a theoretical analysis of our objective\u2019s superior properties\n(section 3.3) and conclude with practical implementation details (section 3.4).\n3.1 Overall Framework\nRepurposing MLP Blocks for In-Place Adaptation. Previous TTT research has largely positioned it as a\npotential solution to replace the attention mechanism. However, these prior studies were typically conducted\nat moderate scales, a regime vastly different from that of modern, billion-parameter LLMs. Consequently,\nreplacing the core attention mechanism\u2014whose learned properties are critical to an LLM\u2019s capabilities\u2014is a\nhigh-risk architectural modification. Moreover, introducing any new, randomly-initialized layer also creates a\nconflict with the billions of trained parameters of LLMs, necessitating costly and often impractical retraining\nto resolve this imbalance.\nOur core insight is to sidestep these challenges entirely. Instead of replacing or adding components, we\nrepurpose a ubiquitous module\u2013the Multi-Layer Perceptron (MLP) block\u2013to also serve as the fast weights.\nRecalling the TTT formulations in section 2, there exist no constraints on the choice of fast weights, i.e., any\nparameters can serve as fast weights updated via the TTT mechanism. In particular, the MLP blocks in\nTransformers can also be viewed as a form of key-value memory [22], functioning as a \u201cslow weights\" for the\nvast, general knowledge acquired during pre-training. It is therefore a natural extension to leverage this same\ncomponent to also function as the adaptive \"fast weights\", dynamically internalizing transient, in-context\ninformation at inference time.\nFormally, we adapt the widely used gated MLP architecture [ 24 , 57]. Given the hidden representation H, the\ngated MLP computes its output representation O = \n\n\u03d5(HW\n\u22a4\ngate\n) \u2299 (HW\n\u22a4\nup\n)\n\u0001 \nW\n\u22a4\ndown\n"
+    },
+    {
+      "aiAssistanceScore": 0.3455487,
+      "confidence": "Low",
+      "endIndex": 3921,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 2080,
+      "text": "\n. In our framework, we\ntreat the input projections W\nup \nand W\ngate \nas frozen slow weights, while repurposing the final projection\nmatrix, W\ndown\n, as the adaptable fast weights. By exclusively updating W\ndown \nin-place, we preserve the\nmodel\u2019s architectural integrity, transforming TTT from a disruptive restructuring into a lightweight, \u201cdrop-in\"\nenhancement for LLMs.\nEfficient Adaptation with Chunk-Wise Updates. Beyond architectural compatibility, our in-place design also\nunlocks significant computational efficiencies. Conventional TTT methods, by aiming to replace the attention\nmechanism, were bound to inefficient per-token updates to enforce strict causality and perform fine-grained\ntoken mixing. Chunk-wise updating approaches have been explored by recent works to achieve acceleration\n[ 3, 30, 36, 49]. Our framework also follows to sidestep the trade-off entirely. Since we only adapt the MLP\nblocks and leave the attention layers intact, we are liberated from the per-token constraint, enabling a far more\nefficient chunk-wise update strategy which further bypasses the small chunk constraints (our ablation study\nresults (Section 4.3) also verify that our framework is naturally well-suited for chunk-wise\u2014and specifically\nlarge chunk-wise\u2014updates, achieving optimal performance with chunk sizes of 512 to 1024).\nThe process operates as follows. Given the intermediate activations Z = \u03d5(HW\n\u22a4\ngate\n) \u2299 (HW\n\u22a4\nup\n) \u2208 R\nn\u00d7d\nff \nand\ncorresponding value targets and outputs V, O \u2208 R\nn\u00d7d\nmodel \n, we partition them into k non-overlapping chunks\nof size C, denoted \u25a1\n[i] \n= \u25a1\niC+1:(i+1)C \n\u2208 R\nC\u00d7d\n\u2032\nfor \u25a1 \u2208 {Z, V, O}, i \u2208 [k] and d\n\u2032 \nbeing their corresponding\ndimension. Let W\n(i)\ndown \nbe the fast weights state before processing chunk i and W\n(0)\ndown \n= W\ndown\n. For each\nchunk i \u2208 [k], we perform two sequential operations:\n1"
+    },
+    {
+      "aiAssistanceScore": 0.18636167,
+      "confidence": "Medium",
+      "endIndex": 4447,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3920,
+      "text": "1. Apply Operation: The current state of the fast weights W\n(i)\ndown \nare used to process chunk Z\n[i]\n, i.e.,\nO\n[i] \n= Z\n[i]\n(W\n(i)\ndown\n)\n\u22a4\n.\n2. \nUpdate Operation: The fast weight W\n(i)\ndown \nare updated using Z\n[i] \nas keys and V\n[i] \nas values, which\nis performed via one gradient descent step with a loss function L and a learning rate \u03b7: W\n(i+1)\ndown \n=\nW\n(i)\ndown \n\u2212 \u03b7\u2207\nW\nL\n\u0010\nZ\n[i]\n(W\n(i)\ndown\n)\n\u22a4\n, V\n[i]\n\u0011\n.\nThis chunk-wise update strategy is designed for modern hardware, similar to prior attempts [ 3, 30, 36 , 49].\n4"
+    },
+    {
+      "aiAssistanceScore": 0.18636167,
+      "confidence": "Medium",
+      "endIndex": 990,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "Moreover, due to our in-place MLP adaptation, we can use a large chunk size C to process large blocks of\ntokens at once, thereby highly leveraging parallelism and utilizing the computational power of GPUs or TPUs.\n3.2 LM-Aligned Objective\nWith the efficient, in-place adaptation framework established, the performance of In-Place TTT now hinges\non the design of its learning objective. In this subsection, we introduce our Language Modeling-Aligned\nobjective, which is explicitly tailored for LLMs.\nPrior TTT approaches typically use a reconstruction target, e.g., L\n\nf\nW\n(k), v\n\u0001 \nwhere both k and v are linear\nprojection outputs of the same input token x [47 , 48, 67], which encourages the model to simply memorize\nthe current token\u2019s representation. We argue that this is suboptimal for language modeling tasks. Instead, we\npropose to align the objective with the Next-Token Prediction (NTP) goal governing LLMs.\nTo achieve this, we specify the target v to include future token informat"
+    },
+    {
+      "aiAssistanceScore": 0.22752047,
+      "confidence": "Medium",
+      "endIndex": 2552,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 989,
+      "text": "tion. Formally, we derive our\ntarget \n\u02c6\nV \n= Conv1D (X\n0\n)W\ntarget\n, where X\n0 \n\u2208 R\nn\u00d7d\nmodel \ndenotes the token embedding, Conv1D (\u00b7) is the 1D\nConvolution operator and W\ntarget \n\u2208 R\nd\nmodel\n\u00d7d\nmodel \nis a trainable projection matrix. Under this formulation,\nthe amount of future token information can be controlled in our target \n\u02c6\nV\n, e.g., the Next-Token target can be\nachieved by parameterizing W\ntarget \nas an identity transformation and assigning Conv1D (\u00b7)\u2019s kernel weights\nto be 1 for the next token and 0 for other tokens.\nWith this aligned target, we use the widely used similarity measure to instantiate our loss function for\nsimplicity, i.e., L(\u00b7, \u00b7) = \u2212\u27e8\u00b7, \u00b7\u27e9\nF \n. Under this loss function, the gradient with respect to the fast weights in our\nchunk-wise mechanism can be directly derived:\nW\n(i)\ndown \n= W\n(i\u22121)\ndown \n+ \u03b7 \n\u02c6\nV\n\u22a4\n[i]\nZ\n[i]\n. (1)\n3.3 Theoretical Analysis\nIntuitively, our LM-Aligned objective explicitly encourages the fast weights to compress predictively useful\ninformation for future tokens, thereby enhancing the model\u2019s capacity for dynamic adaptation. In this\nsubsection, we formalize this intuition by theoretically analyzing the benefits of our objective. We ground\nour analysis within the canonical induction head setting [ 19 , 38], a mechanism understood to be critical for\nin-context learning in LLMs.\nSetup. Consider an input sequence where a key-value pair, (x\nt\n\u2217 \n, x\nt\n\u2217\n+1\n) = (k\n\u2217\n, v\n\u2217\n), appears at an arbitrary\nposition t\n\u2217\n. Subsequently, at a query position n > t\n\u2217\n, the key k\n\u2217 \nreappears, such that x\nn \n= k"
+    },
+    {
+      "aiAssistanceScore": 0.5997041,
+      "confidence": "Medium",
+      "endIndex": 3736,
+      "label": "AI-Generated",
+      "pageIndex": 4,
+      "startIndex": 2551,
+      "text": "k\n\u2217\n. The model\nmust then correctly predict the associated value, x\nn+1 \n= v\n\u2217\n.\nWithout loss of generality, we analyze a single Transformer block enhanced by our In-Place TTT. Let Z\nt \n\u2208 R\nd\nff\nbe the intermediate activation of token x\nt \nand E\nw \n\u2208 R\nd\nmodel \nbe the token embedding for x\nw\n. In our framework,\nthe fast weights update from prior context chunks is \u2206W\ndown \n= \u03b7 \nP\nt\u2208prior chunks \nV\nt\nZ\n\u22a4\nt \n. This update then\nchange the output logit at the query position n by \u2206\u2113\nn\n[w] = E\n\u22a4\nw \n\u2206W\ndown\nZ\nn\n. We compare two choices for the\nTTT target V\nt\n:\n\u2022 Reconstruction Target: V\nrec\nt \n= E\nx\nt \n, the embedding of the current token.\n\u2022 LM-Aligned Target: V\nLM\nt \n= E\nx\nt+1 \n, the embedding of the next token.\nAssumptions. Our analysis rests on two mild assumptions about the properties of the embeddings and\nintermediate activations, which are standard in theoretical analyses of Transformers:\n1. Approximate Orthogonality of Embeddings: For any two distinct tokens w\ni\n, w\nj \n\u2208 V, their embeddings are\nnearly orthogonal: |e\n\u22a4\nw\ni \ne\nw\nj \n| \u2264 \u03f5 for a small constant \u03f5 > 0. Additionally, embeddings have a non-trivial\nmagnitude: \u2225e\nw\ni \n\u2225\n2 \n\u2265 c\n2\nnorm \n> 0 for some constant c\nno"
+    },
+    {
+      "aiAssistanceScore": 0.27308095,
+      "confidence": "Low",
+      "endIndex": 4039,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3735,
+      "text": "orm\n.\n2. \nKey-Query Alignment: The intermediate activations Z\nn \nfor the query token x\nn \n= k\n\u2217 \nis aligned with Z\nt\n\u2217\nof its corresponding key token x\nt\n\u2217 \n= k\n\u2217\n: E[z\n\u22a4\nt\n\u2217 \nz\nn\n] = c\nalign \n> 0. For other positions t\u0338 = t\n\u2217\n, the tokens are\nunrelated to the query, i.e, E\n\u0002\n(V\nt\nZ\n\u22a4\nt \n) Z\nn\n\u0003 \n= 0.\n5"
+    },
+    {
+      "aiAssistanceScore": 0.27308095,
+      "confidence": "Low",
+      "endIndex": 792,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "Split into\nchunks\n\u2112(O\n[i]\n, V\n[i]\n)\nAttention\nMLP with In-Place TTT\nGenerating Direction\nInput\nEmbedding\nW\ndown\n(i)\nGated Linear\nLayer\n\u2026\nW\ndown\n(i+1)\n\u0394W\n(\ud835\udc56)\nW\ndown\n(i\u22121)\nApply Update\n+\nConv1D & Projection\n+\nFigure 1 The overall framework of our In-Place Test-Time Training. The module operates sequentially on input\nchunks. For each chunk, the current fast weights are first applied to the intermediate activations Z to produce the\noutput. Then, these weights are updated using the activations Z and a value V derived from the token embeddings.\nThis \"apply-then-update\" cycle allows the model to dynamically adapt to incoming context in a strictly causal manner.\nWith this setup, we present our main theoretical result:\nTheorem 1 (Logit-wise Effect of LM-Aligned Target v.s. Reconstruction T"
+    },
+    {
+      "aiAssistanceScore": 0.19235425,
+      "confidence": "Medium",
+      "endIndex": 2687,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 791,
+      "text": "Target). Under the specified setup\nand assumptions, for a learning rate \u03bb\nlr \n> 0, the expected change in logits \u2206\u2113\nn \nafter one update step using the\nLM-Aligned target satisfies:\n(Correct logit increases) E [\u2206\u2113\nn\n[v\n\u2217\n]] \u2265 \u03bb\nlr \n\u00b7 c\n2\nnorm \n\u00b7 c\nalign\n, (2)\n(Other logits almost unchanged) |E [\u2206\u2113\nn\n[w]]| \u2264 \u03bb\nlr \n\u00b7 \u03f5 \u00b7 c\nalign\n, \u2200w\u0338 = v\n\u2217\n. (3)\nIn contrast, for the reconstruction target, the expected change in logits is negligible for the correct token:\n|E [\u2206\u2113\nn\n[v\n\u2217\n]] | \u2264 \u03bb\nlr \n\u00b7 \u03f5 \u00b7 c\nalign\n.\nThe proof is provided in Appendix A. In theorem 1, the LM-Aligned target is guaranteed in expectation\nto increase the logit of the correct next token v\n\u2217 \nand keep that of other tokens approximately unchanged,\ndirectly aiding the model\u2019s prediction task. In contrast, the reconstruction target provides no such predictive\nbenefit, failing to increase the logit of the correct token. In practice, our implementation extends this principle\nfrom a single next token to a learned, localized combination of future tokens, which also aligns with recent\npromising results of Multi-Token Prediction in advanced LLMs [ 37] as an effective extension of the NTP\nobjective. This allows our In-Place TTT to capture a richer predictive signal, thereby compressing useful\ncontextual information more effectively than simple reconstruction.\n3.4 Implementation Details\nCombining aforementioned designs, figure 1 illustrates our In-Place TTT framework. Here we further\nelaborate on practical implementation details, which are engineered for high efficiency and scalability on\nmodern hardware. In particular, our approach is fully compatible with Context Parallelism (CP), relying on a\nparallel scan algorithm to process sequence chunks simultaneously while preserving the strict causal semantics\nof an auto-regressive update. Additional discussions are further presented.\nEfficient Implementation with Context Paral"
+    },
+    {
+      "aiAssistanceScore": 0.18352368,
+      "confidence": "Medium",
+      "endIndex": 3095,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 2686,
+      "text": "llelism. The associative nature of our update rule in equation (1)\nmakes In-Place TTT amenable to a context-parallel implementation, which partitions a sequence along its\nlength and processes the chunks simultaneously. The process unfolds into three stages: (i) for all chunks\ni \u2208 {1, . . . , T }, we compute the intermediate activations Z\n[i] \nand the fast weight update \u2206W\n(i)\ndown \n= ( \n\u02c6\nV\n[i]\n)\n\u22a4\nZ\n[i]\n6"
+    },
+    {
+      "aiAssistanceScore": 0.18352368,
+      "confidence": "Medium",
+      "endIndex": 1473,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "in parallel; (ii) a single prefix sum over [..., \u2206W\n(i)\ndown\n, \u2206W\n(i+1)\ndown \n, ...] is conducted to compute the aggregated\nupdates for each chunk: \u2206S\ni \n= \nP\ni\u22121\nj=1 \n\u2206W\nj \n, which can be highly efficient on modern accelerators; (iii)\nthe effective fast weights for each chunk, W\n(i\u22121)\ndown \n= W\n(0)\ndown \n+ \u03b7\u2206S\ni\n, and the corresponding output, O\n[i] \n=\nZ\n[i]\n(W \n(i\u22121)\ndown \n)\n\u22a4\n, are computed in parallel.\nCausality and Boundary Handling. To ensure that the update delta for chunk i itself contains no future\ninformation, we apply causal padding to the 1D convolution when generating the value. This isolates each\ndelta calculation to its respective chunk, making the parallel scan mathematically equivalent to a sequential\nupdate. Moreover, at document boundaries, the fast weights are reset to their pre-trained state to prevent\ncontext leakage across independent sequences. The final context parallel algorithm is presented in algorithm 1\nin Appendix B.\nDiscussion. In summary, our implementation of In-Place TTT synergistically combines a simple, computa-\ntionally efficient update rule with a parallel scan algorithm. This design choice makes our method not only\nfast and scalable but also mathematically equivalent to a strictly causal sequential process, thanks to careful\nboundary and padding management. The resulting module is CP-native, fully causal, and can be seamlessly\nintegrated as a drop-in replacement for the MLP block in standard Transformer archite"
+    },
+    {
+      "aiAssistanceScore": 0.1538314,
+      "confidence": "Medium",
+      "endIndex": 2886,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1472,
+      "text": "ectures. Lastly, it is also\nnoteworthy that the core principles of our framework are orthogonal to the specific choice of loss functions\nand its optimizer, which have been widely studied in the broader TTT literature, an exploration we leave as a\npromising direction for future work.\n4 Experiments\nIn this section, we conduct a series of experiments to empirically validate the effectiveness of our In-Place\nTTT framework. Specifically, we aim to answer the following research questions:\n\u2022 Q1: How effectively can In-Place TTT enhance pre-trained LLMs in a \u201cdrop-in\" manner?\n\u2022 Q2: When trained from scratch, how does In-Place TTT compare against prior TTT approaches?\n\u2022 Q3: What are the effects of key design choices in our In-Place TTT framework?\nUsing language modeling tasks of various scales as a practical proxy, we answer each question with carefully\ndesigned experiments in the following sub-sections. Due to space limits, we present detailed descriptions of\nexperimental settings in Appendix C.\nTable 1 Evaluation results on RULER [28]. Average accuracy (%) is reported, with the best results in bold.\nIn-Domain Evaluation Extrapolation\nModel 4k 8k 16k 32k 64k 128k 256k\nMistral-7B [31] 93.6 91.2 87.2 75.4 49.0 13.8 -\nGLM3-6B [23] 87.8 83.4 78.6 69.9 56.0 42.0 -\nPhi3-medium-14B [1] 93.3 93.2 91.1 86.8 78.6 46.1 -\nLlama3-8B [41] 92.8 90.3 85.7 79.9 76.3 69.5 \n-\nQwen3-4B (Instruct) [57] 95.1 93.6 91.0 87"
+    },
+    {
+      "aiAssistanceScore": 0.12249453,
+      "confidence": "Medium",
+      "endIndex": 3370,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 2885,
+      "text": "7.8 77.8 66.0 -\nBaseline 96.6 94.1 92.1 88.7 74.3 74.8 41.7\nIn-Place TTT 96.1 95.6 92.7 89.3 78.7 77.0 43.9\n4.1 In-Place TTT as a Drop-in Enhancement for Pre-trained LLMs\nTo validate In-Place TTT as a \u201cdrop-in\u201d enhancement for existing, pre-trained LLMs, we start with the\ncompetitive open-sourced Qwen3-4B-Base model. Its original context window is 32k, thereby we can simulate\nthe long-horizon, evolving tasks requiring Test-Time Training capabilities by language modeling tasks of\n7"
+    },
+    {
+      "aiAssistanceScore": 0.12249453,
+      "confidence": "Medium",
+      "endIndex": 666,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "Table 2 Extension of In-Place TTT to LLaMA-3.1-8B and Qwen3-14B-Base on the RULER benchmark. We report\nthe average accuracy (%) with the best results in bold.\nBase Model Method 4k 8k 16k 32k 64k 64k+YaRN\nLLaMA-3.1-8B \nBaseline 93.9 92.1 92.5 91.1 81.6 \u2013\nIn-Place TTT 94.4 93.0 93.3 91.7 83.7 \u2013\nQwen3-14B \nBaseline 96.8 95.0 94.6 90.7 67.9 81.3\nIn-Place TTT 97.2 95.7 95.2 91.2 70.6 82.5\nvarying context lengths. In particular, we compare the performance of (1) Qwen3-4B-Base (Baseline); (2)\nQwen3-4B-Base + In-Place TTT (In-Place TTT). Both models undergo the exact same continual training\ncurriculum, ensuring a fair comparison where our In-Place TTT is the only va"
+    },
+    {
+      "aiAssistanceScore": 0.30201453,
+      "confidence": "Medium",
+      "endIndex": 2674,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 665,
+      "text": "ariable.\nTraining and Evaluation. The continual training curriculum is divided into two stages: an initial phase of\n\u223c20B tokens with 32k context length, followed by a second phase of \u223c15B tokens with 128k context length.\nThe detailed descriptions of training dataset can be found in Appendix C.1. To effectively manage these long\nsequences, we adapt the model\u2019s Rotary Position Embeddings using YaRN [ 42]. We evaluate the long-context\nperformance of both models on the RULER benchmark [28] using the popular OpenCompass framework [13],\nwith context lengths ranging from 4k to 256k. The 256k setting specifically measures the models\u2019 ability to\nextrapolate beyond the 128k context length limit. Detailed descriptions of training details can be found in\nAppendix C.2.\nResults and Discussion. The results, summarized in table 1, demonstrate that In-Place TTT significantly\nboosts the long-context proficiency of the pre-trained model. In particular, a clear trend can be easily\nseen from the results: while both models are competitive at short contexts, Qwen3-4B-Base enhanced by\nour In-Place TTT establishes a consistent and widening advantage as the sequence length increases. It\nachieves substantial gains at the 64k and 128k context lengths. Crucially, this advantage is maintained when\nextrapolating to a 256k context, demonstrating superior generalization. These findings confirm that In-Place\nTTT can be seamlessly integrated into a pre-trained LLM to boost its long-context proficiency. The model\u2019s\nstrong performance at and beyond the context length validates our method as a practical and powerful tool\nfor extending the capabilities of existing LLMs.\nExtension to More Models. To verify the generality of our approach, we further apply In-Place TTT as a\ndrop-in enhancement to two additional models: LLaMA-3.1-8B [24] and Qwen3-14B-Base [ 57], following the\nsame continual training protocol. As shown in Table 2, In-Place TTT consistently improves the RULER scores\nacross all context lengths on both "
+    },
+    {
+      "aiAssistanceScore": 0.24763103,
+      "confidence": "Medium",
+      "endIndex": 4115,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 2673,
+      "text": " models. The gains are particularly pronounced at longer contexts, e.g., +2.1\nat 64k for LLaMA-3.1-8B and +2.7 at 64k for Qwen3-14B-Base. Moreover, the improvement is maintained\nwhen combined with YaRN [ 42] for position extrapolation, confirming that our method is orthogonal to RoPE\nextension techniques. These results, spanning different model families and scales (4B\u201314B), reinforce that\nIn-Place TTT is a broadly applicable drop-in enhancement for pre-trained LLMs.\n4.2 Pre-training from Scratch: A Comparative Analysis\nHaving demonstrated In-Place TTT\u2019s effectiveness as a \u201cdrop-in\u201d module, we further evaluate its performance\nand scalability when integrated into models pre-trained from scratch. Our analysis proceeds in two stages: we\nfirst establish its language modeling capabilities at the 500M and 1.5B scales, and then assess its scalability\nand impact on a larger 4B model.\nExperimental Setup. Firstly, we benchmark our In-Place TTT against prior TTT-related approaches and\nefficient attention methods based on TogetherAI [50] at 500M and 1.5B parameter scales. Various competitive\nbaselines are compared: (1) standard Transformer with sliding window attention (SWA) [ 6, 10] (2) Gated\nLinear Attention (GLA) [ 60]; (3) DeltaNet [43 , 59, 62] (4) Large Chunk Test-Time Training (LaCT) [67]. For\na fair comparison, both In-Place TTT and LaCT are built upon an SWA backbone. All models are trained on\nsequences with a 32k context "
+    },
+    {
+      "aiAssistanceScore": 0.12186261,
+      "confidence": "Medium",
+      "endIndex": 4124,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 4114,
+      "text": " length.\n8"
+    },
+    {
+      "aiAssistanceScore": 0.12186261,
+      "confidence": "Medium",
+      "endIndex": 769,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "(a) Sliding Window Perplexity of 500M Model\n2k 4k 8k 16k 32k\nContext Length\n9.5\n10.0\n10.5\n11.0\n11.5\n12.0\nPerplexity\nIn-Place TTT\nSWA\nGLA\nDeltanet\nLaCT\n (b) Sliding Window Perplexity of 1.5B Model\n2k 4k 8k 16k 32k\nContext Length\n8.0\n8.5\n9.0\n9.5\nPerplexity\nIn-Place TTT\nSWA\nGLA\nDeltanet\nLaCT\nFigure 2 Sliding Window Perplexity at varying context lengths on the Pile dataset for 500M (left) and 1.5B (right)\nparameter models. Our In-Place TTT consistently achieves lower perplexity than all competitive baselines.\nCommon Sense Reasoning Long-Context Evaluation\nModel Architecture HellaSwag ARC-E ARC-C MMLU PIQA RULER-4k RULER-8k RULER-16k\nBaselines \nFull Attn. 55.67 64.52 33.19 36.43 72.63 45.77 38.09 6.58\nSWA 54.92 64.18 32.85 36.06 72.58 14.77 9.91 5.07\nI.P. TTT \nFul"
+    },
+    {
+      "aiAssistanceScore": 0.16545746,
+      "confidence": "Medium",
+      "endIndex": 2264,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 768,
+      "text": "ll Attn. 55.85 64.98 32.34 37.42 73.29 49.98 43.82 19.99\nSWA 55.24 64.60 33.70 36.48 72.03 28.33 26.80 7.57\nTable 3 Evaluation results of 4B models on common sense reasoning and long-context evaluation benchmarks. Best\nperformance is in bold. \u201cSWA\u201d is Sliding-Window Attention, \u201cFull Attn.\u201d is Full Attention, and \u201cI.P. TTT\u201d is our\nIn-Place TTT.\nBuilding on these results, we further scale up to 4B-parameter models to evaluate scalability of our In-Place\nTTT approach. In particular, we compare Transformers with Full Attention and Transformers with SWA\nagainst their counterparts enhanced by our In-Place TTT. These models are trained for 120B tokens with\nan 8k context length. Detailed descriptions of datasets, model configurations, and training procedures are\navailable in sections C.1 to C.3.\nEvaluation. For the 500M and 1.5B models, we evaluate their long-context utilization using Sliding Window\nPerplexity on a validation set comprised of Pile [ 20] and Proof-Pile-2 [ 40]. This metric measures perplexity\non a fixed final block of tokens when extending the preceding context, where a decreasing perplexity trend\nindicates effective context usage. For the 4B models, we conduct a broader evaluation on a suite of downstream\ntasks, including common sense reasoning benchmarks (HellaSwag [ 66], ARC [12], MMLU [ 26 , 27 ], PIQA [ 7])\nand the long-context RULER benchmark [28].\nResults and Discussion. In Figure 2, we plot the sliding window perplexity against context length for 500M/1.5B"
+    },
+    {
+      "aiAssistanceScore": 0.16704242,
+      "confidence": "Medium",
+      "endIndex": 3179,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 2263,
+      "text": "B\nmodel. It can be easily seen that our In-Place TTT consistently achieves lower validation perplexity than all\ncompetitive baselines, with its performance steadily improving up to the full 32k context. This sustained im-\nprovement suggests its core mechanism successfully compresses and utilizes information from incoming context.\nMoreover, the results in Table 3 further show that 4B-parameter Transformers with both Full Attention and\nSWA are consistently improved across most common sense reasoning tasks. Furthermore, models with our\nIn-Place TTT yield superior performance on the long-context evaluation, e.g., RULER-16k score is improved\nfrom 6.58 to 19.99 for the Transformer with Full Attention and RULER-8k score is boosted from 9.91 to\n26.80 for the SWA model. These substantial gains, particularly across models of various scales, establish our\nIn-Place TTT as a highly effective and scalable approach.\n9"
+    },
+    {
+      "aiAssistanceScore": 0.16704242,
+      "confidence": "Medium",
+      "endIndex": 389,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "RULER-4k RULER-8k RULER-16k\n0\n20\n40\nScore\n(a) State size\n4\u00d7\n1\u00d7\n0.5\u00d7\nRULER-4k RULER-8k RULER-16k\n0\n20\n40\n(b) Chunk size\nC=256\nC=512\nC=1024\nC=2048\nRULER-4k RULER-8k RULER-16k\n0\n20\n40\n(c) LM-Aligned Objective\nw Conv, Proj\nw/o Conv\nw/o Proj\nw/o Conv, Proj\nFigure 3 Ablation studies on the key design choices of the In-Place TTT framework, evaluated on the RULER\nbenchmark with a 1.7B parameter"
+    },
+    {
+      "aiAssistanceScore": 0.12647659,
+      "confidence": "Medium",
+      "endIndex": 1932,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 388,
+      "text": "r model. The plots illustrate the impact of: (a) State size, showing that performance\nimproves as the state size scales; (b) Chunk size, demonstrating a performance trade-off where intermediate sizes (e.g.,\n512, 1024) are optimal; and (c) The LM-Aligned Value objective, confirming that both the convolution (w Conv) and\nthe projection (w Proj) are crucial.\n(a) Throughput (SWA)\n8k 32k 128k\n0\n5\n10\n15\n20\nPrefill TPS (K tokens/s)\n \nBaseline\u2013SWA TTT\u2013SWA\n (b) Throughput (Full)\n8k 32k 128k\n0\n5\n10\n15\n20\nPrefill TPS (K tokens/s)\n \nBaseline\u2013Full TTT\u2013Full\n (c) Memory (SWA)\n8k 32k 128k\n0\n20\n40\n60\nPeak Memory (GB)\n \nBaseline\u2013SWA TTT\u2013SWA\n (d) Memory (Full)\n8k 32k 128k\n0\n20\n40\n60\nPeak Memory (GB)\n \nBaseline\u2013Full TTT\u2013Full\nFigure 4 Efficiency analysis of In-Place TTT. Both prefill throughput (a, b) and peak memory (c, d) metrics are\npresented for 4B models with Sliding-Window Attention (SWA) and Full Attention at various context lengths. Our\nIn-Place TTT introduces negligible overhead in practical scenarios.\n4.3 Ablation Studies: On the Impact of Key Design Choices\nLastly, we conduct a series of ablation studies on RULER with a 1.7B-parameter model, providing deeper\ninsights into our design choices. Detailed settings are presented in Appendix C.3 and C.2.\nImpact of State Size. We first investigate how performance scales with the fast weights size, which can be\ncontrolled by varying the number of TTT-enabled layers. Figure 3 (a) shows a clear trend that the performance\nof our In-Place TTT consistently improves along with the state size s"
+    },
+    {
+      "aiAssistanceScore": 0.105287,
+      "confidence": "Medium",
+      "endIndex": 3522,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 1931,
+      "text": "scaling. This confirms that larger fast\nweights allow the model to more effectively adapt to contextual information, which further supports our\nrepurposing approach leveraging the large amount of MLP states.\nImpact of Chunk Size. The chunk size C in section 3.1 controls both the granularity of fast weights updating\nand parallelism, exposing a tradeoff between efficiency and performance. By varying the chunk size, Figure 3\n(b) shows that both C = 512 and C = 1024 competitively achieve better performance compared to other\nchoices, while C = 1024 has better efficiency.\nImpact of LM-Aligned Objective. Next, we delve deep into our tailored LM-Aligned objective in section 3.2,\nwhere the target is defined as \n\u02c6\nV = Conv1D (X\n0\n)W\ntarget\n. In particular, the Conv1D operator is used to yield\ntargets containing future token information, and the W\ntarget \nis a projection transformation. In Figure 3\n(c), we comprehensively ablate combinations of these components. The result shows that both of them are\nnecessary for performance guarantee, while Conv1D plays an essential role on long context and W\ntarget \nis\ncrucial on short context. These results align with our theoretical analysis in section 3.3, strongly supporting\nour motivation to derive a tailored objective for language modeling.\nEfficiency Impact of In-Place TTT. We further study the computational overhead introduced by our In-Place\nTTT. In figure 4, we compare both prefill throughput and memory consumptions of with and without our\nIn-Place TTT. The results indeed verify the efficiency of our practical implementations.\n10"
+    },
+    {
+      "aiAssistanceScore": 0.105287,
+      "confidence": "Medium",
+      "endIndex": 453,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "5 Related Work\nTest-Time Training (TTT). Test-Time Training (TTT) is a paradigm that enables a model to adapt dynamically\nin response to continuous streams of data at inference by updating a small subset of its parameters, known as\nfast weights [2]. Initially demonstrating success in computer vision [ 47, 53], TTT has since been extended\nto numerous other modalities\u2014including language [48], video [15 ], and audio [ 18]\u2014underscoring its broad\napplica"
+    },
+    {
+      "aiAssistanceScore": 0.2101512,
+      "confidence": "Low",
+      "endIndex": 2726,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 452,
+      "text": "ability. Research in this area has largely focused on two avenues for improving TTT\u2019s effectiveness:\nthe design of more sophisticated test-time optimizers [4] and the formulation of novel, self-supervised online\nlearning objectives [ 3, 32]. However, the computational efficiency of TTT remained a critical bottleneck due\nto its inherently sequential, per-token update process. The chunk wise Test-Time Training framework was\nthe first to directly address this challenge by introducing a chunk-wise update mechanism to better leverage\nparallel hardware [ 3, 30, 36, 49, 63, 67]. Despite these advances, TTT\u2019s function as the primary token mixer\nnecessitates reliance on small chunks to preserve performance\u2014this in turn creates a bottleneck that limits the\nmassive parallelism needed to fully utilize modern accelerators. Furthermore, prior work has not addressed\nhow to seamlessly integrate TTT into large, pre-trained models, nor developed learning objectives specifically\ntailored for the autoregressive nature of LLMs, which are gaps our work directly addresses.\nEfficient Long-Context Architectures. A parallel line of research seeks to extend the effective context window\nof LLMs by mitigating the quadratic complexity of the standard attention mechanism. Major approaches\ninclude: 1) Sparse attention methods, which restrict the range of token-to-token interactions via fixed patterns\nlike sliding or strided windows [ 6, 10 , 65]; 2) Linear-time variants, which approximate the attention mechanism\nor replace it with efficient recurrent or gated formulations, such as linear attention [33, 43] Gated Linear\nAttention (GLA) [ 58]; and 3) State-Space Models (SSMs), which compress sequence history into a compact\nlatent state, enabling processing with linear complexity [ 16, 17]. Recently, the delta rule has emerged as a\npopular design choice for linear attention and SSMs, enabling better experessivity and highly parallelizable\nimplementations [61]. These architectural advances are complementary to our framework. While they focus\non efficiently processing long contexts, TTT provides a mechanism for online adaptation to the information\nwithin that context. Our In-Place TTT can be also naturally integrated with these efficient backbones, as\nthey also have MLP "
+    },
+    {
+      "aiAssistanceScore": 0.1777125,
+      "confidence": "Medium",
+      "endIndex": 4758,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 2725,
+      "text": " blocks. And we leave these as the future work.\nMemory Design and Augmentation. A related domain of research involves augmenting neural architectures\nwith explicit memory modules to enhance their reasoning and contextual understanding capabilities. These\napproaches can be broadly distinguished by their function: some are designed to store persistent, task-agnostic\nknowledge in an external memory bank, while others focus on capturing transient, data-dependent information\nfrom the immediate context [ 25, 34, 35, 55, 64]. The latter, contextual memories, have been implemented\nusing various mechanisms, including recurrent state transitions, attention-based context aggregation in\nTransformers [ 14], and rapid, gradient-based updates to fast weights [61 ]. Test-Time Training (TTT)\nrepresents a powerful instance of this latter category, which conceptually extends the notion of a hidden state\nfound in Recurrent Neural Networks (RNNs). Rather than compressing contextual history into a fixed-size\nactivation vector, TTT designates a subset of the model\u2019s own parameters\u2014the fast weights\u2014to function as\na high-capacity, dynamic memory [ 2, 43]. These weights are updated on the fly at inference time, allowing\nthe model to continuously internalize evolving contextual information and thereby function as an expressive,\nonline evolving state.\n6 Conclusion\nWe introduced In-Place Test-Time Training, a practical framework that resolves the critical barriers of\nTTT for LLMs. Principled design choices are proposed including an in-place mechanism that repurposes\nexisting MLP blocks, an efficient chunk-wise update rule, and a theoretically-grounded objective aligned\nwith language modeling. Extensive experiments validate that our approach not only serves as a powerful\n\u201cdrop-in\" enhancement for pre-trained LLMs but also outperforms strong baselines when trained from scratch.\nBy providing a scalable solution for on-the-fly adaptation, our work makes a promising step towards a new\nparadigm of more dynamic, continual learning fo"
+    },
+    {
+      "aiAssistanceScore": 0.08698515,
+      "confidence": "Medium",
+      "endIndex": 4768,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 4757,
+      "text": "or LLMs.\n11"
+    },
+    {
+      "aiAssistanceScore": 0.08698515,
+      "confidence": "Medium",
+      "endIndex": 1320,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "References\n[1] Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree,\nArash Bakhtiari, Jianmin Bao, Harkirat Behl, Alon Benhaim, Misha Bilenko, Johan Bjorck, S\u00e9bastien Bubeck,\nMartin Cai, et al. Phi-3 technical report: A highly capable language model locally on your phone, 2024. URL\nhttps://arxiv.org/abs/2404.14219.\n[2] Jimmy Lei Ba, Geoffrey E. Hinton, Volodymyr Mnih, Joel Z. Leibo, and Catalin Ionescu. Using fast weights\nto attend to the recent past. In Advances in Neural Information Processing Systems, 2016. URL https:\n//arxiv.org/abs/1610.06258.\n[3] \nAli Behrouz, Peilin Zhong, and Vahab Mirrokni. Titans: Learning to memorize at test time. arXiv preprint\narXiv:2501.00663, 2024.\n[4] Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, and Vahab Mirrokni. It\u2019s all connected: A journey through\ntest-time memorization, attentional bias, retention, and online optimization, 2025. URL https://arxiv.org/\nabs/2504.13173.\n[5] \nAli Behrouz, Meisam Razaviyayn, Peilin Zhong, and Vahab Mirrokni. It\u2019s all connected: A journey through\ntest-time memorization, attentional bias, retention, and online optimization. arXiv preprint arXiv:2504.13173,\n2025.\n[6] Iz Beltagy, Matthew E. Peters, and Arman Cohan. Longformer: The long-document transformer. arXiv preprint\narXiv:2004.05150"
+    },
+    {
+      "aiAssistanceScore": 0.039143242,
+      "confidence": "Medium",
+      "endIndex": 2630,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 1319,
+      "text": "0, 2020. URL https://arxiv.org/abs/2004.05150.\n[7] \nYonatan Bisk, Rowan Zellers, Ronan Le Bras, Jianfeng Gao, and Yejin Choi. Piqa: Reasoning about physical\ncommonsense in natural language, 2019. URL https://arxiv.org/abs/1911.11641.\n[8] \nTom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind\nNeelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. Language models are few-shot learners.\nAdvances in neural information processing systems, 33:1877\u20131901, 2020.\n[9] \nJun Shern Chan, Neil Chowdhury, Oliver Jaffe, James Aung, Dane Sherburn, Evan Mays, Giulio Starace, Kevin\nLiu, Leon Maksin, Tejal Patwardhan, et al. Mle-bench: Evaluating machine learning agents on machine learning\nengineering. arXiv preprint arXiv:2410.07095, 2024.\n[10] Rewon Child, Scott Gray, Alec Radford, and Ilya Sutskever. Generating long sequences with sparse transformers.\narXiv preprint arXiv:1904.10509, 2019.\n[11] Aakanksha Chowdhery and et al. Palm: Scaling language modeling with pathways. arXiv preprint\narXiv:2204.02311, 2022. URL https://arxiv.org/abs/2204.02311.\n[12] Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord.\nThink you have solved question answering? try arc, the ai2 reasoning challenge. arXiv:1803.05457v1"
+    },
+    {
+      "aiAssistanceScore": 0.04243656,
+      "confidence": "Medium",
+      "endIndex": 3907,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 2629,
+      "text": "1, 2018.\n[13] OpenCompass Contributors. Opencompass: A universal evaluation platform for foundation models. https:\n//github.com/open-compass/opencompass, 2023.\n[14] Zihang Dai, Zhilin Yang, Yiming Yang, Jaime Carbonell, Quoc V. Le, and Ruslan Salakhutdinov. Transformer-XL:\nAttentive language models beyond a fixed-length context. In Proceedings of the 57th Annual Meeting of the\nAssociation for Computational Linguistics , pages 2978\u20132988. Association for Computational Linguistics, 2019.\nURL https://aclanthology.org/P19-1285/.\n[15] Karan Dalal, Daniel Koceja, Jiarui Xu, Yue Zhao, Shihao Han, Ka Chun Cheung, Jan Kautz, Yejin Choi, Yu Sun,\nand Xiaolong Wang. One-minute video generation with test-time training. In Proceedings of the Computer Vision\nand Pattern Recognition Conference, pages 17702\u201317711, 2025.\n[16] \nTri Dao and Albert Gu. Transformers are ssms: Generalized models and efficient algorithms through structured\nstate space duality, 2024. URL https://arxiv.org/abs/2405.21060.\n[17] Tri Dao, Albert Gu, et al. Hungry Hungry Hippos: Towards language modeling with state space models. arXiv\npreprint arXiv:2312.00752, 2023.\n[18] Sri Harsha Dumpala, Chandramouli Sastry, and Sageev Oore. Test-time training for speech, 2023. URL\nhttps://arxiv.org/abs/2309.10930.\n12"
+    },
+    {
+      "aiAssistanceScore": 0.04243656,
+      "confidence": "Medium",
+      "endIndex": 209,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "[19] Nelson Elhage, Neel Nanda, Catherine Olsson, Tom Brown, and et al. A mathematical framework for transformer\ncircuits. Transformer Circuits Thread, 2021. URL https://transformer-circuits.pub/2021/framework"
+    },
+    {
+      "aiAssistanceScore": 0.06160057,
+      "confidence": "Medium",
+      "endIndex": 1505,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 208,
+      "text": "k/index.\nhtml.\n[20] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, Horace He,\nAnish Thite, Noa Nabeshima, Shawn Presser, and Connor Leahy. The pile: An 800gb dataset of diverse text for\nlanguage modeling. arXiv preprint arXiv:2101.00027, 2020. URL https://arxiv.org/abs/2101.00027.\n[21] Leo Gao, Jonathan Tow, Baber Abbasi, Stella Biderman, Sid Black, Anthony DiPofi, Charles Foster, Laurence\nGolding, Jeffrey Hsu, Alain Le Noac\u2019h, Haonan Li, Kyle McDonell, Niklas Muennighoff, Chris Ociepa, Jason\nPhang, Laria Reynolds, Hailey Schoelkopf, Aviya Skowron, Lintang Sutawika, Eric Tang, Anish Thite, Ben Wang,\nKevin Wang, and Andy Zou. The language model evaluation harness, 07 2024. URL https://zenodo.org/\nrecords/12608602.\n[22] Mor Geva, Roei Schuster, Jonathan Berant, and Omer Levy. Transformer feed-forward layers are key-value\nmemories. arXiv preprint arXiv:2012.14913, 2020.\n[23] Team GLM. Chatglm: A family of large language models from glm-130b to glm-4 all tools, 2024. URL\nhttps://arxiv.org/abs/2406.12793.\n[24] Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle,\nAiesha Letman, Akhil Mathur, Alan Schelten, Alex Vaughan, et al. The llama 3 herd of models. arXiv preprint\narXiv:2407.21783"
+    },
+    {
+      "aiAssistanceScore": 0.09198303,
+      "confidence": "Medium",
+      "endIndex": 2854,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 1504,
+      "text": "3, 2024.\n[25] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. Realm: Retrieval-augmented\nlanguage model pre-training. In ICML, 2020.\n[26] Dan Hendrycks, Collin Burns, Steven Basart, Andrew Critch, Jerry Li, Dawn Song, and Jacob Steinhardt. Aligning\nai with shared human values. Proceedings of the International Conference on Learning Representations (ICLR),\n2021.\n[27] Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt.\nMeasuring massive multitask language understanding. In International Conference on Learning Representations,\n2021. URL https://arxiv.org/abs/2009.03300.\n[28] Cheng-Ping Hsieh, Simeng Sun, Samuel Kriman, Shantanu Acharya, Dima Rekesh, Fei Jia, Yang Zhang, and\nBoris Ginsburg. RULER: What\u2019s the real context size of your long-context language models? arXiv preprint\narXiv:2404.06654, 2024. URL https://arxiv.org/abs/2404.06654.\n[29] \nJinwu Hu, Zhitian Zhang, Guohao Chen, Xutao Wen, Chao Shuai, Wei Luo, Bin Xiao, Yuanqing Li, and\nMingkui Tan. Test-time learning for large language models. arXiv preprint arXiv:2505.20633, 2025. URL\nhttps://arxiv.org/abs/2505.20633. Accepted at ICML 2025.\n[30] Kazuki Irie and Samuel J. Gershman. Fast weight programming and linear transformers: from machine learning\nto neurobiology, 2025. URL https://arxiv.org/abs/2508"
+    },
+    {
+      "aiAssistanceScore": 0.03276211,
+      "confidence": "High",
+      "endIndex": 4018,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2853,
+      "text": "8.08435.\n[31] \nAlbert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh Chaplot, Diego de las\nCasas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, L\u00e9lio Renard Lavaud, Marie-Anne\nLachaux, Pierre Stock, Teven Le Scao, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, and William El Sayed.\nMistral 7b, 2023. URL https://arxiv.org/abs/2310.06825.\n[32] Mahdi Karami and Vahab Mirrokni. Lattice: Learning to efficiently compress the memory. arXiv preprint\narXiv:2504.05646, 2025.\n[33] Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and Fran\u00e7ois Fleuret. Transformers are rnns: Fast\nautoregressive transformers with linear attention. In Proceedings of the 37th International Conference on Machine\nLearning , Proceedings of Machine Learning Research. PMLR, 2020. URL https://arxiv.org/abs/2006.16236.\n[34] Urvashi Khandelwal, Omer Levy, Dan Jurafsky, Luke Zettlemoyer, and Mike Lewis. Generalization through\nmemorization: Nearest neighbor language models. In ICLR, 2020.\n[35] Patrick Lewis, Ethan Perez, Aleksandra Piktus, et al. Retrieval-augmented generation for knowledge-intensive nlp\ntasks. In NeurIPS, 2020.\n13"
+    },
+    {
+      "aiAssistanceScore": 0.03276211,
+      "confidence": "High",
+      "endIndex": 216,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "[36] Zeman Li, Ali Behrouz, Yuan Deng, Peilin Zhong, Praneeth Kacham, Mahdi Karami, Meisam Razaviyayn, and\nVahab Mirrokni. Tnt: Improving chunkwise training for test-time memorization. arXiv preprint arXiv:2511.07343"
+    },
+    {
+      "aiAssistanceScore": 0.060619496,
+      "confidence": "Medium",
+      "endIndex": 1603,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 215,
+      "text": "3,\n2025.\n[37] Aixin Liu, Bei Feng, Bing Xue, Bingxuan Wang, Bochao Wu, Chengda Lu, Chenggang Zhao, Chengqi Deng,\nChenyu Zhang, Chong Ruan, et al. Deepseek-v3 technical report. arXiv preprint arXiv:2412.19437, 2024.\n[38] \nCatherine Olsson, Nelson Elhage, Neel Nanda, Nicholas Joseph, Nova DasSarma, Tom Henighan, Ben Mann,\nAmanda Askell, Yuntao Bai, Anna Chen, Tom Conerly, Dawn Drain, Deep Ganguli, Zac Hatfield-Dodds, Danny\nHernandez, Scott Johnston, Andy Jones, Jackson Kernion, Liane Lovitt, Kamal Ndousse, Dario Amodei, Tom\nBrown, Jack Clark, Jared Kaplan, Sam McCandlish, and Chris Olah. In-context learning and induction heads.\narXiv preprint arXiv:2209.11895, 2022. URL https://arxiv.org/abs/2209.11895.\n[39] OpenAI. Gpt-4 technical report. arXiv preprint arXiv:2303.08774, 2024.\n[40] Keiran Paster, Marco Dos Santos, Zhangir Azerbayev, and Jimmy Ba. Openwebmath: An open dataset of\nhigh-quality mathematical web text, 2023.\n[41] Leonid Pekelis, Michael Feil, Forrest Moret, Mark Huang, and Tiffany Peng. Llama\n3 gradient: A series of long context models, 2024. URL https://gradient.ai/blog/\nscaling-rotational-embeddings-for-long-context-language-models.\n[42] \nBowen Peng, Jeffrey Quesnelle, Honglu Fan, and Enrico Shippole. Yarn: Efficient context window extension of\nlarge language models. arXiv preprint arXiv:2309.00071, 2023.\n[43] Imanol Schlag, Kazuki Irie, and J\u00fcrgen Schmi"
+    },
+    {
+      "aiAssistanceScore": 0.043738663,
+      "confidence": "Medium",
+      "endIndex": 3054,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 1602,
+      "text": "idhuber. Linear transformers are secretly fast weight programmers.\nIn International Conference on Machine Learning, pages 9355\u20139366. PMLR, 2021.\n[44] David Silver and Richard S Sutton. Welcome to the era of experience. Google AI, 1, 2025.\n[45] Giulio Starace, Oliver Jaffe, Dane Sherburn, James Aung, Jun Shern Chan, Leon Maksin, Rachel Dias, Evan\nMays, Benjamin Kinsella, Wyatt Thompson, et al. Paperbench: Evaluating ai\u2019s ability to replicate ai research.\narXiv preprint arXiv:2504.01848, 2025.\n[46] Jianlin Su, Yu Lu, Shengfeng Pan, Ahmed Murtadha, Bo Wen, and Yunfeng Liu. Roformer: Enhanced transformer\nwith rotary position embedding, 2023.\n[47] \nYu Sun, Xiaolong Wang, Zhuang Liu, John Miller, Alexei A. Efros, and Moritz Hardt. Test-time training with\nself-supervision for generalization under distribution shifts. In Proceedings of the 37th International Conference\non Machine Learning , volume 119 of Proceedings of Machine Learning Research, pages 9229\u20139248. PMLR, 2020.\nURL https://proceedings.mlr.press/v119/sun20b.html.\n[48] Yu Sun, Xinhao Li, Karan Dalal, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois, Xinlei Chen, Xiaolong\nWang, Sanmi Koyejo, Tatsunori Hashimoto, and Carlos Guestrin. Learning to (learn at test time): Rnns with\nexpressive hidden states. arXiv preprint arXiv:2407.04620, 2024. URL https://arxiv.org/abs/2407.04620.\n[49] \nYutao Sun, Li Dong, Shaohan Huang, Shuming Ma, Yuqing Xia, Jilong Xue, Jianyong Wang, and Fu"
+    },
+    {
+      "aiAssistanceScore": 0.0540662,
+      "confidence": "Medium",
+      "endIndex": 4075,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 3053,
+      "text": "uru Wei.\nRetentive network: A successor to transformer for large language models. arXiv preprint arXiv:2307.08621, 2023.\n[50] TogetherAI. Long data collections database, 2024.\n[51] \nHugo Touvron, Th\u00e9o Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timoth\u00e9e Lacroix, Baptiste\nRozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, and et al. Llama: Open and efficient foundation language\nmodels. arXiv preprint arXiv:2302.13971, 2023.\n[52] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and\nIllia Polosukhin. Attention is all you need. In Advances in Neural Information Processing Systems (NeurIPS),\n2017.\n[53] \nDequan Wang, Evan Shelhamer, Shaoteng Liu, Bruno Olshausen, and Trevor Darrell. Tent: Fully test-time\nadaptation by entropy minimization. In ICLR, 2021.\n[54] Ke Alexander Wang, Jiaxin Shi, and Emily B Fox. Test-time regression: a unifying framework for designing\nsequence models with associative memory. arXiv preprint arXiv:2501.12352, 2025.\n14"
+    },
+    {
+      "aiAssistanceScore": 0.0540662,
+      "confidence": "Medium",
+      "endIndex": 364,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "[55] Yu Wang, Yifan Gao, Xiusi Chen, Haoming Jiang, Shiyang Li, Jingfeng Yang, Qingyu Yin, Zheng Li, Xian Li,\nBing Yin, Jingbo Shang, and Julian McAuley. Memoryllm: Towards self-updatable large language models, 2024.\nURL https://arxiv.org/abs/2402.04624.\n[56] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, and\nDenn"
+    },
+    {
+      "aiAssistanceScore": 0.03008605,
+      "confidence": "High",
+      "endIndex": 1723,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 363,
+      "text": "ny Zhou. Chain-of-thought prompting elicits reasoning in large language models, 2023. URL https:\n//arxiv.org/abs/2201.11903.\n[57] An Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng, Bowen Yu, Chang Gao, Chengen\nHuang, Chenxu Lv, et al. Qwen3 technical report. arXiv preprint arXiv:2505.09388, 2025.\n[58] Songlin Yang, Bailin Wang, Yikang Shen, Rameswar Panda, and Yoon Kim. Gated linear attention transformers\nwith hardware-efficient training. arXiv preprint arXiv:2312.06635, 2023. URL https://arxiv.org/abs/2312.\n06635.\n[59] \nSonglin Yang, Jan Kautz, and Ali Hatamizadeh. Gated delta networks: Improving mamba2 with delta rule. arXiv\npreprint arXiv:2412.06464, 2024.\n[60] Songlin Yang, Bailin Wang, Yikang Shen, Rameswar Panda, and Yoon Kim. Gated linear attention transformers\nwith hardware-efficient training. In International Conference on Machine Learning, pages 56501\u201356523. PMLR,\n2024.\n[61] Songlin Yang, Bailin Wang, Yu Zhang, Yikang Shen, and Yoon Kim. Parallelizing linear transformers with the delta\nrule over sequence length. arXiv preprint arXiv:2406.06484, 2024. URL https://arxiv.org/abs/2406.06484.\n[62] Songlin Yang, Bailin Wang, Yu Zhang, Yikang Shen, and Yoon Kim. Parallelizing linear transformers with\nthe delta rule over sequence length. In The Thirty-eighth Annual Conference on Neural Information Processing\nSystems"
+    },
+    {
+      "aiAssistanceScore": 0.16256641,
+      "confidence": "Medium",
+      "endIndex": 3054,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 1722,
+      "text": "s, 2024.\n[63] Morris Yau, Sharut Gupta, Valerie Engelmayer, Kazuki Irie, Stefanie Jegelka, and Jacob Andreas. Sequential-\nparallel duality in prefix scannable models, 2025. URL https://arxiv.org/abs/2506.10918.\n[64] Hongli Yu, Tinghong Chen, Jiangtao Feng, Jiangjie Chen, Weinan Dai, Qiying Yu, Ya-Qin Zhang, Wei-Ying Ma,\nJingjing Liu, Mingxuan Wang, and Hao Zhou. Memagent: Reshaping long-context llm with multi-conv rl-based\nmemory agent, 2025. URL https://arxiv.org/abs/2507.02259.\n[65] Jingyang Yuan, Huazuo Gao, Damai Dai, Junyu Luo, Liang Zhao, Zhengyan Zhang, Zhenda Xie, Y. X. Wei, Lean\nWang, Zhiping Xiao, Yuqing Wang, Chong Ruan, Ming Zhang, Wenfeng Liang, and Wangding Zeng. Native\nsparse attention: Hardware-aligned and natively trainable sparse attention, 2025. URL https://arxiv.org/abs/\n2502.11089.\n[66] \nRowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. Hellaswag: Can a machine really finish\nyour sentence? In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,\npages 4791\u20134800, 2019. URL https://arxiv.org/abs/1905.07830.\n[67] \nTianyuan Zhang, Sai Bi, Yicong Hong, Kai Zhang, Fujun Luan, Songlin Yang, Kalyan Sunkavalli, William T.\nFreeman, and Hao Tan. Test-time training done right. arXiv preprint arXiv:2505.23884, 2025. URL https:\n//arxiv.org/abs/2505"
+    },
+    {
+      "aiAssistanceScore": 0.3181551,
+      "confidence": "Low",
+      "endIndex": 3064,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 3053,
+      "text": "5.23884.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.3181551,
+      "confidence": "Low",
+      "endIndex": 1145,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "Appendix\nA Proof of theorem 1\nFor completeness, we first restate the theorem with the precise bounds derived from the assumptions.\nTheorem 1 (Logit-wise Effect of LM-Aligned Target v.s. Reconstruction Target (Restated)). Under the\nspecified setting and assumptions, for a learning rate \u03bb\nlr \n> 0, the expected change in logits \u2206\u2113\nn \nafter one\nupdate step using the NTP-aligned target satisfies:\n(Correct logit increases) E [\u2206\u2113\nn\n[v\n\u2217\n]] \u2265 \u03bb\nlr \n\u00b7 c\n2\nnorm \n\u00b7 c\nalign\n, (4)\n(Other logits almost unchanged) |E [\u2206\u2113\nn\n[w]]| \u2264 \u03bb\nlr \n\u00b7 \u03f5 \u00b7 c\nalign\n, \u2200w\u0338 = v\n\u2217\n. (5)\nIn contrast, for the reconstruction target, the expected change in logits is negligible for the correct token:\n|E [\u2206\u2113\nn\n[v\n\u2217\n]] | \u2264 \u03bb\nlr \n\u00b7 \u03f5 \u00b7 c\nalign\n. (6)\nProof. \nWe begin from the setup defined in section 3.3. The change to the fast weights W\ndown \nfrom all prior\ncontext tokens is given by \u2206W\ndown \n= \u03bb\nlr\nP\nt\u2208prior \nv\nt\nz\n\u22a4\nt \n, where we use \u03bb\nlr \nto denote the learning rate \u03b7 for\nconsistency with the theorem statement. The resulting change in the logit for an arbitrary token w at the\nquery position n is:\n\u2206\u2113\nn\n[w] = e\n\u22a4\nw \n(\u2206W\ndown\n)z\nn \n= \u03bb\nlr\nX\nt\u2208prior\ne\n\u22a4\nw \n(v\nt\nz\n\u22a4\nt \n)"
+    },
+    {
+      "aiAssistanceScore": 0.5104599,
+      "confidence": "Low",
+      "endIndex": 2106,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 1144,
+      "text": ")z\nn\n. (7)\nSince e\n\u22a4\nw \nv\nt \nand z\n\u22a4\nt \nz\nn \nare scalars, we can rearrange the terms to get:\n\u2206\u2113\nn\n[w] = \u03bb\nlr\nX\nt\u2208prior\n(e\n\u22a4\nw \nv\nt\n)(z\n\u22a4\nt \nz\nn\n). (8)\nTo analyze the expected change, we take the expectation over the representations. Applying the linearity of\nexpectation, we have:\nE[\u2206\u2113\nn\n[w]] = \u03bb\nlr\nX\nt\u2208prior\nE[(e\n\u22a4\nw \nv\nt\n)(z\n\u22a4\nt \nz\nn\n)]. (9)\nPer our setup, the target vectors v\nt \n(e.g., e\nx\nt \nor e\nx\nt+1 \n) are treated as determined. Thus, we can factor them\nout of the expectation:\nE[\u2206\u2113\nn\n[w]] = \u03bb\nlr\nX\nt\u2208prior\ne\n\u22a4\nw \nE[v\nt\nz\n\u22a4\nt \nz\nn\n]. (10)\nNow, we invoke Assumption 2. It states that for the unique key position t\n\u2217\n, we have E[z\n\u22a4\nt\n\u2217 \nz\nn\n] = c\nalign\n, and for\nall other prior positions t\u0338 = t\n\u2217\n, the updates provide no information gain, which implies E[v\nt\nz\n\u22a4\nt \nz\nn\n] = 0. This\nsimplifies the summation to a single term corresponding to the key-value pair (k\n\u2217\n, v\n\u2217\n) at position t\n\u2217\n:\nE [\u2206\u2113\nn\n[w]] = \u03bb\nlr \n\u00b7 E \n\u0002\n(e\n\u22a4\nw \nv\nt\n\u2217 \n) \u00b7 (z\n\u22a4\nt\n\u2217 \nz\nn"
+    },
+    {
+      "aiAssistanceScore": 0.45091724,
+      "confidence": "Low",
+      "endIndex": 2637,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 2105,
+      "text": "n\n)\n\u0003 \n. (11)\nWe now analyze this simplified expression for the two target choices.\nCase 1: NTP-Aligned Target (v\nt\n\u2217 \n= e\nx\nt\n\u2217 \n+1 \n)\nFirst, we consider the logit of the correct token, w = v\n\u2217\n. Substituting the target and the token into\nequation (11) yields:\nE [\u2206\u2113\nn\n[v\n\u2217\n]] = \u03bb\nlr \n\u00b7 E \n\u0002\n(e\n\u22a4\nv\n\u2217 \ne\nv\n\u2217 \n) \u00b7 (z\n\u22a4\nt\n\u2217 \nz\nn\n)\n\u0003 \n. (12)\nBy Assumption 1, token embeddings have a non-trivial magnitude, \u2225e\nv\n\u2217 \n\u2225\n2 \n\u2265 c\n2\nnorm\n. This gives us the lower\nbound in equation (4):\nE [\u2206\u2113\nn\n[v\n\u2217\n]] \u2265 \u03bb\nlr \n\u00b7 c\nalign \n\u00b7 c\n2\nnorm\n. (13)\n16"
+    },
+    {
+      "aiAssistanceScore": 0.45091724,
+      "confidence": "Low",
+      "endIndex": 437,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "Next, for any incorrect token w\u0338 = v\n\u2217\n, the expected change is E [\u2206\u2113\nn\n[w]] = E \n\u0002\n(e\n\u22a4\nw \ne\nv\n\u2217 \n) \u00b7 (z\n\u22a4\nt\n\u2217 \nz\nn\n)\n\u0003\n. Taking the\nabsolute value and applying Assumption 1, which states that distinct embeddings are nearly orthogonal\n(|e\n\u22a4\nw \ne\nv\n\u2217 \n| \u2264 \u03f5), we obtain the bound in equation (5):\n|E [\u2206\u2113\nn\n[w]]| \u2264 \u03bb\nlr \n\u00b7 c\nalign \n\u00b7 \u03f5. (14)\nCase 2: Reconstruction Target (v\nt\n\u2217 \n= e\nx\nt\n\u2217 \n)\nHere, we analyze the effect on the correct lo"
+    },
+    {
+      "aiAssistanceScore": 0.3423894,
+      "confidence": "Low",
+      "endIndex": 1707,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 436,
+      "text": "ogit w = v\n\u2217\n. The expected change is:\nE [\u2206\u2113\nn\n[v\n\u2217\n]] = E \n\u0002\n(e\n\u22a4\nk\n\u2217 \ne\nv\n\u2217 \n) \u00b7 (z\n\u22a4\nt\n\u2217 \nz\nn\n)\n\u0003 \n. (15)\nIn an induction task, the key k\n\u2217 \nis distinct from the value v\n\u2217\n. We again invoke Assumption 1 for these distinct\ntokens. Taking the absolute value gives the bound in equation (6):\n|E [\u2206\u2113\nn\n[v\n\u2217\n]]| \u2264 \u03bb\nlr \n\u00b7 c\nalign \n\u00b7 \u03f5. (16)\nThis confirms that the reconstruction target has a negligible expected effect on the logit of the correct answer\nv\n\u2217\n.\nThe results from these two cases establish the claims in theorem 1, providing a clear theoretical basis for the\nsuperiority of the NTP-aligned objective in the context of in-context learning. This completes the proof.\nB Context Parallel Algorithm for In-Place TTT\nFor more clarity, we list the pseudocode of the context parallel implementation of our In-Place TTT here in\nalgorithm 1.\nAlgorithm 1 In-Place TTT with Context Parallelism (Single Layer)\nRequire: Pre-trained weights \u03b8 (incl. W\nup\n, W\ngate\n, W \n(0)\ndown\n); Conv1D kernel K; projection W\ntarget\n; learning rate\n\u03b7.\n1: Input: Sequence chunks {X\n(i)\n}\nT\ni=1\n. \u25b7 Sequence partitioned for Context Parallelism (CP).\n2: for all i \u2208 {1, . . . , T } in parallel do \u25b7 Step 1: Compute update deltas.\n3: H\ni \n\u2190 AttentionBlock(X\n(i)\n; \u03b8) \u25b7 Standard attention, no ch"
+    },
+    {
+      "aiAssistanceScore": 0.36729077,
+      "confidence": "Low",
+      "endIndex": 2592,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1706,
+      "text": "hanges required.\n4: U\ni\n, G\ni \n\u2190 H\ni\nW \n\u22a4\nup\n, H\ni\nW \n\u22a4\ngate\n5: Z\ni \n\u2190 \u03d5(G\ni\n) \u2299 U\ni\n6: V\ni \n\u2190 Conv1D\nK \n(X\n(i)\n0 \n)W\ntarget \n\u25b7 Compute NTP-aligned target with causal padding.\n7: \u2206W\ni \n\u2190 V \n\u22a4\ni \nZ\ni \n\u25b7 Compute gradient for the fast weight update.\n8: end for\n9: {S\ni\n}\nT\ni=1 \n\u2190 Cumsum({\u2206W\ni\n}\nT\ni=1\n) \u25b7 Step 2: Aggregate deltas associatively.\n10: for all i \u2208 {1, . . . , T } in parallel do \u25b7 Step 3: Apply updates and compute outputs.\n11: W \n(i\u22121)\ndown \n\u2190 W \n(0)\ndown \n+ \u03b7S\ni \n\u25b7 Effective weight for chunk i uses updates from chunks < i.\n12: O\ni \n\u2190 Z\ni\n(W \n(i\u22121)\ndown \n)\n\u22a4\n13: end for\n14: At document boundaries: Reset fast weights to W \n(0)\ndown\n.\nC Experiment Details\nThis appendix provides all details of the experimental settings, datasets, model configurations, and training\nhyperparameters used for the results presented in Section 4. The following subsections detail the setups\n17"
+    },
+    {
+      "aiAssistanceScore": 0.36729077,
+      "confidence": "Low",
+      "endIndex": 469,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "for our three primary sets of experiments: the continual pre-training of Qwen3-4B-Base, the from-scratch\npre-training of models at multiple scales (500M, 1.5B, and 4B), and the targeted ablation studies. Our goal\nis to provide sufficient detail to ensure the reproducibility of our findings.\nC.1 Details of Datasets\nFor the large scale pretraining, continual pretraining, and ablation study, we use the dataset collected by\nourselves, we give the details of these datas"
+    },
+    {
+      "aiAssistanceScore": 0.12725338,
+      "confidence": "Medium",
+      "endIndex": 2184,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 468,
+      "text": "sets as follows.\nFrom Scratch Pretraining Dataset. The pretraining dataset mainly includes general English and Chinese text,\nalong with high knowledge- or reasoning-density data, code, mathematics data, and multilingual text, forming\na balanced mixture of linguistic diversity, knowledge and reasoning-rich content, programming material, and\nmathematical reasoning.\nContinual Pretraining Dataset. The continual pretraining dataset is designed to enhance long-context modeling:\nits short-document portion follows a distribution similar to Pretrain Data, while the long-document portion\ncombines natural data such as books and repository-level code with synthetic data including retrieval-\naugmented and long-context-QA style constructions, ensuring both consistency with pretraining and coverage\nof challenging long-context scenarios. The data is organized into subsets with maximum sequence lengths of\n32k and 128k for our two-stage training curriculum.\nC.2 Details of Training and Evaluation\nTraining Details. All models are trained on Nvidia H800 GPUs, with the detailed training hyperparameters\nlisted in Tables 4 through 6.\nTable 4 Training hyperparameters for 500M and 1.5B models.\nHyperparameter 500M Model 1.5B Model\nOptimizer AdamW AdamW\nLearning Rate 5e-4 3e-4\nBatch Size 2M tokens 4M tokens\nWeight Decay 0.1 0.1\nGradient Clipping 1.0 1.0\nWarmup Steps 1024 1024\nSequence Length 32,768 32,768\nTokens Trained 20B 60B\nSliding Window Size 2,048 4,096\nTable 5 Training hyperparameters for 1.7B models and 4B models pretraining\nHyperparameter value\nOptimizer AdamW\nLearning Rate 3e-4\nBatch Size 8M tokens\nWeight Decay 0.1\nGradient Clipping 1.0\nWarm-up Tokens\n1 \n1.6B\nSequence Length 8,192\nTokens Trained 120B\nEval"
+    },
+    {
+      "aiAssistanceScore": 0.12455473,
+      "confidence": "Medium",
+      "endIndex": 2487,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 2183,
+      "text": "luation Details. We employ the evaluation framework lm-evaluation-harness [ 21] to evaluate the models on\nthe common sense reasoning benchmarks and employ the evaluation framework opencompass [13] to evaluate\nthe models on the long context benchmarks. All evaluation are conducted on Nvidia H800 GPUs.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.12455473,
+      "confidence": "Medium",
+      "endIndex": 1142,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "Table 6 Hyperparameters for two-stage continual pre-training.\nHyperparameter Stage 1 (32k Context) Stage 2 (128k Context)\nBase Model Qwen3-4B-Base Qwen3-4B-Base\nOptimizer AdamW AdamW\nLearning Rate 5e-6 5e-6\nWeight Decay 0.1 0.1\nSequence Length 32,768 131,072\nTokens Trained \u223c20B \u223c15B\nRoPE Extension None YaRN\nConv Size 5 5\nTable 7 Hyperparameters for continual pre-training of LLaMA-3.1-8B and Qwen3-14B-Base.\nHyperparameter LLaMA-3.1-8B Qwen3-14B-Base\nOptimizer AdamW AdamW\nLearning Rate 5e-6 5e-6\nWeight Decay 0.1 0.1\nSequence Length 32,768 32,768\nTokens Trained \u223c20B \u223c20B\nRoPE Extension None None\nConv Size 5 5\nIn the evaluation of our continual pretrained Qwen3-4B model, we apply a clipping mechanism at inference\ntime to ensure stable fast-weight updates. Specifically, if the Frobenius norm of an update delta \u2225\u2206W\n(i)\ndown\n\u2225\nF\nexceeds a predefined threshold \u03c4 , the delta matrix is rescaled to have norm \u03c4 before being applied, i.e.,\n\u2206W\n(i)\ndown \n\u2190 \u03c4 \u00b7 \u2206W\n(i)\ndown\n/\u2225\u2206W\n(i)\ndown\n\u2225\nF \n. This prevents the accumulated updates from growing unboundedly\nas the sequence length increases, thereby maintaining numerical stability for long-con"
+    },
+    {
+      "aiAssistanceScore": 0.15210573,
+      "confidence": "Medium",
+      "endIndex": 2860,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 1141,
+      "text": "ntext inference. For all\nreported evaluations of the Qwen3-4B model, this threshold was set to \u03c4 = 1e-5.\nTo evaluate the efficiency of our In-Place TTT, we evaluate the prefill throughput and peak memory for\nsequence length ranging from 8k to 128k. We run the inference for our continual pretrained checkpoints based\non Qwen3-4B-Base model. For the setting of sliding window, we set change the attention mechanism of these\npretrained checkpoints to sliding window of 1024 tokens manually. We run the inference on Nvidia H800\nGPUs with batch size of 1.\nC.3 Details of Model Configuration\nThis section details the architectural configurations of the models used in our experiments. All models are\ndecoder-only Transformer architectures featuring standard components, including SwiGLU activations and\nRotary Position Embeddings (RoPE) [46]. The key architectural parameters for all models trained from\nscratch are summarized in Table 8.\nThe models trained from scratch employ different attention mechanisms based on their experimental purpose.\nThe 500M, 1.5B utilize sliding-window attention and we list the model configuration in table 8. The 4B-scale\nexperiments and ablation study evaluate two variants: one with full attention and another with sliding-window\nattention. The backbone architectures for the 4B models and 1.7B models are identical to the Qwen3-4B-Base\nmodel and the Qwen3-1.7B-Base model.\nFor the continual pre-training experiments described in section 4.1, we start directly from publicly available\npre-trained models\u2014Qwen3-4B-Base [ 57], LLaMA-3.1-8B [ 24], and Qwen3-14B-Base [ 57]\u2014inheriting their\narchitectures without modification. In experiments featuring our method, the In-Place TTT module is\n19"
+    },
+    {
+      "aiAssistanceScore": 0.15210573,
+      "confidence": "Medium",
+      "endIndex": 93,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "Table 8 Model architectural configurations for 500M and 1.5B Model.\nParameter 500M 1.5B\nParam"
+    },
+    {
+      "aiAssistanceScore": 0.39182818,
+      "confidence": "Medium",
+      "endIndex": 1639,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 92,
+      "text": "meters (Approx.) 500M 1.5B\nHidden Size (d\nmodel\n) 1024 2048\nNum Layers 24 24\nNum Attention Heads 8 16\nFFN Hidden Size (d\nff\n) 3072 6144\nWindow Size 2048 4096\nVocabulary Size 32,000 32,000\nRope Base 1e6 1e6\nintegrated into the MLP blocks and applied to every sixth layer. For the ablation studies, this frequency is\nvaried as described in the main paper. The training hyperparameters for Qwen3-4B-Base are listed in table 6,\nand those for LLaMA-3.1-8B and Qwen3-14B-Base are listed in table 7.\nInitialization of In-Place TTT Modules. When integrating In-Place TTT into a pre-trained model for continual\ntraining, careful initialization is essential to preserve the model\u2019s pre-trained capabilities at the start of training.\nSpecifically, we initialize the newly introduced TTT components\u2014the Conv1D operator and the projection\nmatrix W\ntarget\n\u2014such that the TTT update \u2206W\ndown \nis negligible at initialization, ensuring the model begins\nfrom its original pre-trained behavior. Concretely, the depthwise Conv1D (kernel size 5, causal padding, no\nbias) is zero-initialized, so the target \n\u02c6\nV is zero at initialization. The projection matrix W\ntarget \n\u2208 R\nd\nmodel\n\u00d7d\nmodel\nis initialized as a sparse diagonal matrix, where all off-diagonal entries are zero and the diagonal entries are\ndrawn from N (0, \u03c3\n2\n) with \u03c3 being the model\u2019s standard initializer range. This near-zero initialization of\nboth components guarantees that the initial fast-weight update \u03b7 \n\u02c6\nV\n\u22a4\n[i]\nZ\n[i] \n\u2248 0, and consequently the effective\nW\ndown \nremains identical to its pre"
+    },
+    {
+      "aiAssistanceScore": 0.5086561,
+      "confidence": "Low",
+      "endIndex": 2049,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 1638,
+      "text": "e-trained value. As training progresses, the Conv1D and projection gradually\nlearn to produce meaningful NTP-aligned targets, allowing the TTT mechanism to smoothly emerge without\ndisrupting the pre-trained model.\nD Usage of LLMs\nDuring the preparation of this manuscript, LLMs was used to check grammar and improve readability. All\nauthors have reviewed, edited, and take full responsibility for the paper\u2019s fi"
+    }
+  ]
+}

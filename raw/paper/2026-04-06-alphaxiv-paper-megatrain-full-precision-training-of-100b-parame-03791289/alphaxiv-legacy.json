@@ -1,0 +1,103 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Zhengqing Yuan",
+        "id": "01985c81-df57-7840-96e9-c7fc2b138426",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hanchi Sun",
+        "id": "01985c81-df57-7c92-a6fd-1f12e0f22982",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lichao Sun",
+        "id": "01985c81-df57-7d70-9c42-89c34064034b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanfang Ye",
+        "id": "01985c81-e34e-7276-8009-d76a3caf936b",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:01:22 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 18:43:56 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ad2-a30f-7d76-9712-cf87fee3405c",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 11,
+        "questions_count": 0,
+        "total_votes": 4,
+        "upvotes_count": 11,
+        "visits_count": {
+          "all": 202,
+          "last24Hours": 202,
+          "last30Days": 202,
+          "last7Days": 202,
+          "last90Days": 202
+        }
+      },
+      "podcast_path": "019d6ad2-a30f-7d76-9712-cf87fee3405c/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/DLYuanGod/MegaTrain"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05091"
+      },
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
+      "topics": [
+        "Computer Science",
+        "cs.CL",
+        "cs.DC",
+        "cs.OS",
+        "efficient-transformers",
+        "hardware-aware-algorithms",
+        "ml-systems",
+        "optimization-methods",
+        "training-orchestration",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.05091",
+      "updated_at": "Wed Apr 08 2026 02:01:22 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We present MegaTrain, a memory-centric system that efficiently trains 100B+ parameter large language models at full precision on a single GPU. Unlike traditional GPU-centric systems, MegaTrain stores parameters and optimizer states in host memory (CPU memory) and treats GPUs as transient compute engines. For each layer, we stream parameters in and compute gradients out, minimizing persistent device state. To battle the CPU-GPU bandwidth bottleneck, we adopt two key optimizations. 1) We introduce a pipelined double-buffered execution engine that overlaps parameter prefetching, computation, and gradient offloading across multiple CUDA streams, enabling continuous GPU execution. 2) We replace persistent autograd graphs with stateless layer templates, binding weights dynamically as they stream in, eliminating persistent graph metadata while providing flexibility in scheduling. On a single H200 GPU with 1.5TB host memory, MegaTrain reliably trains models up to 120B parameters. It also achieves 1.84$\\times$ the training throughput of DeepSpeed ZeRO-3 with CPU offloading when training 14B models. MegaTrain also enables 7B model training with 512k token context on a single GH200.",
+      "created_at": "Wed Apr 08 2026 02:01:22 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ad2-a35f-74d6-b623-2441e2caf497",
+      "imageURL": "image/2604.05091v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 18:43:56 GMT+0000 (Coordinated Universal Time)",
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
+      "universal_paper_id": "2604.05091",
+      "updated_at": "Wed Apr 08 2026 02:01:22 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05091v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

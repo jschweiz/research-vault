@@ -65,7 +65,7 @@
     ],
     "implementation": null,
     "marimo_implementation": null,
-    "max_version_order": 1,
+    "max_version_order": 2,
     "organization_info": [],
     "paper_group": {
       "citation": null,
@@ -75,16 +75,16 @@
       "is_hidden": false,
       "metrics": {
         "downvotes_count": 0,
-        "public_total_votes": 95,
+        "public_total_votes": 108,
         "questions_count": 0,
-        "total_votes": 37,
-        "upvotes_count": 95,
+        "total_votes": 50,
+        "upvotes_count": 108,
         "visits_count": {
-          "all": 1815,
-          "last24Hours": 990,
-          "last30Days": 1815,
-          "last7Days": 1815,
-          "last90Days": 1815
+          "all": 2064,
+          "last24Hours": 907,
+          "last30Days": 2064,
+          "last7Days": 2064,
+          "last90Days": 2064
         }
       },
       "podcast_path": "019d6086-b0ee-70bb-9a73-f40ebf136f94/podcast.mp3",
@@ -112,20 +112,20 @@
     },
     "paper_version": {
       "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose \\textbf{RLSD} (\\textbf{RL}VR with \\textbf{S}elf-\\textbf{D}istillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
-      "created_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
-      "id": "019d6086-b131-734a-86cd-85f6423a901b",
-      "imageURL": "image/2604.03128v1.png",
+      "created_at": "Thu Apr 09 2026 00:42:27 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6fb0-bfe9-70b7-af65-04c4cb27eb7d",
+      "imageURL": "image/2604.03128v2.png",
       "is_hidden": false,
       "license": "http://creativecommons.org/licenses/by/4.0/",
-      "publication_date": "Fri Apr 03 2026 15:50:07 GMT+0000 (Coordinated Universal Time)",
+      "publication_date": "Wed Apr 08 2026 08:22:36 GMT+0000 (Coordinated Universal Time)",
       "title": "Self-Distilled RLVR",
       "universal_paper_id": "2604.03128",
-      "updated_at": "Mon Apr 06 2026 02:02:13 GMT+0000 (Coordinated Universal Time)",
-      "version_label": "v1",
-      "version_order": 1
+      "updated_at": "Thu Apr 09 2026 00:42:27 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v2",
+      "version_order": 2
     },
     "pdf_info": {
-      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.03128v1.pdf"
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.03128v2.pdf"
     },
     "verified_authors": []
   }

@@ -22,7 +22,7 @@ canonical_url: https://openai.com/index/introducing-child-safety-blueprint
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:09.485440Z'
+fetched_at: '2026-04-09T08:07:06.984570Z'
 short_summary: null
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

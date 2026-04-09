@@ -1,0 +1,149 @@
+{
+  "abstract": "Video Large Language Models (VideoLLMs) have achieved strong performance on many video understanding tasks, but most existing systems remain offline and are not well-suited for live video streams that require continuous observation and timely response. Recent streaming VideoLLMs have made progress, yet current approaches often rely on decoupled trigger-response pipelines or are limited to captioning-style narration, reducing their effectiveness for open-ended question answering and long-horizon interaction. We propose AURA (Always-On Understanding and Real-Time Assistance), an end-to-end streaming visual interaction framework that enables a unified VideoLLM to continuously process video streams and support both real-time question answering and proactive responses. AURA integrates context management, data construction, training objectives, and deployment optimization for stable long-horizon streaming interaction. It achieves state-of-the-art performance on streaming benchmarks and supports a real-time demo system with ASR and TTS running at 2 FPS on two 80G accelerators. We release the AURA model together with a real-time inference framework to facilitate future research.",
+  "author_info": [],
+  "authors": [
+    "Xudong Lu",
+    "Yang Bo",
+    "Jinpeng Chen",
+    "Shuhan Li",
+    "Xintong Guo",
+    "Huankang Guan",
+    "Fang Liu",
+    "Dunyuan Xu",
+    "Peiwen Sun",
+    "Heyang Sun",
+    "Rui Liu",
+    "Hongsheng Li"
+  ],
+  "canonical_id": "2604.04184v1",
+  "first_publication_date": "2026-04-05T16:53:46.000Z",
+  "full_authors": [
+    {
+      "full_name": "Xudong Lu",
+      "id": "01985c82-3512-7212-ae8e-51150503316b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yang Bo",
+      "id": "01985c82-d3a2-7eaa-b1e2-39183186b6ec",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jinpeng Chen",
+      "id": "01985c82-a9c1-7573-8c98-eccf6fcfaa0c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuhan Li",
+      "id": "01985c82-560f-7eb3-87c9-e63315b2fab1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xintong Guo",
+      "id": "01995fbb-789f-78c6-91d6-73b6038bd2fe",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huankang Guan",
+      "id": "01985c82-da83-757b-a161-9fed02743bcf",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fang Liu",
+      "id": "01985c81-e0eb-7cfc-8c8e-558eb75a7e58",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dunyuan Xu",
+      "id": "01985c82-fb73-7552-a3e1-4fdc54ae1887",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Peiwen Sun",
+      "id": "01985c82-1d70-78d9-952f-1b4b1bae30d5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Heyang Sun",
+      "id": "019a856b-780f-7a6d-b987-bb200c41f9a3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rui Liu",
+      "id": "01985c81-f152-7aee-b618-3ea79f46a233",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hongsheng Li",
+      "id": "01985c81-db50-744a-9ea9-15188fd8bc6e",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 1,
+  "github_url": "https://github.com/aurateam2026/AURA",
+  "id": "019d65a9-3d7e-7ee3-bdf6-deb8853bedcd",
+  "image_url": "image/2604.04184v1.png",
+  "metrics": {
+    "public_total_votes": 15,
+    "total_votes": 2,
+    "visits_count": {
+      "all": 159,
+      "last_7_days": 159
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65a9-3d7e-7ee3-bdf6-deb8853bedcd",
+  "paper_summary": {
+    "keyInsights": [
+      "A dual sliding-window context management strategy is effective for handling unbounded video and text inputs in streaming VideoLLMs, balancing the retention of critical history with the need for bounded context and real-time inference.",
+      "The Silent-Speech Balanced Loss objective is crucial for training streaming VideoLLMs to selectively produce responses or remain silent, while also mitigating issues like over-generating silent tokens or hallucinations arising from dynamic context truncation.",
+      "Co-designing the data generation pipeline, training objectives, and an optimized inference framework is essential for developing robust, end-to-end streaming VideoLLMs capable of diverse interaction modes (real-time, proactive, multi-response) over extended durations."
+    ],
+    "originalProblem": [
+      "Existing Video Large Language Models (VideoLLMs) are primarily designed for offline video processing, which limits their application in real-time scenarios requiring immediate understanding and timely responses.",
+      "Current streaming VideoLLMs face limitations: decoupled architectures suffer from inconsistent contextual states, while unified architectures often lack robustness for long-duration interactions, are limited to captioning, or struggle with memory and performance degradation due to unbounded context.",
+      "Efficiently managing the continuously growing video and textual interaction history in a real-time streaming environment without exceeding the limited context window of LLMs poses a significant challenge."
+    ],
+    "results": [
+      "AURA demonstrated state-of-the-art performance on StreamingBench (73.1% accuracy, 10.4% higher than MiniCPM-o-4.5), OVO-Bench (65.3% accuracy, 4.2% higher than ViSpeak), and OmniMMI (25.4% accuracy), outperforming both open-source and proprietary models like Gemini-1.5-Pro on various streaming benchmarks.",
+      "The integrated ASR-AURA-TTS system achieved a low end-to-end latency of approximately 312.2 ms from user speech input to the first spoken response, with the AURA model generating responses at around 137 tokens/s.",
+      "Streaming-oriented training, despite its specialized nature, largely preserved offline video understanding capabilities, showing only modest performance drops on traditional offline benchmarks compared to the base model."
+    ],
+    "solution": [
+      "AURA proposes an end-to-end unified streaming visual interaction framework, co-designed across data, algorithms, and systems, to achieve stability, broad capabilities, and long-term endurance in real-time video understanding.",
+      "It employs an Interactive Video Stream Context Management system, featuring a dual sliding-window strategy for recent video content and QA interaction history, to effectively manage unbounded multimodal inputs.",
+      "A Coarse-to-Fine Streaming Data Engine generates diverse training data for three types of streaming QA interactions: Real-Time, Proactive, and Multi-Response, enabling nuanced conversational behaviors. A Silent-Speech Balanced Loss objective is introduced to handle the imbalance between silent and spoken responses and mitigate hallucination."
+    ],
+    "summary": "Researchers from Huawei Research and CUHK MMLab introduced AURA, an end-to-end streaming VideoLLM framework capable of continuously processing live video, making autonomous decisions on when to respond, and managing unbounded multimodal context. This framework achieved superior performance on streaming video understanding benchmarks, outperforming existing open-source and proprietary models, and demonstrated an end-to-end latency of approximately 312.2 ms for interactive scenarios."
+  },
+  "publication_date": "2026-04-05T16:53:46.000Z",
+  "title": "AURA: Always-On Understanding and Real-Time Assistance via Video Streams",
+  "topics": [
+    "agents",
+    "Computer Science",
+    "conversational-ai",
+    "cs.CV",
+    "inference-optimization",
+    "model-deployment-systems",
+    "sequence-modeling",
+    "video-understanding",
+    "vision-language-models",
+    "visual-qa"
+  ],
+  "universal_paper_id": "2604.04184",
+  "updated_at": "2026-04-07T01:58:03.390Z",
+  "version_id": "019d65a9-3dca-736f-815e-ca3410725298"
+}

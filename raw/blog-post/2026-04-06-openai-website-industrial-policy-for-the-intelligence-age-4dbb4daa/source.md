@@ -33,7 +33,7 @@ canonical_url: https://openai.com/index/industrial-policy-for-the-intelligence-a
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:13.750236Z'
+fetched_at: '2026-04-09T08:07:11.225600Z'
 short_summary: Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:09:13.248619Z'

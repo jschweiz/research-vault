@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/helping-disaster-response-teams-asia
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:22.843200Z'
+fetched_at: '2026-04-09T08:07:20.060643Z'
 short_summary: 'AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation'
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:03:23.874765Z'

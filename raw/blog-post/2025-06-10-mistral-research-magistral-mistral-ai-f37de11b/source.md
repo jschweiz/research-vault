@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/magistral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:10.431105Z'
+fetched_at: '2026-04-09T08:08:53.808892Z'
 short_summary: Mistral AI announced Magistral, the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning. Magistral is released in two variants, Magistral Small and Magistral Medium, offering various applications from scientific simulation to enterprise decision-making.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:57:49.633188Z'

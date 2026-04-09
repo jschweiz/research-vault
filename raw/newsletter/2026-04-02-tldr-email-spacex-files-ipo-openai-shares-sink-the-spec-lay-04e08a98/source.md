@@ -32,7 +32,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d4ddc63e42649c
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:41.661990Z'
+fetched_at: '2026-04-09T08:09:33.734610Z'
 short_summary: TLDR roundup on SpaceX files IPO, OpenAI shares sink, the spec layer ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:13:56.174837Z'

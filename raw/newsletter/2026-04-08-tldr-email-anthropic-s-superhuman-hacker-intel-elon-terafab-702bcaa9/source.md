@@ -24,7 +24,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6cbf281a180f0
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:37.018371Z'
+fetched_at: '2026-04-09T08:09:27.020348Z'
 short_summary: null
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

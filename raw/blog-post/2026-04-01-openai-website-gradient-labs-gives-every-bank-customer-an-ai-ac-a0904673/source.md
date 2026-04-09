@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/gradient-labs
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:18.557849Z'
+fetched_at: '2026-04-09T08:07:15.849520Z'
 short_summary: Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:04:32.393625Z'

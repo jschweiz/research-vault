@@ -15,7 +15,7 @@ authors:
 - Yukang Chen
 published_at: '2026-04-06T17:58:42Z'
 ingested_at: '2026-04-07T21:42:08.648109Z'
-content_hash: dd70523f4dab8b48478acdf8f9b525ffaa592201bcf34b93989f8b66957030ba
+content_hash: ad7ae4c7384298dbf5ff94724eb2d971e03a5526df4c6fbc01f2b21486d40b04
 tags:
 - paper
 - alphaxiv
@@ -58,7 +58,7 @@ canonical_url: https://www.alphaxiv.org/abs/2604.04921
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:33.887473Z'
+fetched_at: '2026-04-09T08:10:19.857519Z'
 short_summary: Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -122,10 +122,10 @@ Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compre
 
 ## Metrics
 
-- Visits (all): 353
-- Visits (last 7 days): 353
-- Total votes: 6
-- Public total votes: 31
+- Visits (all): 617
+- Visits (last 7 days): 617
+- Total votes: 7
+- Public total votes: 32
 - X likes: 0
 
 ## Abstract

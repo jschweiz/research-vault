@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/voxtral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:05.582913Z'
+fetched_at: '2026-04-09T08:08:45.132329Z'
 short_summary: Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence. Voxtral bridges the gap between open-source ASR systems and proprietary APIs by offering superior accuracy and semantic understanding.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:58:30.009527Z'

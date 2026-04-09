@@ -35,7 +35,7 @@ canonical_url: https://www.anthropic.com/research/how-australia-uses-claude
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:06.456889Z'
+fetched_at: '2026-04-09T08:07:58.340815Z'
 short_summary: 'How Australia Uses Claude: Findings from the Anthropic Economic Index Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan.'
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

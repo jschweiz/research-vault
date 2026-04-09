@@ -30,7 +30,7 @@ canonical_url: https://www.anthropic.com/research/labor-market-impacts
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:53.443873Z'
+fetched_at: '2026-04-09T08:07:47.436566Z'
 short_summary: 'Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what''s feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to'
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

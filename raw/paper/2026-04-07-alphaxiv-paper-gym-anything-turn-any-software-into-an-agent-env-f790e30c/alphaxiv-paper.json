@@ -1,0 +1,21 @@
+{
+  "abstract": "Computer-use agents hold the promise of assisting in a wide range of digital economic activities. However, current research has largely focused on short-horizon tasks over a limited set of software with limited economic value, such as basic e-commerce and OS-configuration tasks. A key reason is that creating environments for complex software requires significant time and human effort, and therefore does not scale. To address this, we introduce Gym-Anything, a framework for converting any software into an interactive computer-use environment. We frame environment creation itself as a multi-agent task: a coding agent writes setup scripts, downloads real-world data, and configures the software, while producing evidence of correct setup. An independent audit agent then verifies evidence for the environment setup against a quality checklist. Using a taxonomy of economically valuable occupations grounded in U.S. GDP data, we apply this pipeline to 200 software applications with broad occupational coverage. The result is CUA-World, a collection of over 10K long-horizon tasks spanning domains from medical science and astronomy to engineering and enterprise systems, each configured with realistic data along with train and test splits. CUA-World also includes CUA-World-Long, a challenging long-horizon benchmark with tasks often requiring over 500 steps, far exceeding existing benchmarks. Distilling successful trajectories from the training split into a 2B vision-language model outperforms models 2$\\times$ its size. We also apply the same auditing principle at test time: a separate VLM reviews completed trajectories and provides feedback on what remains, improving Gemini-3-Flash on CUA-World-Long from 11.5% to 14.0%. We release all code, infrastructure, and benchmark data to facilitate future research in realistic computer-use agents.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775583495000,
+  "googleCitationId": null,
+  "groupId": "019d6b51-c355-7a97-bf19-abce43625816",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775583495000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.06126",
+  "title": "Gym-Anything: Turn any Software into an Agent Environment",
+  "type": "public",
+  "universalId": "2604.06126",
+  "uploader": null,
+  "versionId": "019d6b51-c377-7c58-878c-4252cbde3756",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/stadler
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:23.941607Z'
+fetched_at: '2026-04-09T08:07:21.289015Z'
 short_summary: Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:03:17.764013Z'

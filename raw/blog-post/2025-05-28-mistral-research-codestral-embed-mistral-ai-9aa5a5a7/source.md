@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/codestral-embed
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:12.517005Z'
+fetched_at: '2026-04-09T08:08:57.934764Z'
 short_summary: Codestral Embed is a new embedding model specialized for code, designed to excel at retrieval tasks on real-world code data. It supports various use cases like retrieval-augmented generation, semantic code search, and duplicate detection.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:57:29.361362Z'

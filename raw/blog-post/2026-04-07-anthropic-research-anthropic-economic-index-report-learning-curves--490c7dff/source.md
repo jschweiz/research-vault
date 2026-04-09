@@ -30,7 +30,7 @@ canonical_url: https://www.anthropic.com/research/economic-index-march-2026-repo
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:09.949447Z'
+fetched_at: '2026-04-09T08:08:00.852360Z'
 short_summary: The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

@@ -31,7 +31,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d66ab627cf3725
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:47.246541Z'
+fetched_at: '2026-04-09T08:09:44.469237Z'
 short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:14:59.926076Z'

@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:56.286865Z'
+fetched_at: '2026-04-09T08:08:40.243391Z'
 short_summary: Mistral 3 introduces a family of open, multimodal, and multilingual AI models, including Mistral Large 3 and Ministral 3, emphasizing state-of-the-art performance-to-cost ratio and broad accessibility.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:59:13.816418Z'

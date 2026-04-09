@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/voxtral-transcribe-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:44.591431Z'
+fetched_at: '2026-04-09T08:08:31.006682Z'
 short_summary: Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications. These models offer state-of-the-art transcription quality, speaker diarization, and multilingual support.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:00:23.317753Z'

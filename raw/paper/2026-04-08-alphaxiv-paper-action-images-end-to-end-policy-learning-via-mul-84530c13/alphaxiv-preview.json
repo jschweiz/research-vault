@@ -1,0 +1,128 @@
+{
+  "abstract": "World action models (WAMs) have emerged as a promising direction for robot policy learning, as they can leverage powerful video backbones to model the future states. However, existing approaches often rely on separate action modules, or use action representations that are not pixel-grounded, making it difficult to fully exploit the pretrained knowledge of video models and limiting transfer across viewpoints and environments. In this work, we present Action Images, a unified world action model that formulates policy learning as multiview video generation. Instead of encoding control as low-dimensional tokens, we translate 7-DoF robot actions into interpretable action images: multi-view action videos that are grounded in 2D pixels and explicitly track robot-arm motion. This pixel-grounded action representation allows the video backbone itself to act as a zero-shot policy, without a separate policy head or action module. Beyond control, the same unified model supports video-action joint generation, action-conditioned video generation, and action labeling under a shared representation. On RLBench and real-world evaluations, our model achieves the strongest zero-shot success rates and improves video-action joint generation quality over prior video-space world models, suggesting that interpretable action images are a promising route to policy learning.",
+  "author_info": [],
+  "authors": [
+    "Haoyu Zhen",
+    "Zixian Gao",
+    "Qiao Sun",
+    "Yilin Zhao",
+    "Yuncong Yang",
+    "Yilun Du",
+    "Tsun-Hsuan Wang",
+    "Yi-Ling Qiao",
+    "Chuang Gan"
+  ],
+  "canonical_id": "2604.06168v1",
+  "first_publication_date": "2026-04-07T17:59:30.000Z",
+  "full_authors": [
+    {
+      "full_name": "Haoyu Zhen",
+      "id": "01985c81-e5a9-7b13-abed-fc193dcd041b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zixian Gao",
+      "id": "01985c85-9800-72a8-bb0a-fcdc5172bab8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qiao Sun",
+      "id": "01985c81-f062-776a-8d5d-3ece0af056e9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yilin Zhao",
+      "id": "01985c82-3a9b-7d8c-8c9a-f4378896e083",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuncong Yang",
+      "id": "01985c82-3d3a-79bc-8f5f-ace970600361",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yilun Du",
+      "id": "01985c81-db51-7248-be43-d7932dd89793",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tsun-Hsuan Wang",
+      "id": "01985c81-e0eb-7eda-ba1e-5f35c6be6d78",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yi-Ling Qiao",
+      "id": "01985c82-38d5-7976-8b00-e5a1d934180b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chuang Gan",
+      "id": "01985c81-e1bb-7f8a-aca6-d5ce2657db78",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 1,
+  "github_url": "https://github.com/UMass-Embodied-AGI/ActionImages",
+  "id": "019d6ace-b299-761c-925a-07359b48eb4d",
+  "image_url": "image/2604.06168v1.png",
+  "metrics": {
+    "public_total_votes": 9,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 131,
+      "last_7_days": 131
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6ace-b299-761c-925a-07359b48eb4d",
+  "paper_summary": {
+    "keyInsights": [
+      "Grounding robot actions directly in the pixel space as visual signals allows large video backbones to inherently leverage their extensive visual knowledge for action reasoning and control.",
+      "Representing actions as multi-view images resolves 3D ambiguities and integrates action directly into the visual prediction problem, enabling the video backbone itself to function as a zero-shot policy without separate modules.",
+      "A unified video-space representation of observations and actions enables a single generative model to perform diverse robot learning tasks, simplifying architecture and training across different objectives."
+    ],
+    "originalProblem": [
+      "Existing robotics world models struggle to translate strong video generation capabilities into robust policy generalization, especially in novel environments.",
+      "Current action representations are often detached from visual space or rely on separate policy heads, limiting the direct leverage of rich, pre-trained video knowledge for control and hindering transferability.",
+      "Many generalist robot policy models face challenges with zero-shot transfer to entirely new environments, often failing to adapt beyond training scenes."
+    ],
+    "results": [
+      "Achieved superior zero-shot policy success rates on unseen tasks, for example, up to 60% for 'reach target' on RLBench and 45% for 'close drawer' on real-world tasks, outperforming baselines which often showed 0-20% success.",
+      "Demonstrated improved video-action joint generation quality, with 'Action Images' outperforming baselines like TesserAct in video quality (PSNR 23.48 vs 20.83, SSIM 78.62% vs 59.20%) and maintaining competitive action quality.",
+      "Outperformed specialized baselines in action-conditioned video generation (e.g., PSNR 31.35 vs. Tora's 19.76) and video-to-action labeling (trajectory error 5.785 vs. TAPIR's 14.80), showcasing the model's versatility."
+    ],
+    "solution": [
+      "Robot 7-DoF actions (position, orientation, gripper) are converted into multi-view pixel-grounded 'action images' by projecting semantic 3D points (end-effector position, up, normal) into 2D Gaussian heatmaps across multiple camera views.",
+      "A large pre-trained video generator is fine-tuned to jointly model multi-view robot observation videos and the newly created multi-view action videos within a unified video-space.",
+      "Diverse masking strategies are employed during training to enable a single model to perform multiple tasks, including video-action joint generation, action-conditioned video generation, and video-to-action labeling."
+    ],
+    "summary": "Action Images reformulates robot policy learning as multiview video generation, converting 7-DoF robot actions into pixel-grounded images. This approach enables a unified world model to achieve superior zero-shot policy generalization on unseen tasks and environments, alongside improved video-action joint generation quality."
+  },
+  "publication_date": "2026-04-07T17:59:30.000Z",
+  "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "cs.RO",
+    "deep-reinforcement-learning",
+    "generative-models",
+    "multi-modal-learning",
+    "representation-learning",
+    "robotic-control",
+    "robotics-perception",
+    "zero-shot-learning"
+  ],
+  "universal_paper_id": "2604.06168",
+  "updated_at": "2026-04-08T01:57:04.281Z",
+  "version_id": "019d6ace-b2c0-7a95-92ff-a3406b0a3664"
+}

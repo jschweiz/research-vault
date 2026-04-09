@@ -31,7 +31,7 @@ canonical_url: https://www.anthropic.com/research/project-vend-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:57.927143Z'
+fetched_at: '2026-04-09T08:07:51.832526Z'
 short_summary: Subscribe to the Frontier Red Team newsletter Get updates on our latest red-teaming research and findings. In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

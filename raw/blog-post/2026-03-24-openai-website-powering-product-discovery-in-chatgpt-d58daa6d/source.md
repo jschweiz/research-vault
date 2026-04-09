@@ -32,7 +32,7 @@ canonical_url: https://openai.com/index/powering-product-discovery-in-chatgpt
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:32.781777Z'
+fetched_at: '2026-04-09T08:07:30.427691Z'
 short_summary: ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:02:52.838341Z'

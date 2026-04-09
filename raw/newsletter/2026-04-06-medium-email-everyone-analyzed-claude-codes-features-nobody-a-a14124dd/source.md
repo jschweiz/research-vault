@@ -35,7 +35,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d618506ae886de
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:49.981758Z'
+fetched_at: '2026-04-09T08:09:45.373115Z'
 short_summary: Medium digest led by "Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture". Includes 15 highlighted stories, including "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python".
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:14:42.354010Z'

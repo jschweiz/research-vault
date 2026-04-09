@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/devstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:15.063566Z'
+fetched_at: '2026-04-09T08:09:00.117398Z'
 short_summary: Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on SWE-Bench. It is lightweight enough for local deployment and suitable for agentic coding in enterprise settings.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:57:11.633076Z'

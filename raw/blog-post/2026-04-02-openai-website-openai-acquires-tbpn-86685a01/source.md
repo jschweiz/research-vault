@@ -27,7 +27,7 @@ canonical_url: https://openai.com/index/openai-acquires-tbpn
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:09:14.851482Z'
+fetched_at: '2026-04-09T08:07:12.357918Z'
 short_summary: OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:05:35.396052Z'

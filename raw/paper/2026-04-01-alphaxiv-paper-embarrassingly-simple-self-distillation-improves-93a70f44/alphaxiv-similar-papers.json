@@ -109,8 +109,8 @@
     "id": "019c07b0-2732-79ce-8c48-83f6e8d4ad31",
     "image_url": "image/2601.20802v2.png",
     "metrics": {
-      "public_total_votes": 584,
-      "total_votes": 314,
+      "public_total_votes": 587,
+      "total_votes": 317,
       "visits_count": {
         "all": 10613,
         "last_7_days": 533
@@ -3147,6 +3147,71 @@
     "version_id": "0196b3ee-cd70-7a87-9f5d-17e4517c7f32"
   },
   {
+    "abstract": "Improving the code generation capabilities of large language models (LLMs) typically relies on supervised fine-tuning or preference optimization, both of which require costly external resources such as powerful teacher models or reliable test units. However, in real-world scenarios, it is much harder to obtain reference solutions and test oracles than problem descriptions and test inputs. In this paper, we tackle a challenging yet realistic question: Can a code language model improve itself without access to a superior teacher and a test oracle? To answer this, we propose ConSelf, a self-improving approach built upon two key ideas. First, we introduce code semantic entropy, a novel metric that measures problem-level uncertainty by assessing the functional diversity of program behaviors, enabling a curriculum construction with the most learnable problems. Second, we present consensus-driven direct preference optimization (Con-DPO), a preference-based fine-tuning method that weights each preference pair by its behavioral consensus, thereby mitigating the impact of noisy self-generated supervision. Experiments on various benchmarks and backbone LLMs demonstrate that ConSelf significantly outperforms baselines, validating the effectiveness of semantic entropy-based curriculum construction and consensus-driven optimization in improving code generation without external supervision.",
+    "author_info": [],
+    "authors": [
+      "Huan Zhang",
+      "Wei Cheng",
+      "Wei Hu"
+    ],
+    "canonical_id": "2603.29292v1",
+    "first_publication_date": "2026-03-31T05:55:17.000Z",
+    "full_authors": [
+      {
+        "full_name": "Huan Zhang",
+        "id": "01985c81-dc26-75c2-b1ef-39d389e4911c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Cheng",
+        "id": "01985c81-f234-76ba-9606-c99009d9e9fc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Hu",
+        "id": "01985c81-eea9-762d-99c8-a5474d943191",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/nju-websoft/ConSelf",
+    "id": "019d47a1-3baa-79fa-8700-d02f3f00bed3",
+    "image_url": "image/2603.29292v1.png",
+    "metrics": {
+      "public_total_votes": 6,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 15,
+        "last_7_days": 14
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d47a1-3baa-79fa-8700-d02f3f00bed3",
+    "paper_summary": null,
+    "publication_date": "2026-03-31T05:55:17.000Z",
+    "title": "Self-Improving Code Generation via Semantic Entropy and Behavioral Consensus",
+    "topics": [
+      "Computer Science",
+      "cs.AI",
+      "cs.PL",
+      "cs.SE",
+      "fine-tuning",
+      "optimization-methods",
+      "self-supervised-learning",
+      "text-generation",
+      "transformers",
+      "uncertainty-estimation",
+      "weak-supervision"
+    ],
+    "universal_paper_id": "2603.29292",
+    "updated_at": "2026-04-01T06:00:42.154Z",
+    "version_id": "019d47a1-3bce-73b7-8993-3a27f15d51b0"
+  },
+  {
     "abstract": "Large language models are increasingly post-trained with reinforcement learning in verifiable domains such as code and math. Yet, current methods for reinforcement learning with verifiable rewards (RLVR) learn only from a scalar outcome reward per attempt, creating a severe credit-assignment bottleneck. Many verifiable environments actually provide rich textual feedback, such as runtime errors or judge evaluations, that explain why an attempt failed. We formalize this setting as reinforcement learning with rich feedback and introduce Self-Distillation Policy Optimization (SDPO), which converts tokenized feedback into a dense learning signal without any external teacher or explicit reward model. SDPO treats the current model conditioned on feedback as a self-teacher and distills its feedback-informed next-token predictions back into the policy. In this way, SDPO leverages the model's ability to retrospectively identify its own mistakes in-context. Across scientific reasoning, tool use, and competitive programming on LiveCodeBench v6, SDPO improves sample efficiency and final accuracy over strong RLVR baselines. Notably, SDPO also outperforms baselines in standard RLVR environments that only return scalar feedback by using successful rollouts as implicit feedback for failed attempts. Finally, applying SDPO to individual questions at test time accelerates discovery on difficult binary-reward tasks, achieving the same discovery probability as best-of-k sampling or multi-turn conversations with 3x fewer attempts.",
     "author_info": [],
     "authors": [
@@ -3267,71 +3332,6 @@
     "version_id": "019c15e2-a708-7941-811b-525991baa2ab"
   },
   {
-    "abstract": "Improving the code generation capabilities of large language models (LLMs) typically relies on supervised fine-tuning or preference optimization, both of which require costly external resources such as powerful teacher models or reliable test units. However, in real-world scenarios, it is much harder to obtain reference solutions and test oracles than problem descriptions and test inputs. In this paper, we tackle a challenging yet realistic question: Can a code language model improve itself without access to a superior teacher and a test oracle? To answer this, we propose ConSelf, a self-improving approach built upon two key ideas. First, we introduce code semantic entropy, a novel metric that measures problem-level uncertainty by assessing the functional diversity of program behaviors, enabling a curriculum construction with the most learnable problems. Second, we present consensus-driven direct preference optimization (Con-DPO), a preference-based fine-tuning method that weights each preference pair by its behavioral consensus, thereby mitigating the impact of noisy self-generated supervision. Experiments on various benchmarks and backbone LLMs demonstrate that ConSelf significantly outperforms baselines, validating the effectiveness of semantic entropy-based curriculum construction and consensus-driven optimization in improving code generation without external supervision.",
-    "author_info": [],
-    "authors": [
-      "Huan Zhang",
-      "Wei Cheng",
-      "Wei Hu"
-    ],
-    "canonical_id": "2603.29292v1",
-    "first_publication_date": "2026-03-31T05:55:17.000Z",
-    "full_authors": [
-      {
-        "full_name": "Huan Zhang",
-        "id": "01985c81-dc26-75c2-b1ef-39d389e4911c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Cheng",
-        "id": "01985c81-f234-76ba-9606-c99009d9e9fc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Hu",
-        "id": "01985c81-eea9-762d-99c8-a5474d943191",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/nju-websoft/ConSelf",
-    "id": "019d47a1-3baa-79fa-8700-d02f3f00bed3",
-    "image_url": "image/2603.29292v1.png",
-    "metrics": {
-      "public_total_votes": 5,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 15,
-        "last_7_days": 14
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d47a1-3baa-79fa-8700-d02f3f00bed3",
-    "paper_summary": null,
-    "publication_date": "2026-03-31T05:55:17.000Z",
-    "title": "Self-Improving Code Generation via Semantic Entropy and Behavioral Consensus",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.PL",
-      "cs.SE",
-      "fine-tuning",
-      "optimization-methods",
-      "self-supervised-learning",
-      "text-generation",
-      "transformers",
-      "uncertainty-estimation",
-      "weak-supervision"
-    ],
-    "universal_paper_id": "2603.29292",
-    "updated_at": "2026-04-01T06:00:42.154Z",
-    "version_id": "019d47a1-3bce-73b7-8993-3a27f15d51b0"
-  },
-  {
     "abstract": "Self-correction has demonstrated potential in code generation by allowing language models to revise and improve their outputs through successive refinement. Recent studies have explored prompting-based strategies that incorporate verification or feedback loops using proprietary models, as well as training-based methods that leverage their strong reasoning capabilities. However, whether smaller models possess the capacity to effectively guide their outputs through self-reflection remains unexplored. Our findings reveal that smaller models struggle to exhibit reflective revision behavior across both self-correction paradigms. In response, we introduce CoCoS, an approach designed to enhance the ability of small language models for multi-turn code correction. Specifically, we propose an online reinforcement learning objective that trains the model to confidently maintain correct outputs while progressively correcting incorrect outputs as turns proceed. Our approach features an accumulated reward function that aggregates rewards across the entire trajectory and a fine-grained reward better suited to multi-turn correction scenarios. This facilitates the model in enhancing initial response quality while achieving substantial improvements through self-correction. With 1B-scale models, CoCoS achieves improvements of 35.8% on the MBPP and 27.7% on HumanEval compared to the baselines.",
     "author_info": [],
     "authors": [
@@ -3402,6 +3402,77 @@
     "universal_paper_id": "2505.23060",
     "updated_at": "2025-05-30T00:50:29.542Z",
     "version_id": "0198e6b8-6c1a-7792-a790-5ba604a9c633"
+  },
+  {
+    "abstract": "Recent Language Models (LMs) achieve breakthrough performance in code generation when trained on human-authored problems, even solving some competitive-programming problems. Self-play has proven useful in games such as Go, and thus it is natural to ask whether LMs can generate their own instructive programming problems to improve their performance. We show that it is possible for an LM to synthesize programming problems and solutions, which are filtered for correctness by a Python interpreter. The LM's performance is then seen to improve when it is fine-tuned on its own synthetic problems and verified solutions; thus the model 'improves itself' using the Python interpreter. Problems are specified formally as programming puzzles [Schuster et al., 2021], a code-based problem format where solutions can easily be verified for correctness by execution. In experiments on publicly-available LMs, test accuracy more than doubles. This work demonstrates the potential for code LMs, with an interpreter, to generate instructive problems and improve their own performance.",
+    "author_info": [],
+    "authors": [
+      "Patrick Haluptzok",
+      "Matthew Bowers",
+      "Adam Tauman Kalai"
+    ],
+    "canonical_id": "2207.14502v4",
+    "first_publication_date": "2023-04-12T16:35:27.000Z",
+    "full_authors": [
+      {
+        "full_name": "Patrick Haluptzok",
+        "id": "01985c82-e7e5-707e-b2ac-868d125a0dab",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Matthew Bowers",
+        "id": "01985c82-e7e5-7e83-aa59-d4c9073d8bdb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Adam Tauman Kalai",
+        "id": "01985c81-de91-7a5a-802d-6bec13034b90",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 1,
+    "github_url": "https://github.com/WhyToFly/llm_coq_augment",
+    "id": "01877652-7098-731c-b0df-488f1796626c",
+    "image_url": "image/2207.14502v4.png",
+    "metrics": {
+      "public_total_votes": 5,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 106,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/microsoft.png",
+        "name": "Microsoft"
+      },
+      {
+        "image": "images/organizations/mit.jpg",
+        "name": "MIT"
+      }
+    ],
+    "paper_group_id": "01877652-7098-731c-b0df-488f1796626c",
+    "paper_summary": null,
+    "publication_date": "2023-04-12T16:35:27.000Z",
+    "title": "Language Models Can Teach Themselves to Program Better",
+    "topics": [
+      "code-generation",
+      "Computer Science",
+      "cs.AI",
+      "cs.LG",
+      "language-models",
+      "reinforcement-learning",
+      "self-supervised-learning",
+      "unsupervised-learning"
+    ],
+    "universal_paper_id": "2207.14502",
+    "updated_at": "2025-03-03T20:17:40.420Z",
+    "version_id": "01877652-7098-7131-9130-6b1617007083"
   },
   {
     "abstract": "Large language models (LLMs) struggle to consistently generate UI code that compiles and produces visually relevant designs. Existing approaches to improve generation rely on expensive human feedback or distilling a proprietary model. In this paper, we explore the use of automated feedback (compilers and multi-modal models) to guide LLMs to generate high-quality UI code. Our method starts with an existing LLM and iteratively produces improved models by self-generating a large synthetic dataset using an original model, applying automated tools to aggressively filter, score, and de-duplicate the data into a refined higher quality dataset. The original LLM is improved by finetuning on this refined dataset. We applied our approach to several open-source LLMs and compared the resulting performance to baseline models with both automated metrics and human preferences. Our evaluation shows the resulting models outperform all other downloadable baselines and approach the performance of larger proprietary models.",
@@ -3513,240 +3584,6 @@
     "universal_paper_id": "2406.07739",
     "updated_at": "2025-03-03T19:51:38.716Z",
     "version_id": "0190094a-f610-7a4d-9b63-89616a20aa5f"
-  },
-  {
-    "abstract": "Recent Language Models (LMs) achieve breakthrough performance in code generation when trained on human-authored problems, even solving some competitive-programming problems. Self-play has proven useful in games such as Go, and thus it is natural to ask whether LMs can generate their own instructive programming problems to improve their performance. We show that it is possible for an LM to synthesize programming problems and solutions, which are filtered for correctness by a Python interpreter. The LM's performance is then seen to improve when it is fine-tuned on its own synthetic problems and verified solutions; thus the model 'improves itself' using the Python interpreter. Problems are specified formally as programming puzzles [Schuster et al., 2021], a code-based problem format where solutions can easily be verified for correctness by execution. In experiments on publicly-available LMs, test accuracy more than doubles. This work demonstrates the potential for code LMs, with an interpreter, to generate instructive problems and improve their own performance.",
-    "author_info": [],
-    "authors": [
-      "Patrick Haluptzok",
-      "Matthew Bowers",
-      "Adam Tauman Kalai"
-    ],
-    "canonical_id": "2207.14502v4",
-    "first_publication_date": "2023-04-12T16:35:27.000Z",
-    "full_authors": [
-      {
-        "full_name": "Patrick Haluptzok",
-        "id": "01985c82-e7e5-707e-b2ac-868d125a0dab",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Matthew Bowers",
-        "id": "01985c82-e7e5-7e83-aa59-d4c9073d8bdb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Adam Tauman Kalai",
-        "id": "01985c81-de91-7a5a-802d-6bec13034b90",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 1,
-    "github_url": "https://github.com/WhyToFly/llm_coq_augment",
-    "id": "01877652-7098-731c-b0df-488f1796626c",
-    "image_url": "image/2207.14502v4.png",
-    "metrics": {
-      "public_total_votes": 5,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 106,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/microsoft.png",
-        "name": "Microsoft"
-      },
-      {
-        "image": "images/organizations/mit.jpg",
-        "name": "MIT"
-      }
-    ],
-    "paper_group_id": "01877652-7098-731c-b0df-488f1796626c",
-    "paper_summary": null,
-    "publication_date": "2023-04-12T16:35:27.000Z",
-    "title": "Language Models Can Teach Themselves to Program Better",
-    "topics": [
-      "code-generation",
-      "Computer Science",
-      "cs.AI",
-      "cs.LG",
-      "language-models",
-      "reinforcement-learning",
-      "self-supervised-learning",
-      "unsupervised-learning"
-    ],
-    "universal_paper_id": "2207.14502",
-    "updated_at": "2025-03-03T20:17:40.420Z",
-    "version_id": "01877652-7098-7131-9130-6b1617007083"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) can generate code but often introduce security vulnerabilities, logical inconsistencies, and compilation errors. Prior work demonstrates that LLMs benefit substantially from structured feedback, static analysis, retrieval augmentation, and execution-based refinement. We propose a retrieval-augmented, multi-tool repair workflow in which a single code-generating LLM iteratively refines its outputs using compiler diagnostics, CodeQL security scanning, and KLEE symbolic execution. A lightweight embedding model is used for semantic retrieval of previously successful repairs, providing security-focused examples that guide generation. Evaluated on a combined dataset of 3,242 programs generated by DeepSeek-Coder-1.3B and CodeLlama-7B, the system demonstrates significant improvements in robustness. For DeepSeek, security vulnerabilities were reduced by 96%. For the larger CodeLlama model, the critical security defect rate was decreased from 58.55% to 22.19%, highlighting the efficacy of tool-assisted self-repair even on \"stubborn\" models.",
-    "author_info": [],
-    "authors": [
-      "Vidyut Sriram",
-      "Sawan Pandita",
-      "Achintya Lakshmanan",
-      "Aneesh Shamraj",
-      "Suman Saha"
-    ],
-    "canonical_id": "2601.00509v1",
-    "first_publication_date": "2026-01-01T23:34:00.000Z",
-    "full_authors": [
-      {
-        "full_name": "Vidyut Sriram",
-        "id": "019b8cc0-2830-74aa-a99b-683b428a5f9a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sawan Pandita",
-        "id": "019b8cc0-2832-7996-9342-f804173dd80d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Achintya Lakshmanan",
-        "id": "019b8cc0-2834-731f-a1e1-fff419dd8718",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Aneesh Shamraj",
-        "id": "01985c84-1248-7746-88c9-75db89254a1d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Suman Saha",
-        "id": "01985c82-00f0-72bb-8c20-2701d42fc748",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b8cc0-2829-7baf-9f22-a62282be4fa5",
-    "image_url": "image/2601.00509v1.png",
-    "metrics": {
-      "public_total_votes": 4,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 25,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019b8cc0-2829-7baf-9f22-a62282be4fa5",
-    "paper_summary": null,
-    "publication_date": "2026-01-01T23:34:00.000Z",
-    "title": "Improving LLM-Assisted Secure Code Generation through Retrieval-Augmented-Generation and Multi-Tool Feedback",
-    "topics": [
-      "agents",
-      "ai-for-cybersecurity",
-      "Computer Science",
-      "cs.CR",
-      "cs.LG",
-      "cybersecurity",
-      "embedding-methods",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2601.00509",
-    "updated_at": "2026-01-05T06:02:42.089Z",
-    "version_id": "019b8cc0-283e-747c-b585-b768761c1350"
-  },
-  {
-    "abstract": "Recent advancements in large language models (LLMs) have shown very impressive capabilities in code generation across many programming languages. However, even state-of-the-art LLMs generate programs that contains syntactic errors and fail to complete the given tasks, especially for low-resource programming languages (LRPLs). In addition, high training cost makes finetuning LLMs unaffordable with constrained computational resources, further undermining the effectiveness of LLMs for code generation. In this work, we propose SLMFix, a novel code generation pipeline that leverages a small language model (SLM) finetuned using reinforcement learning (RL) techniques to fix syntactic errors in LLM-generated programs to improve the quality of LLM-generated programs for domain-specific languages (DSLs). In specific, we applied RL on the SLM for the program repair task using a reward calculated using both a static validator and a static semantic similarity metric. Our experimental results demonstrate the effectiveness and generalizability of our approach across multiple DSLs, achieving more than 95% pass rate on the static validator. Notably, SLMFix brings substantial improvement to the base model and outperforms supervised finetuning approach even for 7B models on a LRPL, showing the potential of our approach as an alternative to traditional finetuning approaches.",
-    "author_info": [],
-    "authors": [
-      "David Jiahao Fu",
-      "Aryan Gupta",
-      "Aaron Councilman",
-      "David Grove",
-      "Yu-Xiong Wang",
-      "Vikram Adve"
-    ],
-    "canonical_id": "2511.19422v1",
-    "first_publication_date": "2025-11-24T18:56:47.000Z",
-    "full_authors": [
-      {
-        "full_name": "David Jiahao Fu",
-        "id": "019ab966-94dc-7516-b5c0-a140e339d025",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Aryan Gupta",
-        "id": "01985c82-9620-7ef9-b9cb-4660a7b646d3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Aaron Councilman",
-        "id": "01985c84-9d09-788a-8766-1d94970bd12d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "David Grove",
-        "id": "01985c85-f9b2-7b5c-ae23-37681f0edb63",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu-Xiong Wang",
-        "id": "01985c81-fd81-7985-ba8a-22bc5499450e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Vikram Adve",
-        "id": "01985c82-0c74-74d4-a207-905909c60b14",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019ab966-94c3-7d6d-b938-fbe82254b235",
-    "image_url": "image/2511.19422v1.png",
-    "metrics": {
-      "public_total_votes": 4,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 17,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019ab966-94c3-7d6d-b938-fbe82254b235",
-    "paper_summary": null,
-    "publication_date": "2025-11-24T18:56:47.000Z",
-    "title": "SLMFix: Leveraging Small Language Models for Error Fixing with Reinforcement Learning",
-    "topics": [
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.PL",
-      "cs.SE",
-      "domain-adaptation",
-      "fine-tuning",
-      "lightweight-models",
-      "optimization-methods",
-      "reinforcement-learning",
-      "text-generation"
-    ],
-    "universal_paper_id": "2511.19422",
-    "updated_at": "2025-11-25T05:04:59.075Z",
-    "version_id": "019ab966-94ef-7ea0-94d2-27b295febfee"
   },
   {
     "abstract": "Large language models (LLMs) have demonstrated an impressive ability to\ngenerate codes on competitive programming tasks. However, with limited sample\nnumbers, LLMs still suffer from poor accuracy. Inspired by the process of human\nprogramming, we propose a generate-and-edit approach named Self-Edit that\nutilizes execution results of the generated code from LLMs to improve the code\nquality on the competitive programming task. We execute the generated code on\nthe example test case provided in the question and wrap execution results into\na supplementary comment. Utilizing this comment as guidance, our fault-aware\ncode editor is employed to correct errors in the generated code. We perform\nextensive evaluations across two competitive programming datasets with nine\ndifferent LLMs. Compared to directly generating from LLMs, our approach can\nimprove the average of pass@1 by 89\\% on APPS-dev, 31\\% on APPS-test, and 48\\%\non HumanEval over nine popular code generation LLMs with parameter sizes\nranging from 110M to 175B. Compared to other post-processing methods, our\nmethod demonstrates superior accuracy and efficiency.",
@@ -3951,6 +3788,92 @@
     "version_id": "019c1cf6-5312-72bb-a4bd-b081e9aad7dd"
   },
   {
+    "abstract": "Recent advancements in large language models (LLMs) have shown very impressive capabilities in code generation across many programming languages. However, even state-of-the-art LLMs generate programs that contains syntactic errors and fail to complete the given tasks, especially for low-resource programming languages (LRPLs). In addition, high training cost makes finetuning LLMs unaffordable with constrained computational resources, further undermining the effectiveness of LLMs for code generation. In this work, we propose SLMFix, a novel code generation pipeline that leverages a small language model (SLM) finetuned using reinforcement learning (RL) techniques to fix syntactic errors in LLM-generated programs to improve the quality of LLM-generated programs for domain-specific languages (DSLs). In specific, we applied RL on the SLM for the program repair task using a reward calculated using both a static validator and a static semantic similarity metric. Our experimental results demonstrate the effectiveness and generalizability of our approach across multiple DSLs, achieving more than 95% pass rate on the static validator. Notably, SLMFix brings substantial improvement to the base model and outperforms supervised finetuning approach even for 7B models on a LRPL, showing the potential of our approach as an alternative to traditional finetuning approaches.",
+    "author_info": [],
+    "authors": [
+      "David Jiahao Fu",
+      "Aryan Gupta",
+      "Aaron Councilman",
+      "David Grove",
+      "Yu-Xiong Wang",
+      "Vikram Adve"
+    ],
+    "canonical_id": "2511.19422v1",
+    "first_publication_date": "2025-11-24T18:56:47.000Z",
+    "full_authors": [
+      {
+        "full_name": "David Jiahao Fu",
+        "id": "019ab966-94dc-7516-b5c0-a140e339d025",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aryan Gupta",
+        "id": "01985c82-9620-7ef9-b9cb-4660a7b646d3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aaron Councilman",
+        "id": "01985c84-9d09-788a-8766-1d94970bd12d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "David Grove",
+        "id": "01985c85-f9b2-7b5c-ae23-37681f0edb63",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu-Xiong Wang",
+        "id": "01985c81-fd81-7985-ba8a-22bc5499450e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Vikram Adve",
+        "id": "01985c82-0c74-74d4-a207-905909c60b14",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019ab966-94c3-7d6d-b938-fbe82254b235",
+    "image_url": "image/2511.19422v1.png",
+    "metrics": {
+      "public_total_votes": 4,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 17,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019ab966-94c3-7d6d-b938-fbe82254b235",
+    "paper_summary": null,
+    "publication_date": "2025-11-24T18:56:47.000Z",
+    "title": "SLMFix: Leveraging Small Language Models for Error Fixing with Reinforcement Learning",
+    "topics": [
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.PL",
+      "cs.SE",
+      "domain-adaptation",
+      "fine-tuning",
+      "lightweight-models",
+      "optimization-methods",
+      "reinforcement-learning",
+      "text-generation"
+    ],
+    "universal_paper_id": "2511.19422",
+    "updated_at": "2025-11-25T05:04:59.075Z",
+    "version_id": "019ab966-94ef-7ea0-94d2-27b295febfee"
+  },
+  {
     "abstract": "Large language models (LLMs) have become proficient at sophisticated code-generation tasks, yet remain ineffective at reliably detecting or avoiding code vulnerabilities. Does this deficiency stem from insufficient learning about code vulnerabilities, or is it merely a result of ineffective prompting? Using representation engineering techniques, we investigate whether LLMs internally encode the concepts necessary to identify code vulnerabilities. We find that current LLMs encode precise internal representations that distinguish vulnerable from secure code--achieving greater accuracy than standard prompting approaches. Leveraging these vulnerability-sensitive representations, we develop an inference-time steering technique that subtly modulates the model's token-generation probabilities through a mixture of corrections (MoC). Our method effectively guides LLMs to produce less vulnerable code without compromising functionality, demonstrating a practical approach to controlled vulnerability management in generated code. Notably, MoC enhances the security ratio of Qwen2.5-Coder-7B by 8.9\\%, while simultaneously improving functionality on HumanEval pass@1 by 2.1\\%.",
     "author_info": [],
     "authors": [
@@ -4039,6 +3962,83 @@
     "universal_paper_id": "2507.09508",
     "updated_at": "2025-07-15T02:30:11.308Z",
     "version_id": "01980277-a808-7870-b6f8-4c8c8861b91a"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) can generate code but often introduce security vulnerabilities, logical inconsistencies, and compilation errors. Prior work demonstrates that LLMs benefit substantially from structured feedback, static analysis, retrieval augmentation, and execution-based refinement. We propose a retrieval-augmented, multi-tool repair workflow in which a single code-generating LLM iteratively refines its outputs using compiler diagnostics, CodeQL security scanning, and KLEE symbolic execution. A lightweight embedding model is used for semantic retrieval of previously successful repairs, providing security-focused examples that guide generation. Evaluated on a combined dataset of 3,242 programs generated by DeepSeek-Coder-1.3B and CodeLlama-7B, the system demonstrates significant improvements in robustness. For DeepSeek, security vulnerabilities were reduced by 96%. For the larger CodeLlama model, the critical security defect rate was decreased from 58.55% to 22.19%, highlighting the efficacy of tool-assisted self-repair even on \"stubborn\" models.",
+    "author_info": [],
+    "authors": [
+      "Vidyut Sriram",
+      "Sawan Pandita",
+      "Achintya Lakshmanan",
+      "Aneesh Shamraj",
+      "Suman Saha"
+    ],
+    "canonical_id": "2601.00509v1",
+    "first_publication_date": "2026-01-01T23:34:00.000Z",
+    "full_authors": [
+      {
+        "full_name": "Vidyut Sriram",
+        "id": "019b8cc0-2830-74aa-a99b-683b428a5f9a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sawan Pandita",
+        "id": "019b8cc0-2832-7996-9342-f804173dd80d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Achintya Lakshmanan",
+        "id": "019b8cc0-2834-731f-a1e1-fff419dd8718",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aneesh Shamraj",
+        "id": "01985c84-1248-7746-88c9-75db89254a1d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Suman Saha",
+        "id": "01985c82-00f0-72bb-8c20-2701d42fc748",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b8cc0-2829-7baf-9f22-a62282be4fa5",
+    "image_url": "image/2601.00509v1.png",
+    "metrics": {
+      "public_total_votes": 4,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 25,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019b8cc0-2829-7baf-9f22-a62282be4fa5",
+    "paper_summary": null,
+    "publication_date": "2026-01-01T23:34:00.000Z",
+    "title": "Improving LLM-Assisted Secure Code Generation through Retrieval-Augmented-Generation and Multi-Tool Feedback",
+    "topics": [
+      "agents",
+      "ai-for-cybersecurity",
+      "Computer Science",
+      "cs.CR",
+      "cs.LG",
+      "cybersecurity",
+      "embedding-methods",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2601.00509",
+    "updated_at": "2026-01-05T06:02:42.089Z",
+    "version_id": "019b8cc0-283e-747c-b585-b768761c1350"
   },
   {
     "abstract": "Recently, Large Language Models (LLMs) have shown impressive abilities in code generation. However, existing LLMs' decoding strategies are designed for Natural Language (NL) generation, overlooking the differences between NL and programming languages (PL). Due to this oversight, a better decoding strategy for code generation remains an open question. In this paper, we conduct the first systematic study to explore a decoding strategy specialized in code generation. With an analysis of loss distributions of code tokens, we find that code tokens can be divided into two categories: challenging tokens that are difficult to predict and confident tokens that can be easily inferred. Among them, the challenging tokens mainly appear at the beginning of a code block. Inspired by the above findings, we propose a simple yet effective method: Adaptive Temperature (AdapT) sampling, which dynamically adjusts the temperature coefficient when decoding different tokens. We apply a larger temperature when sampling for challenging tokens, allowing LLMs to explore diverse choices. We employ a smaller temperature for confident tokens avoiding the influence of tail randomness noises. We apply AdapT sampling to LLMs with different sizes and conduct evaluations on two popular datasets. Results show that AdapT sampling significantly outperforms state-of-the-art decoding strategy.",
@@ -4775,126 +4775,131 @@
     "version_id": "019ae75e-3b0f-7469-90a8-36d0584f3c2a"
   },
   {
-    "abstract": "Large language models (LLMs) have made significant strides at code generation through improved model design, training, and chain-of-thought. However, prompt-level optimizations remain an important yet under-explored aspect of LLMs for coding. This work focuses on the few-shot examples present in most code generation prompts, offering a systematic study on whether few-shot examples improve LLM's coding capabilities, which few-shot examples have the largest impact, and how to select impactful examples. Our work offers 2 approaches for selecting few-shot examples, a model-free method, CODEEXEMPLAR-FREE, and a model-based method, CODEEXEMPLAR-BASED. The 2 methods offer a trade-off between improved performance and reliance on training data and interpretability. Both methods significantly improve CodeLlama's coding ability across the popular HumanEval+ coding benchmark. In summary, our work provides valuable insights into how to pick few-shot examples in code generation prompts to improve LLM code generation capabilities.",
+    "abstract": "Traditional code instruction data synthesis methods suffer from limited\ndiversity and poor logic. We introduce Infinite-Instruct, an automated\nframework for synthesizing high-quality question-answer pairs, designed to\nenhance the code generation capabilities of large language models (LLMs). The\nframework focuses on improving the internal logic of synthesized problems and\nthe quality of synthesized code. First, \"Reverse Construction\" transforms code\nsnippets into diverse programming problems. Then, through \"Backfeeding\nConstruction,\" keywords in programming problems are structured into a knowledge\ngraph to reconstruct them into programming problems with stronger internal\nlogic. Finally, a cross-lingual static code analysis pipeline filters invalid\nsamples to ensure data quality. Experiments show that on mainstream code\ngeneration benchmarks, our fine-tuned models achieve an average performance\nimprovement of 21.70% on 7B-parameter models and 36.95% on 32B-parameter\nmodels. Using less than one-tenth of the instruction fine-tuning data, we\nachieved performance comparable to the Qwen-2.5-Coder-Instruct.\nInfinite-Instruct provides a scalable solution for LLM training in programming.\nWe open-source the datasets used in the experiments, including both unfiltered\nversions and filtered versions via static analysis. The data are available at\nthis https URL",
     "author_info": [],
     "authors": [
-      "Derek Xu",
-      "Tong Xie",
-      "Botao Xia",
-      "Haoyu Li",
-      "Yunsheng Bai",
-      "Yizhou Sun",
-      "Wei Wang"
+      "Wenjing Xing",
+      "Wenke Lu",
+      "Yeheng Duan",
+      "Bing Zhao",
+      "Zhenghui kang",
+      "Yaolong Wang",
+      "Kai Gao",
+      "Lei Qiao"
     ],
-    "canonical_id": "2412.02906v1",
-    "first_publication_date": "2024-12-05T05:05:23.200Z",
+    "canonical_id": "2505.23177v1",
+    "first_publication_date": "2025-05-29T07:14:43.000Z",
     "full_authors": [
       {
-        "full_name": "Derek Xu",
-        "id": "01985c82-8c36-7d6c-ad6b-7f98e1affc50",
+        "full_name": "Wenjing Xing",
+        "id": "01985c85-7c9b-79a2-a86b-b75bcc57f20f",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Tong Xie",
-        "id": "01985c82-3619-76df-8b4c-e56cbb1d471e",
+        "full_name": "Wenke Lu",
+        "id": "01985c85-7c9b-788e-bc17-ce5680adf4d7",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Botao Xia",
-        "id": "01985c83-363e-7a13-87f8-d1577a8ef474",
+        "full_name": "Yeheng Duan",
+        "id": "01985c85-7c9b-7bdc-a4ca-3bd4c1ba047a",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Haoyu Li",
-        "id": "01985c81-f063-74bb-8250-ecccfd30c658",
+        "full_name": "Bing Zhao",
+        "id": "01985c82-4735-7110-a4c3-e6d4d6da944d",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yunsheng Bai",
-        "id": "01985c82-6c5a-76df-a07b-fb98baa6273b",
+        "full_name": "Zhenghui kang",
+        "id": "01985c85-7c9b-7c6a-86da-5f55c081a42e",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yizhou Sun",
-        "id": "01985c81-fca4-7c82-a7a8-54e62b39de83",
+        "full_name": "Yaolong Wang",
+        "id": "01985c83-319f-785c-8900-b8b82996c8e8",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wei Wang",
-        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
+        "full_name": "Kai Gao",
+        "id": "01985c82-213d-75c9-91fc-20775dcbf1c1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lei Qiao",
+        "id": "01985c82-b26a-7a20-858b-fe00bba25cb8",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "01939535-5f00-7974-b4aa-0f566b9a02fa",
-    "image_url": "image/2412.02906v1.png",
+    "id": "01971ae4-aab8-7a54-b831-2f9c0600fba2",
+    "image_url": "image/2505.23177v1.png",
     "metrics": {
       "public_total_votes": 2,
       "total_votes": 0,
       "visits_count": {
-        "all": 55,
-        "last_7_days": 0
+        "all": 28,
+        "last_7_days": 1
       },
       "x_likes": 0
     },
     "organization_info": [
       {
-        "image": "images/organizations/university-of-illinois-at-urbana-champaign.jpeg",
-        "name": "University of Illinois at Urbana-Champaign"
+        "image": "images/organizations/bytedance.png",
+        "name": "ByteDance"
       },
       {
-        "image": "images/organizations/ucla.png",
-        "name": "UCLA"
-      },
-      {
-        "image": "images/organizations/nvidia.png",
-        "name": "NVIDIA"
+        "image": null,
+        "name": "Dalian University of Technology"
       }
     ],
-    "paper_group_id": "01939535-5f00-7974-b4aa-0f566b9a02fa",
+    "paper_group_id": "01971ae4-aab8-7a54-b831-2f9c0600fba2",
     "paper_summary": {
       "keyInsights": [
-        "Few-shot examples provide substantial performance gains for LLM code generation, but not all examples contribute equally to this improvement.",
-        "`PERPLEXITY (TARGET)`, measuring an LLM's confidence in generating correct code, reliably correlates with the `Pass@1` success rate, justifying its use as a ranking metric.",
-        "LLM hidden representations, specifically from the `[EOS]` token of the 16th layer, effectively capture semantic information crucial for predicting an example's utility."
+        "Combining both code-derived (Reverse Construction) and knowledge-graph-guided (Backfeeding Construction) problem generation strategies leads to highly diverse and logically coherent instruction data.",
+        "Rigorous, automated quality control, particularly through cross-language static code analysis, is critical for enhancing synthetic data integrity and downstream LLM performance by filtering out erroneous samples.",
+        "High-quality synthetic instruction data can enable LLMs to achieve performance comparable to models trained on significantly larger, manually curated or complex post-trained datasets, demonstrating remarkable data efficiency."
       ],
       "originalProblem": [
-        "Existing few-shot learning methods for Large Language Models (LLMs) are not specifically tailored for the unique input-output space of code synthesis.",
-        "Prompt-level optimizations, particularly for few-shot example selection, remain an under-explored aspect for improving LLM code generation capabilities.",
-        "The high computational cost of very long prompts necessitates intelligent selection of a smaller, more impactful set of few-shot examples."
+        "Existing automated code instruction data synthesis methods struggled with limited diversity, poor logical structure, and inherited biases from foundation models.",
+        "Prior code-specific data synthesis approaches, like OSS-Instruct, lacked robust quality assurance mechanisms, often producing syntactically incorrect or low-quality code responses.",
+        "The scalability of acquiring high-quality instruction data for Large Language Models (LLMs) remains a bottleneck due to the resource-intensive nature of manual annotation."
       ],
       "results": [
-        "Few-shot examples yielded substantial performance improvements, with CODELLAMA achieving approximately a 5.0 log perplexity improvement with optimal examples.",
-        "`CODEEXEMPLAR-FREE` improved CODELLAMA's average `Pass@1` by 5.70 \u00b1 2.17%, while `CODEEXAMPLAR-BASE` achieved a 5.05 \u00b1 1.70% average `Pass@1` improvement.",
-        "The performance of `CODEEXAMPLAR-BASE` exhibited sensitivity to distribution shifts in natural language prompts, indicating a current generalization bottleneck for new code generation problems."
+        "Fine-tuned models achieved an average performance improvement of 21.70% on 7B-parameter models and 36.95% on 32B-parameter models compared to those trained on the original OSS-Instruct dataset.",
+        "Models trained with Infinite-Instruct data achieved performance comparable to or surpassing the Qwen-2.5-Coder-Instruct, using less than one-tenth of its instruction fine-tuning data.",
+        "Static analysis filtering consistently improved model performance, with filtered datasets outperforming unfiltered versions and validating the critical role of data quality assurance."
       ],
       "solution": [
-        "Proposed CODEEXEMPLAR-FREE, a model-free algorithm that ranks few-shot examples by their `PERPLEXITY (SOURCE)`, selecting those deemed most 'surprising' or informative to the LLM.",
-        "Introduced CODEEXAMPLAR-BASE, a model-based approach that trains a Multi-Layer Perceptron (MLP) to predict an example's utility (`PERPLEXITY (TARGET)`) from LLM hidden representations.",
-        "Utilized `PERPLEXITY (TARGET)`, which measures the LLM's confidence in generating ground truth code, as a granular surrogate objective for ranking example utility."
+        "A bidirectional instruction synthesis framework is introduced, featuring 'Reverse Construction' (generating problems from code snippets) and 'Backfeeding Construction' (synthesizing problems from structured keyword combinations via a knowledge graph).",
+        "A multi-faceted prompt filtering stage, employing GPT-4o-0806, assesses generated questions across seven quality dimensions to ensure high relevance and complexity.",
+        "A cross-language static code analysis pipeline (e.g., PyLint, ESLint) is implemented to strictly filter out responses with error-level syntax issues, ensuring the quality of synthesized code."
       ],
-      "summary": "Researchers investigated the optimal selection of few-shot examples to enhance Large Language Model (LLM) performance in code synthesis. Their proposed algorithms, CODEEXEMPLAR-FREE and CODEEXAMPLAR-BASE, improved CODELLAMA's code generation Pass@1 metric by up to 5.70% solely through prompt optimization."
+      "summary": "Infinite-Instruct presents a bidirectional framework for generating scalable and high-quality code instruction data, combining code-to-problem and keyword-to-problem synthesis with rigorous static verification. Models fine-tuned with this data show an average performance improvement of up to 36.95% on 32B-parameter models, matching or surpassing industrial benchmarks using less than one-tenth the data volume."
     },
-    "publication_date": "2024-12-03T23:19:40.000Z",
-    "title": "Does Few-Shot Learning Help LLM Performance in Code Synthesis?",
+    "publication_date": "2025-05-29T07:14:43.000Z",
+    "title": "Infinite-Instruct: Synthesizing Scaling Code instruction Data with  Bidirectional Synthesis and Static Verification",
     "topics": [
       "Computer Science",
-      "cs.AI",
       "cs.CL",
-      "cs.LG",
-      "cs.SE"
+      "data-curation",
+      "fine-tuning",
+      "instruction-tuning",
+      "synthetic-data",
+      "transformers"
     ],
-    "universal_paper_id": "2412.02906",
-    "updated_at": "2025-03-03T19:39:30.053Z",
-    "version_id": "01938ed2-7ee0-7c9a-a086-cd27a2d812fd"
+    "universal_paper_id": "2505.23177",
+    "updated_at": "2025-05-30T00:51:37.610Z",
+    "version_id": "01971ae4-aab8-76e1-815c-27c730f25464"
   },
   {
     "abstract": "Direct preference learning offers a promising and computation-efficient beyond supervised fine-tuning (SFT) for improving code generation in coding large language models (LMs). However, the scarcity of reliable preference data is a bottleneck for the performance of direct preference learning to improve the coding accuracy of code LMs. In this paper, we introduce \\underline{\\textbf{D}}irect Preference Learning with Only \\underline{\\textbf{S}}elf-Generated \\underline{\\textbf{T}}ests and \\underline{\\textbf{C}}ode (DSTC), a framework that leverages only self-generated code snippets and tests to construct reliable preference pairs such that direct preference learning can improve LM coding accuracy without external annotations. DSTC combines a minimax selection process and test-code concatenation to improve preference pair quality, reducing the influence of incorrect self-generated tests and enhancing model performance without the need for costly reward models. When applied with direct preference learning methods such as Direct Preference Optimization (DPO) and Kahneman-Tversky Optimization (KTO), DSTC yields stable improvements in coding accuracy (pass@1 score) across diverse coding benchmarks, including HumanEval, MBPP, and BigCodeBench, demonstrating both its effectiveness and scalability for models of various sizes. This approach autonomously enhances code generation accuracy across LLMs of varying sizes, reducing reliance on expensive annotated coding datasets.",
@@ -5231,131 +5236,126 @@
     "version_id": "0193cd70-7e90-789d-bdb5-7068be02acad"
   },
   {
-    "abstract": "Traditional code instruction data synthesis methods suffer from limited\ndiversity and poor logic. We introduce Infinite-Instruct, an automated\nframework for synthesizing high-quality question-answer pairs, designed to\nenhance the code generation capabilities of large language models (LLMs). The\nframework focuses on improving the internal logic of synthesized problems and\nthe quality of synthesized code. First, \"Reverse Construction\" transforms code\nsnippets into diverse programming problems. Then, through \"Backfeeding\nConstruction,\" keywords in programming problems are structured into a knowledge\ngraph to reconstruct them into programming problems with stronger internal\nlogic. Finally, a cross-lingual static code analysis pipeline filters invalid\nsamples to ensure data quality. Experiments show that on mainstream code\ngeneration benchmarks, our fine-tuned models achieve an average performance\nimprovement of 21.70% on 7B-parameter models and 36.95% on 32B-parameter\nmodels. Using less than one-tenth of the instruction fine-tuning data, we\nachieved performance comparable to the Qwen-2.5-Coder-Instruct.\nInfinite-Instruct provides a scalable solution for LLM training in programming.\nWe open-source the datasets used in the experiments, including both unfiltered\nversions and filtered versions via static analysis. The data are available at\nthis https URL",
+    "abstract": "Large language models (LLMs) have made significant strides at code generation through improved model design, training, and chain-of-thought. However, prompt-level optimizations remain an important yet under-explored aspect of LLMs for coding. This work focuses on the few-shot examples present in most code generation prompts, offering a systematic study on whether few-shot examples improve LLM's coding capabilities, which few-shot examples have the largest impact, and how to select impactful examples. Our work offers 2 approaches for selecting few-shot examples, a model-free method, CODEEXEMPLAR-FREE, and a model-based method, CODEEXEMPLAR-BASED. The 2 methods offer a trade-off between improved performance and reliance on training data and interpretability. Both methods significantly improve CodeLlama's coding ability across the popular HumanEval+ coding benchmark. In summary, our work provides valuable insights into how to pick few-shot examples in code generation prompts to improve LLM code generation capabilities.",
     "author_info": [],
     "authors": [
-      "Wenjing Xing",
-      "Wenke Lu",
-      "Yeheng Duan",
-      "Bing Zhao",
-      "Zhenghui kang",
-      "Yaolong Wang",
-      "Kai Gao",
-      "Lei Qiao"
+      "Derek Xu",
+      "Tong Xie",
+      "Botao Xia",
+      "Haoyu Li",
+      "Yunsheng Bai",
+      "Yizhou Sun",
+      "Wei Wang"
     ],
-    "canonical_id": "2505.23177v1",
-    "first_publication_date": "2025-05-29T07:14:43.000Z",
+    "canonical_id": "2412.02906v1",
+    "first_publication_date": "2024-12-05T05:05:23.200Z",
     "full_authors": [
       {
-        "full_name": "Wenjing Xing",
-        "id": "01985c85-7c9b-79a2-a86b-b75bcc57f20f",
+        "full_name": "Derek Xu",
+        "id": "01985c82-8c36-7d6c-ad6b-7f98e1affc50",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wenke Lu",
-        "id": "01985c85-7c9b-788e-bc17-ce5680adf4d7",
+        "full_name": "Tong Xie",
+        "id": "01985c82-3619-76df-8b4c-e56cbb1d471e",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yeheng Duan",
-        "id": "01985c85-7c9b-7bdc-a4ca-3bd4c1ba047a",
+        "full_name": "Botao Xia",
+        "id": "01985c83-363e-7a13-87f8-d1577a8ef474",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Bing Zhao",
-        "id": "01985c82-4735-7110-a4c3-e6d4d6da944d",
+        "full_name": "Haoyu Li",
+        "id": "01985c81-f063-74bb-8250-ecccfd30c658",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zhenghui kang",
-        "id": "01985c85-7c9b-7c6a-86da-5f55c081a42e",
+        "full_name": "Yunsheng Bai",
+        "id": "01985c82-6c5a-76df-a07b-fb98baa6273b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yaolong Wang",
-        "id": "01985c83-319f-785c-8900-b8b82996c8e8",
+        "full_name": "Yizhou Sun",
+        "id": "01985c81-fca4-7c82-a7a8-54e62b39de83",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Kai Gao",
-        "id": "01985c82-213d-75c9-91fc-20775dcbf1c1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lei Qiao",
-        "id": "01985c82-b26a-7a20-858b-fe00bba25cb8",
+        "full_name": "Wei Wang",
+        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "01971ae4-aab8-7a54-b831-2f9c0600fba2",
-    "image_url": "image/2505.23177v1.png",
+    "id": "01939535-5f00-7974-b4aa-0f566b9a02fa",
+    "image_url": "image/2412.02906v1.png",
     "metrics": {
       "public_total_votes": 2,
       "total_votes": 0,
       "visits_count": {
-        "all": 28,
-        "last_7_days": 1
+        "all": 55,
+        "last_7_days": 0
       },
       "x_likes": 0
     },
     "organization_info": [
       {
-        "image": "images/organizations/bytedance.png",
-        "name": "ByteDance"
+        "image": "images/organizations/university-of-illinois-at-urbana-champaign.jpeg",
+        "name": "University of Illinois at Urbana-Champaign"
       },
       {
-        "image": null,
-        "name": "Dalian University of Technology"
+        "image": "images/organizations/ucla.png",
+        "name": "UCLA"
+      },
+      {
+        "image": "images/organizations/nvidia.png",
+        "name": "NVIDIA"
       }
     ],
-    "paper_group_id": "01971ae4-aab8-7a54-b831-2f9c0600fba2",
+    "paper_group_id": "01939535-5f00-7974-b4aa-0f566b9a02fa",
     "paper_summary": {
       "keyInsights": [
-        "Combining both code-derived (Reverse Construction) and knowledge-graph-guided (Backfeeding Construction) problem generation strategies leads to highly diverse and logically coherent instruction data.",
-        "Rigorous, automated quality control, particularly through cross-language static code analysis, is critical for enhancing synthetic data integrity and downstream LLM performance by filtering out erroneous samples.",
-        "High-quality synthetic instruction data can enable LLMs to achieve performance comparable to models trained on significantly larger, manually curated or complex post-trained datasets, demonstrating remarkable data efficiency."
+        "Few-shot examples provide substantial performance gains for LLM code generation, but not all examples contribute equally to this improvement.",
+        "`PERPLEXITY (TARGET)`, measuring an LLM's confidence in generating correct code, reliably correlates with the `Pass@1` success rate, justifying its use as a ranking metric.",
+        "LLM hidden representations, specifically from the `[EOS]` token of the 16th layer, effectively capture semantic information crucial for predicting an example's utility."
       ],
       "originalProblem": [
-        "Existing automated code instruction data synthesis methods struggled with limited diversity, poor logical structure, and inherited biases from foundation models.",
-        "Prior code-specific data synthesis approaches, like OSS-Instruct, lacked robust quality assurance mechanisms, often producing syntactically incorrect or low-quality code responses.",
-        "The scalability of acquiring high-quality instruction data for Large Language Models (LLMs) remains a bottleneck due to the resource-intensive nature of manual annotation."
+        "Existing few-shot learning methods for Large Language Models (LLMs) are not specifically tailored for the unique input-output space of code synthesis.",
+        "Prompt-level optimizations, particularly for few-shot example selection, remain an under-explored aspect for improving LLM code generation capabilities.",
+        "The high computational cost of very long prompts necessitates intelligent selection of a smaller, more impactful set of few-shot examples."
       ],
       "results": [
-        "Fine-tuned models achieved an average performance improvement of 21.70% on 7B-parameter models and 36.95% on 32B-parameter models compared to those trained on the original OSS-Instruct dataset.",
-        "Models trained with Infinite-Instruct data achieved performance comparable to or surpassing the Qwen-2.5-Coder-Instruct, using less than one-tenth of its instruction fine-tuning data.",
-        "Static analysis filtering consistently improved model performance, with filtered datasets outperforming unfiltered versions and validating the critical role of data quality assurance."
+        "Few-shot examples yielded substantial performance improvements, with CODELLAMA achieving approximately a 5.0 log perplexity improvement with optimal examples.",
+        "`CODEEXEMPLAR-FREE` improved CODELLAMA's average `Pass@1` by 5.70 \u00b1 2.17%, while `CODEEXAMPLAR-BASE` achieved a 5.05 \u00b1 1.70% average `Pass@1` improvement.",
+        "The performance of `CODEEXAMPLAR-BASE` exhibited sensitivity to distribution shifts in natural language prompts, indicating a current generalization bottleneck for new code generation problems."
       ],
       "solution": [
-        "A bidirectional instruction synthesis framework is introduced, featuring 'Reverse Construction' (generating problems from code snippets) and 'Backfeeding Construction' (synthesizing problems from structured keyword combinations via a knowledge graph).",
-        "A multi-faceted prompt filtering stage, employing GPT-4o-0806, assesses generated questions across seven quality dimensions to ensure high relevance and complexity.",
-        "A cross-language static code analysis pipeline (e.g., PyLint, ESLint) is implemented to strictly filter out responses with error-level syntax issues, ensuring the quality of synthesized code."
+        "Proposed CODEEXEMPLAR-FREE, a model-free algorithm that ranks few-shot examples by their `PERPLEXITY (SOURCE)`, selecting those deemed most 'surprising' or informative to the LLM.",
+        "Introduced CODEEXAMPLAR-BASE, a model-based approach that trains a Multi-Layer Perceptron (MLP) to predict an example's utility (`PERPLEXITY (TARGET)`) from LLM hidden representations.",
+        "Utilized `PERPLEXITY (TARGET)`, which measures the LLM's confidence in generating ground truth code, as a granular surrogate objective for ranking example utility."
       ],
-      "summary": "Infinite-Instruct presents a bidirectional framework for generating scalable and high-quality code instruction data, combining code-to-problem and keyword-to-problem synthesis with rigorous static verification. Models fine-tuned with this data show an average performance improvement of up to 36.95% on 32B-parameter models, matching or surpassing industrial benchmarks using less than one-tenth the data volume."
+      "summary": "Researchers investigated the optimal selection of few-shot examples to enhance Large Language Model (LLM) performance in code synthesis. Their proposed algorithms, CODEEXEMPLAR-FREE and CODEEXAMPLAR-BASE, improved CODELLAMA's code generation Pass@1 metric by up to 5.70% solely through prompt optimization."
     },
-    "publication_date": "2025-05-29T07:14:43.000Z",
-    "title": "Infinite-Instruct: Synthesizing Scaling Code instruction Data with  Bidirectional Synthesis and Static Verification",
+    "publication_date": "2024-12-03T23:19:40.000Z",
+    "title": "Does Few-Shot Learning Help LLM Performance in Code Synthesis?",
     "topics": [
       "Computer Science",
+      "cs.AI",
       "cs.CL",
-      "data-curation",
-      "fine-tuning",
-      "instruction-tuning",
-      "synthetic-data",
-      "transformers"
+      "cs.LG",
+      "cs.SE"
     ],
-    "universal_paper_id": "2505.23177",
-    "updated_at": "2025-05-30T00:51:37.610Z",
-    "version_id": "01971ae4-aab8-76e1-815c-27c730f25464"
+    "universal_paper_id": "2412.02906",
+    "updated_at": "2025-03-03T19:39:30.053Z",
+    "version_id": "01938ed2-7ee0-7c9a-a086-cd27a2d812fd"
   },
   {
     "abstract": "Effective code generation with language models hinges on two critical factors: accurately understanding the intent of the prompt and generating code that applies algorithmic reasoning to produce correct solutions capable of passing diverse test cases while adhering to the syntax of the target programming language. Unlike other language tasks, code generation requires more than accurate token prediction; it demands comprehension of solution-level and structural relationships rather than merely generating the most likely tokens. very large language model (VLLM) are capable of generating detailed steps toward the correct solution of complex tasks where reasoning is crucial in solving the problem. Such reasoning capabilities may be absent in smaller language models. Therefore, in this work, we distill the reasoning capabilities of a VLLM into a smaller, more efficient model that is faster and cheaper to deploy. Our approach trains the model to emulate the reasoning and problem-solving abilities of the VLLM by learning to identify correct solution pathways and establishing a structural correspondence between problem definitions and potential solutions through a novel method of structure-aware loss optimization. This enables the model to transcend token-level generation and to deeply grasp the overarching structure of solutions for given problems. Experimental results show that our fine-tuned model, developed through a cheap and simple to implement process, significantly outperforms our baseline model in terms of pass@1, average data flow, and average syntax match metrics across the MBPP, MBPP Plus, and HumanEval benchmarks.",
@@ -5529,93 +5529,6 @@
     "version_id": "0191d489-69c8-76bb-88b5-fa49fa870a94"
   },
   {
-    "abstract": "Large Language Models have shown impressive capabilities in coding tasks like code generation and code completion, as they have been trained on a large amount of code data. Also, since one of the core pretraining objectives is Next Token Prediction, these models tends to learn surface-level syntactic patterns in code. However, this does not guarantee code comprehension ability i.e. the ability to capture the semantics of the code. In our opinion, this is the reason why these models often underperform on tasks that require deeper semantic understanding, such as code debugging and code optimization. To address this, we propose fine-tuning these models specifically for code comprehension tasks using large-scale datasets, enabling them to develop a more robust understanding of code semantics. We evaluate three code models of varying sizes on a suite of code comprehension tasks designed to assess semantic understanding beyond surface-level syntactic pattern matching. In particular, we analyze performance on the Subjectivity Grading Task and observe that model performance improves after fine-tuning on relevant downstream tasks. The most significant improvement is seen in the QWQ-32B model, where accuracy increases from 70% to 83.47%. A similar or explainable trend is observed across other models, clearly indicating an enhancement in code comprehension ability. Among the models studied, the DPO-fine-tuned Codestral-22B achieves the highest micro-accuracy of 87.66% on the Subjectivity Grading Task.",
-    "author_info": [],
-    "authors": [
-      "Jayant Havare",
-      "Saurav Chaudhary",
-      "Ganesh Ramakrishnan",
-      "Kaushik Maharajan",
-      "Srikanth Tamilselvam"
-    ],
-    "canonical_id": "2507.10641v1",
-    "first_publication_date": "2025-07-14T16:19:49.000Z",
-    "full_authors": [
-      {
-        "full_name": "Jayant Havare",
-        "id": "01985c85-f55e-7f30-996d-3b71aff50e4e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Saurav Chaudhary",
-        "id": "01985c85-f55e-7729-b5cc-7192d2ffd580",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ganesh Ramakrishnan",
-        "id": "01985c82-00f0-76f9-b328-0e945bd32783",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kaushik Maharajan",
-        "id": "01985c85-f55e-7bd7-ba5c-f72295fba6e8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Srikanth Tamilselvam",
-        "id": "01985c82-8c37-7200-a914-8f2f14a854bb",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 10,
-    "github_url": "https://github.com/HKUST-KnowComp/IntentionQA",
-    "id": "019809bc-4088-7500-a524-3e3a22a19ec9",
-    "image_url": "image/2507.10641v1.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 6,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": null,
-        "name": "IBM Research"
-      },
-      {
-        "image": null,
-        "name": "IIT, Bombay"
-      }
-    ],
-    "paper_group_id": "019809bc-4088-7500-a524-3e3a22a19ec9",
-    "paper_summary": null,
-    "publication_date": "2025-07-14T16:19:49.000Z",
-    "title": "A Code Comprehension Benchmark for Large Language Models for Code",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.SE",
-      "fine-tuning",
-      "instruction-tuning",
-      "reasoning",
-      "representation-learning",
-      "sequence-modeling",
-      "transfer-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2507.10641",
-    "updated_at": "2025-07-16T01:51:42.555Z",
-    "version_id": "019809bc-4088-7b45-a298-d1ded1c4cbbe"
-  },
-  {
     "abstract": "Large Language Models (LLMs) have revolutionized code generation but require significant resources and often over-generalize, limiting their task-specific efficiency. Fine-tuning smaller, open-source LLMs provides a cost-effective alternative. However, standard supervised approaches rely only on correct examples, missing valuable insights from failures. We introduce CodeLutra, a framework that leverages both correct and incorrect code attempts. Instead of using only correct solutions, CodeLutra applies iterative preference-based refinement, comparing successful and failed outputs to better approximate desired results. This approach narrows the performance gap with state-of-the-art larger models without requiring massive datasets or auxiliary models. For instance, on a challenging data science coding task, using only 500 samples improved Llama-3-8B's accuracy from 28.2% to 48.6%, approaching GPT-4's level. By learning from both successes and mistakes, CodeLutra provides a scalable and efficient path to high-quality code generation, making smaller open-source models more competitive with leading closed-source alternatives.",
     "author_info": [],
     "authors": [
@@ -5712,6 +5625,266 @@
     "universal_paper_id": "2411.05199",
     "updated_at": "2025-03-03T19:41:23.629Z",
     "version_id": "0197a852-0cd8-72b1-a779-9eefa112518a"
+  },
+  {
+    "abstract": "Recent progress in large language models (LLMs) has advanced automatic code generation, yet most approaches rely on direct, single-step translation from problem descriptions to code, disregarding structured software engineering practices. We introduce a lifecycle-aware framework that systematically incorporates intermediate artifacts such as requirements analysis, state machine modeling, and pseudocode into both the training and inference stages. This design aligns code generation with standard software development phases and enables more structured reasoning. Experiments show that lifecycle-level fine-tuning improves code correctness by up to 75% over the same model before fine-tuning, with performance gains compounding across intermediate stages. Multi-step inference consistently surpasses single-step generation, demonstrating the effectiveness of intermediate scaffolding. Notably, open-source LLMs, once fine-tuned under our framework, match or slightly outperform models pretrained on code. When applied to DeepSeek-Coder-1.3B, our framework yields relative CodeBLEU improvements of 34.3%, 20.0%, 11.2%, and 22.3% over ChatGPT-3.5, ChatGPT-4o-mini, DeepSeek-R1, and LLaMA-8B, respectively. Our pipeline also proves robust with up to 80\\% less training data, confirming its resilience. Ablation studies further reveal that each intermediate artifact contributes distinctly to final code quality, with state machine modeling yielding the most substantial impact. Our source code and detailed experimental data are available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Xing Xing",
+      "Wei Wang",
+      "Lipeng Ma",
+      "Weidong Yang",
+      "Junjie Zheng"
+    ],
+    "canonical_id": "2510.24019v1",
+    "first_publication_date": "2025-10-28T02:54:02.000Z",
+    "full_authors": [
+      {
+        "full_name": "Xing Xing",
+        "id": "01985c82-1f59-7e92-9fa5-85665284fd2c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Wang",
+        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lipeng Ma",
+        "id": "01985c82-8243-7713-8ae9-777d9dc08a2c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weidong Yang",
+        "id": "01985c81-f233-7326-b782-1fd85eeb0f6d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Junjie Zheng",
+        "id": "01985c82-4d83-7ad6-b147-245320cc7951",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019a39bc-2b2f-7453-98ea-3e5de43d03ae",
+    "image_url": "image/2510.24019v1.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 10,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019a39bc-2b2f-7453-98ea-3e5de43d03ae",
+    "paper_summary": null,
+    "publication_date": "2025-10-28T02:54:02.000Z",
+    "title": "Lifecycle-Aware code generation: Leveraging Software Engineering Phases in LLMs",
+    "topics": [
+      "agentic-frameworks",
+      "chain-of-thought",
+      "Computer Science",
+      "cs.AI",
+      "cs.SE",
+      "fine-tuning",
+      "generative-models",
+      "neural-coding",
+      "reasoning",
+      "text-generation",
+      "transfer-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2510.24019",
+    "updated_at": "2025-10-31T10:07:04.495Z",
+    "version_id": "019a39bc-2b4a-73c7-b4d6-04cbfeeb0c1b"
+  },
+  {
+    "abstract": "Large Language Models have shown impressive capabilities in coding tasks like code generation and code completion, as they have been trained on a large amount of code data. Also, since one of the core pretraining objectives is Next Token Prediction, these models tends to learn surface-level syntactic patterns in code. However, this does not guarantee code comprehension ability i.e. the ability to capture the semantics of the code. In our opinion, this is the reason why these models often underperform on tasks that require deeper semantic understanding, such as code debugging and code optimization. To address this, we propose fine-tuning these models specifically for code comprehension tasks using large-scale datasets, enabling them to develop a more robust understanding of code semantics. We evaluate three code models of varying sizes on a suite of code comprehension tasks designed to assess semantic understanding beyond surface-level syntactic pattern matching. In particular, we analyze performance on the Subjectivity Grading Task and observe that model performance improves after fine-tuning on relevant downstream tasks. The most significant improvement is seen in the QWQ-32B model, where accuracy increases from 70% to 83.47%. A similar or explainable trend is observed across other models, clearly indicating an enhancement in code comprehension ability. Among the models studied, the DPO-fine-tuned Codestral-22B achieves the highest micro-accuracy of 87.66% on the Subjectivity Grading Task.",
+    "author_info": [],
+    "authors": [
+      "Jayant Havare",
+      "Saurav Chaudhary",
+      "Ganesh Ramakrishnan",
+      "Kaushik Maharajan",
+      "Srikanth Tamilselvam"
+    ],
+    "canonical_id": "2507.10641v1",
+    "first_publication_date": "2025-07-14T16:19:49.000Z",
+    "full_authors": [
+      {
+        "full_name": "Jayant Havare",
+        "id": "01985c85-f55e-7f30-996d-3b71aff50e4e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Saurav Chaudhary",
+        "id": "01985c85-f55e-7729-b5cc-7192d2ffd580",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ganesh Ramakrishnan",
+        "id": "01985c82-00f0-76f9-b328-0e945bd32783",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kaushik Maharajan",
+        "id": "01985c85-f55e-7bd7-ba5c-f72295fba6e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Srikanth Tamilselvam",
+        "id": "01985c82-8c37-7200-a914-8f2f14a854bb",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 10,
+    "github_url": "https://github.com/HKUST-KnowComp/IntentionQA",
+    "id": "019809bc-4088-7500-a524-3e3a22a19ec9",
+    "image_url": "image/2507.10641v1.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 6,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "IBM Research"
+      },
+      {
+        "image": null,
+        "name": "IIT, Bombay"
+      }
+    ],
+    "paper_group_id": "019809bc-4088-7500-a524-3e3a22a19ec9",
+    "paper_summary": null,
+    "publication_date": "2025-07-14T16:19:49.000Z",
+    "title": "A Code Comprehension Benchmark for Large Language Models for Code",
+    "topics": [
+      "Computer Science",
+      "cs.AI",
+      "cs.SE",
+      "fine-tuning",
+      "instruction-tuning",
+      "reasoning",
+      "representation-learning",
+      "sequence-modeling",
+      "transfer-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2507.10641",
+    "updated_at": "2025-07-16T01:51:42.555Z",
+    "version_id": "019809bc-4088-7b45-a298-d1ded1c4cbbe"
+  },
+  {
+    "abstract": "Large language models (LLMs) have recently demonstrated a remarkable ability to generate code from natural language (NL) prompts. However, in the real world, NL is often too ambiguous to capture the true intent behind programming problems, requiring additional input-output (I/O) specifications. Unfortunately, LLMs can have difficulty aligning their outputs with both the NL prompt and the I/O specification. In this paper, we give a way to mitigate this issue in the context of data science programming, where tasks require explicit I/O specifications for clarity. Specifically, we propose GIFT4Code, a novel approach for the instruction fine-tuning of LLMs with respect to I/O specifications. Our method leverages synthetic data produced by the LLM itself and utilizes execution-derived feedback as a key learning signal. This feedback, in the form of program I/O specifications, is provided to the LLM to facilitate instruction fine-tuning. We evaluated our approach on two challenging data science benchmarks, Arcade and DS-1000. The results demonstrate a significant improvement in the LLM's ability to generate code that is not only executable but also accurately aligned with user specifications, substantially improving the quality of code generation for complex data science tasks.",
+    "author_info": [],
+    "authors": [
+      "Yeming Wen",
+      "Pengcheng Yin",
+      "Kensen Shi",
+      "Henryk Michalewski",
+      "Swarat Chaudhuri",
+      "Alex Polozov"
+    ],
+    "canonical_id": "2402.08073v2",
+    "first_publication_date": "2024-03-15T01:18:45.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yeming Wen",
+        "id": "01985c82-4ab0-7e98-9499-342a8a68505d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Pengcheng Yin",
+        "id": "01985c81-d97e-7dc2-b7f0-39fdab578855",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kensen Shi",
+        "id": "01985c81-f234-77a0-8976-a4be0bd5c420",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Henryk Michalewski",
+        "id": "01985c81-d97f-7b88-a121-01de8c298895",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Swarat Chaudhuri",
+        "id": "01985c82-3304-7680-935a-1fd94ae16320",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Alex Polozov",
+        "id": "01985c81-d85b-7c7d-a323-5d179327c9e3",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "018e3fb0-a508-78c9-87d3-f3e3244da986",
+    "image_url": "image/2402.08073v2.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 81,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/university-of-texas-at-austin.jpeg",
+        "name": "University of Texas at Austin"
+      },
+      {
+        "image": null,
+        "name": "Google Inc."
+      }
+    ],
+    "paper_group_id": "018e3fb0-a508-78c9-87d3-f3e3244da986",
+    "paper_summary": null,
+    "publication_date": "2024-03-15T01:18:45.000Z",
+    "title": "Grounding Data Science Code Generation with Input-Output Specifications",
+    "topics": [
+      "code-generation",
+      "Computer Science",
+      "cs.LG",
+      "cs.PL",
+      "cs.SE",
+      "machine-translation",
+      "neural-coding",
+      "self-supervised-learning",
+      "weak-supervision"
+    ],
+    "universal_paper_id": "2402.08073",
+    "updated_at": "2025-03-03T19:57:57.213Z",
+    "version_id": "018e3fb0-a508-7a18-a12e-18ea6245723e"
   },
   {
     "abstract": "Large language models are increasingly post-trained with reinforcement learning in verifiable domains such as code and math. Yet, current methods for reinforcement learning with verifiable rewards (RLVR) learn only from a scalar outcome reward per attempt, creating a severe credit-assignment bottleneck. Many verifiable environments actually provide rich textual feedback, such as runtime errors or judge evaluations, that explain why an attempt failed. We formalize this setting as reinforcement learning with rich feedback and introduce Self-Distillation Policy Optimization (SDPO), which converts tokenized feedback into a dense learning signal without any external teacher or explicit reward model. SDPO treats the current model conditioned on feedback as a self-teacher and distills its feedback-informed next-token predictions back into the policy. In this way, SDPO leverages the model's ability to retrospectively identify its own mistakes in-context. Across scientific reasoning, tool use, and competitive programming on LiveCodeBench v6, SDPO improves sample efficiency and final accuracy over strong RLVR baselines. Notably, SDPO also outperforms baselines in standard RLVR environments that only return scalar feedback by using successful rollouts as implicit feedback for failed attempts. Finally, applying SDPO to individual questions at test time accelerates discovery on difficult binary-reward tasks, achieving the same discovery probability as best-of-k sampling or multi-turn conversations with 3x fewer attempts.",
@@ -5854,269 +6027,83 @@
     "version_id": "019c211e-ac29-7348-8e33-c9cbe6129118"
   },
   {
-    "abstract": "Large language models (LLMs) have recently demonstrated a remarkable ability to generate code from natural language (NL) prompts. However, in the real world, NL is often too ambiguous to capture the true intent behind programming problems, requiring additional input-output (I/O) specifications. Unfortunately, LLMs can have difficulty aligning their outputs with both the NL prompt and the I/O specification. In this paper, we give a way to mitigate this issue in the context of data science programming, where tasks require explicit I/O specifications for clarity. Specifically, we propose GIFT4Code, a novel approach for the instruction fine-tuning of LLMs with respect to I/O specifications. Our method leverages synthetic data produced by the LLM itself and utilizes execution-derived feedback as a key learning signal. This feedback, in the form of program I/O specifications, is provided to the LLM to facilitate instruction fine-tuning. We evaluated our approach on two challenging data science benchmarks, Arcade and DS-1000. The results demonstrate a significant improvement in the LLM's ability to generate code that is not only executable but also accurately aligned with user specifications, substantially improving the quality of code generation for complex data science tasks.",
+    "abstract": "LLMs' code generation capabilities have yielded substantial improvements in the effectiveness of programming tasks. However, LLM-generated code still suffers from compilation and runtime errors. Existing offline preference optimization methods primarily focus on enhancing LLMs' coding abilities using pass/fail signals in the preference data, overlooking the deep-level error types in the failed codes. To address this, we propose Adaptively Progressive Preference Optimization (AP2O) for coding (i.e., AP2O-Coder), a method that guides LLMs adaptively and methodically to reduce code errors for code generation. Specifically, we construct an error notebook from failed codes and progressively optimize the LLM to correct errors type by type. Furthermore, we adaptively replay error types to tailor to the LLM's changing weaknesses throughout the training process. Through extensive experiments on both code and general LLMs (Llama, Qwen, and DeepSeek series) with parameters ranging from 0.5B to 34B, our AP2O-Coder improves code generation performance by up to 3% in pass@k while using less preference data. Code: this https URL",
     "author_info": [],
     "authors": [
-      "Yeming Wen",
-      "Pengcheng Yin",
-      "Kensen Shi",
-      "Henryk Michalewski",
-      "Swarat Chaudhuri",
-      "Alex Polozov"
+      "Jianqing Zhang",
+      "Wei Xia",
+      "Hande Dong",
+      "Qiang Lin",
+      "Jian Cao"
     ],
-    "canonical_id": "2402.08073v2",
-    "first_publication_date": "2024-03-15T01:18:45.000Z",
+    "canonical_id": "2510.2393v3",
+    "first_publication_date": "2025-10-01T03:17:08.000Z",
     "full_authors": [
       {
-        "full_name": "Yeming Wen",
-        "id": "01985c82-4ab0-7e98-9499-342a8a68505d",
+        "full_name": "Jianqing Zhang",
+        "id": "01985c81-f062-7426-9f95-7fce0e1baeaa",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Pengcheng Yin",
-        "id": "01985c81-d97e-7dc2-b7f0-39fdab578855",
+        "full_name": "Wei Xia",
+        "id": "01985c81-f153-7ead-83de-330861113176",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Kensen Shi",
-        "id": "01985c81-f234-77a0-8976-a4be0bd5c420",
+        "full_name": "Hande Dong",
+        "id": "01985c82-063c-770a-94fc-0e68c5d44ffc",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Henryk Michalewski",
-        "id": "01985c81-d97f-7b88-a121-01de8c298895",
+        "full_name": "Qiang Lin",
+        "id": "01985c82-5507-707b-be98-fe9f77734b9a",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Swarat Chaudhuri",
-        "id": "01985c82-3304-7680-935a-1fd94ae16320",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Alex Polozov",
-        "id": "01985c81-d85b-7c7d-a323-5d179327c9e3",
+        "full_name": "Jian Cao",
+        "id": "01985c81-f062-7f8d-9004-bd0d9ebed080",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "018e3fb0-a508-78c9-87d3-f3e3244da986",
-    "image_url": "image/2402.08073v2.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 81,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/university-of-texas-at-austin.jpeg",
-        "name": "University of Texas at Austin"
-      },
-      {
-        "image": null,
-        "name": "Google Inc."
-      }
-    ],
-    "paper_group_id": "018e3fb0-a508-78c9-87d3-f3e3244da986",
-    "paper_summary": null,
-    "publication_date": "2024-03-15T01:18:45.000Z",
-    "title": "Grounding Data Science Code Generation with Input-Output Specifications",
-    "topics": [
-      "code-generation",
-      "Computer Science",
-      "cs.LG",
-      "cs.PL",
-      "cs.SE",
-      "machine-translation",
-      "neural-coding",
-      "self-supervised-learning",
-      "weak-supervision"
-    ],
-    "universal_paper_id": "2402.08073",
-    "updated_at": "2025-03-03T19:57:57.213Z",
-    "version_id": "018e3fb0-a508-7a18-a12e-18ea6245723e"
-  },
-  {
-    "abstract": "Recent progress in large language models (LLMs) has advanced automatic code generation, yet most approaches rely on direct, single-step translation from problem descriptions to code, disregarding structured software engineering practices. We introduce a lifecycle-aware framework that systematically incorporates intermediate artifacts such as requirements analysis, state machine modeling, and pseudocode into both the training and inference stages. This design aligns code generation with standard software development phases and enables more structured reasoning. Experiments show that lifecycle-level fine-tuning improves code correctness by up to 75% over the same model before fine-tuning, with performance gains compounding across intermediate stages. Multi-step inference consistently surpasses single-step generation, demonstrating the effectiveness of intermediate scaffolding. Notably, open-source LLMs, once fine-tuned under our framework, match or slightly outperform models pretrained on code. When applied to DeepSeek-Coder-1.3B, our framework yields relative CodeBLEU improvements of 34.3%, 20.0%, 11.2%, and 22.3% over ChatGPT-3.5, ChatGPT-4o-mini, DeepSeek-R1, and LLaMA-8B, respectively. Our pipeline also proves robust with up to 80\\% less training data, confirming its resilience. Ablation studies further reveal that each intermediate artifact contributes distinctly to final code quality, with state machine modeling yielding the most substantial impact. Our source code and detailed experimental data are available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Xing Xing",
-      "Wei Wang",
-      "Lipeng Ma",
-      "Weidong Yang",
-      "Junjie Zheng"
-    ],
-    "canonical_id": "2510.24019v1",
-    "first_publication_date": "2025-10-28T02:54:02.000Z",
-    "full_authors": [
-      {
-        "full_name": "Xing Xing",
-        "id": "01985c82-1f59-7e92-9fa5-85665284fd2c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Wang",
-        "id": "01985c81-e286-7b76-ab15-b8a0516593d7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lipeng Ma",
-        "id": "01985c82-8243-7713-8ae9-777d9dc08a2c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weidong Yang",
-        "id": "01985c81-f233-7326-b782-1fd85eeb0f6d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Junjie Zheng",
-        "id": "01985c82-4d83-7ad6-b147-245320cc7951",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019a39bc-2b2f-7453-98ea-3e5de43d03ae",
-    "image_url": "image/2510.24019v1.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 10,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019a39bc-2b2f-7453-98ea-3e5de43d03ae",
-    "paper_summary": null,
-    "publication_date": "2025-10-28T02:54:02.000Z",
-    "title": "Lifecycle-Aware code generation: Leveraging Software Engineering Phases in LLMs",
-    "topics": [
-      "agentic-frameworks",
-      "chain-of-thought",
-      "Computer Science",
-      "cs.AI",
-      "cs.SE",
-      "fine-tuning",
-      "generative-models",
-      "neural-coding",
-      "reasoning",
-      "text-generation",
-      "transfer-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2510.24019",
-    "updated_at": "2025-10-31T10:07:04.495Z",
-    "version_id": "019a39bc-2b4a-73c7-b4d6-04cbfeeb0c1b"
-  },
-  {
-    "abstract": "Training Large Language Models (LLMs) with synthetic data is a prevalent\npractice in code generation. A key approach is self-training, where LLMs are\niteratively trained on self-generated correct code snippets. In this case, the\nself-generated codes are drawn from a conditional distribution, conditioned on\na specific seed description. However, the seed description is not the only\nvalid representation that aligns with its intended meaning. With all valid\ndescriptions and codes forming a joint space, codes drawn from the conditional\ndistribution would lead to an underrepresentation of the full description-code\nspace. As such, we propose Gibbs Fine-Tuning (GiFT), a novel self-training\nmethod inspired by Gibbs sampling. GiFT allows self-generated data to be drawn\nfrom the marginal distribution of the joint space, thereby mitigating the\nbiases inherent in conditional sampling. We provide a theoretical analysis\ndemonstrating the potential benefits of fine-tuning LLMs with code derived from\nthe marginal distribution. Furthermore, we propose a perplexity-based code\nselection method to mitigate the imbalanced long-tail distribution of the\nself-generated codes. Empirical evaluation of two LLMs across four datasets\ndemonstrates that GiFT achieves superior performance, particularly on more\nchallenging benchmarks. Source code is available at\nthis https URL",
-    "author_info": [
-      {
-        "avatar": null,
-        "blueskyUsername": null,
-        "githubUsername": null,
-        "googleScholarId": "YpEaYXkAAAAJ",
-        "id": "01984e75-7957-77e6-b217-647ad0e0620f",
-        "institution": "NTU",
-        "linkedinUsername": null,
-        "orcidId": null,
-        "publicEmail": null,
-        "realName": "Enoche Chow",
-        "reputation": 15,
-        "role": "user",
-        "username": "enoche-chow",
-        "verified": false,
-        "weeklyReputation": 0,
-        "xUsername": null
-      }
-    ],
-    "authors": [
-      "Haochen Li",
-      "Wanjin Feng",
-      "Xin Zhou",
-      "Zhiqi Shen"
-    ],
-    "canonical_id": "2502.11466v2",
-    "first_publication_date": "2025-02-17T05:52:44.000Z",
-    "full_authors": [
-      {
-        "full_name": "Haochen Li",
-        "id": "01985c81-ec40-79da-a94c-ef46dbb7e6da",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wanjin Feng",
-        "id": "01985c84-2f98-7042-b03a-8c381a67bd6b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xin Zhou",
-        "id": "01985c81-e1bc-725d-92cd-b47e3fa86607",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiqi Shen",
-        "id": "01985c82-39ba-7561-8afb-2f80931206e7",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "01951277-4fe0-7df1-a91a-c0bae81e44c5",
-    "image_url": "image/2502.11466v2.png",
+    "id": "019b500a-dd16-7278-a1b1-4102378e64a4",
+    "image_url": "image/2510.2393v3.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 58,
+        "all": 4,
         "last_7_days": 0
       },
       "x_likes": 0
     },
     "organization_info": [
       {
-        "image": "images/organizations/nanyang-technological-university.png",
-        "name": "Nanyang Technological University"
+        "image": "images/organizations/shanghai-jiao-tong-university.png",
+        "name": "Shanghai Jiao Tong University"
+      },
+      {
+        "image": "images/organizations/tencent.png",
+        "name": "Tencent"
       }
     ],
-    "paper_group_id": "01951277-4fe0-7df1-a91a-c0bae81e44c5",
+    "paper_group_id": "019b500a-dd16-7278-a1b1-4102378e64a4",
     "paper_summary": null,
-    "publication_date": "2025-05-21T08:29:49.000Z",
-    "title": "GiFT: Gibbs Fine-Tuning for Code Generation",
+    "publication_date": "2025-11-23T08:16:39.000Z",
+    "title": "AP2O-Coder: Human-Inspired Progressive Optimization to Fix LLM Code Errors",
     "topics": [
       "Computer Science",
-      "cs.CL",
-      "cs.LG",
-      "cs.SE",
-      "fine-tuning",
-      "self-supervised-learning",
-      "text-generation"
+      "cs.SE"
     ],
-    "universal_paper_id": "2502.11466",
-    "updated_at": "2025-03-03T19:36:05.503Z",
-    "version_id": "0196f1f6-8c48-7684-a3bb-8a424eb871c8"
+    "universal_paper_id": "2510.2393",
+    "updated_at": "2025-12-24T11:07:27.894Z",
+    "version_id": "019b500a-dd39-7dc5-ad06-85b13bc05da8"
   },
   {
     "abstract": "With the rise of powerful closed-sourced LLMs (ChatGPT, GPT-4), there are increasing interests in distilling the capabilies of close-sourced LLMs to smaller open-sourced LLMs. Previous distillation methods usually prompt ChatGPT to generate a set of instructions and answers, for the student model to learn. However, such standard distillation approach neglects the merits and conditions of the student model. Inspired by modern teaching principles, we design a personalised distillation process, in which the student attempts to solve a task first, then the teacher provides an adaptive refinement for the student to improve. Instead of feeding the student with teacher's prior, personalised distillation enables personalised learning for the student model, as it only learns on examples it makes mistakes upon and learns to improve its own solution. On code generation, personalised distillation consistently outperforms standard distillation with only one third of the data. With only 2.5-3K personalised examples that incur a data-collection cost of 4-6$, we boost CodeGen-mono-16B by 7% to achieve 36.4% pass@1 and StarCoder by 12.2% to achieve 45.8% pass@1 on HumanEval.",
@@ -6390,85 +6377,6 @@
     "universal_paper_id": "2402.18734",
     "updated_at": "2025-03-03T19:59:02.293Z",
     "version_id": "018df1d4-c288-738d-ac30-6301ebfefc47"
-  },
-  {
-    "abstract": "LLMs' code generation capabilities have yielded substantial improvements in the effectiveness of programming tasks. However, LLM-generated code still suffers from compilation and runtime errors. Existing offline preference optimization methods primarily focus on enhancing LLMs' coding abilities using pass/fail signals in the preference data, overlooking the deep-level error types in the failed codes. To address this, we propose Adaptively Progressive Preference Optimization (AP2O) for coding (i.e., AP2O-Coder), a method that guides LLMs adaptively and methodically to reduce code errors for code generation. Specifically, we construct an error notebook from failed codes and progressively optimize the LLM to correct errors type by type. Furthermore, we adaptively replay error types to tailor to the LLM's changing weaknesses throughout the training process. Through extensive experiments on both code and general LLMs (Llama, Qwen, and DeepSeek series) with parameters ranging from 0.5B to 34B, our AP2O-Coder improves code generation performance by up to 3% in pass@k while using less preference data. Code: this https URL",
-    "author_info": [],
-    "authors": [
-      "Jianqing Zhang",
-      "Wei Xia",
-      "Hande Dong",
-      "Qiang Lin",
-      "Jian Cao"
-    ],
-    "canonical_id": "2510.2393v3",
-    "first_publication_date": "2025-10-01T03:17:08.000Z",
-    "full_authors": [
-      {
-        "full_name": "Jianqing Zhang",
-        "id": "01985c81-f062-7426-9f95-7fce0e1baeaa",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wei Xia",
-        "id": "01985c81-f153-7ead-83de-330861113176",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hande Dong",
-        "id": "01985c82-063c-770a-94fc-0e68c5d44ffc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qiang Lin",
-        "id": "01985c82-5507-707b-be98-fe9f77734b9a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jian Cao",
-        "id": "01985c81-f062-7f8d-9004-bd0d9ebed080",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b500a-dd16-7278-a1b1-4102378e64a4",
-    "image_url": "image/2510.2393v3.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 4,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/shanghai-jiao-tong-university.png",
-        "name": "Shanghai Jiao Tong University"
-      },
-      {
-        "image": "images/organizations/tencent.png",
-        "name": "Tencent"
-      }
-    ],
-    "paper_group_id": "019b500a-dd16-7278-a1b1-4102378e64a4",
-    "paper_summary": null,
-    "publication_date": "2025-11-23T08:16:39.000Z",
-    "title": "AP2O-Coder: Human-Inspired Progressive Optimization to Fix LLM Code Errors",
-    "topics": [
-      "Computer Science",
-      "cs.SE"
-    ],
-    "universal_paper_id": "2510.2393",
-    "updated_at": "2025-12-24T11:07:27.894Z",
-    "version_id": "019b500a-dd39-7dc5-ad06-85b13bc05da8"
   },
   {
     "abstract": "Large language models are increasingly post-trained with reinforcement learning in verifiable domains such as code and math. Yet, current methods for reinforcement learning with verifiable rewards (RLVR) learn only from a scalar outcome reward per attempt, creating a severe credit-assignment bottleneck. Many verifiable environments actually provide rich textual feedback, such as runtime errors or judge evaluations, that explain why an attempt failed. We formalize this setting as reinforcement learning with rich feedback and introduce Self-Distillation Policy Optimization (SDPO), which converts tokenized feedback into a dense learning signal without any external teacher or explicit reward model. SDPO treats the current model conditioned on feedback as a self-teacher and distills its feedback-informed next-token predictions back into the policy. In this way, SDPO leverages the model's ability to retrospectively identify its own mistakes in-context. Across scientific reasoning, tool use, and competitive programming on LiveCodeBench v6, SDPO improves sample efficiency and final accuracy over strong RLVR baselines. Notably, SDPO also outperforms baselines in standard RLVR environments that only return scalar feedback by using successful rollouts as implicit feedback for failed attempts. Finally, applying SDPO to individual questions at test time accelerates discovery on difficult binary-reward tasks, achieving the same discovery probability as best-of-k sampling or multi-turn conversations with 3x fewer attempts.",
@@ -7543,5 +7451,97 @@
     "universal_paper_id": "2604.03253",
     "updated_at": "2026-04-07T08:55:39.011Z",
     "version_id": "019d6727-8f4a-7989-992a-1c71a9794967"
+  },
+  {
+    "abstract": "Training Large Language Models (LLMs) with synthetic data is a prevalent\npractice in code generation. A key approach is self-training, where LLMs are\niteratively trained on self-generated correct code snippets. In this case, the\nself-generated codes are drawn from a conditional distribution, conditioned on\na specific seed description. However, the seed description is not the only\nvalid representation that aligns with its intended meaning. With all valid\ndescriptions and codes forming a joint space, codes drawn from the conditional\ndistribution would lead to an underrepresentation of the full description-code\nspace. As such, we propose Gibbs Fine-Tuning (GiFT), a novel self-training\nmethod inspired by Gibbs sampling. GiFT allows self-generated data to be drawn\nfrom the marginal distribution of the joint space, thereby mitigating the\nbiases inherent in conditional sampling. We provide a theoretical analysis\ndemonstrating the potential benefits of fine-tuning LLMs with code derived from\nthe marginal distribution. Furthermore, we propose a perplexity-based code\nselection method to mitigate the imbalanced long-tail distribution of the\nself-generated codes. Empirical evaluation of two LLMs across four datasets\ndemonstrates that GiFT achieves superior performance, particularly on more\nchallenging benchmarks. Source code is available at\nthis https URL",
+    "author_info": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "YpEaYXkAAAAJ",
+        "id": "01984e75-7957-77e6-b217-647ad0e0620f",
+        "institution": "NTU",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Enoche Chow",
+        "reputation": 15,
+        "role": "user",
+        "username": "enoche-chow",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      }
+    ],
+    "authors": [
+      "Haochen Li",
+      "Wanjin Feng",
+      "Xin Zhou",
+      "Zhiqi Shen"
+    ],
+    "canonical_id": "2502.11466v2",
+    "first_publication_date": "2025-02-17T05:52:44.000Z",
+    "full_authors": [
+      {
+        "full_name": "Haochen Li",
+        "id": "01985c81-ec40-79da-a94c-ef46dbb7e6da",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wanjin Feng",
+        "id": "01985c84-2f98-7042-b03a-8c381a67bd6b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xin Zhou",
+        "id": "01985c81-e1bc-725d-92cd-b47e3fa86607",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiqi Shen",
+        "id": "01985c82-39ba-7561-8afb-2f80931206e7",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "01951277-4fe0-7df1-a91a-c0bae81e44c5",
+    "image_url": "image/2502.11466v2.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 58,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/nanyang-technological-university.png",
+        "name": "Nanyang Technological University"
+      }
+    ],
+    "paper_group_id": "01951277-4fe0-7df1-a91a-c0bae81e44c5",
+    "paper_summary": null,
+    "publication_date": "2025-05-21T08:29:49.000Z",
+    "title": "GiFT: Gibbs Fine-Tuning for Code Generation",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "cs.LG",
+      "cs.SE",
+      "fine-tuning",
+      "self-supervised-learning",
+      "text-generation"
+    ],
+    "universal_paper_id": "2502.11466",
+    "updated_at": "2025-03-03T19:36:05.503Z",
+    "version_id": "0196f1f6-8c48-7684-a3bb-8a424eb871c8"
   }
 ]

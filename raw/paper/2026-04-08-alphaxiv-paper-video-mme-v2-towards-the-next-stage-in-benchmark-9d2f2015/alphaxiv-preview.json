@@ -1,0 +1,197 @@
+{
+  "abstract": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark designed to rigorously evaluate the robustness and faithfulness of video understanding. To systematically evaluate model capabilities, we design a \\textbf{progressive tri-level hierarchy} that incrementally increases the complexity of video comprehension, ranging from multi-point visual information aggregation, to temporal dynamics modeling, and ultimately to complex multimodal reasoning. Besides, in contrast to conventional per-question accuracy, we propose a \\textbf{group-based non-linear evaluation} strategy that enforces both consistency across related queries and coherence in multi-step reasoning. It penalizes fragmented or guess-based correctness and assigns credit only to answers supported by valid reasoning. To guarantee data quality, Video-MME-v2 is constructed through a rigorously controlled human annotation pipeline, involving 12 annotators and 50 independent reviewers. Backed by \\textbf{3,300 human-hours} and up to \\textbf{5 rounds} of quality assurance, Video-MME-v2 aims to serve as one of the most authoritative video benchmarks. Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where errors in visual information aggregation and temporal modeling propagate to limit high-level reasoning. We further find that thinking-based reasoning is highly dependent on textual cues, improving performance with subtitles but sometimes degrading it in purely visual settings. By exposing these limitations, Video-MME-v2 establishes a demanding new testbed for the development of next-generation video MLLMs.",
+  "author_info": [],
+  "authors": [
+    "Chaoyou Fu",
+    "Haozhi Yuan",
+    "Yuhao Dong",
+    "Yi-Fan Zhang",
+    "Yunhang Shen",
+    "Xiaoxing Hu",
+    "Xueying Li",
+    "Jinsen Su",
+    "Chengwu Long",
+    "Xiaoyao Xie",
+    "Yongkang Xie",
+    "Xiawu Zheng",
+    "Xue Yang",
+    "Haoyu Cao",
+    "Yunsheng Wu",
+    "Ziwei Liu",
+    "Xing Sun",
+    "Caifeng Shan",
+    "Ran He"
+  ],
+  "canonical_id": "2604.05015v1",
+  "first_publication_date": "2026-04-06T17:59:56.000Z",
+  "full_authors": [
+    {
+      "full_name": "Chaoyou Fu",
+      "id": "01985c81-f818-7b51-9893-0f7b529c1805",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Haozhi Yuan",
+      "id": "01985c84-9198-7fba-9973-19ed904bd835",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuhao Dong",
+      "id": "01985c82-0fce-7303-bd52-16faa93078b4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yi-Fan Zhang",
+      "id": "01985c81-f818-7959-9d5f-d5a3591672bf",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yunhang Shen",
+      "id": "01985c82-3305-7ec2-b8a3-e5188259046b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaoxing Hu",
+      "id": "01985c84-e2e3-74b4-9946-470707ff6732",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xueying Li",
+      "id": "01985c82-5e6a-7b5c-98e7-92bc113a05d2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jinsen Su",
+      "id": "019d6af0-8a4e-7bfd-9b5d-539fa91dc2e8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chengwu Long",
+      "id": "019d6af0-8a50-72f9-9db3-9f07f7e8dad1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaoyao Xie",
+      "id": "01985c85-13ad-7a89-85b8-cd5b3a186933",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yongkang Xie",
+      "id": "019d6af0-8a52-726e-ab59-bd37d347280b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiawu Zheng",
+      "id": "01985c81-e4e5-7418-8799-6b0054306eb2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xue Yang",
+      "id": "01985c81-e5aa-784b-9c3f-99bdaab3c182",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Haoyu Cao",
+      "id": "01985c82-a900-74be-a36c-684bbbec7ca9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yunsheng Wu",
+      "id": "01985c82-3305-7e3b-ae1c-2846bcdc146d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ziwei Liu",
+      "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xing Sun",
+      "id": "01985c82-204e-7fef-a4d9-badaaea062ff",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Caifeng Shan",
+      "id": "01985c82-3305-738d-a50f-c20c1478e9b7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ran He",
+      "id": "01985c81-d97f-779c-b2a1-3a5ce9ba735d",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 149,
+  "github_url": "https://github.com/MME-Benchmarks/Video-MME-v2",
+  "id": "019d6af0-8a2c-79b7-a5e5-5c4e3e5c1d12",
+  "image_url": "image/2604.05015v1.png",
+  "metrics": {
+    "public_total_votes": 11,
+    "total_votes": 3,
+    "visits_count": {
+      "all": 177,
+      "last_7_days": 177
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6af0-8a2c-79b7-a5e5-5c4e3e5c1d12",
+  "paper_summary": {
+    "keyInsights": [
+      "A substantial performance gap exists between frontier MLLMs and human experts, with the best models achieving only about half of human reliability and coherent reasoning in complex video understanding.",
+      "Model failures in high-level reasoning are often due to hierarchical bottlenecks, where accumulated errors from lower-level visual perception and temporal modeling propagate upwards.",
+      "The group-based non-linear scoring method is crucial for revealing a lack of robustness and faithfulness in MLLMs that traditional average accuracy metrics fail to capture."
+    ],
+    "originalProblem": [
+      "Existing video understanding benchmarks for MLLMs are saturated, leading to an overestimation of model capabilities and a discrepancy between reported scores and real-world performance.",
+      "Current evaluation frameworks often lack a comprehensive, structured hierarchy for holistic assessment, treating different capabilities as isolated aspects.",
+      "Traditional per-question accuracy metrics are insufficient for robust evaluation, overlooking the need for consistent comprehension and coherent multi-step reasoning."
+    ],
+    "results": [
+      "Human experts achieved a Non-Lin Score of 90.7%, while the best commercial model, Gemini-3-Pro, scored 49.4%, indicating a 41.3-point gap in reliable and coherent video understanding.",
+      "All evaluated models showed monotonic performance degradation from Level 1 (visual aggregation) to Level 3 (complex reasoning), highlighting the presence of hierarchical bottlenecks.",
+      "Native audio integration in omni-modal architectures provided significant performance gains (e.g., Gemini-3-Pro improved by 11.2 points in Non-Lin Score), underscoring its complementary value."
+    ],
+    "solution": [
+      "Video-MME-v2 establishes a progressive tri-level capability hierarchy, assessing skills from foundational visual aggregation to temporal dynamics and complex multimodal reasoning.",
+      "It implements a novel group-based non-linear evaluation strategy that penalizes fragmented correctness and rewards consistent performance and faithful reasoning chains.",
+      "The benchmark dataset was meticulously constructed using a rigorous human annotation pipeline, including recency-oriented video collection and adversarial question design to ensure high quality and mitigate data contamination."
+    ],
+    "summary": "Video-MME-v2 introduces a benchmark for evaluating the robustness and faithfulness of multimodal large language models in comprehensive video understanding. It proposes a progressive tri-level evaluation hierarchy and a group-based non-linear scoring mechanism, revealing a 41.3-point performance gap between human experts and the best MLLMs, and identifying hierarchical bottlenecks in current models."
+  },
+  "publication_date": "2026-04-06T17:59:56.000Z",
+  "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "data-curation",
+    "explainable-ai",
+    "multi-modal-learning",
+    "reasoning",
+    "time-series-analysis",
+    "video-understanding",
+    "vision-language-models"
+  ],
+  "universal_paper_id": "2604.05015",
+  "updated_at": "2026-04-08T02:34:02.156Z",
+  "version_id": "019d6af0-8a91-7167-8065-44ff3251ba76"
+}

@@ -34,7 +34,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5211f632f23f3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:51.852049Z'
+fetched_at: '2026-04-09T08:09:49.992173Z'
 short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:14:05.918339Z'

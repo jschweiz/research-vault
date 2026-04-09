@@ -6,7 +6,7 @@
   "googleCitationId": null,
   "groupId": "019d6086-b0ee-70bb-9a73-f40ebf136f94",
   "license": "http://creativecommons.org/licenses/by/4.0/",
-  "publicationDate": 1775231407000,
+  "publicationDate": 1775636556000,
   "resources": [],
   "sourceName": "alphaXiv",
   "sourceUrl": "https://arxiv.org/abs/2604.03128",
@@ -14,8 +14,8 @@
   "type": "public",
   "universalId": "2604.03128",
   "uploader": null,
-  "versionId": "019d6086-b131-734a-86cd-85f6423a901b",
-  "versionLabel": "v1",
-  "versionOrder": 1,
+  "versionId": "019d6fb0-bfe9-70b7-af65-04c4cb27eb7d",
+  "versionLabel": "v2",
+  "versionOrder": 2,
   "versions": []
 }

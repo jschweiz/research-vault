@@ -1,0 +1,21 @@
+{
+  "abstract": "World action models (WAMs) have emerged as a promising direction for robot policy learning, as they can leverage powerful video backbones to model the future states. However, existing approaches often rely on separate action modules, or use action representations that are not pixel-grounded, making it difficult to fully exploit the pretrained knowledge of video models and limiting transfer across viewpoints and environments. In this work, we present Action Images, a unified world action model that formulates policy learning as multiview video generation. Instead of encoding control as low-dimensional tokens, we translate 7-DoF robot actions into interpretable action images: multi-view action videos that are grounded in 2D pixels and explicitly track robot-arm motion. This pixel-grounded action representation allows the video backbone itself to act as a zero-shot policy, without a separate policy head or action module. Beyond control, the same unified model supports video-action joint generation, action-conditioned video generation, and action labeling under a shared representation. On RLBench and real-world evaluations, our model achieves the strongest zero-shot success rates and improves video-action joint generation quality over prior video-space world models, suggesting that interpretable action images are a promising route to policy learning.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775584770000,
+  "googleCitationId": null,
+  "groupId": "019d6ace-b299-761c-925a-07359b48eb4d",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775584770000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.06168",
+  "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+  "type": "public",
+  "universalId": "2604.06168",
+  "uploader": null,
+  "versionId": "019d6ace-b2c0-7a95-92ff-a3406b0a3664",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

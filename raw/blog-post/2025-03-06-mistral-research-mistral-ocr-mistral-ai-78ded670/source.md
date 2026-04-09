@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-ocr
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:22.087412Z'
+fetched_at: '2026-04-09T08:09:08.578917Z'
 short_summary: Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multilingual capabilities. It is designed to extract content from various document types and offers features like doc-as-prompt and self-hosting options.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:56:22.369505Z'

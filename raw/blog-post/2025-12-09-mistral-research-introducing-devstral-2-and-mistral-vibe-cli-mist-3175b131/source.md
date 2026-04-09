@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/devstral-2-vibe-cli
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:52.040532Z'
+fetched_at: '2026-04-09T08:08:36.107748Z'
 short_summary: Mistral AI released Devstral 2, a next-generation open coding model, and the Mistral Vibe CLI, a command-line assistant for code automation.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T13:59:31.897656Z'

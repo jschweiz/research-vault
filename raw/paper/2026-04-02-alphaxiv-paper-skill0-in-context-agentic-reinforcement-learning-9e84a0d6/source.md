@@ -17,7 +17,7 @@ authors:
 - Yongliang Shen
 published_at: '2026-04-02T17:03:05Z'
 ingested_at: '2026-04-07T21:41:39.019232Z'
-content_hash: b9f729e13a2680c4ab41a7153b54ff30d337febdc333557634d71154af472827
+content_hash: 8889eceafa76b2f671142c8c92a7fbd0d21761cf5f1428e62095984c0fb6994f
 tags:
 - paper
 - alphaxiv
@@ -59,7 +59,7 @@ canonical_url: https://www.alphaxiv.org/abs/2604.02268
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:42.803418Z'
+fetched_at: '2026-04-09T08:11:38.405853Z'
 short_summary: The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context token costs by over 5 times compared to skill-augmented methods.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -125,10 +125,10 @@ The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enab
 
 ## Metrics
 
-- Visits (all): 1762
-- Visits (last 7 days): 1762
-- Total votes: 43
-- Public total votes: 137
+- Visits (all): 1923
+- Visits (last 7 days): 1923
+- Total votes: 48
+- Public total votes: 142
 - X likes: 0
 
 ## Abstract

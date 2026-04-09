@@ -61,11 +61,11 @@
   "id": "019d6b04-0a6f-7458-8574-e0d84a7b168e",
   "image_url": "image/2604.06169v1.png",
   "metrics": {
-    "public_total_votes": 15,
-    "total_votes": 0,
+    "public_total_votes": 22,
+    "total_votes": 7,
     "visits_count": {
-      "all": 226,
-      "last_7_days": 226
+      "all": 741,
+      "last_7_days": 741
     },
     "x_likes": 0
   },

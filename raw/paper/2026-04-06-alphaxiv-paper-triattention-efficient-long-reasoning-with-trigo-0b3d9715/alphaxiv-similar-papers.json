@@ -894,7 +894,26 @@
   },
   {
     "abstract": "Large Language Models (LLMs) have shown remarkable comprehension abilities but face challenges in GPU memory usage during inference, hindering their scalability for real-time applications like chatbots. To accelerate inference, we store computed keys and values (KV cache) in the GPU memory. Existing methods study the KV cache compression to reduce memory by pruning the pre-computed KV cache. However, they neglect the inter-layer dependency between layers and huge memory consumption in pre-computation. To explore these deficiencies, we find that the number of crucial keys and values that influence future generations decreases layer by layer and we can extract them by the consistency in attention weights. Based on the findings, we propose PyramidInfer, a method that compresses the KV cache by layer-wise retaining crucial context. PyramidInfer saves significant memory by computing fewer keys and values without sacrificing performance. Experimental results show PyramidInfer improves 2.2x throughput compared to Accelerate with over 54% GPU memory reduction in KV cache.",
-    "author_info": [],
+    "author_info": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "fXejTecAAAAJ",
+        "id": "01993cf1-7215-7659-b3de-f27390ae5f7b",
+        "institution": null,
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Xiaodong Han",
+        "reputation": 0,
+        "role": "user",
+        "username": "xiaodong-han",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      }
+    ],
     "authors": [
       "Dongjie Yang",
       "XiaoDong Han",
@@ -2779,6 +2798,73 @@
     "version_id": "01952348-32a8-79e5-abc2-8e64ec122d65"
   },
   {
+    "abstract": "With the rapid development of large language models (LLMs), handling long context has become one of the vital abilities in LLMs. Such long-context ability is accompanied by difficulties in deployment, especially due to the increased consumption of KV cache. There is certain work aiming to optimize the memory footprint of KV cache, inspired by the observation that attention heads can be categorized into retrieval heads that are of great significance and streaming heads that are of less significance. Typically, identifying the streaming heads and and waiving the KV cache in the streaming heads would largely reduce the overhead without hurting the performance that much. However, since employing both retrieval and streaming heads in one layer decomposes one large round of attention computation into two small ones, it may unexpectedly bring extra latency on accessing and indexing tensors. Based on this intuition, we impose an important improvement to the identification process of retrieval and streaming heads, in which we design a criterion that enforces exclusively retrieval or streaming heads gathered in one unique layer. In this way, we further eliminate the extra latency and only incur negligible performance degradation. Our method named \\textsc{ZigzagAttention} is competitive among considered baselines owing to reduced latency and comparable performance.",
+    "author_info": [],
+    "authors": [
+      "Zhuorui Liu",
+      "Chen Zhang",
+      "Dawei Song"
+    ],
+    "canonical_id": "2508.12407v1",
+    "first_publication_date": "2025-08-17T15:48:50.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zhuorui Liu",
+        "id": "01985c83-29ce-7000-aed5-590f0bf4a95c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chen Zhang",
+        "id": "01985c81-f8f2-7a91-9dd6-165aade36bf6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dawei Song",
+        "id": "01985c82-2dc1-71e5-8bd7-d0718fa4fd50",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "0198c023-1d66-75a2-aadf-a00d138400a1",
+    "image_url": "image/2508.12407v1.png",
+    "metrics": {
+      "public_total_votes": 10,
+      "total_votes": 1,
+      "visits_count": {
+        "all": 76,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "Be\u0133ing Institute of Technology"
+      }
+    ],
+    "paper_group_id": "0198c023-1d66-75a2-aadf-a00d138400a1",
+    "paper_summary": null,
+    "publication_date": "2025-08-17T15:48:50.000Z",
+    "title": "ZigzagAttention: Efficient Long-Context Inference with Exclusive Retrieval and Streaming Heads",
+    "topics": [
+      "attention-mechanisms",
+      "Computer Science",
+      "cs.CL",
+      "efficient-transformers",
+      "inference-optimization",
+      "model-deployment-systems",
+      "sequence-modeling",
+      "transformers"
+    ],
+    "universal_paper_id": "2508.12407",
+    "updated_at": "2025-08-19T02:23:03.526Z",
+    "version_id": "0198c023-1d7a-717c-9178-924265a13564"
+  },
+  {
     "abstract": "The Key-Value (KV) cache introduces substantial memory overhead during large language model (LLM) inference. Although existing vector quantization (VQ) methods reduce KV cache usage and provide flexible representational capacity across bit-widths, they suffer severe performance degradation at ultra-low bit-widths due to key cache outliers that hinder effective codebook utilization. To address this challenge, we propose VecInfer, a novel VQ method for aggressive KV cache compression while enabling efficient inference. By applying smooth and Hadamard transformations, VecInfer suppresses outliers in the key cache, enabling the codebook to comprehensively cover the original data distribution and thereby reducing quantization difficulty. To facilitate efficient deployment, we design an optimized CUDA kernel that fuses computation with dequantization to minimize memory access overhead. Extensive evaluations demonstrate that VecInfer consistently outperforms existing quantization baselines across both long-context understanding and mathematical reasoning tasks. With only 2-bit quantization, VecInfer achieves performance comparable to full precision, while delivering up to $\\mathbf{2.7\\times}$ speedup in large-batch self-attention computation and $\\mathbf{8.3\\times}$ reduction in single-batch end-to-end latency on Llama-3.1-8B with a 196k sequence length.",
     "author_info": [],
     "authors": [
@@ -2899,71 +2985,86 @@
     "version_id": "0199c1e1-e448-7d50-a3fa-0bf0b5e0a62b"
   },
   {
-    "abstract": "With the rapid development of large language models (LLMs), handling long context has become one of the vital abilities in LLMs. Such long-context ability is accompanied by difficulties in deployment, especially due to the increased consumption of KV cache. There is certain work aiming to optimize the memory footprint of KV cache, inspired by the observation that attention heads can be categorized into retrieval heads that are of great significance and streaming heads that are of less significance. Typically, identifying the streaming heads and and waiving the KV cache in the streaming heads would largely reduce the overhead without hurting the performance that much. However, since employing both retrieval and streaming heads in one layer decomposes one large round of attention computation into two small ones, it may unexpectedly bring extra latency on accessing and indexing tensors. Based on this intuition, we impose an important improvement to the identification process of retrieval and streaming heads, in which we design a criterion that enforces exclusively retrieval or streaming heads gathered in one unique layer. In this way, we further eliminate the extra latency and only incur negligible performance degradation. Our method named \\textsc{ZigzagAttention} is competitive among considered baselines owing to reduced latency and comparable performance.",
+    "abstract": "Quantizing the key-value (KV) cache is a promising strategy for improving the inference efficiency of large language models (LLMs). However, aggressive quantization to very low precision (e.g., 2 bits) introduces significant errors in the stored key and value tensors, which propagate through the dot-product attention mechanism and ultimately degrade generation quality. To address this, we propose KVLinC, a framework to mitigate attention errors introduced by KV cache quantization in the extreme low-precision regime. KVLinC combines a Hadamard rotation, which reduces quantization error in values, with lightweight linear correction adapters that explicitly compensate for errors introduced by quantized keys. Across extensive evaluations on the LLaMA, Qwen2.5, and Qwen3 model families, KVLinC consistently matches or surpasses strong baselines while achieving higher KV-cache compression. Furthermore, we implement a custom attention kernel that results in upto 2.55x faster inference compared to Flash Attention baseline, enabling efficient long-context LLM inference.",
     "author_info": [],
     "authors": [
-      "Zhuorui Liu",
-      "Chen Zhang",
-      "Dawei Song"
+      "Utkarsh Saxena",
+      "Kaushik Roy"
     ],
-    "canonical_id": "2508.12407v1",
-    "first_publication_date": "2025-08-17T15:48:50.000Z",
+    "canonical_id": "2510.05373v1",
+    "first_publication_date": "2025-10-06T21:08:11.000Z",
     "full_authors": [
       {
-        "full_name": "Zhuorui Liu",
-        "id": "01985c83-29ce-7000-aed5-590f0bf4a95c",
+        "full_name": "Utkarsh Saxena",
+        "id": "01985c82-a437-762f-a403-d0ae59ba67d6",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Chen Zhang",
-        "id": "01985c81-f8f2-7a91-9dd6-165aade36bf6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dawei Song",
-        "id": "01985c82-2dc1-71e5-8bd7-d0718fa4fd50",
+        "full_name": "Kaushik Roy",
+        "id": "01985c81-e286-74e4-97ce-f6908efc0e4f",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "0198c023-1d66-75a2-aadf-a00d138400a1",
-    "image_url": "image/2508.12407v1.png",
+    "github_stars": 0,
+    "github_url": "https://github.com/UtkarshSaxena1/kvlinc",
+    "id": "0199c1ff-5d4d-7967-b1eb-e4357b0872bf",
+    "image_url": "image/2510.05373v1.png",
     "metrics": {
-      "public_total_votes": 10,
-      "total_votes": 1,
+      "public_total_votes": 9,
+      "total_votes": 0,
       "visits_count": {
-        "all": 76,
-        "last_7_days": 0
+        "all": 149,
+        "last_7_days": 5
       },
       "x_likes": 0
     },
     "organization_info": [
       {
-        "image": null,
-        "name": "Be\u0133ing Institute of Technology"
+        "image": "images/organizations/purdue-university.png",
+        "name": "Purdue University"
       }
     ],
-    "paper_group_id": "0198c023-1d66-75a2-aadf-a00d138400a1",
-    "paper_summary": null,
-    "publication_date": "2025-08-17T15:48:50.000Z",
-    "title": "ZigzagAttention: Efficient Long-Context Inference with Exclusive Retrieval and Streaming Heads",
+    "paper_group_id": "0199c1ff-5d4d-7967-b1eb-e4357b0872bf",
+    "paper_summary": {
+      "keyInsights": [
+        "Keys and values exhibit distinct statistical properties (e.g., key outliers), necessitating different quantization strategies to maximize precision.",
+        "Applying Hadamard rotation before key/value formation (pre-multiplication) is detrimental, while post-multiplication (rotating channels within each token) is more stable for quantization.",
+        "Linear correction adapters, trained to align quantized attention weights with full-precision ones, can effectively mitigate accumulated errors from low-precision keys with minimal parameter and memory overhead."
+      ],
+      "originalProblem": [
+        "The KV cache in LLMs creates a significant memory and bandwidth bottleneck during inference, especially for long sequence lengths.",
+        "Aggressively low-precision quantization (e.g., 2-bit) of the KV cache introduces substantial errors, degrading generation quality and limiting practical memory savings.",
+        "Existing quantization methods either struggle with accuracy at extreme low precision or introduce additional memory overheads that diminish overall compression benefits for long contexts."
+      ],
+      "results": [
+        "KVLinC achieved up to 6.4% higher GSM8K accuracy and 2.3% higher BBH accuracy compared to Gear-L, with significant gains for smaller models like Llama-2-7B.",
+        "The method enabled up to 3.5x larger batch sizes and 2.55x inference throughput for Llama models compared to FP16 FlashAttention-2, reducing KV cache memory footprint by 8x.",
+        "It demonstrated improved performance on long-context benchmarks like RULER and IF-Eval for instruction-tuned models, achieving over 10% improvement on RULER for Qwen-2.5-3B-Instruct."
+      ],
+      "solution": [
+        "KVLinC employs a tailored 2-bit quantization strategy that quantizes raw keys channel-wise and Hadamard-rotated values token-wise, based on an extensive ablation study.",
+        "Lightweight, trainable linear correction adapters are introduced for keys to compensate for residual quantization errors, augmenting the attention mechanism with recurrently updated additive terms.",
+        "A custom Triton-based attention decoding kernel is implemented, optimized for direct execution on quantized operands, to achieve end-to-end hardware acceleration and memory efficiency."
+      ],
+      "summary": "Researchers at Purdue University developed KVLINC, a framework for 2-bit KV cache quantization in Large Language Models, using a refined Hadamard rotation for values and linear correction adapters for keys. This approach enables up to 3.5x larger batch sizes and 2.55x inference throughput on Llama models, outperforming baselines in long-context tasks while preserving generation quality at an average 2.71 bits per entry."
+    },
+    "publication_date": "2025-10-06T21:08:11.000Z",
+    "title": "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction",
     "topics": [
-      "attention-mechanisms",
       "Computer Science",
-      "cs.CL",
-      "efficient-transformers",
+      "cs.LG",
+      "hardware-aware-algorithms",
       "inference-optimization",
-      "model-deployment-systems",
-      "sequence-modeling",
+      "lightweight-models",
+      "ml-systems",
+      "model-compression",
       "transformers"
     ],
-    "universal_paper_id": "2508.12407",
-    "updated_at": "2025-08-19T02:23:03.526Z",
-    "version_id": "0198c023-1d7a-717c-9178-924265a13564"
+    "universal_paper_id": "2510.05373",
+    "updated_at": "2025-10-08T04:06:02.317Z",
+    "version_id": "0199c1ff-5d6b-707d-9bc5-0723baac6c1b"
   },
   {
     "abstract": "The long-output context generation of large reasoning models enables extended chain of thought (CoT) but also drives rapid growth of the key-value (KV) cache, quickly overwhelming GPU memory. To address this challenge, we propose ThinKV, a thought-adaptive KV cache compression framework. ThinKV is based on the observation that attention sparsity reveals distinct thought types with varying importance within the CoT. It applies a hybrid quantization-eviction strategy, assigning token precision by thought importance and progressively evicting tokens from less critical thoughts as reasoning trajectories evolve. Furthermore, to implement ThinKV, we design a kernel that extends PagedAttention to enable efficient reuse of evicted tokens' memory slots, eliminating compaction overheads. Extensive experiments on DeepSeek-R1-Distill, GPT-OSS, and NVIDIA AceReason across mathematics and coding benchmarks show that ThinKV achieves near-lossless accuracy with less than 5% of the original KV cache, while improving performance with up to 5.8x higher inference throughput over state-of-the-art baselines.",
@@ -3083,86 +3184,88 @@
     "version_id": "0199a852-96f7-7bc4-bf0e-bdabad47f73f"
   },
   {
-    "abstract": "Quantizing the key-value (KV) cache is a promising strategy for improving the inference efficiency of large language models (LLMs). However, aggressive quantization to very low precision (e.g., 2 bits) introduces significant errors in the stored key and value tensors, which propagate through the dot-product attention mechanism and ultimately degrade generation quality. To address this, we propose KVLinC, a framework to mitigate attention errors introduced by KV cache quantization in the extreme low-precision regime. KVLinC combines a Hadamard rotation, which reduces quantization error in values, with lightweight linear correction adapters that explicitly compensate for errors introduced by quantized keys. Across extensive evaluations on the LLaMA, Qwen2.5, and Qwen3 model families, KVLinC consistently matches or surpasses strong baselines while achieving higher KV-cache compression. Furthermore, we implement a custom attention kernel that results in upto 2.55x faster inference compared to Flash Attention baseline, enabling efficient long-context LLM inference.",
+    "abstract": "The Key-Value (KV) cache is central to the efficiency of transformer-based large language models (LLMs), storing previously computed vectors to accelerate inference. Yet, as sequence length and batch size grow, the cache becomes a major memory bottleneck. Prior compression methods typically apply low-rank decomposition to keys alone or attempt to jointly embed queries and keys, but both approaches neglect that attention fundamentally depends on their inner products. In this work, we prove that such strategies are suboptimal for approximating the attention matrix. We introduce KQ-SVD, a simple and computationally efficient method that directly performs an optimal low-rank decomposition of the attention matrix via a closed-form solution. By targeting the true source of redundancy, KQ-SVD preserves attention outputs with higher fidelity under compression. Extensive evaluations on LLaMA and Mistral models demonstrate that our approach consistently delivers superior projection quality.",
     "author_info": [],
     "authors": [
-      "Utkarsh Saxena",
-      "Kaushik Roy"
+      "Damien Lesens",
+      "Beheshteh T. Rakhshan",
+      "Guillaume Rabusseau"
     ],
-    "canonical_id": "2510.05373v1",
-    "first_publication_date": "2025-10-06T21:08:11.000Z",
+    "canonical_id": "2512.05916v1",
+    "first_publication_date": "2025-12-05T17:51:10.000Z",
     "full_authors": [
       {
-        "full_name": "Utkarsh Saxena",
-        "id": "01985c82-a437-762f-a403-d0ae59ba67d6",
+        "full_name": "Damien Lesens",
+        "id": "019afc88-c606-78c7-be0d-614042e2b367",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Kaushik Roy",
-        "id": "01985c81-e286-74e4-97ce-f6908efc0e4f",
+        "full_name": "Beheshteh T. Rakhshan",
+        "id": "01985c83-db04-7ab8-9bf9-d178c3844a14",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guillaume Rabusseau",
+        "id": "01985c81-d858-7105-b4ed-b0c6fded67fa",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": 0,
-    "github_url": "https://github.com/UtkarshSaxena1/kvlinc",
-    "id": "0199c1ff-5d4d-7967-b1eb-e4357b0872bf",
-    "image_url": "image/2510.05373v1.png",
+    "github_url": "https://github.com/DamienLesens/KQ-SVD",
+    "id": "019afc88-c5fb-7b79-9d11-290e7f68e448",
+    "image_url": "image/2512.05916v1.png",
     "metrics": {
       "public_total_votes": 9,
-      "total_votes": 0,
+      "total_votes": 1,
       "visits_count": {
-        "all": 149,
-        "last_7_days": 5
+        "all": 40,
+        "last_7_days": 3
       },
       "x_likes": 0
     },
-    "organization_info": [
-      {
-        "image": "images/organizations/purdue-university.png",
-        "name": "Purdue University"
-      }
-    ],
-    "paper_group_id": "0199c1ff-5d4d-7967-b1eb-e4357b0872bf",
+    "organization_info": [],
+    "paper_group_id": "019afc88-c5fb-7b79-9d11-290e7f68e448",
     "paper_summary": {
       "keyInsights": [
-        "Keys and values exhibit distinct statistical properties (e.g., key outliers), necessitating different quantization strategies to maximize precision.",
-        "Applying Hadamard rotation before key/value formation (pre-multiplication) is detrimental, while post-multiplication (rotating channels within each token) is more stable for quantization.",
-        "Linear correction adapters, trained to align quantized attention weights with full-precision ones, can effectively mitigate accumulated errors from low-precision keys with minimal parameter and memory overhead."
+        "Directly optimizing the low-rank approximation of the attention matrix (QK^T) is theoretically optimal for preserving attention fidelity during KV cache compression.",
+        "The optimal low-rank approximation of KQ^T can be found via its truncated SVD, which is efficiently computable during a post-training calibration phase.",
+        "KQ-SVD provides provable advantages over methods that compress keys alone (K-SVD) and identifies a critical failure mode in methods that concatenate queries and keys (Eigen) due to norm imbalances."
       ],
       "originalProblem": [
-        "The KV cache in LLMs creates a significant memory and bandwidth bottleneck during inference, especially for long sequence lengths.",
-        "Aggressively low-precision quantization (e.g., 2-bit) of the KV cache introduces substantial errors, degrading generation quality and limiting practical memory savings.",
-        "Existing quantization methods either struggle with accuracy at extreme low precision or introduce additional memory overheads that diminish overall compression benefits for long contexts."
+        "Large Language Models (LLMs) face significant memory consumption challenges from the Key-Value (KV) cache, which scales quadratically with sequence length and batch size.",
+        "The substantial memory footprint of the KV cache limits the deployment of LLMs, especially long-context models, on resource-constrained hardware.",
+        "Prior KV cache compression methods often compromise the fidelity of the attention mechanism because they do not directly optimize for the accuracy of the attention matrix (QK^T)."
       ],
       "results": [
-        "KVLinC achieved up to 6.4% higher GSM8K accuracy and 2.3% higher BBH accuracy compared to Gear-L, with significant gains for smaller models like Llama-2-7B.",
-        "The method enabled up to 3.5x larger batch sizes and 2.55x inference throughput for Llama models compared to FP16 FlashAttention-2, reducing KV cache memory footprint by 8x.",
-        "It demonstrated improved performance on long-context benchmarks like RULER and IF-Eval for instruction-tuned models, achieving over 10% improvement on RULER for Qwen-2.5-3B-Instruct."
+        "KQ-SVD consistently achieved the lowest relative error on the attention score matrix (QK^T) and the lowest overall Multi-Head Attention (MHA) output error across Llama2-7B/13B, Llama3-8B, and Mistral-7B-v0.3 models.",
+        "Empirical evaluations validated KQ-SVD's robustness to unbalanced query and key norms, demonstrating constant attention output error, unlike Eigen, whose error significantly increased.",
+        "The method is proven to be compatible and optimal for Grouped-Query Attention (GQA) architectures, extending its applicability to modern LLMs."
       ],
       "solution": [
-        "KVLinC employs a tailored 2-bit quantization strategy that quantizes raw keys channel-wise and Hadamard-rotated values token-wise, based on an extensive ablation study.",
-        "Lightweight, trainable linear correction adapters are introduced for keys to compensate for residual quantization errors, augmenting the attention mechanism with recurrently updated additive terms.",
-        "A custom Triton-based attention decoding kernel is implemented, optimized for direct execution on quantized operands, to achieve end-to-end hardware acceleration and memory efficiency."
+        "KQ-SVD introduces a novel compression method that performs an optimal low-rank decomposition of the attention matrix (QK^T) itself, directly capturing query-key interactions.",
+        "It provides a closed-form solution for this optimal low-rank approximation, derived from the Singular Value Decomposition (SVD) of the KQ^T matrix, to project the key cache.",
+        "A similar principled approach is applied to optimally compress the value-output product (VW_O), minimizing the overall Multi-Head Attention (MHA) output error."
       ],
-      "summary": "Researchers at Purdue University developed KVLINC, a framework for 2-bit KV cache quantization in Large Language Models, using a refined Hadamard rotation for values and linear correction adapters for keys. This approach enables up to 3.5x larger batch sizes and 2.55x inference throughput on Llama models, outperforming baselines in long-context tasks while preserving generation quality at an average 2.71 bits per entry."
+      "summary": "KQ-SVD presents a method for compressing the KV cache in Large Language Models by optimally approximating the attention matrix (QK^T) with provable guarantees. This approach consistently yields the lowest relative error on attention scores and overall Multi-Head Attention output across Llama and Mistral models compared to existing low-rank compression techniques."
     },
-    "publication_date": "2025-10-06T21:08:11.000Z",
-    "title": "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction",
+    "publication_date": "2025-12-05T17:51:10.000Z",
+    "title": "KQ-SVD: Compressing the KV Cache with Provable Guarantees on Attention Fidelity",
     "topics": [
+      "attention-mechanisms",
       "Computer Science",
       "cs.LG",
-      "hardware-aware-algorithms",
+      "efficient-transformers",
       "inference-optimization",
-      "lightweight-models",
-      "ml-systems",
       "model-compression",
+      "optimization-methods",
       "transformers"
     ],
-    "universal_paper_id": "2510.05373",
-    "updated_at": "2025-10-08T04:06:02.317Z",
-    "version_id": "0199c1ff-5d6b-707d-9bc5-0723baac6c1b"
+    "universal_paper_id": "2512.05916",
+    "updated_at": "2025-12-08T05:56:53.371Z",
+    "version_id": "019afc88-c60a-798b-b789-1541b8ceaa98"
   },
   {
     "abstract": "Long-context inference in large language models is increasingly bottlenecked by the memory and compute cost of the KV-Cache. Low-rank factorization compresses KV projections by writing $W \\approx A * B$, where A produces latent KV states and B can be absorbed into downstream weights. In modern RoPE-based LLMs, this absorption fails: RoPE forces latent KV states to be reconstructed to full dimension, reintroducing substantial memory and compute overhead. We propose RoPE-Aligned Pruning (RAP), which prunes entire RoPE-aligned column pairs to preserve RoPE's 2x2 rotation structure, restore B absorption, and eliminate reconstruction. Our evaluation on LLaMA-3-8B and Mistral-7B shows that RAP enables joint reduction of KV-Cache, attention parameters, and FLOPs by 20-30%, all at once, while maintaining strong accuracy. Notably, RAP reduces attention latency to 83% (prefill) and 77% (decode) of baseline.",
@@ -3247,90 +3350,6 @@
     "universal_paper_id": "2602.02599",
     "updated_at": "2026-02-04T04:39:55.528Z",
     "version_id": "019c7c91-43ab-74e1-9e86-cd9f8c8ab5fe"
-  },
-  {
-    "abstract": "The Key-Value (KV) cache is central to the efficiency of transformer-based large language models (LLMs), storing previously computed vectors to accelerate inference. Yet, as sequence length and batch size grow, the cache becomes a major memory bottleneck. Prior compression methods typically apply low-rank decomposition to keys alone or attempt to jointly embed queries and keys, but both approaches neglect that attention fundamentally depends on their inner products. In this work, we prove that such strategies are suboptimal for approximating the attention matrix. We introduce KQ-SVD, a simple and computationally efficient method that directly performs an optimal low-rank decomposition of the attention matrix via a closed-form solution. By targeting the true source of redundancy, KQ-SVD preserves attention outputs with higher fidelity under compression. Extensive evaluations on LLaMA and Mistral models demonstrate that our approach consistently delivers superior projection quality.",
-    "author_info": [],
-    "authors": [
-      "Damien Lesens",
-      "Beheshteh T. Rakhshan",
-      "Guillaume Rabusseau"
-    ],
-    "canonical_id": "2512.05916v1",
-    "first_publication_date": "2025-12-05T17:51:10.000Z",
-    "full_authors": [
-      {
-        "full_name": "Damien Lesens",
-        "id": "019afc88-c606-78c7-be0d-614042e2b367",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Beheshteh T. Rakhshan",
-        "id": "01985c83-db04-7ab8-9bf9-d178c3844a14",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Guillaume Rabusseau",
-        "id": "01985c81-d858-7105-b4ed-b0c6fded67fa",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/DamienLesens/KQ-SVD",
-    "id": "019afc88-c5fb-7b79-9d11-290e7f68e448",
-    "image_url": "image/2512.05916v1.png",
-    "metrics": {
-      "public_total_votes": 8,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 40,
-        "last_7_days": 3
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019afc88-c5fb-7b79-9d11-290e7f68e448",
-    "paper_summary": {
-      "keyInsights": [
-        "Directly optimizing the low-rank approximation of the attention matrix (QK^T) is theoretically optimal for preserving attention fidelity during KV cache compression.",
-        "The optimal low-rank approximation of KQ^T can be found via its truncated SVD, which is efficiently computable during a post-training calibration phase.",
-        "KQ-SVD provides provable advantages over methods that compress keys alone (K-SVD) and identifies a critical failure mode in methods that concatenate queries and keys (Eigen) due to norm imbalances."
-      ],
-      "originalProblem": [
-        "Large Language Models (LLMs) face significant memory consumption challenges from the Key-Value (KV) cache, which scales quadratically with sequence length and batch size.",
-        "The substantial memory footprint of the KV cache limits the deployment of LLMs, especially long-context models, on resource-constrained hardware.",
-        "Prior KV cache compression methods often compromise the fidelity of the attention mechanism because they do not directly optimize for the accuracy of the attention matrix (QK^T)."
-      ],
-      "results": [
-        "KQ-SVD consistently achieved the lowest relative error on the attention score matrix (QK^T) and the lowest overall Multi-Head Attention (MHA) output error across Llama2-7B/13B, Llama3-8B, and Mistral-7B-v0.3 models.",
-        "Empirical evaluations validated KQ-SVD's robustness to unbalanced query and key norms, demonstrating constant attention output error, unlike Eigen, whose error significantly increased.",
-        "The method is proven to be compatible and optimal for Grouped-Query Attention (GQA) architectures, extending its applicability to modern LLMs."
-      ],
-      "solution": [
-        "KQ-SVD introduces a novel compression method that performs an optimal low-rank decomposition of the attention matrix (QK^T) itself, directly capturing query-key interactions.",
-        "It provides a closed-form solution for this optimal low-rank approximation, derived from the Singular Value Decomposition (SVD) of the KQ^T matrix, to project the key cache.",
-        "A similar principled approach is applied to optimally compress the value-output product (VW_O), minimizing the overall Multi-Head Attention (MHA) output error."
-      ],
-      "summary": "KQ-SVD presents a method for compressing the KV cache in Large Language Models by optimally approximating the attention matrix (QK^T) with provable guarantees. This approach consistently yields the lowest relative error on attention scores and overall Multi-Head Attention output across Llama and Mistral models compared to existing low-rank compression techniques."
-    },
-    "publication_date": "2025-12-05T17:51:10.000Z",
-    "title": "KQ-SVD: Compressing the KV Cache with Provable Guarantees on Attention Fidelity",
-    "topics": [
-      "attention-mechanisms",
-      "Computer Science",
-      "cs.LG",
-      "efficient-transformers",
-      "inference-optimization",
-      "model-compression",
-      "optimization-methods",
-      "transformers"
-    ],
-    "universal_paper_id": "2512.05916",
-    "updated_at": "2025-12-08T05:56:53.371Z",
-    "version_id": "019afc88-c60a-798b-b789-1541b8ceaa98"
   },
   {
     "abstract": "The growing context length of Large Language Models (LLMs) enlarges the Key-Value (KV) cache, limiting deployment in resource-limited environments. Prior training-free approaches for KV cache compression typically rely on low-rank approximation or scalar quantization, which fail to simultaneously achieve high compression ratios and high reconstruction fidelity. We propose VQKV, a novel, training-free method introducing vector quantization (VQ) to obtain highly compressed KV representations while preserving high model fidelity, allowing for the representation of thousands of floating-point values with just a few integer indices. As a result, VQKV achieves an 82.8\\% compression ratio on LLaMA3.1-8B while retaining 98.6\\% of the baseline performance on LongBench and enabling 4.3x longer generation length on the same memory footprint.",
@@ -5467,6 +5486,127 @@
     "version_id": "019b89a0-5617-7168-956f-0f790088a1bb"
   },
   {
+    "abstract": "Scaling the input context length of a large language model (LLM) incurs a\nsignificant increase in computation cost and memory footprint to maintain the\nattention key-value (KV) cache. Existing KV cache compression methods suffer\nfrom inefficient compression strategies and limited memory reduction effects,\nmaking it difficult for LLMs to conduct long-context inference on\nconsumer-grade devices, especially when inferring long-context stream input.\nSuch obstacles prevent consumer-grade devices from supporting more complex\napplications, creating challenges for the democratization of LLMs. To overcome\nthis, we propose Locret, the first framework to create an eviction policy\ncompatible with chunked prefill. By evaluating the causal importance of KV\ncache units by learnable retaining heads, Locret enables precise eviction of\ncache units, facilitating efficient long-context inference. In our extensive\nempirical studies, Locret outperforms the recent popular and competitive\napproaches in terms of memory efficiency and generation quality -- Locret\nachieves up to 20x of KV cache compression ratio within less than 10%\nperformance loss. Furthermore, Locret achieves 128K+ long-context inference on\na single NVIDIA 4090 GPU without compromising generation quality and only costs\n<1 GPU hour of additional training.",
+    "author_info": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "TflKxcIAAAAJ",
+        "id": "0198377b-6689-71d4-8480-bca1af143088",
+        "institution": "HKUST",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Binhang Yuan",
+        "reputation": 15,
+        "role": "user",
+        "username": "binhang-yuan",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      },
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "nvCXW78AAAAJ",
+        "id": "0193f6b2-c023-7a01-a7c8-6ce02329f432",
+        "institution": null,
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Yuxiang Huang",
+        "reputation": 1,
+        "role": "user",
+        "username": "yuxiang-huang",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      }
+    ],
+    "authors": [
+      "Yuxiang Huang",
+      "Binhang Yuan",
+      "Xu Han",
+      "Chaojun Xiao",
+      "Zhiyuan Liu"
+    ],
+    "canonical_id": "2410.01805v2",
+    "first_publication_date": "2024-10-02T17:59:52.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yuxiang Huang",
+        "id": "01985c81-e41b-7102-8566-cc2f3d268016",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Binhang Yuan",
+        "id": "01985c81-e287-79ad-8486-34f007d8962e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xu Han",
+        "id": "01985c81-e0ec-7dbb-83a2-82132369311e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chaojun Xiao",
+        "id": "01985c81-ec41-7d60-b9b2-e829ed77f30f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiyuan Liu",
+        "id": "01985c81-d859-737a-8968-98cd00f5f737",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "01924e63-6dc0-7bd3-aceb-b9be60207b3b",
+    "image_url": "image/2410.01805v2.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 163,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/tsinghua.png",
+        "name": "Tsinghua University"
+      },
+      {
+        "image": "images/organizations/hkust.jpg",
+        "name": "HKUST"
+      }
+    ],
+    "paper_group_id": "01924e63-6dc0-7bd3-aceb-b9be60207b3b",
+    "paper_summary": null,
+    "publication_date": "2025-01-30T13:07:37.000Z",
+    "title": "Locret: Enhancing Eviction in Long-Context LLM Inference with Trained  Retaining Heads on Consumer-Grade Devices",
+    "topics": [
+      "attention-mechanisms",
+      "Computer Science",
+      "cs.CL",
+      "efficient-transformers",
+      "memory-efficient-ml",
+      "model-compression",
+      "parameter-efficient-training"
+    ],
+    "universal_paper_id": "2410.01805",
+    "updated_at": "2025-03-03T19:44:19.584Z",
+    "version_id": "0194b752-fda8-794a-b7cb-8ce2a72d8f0f"
+  },
+  {
     "abstract": "Large Language Models (LLMs) are increasingly deployed in scenarios demanding ultra-long context reasoning, such as agentic workflows and deep research understanding. However, long-context inference is constrained by the KV cache, a transient memory structure that grows linearly with sequence length and batch size, quickly dominating GPU memory usage. Existing memory reduction techniques, including eviction and quantization, often rely on static heuristics and suffer from degraded quality under tight budgets. In this paper, we propose ARKV, a lightweight and adaptive framework that dynamically allocates precision levels to cached tokens based on per-layer attention dynamics and token-level importance. During a short prefill phase, ARKV estimates the original quantization (OQ) ratio of each layer by computing statistical scores such as attention entropy, variance and kurtosis. During decoding, tokens are assigned to one of three states, Original (full precision), Quantization (low precision), or Eviction, according to a fast heavy-hitter scoring strategy. Our experiments on LLaMA3 and Qwen3 models across diverse long- and short-context tasks demonstrate that ARKV preserves ~97% of baseline accuracy on long-context benchmarks while reducing KV memory usage by 4x, with minimal throughput loss. On short-context tasks, ARKV matches full-precision baselines; on GSM8K math reasoning, it significantly outperforms uniform quantization. These results highlight the practical viability of ARKV for scalable LLM deployment, offering fine-grained, data-driven memory control without retraining or architectural modifications. The source code and artifacts can be found in: this https URL",
     "author_info": [],
     "authors": [
@@ -5612,45 +5752,8 @@
     "version_id": "019d00f2-a056-70b5-88c6-1c512a538774"
   },
   {
-    "abstract": "Scaling the input context length of a large language model (LLM) incurs a\nsignificant increase in computation cost and memory footprint to maintain the\nattention key-value (KV) cache. Existing KV cache compression methods suffer\nfrom inefficient compression strategies and limited memory reduction effects,\nmaking it difficult for LLMs to conduct long-context inference on\nconsumer-grade devices, especially when inferring long-context stream input.\nSuch obstacles prevent consumer-grade devices from supporting more complex\napplications, creating challenges for the democratization of LLMs. To overcome\nthis, we propose Locret, the first framework to create an eviction policy\ncompatible with chunked prefill. By evaluating the causal importance of KV\ncache units by learnable retaining heads, Locret enables precise eviction of\ncache units, facilitating efficient long-context inference. In our extensive\nempirical studies, Locret outperforms the recent popular and competitive\napproaches in terms of memory efficiency and generation quality -- Locret\nachieves up to 20x of KV cache compression ratio within less than 10%\nperformance loss. Furthermore, Locret achieves 128K+ long-context inference on\na single NVIDIA 4090 GPU without compromising generation quality and only costs\n<1 GPU hour of additional training.",
-    "author_info": [
-      {
-        "avatar": null,
-        "blueskyUsername": null,
-        "githubUsername": null,
-        "googleScholarId": "TflKxcIAAAAJ",
-        "id": "0198377b-6689-71d4-8480-bca1af143088",
-        "institution": "HKUST",
-        "linkedinUsername": null,
-        "orcidId": null,
-        "publicEmail": null,
-        "realName": "Binhang Yuan",
-        "reputation": 15,
-        "role": "user",
-        "username": "binhang-yuan",
-        "verified": false,
-        "weeklyReputation": 0,
-        "xUsername": null
-      },
-      {
-        "avatar": null,
-        "blueskyUsername": null,
-        "githubUsername": null,
-        "googleScholarId": "nvCXW78AAAAJ",
-        "id": "0193f6b2-c023-7a01-a7c8-6ce02329f432",
-        "institution": null,
-        "linkedinUsername": null,
-        "orcidId": null,
-        "publicEmail": null,
-        "realName": "Yuxiang Huang",
-        "reputation": 1,
-        "role": "user",
-        "username": "yuxiang-huang",
-        "verified": false,
-        "weeklyReputation": 0,
-        "xUsername": null
-      }
-    ],
+    "abstract": "Scaling the input context length of a large language model (LLM) incurs a significant increase in computation cost and memory footprint to maintain the attention key-value (KV) cache. Existing KV cache compression methods suffer from inefficient compression strategies and limited memory reduction effects, making it difficult for LLMs to conduct long-context inference on consumer-grade devices, especially when inferring long-context stream input. Such obstacles prevent consumer-grade devices from supporting more complex applications, creating challenges for the democratization of LLMs. To overcome this, we propose Locret, the first framework to create an eviction policy compatible with chunked prefill. By evaluating the causal importance of KV cache units by learnable retaining heads, Locret enables precise eviction of cache units, facilitating efficient long-context inference. In our extensive empirical studies, Locret outperforms the recent popular and competitive approaches in terms of memory efficiency and generation quality -- Locret achieves up to 20x of KV cache compression ratio within less than 10% performance loss. Furthermore, Locret achieves 128K+ long-context inference on a single NVIDIA 4090 GPU without compromising generation quality and only costs &lt;1 GPU hour of additional training.",
+    "author_info": [],
     "authors": [
       "Yuxiang Huang",
       "Binhang Yuan",
@@ -5658,7 +5761,7 @@
       "Chaojun Xiao",
       "Zhiyuan Liu"
     ],
-    "canonical_id": "2410.01805v2",
+    "canonical_id": "2410.1805v2",
     "first_publication_date": "2024-10-02T17:59:52.000Z",
     "full_authors": [
       {
@@ -5692,15 +5795,15 @@
         "username": null
       }
     ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "01924e63-6dc0-7bd3-aceb-b9be60207b3b",
-    "image_url": "image/2410.01805v2.png",
+    "github_stars": 13,
+    "github_url": "https://github.com/huangyuxiang03/Locret",
+    "id": "019b5038-8205-7a54-8081-ad365a1ef763",
+    "image_url": "image/2410.1805v2.png",
     "metrics": {
-      "public_total_votes": 1,
+      "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 163,
+        "all": 0,
         "last_7_days": 0
       },
       "x_likes": 0
@@ -5715,146 +5818,158 @@
         "name": "HKUST"
       }
     ],
-    "paper_group_id": "01924e63-6dc0-7bd3-aceb-b9be60207b3b",
+    "paper_group_id": "019b5038-8205-7a54-8081-ad365a1ef763",
     "paper_summary": null,
     "publication_date": "2025-01-30T13:07:37.000Z",
-    "title": "Locret: Enhancing Eviction in Long-Context LLM Inference with Trained  Retaining Heads on Consumer-Grade Devices",
+    "title": "Locret: Enhancing Eviction in Long-Context LLM Inference with Trained Retaining Heads on Consumer-Grade Devices",
     "topics": [
       "attention-mechanisms",
       "Computer Science",
       "cs.CL",
       "efficient-transformers",
-      "memory-efficient-ml",
-      "model-compression",
-      "parameter-efficient-training"
-    ],
-    "universal_paper_id": "2410.01805",
-    "updated_at": "2025-03-03T19:44:19.584Z",
-    "version_id": "0194b752-fda8-794a-b7cb-8ce2a72d8f0f"
-  },
-  {
-    "abstract": "Memory consumption of the Key-Value (KV) cache represents a major bottleneck for efficient large language model inference. While attention-score-based KV cache pruning shows promise, it faces critical practical limitations: attention scores from future tokens are unavailable during compression, and modern implementations like Flash Attention do not materialize the full attention matrix, making past scores inaccessible. To overcome these challenges, we introduce $\\textbf{Expected Attention, a training-free compression method}$ that estimates KV pairs importance by predicting how future queries will attend to them. Our approach leverages the distributional properties of LLM activations to compute expected attention scores in closed form for each KV pair. These scores enable principled ranking and pruning of KV pairs with minimal impact on the residual stream, achieving effective compression without performance degradation. Importantly, our method operates seamlessly across both prefilling and decoding phases, consistently outperforming state-of-the-art baselines in both scenarios. Finally, $\\textbf{we release KVPress, a comprehensive library to enable researchers to implement and benchmark KV cache compression methods, already including more than 20 techniques}$.",
-    "author_info": [],
-    "authors": [
-      "Alessio Devoto",
-      "Maximilian Jeblick",
-      "Simon J\u00e9gou"
-    ],
-    "canonical_id": "2510.0636v1",
-    "first_publication_date": "2025-10-01T08:12:14.000Z",
-    "full_authors": [
-      {
-        "full_name": "Alessio Devoto",
-        "id": "01985c82-07f1-7f4d-953c-c4c277f4c684",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Maximilian Jeblick",
-        "id": "01985c82-a6a4-73c3-ab9f-7b276be342a5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Simon J\u00e9gou",
-        "id": "01985c82-bb1d-7075-9be4-191d87f96bae",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 738,
-    "github_url": "https://github.com/NVIDIA/kvpress",
-    "id": "019b8a09-2181-7593-90bd-4c16045fec80",
-    "image_url": "image/2510.0636v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/nvidia.png",
-        "name": "NVIDIA"
-      },
-      {
-        "image": null,
-        "name": "Sapienza University of Rome"
-      }
-    ],
-    "paper_group_id": "019b8a09-2181-7593-90bd-4c16045fec80",
-    "paper_summary": null,
-    "publication_date": "2025-10-01T08:12:14.000Z",
-    "title": "Expected Attention: KV Cache Compression by Estimating Attention from Future Queries Distribution",
-    "topics": [
-      "attention-mechanisms",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "efficient-transformers",
+      "hardware-aware-algorithms",
       "inference-optimization",
       "lightweight-models",
       "ml-systems",
       "model-compression",
-      "optimization-methods",
-      "test-time-inference",
       "transformers"
     ],
-    "universal_paper_id": "2510.0636",
-    "updated_at": "2026-01-04T17:23:32.865Z",
-    "version_id": "019b8a09-21a5-79fd-862f-0d02d356b6f7"
+    "universal_paper_id": "2410.1805",
+    "updated_at": "2025-12-24T11:57:19.237Z",
+    "version_id": "019b5038-821b-75e4-9352-b053850a4051"
   },
   {
-    "abstract": "In Large Language Model (LLM) inference, Key-Value (KV) caches (KV-caches) are essential for reducing time complexity. However, they result in a linear increase in GPU memory as the context length grows. While recent work explores KV-cache eviction and compression policies to reduce memory usage, they often consider uniform KV-caches across all attention heads, leading to suboptimal performance. We introduce BaKlaVa, a method to allocate optimal memory for individual KV-caches across the model by estimating the importance of each KV-cache. Our empirical analysis demonstrates that not all KV-caches are equally critical for LLM performance. Using a one-time profiling approach, BaKlaVa assigns optimal memory budgets to each KV-cache. We evaluated our method on LLaMA-3-8B, and Qwen2.5-7B models, achieving up to a 70\\% compression ratio while keeping baseline performance and delivering up to an order-of-magnitude accuracy improvement at higher compression levels.",
+    "abstract": "As Large Language Models (LLMs) scale to support context windows exceeding one million tokens, the linear growth of Key-Value (KV) cache imposes severe memory capacity and bandwidth bottlenecks, constraining the efficiency of long-context inference. Existing compression approaches typically prioritize tokens based on local saliency metrics to decouple prefill computation from decoding memory. However, these methods often rely on local saliency snapshots at a specific layer, thereby systematically discarding tokens that act as global information hubs across the network depth but appear temporarily dormant at the specific layer selected for pruning. To address this limitation, we propose StructKV, a structure-aware KV cache compression framework that introduces three core innovations: First, Global In-Degree Centrality aggregates attention patterns across the network depth to identify global information hubs. Second, Dynamic Pivot Detection utilizes information-theoretic metrics to adaptively locate the optimal layer for compression. Finally, Structural Propagation and Decoupling separates the computational budget from the memory storage budget. Experimental results on the LongBench and RULER benchmarks demonstrate that StructKV effectively preserves long-range dependencies and retrieval robustness.",
     "author_info": [],
     "authors": [
-      "Ahmed Burak Gulhan",
-      "Krishna Teja Chitty-Venkata",
-      "Murali Emani",
-      "Mahmut Kandemir",
-      "Venkatram Vishwanath"
+      "Zhirui Chen",
+      "Peiyang Liu",
+      "Ling Shao"
     ],
-    "canonical_id": "2502.13176/metadatav2",
-    "first_publication_date": "2025-02-18T04:08:29.000Z",
+    "canonical_id": "2604.06746v1",
+    "first_publication_date": "2026-04-08T07:10:35.000Z",
     "full_authors": [
       {
-        "full_name": "Ahmed Burak Gulhan",
-        "id": "01985c84-35c0-726f-ac9e-9f1a1abe770c",
+        "full_name": "Zhirui Chen",
+        "id": "01985c81-e911-7719-9776-9eaef7a5d9f6",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Krishna Teja Chitty-Venkata",
-        "id": "01985c82-8b4e-7e89-a981-db921f672971",
+        "full_name": "Peiyang Liu",
+        "id": "01985c84-6fb0-71b9-9a57-9f190919bcc2",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Murali Emani",
-        "id": "01985c82-8b4e-7835-a585-5f33b60838f5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Mahmut Kandemir",
-        "id": "01985c84-35c0-7999-9c3d-e71f4bc767bb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Venkatram Vishwanath",
-        "id": "01985c82-8b4e-74c1-8421-f7e3eced3262",
+        "full_name": "Ling Shao",
+        "id": "01985c81-e1bb-75ca-b1ac-8f36cac78baf",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "019d162b-385f-7d12-a9d1-96c6ac90c813",
-    "image_url": "image/2502.13176/metadatav2.png",
+    "id": "019d7041-698e-76b6-b928-212a4d62d0ad",
+    "image_url": "image/2604.06746v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 3,
+        "last_7_days": 3
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d7041-698e-76b6-b928-212a4d62d0ad",
+    "paper_summary": null,
+    "publication_date": "2026-04-08T07:10:35.000Z",
+    "title": "StructKV: Preserving the Structural Skeleton for Scalable Long-Context Inference",
+    "topics": [
+      "Computer Science",
+      "cs.CL"
+    ],
+    "universal_paper_id": "2604.06746",
+    "updated_at": "2026-04-09T03:20:28.302Z",
+    "version_id": "019d7041-69d5-7091-81e8-a9ab5787217b"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) suffer inference-time memory bottlenecks dominated by the attention Key-Value (KV) cache, which scales with model size and context length. While KV-cache quantization alleviates this cost, bit allocation between keys and values is often tuned heuristically, lacking theoretical grounding and generalizability. This paper proposes two theorems that anchor mixed-precision KV quantization in the intrinsic geometry of Transformer models. First, key projections systematically have larger spectral and Frobenius norms than value matrices, implying higher information density along the key path. Second, for any given memory budget, prioritizing precision for keys over values strictly reduces quantization error and better preserves accuracy. Empirical evaluations across various prominent LLMs and benchmarks show that key-favored allocations (e.g., 4-bit keys, 2-bit values) retain up to 98.3\\% accuracy compared to uniform allocations (e.g., 4-bit for both), while conserving memory. These results transform bit allocation from ad hoc tuning into a theoretically grounded, geometry-driven design principle for efficient LLM inference. Source code is available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Mohsen Hariri",
+      "Alan Luo",
+      "Weicong Chen",
+      "Shaochen Zhong",
+      "Tianyi Zhang",
+      "Qifan Wang",
+      "Xia Hu",
+      "Xiaotian Han",
+      "Vipin Chaudhary"
+    ],
+    "canonical_id": "2502.15075/metadatav3",
+    "first_publication_date": "2025-02-20T22:24:27.000Z",
+    "full_authors": [
+      {
+        "full_name": "Mohsen Hariri",
+        "id": "01985c83-22ab-720f-8942-aa6f71fee0ea",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Alan Luo",
+        "id": "01985c82-6a8c-738b-971b-b8e85afcdb55",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weicong Chen",
+        "id": "01985c82-fdc5-7ba7-be31-a851a5cc6c6e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shaochen Zhong",
+        "id": "01985c82-0ef3-77cc-bb73-2e13d230d97d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianyi Zhang",
+        "id": "01985c81-e01e-7a63-9630-b1bc114f8f5b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qifan Wang",
+        "id": "01985c81-e287-7b9b-b23d-8405b4d8ac9a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xia Hu",
+        "id": "01985c81-e1bb-7978-b6b9-3edabec6f340",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaotian Han",
+        "id": "01985c81-e9dd-74df-98c7-2954dddc9dec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Vipin Chaudhary",
+        "id": "01985c81-f312-76a6-b52f-16b2ce30cce0",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 20,
+    "github_url": "https://github.com/mohsenhariri/spectral-kv",
+    "id": "019c48c6-9003-739c-854e-93f9ee4f0438",
+    "image_url": "image/2502.15075/metadatav3.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
@@ -5864,119 +5979,37 @@
       },
       "x_likes": 0
     },
-    "organization_info": [],
-    "paper_group_id": "019d162b-385f-7d12-a9d1-96c6ac90c813",
+    "organization_info": [
+      {
+        "image": "images/organizations/meta.png",
+        "name": "Meta"
+      },
+      {
+        "image": "images/organizations/rice-university.jpeg",
+        "name": "Rice University"
+      },
+      {
+        "image": null,
+        "name": "Case Western Reserve University"
+      }
+    ],
+    "paper_group_id": "019c48c6-9003-739c-854e-93f9ee4f0438",
     "paper_summary": null,
-    "publication_date": "2025-02-24T01:28:27.000Z",
-    "title": "BaKlaVa -- Budgeted Allocation of KV cache for Long-context Inference",
+    "publication_date": "2025-10-15T16:03:13.000Z",
+    "title": "Quantize What Counts: More for Keys, Less for Values",
     "topics": [
+      "attention-mechanisms",
       "Computer Science",
-      "cs.AI",
       "cs.LG",
-      "efficient-transformers",
-      "hardware-aware-algorithms",
       "inference-optimization",
-      "ml-systems",
+      "lightweight-models",
       "model-compression",
       "optimization-methods",
       "transformers"
     ],
-    "universal_paper_id": "2502.13176/metadata",
-    "updated_at": "2026-03-22T15:30:24.479Z",
-    "version_id": "019d162b-3899-7fdd-ab3b-19c928d16488"
-  },
-  {
-    "abstract": "Large language models (LLMs) demonstrate remarkable capabilities but face substantial serving costs due to their high memory demands, with the key-value (KV) cache being a primary bottleneck. State-of-the-art KV cache compression techniques, such as quantization and pruning, apply uniform treatment to both keys and values, and discard unimportant tokens entirely, overlooking the fine-grained distinctions in the significance of individual KV cache components. To address such limitations, we introduce \\textit{DiffKV}, a novel framework for efficient KV cache compression that exploits three levels of differentiation in the KV cache: (1) the differing impact of keys and values on attention computation, (2) the varying importance of tokens, and (3) the diverse dynamic sparsity patterns across attention heads. These levels of differentiation introduce irregular memory usage patterns across different requests and attention heads, posing significant scalability challenges for memory management. To address these challenges, DiffKV proposes an on-GPU memory manager that compacts fragmented free memory list into contiguous regions in parallel, effectively translating sparsity in the KV cache into performance gains. We evaluate DiffKV on several mainstream LLMs, including the emerging thinking models that generate extended chains of thought. DiffKV is able to compress the KV cache by $2.7\\times$ to $5.7\\times$ with near-lossless accuracy on complex workloads requiring sophisticated reasoning and long-generation capabilities, and enhances throughput by $1.9\\times$ to $5.4\\times$. Source codes of DiffKV are available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Yanqi Zhang",
-      "Yuwei Hu",
-      "Runyuan Zhao",
-      "John C.S. Lui",
-      "Haibo Chen"
-    ],
-    "canonical_id": "2412.03131/sso-callbackv3",
-    "first_publication_date": "2024-12-04T08:51:23.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yanqi Zhang",
-        "id": "01985c82-71b8-7162-8d2f-502cabed820c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuwei Hu",
-        "id": "01985c82-063d-72a5-9247-b5e35b72fdcd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Runyuan Zhao",
-        "id": "01985c83-363f-7f79-95df-b41d4681ccae",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "John C.S. Lui",
-        "id": "01985c82-2a92-7792-a85a-3d3af3040973",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Haibo Chen",
-        "id": "01985c81-dc26-79b2-8761-3390496c74dc",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 35,
-    "github_url": "https://github.com/zyqCSL/DiffKV",
-    "id": "019bc24d-a7b3-7cd4-ba62-6cd8893616ea",
-    "image_url": "image/2412.03131/sso-callbackv3.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 2,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/shanghai-jiao-tong-university.png",
-        "name": "Shanghai Jiao Tong University"
-      },
-      {
-        "image": "images/organizations/chinesehongkong.png",
-        "name": "The Chinese University of Hong Kong"
-      },
-      {
-        "image": "images/organizations/huawei.png",
-        "name": "Huawei"
-      }
-    ],
-    "paper_group_id": "019bc24d-a7b3-7cd4-ba62-6cd8893616ea",
-    "paper_summary": null,
-    "publication_date": "2025-08-30T09:35:22.000Z",
-    "title": "DiffKV: Differentiated Memory Management for Large Language Models with Parallel KV Compaction",
-    "topics": [
-      "attention-mechanisms",
-      "Computer Science",
-      "cs.DC",
-      "cs.LG",
-      "efficient-transformers",
-      "hardware-aware-algorithms",
-      "inference-optimization",
-      "ml-systems",
-      "model-compression",
-      "model-serving-infrastructure",
-      "reasoning",
-      "transformers"
-    ],
-    "universal_paper_id": "2412.03131/sso-callback",
-    "updated_at": "2026-01-15T15:37:07.763Z",
-    "version_id": "019bc24d-a7cb-7bff-8f4b-7a96ece5907a"
+    "universal_paper_id": "2502.15075/metadata",
+    "updated_at": "2026-02-10T18:18:18.499Z",
+    "version_id": "019c48c6-904c-7315-923b-ca401f93dded"
   },
   {
     "abstract": "The quadratic computational complexity of the attention mechanism in current Large Language Models (LLMs) renders inference with long contexts prohibitively expensive. To address this challenge, various approaches aim to retain critical portions of the context to optimally approximate Full Attention (FA) through Key-Value (KV) compression or Sparse Attention (SA), enabling the processing of virtually unlimited text lengths in a streaming manner. However, these methods struggle to achieve performance levels comparable to FA, particularly in retrieval tasks. In this paper, our analysis of attention head patterns reveals that LLMs' attention distributions show strong local correlations, naturally reflecting a chunking mechanism for input context. We propose Ltri-LLM framework, which divides KVs into spans, stores them in an offline index, and retrieves the relevant KVs into memory for various queries. Experimental results on popular long text benchmarks show that Ltri-LLM can achieve performance close to FA while maintaining efficient, streaming-based inference.",
@@ -6333,53 +6366,53 @@
     "version_id": "019b88c9-6960-74c3-a298-a1d39a2ce953"
   },
   {
-    "abstract": "Scaling the input context length of a large language model (LLM) incurs a significant increase in computation cost and memory footprint to maintain the attention key-value (KV) cache. Existing KV cache compression methods suffer from inefficient compression strategies and limited memory reduction effects, making it difficult for LLMs to conduct long-context inference on consumer-grade devices, especially when inferring long-context stream input. Such obstacles prevent consumer-grade devices from supporting more complex applications, creating challenges for the democratization of LLMs. To overcome this, we propose Locret, the first framework to create an eviction policy compatible with chunked prefill. By evaluating the causal importance of KV cache units by learnable retaining heads, Locret enables precise eviction of cache units, facilitating efficient long-context inference. In our extensive empirical studies, Locret outperforms the recent popular and competitive approaches in terms of memory efficiency and generation quality -- Locret achieves up to 20x of KV cache compression ratio within less than 10% performance loss. Furthermore, Locret achieves 128K+ long-context inference on a single NVIDIA 4090 GPU without compromising generation quality and only costs &lt;1 GPU hour of additional training.",
+    "abstract": "In Large Language Model (LLM) inference, Key-Value (KV) caches (KV-caches) are essential for reducing time complexity. However, they result in a linear increase in GPU memory as the context length grows. While recent work explores KV-cache eviction and compression policies to reduce memory usage, they often consider uniform KV-caches across all attention heads, leading to suboptimal performance. We introduce BaKlaVa, a method to allocate optimal memory for individual KV-caches across the model by estimating the importance of each KV-cache. Our empirical analysis demonstrates that not all KV-caches are equally critical for LLM performance. Using a one-time profiling approach, BaKlaVa assigns optimal memory budgets to each KV-cache. We evaluated our method on LLaMA-3-8B, and Qwen2.5-7B models, achieving up to a 70\\% compression ratio while keeping baseline performance and delivering up to an order-of-magnitude accuracy improvement at higher compression levels.",
     "author_info": [],
     "authors": [
-      "Yuxiang Huang",
-      "Binhang Yuan",
-      "Xu Han",
-      "Chaojun Xiao",
-      "Zhiyuan Liu"
+      "Ahmed Burak Gulhan",
+      "Krishna Teja Chitty-Venkata",
+      "Murali Emani",
+      "Mahmut Kandemir",
+      "Venkatram Vishwanath"
     ],
-    "canonical_id": "2410.1805v2",
-    "first_publication_date": "2024-10-02T17:59:52.000Z",
+    "canonical_id": "2502.13176/metadatav2",
+    "first_publication_date": "2025-02-18T04:08:29.000Z",
     "full_authors": [
       {
-        "full_name": "Yuxiang Huang",
-        "id": "01985c81-e41b-7102-8566-cc2f3d268016",
+        "full_name": "Ahmed Burak Gulhan",
+        "id": "01985c84-35c0-726f-ac9e-9f1a1abe770c",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Binhang Yuan",
-        "id": "01985c81-e287-79ad-8486-34f007d8962e",
+        "full_name": "Krishna Teja Chitty-Venkata",
+        "id": "01985c82-8b4e-7e89-a981-db921f672971",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Xu Han",
-        "id": "01985c81-e0ec-7dbb-83a2-82132369311e",
+        "full_name": "Murali Emani",
+        "id": "01985c82-8b4e-7835-a585-5f33b60838f5",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Chaojun Xiao",
-        "id": "01985c81-ec41-7d60-b9b2-e829ed77f30f",
+        "full_name": "Mahmut Kandemir",
+        "id": "01985c84-35c0-7999-9c3d-e71f4bc767bb",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zhiyuan Liu",
-        "id": "01985c81-d859-737a-8968-98cd00f5f737",
+        "full_name": "Venkatram Vishwanath",
+        "id": "01985c82-8b4e-74c1-8421-f7e3eced3262",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 13,
-    "github_url": "https://github.com/huangyuxiang03/Locret",
-    "id": "019b5038-8205-7a54-8081-ad365a1ef763",
-    "image_url": "image/2410.1805v2.png",
+    "github_stars": null,
+    "github_url": null,
+    "id": "019d162b-385f-7d12-a9d1-96c6ac90c813",
+    "image_url": "image/2502.13176/metadatav2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
@@ -6389,151 +6422,118 @@
       },
       "x_likes": 0
     },
-    "organization_info": [
-      {
-        "image": "images/organizations/tsinghua.png",
-        "name": "Tsinghua University"
-      },
-      {
-        "image": "images/organizations/hkust.jpg",
-        "name": "HKUST"
-      }
-    ],
-    "paper_group_id": "019b5038-8205-7a54-8081-ad365a1ef763",
+    "organization_info": [],
+    "paper_group_id": "019d162b-385f-7d12-a9d1-96c6ac90c813",
     "paper_summary": null,
-    "publication_date": "2025-01-30T13:07:37.000Z",
-    "title": "Locret: Enhancing Eviction in Long-Context LLM Inference with Trained Retaining Heads on Consumer-Grade Devices",
+    "publication_date": "2025-02-24T01:28:27.000Z",
+    "title": "BaKlaVa -- Budgeted Allocation of KV cache for Long-context Inference",
     "topics": [
-      "attention-mechanisms",
       "Computer Science",
-      "cs.CL",
+      "cs.AI",
+      "cs.LG",
       "efficient-transformers",
       "hardware-aware-algorithms",
       "inference-optimization",
-      "lightweight-models",
       "ml-systems",
-      "model-compression",
-      "transformers"
-    ],
-    "universal_paper_id": "2410.1805",
-    "updated_at": "2025-12-24T11:57:19.237Z",
-    "version_id": "019b5038-821b-75e4-9352-b053850a4051"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) suffer inference-time memory bottlenecks dominated by the attention Key-Value (KV) cache, which scales with model size and context length. While KV-cache quantization alleviates this cost, bit allocation between keys and values is often tuned heuristically, lacking theoretical grounding and generalizability. This paper proposes two theorems that anchor mixed-precision KV quantization in the intrinsic geometry of Transformer models. First, key projections systematically have larger spectral and Frobenius norms than value matrices, implying higher information density along the key path. Second, for any given memory budget, prioritizing precision for keys over values strictly reduces quantization error and better preserves accuracy. Empirical evaluations across various prominent LLMs and benchmarks show that key-favored allocations (e.g., 4-bit keys, 2-bit values) retain up to 98.3\\% accuracy compared to uniform allocations (e.g., 4-bit for both), while conserving memory. These results transform bit allocation from ad hoc tuning into a theoretically grounded, geometry-driven design principle for efficient LLM inference. Source code is available at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Mohsen Hariri",
-      "Alan Luo",
-      "Weicong Chen",
-      "Shaochen Zhong",
-      "Tianyi Zhang",
-      "Qifan Wang",
-      "Xia Hu",
-      "Xiaotian Han",
-      "Vipin Chaudhary"
-    ],
-    "canonical_id": "2502.15075/metadatav3",
-    "first_publication_date": "2025-02-20T22:24:27.000Z",
-    "full_authors": [
-      {
-        "full_name": "Mohsen Hariri",
-        "id": "01985c83-22ab-720f-8942-aa6f71fee0ea",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Alan Luo",
-        "id": "01985c82-6a8c-738b-971b-b8e85afcdb55",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Weicong Chen",
-        "id": "01985c82-fdc5-7ba7-be31-a851a5cc6c6e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shaochen Zhong",
-        "id": "01985c82-0ef3-77cc-bb73-2e13d230d97d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tianyi Zhang",
-        "id": "01985c81-e01e-7a63-9630-b1bc114f8f5b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qifan Wang",
-        "id": "01985c81-e287-7b9b-b23d-8405b4d8ac9a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xia Hu",
-        "id": "01985c81-e1bb-7978-b6b9-3edabec6f340",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaotian Han",
-        "id": "01985c81-e9dd-74df-98c7-2954dddc9dec",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Vipin Chaudhary",
-        "id": "01985c81-f312-76a6-b52f-16b2ce30cce0",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 20,
-    "github_url": "https://github.com/mohsenhariri/spectral-kv",
-    "id": "019c48c6-9003-739c-854e-93f9ee4f0438",
-    "image_url": "image/2502.15075/metadatav3.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 0,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/meta.png",
-        "name": "Meta"
-      },
-      {
-        "image": "images/organizations/rice-university.jpeg",
-        "name": "Rice University"
-      },
-      {
-        "image": null,
-        "name": "Case Western Reserve University"
-      }
-    ],
-    "paper_group_id": "019c48c6-9003-739c-854e-93f9ee4f0438",
-    "paper_summary": null,
-    "publication_date": "2025-10-15T16:03:13.000Z",
-    "title": "Quantize What Counts: More for Keys, Less for Values",
-    "topics": [
-      "attention-mechanisms",
-      "Computer Science",
-      "cs.LG",
-      "inference-optimization",
-      "lightweight-models",
       "model-compression",
       "optimization-methods",
       "transformers"
     ],
-    "universal_paper_id": "2502.15075/metadata",
-    "updated_at": "2026-02-10T18:18:18.499Z",
-    "version_id": "019c48c6-904c-7315-923b-ca401f93dded"
+    "universal_paper_id": "2502.13176/metadata",
+    "updated_at": "2026-03-22T15:30:24.479Z",
+    "version_id": "019d162b-3899-7fdd-ab3b-19c928d16488"
+  },
+  {
+    "abstract": "Large language models (LLMs) demonstrate remarkable capabilities but face substantial serving costs due to their high memory demands, with the key-value (KV) cache being a primary bottleneck. State-of-the-art KV cache compression techniques, such as quantization and pruning, apply uniform treatment to both keys and values, and discard unimportant tokens entirely, overlooking the fine-grained distinctions in the significance of individual KV cache components. To address such limitations, we introduce \\textit{DiffKV}, a novel framework for efficient KV cache compression that exploits three levels of differentiation in the KV cache: (1) the differing impact of keys and values on attention computation, (2) the varying importance of tokens, and (3) the diverse dynamic sparsity patterns across attention heads. These levels of differentiation introduce irregular memory usage patterns across different requests and attention heads, posing significant scalability challenges for memory management. To address these challenges, DiffKV proposes an on-GPU memory manager that compacts fragmented free memory list into contiguous regions in parallel, effectively translating sparsity in the KV cache into performance gains. We evaluate DiffKV on several mainstream LLMs, including the emerging thinking models that generate extended chains of thought. DiffKV is able to compress the KV cache by $2.7\\times$ to $5.7\\times$ with near-lossless accuracy on complex workloads requiring sophisticated reasoning and long-generation capabilities, and enhances throughput by $1.9\\times$ to $5.4\\times$. Source codes of DiffKV are available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Yanqi Zhang",
+      "Yuwei Hu",
+      "Runyuan Zhao",
+      "John C.S. Lui",
+      "Haibo Chen"
+    ],
+    "canonical_id": "2412.03131/sso-callbackv3",
+    "first_publication_date": "2024-12-04T08:51:23.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yanqi Zhang",
+        "id": "01985c82-71b8-7162-8d2f-502cabed820c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuwei Hu",
+        "id": "01985c82-063d-72a5-9247-b5e35b72fdcd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Runyuan Zhao",
+        "id": "01985c83-363f-7f79-95df-b41d4681ccae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "John C.S. Lui",
+        "id": "01985c82-2a92-7792-a85a-3d3af3040973",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haibo Chen",
+        "id": "01985c81-dc26-79b2-8761-3390496c74dc",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 35,
+    "github_url": "https://github.com/zyqCSL/DiffKV",
+    "id": "019bc24d-a7b3-7cd4-ba62-6cd8893616ea",
+    "image_url": "image/2412.03131/sso-callbackv3.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 2,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/shanghai-jiao-tong-university.png",
+        "name": "Shanghai Jiao Tong University"
+      },
+      {
+        "image": "images/organizations/chinesehongkong.png",
+        "name": "The Chinese University of Hong Kong"
+      },
+      {
+        "image": "images/organizations/huawei.png",
+        "name": "Huawei"
+      }
+    ],
+    "paper_group_id": "019bc24d-a7b3-7cd4-ba62-6cd8893616ea",
+    "paper_summary": null,
+    "publication_date": "2025-08-30T09:35:22.000Z",
+    "title": "DiffKV: Differentiated Memory Management for Large Language Models with Parallel KV Compaction",
+    "topics": [
+      "attention-mechanisms",
+      "Computer Science",
+      "cs.DC",
+      "cs.LG",
+      "efficient-transformers",
+      "hardware-aware-algorithms",
+      "inference-optimization",
+      "ml-systems",
+      "model-compression",
+      "model-serving-infrastructure",
+      "reasoning",
+      "transformers"
+    ],
+    "universal_paper_id": "2412.03131/sso-callback",
+    "updated_at": "2026-01-15T15:37:07.763Z",
+    "version_id": "019bc24d-a7cb-7bff-8f4b-7a96ece5907a"
   }
 ]

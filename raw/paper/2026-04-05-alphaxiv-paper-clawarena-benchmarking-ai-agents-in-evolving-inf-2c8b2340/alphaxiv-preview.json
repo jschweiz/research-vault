@@ -96,11 +96,11 @@
   "id": "019d65dc-b043-70b0-8cb7-b5cdacb96183",
   "image_url": "image/2604.04202v1.png",
   "metrics": {
-    "public_total_votes": 6,
-    "total_votes": 1,
+    "public_total_votes": 20,
+    "total_votes": 4,
     "visits_count": {
-      "all": 82,
-      "last_7_days": 82
+      "all": 144,
+      "last_7_days": 144
     },
     "x_likes": 0
   },

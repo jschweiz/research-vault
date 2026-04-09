@@ -1,0 +1,192 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Chaoyou Fu",
+        "id": "01985c81-f818-7b51-9893-0f7b529c1805",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haozhi Yuan",
+        "id": "01985c84-9198-7fba-9973-19ed904bd835",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuhao Dong",
+        "id": "01985c82-0fce-7303-bd52-16faa93078b4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yi-Fan Zhang",
+        "id": "01985c81-f818-7959-9d5f-d5a3591672bf",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yunhang Shen",
+        "id": "01985c82-3305-7ec2-b8a3-e5188259046b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaoxing Hu",
+        "id": "01985c84-e2e3-74b4-9946-470707ff6732",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xueying Li",
+        "id": "01985c82-5e6a-7b5c-98e7-92bc113a05d2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinsen Su",
+        "id": "019d6af0-8a4e-7bfd-9b5d-539fa91dc2e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chengwu Long",
+        "id": "019d6af0-8a50-72f9-9db3-9f07f7e8dad1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaoyao Xie",
+        "id": "01985c85-13ad-7a89-85b8-cd5b3a186933",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yongkang Xie",
+        "id": "019d6af0-8a52-726e-ab59-bd37d347280b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiawu Zheng",
+        "id": "01985c81-e4e5-7418-8799-6b0054306eb2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xue Yang",
+        "id": "01985c81-e5aa-784b-9c3f-99bdaab3c182",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haoyu Cao",
+        "id": "01985c82-a900-74be-a36c-684bbbec7ca9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yunsheng Wu",
+        "id": "01985c82-3305-7e3b-ae1c-2846bcdc146d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziwei Liu",
+        "id": "01985c81-d97f-7e3c-98d6-ebaf2f4520f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xing Sun",
+        "id": "01985c82-204e-7fef-a4d9-badaaea062ff",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Caifeng Shan",
+        "id": "01985c82-3305-738d-a50f-c20c1478e9b7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ran He",
+        "id": "01985c81-d97f-779c-b2a1-3a5ce9ba735d",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:34:02 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:59:56 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6af0-8a2c-79b7-a5e5-5c4e3e5c1d12",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 11,
+        "questions_count": 0,
+        "total_votes": 3,
+        "upvotes_count": 11,
+        "visits_count": {
+          "all": 177,
+          "last24Hours": 128,
+          "last30Days": 177,
+          "last7Days": 177,
+          "last90Days": 177
+        }
+      },
+      "podcast_path": "019d6af0-8a2c-79b7-a5e5-5c4e3e5c1d12/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+          "language": "Python",
+          "stars": 149,
+          "url": "https://github.com/MME-Benchmarks/Video-MME-v2"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05015"
+      },
+      "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+      "topics": [
+        "Computer Science",
+        "cs.CV",
+        "data-curation",
+        "explainable-ai",
+        "multi-modal-learning",
+        "reasoning",
+        "time-series-analysis",
+        "video-understanding",
+        "vision-language-models"
+      ],
+      "universal_paper_id": "2604.05015",
+      "updated_at": "Wed Apr 08 2026 02:34:02 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark designed to rigorously evaluate the robustness and faithfulness of video understanding. To systematically evaluate model capabilities, we design a \\textbf{progressive tri-level hierarchy} that incrementally increases the complexity of video comprehension, ranging from multi-point visual information aggregation, to temporal dynamics modeling, and ultimately to complex multimodal reasoning. Besides, in contrast to conventional per-question accuracy, we propose a \\textbf{group-based non-linear evaluation} strategy that enforces both consistency across related queries and coherence in multi-step reasoning. It penalizes fragmented or guess-based correctness and assigns credit only to answers supported by valid reasoning. To guarantee data quality, Video-MME-v2 is constructed through a rigorously controlled human annotation pipeline, involving 12 annotators and 50 independent reviewers. Backed by \\textbf{3,300 human-hours} and up to \\textbf{5 rounds} of quality assurance, Video-MME-v2 aims to serve as one of the most authoritative video benchmarks. Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where errors in visual information aggregation and temporal modeling propagate to limit high-level reasoning. We further find that thinking-based reasoning is highly dependent on textual cues, improving performance with subtitles but sometimes degrading it in purely visual settings. By exposing these limitations, Video-MME-v2 establishes a demanding new testbed for the development of next-generation video MLLMs.",
+      "created_at": "Wed Apr 08 2026 02:34:02 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6af0-8a91-7167-8065-44ff3251ba76",
+      "imageURL": "image/2604.05015v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 17:59:56 GMT+0000 (Coordinated Universal Time)",
+      "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+      "universal_paper_id": "2604.05015",
+      "updated_at": "Wed Apr 08 2026 02:34:02 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05015v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/leanstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:42.299416Z'
+fetched_at: '2026-04-09T08:08:27.134737Z'
 short_summary: Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and mighty, allowing humans to dictate desired outcomes rather than debugging machine-generated logic.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:01:06.140450Z'

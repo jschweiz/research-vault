@@ -34,7 +34,7 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d5738504bb7676
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:11:51.240636Z'
+fetched_at: '2026-04-09T08:09:49.265528Z'
 short_summary: 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".'
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:14:25.047885Z'

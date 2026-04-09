@@ -15,9 +15,9 @@ authors:
 - Weiping Wang
 - Jiaqi Wang
 - Nan Duan
-published_at: '2026-04-03T15:50:07Z'
+published_at: '2026-04-08T08:22:36Z'
 ingested_at: '2026-04-07T21:41:24.144696Z'
-content_hash: bd9f558b3df0f061c3d32b83e8b912d5e906024aac37ab8e5caa6a2bcaa6a5e3
+content_hash: dc3b6f99c20c9944196a20622c6858545f78528f8c8c730d285454f28d3383af
 tags:
 - paper
 - alphaxiv
@@ -58,8 +58,8 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03128
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:08.853735Z'
-short_summary: Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and preventing information leakage.
+fetched_at: '2026-04-09T08:10:11.500472Z'
+short_summary: Self-Distilled RLVR (RLSD) is a post-training framework for Large Language Models that enhances reasoning capabilities by providing fine-grained, token-level credit assignment while maintaining training stability. It achieves improved average accuracy by 4.69% over the base LLM and 2.32% over standard GRPO on multimodal reasoning benchmarks.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
 lightweight_enrichment_model: null
@@ -73,21 +73,21 @@ lightweight_score: null
 
 ## alphaXiv Summary
 
-Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fundamental limitations in existing On-Policy Self-Distillation (OPSD) for training reasoning LLMs, then proposed a new paradigm, RLSD, that separates environment-anchored update direction from self-distilled update magnitude. RLSD achieves an average of 2.32% absolute accuracy improvement over standard GRPO on multimodal reasoning benchmarks while ensuring training stability and preventing information leakage.
+Self-Distilled RLVR (RLSD) is a post-training framework for Large Language Models that enhances reasoning capabilities by providing fine-grained, token-level credit assignment while maintaining training stability. It achieves improved average accuracy by 4.69% over the base LLM and 2.32% over standard GRPO on multimodal reasoning benchmarks.
 
 ## Metadata
 
 - alphaXiv URL: https://www.alphaxiv.org/abs/2604.03128
 - Source paper: https://arxiv.org/abs/2604.03128
-- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.03128v1.pdf
-- Cover image: https://www.alphaxiv.org/image/2604.03128v1.png
+- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.03128v2.pdf
+- Cover image: https://www.alphaxiv.org/image/2604.03128v2.png
 - Paper ID: 2604.03128
-- Canonical ID: 2604.03128v1
+- Canonical ID: 2604.03128v2
 - Paper group ID: 019d6086-b0ee-70bb-9a73-f40ebf136f94
-- Version ID: 019d6086-b131-734a-86cd-85f6423a901b
-- Version: v1
-- Version order: 1
-- Published at: 2026-04-03T15:50:07+00:00
+- Version ID: 019d6fb0-bfe9-70b7-af65-04c4cb27eb7d
+- Version: v2
+- Version order: 2
+- Published at: 2026-04-08T08:22:36+00:00
 - First published at: 2026-04-03T15:50:07+00:00
 - Updated at: 2026-04-06T02:02:13.102000+00:00
 - License: http://creativecommons.org/licenses/by/4.0/
@@ -121,10 +121,10 @@ Researchers at the Chinese Academy of Sciences and JD.COM formally analyzed fund
 
 ## Metrics
 
-- Visits (all): 1815
-- Visits (last 7 days): 1815
-- Total votes: 37
-- Public total votes: 95
+- Visits (all): 2291
+- Visits (last 7 days): 2291
+- Total votes: 50
+- Public total votes: 108
 - X likes: 0
 
 ## Abstract
@@ -133,27 +133,27 @@ On-policy distillation (OPD) has become a popular training paradigm in the LLM c
 
 ## Problem
 
-- Reinforcement Learning with Verifiable Rewards (RLVR) methods struggle with sparse, sequence-level rewards, leading to coarse credit assignment for long-horizon reasoning tasks.
-- On-Policy Self-Distillation (OPSD) promises dense, token-level supervision but empirically exhibits information leakage and training instability, causing performance degradation.
-- Standard On-Policy Distillation (OPD) requires a separate, often larger, teacher model, leading to substantial computational overhead and scalability limitations.
+- Reinforcement Learning with Verifiable Rewards (RLVR) provides sparse, scalar rewards, limiting fine-grained credit assignment crucial for complex reasoning tasks.
+- On-Policy Self-Distillation (OPSD) showed promise for dense, token-level supervision but suffered from privileged information leakage, performance degradation after initial gains, and training instability.
+- Traditional On-Policy Distillation (OPD) is computationally expensive, requires an external teacher model, and limits scalability due to shared vocabulary requirements.
 
 ## Method
 
-- A theoretical and empirical analysis formally proves that OPSD's distribution-matching objective contains an irreducible mutual information gap, causing gradient corruption and information leakage.
-- RLSD (RLVR with Self-Distillation) is proposed to repurpose the privileged teacher signal, using it solely to modulate the *magnitude* of token-level credit assignment, while environment rewards dictate the update *direction*.
-- RLSD integrates with GRPO by computing a direction-aware evidence reweighting factor (`P_T/P_S` or `P_S/P_T`) for each token, which is then clipped and used to replace the uniform advantage in the GRPO objective.
+- The proposed RLSD framework decouples update direction (from sparse environmental rewards) and update magnitude (from dense, token-level self-distillation signals).
+- It reconfigures the privileged teacher's signal to function as a magnitude evaluator for per-token credit assignment, rather than a direct generative target.
+- The method computes `privileged information gain (Δ_t)` and `direction-aware evidence reweighting (w_t)` to adjust token-level advantages, then applies `clipped credit assignment (Â_t)` to stabilize training and gradually mix with uniform advantage.
 
 ## Results
 
-- RLSD achieved the highest average accuracy across five multimodal reasoning benchmarks, surpassing the Base LLM by 4.69% and standard GRPO by 2.32% on average for a 4K context length.
-- RLSD demonstrated superior training stability and a higher convergence ceiling compared to GRPO, effectively avoiding the performance degradation and information leakage observed in OPSD.
-- The method effectively assigns fine-grained credit, distributing larger credit to decisive reasoning steps in correct trajectories and concentrating blame on erroneous calculations in incorrect ones, while maintaining higher entropy throughout training.
+- RLSD achieved the highest average accuracy across five multimodal reasoning benchmarks, surpassing the Base LLM by 4.69% and standard GRPO by 2.32%.
+- It demonstrated superior performance and stable training dynamics compared to OPSD, avoiding performance degradation and maintaining consistently higher entropy levels.
+- RLSD showed notable performance gains on complex mathematical reasoning datasets like MathVista (+1.9% relative to GRPO) and MathVision (+3.91% relative to GRPO).
 
 ## Takeaways
 
-- Existing OPSD methods fail due to an inherent 'irreducible mutual information gap' between the privileged teacher and less-informed student, which prevents true convergence and leads to information leakage via corrupted gradients.
-- Decoupling the roles of privileged information—using it to modulate update *magnitudes* rather than as a generative target for distribution matching—resolves OPSD's fundamental issues of leakage and instability.
-- Fine-grained, token-level credit assignment, when controlled by the environment reward's direction and scaled by self-distilled magnitude, significantly improves the efficiency, stability, and convergence ceiling of reasoning LLM training.
+- OPSD's failure stems from a theoretical limitation: an irreducible conditional mutual information gap in its objective function, rendering the distribution-matching ill-posed.
+- Privileged information leakage and performance degradation in OPSD are caused by a two-phase training dynamic where `r`-specific deviation components in gradients corrupt parameter updates.
+- Decoupling credit assignment into direction (from verifiable outcomes) and magnitude (from self-distillation) allows for stable, leakage-free, and efficient fine-grained learning in LLMs.
 
 ## Full Overview
 

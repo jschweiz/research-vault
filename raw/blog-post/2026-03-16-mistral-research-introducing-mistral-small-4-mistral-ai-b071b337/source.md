@@ -30,7 +30,7 @@ canonical_url: https://mistral.ai/news/mistral-small-4
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:10:39.124835Z'
+fetched_at: '2026-04-09T08:08:23.920267Z'
 short_summary: Mistral Small 4 is a unified model that combines reasoning, multimodal, and instruct capabilities into a single, efficient architecture. It features configurable reasoning effort and native multimodality, optimized for performance and open-source deployment.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-08T14:00:42.622410Z'

@@ -14,7 +14,7 @@ authors:
 - Tianle Cai
 published_at: '2026-04-07T17:59:44Z'
 ingested_at: '2026-04-08T09:26:55.783108Z'
-content_hash: cc1ce222725051190d3fe9056ed079e09ba6afa1c93d99b2c0e4a4fad8bf1e40
+content_hash: 996992d7b075a8de63ffe63b510309684277f232dbdc92024cab0c3e3cac3eda
 tags:
 - paper
 - alphaxiv
@@ -43,6 +43,7 @@ tags:
 - summary
 status: active
 asset_paths:
+- alphaxiv-ai-detection.json
 - alphaxiv-legacy.json
 - alphaxiv-metadata.json
 - alphaxiv-overview-status.json
@@ -60,7 +61,7 @@ canonical_url: https://www.alphaxiv.org/abs/2604.06169
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T15:12:24.050202Z'
+fetched_at: '2026-04-09T08:10:03.384034Z'
 short_summary: In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null
@@ -126,10 +127,10 @@ In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large l
 
 ## Metrics
 
-- Visits (all): 226
-- Visits (last 7 days): 226
-- Total votes: 0
-- Public total votes: 15
+- Visits (all): 741
+- Visits (last 7 days): 741
+- Total votes: 7
+- Public total votes: 22
 - X likes: 0
 
 ## Abstract
@@ -182,6 +183,15 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d6b04-0a6f-7458-8574-e0d84a7b168e/transcript.json
 - Transcript lines: 20
 - Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`
+
+## AI Detection
+
+- State: done
+- Prediction: Human
+- Headline: Mostly Human Written
+- Fraction AI: 0.04366527
+- Fraction AI-assisted: 0
+- Fraction human: 0.9563347
 
 ## Resources
 
