@@ -30,12 +30,22 @@ index_visibility: visible
 fetched_at: '2026-04-08T15:09:44.671174Z'
 short_summary: New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:02:08.011631Z'
+lightweight_enriched_at: '2026-04-09T08:19:01.893284Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e884ad70e2e655285890b911ef3ed11ae77805449673ee467609d3b60d94c889
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 59f008173bd926c867890cf88849226af4f3234a88153876394a1c3b73dc1847
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 1.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about compensation and the wage gap, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
+  evidence_quotes:
+  - New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.
 ---
 New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap.

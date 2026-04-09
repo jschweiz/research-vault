@@ -31,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:07:56.317499Z'
-short_summary: 'Constitutional Classifiers: Defending against universal jailbreaks A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead.'
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data. Automated evaluations showed this system reduced jailbreak success rates significantly while maintaining minimal additional compute cost.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:28:44.302401Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c7d5bc5012b04b10a2725d07417b0a6c7aa321c0abb1df88c08caaabc602990a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 965838c7f28c85b1cc0cbf15ac3d70d17c889db3d343b508de03d00f6059fed7
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is a direct research post from Anthropic detailing a method (Constitutional Classifiers) for defending LLMs against jailbreaks, which aligns perfectly with the user's favorite topics of LLM evaluation, safety, and defense.
+  evidence_quotes:
+  - The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data.
+  - Results from automated evaluations We ran a set of automated evaluations where we synthetically generated 10,000 jailbreaking prompts including many of the most
+  - 'Guarding Claude using Constitutional Classifiers, however, produced a strong improvement: the jailbreak success rate was reduced to 4.4%, meaning that over 95% '
 ---
 Constitutional Classifiers: Defending against universal jailbreaks
 A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead. An updated version achieved similar robustness on synthetic evaluations, and did so with a 0.38% increase in refusal rates and moderate additional compute costs.

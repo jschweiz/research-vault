@@ -32,23 +32,25 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.768132Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:14.017957Z'
+lightweight_enriched_at: '2026-04-09T08:25:45.246719Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: de82ddfe221155b72e040d481eacb70c0fc5b8da1f48dcb44bebe97a938c0e3e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 69ae8b8470e79a5c2025d8fafde9fe6cb9eb5589558069f748b3fa4efbd8a8f9
+lightweight_scoring_input_hash: 3b983b342d92c63186b10913f961e83ae43709deb9cf62f612320ea3dcccf121
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.8
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
   author_fit_score: 0.0
-  evidence_fit_score: 0.7
-  confidence_score: 0.9
+  evidence_fit_score: 0.25
+  confidence_score: 0.6
   bucket_hint: worth_a_skim
-  reason: The document is highly relevant to favorite topics like AI and developer tools, but the specific focus is on a developer story rather than pure research or evaluation.
+  reason: The document touches on AI/code topics, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
   evidence_quotes:
   - 'Tags: newsletter, medium, email, blog-post, code, ai, developer, claude, data science'
+  - 'Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.'
+  - A visually impaired developer in Copenhagen maintains…
 ---
 # 12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.
 

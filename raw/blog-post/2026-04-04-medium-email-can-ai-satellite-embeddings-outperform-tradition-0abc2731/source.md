@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.151372Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:49.790094Z'
+lightweight_enriched_at: '2026-04-09T08:24:07.356481Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ce254e0819db434670b52aef053a550a7b8002c758cb9b3a3e9780ec0a9bb09e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9b932fee76b2e6300088f0ee122e3830c7f17ba83a45aa86142da840d664507b
+lightweight_scoring_input_hash: 77e2a85eba9816601d1b3ef26a5bd498999fd737b2a611c96166ea1244e4a827
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI and research tooling, making it highly relevant.
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI and evaluation, which aligns with favorite topics, but the specific focus on satellite embeddings is niche.
   evidence_quotes:
   - Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?
   - A Google Earth Engine based experiment

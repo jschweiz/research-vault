@@ -25,20 +25,6 @@ tags:
 - cs.cv
 - data-curation
 - fine-tuning
-- Computer Science
-- cs.AI
-- cs.CL
-- cs.CV
-- generative-models
-- multi-modal-learning
-- reinforcement-learning
-- transfer-learning
-- vision-language-models
-- visual-reasoning
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -60,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:30.976918Z'
-short_summary: Princeton University researchers introduce Vero, a fully open reinforcement learning recipe and associated VLM family for general visual reasoning, demonstrating state-of-the-art performance among 8B-parameter models on a new 30-benchmark suite. The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sample dataset and task-routed reward functions.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Vero is an open reinforcement learning recipe and VLM family for general visual reasoning, achieving state-of-the-art performance by scaling RL data and task-routed rewards across diverse visual reasoning tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:43:41.512458Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 76deaaf4c52bf7ae7847a43f9ad9414521c1fb1a51a04b60cca00e8d091584e1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a010263a54b9720dc996c7528b5a0263a3e23851c1d8fde552bf80dd0f9b0a6b
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it focuses on reinforcement learning recipes and Vision-Language Models, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Vero is an open reinforcement learning recipe and VLM family for general visual reasoning, achieving state-of-the-art performance by scaling RL data and task-ro
+  - We introduce Vero, a family of fully open VLMs that matches or exceeds existing open-weight models across diverse visual reasoning tasks.
+  - The method consistently improved various base models' performance by 3.6 to 5.3 points across six diverse visual reasoning categories using a curated 600,000-sa
 ---
 # Vero: An Open RL Recipe for General Visual Reasoning
 

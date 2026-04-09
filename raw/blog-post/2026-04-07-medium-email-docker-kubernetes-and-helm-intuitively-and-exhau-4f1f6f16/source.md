@@ -32,24 +32,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:28.013982Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:12:40.622770Z'
+lightweight_enriched_at: '2026-04-09T08:32:30.201459Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3996004b1fb9d3493216ba85a704cf6159a1837b4bd5aee1df4e426365f4f5fe
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 4138b66dcf65e97442a5af5a1fb01b9aec63b88112bb1802c650220c64a844eb
+lightweight_scoring_input_hash: 1d63910744baf40eb15dec74657ff0593a4fc76c43755422153644503eb3d69d
 lightweight_score:
-  relevance_score: 0.25
-  source_fit_score: 0.3
-  topic_fit_score: 0.4
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.5
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document covers technology topics but does not directly align with the user's favorite areas of language models, evaluation, reasoning, or research tooling.
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about software development tools (Docker, Kubernetes, Helm) which do not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
-  - In this article, we’ll explore how sophisticated…
 ---
 # Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
 

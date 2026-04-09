@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-08T15:11:52.571306Z'
 short_summary: Medium digest led by "Nobody Wants to Learn AI". Includes 15 highlighted stories, including "Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:13:45.483934Z'
+lightweight_enriched_at: '2026-04-09T08:34:02.625827Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 0b2239f22a219f984e58eb8d0120a98a5ccc7222ad7303e76053a0d668cd265b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cb9f6d5e5c7c21125dba2d0ce81bf11ceea249d67f08fc82d013131844ef29f9
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it covers multiple favorite topics like LLMs, agentic engineering, and reasoning models, and features favorite authors.
+  evidence_quotes:
+  - Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.
+  - 'No Libraries No Shortcuts: Reasoning LLMs from Scratch with PyTorch — Part 1'
+  - Designing a Production-Grade RAG Architecture
 ---
 # Nobody Wants to Learn AI | Alvis Ng
 

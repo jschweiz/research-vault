@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:42.644373Z'
 short_summary: Mistral AI introduced the Mistral coding stack, which integrates code completion, semantic search, and agentic workflows into the IDE for enterprise software development. This stack is designed to provide a unified, secure, and controllable platform for AI-native coding across various environments.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:58:52.306562Z'
+lightweight_enriched_at: '2026-04-09T08:17:21.524627Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 811c9d78aeb260013a7a8f213099bfa56d6cfb25bb3a0a7aba071bdf80b033fa
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 516749eac268ab2c086aee9b8f0c7f6ef830ccba3512653be9c6ead59ba6f92b
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through the lens of an enterprise coding stack.
+  evidence_quotes:
+  - Mistral AI introduced the Mistral coding stack, which integrates code completion, semantic search, and agentic workflows into the IDE for enterprise software de
+  - The Mistral coding stack integrates autocomplete, semantic retrieval, and agentic workflows directly into the IDE—while giving platform teams control over deplo
+  - The Mistral coding stack is already being used in production by organizations across consulting, finance, transportation, and industry—each with different requi
 ---
 How the world’s leading enterprises are using integrated coding solutions from Mistral AI to cut development, review, and testing time by 50%—and why the playbook now fits every company that wants AI-native software development.
 AI-powered coding is taking off, but enterprise adoption still lags due to critical limitations

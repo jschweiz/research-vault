@@ -11,41 +11,6 @@ authors:
 - Kaixin Zhu
 - Yifan Dai
 - Bozhou Li
-- Yuran Wang
-- Chengzhuo Tong
-- Yifan Yang
-- Mingkun Chang
-- Jianbin Zhao
-- Zhou Liu
-- Hao Liang
-- Xiaochen Ma
-- Ruichuan An
-- Junbo Niu
-- Zimo Meng
-- Tianyi Bai
-- Meiyi Qiang
-- Huanyao Zhang
-- Zhiyou Xiao
-- Tianyu Guo
-- Qinhan Yu
-- Runhao Zhao
-- Zhengpin Li
-- Xinyi Huang
-- Yisheng Pan
-- Yiwen Tang
-- Yang Shi
-- Yue Ding
-- Xinlong Chen
-- Hongcheng Gao
-- Minglei Shi
-- Jialong Wu
-- Zekun Wang
-- Yuanxing Zhang
-- Xintao Wang
-- Pengfei Wan
-- Yiren Song
-- Mike Zheng Shou
-- Wentao Zhang
 published_at: '2026-04-06T14:19:48Z'
 ingested_at: '2026-04-07T21:42:38.094023Z'
 content_hash: 31c611d33917815dfbbcf380774d4f2d6cb6a3934e2a82bf7085b7ef7d6446e4
@@ -60,14 +25,6 @@ tags:
 - generative-models
 - inference-optimization
 - ml-systems
-- Computer Science
-- cs.CV
-- reasoning
-- representation-learning
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -88,15 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:00.193359Z'
-short_summary: Researchers from Peking University, Kuaishou Technology, and other institutions developed OpenWorldLib, a unified inference framework for world models, alongside a standardized definition clarifying their scope and capabilities. This work provides a common codebase for interactive video generation, 3D generation, multimodal reasoning, and Vision-Language-Action tasks, facilitating structured development and comparison within the research community.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenWorldLib is a unified inference framework for advanced world models, providing a common codebase for interactive video generation, 3D generation, and multimodal reasoning. It introduces a standardized definition and a modular architecture to facilitate the reuse and integration of world model components.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:42:10.798736Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4d3bea028add9943e2843e170f4bb1c2da843acb20e0b460331eb712c728f750
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0f56f4d5609d6b9d4cd4760f4a205246b7da2eb60aa4c020038a641aa1de4869
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.3
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like world models, reasoning, and multimodal systems, making it highly relevant to the user's profile.
+  evidence_quotes:
+  - OpenWorldLib is a unified inference framework for advanced world models, providing a common codebase for interactive video generation, 3D generation, and multim
+  - 'The framework''s Reasoning module demonstrated the capacity for high-level cognitive tasks like spatial and general multimodal reasoning by interpreting diverse '
+  - OpenWorldLib successfully integrated and evaluated various interactive video generation models, showing that Hunyuan-WorldPlay achieved superior visual performa
 ---
 # OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
 

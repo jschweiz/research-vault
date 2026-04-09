@@ -32,25 +32,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.429494Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:07.660458Z'
+lightweight_enriched_at: '2026-04-09T08:25:36.093081Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d094002104881385f6873e5d8e1fea5c9d0b62a75f456590a582e12ed46ee6d5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: dab09b1ff4da481f3d4f5b9743329ad47a524ddb732a33c28cfe0b9b6db3e4a8
+lightweight_scoring_input_hash: 3827f4c86ef9a53c3aff2c36f4d7e4786f8763e7256a18d1fb891c5070c44f59
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.25
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.35
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
+  evidence_fit_score: 0.36
+  confidence_score: 0.6
   bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on AI/coding but lacks direct focus on evaluation or reasoning, and the author/source fit is weak.
+  reason: The document is related to AI/coding but does not directly address the user's favorite topics like LLM architecture or specific model evaluation.
   evidence_quotes:
   - What I Learnt Using Claude Code to Build Production-Ready Apps
-  - a practical guide covering the building blocks, hidden…
-  - claude code, ai, software development, coding, production apps
+  - A practical guide covering the building blocks, hidden…
 ---
 # What I Learnt Using Claude Code to Build Production-Ready Apps
 

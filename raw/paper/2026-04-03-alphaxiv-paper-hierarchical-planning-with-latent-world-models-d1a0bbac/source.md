@@ -46,14 +46,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-08T15:13:27.051435Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This paper introduces a method for hierarchical planning utilizing latent world models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:38:25.942157Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 865ba486d21d0305888f897730a2ee477aa1695709b5636dabc3eb11f87e712d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e2b6cd6ab9cb3d13af680550e8b52b0aa79fc8deffe1bf2b9f7bcf29b6d7d5fc
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics (planning, world models) but lacks specific author or source context.
+  evidence_quotes:
+  - This paper introduces a method for hierarchical planning utilizing latent world models.
+  - Hierarchical Planning with Latent World Models
 ---
 Hierarchical Planning with Latent World Models

@@ -45,25 +45,25 @@ index_visibility: visible
 fetched_at: '2026-04-07T21:43:35.459258Z'
 short_summary: '# Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence? ## alphaXiv Summary Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools to solve complex, real-world problems.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:16:45.837947Z'
+lightweight_enriched_at: '2026-04-09T08:38:14.553310Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f7985cf1c46477ca452c616a897f57a4a5b137efa4e0a1331ba70c0a7695e8f1
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 96e3ec2c836412b20ca670376f1678a8a62f72f52a4825c82964709030040f2c
+lightweight_scoring_input_hash: 4ced69fb8a39df97e17749fc8b28931384540817c8b65e3b69c89535aa996af5
 lightweight_score:
   relevance_score: 0.95
-  source_fit_score: 1.0
+  source_fit_score: 0.8
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.7
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and reasoning through a new benchmark for multimodal agentic capabilities.
+  reason: The document directly addresses favorite topics like LLM evaluation, multimodal intelligence, and agentic frameworks, making it highly relevant to the user's profile.
   evidence_quotes:
   - 'Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools '
-  - Evaluation reveals a substantial performance gap, with leading models reaching 56.3% overall accuracy compared to human 93.8%, especially struggling with multi-
-  - We introduce Agentic-MME, a process-verified benchmark for Multimodal Agentic Capabilities.
+  - 'Agentic-MME introduces a process-verified benchmark for assessing how multimodal large language models coordinate visual manipulation and open-web search tools '
+  - Experimental results show the best model, Gemini 3 Pro (Atm mode), achieved 56.3% overall accuracy and 33.3% on Level-3 tasks, significantly trailing human perf
 ---
 # Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
 

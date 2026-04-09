@@ -29,25 +29,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.868752Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:54.487860Z'
+lightweight_enriched_at: '2026-04-09T08:23:00.491693Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 360f1aa27a40cd2ce46db6271a8dd79fc64fed9117c94bda889e8bacf8c582cd
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 1f34ea0f98c7c40c5379fc7618bb2835897dc3d3d8b32fb8f238142385f8a86c
+lightweight_scoring_input_hash: eac9a70d05981ea2af521f6236fb85b486110abf2a1ab5ee43bd683e2b8bd7ce
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant to the user's interest in language models and coding but lacks specific evaluation or reasoning content.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Claude code and coding, which has weak topical overlap with the user's focus on LLM architecture and evaluation.
   evidence_quotes:
   - Claude Code is Great
-  - claude code
-  - coding
 ---
 # Claude Code is Great
 

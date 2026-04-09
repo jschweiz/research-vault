@@ -34,13 +34,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:44.469237Z'
 short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:14:59.926076Z'
+lightweight_enriched_at: '2026-04-09T08:35:25.512630Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 3954b15d5c981d9327346ce77cc3c368006c8b8e66f349962a61cb850eb5da0f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 230e124a36ebab1f299f4c68804b5949fc8e90d200c08840feb8dd38968ca9e5
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.36
+  author_fit_score: 0.0
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document contains a relevant story about RAG systems, which aligns with the user's interest in LLM evaluation and tooling, but the overall content is a general mental reset newsletter.
+  evidence_quotes:
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
+  - Understanding the Retrieval and Structuring (RAS)…
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
 

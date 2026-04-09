@@ -26,13 +26,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:43.499440Z'
 short_summary: 'Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:15:19.307053Z'
+lightweight_enriched_at: '2026-04-09T08:35:46.760848Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 09cfdcebcc47fd00eb698d888cebe17df07a2f1bc567a77c1a4e845b50990fd4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3d3c197340f84e92080fa59632b898a5eae03839aae064f5280b98c166070e73
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like LLM architecture, reasoning, and evaluation, and features relevant authors.
+  evidence_quotes:
+  - 'Understanding Transformers (Part 1): Why RNNs are nearly impossible to train'
+  - Agentic AI Evaluation Strategy & Metrics
+  - 'No Libraries No Shortcuts: Reasoning LLMs from Scratch with PyTorch — Part 1'
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 

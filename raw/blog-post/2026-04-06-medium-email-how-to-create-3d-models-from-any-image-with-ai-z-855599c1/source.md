@@ -31,24 +31,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.661251Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:40.548012Z'
+lightweight_enriched_at: '2026-04-09T08:26:19.052603Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2a7af606e62ae06df9cf64d6b4fbf35d49198c4db29a40e9a6f213e9c3650ac6
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 338ce246fff808ae6d868bd343b75defea36d31520b1b7aea03e0b5dc60b0230
+lightweight_scoring_input_hash: 32df1ee0ef20c8d66ac79afeaceea70a05931309b2f7b8e91a65058c5a137fbe
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.85
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: worth_a_skim
-  reason: The document strongly aligns with the user's favorite topic of language models and AI, despite the lack of specific author or source preference data.
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about 3D modeling and image processing, which is tangentially related to the user's interest in language models and AI, but lacks direct focus on LLM architecture or evaluation.
   evidence_quotes:
   - How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
-  - 'Tags: newsletter, medium, email, blog-post, 3d modeling, ai, image processing, zero-shot reconstruction'
+  - Learn to create accurate 3D point clouds from photos…
 ---
 # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
 

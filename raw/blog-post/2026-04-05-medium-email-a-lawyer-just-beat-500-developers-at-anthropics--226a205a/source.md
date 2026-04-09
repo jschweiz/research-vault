@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.493349Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:28.604354Z'
+lightweight_enriched_at: '2026-04-09T08:24:51.168871Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7a7828d6136d76bf6afa80d16372e456ab1384230257b48bc6a6d28025446029
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 1a5c10f0f08c6e35edbb771d3352c67344e039f31227eaed82fb97f428c35086
+lightweight_scoring_input_hash: 03738a470b0bfff1b92753e49f92a89e9fb3abdba9901b979c50b3bb663ba035
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.9
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document strongly aligns with the user's favorite topics of language models, evaluation, and research tooling, making it highly relevant.
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI and memory, which aligns with favorite topics, but the specific focus on a legal hackathon is not directly related to the user's core interests in LLM architecture or evaluation.
   evidence_quotes:
   - Building Long-Term Memory in Agentic AI
   - A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon

@@ -30,23 +30,22 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.536074Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:24.712215Z'
+lightweight_enriched_at: '2026-04-09T08:21:16.978644Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: c9745ba155c574b38e25cbfd821b388abd38c2b9aac8f1402c9b8d3cda60a49c
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 1db1ce23cb0e446855a8d464f5ed79af3ff94c6b77bcf1bfd45655d6d4b89b86
+lightweight_scoring_input_hash: 607997f202aeb6d21d5f8cc2b84658df3f7c3bc9423acb4618785c601bf21cad
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about programming and commit messages, which has weak overlap with the user's favorite topics of language models, evaluation, reasoning, and research tooling.
+  reason: The document is about programming commit messages and does not align with the user's favorite topics of language models, evaluation, or LLM architecture.
   evidence_quotes:
-  - Your Commit Messages Are Love Letters to Your Future Self
   - Your Commit Messages Are Love Letters to Your Future Self
 ---
 # Your Commit Messages Are Love Letters to Your Future Self

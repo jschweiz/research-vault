@@ -11,19 +11,6 @@ authors:
 - Yi-Fan Zhang
 - Yunhang Shen
 - Xiaoxing Hu
-- Xueying Li
-- Jinsen Su
-- Chengwu Long
-- Xiaoyao Xie
-- Yongkang Xie
-- Xiawu Zheng
-- Xue Yang
-- Haoyu Cao
-- Yunsheng Wu
-- Ziwei Liu
-- Xing Sun
-- Caifeng Shan
-- Ran He
 published_at: '2026-04-06T17:59:56Z'
 ingested_at: '2026-04-08T15:13:23.977216Z'
 content_hash: f7f60a767fe2d226083faca1a3b012764bd139d4c3548eeb3993924141dd09d0
@@ -31,19 +18,13 @@ tags:
 - paper
 - alphaxiv
 - research
-- Computer Science
-- cs.CV
+- computer science
+- cs.cv
 - data-curation
 - explainable-ai
 - multi-modal-learning
 - reasoning
 - time-series-analysis
-- video-understanding
-- vision-language-models
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -64,15 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:09.203065Z'
-short_summary: Video-MME-v2 introduces a benchmark for evaluating the robustness and faithfulness of multimodal large language models in comprehensive video understanding. It proposes a progressive tri-level evaluation hierarchy and a group-based non-linear scoring mechanism, revealing a 41.3-point performance gap between human experts and the best MLLMs, and identifying hierarchical bottlenecks in current models.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Video-MME-v2 is a benchmark designed to evaluate the robustness and faithfulness of multimodal large language models in comprehensive video understanding. It introduces a progressive hierarchy and group-based scoring to reveal performance gaps and hierarchical bottlenecks in current models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:46:11.015436Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 94fb76f0e9f11df1f2d977d15786ae6b668ca414fa5396f6fccd69aad4b961c5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: dfa18f489ac9775ed2390f47a2edcd33b3a0aca4d0859aa8375c7794fecb91bd
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like multimodal LLM evaluation, reasoning, and benchmarks, making it highly relevant to the user's profile.
+  evidence_quotes:
+  - Video-MME-v2 is a benchmark designed to evaluate the robustness and faithfulness of multimodal large language models in comprehensive video understanding.
+  - It proposes a progressive tri-level evaluation hierarchy and a group-based non-linear scoring mechanism, revealing performance gaps and hierarchical bottlenecks
+  - Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where erro
 ---
 # Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
 

@@ -11,10 +11,6 @@ authors:
 - Minghui Chen
 - Naibin Gu
 - Dingyu Yao
-- Zheng Lin
-- Weiping Wang
-- Jiaqi Wang
-- Nan Duan
 published_at: '2026-04-08T08:22:36Z'
 ingested_at: '2026-04-07T21:41:24.144696Z'
 content_hash: dc3b6f99c20c9944196a20622c6858545f78528f8c8c730d285454f28d3383af
@@ -29,15 +25,6 @@ tags:
 - deep-reinforcement-learning
 - fine-tuning
 - knowledge-distillation
-- Computer Science
-- cs.CL
-- cs.LG
-- optimization-methods
-- text-generation
-- transformers
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -59,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:11.500472Z'
-short_summary: Self-Distilled RLVR (RLSD) is a post-training framework for Large Language Models that enhances reasoning capabilities by providing fine-grained, token-level credit assignment while maintaining training stability. It achieves improved average accuracy by 4.69% over the base LLM and 2.32% over standard GRPO on multimodal reasoning benchmarks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The paper proposes Self-Distilled RLVR (RLSD), a framework that decouples credit assignment into direction (from verifiable rewards) and magnitude (from self-distillation) to achieve stable and efficient fine-grained learning in Large Language Models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:39:03.937904Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 9ad63b66ee8243098d5ec95234f2c7f88be0abd38fc1838beaa9457e1bfabd5a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1e891946ebe7e7190904144cc62dbf14b623cee72ff2979c272342e4ec811ebb
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM fine-tuning, reasoning, and RL methods, and the authors are from highly relevant organizations.
+  evidence_quotes:
+  - The paper proposes Self-Distilled RLVR (RLSD), a framework that decouples credit assignment into direction (from verifiable rewards) and magnitude (from self-di
+  - RLSD achieved the highest average accuracy across five multimodal reasoning benchmarks, surpassing the Base LLM by 4.69% and standard GRPO by 2.32%.
+  - It demonstrates superior performance and stable training dynamics compared to OPSD, avoiding performance degradation and maintaining consistently higher entropy
 ---
 # Self-Distilled RLVR
 

@@ -47,25 +47,25 @@ index_visibility: visible
 fetched_at: '2026-04-07T21:43:00.761787Z'
 short_summary: '# JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency ## alphaXiv Summary JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational efficiency without compromising performance. The model, leveraging a Mixture-of-Experts design and novel policy optimization, consistently achieves competitive or superior benchmark results with significantly reduced token consumption compared to existin'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:17:10.300518Z'
+lightweight_enriched_at: '2026-04-09T08:38:40.035042Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ca0c6ab806c1c36141ec09c83644292028802554037acb4bf236f7cc944e3e0e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b8db87cea0916da09284bf2070d0e24810599c7373ccea501cbc95b8841a72a5
+lightweight_scoring_input_hash: d9c6ff5e7cc85314fa0cd8f977b826f33e26fc68213935bb41c5e3cfd671b1ab
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 1.0
+  source_fit_score: 0.5
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, evaluation, and efficiency through a novel LLM architecture and training methodology.
+  reason: The document directly addresses favorite topics like LLM architecture, efficiency, and optimization, making it highly relevant to the user's profile.
   evidence_quotes:
   - 'JoyAI-LLM Flash introduces an architecture and training methodology for mid-scale language models (sub-50B parameters) that prioritizes token and computational '
-  - Demonstrated competitive or superior performance across various benchmarks, such as 65.6% accuracy on LiveCodeBench v6 while using 85% fewer tokens than GLM-4.7
-  - The FiberPO algorithm achieved stable RL training, reducing mean response length by 42% (from 7,902 to 4,543 tokens) while improving accuracy on AIME 2024.
+  - The model, leveraging a Mixture-of-Experts design and novel policy optimization, consistently achieves competitive or superior benchmark results with significan
+  - Implemented a 48B-parameter Mixture-of-Experts (MoE) architecture, activating only 3.28B parameters per token for high sparsity and reduced computational cost.
 ---
 # JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency
 

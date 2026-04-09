@@ -31,24 +31,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.408680Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:41.025302Z'
+lightweight_enriched_at: '2026-04-09T08:25:05.783268Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e69f6a7d959ce572c2eafd98366d68d8d9315a7e890905b7fd840ef971f39777
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: bbd8affe876eb3de2b35a9cf5438ae48b2ed461cb201a6a3e569c3ecac49cfa7
+lightweight_scoring_input_hash: b2dc810960db7e383d5951ad52dc621bb5c4f446959c50985ba9aa489a73b85f
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
+  relevance_score: 0.85
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  evidence_fit_score: 0.9
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses 'Agentic AI,' which aligns perfectly with the user's favorite topics of language models, evaluation, reasoning, and research tooling.
+  reason: The document directly addresses agentic AI, long-term memory, and machine learning, which strongly aligns with the user's favorite topics.
   evidence_quotes:
   - Building the 14 Key Pillars of Agentic AI
-  - agentic ai, ai, machine learning, long-term memory
+  - Building Long-Term Memory in Agentic AI | Fareed Khan
 ---
 # Building the 14 Key Pillars of Agentic AI
 

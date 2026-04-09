@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.213825Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:37.673302Z'
+lightweight_enriched_at: '2026-04-09T08:23:52.975349Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8e4105c041d6c9516e26d7c8535a223534aa4e452bbfa56b9f8a06c72316e234
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ec2039209d788117ba8cbe93de79446dc907c05212b300eeef99d56e66c4c213
+lightweight_scoring_input_hash: 8275d4fb6ed6cf32362b302f77dc30781e06959b31460338a2e1cfa498daa5cb
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.95
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is highly relevant to the user's favorite topic of language models and neural networks, providing foundational knowledge on backpropagation.
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document is relevant to the user's favorite topics (LLM architecture/ML fundamentals) but lacks specific focus on modern LLM evaluation or tooling.
   evidence_quotes:
   - Backpropagation is simpler than you think (once you see this)
   - What’s actually being computed inside a neural network…

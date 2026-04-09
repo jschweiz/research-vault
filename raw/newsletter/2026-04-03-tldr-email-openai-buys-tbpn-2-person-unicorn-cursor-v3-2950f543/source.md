@@ -35,13 +35,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:32.704503Z'
 short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:14:15.826828Z'
+lightweight_enriched_at: '2026-04-09T08:34:35.065762Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: b20c46afe70e4925149d5841fc63aa0bbd0feb38278511e56ddc38630dd2a34e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f7026d9d0efde880eb304b5032fc36cd9eec3b8bb58594ca387bf09ea7d25da6
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.7
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly covers favorite topics like LLM architecture, agentic development, and mentions favorite authors like Google DeepMind and OpenAI.
+  evidence_quotes:
+  - Google DeepMind has released four new vision-capable Apache 2.0-licensed reasoning models sized at 2B, 4B, and 31B, plus a 26B-A4B Mixture-of-Experts.
+  - Cursor 3 brings clarity to the work that agents produce, pulling users up to a higher level of abstraction.
+  - 'The 2nd Phase of Agentic Development: People will start using agents to attack old problems with modern tooling, resulting in new versions of software tools tha'
 ---
 # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 

@@ -19,6 +19,7 @@ tags:
 - physics
 - machine learning
 - theoretical physics
+- claude
 status: active
 asset_paths:
 - original.html
@@ -30,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:09.717104Z'
-short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. Can AI do theoretical physics?
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: A physics professor used an AI assistant to supervise a real research calculation to solve a complex theoretical physics problem, exploring the potential of AI in theoretical physics.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:31:58.688631Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: daf6f48f038f03984db57e04c5447059b0c6774f8c2e3e6de734fee7ab42a664
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1e64c6a7a64dcdce1e76ae1da6c84657771360228dd82b678cc01e03c9615ffc
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.9
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (LLMs, research tooling, and LLM architecture) through a detailed case study of using AI for complex theoretical physics research.
+  evidence_quotes:
+  - I picked this problem because it connects directly to the foundations of our understanding of quantum theory.
+  - 'I wanted to see if I could coach the model to succeed: to show, rather than tell it.'
+  - This organization step was enormously helpful. Instead of one long conversation or document, Claude maintained a tree of markdown files—one summary per stage, o
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

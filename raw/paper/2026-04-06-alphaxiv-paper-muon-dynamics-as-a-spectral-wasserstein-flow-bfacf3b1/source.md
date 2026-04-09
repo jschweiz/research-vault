@@ -20,17 +20,6 @@ tags:
 - mathematics
 - math.oc
 - optimization-methods
-- Computer Science
-- cs.AI
-- Mathematics
-- math.OC
-- representation-learning
-- statistical-learning
-- Statistics
-- stat.ML
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -51,15 +40,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:57.777888Z'
-short_summary: This research develops a mathematical framework for matrix-normalized deep learning optimizers by introducing Spectral Wasserstein distances, which provide a unified geometric interpretation for gradient descent, Muon, and intermediate Schatten-type normalizations. The work establishes these distances as bona fide metrics and identifies their associated gradient flows, rigorously connecting continuous-time dynamics to discrete optimization algorithms.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This research introduces Spectral Wasserstein distances to provide a unified geometric interpretation for matrix-normalized deep learning optimizers like Muon. It establishes these distances as metrics and connects continuous-time dynamics to discrete optimization algorithms.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:41:48.481310Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 9de7d887080d2dd318acd3431e27d3d612e89afe4d7098f5f387943b1d23404e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6cc39869db6bfabcf3619132d232d6e03d406a34c19c024d54cb9f2121886f29
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like LLM optimization, deep learning, and specific authors like Muon.
+  evidence_quotes:
+  - This research introduces Spectral Wasserstein distances to provide a unified geometric interpretation for matrix-normalized deep learning optimizers like Muon.
+  - We develop both static (Kantorovich) and dynamic (Benamou-Brenier) formulations for $W_\gamma$, and prove their equivalence for monotone norms.
+  - The continuum Spectral Wasserstein gradient flow corresponds to an explicit finite-dimensional normalized particle dynamics, $\dot{X}_t = \Xi_p(\nabla F_n(X_t))
 ---
 # Muon Dynamics as a Spectral Wasserstein Flow
 

@@ -31,12 +31,22 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:13.910681Z'
 short_summary: Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:29.069364Z'
+lightweight_enriched_at: '2026-04-09T08:22:25.948620Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3b7bfc1832608e973837ed309b92934e99b309ee506cc6c2b2ca27a6e1a61c27
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6d4a2d9196e4431ee396a4041c5ef0a9285b3fc5922a7a9e95dbec3794346d06
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.55
+  topic_fit_score: 0.16
+  author_fit_score: 1.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is from the favorite author (OpenAI) but the topic (pricing) does not strongly align with the user's favorite topics (LLM architecture, evaluation, reasoning).
+  evidence_quotes:
+  - Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.
 ---
 Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.

@@ -31,24 +31,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.684328Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:59.963492Z'
+lightweight_enriched_at: '2026-04-09T08:26:44.197805Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: bd4731fa066ebbba487b40216f317a5ecd6b89273ad9c3d94f5da76a0484eaaf
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 7f7bcc787a52b4d3d7104dca6d8b85afd8bcbab0bcb2f4aa2dc7846589370756
+lightweight_scoring_input_hash: 3de5e8137e1092f30632670b1207b7e723543004f30c584e1a8d56d07b9830a0
 lightweight_score:
   relevance_score: 0.05
-  source_fit_score: 0.1
+  source_fit_score: 0.0
   topic_fit_score: 0.0
   author_fit_score: 0.0
   evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about personal growth and aging, which has no direct relevance to the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is about personal growth and aging, which has no relevance to the user's favorite topics of language models, evaluation, or research tooling.
   evidence_quotes:
   - What People in Their 80’s Wish They’d Done Differently at Your Age
-  - The life-changing mistakes you’re probably making…
 ---
 # What People in Their 80’s Wish They’d Done Differently at Your Age
 

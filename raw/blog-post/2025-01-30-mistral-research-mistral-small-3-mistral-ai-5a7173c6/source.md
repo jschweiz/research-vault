@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:15.501156Z'
 short_summary: Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust language and instruction following with very low latency, making it competitive with larger models.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:55:48.390449Z'
+lightweight_enriched_at: '2026-04-09T08:15:09.935953Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 624a1a45fb4644a8cc13dfd4d821a29049f482eb41536a539ec4742ffc30b0c2
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f25b2d4f33a6ba6d686e3bffc317ffbf232587e8792e34b32197d0578d172572
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models, performance, and open-source models, and features authors from the user's preferred list.
+  evidence_quotes:
+  - Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust language and instruction following with very low latency, making it competitive w
+  - Mistral Small 3 complements large open-source reasoning models like the recent releases of DeepSeek, and can serve as a strong base model for making reasoning c
+  - Mistral Small 3 is now available on la Plateforme as mistral-small-latest or mistral-small-2501 .
 ---
 Today we’re introducing Mistral Small 3, a latency-optimized 24B-parameter model released under the Apache 2.0 license.
 Mistral Small 3 is competitive with larger models such as Llama 3.3 70B or Qwen 32B, and is an excellent open replacement for opaque proprietary models like GPT4o-mini. Mistral Small 3 is on par with Llama 3.3 70B instruct, while being more than 3x faster on the same hardware.

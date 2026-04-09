@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:57.934764Z'
 short_summary: Codestral Embed is a new embedding model specialized for code, designed to excel at retrieval tasks on real-world code data. It supports various use cases like retrieval-augmented generation, semantic code search, and duplicate detection.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:57:29.361362Z'
+lightweight_enriched_at: '2026-04-09T08:16:35.818599Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a809a8e16025f810fe1ec7192ddfec7f1f13f6e81fc27d304b2a2049752b9722
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6edfbecfe4e1b50a5fa152d81a09e0f96ae71a2b3a48452ec184233bb09d7c35
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it details a new embedding model specialized for code, directly aligning with the user's favorite topics of language models, evaluation, and research tooling.
+  evidence_quotes:
+  - Codestral Embed is a new embedding model specialized for code, designed to excel at retrieval tasks on real-world code data.
+  - 'Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.'
+  - It enables a range of practical applications across development workflows, especially when working with large-scale code corpora.
 ---
 We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
 Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.

@@ -37,13 +37,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:49.265528Z'
 short_summary: 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:14:25.047885Z'
+lightweight_enriched_at: '2026-04-09T08:34:45.324124Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: aeef0e92fcc28be7ac7c951833d085a845ee04bddd1405febb6547f23c4a4e67
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: aa409e0944e3e4e1d3f41d3ab4e95f6d5cdfbf65b59a90dd3fd917943243f761
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it covers topics like reinforcement learning, neural networks, and agentic AI, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - 21 Reinforcement Learning (RL) Concepts Explained In Plain English
+  - What’s actually being computed inside a neural network…
+  - An Operating System For Meaning to Enable Agentic AI
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
 

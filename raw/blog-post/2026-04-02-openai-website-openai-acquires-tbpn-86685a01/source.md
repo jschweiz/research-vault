@@ -30,12 +30,22 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:12.357918Z'
 short_summary: OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:35.396052Z'
+lightweight_enriched_at: '2026-04-09T08:22:35.774256Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f22c21aba4012133fcf54f32f45236e9cbaef2587511632fab26ce2f25124408
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 01c29939325cb20fe0ac3c37b31b7e20170a1b5ff05fd00da6ae88d1d047cf1e
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.75
+  topic_fit_score: 0.6
+  author_fit_score: 1.0
+  evidence_fit_score: 0.3
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is from an author the user favors and touches on AI/media, but the specific content is an acquisition rather than the user's core focus areas like LLM evaluation or architecture.
+  evidence_quotes:
+  - OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader t
 ---
 OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.

@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.707664Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:53.376987Z'
+lightweight_enriched_at: '2026-04-09T08:26:38.423484Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8f1c0b0121db77ed31862e4e580ddc94a7895f5e1d291a25da29716ce3cbfc6d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d73c75d2c16477392d578b91aa3950ffb7b1bd27fbe3ece05d130a793442710e
+lightweight_scoring_input_hash: 732af41182d210c2cf4ea4da7741f84fff443970cc0236ee960de96cf6b1932c
 lightweight_score:
   relevance_score: 0.95
-  source_fit_score: 0.5
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topic of language models with a foundational introduction.
+  reason: The document directly addresses the user's favorite topic of LLMs with a foundational introduction.
   evidence_quotes:
   - What Is an LLM? A No-Jargon Introduction
   - llm, ai, introduction, machine learning

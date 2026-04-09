@@ -31,21 +31,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:23:54.159289Z'
 short_summary: Codex Security uses AI-driven constraint reasoning and validation instead of traditional SAST to identify vulnerabilities with fewer false positives.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:01:17.174880Z'
+lightweight_enriched_at: '2026-04-09T08:18:55.282609Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 63979ea4320e9d8333fb649f7cf2d440f966a6148a6f64a33a964f369df6fcae
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8d8009cd31d8cb32fbf0cbec8c2f86d5d4ffe4c1233ce9f3b25f7e8c8972bd9e
+lightweight_scoring_input_hash: dfc9446e6293c8f3008e22ccc218355666f2569c870eedd8dcb11bb74b9da2f3
 lightweight_score:
   relevance_score: 0.85
-  source_fit_score: 0.95
+  source_fit_score: 1.0
   topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 0.95
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI/ML and security evaluation, making it highly relevant to the user's interests.
+  reason: The document directly addresses security and AI, aligning perfectly with the user's favorite topics and authors.
   evidence_quotes:
   - Codex Security uses AI-driven constraint reasoning and validation instead of traditional SAST to identify vulnerabilities with fewer false positives.
   - A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities w

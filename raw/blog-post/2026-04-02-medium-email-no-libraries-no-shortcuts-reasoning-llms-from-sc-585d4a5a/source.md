@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.672409Z'
 short_summary: '# No Libraries No Shortcuts: Reasoning LLMs from Scratch with PyTorch — Part 1 Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 4 Canonical URL: https://medium.com/@ashishabraham02/no-libraries-no-shortcuts-reasoning-models-from-scratch-with-pytorch-part-1-bdc5bcb42042 ## Newsletter Context Section: Today''s highlights > Ashish Abraham in Towards AI · 26 min read · 321 claps · 2 responses'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:51.785410Z'
+lightweight_enriched_at: '2026-04-09T08:21:43.573357Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3f4dbae901cdcdc78dd73fb85fa2fdf849a136299a6ad82a512250f9e98e8fcc
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2546eb2acd48c84f1cbe5b9d6968e83f7c825dcbc98162c65026a37efb48bfe3
+lightweight_scoring_input_hash: 775726ef14550d1659c08dcd2e64ae67142cc6b41be717ccc4c10d45b9aaa0eb
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 1.0
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, reasoning, and research tooling using PyTorch.
+  reason: The document directly addresses the user's favorite topics of LLMs, reasoning, and PyTorch implementation, making it a high-priority read.
   evidence_quotes:
   - 'No Libraries No Shortcuts: Reasoning LLMs from Scratch with PyTorch — Part 1'
 ---

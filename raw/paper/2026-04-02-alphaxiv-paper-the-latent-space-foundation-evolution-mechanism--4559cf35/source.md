@@ -47,21 +47,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:28:33.862150Z'
 short_summary: '# The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook ## alphaXiv Summary A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:16:34.526334Z'
+lightweight_enriched_at: '2026-04-09T08:38:00.368147Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4084ba8449c24d8a392ceac9550cc3b33edf241c527a20578beeb1e4967ae28c
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a5f157422313ac46df6b1650e931cf143037c237ec466233e89c682d2c52fdbc
+lightweight_scoring_input_hash: 932d759712b144753a2df549b3043e60efe0258b4cd4e019fff650298b6bc874
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 1.0
+  source_fit_score: 0.8
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, reasoning, and representation learning, making it a high-priority read.
+  reason: The document directly addresses the user's favorite topics of language models, reasoning, and representation-learning, making it a high-priority read.
   evidence_quotes:
   - It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
   - From the perspective of Ability, we show how latent space supports a broad capability spectrum spanning Reasoning, Planning, Modeling, Perception, Memory, Colla

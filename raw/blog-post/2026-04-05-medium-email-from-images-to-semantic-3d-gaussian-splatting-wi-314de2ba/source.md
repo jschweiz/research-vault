@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.471556Z'
 short_summary: '# From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide Source newsletter: Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-05T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@florentpoux/from-images-to-semantic-3d-gaussian-splatting-with-python-complete-guide-ff9d3d240847 ## Newsletter Context Section: Today''s highlights > Florent Poux, Ph.D. in Data Science Collec'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:54.247372Z'
+lightweight_enriched_at: '2026-04-09T08:25:20.853688Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5bc87127b8982a5923dc9bde5f0884dd7d913c1ff0243201296c76ba7a9d5b4e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3205d1bb127f5a86cc59885ec25e4a493d5b3564f584706b627a8a7b80cf4658
+lightweight_scoring_input_hash: ff825f8819d8557f19e05a682cffdc953a43ac9075e90b04161b696c002e0ad9
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
+  evidence_fit_score: 0.16
   confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on AI and Python, but the specific topics of language models, evaluation, and reasoning are not directly addressed.
+  bucket_hint: archive
+  reason: The document is highly technical in 3D Gaussian Splatting and Python, which does not align with the user's focus on language models, evaluation, or LLM architecture.
   evidence_quotes:
   - 'From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide'
   - Build an interactive 3D semantic scanner using Python…

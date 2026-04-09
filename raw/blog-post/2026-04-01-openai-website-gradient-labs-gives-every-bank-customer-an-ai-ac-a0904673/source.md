@@ -30,12 +30,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:15.849520Z'
 short_summary: Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:32.393625Z'
+lightweight_enriched_at: '2026-04-09T08:21:24.011586Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 449fd0567fcd9261646b52defec986d822017add5a375c82ecce7502c046ef22
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: bb42cfed5a8aa230aeddf26a49f368c1582c9ba0d338dc43065ad249aceb7328
+lightweight_score:
+  relevance_score: 0.25
+  source_fit_score: 0.3
+  topic_fit_score: 0.1
+  author_fit_score: 0.0
+  evidence_fit_score: 0.2
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses AI agents and LLMs, which aligns with favorite topics, but the specific application (banking automation) is not directly related to the user's focus on LLM architecture or evaluation.
+  evidence_quotes:
+  - Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
+  - Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
 ---
 Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.

@@ -31,21 +31,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.401755Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:12.071315Z'
+lightweight_enriched_at: '2026-04-09T08:21:05.194867Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 97a82fc2fb74630849f665fee15e95530d49b1f43f28b2f3617bc7c2c24449f1
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 4aaf1186eb34e70cf8e75820722a1f24316ab5c97e84e80c56d415b9ee205390
+lightweight_scoring_input_hash: 7b32f7487e32bc2fa86219536975be9b3049f6ccdf5a0bc2947b72780fc18b37
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.55
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on Python programming, which aligns with the user's interest in language models and tooling, but the specific topic is narrow.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Python programming and nested loops, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol.
   - Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol.

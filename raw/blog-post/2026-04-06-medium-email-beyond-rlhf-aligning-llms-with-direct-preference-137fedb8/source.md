@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.738086Z'
 short_summary: '# Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO) Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:26.860115Z'
+lightweight_enriched_at: '2026-04-09T08:25:58.539341Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 83ffd857ed6bc4927e2b3634f3e931d7d834e664da2f8d0f49440a1d0d941ad4
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 453ffdf803d58848b82c1078cd15c143eab7206d5444784ffe0a0dc4e27a0c6d
+lightweight_scoring_input_hash: 400df9fffe9e855a119dd105fe87cf4b36877df892b5273a9fa3c69570568432
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5
+  relevance_score: 0.95
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topic of language models and evaluation through a relevant technical topic.
+  reason: The document directly addresses LLM alignment and fine-tuning methods (DPO), which strongly aligns with the user's favorite topics.
   evidence_quotes:
   - 'Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)'
   - llm, dpo, rlhf, machine learning, fine-tuning

@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:40.243391Z'
 short_summary: Mistral 3 introduces a family of open, multimodal, and multilingual AI models, including Mistral Large 3 and Ministral 3, emphasizing state-of-the-art performance-to-cost ratio and broad accessibility.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:59:13.816418Z'
+lightweight_enriched_at: '2026-04-09T08:17:34.858319Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4b4138303621c1d298c0b3fb50e9dc110741bafaa69d541ac66e04548d7959be
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8a3da20140976dfd5fbcb69ad3da46d09e6feb40a41228623b47930a3d96b6d8
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, multimodal capabilities, and state-of-the-art model releases from a favorite author.
+  evidence_quotes:
+  - Mistral 3 introduces a family of open, multimodal, and multilingual AI models, including Mistral Large 3 and Ministral 3, emphasizing state-of-the-art performan
+  - Mistral Large 3 is one of the best permissive open weight models in the world, trained from scratch on 3000 of NVIDIA’s H200 GPUs.
+  - Mistral 3 redefines what’s possible with a family of models built for frontier intelligence, multimodal flexibility, and unmatched customization.
 ---
 Introducing Mistral 3
 The next generation of

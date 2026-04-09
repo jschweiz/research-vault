@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:28.118950Z'
 short_summary: '# Windows vs macOS vs Linux: the time to switch is now Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6 ## Newsletter Context Section: Today''s highlights > Kostas Farkonas in Turn On | Press Play · 14 min read · 2.1K claps · 112 respons'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:13:05.557029Z'
+lightweight_enriched_at: '2026-04-09T08:32:56.834116Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: eeb74fa6d6e61231e1fcac302ca35017f9699bd94059f773fe82ce435eca2781
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ee0c9c3dcbf75080e4b5c770e02224e3dcb6d2171d119aa6124515f1c00aefd9
+lightweight_scoring_input_hash: be28a81d2ccd1f6aa58dd2e1e22274dbf715f3d79368d1368aaf3138c8620617
 lightweight_score:
-  relevance_score: 0.16
+  relevance_score: 0.05
   source_fit_score: 0.0
-  topic_fit_score: 0.16
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document discusses operating systems, which is tangentially related to the user's interest in language models and reasoning, but lacks specific content on those topics.
+  reason: The document is about operating systems and does not align with the user's favorite topics of language models, evaluation, or research tooling.
   evidence_quotes:
   - 'Windows vs macOS vs Linux: the time to switch is now'
 ---

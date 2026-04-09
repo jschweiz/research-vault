@@ -16,20 +16,13 @@ tags:
 - paper
 - alphaxiv
 - research
-- Computer Science
-- cs.CL
-- cs.DC
-- cs.OS
+- computer science
+- cs.cl
+- cs.dc
+- cs.os
 - efficient-transformers
 - hardware-aware-algorithms
 - ml-systems
-- optimization-methods
-- training-orchestration
-- transformers
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -50,15 +43,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:41.117320Z'
-short_summary: MegaTrain is a memory-centric training system developed by researchers from the University of Notre Dame and Lehigh University that enables full-precision training of Large Language Models over 100 billion parameters on a single GPU. It achieves this by making host memory the primary storage for model states, while GPUs function as transient compute units, demonstrating superior throughput and memory efficiency compared to existing offloading solutions.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: MegaTrain is a memory-centric system that allows full-precision training of LLMs over 100B parameters on a single GPU by using host memory for model states. It achieves this through a pipelined execution engine and stateless layer templates to minimize device state and optimize throughput.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:40:50.554676Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ad04b60e3a24caf4ca4834c4571adc12785255d5d27be75653c6daf3bace9bdb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f77e4659411c4ababe77249d8d146dd84bea993f8c9f2f1ffeeb6d6e6344f83d
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of LLM training, memory optimization, and research tooling.
+  evidence_quotes:
+  - MegaTrain is a memory-centric system that allows full-precision training of LLMs over 100B parameters on a single GPU by using host memory for model states.
+  - Decoupling model scale from limited GPU device memory is achievable by using host memory as the primary authoritative store for persistent training states.
+  - It achieves 1.84$ imes$ the training throughput of DeepSpeed ZeRO-3 with CPU offloading when training 14B models.
 ---
 # MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU
 

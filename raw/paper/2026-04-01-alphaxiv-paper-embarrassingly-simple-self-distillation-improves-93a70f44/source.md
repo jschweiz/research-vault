@@ -25,15 +25,6 @@ tags:
 - instruction-tuning
 - knowledge-distillation
 - model-interpretation
-- Computer Science
-- cs.CL
-- self-supervised-learning
-- text-generation
-- transformers
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -55,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:13:15.955578Z'
-short_summary: A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Simple Self-Distillation (SSD) improves code generation by training large language models exclusively on self-generated solutions, leading to performance gains without external supervision. This method reshapes token distributions to balance precision and exploration in LLM decoding.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:36:53.676889Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c2c94462a3c1a9bfa2d4c13e97df28f1e7938cc95ce10f884e619f36730df10c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 42fac5f663a3131cd0b93ceca6a450f49df2cfe670eabaa6a58c9a656c0ca94c
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM performance improvement and code generation, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Simple Self-Distillation (SSD) improves code generation by training exclusively on self-generated, unverified solutions, leading to performance gains without ex
+  - SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, demonstrating its efficacy without external supervision or complex verification.
+  - This method reshapes token distributions to balance precision and exploration in LLM decoding.
 ---
 # Embarrassingly Simple Self-Distillation Improves Code Generation
 

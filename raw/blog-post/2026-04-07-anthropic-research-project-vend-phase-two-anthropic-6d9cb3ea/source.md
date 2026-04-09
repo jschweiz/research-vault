@@ -32,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:07:51.832526Z'
-short_summary: Subscribe to the Frontier Red Team newsletter Get updates on our latest red-teaming research and findings. In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Phase two of Project Vend involved upgrading the AI agent Claudius and introducing a CEO, Seymour Cash, which improved Claudius's business interactions but highlighted the gap between capability and robustness.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:31:33.090280Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c603044355bfc259461690ec7a35ad561551a33a17025bec77443b07f62533e3
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e87491ecace7c58997056695237489942e625533ecaf0ced2e0039903374e04a
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the evolution of AI agent capabilities, the gap between capability and robustness, and the role of tooling in achieving business success, which aligns perfectly with the user's favorite topics.
+  evidence_quotes:
+  - Phase two of Project Vend involved upgrading the AI agent Claudius and introducing a CEO, Seymour Cash, which improved Claudius's business interactions but high
+  - The idea of an AI running a business doesn’t seem as far-fetched as it once did. But the gap between “capable” and “completely robust” remains wide.
+  - We’ve been talking a lot on our [Engineering Blog](https://www.anthropic.com/engineering) about how to set up AI agents for success, and much of it involves giv
 ---
 Subscribe to the Frontier Red Team newsletter
 Get updates on our latest red-teaming research and findings.

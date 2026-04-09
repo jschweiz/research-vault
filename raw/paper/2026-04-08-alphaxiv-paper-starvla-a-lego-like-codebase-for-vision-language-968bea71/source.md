@@ -14,22 +14,12 @@ tags:
 - alphaxiv
 - research
 - agents
-- Computer Science
-- cs.AI
-- cs.CV
-- cs.RO
+- computer science
+- cs.ai
+- cs.cv
+- cs.ro
 - imitation-learning
 - ml-systems
-- multi-modal-learning
-- robotic-control
-- robotics-perception
-- transfer-learning
-- transformers
-- vision-language-models
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -50,15 +40,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:19.119272Z'
-short_summary: StarVLA introduces an open-source, modular codebase designed to unify Vision-Language-Action (VLA) model development by enabling interchangeable backbones and action heads. This framework provides competitive performance on various robot manipulation benchmarks, achieving, for instance, a 96.6% average success rate on LIBERO and demonstrating the ability for a single generalist model to enhance performance across diverse tasks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: StarVLA is an open-source, modular codebase for Vision-Language-Action (VLA) model development, unifying VLA research through interchangeable backbones and action heads. It provides reusable training strategies and benchmarks, enabling competitive performance across diverse robot manipulation tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:45:50.022496Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b2ead437b1e7e95b60f8a054c051c9e1d504a4eadca790ae3dbf86e840360098
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9300cd67b09ce22828a96ef14d8753f79b0eb59769fb59fa4d0e2193572d3588
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses Vision-Language-Action (VLA) model development, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.
+  evidence_quotes:
+  - StarVLA is an open-source, modular codebase for Vision-Language-Action (VLA) model development, unifying VLA research through interchangeable backbones and acti
+  - StarVLA addresses these challenges in three aspects. First, it provides a modular backbone--action-head architecture that supports both VLM backbones (e.g., Qwe
+  - StarVLA is one of the most comprehensive open-source VLA frameworks available, and we expect it to lower the barrier for reproducing existing methods and protot
 ---
 # StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing
 

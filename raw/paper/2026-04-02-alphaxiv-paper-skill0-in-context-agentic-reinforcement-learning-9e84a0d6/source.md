@@ -11,10 +11,6 @@ authors:
 - Chengcheng Han
 - Qi Gu
 - Xunliang Cai
-- Weiming Lu
-- Jun Xiao
-- Yueting Zhuang
-- Yongliang Shen
 published_at: '2026-04-02T17:03:05Z'
 ingested_at: '2026-04-07T21:41:39.019232Z'
 content_hash: 8889eceafa76b2f671142c8c92a7fbd0d21761cf5f1428e62095984c0fb6994f
@@ -29,16 +25,6 @@ tags:
 - deep-reinforcement-learning
 - fine-tuning
 - multi-modal-learning
-- Computer Science
-- cs.LG
-- tool-use
-- transfer-learning
-- transformers
-- zero-shot-learning
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -60,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:38.405853Z'
-short_summary: The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters, thereby achieving autonomous behavior without external skill descriptions at inference time. This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context token costs by over 5 times compared to skill-augmented methods.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: SKILL0 is an in-context reinforcement learning framework that enables Large Language Model agents to internalize skills into their parameters, achieving autonomous behavior without external skill descriptions at inference time. It uses a dynamic curriculum to progressively internalize skills, resulting in superior performance and reduced context token costs.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:37:47.523648Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8af4e578f6f962fd39b88496bc3c95ca64e0e7ee800bcf4606f599845ba79f7b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9ecd6574584eb0c7f763ac00959dbe1eedd0cc22e1beb854ea231ccb63d04cc1
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM agents, reinforcement learning, and skill internalization, and features authors from the preferred list.
+  evidence_quotes:
+  - SKILL0 is an in-context reinforcement learning framework that enables Large Language Model agents to internalize skills into their parameters, achieving autonom
+  - SKILL0 achieves superior performance, with a 3B model reaching an 87.9% success rate on ALFWorld (+9.7% over AgentOCR) and 40.8% on Search-QA (+6.6%).
+  - It uses a dynamic curriculum to progressively internalize skills, resulting in superior performance and reduced context token costs.
 ---
 # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization
 

@@ -30,21 +30,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.726867Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:22.318502Z'
+lightweight_enriched_at: '2026-04-09T08:22:16.288302Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b11ac7c6fdd0eefd0963ed034dceb7dc0335e32bdbdb5d32e923e609a5587e3a
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 0453aac82ea3eb8d737f32e11870ba7436ac1a6e9a8c3e34bf0ada83ab95454a
+lightweight_scoring_input_hash: 429156d83d6a8171060e95f112f5850070be673f8c4bf1f537bff367d89987cb
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.9
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document directly addresses AI agents, which aligns perfectly with the user's favorite topic of language models and evaluation.
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI agents, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
   evidence_quotes:
   - Your AI agents are a security nightmare
   - AI agents often run with more access than they should…

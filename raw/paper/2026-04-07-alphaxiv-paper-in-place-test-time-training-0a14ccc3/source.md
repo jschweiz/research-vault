@@ -11,7 +11,6 @@ authors:
 - Ge Zhang
 - Di He
 - Wenhao Huang
-- Tianle Cai
 published_at: '2026-04-07T17:59:44Z'
 ingested_at: '2026-04-08T09:26:55.783108Z'
 content_hash: 996992d7b075a8de63ffe63b510309684277f232dbdc92024cab0c3e3cac3eda
@@ -26,21 +25,6 @@ tags:
 - cs.lg
 - efficient-transformers
 - fine-tuning
-- Computer Science
-- cs.AI
-- cs.CL
-- cs.LG
-- inference-optimization
-- online-learning
-- parameter-efficient-training
-- Statistics
-- stat.ML
-- test-time-inference
-- transformers
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -62,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:03.384034Z'
-short_summary: In-Place Test-Time Training (In-Place TTT) enables dynamic adaptation in large language models by repurposing existing MLP blocks for efficient, chunk-wise updates with a next-token prediction aligned objective. This framework demonstrates consistent performance improvements on long-context benchmarks, such as RULER, and achieves lower perplexity compared to baselines, while introducing negligible computational overhead.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: In-Place Test-Time Training (In-Place TTT) dynamically adapts Large Language Models by repurposing MLP blocks for efficient, chunk-wise updates. This framework achieves performance gains on long-context benchmarks while maintaining low computational overhead.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:44:30.437762Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 03064ca5a72ed696e57c57be6e4e3898e7da53d42ccd7826b090ea43373254b9
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 91621c75e4d4ac874db4a8e9a15f572ca07aca906b094b75cec8d04721e1270c
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.7
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM adaptation, training, and efficiency, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - In-Place Test-Time Training (In-Place TTT) dynamically adapts Large Language Models by repurposing existing MLP blocks for efficient, chunk-wise updates.
+  - In-Place TTT treats the final projection matrix of the ubiquitous MLP blocks as its adaptable fast weights, enabling a "drop-in" enhancement for LLMs without co
+  - In-Place TTT consistently improved RULER benchmark scores for pre-trained LLMs (Qwen3-4B/14B, LLaMA-3.1-8B), showing up to +2.7% gain at 64k context lengths and
 ---
 # In-Place Test-Time Training
 

@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:21.612408Z'
 short_summary: Voxtral Text-to-Speech Speaking of Voxtral Today we’re releasing Voxtral TTS, our first text-to-speech model with state-of-the-art performance in multilingual voice generation. The model is lightweight at 4B parameters, making Voxtral-powered agents natural, reliable, and cost-effective at scale.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:13:18.337895Z'
+lightweight_enriched_at: '2026-04-09T08:33:09.952215Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8567be48091bde7c2ba0c025e536aadbfdd575a383224663ef3afa888ae6a197
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 01f8d5155ceba4540ea209a19816db6b66750b68486ceb22b240e8c666925d14
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.8
+  topic_fit_score: 0.85
+  author_fit_score: 1.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it discusses a state-of-the-art text-to-speech model, which aligns directly with the user's interest in language models and related AI architecture.
+  evidence_quotes:
+  - Voxtral Text-to-Speech Speaking of Voxtral Today we’re releasing Voxtral TTS, our first text-to-speech model with state-of-the-art performance in multilingual v
+  - The model is lightweight at 4B parameters, making Voxtral-powered agents natural, reliable, and cost-effective at scale.
+  - Voxtral TTS architecture. The model is a transformer-based, autoregressive, flow-matching model, built on [Ministral 3B](https://docs.mistral.ai/models/ministra
 ---
 Voxtral
 Text-to-Speech

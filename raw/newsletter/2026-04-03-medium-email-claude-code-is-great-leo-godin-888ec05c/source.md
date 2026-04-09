@@ -37,13 +37,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:49.992173Z'
 short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:14:05.918339Z'
+lightweight_enriched_at: '2026-04-09T08:34:23.051586Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: cc31c201533224711ebe5c4ae651ca381f4bc99205b6b5bb5dc37988e6927a83
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 121e6cb3577f26c8a77feb97916da97051a0209671078b435c3178e28daba776
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it covers core favorite topics like LLM architecture, memory, and agentic AI, and features authors from the preferred list.
+  evidence_quotes:
+  - 'Agentic AI: Implementing Long-Term Memory'
+  - 'The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines'
+  - 'The LLM Backbone: Building a RAG-Based GPT from Scratch'
 ---
 # Claude Code is Great | Leo Godin
 

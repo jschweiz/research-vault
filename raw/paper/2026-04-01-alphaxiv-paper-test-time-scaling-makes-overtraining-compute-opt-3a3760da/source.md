@@ -47,21 +47,21 @@ index_visibility: visible
 fetched_at: '2026-04-07T21:43:28.200372Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:16:00.474440Z'
+lightweight_enriched_at: '2026-04-09T08:37:07.710276Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: bf7289154d5ef60efddbfbf4f34186187e1a7e253e8a3279e41a2e601eec9662
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: f8c433e2098704b0548bc5675eb529c3d0558d9fea80e21f0876355f39275fd1
+lightweight_scoring_input_hash: 537bf65ae81857a71b9165103e53f30507c97aa8df19a1aeb909e6dfa1ecf722
 lightweight_score:
   relevance_score: 0.95
-  source_fit_score: 1.0
+  source_fit_score: 0.8
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and optimization through the lens of scaling laws and inference optimization.
+  reason: The document directly addresses core favorite topics like LLM evaluation, scaling, and optimization, and features authors from major AI labs.
   evidence_quotes:
   - We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets.
   - Optimal pretraining strategies fundamentally shift towards smaller, "overtrained" models when the total compute budget includes test-time scaling via repeated s

@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.970508Z'
 short_summary: '# The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 6 Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004 ## Newsletter Context Section: Today''s highlights > Kuriko Iwai · 15 min read · 379 claps · 6 responses Explor'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:14.036740Z'
+lightweight_enriched_at: '2026-04-09T08:23:23.189464Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 93ee4e65162d05744c94bc6f93b8b1afd3714fb35849fa1ab89d44a3fb5e6c5b
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 54b1bddc971bcf515fa654d630e9889858e5600f928f89bf17e366b1ffebb37d
+lightweight_scoring_input_hash: 46c4b3d6142b7ba71f16214c03f52e770519b2ac95a008a122556b21e8789297
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
+  relevance_score: 0.85
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  evidence_fit_score: 0.9
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and research tooling through its focus on vector databases and embedding pipelines.
+  reason: The document directly addresses core favorite topics like LLM memory and vector databases, making it highly relevant.
   evidence_quotes:
   - 'The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines'
   - Explore the mechanics of vector databases, text…

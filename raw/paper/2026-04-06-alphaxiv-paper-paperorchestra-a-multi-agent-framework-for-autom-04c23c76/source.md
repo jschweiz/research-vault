@@ -18,17 +18,11 @@ tags:
 - research
 - agentic-frameworks
 - agents
-- Computer Science
-- cs.AI
-- cs.LG
-- cs.MA
+- computer science
+- cs.ai
+- cs.lg
+- cs.ma
 - data-curation
-- generative-models
-- image-generation
-- reasoning
-- text-generation
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -47,15 +41,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:13:05.039676Z'
-short_summary: Google researchers developed PaperOrchestra, a multi-agent AI framework that converts unstructured pre-writing materials into submission-ready AI research papers, including deep literature reviews and diverse visuals. The system achieved simulated acceptance rates of 84% for CVPR and 81% for ICLR papers on a new benchmark, outperforming existing autonomous writing baselines.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: PaperOrchestra is a multi-agent AI framework that converts unstructured pre-writing materials into submission-ready AI research papers, achieving high simulated acceptance rates. The system uses specialized agents and iterative refinement to synthesize literature and generate visuals, outperforming autonomous baselines.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:42:31.241721Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 93976e9313ffcaf85ff2530fe1807e60bee4446db8fbb006d78731d41d3ba819
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 819ca8b85efca1ee385b4bff0727c1ba1f5602ff0a1c2ee1658a5b517687277f
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses multi-agent frameworks and research tooling, which aligns perfectly with the user's favorite topics.
+  evidence_quotes:
+  - PaperOrchestra is a multi-agent AI framework that converts unstructured pre-writing materials into submission-ready AI research papers, achieving high simulated
+  - We introduce PaperOrchestra, a multi-agent framework for automated AI research paper writing.
+  - A multi-agent architecture with specialized roles (e.g., Outline, Plotting, Literature Review, Section Writing, Content Refinement Agents) is effective for tran
 ---
 # PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing
 

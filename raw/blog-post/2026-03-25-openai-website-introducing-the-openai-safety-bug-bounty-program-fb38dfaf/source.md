@@ -26,12 +26,22 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:25.688187Z'
 short_summary: OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:03:11.306005Z'
+lightweight_enriched_at: '2026-04-09T08:20:07.133162Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7f43323c1be49ad714e0cc88ea8c9725503eed53c0a3c1d8dc57f2afc679ea50
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f35c24b5ca3285102bcdb95a04f01389ee9c90b17177cef50cb6aa1dcb85609d
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is directly from OpenAI and addresses safety and vulnerability topics highly relevant to the user's favorite topics of language models and evaluation.
+  evidence_quotes:
+  - OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 ---
 OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.

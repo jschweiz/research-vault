@@ -30,21 +30,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.440620Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:03:44.631097Z'
+lightweight_enriched_at: '2026-04-09T08:20:39.500371Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3f51851e080e84f2f58f7fcf73eab4d0b05365512c91a87a508372c0a62dc559
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9d602aa2a424ae0b1781980704a6643faa16b6dbee065168b1246d6a143cdb90
+lightweight_scoring_input_hash: dac445d08d47171fa4d79f96beb2a523f97d739ff59a343c6ec805514f711875
 lightweight_score:
-  relevance_score: 0.56
-  source_fit_score: 0.35
-  topic_fit_score: 0.75
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.65
-  confidence_score: 0.85
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
   bucket_hint: worth_a_skim
-  reason: The document is highly relevant to the user's favorite topic of language models and coding, but the source and author fit are weak.
+  reason: The document touches on AI coding tools, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
   evidence_quotes:
   - Claude Code is No Longer the King of Coding
   - Claude Code changed everything.

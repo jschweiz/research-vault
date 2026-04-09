@@ -32,24 +32,23 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.466103Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:03:38.266624Z'
+lightweight_enriched_at: '2026-04-09T08:20:33.295868Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d8f7fbf645c8ff4d2c34fc7b19def8070a1f63291499048bdd27eb7563983382
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 402a260f1685ebe3b79fd16dc6aec3450b3cef0f0c033eeb464dd6655fe6369e
+lightweight_scoring_input_hash: 3516de753091ea270d867ee38ff484980f5aea79be79b1aab02e7b69993469ba
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.55
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant to data science and forecasting but does not directly address the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about time series forecasting, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - A Practical Guide to Time Series Sales Volume Forecasting for Business
-  - 'Tags: newsletter, medium, email, blog-post, time series, forecasting, sales volume, python, data science'
 ---
 # A Practical Guide to Time Series Sales Volume Forecasting for Business
 

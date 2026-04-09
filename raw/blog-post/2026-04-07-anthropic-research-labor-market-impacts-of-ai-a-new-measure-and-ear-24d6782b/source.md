@@ -31,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:07:47.436566Z'
-short_summary: 'Key findings - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily - AI is far from reaching its theoretical capability: actual coverage remains a fraction of what''s feasible - Occupations with higher observed exposure are projected by the BLS to grow less through 2034 - Workers in the most exposed professions are more likely to'
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The paper introduces a new measure of AI displacement risk based on theoretical capability and real-world usage to quantify AI's impact on labor markets. It finds limited evidence that AI has affected employment to date, but suggests that the effects might be unmistakable as AI capabilities advance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:30:31.796211Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6448eb2c6a70b31fc30c5cbc4c882ddb11acc1fde0b5a80ac1e25d7626f18f4f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ef40f95870405e5bb5aa4dc61ef919b8a1af0681823abc59c663c6312d6086f4
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of LLM capabilities, evaluation, and the impact of AI on labor markets.
+  evidence_quotes:
+  - The paper introduces a new measure of AI displacement risk based on theoretical capability and real-world usage to quantify AI's impact on labor markets.
+  - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (
+  - 'Our new measure, observed exposure, is meant to quantify: of those tasks that LLMs could theoretically speed up, which are actually seeing automated usage in pr'
 ---
 Key findings
 - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily

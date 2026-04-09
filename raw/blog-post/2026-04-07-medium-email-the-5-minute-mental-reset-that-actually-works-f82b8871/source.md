@@ -31,12 +31,12 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.914933Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:12:46.603705Z'
+lightweight_enriched_at: '2026-04-09T08:32:36.951267Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0b8e207700dbb81245ba0266f901cff4026b46868970704813a4e30ca4e86cdd
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3ba59526d456200d3414f558ae3f48e28678252a60f4d9acae4342e3680542e4
+lightweight_scoring_input_hash: 373bc546ae83305ca9b09c9a04083792b49bb3e2065105f4926c4b8a1c720629
 lightweight_score:
   relevance_score: 0.05
   source_fit_score: 0.0
@@ -45,7 +45,7 @@ lightweight_score:
   evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about mental reset and self-care, which has no direct relevance to the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is about mental reset and self-care, which has no overlap with the user's favorite topics of language models, evaluation, or research tooling.
   evidence_quotes:
   - The 5-Minute Mental Reset That Actually Works
 ---

@@ -32,24 +32,25 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.520018Z'
 short_summary: '# Pandas Method Chaining Explained: Build Fluent Data Pipelines Source newsletter: Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:05.348256Z'
+lightweight_enriched_at: '2026-04-09T08:20:58.845196Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b48ba6c4e5fe7bcbee746f88facbbc2b6848a473b2ae963fdf16c97a96da93e1
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: bb6a3921031c4c71efae54c3072ddc8c0e7627fff3d1cf6d71076adcb763f095
+lightweight_scoring_input_hash: d65d80967be44f001ad1f5ddf8da459e1577ed9121270542c05b0bf1a5b90b44
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.35
-  topic_fit_score: 0.55
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.75
-  confidence_score: 0.95
-  bucket_hint: worth_a_skim
-  reason: The document is highly relevant to the user's interest in data science tooling (Pandas) but does not directly address language models, evaluation, or reasoning.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Python data manipulation and Pandas, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - 'Pandas Method Chaining Explained: Build Fluent Data Pipelines'
-  - 'Tags: newsletter, medium, email, blog-post, pandas, python, data pipelines, method chaining, data science'
+  - Pandas
+  - python
 ---
 # Pandas Method Chaining Explained: Build Fluent Data Pipelines
 

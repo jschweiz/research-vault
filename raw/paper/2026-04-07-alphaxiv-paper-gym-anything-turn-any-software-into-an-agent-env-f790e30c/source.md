@@ -17,18 +17,11 @@ tags:
 - research
 - agentic-frameworks
 - agents
-- Computer Science
-- cs.AI
-- cs.LG
+- computer science
+- cs.ai
+- cs.lg
 - data-curation
 - deep-reinforcement-learning
-- multi-agent-learning
-- reasoning-verification
-- tool-use
-- vision-language-models
-- github
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -47,15 +40,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:12:24.759673Z'
-short_summary: Carnegie Mellon University researchers introduced Gym-Anything, a framework that automates the creation of interactive software environments and over 10,000 long-horizon tasks for computer-use agents. This system enables the scalable development of benchmarks like CUA-World, which spans 200 economically relevant software applications and supports evaluation across diverse occupational domains.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Gym-Anything is a framework that automates the creation of interactive software environments and over 10,000 long-horizon tasks for computer-use agents. It introduces a multi-agent pipeline with adversarial auditing to scale agent research beyond existing limitations.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:44:03.686126Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: dc9c386c66db842bdae4aabb621da0055def1fff934910d8fde6dc8b692a8c56
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4f48ad9e7e26b9281a612b4cb57d8d34132a3865a29f1f192800a49c4e7c8e98
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agentic frameworks, multi-agent pipelines, and agent evaluation, which aligns perfectly with the user's favorite topics.
+  evidence_quotes:
+  - Gym-Anything is a framework that automates the creation of interactive software environments and over 10,000 long-horizon tasks for computer-use agents.
+  - It introduces a multi-agent pipeline with adversarial auditing to scale agent research beyond existing limitations.
+  - Gym-Anything is a framework for converting any software into an interactive computer-use environment.
 ---
 # Gym-Anything: Turn any Software into an Agent Environment
 

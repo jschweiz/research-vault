@@ -46,14 +46,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-08T15:13:23.321437Z'
-short_summary: '# CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery ## alphaXiv Summary The CORAL framework introduces an autonomous multi-agent evolutionary system, empowering Large Language Model agents to control their discovery process and collaborate indirectly through shared persistent memory. This approach achieved new state-of-the-art results on 8 out of 11 mathematical and systems optimization tasks, exhibiting a 3-10x higher improvement rate and an 18.3% cycle reduction in kerne'
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This paper introduces CORAL, a framework for autonomous multi-agent evolution aimed at open-ended discovery.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:37:22.099398Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aca5fa5e9bc60569d6cf341c712a57791ada89006e2a17e84efa8655818c1cfc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2a28e9487dea036b3c50d4fcdbe901e3a910ffc516475eb44569f1e1d2421d9c
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.3
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with favorite topics like agentic frameworks and multi-agent learning, making it relevant for the user.
+  evidence_quotes:
+  - This paper introduces CORAL, a framework for autonomous multi-agent evolution aimed at open-ended discovery.
+  - 'Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.ai, deep-reinforcement-learning, evolutionary-algorithms, multi-agent-learning'
 ---
 CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery

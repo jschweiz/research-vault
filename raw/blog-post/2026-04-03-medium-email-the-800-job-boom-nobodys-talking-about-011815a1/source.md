@@ -30,21 +30,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.992893Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:07.541968Z'
+lightweight_enriched_at: '2026-04-09T08:23:15.915608Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b89f26b650225a938ef6c6712bacb33337b096d2cbb1ba0ef6184d536b75775d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 323637cb3258cb84aaed058ce28c1e4c66a7c0cd6ff59d3f1ce119e3a1ea3b75
+lightweight_scoring_input_hash: 6e67c13c2034f8a837cac488fb44b3d517b22fbc792510edc6c21f66552b85d3
 lightweight_score:
   relevance_score: 0.16
   source_fit_score: 0.16
   topic_fit_score: 0.16
   author_fit_score: 0.0
   evidence_fit_score: 0.16
-  confidence_score: 0.8
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about job booms and AI, which loosely touches on favorite topics but lacks specific focus on language models, evaluation, or reasoning.
+  reason: The document is about job booms and AI, which loosely touches on favorite topics but lacks specific focus on LLM architecture or evaluation.
   evidence_quotes:
   - The 800% Job Boom Nobody’s Talking About
 ---

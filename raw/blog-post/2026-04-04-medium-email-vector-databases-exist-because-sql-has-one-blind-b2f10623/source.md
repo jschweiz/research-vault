@@ -32,24 +32,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.270759Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:09.568591Z'
+lightweight_enriched_at: '2026-04-09T08:24:29.151119Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b84bc36131d24e8cbcd2776299bec2d66c67f6a105fddad120f667cec737edf7
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ff0a2b0bff5f5815cf5742374fc83f7cbdb3dfba749b7e49f11d3a23aaf382de
+lightweight_scoring_input_hash: 2b25a6363a9c2799cb01b9958c3f0f100d537a0e7f2b629204aa4ba769238e51
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.35
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses vector databases, which aligns perfectly with the user's favorite topic of language models and research tooling.
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document discusses database architecture, which is tangentially related to LLM infrastructure, but lacks direct focus on language models or evaluation.
   evidence_quotes:
   - Vector Databases Exist Because SQL Has One Blind Spot
-  - vector databases, sql, search, database, architecture
 ---
 # Vector Databases Exist Because SQL Has One Blind Spot
 

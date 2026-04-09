@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:31.006682Z'
 short_summary: Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications. These models offer state-of-the-art transcription quality, speaker diarization, and multilingual support.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:00:23.317753Z'
+lightweight_enriched_at: '2026-04-09T08:18:20.359343Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4c62d67284cf58d451a5bc559ba053fd904d18fafda0ccff3a7fd6a55fe70452
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a9af45432d1f96050e377223d85ed5644a588d1e23ca9558ef6af81fbfae387b
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is a high-priority release from Mistral AI, directly addressing the user's favorite topics of language models, evaluation, and research tooling.
+  evidence_quotes:
+  - Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications.
+  - Voxtral Realtime is purpose-built for applications where latency matters.
+  - It outperforms GPT-4o mini Transcribe, Gemini 2.5 Flash, Assembly Universal, and Deepgram Nova on accuracy, and processes audio approximately 3x faster than Ele
 ---
 Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license.
 We're also launching an [audio playground in Mistral Studio](https://console.mistral.ai/build/audio/speech-to-text) to test transcription instantly, powered by Voxtral Transcribe 2, with diarization and timestamps.

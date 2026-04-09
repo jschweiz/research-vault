@@ -31,24 +31,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.805601Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:47.268528Z'
+lightweight_enriched_at: '2026-04-09T08:26:27.452784Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4a178456dde5862ad2a69421fc6ab9e73c4acd2398c1c71e9bc388df67c78e7e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 47f5a55de914521e6de5a7928f23e1a3e9339e763db227a855aa314829a74934
+lightweight_scoring_input_hash: 495495248390564d90aedec1590718a319b908b2a9f78b0a16896f85c8fe512a
 lightweight_score:
-  relevance_score: 0.56
-  source_fit_score: 0.36
-  topic_fit_score: 0.75
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.75
-  confidence_score: 0.9
+  evidence_fit_score: 0.35
+  confidence_score: 0.8
   bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics (AI/ML/research tooling) but the specific focus on 3D Gaussian Splatting is a niche application.
+  reason: The document touches on AI/ML topics but focuses on a specific rendering technique rather than the user's core interests in LLMs or architecture.
   evidence_quotes:
   - I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose
-  - 3d gaussian splatting, renderer, python, ai
+  - Building a deliberately slow, crystal-clear Python…
 ---
 # I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose
 

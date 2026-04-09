@@ -30,23 +30,22 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.965661Z'
 short_summary: '# Data Engineering: Incremental Data Loading Strategies Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-07T06:40:00+00:00 Entry Number: 3 Canonical URL: https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0 ## Newsletter Context Section: Today''s highlights > Hussein Jundi in Data Engineer Things · 9 min read · 227 claps · 7 respons'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:12:34.265345Z'
+lightweight_enriched_at: '2026-04-09T08:32:22.660229Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1a2ad8633723b0c5a752e84cdc86031b0e237d598c07e200adf844823a238ed4
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 0a65daf0a04168b10e6fd9245b746eb9ee4ca8ebf3f08c79b2d584d01cc82cac
+lightweight_scoring_input_hash: 9247d56d5e5f302a18f7658cbe3b7f8c217734bb9c7849e6cec7fd896fbec108
 lightweight_score:
-  relevance_score: 0.25
-  source_fit_score: 0.3
-  topic_fit_score: 0.3
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.4
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to the topic of data engineering, but it does not directly align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about data engineering strategies and does not align with the user's favorite topics of language models, evaluation, or research tooling.
   evidence_quotes:
-  - 'Data Engineering: Incremental Data Loading Strategies'
   - 'Data Engineering: Incremental Data Loading Strategies'
 ---
 # Data Engineering: Incremental Data Loading Strategies

@@ -30,12 +30,12 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.885808Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:25.456239Z'
+lightweight_enriched_at: '2026-04-09T08:23:37.570624Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5ace139f81899d6af216a00dc327fc387ab90c8fdeeb6f88a1bd11f8424021c5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8f6c74b5b067d8cad8e3b59af60e11ffb8407917882d521a2c9ab3f1c7ae0205
+lightweight_scoring_input_hash: e48e008bac5b733a8d1d4c4f1ec2c7b63a532f588d0c697fa1e3fa697098064a
 lightweight_score:
   relevance_score: 0.05
   source_fit_score: 0.0
@@ -44,8 +44,9 @@ lightweight_score:
   evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about literature and reading, which has no direct relevance to the user's favorite topics of language models, evaluation, reasoning, or research tooling.
-  evidence_quotes: []
+  reason: The document is about literature and does not align with the user's favorite topics of language models, evaluation, or research tooling.
+  evidence_quotes:
+  - Why reading “The Decameron” is as useful as ever
 ---
 # Why reading “The Decameron” is as useful as ever
 

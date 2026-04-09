@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.192928Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:15.595995Z'
+lightweight_enriched_at: '2026-04-09T08:24:36.178871Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 747e9d816bd5d0d23f9da6e2a74e9b17db8501ba660cb18d5f158fb363b222c7
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 88debc4ca4b638347ba817179a62d0857fa25220f1423ac4f89df8b7f753c93f
+lightweight_scoring_input_hash: 7522529a3f18d0bfdcf37979a0c87ca7f4c0c004235fad5908d87b8602fcf2c9
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.45
+  source_fit_score: 0.1
+  topic_fit_score: 0.6
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document directly addresses AI engineering, which aligns perfectly with the user's favorite topic of language models and evaluation.
+  evidence_fit_score: 0.5
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI engineering, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation methods.
   evidence_quotes:
   - Why You’re Still Not Ready for AI Engineering
   - ai engineering

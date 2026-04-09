@@ -31,24 +31,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.172622Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:31.429378Z'
+lightweight_enriched_at: '2026-04-09T08:23:45.443006Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e9701fc70a97da7d681dfed2c5c2e49fde36ea13eda2731d0a45196875e4d9ab
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 7dd2db76a997c97e42f803b19bf46d2db8e1b2a569aaf5a663f43d27aa3d0e4f
+lightweight_scoring_input_hash: 4ac8f46e09dc090ed881043242976a026ea310d88b50e1a85f70547f84484553
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5
+  relevance_score: 0.85
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  evidence_fit_score: 0.9
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topic of reinforcement learning and evaluation.
+  reason: The document directly addresses the user's favorite topic of reinforcement learning and is highly relevant to their interests.
   evidence_quotes:
   - 21 Reinforcement Learning (RL) Concepts Explained In Plain English
-  - reinforcement learning, rl, ai, coding
+  - Today's highlights > Dr. Ashish Bamania in Level Up Coding · 19 min read · 642 claps · 2 responses
 ---
 # 21 Reinforcement Learning (RL) Concepts Explained In Plain English
 

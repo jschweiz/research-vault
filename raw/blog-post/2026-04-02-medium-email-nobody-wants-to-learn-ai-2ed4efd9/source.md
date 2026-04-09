@@ -30,21 +30,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.621511Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:58.273090Z'
+lightweight_enriched_at: '2026-04-09T08:21:50.106438Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5c06258404065e45c9e06fe52e05ca2901782022b85b44dab498451a222d42f0
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8cfa0785ce2110ec70bc23ffa5c1000c1989bd9587fe2dad43f55b4f5928ce03
+lightweight_scoring_input_hash: 285a6df0bd4ee7a92c176405efe008a9d8835a42278dda0ad9325ab93bb60c1b
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.36
-  topic_fit_score: 0.55
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI, which aligns with favorite topics, but the specific focus on learning rather than the user's favorite areas of evaluation or reasoning is less urgent.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about learning AI, which is related to the user's favorite topics but lacks specific focus on LLMs, evaluation, or research tooling.
   evidence_quotes:
   - Nobody Wants to Learn AI
   - The “lifelong learner” identity isn’t aspiration. It’s…

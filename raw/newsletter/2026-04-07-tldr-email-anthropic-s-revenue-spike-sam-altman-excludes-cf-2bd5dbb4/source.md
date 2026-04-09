@@ -35,13 +35,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:28.361692Z'
 short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:15:10.693573Z'
+lightweight_enriched_at: '2026-04-09T08:35:36.863843Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 6e7cd7912cd72313f6c13ea8cff39786012f33f2d52b4b92c1b67632d6ef9904
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 11d02e553fd5d1fe6985a3ebf5fab8babd98e4ce872537bfa50a848d229ee821
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.5
+  topic_fit_score: 0.95
+  author_fit_score: 0.8
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: must_read
+  reason: The document strongly aligns with the user's favorite topics (LLM/AI, evaluation, research tooling) and features favorite authors (Anthropic, OpenAI, Meta).
+  evidence_quotes:
+  - Anthropic's annual revenue run-rate has spiked from roughly $9 billion at the end of 2025 to more than $30 billion.
+  - Meta's AI agents weren't making useful edits quickly enough when pointed at one of the company's large-scale data processing pipelines.
+  - How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖
 

@@ -46,14 +46,26 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-08T15:13:28.226472Z'
-short_summary: '# Meta-Harness: End-to-End Optimization of Model Harnesses ## alphaXiv Summary Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic'
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This paper introduces a method for optimizing agent-based systems using meta-learning techniques. It focuses on efficient and effective optimization methods for these systems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:36:18.643127Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 07ec826fbae1fbac01ac9404da84d3c36c845785c13811a2559b6c774c89cf40
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7c955f2aa723e082221b964883d7ec13427ee3d6e0035dd8dcb3a1301d2e222f
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 0.9
+  bucket_hint: must_read
+  reason: The document directly addresses optimization methods for agent-based systems, which aligns strongly with the user's favorite topics of LLM architecture and reasoning.
+  evidence_quotes:
+  - This paper introduces a method for optimizing agent-based systems using meta-learning techniques.
+  - It focuses on efficient and effective optimization methods for these systems.
+  - 'Tags: paper, alphaxiv, research, agents, computer science, cs.ai, efficient-transformers, meta-learning, ml-systems, optimization-methods'
 ---
 1

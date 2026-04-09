@@ -11,9 +11,6 @@ authors:
 - Zhihang Lin
 - Zhizhong Zhang
 - Xin Tan
-- Jingyu Gong
-- Kun Shao
-- Yuan Xie
 published_at: '2026-04-07T16:26:16Z'
 ingested_at: '2026-04-07T21:43:42.636384Z'
 content_hash: f142d60fb6a30d35e79faf58c58881690c1168f7335f1c2677272059e5dcbc10
@@ -28,19 +25,6 @@ tags:
 - cs.ai
 - cs.ma
 - multi-agent-learning
-- Computer Science
-- cs.AI
-- cs.MA
-- online-learning
-- reasoning
-- reinforcement-learning
-- representation-learning
-- self-supervised-learning
-- tool-use
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -61,15 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:48.208756Z'
-short_summary: The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based methods, also enabling unsupervised self-evolution.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor architecture. MIA improved accuracy on multimodal and text-only benchmarks by significantly outperforming prior memory-based methods.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:41:15.194329Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 600eb93084216d0dd9b1b979c79358633b7055c00d1ed3d4144ffe56cd876da1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7dfc680656e901d3198dd150f007ee10643bac4afc12b35720048f1b87d2fdf5
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM agents, memory, and reasoning, and features authors from the preferred list.
+  evidence_quotes:
+  - The Memory Intelligence Agent (MIA) framework enhances Deep Research Agents by integrating a brain-inspired memory system within a Manager-Planner-Executor arch
+  - MIA improved average accuracy by 5.5 percentage points on multimodal benchmarks and 7.5 percentage points on text-only tasks compared to prior memory-based meth
+  - MIA introduces a Manager-Planner-Executor architecture that decouples historical memory storage, strategic planning, and dynamic execution.
 ---
 # Memory Intelligence Agent
 

@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.387272Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:00.650224Z'
+lightweight_enriched_at: '2026-04-09T08:25:28.695913Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0c47992c93624b36f6342e68c6051565ca260ccc076c779181dfce4500e68717
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8d0da286be6321708695076de8a5ce163c6e0cb5a3331a1a5568262969c485f3
+lightweight_scoring_input_hash: 0be08c72c48d1e70b6124c52e6857beb3f28a70bc3308c6d1c1b40bb705e1f9b
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.35
-  topic_fit_score: 1.0
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.25
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topic of data engineering and tooling (Unity Catalog) and is highly actionable.
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about data engineering tooling (Unity Catalog) and does not directly align with the user's favorite topics of language models, evaluation, or LLM architecture.
   evidence_quotes:
   - I spent 5 hours learning Unity Catalog. Here’s everything you need to know.
   - The famous catalog service from Databricks, and it was…

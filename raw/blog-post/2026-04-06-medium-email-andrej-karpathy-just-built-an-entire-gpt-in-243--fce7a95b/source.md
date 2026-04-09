@@ -31,24 +31,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.639029Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:20.406853Z'
+lightweight_enriched_at: '2026-04-09T08:25:52.239126Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5a09cecee40ccd481abed2fd8a2ec76a30e5c119ebf45a7683d25872d988edf6
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 12805097fed4f220b4237191e8966a5e81a01a7dc070d4ca18243de5e96f0d13
+lightweight_scoring_input_hash: 7ba9a20015c7b87a9b3cb94ef09307a148bf0caf3d23e24cef40489f59f802fb
 lightweight_score:
-  relevance_score: 1.0
+  relevance_score: 0.95
   source_fit_score: 0.5
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models and research tooling through a highly relevant technical achievement.
+  reason: The document directly addresses favorite topics like LLM architecture and research tooling by featuring a major figure in the field.
   evidence_quotes:
   - Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
-  - Just pure Python and basic…
   - gpt, python, deep learning, ai
 ---
 # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python

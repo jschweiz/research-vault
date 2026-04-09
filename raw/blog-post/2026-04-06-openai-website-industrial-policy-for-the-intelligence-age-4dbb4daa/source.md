@@ -36,12 +36,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:11.225600Z'
 short_summary: Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:09:13.248619Z'
+lightweight_enriched_at: '2026-04-09T08:26:56.335757Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ad045ffc91792826cb105d8a11660198fe8589c2bb2494efcc246105144211aa
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a2fd6ee6c34586cbb7517b7db418bc35bdac29e0dd4d136545e58f33a170b3ae
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.75
+  topic_fit_score: 0.36
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is from an AI company and touches on AI policy, which aligns with favorite topics but lacks specific focus on LLM evaluation or architecture.
+  evidence_quotes:
+  - Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institut
+  - Industrial policy for the Intelligence Age
 ---
 Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.

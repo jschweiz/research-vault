@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.368389Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:34.591026Z'
+lightweight_enriched_at: '2026-04-09T08:24:58.460943Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 67140e50ca5444d7d0297539ea3acb0da640d49c978be37af284f399ecf7dc02
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 113a6184acbf446c525b90c9c553cdf92cbe35d798ec3977625df0843a192121
+lightweight_scoring_input_hash: c4872e21e6520a030e4f95308a3082a667e73d5d50d9dee086f4df248abdc579
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
+  relevance_score: 0.85
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  evidence_fit_score: 0.9
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like agentic AI and long-term memory, making it highly relevant.
+  reason: The document directly addresses 'long-term memory' and 'agentic AI,' which strongly aligns with the user's favorite topics of LLM architecture and memory.
   evidence_quotes:
   - Building Long-Term Memory in Agentic AI
   - HITL, InMemory Feature, Feedback Loop and more

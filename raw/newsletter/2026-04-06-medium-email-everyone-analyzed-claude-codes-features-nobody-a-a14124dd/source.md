@@ -38,13 +38,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:45.373115Z'
 short_summary: Medium digest led by "Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture". Includes 15 highlighted stories, including "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:14:42.354010Z'
+lightweight_enriched_at: '2026-04-09T08:35:05.063403Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 968be8bdcc97e1ad4f8b218c2a0db70cdfd6732d60217aaf3be8108a4ad66815
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 03b7a7bf8e82ef8ec1d8e16e99d379b41527b5efbd35807d92300d3c8b96eb54
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.3
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it directly discusses LLM architecture, Claude code, and related AI research topics, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+  - How to build an Over-Engineered Retrieval System
+  - I Turned Claude Code Into an Operating System. Here’s the Blueprint.
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture. | Han HELOIR YAN, Ph.D. ☕️ in Data Science Collective
 

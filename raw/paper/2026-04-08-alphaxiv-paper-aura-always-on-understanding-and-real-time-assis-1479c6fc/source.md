@@ -11,12 +11,6 @@ authors:
 - Shuhan Li
 - Xintong Guo
 - Huankang Guan
-- Fang Liu
-- Dunyuan Xu
-- Peiwen Sun
-- Heyang Sun
-- Rui Liu
-- Hongsheng Li
 published_at: '2026-04-05T16:53:46Z'
 ingested_at: '2026-04-08T15:13:26.378497Z'
 content_hash: dbd82a170b9090416a206c9700dcf96c0b79ae97d27e71d46b583579e89a2a09
@@ -25,19 +19,12 @@ tags:
 - alphaxiv
 - research
 - agents
-- Computer Science
+- computer science
 - conversational-ai
-- cs.CV
+- cs.cv
 - inference-optimization
 - model-deployment-systems
 - sequence-modeling
-- video-understanding
-- vision-language-models
-- visual-qa
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -59,15 +46,26 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:12:14.149220Z'
-short_summary: Researchers from Huawei Research and CUHK MMLab introduced AURA, an end-to-end streaming VideoLLM framework capable of continuously processing live video, making autonomous decisions on when to respond, and managing unbounded multimodal context. This framework achieved superior performance on streaming video understanding benchmarks, outperforming existing open-source and proprietary models, and demonstrated an end-to-end latency of approximately 312.2 ms for interactive scenarios.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AURA is an end-to-end streaming VideoLLM framework that continuously processes live video to enable real-time question answering and proactive responses. It achieves state-of-the-art performance on streaming benchmarks with low end-to-end latency.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:45:24.540145Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 78b5097d772624441db4d1da22d42a76c5e7d53ba673bd79d4ff5202f27bb231
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 738e816490b27b9e9aebc951ec48bc3bdabe04f944a4b8a4ea4484f6eba33583
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is a high-priority fit as it directly addresses the user's favorite topics of VideoLLMs, evaluation, and reasoning, and features authors from major preferred labs.
+  evidence_quotes:
+  - AURA is an end-to-end streaming VideoLLM framework that continuously processes live video to enable real-time question answering and proactive responses.
+  - 'AURA demonstrated state-of-the-art performance on StreamingBench (73.1% accuracy, 10.4% higher than MiniCPM-o-4.5), OVO-Bench (65.3% accuracy, 4.2% higher than '
 ---
 # AURA: Always-On Understanding and Real-Time Assistance via Video Streams
 

@@ -11,11 +11,6 @@ authors:
 - Wuguannan Yao
 - Runnan Fang
 - Shuofei Qiao
-- Kexin Cao
-- Guozhou Zheng
-- Xiang Qi
-- Peng Zhang
-- Shumin Deng
 published_at: '2026-04-06T16:09:33Z'
 ingested_at: '2026-04-07T21:43:15.155557Z'
 content_hash: 44e1f3ef8e30a58e65a1a3e6f870d80f89276abfe03ca8f4ed541cfa8fee5dfc
@@ -30,22 +25,6 @@ tags:
 - cs.cl
 - cs.ir
 - cs.lg
-- Computer Science
-- cs.AI
-- cs.CL
-- cs.IR
-- cs.LG
-- cs.MA
-- generative-models
-- online-learning
-- reinforcement-learning
-- representation-learning
-- tool-use
-- transfer-learning
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -67,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:51.635545Z'
-short_summary: SkillX is an automated framework that builds a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of planning, functional, and atomic skills. This framework from Zhejiang University and Ant Digital Technologies improved task success rates by approximately 10% for weaker models and enhanced execution efficiency by reducing execution steps and input tokens across complex benchmarks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: SkillX is an automated framework that constructs a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of skills. This framework improves task success rates and execution efficiency by structuring experience representations for agent learning.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:42:52.196132Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 26988779f6b78e2a87e2c0eb7f3399b3147099b47720051000f24eb137633613
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 662f228dbae008aac4b237d7cc5f61fc86774db875d62c40b65f27cbe374c6bd
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of LLM agents, evaluation, and research tooling through a novel framework for constructing skill knowledge bases.
+  evidence_quotes:
+  - SkillX is an automated framework that constructs a plug-and-play skill knowledge base for LLM agents using a hierarchical representation of skills.
+  - SkillX consistently boosted the performance of various base LLM agents, with weaker models like Qwen3-32B achieving approximately a 10% gain in task success rat
+  - The multi-level skill representation proved more effective than other experience representations, leading to superior performance and transferability across dif
 ---
 # SkillX: Automatically Constructing Skill Knowledge Bases for Agents
 

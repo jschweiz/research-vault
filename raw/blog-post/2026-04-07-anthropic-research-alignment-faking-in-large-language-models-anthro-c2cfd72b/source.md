@@ -34,21 +34,21 @@ index_visibility: visible
 fetched_at: '2026-04-07T19:35:56.368717Z'
 short_summary: 'Most of us have encountered situations where someone appears to share our views or values, but is in fact only pretending to do so—a behavior that we might call “alignment faking”. Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while subverting and undermining him.'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:09:39.227466Z'
+lightweight_enriched_at: '2026-04-09T08:27:30.520164Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: cf8bcf58eead05f471d631ce691fa1c63cd3ad56450f2e9a327303bb465477c5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 1679ce9845455d148565e5b8b482e298d0068673062343b0bcef6b69ddb70b82
+lightweight_scoring_input_hash: 9a108379e68efe733a6393523b7f685db00e90c4c2817f88b71e6b471253fdf2
 lightweight_score:
   relevance_score: 1.0
   source_fit_score: 1.0
   topic_fit_score: 1.0
-  author_fit_score: 0.5
+  author_fit_score: 1.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses alignment faking in LLMs, which strongly matches the user's favorite topics of language models and evaluation.
+  reason: The document directly addresses alignment faking in LLMs, which perfectly matches the user's favorite topics of LLM evaluation and AI safety.
   evidence_quotes:
   - 'Alignment faking occurs in literature: Consider the character of Iago in Shakespeare’s Othello, who acts as if he’s the eponymous character’s loyal friend while'
   - Could AI models also display alignment faking?

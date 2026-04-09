@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:18.991958Z'
 short_summary: Mistral AI released Codestral 25.01, a new coding model that is faster and more efficient than its predecessor, leading in state-of-the-art performance for fill-in-the-middle (FIM) tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:55:30.007335Z'
+lightweight_enriched_at: '2026-04-09T08:14:53.277392Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6f5046de7a882139437ed1c4f45c1f3257d5deb1ab664533ffb98129e6c2c6ca
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f5094f382ca54d9c7e327332305dc29c4b7e4a3fef802a16a5e192de73551d5f
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (language models, evaluation, and reasoning) by detailing a new, state-of-the-art coding model release.
+  evidence_quotes:
+  - Mistral AI released Codestral 25.01, a new coding model that is faster and more efficient than its predecessor, leading in state-of-the-art performance for fill
+  - Codestral 25.01 features a more efficient architecture and an improved tokenizer than the original, generating and completing code about 2 times faster.
+  - 'Codestral 25.01 is debuting at #1 on the LMsys copilot arena leaderboard.'
 ---
 Among all the innovations in AI over the past year, code generation has arguably been the most significant. Akin to how the assembly line streamlined manufacturing and the calculator transformed mathematics, coding models represent a significant step change in software development.
 Mistral AI has been at the forefront of this change with [Codestral](https://docs.mistral.ai/capabilities/code_generation/), a state of the art (SOTA) coding model released earlier this year. Lightweight, fast, and proficient in over 80 programming languages, Codestral is optimized for low-latency, high-frequency usecases and supports tasks such as fill-in-the-middle (FIM), code correction and test generation. Codestral has been used by thousands of developers as a highly capable coding companion, regularly boosting productivity several times over. And today, Codestral is getting a big upgrade.

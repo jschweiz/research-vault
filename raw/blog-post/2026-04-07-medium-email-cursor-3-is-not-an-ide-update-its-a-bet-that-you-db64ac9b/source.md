@@ -32,24 +32,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:28.087261Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:12:27.644138Z'
+lightweight_enriched_at: '2026-04-09T08:32:15.437433Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 41576b56070224b2e3900df949ceedddf8f3a79012f204c6d7fe9ac5232d94c0
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e21c1b0c98779685cb13d58bab5553c202e54db56945e82cfe7f776204b613c2
+lightweight_scoring_input_hash: bd079fed6da00fb3f72f34e877997b33fbc979c615d8cb451d2e6b7852d450d0
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.85
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document strongly aligns with the user's favorite topics of language models and AI, focusing on agent management in software development.
+  evidence_fit_score: 0.5
+  confidence_score: 0.75
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI/agents, which aligns with favorite topics, but the specific focus on IDEs and software development is less central than the user's core interest in LLM architecture and reasoning.
   evidence_quotes:
   - Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
-  - agents, software development, ai, ide
+  - It’s a Bet That You’ll Manage Agents, Not Write Code.
 ---
 # Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
 

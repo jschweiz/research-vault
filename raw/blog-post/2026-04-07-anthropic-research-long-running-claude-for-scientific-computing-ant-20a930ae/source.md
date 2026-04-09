@@ -19,6 +19,7 @@ tags:
 - agentic workflows
 - claude
 - jax
+- boltzmann solvers
 status: active
 asset_paths:
 - original.html
@@ -30,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:07.274753Z'
-short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. In this post, Siddharth Mishra-Sharma, a researcher on the Discovery team, explains how to apply multi-day agentic coding workflows—test oracles, persistent memory, and orchestration patterns—to scientific computing tasks even outside of one’s domain.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological Boltzmann solver.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:31:02.523516Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 485a660cdedeaeaddf62f0020ed1d2963257bf1b1ce447c73fb96a89cde6a07f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2e6fda05314d6db4fe7529fe72c1b8902ae78bef5c352af8723f76e146bb750f
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM agentic workflows, reasoning, and research tooling, featuring a favorite author (Anthropic) and concrete LLM application.
+  evidence_quotes:
+  - The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological
+  - Anthropic’s [C compiler project] demonstrated a version of this, where Claude worked across roughly 2,000 sessions to build a C compiler capable of compiling th
+  - As a concrete example, I will walk through using Claude Opus 4.6 to [implement a differentiable version of a cosmological Boltzmann solver](https://github.com/s
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

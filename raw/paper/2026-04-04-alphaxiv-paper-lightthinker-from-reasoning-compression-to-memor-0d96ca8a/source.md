@@ -46,21 +46,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:27:32.144187Z'
 short_summary: '# LightThinker++: From Reasoning Compression to Memory Management ## alphaXiv Summary LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts. LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memory management to maintain reasoning fidelity and reduce active context by 60-70% in long-horizon age'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:17:32.700316Z'
+lightweight_enriched_at: '2026-04-09T08:39:15.846891Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8cf7707b9a602888ba22cb4bdd6324d569a163571d7f55a25b7a119c4d0c6eaf
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ff2743029ebdb464204412e16e1fe76c21b76c678d6e040e9fdd7b5b86b2fac7
+lightweight_scoring_input_hash: 2bb863b808da2e9d206f357da4c5a937d92bff3785a60d5312fac7ff85e4421e
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 1.0
+  source_fit_score: 0.5
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, reasoning, and research tooling through novel methods for reasoning compression and memory management.
+  reason: The document directly addresses LLM reasoning, memory management, and efficiency, aligning perfectly with the user's favorite topics and authors.
   evidence_quotes:
   - LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts.
   - LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memor

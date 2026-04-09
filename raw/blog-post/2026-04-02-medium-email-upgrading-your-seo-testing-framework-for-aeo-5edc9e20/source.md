@@ -32,21 +32,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.709700Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:10.267580Z'
+lightweight_enriched_at: '2026-04-09T08:22:02.300762Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3494224ce1e75ff365226a2d90aee85008ab297fcc7ed62b9f98a62cfa1f43d4
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: f03777e5b590f8e402daa9facb2312030a5fbd10e437e0866234e3b20d6ec625
+lightweight_scoring_input_hash: e08955ce95da43533fddd5b1ac609d77fd214011ba8cfc6ec503f896b5b9520c
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
-  confidence_score: 0.8
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about SEO testing and digital marketing, which does not strongly align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is about SEO testing frameworks and digital marketing, which does not align with the user's favorite topics of language models, LLM architecture, or research tooling.
   evidence_quotes:
   - Upgrading your SEO testing framework for AEO
 ---

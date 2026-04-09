@@ -31,24 +31,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.514833Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:47.318016Z'
+lightweight_enriched_at: '2026-04-09T08:25:12.405106Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 95c339e0a1661b2006c80e72c0d62d42af031cceae06f721cbd0f74e0244248e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d5b7fe3f324e2f4ad3077f748cf8fd5ebcb27d3c3e970cd269766f3395d008a7
+lightweight_scoring_input_hash: ea314c8bb4b253c25f6381b7ecde3b3c190cc9d9ee28249818423119f6565b4d
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI (Claude) and skills, which aligns with the user's interest in language models and evaluation, but the specific focus on product design is a narrow fit.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Claude skills for product designers, which has weak topical overlap with the user's focus on LLM architecture and reasoning.
   evidence_quotes:
   - Claude Skills for Product Designers
-  - How to create your first Claude Skill
 ---
 # Claude Skills for Product Designers
 

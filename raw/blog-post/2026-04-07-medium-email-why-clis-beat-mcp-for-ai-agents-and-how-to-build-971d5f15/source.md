@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.988596Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:12:52.928525Z'
+lightweight_enriched_at: '2026-04-09T08:32:43.739147Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2310bd28d0eb4d8dfe4d49d6248c74da825724f5d48aca7f6df082a43373bd09
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: fc0df6e9f8d4d92e75e47eef79cb4afd1ac021e1a44e60c43d5d4696642d0018
+lightweight_scoring_input_hash: 8ce8f2cedf28fd2d1af8676c77fc6693b9874c18b8ccc7d6b031513a69ed38ae
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.35
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI agents and tooling, making it highly relevant for the user.
+  evidence_fit_score: 0.55
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI agents and software development, which aligns somewhat with favorite topics, but lacks specific focus on LLMs, evaluation, or research tooling.
   evidence_quotes:
   - Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.
   - mcp were a mistake. bash is better.

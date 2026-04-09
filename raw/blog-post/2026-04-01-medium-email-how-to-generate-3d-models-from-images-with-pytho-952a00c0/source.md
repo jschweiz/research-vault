@@ -32,21 +32,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.422881Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:03:58.347035Z'
+lightweight_enriched_at: '2026-04-09T08:20:52.725077Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 315805f15ab419f9bdc84f768929a7e6dc66e3d64f59777677134ba84dfdc591
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 4a925c7525e34a6d84b997ec00b8cbb7eec6d019fe7a1c73acffc3fa771501cf
+lightweight_scoring_input_hash: df3904096465522a877b61818529b8a8c81484fe0bd5fc9f323f6e0d8c719e72
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.75
-  confidence_score: 0.9
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on Python and image processing, aligning with the user's interest in research tooling, but the specific topics of language models, evaluation, and reasoning are not directly addressed.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about 3D modeling and Python, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - How to Generate 3D Models from Images with Python
   - Learn to create 3D models (voxels, point clouds, 3D…

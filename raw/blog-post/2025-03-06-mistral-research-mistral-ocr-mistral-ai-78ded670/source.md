@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:09:08.578917Z'
 short_summary: Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multilingual capabilities. It is designed to extract content from various document types and offers features like doc-as-prompt and self-hosting options.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:56:22.369505Z'
+lightweight_enriched_at: '2026-04-09T08:15:46.484542Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9870c0abb7f7a4dd5f7a01d742de7c48764f9cf2528421ec84011e01b96683a5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7253f0db6b398b245321be4f254ddc20157b40061468240b0ebff010d6d945bd
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is a high-priority research post from a favorite author focusing on multimodal document understanding, which aligns perfectly with the user's favorite topics of LLM architecture and evaluation.
+  evidence_quotes:
+  - Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multili
+  - Mistral OCR excels in understanding complex document elements, including interleaved imagery, mathematical expressions, tables, and advanced layouts such as LaT
+  - Mistral OCR has consistently outperformed other leading OCR models in rigorous benchmark tests.
 ---
 Throughout history, advancements in information abstraction and retrieval have driven human progress. From hieroglyphs to papyri, the printing press to digitization, each leap has made human knowledge more accessible and actionable, fueling further innovation.
 Today, we’re at the precipice of the next big leap—to unlock the collective intelligence of all digitized information. Approximately [90%](https://resources.data.gov/glossary/unstructured-data/) of the world’s organizational data is stored as documents, and to harness this potential, we are introducing [Mistral OCR](https://docs.mistral.ai/capabilities/document/).

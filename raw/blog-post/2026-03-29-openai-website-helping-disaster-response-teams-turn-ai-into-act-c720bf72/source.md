@@ -30,12 +30,22 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:20.060643Z'
 short_summary: 'AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:03:23.874765Z'
+lightweight_enriched_at: '2026-04-09T08:20:19.568074Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 39fa5346ff7d0798b03b38ed0106135adc4f3b0635f359d0a79002f45eb66a14
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e9e4c67513cc67baef25ad809dbe9a9e8641d19034b98a003bf207509046cb61
+lightweight_score:
+  relevance_score: 0.25
+  source_fit_score: 0.3
+  topic_fit_score: 0.1
+  author_fit_score: 1.0
+  evidence_fit_score: 0.2
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about AI application in disaster response, which is tangentially related to the user's interest in language models and AI, but lacks direct focus on LLM architecture or evaluation.
+  evidence_quotes:
+  - 'AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation'
 ---
 AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation

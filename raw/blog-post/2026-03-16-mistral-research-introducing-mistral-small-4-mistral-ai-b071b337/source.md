@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:23.920267Z'
 short_summary: Mistral Small 4 is a unified model that combines reasoning, multimodal, and instruct capabilities into a single, efficient architecture. It features configurable reasoning effort and native multimodality, optimized for performance and open-source deployment.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:00:42.622410Z'
+lightweight_enriched_at: '2026-04-09T08:18:31.970560Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 33486f0b3857622304400dc9a3ca79f3936dc5777a30de6d7986d70873467778
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 724559943ba017b3b12c0a26305ee716834357e052ad026d2420e17227309068
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (LLM architecture, reasoning, multimodal) and features authors from the user's preferred list.
+  evidence_quotes:
+  - Mistral Small 4 is a unified model that combines reasoning, multimodal, and instruct capabilities into a single, efficient architecture.
+  - 'Key architectural details - Mixture of Experts (MoE): 128 experts, with 4 active per token, enabling efficient scaling and specialization.'
+  - Mistral Small 4 is released under the Apache 2.0 license, continuing our commitment to open, accessible, and customizable AI.
 ---
 Introducing
 Mistral Small 4

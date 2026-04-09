@@ -31,24 +31,25 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.748098Z'
 short_summary: '# Beyond Vibe Coding: The Organizational Redesign Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 8 Canonical URL: https://medium.com/@krzysztof.kornel/beyond-vibe-coding-the-organizational-redesign-f5dfb40fac39 ## Newsletter Context Section: Today''s highlights > Krzysztof K. Zdeb in AI Advances · 12 min read · 343 claps · 1 response New roles, better metrics, the apprenticeship problem…'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:45.654612Z'
+lightweight_enriched_at: '2026-04-09T08:21:36.982775Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 163a5b0e527d58c3f92b4d08b34bf0b00abb84c4e17b50e8bafa83519cf7d4ef
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e2f90a440274f9e3fd97a7d389dc7715dc67004f7a8ffd98ffaa811d10f5ae59
+lightweight_scoring_input_hash: 3104eb457a9f8aa74a0c8e3cb96fe9ad9d5f2290c5b09d2b129d70b5fa1b47d4
 lightweight_score:
   relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.36
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.8
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document discusses organizational redesign and AI advances, which has some tangential relevance to the user's interest in language models and research tooling.
+  reason: The document discusses organizational redesign and AI advances, which has weak topical overlap with the user's focus on LLM architecture and research tooling.
   evidence_quotes:
   - 'Beyond Vibe Coding: The Organizational Redesign'
   - New roles, better metrics, the apprenticeship problem…
+  - Krzysztof K. Zdeb in AI Advances
 ---
 # Beyond Vibe Coding: The Organizational Redesign
 

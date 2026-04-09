@@ -31,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:13.820611Z'
-short_summary: 'A “diff” tool for AI: Finding behavioral differences in new models Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited.'
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The research introduces a method called model diffing, which uses a 'bilingual dictionary' to compare AI models with different architectures to automatically find behavioral differences and potential risks. This method allows auditors to identify model-exclusive features, such as alignment or censorship mechanisms, by testing how these features control model behavior.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:27:18.282439Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b91e7f439c795091d8df2279ff1f0bce93e4cf96cc7f8a8727eb46576e940fb6
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ccf2285865ea9bc61800e09966b114f7d8a4ca846db12a58315d62749a521551
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like model evaluation, safety, and cross-architecture comparison using novel research methods.
+  evidence_quotes:
+  - The research introduces a method called model diffing, which uses a 'bilingual dictionary' to compare AI models with different architectures to automatically fi
+  - Cross-architecture model diffing provides a new way to audit these systems by automatically flagging behavioral differences.
+  - Among the thousands of candidates our tool flagged, we've identified and validated several concepts that act like switches for specific model behaviors.
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.

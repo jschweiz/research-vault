@@ -18,6 +18,8 @@ tags:
 - ai
 - science
 - blog
+- workflows
+- biology
 status: active
 asset_paths:
 - original.html
@@ -29,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:05.043701Z'
-short_summary: Subscribe to Anthropic Science Features on AI-assisted discoveries, practical workflows, and field notes across the sciences. We’re launching a new blog about AI and science.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is launching a new blog to discuss the exciting upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising new sociological questions.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:30:05.222964Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8f68cdffbbae82b854390c37b3652bd15e993fb9d69d1438b6c2a722fb6d39d5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 14dbc7a8cfcc7b3b9644920c7a2dc96773b8d37a3acfd4640433af536413062b
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, AI in science, and research workflows, aligning perfectly with their interests.
+  evidence_quotes:
+  - Anthropic is launching a new blog to discuss the exciting upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress an
+  - AI is helping mathematicians to [discover](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) [new proofs](https://www.math.inc/sphere-packing
+  - We’re launching a new blog about AI and science.
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

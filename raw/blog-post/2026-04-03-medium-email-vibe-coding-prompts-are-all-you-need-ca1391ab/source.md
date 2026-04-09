@@ -32,24 +32,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.909360Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:20.522884Z'
+lightweight_enriched_at: '2026-04-09T08:23:30.756035Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6c666da5d9034390845a7479e1047487851906ed4137df96abaab3b64eecac00
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8bac427a2fda659785ee89fda6c215a603b8294bf5ec1cd000437a16f0824f2a
+lightweight_scoring_input_hash: fc04c5969f9c52c963c52a46ee98358fb146c7ddd742db37b597343cab8d0a5f
 lightweight_score:
-  relevance_score: 0.55
-  source_fit_score: 0.3
-  topic_fit_score: 0.75
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.6
+  evidence_fit_score: 0.16
   confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is highly relevant to favorite topics like AI and coding but lacks specific focus on language models, evaluation, or reasoning.
+  bucket_hint: archive
+  reason: The document is about coding prompts and AI but does not directly address the user's favorite topics like LLM architecture or evaluation.
   evidence_quotes:
   - Vibe Coding — Prompts Are All You Need?
-  - 'Tags: newsletter, medium, email, blog-post, vibe coding, prompts, ai, coding, software construction'
+  - Vibe Coding — Prompts Are All You Need?
 ---
 # Vibe Coding — Prompts Are All You Need?
 

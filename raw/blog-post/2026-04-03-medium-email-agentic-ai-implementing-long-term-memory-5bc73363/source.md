@@ -31,23 +31,22 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.948735Z'
 short_summary: '# Agentic AI: Implementing Long-Term Memory Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 5 Canonical URL: https://medium.com/@ilsilfverskiold/agentic-ai-implementing-long-term-memory-304be62063cc ## Newsletter Context Section: Today''s highlights > Ida Silfverskiöld in Data Science Collective · 10 min read · 1.3K claps · 23 responses This article helps you understand how to build complex…'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:05:48.574713Z'
+lightweight_enriched_at: '2026-04-09T08:22:52.995027Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3e7e5122392270d1157e55333fc03eb637dc37affa397df162e858c53faaebe5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 0abbdc7309bc1e16b5e1b9933ee0e2db6697e333939227c6f5f82ec6b6251cdf
+lightweight_scoring_input_hash: 939db3ae4b302d5a13706f07bc661350e7beb40210a7809b0b394cb61b3b4f55
 lightweight_score:
   relevance_score: 0.95
-  source_fit_score: 0.5
+  source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, evaluation, and reasoning by focusing on Agentic AI and long-term memory.
+  reason: The document directly addresses 'Agentic AI' and 'Long-Term Memory,' which strongly aligns with the user's favorite topics of language models, memory, and LLM architecture.
   evidence_quotes:
-  - 'Agentic AI: Implementing Long-Term Memory'
   - 'Agentic AI: Implementing Long-Term Memory'
 ---
 # Agentic AI: Implementing Long-Term Memory

@@ -31,23 +31,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.617819Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:08:33.476606Z'
+lightweight_enriched_at: '2026-04-09T08:26:06.933710Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d61bbfd086b3435dbd8a998ad53e2a7fff1234637f9c9de39abb4f3a82905ca8
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9bac52f417c70b62d6e3d78e689e86f5d0d33bf55f23e1692c05d557e1b49432
+lightweight_scoring_input_hash: eee5c54ecf8effa50f7d7d895c69a45fcfb0a853b1aa40fbc58bdfeefec4ff68
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.8
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
+  evidence_fit_score: 0.7
   confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document directly addresses language models and code architecture, which aligns perfectly with the user's favorite topics.
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with favorite topics like LLM architecture and evaluation, although the specific author does not match preferred authors.
   evidence_quotes:
-  - 'Title: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.'
+  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
   - 'Tags: newsletter, medium, email, blog-post, claude, code, architecture, data science'
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.

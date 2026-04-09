@@ -11,8 +11,6 @@ authors:
 - Yuxin Xie
 - Tianfu Fu
 - Bohan Zhuang
-- Song Han
-- Yukang Chen
 published_at: '2026-04-06T17:58:42Z'
 ingested_at: '2026-04-07T21:42:08.648109Z'
 content_hash: ad7ae4c7384298dbf5ff94724eb2d971e03a5526df4c6fbc01f2b21486d40b04
@@ -27,17 +25,6 @@ tags:
 - efficient-transformers
 - hardware-aware-algorithms
 - inference-optimization
-- Computer Science
-- cs.CL
-- cs.CV
-- lightweight-models
-- model-compression
-- reasoning
-- transformers
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -59,15 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:10:19.857519Z'
-short_summary: Researchers from MIT, ZJU, and NVIDIA introduced TriAttention, a KV cache compression method leveraging a newly identified property of Q/K vector concentration in the pre-RoPE space. This approach predicts attention patterns via a trigonometric series, achieving up to 6.3x higher throughput and 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TriAttention is a KV cache compression method that uses a trigonometric series based on Q/K vector concentration in the pre-RoPE space to estimate key importance. This approach achieves up to 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:43:15.160424Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f2f5ea1be8702bb595c63d37b1da172f862156cf2eb2ef49f4d7b4b1318be55f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d606a749dcaee9069e63c99bc889f9c029dcd882c0fe44079de229534325ef5a
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.7
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM reasoning and KV cache compression, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - TriAttention is a KV cache compression method that uses a trigonometric series based on Q/K vector concentration in the pre-RoPE space to estimate key importanc
+  - TriAttention achieves up to 10.7x KV memory reduction while matching or exceeding full attention accuracy on long reasoning tasks.
+  - TriAttention achieved up to 6.3x higher throughput and 10.7x KV memory reduction, consistently matching or slightly exceeding the reasoning accuracy of full att
 ---
 # TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
 

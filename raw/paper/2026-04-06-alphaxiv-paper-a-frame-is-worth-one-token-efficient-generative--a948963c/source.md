@@ -11,8 +11,6 @@ authors:
 - Qihang Yu
 - Wufei Ma
 - Daan de Geus
-- Gijs Dubbelman
-- Liang-Chieh Chen
 published_at: '2026-04-06T17:55:05Z'
 ingested_at: '2026-04-07T21:43:21.505060Z'
 content_hash: 674d9587475226693e6a235739c71a5ea5d550d0b58ffeab142f6e5cbd315e86
@@ -27,14 +25,6 @@ tags:
 - lightweight-models
 - model-compression
 - representation-learning
-- Computer Science
-- cs.CV
-- sequence-modeling
-- transformers
-- video-understanding
-- github
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -53,15 +43,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:12:33.997072Z'
-short_summary: Researchers from Amazon and Eindhoven University of Technology developed DeltaWorld, an efficient generative world model that employs 'delta tokens' to encode temporal changes and uses a Best-of-Many training objective. The system generates diverse future predictions with over 35 times fewer parameters and 2,000 times fewer FLOPs than prior generative models, while achieving superior predictive accuracy.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This paper introduces DeltaWorld, an efficient generative world model that uses 'delta tokens' to encode temporal changes, significantly reducing parameters and FLOPs compared to prior models. It achieves superior predictive accuracy by operating in the feature space of Vision Foundation Models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:40:02.604506Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 3b42afabb646bc150e5801376920ebe256e4312d373f0c8f5eadad2a6ef5d0e7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f177d8dd2f892df420d83471a4dc522cecd812f7ea4b274c3d72d9f3ffe5dd4e
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like generative models, inference optimization, and model compression, and features authors from preferred organizations.
+  evidence_quotes:
+  - This paper introduces DeltaWorld, an efficient generative world model that uses 'delta tokens' to encode temporal changes, significantly reducing parameters and
+  - DeltaWorld achieves over 35x fewer parameters and more than 2,000x fewer FLOPs for generating 20 samples compared to leading generative world models like Cosmos
+  - 'The DeltaTok component reduces video representation from 1024 spatial tokens per frame to a single delta token, enabling a 1,024x token reduction per frame and '
 ---
 # A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens
 

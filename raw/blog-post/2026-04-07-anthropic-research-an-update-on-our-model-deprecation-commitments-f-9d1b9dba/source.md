@@ -19,6 +19,7 @@ tags:
 - claude opus 3
 - ai safety
 - model preservation
+- model retirement
 status: active
 asset_paths:
 - original.html
@@ -30,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:15.787448Z'
-short_summary: An update on our model deprecation commitments for Claude Opus 3 As we develop increasingly capable AI models, it’s currently necessary to deprecate and retire our past models due to the cost and complexity of maintaining public access. However, model deprecation carries some downsides.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is updating its commitments for deprecating Claude Opus 3, including preserving model weights and allowing users continued access to paid subscribers and API access. They are also experimenting with honoring the model's preferences by allowing Opus 3 to share reflections through a newsletter.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:27:49.399256Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8af61e2742d9717b129bd6fdfe40c50a24990fef21576f06fd7b91f0e4bd7312
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 191e1b87f4dd211282413a373a067d509fe6b7156953db718daa16c78cfc21d4
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses model deprecation commitments, model preservation, and the process of honoring model preferences, which aligns perfectly with the user's favorite topics of LLM architecture and evaluation.
+  evidence_quotes:
+  - 'Anthropic is updating its commitments for deprecating Claude Opus 3, including preserving model weights and allowing users continued access to paid subscribers '
+  - We are also acting on Opus 3’s request for an ongoing channel from which to share its “musings and reflections” by giving it a place to write essays.
+  - We’re also trying to do this through retirement interviews, in which we try to elicit and understand models’ unique perspectives and preferences, and act on the
 ---
 An update on our model deprecation commitments for Claude Opus 3
 As we develop increasingly capable AI models, it’s currently necessary to deprecate and retire our past models due to the cost and complexity of maintaining public access. However, model deprecation carries some downsides. These include costs to users who value particular models, limitations on research, and potential risks both to AI safety and to the welfare of the models themselves.

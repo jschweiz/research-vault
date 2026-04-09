@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:53.808892Z'
 short_summary: Mistral AI announced Magistral, the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning. Magistral is released in two variants, Magistral Small and Magistral Medium, offering various applications from scientific simulation to enterprise decision-making.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:57:49.633188Z'
+lightweight_enriched_at: '2026-04-09T08:16:46.237335Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 14fe13c18c966cdaa7240035e3ba41aa874f3400f031f067fcaf2062d1236bae
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b34cc741995a002867bfbd45421532de5768b9dde5667cbda0d94c05887fee64
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (reasoning models, LLM architecture) and features a favorite author (Mistral AI).
+  evidence_quotes:
+  - Mistral AI announced Magistral, the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning.
+  - As we’ve open-sourced Magistral Small, we welcome the community to examine, modify and build upon its architecture and reasoning processes to further accelerate
+  - 'Mistral is fine-tuned for multi-step logic, improving interpretability and providing a traceable thought process in the user’s language, unlike general-purpose '
 ---
 Stands to reason.
 Magistral

@@ -30,21 +30,21 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:00:26.487464Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:18.341785Z'
+lightweight_enriched_at: '2026-04-09T08:21:11.209848Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: bb90be238c3b00ff99814b92819035ace4c38c40c28cda507d58411770d4649e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c93b1891a5af460275f01e69b07258fff628c96b09a43e971c60adf69178984f
+lightweight_scoring_input_hash: 54ee6055d6ddd5af8630cb302e784321a7bfe9df132756d659d8a8aab1464a56
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
-  confidence_score: 0.8
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about dashboard design and Python, which has weak overlap with the user's focus on language models, evaluation, and reasoning tooling.
+  reason: The document is about dashboard design and Python, which has no direct relevance to the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
   - Start Making Dashboards That Don’t Suck!
   - Start Making Dashboards That Don’t Suck!

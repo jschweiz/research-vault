@@ -33,23 +33,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.376941Z'
 short_summary: Medium digest led by "Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol". Includes 15 highlighted stories, including "How to Generate 3D Models from Images with Python".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:13:27.357280Z'
+lightweight_enriched_at: '2026-04-09T08:33:42.648981Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: ae176aeb40e7ec551091fe6ddf34feb7f50f249d4a71e075cc8044e619dfe786
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: cd3a97cdb3847745af8240a2008e2741a6eb36baa343928f4bdcdf56c77687d0
+lightweight_scoring_input_hash: 94e9c7a93d06452b1a419242dd57f7020e113dc46090a2e80f7f37f6111ff48f
 lightweight_score:
-  relevance_score: 0.45
-  source_fit_score: 0.3
-  topic_fit_score: 0.6
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
   author_fit_score: 0.0
-  evidence_fit_score: 0.5
-  confidence_score: 0.8
+  evidence_fit_score: 0.3
+  confidence_score: 0.7
   bucket_hint: worth_a_skim
-  reason: The document is relevant due to its tags including 'ai' and 'python', aligning with the user's interest in language models and research tooling, but the specific content is a digest of many topics.
+  reason: The document is a general programming newsletter that touches on AI and Python, which partially aligns with the user's interest in LLMs and tooling.
   evidence_quotes:
-  - 'Tags: newsletter, medium, email, python, programming, coding, data science, ai, system design'
+  - What Is an LLM? A No-Jargon Introduction
+  - Claude Code is No Longer the King of Coding
 ---
 # Python Just Killed The “Nested Loop” Nightmare with 1 Simple Symbol. | A. Rahman in CodeToDeploy
 

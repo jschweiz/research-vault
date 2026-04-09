@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:45.132329Z'
 short_summary: Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence. Voxtral bridges the gap between open-source ASR systems and proprietary APIs by offering superior accuracy and semantic understanding.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T13:58:30.009527Z'
+lightweight_enriched_at: '2026-04-09T08:17:08.479684Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 047c9a7d66f63d604f408956f221b8e61b66375bd300dcac780c8e88dad267ca
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e594e684ce5061e2c214459c8755681257c5ec8df07dc88bff37522952fbe871
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.9
+  topic_fit_score: 0.95
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models and evaluation, featuring work from a favorite author.
+  evidence_quotes:
+  - Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence.
+  - Voxtral bridges this gap. It offers state-of-the-art accuracy and native semantic understanding in the open, at less than half the price of comparable APIs.
+  - Voxtral comprehensively outperforms Whisper large-v3, the current leading open-source Speech Transcription model.
 ---
 Voice: the original UI.
 Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships. As digital systems become more capable, voice is returning as our most natural form of human-computer interaction.

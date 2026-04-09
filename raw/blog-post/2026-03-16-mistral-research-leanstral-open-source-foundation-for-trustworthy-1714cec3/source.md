@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:08:27.134737Z'
 short_summary: Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and mighty, allowing humans to dictate desired outcomes rather than debugging machine-generated logic.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:01:06.140450Z'
+lightweight_enriched_at: '2026-04-09T08:18:47.610376Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 358e05e57d829a7122cc4f2e4b104be89ff3fbb97c296546c7ba5d3a4e018cd6
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: afeac28f5084d3ca9f9290c34cd8225c94c3d1739970f40f8a4b3228dd245c79
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (LLM architecture, evaluation, reasoning) by introducing an open-source code agent for formal proof and benchmarking against other models.
+  evidence_quotes:
+  - Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations.
+  - We compare Leanstral against leading coding agents (Claude Opus 4.6, Sonnet 4.6, Haiku 4.5) and open-source models (Qwen3.5 397B-A17B, Kimi-K2.5 1T-A32B, GLM5 7
+  - Leanstral pass@2 reaches a score of 26.3, beating Sonnet by 2.6 points, while costing only $36 to run, compared to Sonnet’s $549.
 ---
 AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review. The time and specialized expertise required to manually verify become the primary impedance of engineering velocity.
 We envision a more helpful generation of coding agents to both carry out their tasks and formally prove their implementations against strict specifications. Instead of debugging machine-generated logic, humans dictate what they want. Today, we are taking the first major step toward that vision.

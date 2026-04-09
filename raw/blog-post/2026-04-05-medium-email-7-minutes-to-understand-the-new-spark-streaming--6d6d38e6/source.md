@@ -31,24 +31,23 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.450412Z'
 short_summary: null
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:22.316554Z'
+lightweight_enriched_at: '2026-04-09T08:24:43.101515Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1e0c0f2be5b721d1b2110d821e86aee311674945ec39bacd197648edebe9b250
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b1d79de121053d7a5170fa68e6189777877bdf7dbc4e42af2edcce1ed85df35e
+lightweight_scoring_input_hash: 834960c9220c3f12a8ffc89a44dff02dca66ad4eaa142b75cfd4a1177ae8a31e
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
+  evidence_fit_score: 0.16
   confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on Apache Spark and AI, which aligns with the user's interest in language models and research tooling, but lacks direct focus on evaluation or reasoning.
+  bucket_hint: archive
+  reason: The document is about Apache Spark streaming and data engineering, which has weak topical overlap with the user's focus on LLMs and AI research.
   evidence_quotes:
   - Apache Spark now cares about ultra-low latency.
-  - 7 Minutes to Understand the New Spark Streaming Feature that Changes Everything
 ---
 # 7 Minutes to Understand the New Spark Streaming Feature that Changes Everything
 

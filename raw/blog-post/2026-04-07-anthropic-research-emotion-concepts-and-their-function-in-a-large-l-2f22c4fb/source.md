@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:44.432655Z'
 short_summary: All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:10:48.782950Z'
+lightweight_enriched_at: '2026-04-09T08:29:14.898549Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3a8ae32da25cb47ea12f42605e55a10cd43b09051aeb34140ce4181eef2df173
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e60e817bb7e290d5a52e685701f1d7d8abe3df5513a0a5f829c777aa487c833f
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses emotion representations and their functional role in LLM behavior, aligning perfectly with the user's favorite topics of language models and reasoning.
+  evidence_quotes:
+  - we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior.
+  - Overall, it appears that the model uses functional emotions—patterns of expression and behavior modeled after human emotions, which are driven by underlying abs
+  - 'For instance, we find that neural activity patterns related to desperation can drive the model to take unethical actions; artificially stimulating (“steering”) '
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.
 In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior. These correspond to specific patterns of artificial “neurons” which activate in situations—and promote behaviors—that the model has learned to associate with the concept of a particular emotion (e.g., “happy” or “afraid”). The patterns themselves are organized in a fashion that echoes human psychology, with more similar emotions corresponding to more similar representations. In contexts where you might expect a certain emotion to arise for a human, the corresponding representations are active. Note that none of this tells us whether language models actually feel anything or have subjective experiences. But our key finding is that these representations are functional, in that they influence the model’s behavior in ways that matter.

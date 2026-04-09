@@ -33,12 +33,22 @@ index_visibility: visible
 fetched_at: '2026-04-09T08:07:29.316183Z'
 short_summary: The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:02:59.194826Z'
+lightweight_enriched_at: '2026-04-09T08:19:54.805168Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7b2dbf7c1db81076ff8ec68994f36c11d9b770de1e9091dad0c9860c1c2638a0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0e5971e2354f90805a02f8304f63b08ca1d328c3a1931fb4bd56dfb5eccf5100
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.75
+  topic_fit_score: 0.16
+  author_fit_score: 1.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is from a favorite author/source but the topic is unrelated to the user's favorite topics of LLMs, evaluation, or research tooling.
+  evidence_quotes:
+  - The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.
 ---
 The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.

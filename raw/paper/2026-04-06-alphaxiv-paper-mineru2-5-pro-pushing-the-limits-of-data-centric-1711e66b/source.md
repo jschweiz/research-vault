@@ -48,25 +48,25 @@ index_visibility: visible
 fetched_at: '2026-04-08T09:28:10.600654Z'
 short_summary: '# MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale ## alphaXiv Summary Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:18:31.543247Z'
+lightweight_enriched_at: '2026-04-09T08:41:28.216716Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 34b1833f95119162d7df4553b1078478e5baf1c16c0bb28536ccd09404d7ea1a
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 79f88b4b89dc82c7b0cc9466ee48347c4ff3425005972a548f5103f8c9266a28
+lightweight_scoring_input_hash: c5bca4229dbc5094999b83b66ae721f4ac53473ceb8ce3ce21dc4816e76c1a3f
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
+  relevance_score: 0.85
+  source_fit_score: 0.6
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.5
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and research tooling through a specific framework and benchmark improvement.
+  reason: The document directly addresses document parsing, data-centric methods, and model training strategies, which strongly align with the user's favorite topics of language models, evaluation, and research tooling.
   evidence_quotes:
   - 'MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale'
-  - This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining t
   - Performance gains in document parsing can be primarily driven by systematic data engineering, even with a fixed model architecture.
+  - Cross-Model Consistency Verification (CMCV) effectively assesses sample difficulty and generates high-quality pseudo-labels by leveraging consensus among multip
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
 

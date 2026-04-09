@@ -31,21 +31,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:27.129909Z'
 short_summary: '# The Complete Guide to Claude Code: CLAUDE.md Source newsletter: The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-04T06:40:00+00:00 Entry Number: 1 Canonical URL: https://medium.com/@zhaozhiming/the-complete-guide-to-claude-code-claude-md-743d4cbac757 ## Newsletter Context Section: Today''s highlights > zhaozhiming in AI Advances · 17 min read · 992 claps · 12 responses A comprehensive guide to the CL'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:07:03.464186Z'
+lightweight_enriched_at: '2026-04-09T08:24:22.237344Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9e2d7cbb488fa01b5cbe1ba96e89d76d83c9edde85a11727fce1ed2c0232cf96
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9d1198c9d859fdb92eb9d26b99f82837ac39e023e965a9f86b8a272e04ff4d78
+lightweight_scoring_input_hash: 5beb39f44bc07a472e6860f0d276b4485ff842252dc2e27445baef748874d038
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.9
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is a comprehensive guide directly related to language models and code, which aligns perfectly with the user's favorite topics.
+  evidence_fit_score: 0.7
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (LLMs, Claude) but lacks specific author or source alignment.
   evidence_quotes:
   - 'The Complete Guide to Claude Code: CLAUDE.md'
   - A comprehensive guide to the CLAUDE.md file in Claude…

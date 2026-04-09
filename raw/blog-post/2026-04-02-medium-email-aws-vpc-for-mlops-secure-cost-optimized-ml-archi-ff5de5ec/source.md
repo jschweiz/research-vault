@@ -33,21 +33,21 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.688995Z'
 short_summary: '# AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures Source newsletter: Nobody Wants to Learn AI | Alvis Ng Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-02T06:40:00+00:00 Entry Number: 5 Canonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124 ## Newsletter Context Section: Today''s highlights > Kuriko Iwai · 12 min read · 235 claps · 2 responses Master VPC configurations with 4 essential AWS VPC…'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:04:39.208721Z'
+lightweight_enriched_at: '2026-04-09T08:21:30.448840Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fff08ae26848e14475559a034d0ce5c71460eac5273db733e53ffe93c092c500
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8cf540e22ccb0d6931654d41b49438ce6ccc1b22abe5ad829ed5f4789a091f20
+lightweight_scoring_input_hash: c5e40be0d9924b043de1fb5f07d69e0afb5a49fe168168059289c836723c0df1
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.75
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.36
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, evaluation, and research tooling through the lens of MLOps and AWS infrastructure.
+  evidence_fit_score: 0.55
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on MLOps and AWS, which aligns with favorite topics, but lacks specific focus on LLMs, evaluation, or reasoning.
   evidence_quotes:
   - 'AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures'
   - Master VPC configurations with 4 essential AWS VPC…

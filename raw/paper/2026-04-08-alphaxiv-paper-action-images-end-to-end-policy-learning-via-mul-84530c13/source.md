@@ -11,9 +11,6 @@ authors:
 - Yilin Zhao
 - Yuncong Yang
 - Yilun Du
-- Tsun-Hsuan Wang
-- Yi-Ling Qiao
-- Chuang Gan
 published_at: '2026-04-07T17:59:30Z'
 ingested_at: '2026-04-08T15:13:24.631292Z'
 content_hash: 85ad19483ef5fbe5f065e048938e7a833880503f051957fe409751be0d9900bd
@@ -21,20 +18,13 @@ tags:
 - paper
 - alphaxiv
 - research
-- Computer Science
-- cs.CV
-- cs.RO
+- computer science
+- cs.cv
+- cs.ro
 - deep-reinforcement-learning
 - generative-models
 - multi-modal-learning
 - representation-learning
-- robotic-control
-- robotics-perception
-- zero-shot-learning
-- github
-- audio
-- transcript
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -55,15 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:11:29.005050Z'
-short_summary: Action Images reformulates robot policy learning as multiview video generation, converting 7-DoF robot actions into pixel-grounded images. This approach enables a unified world model to achieve superior zero-shot policy generalization on unseen tasks and environments, alongside improved video-action joint generation quality.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Action Images reformulates robot policy learning as multiview video generation by translating 7-DoF actions into pixel-grounded action images. This unified world action model enables superior zero-shot policy generalization and improved video-action joint generation quality.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:44:56.143996Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: dd725cdfac670a8089bb99b87bf3ff98fe7a7bbea9ddb6c1627e9eb113ed52ee
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cb923950dd5f49fc62d8006f1f13c23fa38f5bd7231f13d42d1a57c8143f64c2
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like LLM architecture, reasoning, and research tooling within the domain of embodied AI and policy learning.
+  evidence_quotes:
+  - Action Images reformulates robot policy learning as multiview video generation, converting 7-DoF robot actions into pixel-grounded action images.
+  - This pixel-grounded action representation allows the video backbone itself to act as a zero-shot policy, without a separate policy head or action module.
+  - On RLBench and real-world evaluations, our model achieves the strongest zero-shot success rates and improves video-action joint generation quality over prior vi
 ---
 # Action Images: End-to-End Policy Learning via Multiview Video Generation
 

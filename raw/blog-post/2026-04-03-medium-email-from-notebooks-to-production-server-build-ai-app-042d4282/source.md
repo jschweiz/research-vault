@@ -32,24 +32,24 @@ index_visibility: hidden
 fetched_at: '2026-04-08T09:00:26.930379Z'
 short_summary: '# From Notebooks to Production Server: Build AI Applications The Right Way Source newsletter: Claude Code is Great | Leo Godin Sender: Medium Daily Digest <noreply@medium.com> Published At: 2026-04-03T06:40:00+00:00 Entry Number: 4 Canonical URL: https://medium.com/@jeremyarancio/from-notebooks-to-production-server-build-ai-applications-the-right-way-8037203b7028 ## Newsletter Context Section: Today''s highlights > Jeremy Arancio in Level Up Coding · 13 min read · 154 claps · 2 responses Develop'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-08T14:06:01.574445Z'
+lightweight_enriched_at: '2026-04-09T08:23:09.076883Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 18e486283cff51f61b7893f69c64a2e227a2f7ae2d222ab8007703953a375759
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 02abc86489fbd5d80b7027c370fc122073c2ac2177b05b663e60bb9b774b4016
+lightweight_scoring_input_hash: 48c439afb9dcf349c527e11c8dff30c04d17191c1d0951df52df1c5379df81ee
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses building AI applications, which aligns perfectly with the user's favorite topics of language models, evaluation, and research tooling.
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document discusses building AI applications, which aligns with favorite topics, but the specific focus on deployment and software engineering is less direct than core LLM/evaluation topics.
   evidence_quotes:
   - 'From Notebooks to Production Server: Build AI Applications The Right Way'
-  - 'Tags: newsletter, medium, email, blog-post, ai, machine learning, python, deployment, software engineering'
+  - Build AI Applications The Right Way
 ---
 # From Notebooks to Production Server: Build AI Applications The Right Way
 

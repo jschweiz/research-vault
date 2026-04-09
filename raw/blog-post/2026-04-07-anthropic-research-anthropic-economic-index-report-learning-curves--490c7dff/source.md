@@ -31,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T08:08:00.852360Z'
-short_summary: The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Anthropic Economic Index report studies Claude usage in February 2026, focusing on how learning curves in AI adoption affect task diversification and the economic value of work.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T08:28:16.789237Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f60614bfb4e772f7501b2edfd810286c5c2d5a5d710e2c5380d6e3a81d84bab8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c200279159ee2dcac04da10cda3be6ca4c1e20619e63ea73270ccbfe262c06b6
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses learning curves, usage diversification, and the economic impact of AI adoption, which aligns perfectly with the user's favorite topics of LLM evaluation, reasoning, and research tooling.
+  evidence_quotes:
+  - The Anthropic Economic Index report studies Claude usage in February 2026, focusing on how learning curves in AI adoption affect task diversification and the ec
+  - We present evidence that high-tenure users have developed habits and strategies that allow them to better harness Claude’s capabilities.
+  - 'A central finding in the Economic Index is that early adoption of Claude is very uneven: Claude is used more intensely in high-income countries, within the US i'
 ---
 The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
 This latest report studies Claude usage in February 2026, building on the economic primitives framework introduced in our [previous report](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report) (which used data from November 2025). Our sample covers February 5 to February 12, three months following the release of Claude Opus 4.5 and coincident with the release of Claude Opus 4.6.
