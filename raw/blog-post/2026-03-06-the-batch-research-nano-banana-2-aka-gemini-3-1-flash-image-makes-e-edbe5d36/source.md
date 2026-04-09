@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T21:59:44.659704Z'
 short_summary: Google launched Nano Banana 2 (Gemini 3.1 Flash Image), a faster and cheaper image generation system based on Gemini 3 Flash. This new model offers enhanced features and performance, positioning it among the top image generators.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T20:59:31.644357Z'
+lightweight_enriched_at: '2026-04-09T22:09:48.157732Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5d65e99794c94d0882476af366234af875ebc21e47374170a97ef40bdf1bd573
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7c630079a6035229b587271cc87fb35a0218aa6f8e96e6c7eba4aa15e5ca4f42
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document strongly aligns with the user's favorite topics (LLM architecture, evaluation, and research tooling) and features relevant AI model developments.
+  evidence_quotes:
+  - Google launched Nano Banana 2 (Gemini 3.1 Flash Image), a faster and cheaper image generation system based on Gemini 3 Flash.
+  - 'Nano Banana 2 (formally designated Gemini 3.1 Flash Image), an image-generation system that takes advantage of Gemini 3 Flash’s speed and strengths in language '
+  - Nano Banana 2 ranks among the top three image generators on independent leaderboards.
 ---
 Google launched a cheaper, faster successor to its flagship image generator, delivering greater interactivity at roughly half the price.
 What’s new: Google [launched](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-__PLGlWst6ErppMVsgt5XeNmlrvvBPZnQ4ZW6YCtaQ-ifMXNEgKyU1jQoozrmdTu5PemqX) Nano Banana 2 (formally designated Gemini 3.1 Flash Image), an image-generation system that takes advantage of Gemini 3 Flash’s speed and strengths in language and reasoning. It’s around four times faster and costs roughly half as much per image as its predecessor Nano Banana Pro.

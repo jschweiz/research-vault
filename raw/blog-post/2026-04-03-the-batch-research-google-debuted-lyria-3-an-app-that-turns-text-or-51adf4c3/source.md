@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T21:59:22.441579Z'
 short_summary: Google introduced Lyria 3, a music generator that creates 30-second audio clips from text or images, incorporating features like style specification and multiple languages. The model includes safeguards to avoid copyright violations by licensing training data and watermarking synthetic media.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T20:59:31.829999Z'
+lightweight_enriched_at: '2026-04-09T22:09:48.737804Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 919ac45216eb64241f39ea643226533fd76619fd592dec8cd01450782c821843
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2158e453554c92b5f9d435ee47c234fdb40e16444978453291f7f934d57780de
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.5
+  topic_fit_score: 0.95
+  author_fit_score: 0.8
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document strongly aligns with the user's favorite topics (LLM architecture, generation) and features authors from the user's preferred list.
+  evidence_quotes:
+  - Google introduced Lyria 3, a music generator that creates 30-second audio clips from text or images, incorporating features like style specification and multipl
+  - The model includes safeguards to avoid copyright violations by licensing training data and watermarking synthetic media.
+  - 'Architecture: Latent diffusion model'
 ---
 Google added a music generator to Gemini and YouTube, putting a model that produces synthetic songs in front of hundreds of millions of users.
 What’s new: [Lyria 3](https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) takes text descriptions or images and generates 30-second audio clips that can include instruments, singing voices, and song lyrics in several languages. Google took measures to ensure that the model’s output doesn’t violate copyrights: licensing its training data, filtering outputs for similarity to copyrighted works, and avoiding reproduction of an artist’s sonic likeness.

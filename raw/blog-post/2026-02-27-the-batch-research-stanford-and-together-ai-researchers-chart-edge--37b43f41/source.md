@@ -33,15 +33,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T21:59:46.529421Z'
-short_summary: Researchers found that while cloud systems are currently more energy-efficient per user, local systems are improving rapidly in intelligence per watt. This trend suggests that smaller, high-performance models running on local devices could enable significant energy savings by distributing computational load.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers found that while cloud systems are currently more energy-efficient per user, local systems are rapidly improving in intelligence per watt. This trend suggests that smaller, high-performance models running on local devices could enable significant energy savings by shifting AI workloads from the cloud.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:09:48.042146Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2d14f4ce672adfd1280afda299e557a374c79a526998db617b6ce6720a24203d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c96f2e4f6c165108829e681bad7ad143df1344e98a99a9b88b05b10ef2fe37a5
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM performance, hardware efficiency, and the trade-off between local and cloud computing.
+  evidence_quotes:
+  - Researchers found that while cloud systems are currently more energy-efficient per user, local systems are rapidly improving in intelligence per watt.
+  - Local systems don’t yet match cloud systems for intelligence per watt, but they are improving as researchers develop smaller models that achieve higher performa
+  - In simulated hybrid scenarios, power savings exceeded 80 percent.
 ---
 Projected demand for output from large language models is spurring a massive buildout of data centers. Researchers asked whether smaller models running on local devices could meaningfully lighten that load.
 What’s new: Jon Saad-Falcon, Avanika Narayan, and colleagues at Stanford University and Together AI, a provider of software development and training, found that laptops are increasingly capable of substituting for cloud computing, based on a metric they call [intelligence per watt](https://arxiv.org/abs/2511.07885v2?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--_6hmb3DGhckxFQ9Gf4Kr2IIQwrEhiiAuElBhJrqd3pK_MzbJGcrUQx3Cg7YhH_DLqBP41).

@@ -33,13 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T21:59:42.883009Z'
 short_summary: OpenAI launched Frontier, a platform designed to orchestrate corporate agents, allowing users to build, share, evaluate, and manage AI agents. The system aims to provide a unified control interface for managing these agents across organizations.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T20:59:31.672592Z'
+lightweight_enriched_at: '2026-04-09T22:09:48.189527Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5fd8e7bb96fb699e1fc2ed5ec96c56301b99861d4695585a24493218d61fb0b7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8fd326029c1c818504c074acb75f345e44b5ce926e258900122d7f9cd91d922f
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.9
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM agents, evaluation, and orchestration, and features a favorite author (OpenAI).
+  evidence_quotes:
+  - OpenAI launched Frontier, a platform designed to orchestrate corporate agents, allowing users to build, share, evaluate, and manage AI agents.
+  - Frontier provides a unified user interface for managing agents regardless of the frameworks and models involved.
+  - Agents can "build memories, turning past interactions into useful context," which implies that agents can improve their performance automatically over time by r
 ---
 Managers need to understand how their subordinates get work done, what resources they require, and what they accomplish. OpenAI’s latest product aims to fulfill this need when the teammates are AI agents.
 What’s new: OpenAI announced [Frontier](https://openai.com/index/introducing-openai-frontier/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-__PLGlWst6ErppMVsgt5XeNmlrvvBPZnQ4ZW6YCtaQ-ifMXNEgKyU1jQoozrmdTu5PemqX), a platform designed to help orchestrate corporate cadres of agents, including building them, sharing information and business context among them, evaluating their performance, and managing their interactions with employees and each other. Cisco and T-Mobile have used the system in pilot projects, and OpenAI is offering it, along with dedicated engineering help, to selected clients including HP, Intuit, and Uber. It plans to make Frontier more widely available in coming months under terms that are not yet disclosed.

@@ -35,13 +35,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T21:59:20.631812Z'
 short_summary: The authors introduced Test-Time Training End-to-End (TTT-E2E), a method that compresses context into transformer weights by training during inference to maintain stable accuracy and constant inference time as context grows. This approach demonstrated faster inference for long contexts, though training was more complex.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T20:59:31.869196Z'
+lightweight_enriched_at: '2026-04-09T22:09:48.801149Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: df1560d2eb08fb847429e16270620aed8c9efb548e89779c352ba87b313f2f2c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f9db2e627baa59e39acf6c55a77304560fca7a3b3b8cd9481a1777175db68d89
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like LLM architecture, evaluation, and reasoning by introducing a novel method for handling long context in LLMs.
+  evidence_quotes:
+  - The authors introduced Test-Time Training End-to-End (TTT-E2E), a method that compresses context into transformer weights by training during inference to mainta
+  - 'This work reframes the problem as a trade-off between training and inference: Processing at inference is less expensive and more consistent per token, but train'
+  - TTT-E2E demonstrated very slightly higher performance than a vanilla transformer from short to long contexts, judging by next-token prediction loss.
 ---
 Large language models typically become less accurate and slower when they process longer contexts, but researchers enabled an LLM to keep accuracy stable and inference time constant as its context grew.
 What’s new: Arnuv Tandon, Karan Dalal, and colleagues at the nonprofit Astera Institute, Nvidia, Stanford, UC Berkeley, and UC San Diego introduced [Test-Time Training, End-to-End](https://arxiv.org/abs/2512.23675?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) (TTT-E2E), a method that compresses context into a transformer’s weights by training it during inference.
