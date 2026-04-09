@@ -1,0 +1,20 @@
+{
+  "article_html_chars": 0,
+  "author_hints": [],
+  "body_source": "placeholder",
+  "byline": null,
+  "canonical_url_hint": null,
+  "captured_html_saved": false,
+  "content_text_chars": 202,
+  "description": null,
+  "extraction_mode": "capture",
+  "fetch_error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)",
+  "fetched_html_saved": false,
+  "language": null,
+  "page_title": "Local origin check",
+  "published_at": null,
+  "resolved_canonical_url": "https://example.com/articles/local-origin-check",
+  "saved_title": "Local origin check",
+  "site_name": null,
+  "url": "https://example.com/articles/local-origin-check"
+}

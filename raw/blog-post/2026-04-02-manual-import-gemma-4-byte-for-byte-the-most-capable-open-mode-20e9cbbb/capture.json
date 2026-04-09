@@ -1,0 +1,22 @@
+{
+  "article_html_chars": 22840,
+  "author_hints": [
+    "Clement Farabet"
+  ],
+  "body_source": "captured_text",
+  "byline": "Clement Farabet",
+  "canonical_url_hint": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+  "captured_html_saved": true,
+  "content_text_chars": 8627,
+  "description": "Gemma 4: our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+  "extraction_mode": "readability",
+  "fetch_error": null,
+  "fetched_html_saved": false,
+  "language": "en-us",
+  "page_title": "Gemma 4: Byte for byte, the most capable open models",
+  "published_at": "2026-04-02T00:00:00+00:00",
+  "resolved_canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+  "saved_title": "Gemma 4: Byte for byte, the most capable open models",
+  "site_name": "Google",
+  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+}
