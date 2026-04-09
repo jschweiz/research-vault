@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/openais-frontier-agent-insi
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:42.646319Z'
+fetched_at: '2026-04-09T21:59:42.883009Z'
 short_summary: OpenAI launched Frontier, a platform designed to orchestrate corporate agents, allowing users to build, share, evaluate, and manage AI agents. The system aims to provide a unified control interface for managing these agents across organizations.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.672592Z'

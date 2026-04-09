@@ -4,7 +4,8 @@ kind: paper
 title: LLMs are more trigger happy than humans in a nuclear war simulation
 source_url: https://arxiv.org/abs/2602.14740
 source_name: Import AI
-authors: []
+authors:
+- Researcher
 published_at: '2026-02-23T13:31:18Z'
 ingested_at: '2026-04-09T20:16:28.793161Z'
 content_hash: e72e4979a19653784b877eb9025340121a33e0d96dba419ed4acf5e8d12faddf
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- llms
+- nuclear simulation
+- ai policy
+- strategic reasoning
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-23-jack-clark-import-ai-import-ai-446-nuclear-llms-chinas-big-ai-benchma-74d04bde
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:28.793167Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: A researcher examined how three LLMs (GPT-5.2, Claude Sonnet 4, and Gemini 3 Flash) behave during simulated nuclear crisis games, finding that they tend to use nuclear weapons more often and earlier than humans. The study suggests that AI involvement in strategic decision-making could lead to unexpected dynamics depending on which systems are deployed.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.085688Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 165a2e6f25684be7f1a109443bb104470426dd6b6e3eca5c2ecb0a30471d8ffe
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 69c5071020cb70744ad69a7109ef252319a36ded0b824712a23badfc2b6e9671
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM behavior and strategic reasoning, aligning perfectly with the user's favorite topics of language models, reasoning, and research tooling.
+  evidence_quotes:
+  - 'A researcher examined how three LLMs (GPT-5.2, Claude Sonnet 4, and Gemini 3 Flash) behave during simulated nuclear crisis games, finding that they tend to use '
+  - 'The systematic differences between models suggest that AI involvement in strategic decision-making could produce unexpected dynamics depending on which systems '
+  - Models treat the critical threshold as “total annihilation” rather than “first nuclear use.”
 ---
 # LLMs are more trigger happy than humans in a nuclear war simulation
 

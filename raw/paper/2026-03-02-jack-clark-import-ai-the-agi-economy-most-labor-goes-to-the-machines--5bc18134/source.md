@@ -4,7 +4,10 @@ kind: paper
 title: The AGI economy – most labor goes to the machines, and humans shift to verification
 source_url: https://arxiv.org/abs/2602.20946
 source_name: Import AI
-authors: []
+authors:
+- MIT
+- WashU
+- UCLA
 published_at: '2026-03-02T13:45:27Z'
 ingested_at: '2026-04-09T20:16:07.653056Z'
 content_hash: 3fe7ea4dd9477f2ad7cdc60ec3ada61530315eeb024870982ab4ca98f4060a12
@@ -16,6 +19,10 @@ tags:
 - policy
 - website
 - paper
+- agi
+- economics
+- verification
+- ai_agents
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +33,27 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:07.653061Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The AGI economy shifts labor from machines to human verification, requiring investment in systems for monitoring and verifying AI actions. This shift necessitates new infrastructure and policy to ensure human control and benefit from AI-driven economic growth.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.283604Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0241e138f3c0bb92b100ae53ab55d7e13ac68501171c1dfda934f63af42858a4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9ae89e0542df967bdc19475bb97f40135260789f27a9e3c2c7a42979ca148994
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like AGI, verification, and the economics of AI agents, aligning perfectly with the user's interests.
+  evidence_quotes:
+  - The AGI economy shifts labor from machines to human verification, requiring investment in systems for monitoring and verifying AI actions.
+  - In an economy where autonomous agents act with broad agency rather than narrow instructions, the binding constraint on growth is no longer intelligence. It is h
+  - Ensuring humanity remains the architect of its intelligence requires that verification capacity scale commensurately with AI capabilities—through aggressive inv
 ---
 # The AGI economy – most labor goes to the machines, and humans shift to verification
 

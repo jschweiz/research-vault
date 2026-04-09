@@ -4,7 +4,8 @@ kind: paper
 title: Helping satellites run on-device AI for arctic monitoring
 source_url: https://arxiv.org/abs/2603.03075
 source_name: Import AI
-authors: []
+authors:
+- German Research Center for Artificial Intelligence
 published_at: '2026-03-09T12:45:54Z'
 ingested_at: '2026-04-09T20:15:58.370259Z'
 content_hash: 2a8f0fe136c8642f5e7eb67034e7db4a1ae8f09e1e4e48487364e0d0bf6b6f13
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- on-device ai
+- satellite monitoring
+- sea ice estimation
+- edge computing
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:58.370265Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed TinyIceNet, a lightweight vision model for estimating sea ice thickness from Synthetic Aperture Radar data, designed to run efficiently on resource-constrained devices like satellites.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.313628Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 709b5a49b3a4a98d930fae7fc197ac52da9c4dad236aef5d96eadb7c7055f302
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ea77d2a7f25312b2d22f8c9631c06ade9c31be320141ac64288d13fa1a13393d
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with favorite topics like on-device AI and edge computing, although the authors do not match preferred authors.
+  evidence_quotes:
+  - Researchers developed TinyIceNet, a lightweight vision model for estimating sea ice thickness from Synthetic Aperture Radar data, designed to run efficiently on
+  - Frontier models are important, but so are tiny, miniaturized devices for edge computing…
+  - The idea here is that doing this on-device would be very efficient – “Instead of downlinking vast volumes of raw imagery, satellites can generate SOD products i
 ---
 # Helping satellites run on-device AI for arctic monitoring
 

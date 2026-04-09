@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/alibabas-latest-flagship-mo
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:21.621395Z'
+fetched_at: '2026-04-09T21:59:35.364382Z'
 short_summary: Alibaba has released its latest flagship models, which are open weights and perform well in sizes under 1 billion parameters.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

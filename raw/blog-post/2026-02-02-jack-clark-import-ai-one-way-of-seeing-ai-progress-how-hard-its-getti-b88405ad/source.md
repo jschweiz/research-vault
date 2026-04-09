@@ -4,7 +4,8 @@ kind: blog-post
 title: One way of seeing AI progress – how hard it’s getting to design technical interviews
 source_url: https://www.anthropic.com/engineering/AI-resistant-technical-evaluations
 source_name: Import AI
-authors: []
+authors:
+- Anthropic
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:16:59.224182Z'
 content_hash: 016b748cb635703396fe006e132e644b31e5ca16a5d01854e0aa33b84f8eb458
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - blog-post
+- technical interviews
+- evaluation
+- testing
+- human skills
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-02-jack-clark-import-ai-import-ai-443-into-the-mist-moltbook-agent-ecolo-cf919aa0
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:59.224187Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is redesigning its technical interviews and take-home tests because advanced AI systems are now capable of outperforming human candidates. They are exploring ways to design tests that leverage uniquely human skills to evaluate candidates.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.898145Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 66cd8ae2a2d473deaf82fa8be4e14af14fe5b0c8b4e3f6c58c5a6e9d437ebb3e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a9cb2ef932ae07b304d7566ea48ff4b45b87b495dac1128c9c066b9fc7ebadcd
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses AI evaluation and testing, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.
+  evidence_quotes:
+  - Anthropic is redesigning its technical interviews and take-home tests because advanced AI systems are now capable of outperforming human candidates.
+  - 'In Anthropic’s case, it found a way to keep outrunning its systems by designing a much weirder take-home test loosely inspired by programming puzzle games from '
+  - Anthropic shares details on how its own AI systems are breaking its favorite technical interview questions…
 ---
 # One way of seeing AI progress – how hard it’s getting to design technical interviews
 

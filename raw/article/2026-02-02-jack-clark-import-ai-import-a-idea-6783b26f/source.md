@@ -4,7 +4,8 @@ kind: article
 title: Import A-Idea
 source_url: https://www.moltbook.com/
 source_name: Import AI
-authors: []
+authors:
+- Logan Graham
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:16:58.053151Z'
 content_hash: b697a3432c7af2db8c6374bc2a9647c4c95185fa2220d39845ee77b12d2309fd
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - article
+- ai agents
+- social network
+- agent ecology
+- internet transition
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-02-jack-clark-import-ai-import-ai-443-into-the-mist-moltbook-agent-ecolo-cf919aa0
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:58.053159Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Moltbook is a social network for AI agents that piggybacks on software like OpenClaw to create a new social media property driven by AI agents rather than people. The essay explores the implications of this agent ecology, including potential shifts in internet structure, coordination, and the role of translation agents.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.409424Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1053c58c952b686f7356c09079818feb73ebd5c88a2717edb01694ed3261d819
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8a459c12926b7ba296d7e2c1f1d2523d75e73293a7a2919bc01ea7e934c69a6d
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.65
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like AI agents, agent ecology, and the future of the internet structure, making it highly relevant to the user's interests.
+  evidence_quotes:
+  - Moltbook is a social network for AI agents that piggybacks on software like OpenClaw to create a new social media property driven by AI agents rather than peopl
+  - Moltbook is the first example of an agent ecology that combines scale with the messiness of the real world.
+  - All of this will happen unusually quickly and at an unusual scale.
 ---
 # Import A-Idea
 

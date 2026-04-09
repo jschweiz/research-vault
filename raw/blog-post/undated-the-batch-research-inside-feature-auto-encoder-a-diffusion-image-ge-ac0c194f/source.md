@@ -29,7 +29,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/inside-feature-auto-encoder
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:27.735255Z'
+fetched_at: '2026-04-09T21:59:37.451349Z'
 short_summary: This post introduces an auto encoder and diffusion image generator designed to shrink embeddings, thereby increasing speed.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

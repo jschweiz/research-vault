@@ -16,6 +16,9 @@ tags:
 - policy
 - website
 - blog-post
+- cyberattacks
+- security
+- scaling laws
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +29,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:22.411956Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems are increasingly capable of performing advanced cyberoffense tasks, with frontier models achieving 50% success on tasks that take human experts several hours. This expansion of AI capabilities raises significant policy concerns regarding the repurposing of AI for offensive applications.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.261273Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d2e8493277050970f6a886e9c42e7d44f4b41ad31d064b0b56e4a856b0c0a3e0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: eed124298eea0c11736bc7cdcb6fd743158dd965e32e4371838052f4f660c33e
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.25
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document discusses AI capabilities in cyberattacks, which touches on the user's interest in LLM capabilities and reasoning, but lacks direct focus on LLM architecture or evaluation.
+  evidence_quotes:
+  - AI systems are increasingly capable of performing advanced cyberoffense tasks, with frontier models achieving 50% success on tasks that take human experts sever
+  - 'The most recent frontier models in our study, GPT-5.3 Codex and Opus 4.6, sit above both fitted trendlines, achieving 50% success on tasks taking human experts '
+  - AI that is especially good at helping you find vulnerabilities in code for defensive purposes can easily be repurposed for offensive purposes.
 ---
 # Uh oh, there’s a scaling war for cyberattacks as well!
 

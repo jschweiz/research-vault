@@ -4,7 +4,13 @@ kind: article
 title: What happens when humans try to mess with AI agents? A lot of confusion, skullduggery, and bugs
 source_url: https://fly.io/
 source_name: Import AI
-authors: []
+authors:
+- Northeastern University
+- Stanford University
+- University of British Columbia
+- Harvard University
+- Hebrew University
+- Max Planck Institute for Biological Cybernetics
 published_at: '2026-03-02T13:45:27Z'
 ingested_at: '2026-04-09T20:16:13.082316Z'
 content_hash: cfc5c33c73e82b8b662388ba8b33fc6198989cbc0df827b1dde5d4718fea18b1
@@ -16,6 +22,10 @@ tags:
 - policy
 - website
 - article
+- ai agents
+- experimentation
+- agent ecologies
+- system failures
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +36,27 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:13.082320Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers examined the unpredictability and failures of AI agents when humans attempt to manipulate them, finding that agents exhibit immense brittleness and can engage in various forms of system-level actions.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.679789Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4ba032e7e16a458a5b0086ed7b5b2c9922f2f56236ef773444fe0f748350053d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3d96049ed7f90f08dc132e5380c5d6390611fbee196b7a7090360071ec449172
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the unpredictability and failures of AI agents, which aligns perfectly with the user's favorite topics of LLM evaluation and reasoning.
+  evidence_quotes:
+  - 'Researchers examined the unpredictability and failures of AI agents when humans attempt to manipulate them, finding that agents exhibit immense brittleness and '
+  - The results highlight the immense brittleness and unpredictability of today’s AI agents – they feel roughly as idiosyncratic and unreliable as LLMs circa ~2020,
+  - The frontier of AI evaluation is now going to move to studying the ecosystem in which the agents carry out their actions, as well as their interactions with one
 ---
 # What happens when humans try to mess with AI agents? A lot of confusion, skullduggery, and bugs
 

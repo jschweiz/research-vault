@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/nano-banana-2-aka-gemini-3-
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:47.343877Z'
+fetched_at: '2026-04-09T21:59:44.659704Z'
 short_summary: Google launched Nano Banana 2 (Gemini 3.1 Flash Image), a faster and cheaper image generation system based on Gemini 3 Flash. This new model offers enhanced features and performance, positioning it among the top image generators.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.644357Z'

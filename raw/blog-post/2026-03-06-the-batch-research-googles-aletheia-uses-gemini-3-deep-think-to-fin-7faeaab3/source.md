@@ -33,7 +33,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/googles-aletheia-uses-gemin
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:38.484264Z'
+fetched_at: '2026-04-09T21:59:41.064651Z'
 short_summary: Google introduced Aletheia, an agentic system using Gemini 3 Deep Think to generate, verify, and revise solutions to unsolved math problems. Researchers found Aletheia solved 212 of Paul Erdős's unsolved problems.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.612594Z'

@@ -4,7 +4,8 @@ kind: article
 title: Superintelligence could save and extend lives, so we should go for it
 source_url: https://nickbostrom.com/optimal.pdf
 source_name: Import AI
-authors: []
+authors:
+- Nick Bostrom
 published_at: '2026-02-16T14:01:19Z'
 ingested_at: '2026-04-09T20:16:40.629856Z'
 content_hash: 315f6efe7840b0b9110eba2b26fb172df5614277b3bae71a8a3a8038b179a3bd
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - article
+- superintelligence
+- ai safety
+- risk
+- regulation
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:40.629861Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Nick Bostrom argues that pursuing superintelligence is beneficial for saving and extending human lives, suggesting that a brief pause might be most effective only at the very end of development.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.518039Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c650e1ecdd5db26aba39d3f0f63d9ef5c18cde39a09586be51441d2014ba4b03
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: be38a17c6c7b23c5fac149cee6d6b9ee100d68e39a05394b1fabb30d64341a57
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of AI safety, superintelligence, and reasoning, and features a favorite author, Nick Bostrom.
+  evidence_quotes:
+  - Nick Bostrom argues that pursuing superintelligence is beneficial for saving and extending human lives, suggesting that a brief pause might be most effective on
+  - If the transition to the era of superintelligence goes well, there is tremendous upside both for saving the lives of currently existing individuals and for safe
+  - 'swift to harbor, slow to berth : move quickly towards AGI capability, and then, as we gain more information about the remaining safety challenges and specifics '
 ---
 # Superintelligence could save and extend lives, so we should go for it
 

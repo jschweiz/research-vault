@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/claude-codes-source-code-le
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:39.843709Z'
+fetched_at: '2026-04-09T21:59:24.190076Z'
 short_summary: The source code for Claude exposes potential future features named Kairos and Autodream. This information has been leaked.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

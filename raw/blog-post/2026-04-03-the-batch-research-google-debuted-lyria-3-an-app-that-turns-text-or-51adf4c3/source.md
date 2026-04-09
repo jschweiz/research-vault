@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/google-debuted-lyria-3-an-a
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:32.969156Z'
+fetched_at: '2026-04-09T21:59:22.441579Z'
 short_summary: Google introduced Lyria 3, a music generator that creates 30-second audio clips from text or images, incorporating features like style specification and multiple languages. The model includes safeguards to avoid copyright violations by licensing training data and watermarking synthetic media.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.829999Z'

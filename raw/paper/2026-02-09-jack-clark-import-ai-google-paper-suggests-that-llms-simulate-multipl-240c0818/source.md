@@ -4,7 +4,8 @@ kind: paper
 title: Google paper suggests that LLMs simulate multiple personalities to answer questions
 source_url: https://arxiv.org/abs/2601.10825
 source_name: Import AI
-authors: []
+authors:
+- Google
 published_at: '2026-02-09T14:03:34Z'
 ingested_at: '2026-04-09T20:16:51.419162Z'
 content_hash: 326dc59cae066e629a6e52994b246367a3d0e667eae3649f8db89a8110386bfe
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- llms
+- reasoning
+- multi-agent
+- societies of thought
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-09-jack-clark-import-ai-import-ai-444-llm-societies-huawei-makes-kernels-6922e476
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:51.419170Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Google researchers found that LLMs simulate multiple personalities and form 'societies of thought' when solving hard problems, suggesting they develop multi-agent-like interactions in their reasoning chains.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.910364Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5cf9fd339a691f90cf7dd009c97537ba62aa8aa4d48a011867a90d1f7236554c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 29cbd163ce0becd68a31db207b692e35e534d77b093d7c9d535a413c2ab38441
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of LLM reasoning, evaluation, and multi-agent concepts, making it a high-priority read.
+  evidence_quotes:
+  - Google researchers found that LLMs simulate multiple personalities and form 'societies of thought' when solving hard problems, suggesting they develop multi-age
+  - In tests on DeepSeek-R1 and QwQ-32B (one wonders why the Google researchers didn’t touch Google models here…) they find that “enhanced reasoning emerges not fro
+  - Our findings suggest that reasoning models like DeepSeek-R1 do not simply generate longer or more elaborate chains of thought. Rather, they exhibit patterns cha
 ---
 # Google paper suggests that LLMs simulate multiple personalities to answer questions
 

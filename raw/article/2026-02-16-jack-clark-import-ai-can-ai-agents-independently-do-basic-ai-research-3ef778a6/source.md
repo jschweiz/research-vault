@@ -16,6 +16,10 @@ tags:
 - policy
 - website
 - article
+- benchmark
+- machine learning
+- agents
+- research
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +30,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:41.205014Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The AI Research Science Benchmark (AIRS-BENCH) tests how well AI agents can complete diverse machine learning tasks, ranging from code generation to time series forecasting. The benchmark explores potential scaling laws regarding how agent solutions relate to model size and human performance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.436389Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aa9c4f4bbc1cf731744bdd7c3e23379a60a360f56943576d425148f3cb6311a1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6f747bc0ca127e7b6727c2d605a2fc0da86577a165d5be8f83e64effa8972331
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses AI agents, research, and machine learning benchmarks, which perfectly align with the user's favorite topics and authors.
+  evidence_quotes:
+  - The AI Research Science Benchmark (AIRS-BENCH) tests how well AI agents can complete diverse machine learning tasks, ranging from code generation to time series
+  - The benchmark explores potential scaling laws regarding how agent solutions relate to model size and human performance.
+  - AIRS-BENCH tests out how well agents can solve 20 distinct tasks, sourced from 17 recent machine learning papers.
 ---
 # Can AI agents independently do basic AI research tasks? AIRS-BENCH says yes
 

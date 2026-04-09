@@ -4,7 +4,8 @@ kind: article
 title: Want to make AI go better? Figure out how to measure it
 source_url: https://bounded-regret.ghost.io/building-technology-to-drive-ai-governance
 source_name: Import AI
-authors: []
+authors:
+- Jacob Steinhardt
 published_at: '2026-02-23T13:31:18Z'
 ingested_at: '2026-04-09T20:16:28.312728Z'
 content_hash: b815aff007bc7c4ec642ea908256b18d307c2cb173660b6bfdd2bace7bc52a4b
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - article
+- ai measurement
+- ai policy
+- governance
+- evaluation
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-23-jack-clark-import-ai-import-ai-446-nuclear-llms-chinas-big-ai-benchma-74d04bde
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:28.312734Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Measuring AI systems is crucial for establishing governance and driving down costs in policy solutions. This work suggests that better measurement and evaluation are necessary to enable direct governance interventions in the AI sector.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.571254Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a763a23ec4c9fc04080d1fb6e8513a5d61eaefa0b78caf33baa6fbe8cbed06aa
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 526033f05c0863776dbed0615fc62261cfdacfab3f92c19e16f76437a9496d0f
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses measurement and evaluation of AI systems, which aligns perfectly with the user's favorite topics of LLM evaluation and research tooling.
+  evidence_quotes:
+  - Measuring AI systems is crucial for establishing governance and driving down costs in policy solutions.
+  - This work suggests that better measurement and evaluation are necessary to enable direct governance interventions in the AI sector.
+  - But more work is needed – if we want to be able to enable direct governance interventions in the AI sector, we’ll need to do a better job of measuring and accou
 ---
 # Want to make AI go better? Figure out how to measure it
 

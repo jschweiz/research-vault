@@ -15,6 +15,10 @@ tags:
 - analysis
 - policy
 - website
+- economics
+- superintelligence
+- machine learning
+- scaling laws
 status: active
 asset_paths:
 - original.html
@@ -26,15 +30,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T20:16:38.991027Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The document discusses the economic implications of human preference in the age of AI, the scaling laws for recommender systems, and the potential risks and benefits of pursuing superintelligence.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.373369Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: fad57080eb58e5057d0189f207f7aa368f8d5def62dbc4ce6ea248bb0b7bb6cf
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 365369da0c323ad159b6e21fcc69573458e7c7daeea879a261f71f7f5c8e9d9f
+lightweight_score:
+  relevance_score: 0.503
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.93
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - The document discusses the economic implications of human preference in the age of AI, the scaling laws for recommender systems, and the potential risks and ben
 ---
 # Import AI 445: Timing superintelligence; AIs solve frontier math proofs; a new ML research benchmark
 

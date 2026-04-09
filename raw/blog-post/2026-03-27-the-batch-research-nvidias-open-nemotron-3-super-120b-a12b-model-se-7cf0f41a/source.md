@@ -4,7 +4,8 @@ kind: blog-post
 title: Nvidia’s Open Nemotron 3 Super 120B-A12B Model Sets New Paces In Its Class
 source_url: https://www.deeplearning.ai/the-batch/nvidias-open-nemotron-3-super-120b-a12b-model-sets-new-paces-in-its-class
 source_name: The Batch Research
-authors: []
+authors:
+- Nvidia
 published_at: '2026-03-27T07:06:06-07:00'
 ingested_at: '2026-04-09T20:53:10.539095Z'
 content_hash: be51513eeb2fcafffaa01df5bd366be389acddbfc703de6cfc114887c569ae83
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- large language model
+- open source
+- agentic applications
+- nvidia
+- deep learning
 status: active
 asset_paths:
 - original.html
@@ -25,16 +31,26 @@ canonical_url: https://www.deeplearning.ai/the-batch/nvidias-open-nemotron-3-sup
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:59.924199Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+fetched_at: '2026-04-09T20:53:10.539100Z'
+short_summary: Nvidia released Nemotron 3 Super, a competitive open-source large language model designed for agentic applications, featuring a hybrid architecture and extensive training data. The model demonstrates fast performance and strong results in agentic tasks compared to other open-weights models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.144902Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1536894f5f04bade689dcff5093a0e5435c72586c1b39d5bf8f8294c2c9924ec
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 6fae1553f3406b78c693ad6bf946ea740a0c6a9b532e3a1f46de8a601a5eea87
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Nvidia released Nemotron 3 Super, a competitive open-source large language model designed for agentic applications, featuring a hybrid architecture and extensiv
 ---
 Nvidia, the dominant supplier of AI chips, released a competitive open-source large language model whose speed tops its size class — the first open-weights leader to come from the United States since last year, when Meta delivered Llama 4.
 What’s new: Nvidia [released](https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) Nemotron 3 Super 120B-A12B, a large language model designed for agentic applications, including not only weights but also training datasets and recipes. It is the second in a planned family of three: Nvidia [released](https://developer.nvidia.com/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) Nemotron 3 Nano-39B-A3B in December 2025, and Nemotron 3 Ultra-500B-A50B is forthcoming.

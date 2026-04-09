@@ -29,7 +29,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/recursive-language-models-o
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:48.908356Z'
+fetched_at: '2026-04-09T21:59:25.936693Z'
 short_summary: Recursive Language Models provide a method to significantly expand beyond the limitations of the context window in language models.
 lightweight_enrichment_status: pending
 lightweight_enriched_at: null

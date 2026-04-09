@@ -4,7 +4,10 @@ kind: newsletter
 title: 'Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench | Import AI'
 source_url: https://jack-clark.net/2026/02/09/import-ai-444-llm-societies-huawei-makes-kernels-with-ai-chipbench
 source_name: Import AI
-authors: []
+authors:
+- Google
+- University of Chicago
+- Santa Fe Institute
 published_at: '2026-02-09T14:03:34Z'
 ingested_at: '2026-04-09T20:16:50.787292Z'
 content_hash: 56f7e7bc111967d9a557d84f6b635162e42078c862857b867e0431cf445a1254
@@ -15,6 +18,11 @@ tags:
 - analysis
 - policy
 - website
+- llms
+- reasoning
+- chip design
+- benchmarks
+- math research
 status: active
 asset_paths:
 - original.html
@@ -26,15 +34,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T20:16:50.787300Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Research suggests that LLMs exhibit 'societies of thought' by simulating multiple perspectives and engaging in social reasoning, and that AI-based chip design remains challenging for frontier models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.320477Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 61aee55d1cddaf767125afdb1db9f82a078ce7c02009f6bb3d76f4c7a5d7a2ce
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 670d2487810ca7666d97d1004a11a5b8d9ef6d97d712619f054faac8f241bc55
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM reasoning, evaluation, and architecture, featuring authors from DeepMind and Google.
+  evidence_quotes:
+  - Research suggests that LLMs exhibit 'societies of thought' by simulating multiple perspectives and engaging in social reasoning, and that AI-based chip design r
+  - The authors find that “enhanced reasoning emerges not from extended computation alone, but from the implicit simulation of complex, multi-agent-like interaction
+  - 'The authors test out some decent frontier models from OpenAI (GPT 3.5, 4o, 5, and 5.2), Anthropic (Claude 4.5 Haiku, Sonnet, and Opus), Google (Gemini 2.5 Pro, '
 ---
 # Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench
 

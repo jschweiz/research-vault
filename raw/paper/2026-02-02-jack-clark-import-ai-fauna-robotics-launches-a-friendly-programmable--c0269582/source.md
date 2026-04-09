@@ -4,7 +4,8 @@ kind: paper
 title: Fauna Robotics launches a friendly, programmable human robot
 source_url: https://arxiv.org/abs/2601.18963
 source_name: Import AI
-authors: []
+authors:
+- Fauna Robotics
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:17:04.285754Z'
 content_hash: d7b8c59dfcfc34b255a95ccb3dc936356c5ce22ffd1dbb77fbf64fb5e4a3a3de
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- robotics
+- hardware
+- safety
+- modularity
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-02-jack-clark-import-ai-import-ai-443-into-the-mist-moltbook-agent-ecolo-cf919aa0
 index_visibility: visible
 fetched_at: '2026-04-09T20:17:04.285761Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Fauna Robotics developed Sprout, a pint-sized, safe, and modular biped robot designed for shared human spaces. The platform is built to be an open, programmable robotics system that can benefit from advances in AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.767105Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 91943c337dc6b454dfff66050bfc450e46dee7ad02d8949d42d46db87c5dd669
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1c9bcca08f44c53fa213dc6d92d3abb4c2d08d0532475df8c553e40f087b7480
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses robotics, AI integration, and the use of LLM-based agents for complex reasoning, aligning perfectly with the user's favorite topics.
+  evidence_quotes:
+  - The platform integrates whole-body control, manipulation with integrated grippers, and virtual-reality-based teleoperation within a unified hardware-software st
+  - Together, these communication channels and tools can be orchestrated by LLM-based agents to perform complex, end-to-end reasoning tasks.
+  - The core of Sprout’s compute architecture is an NVIDIA Jetson AGX Orin, which provides primary system compute for perception, planning, and high-level decision-
 ---
 # Fauna Robotics launches a friendly, programmable human robot
 

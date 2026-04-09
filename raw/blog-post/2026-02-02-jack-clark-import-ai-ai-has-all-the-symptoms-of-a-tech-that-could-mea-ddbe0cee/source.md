@@ -4,7 +4,8 @@ kind: blog-post
 title: AI has all the symptoms of a tech that could meaningfully boost productivity
 source_url: https://aleximas.substack.com/p/what-is-the-impact-of-ai-on-productivity
 source_name: Import AI
-authors: []
+authors:
+- Alex Imas
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:17:04.789264Z'
 content_hash: df677a5abdd1a68ec2aaab605ebd4aa6cc21f97630f31a7b82056418cb5aec41
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - blog-post
+- productivity
+- macroeconomics
+- generative ai
+- economic growth
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-02-jack-clark-import-ai-import-ai-443-into-the-mist-moltbook-agent-ecolo-cf919aa0
 index_visibility: visible
 fetched_at: '2026-04-09T20:17:04.789272Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Generative AI shows real productivity gains for individuals but these gains are not yet reflected in aggregate macro productivity statistics. The text suggests that organizational restructuring and tool improvement will eventually reveal AI's full productivity impact on the economy.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.869822Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 917de8989c39fd60ea74d2541d6022dfb0a94e6b7e6de5eb36c34104f2e83b9e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b7ab92b4f0e64762ecc0c2ccd7a895c6150cf90d361939b58e3ef1b9467416e9
+lightweight_score:
+  relevance_score: 0.35
+  source_fit_score: 0.36
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document discusses AI's impact on productivity, which aligns with favorite topics, but lacks specific focus on LLM architecture or research tooling.
+  evidence_quotes:
+  - Studies find productivity gains ranging from modest increases on some tasks to substantial returns (50%+) to AI.
+  - Workers may not be unlocking the full productivity potential of the technology if, for example, they are not using the best LLM model for the job or applying it
+  - Bottleneck tasks will slow down the emergence of AI gains in the aggregate data, but organizational re-structuring, training, and improvement in tools will reve
 ---
 # AI has all the symptoms of a tech that could meaningfully boost productivity
 

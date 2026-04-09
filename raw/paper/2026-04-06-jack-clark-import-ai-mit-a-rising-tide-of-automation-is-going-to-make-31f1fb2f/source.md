@@ -4,7 +4,8 @@ kind: paper
 title: 'MIT: A rising tide of automation is going to make good enough AI for most text-based tasks by 2029'
 source_url: https://arxiv.org/abs/2604.01363
 source_name: Import AI
-authors: []
+authors:
+- MIT researchers
 published_at: '2026-04-06T12:31:31Z'
 ingested_at: '2026-04-09T20:15:25.593754Z'
 content_hash: f67d10ad36831f08c7e48e8bb4e13261aadc5fac85d267399b06c74e142b5537
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- automation
+- labor market
+- economics
+- rising tide
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:25.593762Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Research from MIT suggests that AI automation is progressing through a 'rising tide' rather than sudden 'crashing waves,' implying gradual, widespread gains across text-based labor tasks. This trend suggests that AI capabilities will expand broadly, potentially leading to substantial economic changes by 2029.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.708010Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6c01d85cfce2b3a643a6307ca5dfdc3eb94a5ff83880a806ae5e446c04cf3d71
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 32b24039bfe44d49e6f04accf9b8717440b8511d02a669ffc4d8b89a315f6751
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.4
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics (AI, evaluation, reasoning) and is highly relevant to the general LLM/AI research space, though it lacks specific author overlap.
+  evidence_quotes:
+  - Research from MIT suggests that AI automation is progressing through a 'rising tide' rather than sudden 'crashing waves,' implying gradual, widespread gains acr
+  - Across a large set of realistic and representative labor-market tasks addressable by LLMs, the downward slope between task success and task duration is, on aver
+  - Projected gains are gradual rather than abrupt. Nevertheless, the pace of improvement remains substantial for reaching high success rates across most text-based
 ---
 # MIT: A rising tide of automation is going to make good enough AI for most text-based tasks by 2029
 

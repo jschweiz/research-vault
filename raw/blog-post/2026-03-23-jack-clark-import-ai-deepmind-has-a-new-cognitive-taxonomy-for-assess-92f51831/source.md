@@ -4,7 +4,8 @@ kind: blog-post
 title: DeepMind has a new “cognitive taxonomy” for assessing machine intelligence
 source_url: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework
 source_name: Import AI
-authors: []
+authors:
+- Google DeepMind
 published_at: '2026-03-23T12:31:45Z'
 ingested_at: '2026-04-09T20:15:40.749747Z'
 content_hash: 916ba57b6631ae286037c3203324454d75a81e3d38e5454b674ad87e99fb7894
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - blog-post
+- cognitive taxonomy
+- machine intelligence
+- agi
+- ai assessment
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-23-jack-clark-import-ai-import-ai-450-chinas-electronic-warfare-model-tr-26ab1bcb
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:40.749756Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Google DeepMind has introduced a 'cognitive taxonomy' with ten dimensions to assess machine intelligence, including perception, reasoning, and metacognition. The taxonomy suggests a three-stage process for assessing AI systems against human cognitive baselines.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.005761Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ef26cb6f3786121f8f10dda8c1e645c5d0a323b5b381b391919e213d7776d3e6
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d8bf38a2921e60b4bb49fefa6b08c9061aaeccf2012f9931c67853e514c3be5d
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM evaluation, reasoning, and the work of DeepMind, making it a high-priority read.
+  evidence_quotes:
+  - Google DeepMind has introduced a 'cognitive taxonomy' with ten dimensions to assess machine intelligence, including perception, reasoning, and metacognition.
+  - The taxonomy involves ten distinct dimensions, two of which are composites.
+  - 'Here, DeepMind recommends a three-stage process: - Conduct cognitive assessment: Assess the AI system for the different skills. - Collect human baselines: Figur'
 ---
 # DeepMind has a new “cognitive taxonomy” for assessing machine intelligence
 

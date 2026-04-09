@@ -4,7 +4,8 @@ kind: paper
 title: 'COVENANT-72B: Challenging the political economy of AI via distributed training'
 source_url: https://arxiv.org/abs/2603.08163
 source_name: Import AI
-authors: []
+authors:
+- Covenant AI
 published_at: '2026-03-16T12:30:50Z'
 ingested_at: '2026-04-09T20:15:46.484507Z'
 content_hash: 26c0c1af974c64e5777adfd88ad3a0ce1edb3e81952a016609ba21ee8ff4827b
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- llm
+- distributed training
+- blockchain
+- model training
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:46.484512Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Covenant-72B is a 72B parameter LLM trained via a distributed run involving 20 peers, demonstrating that fully democratized, non-whitelisted participation is feasible for large-scale pre-training.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.494539Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c2733862b0396e7ddb8cfd4e556d62d75b11a2ea349681f799374ccda0e1b392
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c6c13fda1c7a774d5976de133553a1aee40264c22f1e665bf17158942f68f9a4
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM training, distributed training, and the political economy of AI, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Covenant-72B is a 72B parameter LLM trained via a distributed run involving 20 peers, demonstrating that fully democratized, non-whitelisted participation is fe
+  - Distributed training is a technique that can change the political economy of AI by shifting the people at the frontier from monolithic ‘compute singletons’ (lik
+  - The model, Covenant 72B, is a dense decoder-only Transformer architecture model built in the LLaMA-3 style.
 ---
 # COVENANT-72B: Challenging the political economy of AI via distributed training
 

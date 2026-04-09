@@ -4,7 +4,8 @@ kind: article
 title: Brain emulation is tractable within our lifetimes
 source_url: https://press.asimov.com/articles/brains
 source_name: Import AI
-authors: []
+authors:
+- Maximilian Schons
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:17:00.293570Z'
 content_hash: 8cd0a4f1205b0683ac7e0569223e47c59cecd8f88311008ea924e19fe0dd03fa
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - article
+- brain emulation
+- neuroscience
+- technology
+- data acquisition
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-02-jack-clark-import-ai-import-ai-443-into-the-mist-moltbook-agent-ecolo-cf919aa0
 index_visibility: visible
 fetched_at: '2026-04-09T20:17:00.293578Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Brain emulation is decades away, requiring breakthroughs in recording brain activity, reconstructing wiring, and modeling brains. The primary challenge is acquiring the necessary data rather than storing the computation itself.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.383007Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8afc4302923a4f9984008b7ca5476c33e2df80d92e9c1f3e422e7a5f3cba8631
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 81ad3eec4e07b40f3c6249cd1825a99e89a3a8262d0d3b14b4cd3e080df544bb
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like brain emulation, data acquisition, and the physical/digital bottlenecks relevant to LLM architecture and research tooling.
+  evidence_quotes:
+  - Brain emulation is decades away, requiring breakthroughs in recording brain activity, reconstructing wiring, and modeling brains.
+  - 'The central challenge of brain emulation is not to store or compute the neurons and parameters, but to acquire the data necessary for setting neuron parameters '
+  - 'Brain emulation is fundamentally not a digital process; core bottlenecks involve physical manipulation of biological tissue, with time requirements dictated by '
 ---
 # Brain emulation is tractable within our lifetimes
 

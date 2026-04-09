@@ -4,7 +4,11 @@ kind: newsletter
 title: 'Import AI 452: Scaling laws for cyberwar; rising tides of AI automation; and a puzzle over gDP forecasting | Import AI'
 source_url: https://jack-clark.net/2026/04/06/import-ai-452-scaling-laws-for-cyberwar-rising-tides-of-ai-automation-and-a-puzzle-over-gdp-forecasting
 source_name: Import AI
-authors: []
+authors:
+- Lyptus Research
+- INSEAD
+- Harvard Business School
+- MIT
 published_at: '2026-04-06T12:31:31Z'
 ingested_at: '2026-04-09T20:15:21.707337Z'
 content_hash: dfb4fcc8fb484d5418a4d86fce3ff21aaddee490099aef722d6a0289e1b38bd3
@@ -15,6 +19,10 @@ tags:
 - analysis
 - policy
 - website
+- cybersecurity
+- automation
+- scaling laws
+- labor market
 status: active
 asset_paths:
 - original.html
@@ -26,15 +34,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T20:15:21.707343Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems are rapidly improving their offensive cyber capabilities, suggesting a scaling trend in cyberwarfare. Furthermore, the rise of AI automation is expected to create a gradual, widespread automation of labor across many tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.732393Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7cd3fd6bbca7f06dd02202a871f00b9893519fe7c75cd2df6bfeb0b53b4876d5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 08b3c9ea69792ea2be7272f89a348fd6dde56730ffe90d2f2b7aad8491b5e812
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.65
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document strongly aligns with the user's favorite topics of AI, evaluation, and reasoning, providing concrete research on scaling laws and automation.
+  evidence_quotes:
+  - AI systems are rapidly improving their offensive cyber capabilities, suggesting a scaling trend in cyberwarfare.
+  - 'Researchers with MIT have looked at 3,000 tasks based on the O-NET job family and paired that with 17,000 evaluations by workers who perform these tasks to try '
+  - We find little evidence of crashing waves, but substantial evidence that rising tides are the primary form of AI automation.
 ---
 # Import AI 452: Scaling laws for cyberwar; rising tides of AI automation; and a puzzle over gDP forecasting
 

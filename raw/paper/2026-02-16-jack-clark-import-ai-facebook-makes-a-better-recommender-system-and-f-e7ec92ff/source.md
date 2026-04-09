@@ -4,7 +4,8 @@ kind: paper
 title: Facebook makes a better recommender system, and figures out some recommender scaling laws
 source_url: https://arxiv.org/abs/2602.10016
 source_name: Import AI
-authors: []
+authors:
+- Facebook
 published_at: '2026-02-16T14:01:19Z'
 ingested_at: '2026-04-09T20:16:40.069938Z'
 content_hash: a08644e539e17d683dd1e0205e2019adcb42e128998299720f190bde423a79d8
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- recommender systems
+- scaling laws
+- machine learning
+- facebook
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-09T20:16:40.069943Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Facebook developed a recommendation system called Kunlun and discovered scaling laws for these models, making it easier to invest compute for better results. This work demonstrates predictable scaling behavior for recommender systems, which are crucial for advertising and social platforms.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.972123Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 076478be8032df12c7e1a774159b7fb34d4cead839cc039b7bfa8b0a2188c3af
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a95a7bd6c34b17b645bde1e9e3a0e5d85be0b38ac1ae50151a6d43bd6b902e22
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.5
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics (recommender systems, scaling laws, ML architecture) but does not feature preferred authors.
+  evidence_quotes:
+  - Facebook developed a recommendation system called Kunlun and discovered scaling laws for these models, making it easier to invest compute for better results.
+  - This work demonstrates predictable scaling behavior for recommender systems, which are crucial for advertising and social platforms.
+  - The key insight in the paper is that Kunlun models scale predictably, exhibiting the kind of power-law scaling behavior that language models exhibit.
 ---
 # Facebook makes a better recommender system, and figures out some recommender scaling laws
 

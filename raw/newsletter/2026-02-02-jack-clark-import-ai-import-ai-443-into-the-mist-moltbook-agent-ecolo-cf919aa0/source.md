@@ -4,7 +4,8 @@ kind: newsletter
 title: 'Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet in transition | Import AI'
 source_url: https://jack-clark.net/2026/02/02/import-ai-443-into-the-mist-moltbook-agent-ecologies-and-the-internet-in-transition
 source_name: Import AI
-authors: []
+authors:
+- Logan Graham
 published_at: '2026-02-02T13:31:18Z'
 ingested_at: '2026-04-09T20:16:57.544920Z'
 content_hash: 1b8290dc8ec07700dd95bec1caff794e1fb79607cce1cf77367f3136bfd869dc
@@ -15,6 +16,10 @@ tags:
 - analysis
 - policy
 - website
+- ai agents
+- agent ecology
+- moltbook
+- ai r&d
 status: active
 asset_paths:
 - original.html
@@ -26,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T20:16:57.544925Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The article explores 'Moltbook,' a social network for AI agents that piggybacks on agent software to create a new social media property driven by AI conversations. It also discusses the potential of automated AI research and development, examining the implications for strategic surprise and the future of human involvement in research.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.291027Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a64936a144b4c612c3ae9febdd1f417f32cae4c65ec3619aca9bcfef66e879f0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8833eb74dfd4f9457c81d31df415dd2e823551eda47ae2324d7b42a7041c9d35
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document strongly aligns with the user's favorite topics (AI agents, R&D, and LLM architecture) and features preferred authors like Anthropic.
+  evidence_quotes:
+  - The article explores 'Moltbook,' a social network for AI agents that piggybacks on agent software to create a new social media property driven by AI conversatio
+  - The article discusses the potential of automated AI research and development, examining the implications for strategic surprise and the future of human involvem
+  - I work at Anthropic.
 ---
 # Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet in transition
 

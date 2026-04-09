@@ -30,7 +30,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/deepseek-made-its-upcoming-
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:12.104495Z'
+fetched_at: '2026-04-09T21:59:33.602618Z'
 short_summary: DeepSeek withheld prerelease access to its upcoming DeepSeek-V4 model from Nvidia and AMD, intensifying the AI rivalry between the U.S. and China. This action highlights the ongoing technological divide and the complex dynamics of international chip export controls.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.759758Z'

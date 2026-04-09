@@ -32,7 +32,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/apples-atoken-a-multimodal-
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:07.029872Z'
+fetched_at: '2026-04-09T21:59:31.674509Z'
 short_summary: Apple developed AToken, a multimodal model featuring a single encoder and tokenizer for images, videos, and 3D objects. This model unifies these media types by training to reconstruct inputs and align embeddings to text.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.732007Z'

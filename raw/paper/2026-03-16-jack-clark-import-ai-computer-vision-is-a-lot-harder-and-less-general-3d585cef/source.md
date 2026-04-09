@@ -4,7 +4,8 @@ kind: paper
 title: Computer vision is a lot harder and less general than generative text
 source_url: https://arxiv.org/abs/2603.06382
 source_name: Import AI
-authors: []
+authors:
+- Singleton
 published_at: '2026-03-16T12:30:50Z'
 ingested_at: '2026-04-09T20:15:47.704977Z'
 content_hash: fe37004be685112729d1757db84d3b4a339e5f5f0c9f992da2882c24f41d05b0
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - paper
+- computer vision
+- generative text
+- llms
+- philosophy
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,26 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:47.704982Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This document discusses the difficulty of computer vision compared to generative text models, using the CHMv2 dataset as an example. It also explores philosophical themes regarding individuality, communication, and the nature of human existence.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.464498Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4d8d4bce30b46bd72e7a91ba3e5179e275baa196298cd79ad83bc7539b5e5e3a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e7f93177d1d4c3a7e6775c2510c572d2cd9bae588e24ebf75a4a45594ec20f78
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.35
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with favorite topics like LLMs and computer vision, but the author and source do not match the user's preferred authors or sources.
+  evidence_quotes:
+  - This document discusses the difficulty of computer vision compared to generative text models, using the CHMv2 dataset as an example.
+  - Papers like this highlight to me how much fiendish complexity there is within computer vision development and how it may take quite a while untill frontier LLMs
 ---
 # Computer vision is a lot harder and less general than generative text
 

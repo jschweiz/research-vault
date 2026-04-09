@@ -31,7 +31,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/grok-imagine-1-0-sharply-cu
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:53.922098Z'
+fetched_at: '2026-04-09T21:59:27.934339Z'
 short_summary: xAI launched Grok Imagine 1.0, a video generator that produces high-quality video clips from text and images, topping independent quality rankings at a lower cost than competitors. The model allows for video alteration and object manipulation via text instructions.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.797270Z'

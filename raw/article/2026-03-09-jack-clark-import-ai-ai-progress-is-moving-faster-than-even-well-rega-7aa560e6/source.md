@@ -4,7 +4,8 @@ kind: article
 title: AI progress is moving faster than even well regarded forecasters can guess
 source_url: https://www.planned-obsolescence.org/p/i-underestimated-ai-capabilities
 source_name: Import AI
-authors: []
+authors:
+- Ajeya Cotra
 published_at: '2026-03-09T12:45:54Z'
 ingested_at: '2026-04-09T20:15:56.689304Z'
 content_hash: 2307fcd7551d1fb00d789e49f0133e6d83f87c3a8be8848443c234d28bb5e913
@@ -16,6 +17,10 @@ tags:
 - policy
 - website
 - article
+- progress
+- forecasting
+- timelines
+- software engineering
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +31,26 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:56.689310Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI progress is accelerating faster than expected, challenging previous forecasts regarding AI capabilities and timelines. This rapid advancement suggests AI systems are quickly growing and colonizing the economy.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:42.706682Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f9eadadffa5d09ddc26092e5a7df006443f09e4a4a15d49f76b073cceff109d4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8cac436f8e040dbfe0d02cde90064431556498ff7dd24a71236468f6201c5b8e
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document discusses the accelerating pace of AI progress, which aligns with the user's interest in LLM capabilities and research, though it does not focus specifically on architecture or evaluation.
+  evidence_quotes:
+  - AI progress is accelerating faster than expected, challenging previous forecasts regarding AI capabilities and timelines.
+  - AI systems are moving faster than she thought, given the recent METR results putting Opus 4.6 as having a time horizon of 12 hours (Ajeya had predicted ~24 hour
 ---
 # AI progress is moving faster than even well regarded forecasters can guess
 

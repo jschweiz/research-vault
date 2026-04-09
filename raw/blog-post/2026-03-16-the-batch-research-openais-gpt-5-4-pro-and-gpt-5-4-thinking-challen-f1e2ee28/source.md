@@ -31,7 +31,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/openais-gpt-5-4-pro-and-gpt
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:11:32.978862Z'
+fetched_at: '2026-04-09T21:59:39.272555Z'
 short_summary: OpenAI's GPT-5.4 models, including the Pro variant, have achieved state-of-the-art performance on various benchmarks, challenging Google's Gemini models. The models are designed to enhance tool use and reasoning, showing strong performance in tasks related to knowledge work and computer use.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.698254Z'

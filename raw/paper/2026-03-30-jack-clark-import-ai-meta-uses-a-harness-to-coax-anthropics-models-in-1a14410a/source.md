@@ -4,7 +4,13 @@ kind: paper
 title: Meta uses a harness to coax Anthropic’s models into self-improvement
 source_url: https://arxiv.org/abs/2603.19461
 source_name: Import AI
-authors: []
+authors:
+- University of British Columbia
+- Vector Institute
+- University of Edinburgh
+- New York University
+- CIFAR
+- Meta
 published_at: '2026-03-30T12:28:13Z'
 ingested_at: '2026-04-09T20:15:31.949568Z'
 content_hash: b3be0a83ff91bb9bb38a2ea473becab9bee18ac3a15bf0d8731fee86e8587c32
@@ -16,6 +22,10 @@ tags:
 - policy
 - website
 - paper
+- llm
+- self-improvement
+- hyperagent
+- agent
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -26,15 +36,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-09T20:15:31.949574Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed a 'hyperagent' harness that allows Large Language Models (LLMs) to self-improve performance across various tasks by iteratively modifying their prompts and system mechanisms.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:44.678096Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 39e200cdb3b404a527a763812d3cfc7b0e7094302a0e470bafc186206e71b805
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2f85507121da2c1dd23708b28c634d995392d43dfd4e3c1109b1a5eb3c4ad1b7
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM self-improvement and agent architectures, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - 'Researchers developed a ''hyperagent'' harness that allows Large Language Models (LLMs) to self-improve performance across various tasks by iteratively modifying '
+  - The approach is called a hyperagent, and it means giving an LLM a scaffold that can iteratively improve the prompts it uses to bootstrap its performance on task
+  - 'Hyperagents are “self-referential agents that integrate a task agent (which solves the target task) and a meta agent (which modifies itself and the task agent) '
 ---
 # Meta uses a harness to coax Anthropic’s models into self-improvement
 

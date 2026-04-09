@@ -4,7 +4,8 @@ kind: newsletter
 title: 'ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text | Import AI'
 source_url: https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text
 source_name: Import AI
-authors: []
+authors:
+- Leonardo de Moura
 published_at: '2026-03-16T12:30:50Z'
 ingested_at: '2026-04-09T20:15:45.543252Z'
 content_hash: d11d464241beb5aa4be9fc1b65be2c8d2f6146431a1cf2e0387f48a4d7b91c90
@@ -15,6 +16,10 @@ tags:
 - analysis
 - policy
 - website
+- llm training
+- agentic autonomy
+- verification
+- lean programming
 status: active
 asset_paths:
 - original.html
@@ -26,15 +31,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T20:15:45.543255Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed PostTrainBench to evaluate autonomous LLM post-training and observed that while agents show progress, the gap between agent performance and human performance remains significant.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T22:01:43.564691Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ab786f977c8d6655c0e1fb4e81ff869a4ec5235c528906f44beb4f40827e08dd
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 8ea19b193815b5a0498a31335f3261144fce89f86a6917092fdbeef175510e80
+lightweight_score:
+  relevance_score: 0.616
+  source_fit_score: 0.55
+  topic_fit_score: 0.62
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 2 favorite-topic matches.
+  evidence_quotes:
+  - Researchers developed PostTrainBench to evaluate autonomous LLM post-training and observed that while agents show progress, the gap between agent performance an
 ---
 # ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text
 

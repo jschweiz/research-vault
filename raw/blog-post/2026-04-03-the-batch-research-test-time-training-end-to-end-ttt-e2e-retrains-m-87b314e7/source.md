@@ -32,7 +32,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/test-time-training-end-to-e
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:10:26.302148Z'
+fetched_at: '2026-04-09T21:59:20.631812Z'
 short_summary: The authors introduced Test-Time Training End-to-End (TTT-E2E), a method that compresses context into transformer weights by training during inference to maintain stable accuracy and constant inference time as context grows. This approach demonstrated faster inference for long contexts, though training was more complex.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.869196Z'
