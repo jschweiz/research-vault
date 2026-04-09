@@ -1,0 +1,329 @@
+{
+  "id": "2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233",
+  "kind": "paper",
+  "source_id": "alphaxiv-paper",
+  "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+  "source_name": "alphaXiv Papers",
+  "organization_name": null,
+  "authors": [
+    "Yuhang Zhou",
+    "Lizhu Zhang",
+    "Yifan Wu",
+    "Jiayi Liu",
+    "Xiangjun Fan",
+    "Zhuokai Zhao"
+  ],
+  "published_at": "2026-04-06T17:19:29Z",
+  "canonical_url": "https://www.alphaxiv.org/abs/2604.04872",
+  "content_type": "paper",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Synthetic Sandbox for Training Machine Learning Engineering Agents\n\n## alphaXiv Summary\n\nSandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning practical for training LLM agents. This approach reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in \"Any Medal\" rates on MLE-Bench-Lite compared to baseline methods.\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.04872\n- Source paper: https://arxiv.org/abs/2604.04872\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.04872v1.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.04872v1.png\n- Paper ID: 2604.04872\n- Canonical ID: 2604.04872v1\n- Paper group ID: 019d65d7-7578-7816-83a9-18e52c67232c\n- Version ID: 019d65d7-75b7-7cd6-8911-58cd23ba0104\n- Version: v1\n- Version order: 1\n- Published at: 2026-04-06T17:19:29+00:00\n- First published at: 2026-04-06T17:19:29+00:00\n- Updated at: 2026-04-07T02:48:32.376000+00:00\n- License: http://creativecommons.org/licenses/by/4.0/\n- Citations: 0\n\n## Authors\n\n- Yuhang Zhou\n- Lizhu Zhang\n- Yifan Wu\n- Jiayi Liu\n- Xiangjun Fan\n- Zhuokai Zhao\n- Hong Yan\n\n## Topics\n\n- agentic-frameworks\n- agents\n- Computer Science\n- cs.CL\n- cs.LG\n- fine-tuning\n- ml-systems\n- multi-agent-learning\n- reinforcement-learning\n- synthetic-data\n- tool-use\n- transformers\n\n## Metrics\n\n- Visits (all): 90\n- Visits (last 7 days): 90\n- Total votes: 3\n- Public total votes: 13\n- X likes: 0\n\n## Abstract\n\nAs large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.\n\n## Problem\n\n- Applying on-policy trajectory-wise Reinforcement Learning (RL) to Machine Learning Engineering (MLE) tasks is computationally infeasible due to the long execution times of full ML pipelines.\n- Each MLE code execution takes around 200 seconds, making the large-scale rollouts required for on-policy RL impractical.\n- Existing methods like supervised fine-tuning (SFT) or step-wise RL with proxy rewards for MLE agents fail to leverage the exploration and generalization benefits of on-policy RL.\n\n## Method\n\n- Developed a multi-agent framework to autonomously generate diverse, verifiable synthetic MLE environments with micro-scale datasets (50-200 samples).\n- Constrained synthetic datasets drastically reduce execution latency from approximately 200 seconds to about 14 seconds per task.\n- Applied trajectory-wise Group Relative Policy Optimization (GRPO) with a dense, milestone-based reward function to train LLM agents effectively.\n\n## Results\n\n- Achieved a 13.7x speedup in average code execution time (from 196.17s to 14.31s) by using synthetic micro-datasets.\n- SandMLE-trained Qwen3 models showed up to 100.7% relative improvement in \"Any Medal\" rates over base models on MLE-Bench-Lite and surpassed SFT baselines.\n- Demonstrated robust generalization across various agent scaffolds and benchmarks, indicating transferable reasoning capabilities for trained LLM agents.\n\n## Takeaways\n\n- The primary bottleneck for applying on-policy RL to MLE tasks is the execution latency caused by dataset size, which can be overcome with micro-scale synthetic data.\n- A multi-agent system can effectively generate a diverse curriculum of structurally complex yet computationally light synthetic MLE tasks.\n- Dense, milestone-based reward functions are critical for stable and effective policy optimization in long-horizon, complex agentic tasks.\n\n## Full Overview\n\nSaved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.\n\n## Overview Languages\n\n- de\n- en\n- es\n- fr\n- hi\n- ja\n- ko\n- ru\n- zh\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d65d7-7578-7816-83a9-18e52c67232c/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d7-7578-7816-83a9-18e52c67232c/transcript.json\n\n## Similar Papers\n\n- Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning (2602.10090v2): The Agent World Model (AWM) introduces an open-source, code-driven pipeline that synthesizes 1,000 diverse, executable tool-use environments with database-backed state for large-scale reinforcement learning of autonomous agents. Agents trained on these synthetic environments, developed collaboratively by UNC Chapel Hill and Snowflake, demonstrate strong out-of-distribution generalization across various real-world benchmarks, validating the approach for developing robust LLM agents.\n- From Word to World: Can Large Language Models be Implicit Text-based World Models? (2512.18832v2): This research systematically explores whether large language models (LLMs) can serve as implicit text-based world models for agents, demonstrating that supervised fine-tuning enables them to reliably simulate multi-turn interactions. Fine-tuned LLMs achieved up to 99.87% exact match accuracy in structured environments and over 90% consistency for multi-step rollouts, showing utility in action verification, synthetic data generation, and policy warm-starting.\n- SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs (2504.14757v2): SWE-Synth introduces a framework for synthesizing verifiable, process-aware bug-fix datasets at the repository level, enabling Large Language Models to learn iterative debugging strategies. Models fine-tuned on SWE-Synth data achieved a 15.3% resolve rate on SWE-Bench Lite, surpassing performance from manually curated datasets, with synthetic bugs often indistinguishable from real ones by human developers.\n- Simulating Environments with Reasoning Models for Agent Training (2511.01824v1): This research introduces a method for training large language model (LLM) agents using other LLMs as environment simulators, achieving up to 14.4 point average score improvements on benchmarks like OfficeBench for open models compared to seed-tuned baselines. This approach enables scalable generation of high-quality training data and facilitates reinforcement learning without dedicated environment engineering.\n- SWE-Universe: Scale Real-World Verifiable Environments to Millions (2602.02361v1): Alibaba Group's Qwen Team developed SWE-Universe, a framework to automatically construct over 800,000 real-world, multilingual, verifiable software engineering environments from GitHub PRs. This massive dataset significantly enhances coding agent capabilities, with the Qwen3-Max-Thinking model achieving 75.3% accuracy on SWE-Bench Verified and substantial gains on multilingual benchmarks.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+  "outbound_links": [
+    "https://www.alphaxiv.org/abs/2604.04872",
+    "https://arxiv.org/abs/2604.04872",
+    "https://fetcher.alphaxiv.org/v2/pdf/2604.04872v1.pdf",
+    "https://www.alphaxiv.org/image/2604.04872v1.png",
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://paper-podcasts.alphaxiv.org/019d65d7-7578-7816-83a9-18e52c67232c/podcast.mp3",
+    "https://paper-podcasts.alphaxiv.org/019d65d7-7578-7816-83a9-18e52c67232c/transcript.json"
+  ],
+  "score": {
+    "relevance_score": 1.0,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.6825,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 3,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 155.1688,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.84,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document directly addresses the user's favorite topics of LLM agents, evaluation, and reinforcement learning in the context of machine learning engineering.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.5,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments to enable practical on-policy reinforcement learning for tr",
+        "SandMLE reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in \"Any Medal\" rates on MLE-Benc",
+        "We observe that sandbox data size is the primary source of this bottleneck."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments to enable practical on-policy reinforcement learning for training LLM agents. This approach significantly reduces execution time and improves performance on MLE benchmarks compared to existing methods.",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "alphaxiv-legacy.json",
+    "alphaxiv-metadata.json",
+    "alphaxiv-overview-status.json",
+    "alphaxiv-overview.json",
+    "alphaxiv-overview.md",
+    "alphaxiv-paper.json",
+    "alphaxiv-preview.json",
+    "alphaxiv-similar-papers.json"
+  ],
+  "raw_doc_path": "raw/paper/2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T14:34:23.207762Z",
+  "alphaxiv": {
+    "short_summary": "SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments to enable practical on-policy reinforcement learning for training LLM agents. This approach significantly reduces execution time and improves performance on MLE benchmarks compared to existing methods.",
+    "filed_text": "## Abstract\n\nAs large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.\n\n## Problem\n\n- Applying on-policy trajectory-wise Reinforcement Learning (RL) to Machine Learning Engineering (MLE) tasks is computationally infeasible due to the long execution times of full ML pipelines.\n- Each MLE code execution takes around 200 seconds, making the large-scale rollouts required for on-policy RL impractical.\n- Existing methods like supervised fine-tuning (SFT) or step-wise RL with proxy rewards for MLE agents fail to leverage the exploration and generalization benefits of on-policy RL.\n\n## Method\n\n- Developed a multi-agent framework to autonomously generate diverse, verifiable synthetic MLE environments with micro-scale datasets (50-200 samples).\n- Constrained synthetic datasets drastically reduce execution latency from approximately 200 seconds to about 14 seconds per task.\n- Applied trajectory-wise Group Relative Policy Optimization (GRPO) with a dense, milestone-based reward function to train LLM agents effectively.\n\n## Results\n\n- Achieved a 13.7x speedup in average code execution time (from 196.17s to 14.31s) by using synthetic micro-datasets.\n- SandMLE-trained Qwen3 models showed up to 100.7% relative improvement in \"Any Medal\" rates over base models on MLE-Bench-Lite and surpassed SFT baselines.\n- Demonstrated robust generalization across various agent scaffolds and benchmarks, indicating transferable reasoning capabilities for trained LLM agents.\n\n## Summary\n\nSandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning practical for training LLM agents. This approach reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in \"Any Medal\" rates on MLE-Bench-Lite compared to baseline methods.\n\n## Takeaways\n\n- The primary bottleneck for applying on-policy RL to MLE tasks is the execution latency caused by dataset size, which can be overcome with micro-scale synthetic data.\n- A multi-agent system can effectively generate a diverse curriculum of structurally complex yet computationally light synthetic MLE tasks.\n- Dense, milestone-based reward functions are critical for stable and effective policy optimization in long-horizon, complex agentic tasks.",
+    "audio_url": "https://paper-podcasts.alphaxiv.org/019d65d7-7578-7816-83a9-18e52c67232c/podcast.mp3",
+    "similar_papers": [
+      {
+        "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+        "canonical_url": "https://www.alphaxiv.org/abs/2602.10090",
+        "app_item_id": null,
+        "authors": [
+          "Zhaoyang Wang",
+          "Canwen Xu",
+          "Boyi Liu",
+          "Yite Wang",
+          "Siwei Han",
+          "Zhewei Yao",
+          "Huaxiu Yao",
+          "Yuxiong He"
+        ],
+        "short_summary": "The Agent World Model (AWM) introduces an open-source, code-driven pipeline that synthesizes 1,000 diverse, executable tool-use environments with database-backed state for large-scale reinforcement learning of autonomous agents. Agents trained on these synthetic environments, developed collaboratively by UNC Chapel Hill and Snowflake, demonstrate strong out-of-distribution generalization across various real-world benchmarks, validating the approach for developing robust LLM agents."
+      },
+      {
+        "title": "From Word to World: Can Large Language Models be Implicit Text-based World Models?",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.18832",
+        "app_item_id": null,
+        "authors": [
+          "Yixia Li",
+          "Hongru Wang",
+          "Jiahao Qiu",
+          "Zhenfei Yin",
+          "Dongdong Zhang",
+          "Cheng Qian",
+          "Zeping Li",
+          "Pony Ma",
+          "Guanhua Chen",
+          "Heng Ji"
+        ],
+        "short_summary": "This research systematically explores whether large language models (LLMs) can serve as implicit text-based world models for agents, demonstrating that supervised fine-tuning enables them to reliably simulate multi-turn interactions. Fine-tuned LLMs achieved up to 99.87% exact match accuracy in structured environments and over 90% consistency for multi-step rollouts, showing utility in action verification, synthetic data generation, and policy warm-starting."
+      },
+      {
+        "title": "SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.14757",
+        "app_item_id": null,
+        "authors": [
+          "Minh V.T. Pham",
+          "Huy N. Phan",
+          "Hoang N. Phan",
+          "Cuong Le Chi",
+          "Tien N. Nguyen",
+          "Nghi D. Q. Bui"
+        ],
+        "short_summary": "SWE-Synth introduces a framework for synthesizing verifiable, process-aware bug-fix datasets at the repository level, enabling Large Language Models to learn iterative debugging strategies. Models fine-tuned on SWE-Synth data achieved a 15.3% resolve rate on SWE-Bench Lite, surpassing performance from manually curated datasets, with synthetic bugs often indistinguishable from real ones by human developers."
+      },
+      {
+        "title": "Simulating Environments with Reasoning Models for Agent Training",
+        "canonical_url": "https://www.alphaxiv.org/abs/2511.01824",
+        "app_item_id": null,
+        "authors": [
+          "Yuetai Li",
+          "Huseyin A Inan",
+          "Xiang Yue",
+          "Wei-Ning Chen",
+          "Lukas Wutschitz",
+          "Janardhan Kulkarni",
+          "Radha Poovendran",
+          "Robert Sim",
+          "Saravan Rajmohan"
+        ],
+        "short_summary": "This research introduces a method for training large language model (LLM) agents using other LLMs as environment simulators, achieving up to 14.4 point average score improvements on benchmarks like OfficeBench for open models compared to seed-tuned baselines. This approach enables scalable generation of high-quality training data and facilitates reinforcement learning without dedicated environment engineering."
+      },
+      {
+        "title": "SWE-Universe: Scale Real-World Verifiable Environments to Millions",
+        "canonical_url": "https://www.alphaxiv.org/abs/2602.02361",
+        "app_item_id": null,
+        "authors": [
+          "Mouxiang Chen",
+          "Lei Zhang",
+          "Yunlong Feng",
+          "Xuwu Wang",
+          "Wenting Zhao",
+          "Ruisheng Cao",
+          "Jiaxi Yang",
+          "Jiawei Chen",
+          "Mingze Li",
+          "Zeyao Ma",
+          "Hao Ge",
+          "Zongmeng Zhang",
+          "Zeyu Cui",
+          "Dayiheng Liu",
+          "Jingren Zhou",
+          "Jianling Sun",
+          "Junyang Lin",
+          "Binyuan Hui"
+        ],
+        "short_summary": "Alibaba Group's Qwen Team developed SWE-Universe, a framework to automatically construct over 800,000 real-world, multilingual, verifiable software engineering environments from GitHub PRs. This massive dataset significantly enhances coding agent capabilities, with the Qwen3-Max-Thinking model achieving 75.3% accuracy on SWE-Bench Verified and substantial gains on multilingual benchmarks."
+      },
+      {
+        "title": "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering",
+        "canonical_url": "https://www.alphaxiv.org/abs/2505.07782",
+        "app_item_id": null,
+        "authors": [
+          "Rushi Qiang",
+          "Yuchen Zhuang",
+          "Yinghao Li",
+          "Dingu Sagar V K",
+          "Rongzhi Zhang",
+          "Changhao Li",
+          "Ian Shu-Hei Wong",
+          "Sherry Yang",
+          "Percy Liang",
+          "Chao Zhang",
+          "Bo Dai"
+        ],
+        "short_summary": "A framework called MLE-Dojo enables training and evaluation of LLM-based agents on machine learning engineering tasks through interactive environments built from 200+ Kaggle competitions, providing standardized interfaces for observation, action, and reward spaces while supporting both supervised fine-tuning and reinforcement learning approaches."
+      },
+      {
+        "title": "EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis",
+        "canonical_url": "https://www.alphaxiv.org/abs/2601.05808",
+        "app_item_id": null,
+        "authors": [
+          "Xiaoshuai Song",
+          "Haofei Chang",
+          "Guanting Dong",
+          "Yutao Zhu",
+          "Zhicheng Dou",
+          "Ji-Rong Wen"
+        ],
+        "short_summary": "EnvScaler, developed by researchers at Renmin University of China, is an automated framework for synthesizing diverse, executable, tool-interactive environments for training large language model (LLM) agents. The system successfully generated 191 distinct environments and 7,000 task scenarios, which led to an average performance improvement of 8.67 points on BFCL-MT and 11.57 points on ACEBench-Agent for Qwen3 series models after Supervised Fine-Tuning."
+      },
+      {
+        "title": "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents",
+        "canonical_url": "https://www.alphaxiv.org/abs/2509.03581",
+        "app_item_id": null,
+        "authors": [
+          "Davide Paglieri",
+          "Bartłomiej Cupiał",
+          "Jonathan Cook",
+          "Ulyana Piterbarg",
+          "Jens Tuyls",
+          "Edward Grefenstette",
+          "Jakob Nicolaus Foerster",
+          "Jack Parker-Holder",
+          "Tim Rocktäschel"
+        ],
+        "short_summary": "Training large language models (LLMs) to reason via reinforcement learning (RL) significantly improves their problem-solving capabilities. In agentic settings, existing methods like ReAct prompt LLMs to explicitly plan before every action; however, we demonstrate that always planning is computationally expensive and degrades performance on long-horizon tasks, while never planning further limits performance. To address this, we introduce a conceptual framework formalizing dynamic planning for LLM agents, enabling them to flexibly decide when to allocate test-time compute for planning. We propose a simple two-stage training pipeline: (1) supervised fine-tuning on diverse synthetic data to prime models for dynamic planning, and (2) RL to refine this capability in long-horizon environments. Experiments on the Crafter environment show that dynamic planning agents trained with this approach are more sample-efficient and consistently achieve more complex objectives. Additionally, we demonstrate that these agents can be effectively steered by human-written plans, surpassing their independent capabilities and highlighting the potential for safer and more collaborative agentic systems."
+      },
+      {
+        "title": "Don't Just Fine-tune the Agent, Tune the Environment",
+        "canonical_url": "https://www.alphaxiv.org/abs/2510.10197",
+        "app_item_id": null,
+        "authors": [
+          "Siyuan Lu",
+          "Zechuan Wang",
+          "Hongxuan Zhang",
+          "Qintong Wu",
+          "Leilei Gan",
+          "Chenyi Zhuang",
+          "Jinjie Gu",
+          "Tao Lin"
+        ],
+        "short_summary": "The research introduces ENVIRONMENT TUNING, a training paradigm that enhances large language model (LLM) agents for complex, multi-turn tool-use tasks by tuning the learning environment rather than solely the agent. It significantly improves agent performance on in-distribution benchmarks (e.g., boosting Qwen2.5-7B-Instruct from 7.00% to 36.92% on BFCL V3) and demonstrates robust generalization to out-of-distribution tasks, outperforming supervised fine-tuning and direct reinforcement learning approaches."
+      },
+      {
+        "title": "daVinci-Dev: Agent-native Mid-training for Software Engineering",
+        "canonical_url": "https://www.alphaxiv.org/abs/2601.18418",
+        "app_item_id": null,
+        "authors": [
+          "Ji Zeng",
+          "Dayuan Fu",
+          "Tiantian Mi",
+          "Yumin Zhuang",
+          "Yaxing Huang",
+          "Xuefeng Li",
+          "Lyumanshan Ye",
+          "Muhang Xie",
+          "Qishuo Hua",
+          "Zhen Huang",
+          "Mohan Jiang",
+          "Hanning Wang",
+          "Jifan Lin",
+          "Yang Xiao",
+          "Jie Sun",
+          "Yunze Wu",
+          "Pengfei Liu"
+        ],
+        "short_summary": "Researchers at SII, SJTU, and GAIR developed daVinci-Dev, a framework that employs agent-native mid-training to instill foundational agentic behaviors in large language models for software engineering. This approach, leveraging contextually-native and environmentally-native data, achieves a 58.5% resolution rate on SWE-Bench Verified for the 72B model, setting a new open benchmark while demonstrating token efficiency and generalization across various coding and reasoning tasks."
+      },
+      {
+        "title": "daVinci-Env: Open SWE Environment Synthesis at Scale",
+        "canonical_url": "https://www.alphaxiv.org/abs/2603.13023",
+        "app_item_id": null,
+        "authors": [
+          "Dayuan Fu",
+          "Shenyu Wu",
+          "Yunze Wu",
+          "Zerui Peng",
+          "Yaxing Huang",
+          "Jie Sun",
+          "Ji Zeng",
+          "Mohan Jiang",
+          "Lin Zhang",
+          "Yukun Li",
+          "Jiarui Hu",
+          "Liming Liu",
+          "Jinlong Hou",
+          "Pengfei Liu"
+        ],
+        "short_summary": "Researchers at the Shenzhen Institute of Artificial Intelligence and Robotics for Society, Shanghai Jiao Tong University, and General Artificial Intelligence Research developed OpenSWE, a large-scale, fully transparent framework that synthesizes over 45,000 executable Docker environments for training software engineering (SWE) agents. Models trained on OpenSWE achieve up to 68.0% resolution rate on SWE-Bench Verified and demonstrate improvements in general reasoning tasks without degrading factual recall."
+      },
+      {
+        "title": "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent",
+        "canonical_url": "https://www.alphaxiv.org/abs/2511.16108",
+        "app_item_id": null,
+        "authors": [
+          "Shiyi Cao",
+          "Dacheng Li",
+          "Fangzhou Zhao",
+          "Shuo Yuan",
+          "Sumanth R. Hegde",
+          "Connor Chen",
+          "Charlie Ruan",
+          "Tyler Griggs",
+          "Shu Liu",
+          "Eric Tang",
+          "Richard Liaw",
+          "Philipp Moritz",
+          "Matei Zaharia",
+          "Joseph E. Gonzalez",
+          "Ion Stoica"
+        ],
+        "short_summary": "SKYRL-AGENT, developed by NovaSky AI, UC Berkeley, and Anyscale, is a framework designed for efficient multi-turn reinforcement learning (RL) training of large language model (LLM) agents, addressing bottlenecks in rollout orchestration and resource utilization. It demonstrated a 1.55x speedup in agent rollout and reduced training costs by over 2x for its SA-SWE-32B model, which achieved 39.4% Pass@1 on SWE-Bench Verified."
+      }
+    ]
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "id": "2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e",
+  "kind": "paper",
+  "source_id": "alphaxiv-paper",
+  "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+  "source_name": "alphaXiv Papers",
+  "organization_name": null,
+  "authors": [
+    "Yoonho Lee",
+    "Roshen Nair",
+    "Qizheng Zhang",
+    "Kangwook Lee",
+    "Omar Khattab",
+    "Chelsea Finn"
+  ],
+  "published_at": "2026-03-30T05:33:50Z",
+  "canonical_url": "https://www.alphaxiv.org/abs/2603.28052",
+  "content_type": "paper",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Meta-Harness: End-to-End Optimization of Model Harnesses\n\n## alphaXiv Summary\n\nMeta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2603.28052\n- Source paper: https://arxiv.org/abs/2603.28052\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2603.28052v1.pdf\n- Cover image: https://www.alphaxiv.org/image/2603.28052v1.png\n- GitHub: https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact\n- GitHub stars: 53\n- Paper ID: 2603.28052\n- Canonical ID: 2603.28052v1\n- Paper group ID: 019d41b7-1156-7866-b991-94545a578703\n- Version ID: 019d41b7-1185-7c78-be8f-d11d778e4bb6\n- Version: v1\n- Version order: 1\n- Published at: 2026-03-30T05:33:50+00:00\n- First published at: 2026-03-30T05:33:50+00:00\n- Updated at: 2026-03-31T02:26:49.815000+00:00\n- License: http://creativecommons.org/licenses/by/4.0/\n- Citations: 0\n\n## Authors\n\n- Yoonho Lee\n- Roshen Nair\n- Qizheng Zhang\n- Kangwook Lee\n- Omar Khattab\n- Chelsea Finn\n\n## Topics\n\n- agents\n- Computer Science\n- cs.AI\n- efficient-transformers\n- meta-learning\n- ml-systems\n- optimization-methods\n- reasoning\n- tool-use\n- transformers\n\n## Metrics\n\n- Visits (all): 8242\n- Visits (last 7 days): 6164\n- Total votes: 116\n- Public total votes: 388\n- X likes: 1\n\n## Abstract\n\nThe performance of large language model (LLM) systems depends not only on model weights, but also on their harness: the code that determines what information to store, retrieve, and present to the model. Yet harnesses are still designed largely by hand, and existing text optimizers are poorly matched to this setting because they compress feedback too aggressively. We introduce Meta-Harness, an outer-loop system that searches over harness code for LLM applications. It uses an agentic proposer that accesses the source code, scores, and execution traces of all prior candidates through a filesystem. On online text classification, Meta-Harness improves over a state-of-the-art context management system by 7.7 points while using 4x fewer context tokens. On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level problems by 4.7 points on average across five held-out models. On agentic coding, discovered harnesses surpass the best hand-engineered baselines on TerminalBench-2. Together, these results show that richer access to prior experience can enable automated harness engineering.\n\n## Problem\n\n- Harness engineering, which designs how large language models (LLMs) store, retrieve, and present information, is a largely manual, iterative process relying on human intuition and heuristics.\n- The performance of LLM systems is highly sensitive to harness design, with variations potentially causing up to a 6x difference in model performance on the same benchmark.\n- Existing text optimization methods are inadequate for complex harness logic due to aggressive feedback compression and limited context, which discards crucial information needed to diagnose long-horizon failures.\n\n## Method\n\n- Meta-Harness implements an outer-loop optimization procedure where an agentic proposer (a coding LLM) searches over task-specific harnesses.\n- The proposer has selective, uncompressed access to a growing filesystem containing the source code, detailed execution traces, and evaluation scores of all prior candidate harnesses.\n- The agent iteratively inspects this comprehensive history, reasons about failure modes, and proposes new harness candidates by modifying the Python code directly.\n\n## Results\n\n- Meta-Harness achieved 48.6% accuracy in online text classification, outperforming state-of-the-art hand-designed methods (ACE) by 7.7 points while using 4x fewer context tokens.\n- A single discovered retrieval harness improved accuracy on 200 IMO-level math problems by an average of 4.7 points across five held-out models (e.g., GPT-5.4n, Gemini-3F) compared to a 'No Retriever' baseline.\n- The system automatically discovered harnesses that achieved top-tier pass rates on TerminalBench-2, reaching 76.4% with Claude Opus 4.6 (ranking #2) and 37.6% with Claude Haiku 4.5 (ranking #1).\n\n## Takeaways\n\n- Full, uncompressed access to historical diagnostic data (raw code, execution traces, and evaluation scores) is critical for an agent to perform causal reasoning and targeted modifications in complex, stateful code-space search.\n- Direct optimization in the code space, enabled by an agentic proposer, facilitates algorithmic modifications and complete program rewrites, providing a natural regularization bias towards coherent solutions.\n- An agent, when provided with rich, granular feedback, can effectively identify and address complex, long-horizon failures in stateful programs, going beyond fixed templates or summary-based feedback.\n\n## Full Overview\n\nSaved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.\n\n## Overview Languages\n\n- de\n- en\n- es\n- fr\n- hi\n- ja\n- ko\n- ru\n- vi\n- zh\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/podcast.mp3\n- Audio asset: `alphaxiv-podcast.mp3`\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/transcript.json\n- Transcript lines: 17\n- Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`\n\n## AI Detection\n\n- State: done\n- Prediction: Mixed\n- Headline: Mostly Human, AI Detected\n- Fraction AI: 0.16178553\n- Fraction AI-assisted: 0\n- Fraction human: 0.83821446\n\n## Resources\n\n- GitHub repository: https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact\n\n## Similar Papers\n\n- A Self-Improving Coding Agent (2504.15228v2): A self-improving coding agent, SICA, autonomously edits its own Python codebase to enhance performance. This system achieved an improvement from 17% to 53% accuracy on SWE-Bench Verified tasks by developing new tools and refining its operational logic through a non-gradient-based learning mechanism.\n- Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models (2510.04618v3): Agentic Context Engineering (ACE) is a framework that enables large language models to self-improve by dynamically evolving comprehensive, 'playbook'-style contexts instead of static prompts. It consistently achieved average performance gains of over 8% across agentic and domain-specific tasks while reducing adaptation costs by more than 80% compared to baselines.\n- Reflexion: Language Agents with Verbal Reinforcement Learning (2303.11366v4): Reflexion enables large language model agents to learn from trial-and-error by converting environmental feedback into natural language reflections stored in an explicit episodic memory. This framework achieved new state-of-the-art pass@1 accuracy on several coding benchmarks and improved performance on sequential decision-making and language reasoning tasks.\n- MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents (2602.02474v1): MemSkill introduces an approach for Large Language Model (LLM) agents where memory operations are learned and evolve over time, moving beyond static, human-engineered mechanisms. This system, developed by Nanyang Technological University and collaborators, achieves superior performance in conversational and embodied tasks by continually refining a dynamic skill bank and a skill-selection policy.\n- AutoPDL: Automatic Prompt Optimization for LLM Agents (2504.04365v5): AutoPDL automates the optimization of prompting patterns and content for LLM agents, generating human-readable configurations. This framework achieved an average accuracy gain of 9.21 percentage points across diverse tasks and models, and demonstrated effective transferability to commercial frontier models.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+  "outbound_links": [
+    "https://www.alphaxiv.org/abs/2603.28052",
+    "https://arxiv.org/abs/2603.28052",
+    "https://fetcher.alphaxiv.org/v2/pdf/2603.28052v1.pdf",
+    "https://www.alphaxiv.org/image/2603.28052v1.png",
+    "https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact",
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/podcast.mp3",
+    "https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/transcript.json"
+  ],
+  "score": {
+    "relevance_score": 0.715,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.18,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.615,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "heuristic",
+      "favorite_source_match": false,
+      "topic_matches": 4,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 155.1688,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 1.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "Heuristic fallback based on 3 favorite-topic matches.",
+      "judge_bucket_hint": "worth_a_skim",
+      "judge_confidence_score": 0.45,
+      "judge_source_fit_score": 0.55,
+      "judge_topic_fit_score": 0.84,
+      "judge_author_fit_score": 0.18,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "heuristic:profile-fallback",
+      "judge_evidence_quotes": [
+        "Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves per"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves performance in text classification, math reasoning, and agentic coding by accessing uncompressed historical code and execution traces.",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "alphaxiv-ai-detection.json",
+    "alphaxiv-legacy.json",
+    "alphaxiv-metadata.json",
+    "alphaxiv-overview-status.json",
+    "alphaxiv-overview.json",
+    "alphaxiv-overview.md",
+    "alphaxiv-paper.json",
+    "alphaxiv-podcast.mp3",
+    "alphaxiv-preview.json",
+    "alphaxiv-similar-papers.json",
+    "alphaxiv-transcript.json",
+    "alphaxiv-transcript.md"
+  ],
+  "raw_doc_path": "raw/paper/2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T15:00:26.996229Z",
+  "alphaxiv": {
+    "short_summary": "Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves performance in text classification, math reasoning, and agentic coding by accessing uncompressed historical code and execution traces.",
+    "filed_text": "## Abstract\n\nThe performance of large language model (LLM) systems depends not only on model weights, but also on their harness: the code that determines what information to store, retrieve, and present to the model. Yet harnesses are still designed largely by hand, and existing text optimizers are poorly matched to this setting because they compress feedback too aggressively. We introduce Meta-Harness, an outer-loop system that searches over harness code for LLM applications. It uses an agentic proposer that accesses the source code, scores, and execution traces of all prior candidates through a filesystem. On online text classification, Meta-Harness improves over a state-of-the-art context management system by 7.7 points while using 4x fewer context tokens. On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level problems by 4.7 points on average across five held-out models. On agentic coding, discovered harnesses surpass the best hand-engineered baselines on TerminalBench-2. Together, these results show that richer access to prior experience can enable automated harness engineering.\n\n## Problem\n\n- Harness engineering, which designs how large language models (LLMs) store, retrieve, and present information, is a largely manual, iterative process relying on human intuition and heuristics.\n- The performance of LLM systems is highly sensitive to harness design, with variations potentially causing up to a 6x difference in model performance on the same benchmark.\n- Existing text optimization methods are inadequate for complex harness logic due to aggressive feedback compression and limited context, which discards crucial information needed to diagnose long-horizon failures.\n\n## Method\n\n- Meta-Harness implements an outer-loop optimization procedure where an agentic proposer (a coding LLM) searches over task-specific harnesses.\n- The proposer has selective, uncompressed access to a growing filesystem containing the source code, detailed execution traces, and evaluation scores of all prior candidate harnesses.\n- The agent iteratively inspects this comprehensive history, reasons about failure modes, and proposes new harness candidates by modifying the Python code directly.\n\n## Results\n\n- Meta-Harness achieved 48.6% accuracy in online text classification, outperforming state-of-the-art hand-designed methods (ACE) by 7.7 points while using 4x fewer context tokens.\n- A single discovered retrieval harness improved accuracy on 200 IMO-level math problems by an average of 4.7 points across five held-out models (e.g., GPT-5.4n, Gemini-3F) compared to a 'No Retriever' baseline.\n- The system automatically discovered harnesses that achieved top-tier pass rates on TerminalBench-2, reaching 76.4% with Claude Opus 4.6 (ranking #2) and 37.6% with Claude Haiku 4.5 (ranking #1).\n\n## Summary\n\nMeta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.\n\n## Takeaways\n\n- Full, uncompressed access to historical diagnostic data (raw code, execution traces, and evaluation scores) is critical for an agent to perform causal reasoning and targeted modifications in complex, stateful code-space search.\n- Direct optimization in the code space, enabled by an agentic proposer, facilitates algorithmic modifications and complete program rewrites, providing a natural regularization bias towards coherent solutions.\n- An agent, when provided with rich, granular feedback, can effectively identify and address complex, long-horizon failures in stateful programs, going beyond fixed templates or summary-based feedback.",
+    "audio_url": "https://paper-podcasts.alphaxiv.org/019d41b7-1156-7866-b991-94545a578703/podcast.mp3",
+    "similar_papers": [
+      {
+        "title": "A Self-Improving Coding Agent",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.15228",
+        "app_item_id": null,
+        "authors": [
+          "Maxime Robeyns",
+          "Martin Szummer",
+          "Laurence Aitchison"
+        ],
+        "short_summary": "A self-improving coding agent, SICA, autonomously edits its own Python codebase to enhance performance. This system achieved an improvement from 17% to 53% accuracy on SWE-Bench Verified tasks by developing new tools and refining its operational logic through a non-gradient-based learning mechanism."
+      },
+      {
+        "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+        "canonical_url": "https://www.alphaxiv.org/abs/2510.04618",
+        "app_item_id": null,
+        "authors": [
+          "Qizheng Zhang",
+          "Changran Hu",
+          "Shubhangi Upasani",
+          "Boyuan Ma",
+          "Fenglu Hong",
+          "Vamsidhar Kamanuru",
+          "Jay Rainton",
+          "Chen Wu",
+          "Mengmeng Ji",
+          "Hanchen Li",
+          "Urmish Thakker",
+          "James Zou",
+          "Kunle Olukotun"
+        ],
+        "short_summary": "Agentic Context Engineering (ACE) is a framework that enables large language models to self-improve by dynamically evolving comprehensive, 'playbook'-style contexts instead of static prompts. It consistently achieved average performance gains of over 8% across agentic and domain-specific tasks while reducing adaptation costs by more than 80% compared to baselines."
+      },
+      {
+        "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+        "canonical_url": "https://www.alphaxiv.org/abs/2303.11366",
+        "app_item_id": null,
+        "authors": [
+          "Noah Shinn",
+          "Federico Cassano",
+          "Edward Berman",
+          "Ashwin Gopinath",
+          "Karthik Narasimhan",
+          "Shunyu Yao"
+        ],
+        "short_summary": "Reflexion enables large language model agents to learn from trial-and-error by converting environmental feedback into natural language reflections stored in an explicit episodic memory. This framework achieved new state-of-the-art pass@1 accuracy on several coding benchmarks and improved performance on sequential decision-making and language reasoning tasks."
+      },
+      {
+        "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+        "canonical_url": "https://www.alphaxiv.org/abs/2602.02474",
+        "app_item_id": null,
+        "authors": [
+          "Haozhen Zhang",
+          "Quanyu Long",
+          "Jianzhu Bao",
+          "Tao Feng",
+          "Weizhi Zhang",
+          "Haodong Yue",
+          "Wenya Wang"
+        ],
+        "short_summary": "MemSkill introduces an approach for Large Language Model (LLM) agents where memory operations are learned and evolve over time, moving beyond static, human-engineered mechanisms. This system, developed by Nanyang Technological University and collaborators, achieves superior performance in conversational and embodied tasks by continually refining a dynamic skill bank and a skill-selection policy."
+      },
+      {
+        "title": "AutoPDL: Automatic Prompt Optimization for LLM Agents",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.04365",
+        "app_item_id": null,
+        "authors": [
+          "Claudio Spiess",
+          "Mandana Vaziri",
+          "Louis Mandel",
+          "Martin Hirzel"
+        ],
+        "short_summary": "AutoPDL automates the optimization of prompting patterns and content for LLM agents, generating human-readable configurations. This framework achieved an average accuracy gain of 9.21 percentage points across diverse tasks and models, and demonstrated effective transferability to commercial frontier models."
+      },
+      {
+        "title": "Meta Context Engineering via Agentic Skill Evolution",
+        "canonical_url": "https://www.alphaxiv.org/abs/2601.21557",
+        "app_item_id": null,
+        "authors": [
+          "Haoran Ye",
+          "Xuning He",
+          "Vincent Arak",
+          "Haonan Dong",
+          "Guojie Song"
+        ],
+        "short_summary": "Meta Context Engineering (MCE) enables large language model agents to autonomously co-evolve their context engineering strategies (skills) and context artifacts through a bi-level optimization framework. This method enhances performance and efficiency by dynamically adapting context properties, yielding an average relative improvement of 89.1% over base models and outperforming state-of-the-art context engineering methods."
+      },
+      {
+        "title": "S*: Test Time Scaling for Code Generation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2502.14382",
+        "app_item_id": null,
+        "authors": [
+          "Dacheng Li",
+          "Shiyi Cao",
+          "Chengkun Cao",
+          "Xiuyu Li",
+          "Shangyin Tan",
+          "Kurt Keutzer",
+          "Jiarong Xing",
+          "Joseph E. Gonzalez",
+          "Ion Stoica"
+        ],
+        "short_summary": "UC Berkeley researchers introduce S*, a breakthrough hybrid test-time scaling framework that enables dramatic improvements in code generation performance across model sizes, allowing a 3B parameter model to outperform GPT-4o-mini through clever combination of parallel sampling and sequential debugging while achieving 85.7% accuracy on LiveCodeBench with larger models."
+      },
+      {
+        "title": "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+        "canonical_url": "https://www.alphaxiv.org/abs/2410.02089",
+        "app_item_id": null,
+        "authors": [
+          "Jonas Gehring",
+          "Kunhao Zheng",
+          "Jade Copet",
+          "Vegard Mella",
+          "Quentin Carbonneaux",
+          "Taco Cohen",
+          "Gabriel Synnaeve"
+        ],
+        "short_summary": "RLEF by Meta AI (FAIR) enhances Large Language Models' (LLMs) ability to self-correct code using execution feedback via reinforcement learning. This approach achieves state-of-the-art code generation solve rates on CodeContests with an order of magnitude fewer samples than previous methods, significantly improving efficiency and reliability."
+      },
+      {
+        "title": "Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search",
+        "canonical_url": "https://www.alphaxiv.org/abs/2503.04412",
+        "app_item_id": null,
+        "authors": [
+          "Yuichi Inoue",
+          "Kou Misaki",
+          "Yuki Imajuku",
+          "So Kuroki",
+          "Taishi Nakamura",
+          "Takuya Akiba"
+        ],
+        "short_summary": "An inference-time framework named Adaptive Branching Monte Carlo Tree Search (AB-MCTS) was introduced by Sakana AI to dynamically balance exploration and exploitation in large language model problem-solving. This method improved performance on complex coding, abstract reasoning, and machine learning engineering tasks, demonstrating more effective utilization of LLM inference budgets compared to existing search strategies."
+      },
+      {
+        "title": "Archon: An Architecture Search Framework for Inference-Time Techniques",
+        "canonical_url": "https://www.alphaxiv.org/abs/2409.15254",
+        "app_item_id": null,
+        "authors": [
+          "Jon Saad-Falcon",
+          "Adrian Gamarra Lafuente",
+          "Shlok Natarajan",
+          "Nahum Maru",
+          "Hristo Todorov",
+          "Etash Guha",
+          "E. Kelly Buchanan",
+          "Mayee Chen",
+          "Neel Guha",
+          "Christopher Ré",
+          "Azalia Mirhoseini"
+        ],
+        "short_summary": "ARCHON presents an automated architecture search framework to systematically design and optimize large language model inference systems by combining various inference-time techniques. This framework achieves an average 15.1% performance improvement over frontier models like GPT-4o and Claude 3.5 Sonnet, while also demonstrating 20.0% greater inference call efficiency."
+      },
+      {
+        "title": "MemR$^3$: Memory Retrieval via Reflective Reasoning for LLM Agents",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.20237",
+        "app_item_id": null,
+        "authors": [
+          "Xingbo Du",
+          "Loka Li",
+          "Duzhen Zhang",
+          "Le Song"
+        ],
+        "short_summary": "MemR^3 introduces a system for LLM agents that uses reflective reasoning and an explicit evidence-gap tracker to enable closed-loop control over memory retrieval. This approach consistently enhanced answer quality, achieving up to a 7.29% improvement in LLM-as-a-Judge scores on the LoCoMo benchmark compared to traditional RAG."
+      },
+      {
+        "title": "SCOPE: Prompt Evolution for Enhancing Agent Effectiveness",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.15374",
+        "app_item_id": null,
+        "authors": [
+          "Zehua Pei",
+          "Hui-Ling Zhen",
+          "Shixiong Kai",
+          "Sinno Jialin Pan",
+          "Yunhe Wang",
+          "Mingxuan Yuan",
+          "Bei Yu"
+        ],
+        "short_summary": "The paper introduces SCOPE, a framework enabling large language model agents to dynamically evolve their prompts online by learning from their execution traces. This approach leads to a substantial increase in task success rates, with the HLE benchmark showing an improvement from 14.23% to 38.64%, and GAIA from 32.73% to 56.97%."
+      }
+    ]
+  }
+}

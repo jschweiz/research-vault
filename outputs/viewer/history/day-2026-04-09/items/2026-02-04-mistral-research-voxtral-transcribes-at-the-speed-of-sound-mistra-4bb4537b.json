@@ -1,0 +1,83 @@
+{
+  "id": "2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b",
+  "kind": "blog-post",
+  "source_id": "mistral-research",
+  "title": "Voxtral transcribes at the speed of sound. | Mistral AI",
+  "source_name": "Mistral Research",
+  "organization_name": null,
+  "authors": [],
+  "published_at": "2026-02-04T16:00:00Z",
+  "canonical_url": "https://mistral.ai/news/voxtral-transcribe-2",
+  "content_type": "post",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license.\nWe're also launching an [audio playground in Mistral Studio](https://console.mistral.ai/build/audio/speech-to-text) to test transcription instantly, powered by Voxtral Transcribe 2, with diarization and timestamps.\nHighlights.\n-\nVoxtral Mini Transcribe V2: State-of-the-art transcription with speaker diarization, context biasing, and word-level timestamps in 13 languages.\n-\nVoxtral Realtime: Purpose-built for live transcription with latency configurable down to sub-200ms, enabling voice agents and real-time applications.\n-\nBest-in-class efficiency: Industry-leading accuracy at a fraction of the cost, with Voxtral Mini Transcribe V2 achieving the lowest word error rate, at the lowest price point.\n-\nOpen weights: Voxtral Realtime ships under Apache 2.0, deployable on edge for privacy-first applications.\nVoxtral Realtime.\nVoxtral Realtime is purpose-built for applications where latency matters. Unlike approaches that adapt offline models by processing audio in chunks, Realtime uses a novel streaming architecture that transcribes audio as it arrives. The model delivers transcriptions with delay configurable down to sub-200ms, unlocking a new class of voice-first applications.\nWord error rate (lower is better) across languages in the FLEURS transcription benchmark.\nAt 2.4 seconds delay, ideal for subtitling, Realtime matches Voxtral Mini Transcribe V2, our latest batch model. At 480ms delay, it stays within 1-2% word error rate, enabling voice agents with near-offline accuracy.\nThe model is natively multilingual, achieving strong transcription performance in 13 languages, including English, Chinese, Hindi, Spanish, Arabic, French, Portuguese, Russian, German, Japanese, Korean, Italian, and Dutch. With a 4B parameter footprint, it runs efficiently on edge devices, ensuring privacy and security for sensitive deployments.\nWe’re releasing the model weights under Apache 2.0 on the [Hugging Face Hub.](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)\nVoxtral Mini Transcribe V2.\nAverage diarization error rate (lower is better) across five English benchmarks (Switchboard, CallHome, AMI-IHM, AMI-SDM, SBCSAE) and the TalkBank multilingual benchmark (German, Spanish, English, Chinese, Japanese).\nAverage word error rate (lower is better) across the top-10 languages in the FLEURS transcription benchmark.\nVoxtral Mini Transcribe V2 delivers significant improvements in transcription and diarization quality across languages and domains. At approximately 4% word error rate on FLEURS and $0.003/min, Voxtral offers the best price-performance of any transcription API. It outperforms GPT-4o mini Transcribe, Gemini 2.5 Flash, Assembly Universal, and Deepgram Nova on accuracy, and processes audio approximately 3x faster than ElevenLabs’ Scribe v2 while matching on quality at one-fifth the cost.\nModel features.\nVoxtral Mini Transcribe 2 introduces key capabilities.\nSpeaker diarization.\nGenerate transcriptions with speaker labels and precise start/end times. Ideal for meeting transcription, interview analysis, and multi-party call processing. Note: with overlapping speech, the model typically transcribes one speaker.\nContext biasing.\nProvide up to 100 words or phrases to guide the model toward correct spellings of names, technical terms, or domain-specific vocabulary. Particularly useful for proper nouns or industry terminology that standard models often miss. Context biasing is optimized for English; support for other languages is experimental.\nWord-level timestamps.\nGenerate precise start and end timestamps for each word, enabling applications like subtitle generation, audio search, and content alignment.\nExpanded language support.\nLike Realtime, this model now supports 13 languages: English, Chinese, Hindi, Spanish, Arabic, French, Portuguese, Russian, German, Japanese, Korean, Italian, and Dutch. Non-English performance significantly outpaces competitors.\nNoise robustness.\nMaintains transcription accuracy in challenging acoustic environments, such as factory floors, busy call centers, and field recordings.\nLonger audio support.\nProcess recordings up to 3 hours in a single request.\nWord error rate (lower is better) across languages in the FLEURS transcription benchmark.\nAudio playground.\nTest Voxtral Transcribe 2 directly in [Mistral Studio](https://console.mistral.ai/build/audio/speech-to-text). Upload up to 10 audio files, toggle diarization, choose timestamp granularity, and add context bias terms for domain-specific vocabulary. Supports .mp3, .wav, .m4a, .flac, .ogg up to 1GB each.\nTransforming voice applications.\nVoxtral powers voice workflows in diverse applications and industries.\n-\nMeeting intelligence.\nTranscribe multilingual recordings with speaker diarization that clearly attributes who said what and when. At Voxtral's price point, annotate large volumes of meeting content at industry-leading cost efficiency.\n-\nVoice agents and virtual assistants.\nBuild conversational AI with sub-200ms transcription latency. Connect Voxtral Realtime to your LLM and TTS pipeline for responsive voice interfaces that feel natural.\n-\nContact center automation.\nTranscribe calls in real time, enabling AI systems to analyze sentiment, suggest responses, and populate CRM fields while conversations are still happening. Speaker diarization ensures clear attribution between agents and customers.\n-\nMedia and broadcast.\nGenerate live multilingual subtitles with minimal latency. Context biasing handles proper nouns and technical terminology that trip up generic transcription services.\n-\nCompliance and documentation.\nMonitor and transcribe interactions for regulatory compliance, with diarization providing clear speaker attribution and timestamps enabling precise audit trails.\nBoth models support GDPR and HIPAA-compliant deployments through secure on-premise or private cloud setups.\nGet started.\n[Voxtral Mini Transcribe V2](https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02) is available now via API at $0.003 per minute. Try it now in the new Mistral Studio [audio playground](https://console.mistral.ai/build/audio/speech-to-text) or in [Le Chat](http://chat.mistral.ai).\n[Voxtral Realtime](https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02) is available via API at $0.006 per minute and as open weights on [Hugging Face](https://huggingface.co/mistralai/Voxtral-Mini-3B-Realtime-2602).\n[Explore documentation](https://docs.mistral.ai/capabilities/audio_transcription) on Mistral’s audio and transcription capabilities.\nWe’re hiring.\nIf you're excited about building world-class speech AI and putting frontier models into the hands of developers everywhere, we'd love to hear from you. [Apply to join our team](https://mistral.ai/careers).\n",
+  "outbound_links": [
+    "https://console.mistral.ai/build/audio/speech-to-text",
+    "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
+    "http://chat.mistral.ai",
+    "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02",
+    "https://huggingface.co/mistralai/Voxtral-Mini-3B-Realtime-2602",
+    "https://docs.mistral.ai/capabilities/audio_transcription",
+    "https://mistral.ai/careers"
+  ],
+  "score": {
+    "relevance_score": 0.95,
+    "novelty_score": 1.0,
+    "source_quality_score": 1.0,
+    "author_match_score": 0.9,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.825,
+    "bucket": "must_read",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 53.3958,
+      "novelty_signal": 4.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document directly addresses favorite topics like language models and evaluation, and features a favorite author (Mistral AI).",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 1.0,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.9,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications.",
+        "Voxtral Mini Transcribe V2: State-of-the-art transcription with speaker diarization, context biasing, and word-level timestamps in 13 languages.",
+        "It outperforms GPT-4o mini Transcribe, Gemini 2.5 Flash, Assembly Universal, and Deepgram Nova on accuracy, and processes audio approximately 3x faster than Ele"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "Mistral AI released Voxtral Transcribe 2, two next-generation speech-to-text models, including Voxtral Realtime for ultra-low latency applications. These models offer state-of-the-art transcription quality, speaker diarization, and",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "original.html"
+  ],
+  "raw_doc_path": "raw/blog-post/2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T12:25:56.469622Z",
+  "alphaxiv": null
+}
