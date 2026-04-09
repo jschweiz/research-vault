@@ -1,33 +1,33 @@
-# Research Brief · 2026-04-08
+# Research Brief · 2026-04-09
 
-Published: 2026-04-09T20:45:47.261709+00:00
-Coverage: 2026-04-07
+Published: 2026-04-09T21:57:48.556200+00:00
+Coverage: 2026-04-08
 
 The vault has been re-ranked into a concise working brief.
 
 ## Editorial shortlist
 
-- [Neural Computers](https://www.alphaxiv.org/abs/2604.06425)
-- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](https://www.alphaxiv.org/abs/2604.05212)
-- [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](https://freedium-mirror.cfd/https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0)
+- [MoRight: Motion Control Done Right](https://www.alphaxiv.org/abs/2604.07348)
+- [The next phase of enterprise AI](https://openai.com/index/next-phase-of-enterprise-ai)
+- [Designing a Production-Grade RAG Architecture](https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa)
 
 ## Headlines
 
-- [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](https://freedium-mirror.cfd/https://medium.com/@han.heloir/cursor-3-is-not-an-ide-update-its-a-bet-that-you-ll-manage-agents-not-write-code-0d2bc51f0dcb)
-- [How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines](https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines)
-- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](https://www.alphaxiv.org/abs/2604.05550)
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](https://www.alphaxiv.org/abs/2604.05854)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](https://www.alphaxiv.org/abs/2604.07273)
+- [Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'](https://links.tldrnewsletter.com/gp8rGy)
+- [OpenAI #16: A History and a Proposal](https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal)
+- [Introducing the Child Safety Blueprint](https://openai.com/index/introducing-child-safety-blueprint)
 
 ## Interesting side signals
 
-- [Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.](https://freedium-mirror.cfd/https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969)
-- [58% of PRs in our largest monorepo merge without human review](https://vercel.com/blog/58-percent-of-prs-in-our-largest-monorepo-merge-without-human-review)
-- [Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained](https://freedium-mirror.cfd/https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab)
+- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004)
+- [AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures](https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124)
+- [Understanding Transformers (Part 1): Why RNNs are nearly impossible to train](https://freedium-mirror.cfd/https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960)
 
 ## Remaining reads
 
-- [AI Assistance Reduces Persistence and Hurts Independent Performance](https://www.alphaxiv.org/abs/2604.04721)
-- [From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability](https://arstechnica.com/ai/2026/04/generalists-new-physical-robotics-ai-brings-production-level-success-rates)
-- [OpenAI's leadership reportedly disagrees about when to raise money and how to spend it](https://links.tldrnewsletter.com/AaOObO)
-- [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](https://links.tldrnewsletter.com/ZPmNRf)
-- [Confessions of a Millennial in Tech](https://www.elenaverna.com/p/confessions-of-a-millennial-in-tech)
+- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](https://www.alphaxiv.org/abs/2604.05672)
+- [Fast Spatial Memory with Elastic Test-Time Training](https://www.alphaxiv.org/abs/2604.07350)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](https://www.alphaxiv.org/abs/2604.04911)
+- [The Building Block Economy](https://mitchellh.com/writing/building-block-economy)
+- [Good Taste the Only Real Moat Left](https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms)

@@ -32,26 +32,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/test-time-training-end-to-e
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T20:51:32.641745Z'
+fetched_at: '2026-04-09T21:10:26.302148Z'
 short_summary: The authors introduced Test-Time Training End-to-End (TTT-E2E), a method that compresses context into transformer weights by training during inference to maintain stable accuracy and constant inference time as context grows. This approach demonstrated faster inference for long contexts, though training was more complex.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.869196Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: df1560d2eb08fb847429e16270620aed8c9efb548e89779c352ba87b313f2f2c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: f9db2e627baa59e39acf6c55a77304560fca7a3b3b8cd9481a1777175db68d89
-lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
-  evidence_quotes:
-  - The authors introduced Test-Time Training End-to-End (TTT-E2E), a method that compresses context into transformer weights by training during inference to mainta
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Large language models typically become less accurate and slower when they process longer contexts, but researchers enabled an LLM to keep accuracy stable and inference time constant as its context grew.
 What’s new: Arnuv Tandon, Karan Dalal, and colleagues at the nonprofit Astera Institute, Nvidia, Stanford, UC Berkeley, and UC San Diego introduced [Test-Time Training, End-to-End](https://arxiv.org/abs/2512.23675?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) (TTT-E2E), a method that compresses context into a transformer’s weights by training it during inference.

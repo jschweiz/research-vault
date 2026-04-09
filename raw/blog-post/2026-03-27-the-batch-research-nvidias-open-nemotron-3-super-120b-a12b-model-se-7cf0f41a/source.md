@@ -25,7 +25,7 @@ canonical_url: https://www.deeplearning.ai/the-batch/nvidias-open-nemotron-3-sup
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T20:53:10.539100Z'
+fetched_at: '2026-04-09T21:10:59.924199Z'
 short_summary: null
 lightweight_enrichment_status: failed
 lightweight_enriched_at: null

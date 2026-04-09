@@ -31,26 +31,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/grok-imagine-1-0-sharply-cu
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T20:53:05.506144Z'
+fetched_at: '2026-04-09T21:10:53.922098Z'
 short_summary: xAI launched Grok Imagine 1.0, a video generator that produces high-quality video clips from text and images, topping independent quality rankings at a lower cost than competitors. The model allows for video alteration and object manipulation via text instructions.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T20:59:31.797270Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: af860e996038a1e2e68ea379fbf72e0b769517a5b9ef46dfbab307e569626bcc
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 1f9797155ee17f8590058a77144bff274de3abad0b23d60389df75fc66beb61f
-lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - xAI launched Grok Imagine 1.0, a video generator that produces high-quality video clips from text and images, topping independent quality rankings at a lower co
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 xAI launched a video generator that topped an independent quality ranking at a fraction of competitors’ prices.
 What’s new: [Grok Imagine 1.0](https://x.ai/news/grok-imagine-api?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) takes text with images and/or video, and produces video clips that can include dialogue, sound effects, and music.
