@@ -1,0 +1,154 @@
+{
+  "abstract": "Reinforcement learning (RL) is a core approach for robot control when expert demonstrations are unavailable. On-policy methods such as Proximal Policy Optimization (PPO) are widely used for their stability, but their reliance on narrowly distributed on-policy data limits accurate policy evaluation in high-dimensional state and action spaces. Off-policy methods can overcome this limitation by learning from a broader state-action distribution, yet suffer from slow convergence and instability, as fitting a value function over diverse data requires many gradient updates, causing critic errors to accumulate through bootstrapping. We present FlashSAC, a fast and stable off-policy RL algorithm built on Soft Actor-Critic. Motivated by scaling laws observed in supervised learning, FlashSAC sharply reduces gradient updates while compensating with larger models and higher data throughput. To maintain stability at increased scale, FlashSAC explicitly bounds weight, feature, and gradient norms, curbing critic error accumulation. Across over 60 tasks in 10 simulators, FlashSAC consistently outperforms PPO and strong off-policy baselines in both final performance and training efficiency, with the largest gains on high-dimensional tasks such as dexterous manipulation. In sim-to-real humanoid locomotion, FlashSAC reduces training time from hours to minutes, demonstrating the promise of off-policy RL for sim-to-real transfer.",
+  "author_info": [],
+  "authors": [
+    "Donghu Kim",
+    "Youngdo Lee",
+    "Minho Park",
+    "Kinam Kim",
+    "I Made Aswin Nahendra",
+    "Takuma Seno",
+    "Sehee Min",
+    "Daniel Palenicek",
+    "Florian Vogt",
+    "Danica Kragic",
+    "Jan Peters",
+    "Jaegul Choo",
+    "Hojoon Lee"
+  ],
+  "canonical_id": "2604.04539v1",
+  "first_publication_date": "2026-04-06T09:03:41.000Z",
+  "full_authors": [
+    {
+      "full_name": "Donghu Kim",
+      "id": "01985c82-7470-733c-9819-bbde26789e44",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Youngdo Lee",
+      "id": "01985c84-4117-738b-985e-e8eea511acc6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Minho Park",
+      "id": "01985c82-4f4d-743b-9a6c-6830bea6a258",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kinam Kim",
+      "id": "01985c83-29cd-7dfd-b666-67773f848731",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "I Made Aswin Nahendra",
+      "id": "019d667a-54c9-71b0-bb18-7caeb2407fd2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Takuma Seno",
+      "id": "01985c82-7470-7d74-a949-71a9dd0d0200",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sehee Min",
+      "id": "01985c84-75ed-7d6f-88e5-797e3d23ea4b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Daniel Palenicek",
+      "id": "01985c82-38d4-7a13-8707-2e4c0d3bdc0c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Florian Vogt",
+      "id": "01985c83-fdaf-7986-9908-17d0a3374873",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Danica Kragic",
+      "id": "01985c81-df57-7f8d-92cd-454a1c3cf902",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jan Peters",
+      "id": "01985c81-e287-7c64-abde-e60eab3bcf2d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jaegul Choo",
+      "id": "01985c81-db50-7efe-8234-4a81454c02c6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hojoon Lee",
+      "id": "01985c82-7470-70ae-becf-40150b82ffb0",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 6,
+  "github_url": "https://github.com/Holiday-Robot/FlashSAC",
+  "id": "019d667a-5472-7eaf-bbe9-68cafbe41f5a",
+  "image_url": "image/2604.04539v1.png",
+  "metrics": {
+    "public_total_votes": 14,
+    "total_votes": 2,
+    "visits_count": {
+      "all": 140,
+      "last_7_days": 140
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d667a-5472-7eaf-bbe9-68cafbe41f5a",
+  "paper_summary": {
+    "keyInsights": [
+      "Scaling laws observed in supervised learning can be effectively applied to off-policy RL, where increasing model capacity and data throughput with reduced gradient updates leads to faster convergence, provided stability is maintained.",
+      "Robust critic stabilization through architectural designs (e.g., inverted residual blocks, pre-activation batch norm) and norm constraints is essential to prevent error accumulation and ensure stable training in high-dimensional, data-rich off-policy settings.",
+      "Broad and efficient exploration in high-dimensional spaces can be facilitated by a unified entropy target and lightweight noise repetition, avoiding complex task-specific tuning."
+    ],
+    "originalProblem": [
+      "Traditional on-policy reinforcement learning methods are data inefficient for complex, high-dimensional robotic control tasks, leading to prohibitive training costs.",
+      "Off-policy reinforcement learning, despite its data efficiency potential, often faces challenges of slow convergence and training instability, particularly when dealing with large models and bootstrapped value functions.",
+      "Prior off-policy approaches struggled to simultaneously achieve both rapid training speed and robust stability, especially in environments demanding high model capacity."
+    ],
+    "results": [
+      "FlashSAC reduced the wall-clock training time for sim-to-real humanoid locomotion by nearly an order of magnitude compared to PPO, achieving stable real-world behaviors.",
+      "Consistently attained higher asymptotic performance and faster convergence across more than 60 locomotion and manipulation tasks in diverse simulators, including dexterous manipulation and vision-based control.",
+      "Outperformed or matched other state-of-the-art off-policy and model-based methods across a wide range of benchmarks, demonstrating robustness with a single set of hyperparameters."
+    ],
+    "solution": [
+      "Introduced FlashSAC, an off-policy algorithm built on Soft Actor-Critic (SAC), integrating mechanisms for both rapid and stable learning.",
+      "Achieves fast training by leveraging massively parallel simulation, a 10 million transition replay buffer, larger networks (2.5M parameters), large batch sizes (2048), and a low updates-to-data ratio.",
+      "Ensures stability through a suite of techniques including an inverted residual network backbone, pre-activation batch normalization, cross-batch value prediction, a distributional critic with adaptive reward scaling, and weight normalization."
+    ],
+    "summary": "FlashSAC is an off-policy reinforcement learning algorithm designed for high-dimensional robotic control, integrating rapid training via scaled data throughput and model capacity with stability mechanisms like constrained critic updates. The algorithm consistently reduces wall-clock training time by up to an order of magnitude and achieves higher asymptotic performance across over 60 locomotion and manipulation tasks, including successful sim-to-real humanoid locomotion."
+  },
+  "publication_date": "2026-04-06T09:03:41.000Z",
+  "title": "FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control",
+  "topics": [
+    "Computer Science",
+    "cs.LG",
+    "cs.RO",
+    "deep-reinforcement-learning",
+    "optimization-methods",
+    "reinforcement-learning",
+    "robotic-control",
+    "transfer-learning"
+  ],
+  "universal_paper_id": "2604.04539",
+  "updated_at": "2026-04-07T05:46:26.290Z",
+  "version_id": "019d667a-54ee-7058-8cba-607b61d19588"
+}

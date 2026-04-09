@@ -1,0 +1,134 @@
+{
+  "abstract": "Model predictive control (MPC) with learned world models has emerged as a promising paradigm for embodied control, particularly for its ability to generalize zero-shot when deployed in new environments. However, learned world models often struggle with long-horizon control due to the accumulation of prediction errors and the exponentially growing search space. In this work, we address these challenges by learning latent world models at multiple temporal scales and performing hierarchical planning across these scales, enabling long-horizon reasoning while substantially reducing inference-time planning complexity. Our approach serves as a modular planning abstraction that applies across diverse latent world-model architectures and domains. We demonstrate that this hierarchical approach enables zero-shot control on real-world non-greedy robotic tasks, achieving a 70% success rate on pick-&-place using only a final goal specification, compared to 0% for a single-level world model. In addition, across physics-based simulated environments including push manipulation and maze navigation, hierarchical planning achieves higher success while requiring up to 4x less planning-time compute.",
+  "author_info": [],
+  "authors": [
+    "Wancong Zhang",
+    "Basile Terver",
+    "Artem Zholus",
+    "Soham Chitnis",
+    "Harsh Sutaria",
+    "Mido Assran",
+    "Randall Balestriero",
+    "Amir Bar",
+    "Adrien Bardes",
+    "Yann LeCun",
+    "Nicolas Ballas"
+  ],
+  "canonical_id": "2604.03208v1",
+  "first_publication_date": "2026-04-03T17:32:36.000Z",
+  "full_authors": [
+    {
+      "full_name": "Wancong Zhang",
+      "id": "01985c82-fe8c-7ebb-b87a-a6f2d56eec77",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Basile Terver",
+      "id": "01985c81-fb81-7cfe-8225-85057d84f63c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Artem Zholus",
+      "id": "01985c81-e287-7c6e-8330-786de9cea31b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Soham Chitnis",
+      "id": "01985c85-c3f3-70a8-8642-b2b065eeee1e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Harsh Sutaria",
+      "id": "019d60ff-5db5-765c-9031-2f249b10f47a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mido Assran",
+      "id": "01985c82-a356-7831-829f-120c7f59b346",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Randall Balestriero",
+      "id": "01985c81-e287-7ced-b370-1a9d0540e3b6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Amir Bar",
+      "id": "01985c81-db50-71b7-8396-4b6c380091bd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Adrien Bardes",
+      "id": "01985c81-e774-7b44-810a-a75eec5b400a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yann LeCun",
+      "id": "01985c81-d97f-7a3d-b9ce-231516b7caee",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Nicolas Ballas",
+      "id": "01985c81-dc26-7484-a2ed-cfb26e321c43",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 4,
+  "github_url": "https://github.com/kevinghst/HWM_PLDM",
+  "id": "019d60ff-5da4-7739-94cc-8568d61fc564",
+  "image_url": "image/2604.03208v1.png",
+  "metrics": {
+    "public_total_votes": 29,
+    "total_votes": 5,
+    "visits_count": {
+      "all": 332,
+      "last_7_days": 332
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d60ff-5da4-7739-94cc-8568d61fc564",
+  "paper_summary": {
+    "keyInsights": [
+      "Decomposing long-horizon problems into a hierarchy of shorter-horizon subproblems significantly mitigates the accumulation of prediction errors and manages the exponential growth of the planning search space.",
+      "Learning latent macro-actions for the high-level world model effectively compresses complex action sequences, enabling more efficient and effective long-horizon planning.",
+      "Operating both high- and low-level planning within a shared latent space, derived from high-dimensional observations, facilitates zero-shot control and generalization without task-specific rewards or explicit policy training."
+    ],
+    "originalProblem": [
+      "Learned world models struggle with robust long-horizon control due to compounding prediction errors over extended rollouts.",
+      "The planning search space expands exponentially with increasing horizon, making long-term planning computationally intractable.",
+      "Existing hierarchical methods often require low-dimensional state spaces, hand-engineered representations, or task-specific training, limiting their applicability to high-dimensional zero-shot settings."
+    ],
+    "results": [
+      "HWM achieved a 70% success rate on real-robot pick-and-place tasks, outperforming single-level VJEPA2-AC (0% success) and strong vision-language-action baselines.",
+      "It improved long-horizon control on the Push-T task, achieving a 61% success rate at d=75 timesteps compared to 17% for the flat DINO-WM planner, while requiring approximately 3 times less compute.",
+      "The framework demonstrated enhanced zero-shot generalization to out-of-distribution maze layouts, achieving an 83% success rate on hard mazes (D \n [13, 16]) versus 44% for flat PLDM, with up to 4 times less planning compute."
+    ],
+    "solution": [
+      "HWM employs a top-down hierarchical planning strategy that operates entirely in a shared learned latent space during inference.",
+      "A high-level planner, using a long-horizon world model and learned latent macro-actions, generates immediate subgoals in the latent space.",
+      "A low-level planner utilizes a short-horizon world model and primitive actions to achieve the immediate subgoals, with the entire process using receding-horizon Model Predictive Control (MPC)."
+    ],
+    "summary": "Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks."
+  },
+  "publication_date": "2026-04-03T17:32:36.000Z",
+  "title": "Hierarchical Planning with Latent World Models",
+  "topics": [
+    "Computer Science",
+    "cs.LG"
+  ],
+  "universal_paper_id": "2604.03208",
+  "updated_at": "2026-04-06T04:14:01.636Z",
+  "version_id": "019d60ff-5dc8-7fbf-a60c-00319ed02acf"
+}

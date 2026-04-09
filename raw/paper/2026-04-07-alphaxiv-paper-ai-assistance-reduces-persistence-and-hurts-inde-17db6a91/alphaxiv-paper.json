@@ -1,0 +1,21 @@
+{
+  "abstract": "People often optimize for long-term goals in collaboration: A mentor or companion doesn't just answer questions, but also scaffolds learning, tracks progress, and prioritizes the other person's growth over immediate results. In contrast, current AI systems are fundamentally short-sighted collaborators - optimized for providing instant and complete responses, without ever saying no (unless for safety reasons). What are the consequences of this dynamic? Here, through a series of randomized controlled trials on human-AI interactions (N = 1,222), we provide causal evidence for two key consequences of AI assistance: reduced persistence and impairment of unassisted performance. Across a variety of tasks, including mathematical reasoning and reading comprehension, we find that although AI assistance improves performance in the short-term, people perform significantly worse without AI and are more likely to give up. Notably, these effects emerge after only brief interactions with AI (approximately 10 minutes). These findings are particularly concerning because persistence is foundational to skill acquisition and is one of the strongest predictors of long-term learning. We posit that persistence is reduced because AI conditions people to expect immediate answers, thereby denying them the experience of working through challenges on their own. These results suggest the need for AI model development to prioritize scaffolding long-term competence alongside immediate task completion.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775486628000,
+  "googleCitationId": null,
+  "groupId": "019d68da-b7ad-74a4-85fd-a8ee0cb5a575",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775533275000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04721",
+  "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+  "type": "public",
+  "universalId": "2604.04721",
+  "uploader": null,
+  "versionId": "019d6bed-93c8-7c1c-ab64-f8b25e9cce78",
+  "versionLabel": "v2",
+  "versionOrder": 2,
+  "versions": []
+}

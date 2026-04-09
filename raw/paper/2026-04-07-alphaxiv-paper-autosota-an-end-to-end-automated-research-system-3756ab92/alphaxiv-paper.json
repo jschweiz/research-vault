@@ -1,0 +1,21 @@
+{
+  "abstract": "Artificial intelligence research increasingly depends on prolonged cycles of reproduction, debugging, and iterative refinement to achieve State-Of-The-Art (SOTA) performance, creating a growing need for systems that can accelerate the full pipeline of empirical model optimization. In this work, we introduce AutoSOTA, an end-to-end automated research system that advances the latest SOTA models published in top-tier AI papers to reproducible and empirically improved new SOTA models. We formulate this problem through three tightly coupled stages: resource preparation and goal setting; experiment evaluation; and reflection and ideation. To tackle this problem, AutoSOTA adopts a multi-agent architecture with eight specialized agents that collaboratively ground papers to code and dependencies, initialize and repair execution environments, track long-horizon experiments, generate and schedule optimization ideas, and supervise validity to avoid spurious gains. We evaluate AutoSOTA on recent research papers collected from eight top-tier AI conferences under filters for code availability and execution cost. Across these papers, AutoSOTA achieves strong end-to-end performance in both automated replication and subsequent optimization. Specifically, it successfully discovers 105 new SOTA models that surpass the original reported methods, averaging approximately five hours per paper. Case studies spanning LLM, NLP, computer vision, time series, and optimization further show that the system can move beyond routine hyperparameter tuning to identify architectural innovation, algorithmic redesigns, and workflow-level improvements. These results suggest that end-to-end research automation can serve not only as a performance optimizer, but also as a new form of research infrastructure that reduces repetitive experimental burden and helps redirect human attention toward higher-level scientific creativity.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775548321000,
+  "googleCitationId": null,
+  "groupId": "019d6b00-2ced-78a3-bc60-c75fc74c1cea",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775548321000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05550",
+  "title": "AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery",
+  "type": "public",
+  "universalId": "2604.05550",
+  "uploader": null,
+  "versionId": "019d6b00-2d31-7587-a344-63dabc43735e",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

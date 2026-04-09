@@ -1,0 +1,107 @@
+{
+  "abstract": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+  "author_info": [],
+  "authors": [
+    "Ruixiang Zhang",
+    "Richard He Bai",
+    "Huangjie Zheng",
+    "Navdeep Jaitly",
+    "Ronan Collobert",
+    "Yizhe Zhang"
+  ],
+  "canonical_id": "2604.01193v1",
+  "first_publication_date": "2026-04-01T17:39:50.000Z",
+  "full_authors": [
+    {
+      "full_name": "Ruixiang Zhang",
+      "id": "01985c82-456b-7eab-8546-523caaad4d72",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Richard He Bai",
+      "id": "01985c83-1b82-73ef-8d33-8a4cfdf65f99",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huangjie Zheng",
+      "id": "01985c81-d97f-78e1-a311-f5696bbc222a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Navdeep Jaitly",
+      "id": "01985c81-d97f-76c0-b6f5-6eb39b1b563e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ronan Collobert",
+      "id": "01985c82-40ca-74bd-a689-d4112ac35951",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yizhe Zhang",
+      "id": "01985c81-de91-7e6e-99f0-6db8b46a672d",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 2,
+  "github_url": "https://github.com/apple/ml-ssd",
+  "id": "019d4bff-833f-7d1e-bb18-25fb1ef24565",
+  "image_url": "image/2604.01193v1.png",
+  "metrics": {
+    "public_total_votes": 207,
+    "total_votes": 75,
+    "visits_count": {
+      "all": 3772,
+      "last_7_days": 3764
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d4bff-833f-7d1e-bb18-25fb1ef24565",
+  "paper_summary": {
+    "keyInsights": [
+      "Simple Self-Distillation (SSD) alleviates the \"precision-exploration conflict\" by context-dependently reshaping the model's token distributions, suppressing distractors at \"locks\" while maintaining useful diversity at \"forks.\"",
+      "SSD induces fundamental changes within the model's learned distributions that cannot be replicated by merely adjusting inference-time decoding parameters on the original model.",
+      "The method's benefits stem from distributional reshaping (support compression and within-support smoothing) rather than the superficial correctness of individual self-generated training samples, as improvements persist even with intentionally degraded training data."
+    ],
+    "originalProblem": [
+      "High cost and difficulty of obtaining high-quality supervised training signals for LLM code generation, limiting scalability.",
+      "Limitations of existing self-improvement methods, including performance ceilings for teacher-based distillation and operational complexities or instabilities in RL and unsupervised intrinsic reward systems.",
+      "An inherent \"precision-exploration conflict\" in LLM decoding for code, where a single global temperature setting struggles to balance precise token generation at constrained points with necessary exploration for diverse algorithmic choices."
+    ],
+    "results": [
+      "SSD consistently increased pass@1 scores across five evaluated models, with Qwen3-30B-Instruct improving by 12.9 percentage points (from 42.4% to 55.3%) on LiveCodeBench v6.",
+      "Performance gains were disproportionately higher for more challenging problems, showing pass@1 gains of up to 15.3pp and pass@5 gains of 23.0pp on hard problems for Qwen3-30B-Instruct.",
+      "The SSD-trained model substantially outperformed the best-tuned base model configuration by 11.8pp for Qwen3-30B-Instruct pass@1, indicating that SSD's changes are not achievable through decoding parameter adjustments alone."
+    ],
+    "solution": [
+      "Introduce Simple Self-Distillation (SSD), where a frozen base LLM generates a single candidate solution for each problem prompt using specific training-time decoding configurations, without any external verification.",
+      "Fine-tune the base LLM on this self-generated, unverified dataset using standard supervised fine-tuning with a cross-entropy loss function.",
+      "Deploy the resulting fine-tuned model with optimized evaluation-time decoding settings, designed to leverage the reshaped token distributions for improved performance."
+    ],
+    "summary": "A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification."
+  },
+  "publication_date": "2026-04-01T17:39:50.000Z",
+  "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+  "topics": [
+    "Computer Science",
+    "cs.CL",
+    "fine-tuning",
+    "generative-models",
+    "instruction-tuning",
+    "knowledge-distillation",
+    "model-interpretation",
+    "self-supervised-learning",
+    "text-generation",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.01193",
+  "updated_at": "2026-04-02T02:22:09.727Z",
+  "version_id": "019d4bff-8374-72cf-a6d5-e902fd357539"
+}

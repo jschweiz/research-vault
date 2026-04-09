@@ -1,0 +1,21 @@
+{
+  "abstract": "Current document parsing methods compete primarily on model architecture innovation, while systematic engineering of training data remains underexplored. Yet SOTA models of different architectures and parameter scales exhibit highly consistent failure patterns on the same set of hard samples, suggesting that the performance bottleneck stems from shared deficiencies in training data rather than architecture itself. Building on this finding, we present \\minerupro, which advances the state of the art solely through data engineering and training strategy optimization while keeping the 1.2B-parameter architecture of \\mineru completely fixed. At its core is a Data Engine co-designed around coverage, informativeness, and annotation accuracy: Diversity-and-Difficulty-Aware Sampling expands training data from under 10M to 65.5M samples while correcting distribution shift; Cross-Model Consistency Verification leverages output agreement among heterogeneous models to assess sample difficulty and generate reliable annotations; the Judge-and-Refine pipeline improves annotation quality for hard samples through render-then-verify iterative correction. A three-stage progressive training strategy -- large-scale pre-training, hard sample fine-tuning, and GRPO alignment -- sequentially exploits these data at different quality tiers. On the evaluation front, we fix element-matching biases in OmniDocBench~v1.5 and introduce a Hard subset, establishing the more discriminative OmniDocBench~v1.6 protocol. Without any architectural modification, \\minerupro achieves 95.69 on OmniDocBench~v1.6, improving over the same-architecture baseline by 2.71 points and surpassing all existing methods including models with over 200$\\times$ more parameters.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775490258000,
+  "googleCitationId": null,
+  "groupId": "019d65bf-f725-70ff-9b02-154aff67da82",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775490258000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04771",
+  "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
+  "type": "public",
+  "universalId": "2604.04771",
+  "uploader": null,
+  "versionId": "019d65bf-f79a-7903-9c16-117911e19e0d",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

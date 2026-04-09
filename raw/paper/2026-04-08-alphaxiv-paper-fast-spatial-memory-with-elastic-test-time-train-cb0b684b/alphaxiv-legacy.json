@@ -1,0 +1,116 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Ziqiao Ma",
+        "id": "01985c81-ef78-78a6-9ff7-b78286a236bc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xueyang Yu",
+        "id": "01985c82-ae63-7211-9d26-13042e01e263",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haoyu Zhen",
+        "id": "01985c81-e5a9-7b13-abed-fc193dcd041b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuncong Yang",
+        "id": "01985c82-3d3a-79bc-8f5f-ace970600361",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Joyce Chai",
+        "id": "01985c81-ef78-740e-a95d-9b9da4f100f0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chuang Gan",
+        "id": "01985c81-e1bb-7f8a-aca6-d5ce2657db78",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 02:09:47 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 08 2026 17:59:48 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d7000-b398-7a6d-8d19-56347f7e17ba",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 1,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 1,
+        "visits_count": {
+          "all": 54,
+          "last24Hours": 54,
+          "last30Days": 54,
+          "last7Days": 54,
+          "last90Days": 54
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "Fast Spatial Memory with Elastic Test-Time Training (4D-LRM + 4D-LVSM)",
+          "language": "Python",
+          "stars": 66,
+          "url": "https://github.com/Mars-tin/fast-spatial-mem"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.07350"
+      },
+      "title": "Fast Spatial Memory with Elastic Test-Time Training",
+      "topics": [
+        "Computer Science",
+        "continual-learning",
+        "cs.CV",
+        "cs.GR",
+        "cs.LG",
+        "inference-optimization",
+        "neural-rendering",
+        "online-learning",
+        "optimization-methods",
+        "representation-learning",
+        "sequence-modeling"
+      ],
+      "universal_paper_id": "2604.07350",
+      "updated_at": "Thu Apr 09 2026 02:09:47 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Large Chunk Test-Time Training (LaCT) has shown strong performance on long-context 3D reconstruction, but its fully plastic inference-time updates remain vulnerable to catastrophic forgetting and overfitting. As a result, LaCT is typically instantiated with a single large chunk spanning the full input sequence, falling short of the broader goal of handling arbitrarily long sequences in a single pass. We propose Elastic Test-Time Training inspired by elastic weight consolidation, that stabilizes LaCT fast-weight updates with a Fisher-weighted elastic prior around a maintained anchor state. The anchor evolves as an exponential moving average of past fast weights to balance stability and plasticity. Based on this updated architecture, we introduce Fast Spatial Memory (FSM), an efficient and scalable model for 4D reconstruction that learns spatiotemporal representations from long observation sequences and renders novel view-time combinations. We pre-trained FSM on large-scale curated 3D/4D data to capture the dynamics and semantics of complex spatial environments. Extensive experiments show that FSM supports fast adaptation over long sequences and delivers high-quality 3D/4D reconstruction with smaller chunks and mitigating the camera-interpolation shortcut. Overall, we hope to advance LaCT beyond the bounded single-chunk setting toward robust multi-chunk adaptation, a necessary step for generalization to genuinely longer sequences, while substantially alleviating the activation-memory bottleneck.",
+      "created_at": "Thu Apr 09 2026 02:09:47 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d7000-b3b4-75ec-be8b-7c259eeec950",
+      "imageURL": "image/2604.07350v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Wed Apr 08 2026 17:59:48 GMT+0000 (Coordinated Universal Time)",
+      "title": "Fast Spatial Memory with Elastic Test-Time Training",
+      "universal_paper_id": "2604.07350",
+      "updated_at": "Thu Apr 09 2026 02:09:47 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.07350v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

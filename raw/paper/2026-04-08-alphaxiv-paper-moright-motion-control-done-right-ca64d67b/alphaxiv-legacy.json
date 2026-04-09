@@ -1,0 +1,122 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Shaowei Liu",
+        "id": "01985c82-90b7-7fb2-814b-07d5dd53b834",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuanchi Ren",
+        "id": "01985c81-e1bc-79a4-8754-fc5eaf10834f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianchang Shen",
+        "id": "01985c82-9194-7a03-bf2c-5229828aa245",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huan Ling",
+        "id": "01985c82-231e-7084-9ea5-d0a70dd24edc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Saurabh Gupta",
+        "id": "01985c81-ec40-742d-af9f-9c5e88cdfc2e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shenlong Wang",
+        "id": "01985c82-07f1-7c20-95c1-232401f15f33",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sanja Fidler",
+        "id": "01985c81-e01e-7197-abd3-05700f735dd9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jun Gao",
+        "id": "01985c82-3fe0-7970-a8b1-eecedaec5c28",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 01:56:09 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 08 2026 17:59:22 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ff4-39fa-7566-9a26-8a93c1dce29b",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 1,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 1,
+        "visits_count": {
+          "all": 49,
+          "last24Hours": 49,
+          "last30Days": 49,
+          "last7Days": 49,
+          "last90Days": 49
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.07348"
+      },
+      "title": "MoRight: Motion Control Done Right",
+      "topics": [
+        "attention-mechanisms",
+        "causal-inference",
+        "Computer Science",
+        "cs.AI",
+        "cs.CV",
+        "cs.GR",
+        "cs.LG",
+        "cs.RO",
+        "generative-models",
+        "reasoning",
+        "representation-learning",
+        "video-understanding"
+      ],
+      "universal_paper_id": "2604.07348",
+      "updated_at": "Thu Apr 09 2026 01:56:09 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.",
+      "created_at": "Thu Apr 09 2026 01:56:09 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ff4-3a2e-7b99-9837-027b96f0ef06",
+      "imageURL": "image/2604.07348v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Apr 08 2026 17:59:22 GMT+0000 (Coordinated Universal Time)",
+      "title": "MoRight: Motion Control Done Right",
+      "universal_paper_id": "2604.07348",
+      "updated_at": "Thu Apr 09 2026 01:56:09 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.07348v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

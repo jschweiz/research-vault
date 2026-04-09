@@ -1,0 +1,21 @@
+{
+  "abstract": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775671162000,
+  "googleCitationId": null,
+  "groupId": "019d6ff4-39fa-7566-9a26-8a93c1dce29b",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775671162000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.07348",
+  "title": "MoRight: Motion Control Done Right",
+  "type": "public",
+  "universalId": "2604.07348",
+  "uploader": null,
+  "versionId": "019d6ff4-3a2e-7b99-9837-027b96f0ef06",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

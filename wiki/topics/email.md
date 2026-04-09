@@ -1,0 +1,364 @@
+---
+id: topic:email
+page_type: topic
+title: Email
+aliases:
+- Email
+- email
+source_refs:
+- 2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
+- 2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
+- 2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
+- 2026-04-09-tldr-email-my-quest-to-solve-bitcoin-s-great-mystery-416b98a3
+- 2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
+- 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
+- 2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
+- 2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
+- 2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- 2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
+- 2026-04-09-medium-email-the-art-of-letting-go-69290282
+- 2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
+- 2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
+- 2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
+- 2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
+- 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
+- 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- 2026-04-08-tldr-email-the-building-block-economy-2eb76b35
+- 2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
+- 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- 2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
+- 2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
+- 2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
+- 2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
+- 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
+- 2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- 2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
+- 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
+- 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
+- 2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- 2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
+- 2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
+- 2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
+- 2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
+- 2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- 2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
+- 2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- 2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
+- 2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
+- 2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8
+- 2026-04-07-tldr-email-artemis-ii-astronauts-heading-home-after-histori-1a04b5a8
+- 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
+- 2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
+- 2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
+- 2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
+- 2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
+- 2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
+- 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
+- 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-f82b8871
+- 2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
+- 2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
+- 2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
+- 2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
+- 2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
+- 2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
+- 2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
+- 2026-04-06-tldr-email-eight-years-of-wanting-three-months-of-building--8e15c218
+- 2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
+- 2026-04-06-tldr-email-china-s-tech-giants-are-recruiting-high-schooler-9dbd58c7
+- 2026-04-06-tldr-email-apple-egpu-support-inside-ai-lab-finances-claude-f865879a
+- 2026-04-06-tldr-email-apple-approves-drivers-that-let-amd-and-nvidia-e-8c6ca4d4
+- 2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- 2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
+- 2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
+- 2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
+- 2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
+- 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
+- 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
+- 2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
+- 2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
+- 2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
+- 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- 2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
+- 2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
+- 2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
+- 2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
+- 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
+- 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
+- 2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- 2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
+- 2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
+- 2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
+- 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
+- 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+- 2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
+- 2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
+- 2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
+- 2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
+- 2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
+- 2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
+- 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
+- 2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
+- 2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
+- 2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
+- 2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
+- 2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
+- 2026-04-03-tldr-email-bad-analogies-e133a94d
+- 2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
+- 2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
+backlinks:
+- map:global-ai-research
+- map:trends:rising-topics
+- page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
+- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
+- page:2026-04-03-medium-email-claude-code-is-great-a7134001
+- page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
+- page:2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
+- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
+- page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
+- page:2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
+- page:2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
+- page:2026-04-03-tldr-email-bad-analogies-e133a94d
+- page:2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
+- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
+- page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
+- page:2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
+- page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
+- page:2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
+- page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
+- page:2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
+- page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
+- page:2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
+- page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
+- page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
+- page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
+- page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
+- page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
+- page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
+- page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
+- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
+- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
+- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
+- page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
+- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
+- page:2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
+- page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
+- page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
+- page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
+- page:2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
+- page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- page:2026-04-06-tldr-email-apple-approves-drivers-that-let-amd-and-nvidia-e-8c6ca4d4
+- page:2026-04-06-tldr-email-china-s-tech-giants-are-recruiting-high-schooler-9dbd58c7
+- page:2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
+- page:2026-04-06-tldr-email-eight-years-of-wanting-three-months-of-building--8e15c218
+- page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
+- page:2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
+- page:2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
+- page:2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
+- page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
+- page:2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
+- page:2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
+- page:2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-f82b8871
+- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
+- page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
+- page:2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
+- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
+- page:2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
+- page:2026-04-07-tldr-email-artemis-ii-astronauts-heading-home-after-histori-1a04b5a8
+- page:2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8
+- page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
+- page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
+- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- page:2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
+- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
+- page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
+- page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
+- page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
+- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
+- page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
+- page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- page:2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
+- page:2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
+- page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
+- page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
+- page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- page:2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
+- page:2026-04-08-tldr-email-the-building-block-economy-2eb76b35
+- page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
+- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
+- page:2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
+- page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
+- page:2026-04-09-medium-email-the-art-of-letting-go-69290282
+- page:2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
+- page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- page:2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
+- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
+- page:2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
+- page:2026-04-09-tldr-email-my-quest-to-solve-bitcoin-s-great-mystery-416b98a3
+- page:2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
+- page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
+- page:2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
+- topic:agentic-ai
+- topic:agentic-engineering
+- topic:agents
+- topic:agents-businesses
+- topic:agents-how
+- topic:agents-not-write
+- topic:agents-parallelization-subgraphs
+- topic:agents-without-any
+- topic:ai-advances
+- topic:ai-agents
+- topic:ai-applications
+- topic:ai-coding-agents
+- topic:ai-engineering
+- topic:ai-helped
+- topic:ai-helped-one
+- topic:ai-job
+- topic:ai-job-threat
+- topic:ai-lab-finances
+- topic:ai-model-anthropic
+- topic:ai-model-mythos
+- topic:ai-pullback
+- topic:ai-pullback-has
+- topic:ai-s
+- topic:ai-s-robotic
+- topic:ai-satellite
+- topic:ai-satellite-embeddings
+- topic:ai-understanding
+- topic:ai-zero-shot
+- topic:ai-zero-shot-3d
+- topic:alignment
+- topic:amazon
+- topic:amd
+- topic:apple
+- topic:artemis-ii
+- topic:asr-scratch
+- topic:astronauts
+- topic:audio
+- topic:automatic-speech-recognition
+- topic:beyond-rlhf
+- topic:build-ai
+- topic:build-ai-applications
+- topic:business
+- topic:can-ai
+- topic:career
+- topic:claude-code
+- topic:code-generation
+- topic:computer-vision
+- topic:context-engineering
+- topic:data-pipelines
+- topic:developer-experience
+- topic:developer-relations
+- topic:dismissed-ai
+- topic:egpu
+- topic:entrepreneurship
+- topic:fine-tuning
+- topic:gemma-4
+- topic:gen-1-robotics
+- topic:gen-1-robotics-model
+- topic:google-deepmind
+- topic:how-ai
+- topic:image-ai
+- topic:infrastructure
+- topic:is-llm
+- topic:its-new-ai
+- topic:langgraph-agents
+- topic:learning-rl
+- topic:learning-rl-concepts
+- topic:legibility
+- topic:lenny-s-podcast
+- topic:living-robots
+- topic:ll-manage-agents
+- topic:llm-no-jargon
+- topic:mac
+- topic:machines
+- topic:managed-agents
+- topic:mathematical-memory
+- topic:medium
+- topic:memory
+- topic:meta
+- topic:millennials
+- topic:moon-flyby
+- topic:multimodal
+- topic:nasa
+- topic:nervous-systems
+- topic:neurobots
+- topic:new-ai
+- topic:newsletter
+- topic:production-grade-rag
+- topic:production-grade-rag-architecture
+- topic:programming
+- topic:rag-system-fails
+- topic:ready-ai
+- topic:reasoning
+- topic:reinforcement-learning
+- topic:retrieval-augmented-generation
+- topic:robotics
+- topic:sanctuary-ai
+- topic:science
+- topic:software
+- topic:software-engineering
+- topic:sqlite
+- topic:strategy
+- topic:system-prompts
+- topic:tech
+- topic:tldr
+- topic:tool-use
+- topic:why-your-rag
+- topic:zhaozhiming-ai
+updated_at: '2026-04-09T12:15:42.149576Z'
+managed: true
+---
+# Email
+
+System-generated topic page that anchors Codex and the wiki around a stable research concept.
+
+## Signal Summary
+
+- Trend score: 500.30
+- Novelty score: 6.80
+- Items in last 7 days: 108
+- Items in last 30 days: 108
+- Total supporting items: 108
+- Source diversity: 2
+- First seen: 2026-04-03T06:40:00+00:00
+- Last seen: 2026-04-09T11:02:31+00:00
+
+## Aliases
+
+
+## Related Topics
+
+- [Newsletter](newsletter.md)
+- [Medium](medium.md)
+- [Agents](agents.md)
+- [Tldr](tldr.md)
+- [Infrastructure](infrastructure.md)
+- [Memory](memory.md)
+- [Retrieval-Augmented Generation](retrieval-augmented-generation.md)
+- [Agentic Ai](agentic-ai.md)
+
+## Leading Sources
+
+- Medium Email
+- TLDR Email
+
+## Representative Signals
+
+- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](../sources/us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md)
+- [The Git Commands I Run Before Reading Any Code](../sources/the-git-commands-i-run-before-reading-any-code-7e8ab0.md)
+- [The 2-Sigma Problem: The 1:1 Tutor](../sources/the-2-sigma-problem-the-1-1-tutor-9725b7.md)
+- [My Quest to Solve Bitcoin's Great Mystery](../sources/my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md)
+- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](../sources/meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md)
+
+## Map Links
+
+- [Rising Topics](../trends/rising-topics.md)
+- [Global AI Research](../maps/global-ai-research.md)

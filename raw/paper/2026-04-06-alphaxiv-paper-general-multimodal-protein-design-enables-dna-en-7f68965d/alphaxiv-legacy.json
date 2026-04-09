@@ -1,0 +1,186 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Jarrid Rector-Brooks",
+        "id": "01985c82-37ee-76df-83ad-39d047d6d27e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Th\u00e9ophile Lambert",
+        "id": "019d6b4a-4090-718f-a9db-f7bb9bbe67aa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Marta Skreta",
+        "id": "01985c82-456a-7cd8-82b0-86e5372892ef",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Daniel Roth",
+        "id": "01985c82-ae64-7dc3-bc50-4e8d127dc4fc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yueming Long",
+        "id": "019d6b4a-409a-7b7a-bcd0-80d626ec7101",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zi-Qi Li",
+        "id": "0199eadd-ca2e-7b9d-b132-414243bcfac6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xi Zhang",
+        "id": "01985c81-fb81-7b61-836e-281ca23731d9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Miruna Cretu",
+        "id": "01985c82-6301-7016-bad2-eb2634d62b10",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Francesca-Zhoufan Li",
+        "id": "019a01ff-637a-7493-9fe9-10bca0d59757",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tanvi Ganapathy",
+        "id": "01985c84-f9e7-7d57-a3c4-200e44f50dd7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Emily Jin",
+        "id": "01985c82-929a-763a-8208-ad420d973ef5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Avishek Joey Bose",
+        "id": "01985c81-e41c-7d25-84ec-104dfe1dae62",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jason Yang",
+        "id": "01985c82-7722-7586-949d-6fe2326a0c2b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kirill Neklyudov",
+        "id": "01985c81-e287-7c09-a247-5798b5a0e8e1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yoshua Bengio",
+        "id": "01985c81-d858-7b88-85e4-2a3cc3cee8c7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Alexander Tong",
+        "id": "01985c82-0ab6-7307-a415-68aef7e0a767",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Frances H. Arnold",
+        "id": "01985c82-340f-7e07-baf5-9a23ad7a3b32",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cheng-Hao Liu",
+        "id": "01985c82-37ee-7a24-a855-3b3c49ad8031",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 04:12:01 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 21:21:11 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b4a-4068-735f-a730-861aef6164e8",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 3,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 3,
+        "visits_count": {
+          "all": 65,
+          "last24Hours": 61,
+          "last30Days": 65,
+          "last7Days": 65,
+          "last90Days": 65
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/DISCO-design/DISCO"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05181"
+      },
+      "title": "General Multimodal Protein Design Enables DNA-Encoding of Chemistry",
+      "topics": [
+        "ai-for-genomics",
+        "ai-for-health",
+        "Computer Science",
+        "cs.LG",
+        "generative-models",
+        "geometric-deep-learning",
+        "inference-optimization",
+        "multi-modal-learning",
+        "sequence-modeling"
+      ],
+      "universal_paper_id": "2604.05181",
+      "updated_at": "Wed Apr 08 2026 04:12:01 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Evolution is an extraordinary engine for enzymatic diversity, yet the chemistry it has explored remains a narrow slice of what DNA can encode. Deep generative models can design new proteins that bind ligands, but none have created enzymes without pre-specifying catalytic residues. We introduce DISCO (DIffusion for Sequence-structure CO-design), a multimodal model that co-designs protein sequence and 3D structure around arbitrary biomolecules, as well as inference-time scaling methods that optimize objectives across both modalities. Conditioned solely on reactive intermediates, DISCO designs diverse heme enzymes with novel active-site geometries. These enzymes catalyze new-to-nature carbene-transfer reactions, including alkene cyclopropanation, spirocyclopropanation, B-H, and C(sp$^3$)-H insertions, with high activities exceeding those of engineered enzymes. Random mutagenesis of a selected design further confirmed that enzyme activity can be improved through directed evolution. By providing a scalable route to evolvable enzymes, DISCO broadens the potential scope of genetically encodable transformations. Code is available at this https URL.",
+      "created_at": "Wed Apr 08 2026 04:12:01 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b4a-40bb-725b-b58e-a4a97c9e127a",
+      "imageURL": "image/2604.05181v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 21:21:11 GMT+0000 (Coordinated Universal Time)",
+      "title": "General Multimodal Protein Design Enables DNA-Encoding of Chemistry",
+      "universal_paper_id": "2604.05181",
+      "updated_at": "Wed Apr 08 2026 04:12:01 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05181v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

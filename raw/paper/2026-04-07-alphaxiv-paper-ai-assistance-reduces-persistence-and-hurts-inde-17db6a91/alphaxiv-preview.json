@@ -1,0 +1,98 @@
+{
+  "abstract": "People often optimize for long-term goals in collaboration: A mentor or companion doesn't just answer questions, but also scaffolds learning, tracks progress, and prioritizes the other person's growth over immediate results. In contrast, current AI systems are fundamentally short-sighted collaborators - optimized for providing instant and complete responses, without ever saying no (unless for safety reasons). What are the consequences of this dynamic? Here, through a series of randomized controlled trials on human-AI interactions (N = 1,222), we provide causal evidence for two key consequences of AI assistance: reduced persistence and impairment of unassisted performance. Across a variety of tasks, including mathematical reasoning and reading comprehension, we find that although AI assistance improves performance in the short-term, people perform significantly worse without AI and are more likely to give up. Notably, these effects emerge after only brief interactions with AI (approximately 10 minutes). These findings are particularly concerning because persistence is foundational to skill acquisition and is one of the strongest predictors of long-term learning. We posit that persistence is reduced because AI conditions people to expect immediate answers, thereby denying them the experience of working through challenges on their own. These results suggest the need for AI model development to prioritize scaffolding long-term competence alongside immediate task completion.",
+  "author_info": [],
+  "authors": [
+    "Grace Liu",
+    "Brian Christian",
+    "Tsvetomira Dumbalska",
+    "Michiel A. Bakker",
+    "Rachit Dubey"
+  ],
+  "canonical_id": "2604.04721v2",
+  "first_publication_date": "2026-04-06T14:43:48.000Z",
+  "full_authors": [
+    {
+      "full_name": "Grace Liu",
+      "id": "01985c82-5a09-7583-a8b8-02842fe48b75",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Brian Christian",
+      "id": "01985c82-5a09-704e-9411-9844968a1bdc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tsvetomira Dumbalska",
+      "id": "01985c82-9b66-7058-a77e-7c780bfcbda7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Michiel A. Bakker",
+      "id": "01985c82-90b7-7cab-a2c2-d12a4f6e2110",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rachit Dubey",
+      "id": "01985c84-5010-7710-b992-3598f1c73c9c",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 4747,
+  "github_url": "https://github.com/eliahuhorwitz/Academic-project-page-template",
+  "id": "019d68da-b7ad-74a4-85fd-a8ee0cb5a575",
+  "image_url": "image/2604.04721v2.png",
+  "metrics": {
+    "public_total_votes": 5,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 56,
+      "last_7_days": 56
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d68da-b7ad-74a4-85fd-a8ee0cb5a575",
+  "paper_summary": {
+    "keyInsights": [
+      "AI assistance causally impairs subsequent unassisted task performance, leading to lower solve rates once the AI is removed.",
+      "AI assistance causally reduces persistence, as indicated by a higher propensity to skip problems when the aid is no longer available.",
+      "The detrimental effects on independent performance and persistence are consistent across different cognitive domains, including mathematical reasoning and reading comprehension, and are most pronounced when AI is used for direct answers."
+    ],
+    "originalProblem": [
+      "The profound impact of artificial intelligence on human cognition, learning, and collaboration has raised concerns about AI-induced \"deskilling\" and overreliance, often studied through correlational or small-sample evidence.",
+      "Current AI systems, unlike effective human mentors, prioritize providing instant, complete answers, which may neglect the long-term development of user capabilities and the importance of productive struggle.",
+      "There is a need for large-scale causal evidence to understand how readily available AI assistance affects users' subsequent independent performance and motivation to persist through challenges."
+    ],
+    "results": [
+      "In mathematical reasoning tasks, participants using AI showed a significantly lower solve rate (e.g., 0.57 vs. 0.73 in Experiment 1) and higher skip rate (e.g., 0.20 vs. 0.11) in the unassisted test phase compared to control.",
+      "For reading comprehension, the AI condition also demonstrated a significantly lower solve rate (0.76 vs. 0.89) and higher skip rate (0.08 vs. 0.01) when AI was removed.",
+      "Analysis of AI usage patterns revealed that participants who primarily used AI for direct solutions exhibited significantly worse unassisted performance and reduced persistence compared to control groups or those who used AI for hints."
+    ],
+    "solution": [
+      "Researchers conducted a series of large-scale randomized controlled trials (N=1,222) exposing participants to an AI assistant or a control condition for initial \"learning\" problems.",
+      "The methodology measured participants' independent problem-solving performance and persistence in a subsequent \"test\" phase where AI assistance was removed from the experimental group.",
+      "Experiments were conducted in two distinct cognitive domains: mathematical reasoning (fraction problems) and verbal reasoning (reading comprehension, SAT-style questions)."
+    ],
+    "summary": "A study employing randomized controlled trials revealed that utilizing AI assistance, even for a short period, diminishes individuals' ability to solve problems independently and reduces their persistence when the AI is no longer available across both mathematical and reading comprehension tasks."
+  },
+  "publication_date": "2026-04-07T03:41:15.000Z",
+  "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+  "topics": [
+    "agents",
+    "causal-inference",
+    "Computer Science",
+    "cs.AI",
+    "human-ai-interaction",
+    "machine-psychology",
+    "reasoning",
+    "statistical-learning"
+  ],
+  "universal_paper_id": "2604.04721",
+  "updated_at": "2026-04-07T16:50:57.581Z",
+  "version_id": "019d6bed-93c8-7c1c-ab64-f8b25e9cce78"
+}

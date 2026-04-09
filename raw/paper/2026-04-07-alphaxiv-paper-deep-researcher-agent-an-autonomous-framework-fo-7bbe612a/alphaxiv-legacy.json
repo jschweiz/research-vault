@@ -1,0 +1,77 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Xiangyue Zhang",
+        "id": "01985c83-7892-7dd7-b772-1a055fbd30ad",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 03:09:01 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 13:16:31 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b10-92eb-769f-9c51-eb9f03929799",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 3,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 3,
+        "visits_count": {
+          "all": 46,
+          "last24Hours": 39,
+          "last30Days": 46,
+          "last7Days": 46,
+          "last90Days": 46
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "\ud83d\udd25 An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory.",
+          "language": "Python",
+          "stars": 123,
+          "url": "https://github.com/Xiangyue-Zhang/auto-deep-researcher-24x7"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05854"
+      },
+      "title": "Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring",
+      "topics": [
+        "Computer Science",
+        "cs.AI"
+      ],
+      "universal_paper_id": "2604.05854",
+      "updated_at": "Wed Apr 08 2026 03:09:01 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We present \\textbf{Deep Researcher Agent}, an open-source framework that enables large language model (LLM) agents to autonomously conduct deep learning experiments around the clock. Unlike existing AI research assistants that focus on paper writing or code generation, our system addresses the full experiment lifecycle: hypothesis formation, code implementation, training execution, result analysis, and iterative refinement. The framework introduces three key innovations: (1) \\textbf{Zero-Cost Monitoring} -- a monitoring paradigm that incurs zero LLM API costs during model training by relying solely on process-level checks and log file reads; (2) \\textbf{Two-Tier Constant-Size Memory} -- a memory architecture capped at $\\sim$5K characters regardless of runtime duration, preventing the unbounded context growth that plagues long-running agents; and (3) \\textbf{Minimal-Toolset Leader-Worker Architecture} -- a multi-agent design where each worker agent is equipped with only 3--5 tools, reducing per-call token overhead by up to 73\\%. In sustained deployments spanning 30+ days, the framework autonomously completed 500+ experiment cycles across four concurrent research projects, achieving a 52\\% improvement over baseline metrics in one project through 200+ automated experiments -- all at an average LLM cost of \\$0.08 per 24-hour cycle. Code is available at this https URL.",
+      "created_at": "Wed Apr 08 2026 03:09:01 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b10-930f-74ef-8904-a30006aaeabe",
+      "imageURL": "image/2604.05854v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Tue Apr 07 2026 13:16:31 GMT+0000 (Coordinated Universal Time)",
+      "title": "Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring",
+      "universal_paper_id": "2604.05854",
+      "updated_at": "Wed Apr 08 2026 03:09:01 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05854v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

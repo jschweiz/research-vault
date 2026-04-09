@@ -1,0 +1,194 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Mingchen Zhuge",
+        "id": "01985c81-e4e5-7e8d-ad7b-67feb2639243",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Changsheng Zhao",
+        "id": "01985c81-e9de-7cd2-97f7-37911a555adf",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haozhe Liu",
+        "id": "01985c82-3e1b-79c3-8066-acef9d10ec7d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zijian Zhou",
+        "id": "01985c82-7387-7db0-af30-74c4a470c672",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuming Liu",
+        "id": "01985c82-13b1-7bcd-b7cd-fb3f4ccf91bf",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenyi Wang",
+        "id": "01985c81-e4e5-7a66-9093-ec678181e6ec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ernie Chang",
+        "id": "01985c81-e9de-7c31-be8f-4be706a79421",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gael Le Lan",
+        "id": "01985c82-a274-747b-8512-43fec54ffed3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Junjie Fei",
+        "id": "01985c82-953a-7cd5-bd52-a308b750de45",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenxuan Zhang",
+        "id": "01985c81-e5a9-7bd8-acf3-c274b2bb3827",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yasheng Sun",
+        "id": "01985c82-a6a4-7d90-a0a9-f232af26a3f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhipeng Cai",
+        "id": "01985c82-1e69-729f-b9a6-01f2cf0c5d97",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zechun Liu",
+        "id": "01985c81-d97f-75c9-8e91-7f959176ff96",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yunyang Xiong",
+        "id": "01985c81-dc26-76cf-8b89-33b61f2721b2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yining Yang",
+        "id": "01985c83-2ab2-7d08-88a8-15831eeb0c8c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuandong Tian",
+        "id": "01985c81-d858-715f-ac5a-19f59f2ac9fb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yangyang Shi",
+        "id": "01985c81-e9de-7316-9fe2-13aa4094bc4c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Vikas Chandra",
+        "id": "01985c81-dc26-70a4-a1ba-deac854116d3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "J\u00fcrgen Schmidhuber",
+        "id": "01985c81-d857-7e1e-8d3e-2ee51248d232",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 02:10:30 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 20:01:05 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d7001-5dc5-729c-97a1-de4d2734efad",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 0,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 0,
+        "visits_count": {
+          "all": 48,
+          "last24Hours": 48,
+          "last30Days": 48,
+          "last7Days": 48,
+          "last90Days": 48
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "A TensorFlow implementation of the Differentiable Neural Computer.",
+          "language": "Python",
+          "stars": 2529,
+          "url": "https://github.com/google-deepmind/dnc"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.06425"
+      },
+      "title": "Neural Computers",
+      "topics": [
+        "agents",
+        "Computer Science",
+        "cs.AI",
+        "cs.LG",
+        "generative-models",
+        "multi-modal-learning",
+        "neuro-symbolic-ai",
+        "reinforcement-learning",
+        "representation-learning",
+        "self-supervised-learning",
+        "video-understanding"
+      ],
+      "universal_paper_id": "2604.06425",
+      "updated_at": "Thu Apr 09 2026 02:10:30 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We propose a new frontier: Neural Computers (NCs) -- an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. Unlike conventional computers, which execute explicit programs, agents, which act over external execution environments, and world models, which learn environment dynamics, NCs aim to make the model itself the running computer. Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explicit reprogramming, and durable capability reuse. As an initial step, we study whether early NC primitives can be learned solely from collected I/O traces, without instrumented program state. Concretely, we instantiate NCs as video models that roll out screen frames from instructions, pixels, and user actions (when available) in CLI and GUI settings. These implementations show that learned runtimes can acquire early interface primitives, especially I/O alignment and short-horizon control, while routine reuse, controlled updates, and symbolic stability remain open. We outline a roadmap toward CNCs around these challenges. If overcome, CNCs could establish a new computing paradigm beyond today's agents, world models, and conventional computers.",
+      "created_at": "Thu Apr 09 2026 02:10:31 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d7001-5e40-7620-b12c-b768cd023787",
+      "imageURL": "image/2604.06425v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 20:01:05 GMT+0000 (Coordinated Universal Time)",
+      "title": "Neural Computers",
+      "universal_paper_id": "2604.06425",
+      "updated_at": "Thu Apr 09 2026 02:10:31 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.06425v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

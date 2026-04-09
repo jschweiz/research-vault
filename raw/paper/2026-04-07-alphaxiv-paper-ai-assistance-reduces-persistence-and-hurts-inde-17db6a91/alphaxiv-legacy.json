@@ -1,0 +1,107 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Grace Liu",
+        "id": "01985c82-5a09-7583-a8b8-02842fe48b75",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Brian Christian",
+        "id": "01985c82-5a09-704e-9411-9844968a1bdc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tsvetomira Dumbalska",
+        "id": "01985c82-9b66-7058-a77e-7c780bfcbda7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Michiel A. Bakker",
+        "id": "01985c82-90b7-7cab-a2c2-d12a4f6e2110",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Rachit Dubey",
+        "id": "01985c84-5010-7710-b992-3598f1c73c9c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 2,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 16:50:57 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 14:43:48 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d68da-b7ad-74a4-85fd-a8ee0cb5a575",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 56,
+          "last24Hours": 46,
+          "last30Days": 56,
+          "last7Days": 56,
+          "last90Days": 56
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "A project page template for academic papers. Demo at https://eliahuhorwitz.github.io/Academic-project-page-template/",
+          "language": "JavaScript",
+          "stars": 4747,
+          "url": "https://github.com/eliahuhorwitz/Academic-project-page-template"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04721"
+      },
+      "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+      "topics": [
+        "agents",
+        "causal-inference",
+        "Computer Science",
+        "cs.AI",
+        "human-ai-interaction",
+        "machine-psychology",
+        "reasoning",
+        "statistical-learning"
+      ],
+      "universal_paper_id": "2604.04721",
+      "updated_at": "Tue Apr 07 2026 16:50:57 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "People often optimize for long-term goals in collaboration: A mentor or companion doesn't just answer questions, but also scaffolds learning, tracks progress, and prioritizes the other person's growth over immediate results. In contrast, current AI systems are fundamentally short-sighted collaborators - optimized for providing instant and complete responses, without ever saying no (unless for safety reasons). What are the consequences of this dynamic? Here, through a series of randomized controlled trials on human-AI interactions (N = 1,222), we provide causal evidence for two key consequences of AI assistance: reduced persistence and impairment of unassisted performance. Across a variety of tasks, including mathematical reasoning and reading comprehension, we find that although AI assistance improves performance in the short-term, people perform significantly worse without AI and are more likely to give up. Notably, these effects emerge after only brief interactions with AI (approximately 10 minutes). These findings are particularly concerning because persistence is foundational to skill acquisition and is one of the strongest predictors of long-term learning. We posit that persistence is reduced because AI conditions people to expect immediate answers, thereby denying them the experience of working through challenges on their own. These results suggest the need for AI model development to prioritize scaffolding long-term competence alongside immediate task completion.",
+      "created_at": "Wed Apr 08 2026 07:10:25 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6bed-93c8-7c1c-ab64-f8b25e9cce78",
+      "imageURL": "image/2604.04721v2.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 03:41:15 GMT+0000 (Coordinated Universal Time)",
+      "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+      "universal_paper_id": "2604.04721",
+      "updated_at": "Wed Apr 08 2026 07:10:25 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v2",
+      "version_order": 2
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04721v2.pdf"
+    },
+    "verified_authors": []
+  }
+}

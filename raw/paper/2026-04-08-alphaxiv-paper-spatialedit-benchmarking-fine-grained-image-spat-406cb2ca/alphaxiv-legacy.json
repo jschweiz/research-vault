@@ -1,0 +1,153 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Yicheng Xiao",
+        "id": "01985c82-2ed6-77dc-826b-eaf0ca68a01c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenhu Zhang",
+        "id": "01985c83-7db2-732d-965b-5c252ff5389b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lin Song",
+        "id": "01985c82-2dc1-7674-b3f5-4bc6d7218635",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yukang Chen",
+        "id": "01985c81-d859-7308-951c-4ee4af1000d1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenbo Li",
+        "id": "01985c81-ec41-7a12-8904-d8c1bba883b4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nan Jiang",
+        "id": "01985c81-e0eb-76b2-a567-1214e5dc836b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianhe Ren",
+        "id": "01985c81-db50-77b0-a21f-554f9b4651c1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haokun Lin",
+        "id": "01985c81-eea9-75fe-8b18-9b650fb50326",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Huang",
+        "id": "01985c81-e287-7611-97f9-520fe63d0516",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haoyang Huang",
+        "id": "01985c82-3b7d-70eb-8bfe-23adee6b17f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiu Li",
+        "id": "01985c81-e774-7048-9dec-f5a2d4bbcf9e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Nan Duan",
+        "id": "01985c81-e1bb-76b4-a63f-47082b8e531f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaojuan Qi",
+        "id": "01985c81-ef78-7ce5-a8e1-3376d6c85aaf",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 2,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:48:47 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:54:42 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-b155-731f-9120-a8ca4f7ce509",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 7,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 7,
+        "visits_count": {
+          "all": 74,
+          "last24Hours": 49,
+          "last30Days": 74,
+          "last7Days": 74,
+          "last90Days": 74
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+          "language": "Python",
+          "stars": 44,
+          "url": "https://github.com/EasonXiao-888/SpatialEdit"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04911"
+      },
+      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+      "topics": [
+        "Computer Science",
+        "cs.CV",
+        "generative-models",
+        "geometric-deep-learning",
+        "image-generation",
+        "synthetic-data"
+      ],
+      "universal_paper_id": "2604.04911",
+      "updated_at": "Tue Apr 07 2026 02:48:47 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Image spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.",
+      "created_at": "Thu Apr 09 2026 00:33:27 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6fa8-81b1-7850-bf9b-aa94872dd1e4",
+      "imageURL": "image/2604.04911v2.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Apr 08 2026 04:54:06 GMT+0000 (Coordinated Universal Time)",
+      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+      "universal_paper_id": "2604.04911",
+      "updated_at": "Thu Apr 09 2026 00:33:27 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v2",
+      "version_order": 2
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf"
+    },
+    "verified_authors": []
+  }
+}

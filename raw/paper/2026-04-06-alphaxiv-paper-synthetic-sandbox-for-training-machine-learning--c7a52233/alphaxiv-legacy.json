@@ -1,0 +1,116 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Yuhang Zhou",
+        "id": "01985c81-fb81-7c85-a654-466649e21f45",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lizhu Zhang",
+        "id": "01985c83-c511-7483-a0ce-6581b5022e4d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yifan Wu",
+        "id": "01985c81-e774-7636-9444-1afc194287d4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiayi Liu",
+        "id": "01985c81-f818-7d4d-8c4e-b39dedf13cdb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiangjun Fan",
+        "id": "01985c82-ab49-71d4-8a49-44aed353fa45",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhuokai Zhao",
+        "id": "01985c82-520d-7b85-9100-92106ae9c4d5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hong Yan",
+        "id": "01985c82-4d83-7128-9df3-6db2a8fa9f01",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:19:29 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-7578-7816-83a9-18e52c67232c",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 13,
+        "questions_count": 0,
+        "total_votes": 3,
+        "upvotes_count": 13,
+        "visits_count": {
+          "all": 90,
+          "last24Hours": 48,
+          "last30Days": 90,
+          "last7Days": 90,
+          "last90Days": 90
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04872"
+      },
+      "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "cs.CL",
+        "cs.LG",
+        "fine-tuning",
+        "ml-systems",
+        "multi-agent-learning",
+        "reinforcement-learning",
+        "synthetic-data",
+        "tool-use",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.04872",
+      "updated_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "As large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.",
+      "created_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-75b7-7cd6-8911-58cd23ba0104",
+      "imageURL": "image/2604.04872v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Apr 06 2026 17:19:29 GMT+0000 (Coordinated Universal Time)",
+      "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+      "universal_paper_id": "2604.04872",
+      "updated_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04872v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Recent advances in prompt learning allow large language model agents to acquire task-relevant knowledge from inference-time context without parameter changes. For example, existing methods (like ACE or GEPA) can learn system prompts to improve accuracy based on previous agent runs. However, these methods primarily focus on single-agent or low-parallelism settings. This fundamentally limits their ability to efficiently learn from a large set of collected agentic traces. It would be efficient and beneficial to run prompt learning in parallel to accommodate the growing trend of learning from many agentic traces or parallel agent executions. Yet without a principled strategy for scaling, current methods suffer from quality degradation with high parallelism. To improve both the efficiency and quality of prompt learning, we propose Combee, a novel framework to scale parallel prompt learning for self-improving agents. Combee speeds up learning and enables running many agents in parallel while learning from their aggregate traces without quality degradation. To achieve this, Combee leverages parallel scans and employs an augmented shuffle mechanism; Combee also introduces a dynamic batch size controller to balance quality and delay. Evaluations on AppWorld, Terminal-Bench, Formula, and FiNER demonstrate that Combee achieves up to 17x speedup over previous methods with comparable or better accuracy and equivalent cost.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775419668000,
+  "googleCitationId": null,
+  "groupId": "019d65ff-90bb-7060-907e-fa43c4f93a58",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775419668000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04247",
+  "title": "Combee: Scaling Prompt Learning for Self-Improving Language Model Agents",
+  "type": "public",
+  "universalId": "2604.04247",
+  "uploader": null,
+  "versionId": "019d65ff-9120-778a-8fe3-1bc7ac1bd9c1",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

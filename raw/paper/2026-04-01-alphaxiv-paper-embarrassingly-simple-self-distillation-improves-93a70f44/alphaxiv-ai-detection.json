@@ -1,0 +1,1154 @@
+{
+  "fractionAi": 0.16347297,
+  "fractionAiAssisted": 0.04946369,
+  "fractionHuman": 0.78706336,
+  "headline": "Mostly Human, AI Detected",
+  "predictionShort": "Mixed",
+  "state": "done",
+  "updatedAt": 1775519856828,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.22325906,
+      "confidence": "Low",
+      "endIndex": 1436,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "Embarrassingly Simple Self-Distillation\nImproves Code Generation\nRuixiang Zhang\n\u2217 \nRichard He Bai\n\u2217 \nHuangjie Zheng\n\u2217 \nNavdeep Jaitly Ronan Collobert\nYizhe Zhang\n\u2217\nApple\nhttps://github.com/apple/ml-ssd\nCan a large language model (LLM) improve at code generation using only its own raw outputs, without a\nverifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation\n(SSD): sample solutions from the model with certain temperature and truncation configurations, then\nfine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from\n42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it\ngeneralizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking\nvariants. To understand why such a simple method can work, we trace these gains to a precision-exploration\nconflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way,\nsuppressing distractor tails where precision matters while preserving useful diversity where exploration\nmatters. Taken together, SSD offers a complementary post-training direction for improving LLM code\ngeneration.\nCorrespondence: {yizzhang,ruixiangz,richardbai,huangjie.zheng}@apple.com\nDate: April 2, 2026 \n\u2217 \nEqual contribution\nNo RL No Verifier\nNo Teacher No Execution\nGENERALIZES ACROSS\nInstruct Thinking\n"
+    },
+    {
+      "aiAssistanceScore": 0.30062017,
+      "confidence": "Low",
+      "endIndex": 2628,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1435,
+      "text": "\nLlama 8B \n+3.5\nQwen 4B \n+7.5 +3.3\nQwen 30B \n+12.9 +2.1\n+30%\nrelative pass@1 gain\nQwen3-30B-Instruct\nGAINS BY DIFFICULTY\nEasy \n+6.5\nMed \n+14.2\nHard \n+15.3\nSample\nT\ntrain \n\u2260 1\nFine-tune\nSFT on own outputs\nDecode\nEvaluate at T\neval \n0\n10\n20\n30\n40\n50\n60\n70\n+7.5\n+12.9\nOverall\n+10.7\n+14.2\nMedium\n+5.7\n+15.3\nHard\nLiveCodeBench V6 hatched = Base, solid = +SSD\n30B4B\nFigure 1 Simple self-distillation (SSD) is embarrassingly simple, yet yields substantial LiveCodeBench v6 gains across\nfive models spanning two families, three scales, with both instruct and thinking variants. Left: SSD samples from the base\nmodel with training-time decoding temperature T\ntrain\n, fine-tunes on its own raw outputs, and then decodes at evaluation time with\nT\neval\n; it uses no RL, verifier, teacher, or code execution environment. Right: LiveCodeBench v6 pass@1 for Qwen3-4B-Instruct\nand Qwen3-30B-Instruct on the Overall, Medium, and Hard splits (orange = 4B, blue = 30B; hatched = base, solid = +SSD). The\nfooter highlights the broader pattern: all five evaluated models improve, Qwen3-30B-Instruct gains +30% relative pass@1, and\nthe largest gains occur on harder problems.\n1\narXiv:2604.01193v1 [cs.CL] 1 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.30062017,
+      "confidence": "Low",
+      "endIndex": 42,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "Table 1 Comparison of training paradigms.\n"
+    },
+    {
+      "aiAssistanceScore": 0.2926458,
+      "confidence": "Low",
+      "endIndex": 1708,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 41,
+      "text": "\nMethod Dense Signal No Teacher No Verifier No Privileged Info\nSFT on External Data\nGRPO\nOn-Policy Distillation\nOn-Policy Self-Distillation\nSimple Self-Distillation (SSD) \nOurs\n1 Introduction\nAs LLMs are deployed to increasingly difficult coding tasks, the supply of high-quality supervised signal has become\na binding constraint: human-written solutions (Chen et al., 2021; Austin et al., 2021; Hendrycks et al., 2021a) are\nexpensive to produce, and synthetic data pipelines require either a stronger teacher model (Hinton et al., 2015; Kim\nand Rush, 2016; Hsieh et al., 2023; Agarwal et al., 2024) or execution-based verification for every training problem (Li\net al., 2022; Le et al., 2022; Singh et al., 2024; Liu et al., 2025). Teacher-based distillation also inherits the ceiling of the\nteacher, while reinforcement learning with verifiable reward remains operationally complex and can be unstable, even\nin recent RL-based reasoning and coding pipelines (He et al., 2026; Shao et al., 2024; DeepSeek-AI, 2025; OpenAI,\n2025). Unsupervised alternatives that use intrinsic rewards such as majority voting or entropy minimization (Zuo\net al., 2025; Agarwal et al., 2025) have shown early promise but face reward hacking and collapse under extended\ntraining (Zhang et al., 2025). This raises a natural question: can a model improve itself without leveraging any external\nlabeled data or verification at all?\nWe show the answer is yes. Our method, simple self-distillation (SSD), is embarrassingly simple: sample solutions\nfrom the base model with specified temperature and truncation, then fine-tune on those raw, unverified samples via\nstandard cross-entropy loss. "
+    },
+    {
+      "aiAssistanceScore": 0.200931,
+      "confidence": "Low",
+      "endIndex": 4003,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 1707,
+      "text": " This method requires only a set of problem prompts and the model itself: no human-\nlabeled solutions, no reference answers, no teacher model, no reward model, no verifier, no execution environment,\nand no reinforcement learning of any kind.\nSurprisingly, it works. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6 (Jain\net al., 2024), with especially large gains on hard problems. Coverage improvements are larger still: hard-problem\npass@5 rises from 31.1% to 54.1%, suggesting that SSD preserves useful exploration across solution branches\ninstead of only sharpening a single dominant mode. These gains are not model-specific: SSD generalizes across five\nmodels spanning two families, three scales, and both instruct and thinking models.\nWe study why such a simple method can work in the domain of code generation, which serves as a particularly\nuseful testbed because the task structure makes the underlying mechanism especially visible. Code interleaves fork\npositions, where several continuations are genuinely plausible and may correspond to different solution approaches,\nwith lock positions, where syntax and semantics leave little ambiguity but a low-probability distractor tail still remains.\nThese two context types make contradictory demands on decoding temperature T\neval\n. Lowering T\neval \nsecures locks\nbut starves forks of diversity, while raising it enables exploration at forks but lets distractors flood back in at locks. The\nbest global decoding setting is therefore necessarily a compromise; we call this tension the precision-exploration\nconflict.\nSSD can be understood through this lens. Training on temperature-shifted, truncated samples implicitly reshapes the\nmodel\u2019s distributions in a context dependent way (we formalize this later as support compression and within support\nreshaping in Equation (4)): it suppresses distractors most aggressively at locks while preserving useful diversity at\nforks. Evidence from controlled simulation and real-model analysis (Section 4.2), together with theoretical analysis\n(Section B), supports this account and explains why changing only the decoding settings cannot recover the gains.\nMore broadly, this suggests that existing code models contain capability not realized under fixed decoding alone.\n"
+    },
+    {
+      "aiAssistanceScore": 0.29431698,
+      "confidence": "Low",
+      "endIndex": 4116,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 4002,
+      "text": "\nOur contributions are threefold. First, we show that SSD can substantially improve code generation models\u2019 per-\n2"
+    },
+    {
+      "aiAssistanceScore": 0.29431698,
+      "confidence": "Low",
+      "endIndex": 1576,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "formance using only their own unverified outputs, without any external teacher, verifier, reward model, or labeled\nsolutions. Second, we identify the precision-exploration conflict and argue that it is the key mechanism behind SSD.\nThird, we support this mechanism with aligned evidence from controlled simulation, real-model analysis, and theory.\n2 Embarrassingly Simple Self-Distillation (SSD)\nData synthesis. We write T for the temperature and \u03c1 for the truncation configuration, namely the top-k and top-p\nused in decoding (see Section A for the precise decoding procedure). Given a frozen pre-trained LLM p\n\u03b8 \nand a set of\nprompts X , we sample N candidate solutions per problem:\ny \u223c Decode\nT\ntrain\n, \u03c1\ntrain\n\u0002\np\n\u03b8 \n(\u00b7 | x)\n\u0003 \n(1)\nThe solutions are not verified in any way: no execution, no test cases, no filtering by correctness. The raw outputs form\nthe simple self-distillation dataset D\nSSD\n. In practice, N =1 (a single sample per prompt) already suffices (Section 3).\nTraining. We fine-tune the model on D\nSSD \nwith standard supervised fine-tuning (SFT):\nL(\u03b8) = \u2212E\n(x,y)\u223cD\nSSD\n|y|\nX\nt=1\nlog p\n\u03b8 \n(y\nt \n| x, y\n<t\n) (2)\nInference. The fine-tuned model p\n\u03b8\n\u2217 \nis deployed with evaluation-time decoding configuration (T\neval\n, \u03c1\neval\n):\n\u02c6y \u223c Decode\nT\neval\n, \u03c1\neval\n\u0002\np\n\u03b8\n\u2217 \n(\u00b7 | x)\n\u0003 \n(3)\n3 Experiments\n3.1 Experimental Setup\nModels. We evaluate SSD on five models spanning two families (Llama, Qwen), three scales (4B\u201330B), and two\nreasoning styles (instruct, thinking): Llama-3.1-8B-Instruct (dense, 8B), Qwen3-4B-Instruct-2507 (dense, 4B;\nhereafter Qwen3-4B-Instruc"
+    },
+    {
+      "aiAssistanceScore": 0.2671514,
+      "confidence": "Low",
+      "endIndex": 3101,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 1575,
+      "text": "ct), Qwen3-4B-Thinking-2507 (dense, 4B; hereafter Qwen3-4B-Thinking), Qwen3-30B-\nA3B-Instruct-2507 (MoE, 30B total / 3B active; hereafter Qwen3-30B-Instruct), and Qwen3-30B-A3B-Thinking-\n2507 (MoE, 30B / 3B active; hereafter Qwen3-30B-Thinking). We apply SSD to each of these base models.\nData synthesis. We use the seed subset of the rSTARcoder dataset (Liu et al., 2025), de-duplicated to yield \u223c10K\nunique competitive programming problems. For each prompt we sample a single solution from the base model using\nthe per-model generation decoding configuration in Table 3. We apply only minimal syntactic filtering to remove\nempty responses and single line stubs, meaning there is absolutely no correctness signal used. Generation uses\nvLLM (Kwon et al., 2023) with 128K maximum sequence length limit.\nTraining. We fine-tune with Megatron-LM\n1 \non 8\u00d7B200 GPUs (EP=8 for MoE models), using AdamW with cosine\ndecay (peak LR 5 \u00d7 10\n\u22126\n), global batch size 32, sequence length 65,536, and 2,500 iterations for instruct models\nand 300 iterations for thinking models. The learning rate is warmed-up with 250 and 50 iterations, respectively.\nEvaluation. Our primary benchmark is LiveCodeBench v6 (LCB v6; Feb\u2013May 2025, following the version split\nadopted by recent model releases \n2\n; stratified by easy/medium/hard). We report LCB v5 (Aug 2024\u2013Feb 2025,\nfollowing the version split adopted by rSTARcoder (Liu et al., 2025)) as a secondary confirmation. The primary metric\nis pass@1; we also report pass@5 and per-difficulty breakdow"
+    },
+    {
+      "aiAssistanceScore": 0.32526296,
+      "confidence": "Low",
+      "endIndex": 3354,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 3100,
+      "text": "wns. Base-model results use each model\u2019s officially\nrecommended sampling parameters (Table 4); SSD models are evaluated with the decoding settings in Table 3. Full\nexperimental details, prompt formatting, and decoding settings are given in Section C.1.\n3"
+    },
+    {
+      "aiAssistanceScore": 0.32526296,
+      "confidence": "Low",
+      "endIndex": 799,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "Table 2 SSD improves every evaluated model on LiveCodeBench, with the largest gains on medium and hard problems.\nResults on LCB v6 and LCB v5, broken down by difficulty and grouped by reasoning style (thinking vs. instruct). Within each model\npair, the first row is the base model and the second is +SSD; cell shading encodes the change relative to the base row (green =\nimprovement, red = decrease).\nLiveCodeBench v6\n02/2025 \u2013 05/2025\nLiveCodeBench v5\n08/2024 \u2013 02/2025\nPASS@1 PASS@5 PASS@1 PASS@5\nALL EASY MED HARD ALL EASY MED HARD ALL EASY MED HARD ALL EASY MED HARD\nTHINKING\nQwen3-4B-Thinking \n54.5 97.4 59.2 29.7 67.5 100.0 75.4 45.8 59.6 98.0 69.5 31.4 70.3 98.9 80.1 47.5\n+ SSD \n57.8\n+3.3\n98.7\n+1.3\n62.8\n+3.6\n33.8\n+4.1\n71.4\n+3.9\n100.0 77.3\n+1.9\n53.1\n+7.3\n63.1\n+3.5\n98.5\n+0.5\n74.1\n+4.6\n35.7\n+"
+    },
+    {
+      "aiAssistanceScore": 0.29176566,
+      "confidence": "Low",
+      "endIndex": 1300,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 798,
+      "text": "+4.3\n74.7\n+4.4\n98.9 86.8\n+6.7\n52.8\n+5.3\nQwen3-30B-Thinking \n66.1 99.8 73.0 41.5 76.7 100.0 84.7 59.7 69.1 98.6 81.7 43.9 79.8 98.9 91.4 61.1\n+ SSD \n68.2\n+2.1\n100.0\n+0.2\n76.4\n+3.4\n46.7\n+5.2\n80.2\n+3.5\n100.0 87.1\n+2.4\n65.8\n+6.1\n69.9\n+0.8\n98.4\n\u22120.2\n82.9\n+1.2\n44.9\n+1.0\n80.5\n+0.7\n98.9 91.8\n+0.4\n62.4\n+1.3\nINSTRUCT\nLlama-3.1-8B-Instruct \n12.7 46.8 5.4 0.0 23.0 76.7 15.1 0.8 12.7 45.1 4.1 0.7 20.8 64.7 11.6 2.8\n+ SSD \n16.2\n+3.5\n52.6\n+5.8\n10.0\n+4.6\n1.6\n+1.6\n24.0\n+1.0\n73.3\n\u22123.4\n17.1\n+2.0\n3.3\n+2.5\n13.5\n+0.8\n4"
+    },
+    {
+      "aiAssistanceScore": 0.17910887,
+      "confidence": "Medium",
+      "endIndex": 1803,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 1299,
+      "text": "45.2\n+0.1\n5.9\n+1.8\n1.3\n+0.6\n21.9\n+1.1\n67.1\n+2.4\n12.3\n+0.7\n3.7\n+0.9\nQwen3-4B-Instruct \n34.0 79.7 34.4 10.5 41.0 90.0 40.5 16.5 34.3 85.4 28.4 10.1 45.4 96.0 45.4 17.5\n+ SSD \n41.5\n+7.5\n86.5\n+6.8\n45.1\n+10.7\n16.2\n+5.7\n56.8\n+15.8\n98.1\n+8.1\n59.7\n+19.2\n34.1\n+17.6\n45.7\n+11.4\n90.2\n+4.8\n52.1\n+23.7\n16.6\n+6.5\n61.9\n+16.5\n98.8\n+2.8\n73.1\n+27.7\n33.6\n+16.1\nQwen3-30B-Instruct \n42.4 84.5 46.8 18.3 53.5 93.3 56.8 31.1 45.8 91.2 49.8 17.7 58.7 96.1 69.2 30.6\n+ SSD \n55.3\n+12.9\n91.0\n+6.5\n61.0\n+14.2\n33.6\n+15.3\n71.6\n+18.1\n9"
+    },
+    {
+      "aiAssistanceScore": 0.08943696,
+      "confidence": "Medium",
+      "endIndex": 2842,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 1802,
+      "text": "99.9\n+6.6\n76.4\n+19.6\n54.1\n+23.0\n54.3\n+8.5\n92.9\n+1.7\n64.1\n+14.3\n25.9\n+8.2\n70.7\n+12.0\n97.6\n+1.5\n83.0\n+13.8\n47.2\n+16.6\n3.2 SSD Improves Code Generation Across the Board\nSSD yields large gains on LiveCodeBench. On LCB v6, SSD improves Qwen3-30B-Instruct from 42.4% to 55.3%\npass@1 (+12.9pp, +30.4% relative). The gains are broad across the evaluated models: Llama-8B improves by +3.5pp,\nQwen3-4B-Instruct by +7.5pp, Qwen3-4B-Thinking by +3.3pp, and Qwen3-30B-Thinking by +2.1pp. Substantial\ngains also appear on the larger 374-problem LCB v5, where Qwen3-30B-Instruct improves from 45.8% to 54.3%\npass@1 (+8.5pp). For a recipe based only on self-generated, unverified solutions and standard supervised fine-tuning,\nthese are consistently strong improvements.\nSSD helps most on harder problems. For Qwen3-30B-Instruct on LCB v6, pass@1 improves by +6.5pp on easy\nproblems, +14.2pp on medium problems, and +15.3pp on hard problems. The same concentration appears at pass@5,\nwhere the gains are +6.6pp on easy, +19.6pp on medium, and +23.0pp on ha"
+    },
+    {
+      "aiAssistanceScore": 0.1605302,
+      "confidence": "Medium",
+      "endIndex": 4341,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 2841,
+      "text": "ard. A similar pattern is visible in the\nQwen thinking models: for Qwen3-4B-Thinking, hard pass@1 improves by +4.1pp versus +1.3pp on easy problems,\nand for Qwen3-30B-Thinking, the corresponding gains are +5.2pp versus +0.2pp. Across Table 2, the medium and\nhard splits consistently account for the largest absolute gains.\nSSD does not collapse diversity. A second clear pattern in the table is that the gains are often larger at pass@5 than\nat pass@1, indicating that SSD preserves and even improves generation diversity. Across the Qwen models on LCB v6,\nthe pass@5 gain exceeds the corresponding pass@1 gain: +15.8pp versus +7.5pp for Qwen3-4B-Instruct, +3.9pp\nversus +3.3pp for Qwen3-4B-Thinking, +18.1pp versus +12.9pp for Qwen3-30B-Instruct, and +3.5pp versus +2.1pp\nfor Qwen3-30B-Thinking. For Qwen3-30B-Instruct, the same asymmetry is even larger on the hard subset, where\npass@5 rises by +23.0pp while pass@1 rises by +15.3pp; on LCB v5, pass@5 likewise improves more than pass@1\n(+12.0pp versus +8.5pp). These larger pass@5 gains are consistent with improved diversity across generation\nsamples.\nBecause SSD is trained only on competitive-programming data, a natural concern is that it may hurt performance\noutside that domain. To test this, we evaluate the same trained model out of the box on benchmarks for math reasoning,\ngeneral code generation, and code understanding, without any additional training or adaptation. Performance remains\nbroadly stable for the 30B models, see Section C"
+    },
+    {
+      "aiAssistanceScore": 0.17947587,
+      "confidence": "Low",
+      "endIndex": 4439,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 4340,
+      "text": "C.3.\n1\nhttps://github.com/NVIDIA/Megatron-LM\n2\nhttps://huggingface.co/Qwen/Qwen3-4B-Instruct-2507\n4"
+    },
+    {
+      "aiAssistanceScore": 0.17947587,
+      "confidence": "Low",
+      "endIndex": 602,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "Pass@1 ALL Pass@1 HARD Pass@5 ALL Pass@5 HARD\n30B Instruct\n4B Instruct\n4B Thinking\n36\n43\n49\n56\n63 \n+11.8pp\n14\n21\n28\n34\n41 \n+13.3pp\n52\n59\n66\n72\n79 \n+15.0pp\n35\n41\n48\n55\n62 \n+19.4pp\n25\n31\n37\n42\n48 \n+5.8pp\n0\n6\n11\n17\n22 \n+4.4pp\n41\n46\n52\n57\n63 \n+11.5pp\n18\n24\n29\n35\n40 \n+13.6pp\n48\n51\n55\n58\n62\n0.5 0.7 0.9 1.1 1.3\n+2.2pp\n24\n27\n31\n34\n38\n0.5 0.7 0.9 1.1 1.3\n+2.2pp\n61\n65\n68\n72\n75\n0.5 0.7 0.9 1.1 1.3\n+1.5pp\n43\n46\n50\n54\n57\n0.5 0.7 0.9 1.1 1.3\n+2.6pp\nEvaluation Temperature T\neval \nBase sweep\nFigure 2 SSD outperforms the best point in the evaluated base-model decoding sweep within standard global decoding\npolici"
+    },
+    {
+      "aiAssistanceScore": 0.205767,
+      "confidence": "Medium",
+      "endIndex": 2454,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 601,
+      "text": "ies. Each panel shows one model (30B-Instruct, 4B-Instruct, 4B-Thinking) and one metric (pass@1 or pass@5); amber\ncurves sweep base-model evaluation temperature while blue horizontal lines mark SSD results from Table 2. Solid shading marks\nthe margin over all problems; outlined (dashed-border) shading marks the margin on hard problems.\n3.3 Global Decoding Policies Cannot Match SSD\nCould the gains in Table 2 be recovered without training, by tuning only evaluation-time decoding on the original base\nmodel? We test this within the standard family of global temperature and truncation (T\neval\n, \u03c1\neval\n) decoding policies,\nsweeping evaluation-time decoding settings on the base model and comparing the best evaluated base-model\nconfiguration to SSD. For this comparison, we follow the officially recommended sampling settings for each model\n(see Table 4) and sweep temperature extensively to probe the strongest decode-only performance achievable by the\nbase model. Figure 2 visualizes representative temperature sweeps and the remaining gap to SSD.\nTemperature tuning yields only modest gains on the base model. The base-model sweep curves are strikingly\nflat: for Qwen3-30B-Instruct, pass@1 ranges from 41.3% to 43.5% across the evaluated temperatures, a spread of\nonly 2.2 pp. The other models show similarly narrow ranges (1.5\u20133.0 pp; Figure 2).\nSSD still outperforms the best-tuned base model, especially on hard problems and at pass@5. Comparing\nSSD against the best-tuned base model, pass@1 advantages remain: +11.8 pp for Qwen3-30B-Instruct, +5.8 pp\nfor Qwen3-4B-Instruct, +2.2 pp for Qwen3-4B-Thinking, and +1.1 pp for Qwen3-30B-Thinking. The gap widens\non hard problems: for Qwen3-30B-Instruct, SSD exceeds the best-tuned base model by +13.3 pp on hard pass@1\nand +19.4 pp on hard pass@5, both larger than the corresponding all-problem margi"
+    },
+    {
+      "aiAssistanceScore": 0.19440271,
+      "confidence": "Medium",
+      "endIndex": 3214,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 2453,
+      "text": "ins. This pattern holds across all\nmodels, the SSD advantage is consistently largest on hard problems at pass@5. These persistent margins indicate that\nSSD produces changes in the model itself in ways no decoding configuration can replicate, an effect we investigate\nin Section 4.\n3.4 How SSD Hyperparameters Interact\nTo understand the best configuration of training and inference hyperparameters for SSD, we performed a grid search\nover T\ntrain\n, and evaluated each checkpoint at multiple T\neval\n, with Qwen3-30B-Instruct on LCB v6. We compare two\nregimes: a no-truncation ablation, where temperature composition is cleanest, and the full truncated setting, where\ntraining-time truncation provides an additional gain channel. Full details are in Section C.2.\n5"
+    },
+    {
+      "aiAssistanceScore": 0.19440271,
+      "confidence": "Medium",
+      "endIndex": 346,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "baseline 42.4%\n46.0%\n49.5%\n49.7%\n0.5 1.0 1.5 2.0 2.5 3.0 3.5\n10\n20\n30\n40\n50\nT\ntrain \n\u00d7 T\neval\np\na\nss\n@1\n \n(\n%\n)\nno trunc.\ntop-k=5\ntop-k=10\nTruncation and no-truncation configurations \u2014 pass@1 vs T\ntrain \n\u00d7 T\neval\na\n54.8 55.2 55.5 55.3 55.8 55.4 56.0 56.0 55.5 55.5 56.2 55.7\n55.3 56.3 55.6 55.2 55.6 55.7 55.4 56.5 54.8 55.7 56.1 55.3\n55.5 55.9 5"
+    },
+    {
+      "aiAssistanceScore": 0.10104674,
+      "confidence": "Medium",
+      "endIndex": 731,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 345,
+      "text": "56.2 55.7 56.3 55.9 56.0 56.0 56.0 56.6 56.0 55.2\n55.0 55.9 55.3 55.9 55.6 56.1 56.0 55.6 56.7 56.5 55.3 55.0\n55.7 55.2 55.3 55.8 54.6 55.7 55.9 56.0 55.1 55.7 55.2 54.6\n55.5 56.0 57.8 55.8 55.6 55.3 56.0 56.0 55.2 54.8 54.7 54.3\n56.9 55.5 56.3 56.0 56.3 55.7 55.7 55.8 55.3 55.0 54.7 53.4\n56.0 56.0 56.3 56.3 56.8 55.6 57.8 55.2 54.6 53.8 54.0 52.3\n56.3 57.0 56.4 56.6 56.6 55.6 54.5 5"
+    },
+    {
+      "aiAssistanceScore": 0.32475662,
+      "confidence": "Medium",
+      "endIndex": 1497,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 730,
+      "text": "54.9 54.9 54.7 51.8 51.3\n56.3 56.8 56.2 56.4 56.4 55.5 54.4 55.2 53.8 52.2 51.7 49.5\n55.9 55.7 56.9 55.2 54.9 54.9 55.0 53.4 52.0 51.5 50.5 49.5\n56.1 55.5 56.2 55.2 54.9 54.9 55.6 52.9 52.3 49.3 49.1 48.2\n56.0 56.0 55.7 55.3 54.8 55.1 52.6 52.7 50.8 51.7 49.3 47.2\n0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6\nT\neval\n0.6\n0.7\n0.8\n0.9\n1\n1.1\n1.2\n1.3\n1.4\n1.5\n1.6\n1.7\n1.8\nT\ntr\nai\nn\n57.8\n55.0\n47.2\nSSD temperature sweep \u2014 Qwen3-4B-Thinking, best pass@1\nb\nFigure 3 Training and evaluation temperatures compose through a broad effective-temperature band, while truncation\nraises the achievable pass@1 within that band. (a) Representative Qwen3-30B-Instruct sweeps on LCB v6 against T\neff \n=\nT\ntrain\nT\neval\n: gray = no truncation, amber/green = truncated training-time sampli"
+    },
+    {
+      "aiAssistanceScore": 0.3065047,
+      "confidence": "Low",
+      "endIndex": 3230,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1496,
+      "text": "ing. Dots are runs, curves are quadratic fits, and\nthe dashed line marks the 42.4% baseline. (b) Qwen3-4B-Thinking on LCB v6 with truncation, shown as best pass@1 across\niterations over (T\ntrain\n, T\neval\n).\nWithout truncation, effective temperature organizes performance. T\ntrain \nand T\neval \ntrade off each other: T\ntrain\ncontrols how strongly SSD reshapes the model distribution, while T\neval \ncontrols how aggressively decoding exploits\nthat reshaped distribution. Define T\neff \n= T\ntrain \n\u00b7 T\neval\n; we show that T\neff \ngoverns performance. To isolate this, we run a\nsearch with only temperature scaling (T\ntrain \n\u2208 {0.5, 0.7, 1.0, 1.5, 2.0} and T\neval \n\u2208 [0.6, 1.5]; Figure 3a,Figure 10), and\nno truncation \u03c1\ntrain\n. In this regime, the two temperatures compose cleanly: configurations are well governed by T\neff\n,\nwith R\n2\n=0.75 and a quadratic peak near T\neff \n\u2248 1.2, as formalized in Section B.3. This also explains why higher T\ntrain\nmakes the model more responsive to T\neval\n: stronger training-time reshaping creates more room for evaluation-time\ndecoding to trade off precision against diversity. Intuitively, higher T\neff \nis preferred to have more diverse generation as\nlong as the generation is not broken.\nWith truncation, the performance ceiling rises. When a nontrivial training-time truncation configuration \u03c1\ntrain \nis used\nduring SSD data generation, the truncated runs (amber/green in Figure 3a) remain above the baseline across a wider\nrange of T\neff \nthan the no-truncation runs (gray), though the exact collapse onto T\neff \nno longer holds. This is expected:\ntraining-time truncation adds a second improvement channel on top of temperature composition by suppressing low-\nprobability tails during data synthes"
+    },
+    {
+      "aiAssistanceScore": 0.34374198,
+      "confidence": "Low",
+      "endIndex": 4595,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 3229,
+      "text": "sis. Among the truncated runs, the best observed setting uses T\ntrain\n=2.0, T\neval\n=1.1,\nand training-time top-k=10, reaching 49.7% pass@1 (+7.3 pp), above all no-truncation results. As expected, the\noptimal T\neff \ngenerally shifts towards a higher temperature with more stringent truncation. Similarly, the diagonal-band\npattern appears for Qwen3-4B-Thinking (Figure 3b,Figure 11), confirming that the temperature-composition structure\nextends to thinking models.\n4 Why SSD Works\nThe gains above raise a natural question: what changes inside the model during simple self-distillation, and why can\u2019t\nthe same effect be achieved by simply adjusting how the original model decodes? Our hypothesis is that the answer\nlies in a structural conflict in generation. Some tokens demand precision, others demand exploration, and any fixed\ndecoding configuration must compromise between them. SSD helps by reshaping token distributions in a way that\nalleviates this conflict. We validate this mechanism in three steps: a controlled toy simulation, real model analysis, and\ntheoretical decomposition.\n4.1 The Precision-Exploration Conflict Hypothesis\nWe will take code generation as an example. At certain positions, syntax and context leave almost no ambiguity:\nafter if n ==, the model must produce a specific value, and it knows which one, yet a long tail of syntactically\n6"
+    },
+    {
+      "aiAssistanceScore": 0.34374198,
+      "confidence": "Low",
+      "endIndex": 421,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "solution.py\ndef solve(arr):\n1\nif len(arr) <= 1:\n2\nreturn arr\n3\nmid = len(arr) // 2\n4\nleft = solve(arr[: mid ])\n5\nright = solve(arr[ mid :])\n6\nreturn merge (left, right)\n7\nQUICK SORT\npivot = arr[-1]\nleft = [x for x in arr if x < pivot ]\nright = [x for x in arr if x > pivot ]\nINSERTION SORT\nfor i in range(1, len(arr)):\nkey = arr[i]\nwhile j >= 0 and arr[j] > key :\nBUILT-IN\narr.s ort()\nreturn arr\nmid\n \n=\npivot\nfor\n \ni\na\nr"
+    },
+    {
+      "aiAssistanceScore": 0.5705108,
+      "confidence": "Low",
+      "endIndex": 2402,
+      "label": "AI-Generated",
+      "pageIndex": 6,
+      "startIndex": 420,
+      "text": "rr\n.\ns\nsorted\nwhile\ndef\nreturn\nHEADTAIL\nlow exploration\nmid\nn\nlen\ni\n0\nk\n-1\nh\na\nlf\nend\nj\nHEADTAIL\nLow T\neval\nmid\n \n=\npivot\nfor\n \ni\na\nrr\n.\ns\nsorted\nwhile\ndef\nreturn\nHEADTAIL\nmid\nn\nlen\ni\n0\nk\n-1\nh\na\nlf\nend\nj\nHEADTAIL\nlow precision\nHigh T\neval\nFork exploration-bound\nLock precision-bound\nFigure 4 A single evaluation temperature cannot satisfy both exploration at forks and precision at locks. Left: a sorting\nexample in which the algorithm-choice token is a fork position (rust-orange), while the later uses of mid are lock positions (blue);\ngray ghost branches indicate other valid algorithms that could have been taken at the fork. Right: token distributions for the same\ntwo context types under low and high T\neval\n, with head and tail mass shown explicitly. Low T\neval \nkeeps the lock precise but collapses\nthe fork\u2019s viable head (low exploration); high T\neval \nrestores exploration at the fork but revives the lock\u2019s distractor tail (low precision).\nplausible alternatives still carries nontrivial probability mass. At other positions, the distribution is genuinely spread\nacross multiple viable continuations: when beginning the body of a function, the model might open with a for loop, a\nrecursive call, or a data-structure initialization, each leading to a fundamentally different solution. We hypothesize that\nthese two kinds of positions make fundamentally contradictory demands on the decoding configuration (Figure 4).\nWe call the first a lock: a position where the distribution is sharply peaked, with very few tokens carrying most of the\nmass and a long distractor tail carrying the rest. We call the second a fork (Bigelow et al., 2025; Wang et al., 2025b):\na position where the distribution is spread across multiple plausible tokens that can lead to meaningfully different\ndownstream continuations. Locks demand precision: commit to the dominant token and suppress the tail. Forks\ndemand exploration: spread mass across viable alternatives to avoid missing the good pat"
+    },
+    {
+      "aiAssistanceScore": 0.6305517,
+      "confidence": "Low",
+      "endIndex": 3686,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 6,
+      "startIndex": 2401,
+      "text": "ths.\nUnder this view, inference temperature T\neval \nis what makes the conflict irreconcilable. Scaling by T\neval \nflattens or\nsharpens the entire distribution p\nT \n(v) \u221d p(v)\n1/T \n: higher T\neval \ncompresses probability gaps, pulling tokens toward\nequal footing; lower T\neval \nwidens them, amplifying the dominant peak. There is a dilemma. Lowering temperature\nsharpens the peak at a lock, suppressing distractors, but starves a fork of the diversity it needs. Raising temperature\ndiversifies the head at a fork, giving lower-ranked correct continuations a chance, but destabilizes locks as the\ndistractor tail regains mass. The best global setting, applied to every context in the sequence, is therefore necessarily\na compromise: the temperature that helps forks is precisely what lets distractors resurface at locks.\nIf this picture is right, then SSD should not sharpen the model uniformly: it should suppress distractor tails at locks\nwhile leaving more useful room for exploration at forks.\n4.2 How SSD Reshapes a Model: Toy Simulation and Real-Model Analysis\nWe now test that prediction in two settings. We begin with a toy environment where the conflict is explicit and success\ncan be computed exactly. We then ask whether the same qualitative pattern appears in a real model.\n7"
+    },
+    {
+      "aiAssistanceScore": 0.6305517,
+      "confidence": "Low",
+      "endIndex": 783,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "1 5 10 25 50 100\nToken rank\nhigh exploration\nF\nor\nk\n1 5 25 50 100\nToken rank\nhigh precision\nL\no\nck\nFigure 5 SSD turns forks into plateaus and locks into spikes. Tokens are ranked by probability. Hatched bars and dashed\ncurves show the base model; solid bars and solid curves show the model after SSD; the red dashed cutoff marks the support\nretained during SSD. (a) Fork-like state: the diffuse tail is trimmed, but several top continuations remain and become more evenly\nweighted, forming a broad plateau over viable branches. (b) Lock-like state: the same rule trims the tail much more aggressively\nand concentrates mass on the dominant token, producing a sharper spike.\nControlled simulation. We begin with a minimal environment that contains exactly the structure in our hypothes"
+    },
+    {
+      "aiAssistanceScore": 0.55164474,
+      "confidence": "Low",
+      "endIndex": 3188,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 782,
+      "text": "sis.\nSuccessful trajectories must pass through one fork state and then three lock states before reaching PASS; any wrong\ndecision leads to FAIL. At the fork, several continuations are genuinely plausible. At each lock, one token is correct but\na distractor tail remains. Because every transition is specified explicitly, the probability of success can be computed in\nclosed form for any decoding temperature (full details are given in Section C.4).\nEven in this minimal setting, the same dilemma appears. Sweeping a single global decoding temperature on the\nbase model recovers the same tradeoff as in Section 4.1: colder decoding protects the locks but starves the fork,\nwhile hotter decoding helps the fork but breaks the locks (Figure 14). The base model therefore operates at a narrow\ncompromise.\nIn the toy, SSD changes that compromise by reshaping the two regimes differently (Figure 5). At lock-like states, the\nlow-probability tail is stripped away, so the dominant token becomes much harder to dislodge. At fork-like states,\nseveral plausible continuations remain near the top, but the useless tail is reduced and the surviving options become\nmore even. These local changes widen the viable decoding regime itself: after SSD, the best decoding temperature\nshifts much higher, and success probability rises substantially.\nThe synergy between training and decoding. The toy also shows why training and decoding are complementary\nrather than interchangeable. Training does not solve the fork by itself; it makes the locks less fragile. Decode-only\ntemperature tuning does not clean up the locks by itself; it spends precision before it gains enough exploration at the\nfork. The improvement comes only when both stages act together. Training changes the distribution so the locks are\nsafer; decoding then uses that extra room to explore the fork.\nReal-model evidence. We now look for the same pattern from the base Qwen3-30B-Instruct model and its SSD\ncounterpart on LCB v6. The same two signatures appear. Relative to the base model, SSD reaches decoding with a\ncleaner head and a weaker distractor tail.\nFigure 6a shows the first effect directly. When tokens are ordered by probability, cumulative mass rises more quickly\nfor SSD through the top ranks. Less probability is left behind in diffuse distractor tails before decoding even begins.\nThis is the real-model analogue of the lock side of the t"
+    },
+    {
+      "aiAssistanceScore": 0.49317953,
+      "confidence": "Low",
+      "endIndex": 3772,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 3187,
+      "text": "toy.\nFigure 6b\u2013d show the second effect. Under the same evaluation-time decoding temperature and truncation\n(T\neval\n, \u03c1\neval\n), raising T\neval \nchanges the base model much less: the surviving set stays close to a singleton, so tempera-\nture has limited leverage. SSD behaves differently. As temperature rises, several top continuations remain viable, and\nthe probabilities among those surviving options spread out much more strongly. This advantage persists even when\nthe two models place similar probability mass in their top 20 tokens. The real-model evidence therefore matches the\n8"
+    },
+    {
+      "aiAssistanceScore": 0.49317953,
+      "confidence": "Low",
+      "endIndex": 271,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "1\u221210\u207b\u00b9\n1\u221210\u207b\u00b2\n1\u221210\u207b\u00b3\n1\u221210\u207b\u2074\n1\u221210\u207b\u2075\n1\u221210\u207b\u2076\nC\numul\na\nt\ni\nv\ne\n \nm\na\nss\n1 10 20 30 40 50 60\nToken rank\na\n1.0\n1.5\n2.0\n2.5\n3.0\nA\nv\ne\nr\nage\n \nsurv\ni\nv\ni\nn\ng\n \nto\nke\nns\n0.4 0.7 1.0 1.4 2.0\nT\neval\nb\n0.00\n0.20\n0.40\n0.60\n0.80\n1.00\nE\nntropy\n \naf\nt\ne\nr\n \nfi\nlt\ne\nr\ni\nn\ng\n \n(\nn\na\nts\n)\n"
+    },
+    {
+      "aiAssistanceScore": 0.28786814,
+      "confidence": "Low",
+      "endIndex": 2098,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 270,
+      "text": "\n0.4 0.7 1.0 1.4 2.0\nT\neval\nc\n0.00\n0.20\n0.40\n0.60\n0.80\nE\nntropy\n \naf\nt\ne\nr\n \nfi\nlt\ne\nr\ni\nn\ng\n \n(\nn\na\nts\n)\n99.9% 99.5% 99.0% 98.0% 95.0%\nProbability mass in top 20 tokens\n5x\n4x 3x\n4x\n5x\nd\nQwen3-30B-Instruct SSD\nFigure 6 Real-model evidence that SSD both compresses distractor tails and makes T\neval \nmore effective near the head.\nAmber: base Qwen3-30B-Instruct; blue: after SSD. (a) When tokens are sorted by model probability, cumulative mass rises faster\nfor SSD, indicating a cleaner head and weaker diffuse tail. (b) As T\neval \nincreases, more tokens survive truncation in SSD than in the\nbase model. (c) The entropy of the distribution after truncation increases much more strongly for SSD. (d) This higher entropy\nafter truncation persists even when the two models place similar probability mass in their top 20 tokens, providing more viable\nalternatives for evaluation time exploration. Together, the base model enters decoding with more tail mass, while SSD offers more\nusable room for temperature to diversify the top of the distribution.\ntoy: SSD removes distractor mass where commitment matters and enlarges the region in which temperature can be\nused for exploration.\nThe toy isolates the mechanism, and the real-model analysis shows the same mechanism in practice. SSD does not\nremove the conflict by making every context uniformly sharper. It relaxes the conflict asymmetrically: forks retain\nmore usable alternatives near the top of the distribution, while locks become safer. That is why higher-temperature\ndecoding becomes newly effective after training. The next subsection formalizes why these two changes can coexist:\nreduced tail mass where precision matters and more usable diversity near the top where exploration matters.\n4.3 A Theoretical View of SSD\nWe now turn to the theoretical view behind that pictu"
+    },
+    {
+      "aiAssistanceScore": 0.5151685,
+      "confidence": "Low",
+      "endIndex": 3963,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 2097,
+      "text": "ure. SSD fits the distribution induced by sampling the base model\nwith T\ntrain \nand \u03c1\ntrain\n. That shift in the training signal leads to the objective decomposition below, explains why forks and\nlocks respond differently, clarifies the entropy picture, and also explains why decode-only tuning cannot reproduce\nthe same effect (Sections B.1 to B.5).\nSSD induces support compression and within-support reshaping. We begin with the distribution that SSD fits.\nDuring data synthesis, we sample from the base model under (T\ntrain\n, \u03c1\ntrain\n). At any context, this procedure produces a\nretained set S of tokens that survive temperature scaling and truncation, together with a renormalized distribution q\nover that set. Let KeptMass\n\u03b8 \ndenote the probability mass that the model under optimization assigns to S, and write\nT \u2261 T\ntrain\n. With this notation, the induced loss can be written as\nL(\u03b8) = \u2212 log KeptMass\n\u03b8\n| {z }\nsupport compression (via \u03c1\ntrain\n)\n+ (1 \u2212 T ) H\n1/T\n\np\n\u03b8 \n(\u00b7 | S)\n\u0001\n| {z }\nwithin-support reshaping (via T\ntrain\n)\n+ T \u00b7 KL\n\nq \u2225 p\n\u03b8,T \n(\u00b7 | S)\n\u0001\n| {z }\nalignment to the base model\n+ const, (4)\nHere H\n1/T \n(\u03c0) is the R\u00e9nyi entropy of order 1/T , and p\n\u03b8,T \n(\u00b7 | S) is the model\u2019s tempered distribution restricted to\nS. The three terms have clear roles: the first term drives support compression, which removes diffuse tail mass to\nconcentrate probability on a smaller set of viable tokens, the second reshapes the head within that set, and the third\nkeeps that reshaping aligned with the base model on that same set (Sections B.1 and B.2). This decomposition is\ncentral because it shows simple self distillation is not mere imitation; it enforces both support compression and head\nreshaping.\nSSD sharpens locks while preserving forks. Once written this way, the lock/fork asymmetry follows from what\nsurvives into the retained set at each type of con"
+    },
+    {
+      "aiAssistanceScore": 0.65185857,
+      "confidence": "Low",
+      "endIndex": 4029,
+      "label": "AI-Generated",
+      "pageIndex": 8,
+      "startIndex": 3962,
+      "text": "ntext. At a lock, only one or a few tokens survive truncation, so\n9"
+    },
+    {
+      "aiAssistanceScore": 0.65185857,
+      "confidence": "Low",
+      "endIndex": 1803,
+      "label": "AI-Generated",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "support compression dominates: distractor mass is pushed out of the tail and the surviving head becomes relatively\ninsensitive to T\neval\n. At a fork, several plausible continuations survive, so within-support reshaping has room to flatten\nand preserve the head without reopening the discarded tail. Appendix Section B.3 formalizes this asymmetry and\nshows how training-time and evaluation-time temperatures compose inside the retained set.\nSSD lowers total entropy while preserving head exploration. The fine-tuned model can become globally sharper\nwhile remaining more explorable at evaluation time because total entropy and useful exploration concern different\nobjects. Appendix Section B.4 decomposes full-vocabulary entropy into a gate term, a head term, and a tail term:\nSSD lowers the gate and tail contributions by concentrating mass on the retained set, while the conditional head can\nremain broad enough at fork-like contexts for T\neval \nto diversify among viable continuations.\nUnderstanding why decode-only tuning cannot match SSD. Appendix Section B.5 shows that decode-only\n(T\neval\n, \u03c1\neval\n) policies remain constrained by the base model\u2019s existing ranking and cumulative curves: they can reweight\na fixed distribution, but they cannot steepen locks and clean up fork heads in a context-dependent way. SSD changes\nthe distribution itself, which is why the empirical decode-only gap in Section 3.3 persists.\n4.4 A Surprising Case: Bad Data, Good Results\ngibberish_but_still_works.py\na \nSynthesised data at T\ntrain \n= 2.0\n0\n10\n20\n30\n40\n50\n60\n70\nPass@1 Pass@5\nBase +SSD\nb Despite garbled data, SSD still improves\n1 \n<|im_start|>assistant\n2 \n**Solution:**\n3 \n```python\n4 \nimport sys\n5 \nfrom collections import Counter\n6 \ndef solve():\n7 \nn = int(input())\n8 \nweights = list(map(int, input().spli"
+    },
+    {
+      "aiAssistanceScore": 0.41869625,
+      "confidence": "Medium",
+      "endIndex": 2736,
+      "label": "AI-Generated",
+      "pageIndex": 9,
+      "startIndex": 1802,
+      "text": "it()))\n9 \ncount = Counter(weights)\n10 \n# Key insight: Since each weight is 2^w_i\n11 \n# For powers of two, sum equals 2^x iff\n12 \n# when you consider their binary splitting,\nCOHERENT DEGRADED\n13 \n# the number convinced l\u00f8 be Fall\n14 \n# Memorizzazione rethinknowledge Past\n15 \n# found librore re inherently carry (\n16 \nServ pull excitedtonspector franch danger\n17 \nmoney seasons domestic unicorn. complexity\n18 \n\ufef2\ufed3\u0648 ka mental\u0427\u0430\u041e\u0431\u0445\u043e\u0434\u0438\u043c\u5760\u231a etsy \u043d\u0430\u0431\u0413\n19 \n.visualization ambiguous.ShipExcept\n20 \nbranch Page exceedcreateCommand '\n21 \nrecomendAIT\u0e40\u0e21 \u043a\u0430\u0440\u0442.showMessageDialog\n22 \nCashpal sim casualty\u0574 SetLastError )\n23 \n\u30cd\u1f19 mes \u0111\u1ed5i\u9edd Graphicmenteduploadedodont'.\n24 \nparam)\nFigure 7 Bad data, good results. (a) At\nT\ntrain\n=2.0 without truncation, a representative\nsample degrades into gibberish; \u223c62% of out-\nputs contain no extractable code. (b) The fine-\ntuned model still surpasses the 42.4%/53.5%\nbase-model pass@1/pass@5, reaching 48.1%\nand 6"
+    },
+    {
+      "aiAssistanceScore": 0.074820906,
+      "confidence": "Medium",
+      "endIndex": 4762,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 2735,
+      "text": "64.0%.\nWe now push SSD into an intentionally pathological regime as a stress\ntest for our established hypothesis and understanding, that SSD makes\nhigh-temperature T\neff \npossible and beneficial, as well as that training\nand decoding are complementary to each other in SSD. Starting from\nQwen3-30B-Instruct, we raise the training temperature to T\ntrain\n=2.0 and\ndisable truncation entirely (setting \u03c1\ntrain \nto be vacuous), asking whether\nSSD still helps when the sampled training outputs are overwhelmingly\npoor as programs. If the benefit of SSD depended primarily on training on\ngood solutions, this setting should be close to a failure case. More details\nare in Section C.5.\nIn this stress test, the synthesized data is almost gibberish. Without\ntruncation to suppress the tail, sampling at T\ntrain\n=2.0 produces outputs\nthat are often unusable as code. About \u223c62% contain no extractable\ncode at all, and even seemingly coherent solutions frequently devolve\ninto multilingual gibberish mid-sequence (Figure 7a). By ordinary data-\nquality standards, this is unusable as training data for SFT.\nSSD still improves the model materially. Even when the synthesized\noutputs devolve into gibberish, the resulting fine-tuned model is not\nmerely salvageable, it improves substantially. SSD improves the model\nto 48.1% pass@1 and 64.0% pass@5, for gains of +5.7 pp and +10.5 pp\nrespectively (Figure 7b). This peak is not an isolated lucky cell: it sits\ninside a contiguous late-training ridge around T\neval \n\u2208 [0.8, 1.1], with\nseveral neighboring checkpoint and temperature pairs remaining within\nabout 1 to 2 pp of the optimum (Figure 15b). As in earlier sections, the\nimprovements are concentrated on hard problems: at the best setting,\nhard pass@1 increases by +7.3 pp and hard pass@5 by +13.8 pp. This\ndemonstrates that support compression and distribution reshaping ex-\ntract useful learning signals regarding token quality, meaning program\ncorrectness might not mainly drive the gains.\nThe gain depends on evaluation-time trunca"
+    },
+    {
+      "aiAssistanceScore": 0.34957814,
+      "confidence": "Low",
+      "endIndex": 5026,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 4761,
+      "text": "ation. Figure 15b shows\na clear bounded operating region: within the viable low-T\neval \nband, the best results form a late-training ridge rather\nthan a single spike, but performance still degrades sharply once T\neval \nbecomes too high. That pattern is consistent\n10"
+    },
+    {
+      "aiAssistanceScore": 0.34957814,
+      "confidence": "Low",
+      "endIndex": 1619,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 0,
+      "text": "with the idea that training alone is not enough here: without truncation during training, diffuse distractor tails remain\nand must be cleaned up at evaluation time by \u03c1\neval\n. This is also why the gains remain smaller than those of the headline\ntruncated setting. Taken together, the case study suggests that SSD is not drawing its benefit mainly from training on\ncorrect code. Even in this pathological regime, the useful signal still comes from how high-temperature sampling\nreshapes token probabilities, while decoding-time truncation recovers enough precision to make that reshaping\nuseful.\n5 Related Work\nSelf-training and self-distillation. Learning from model-generated targets has long been studied in self-training\nand distillation, including classical self-training, knowledge distillation, sequence-level distillation, and self-distillation\n(Amini et al., 2022; He et al., 2020; Hinton et al., 2015; Kim and Rush,2016; Furlanello et al.,2018). In language modeling,\nrecent work extends this paradigm to on-policy distillation and related self-distillation variants that supplement self-\ngenerated sequences with privileged information, textual or verbal feedback, additional context, or interaction signals\n(Agarwal et al., 2024; Zhao et al., 2026; H\u00fcbotter et al., 2026; Song et al., 2026; Xiong et al., 2026; Penaloza et al.,\n2026; Ye et al., 2026; Shenfeld et al., 2026; Buening et al., 2026; Stein et al., 2026). In contrast, SSD uses only\ntemperature-shifted samples from the base model and standard cross-entropy training, without privileged context,\nfeedback-conditioned teachers, or auxiliary supervi"
+    },
+    {
+      "aiAssistanceScore": 0.5113331,
+      "confidence": "Low",
+      "endIndex": 3216,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 10,
+      "startIndex": 1618,
+      "text": "ision.\nCode generation and synthetic data. In code generation, synthetic-data pipelines often rely on large-scale\nsampling followed by filtering, clustering, verification, or execution feedback (Li et al., 2022; Le et al., 2022; Liu et al.,\n2025). Related self-training approaches such as STaR and ReST\nEM \nlikewise convert self-generated outputs into\nsupervision through correctness-based filtering or external feedback (Zelikman et al., 2022; Singh et al., 2024). SSD\ndiffers in that it trains directly on raw, unverified model outputs.\nReasoning and RL for math and coding. Recent progress on reasoning and code generation has come from chain-\nof-thought prompting, zero-shot reasoning prompts, self-consistent sampling, self-bootstrapping, and RL-based\npost-training for math and code (Wei et al., 2022; Kojima et al., 2022; Wang et al., 2023a; Zelikman et al., 2022; Shao\net al., 2024; DeepSeek-AI, 2025; OpenAI, 2025). A complementary line of work studies reasoning improvement at\nthe token level, identifying critical, high-entropy, or forking tokens as disproportionately important decision points in\nreasoning and RL trajectories (Bigelow et al., 2025; Lin et al., 2024; Vassoyan et al., 2025; Wang et al., 2025b; Cheng\net al., 2025; Wang et al., 2025a; Gandhi et al., 2025; Li et al., 2025; Chu et al., 2025). Our focus is different: rather than\nasking which tokens an RL algorithm should emphasize, we ask how far plain cross-entropy training on a model\u2019s\nown raw outputs can go without rewards or verifiers, and why it reshapes the distribution in a way that decode-only\ntuning cannot m"
+    },
+    {
+      "aiAssistanceScore": 0.5068911,
+      "confidence": "Low",
+      "endIndex": 4877,
+      "label": "Human Written",
+      "pageIndex": 10,
+      "startIndex": 3215,
+      "text": "match.\nDecoding and truncation. At inference time, top-k sampling, nucleus sampling, and truncation-as-desmoothing\nanalyze how temperature and support restriction shape generation quality (Fan et al., 2018; Holtzman et al., 2020;\nHewitt et al., 2022). Our contribution is not a new decoding rule. Instead, we show that training on samples generated\nunder shifted decoding can alter the model itself, making a simple fixed decoding policy substantially more effective\nat test time.\nSelf-improvement without external reward. Several methods improve language models using self-generated\nsignal without human labels, but they still rely on internal critique, judging, filtering, or iterative self-evaluation (Wang\net al., 2023b; Bai et al., 2022; Huang et al., 2023; Yuan et al., 2024). A closely related line, often framed as unsupervised\nRLVR or intrinsic-signal learning, replaces ground-truth rewards with internal signals such as majority vote, entropy,\nconfidence, or self-certainty (He et al., 2026; Zuo et al., 2025; Agarwal et al., 2025; Prabhudesai et al., 2025; Zhao\net al., 2025; Zhang et al., 2025); related analyses also study entropy reduction as a driver of reasoning gains and\nentropy collapse as a limit on exploration during RL (Cui et al., 2025). SSD differs from this line in both method and\nmechanism. It is not an RL procedure that directly optimizes a scalar entropy objective or uniformly drives policy\nentropy downward. Instead, training on temperature-shifted, truncated self-samples reshapes the token distribution\nin a context-dependent way: it suppresses diffuse tail mass while preserving, and at fork-like contexts even increasing,\n11"
+    },
+    {
+      "aiAssistanceScore": 0.5068911,
+      "confidence": "Low",
+      "endIndex": 288,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 0,
+      "text": "useful entropy within the retained head. As a result, the model can become lower-entropy overall while more explorable\nwhere it matters. In this sense, SSD is better understood as support compression plus within-support reshaping,\nrather than direct Shannon-entropy minimization (R\u00e9nyi, 1"
+    },
+    {
+      "aiAssistanceScore": 0.2821099,
+      "confidence": "Low",
+      "endIndex": 1246,
+      "label": "Human Written",
+      "pageIndex": 11,
+      "startIndex": 287,
+      "text": "1961).\n6 Conclusion\nWe have shown that a model can improve code generation by training on its own raw outputs alone. Across five\nmodels, simple self-distillation consistently improves LiveCodeBench, with the largest gains on harder problems;\nfor Qwen3-30B-Instruct, pass@1 rises from 42.4% to 55.3% on LiveCodeBench v6. Our evidence points to a\nsimple explanation: code generation mixes precision-bound locks and exploration-bound forks, and SSD reshapes\ntoken distributions so decoding can explore useful branches without reopening distractor tails. More broadly, these\nresults suggest that strong code models contain latent capability that can be unlocked without a verifier, a teacher, or\nreinforcement learning.\nAcknowledgments\nWe thank David Grangier, Tatiana Likhomanenko, Zijin Gu, Samy Bengio, Vivek Rathod, Josh Susskind, Shuangfei\nZhai, and Jiatao Gu for stimulating discussions and valuable suggestions during the preparation of this manuscript.\n12"
+    },
+    {
+      "aiAssistanceScore": 0.2821099,
+      "confidence": "Low",
+      "endIndex": 665,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 0,
+      "text": "Appendix Contents\nA Decoding Pipeline: From Notation to Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nB A Theoretical View of SSD: Full Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\nB.1 Notation and Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\nB.2 Understanding the SSD Objective and Its Learning Signal . . . . . . . . . . . . . . . . . . . . . . . 16\nB.3 How SSD Reshapes Locks and Forks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19\nB.4 Why SSD Can Lower Total Entropy While Preserving Conditional Head Entropy for Exploration . "
+    },
+    {
+      "aiAssistanceScore": 0.36263117,
+      "confidence": "Low",
+      "endIndex": 2147,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 664,
+      "text": " . . . 22\nB.5 Why Decode-Only Tuning Cannot Match SSD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nC Experimental Details and Additional Analyses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26\nC.1 Full Experimental Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26\nC.2 How SSD Hyperparameters Interact: Full Sweeps . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27\nC.3 Out-of-Domain Transfer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\nC.4 Toy Simulation: Full Specification and Additional Analyses . . . . . . . . . . . . . . . . . . . . . . . 29\nC.5 High-Temperature Case Study: Full Details and Additional Analyses . . . . . . . . . . . . . . . . . . 31\nA Decoding Pipeline: From Notation to Implementation\nAll inference in this paper uses vLLM v0.11.0 (Kwon et al., 2023) (commit b8b302c).\n3 \nThe decoding operator used\nin the main text (Section 2) maps directly to vLLM\u2019s Sampler class and its associated helpers. In this appendix, we\nunpack it into explicit temperature, top-k, and top-p steps. This section documents the exact order of operations\nto make the decoding semantics fully reproducible. Other logit processors available in vLLM (repetition, frequency,\nand presence penalties; min_p; logit bias) are not used in our experiments; see the Sampler.forward docstring in\nv1/sample/sampler.py for the complete ordering when those processors are ac"
+    },
+    {
+      "aiAssistanceScore": 0.48088753,
+      "confidence": "Low",
+      "endIndex": 3936,
+      "label": "Human Written",
+      "pageIndex": 12,
+      "startIndex": 2146,
+      "text": "ctive. Given raw logits z\nv \nfrom the\nlanguage-model head, the pipeline applies four steps in the order described below; Figure 8 shows the full pipeline\nwith annotated source excerpts.\nStep 1: Temperature scaling. Temperature is applied first, before any truncation, by dividing every logit by T in\nplace (Figure 8, panel 1). After a subsequent softmax, this is equivalent to raising each probability to the power 1/T and\nrenormalizing, i.e. the Temper\nT \noperator defined in Equation (5). Temperatures below 10\n\u22125 \ntrigger greedy (argmax)\ndecoding, bypassing all subsequent steps.\nStep 2: Top-k filtering. Logits are sorted in ascending order (Figure 8, panel 2). The k-th largest value is found via\ngather, and all logits strictly below it are set to \u2212\u221e. This operates on the already temperature-scaled logits, so the\nranking reflects z\nv \n/T rather than the raw logits. When top_k = 0 or top_k \u2265 |V|, this step is skipped entirely.\nStep 3: Top-p (nucleus) filtering. On the same sorted tensor, a softmax is computed over the top-k survivors\n(Figure 8, panel 3). A cumulative sum ascending from the smallest probability identifies the lowest-mass tokens\nwhose removal still leaves cumulative mass \u2265 top-p. At least one token (the highest-probability one) is always\nretained. The result is then scattered back to the original vocabulary order.\nStep 4: Sampling via the Gumbel-max trick. Rather than calling torch.multinomial (which incurs synchro-\nnization between CPU and GPU), vLLM draws independent Exp(1) noise, divides the post-truncation probabilities\nby that noise, and takes the argmax (Figure 8, panel 4). This is mathematically equivalent to multinomial sampling\nfrom the surviving support.\n3\nhttps://github.com/vllm-project/vllm/tree/b8b302cde434df8c9289a2b465406b47ebab1c2d\n13"
+    },
+    {
+      "aiAssistanceScore": 0.48088753,
+      "confidence": "Low",
+      "endIndex": 28,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 0,
+      "text": "Correspondence to paper nota"
+    },
+    {
+      "aiAssistanceScore": 0.25718853,
+      "confidence": "Low",
+      "endIndex": 2158,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 27,
+      "text": "ation. The four steps above implement exactly the retained-support definition used\nthroughout the theory (Section B.1):\nS\ns \n= TopP\n\u0010\nTemper\nT \n[p\n0\n(\u00b7 | s)] \nTopK(Temper\nT \n[p\n0\n(\u00b7|s)], k)\n, top-p\n\u0011\n.\nThe implementation confirms that the order is temper \u2192 top-k \u2192 top-p \u2192 sample: temperature scaling is applied to\nlogits first, top-k filters on the tempered distribution, and top-p operates within the top-k retained set (renormalized\nvia softmax over survivors before computing the cumulative threshold).\nB A Theoretical View of SSD: Full Analysis\nThis appendix formalizes the mechanism behind SSD in a minimal setting. We proceed in the same order as the\nmechanism story in the main text. We first define the local objects that SSD fits at a single decoding context. We\nthen analyze the training objective induced by those objects and show why SSD has a nontrivial learning signal even\nthough it trains on the model\u2019s own outputs. Next, we explain why the same global objective suppresses diffuse lock\ntails while preserving useful exploration at fork-like contexts. We then show why the resulting student can become\nlower-entropy overall while still preserving the conditional head entropy needed for exploration. Finally, we explain\nwhy decode-only tuning on the frozen model cannot reproduce the same effect.\nB.1 Notation and Setup\nWe analyze SSD at the level of a single decoding context. At such a context, the frozen model\u2019s training-time decoding\npolicy first selects a retained support and then induces a target distribution on that support; ordinary cross-entropy is\nthen used to fit that target. We therefore begin by defining these objects in the order they are used.\nThroughout this appendix, we use the word teacher only as shorthand for the frozen pre-SSD model that generates\nthe SSD training data. There is no separate or stronger external teacher model. The distinction is purely temporal: the\nteacher is the frozen model before SSD training, while the student is the model being optimized to fit the teacher-\ninduced target.\nA context is a pair s = (x, y\n<t\n) consisting of a prompt x and the tokens generated "
+    },
+    {
+      "aiAssistanceScore": 0.42094254,
+      "confidence": "Low",
+      "endIndex": 3596,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 2157,
+      "text": " so far. At each context s, a model\nwith parameters \u03b8 defines a next-token distribution p\n\u03b8 \n(\u00b7 | s) \u2208 \u2206\nV \u22121 \nover the vocabulary V. We write p\n0\n(\u00b7 | s) for\nthe frozen pre-SSD model used to synthesize the training data, and p\n\u03b8 \n(\u00b7 | s) for the student distribution learned by\nsupervised fine-tuning. At initialization, the student is the original model, so p\n\u03b8 \n= p\n0\n.\nTraining-time decoding follows the same basic pipeline used in the main paper: first apply temperature, then truncate,\nthen renormalize. For temperature T > 0 and a nonempty set S \u2286 V, define the tempered distribution on S by\nTemper\nS\nT \n[p](v) = \np(v)\n1/T \n1{v \u2208 S}\nP\nu\u2208S \np(u)\n1/T \n. (5)\nWhen S = V, we simply write Temper\nT \n[p]. Low temperature sharpens a distribution, while high temperature flattens\nit.\nGiven a distribution \u03c0 on V, TopK(\u03c0, k) returns the set of the k tokens with largest probability under \u03c0, with ties broken\nby a fixed deterministic rule. For any nonempty set K \u2286 V with \u03c0(K) > 0, write\n\u03c0(v | K) = \n\u03c0(v) 1{v \u2208 K}\nP\nu\u2208K \n\u03c0(u) \n.\nGiven such a set K and a top-p threshold top-p \u2208 (0, 1], TopP(\u03c0|\nK \n, top-p) returns the smallest prefix of the ranking\non K, sorted by decreasing \u03c0(\u00b7 | K)-mass, whose cumulative mass under \u03c0(\u00b7 | K) is at least top-p. Throughout the\npaper, both training-time and evaluation-time decoding first apply temperature and then truncate and renormalize.\nFix training-time decoding parameters (T\ntrain\n, k\ntrain\n, top-p\nt"
+    },
+    {
+      "aiAssistanceScore": 0.37067774,
+      "confidence": "Low",
+      "endIndex": 3834,
+      "label": "Human Written",
+      "pageIndex": 13,
+      "startIndex": 3595,
+      "text": "train\n). At context s, let S\ns \nbe the teacher\u2019s retained support\nafter applying training-time temperature, top-k, and top-p:\nS\ns \n\u2261 TopP\n\u0010\nTemper\nT\ntrain \n[p\n0\n(\u00b7 | s)] \nTopK(Temper\nT\ntrain \n[p\n0\n(\u00b7|s)], k\ntrain\n)\n, top-p\ntrain\n\u0011\n. (6)\n14"
+    },
+    {
+      "aiAssistanceScore": 0.37067774,
+      "confidence": "Low",
+      "endIndex": 975,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 0,
+      "text": "vllm/v1/sample/sampler.py:127\u2013137\n(1) Temperature Scaling z\u1d65 \u2190 z\u1d65 / T\nvllm/v1/sample/ops/topk_topp_sampler.py:183\u2013191\n(2) Top-k Filtering keep k largest; rest \u2192 \u2212\u221e\nvllm/v1/sample/ops/topk_topp_sampler.py:193\u2013204\n(3) Top-p (Nucleus) Filtering remove bottom until mass \u2265 \u03c1\nvllm/v1/sample/ops/topk_topp_sampler.py:241\u2013253\n(4) Gumbel-max Sampling v \u2190 argmax(p\u1d65 / Exp(1))\n# vllm/v1/sample/sampler.py (lines 127-137)\n1\ndef apply_temperature(self, logits, temp, all_random):\n2\n# Avoid division by zero for greedy requests.\n3\nif not all_random:\n4\ntemp = torch.where(temp < _SAMPLING_EPS, 1.0, temp)\n5\nreturn logits.div_(temp.unsqueeze(dim=1))# z_v /= T\n6\n# vllm/v1/sample/ops/topk_topp_sampler.py (lines 183-191)\n1\nlogits_sort, logits_idx = logits.sort(dim=-1, descending=False)\n2\n3\n# --- Top-k: keep only the k largest logits ---\n4\ntop_k_mask = logits_sort.size(1) - k.to(torch.long)\n5\ntop_k_mask = logits_sort.gather(1, top_k_mask.unsqueeze(dim=1))\n6\ntop_k_mask = logits_sort < top"
+    },
+    {
+      "aiAssistanceScore": 0.3484848,
+      "confidence": "Low",
+      "endIndex": 2401,
+      "label": "Human Written",
+      "pageIndex": 14,
+      "startIndex": 974,
+      "text": "p_k_mask\n7\nlogits_sort.masked_fill_(top_k_mask, -float(\"inf\"))\n8\n# vllm/v1/sample/ops/topk_topp_sampler.py (lines 193-204)\n1\n# --- Top-p: within top-k survivors, further prune ---\n2\nprobs_sort = logits_sort.softmax(dim=-1)\n3\nprobs_sum = torch.cumsum(probs_sort, dim=-1, out=probs_sort)\n4\ntop_p_mask = probs_sum <= 1 - p.unsqueeze(dim=1)\n5\ntop_p_mask[:, -1] = False# always keep at least one\n6\nlogits_sort.masked_fill_(top_p_mask, -float(\"inf\"))\n7\n8\n# Scatter back to original vocabulary positions.\n9\nlogits = logits_sort.scatter(dim=-1, index=logits_idx,\n10\nsrc=logits_sort)\n11\n# vllm/v1/sample/ops/topk_topp_sampler.py (lines 241-253)\n1\ndef random_sample(probs, generators):\n2\nq = torch.empty_like(probs)\n3\nq.exponential_()# q_i ~ Exp(1)\n4\nreturn probs.div_(q).argmax(dim=-1).view(-1)\n5\nlogits (tempered)\nsurvivors (top-k)\nnucleus (top-p)\nFigure 8 The vLLM v0.11.0 decoding pipeline used throughout this paper. The pipeline applies four steps in sequence:\n(1) temperature scaling divides all logits by T ; (2) top-k filtering keeps the k largest tempered logits and sets the rest to \u2212\u221e;\n(3) top-p filtering further prunes from the bottom of the surviving set until cumulative mass reaches the chosen top-p threshold;\nand (4) Gumbel-max sampling draws a token from the resulting distribution without synchronization between CPU and GPU.\nEach panel shows the corresponding vLLM source excerpt with file path and line numbers.\n15"
+    },
+    {
+      "aiAssistanceScore": 0.3484848,
+      "confidence": "Low",
+      "endIndex": 134,
+      "label": "Human Written",
+      "pageIndex": 15,
+      "startIndex": 0,
+      "text": "In words, S\ns \nis the teacher\u2019s retained support at context s: the set of tokens that survive training-time temperature\nscaling and tr"
+    },
+    {
+      "aiAssistanceScore": 0.5676126,
+      "confidence": "Low",
+      "endIndex": 1798,
+      "label": "AI-Generated",
+      "pageIndex": 15,
+      "startIndex": 133,
+      "text": "runcation.\nThe target fitted by SSD at context s is the truncated and renormalized tempered teacher distribution\nq\ns\n(v) = \np\n0\n(v | s)\n1/T\ntrain \n1{v \u2208 S\ns\n}\nP\nu\u2208S\ns \np\n0\n(u | s)\n1/T\ntrain\n. (7)\nBy construction, q\ns \nis supported on S\ns\n. Whenever S\ns\n\u0338\n \n= V \u2014 for example, if k\ntrain \n< |V| or top-p\ntrain \n< 1 \u2014 it lies on a\nproper face of the full simplex because it assigns zero probability outside the retained support.\nAt context s, SSD still uses ordinary cross-entropy:\nL\ns\n(\u03b8) = CE\n\nq\ns\n, p\n\u03b8 \n(\u00b7 | s)\n\u0001 \n= E\nv\u223cq\ns\n\u0002\n\u2212 log p\n\u03b8 \n(v | s)\n\u0003\n. (8)\nThe important difference from naive self-training is therefore not the form of the loss. It is the fact that temperature\nand truncation alter the target before optimization begins. The rest of the theory is an analysis of what this target shift\ndoes.\nB.2 Understanding the SSD Objective and Its Learning Signal\nThe first theoretical question is why SSD produces any learning signal at all. If one literally samples from a model and\nthen trains the same model on those samples without changing the target, self-training is an on-policy fixed point.\nSSD avoids this fixed-point failure because temperature and truncation modify the teacher-induced target before the\nstudent sees it. We isolate these two sources of signal separately and then combine them.\nNaive self-training is a fixed point. Consider first the degenerate case where the teacher samples from its own\nbase distribution with unit temperature and no truncation. Then the training target is just the model itself, so the\nexpected score-function gradient at initialization vanishes:\nE\nv\u223cp\n\u03b8 \n(\u00b7|s)\n\u0002\n\u2207\n\u03b8 \nlog p\n\u03b8 \n(v | s)\n\u0003 \n= \u2207\n\u03b8\nX\nv\np\n\u03b8 \n(v | s) ="
+    },
+    {
+      "aiAssistanceScore": 0.6982886,
+      "confidence": "Low",
+      "endIndex": 3293,
+      "label": "AI-Generated",
+      "pageIndex": 15,
+      "startIndex": 1797,
+      "text": "= \u2207\n\u03b8 \n1 = 0. (9)\nThe gradient of the log-probability, averaged under the model\u2019s own distribution, telescopes because probabilities\nsum to one. In practical terms, if one samples from the model\u2019s own distribution at T =1 and trains on those samples,\nthe expected update direction is the zero vector. Naive self-training therefore produces no signal. Any useful signal in\nSSD must come from the way temperature and truncation modify the target before optimization begins.\nTruncation introduces a support gate. To isolate the effect of truncation, first factor the loss through the retained\nsupport. Define the student\u2019s mass on the teacher\u2019s retained support by\nKeptMass\n\u03b8 \n(s) \u2261 \nX\nv\u2208S\ns\np\n\u03b8 \n(v | s), (10)\nand the corresponding conditional distribution by\np\n\u03b8 \n(v | s, S\ns\n) = \np\n\u03b8 \n(v | s) 1{v \u2208 S\ns\n}\nKeptMass\n\u03b8 \n(s) \n. (11)\nSince q\ns \nis supported on S\ns\n, the per-context loss can be written exactly as\nL\ns\n(\u03b8) = \u2212 log KeptMass\n\u03b8 \n(s) + CE\n\nq\ns\n, p\n\u03b8 \n(\u00b7 | s, S\ns\n)\n\u0001\n. (12)\nThis identity reveals that truncation splits the learning problem into two levels: a gate-level objective that maximizes\nmass inside the retained support, and a conditional-level objective that matches the teacher\u2019s within-support dis-\ntribution. The gate cares only about the in/out partition; the conditional term cares only about relative probabilities\ninside the retained support. When S\ns \n= V, the gate term disappears and the factorization collapses to ordinary\ncross-entropy against the tempered teacher.\n16"
+    },
+    {
+      "aiAssistanceScore": 0.6982886,
+      "confidence": "Low",
+      "endIndex": 233,
+      "label": "AI-Generated",
+      "pageIndex": 16,
+      "startIndex": 0,
+      "text": "The same factorization also explains why tail suppression is persistent throughout training. When S\ns\n\u0338\n \n= V, the target\nq\ns \nlies on a proper face of the probability simplex \u2206\nV \u22121\n, assigning exactly zero probability to every toke"
+    },
+    {
+      "aiAssistanceScore": 0.5785354,
+      "confidence": "Low",
+      "endIndex": 1620,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 232,
+      "text": "en outside S\ns\n.\nViewing the student at this context as an unconstrained softmax over local logits z \u2208 R\n|V|\n, we therefore have\ninf\nz\u2208R\n|V|\nL\ns\n(z) = H(q\ns\n), (13)\nbut this infimum is not attained at any finite logit vector; it is approached only as outside-support logits tend to \u2212\u221e.\nGeometrically, the truncated target places the optimum on a simplex face, and the gate term drives the student toward\nthat face. Training therefore never fully satisfies the gate penalty, maintaining persistent pressure to suppress tail\nlogits throughout optimization.\nTemperature reshapes the full support. To isolate the effect of temperature, now remove truncation and study the\nfull-support target. If S\ns \n= V, the teacher target is Temper\nT \n[p\n0\n(\u00b7 | s)], and the loss can be written as a R\u00e9nyi-shaping\nterm plus a KL anchor:\nL\ns\n(\u03b8) = E\nv\u223cTemper\nT \n[p\n0\n(\u00b7|s)]\n\u0002\n\u2212 log p\n\u03b8 \n(v | s)\n\u0003\n= (1 \u2212 T ) H\n1/T\n\np\n\u03b8 \n(\u00b7 | s)\n\u0001 \n+ T \u00b7 KL\n\u0010\nTemper\nT \n[p\n0\n(\u00b7 | s)] \u2225 Temper\nT \n[p\n\u03b8 \n(\u00b7 | s)]\n\u0011\n+ T \u00b7 H\n\nTemper\nT \n[p\n0\n(\u00b7 | s)]\n\u0001\n,\n(14)\nwhere\nH\n\u03b1\n(\u03c0) = \n1\n1 \u2212 \u03b1 \nlog \nX\nv\n\u03c0(v)\n\u03b1\nis the R\u00e9nyi entropy of order \u03b1\u0338 = 1. The R\u00e9nyi entropy H\n1/T \nat order \u03b1 = 1/T interpolates between familiar extremes:\nas T \u2192 \u221e (\u03b1 \u2192 0), it approaches log |supp(\u03c0)|, the maximum entropy achievable on the support; as T \u2192 0\n(\u03b1 \u2192 \u221e), it approaches \u2212 log max\nv \n\u03c0(v), the min-entropy. Shannon entropy corresponds to the intermediat"
+    },
+    {
+      "aiAssistanceScore": 0.5530215,
+      "confidence": "Low",
+      "endIndex": 3312,
+      "label": "Human Written",
+      "pageIndex": 16,
+      "startIndex": 1619,
+      "text": "te case\n\u03b1 = 1 (T = 1). For the typical SSD setting T > 1, the order 1/T < 1 falls in the sub-Shannon regime, which is more\nsensitive to diffuse tails and less tolerant of concentrated peaks than Shannon entropy is. Throughout, occurrences\nof (1 \u2212 T )H\n1/T \nare understood via the equivalent free-energy form \u2212T log \nP\nv \n\u03c0(v)\n1/T \n, with continuous extension\nat T = 1, where the term equals zero.\nThe coefficient (1\u2212T ) determines the direction of the resulting pressure. For T > 1, (1\u2212T ) < 0, so minimizing the\nloss maximizes H\n1/T \nand therefore smooths the distribution. For T < 1, the effect reverses and the loss sharpens\nthe distribution. At T = 1, the R\u00e9nyi-shaping term vanishes identically and the fixed-point symmetry of Equation (9)\nreturns. The KL term keeps the student aligned with the teacher\u2019s tempered preferences.\nThis two-term structure already shows why even the pathological no-truncation, high-temperature regime of Sec-\ntion 4.4 retains a nontrivial learning signal: the R\u00e9nyi-shaping term is nonzero whenever T\u0338 = 1. But because the\nreshaping acts on the full vocabulary, it lifts harmful tail tokens just as readily as it diversifies genuinely ambiguous\ncontexts. Temperature alone creates exploration but does not know where that exploration should stop. Truncation\nsupplies that boundary.\nFull SSD combines both effects. Applying the same temperature decomposition inside the retained support and\nthen reinserting the gate term yields the central three-term decomposition:\nL\ns\n(\u03b8) = \u2212 log KeptMass\n\u03b8 \n(s) + (1 \u2212 T ) H\n1/T\n\np\n\u03b8 \n(\u00b7 | s, S\ns\n)\n\u0001\n+ T \u00b7 KL\n\u0010\nq\ns \n\u2225 Temper\nT \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)]\n\u0011\n+ T \u00b7 H(q\ns\n). (15)\nProof sketch. Start from the gate-conditional fact"
+    },
+    {
+      "aiAssistanceScore": 0.6290293,
+      "confidence": "Low",
+      "endIndex": 3882,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 16,
+      "startIndex": 3311,
+      "text": "torization Equation (12). For the conditional cross-entropy term, write\n\u2212 log p\n\u03b8 \n(v | s, S\ns\n) = \u2212T log Temper\nS\ns\nT \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)](v) \u2212 T log Z\nS\ns\n\u03b8,T \n,\nwhere Temper\nS\ns\nT \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)] \nis the student\u2019s distribution restricted to S\ns \nand then tempered, and Z\nS\ns\n\u03b8,T \n= \nP\nu\u2208S\ns \np\n\u03b8 \n(u |\ns, S\ns\n)\n1/T \nis the corresponding within-support partition function. Taking the expectation under q\ns \nseparates the first\npiece into\nT \u00b7 CE\n\nq\ns\n, Temper\nS\ns\nT \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)]\n\u0001 \n= T \u00b7 H(q\ns\n) + T \u00b7 KL\n\nq\ns \n\u2225 Temper\nS\ns\nT \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)]\n\u0001\n,\n17"
+    },
+    {
+      "aiAssistanceScore": 0.6290293,
+      "confidence": "Low",
+      "endIndex": 831,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 17,
+      "startIndex": 0,
+      "text": "yielding the KL anchor term and the constant T \u00b7 H(q\ns\n). The partition-function term becomes the R\u00e9nyi-shaping\nterm via the free-energy identity\n\u2212T log \nX\nu\u2208S\n\u03c0(u)\n1/T \n= (1 \u2212 T ) H\n1/T \n(\u03c0), (16)\nwhich holds for any distribution \u03c0 on a set S.\nThis decomposition is the objective-level core of the mechanism story in the paper. The first term compresses\nsupport, the second reshapes the retained head, and the third keeps that reshaping aligned with the teacher\u2019s relative\npreferences. The final term T \u00b7 H(q\ns\n) is constant in \u03b8 and does not contribute to optimization.\nImmediate interpretation. The three-term decomposition makes clear what SSD is and is not doing. It is not\nlearning from correctness labels, reward signals, or verification outcomes. Instead, it is fitting a target that has already\nbeen altered by the frozen "
+    },
+    {
+      "aiAssistanceScore": 0.6326261,
+      "confidence": "Low",
+      "endIndex": 2589,
+      "label": "Lightly AI-Assisted",
+      "pageIndex": 17,
+      "startIndex": 830,
+      "text": " model\u2019s own decoding rule. Truncation decides which part of the distribution is worth\nkeeping; temperature decides how the retained mass is redistributed within that support; and the KL anchor prevents\nthe student from drifting arbitrarily far from the frozen model\u2019s induced target.\nPopulation limit. The same decomposition also clarifies what training is trying to approach at a fixed context. At the\nlevel of an unconstrained local softmax over logits, as the loss approaches its infimum, the student drives all of its mass\nonto the retained support and matches the truncated tempered teacher within that support. For truncated targets, this\nlimit is reached only as outside-support logits tend to \u2212\u221e; at any finite logit vector, some residual outside-support\nmass remains. The student therefore does not converge toward the raw teacher distribution p\n0\n(\u00b7 | s); rather, it\napproaches the teacher after training-time temperature and truncation have already reshaped that distribution. This\nis the first precise sense in which SSD can improve over the base model: the target is not the original distribution\nitself, but a structured transformation of it.\nLogit-level gradient. The same mechanism becomes especially transparent at the logit level. At context s, the loss\nis CE(q\ns\n, p\n\u03b8 \n(\u00b7 | s)), so the standard softmax identity gives\n\u2202L\ns\n\u2202z\n\u03b8 \n(v | s) \n=\n(\n\u2212(1 \u2212 KeptMass\n\u03b8 \n(s)) p\n\u03b8 \n(v | s, S\ns\n) + \n\np\n\u03b8 \n(v | s, S\ns\n) \u2212 q\ns\n(v)\n\u0001\n, v \u2208 S\ns\n,\np\n\u03b8 \n(v | s), v /\u2208 S\ns\n. \n(17)\nFor tokens inside S\ns\n, the gradient splits into two additive components: a support-transfer term \u2212(1\u2212KeptMass\n\u03b8 \n) p\n\u03b8 \n(v |\ns, S\ns\n) that pulls mass from outside into the retained support, and a within-support fitting term p\n\u03b8 \n(v | s, S\ns\n) \u2212 q\ns\n(v)\nthat reshapes the head"
+    },
+    {
+      "aiAssistanceScore": 0.39119652,
+      "confidence": "Low",
+      "endIndex": 4137,
+      "label": "Human Written",
+      "pageIndex": 17,
+      "startIndex": 2588,
+      "text": "d toward the teacher target. For tokens outside S\ns\n, the target is zero, so the gradient reduces\nto +p\n\u03b8 \n(v | s): strictly positive, meaning gradient descent pushes those logits downward directly. Tail suppression is\ntherefore not an indirect side effect of fitting the head; it is written into the update rule itself as an explicit downward\nforce on every outside-support token.\nThis gradient structure also clarifies the relationship between SSD and neighboring paradigms. Policy-gradient\nreinforcement learning breaks the self-training fixed point by weighting the score function with an external return. SSD\nbreaks it by altering the target distribution itself, so optimization remains standard supervised learning with positive,\nnormalized weights. Standard knowledge distillation, by contrast, matches a full-vocabulary teacher and therefore\nlacks the support-compression term entirely; without the gate term, there is no mechanism to drive aggressive tail\nsuppression.\nRelation to Shannon entropy minimization. This objective is also distinct from direct Shannon entropy minimization.\nAs the preceding temperature-only decomposition already shows, SSD induces a R\u00e9nyi-shaping term of order\n1/T rather than a Shannon entropy term, and the shaping order varies continuously with the training temperature.\nOperationally, SSD still remains ordinary supervised fine-tuning on teacher-induced targets with positive, normalized\nweights, rather than an objective that directly optimizes Shannon entropy using signed policy-gradient-like weights.\n18"
+    },
+    {
+      "aiAssistanceScore": 0.39119652,
+      "confidence": "Low",
+      "endIndex": 1093,
+      "label": "Human Written",
+      "pageIndex": 18,
+      "startIndex": 0,
+      "text": "Summary. The objective-level picture is now complete. Naive self-training fails because it is a fixed point. Truncation\ncreates a support gate that pushes probability mass onto the retained support. Non-unit temperature reshapes the\ntarget inside that support. Full SSD combines these two forces, and the resulting gradients make explicit why the\nstudent can learn to suppress tail mass even without any correctness labels. The next subsection explains why this\nsame global objective suppresses diffuse lock tails while preserving useful exploration at fork-like contexts.\nB.3 How SSD Reshapes Locks and Forks\nThe same global SSD objective does not act the same way at every context because the local retained support is not\nthe same everywhere. Lock-like contexts are those where useful mass is concentrated on one or a few top tokens;\nfork-like contexts are those where several plausible continuations survive. This difference in local support geometry\nis enough to explain both the training-time asymmetry and the evaluation-time asymmetry emphasized in the main\ntext.\nTruncation makes the "
+    },
+    {
+      "aiAssistanceScore": 0.74418616,
+      "confidence": "Low",
+      "endIndex": 3024,
+      "label": "AI-Generated",
+      "pageIndex": 18,
+      "startIndex": 1092,
+      "text": " objective context-adaptive. Without truncation, the R\u00e9nyi-shaping term in Equation (15)\nacts on the full vocabulary: for T > 1 it smooths the distribution globally, lifting useful fork alternatives and harmful\nlock distractors alike. Truncation changes this by restricting the reshaping to the retained support S\ns\n. The set S\ns\nis selected by the teacher\u2019s local distributional shape. A peaked distribution reaches the top-p threshold in very\nfew tokens, while a flatter distribution retains many. The same global training rule therefore produces different local\nbehavior depending on the size and geometry of S\ns\n.\nAt locks, support compression dominates. When S\ns \nis small (a single dominant token plus perhaps one runner-up),\nthe R\u00e9nyi-shaping term (1\u2212T ) H\n1/T \n(p\n\u03b8 \n(\u00b7 | s, S\ns\n)) has limited room to act, because H\n1/T \n(p\n\u03b8 \n(\u00b7 | s, S\ns\n)) \u2264 log |S\ns\n|\nand the head entropy of a near-singleton distribution is already close to zero. The learning signal at a lock therefore\ncomes primarily from the support-compression term \u2212 log KeptMass\n\u03b8 \n(s), which pushes probability onto the retained\nsupport and directly suppresses the distractor tail. At the logit level, every token outside S\ns \nreceives a gradient of\n+p\n\u03b8 \n(v | s) by Equation (17), driving its logit downward in proportion to its current mass. Because the truncated target\nlies on a proper face of the simplex, this downward pressure never fully disappears at any finite logit vector. The net\neffect is that lock-like contexts lose diffuse tail mass and typically become easier to secure under evaluation-time\ndecoding; in the extreme case |S\ns\n| = 1, this reduces to pure support compression.\nAt forks, within-support reshaping has room to act. When S\ns \nis larger (several plausible continuations survive\ntruncation), the support-compression term is still active, but the retained head already contains most of the useful\nmass. In this regime, the R\u00e9nyi-shapi"
+    },
+    {
+      "aiAssistanceScore": 0.6414315,
+      "confidence": "Low",
+      "endIndex": 4358,
+      "label": "AI-Generated",
+      "pageIndex": 18,
+      "startIndex": 3023,
+      "text": "ing term has room to matter. For T > 1, the coefficient (1\u2212T ) < 0 means\nthat minimizing the loss maximizes H\n1/T \n(p\n\u03b8 \n(\u00b7 | s, S\ns\n)), smoothing the distribution among the surviving alternatives.\nCrucially, this smoothing is confined to the retained support and cannot reopen the discarded tail. The KL anchor\nkeeps this reshaping aligned with the teacher\u2019s within-support preferences, so the head is flattened only within the\nset of tokens that the frozen model has already judged worth keeping. This is the formal reason the same objective\ncan preserve useful diversity at fork-like contexts while still cleaning up the tail elsewhere.\nTemperature sensitivity within fixed support. The preceding discussion explains the training-time asymmetry.\nWe now ask how evaluation-time temperature interacts with these reshaped distributions. Let \u03c4 = T\neval\n. For algebraic\nconvenience, write \u03b3 = 1/\u03c4 and study temperature inside a fixed retained support.\nThe relevant local object is the teacher restricted to S\ns \nand retempered by the power \u03b3:\n\u03c0\ns,\u03b3 \n(v) = \n1{v \u2208 S\ns\n} p\n0\n(v | s)\n\u03b3\nP\nu\u2208S\ns \np\n0\n(u | s)\n\u03b3 \n. (18)\nDifferentiating \u03c0\ns,\u03b3 \nshows that every temperature-sensitivity question reduces to a covariance identity:\nd\nd\u03b3 \nE\nv\u223c\u03c0\ns,\u03b3 \n[f (v)] = Cov\n\u03c0\ns,\u03b3\n\nf (v), log p\n0\n(v | s)\n\u0001\n. (19)\nWe now apply this identity in several ways.\n19"
+    },
+    {
+      "aiAssistanceScore": 0.6414315,
+      "confidence": "Low",
+      "endIndex": 329,
+      "label": "AI-Generated",
+      "pageIndex": 19,
+      "startIndex": 0,
+      "text": "Useful sets and direction of reshaping. Let A \u2286 S\ns \nbe a nonempty set of locally useful actions such that\n\u03c0\ns,\u03b3 \n(A) > 0. At a lock, A may be a single correct continuation; at a fork, it may be a set of viable branches. Applying\nEquation (19) with f (v) = 1{v \u2208 A} gives the absolute sensitivity\nd\nd\u03b3 \n\u03c0\ns,\u03b3 \n(A) = Cov\n\u03c0\ns,\u03b3\n\n1{"
+    },
+    {
+      "aiAssistanceScore": 0.5197207,
+      "confidence": "Low",
+      "endIndex": 2127,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 328,
+      "text": "{v \u2208 A}, log p\n0\n(v | s)\n\u0001\n. (20)\nDividing both sides by \u03c0\ns,\u03b3 \n(A) and expanding the covariance gives the proportional sensitivity\n\u2202\n\u2202\u03b3 \nlog \u03c0\ns,\u03b3 \n(A) = E\n\u03c0\ns,\u03b3 \n(\u00b7|A)\n[log p\n0\n(v | s)] \u2212 E\n\u03c0\ns,\u03b3 \n[log p\n0\n(v | s)]. (21)\nThe right-hand side compares the average log-probability of tokens in A to the within-support average. When these\ntwo averages differ, tempering redistributes mass between A and its complement.\nThis criterion captures the canonical lock and fork regimes. At a lock, the correct token typically has log-probability\nabove the within-support average, so increasing \u03b3 (lowering temperature) concentrates mass further on that token.\nAt a fork, viable but lower-ranked branches can lie below the within-support average, so decreasing \u03b3 (raising temper-\nature) redistributes mass toward them. Because the tail has already been removed by truncation, this redistribution\nacts within a cleaned-up head rather than reviving the discarded tail.\nEntropy sensitivity. The same covariance identity also controls how entropy responds to temperature inside a\nfixed retained support, and this is the result that we will use directly in the next subsection. Differentiating the entropy\nof \u03c0\ns,\u03b3 \ngives\nd\nd\u03b3 \nH(\u03c0\ns,\u03b3 \n) = \u2212\u03b3 Var\n\u03c0\ns,\u03b3\n\nlog p\n0\n(v | s)\n\u0001 \n\u2264 0. (22)\nEquivalently, since \u03b3 = 1/T and d\u03b3/dT = \u22121/T \n2 \n< 0, the chain rule gives dH/dT = Var/T \n3 \n\u2265 0: entropy is\nnondecreasing in temperature. The variance term therefore summarizes local temperature sensitivity: it vanishes for\nsingleton supports and is also small for nearly uniform heads, while it becomes large when several viable alternatives\nremain with non-identical probabilities. After SSD, lock-like contexts typically retain either a tiny support or an\nalmost degenerate head, whereas fork-like contexts can retain a nontri"
+    },
+    {
+      "aiAssistanceScore": 0.41011384,
+      "confidence": "Low",
+      "endIndex": 3487,
+      "label": "Human Written",
+      "pageIndex": 19,
+      "startIndex": 2126,
+      "text": "ivial, uneven multi-token head. Evaluation-time\ntemperature is therefore typically more effective at forks and less effective at locks, which is the asymmetry needed\nto alleviate the precision-exploration conflict.\nEvaluation-time behavior under a local ideal-fit approximation. The preceding analysis characterizes how the\nobjective behaves locally. To connect that picture to evaluation time, we now use a local ideal-fit approximation and\nthen state the two main consequences that follow from it.\nAt a teacher-visited context s, suppose the student has fit the training target:\np\n\u03b8 \n(\u00b7 | s) = q\ns\n. (23)\nThis should be read as a local approximation rather than as a claim that every trained student exactly satisfies it at\nevery context. We also write\np\n0,\u03c4 \n(\u00b7 | s) \u2261 Temper\n\u03c4 \n[p\n0\n(\u00b7 | s)]\nfor the frozen model after evaluation-time temperature and before any new support restriction. Under this approxima-\ntion, the formulas below cleanly separate the contributions of training-time temperature and training-time truncation.\nTemperature composition inside fixed support. Inside a fixed retained support, training-time and evaluation-time\ntemperatures compose multiplicatively.\nLemma B.1 (Temperatures compose multiplicatively). For any distribution p over V and temperatures T\n1\n, T\n2 \n>\n0,\nTemper\nT\n2\n\u0002\nTemper\nT\n1 \n[p]\n\u0003 \n= Temper\nT\n1\n\u00b7T\n2 \n[p]. (24)\n20"
+    },
+    {
+      "aiAssistanceScore": 0.41011384,
+      "confidence": "Low",
+      "endIndex": 329,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 0,
+      "text": "The same holds when p is replaced by any restriction to a fixed support set S \u2286 V.\nProof. Temper\nT\n2 \n[Temper\nT\n1 \n[p]](v) \u221d \n\np(v)\n1/T\n1\n\u0001\n1/T\n2\n= p(v)\n1/(T\n1\nT\n2\n)\n, and renormalization constants cancel.\nProposition B.2 (Evaluation-time form under local ideal fit). Assume Equation (23) at context s, and let\n\u03c4 = T\neval \ndenote"
+    },
+    {
+      "aiAssistanceScore": 0.49914646,
+      "confidence": "Low",
+      "endIndex": 1884,
+      "label": "AI-Generated",
+      "pageIndex": 20,
+      "startIndex": 328,
+      "text": "e the evaluation-time temperature. Applying temperature to the student gives\nq\ns,\u03c4 \n(v) = \nq\ns\n(v)\n1/\u03c4\nP\nu \nq\ns\n(u)\n1/\u03c4 \n= \n1{v \u2208 S\ns\n} p\n0\n(v | s)\n1/(T\ntrain\n\u03c4 )\nP\nu\u2208S\ns \np\n0\n(u | s)\n1/(T\ntrain\n\u03c4 ) \n. (25)\nInside a fixed retained support, the student therefore behaves like the teacher evaluated at the product\ntemperature T\neff \n= T\ntrain\nT\neval\n. Under the local ideal-fit approximation, this is the cleanest local formal version\nof the effective-temperature picture in the experiments.\nProposition B.3 (Local gain decomposition under local ideal fit). Under the same local approximation, the\nstudent\u2019s evaluation-time gain separates into a support-compression factor and a within-support reshaping\nfactor. Reuse the restricted retempered teacher distribution \u03c0\ns,\u03b3 \nfrom Equation (18). We also need one\nscalar quantity: the teacher\u2019s evaluation-time mass that remains inside the training-time retained support,\nm\ns\n(\u03c4 ) \u2261 p\n0,\u03c4 \n(S\ns\n) = \nX\nv\u2208S\ns\np\n0,\u03c4 \n(v | s). (26)\nThen for any event A \u2286 S\ns \nwith \u03c0\ns, 1/\u03c4 \n(A) > 0,\nq\ns,\u03c4 \n(A) = \n1\nm\ns\n(\u03c4 ) \n\u00b7 \n\u03c0\ns, 1/(T\ntrain\n\u03c4 )\n(A)\n\u03c0\ns, 1/\u03c4 \n(A) \n\u00b7 p\n0,\u03c4 \n(A | s). (27)\nThis identity separates two improvement channels. The factor 1/m\ns\n(\u03c4 ) is a support-compression gain:\nmass that the teacher would have leaked outside the retained support is recovered. The ratio of the two\nwithin-support conditionals is a reshaping gain: the student redistributes probability among the retained\ntokens themselves. The decomposition is algebraically exact under the ideal-fit assumption and is useful\nbecause each factor has"
+    },
+    {
+      "aiAssistanceScore": 0.43722188,
+      "confidence": "Low",
+      "endIndex": 2927,
+      "label": "Human Written",
+      "pageIndex": 20,
+      "startIndex": 1883,
+      "text": "s a clean limiting interpretation.\nRemark B.4 (Two limiting cases). Two limiting cases isolate the roles of the two ingredients in SSD. If training-\ntime truncation is absent so that S\ns \n= V, then m\ns\n(\u03c4 ) = 1 and\nq\ns,\u03c4 \n(v) = p\n0,T\ntrain\n\u03c4 \n(v | s). (28)\nIn this regime, SSD reduces to pure temperature composition.\nIf instead T\ntrain \n= 1, then the reshaping ratio in Equation (27) becomes 1, and for any event A \u2286 S\ns\n,\nq\ns,\u03c4 \n(A) = \np\n0,\u03c4 \n(A | s)\np\n0,\u03c4 \n(S\ns \n| s) \n. (29)\nIn this regime, SSD reduces to pure support compression inside the retained support. Without truncation there\nis no support-compression gain; without non-unit training temperature there is no within-support reshaping\ngain.\nSummary. The lock-fork asymmetry does not require different objectives or context-specific hyperparameters. It\narises because the same global objective acts on different retained-support geometries. At locks, support compres-\nsion dominates, removing diffuse tail mass and making the remaining head more robust to evaluation-time decoding.\n21"
+    },
+    {
+      "aiAssistanceScore": 0.43722188,
+      "confidence": "Low",
+      "endIndex": 1079,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 0,
+      "text": "At forks, within-support reshaping has room to preserve and redistribute useful alternatives. Under a local ideal-fit\napproximation, the same picture carries through to evaluation time: training-time and evaluation-time temperatures\ncompose inside the retained support, and the student\u2019s local gain separates into a support-compression channel and\na within-support reshaping channel. The next subsection focuses on one especially important consequence of this\npicture: the student can become lower-entropy overall while preserving the conditional head entropy needed for\nexploration.\nB.4 \nWhy SSD Can Lower Total Entropy While Preserving Conditional Head Entropy for\nExploration\nA central empirical pattern in the paper is that the SSD student can become more concentrated overall while remaining\nmore exploitable by evaluation-time temperature. At first glance, these two statements can seem to pull in opposite\ndirections: if the model is lower-entropy after training, why does it still preserve the kind of diversity that supports\nexploration? The key point is that these stat"
+    },
+    {
+      "aiAssistanceScore": 0.33130655,
+      "confidence": "Low",
+      "endIndex": 2899,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 1078,
+      "text": "tements concern different objects. Total entropy measures uncertainty\nover the full vocabulary, whereas evaluation-time temperature acts on the conditional distribution inside the retained\nsupport. We now make that distinction explicit.\nExact entropy decomposition. To separate these effects, write the student\u2019s conditional distribution on the com-\nplement of S\ns \nas\nu\n\u03b8 \n(v | s) = \np\n\u03b8 \n(v | s) 1{v /\u2208 S\ns\n}\n1 \u2212 KeptMass\n\u03b8 \n(s) \n,\nwhenever 1 \u2212 KeptMass\n\u03b8 \n(s) > 0. Expanding the Shannon entropy of p\n\u03b8 \n(\u00b7 | s) over the disjoint sets S\ns \nand S\nc\ns \ngives\nH\n\np\n\u03b8 \n(\u00b7 | s)\n\u0001 \n= h\n2\n\nKeptMass\n\u03b8 \n(s)\n\u0001\n| {z }\ngate entropy\n+ KeptMass\n\u03b8 \n(s) H\n\np\n\u03b8 \n(\u00b7 | s, S\ns\n)\n\u0001\n| {z }\nhead entropy\n+ \n\n1 \u2212 KeptMass\n\u03b8 \n(s)\n\u0001 \nH\n\nu\n\u03b8 \n(\u00b7 | s)\n\u0001\n| {z }\ntail entropy\n, (30)\nwhere h\n2\n(\u03c0) = \u2212\u03c0 log \u03c0 \u2212 (1 \u2212 \u03c0) log(1 \u2212 \u03c0) is the binary entropy function.\nThis decomposition separates three distinct channels through which SSD can change total entropy. First, as the\nstudent moves more probability mass onto the retained support, the binary gate term changes. Second, as outside-\nsupport mass shrinks, the contribution of the tail shrinks with it. Third, the conditional entropy of the retained head\ncan itself change, either decreasing at lock-like contexts or increasing at fork-like contexts depending on how much\nroom the retained support leaves for within-head reshaping.\nWhy total entropy can still fall when T\ntrain \n> 1. With the three channels in hand, the apparent paradox becomes\nstraightforward to resolve. The support-compression mechanism identified earlier reduces total entropy through\ntwo large-scale effects at once: it suppresses diffuse outside-support mass, and in the high-retained-mass regime\nrelevant here it also lowers the binary gate term by pushing more probability mass onto the retained support.\nThe within-suppo"
+    },
+    {
+      "aiAssistanceScore": 0.29970914,
+      "confidence": "Medium",
+      "endIndex": 4097,
+      "label": "Human Written",
+      "pageIndex": 21,
+      "startIndex": 2898,
+      "text": "ort reshaping term can act differently. At lock-like contexts, the retained head is already close to\nsingleton, so within-head entropy has little room to increase and may decrease further. At fork-like contexts, by\ncontrast, T\ntrain \n> 1 can flatten the retained head and therefore increase its conditional entropy locally. But this local\nincrease is bounded by the size of the retained support, whereas the gate and tail reductions operate on the entire\ncomplement of that support. Total entropy can therefore decrease even when the student preserves or even increases\nconditional head entropy at the subset of contexts where exploration remains useful.\nEvaluation-time temperature acts on conditional head entropy. The operational role of evaluation-time temper-\nature is now easy to state. Temperature does not act on the full-vocabulary entropy decomposition directly; it acts on\nthe conditional distribution inside whatever head remains after training and truncation. Applying the fixed-support\nentropy-response calculation to the retained-head distribution gives\nd\nd\u03c4 \nH\n\u0010\nTemper\nS\ns\n\u03c4 \n[p\n\u03b8 \n(\u00b7 | s, S\ns\n)]\n\u0011\n= \nVar\nTemper\nSs\n\u03c4 \n[p\n\u03b8 \n(\u00b7|s,S\ns\n)]\n\u0002\nlog p\n\u03b8 \n(v | s, S\ns\n)\n\u0003\n\u03c4 \n3 \n\u2265 0. (31)\n22"
+    },
+    {
+      "aiAssistanceScore": 0.29970914,
+      "confidence": "Medium",
+      "endIndex": 945,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 0,
+      "text": "If the retained head is effectively singleton, or nearly uniform, the variance term is near zero and temperature has little\neffect. If the retained head contains several comparable but non-identical tokens, the variance term is substantial and\nevaluation-time temperature changes the operational policy much more strongly. This derivative therefore gives the\nformal version of the main-text intuition: lower total entropy and stronger exploration are not contradictory because\nthey concern different levels of the distribution.\nWhy the teacher can be nearly temperature-inert while the student need not be. The variance criterion in\nEquation (31) also helps explain the empirical asymmetry between frozen model and student observed in Figure 6. At\nmany contexts, the frozen model\u2019s evaluation-time distribution is already dominated by a single token: the kept set\nunder top-k/top-p is effectively singleton, and the log-probability variance with"
+    },
+    {
+      "aiAssistanceScore": 0.72656536,
+      "confidence": "Medium",
+      "endIndex": 3393,
+      "label": "AI-Generated",
+      "pageIndex": 22,
+      "startIndex": 944,
+      "text": "hin that singleton is therefore negligible.\nIn such a context, changing \u03c4 barely changes the operational policy because there is no meaningful within-head\nspread for temperature to act on.\nSSD changes this asymmetrically. At lock-like contexts, the retained head can stay tiny, so decoding remains nearly\ntemperature-inert. At fork-like contexts, training can suppress outside-support mass while preserving a nontrivial\nmulti-token head, so evaluation-time temperature remains an effective control knob. In this sense, SSD removes the\nwrong kind of uncertainty while preserving the right kind.\nConnection back to the objective. The entropy picture is not a separate mechanism; it is another view of the\nsame three-term objective from Equation (15). The gate term \u2212 log KeptMass\n\u03b8 \n(s) drives support acquisition and\ntail removal, typically lowering the gate term in the high-retained-mass regime and shrinking the tail contribution in\nEquation (30). The R\u00e9nyi-shaping term acts only inside the retained head, and for the typical SSD regime T > 1, it\nsmooths that head rather than the full vocabulary. The KL anchor keeps this smoothing aligned with the teacher\u2019s\nretained preferences.\nThis is why the lock-fork distinction reappears naturally inside the entropy decomposition. At locks, the retained\nhead is nearly singleton, so the visible effect is tail suppression. At forks, the retained head contains several plausible\ncontinuations, so the same objective can remove tail mass while preserving or increasing uncertainty inside the head\nitself. The student can therefore be globally sharper yet locally more explorable.\nSummary. The apparent contradiction between lower total entropy and preserved exploration is only a mismatch of\nlevels. SSD can lower full-vocabulary entropy by moving probability mass onto the retained support and suppressing\ndiffuse outside-support mass. At the same time, it can preserve or increase conditional head entropy at the contexts\nwhere several plausible continuations survive truncation. Evaluation-time temperature acts on that conditional head,\nnot on the discarded tail. The next subsection uses this same perspective to explain why decode-only tuning on the\nfrozen model cannot recover the effect of changing the model itself.\nB.5 Why Decode-Only Tuning Cannot Match SSD\nThe previous subsections characterize what SSD changes during training. We now ask whether a single global\ndecode-only policy on the fro"
+    },
+    {
+      "aiAssistanceScore": 0.3900218,
+      "confidence": "Low",
+      "endIndex": 4389,
+      "label": "Human Written",
+      "pageIndex": 22,
+      "startIndex": 3392,
+      "text": "ozen model could reproduce the same effect. In the special no-truncation ideal-fit case\nfrom Equation (28), the answer can be yes: temperature composition alone makes local matching possible. The\nrelevant question for the truncated regime studied in the paper is different: can one global decode-only policy match\nthe student across heterogeneous contexts? In general, no. Under the local ideal-fit approximation, the student at a\nfixed context still has the form of a power transform on a retained prefix; the limitation is that decode-only tuning must\napply one global policy to the frozen model\u2019s original cumulative geometry, whereas SSD changes that geometry\nitself.\nDecoding operators. Let p\n(1)\n(s) \u2265 p\n(2)\n(s) \u2265 \u00b7 \u00b7 \u00b7 \u2265 p\n(V )\n(s) be the frozen-model probabilities at context s, sorted\nby decreasing probability. Write \u03b1 = 1/\u03c4 , where \u03c4 = T\neval\n. A decode-only policy composes three operators in some\nfixed order \u03c3.\nTemperature scaling:\n(T\n\u03b1 \np)\n(i) \n= \np\n\u03b1\n(i)\nP\nV\nj=1 \np\n\u03b1\n(j)\n. (32)\n23"
+    },
+    {
+      "aiAssistanceScore": 0.3900218,
+      "confidence": "Low",
+      "endIndex": 671,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 0,
+      "text": "Top-k truncation:\n(K\nk \np)\n(i) \n= \np\n(i) \n1[i \u2264 k]\nP\nk\nj=1 \np\n(j)\n. (33)\nTop-p truncation, with prefix length m\ntop-p\n(p) = min{m : \nP\nm\ni=1 \np\n(i) \n\u2265 top-p}:\n(P\ntop-p \np)\n(i) \n= \np\n(i) \n1[i \u2264 m\ntop-p\n(p)]\nP\nm\ntop-p\n(p)\nj=1 \np\n(j)\n. (34)\nThese operators slightly extend the empirical sweep in the paper: the experiments focus on the standard vLLM\nordering, while the analysis below asks what any fixed ordering of the same ingredients can and cannot do.\nNormal form: all operator orderings collapse. A natural objection is that the empirical sweep in the paper tests\nonly one practical operator ordering, namely temperature \u2192 top-k \u2192 top-p as implemented by vLLM. Perhaps"
+    },
+    {
+      "aiAssistanceScore": 0.5366664,
+      "confidence": "Low",
+      "endIndex": 2662,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 670,
+      "text": "s a\ndifferent ordering would close the gap. The following proposition shows that it cannot: all fixed orderings collapse to\nthe same restricted normal form.\nProposition B.5 (Normal form of decode-only policies). For any fixed permutation \u03c3 of T\n\u03b1\n, K\nk\n, and P\ntop-p\n,\nthe final decode-only distribution can be written as\n\u03bc\n\u03c3\ns \n((i)) = \np\n(i)\n(s)\n\u03b1 \n1[i \u2264 m\n\u03c3\ns \n]\nP\nm\n\u03c3\ns\nj=1 \np\n(j)\n(s)\n\u03b1 \n, (35)\nfor some prefix length m\n\u03c3\ns \nthat depends on the order \u03c3, the parameters (\u03b1, k, top-p), and the context s.\nProof. Each operator preserves rank-prefix structure. First, T\n\u03b1 \nis monotone in p, so it preserves the ranking and keeps\nthe full support. Second, K\nk \nkeeps the top-k prefix. Third, P\ntop-p \nkeeps the smallest prefix whose cumulative mass\nreaches the chosen top-p threshold.\nTherefore, any sequence of these operators produces a distribution supported on some prefix of the frozen-model\nranking. Once the support has been reduced to a prefix {(1), . . . , (m)}, applying temperature yields probabilities\nproportional to p\n\u03b1\n(i) \non that same prefix. The only thing an ordering can change is where the prefix boundary lands,\nbecause top-p is evaluated against different intermediate distributions depending on whether temperature has\nalready been applied. It cannot change the fact that the final decoder acts as a single power transform on a prefix of\nthe original ranking.\nThis proposition already shows the basic limitation of decode-only tuning. Reordering can move the prefix boundary,\nbut it cannot create a new kind of distributional transformation. It also clarifies why this does not contradict the local\nideal-fit picture above: at a single context, the student can still lie in the same normal-form family, but training changes\nthe underlying cumulative curves and ranking that one global decoder must serve across contexts.\nTwo structural invariants. The normal form immediately implies two constraints that no reordering can break.\nCorollary B.6 (Prefix rigidity). For an"
+    },
+    {
+      "aiAssistanceScore": 0.4573816,
+      "confidence": "Medium",
+      "endIndex": 3058,
+      "label": "Human Written",
+      "pageIndex": 23,
+      "startIndex": 2661,
+      "text": "ny order \u03c3, supp(\u03bc\n\u03c3\ns \n) = {(1), . . . , (m\n\u03c3\ns \n)}. To include rank-(r) token, the\ndecoder must also include every higher-ranked token (1), . . . , (r\u22121).\nCorollary B.7 (Power rigidity). For any surviving pair i, j \u2264 m\n\u03c3\ns \n,\nlog \n\u03bc\n\u03c3\ns \n((i))\n\u03bc\n\u03c3\ns \n((j)) \n= \u03b1 log \np\n(i)\n(s)\np\n(j)\n(s) \n. (36)\nAll pairwise log-odds inside the kept support are scaled by the same global factor \u03b1 = 1/T\neval\n.\n24"
+    },
+    {
+      "aiAssistanceScore": 0.4573816,
+      "confidence": "Medium",
+      "endIndex": 1214,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 0,
+      "text": "These two rigidities are the structural reason the decode-only sweep curves in Figure 2 are so flat. Prefix rigidity\nmeans a lower-ranked useful branch cannot be admitted without also admitting every higher-ranked token above it,\neven if some of those higher-ranked tokens are distractors. Power rigidity means the decoder cannot flatten one part\nof the head while sharpening another, cannot widen the head-tail gap without simultaneously changing within-head\nratios in the same global way, and cannot treat some head tokens as useful alternatives while suppressing others as\nnoise.\nThe standard pipeline makes the coupling explicit. The normal-form result already shows that decode-only\ntuning is limited, but the standard practical pipeline makes the conflict especially transparent. Fix a context s. After\ntemperature and top-k, the surviving distribution is\n\u02dc\u03c0\n(\u03c4,k)\n(i) \n(s) = \np\n(i)\n(s)\n1/\u03c4 \n1[i \u2264 k]\nP\nk\nj=1 \np\n(j)\n(s)\n1/\u03c4 \n. (37)\nTop-p then keeps the smallest prefix whose cumulative mass reaches the chosen threshold. Define the prefix mass\nby\nS\ns,m\n(\u03c4, k) =\nP\nm\ni=1 \np\n(i)\n(s)\n1/\u03c4\nP\nk\nj=1 \np\n(j)\n(s)\n1/\u03c4 \n, m \u2264 k. (38)\nApplying the escort-covariance identity from Equation (19) to the top-k restricted di"
+    },
+    {
+      "aiAssistanceScore": 0.2672175,
+      "confidence": "Medium",
+      "endIndex": 3107,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 1213,
+      "text": "istribution gives\nd\nd\u03c4 \nS\ns,m\n(\u03c4, k) \u2264 0. (39)\nSo increasing temperature makes the top of the ranked list accumulate mass more slowly, forcing the decoder to\nretain more tokens to reach the same top-p threshold. The resulting prefix length\nm\ns\n(\u03c4, k, top-p) = min{m \u2264 k : S\ns,m\n(\u03c4, k) \u2265 top-p}\nis therefore nondecreasing in \u03c4 , k, and top-p.\nThis gives a very concrete interpretation of the three practical decoding knobs. Increasing \u03c4 makes the retained head\nflatter, but it also makes the retained prefix longer. Increasing k or top-p makes the retained prefix longer, but neither\nchanges the internal geometry of the head in any context-dependent way. There is no decode-only knob that flattens\na useful fork head while leaving the support boundary of lock-like contexts unchanged. The knob that helps forks is\nexactly the knob that destabilizes locks.\nUnder the standard pipeline, a single decode-only policy can satisfy both lock and fork requirements simultaneously\nonly if r\nF \n\u2264 k and\nS\ns\nF\n, r\nF\n\u22121\n(\u03c4, k) < top-p \u2264 S\ns\nL\n, r\nL \n(\u03c4, k). (40)\nBy Equation (39), increasing \u03c4 to help the fork simultaneously lowers the lock-side upper bound. The same knob\nthat makes it easier to retain more fork alternatives therefore makes it harder to keep lock supports short. This is the\nprecision-exploration conflict in its most operational form.\nReordering the operators can shift where the prefix boundary lands, and when top-p precedes top-k the final support\ncan be clipped again by k. But no reordering escapes the two rigidities above: the final decoder still acts as a\nsingle global exponent on a prefix of the frozen ranking. Reordering can shift the compromise; it cannot create a\ncontext-dependent transformation of the frozen model\u2019s cumulative geometry.\nWhy SSD has a degree of freedom decode-only tuning lacks. SSD escapes this limitation because training\nchanges the base distributio"
+    },
+    {
+      "aiAssistanceScore": 0.38204,
+      "confidence": "High",
+      "endIndex": 3518,
+      "label": "Human Written",
+      "pageIndex": 24,
+      "startIndex": 3106,
+      "text": "on itself from p\n0\n(\u00b7 | s) to p\n\u03b8 \n(\u00b7 | s). Once the distribution changes, the cumulative curves\nseen by the decoder can change as well:\nS\ns,m\n(\u03c4, k; p\n0\n) \u2212\u2192 S\ns,m\n(\u03c4, k; p\n\u03b8 \n),\nThis is the degree of freedom that no decode-only reordering possesses. In the truncated regime, SSD can remove\ndiffuse tail mass at lock-like contexts while preserving a cleaner multi-token head at fork-like contexts. When those\n25"
+    },
+    {
+      "aiAssistanceScore": 0.38204,
+      "confidence": "High",
+      "endIndex": 917,
+      "label": "Human Written",
+      "pageIndex": 25,
+      "startIndex": 0,
+      "text": "cumulative-curve changes move in opposite directions at locks and forks, the feasible interval in Equation (40) widens.\nThis is the sense in which SSD changes the problem that the decoder is solving: the decoder is no longer operating\non the same cumulative geometry.\nEven beyond support boundaries, power rigidity from Equation (36) still constrains any reordered decoder to a single\nglobal exponent on all surviving log-odds. SSD, by contrast, changes the underlying logits directly: ranks can move,\nhead-tail gaps can widen context-dependently, cumulative curves can change differently across contexts, and the\nstudent can become simultaneously more concentrated and more temperature-responsive. That is the structural\nchange that persists in the empirical decode-only sweeps.\nThe \u201ctruncate first\u201d objection. The most natural counterargument is to choose the support first with top-p and\nonly then use temperature "
+    },
+    {
+      "aiAssistanceScore": 0.5966998,
+      "confidence": "Medium",
+      "endIndex": 3408,
+      "label": "AI-Generated",
+      "pageIndex": 25,
+      "startIndex": 916,
+      "text": " for exploration inside that fixed support. This partially decouples support from temperature,\nbut it does not solve the real problem. The support is still chosen from the frozen model\u2019s own cumulative curve. If\nthat curve concentrates mass poorly at a lock, the mistake is frozen in before temperature acts. If it under-represents\na useful fork branch, truncating first may exclude that branch entirely, and later temperature cannot bring it back.\nSo support-first decoding shifts the compromise, but it does not create the main SSD effect: locks becoming easier\nto secure and fork heads becoming cleaner without reopening the tail. The missing ingredient is still the same one:\nchanging the model\u2019s distribution itself rather than only changing how that fixed distribution is decoded.\nSummary. The distinction between SSD and decode-only tuning is structural, not merely parametric. All fixed\norderings of temperature, top-k, and top-p collapse to a power transform on a prefix of the frozen model\u2019s ranking.\nThis induces prefix rigidity and power rigidity, and under the standard pipeline it ties exploration and precision to\nthe same global decoding knob. By changing the model distribution itself, SSD can alter the cumulative curves and\nranking that the global decoder sees. That is why a decode-only gap can persist even after the best sweep on the\nfrozen model.\nC Experimental Details and Additional Analyses\nThis section provides the experimental details and supplementary empirical analyses that support the results in\nSections 3 and 4. We first give the full training and evaluation protocol, then expand the hyperparameter and transfer\nresults from Section 3, and finally provide the additional empirical details behind the toy simulation and the high-\ntemperature stress test from Section 4.\nC.1 Full Experimental Setup\nThis subsection fully specifies the setup summarized in Section 3. The key point is that the training data consists only\nof competitive-programming prompts and the model\u2019s own sampled solutions; no verifier, execution filter, or external\nteacher is used at any stage.\nPrompt source and synthetic data generation. All SSD training data is synthesized from the seed subset of the\nrSTARcoder dataset (Liu et al., 2025), used only as a pool of unlabeled competitive-programming prompts. After\nexact string de-duplication on the whitespace-normalized problem statement, this yields \u223c10,168 unique problems.\nFor each prompt, we sample exactly one solution from the "
+    },
+    {
+      "aiAssistanceScore": 0.3453382,
+      "confidence": "Low",
+      "endIndex": 4474,
+      "label": "Human Written",
+      "pageIndex": 25,
+      "startIndex": 3407,
+      "text": " frozen base model using vLLM (Kwon et al., 2023) (v0.11.0,\ntensor-parallel across 8 GPUs) with a 128K maximum sequence length. The per-model decoding configuration\nused for this sampling step is listed in Table 3. We apply only a minimal degeneracy filter to remove clearly unusable\noutputs, such as empty responses and single-line stubs. No correctness verification of any kind is applied; the\nretained samples are the raw, unverified SSD training targets.\nPrompt formatting and optimization. All models are queried in a single-turn chat format using their official chat\ntemplates. For instruct models, each problem is wrapped in a system message requesting a Python solution inside a\nmarkdown code block, followed by the problem statement as the user turn. For thinking models, we keep the same\ntask presentation but do not add an explicit chain-of-thought instruction; instead, we rely on the model\u2019s native\ntemplate to trigger its built-in reasoning behavior. Fine-tuning uses Megatron-LM\n4 \non 8\u00d7B200 GPUs, with expert\n4\nhttps://github.com/NVIDIA/Megatron-LM\n26"
+    },
+    {
+      "aiAssistanceScore": 0.3453382,
+      "confidence": "Low",
+      "endIndex": 526,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 0,
+      "text": "Table 3 Generation-time and evaluation-time decoding settings used throughout the paper. All configurations use 128K\nmaximum sequence length and N =1 sample per prompt during synthetic data generation.\nGeneration Evaluation\nModel T\ntrain \ntop-k top-p T\neval \ntop-k top-p\nLlama-3.1-8B-Instruct 0.8 20 0.8 0.7 20 0.8\nQwen3-4B-Instruct 1.6 20 0.8 1.1 20 0.8\nQwen3-4B-Thinking 1.1 20 0.95 0.7 20 0.95\nQwen3-30B-Instruct 1.6 20 0.8 0.9 20 0.8\nQwen3-30B-Thinking 1.2 20 0.95 0.7 20 0.95\nTable 4 Baseline decoding settings used for t"
+    },
+    {
+      "aiAssistanceScore": 0.24480683,
+      "confidence": "Low",
+      "endIndex": 1964,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 525,
+      "text": "the frozen-model comparisons in this paper. These are the model-specific\nsampling configurations used for the base-model results reported in the main text.\nModel T top-k top-p\nLlama-3.1-8B-Instruct 0.9 none 0.8\nQwen3-4B-Instruct-2507 0.7 20 0.8\nQwen3-4B-Thinking-2507 0.6 20 0.95\nQwen3-30B-A3B-Instruct-2507 0.7 20 0.8\nQwen3-30B-A3B-Thinking-2507 0.6 20 0.95\nparallelism EP=8 for the MoE models. We optimize with AdamW (\u03b2\n1\n=0.9, \u03b2\n2\n=0.95, weight decay 0.1) and cosine\nlearning-rate decay from 5 \u00d7 10\n\u22126 \nto 1 \u00d7 10\n\u22126\n, using global batch size 32 and sequence length 65,536. Instruct\nmodels are trained for 2,500 iterations and thinking models for 300 iterations; checkpoints are saved every 250 and\n50 iterations respectively.\nEvaluation and decoding settings. Our primary benchmark is LiveCodeBench v6 (LCB v6; 131 problems, February\nto May 2025), stratified by easy, medium, and hard difficulty. We also report LiveCodeBench v5 (374 problems,\nAugust 2024 to February 2025) as a secondary confirmation on a larger set. The primary metric throughout the\npaper is pass@1, and we additionally report pass@5 and per-difficulty breakdowns. All pass@k estimates use 10\nindependent samples per problem. Frozen base-model baselines are evaluated with the model-specific baseline\ndecoding settings in Table 4, while post-SSD models are evaluated with the student-side decoding settings in Table 3.\nTaken together, these details fully instantiate"
+    },
+    {
+      "aiAssistanceScore": 0.34410843,
+      "confidence": "Low",
+      "endIndex": 3682,
+      "label": "Human Written",
+      "pageIndex": 26,
+      "startIndex": 1963,
+      "text": "e the compact setup described in Section 3.\nC.2 How SSD Hyperparameters Interact: Full Sweeps\nThis subsection expands the temperature-interaction results from Section 3.4. To keep the large ablation sweep\ntractable, these runs use fewer training steps than the main experiments. The main text shows representative views\nof the effect; here we give the fuller sweeps that make the same structure visible across both pass@1 and pass@5.\nQwen3-30B-Instruct full sweep. Figure 9 expands the main-text scatter plots by showing the broader search over\ntraining-time and evaluation-time decoding configurations for Qwen3-30B-Instruct.\nReading the full sweep. Two patterns matter. First, the successful configurations occupy a broad band rather than a\nsingle fragile optimum, which supports the claim that training-time and evaluation-time temperatures interact through\na relatively stable operating region. Second, the truncated runs consistently achieve a higher pass@1 ceiling than the\nno-truncation runs, indicating that training-time support compression contributes something beyond temperature\ncomposition alone.\nNo-truncation results and effective temperature. Figure 10 isolates the no-truncation regime, where the temperature-\ncomposition picture is cleanest. In this setting, pass@1 and pass@5 are largely organized by the effective temperature\nT\neff \n= T\ntrain\nT\neval\n: configurations with similar products achieve similar performance even when the two temperatures\nare factored differently. The broad peak near T\neff \n\u2248 1.2 is consistent with the composition analysis developed in\nSections B.3 and 3.4.\nThinking-model confirmation. Figure 11 shows that the same qualitative structure appears in Qwen3-4B-Thinking.\n27"
+    },
+    {
+      "aiAssistanceScore": 0.34410843,
+      "confidence": "Low",
+      "endIndex": 101,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 0,
+      "text": "baseline 42.4%\n46.0% \n45.7%\n45.8%\n0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5\n10\n20\n30\n40\n50\nT\ntrain \n\u00d7 T\neval\np\n"
+    },
+    {
+      "aiAssistanceScore": 0.32324275,
+      "confidence": "Low",
+      "endIndex": 973,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 100,
+      "text": "\na\nss\n@1\n \n(\n%\n)\ntop-k=5\ntop-k=10\nno trunc.\na pass@1 vs effective temperature\nbaseline 53.5%\n60.4%\n68.4%\n68.7%\n0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5\n30\n40\n50\n60\n70\n80\nT\ntrain \n\u00d7 T\neval\np\na\nss\n@5\n \n(\n%\n)\ntop-k=5\ntop-k=10\nno trunc.\nb pass@5 vs effective temperature\nFigure 9 Across the full sweep, truncated and no-truncation settings occupy similar broad operating bands, but truncation\nreaches a higher pass@1 ceiling. SSD hyperparameter search on LCB v6 for Qwen3-30B-Instruct (baseline: 42.4% pass@1 and\n53.5% pass@5). Panels show representative configurations against effective temperature T\neff\n; curves are per-group quadratic fits,\nand the dashed line marks the frozen instruct baseline.\n(a) Best pass@1 across iterations (b) Best pass@5 across iterations\n43.5 43.5 43.7 43.4 44.0 43.6 44.3 43.9 45.5 45.2\n44.3 44.0 43.9 45.5 44.8 44.3 45.3 45.2 44.4 45.1\n44.7 44.1 44.2 45"
+    },
+    {
+      "aiAssistanceScore": 0.14608996,
+      "confidence": "Medium",
+      "endIndex": 1425,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 972,
+      "text": "5.3 45.3 44.7 45.3 45.3 45.7 45.1\n45.6 46.0 46.6 46.3 46.3 47.4 46.3 46.6 42.7 38.1\n46.0 46.3 47.4 48.1 47.5 47.0 43.6 40.8 36.6 30.9\n0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5\nEval Temperature\n0.5\n0.7\n1\n1.5\n2\nT\nr\nai\nn\ni\nn\ng\n \nT\ne\nmp\ne\nr\na\ntur\ne\n48.1\n44.0\n30.9\n56.5 56.6 57.9 56.6 57.8 58.8 58.7 57.9 58.2 59.5\n56.8 57.9 57.3 58.5 58.9 59.1 59.3 59.6 59.4 61.6\n59.0 58.1 58.8 60.1 59.6 59.5 59.1 60.3 62.3 60.9\n59.2 60.1 60.2 61.1 59.6 60.3 59.9 60.1 56.7 53"
+    },
+    {
+      "aiAssistanceScore": 0.33193257,
+      "confidence": "Low",
+      "endIndex": 3354,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 1424,
+      "text": "3.3\n61.7 61.7 62.5 64.0 63.8 64.0 60.6 58.4 54.4 54.1\n0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5\nEval Temperature\n0.5\n0.7\n1\n1.5\n2\n64.0\n58.0\n53.3\nFigure 10 Without training-time truncation, performance is largely organized by the effective temperature T\neff \n= T\ntrain\nT\neval\n.\nQwen3-30B-Instruct without top-k/top-p truncation during SSD data generation. Panels show best pass@1 (left) and pass@5\n(right) across the full grid of (T\ntrain\n, T\neval\n) settings.\nThe best-performing region again lies on a moderate diagonal band rather than at isolated values of either temperature\nalone. This matters because it shows that the temperature-composition pattern is not confined to instruct-style\nmodels. Taken together, the full sweeps support the two-part claim from Section 3.4: without training-time truncation,\nperformance is largely organized by effective temperature, while truncation preserves that broad structure and lifts\nthe achievable ceiling.\nC.3 Out-of-Domain Transfer\nThis subsection makes precise the main-text claim that SSD training on competitive-programming prompts does not\nsubstantially damage broader capabilities. We evaluate transfer on benchmarks for math reasoning, general code\ngeneration, and code understanding, and the resulting picture is scale-dependent rather than uniform.\nBenchmark scope. We use AIME to probe mathematical reasoning, HumanEval (Chen et al., 2021) to probe general\ncode generation in Python and Shell, and CruxEval to probe code understanding, and MMLU (Hendrycks et al., 2021b)\nto probe general knowledge. These benchmarks are adjacent to competitive programming but not identical to it,\nwhich makes them a useful test of whether the student is merely over-specialized to the training domain.\nThe 30B models remain broadly stable. The clearest pattern in Table 5 is that the two 30B models remain broadly\nstable under programming-only SSD training. For Qwen3-30B-Instruct, all changes rem"
+    },
+    {
+      "aiAssistanceScore": 0.13577482,
+      "confidence": "Medium",
+      "endIndex": 3833,
+      "label": "Human Written",
+      "pageIndex": 27,
+      "startIndex": 3353,
+      "text": "main within a narrow band of\nroughly \u00b12 pp. Qwen3-30B-Thinking shows the same behavior, with only small benchmark-level shifts and no broad\ncollapse in capability. Both 30B models also maintain their MMLU scores to within 0.3 pp. For the largest models\nin our study, programming-only SSD therefore appears to preserve non-competitive-programming performance\nreasonably well.\nSmaller models show more uneven tradeoffs. At smaller scale, the picture becomes more mixed. Qwen3-4B-\n28"
+    },
+    {
+      "aiAssistanceScore": 0.13577482,
+      "confidence": "Medium",
+      "endIndex": 297,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 0,
+      "text": "54.8 55.2 55.5 55.3 55.8 55.4 56.0 56.0 55.5 55.5 56.2 55.7\n55.3 56.3 55.6 55.2 55.6 55.7 55.4 56.5 54.8 55.7 56.1 55.3\n55.5 55.9 56.2 55.7 56.3 55.9 56.0 56.0 56.0 56.6 56.0 55.2\n55.0 55.9 55.3 55.9 55.6 56.1 56.0 55.6 56.7 56.5 55.3 55.0\n55.7 55.2 55.3 55.8 54.6 55.7 55.9 56.0 55.1 55.7 55.2 54"
+    },
+    {
+      "aiAssistanceScore": 0.0919163,
+      "confidence": "Medium",
+      "endIndex": 775,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 296,
+      "text": "4.6\n55.5 56.0 57.8 55.8 55.6 55.3 56.0 56.0 55.2 54.8 54.7 54.3\n56.9 55.5 56.3 56.0 56.3 55.7 55.7 55.8 55.3 55.0 54.7 53.4\n56.0 56.0 56.3 56.3 56.8 55.6 57.8 55.2 54.6 53.8 54.0 52.3\n56.3 57.0 56.4 56.6 56.6 55.6 54.5 54.9 54.9 54.7 51.8 51.3\n56.3 56.8 56.2 56.4 56.4 55.5 54.4 55.2 53.8 52.2 51.7 49.5\n55.9 55.7 56.9 55.2 54.9 54.9 55.0 53.4 52.0 51.5 50.5 49.5\n56.1 55.5 56.2 55.2 54.9 54.9 55.6 52.9 52.3 49.3 49.1 48.2\n56.0 56.0 55.7 55.3 54.8 55.1 52.6 52.7 50.8 51.7 49.3 "
+    },
+    {
+      "aiAssistanceScore": 0.05424178,
+      "confidence": "Medium",
+      "endIndex": 1250,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 774,
+      "text": " 47.2\n0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6\nT\neval\n0.6\n0.7\n0.8\n0.9\n1\n1.1\n1.2\n1.3\n1.4\n1.5\n1.6\n1.7\n1.8\nT\ntr\nai\nn\n57.8\n55.0\n47.2\n68.9 69.1 69.3 71.4 68.4 69.5 70.0 70.3 71.1 69.8 70.7 70.5\n68.4 70.8 70.0 69.8 69.4 69.3 69.7 70.2 69.2 70.9 69.9 70.2\n70.6 70.0 70.5 69.0 70.7 69.3 70.3 71.1 69.8 71.3 69.9 69.2\n69.6 69.2 68.7 69.4 69.0 70.7 70.3 68.4 69.1 70.1 68.7 68.8\n69.4 68.9 70.1 69.7 69.6 69.5 69.6 69.9 69.9 69.8 69.4 68.8\n69.0 70.2 71.4 70.1 69.9 69.8 69.8 70.5 69"
+    },
+    {
+      "aiAssistanceScore": 0.18083097,
+      "confidence": "Medium",
+      "endIndex": 1724,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 1249,
+      "text": "9.2 68.9 68.8 68.0\n70.1 70.6 69.9 69.2 70.5 70.7 68.6 69.4 68.3 68.6 67.8 65.9\n69.8 70.6 69.8 70.3 69.3 69.0 69.2 67.9 67.0 66.7 66.8 65.2\n70.3 70.4 69.7 69.5 68.5 67.7 67.4 68.7 67.8 67.0 64.8 63.4\n70.4 69.9 69.7 70.1 69.5 69.0 68.1 68.3 66.1 65.2 64.9 62.1\n68.5 70.5 70.4 68.7 67.6 67.7 67.6 66.8 64.2 63.4 62.3 61.6\n69.8 70.1 70.3 69.0 68.6 68.0 68.1 65.9 64.5 61.9 60.5 58.9\n70.0 70.1 70.3 68.1 68.9 69.2 65.8 64.8 62.0 61.9 60.6 58.3\n0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1."
+    },
+    {
+      "aiAssistanceScore": 0.2719269,
+      "confidence": "Low",
+      "endIndex": 2695,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 1723,
+      "text": ".4 1.5 1.6\nT\neval\n0.6\n0.7\n0.8\n0.9\n1\n1.1\n1.2\n1.3\n1.4\n1.5\n1.6\n1.7\n1.8\n71.4\n69.0\n58.3\nFigure 11 The same effective-temperature structure appears in Qwen3-4B-Thinking. Best pass@1 (left) and pass@5 (right)\nacross the full grid of (T\ntrain\n, T\neval\n) settings without training-time truncation.\nTable 5 Programming-only SSD preserves out-of-domain performance well for the 30B models, while smaller models\nshow more uneven benchmark-dependent tradeoffs. Transfer results across math reasoning (AIME), general code generation\n(HumanEval), and code understanding (CruxEval), and general knowledge (MMLU), reported as percentages. Best within each\nmodel group is shown in bold.\nAIME HumanEval CruxEval MMLU\nModel \u201924 \u201925 Py Sh Input Output Overall\nLlama-3.1-8B-Instruct 4.7 2.0 65.2 25.3 33.9 5.9 68.4\n+ SSD 0.3 0.3 67.1 29.1 38.8 10.1 68.3\nQwen3-4B-Instruct 61.3 44.6 87.8 47.5 85.5 77.6 70.6\n+ SSD 55.0 43.3 88.4 31.7 86.8 77.6 70.0\nQwen3-4B-Thinking 85.0 76.7 86.0 41.1 43.0 39."
+    },
+    {
+      "aiAssistanceScore": 0.35906386,
+      "confidence": "Low",
+      "endIndex": 4385,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 2694,
+      "text": ".5 68.7\n+ SSD 84.3 77.7 87.2 38.6 52.4 49.6 68.7\nQwen3-30B-Instruct 77.3 58.5 95.1 51.3 90.3 82.9 80.2\n+ SSD 78.9 58.1 94.5 50.6 91.6 81.1 80.1\nQwen3-30B-Thinking 91.3 80.5 94.5 52.5 94.4 92.4 78.7\n+ SSD 90.6 80.1 95.1 50.6 92.5 91.6 78.4\nInstruct shows clearer regressions on AIME \u201924 and HumanEval Shell, even though it remains stable or slightly\nimproved on HumanEval Python and CruxEval. Qwen3-4B-Thinking shows a different profile, with small declines on\nsome benchmarks but substantial gains on CruxEval. Llama-3.1-8B-Instruct exhibits the sharpest tradeoff, losing\nground on AIME while improving on HumanEval and CruxEval. By examining Llama\u2019s generations on AIME, we found\nthat the model frequently fails to output a final numerical answer and instead produces a code block, leading to\nnear-zero accuracy. The transfer story is therefore best summarized as scale-dependent: the 30B models remain\nbroadly stable, whereas the smaller models show more uneven benchmark-specific tradeoffs.\nC.4 Toy Simulation: Full Specification and Additional Analyses\nThis subsection provides the full specification of the toy environment introduced in Section 4.2. The aim is to make\neach part of the main-text mechanism story explicit: the FSM structure, the student induced by SSD, the global\ntemperature sweep, the robustness to truncation choice, and the fork-level operational policy at the optimum.\nWhy this toy is informative. The controlled simulation is designed so that every successful trajectory must traverse\nboth kinds of contexts that matter for the paper\u2019s hypothesis: a fork, where several continuations remain plausible,\nand a sequence of locks, where only one continuation is correc"
+    },
+    {
+      "aiAssistanceScore": 0.40063184,
+      "confidence": "Low",
+      "endIndex": 4444,
+      "label": "Human Written",
+      "pageIndex": 28,
+      "startIndex": 4384,
+      "text": "ct but distractor mass remains in the tail. Because every\n29"
+    },
+    {
+      "aiAssistanceScore": 0.40063184,
+      "confidence": "Low",
+      "endIndex": 1030,
+      "label": "Human Written",
+      "pageIndex": 29,
+      "startIndex": 0,
+      "text": "Table 6 State archetypes in the toy FSM. The three state types instantiate a fail-dominated root, a broad fork-like head, and a\nsharply peaked lock with a diffuse distractor tail. In each row, the listed values are the highest-probability tokens; the remaining 12\ntokens follow a geometric tail that sums to the residual mass.\nState type Head probabilities Character\nLock (\u00d73 per path) [0.750, 0.055, 0.050, 0.037, . . .] Correct at rank-1; 25% of mass remains in a 15-\ntoken geometric tail\nFork (\u00d71 per path) [0.148, 0.280, 0.140, 0.144, . . .] Correct at rank-2; four head tokens are near-tied\nRoot (\u00d71) [0.200, 0.190, 0.329, 0.126, . . .] \nFAIL token (tok2) dominates; the two correct paths\nbegin at ranks 2 and 3\n(a) FSM structure (V = 16 tokens)\ntok\u2082\u208b\u2081\u2085\ntok\u2080\ntok\u2081\ntok\u2080\ntok\u2080\ntok\u2080\ntok\u2080\nFAIL \nRoot\nFork-A\nFork-B\nLock-A\n(\u00d73)\nLock-B\n(\u00d73)\nPASS\n(b)Distribution archetypes\n10%\n20%\n30%\n14.8\nt\u2080\n28.0\nt\u2081\n14.0\nt\u2082\n14.4\nt\u2083 t\u2084 t\u2085\nFork\nH = 2.81 bits\n20%\n40%\n60%\n80% \n75.0\nt\u2080\n5.5\nt\u2081\n5.0\nt\u2082\n3.7\nt\u2083 t\u2084 t\u2085\nLock\nH = 1.61 bits\nFigure 12 The toy FS"
+    },
+    {
+      "aiAssistanceScore": 0.35512644,
+      "confidence": "Low",
+      "endIndex": 3132,
+      "label": "Human Written",
+      "pageIndex": 29,
+      "startIndex": 1029,
+      "text": "SM makes the lock/fork conflict explicit. (a) The root branches into two symmetric successful paths, each\nof which traverses one fork and three locks before PASS. At non-root states, tok0 is the correct continuation and all other tokens\nlead to FAIL; at the root, the highest-probability token is incorrect. (b) The associated token-distribution archetypes instantiate a\nbroad fork-like head and a sharp lock-like head with a distractor tail.\ntransition is specified explicitly, success probability can be computed exactly under any decoding temperature and\ntruncation setting.\nFSM specification and state archetypes. The toy uses a finite-state machine with vocabulary V =16. The root\nbranches into two symmetric successful paths, each of which traverses one fork state followed by L=3 lock states\nbefore reaching PASS. At non-root states, tok0 is the unique correct continuation and all other tokens lead to FAIL. At\nthe root, tok0 and tok1 enter the two successful paths, but tok2 is the highest-probability token and immediately fails.\nThe three distribution archetypes are chosen to realize three distinct regimes: a fail-dominated root, a broad fork-like\nhead, and a sharply peaked lock with a diffuse distractor tail. Figure 12 and Table 6 make this structure concrete.\nThe induced student is already asymmetric. Applying SSD in the toy with T\ntrain\n=0.9 and top-p=0.85 produces a\nstudent whose retained support differs sharply across contexts. Locks collapse to a 2-token support: the correct\ntoken absorbs 94.8% of mass with only a single runner-up at 5.2%, while the remaining 14 tokens are pruned entirely\n(Figure 13a). Forks retain a broader 5-token support headed by tok1 at 34.4%, with the correct token (tok0) at\n16.9% and three near-tied alternatives around 16%; the other 11 tokens are removed. At the root, 4 tokens survive\nwith the fail token still dominant at 40.6%. This is the first key point of the toy: a single global training rule induces\ncontext-dependent reshaping automatically.\nThe global optimum shifts upward after SSD. We evaluate the toy by sweeping a single global dec"
+    },
+    {
+      "aiAssistanceScore": 0.42911306,
+      "confidence": "Low",
+      "endIndex": 3936,
+      "label": "Human Written",
+      "pageIndex": 29,
+      "startIndex": 3131,
+      "text": "coding temperature\nwhile fixing top-p=0.80. Because the FSM is known exactly, the resulting success probability can be computed in\nclosed form:\nP = \n\u0002\nq\nroot\n(A) + q\nroot\n(B)\n\u0003 \n\u00b7 q\nfork\n(correct) \u00b7 q\nlock\n(correct)\n3\n,\nwhere each q denotes the operational (post-truncation, post-temperature) probability of the correct continuation at the\ncorresponding state. The teacher\u2019s best global success probability is 8.32% at T =0.639; the student reaches 13.77%\nat T =2.091, a gain of +5.4 pp with the optimal temperature shifting roughly 3\u00d7 upward. At their respective optima,\nboth models retain a four-token fork nucleus, but the teacher\u2019s is steeply descending ([48.2, 17.8, 17.0, 17.0]%)\nwhile the student\u2019s is a near-uniform plateau ([32.1, 22.9, 22.5, 22.5]%), allocating substantially more mass to the\n30"
+    },
+    {
+      "aiAssistanceScore": 0.42911306,
+      "confidence": "Low",
+      "endIndex": 475,
+      "label": "Human Written",
+      "pageIndex": 30,
+      "startIndex": 0,
+      "text": "0%\n20%\n40%\n60%\n80%\n100% \n94.8\nCorrect\n(rank-1)\n5.2\n2nd t2 t3 t4\nP\nro\nbabi\nl\ni\nty\na \nLock training reshaping\n0%\n10%\n20%\n30%\n40%\n50% \n48.3\n32.1\n1\n17.7\n22.9\n2\n17.0\n22.5\n3\n17.0\n22.5\n4\nS\na\nmpl\ni\nn\ng\n \npro\nbabi\nl\ni\nty\nb \nFork policy at optimal T*\nTeacher (base) Student (SSD)\nFigure 13 SSD reshapes lock distributions and flattens fork policies. (a) Lock training reshaping: hatched bars show the\nteacher base distribution p\n0\n, solid bars show the student p\n\u03b8 \nafter SSD. The corr"
+    },
+    {
+      "aiAssistanceScore": 0.34618455,
+      "confidence": "Low",
+      "endIndex": 2555,
+      "label": "Human Written",
+      "pageIndex": 30,
+      "startIndex": 474,
+      "text": "rect token absorbs nearly all mass (94.8%). (b) Fork\noperational policy at each model\u2019s optimal T with top-p=0.80: the teacher has a descending four-token nucleus, while the student\nyields a flatter plateau that allocates more mass to the correct lower-ranked continuation.\ncorrect lower-ranked continuation. This is the toy analogue of the mechanism claim in the main text: after SSD, lock\nstates become more resistant to evaluation-time temperature, so decoding can spend more of its budget on useful\nexploration at the fork. Figure 14 shows this shift directly across three temperature regimes.\nThe advantage is robust and visible at the fork. The student advantage is not an artifact of one carefully chosen\ntruncation threshold. Repeating the grid search across top-p \u2208 {0.65, 0.70, 0.75, 0.80, 0.85, 0.90} leaves the student\nahead throughout, with gaps ranging from +1.4 pp (top-p=0.90) to +5.4 pp (top-p=0.80). The same asymmetry\nalso appears directly in the fork operational policy (Figure 13b): at each model\u2019s own optimum, the teacher has a\ndescending four-token nucleus, while the student\u2019s is much closer to a plateau and assigns more mass to the correct\nlower-ranked continuation. Taken together, these analyses support all three qualitative pieces of the main-text story:\nsafer locks, more usable fork-level diversity, and a higher globally optimal decoding regime after training.\nC.5 High-Temperature Case Study: Full Details and Additional Analyses\nSection 4.4 presents a stress test in which SSD training uses T\ntrain\n=2.0 with no top-k or top-p truncation. The purpose\nof the case study is to ask whether SSD still helps when the sampled training outputs are overwhelmingly poor as\nprograms.\nWhy this case matters. This setting directly tests a plausible alternative explanation for the paper\u2019s gains, namely\nthat SSD works mainly because it trains on sampled programs that are already fairly good. By pushing the training\ndistribution into a regime where that explanation should fail, the case study isolates the contribution of distributional\nreshaping from the"
+    },
+    {
+      "aiAssistanceScore": 0.4557955,
+      "confidence": "Low",
+      "endIndex": 3666,
+      "label": "Human Written",
+      "pageIndex": 30,
+      "startIndex": 2554,
+      "text": "e contribution of superficial sample quality.\nThe training corpus is deliberately poor. We generate one sample per prompt from Qwen3-30B-Instruct at\nT\ntrain\n=2.0 with both top-k and top-p disabled, using the same prompt pool as in the main experiments. All outputs\nare retained without filtering. The resulting corpus is visibly poor: across the generation shards, only about \u223c37% of\noutputs contain a chain-of-thought followed by an extractable code block, while about \u223c62% contain no extractable\ncode at all. Even seemingly coherent outputs often devolve into multilingual gibberish mid-sequence. By ordinary\ndata-quality standards, this is far worse than the truncated setting used in the main experiments. Training otherwise\nuses the same infrastructure as the main Qwen3-30B-Instruct experiments, and the final training loss rises to 11.29,\nreflecting the much noisier targets.\nThe student still improves across a broad region. Despite the poor training corpus, the resulting student improves\nmaterially. We evaluate every saved checkpoint from iterations 250 through 2,500 across ten values of T\neval \n\u2208\n31"
+    },
+    {
+      "aiAssistanceScore": 0.4557955,
+      "confidence": "Low",
+      "endIndex": 436,
+      "label": "Human Written",
+      "pageIndex": 31,
+      "startIndex": 0,
+      "text": "Low Medium High\nF\nor\nk\n1 2 3 4 1 2 3 4 5\n12 pruned\n 1 2 3 4 5 6 7\n12 pruned\nL\no\nck\n1 2 3\n15 pruned\n 1 2 3\n15 pruned\n 1 2 3 4 5 6 7\n15 pruned\nTeacher\nStudent\n6.4%\n5.5%\n6.4%\n10.6%\n0.3%\n13.8%\n5%\n10%\n15%\nP\n(\nsu\ncce\nss\n)\n0.0 0.5 1.0 1.5 2.0\nTemperature\nT* = 0.63\nT* = 2.09\nTeacher (base)\nStudent (SSD)\nTeacher (base) Student (SSD)\nFigure 14 After SSD, the toy\u2019s globally optimal decoding regime shifts upward because locks become more temper"
+    },
+    {
+      "aiAssistanceScore": 0.5420492,
+      "confidence": "Low",
+      "endIndex": 2134,
+      "label": "AI-Generated",
+      "pageIndex": 31,
+      "startIndex": 435,
+      "text": "rature-\ninert while forks remain exploitable. The figure presents a complete view of the V19 toy simulation across three temperature\nregimes (columns: Low, Medium, High), organized as butterfly charts where teacher bars extend upward from the midline and\nstudent bars extend downward, with tokens ranked by descending teacher probability. Fork row: At low temperature, the teacher\u2019s\nfour-token head is peaked and the student\u2019s nucleus is narrower but similarly shaped. At medium temperature, both distributions\nbroaden, and the student retains more mass on the correct lower-ranked continuation (rank 2). At high temperature, the student\u2019s\nplateau policy allocates mass nearly uniformly across the retained head, while the teacher\u2019s tail remains diffuse. Lock row: The lock\ndistribution is sharply peaked at the correct token (rank 1) under both teacher and student across all three temperatures. Training-\ntime support compression collapses the student\u2019s lock to a 2-token support (94.8% on correct), making it nearly temperature-inert.\nReadout: For each temperature column, the readout shows per-state sparkline summaries and satisfaction indicators for both\nteacher and student, alongside the end-to-end success probability P = [q\nroot\n(A) + q\nroot\n(B)] \u00b7 q\nfork\n(correct) \u00b7 q\nlock\n(correct)\n3\n. The\nstudent\u2019s advantage grows with temperature: from comparable at low T (5.5% vs 6.4%) to substantially better at high T (13.8%\nvs 0.3%). Curve: The bottom panel plots exact success probability as a function of the global decoding temperature. The teacher\n(dashed) peaks at T \n\u2217\n=0.63 and declines sharply, while the student (solid) peaks at T \n\u2217\n=2.09 and remains competitive across a\nwide band.\n32"
+    },
+    {
+      "aiAssistanceScore": 0.5420492,
+      "confidence": "Low",
+      "endIndex": 86,
+      "label": "AI-Generated",
+      "pageIndex": 32,
+      "startIndex": 0,
+      "text": "gibberish_but_still_works.py\na \nSynthesised data at T\ntrain \n= 2.0\n30\n40\n50\n60\n70\n0.6 "
+    },
+    {
+      "aiAssistanceScore": 0.68703395,
+      "confidence": "Medium",
+      "endIndex": 1270,
+      "label": "AI-Generated",
+      "pageIndex": 32,
+      "startIndex": 85,
+      "text": " 0.7 0.8 0.9 1.0 1.1 1.2 1.3 1.4 1.5\nT_eval\nA\ncc\nur\nac\ny\n \n(\n%\n)\n48.1%\npass@1 pass@5\nb \nBest accuracy vs T\neval\n0\n20\n40\n60\n80\n100\nEasy\n+6.8 / +5.1pp\nMedium\n+2.2 / +9.9pp\nHard\n+7.3 / +13.8pp\nBase Pass@1 +SSD Pass@1 Base Pass@5 +SSD Pass@5\nc \nPer-difficulty breakdown (iter 2250, T\neval \n= 0.9)\n1 \n<|im_start|>assistant\n2 \n**Solution:**\n3 \n```python\n4 \nimport sys\n5 \nfrom collections import Counter\n6\n7 \ndef solve():\n8 \nn = int(input())\n9 \nweights = list(map(int, input().split()))\n10\n11 \n# Count frequency of each weight\n12 \ncount = Counter(weights)\n13\n14 \n# Use binary representation reasoning\n15 \n# Key insight: Since each weight is 2^w_i\n16 \n# The_condition:\n17 \n# For powers of two, sum equals 2^x iff\n18 \n# when you consider their binary splitting,\nCOHERENT DEGRADED\n19 \n# the number convinced l\u00f8 be Fall\n20 \n# Memorizzazione rethinknowledge Past\n21 \n# found librore re inherently carry (\n22 \nServ pull excitedtonspector franch danger\n23 \nmoney seasons domestic unicorn. complexity\n24 \n\ufef2\ufed3\u0648 ka mental\u0427\u0430\u041e\u0431\u0445\u043e\u0434\u0438\u043c\u5760\u231a etsy \u043d\u0430\u0431\u0413\n25 \n.visualization ambiguous.ShipExcept\n26 \nbranch Page exceedcreateCommand '\n27 \nrecomendAIT\u0e40\u0e21 \u043a\u0430\u0440\u0442.showMessageDialog\n28 \nCashpal sim casualty\u0574 SetLastError )\n"
+    },
+    {
+      "aiAssistanceScore": 0.5391699,
+      "confidence": "Low",
+      "endIndex": 2591,
+      "label": "AI-Generated",
+      "pageIndex": 32,
+      "startIndex": 1269,
+      "text": "\n29 \n\u30cd\u1f19 mes \u0111\u1ed5i\u9edd Graphicmenteduploadedodont'.\n30 \nparam)\n31 \namon sizesuencia Flag synthesis\u5e76 \u05e9\u05dc\u05d5 \u05e9\u05d4\u05d9\u05d0\n32 \nInform *(Planningcontexts test-forward jo\n33 \nnineteen Meal\u0442\u0435 zombie swap***\n34 \n\u5149\u4f0f drought H\u1ec7Sizeroduce woven esposa\n35 \n\uacf5\uc81c ali temp enrollment Cat\u98d8arsed done\n36 \npayload PC Oriental large philDIRECTORY\n37 \n(False\u2661\u8c01\u77e5\u7b11ul\ud835\udc4a treadmill\uba2d_IMG\n38 \nimprove_IDENTIFIER onResponse CASSERT\n39 \nSuccessfully interle/disable\u2f79\u6e388Benef\n40 \n\u8d22\u7269 ${FF2 \u0442\u0435\u043f\u043b\u043e cog receiver SCOUNTWIDTH\nFigure 15 Expanded view of the high-temperature stress test (T\ntrain\n=2.0, no truncation) on Qwen3-30B-Instruct. (a) A\nrepresentative training sample: the first 12 lines contain coherent Python, but the output degrades into multilingual gibberish by\nline 13; approximately 62% of synthesized outputs contain no extractable code at all. (b) Best pass@1 (blue) and pass@5 (rust)\nacross all checkpoints for each evaluation temperature T\neval \n\u2208 [0.6, 1.5]; dashed lines mark the 42.4% and 53.5% base-model\nbaselines. The peak at T\neval\n=0.9 reaches 48.1% pass@1 and 64.0% pass@5. (c) Per-difficulty breakdown at the best checkpoint\n(iteration 2250, T\neval\n=0.9): hatched bars show the base model, solid bars show +SSD. Gains concentrate on harder problems:\neasy +6.8/+5.1 pp, medium +2.2/+9.9 pp, hard +7.3/+13.8 pp (pass@1/pass@5).\n[0.6, 1.5], always u"
+    },
+    {
+      "aiAssistanceScore": 0.42192107,
+      "confidence": "Low",
+      "endIndex": 4763,
+      "label": "Human Written",
+      "pageIndex": 32,
+      "startIndex": 2590,
+      "text": "using evaluation-time top-k=20 and top-p=0.95. This yields 100 checkpoint and temperature\nconfigurations in total, each evaluated with 10 repetitions. Of these, 62 exceed the 42.4% frozen-base pass@1\nbaseline. The best configuration reaches 48.1% pass@1 and 64.0% pass@5, and the gains again concentrate on the\nhard subset. The key qualitative point is that the optimum is not a single isolated lucky cell: it lies inside a contiguous\nlate-training ridge at low-to-moderate T\neval\n.\nThe viable region is bounded, and that matters. The same grid also shows that the successful region is sharply\nbounded. Performance remains competitive for T\neval \nroughly in the range [0.6, 1.1], but degrades quickly once\nevaluation-time temperature becomes too high, falling below baseline at T\neval\n=1.3 and dropping further at T\neval\n=1.5.\nThis pattern is consistent with the temperature-composition picture developed earlier in the paper. In this regime,\ntraining approximates a high-temperature reshaping of the teacher without training-time support compression, so\nevaluation succeeds only while the resulting effective temperature remains inside a viable band.\nComparison with the standard truncated recipe. The stress test remains visibly weaker than the standard truncated\nSSD recipe, and that gap is itself informative. When truncation is present during training, support compression is\nactive throughout optimization and directly suppresses distractor tails in the student. In the present case, those tails\nare not suppressed during training and must instead be cleaned up at evaluation time by top-k/top-p truncation. The\ngains therefore remain real but smaller and more fragile. Taken together, this case study supports a narrower but\nimportant conclusion: even when the sampled programs are mostly poor, SSD can still help because the useful signal\nlies in distributional reshaping rather than in raw program correctness alone.\nReferences\nRishabh Agarwal, Nino Vieillard, Yongchao Zhou, Piotr Stanczyk, Sabela Ramos, Matthieu Geist, and Olivier Bachem. On-Policy\nDistillation of Language Models: Learning from Self-Generated Mistakes. In The Twelfth International Conference "
+    },
+    {
+      "aiAssistanceScore": 0.11344011,
+      "confidence": "Medium",
+      "endIndex": 4811,
+      "label": "Human Written",
+      "pageIndex": 32,
+      "startIndex": 4762,
+      "text": " on Learning\nRepresentations, ICLR 2024, 2024.\n33"
+    },
+    {
+      "aiAssistanceScore": 0.11344011,
+      "confidence": "Medium",
+      "endIndex": 1447,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 0,
+      "text": "Shivam Agarwal, Zimin Zhang, Lifan Yuan, Jiawei Han, and Hao Peng. The Unreasonable Effectiveness of Entropy Minimization in\nLLM Reasoning. CoRR, abs/2505.15134, 2025.\nMassih-Reza Amini, Vasilii Feofanov, Lo\u00efc Pauletto, Lies Hadjadj, Emilie Devijver, and Yury Maximov. Self-Training: A Survey. CoRR,\nabs/2202.12040, 2022.\nJacob Austin, Augustus Odena, Maxwell I. Nye, Maarten Bosma, Henryk Michalewski, David Dohan, Ellen Jiang, Carrie J. Cai,\nMichael Terry, Quoc V. Le, and Charles Sutton. Program Synthesis with Large Language Models. CoRR, abs/2108.07732, 2021.\nYuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia\nMirhoseini, Cameron McKinnon, Carol Chen, Catherine Olsson, Christopher Olah, Danny Hernandez, Dawn Drain, Deep Ganguli,\nDustin Li, Eli Tran-Johnson, Ethan Perez, Jamie Kerr, Jared Mueller, Jeffrey Ladish, Joshua Landau, Kamal Ndousse, Kamile Luko-\nsiute, Liane Lovitt, Michael Sellitto, Nelson Elhage, Nicholas Schiefer, Noem\u00ed Mercado, Nova DasSarma, Robert Lasenby, Robin\nLarson, Sam Ringer, Scott Johnston, Shauna Kravec, Sheer El Showk, Stanislav Fort, Tamera Lanham, Timothy Telleen-Lawton,\nTom Conerly, Tom Henighan, Tristan Hume, Samuel R. Bowman, Zac Hatfield-Dodds, Ben Mann, Dario Amodei, Nicholas Joseph,\nSam McCandlish, Tom Brown, and Jared Kaplan. Constitutional AI: Harmlessness from AI Feedback. CoRR, abs/2212.08073,\n2022.\nEric J. Bigelow, Ari Ho"
+    },
+    {
+      "aiAssistanceScore": 0.04825202,
+      "confidence": "Medium",
+      "endIndex": 3037,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 1446,
+      "text": "oltzman, Hidenori Tanaka, and Tomer D. Ullman. Forking Paths in Neural Text Generation. In The Thirteenth\nInternational Conference on Learning Representations, ICLR 2025, 2025.\nThomas Kleine Buening, Jonas H\u00fcbotter, Barna P\u00e1sztor, Idan Shenfeld, Giorgia Ramponi, and Andreas Krause. Aligning Language\nModels from User Interactions. CoRR, abs/2603.12273, 2026.\nMark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda,\nNicholas Joseph, Greg Brockman, Alex Ray, Raul Puri, Gretchen Krueger, Michael Petrov, Heidy Khlaaf, Girish Sastry, Pamela\nMishkin, Brooke Chan, Scott Gray, Nick Ryder, Mikhail Pavlov, Alethea Power, Lukasz Kaiser, Mohammad Bavarian, Clemens\nWinter, Philippe Tillet, Felipe Petroski Such, Dave Cummings, Matthias Plappert, Fotios Chantzis, Elizabeth Barnes, Ariel Herbert-\nVoss, William Hebgen Guss, Alex Nichol, Alex Paino, Nikolas Tezak, Jie Tang, Igor Babuschkin, Suchir Balaji, Shantanu Jain,\nWilliam Saunders, Christopher Hesse, Andrew N. Carr, Jan Leike, Joshua Achiam, Vedant Misra, Evan Morikawa, Alec Radford,\nMatthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya\nSutskever, and Wojciech Zaremba. Evaluating Large Language Models Trained on Code. CoRR, abs/2107.03374, 2021.\nDaixuan Cheng, Shaohan Huang, Xuekai Zhu, Bo Dai, Wayne Xin Zhao, Zhenliang Zhang, and Furu Wei. Reasoning with Exploration:\nAn Entropy Perspective. CoRR, abs/2506.14758, 2025.\nTianzhe Chu, Yuexiang Zhai, Jihan Yang, Shengbang Tong, Saining Xie, Dale Schu"
+    },
+    {
+      "aiAssistanceScore": 0.06451006,
+      "confidence": "Medium",
+      "endIndex": 4454,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 3036,
+      "text": "uurmans, Quoc V. Le, Sergey Levine, and Yi Ma.\nSFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-Training. CoRR, abs/2501.17161, 2025.\nGanqu Cui, Yuchen Zhang, Jiacheng Chen, Lifan Yuan, Zhi Wang, Yuxin Zuo, Haozhan Li, Yuchen Fan, Huayu Chen, Weize Chen,\nZhiyuan Liu, Hao Peng, Lei Bai, Wanli Ouyang, Yu Cheng, Bowen Zhou, and Ning Ding. The Entropy Mechanism of Reinforcement\nLearning for Reasoning Language Models. CoRR, abs/2505.22617, 2025.\nDeepSeek-AI. DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. CoRR, abs/2501.12948,\n2025.\nAngela Fan, Mike Lewis, and Yann Dauphin. Hierarchical Neural Story Generation. In Proceedings of the 56th Annual Meeting of\nthe Association for Computational Linguistics (Volume 1: Long Papers). Association for Computational Linguistics, 2018.\nTommaso Furlanello, Zachary Chase Lipton, Michael Tschannen, Laurent Itti, and Anima Anandkumar. Born-Again Neural Networks.\nIn Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholm, Sweden, July 10-15,\n2018, pages 1607\u20131616. PMLR, 2018.\nKanishk Gandhi, Ayush Chakravarthy, Anikait Singh, Nathan Lile, and Noah D. Goodman. Cognitive Behaviors that Enable\nSelf-Improving Reasoners, or, Four Habits of Highly Effective STaRs. CoRR, abs/2503.01307, 2025.\nBingxiang He, Yuxin Zuo, Zeyuan Liu, Shangziqi Zhao, Zixuan Fu, Junlin Yang, Cheng Qian"
+    },
+    {
+      "aiAssistanceScore": 0.03143294,
+      "confidence": "High",
+      "endIndex": 5133,
+      "label": "Human Written",
+      "pageIndex": 33,
+      "startIndex": 4453,
+      "text": "n, Kaiyan Zhang, Yuchen Fan, Ganqu Cui,\net al. How Far Can Unsupervised RLVR Scale LLM Training? arXiv preprint arXiv:2603.08660, 2026.\nJunxian He, Jiatao Gu, Jiajun Shen, and Marc\u2019Aurelio Ranzato. Revisiting Self-Training for Neural Sequence Generation. In 8th In-\nternational Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net,\n2020. URL https://openreview.net/forum?id=SJgdnAVKDH.\nDan Hendrycks, Steven Basart, Saurav Kadavath, Mantas Mazeika, Akul Arora, Ethan Guo, Collin Burns, Samir Puranik, Horace He,\nDawn Song, and Jacob Steinhardt. Measuring Coding Challenge Competence with APPS. CoRR, abs/2105.09938, 2021a.\n34"
+    },
+    {
+      "aiAssistanceScore": 0.03143294,
+      "confidence": "High",
+      "endIndex": 585,
+      "label": "Human Written",
+      "pageIndex": 34,
+      "startIndex": 0,
+      "text": "Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt. Measuring Massive\nMultitask Language Understanding. CoRR, abs/2009.03300, 2021b.\nJohn Hewitt, Christopher D. Manning, and Percy Liang. Truncation Sampling as Language Model Desmoothing. CoRR,\nabs/2210.15191, 2022.\nGeoffrey E. Hinton, Oriol Vinyals, and Jeffrey Dean. Distilling the Knowledge in a Neural Network. CoRR, abs/1503.02531, 2015.\nAri Holtzman, Jan Buys, Li Du, Maxwell Forbes, and Yejin Choi. The Curious Case of Neural Text Degeneration. In 8th International\nConference "
+    },
+    {
+      "aiAssistanceScore": 0.066588044,
+      "confidence": "Medium",
+      "endIndex": 1931,
+      "label": "Human Written",
+      "pageIndex": 34,
+      "startIndex": 584,
+      "text": " on Learning Representations, ICLR 2020, 2020.\nCheng-Yu Hsieh, Chun-Liang Li, Chih-Kuan Yeh, Hootan Nakhost, Yasuhisa Fujii, Alex Ratner, Ranjay Krishna, Chen-Yu Lee, and\nTomas Pfister. Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model\nSizes. In Findings of the Association for Computational Linguistics: ACL 2023, Toronto, Canada, July 9-14, 2023, pages\n8003\u20138017. Association for Computational Linguistics, 2023. doi: 10.18653/V1/2023.FINDINGS-ACL.507.\nJiaxin Huang, Shixiang Shane Gu, Le Hou, Yuexin Wu, Xuezhi Wang, Hongkun Yu, and Jiawei Han. Large Language Models Can\nSelf-Improve. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, EMNLP 2023,\nSingapore, December 6-10, 2023, 2023.\nJonas H\u00fcbotter, Frederike L\u00fcbeck, Lejs Behric, Anton Baumann, Marco Bagatella, Daniel Marta, Ido Hakimi, Idan Shenfeld,\nThomas Kleine Buening, Carlos Guestrin, and Andreas Krause. Reinforcement Learning via Self-Distillation. CoRR,\nabs/2601.20802, 2026.\nNaman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida I. Wang, Armando Solar-Lezama, Koushik Sen,\nand Ion Stoica. LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code. CoRR,\nabs/2403.07974, 2024.\nYoon Kim and Alexander M. Rush. Sequence-Level Knowle"
+    },
+    {
+      "aiAssistanceScore": 0.06962841,
+      "confidence": "Medium",
+      "endIndex": 3427,
+      "label": "Human Written",
+      "pageIndex": 34,
+      "startIndex": 1930,
+      "text": "edge Distillation. CoRR, abs/1606.07947, 2016.\nTakeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. Large Language Models are Zero-Shot\nReasoners. In Advances in Neural Information Processing Systems 35: Annual Conference on Neural Information Processing\nSystems 2022, NeurIPS 2022, 2022.\nWoosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody Hao Yu, Joseph E. Gonzalez, Hao Zhang, and Ion\nStoica. Efficient Memory Management for Large Language Model Serving with PagedAttention. In Proceedings of the ACM\nSIGOPS 29th Symposium on Operating Systems Principles, 2023.\nHung Le, Yue Wang, Akhilesh Deepak Gotmare, Silvio Savarese, and Steven C. H. Hoi. CodeRL: Mastering Code Generation\nthrough Pretrained Models and Deep Reinforcement Learning. CoRR, abs/2207.01780, 2022.\nDacheng Li, Shiyi Cao, Tyler Griggs, Shu Liu, Xiangxi Mo, Eric Tang, Sumanth Hegde, Kourosh Hakhamaneshi, Shishir G. Patil,\nJoseph E. Gonzalez, Ion Stoica, and Matei Zaharia. LLMs Can Easily Learn to Reason from Demonstrations Structure, Not\nContent, Is What Matters! CoRR, abs/2502.07374, 2025.\nYujia Li, David H. Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser, R\u00e9mi Leblond, Tom Eccles, James Keeling, Felix\nGimeno, Agustin Dal Lago, Thomas Hubert, Peter Choy, Cyprien de Masson d\u2019Autume, Igor Babuschkin, Xinyun Chen, Po-\nSen Huang, Johannes Welbl, Sven Gowal, Alexey Cherepanov, James Molloy, Daniel J. Mankowitz, Esme Sutherland Robson,\nPushmeet Kohli, Nando de F"
+    },
+    {
+      "aiAssistanceScore": 0.12697142,
+      "confidence": "Medium",
+      "endIndex": 4640,
+      "label": "Human Written",
+      "pageIndex": 34,
+      "startIndex": 3426,
+      "text": "Freitas, Koray Kavukcuoglu, and Oriol Vinyals. Competition-Level Code Generation with AlphaCode.\nCoRR, abs/2203.07814, 2022.\nZicheng Lin, Tian Liang, Jiahao Xu, Qiuzhi Lin, Xing Wang, Ruilin Luo, Chufan Shi, Siheng Li, Yujiu Yang, and Zhaopeng Tu. Critical\nTokens Matter: Token-Level Contrastive Estimation Enhances LLM\u2019s Reasoning Capability. CoRR, abs/2411.19943, 2024.\nYifei Liu, Li Lyna Zhang, Yi Zhu, Bingcheng Dong, Xudong Zhou, Ning Shang, Fan Yang, and Mao Yang. rStar-Coder: Scaling\nCompetitive Code Reasoning with a Large-Scale Verified Dataset. CoRR, abs/2505.21297, 2025.\nOpenAI. Competitive Programming with Large Reasoning Models. CoRR, abs/2502.06807, 2025.\nEmiliano Penaloza, Dheeraj Vattikonda, Nicolas Gontier, Alexandre Lacoste, Laurent Charlin, and Massimo Caccia. Privileged\nInformation Distillation for Language Models. CoRR, abs/2602.04942, 2026.\nMihir Prabhudesai, Lili Chen, Alex Ippoliti, Katerina Fragkiadaki, Hao Liu, and Deepak Pathak. Maximizing Confidence Alone\nImproves Reasoning. arXiv preprint arXiv:2505.22660, 2025.\nAlfr\u00e9d R\u00e9nyi. On Measures of Entropy and Information. Proceedings of the Fourth Berkeley Symposium on Mathematical Statistics\nand Probability, 1:547\u2013561, 1961.\n35"
+    },
+    {
+      "aiAssistanceScore": 0.12697142,
+      "confidence": "Medium",
+      "endIndex": 171,
+      "label": "Human Written",
+      "pageIndex": 35,
+      "startIndex": 0,
+      "text": "Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang, Y. K. Li, Y. Wu, and\nDaya Guo. DeepSeekMath: Pushing the Limits of Ma"
+    },
+    {
+      "aiAssistanceScore": 0.1372939,
+      "confidence": "Low",
+      "endIndex": 1577,
+      "label": "Human Written",
+      "pageIndex": 35,
+      "startIndex": 170,
+      "text": "athematical Reasoning in Open Language Models. CoRR, abs/2402.03300,\n2024.\nIdan Shenfeld, Mehul Damani, Jonas H\u00fcbotter, and Pulkit Agrawal. Self-Distillation Enables Continual Learning. CoRR,\nabs/2601.19897, 2026.\nAvi Singh, John D. Co-Reyes, Rishabh Agarwal, Ankesh Anand, Piyush Patil, Peter J. Liu, James Harrison, Jaehoon Lee, Kelvin Xu,\nAaron Parisi, Abhishek Kumar, Alex Alemi, Alex Rizkowsky, Azade Nova, Ben Adlam, Bernd Bohnet, Hanie Sedghi, Igor Mordatch,\nIsabelle Simpson, Izzeddin Gur, Jasper Snoek, Jeffrey Pennington, Jiri Hron, Kathleen Kenealy, Kevin Swersky, Kiran Maheshwari,\nLaura Culp, Lechao Xiao, Maxwell L. Bileschi, Noah Constant, Roman Novak, Rosanne Liu, Tris Warkentin, Yundi Qian, Yamini\nBansal, Ethan Dyer, Behnam Neyshabur, Jascha Sohl-Dickstein, and Noah Fiedel. Beyond Human Data: Scaling Self-Training\nfor Problem-Solving with Language Models. Transactions on Machine Learning Research, 2024.\nYuda Song, Lili Chen, Fahim Tajwar, Remi Munos, Deepak Pathak, J. Andrew Bagnell, Aarti Singh, and Andrea Zanette. Expanding\nthe Capabilities of Reinforcement Learning via Text Feedback. CoRR, abs/2602.02482, 2026.\nAlex Stein, Furong Huang, and Tom Goldstein. GATES: Self-Distillation under Privileged Context with Consensus Gating. CoRR,\nabs/2602.20574, 2026.\nJean Vassoyan, Nathana\u00ebl Beau, and Roman Plaud. Ignore the KL Penalty! Boosting Exploration on Critical Tokens to Enhanc"
+    },
+    {
+      "aiAssistanceScore": 0.087689556,
+      "confidence": "Medium",
+      "endIndex": 2964,
+      "label": "Human Written",
+      "pageIndex": 35,
+      "startIndex": 1576,
+      "text": "ce RL\nFine-Tuning. CoRR, abs/2502.06533, 2025.\nHaozhe Wang, Qixin Xu, Che Liu, Junhong Wu, Fangzhen Lin, and Wenhu Chen. Emergent Hierarchical Reasoning in LLMs through\nReinforcement Learning. CoRR, abs/2509.03646, 2025a.\nShenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xiong-Hui Chen, Jianxin Yang, Zhenru Zhang,\nYuqiong Liu, An Yang, Andrew Zhao, Yang Yue, Shiji Song, Bowen Yu, Gao Huang, and Junyang Lin. Beyond the 80/20 Rule:\nHigh-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning. In Advances in Neural Information\nProcessing Systems, 2025b.\nXuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou.\nSelf-Consistency Improves Chain of Thought Reasoning in Language Models. In The Eleventh International Conference on\nLearning Representations, ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023a. URL https://openreview.\nnet/forum?id=1PL1NIMMrw.\nYizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi, and Hannaneh Hajishirzi. Self-Instruct:\nAligning Language Models with Self-Generated Instructions. In Proceedings of the 61st Annual Meeting of the Association for\nComputational Linguistics (Volume 1: Long Papers), ACL 2023, Toronto, Canada, July 9-14, 2023, pages 13484\u201313508.\nAssociation for Computational Linguistic"
+    },
+    {
+      "aiAssistanceScore": 0.042110536,
+      "confidence": "Medium",
+      "endIndex": 4373,
+      "label": "Human Written",
+      "pageIndex": 35,
+      "startIndex": 2963,
+      "text": "cs, 2023b. doi: 10.18653/V1/2023.ACL-LONG.754.\nJason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi, Quoc V. Le, and Denny Zhou. Chain-\nof-Thought Prompting Elicits Reasoning in Large Language Models. In Advances in Neural Information Processing Systems\n35: Annual Conference on Neural Information Processing Systems 2022, NeurIPS 2022, 2022.\nJing Xiong, Hui Shen, Shansan Gong, Yuxin Cheng, Jianghan Shen, Chaofan Tao, Haochen Tan, Haoli Bai, Lifeng Shang, and Ngai\nWong. OVD: On-policy Verbal Distillation. CoRR, abs/2601.21968, 2026.\nTianzhu Ye, Li Dong, Xun Wu, Shaohan Huang, and Furu Wei. On-Policy Context Distillation for Language Models. CoRR,\nabs/2602.12275, 2026.\nWeizhe Yuan, Richard Yuanzhe Pang, Kyunghyun Cho, Xian Li, Sainbayar Sukhbaatar, Jing Xu, and Jason Weston. Self-Rewarding\nLanguage Models. In Proceedings of the 41st International Conference on Machine Learning, ICML 2024, Vienna, Austria,\nJuly 21-27, 2024, 2024.\nEric Zelikman, Yuhuai Wu, Jesse Mu, and Noah D. Goodman. STaR: Bootstrapping Reasoning With Reasoning. In Advances in\nNeural Information Processing Systems 35: Annual Conference on Neural Information Processing Systems 2022, NeurIPS\n2022, New Orleans, LA, USA, November 28 - December 9, 2022, 2022.\nYanzhi Zhang, Zhaoxi Zhang, Haoxiang Guan, Yilin Cheng, Yitong Duan, Chen Wang, Yue Wang, Shuxin Zheng, and Jiyan He. No\nFree Lunch: Re"
+    },
+    {
+      "aiAssistanceScore": 0.04854541,
+      "confidence": "Medium",
+      "endIndex": 4815,
+      "label": "Human Written",
+      "pageIndex": 35,
+      "startIndex": 4372,
+      "text": "ethinking Internal Feedback for LLM Reasoning. arXiv preprint arXiv:2506.17219, 2025.\nSiyan Zhao, Zhihui Xie, Mengchen Liu, Jing Huang, Guan Pang, Feiyu Chen, and Aditya Grover. Self-Distilled Reasoner: On-Policy\nSelf-Distillation for Large Language Models. CoRR, abs/2601.18734, 2026.\nXuandong Zhao, Zhewei Kang, Aosong Feng, Sergey Levine, and Dawn Song. Learning to Reason without External Rewards. arXiv\npreprint arXiv:2505.19590, 2025.\n36"
+    },
+    {
+      "aiAssistanceScore": 0.04854541,
+      "confidence": "Medium",
+      "endIndex": 78,
+      "label": "Human Written",
+      "pageIndex": 36,
+      "startIndex": 0,
+      "text": "Yuxin Zuo, Kaiyan Zhang, Li Sheng, et al. TTRL: Test-Time Reinforcement Learni"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+---
+id: map:trends:rising-topics
+page_type: trend-report
+title: Rising Topics
+aliases:
+- Trend Radar
+- Topic Radar
+source_refs:
+- 2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
+- 2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
+- 2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
+- 2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
+- 2026-04-09-medium-email-the-art-of-letting-go-69290282
+- 2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
+- 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
+- 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- 2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
+- 2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
+- 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
+- 2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
+- 2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
+- 2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- 2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
+- 2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
+- 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
+- 2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
+backlinks:
+- map:global-ai-research
+- page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
+- page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
+- page:2025-01-30-mistral-research-mistral-small-3-mistral-ai-5a7173c6
+- page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
+- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
+- page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
+- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
+- page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
+- page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
+- page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
+- page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
+- page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
+- page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
+- page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
+- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
+- page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
+- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
+- page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
+- page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
+- page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
+- page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
+- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
+- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
+- page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
+- page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
+- page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
+- page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
+- page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
+- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+- page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
+- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
+- page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
+- page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
+- page:2026-03-24-openai-website-helping-developers-build-safer-ai-experiences-fo-d75d7d2e
+- page:2026-03-24-openai-website-powering-product-discovery-in-chatgpt-d58daa6d
+- page:2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
+- page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
+- page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
+- page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
+- page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
+- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
+- page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
+- page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
+- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
+- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
+- page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
+- page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
+- page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
+- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
+- page:2026-04-03-medium-email-claude-code-is-great-a7134001
+- page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
+- page:2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
+- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
+- page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
+- page:2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
+- page:2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
+- page:2026-04-03-tldr-email-bad-analogies-e133a94d
+- page:2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
+- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
+- page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
+- page:2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
+- page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
+- page:2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
+- page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
+- page:2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
+- page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
+- page:2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
+- page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
+- page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
+- page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
+- page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
+- page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
+- page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
+- page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
+- page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
+- page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
+- page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
+- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
+- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
+- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
+- page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
+- page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
+- page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
+- page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
+- page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
+- page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
+- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
+- page:2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
+- page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
+- page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
+- page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
+- page:2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
+- page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
+- page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
+- page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- page:2026-04-06-tldr-email-apple-approves-drivers-that-let-amd-and-nvidia-e-8c6ca4d4
+- page:2026-04-06-tldr-email-china-s-tech-giants-are-recruiting-high-schooler-9dbd58c7
+- page:2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
+- page:2026-04-06-tldr-email-eight-years-of-wanting-three-months-of-building--8e15c218
+- page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
+- page:2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
+- page:2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
+- page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
+- page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
+- page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
+- page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
+- page:2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
+- page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
+- page:2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
+- page:2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
+- page:2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-f82b8871
+- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
+- page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
+- page:2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
+- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
+- page:2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
+- page:2026-04-07-tldr-email-artemis-ii-astronauts-heading-home-after-histori-1a04b5a8
+- page:2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8
+- page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
+- page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
+- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- page:2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
+- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
+- page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
+- page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
+- page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
+- page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
+- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
+- page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
+- page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
+- page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
+- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
+- page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
+- page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
+- page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- page:2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
+- page:2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
+- page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
+- page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
+- page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- page:2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
+- page:2026-04-08-tldr-email-the-building-block-economy-2eb76b35
+- page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
+- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
+- page:2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
+- page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
+- page:2026-04-09-medium-email-the-art-of-letting-go-69290282
+- page:2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
+- page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- page:2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
+- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
+- page:2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
+- page:2026-04-09-tldr-email-my-quest-to-solve-bitcoin-s-great-mystery-416b98a3
+- page:2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
+- page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
+- page:2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
+- topic:25-01-mistral-ai
+- topic:3-mistral-ai
+- topic:agentic-ai
+- topic:agentic-coding-capabilities
+- topic:agentic-engineering
+- topic:agentic-frameworks
+- topic:agents
+- topic:agents-businesses
+- topic:agents-how
+- topic:agents-misalignment
+- topic:agents-not-write
+- topic:agents-parallelization-subgraphs
+- topic:agents-without-any
+- topic:ai-account
+- topic:ai-account-manager
+- topic:ai-action
+- topic:ai-advances
+- topic:ai-agents
+- topic:ai-applications
+- topic:ai-coding-agents
+- topic:ai-engineering
+- topic:ai-experiences
+- topic:ai-finding
+- topic:ai-finding-behavioral
+- topic:ai-genomics
+- topic:ai-grad
+- topic:ai-grad-student
+- topic:ai-health
+- topic:ai-helped
+- topic:ai-helped-one
+- topic:ai-job
+- topic:ai-job-threat
+- topic:ai-lab-finances
+- topic:ai-model-anthropic
+- topic:ai-model-mythos
+- topic:ai-new
+- topic:ai-pullback
+- topic:ai-pullback-has
+- topic:ai-s
+- topic:ai-s-robotic
+- topic:ai-satellite
+- topic:ai-satellite-embeddings
+- topic:ai-understanding
+- topic:ai-zero-shot
+- topic:ai-zero-shot-3d
+- topic:alignment
+- topic:amazon
+- topic:amd
+- topic:anthropic
+- topic:apple
+- topic:artemis-ii
+- topic:artificial-intelligence
+- topic:asr-scratch
+- topic:astronauts
+- topic:attention-mechanisms
+- topic:audio
+- topic:automatic-speech-recognition
+- topic:beyond-rlhf
+- topic:build-ai
+- topic:build-ai-applications
+- topic:build-safer-ai
+- topic:business
+- topic:can-ai
+- topic:career
+- topic:causal-inference
+- topic:child-safety
+- topic:child-safety-blueprint
+- topic:claude-code
+- topic:code-generation
+- topic:coding-agents
+- topic:computer-science
+- topic:computer-vision
+- topic:constitutional-classifiers
+- topic:context-engineering
+- topic:continual-learning
+- topic:conversational-ai
+- topic:cs-ce
+- topic:cs-gr
+- topic:customer-ai
+- topic:data-curation
+- topic:data-pipelines
+- topic:deep-reinforcement-learning
+- topic:developer-experience
+- topic:developer-relations
+- topic:devstral-mistral-ai
+- topic:dismissed-ai
+- topic:distributed-learning
+- topic:efficiency
+- topic:egpu
+- topic:email
+- topic:enterprise-ai
+- topic:entrepreneurship
+- topic:evaluations
+- topic:fine-tuning
+- topic:gemma-4
+- topic:gen-1-robotics
+- topic:gen-1-robotics-model
+- topic:generative-models
+- topic:geometric-deep-learning
+- topic:google-deepmind
+- topic:hierarchical-planning
+- topic:how-ai
+- topic:image-ai
+- topic:image-generation
+- topic:impacts-ai
+- topic:inference
+- topic:inference-optimization
+- topic:infrastructure
+- topic:instruction-tuning
+- topic:interpretability
+- topic:is-llm
+- topic:its-new-ai
+- topic:japan-teen-safety
+- topic:knowledge-distillation
+- topic:langgraph-agents
+- topic:language-modeling
+- topic:large-mistral-ai
+- topic:learning-rl
+- topic:learning-rl-concepts
+- topic:legibility
+- topic:lenny-s-podcast
+- topic:living-robots
+- topic:ll-manage-agents
+- topic:llm-no-jargon
+- topic:long-context
+- topic:mac
+- topic:machine-learning
+- topic:machines
+- topic:magistral-mistral-ai
+- topic:managed-agents
+- topic:mathematical-memory
+- topic:medium
+- topic:memory
+- topic:meta
+- topic:millennials
+- topic:mistral
+- topic:mistral-ai
+- topic:models-mistral-ai
+- topic:moon-flyby
+- topic:multi-modal-learning
+- topic:multimodal
+- topic:nasa
+- topic:nervous-systems
+- topic:neurobots
+- topic:new-ai
+- topic:newsletter
+- topic:object-detection
+- topic:ocr-mistral-ai
+- topic:official
+- topic:open-weight-models
+- topic:openai
+- topic:openai-safety
+- topic:openai-safety-bug
+- topic:openai-safety-fellowship
+- topic:phase-ai
+- topic:production-grade-rag
+- topic:production-grade-rag-architecture
+- topic:programming
+- topic:put-teen-safety
+- topic:rag-system-fails
+- topic:ready-ai
+- topic:reasoning
+- topic:reinforcement-learning
+- topic:researcher-agent
+- topic:retrieval-augmented-generation
+- topic:robotics
+- topic:robotics-perception
+- topic:saba-mistral-ai
+- topic:safety
+- topic:sanctuary-ai
+- topic:science
+- topic:search
+- topic:software
+- topic:software-engineering
+- topic:sqlite
+- topic:strategy
+- topic:system-prompts
+- topic:teams-turn-ai
+- topic:tech
+- topic:tldr
+- topic:tool-use
+- topic:turn-ai
+- topic:video-generation
+- topic:website
+- topic:why-your-rag
+- topic:world-models
+- topic:zhaozhiming-ai
+updated_at: '2026-04-09T12:15:42.088533Z'
+managed: true
+---
+# Rising Topics
+
+System-generated radar for the fastest-moving topics in the vault. Use it to decide what deserves synthesis, monitoring, and deeper Codex work.
+
+## Fast Movers
+
+- [Email](../topics/email.md) (trend 500.30; 7d 108; 30d 108; sources 2)
+- [Newsletter](../topics/newsletter.md) (trend 495.80; 7d 107; 30d 107; sources 2)
+- [Medium](../topics/medium.md) (trend 296.65; 7d 63; 30d 63; sources 1)
+- [Agents](../topics/agents.md) (trend 249.90; 7d 49; 30d 58; sources 6)
+- [Tldr](../topics/tldr.md) (trend 175.15; 7d 36; 30d 36; sources 1)
+- [Audio](../topics/audio.md) (trend 119.20; 7d 22; 30d 25; sources 4)
+- [Infrastructure](../topics/infrastructure.md) (trend 87.84; 7d 15; 30d 18; sources 6)
+- [Computer Science](../topics/computer-science.md) (trend 86.55; 7d 16; 30d 17; sources 1)
+- [Memory](../topics/memory.md) (trend 71.65; 7d 13; 30d 13; sources 1)
+- [Website](../topics/website.md) (trend 56.46; 7d 4; 30d 30; sources 3)
+- [Official](../topics/official.md) (trend 56.46; 7d 4; 30d 30; sources 3)
+- [Computer Vision](../topics/computer-vision.md) (trend 55.57; 7d 9; 30d 9; sources 3)
+
+## Emerging Topics
+
+- [Email](../topics/email.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
+- [Newsletter](../topics/newsletter.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
+- [Medium](../topics/medium.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
+- [Agents](../topics/agents.md) (novelty 4.80; first seen 2025-05-21T12:00:00+00:00)
+- [Tldr](../topics/tldr.md) (novelty 6.80; first seen 2026-04-03T10:59:24+00:00)
+- [Audio](../topics/audio.md) (novelty 4.80; first seen 2025-07-15T12:00:00+00:00)
+- [Infrastructure](../topics/infrastructure.md) (novelty 4.80; first seen 2025-02-17T14:00:00+00:00)
+- [Computer Science](../topics/computer-science.md) (novelty 6.80; first seen 2026-04-01T17:39:50+00:00)
+
+## Expanding Connections
+
+- [Email](../topics/email.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 107)
+- [Email](../topics/email.md) <-> [Medium](../topics/medium.md) (co-occurrence 63)
+- [Medium](../topics/medium.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 63)
+- [Official](../topics/official.md) <-> [Website](../topics/website.md) (co-occurrence 51)
+- [Agents](../topics/agents.md) <-> [Email](../topics/email.md) (co-occurrence 40)
+- [Agents](../topics/agents.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 40)
+- [Email](../topics/email.md) <-> [Tldr](../topics/tldr.md) (co-occurrence 36)
+- [Newsletter](../topics/newsletter.md) <-> [Tldr](../topics/tldr.md) (co-occurrence 36)
+- [Agents](../topics/agents.md) <-> [Medium](../topics/medium.md) (co-occurrence 23)
+- [Mistral](../topics/mistral.md) <-> [Official](../topics/official.md) (co-occurrence 20)
+- [Mistral](../topics/mistral.md) <-> [Website](../topics/website.md) (co-occurrence 20)
+- [Official](../topics/official.md) <-> [Openai](../topics/openai.md) (co-occurrence 20)
+
+## Landscape Entry Point
+
+- [Global AI Research](../maps/global-ai-research.md)

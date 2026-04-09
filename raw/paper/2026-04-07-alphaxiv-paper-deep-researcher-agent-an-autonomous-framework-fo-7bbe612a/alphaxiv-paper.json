@@ -1,0 +1,21 @@
+{
+  "abstract": "We present \\textbf{Deep Researcher Agent}, an open-source framework that enables large language model (LLM) agents to autonomously conduct deep learning experiments around the clock. Unlike existing AI research assistants that focus on paper writing or code generation, our system addresses the full experiment lifecycle: hypothesis formation, code implementation, training execution, result analysis, and iterative refinement. The framework introduces three key innovations: (1) \\textbf{Zero-Cost Monitoring} -- a monitoring paradigm that incurs zero LLM API costs during model training by relying solely on process-level checks and log file reads; (2) \\textbf{Two-Tier Constant-Size Memory} -- a memory architecture capped at $\\sim$5K characters regardless of runtime duration, preventing the unbounded context growth that plagues long-running agents; and (3) \\textbf{Minimal-Toolset Leader-Worker Architecture} -- a multi-agent design where each worker agent is equipped with only 3--5 tools, reducing per-call token overhead by up to 73\\%. In sustained deployments spanning 30+ days, the framework autonomously completed 500+ experiment cycles across four concurrent research projects, achieving a 52\\% improvement over baseline metrics in one project through 200+ automated experiments -- all at an average LLM cost of \\$0.08 per 24-hour cycle. Code is available at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775567791000,
+  "googleCitationId": null,
+  "groupId": "019d6b10-92eb-769f-9c51-eb9f03929799",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775567791000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05854",
+  "title": "Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring",
+  "type": "public",
+  "universalId": "2604.05854",
+  "uploader": null,
+  "versionId": "019d6b10-930f-74ef-8904-a30006aaeabe",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

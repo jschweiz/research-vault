@@ -1,0 +1,163 @@
+{
+  "abstract": "Recent advances in prompt learning allow large language model agents to acquire task-relevant knowledge from inference-time context without parameter changes. For example, existing methods (like ACE or GEPA) can learn system prompts to improve accuracy based on previous agent runs. However, these methods primarily focus on single-agent or low-parallelism settings. This fundamentally limits their ability to efficiently learn from a large set of collected agentic traces. It would be efficient and beneficial to run prompt learning in parallel to accommodate the growing trend of learning from many agentic traces or parallel agent executions. Yet without a principled strategy for scaling, current methods suffer from quality degradation with high parallelism. To improve both the efficiency and quality of prompt learning, we propose Combee, a novel framework to scale parallel prompt learning for self-improving agents. Combee speeds up learning and enables running many agents in parallel while learning from their aggregate traces without quality degradation. To achieve this, Combee leverages parallel scans and employs an augmented shuffle mechanism; Combee also introduces a dynamic batch size controller to balance quality and delay. Evaluations on AppWorld, Terminal-Bench, Formula, and FiNER demonstrate that Combee achieves up to 17x speedup over previous methods with comparable or better accuracy and equivalent cost.",
+  "author_info": [],
+  "authors": [
+    "Hanchen Li",
+    "Runyuan He",
+    "Qizheng Zhang",
+    "Changxiu Ji",
+    "Qiuyang Mang",
+    "Xiaokun Chen",
+    "Lakshya A Agrawal",
+    "Wei-Liang Liao",
+    "Eric Yang",
+    "Alvin Cheung",
+    "James Zou",
+    "Kunle Olukotun",
+    "Ion Stoica",
+    "Joseph E. Gonzalez"
+  ],
+  "canonical_id": "2604.04247v1",
+  "first_publication_date": "2026-04-05T20:07:48.000Z",
+  "full_authors": [
+    {
+      "full_name": "Hanchen Li",
+      "id": "01985c82-4f4d-7aec-8fc5-071982b431fe",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Runyuan He",
+      "id": "01985c84-6faf-7b3e-94a5-32fe8c197047",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qizheng Zhang",
+      "id": "01985c82-4f4d-747a-b9b5-c6b829af77ae",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Changxiu Ji",
+      "id": "019d65ff-9100-7821-be02-9d2df8ccc132",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qiuyang Mang",
+      "id": "01985c82-a0aa-704e-b64c-b44fe2fdb022",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaokun Chen",
+      "id": "0199e101-b176-7301-9402-bb49f3754aba",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lakshya A Agrawal",
+      "id": "01985c82-c377-78e2-bd76-927d23d4baea",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wei-Liang Liao",
+      "id": "019d65ff-910e-7c5b-b9e3-94a827077d63",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Eric Yang",
+      "id": "01985c82-acd7-7580-be70-2820d1e66f6d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Alvin Cheung",
+      "id": "01985c82-3a9a-7ff3-b695-521511837ebd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "James Zou",
+      "id": "01985c81-d857-7dd4-882a-4542718e8abd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kunle Olukotun",
+      "id": "01985c81-f152-78b2-976a-f2f730ae5d2b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ion Stoica",
+      "id": "01985c81-d858-7213-ae2a-549509cc22d3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Joseph E. Gonzalez",
+      "id": "01985c81-d85a-7ffb-b354-4fcad0c58ec4",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d65ff-90bb-7060-907e-fa43c4f93a58",
+  "image_url": "image/2604.04247v1.png",
+  "metrics": {
+    "public_total_votes": 12,
+    "total_votes": 2,
+    "visits_count": {
+      "all": 114,
+      "last_7_days": 114
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65ff-90bb-7060-907e-fa43c4f93a58",
+  "paper_summary": {
+    "keyInsights": [
+      "The primary bottleneck in scaling prompt learning is \"context overload,\" not just context window limits, as aggregator LLMs struggle to distill quality insights from too many simultaneous inputs.",
+      "Hierarchical aggregation via a parallel scan effectively manages LLM context processing, enabling high parallelism without overwhelming the LLM's distillation capabilities.",
+      "Introducing redundancy through augmented shuffling is crucial for robust parallel learning, providing multiple opportunities for high-value insights to be incorporated into the learned context."
+    ],
+    "originalProblem": [
+      "Existing prompt learning methods for LLM agents are inefficient and not designed for high-parallelism scenarios, hindering rapid adaptation.",
+      "Naive parallelization of prompt learning leads to \"context overload,\" where aggregator LLMs fail to distill high-quality insights from numerous reflections, causing information loss and performance degradation.",
+      "This limitation restricts the ability of self-improving LLM agents to learn efficiently from vast interaction traces in real-world, large-scale deployments."
+    ],
+    "results": [
+      "Combee achieved up to a 17x speedup in training time over sequential prompt learning baselines across various agentic and domain-specific benchmarks.",
+      "It mitigated context overload, producing significantly richer and larger context artifacts (e.g., 6,887 tokens vs. 526 tokens for naive methods) while maintaining or improving accuracy with equivalent training costs.",
+      "On AppWorld, Combee achieved the highest average score (65.8%) at batch size 40 with a 12x speedup; on Terminal-Bench 2.0, it recovered most sequential quality (35.6% vs. 37.9%) with over a 17x reduction in training time."
+    ],
+    "solution": [
+      "Combee introduces a distributed Map-Shuffle-Reduce paradigm for prompt learning, integrating parallel scan aggregation, augmented shuffling, and a dynamic batch size controller.",
+      "Parallel scan aggregation employs a hierarchical, multi-level approach to combine reflections, preventing context overload for individual aggregator LLMs.",
+      "Augmented shuffling duplicates and shuffles reflections to ensure critical information is robustly integrated, particularly when processing large batch sizes, and a dynamic batch size controller optimizes learning efficiency by adapting to workload."
+    ],
+    "summary": "Combee presents a distributed framework for scaling prompt learning in self-improving language model agents. It effectively tackles the \"context overload\" challenge in parallel aggregation, yielding up to a 17x speedup compared to sequential methods while preserving or enhancing accuracy on benchmarks such as AppWorld and Terminal-Bench 2.0."
+  },
+  "publication_date": "2026-04-05T20:07:48.000Z",
+  "title": "Combee: Scaling Prompt Learning for Self-Improving Language Model Agents",
+  "topics": [
+    "agentic-frameworks",
+    "agents",
+    "Computer Science",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "distributed-learning",
+    "meta-learning",
+    "ml-systems",
+    "optimization-methods"
+  ],
+  "universal_paper_id": "2604.04247",
+  "updated_at": "2026-04-07T03:32:20.795Z",
+  "version_id": "019d65ff-9120-778a-8fe3-1bc7ac1bd9c1"
+}

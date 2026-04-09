@@ -1,0 +1,193 @@
+{
+  "sources": [
+    {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "openai.com"
+        ],
+        "article_path_prefixes": [
+          "/index/"
+        ],
+        "discovery_mode": "rss_feed",
+        "website_url": "https://openai.com/news/"
+      },
+      "created_at": null,
+      "custom_pipeline_id": "openai-website",
+      "decomposition_mode": "none",
+      "description": "OpenAI official website posts discovered from the public site feed.",
+      "enabled": true,
+      "id": "openai-website",
+      "max_items": 20,
+      "name": "OpenAI Website",
+      "raw_kind": "blog-post",
+      "tags": [
+        "openai",
+        "official",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "updated_at": null,
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "www.anthropic.com",
+          "anthropic.com"
+        ],
+        "article_path_prefixes": [
+          "/research/"
+        ],
+        "discovery_mode": "website_index",
+        "exclude_patterns": [
+          "^/research$",
+          "^/research/team/"
+        ],
+        "website_url": "https://www.anthropic.com/research"
+      },
+      "created_at": null,
+      "custom_pipeline_id": "anthropic-research",
+      "decomposition_mode": "none",
+      "description": "Anthropic research posts discovered from the official research index.",
+      "enabled": true,
+      "id": "anthropic-research",
+      "max_items": 20,
+      "name": "Anthropic Research",
+      "raw_kind": "blog-post",
+      "tags": [
+        "anthropic",
+        "official",
+        "research",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "updated_at": null,
+      "url": "https://www.anthropic.com/research"
+    },
+    {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "mistral.ai",
+          "www.mistral.ai"
+        ],
+        "article_path_prefixes": [
+          "/news/"
+        ],
+        "discovery_mode": "website_index",
+        "required_categories": [
+          "Research"
+        ],
+        "script_entry_parser": "mistral_news_posts",
+        "website_url": "https://mistral.ai/news?category=research"
+      },
+      "created_at": null,
+      "custom_pipeline_id": "mistral-research",
+      "decomposition_mode": "none",
+      "description": "Mistral research posts discovered from the official news page filtered to Research.",
+      "enabled": true,
+      "id": "mistral-research",
+      "max_items": 20,
+      "name": "Mistral Research",
+      "raw_kind": "blog-post",
+      "tags": [
+        "mistral",
+        "official",
+        "research",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "updated_at": null,
+      "url": "https://mistral.ai/news?category=research"
+    },
+    {
+      "classification_mode": "written_content_auto",
+      "config_json": {
+        "senders": [
+          "dan@tldrnewsletter.com",
+          "hi@tldrnewsletter.com",
+          "newsletter@tldrnewsletter.com"
+        ]
+      },
+      "created_at": null,
+      "custom_pipeline_id": "tldr-email",
+      "decomposition_mode": "newsletter_entries",
+      "description": "TLDR newsletter emails pulled from Gmail.",
+      "enabled": true,
+      "id": "tldr-email",
+      "max_items": 20,
+      "name": "TLDR Email",
+      "raw_kind": "newsletter",
+      "tags": [
+        "newsletter",
+        "tldr",
+        "email",
+        "ai"
+      ],
+      "type": "gmail_newsletter",
+      "updated_at": null,
+      "url": null
+    },
+    {
+      "classification_mode": "written_content_auto",
+      "config_json": {
+        "senders": [
+          "noreply@medium.com"
+        ]
+      },
+      "created_at": null,
+      "custom_pipeline_id": "medium-email",
+      "decomposition_mode": "newsletter_entries",
+      "description": "Medium digest emails pulled from Gmail.",
+      "enabled": true,
+      "id": "medium-email",
+      "max_items": 20,
+      "name": "Medium Email",
+      "raw_kind": "newsletter",
+      "tags": [
+        "newsletter",
+        "medium",
+        "email"
+      ],
+      "type": "gmail_newsletter",
+      "updated_at": null,
+      "url": null
+    },
+    {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "www.alphaxiv.org",
+          "alphaxiv.org"
+        ],
+        "article_path_prefixes": [
+          "/abs/"
+        ],
+        "discovery_mode": "website_index",
+        "website_url": "https://www.alphaxiv.org/"
+      },
+      "created_at": null,
+      "custom_pipeline_id": "alphaxiv-paper",
+      "decomposition_mode": "none",
+      "description": "alphaXiv paper listings normalized into paper raw documents.",
+      "enabled": true,
+      "id": "alphaxiv-paper",
+      "max_items": 20,
+      "name": "alphaXiv Papers",
+      "raw_kind": "paper",
+      "tags": [
+        "paper",
+        "alphaxiv",
+        "research"
+      ],
+      "type": "website",
+      "updated_at": null,
+      "url": "https://www.alphaxiv.org/"
+    }
+  ]
+}

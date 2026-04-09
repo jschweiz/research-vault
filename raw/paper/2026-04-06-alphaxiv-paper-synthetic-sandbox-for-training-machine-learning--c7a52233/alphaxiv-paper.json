@@ -1,0 +1,21 @@
+{
+  "abstract": "As large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775495969000,
+  "googleCitationId": null,
+  "groupId": "019d65d7-7578-7816-83a9-18e52c67232c",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775495969000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04872",
+  "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+  "type": "public",
+  "universalId": "2604.04872",
+  "uploader": null,
+  "versionId": "019d65d7-75b7-7cd6-8911-58cd23ba0104",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

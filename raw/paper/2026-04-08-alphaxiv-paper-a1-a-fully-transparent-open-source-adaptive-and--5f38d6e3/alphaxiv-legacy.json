@@ -1,0 +1,209 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Kaidong Zhang",
+        "id": "01985c81-ef77-761a-8119-08f6c7bac840",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jian Zhang",
+        "id": "01985c81-d97e-7684-b57c-6afe69e09cf1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Rongtao Xu",
+        "id": "01985c81-e775-70f1-8ef5-066e29ab0eae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Sun",
+        "id": "01985c81-e01e-77ea-ac79-de743782ef12",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuoshuo Xue",
+        "id": "019d6acc-c2ad-7049-b4a5-2cbaa4b8458b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Youpeng Wen",
+        "id": "01985c81-ec41-7dd6-ae6e-c36235019381",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaoyu Guo",
+        "id": "01985c82-7acc-7c7d-96e8-8ef5078f0442",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Minghao Guo",
+        "id": "01985c81-e4e6-788b-b4c7-22e60e3286d2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Weijia Liufu",
+        "id": "01985c83-45df-706a-871b-b85650009b0e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Liu Zihou",
+        "id": "019d6acc-c2ba-7e4f-afd0-8290f39719f3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kangyi Ji",
+        "id": "019d6acc-c2bb-7079-9364-deb8fce1044d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yangsong Zhang",
+        "id": "01985c82-8894-77b1-bcef-0b690694c767",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiarun Zhu",
+        "id": "019d6acc-c2be-741c-aeb3-7b45415ae3f7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingzhi Liu",
+        "id": "01985c85-1a26-7ebb-96a2-329034eebba3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihang Li",
+        "id": "01985c82-ad9d-7ba3-a3ea-5d8da5eb055f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ruiyi Chen",
+        "id": "019d6acc-c2c8-71db-ba67-5b2307a8a6c9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Meng Cao",
+        "id": "01985c81-e9dd-7a33-9ce3-3bd069781c43",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingming Zhang",
+        "id": "01985c83-0973-79b6-a576-adf410e97b8c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shen Zhao",
+        "id": "01985c81-ec41-7415-9a86-1d9892defd40",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaojun Chang",
+        "id": "01985c81-df57-70e6-ab75-ee9151d7bd9f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Feng Zheng",
+        "id": "01985c82-18b5-7b06-b54a-4b5ecb1d1705",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ivan Laptev",
+        "id": "01985c81-edde-788b-9a87-67d165d22375",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaodan Liang",
+        "id": "01985c81-e286-7d59-b2f3-387dd458631f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 2,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 01:54:57 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 10:18:40 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6acc-c27f-798f-a358-b7c5679e836e",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 72,
+          "last24Hours": 58,
+          "last30Days": 72,
+          "last7Days": 72,
+          "last90Days": 72
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 3,
+          "url": "https://github.com/ATeam-Research/A1"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05672"
+      },
+      "title": "A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model",
+      "topics": [
+        "Computer Science",
+        "cs.RO"
+      ],
+      "universal_paper_id": "2604.05672",
+      "updated_at": "Wed Apr 08 2026 01:54:57 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful paradigm for open-world robot manipulation, but their practical deployment is often constrained by cost: billion-scale VLM backbones and iterative diffusion/flow-based action heads incur high latency and compute, making real-time control expensive on commodity hardware. We present A1, a fully open-source and transparent VLA framework designed for low-cost, high-throughput inference without sacrificing manipulation success; Our approach leverages pretrained VLMs that provide implicit affordance priors for action generation. We release the full training stack (training code, data/data-processing pipeline, intermediate checkpoints, and evaluation scripts) to enable end-to-end reproducibility. Beyond optimizing the VLM alone, A1 targets the full inference pipeline by introducing a budget-aware adaptive inference scheme that jointly accelerates the backbone and the action head. Specifically, we monitor action consistency across intermediate VLM layers to trigger early termination, and propose Inter-Layer Truncated Flow Matching that warm-starts denoising across layers, enabling accurate actions with substantially fewer effective denoising iterations. Across simulation benchmarks (LIBERO, VLABench) and real robots (Franka, AgiBot), A1 achieves state-of-the-art success rates while significantly reducing inference cost (e.g., up to 72% lower per-episode latency for flow-matching inference and up to 76.6% backbone computation reduction with minor performance degradation). On RoboChallenge, A1 achieves an average success rate of 29.00%, outperforming baselines including pi0(28.33%), X-VLA (21.33%), and RDT-1B (15.00%).",
+      "created_at": "Thu Apr 09 2026 00:35:55 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6faa-c31c-7ec7-ac99-66cb8f3adec3",
+      "imageURL": "image/2604.05672v2.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Apr 08 2026 08:24:30 GMT+0000 (Coordinated Universal Time)",
+      "title": "A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model",
+      "universal_paper_id": "2604.05672",
+      "updated_at": "Thu Apr 09 2026 00:35:55 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v2",
+      "version_order": 2
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05672v2.pdf"
+    },
+    "verified_authors": []
+  }
+}

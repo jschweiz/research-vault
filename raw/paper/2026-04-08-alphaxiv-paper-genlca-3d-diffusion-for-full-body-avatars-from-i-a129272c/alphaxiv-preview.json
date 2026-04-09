@@ -1,0 +1,106 @@
+{
+  "abstract": "We present GenLCA, a diffusion-based generative model for generating and editing photorealistic full-body avatars from text and image inputs. The generated avatars are faithful to the inputs, while supporting high-fidelity facial and full-body animations. The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale to millions of real-world videos. This scalability contributes to the superior photorealism and generalizability of GenLCA. Specifically, we scale up the dataset by repurposing a pretrained feed-forward avatar reconstruction model as an animatable 3D tokenizer, which encodes unstructured video frames into structured 3D tokens. However, most real-world videos only provide partial observations of body parts, resulting in excessive blurring or transparency artifacts in the 3D tokens. To address this, we propose a novel visibility-aware diffusion training strategy that replaces invalid regions with learnable tokens and computes losses only over valid regions. We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar reconstruction model. Our approach effectively enables the use of large-scale real-world video data to train a diffusion model natively in 3D. We demonstrate the efficacy of our method through diverse and high-fidelity generation and editing results, outperforming existing solutions by a large margin. The project page is available at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Yiqian Wu",
+    "Rawal Khirodkar",
+    "Egor Zakharov",
+    "Timur Bagautdinov",
+    "Lei Xiao",
+    "Zhaoen Su",
+    "Shunsuke Saito",
+    "Xiaogang Jin",
+    "Junxuan Li"
+  ],
+  "canonical_id": "2604.07273v1",
+  "first_publication_date": "2026-04-08T16:34:07.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yiqian Wu",
+      "id": "01985c82-1b87-7877-9bbb-9ff93caaf23a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rawal Khirodkar",
+      "id": "01985c81-dc26-7aab-9848-b57645fe6e14",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Egor Zakharov",
+      "id": "01985c82-4ca1-7a19-9fa1-51dc3995ac09",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Timur Bagautdinov",
+      "id": "01985c81-f818-7e61-9c46-3dba89309ff7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lei Xiao",
+      "id": "01985c82-07f2-7e0a-b2c2-e4b45e4613ba",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhaoen Su",
+      "id": "01985c82-c7f7-7737-a5a6-54df559d28c5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shunsuke Saito",
+      "id": "01985c81-e34f-795f-a599-cda8b8bdcfd4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaogang Jin",
+      "id": "01985c82-30ed-722b-97d1-5077e3895b53",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junxuan Li",
+      "id": "01985c82-945e-79df-8d3d-2e16334140dc",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d7014-6d53-738d-8883-ffdc0c9a52de",
+  "image_url": "image/2604.07273v1.png",
+  "metrics": {
+    "public_total_votes": 0,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 42,
+      "last_7_days": 42
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d7014-6d53-738d-8883-ffdc0c9a52de",
+  "paper_summary": null,
+  "publication_date": "2026-04-08T16:34:07.000Z",
+  "title": "GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "generative-models",
+    "geometric-deep-learning",
+    "image-generation",
+    "multi-modal-learning",
+    "neural-rendering",
+    "representation-learning",
+    "transfer-learning",
+    "video-understanding"
+  ],
+  "universal_paper_id": "2604.07273",
+  "updated_at": "2026-04-09T02:31:20.147Z",
+  "version_id": "019d7014-6d98-7b75-9925-dcd0d6685c67"
+}

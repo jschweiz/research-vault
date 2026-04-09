@@ -1,0 +1,21 @@
+{
+  "abstract": "Image spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775498082000,
+  "googleCitationId": null,
+  "groupId": "019d65d7-b155-731f-9120-a8ca4f7ce509",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775624046000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04911",
+  "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+  "type": "public",
+  "universalId": "2604.04911",
+  "uploader": null,
+  "versionId": "019d6fa8-81b1-7850-bf9b-aa94872dd1e4",
+  "versionLabel": "v2",
+  "versionOrder": 2,
+  "versions": []
+}
