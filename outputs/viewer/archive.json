@@ -12,7 +12,7 @@
       "html_path": "latest/index.html",
       "manifest_path": "latest/manifest.json",
       "period_type": "day",
-      "published_at": "2026-04-09T15:20:10.634007Z",
+      "published_at": "2026-04-09T15:24:14.490723Z",
       "record_name": "day-2026-04-09",
       "schema_version": 3,
       "title": "Research Brief · 2026-04-09",
@@ -20,7 +20,7 @@
       "week_start": null
     }
   ],
-  "generated_at": "2026-04-09T15:20:10.811232+00:00",
+  "generated_at": "2026-04-09T15:24:14.716561+00:00",
   "latest": {
     "audio_path": null,
     "brief_date": "2026-04-09",
@@ -33,7 +33,7 @@
     "html_path": "latest/index.html",
     "manifest_path": "latest/manifest.json",
     "period_type": "day",
-    "published_at": "2026-04-09T15:20:10.634007Z",
+    "published_at": "2026-04-09T15:24:14.490723Z",
     "record_name": "day-2026-04-09",
     "schema_version": 3,
     "title": "Research Brief · 2026-04-09",
