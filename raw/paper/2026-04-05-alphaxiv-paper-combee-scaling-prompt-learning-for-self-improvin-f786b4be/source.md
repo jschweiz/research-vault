@@ -11,6 +11,14 @@ authors:
 - Changxiu Ji
 - Qiuyang Mang
 - Xiaokun Chen
+- Lakshya A Agrawal
+- Wei-Liang Liao
+- Eric Yang
+- Alvin Cheung
+- James Zou
+- Kunle Olukotun
+- Ion Stoica
+- Joseph E. Gonzalez
 published_at: '2026-04-05T20:07:48Z'
 ingested_at: '2026-04-09T12:08:19.071014Z'
 content_hash: ef26203f1303b60b6932e574936a8fc011ab77ddf1eb9ca01fa46a9a027cdd2d
@@ -44,25 +52,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:19.071021Z'
-short_summary: Combee is a distributed framework that scales prompt learning for self-improving language model agents by using parallel scan aggregation and augmented shuffling to mitigate context overload. It achieves up to a 17x speedup while maintaining or improving accuracy on benchmarks.
+short_summary: Combee presents a distributed framework for scaling prompt learning in self-improving language model agents. It effectively tackles the "context overload" challenge in parallel aggregation, yielding up to a 17x speedup compared to sequential methods while preserving or enhancing accuracy on benchmarks such as AppWorld and Terminal-Bench 2.0.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.113158Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.578451Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 153b098927b87d91f75571a61f501cafad685fca59394c1d11acebab42334cf1
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 372143eece740d9198764119fe684d87d92fd8aee05a4def4d42ac94939a17da
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: e802b73b4013bc67b6e83f0daf7901199edadf5de70db9cdd82b0ca99cc99725
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 1.0
+  source_fit_score: 0.5899
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'The document directly addresses the user''s favorite topics of LLM agents, scaling, and evaluation, making it a high-priority read. alphaXiv engagement signals: 12 public votes, 2 total votes, 114 visits in the last 7 days.'
   evidence_quotes:
-  - Combee is a distributed framework that scales prompt learning for self-improving language model agents by using parallel scan aggregation and augmented shufflin
+  - Combee presents a distributed framework for scaling prompt learning in self-improving language model agents.
+  - Combee speeds up learning and enables running many agents in parallel while learning from their aggregate traces without quality degradation.
+  - Combee achieved up to a 17x speedup in training time over sequential prompt learning baselines across various agentic and domain-specific benchmarks.
 ---
 # Combee: Scaling Prompt Learning for Self-Improving Language Model Agents
 

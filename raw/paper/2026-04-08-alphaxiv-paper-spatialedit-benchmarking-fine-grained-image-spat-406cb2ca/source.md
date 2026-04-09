@@ -11,6 +11,13 @@ authors:
 - Yukang Chen
 - Wenbo Li
 - Nan Jiang
+- Tianhe Ren
+- Haokun Lin
+- Wei Huang
+- Haoyang Huang
+- Xiu Li
+- Nan Duan
+- Xiaojuan Qi
 published_at: '2026-04-08T04:54:06Z'
 ingested_at: '2026-04-09T12:07:06.088330Z'
 content_hash: 0b1f432f27260d162ef1bd516430ce51b976991678e00bd5ecb1846284a39191
@@ -43,25 +50,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:07:06.088336Z'
 short_summary: This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.409069Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.845193Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 27331e44509bd1b0a746ecf64390531fe1aada469982bae72b8e20242d41b8c1
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: eb422e0c06d2c24122d64d68f7fefaebc254d97288ed00534fdd97b931bf00a8
+lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 07de89163bc4bad555afff479427e350289fc5d67513dc4adce80743cfa18e07
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.5
-  topic_fit_score: 0.95
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is highly relevant as it focuses on generative models, image generation, and geometric deep learning, aligning perfectly with the user's favorite topics.
+  relevance_score: 0.5485
+  source_fit_score: 0.5665
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.5665
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.'
   evidence_quotes:
-  - This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation.
-  - It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.
-  - We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via view
+  - 'This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It '
 ---
 # SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing
 

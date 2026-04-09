@@ -1,0 +1,303 @@
+{
+  "id": "2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b",
+  "kind": "paper",
+  "source_id": "alphaxiv-paper",
+  "title": "MoRight: Motion Control Done Right",
+  "source_name": "alphaXiv Papers",
+  "organization_name": null,
+  "authors": [
+    "Shaowei Liu",
+    "Xuanchi Ren",
+    "Tianchang Shen",
+    "Huan Ling",
+    "Saurabh Gupta",
+    "Shenlong Wang",
+    "Sanja Fidler",
+    "Jun Gao"
+  ],
+  "published_at": "2026-04-08T17:59:22Z",
+  "canonical_url": "https://www.alphaxiv.org/abs/2604.07348",
+  "content_type": "paper",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# MoRight: Motion Control Done Right\n\n## alphaXiv Summary\n\nMoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.07348\n- Source paper: https://arxiv.org/abs/2604.07348\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.07348v1.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.07348v1.png\n- Paper ID: 2604.07348\n- Canonical ID: 2604.07348v1\n- Paper group ID: 019d6ff4-39fa-7566-9a26-8a93c1dce29b\n- Version ID: 019d6ff4-3a2e-7b99-9837-027b96f0ef06\n- Version: v1\n- Version order: 1\n- Published at: 2026-04-08T17:59:22+00:00\n- First published at: 2026-04-08T17:59:22+00:00\n- Updated at: 2026-04-09T01:56:09.850000+00:00\n- License: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\n- Citations: 0\n\n## Authors\n\n- Shaowei Liu\n- Xuanchi Ren\n- Tianchang Shen\n- Huan Ling\n- Saurabh Gupta\n- Shenlong Wang\n- Sanja Fidler\n- Jun Gao\n\n## Topics\n\n- attention-mechanisms\n- causal-inference\n- Computer Science\n- cs.AI\n- cs.CV\n- cs.GR\n- cs.LG\n- cs.RO\n- generative-models\n- reasoning\n- representation-learning\n- video-understanding\n\n## Metrics\n\n- Visits (all): 49\n- Visits (last 7 days): 49\n- Total votes: 1\n- Public total votes: 1\n- X likes: 0\n\n## Abstract\n\nGenerating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.\n\n## Problem\n\n- Existing controllable video generation methods often entangle camera and object motion, making it challenging to control movements independently of the camera viewpoint.\n- Current models frequently treat motion as kinematic displacement, neglecting underlying causal relationships, which requires laborious detailed inputs or external physics engines for physically plausible interactions.\n- Generating interactive scenes typically demands extensive, privileged motion inputs (e.g., per-frame depth maps, 3D object trajectories) or relies on external models, increasing complexity and potential for error.\n\n## Method\n\n- A dual-stream Diffusion Transformer (DiT) architecture is employed, featuring a canonical stream for object motion in a static view and a target stream for the final video, interacting via shared weights and self-attention for disentangled camera-object control.\n- Motion causality modeling is integrated through active/passive motion decomposition and motion dropout training, enabling the model to infer missing motion components and learn action-consequence relationships.\n- A comprehensive data curation pipeline combines motion extraction, canonicalization, synthetic paired two-view video generation, and mixed training with real-world single-view data to enhance robustness and generalization.\n\n## Results\n\n- MoRight received superior human preference scores, with 53.5% for controllability, 54.6% for motion realism, and 55.9% for photorealism, outperforming state-of-the-art baselines.\n- The framework demonstrated strong motion accuracy (e.g., best EPE and Rotation/Translation error on the Cooking benchmark) and visual quality (best FID and FVD on WISA and Cooking datasets) while maintaining consistent object dynamics.\n- It achieved the highest Physical Commonsense score on WISA and successfully performed both forward (predicting consequences from actions) and inverse (inferring actions from desired outcomes) causal reasoning from sparse user inputs.\n\n## Takeaways\n\n- Object motion is unambiguously defined and transferred across different camera viewpoints when initially processed in a canonical static view, acting as a 'virtual anchor' within a dual-stream architecture.\n- Decomposing object motion into active (user-driven) and passive (causal outcomes) components, combined with asymmetric supervision during training, enables the model to reason about and generate physically coherent action-consequence relationships.\n- A hybrid training approach, leveraging both synthetic paired data for disentangled control and abundant single-view real-world data, significantly improves the model's robustness, generalization, and diversity in camera motion handling.\n\n## Full Overview\n\nSaved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.\n\n## Overview Languages\n\n- de\n- en\n- es\n- fr\n- hi\n- ja\n- ko\n- ru\n- zh\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/transcript.json\n\n## Similar Papers\n\n- Uni3C: Unifying Precisely 3D-Enhanced Camera and Human Motion Controls for Video Generation (2504.14899v2): The Uni3C framework from Alibaba DAMO Academy and Fudan University unifies precise 3D-enhanced camera and human motion controls for video generation, utilizing a lightweight, plug-and-play module and global 3D world guidance to achieve superior control accuracy and video quality compared to existing methods. This approach reduces hallucination rates while supporting flexible motion transfer and preserving foundational model generalization.\n- Motion Prompting: Controlling Video Generation with Motion Trajectories (2412.02700v2): Researchers at Google DeepMind and partner institutions introduced \"Motion Prompting,\" a framework for controlling video generation using spatio-temporal point trajectories. This method, built on the Lumiere model, enables fine-grained control over object and camera movements, achieving superior motion adherence and visual quality compared to baselines in both quantitative metrics and human evaluations.\n- VideoMage: Multi-Subject and Motion Customization of Text-to-Video  Diffusion Models (2503.21781v1): A framework from National Taiwan University and NVIDIA enables simultaneous customization of multiple subject identities and their interactive motions in text-to-video generation through appearance-agnostic motion learning and spatial-temporal collaborative composition, addressing the appearance leakage problem while maintaining high video quality and temporal coherence.\n- PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation (2509.20358v2): The PhysCtrl framework introduces a method for generating physically plausible videos from a single image, enabling explicit control over material properties and external forces. It leverages a diffusion-based generative physics network to produce 3D point trajectories, outperforming existing video generation and dynamics models in physical adherence, video quality, and trajectory accuracy.\n- MagicMotion: Controllable Video Generation with Dense-to-Sparse Trajectory Guidance (2503.16421v3): MagicMotion, developed by Fudan University and Microsoft Research Asia, proposes a framework for controllable video generation that guides object movements from a single image using dense-to-sparse trajectories. The system, along with its introduced MagicData dataset and MagicBench evaluation platform, achieved an FID of 15.06, FVD of 112.69, and Mask IoU of 91.57% on MagicBench, outperforming existing trajectory-controllable methods.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+  "outbound_links": [
+    "https://www.alphaxiv.org/abs/2604.07348",
+    "https://arxiv.org/abs/2604.07348",
+    "https://fetcher.alphaxiv.org/v2/pdf/2604.07348v1.pdf",
+    "https://www.alphaxiv.org/image/2604.07348v1.png",
+    "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/podcast.mp3",
+    "https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/transcript.json"
+  ],
+  "score": {
+    "relevance_score": 0.9845,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.8,
+    "author_match_score": 0.7,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.7853,
+    "bucket": "must_read",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 2,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 96.95,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.56,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.8,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.7,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "gemma4:e2b+alphaxiv-metrics-v1",
+      "judge_evidence_quotes": [
+        "MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable",
+        "It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonica",
+        "It achieved the highest Physical Commonsense score on WISA and successfully performed both forward (predicting consequences from actions) and inverse (inferring"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "alphaxiv-legacy.json",
+    "alphaxiv-metadata.json",
+    "alphaxiv-overview-status.json",
+    "alphaxiv-overview.json",
+    "alphaxiv-overview.md",
+    "alphaxiv-paper.json",
+    "alphaxiv-preview.json",
+    "alphaxiv-similar-papers.json"
+  ],
+  "raw_doc_path": "raw/paper/2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T16:19:42.825512Z",
+  "alphaxiv": {
+    "short_summary": "MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.",
+    "filed_text": "## Abstract\n\nGenerating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.\n\n## Problem\n\n- Existing controllable video generation methods often entangle camera and object motion, making it challenging to control movements independently of the camera viewpoint.\n- Current models frequently treat motion as kinematic displacement, neglecting underlying causal relationships, which requires laborious detailed inputs or external physics engines for physically plausible interactions.\n- Generating interactive scenes typically demands extensive, privileged motion inputs (e.g., per-frame depth maps, 3D object trajectories) or relies on external models, increasing complexity and potential for error.\n\n## Method\n\n- A dual-stream Diffusion Transformer (DiT) architecture is employed, featuring a canonical stream for object motion in a static view and a target stream for the final video, interacting via shared weights and self-attention for disentangled camera-object control.\n- Motion causality modeling is integrated through active/passive motion decomposition and motion dropout training, enabling the model to infer missing motion components and learn action-consequence relationships.\n- A comprehensive data curation pipeline combines motion extraction, canonicalization, synthetic paired two-view video generation, and mixed training with real-world single-view data to enhance robustness and generalization.\n\n## Results\n\n- MoRight received superior human preference scores, with 53.5% for controllability, 54.6% for motion realism, and 55.9% for photorealism, outperforming state-of-the-art baselines.\n- The framework demonstrated strong motion accuracy (e.g., best EPE and Rotation/Translation error on the Cooking benchmark) and visual quality (best FID and FVD on WISA and Cooking datasets) while maintaining consistent object dynamics.\n- It achieved the highest Physical Commonsense score on WISA and successfully performed both forward (predicting consequences from actions) and inverse (inferring actions from desired outcomes) causal reasoning from sparse user inputs.\n\n## Summary\n\nMoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.\n\n## Takeaways\n\n- Object motion is unambiguously defined and transferred across different camera viewpoints when initially processed in a canonical static view, acting as a 'virtual anchor' within a dual-stream architecture.\n- Decomposing object motion into active (user-driven) and passive (causal outcomes) components, combined with asymmetric supervision during training, enables the model to reason about and generate physically coherent action-consequence relationships.\n- A hybrid training approach, leveraging both synthetic paired data for disentangled control and abundant single-view real-world data, significantly improves the model's robustness, generalization, and diversity in camera motion handling.",
+    "audio_url": "https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/podcast.mp3",
+    "similar_papers": [
+      {
+        "title": "Uni3C: Unifying Precisely 3D-Enhanced Camera and Human Motion Controls for Video Generation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.14899",
+        "app_item_id": null,
+        "authors": [
+          "Chenjie Cao",
+          "Jingkai Zhou",
+          "Shikai Li",
+          "Jingyun Liang",
+          "Chaohui Yu",
+          "Fan Wang",
+          "Xiangyang Xue",
+          "Yanwei Fu"
+        ],
+        "short_summary": "The Uni3C framework from Alibaba DAMO Academy and Fudan University unifies precise 3D-enhanced camera and human motion controls for video generation, utilizing a lightweight, plug-and-play module and global 3D world guidance to achieve superior control accuracy and video quality compared to existing methods. This approach reduces hallucination rates while supporting flexible motion transfer and preserving foundational model generalization."
+      },
+      {
+        "title": "Motion Prompting: Controlling Video Generation with Motion Trajectories",
+        "canonical_url": "https://www.alphaxiv.org/abs/2412.02700",
+        "app_item_id": null,
+        "authors": [
+          "Daniel Geng",
+          "Charles Herrmann",
+          "Junhwa Hur",
+          "Forrester Cole",
+          "Serena Zhang",
+          "Tobias Pfaff",
+          "Tatiana Lopez-Guevara",
+          "Carl Doersch",
+          "Yusuf Aytar",
+          "Michael Rubinstein",
+          "Chen Sun",
+          "Oliver Wang",
+          "Andrew Owens",
+          "Deqing Sun"
+        ],
+        "short_summary": "Researchers at Google DeepMind and partner institutions introduced \"Motion Prompting,\" a framework for controlling video generation using spatio-temporal point trajectories. This method, built on the Lumiere model, enables fine-grained control over object and camera movements, achieving superior motion adherence and visual quality compared to baselines in both quantitative metrics and human evaluations."
+      },
+      {
+        "title": "VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models",
+        "canonical_url": "https://www.alphaxiv.org/abs/2503.21781",
+        "app_item_id": null,
+        "authors": [
+          "Chi-Pin Huang",
+          "Yen-Siang Wu",
+          "Hung-Kai Chung",
+          "Kai-Po Chang",
+          "Fu-En Yang",
+          "Yu-Chiang Frank Wang"
+        ],
+        "short_summary": "A framework from National Taiwan University and NVIDIA enables simultaneous customization of multiple subject identities and their interactive motions in text-to-video generation through appearance-agnostic motion learning and spatial-temporal collaborative composition, addressing the appearance leakage problem while maintaining high video quality and temporal coherence."
+      },
+      {
+        "title": "PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video Generation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2509.20358",
+        "app_item_id": null,
+        "authors": [
+          "Chen Wang",
+          "Chuhao Chen",
+          "Yiming Huang",
+          "Zhiyang Dou",
+          "Yuan Liu",
+          "Jiatao Gu",
+          "Lingjie Liu"
+        ],
+        "short_summary": "The PhysCtrl framework introduces a method for generating physically plausible videos from a single image, enabling explicit control over material properties and external forces. It leverages a diffusion-based generative physics network to produce 3D point trajectories, outperforming existing video generation and dynamics models in physical adherence, video quality, and trajectory accuracy."
+      },
+      {
+        "title": "MagicMotion: Controllable Video Generation with Dense-to-Sparse Trajectory Guidance",
+        "canonical_url": "https://www.alphaxiv.org/abs/2503.16421",
+        "app_item_id": null,
+        "authors": [
+          "Quanhao Li",
+          "Zhen Xing",
+          "Rui Wang",
+          "Hui Zhang",
+          "Qi Dai",
+          "Zuxuan Wu"
+        ],
+        "short_summary": "MagicMotion, developed by Fudan University and Microsoft Research Asia, proposes a framework for controllable video generation that guides object movements from a single image using dense-to-sparse trajectories. The system, along with its introduced MagicData dataset and MagicBench evaluation platform, achieved an FID of 15.06, FVD of 112.69, and Mask IoU of 91.57% on MagicBench, outperforming existing trajectory-controllable methods."
+      },
+      {
+        "title": "ConMo: Controllable Motion Disentanglement and Recomposition for Zero-Shot Motion Transfer",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.02451",
+        "app_item_id": null,
+        "authors": [
+          "Jiayi Gao",
+          "Zijin Yin",
+          "Changcheng Hua",
+          "Yuxin Peng",
+          "Kongming Liang",
+          "Zhanyu Ma",
+          "Jun Guo",
+          "Yang Liu"
+        ],
+        "short_summary": "Researchers from Peking University and BUPT introduce ConMo, a framework for zero-shot motion transfer in text-to-video generation that disentangles and recomposes individual subject motions from reference videos, enabling precise control over multiple subjects while preserving motion accuracy across different shapes and semantics."
+      },
+      {
+        "title": "OmniCam: Unified Multimodal Video Generation via Camera Control",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.02312",
+        "app_item_id": null,
+        "authors": [
+          "Xiaoda Yang",
+          "Jiayang Xu",
+          "Kaixuan Luan",
+          "Xinyu Zhan",
+          "Hongshun Qiu",
+          "Shijun Shi",
+          "Hao Li",
+          "Shuai Yang",
+          "Li Zhang",
+          "Checheng Yu",
+          "Cewu Lu",
+          "Lixin Yang"
+        ],
+        "short_summary": "OmniCam introduces a unified framework for camera-controlled video generation that supports diverse input modalities like text and reference videos. The system generates videos with precise, frame-level camera movements while maintaining spatial consistency and achieving improved perceptual and structural similarity compared to prior methods."
+      },
+      {
+        "title": "Generative Video Motion Editing with 3D Point Tracks",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.02015",
+        "app_item_id": null,
+        "authors": [
+          "Yao-Chih Lee",
+          "Zhoutong Zhang",
+          "Jiahui Huang",
+          "Jui-Hsien Wang",
+          "Joon-Young Lee",
+          "Jia-Bin Huang",
+          "Eli Shechtman",
+          "Zhengqi Li"
+        ],
+        "short_summary": "Edit-by-Track, developed by researchers from Adobe Research and the University of Maryland College Park, introduces a generative video motion editing framework that enables precise, joint manipulation of both camera and object movements using 3D point tracks. This approach maintains spatiotemporal context and synthesizes causal effects of motion edits, outperforming previous methods with superior visual quality and more accurate track control."
+      },
+      {
+        "title": "Light-X: Generative 4D Video Rendering with Camera and Illumination Control",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.05115",
+        "app_item_id": null,
+        "authors": [
+          "Tianqi Liu",
+          "Zhaoxi Chen",
+          "Zihao Huang",
+          "Shaocong Xu",
+          "Saining Zhang",
+          "Chongjie Ye",
+          "Bohan Li",
+          "Zhiguo Cao",
+          "Wei Li",
+          "Hao Zhao",
+          "Ziwei Liu"
+        ],
+        "short_summary": "Researchers from S-Lab at NTU, BAAI, and other institutions developed LIGHT-X, a framework for generative 4D video rendering that provides joint control over camera trajectory and scene illumination from a single monocular video. The model achieves superior perceptual quality and temporal consistency in generated videos, outperforming existing methods in both joint control and video relighting tasks."
+      },
+      {
+        "title": "3D-Aware Implicit Motion Control for View-Adaptive Human Video Generation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2602.03796",
+        "app_item_id": null,
+        "authors": [
+          "Zhixue Fang",
+          "Xu He",
+          "Songlin Tang",
+          "Haoxian Zhang",
+          "Qingfeng Li",
+          "Xiaoqiang Liu",
+          "Pengfei Wan",
+          "Kun Gai"
+        ],
+        "short_summary": "The Kling Team at Kuaishou Technology, with collaborators from Tsinghua University and CASIA, introduced 3DiMo, a framework for 3D-aware human video generation that extracts implicit, view-agnostic motion from 2D driving videos. This approach achieves flexible text-guided camera control and generates high-fidelity, physically plausible human animations, demonstrating superior perceptual quality (LPIPS 0.2206) and realism (FID 36.92) compared to prior methods."
+      },
+      {
+        "title": "Perception-as-Control: Fine-grained Controllable Image Animation with 3D-aware Motion Representation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2501.05020",
+        "app_item_id": null,
+        "authors": [
+          "Yingjie Chen",
+          "Yifang Men",
+          "Yuan Yao",
+          "Miaomiao Cui",
+          "Liefeng Bo"
+        ],
+        "short_summary": "Motion-controllable image animation is a fundamental task with a wide range of potential applications. Recent works have made progress in controlling camera or object motion via various motion representations, while they still struggle to support collaborative camera and object motion control with adaptive control granularity. To this end, we introduce 3D-aware motion representation and propose an image animation framework, called Perception-as-Control, to achieve fine-grained collaborative motion control. Specifically, we construct 3D-aware motion representation from a reference image, manipulate it based on interpreted user instructions, and perceive it from different viewpoints. In this way, camera and object motions are transformed into intuitive and consistent visual changes. Then, our framework leverages the perception results as motion control signals, enabling it to support various motion-related video synthesis tasks in a unified and flexible way. Experiments demonstrate the superiority of the proposed approach. For more details and qualitative results, please refer to our anonymous project webpage: this https URL"
+      },
+      {
+        "title": "BulletTime: Decoupled Control of Time and Camera Pose for Video Generation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.05076",
+        "app_item_id": null,
+        "authors": [
+          "Yiming Wang",
+          "Qihang Zhang",
+          "Shengqu Cai",
+          "Tong Wu",
+          "Jan Ackermann",
+          "Zhengfei Kuang",
+          "Yang Zheng",
+          "Frano Rajič",
+          "Siyu Tang",
+          "Gordon Wetzstein"
+        ],
+        "short_summary": "Researchers from ETH Zurich, Stanford University, and CUHK developed BulletTime, a 4D-controllable video diffusion framework that explicitly decouples continuous world time from camera pose. The framework achieves superior pixel-level accuracy with 24.57 PSNR on synthetic data and demonstrates robust, accurate camera control in real-world settings with 1.47 rotation error, enabling novel cinematic effects like dynamic 'bullet time' sequences."
+      }
+    ]
+  }
+}

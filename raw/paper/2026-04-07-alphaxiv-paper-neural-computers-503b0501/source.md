@@ -11,6 +11,19 @@ authors:
 - Zijian Zhou
 - Shuming Liu
 - Wenyi Wang
+- Ernie Chang
+- Gael Le Lan
+- Junjie Fei
+- Wenxuan Zhang
+- Yasheng Sun
+- Zhipeng Cai
+- Zechun Liu
+- Yunyang Xiong
+- Yining Yang
+- Yuandong Tian
+- Yangyang Shi
+- Vikas Chandra
+- Jürgen Schmidhuber
 published_at: '2026-04-07T20:01:05Z'
 ingested_at: '2026-04-09T12:07:22.423055Z'
 content_hash: 7ca58f9b341f46a47ffdde6176324e58724908f99f0eb073c71ce10f52ae9d39
@@ -41,27 +54,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:22.423061Z'
-short_summary: This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The goal is to develop the Completely Neural Computer (CNC), a general-purpose realization of this machine form.
+short_summary: The paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The long-term goal is the Completely Neural Computer (CNC), a general-purpose realization of this machine form.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.288126Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.746039Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: a7a4f213566a52a5ec4317f1387bb3d07e91c5327cde313632df6b398cf98706
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: f19ed7774379c4aecdc02f6cb75c5f78975ebbcaa078bbe5f2a85b94e0db94c3
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: deae6f803d10426b74f8906561f048f8f93b981ea84b5043412a2c62ac410922
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
+  relevance_score: 1.0
+  source_fit_score: 0.5942
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses core favorite topics like LLM architecture, agents, and memory, and is associated with a favorite author (DeepMind).
+  reason: 'The document directly addresses core favorite topics like machine forms, agents, and memory, and features authors from the user''s preferred list. alphaXiv engagement signals: 0 public votes, 0 total votes, 48 visits in the last 7 days.'
   evidence_quotes:
-  - This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state.
+  - The paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state.
   - 'Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explic'
-  - This position paper argues that an integrated episodic memory system is essential for developing large language model (LLM) agents capable of sustained, adaptiv
+  - We outline a roadmap toward CNCs around these challenges.
 ---
 # Neural Computers
 

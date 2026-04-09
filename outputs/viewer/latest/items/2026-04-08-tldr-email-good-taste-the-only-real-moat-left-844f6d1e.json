@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e",
+  "kind": "article",
+  "source_id": "tldr-email",
+  "title": "Good Taste the Only Real Moat Left",
+  "source_name": "TLDR Email",
+  "organization_name": null,
+  "authors": [
+    "TLDR <dan@tldrnewsletter.com>",
+    "TLDR"
+  ],
+  "published_at": "2026-04-08T10:59:19Z",
+  "canonical_url": "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Good Taste the Only Real Moat Left\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms\n\n## Newsletter Context\n\nSection: Miscellaneous\n\nCompetent output is now cheap thanks to AI. This gives people who can tell what's generic, what's true, and what's worth pushing further an advantage. Taste is a side-effect of paying close attention to reality. Combine taste with context, constraints, and the willingness to build something different from the average.\n",
+  "outbound_links": [
+    "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms"
+  ],
+  "score": {
+    "relevance_score": 0.36,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.55,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.423,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document touches on LLMs and AI but focuses more on the philosophy of taste and context rather than the technical evaluation or architecture favored by the user.",
+      "judge_bucket_hint": "worth_a_skim",
+      "judge_confidence_score": 0.8,
+      "judge_source_fit_score": 0.36,
+      "judge_topic_fit_score": 0.55,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.55,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.",
+        "Taste is achieved by paying close attention to reality and combining it with context and constraints."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage. Taste is achieved by paying close attention to reality and combining it with context and constraints",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T12:15:58.365946Z",
+  "alphaxiv": null
+}

@@ -11,6 +11,8 @@ authors:
 - Huan Ling
 - Saurabh Gupta
 - Shenlong Wang
+- Sanja Fidler
+- Jun Gao
 published_at: '2026-04-08T17:59:22Z'
 ingested_at: '2026-04-09T12:07:14.778708Z'
 content_hash: a52052f3c800325f3fa392113efa408c733b20944eced8f34f4ebdc24583af25
@@ -44,25 +46,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:14.778714Z'
-short_summary: MoRight is a Diffusion Transformer-based framework for controllable video generation that achieves disentangled control of camera and object motion by integrating motion causality reasoning.
+short_summary: MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.393434Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.825512Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 41ba29db2f6a58de385c410a3d03e7c3a77f393597ab04c0b57c3a0d2e6d510a
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: a6cfb52b562709a670118378ac20503f216aa37c9b83e62157a0f562dd3b5116
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 91b103460671cc829d597bbf96f035c34642d168466f27052c254163cbf33194
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.9845
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.7
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.'
   evidence_quotes:
-  - MoRight is a Diffusion Transformer-based framework for controllable video generation that achieves disentangled control of camera and object motion by integrati
+  - MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable
+  - It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonica
+  - It achieved the highest Physical Commonsense score on WISA and successfully performed both forward (predicting consequences from actions) and inverse (inferring
 ---
 # MoRight: Motion Control Done Right
 

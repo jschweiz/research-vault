@@ -48,25 +48,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:10.797718Z'
-short_summary: Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves performance in text classification, math reasoning, and agentic coding by accessing uncompressed historical code and execution traces.
+short_summary: Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:26.996229Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.495698Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 42f9fb03cc8ea021162254231ba31cc9e9988d6f2582a7a1579135fd7846f03e
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: c5cb144fc15262b860254a614b615811bdb4504ee0587e515ca048af2217cb35
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 15d584712741884c5caae493055702b84ae45461bad184faf15c77d23f5afdbc
 lightweight_score:
-  relevance_score: 0.715
-  source_fit_score: 0.55
-  topic_fit_score: 0.84
-  author_fit_score: 0.18
+  relevance_score: 1.0
+  source_fit_score: 0.7704
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 3 favorite-topic matches.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'The document directly addresses favorite topics like LLM systems, optimization, and reasoning, and features authors from preferred organizations. alphaXiv engagement signals: 388 public votes, 116 total votes, 6164 visits in the last 7 days.'
   evidence_quotes:
-  - Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves per
+  - Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment.
+  - On online text classification, Meta-Harness improves over a state-of-the-art context management system by 7.7 points while using 4x fewer context tokens.
+  - On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level math problems by 4.7 points on average across five held-ou
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
 

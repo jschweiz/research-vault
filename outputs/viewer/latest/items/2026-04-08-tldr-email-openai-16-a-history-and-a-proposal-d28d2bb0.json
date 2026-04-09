@@ -1,0 +1,75 @@
+{
+  "id": "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0",
+  "kind": "article",
+  "source_id": "tldr-email",
+  "title": "OpenAI #16: A History and a Proposal",
+  "source_name": "TLDR Email",
+  "organization_name": null,
+  "authors": [
+    "TLDR <dan@tldrnewsletter.com>"
+  ],
+  "published_at": "2026-04-08T10:59:19Z",
+  "canonical_url": "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# OpenAI #16: A History and a Proposal\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal\n\n## Newsletter Context\n\nSection: Miscellaneous\n\nAnthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos. The New Yorker recently published a massive article about Sam Altman and his lack of trustworthiness. OpenAI recently proposed policy for the age of superintelligence. The company has purchased tech show TBPN, and while everyone vows that it will stay the same, that's unlikely to happen. This article gets into the details of each story.\n",
+  "outbound_links": [
+    "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal"
+  ],
+  "score": {
+    "relevance_score": 0.65,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.95,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.57,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 0.9,
+      "judge_source_fit_score": 0.3,
+      "judge_topic_fit_score": 0.95,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.8,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "OpenAI has proposed policy for the age of superintelligence.",
+        "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T12:16:11.520345Z",
+  "alphaxiv": null
+}

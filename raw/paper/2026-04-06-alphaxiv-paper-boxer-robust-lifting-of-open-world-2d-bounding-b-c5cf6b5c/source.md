@@ -11,6 +11,7 @@ authors:
 - Lingni Ma
 - Julian Straub
 - Richard Newcombe
+- Jakob Engel
 published_at: '2026-04-06T22:18:02Z'
 ingested_at: '2026-04-09T12:08:55.041402Z'
 content_hash: e99d0cbbd166b063eab3b1beb2617b995e7d2dfd10e15db702718377597a760b
@@ -44,25 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:55.041407Z'
-short_summary: Boxer is an algorithm that robustly lifts open-world 2D bounding boxes to static, global 3D bounding boxes in metric world space. It uses a transformer-based network to estimate 3D bounding boxes from 2D detections, improving performance across diverse inputs.
+short_summary: Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:27.726612Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.596137Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 18b213fb655ef96fd3b3f7be9943231a1e29b248057607ec6a6c65437a53607c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 22d6d8f0c911484e04105edb3b67fba89999be709fb6430c0aacc7908b0e7e9b
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: d7d500917bbb81f54be5ba6ee5a499ea5720eec8f6953f63142a7af35bd280d7
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
+  relevance_score: 0.9854
+  source_fit_score: 0.5376
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'The document is highly relevant as it focuses on 3D bounding box estimation using transformer-based methods, aligning perfectly with the user''s favorite topics of LLM architecture, reasoning, and research tooling. alphaXiv engagement signals: 1 public votes, 0 total votes, 45 visits in the last 7 days.'
   evidence_quotes:
-  - Boxer is an algorithm that robustly lifts open-world 2D bounding boxes to static, global 3D bounding boxes in metric world space. It uses a transformer-based ne
+  - Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space.
+  - Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across div
+  - BoxerNet consistently outperforms state-of-the-art baselines, including CuTR and 3D-MOOD, in per-frame 3D bounding box estimation, achieving significant mAP imp
 ---
 # Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D
 

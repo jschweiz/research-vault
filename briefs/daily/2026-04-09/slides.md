@@ -4,14 +4,14 @@
 
 The vault has been re-ranked into a concise working brief.
 
-## Emotion concepts and their function in a large language model
+## MoRight: Motion Control Done Right
 
-This research analyzes how emotion-related representations shape the behavior of large language models, demonstrating that these functional emotions influence decision-making and task performance
+MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion
 
-## Constitutional Classifiers: Defending against universal jailbreaks
+## The next phase of enterprise AI
 
-The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data, significantly improving robustness against harmful prompts with minimal compute overhead
+OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents
 
-## Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI
+## Designing a Production-Grade RAG Architecture
 
-Mistral AI released Devstral 2, a next-generation open-source coding model, and the Mistral Vibe CLI, a command-line assistant for code automation
+This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs)

@@ -43,27 +43,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:39.512401Z'
-short_summary: AI assistance reduces persistence and impairs independent performance in mathematical and reading comprehension tasks, especially when AI aid is removed.
+short_summary: A study employing randomized controlled trials revealed that utilizing AI assistance, even for a short period, diminishes individuals' ability to solve problems independently and reduces their persistence when the AI is no longer available across both mathematical and reading comprehension tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.223076Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.686825Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 58457881c468cab5ff09a1bbf79ca9e8eddfa38db4a1353544262d5fbbc00390
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 45c1572f0221330ff3f2f68eb3da944e93718ce13b3e634a5bb0a4f952a27f91
+lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 95c26c81ca1631d81a51366de03c9581dae449383d30fd630d7299bb1b871d08
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
+  relevance_score: 0.5456
+  source_fit_score: 0.5563
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
   evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses core user interests in LLM performance, reasoning, and the impact of AI assistance on human cognition and persistence.
+  confidence_score: 0.5563
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 1 total votes, 56 visits in the last 7 days.'
   evidence_quotes:
-  - AI assistance reduces persistence and impairs independent performance in mathematical and reading comprehension tasks, especially when AI aid is removed.
-  - AI assistance causally impairs subsequent unassisted task performance, leading to lower solve rates once the AI is removed.
-  - The detrimental effects on independent performance and persistence are consistent across different cognitive domains, including mathematical reasoning and readi
+  - A study employing randomized controlled trials revealed that utilizing AI assistance, even for a short period, diminishes individuals' ability to solve problems
 ---
 # AI Assistance Reduces Persistence and Hurts Independent Performance
 

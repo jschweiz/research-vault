@@ -1,0 +1,292 @@
+{
+  "id": "2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca",
+  "kind": "paper",
+  "source_id": "alphaxiv-paper",
+  "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+  "source_name": "alphaXiv Papers",
+  "organization_name": null,
+  "authors": [
+    "Yicheng Xiao",
+    "Wenhu Zhang",
+    "Lin Song",
+    "Yukang Chen",
+    "Wenbo Li",
+    "Nan Jiang",
+    "Tianhe Ren",
+    "Haokun Lin",
+    "Wei Huang",
+    "Haoyang Huang",
+    "Xiu Li",
+    "Nan Duan",
+    "Xiaojuan Qi"
+  ],
+  "published_at": "2026-04-08T04:54:06Z",
+  "canonical_url": "https://www.alphaxiv.org/abs/2604.04911",
+  "content_type": "paper",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.04911\n- Source paper: https://arxiv.org/abs/2604.04911\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.04911v2.png\n- GitHub: https://github.com/EasonXiao-888/SpatialEdit\n- GitHub stars: 44\n- Paper ID: 2604.04911\n- Canonical ID: 2604.04911v2\n- Paper group ID: 019d65d7-b155-731f-9120-a8ca4f7ce509\n- Version ID: 019d6fa8-81b1-7850-bf9b-aa94872dd1e4\n- Version: v2\n- Version order: 2\n- Published at: 2026-04-08T04:54:06+00:00\n- First published at: 2026-04-06T17:54:42+00:00\n- Updated at: 2026-04-07T02:48:47.701000+00:00\n- License: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\n- Citations: 0\n\n## Authors\n\n- Yicheng Xiao\n- Wenhu Zhang\n- Lin Song\n- Yukang Chen\n- Wenbo Li\n- Nan Jiang\n- Tianhe Ren\n- Haokun Lin\n- Wei Huang\n- Haoyang Huang\n- Xiu Li\n- Nan Duan\n- Xiaojuan Qi\n\n## Topics\n\n- Computer Science\n- cs.CV\n- generative-models\n- geometric-deep-learning\n- image-generation\n- synthetic-data\n\n## Metrics\n\n- Visits (all): 74\n- Visits (last 7 days): 74\n- Total votes: 1\n- Public total votes: 7\n- X likes: 0\n\n## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json\n\n## Resources\n\n- GitHub repository: https://github.com/EasonXiao-888/SpatialEdit\n\n## Similar Papers\n\n- ImgEdit: A Unified Image Editing Dataset and Benchmark (2505.20275v1): Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction.\n- VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space (2508.19247v1): VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance.\n- BlobCtrl: Taming Controllable Blob for Element-level Image Editing (2503.13434v2)\n- I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing (2408.14180v2): I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models.\n- BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing (2506.17450v2): BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+  "outbound_links": [
+    "https://www.alphaxiv.org/abs/2604.04911",
+    "https://arxiv.org/abs/2604.04911",
+    "https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf",
+    "https://www.alphaxiv.org/image/2604.04911v2.png",
+    "https://github.com/EasonXiao-888/SpatialEdit",
+    "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
+    "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json"
+  ],
+  "score": {
+    "relevance_score": 0.5485,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.5665,
+    "author_match_score": 0.18,
+    "topic_match_score": 0.4,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.4775,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "heuristic",
+      "favorite_source_match": false,
+      "topic_matches": 1,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 96.95,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.28,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.",
+      "judge_bucket_hint": "worth_a_skim",
+      "judge_confidence_score": 0.5665,
+      "judge_source_fit_score": 0.5665,
+      "judge_topic_fit_score": 0.4,
+      "judge_author_fit_score": 0.18,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
+      "judge_evidence_quotes": [
+        "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It "
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "alphaxiv-legacy.json",
+    "alphaxiv-metadata.json",
+    "alphaxiv-paper.json",
+    "alphaxiv-preview.json",
+    "alphaxiv-similar-papers.json"
+  ],
+  "raw_doc_path": "raw/paper/2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T16:19:42.845193Z",
+  "alphaxiv": {
+    "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
+    "filed_text": "## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.",
+    "audio_url": "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
+    "similar_papers": [
+      {
+        "title": "ImgEdit: A Unified Image Editing Dataset and Benchmark",
+        "canonical_url": "https://www.alphaxiv.org/abs/2505.20275",
+        "app_item_id": null,
+        "authors": [
+          "Yang Ye",
+          "Xianyi He",
+          "Zongjian Li",
+          "Bin Lin",
+          "Shenghai Yuan",
+          "Zhiyuan Yan",
+          "Bohan Hou",
+          "Li Yuan"
+        ],
+        "short_summary": "Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction."
+      },
+      {
+        "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space",
+        "canonical_url": "https://www.alphaxiv.org/abs/2508.19247",
+        "app_item_id": null,
+        "authors": [
+          "Lin Li",
+          "Zehuan Huang",
+          "Haoran Feng",
+          "Gengxiong Zhuang",
+          "Rui Chen",
+          "Chunchao Guo",
+          "Lu Sheng"
+        ],
+        "short_summary": "VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance."
+      },
+      {
+        "title": "BlobCtrl: Taming Controllable Blob for Element-level Image Editing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2503.13434",
+        "app_item_id": null,
+        "authors": [
+          "Yaowei Li",
+          "Lingen Li",
+          "Zhaoyang Zhang",
+          "Xiaoyu Li",
+          "Guangzhi Wang",
+          "Hongxiang Li",
+          "Xiaodong Cun",
+          "Ying Shan",
+          "Yuexian Zou"
+        ],
+        "short_summary": "As user expectations for image editing continue to rise, the demand for flexible, fine-grained manipulation of specific visual elements presents a challenge for current diffusion-based methods. In this work, we present BlobCtrl, a framework for element-level image editing based on a probabilistic blob-based representation. Treating blobs as visual primitives, BlobCtrl disentangles layout from appearance, affording fine-grained, controllable object-level manipulation. Our key contributions are twofold: (1) an in-context dual-branch diffusion model that separates foreground and background processing, incorporating blob representations to explicitly decouple layout and appearance, and (2) a self-supervised disentangle-then-reconstruct training paradigm with an identity-preserving loss function, along with tailored strategies to efficiently leverage blob-image pairs. To foster further research, we introduce BlobData for large-scale training and BlobBench, a benchmark for systematic evaluation. Experimental results demonstrate that BlobCtrl achieves state-of-the-art performance in a variety of element-level editing tasks, such as object addition, removal, scaling, and replacement, while maintaining computational efficiency. Project Webpage: this https URL"
+      },
+      {
+        "title": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2408.14180",
+        "app_item_id": null,
+        "authors": [
+          "Yiwei Ma",
+          "Jiayi Ji",
+          "Ke Ye",
+          "Weihuang Lin",
+          "Zhibin Wang",
+          "Yonghan Zheng",
+          "Qiang Zhou",
+          "Xiaoshuai Sun",
+          "Rongrong Ji"
+        ],
+        "short_summary": "I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models."
+      },
+      {
+        "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2506.17450",
+        "app_item_id": null,
+        "authors": [
+          "Jiacheng Chen",
+          "Ramin Mehran",
+          "Xuhui Jia",
+          "Saining Xie",
+          "Sanghyun Woo"
+        ],
+        "short_summary": "BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%."
+      },
+      {
+        "title": "FlowDrag: 3D-aware Drag-based Image Editing with Mesh-guided Deformation Vector Flow Fields",
+        "canonical_url": "https://www.alphaxiv.org/abs/2507.08285",
+        "app_item_id": null,
+        "authors": [
+          "Gwanhyeong Koo",
+          "Sunjae Yoon",
+          "Younghwan Lee",
+          "Ji Woo Hong",
+          "Chang D. Yoo"
+        ],
+        "short_summary": "Drag-based editing allows precise object manipulation through point-based control, offering user convenience. However, current methods often suffer from a geometric inconsistency problem by focusing exclusively on matching user-defined points, neglecting the broader geometry and leading to artifacts or unstable edits. We propose FlowDrag, which leverages geometric information for more accurate and coherent transformations. Our approach constructs a 3D mesh from the image, using an energy function to guide mesh deformation based on user-defined drag points. The resulting mesh displacements are projected into 2D and incorporated into a UNet denoising process, enabling precise handle-to-target point alignment while preserving structural integrity. Additionally, existing drag-editing benchmarks provide no ground truth, making it difficult to assess how accurately the edits match the intended transformations. To address this, we present VFD (VidFrameDrag) benchmark dataset, which provides ground-truth frames using consecutive shots in a video dataset. FlowDrag outperforms existing drag-based editing methods on both VFD Bench and DragBench."
+      },
+      {
+        "title": "MotionEdit: Benchmarking and Learning Motion-Centric Image Editing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2512.10284",
+        "app_item_id": null,
+        "authors": [
+          "Yixin Wan",
+          "Lei Ke",
+          "Wenhao Yu",
+          "Kai-Wei Chang",
+          "Dong Yu"
+        ],
+        "short_summary": "This research introduces MotionEdit, a high-quality dataset and benchmark specifically for motion-centric image editing, alongside MotionNFT, a learning framework that integrates optical flow-based rewards to guide diffusion models. MotionNFT enhanced the MLLM-rated overall quality score of FLUX.1 Kontext by 10.68% and improved motion alignment scores for both FLUX.1 Kontext and Qwen-Image-Edit."
+      },
+      {
+        "title": "Training-free Geometric Image Editing on Diffusion Models",
+        "canonical_url": "https://www.alphaxiv.org/abs/2507.23300",
+        "app_item_id": null,
+        "authors": [
+          "Hanshen Zhu",
+          "Zhen Zhu",
+          "Kaile Zhang",
+          "Yiming Gong",
+          "Yuliang Liu",
+          "Xiang Bai"
+        ],
+        "short_summary": "This work introduces a decoupled pipeline for geometric image editing that separates object transformation, source region inpainting, and target region refinement. Its training-free diffusion-based module, FreeFine, leverages novel attention, perturbation, and content generation techniques to produce high-fidelity, artifact-free edits, consistently outperforming existing methods across 2D, 3D, and structural completion tasks on the new GeoBench benchmark."
+      },
+      {
+        "title": "FireRed-Image-Edit-1.0 Techinical Report",
+        "canonical_url": "https://www.alphaxiv.org/abs/2602.13344",
+        "app_item_id": null,
+        "authors": [
+          "Super Intelligence Team",
+          "Changhao Qiao",
+          "Chao Hui",
+          "Chen Li",
+          "Cunzheng Wang",
+          "Dejia Song",
+          "Jiale Zhang",
+          "Jing Li",
+          "Qiang Xiang",
+          "Runqi Wang",
+          "Shuang Sun",
+          "Wei Zhu",
+          "Xu Tang",
+          "Yao Hu",
+          "Yibo Chen",
+          "Yuhao Huang",
+          "Yuxuan Duan",
+          "Zhiyi Chen",
+          "Ziyuan Guo"
+        ],
+        "short_summary": "Xiaohongshu Inc.'s Super Intelligence Team developed FireRed-Image-Edit-1.0, an instruction-based image editing model that achieves competitive performance against both open-source and commercial systems by systematically optimizing data, training, and evaluation rather than solely relying on large model parameters. The model demonstrates superior prompt following and consistency preservation across general, text-centric, creative, and try-on editing tasks."
+      },
+      {
+        "title": "CompBench: Benchmarking Complex Instruction-guided Image Editing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2505.12200",
+        "app_item_id": null,
+        "authors": [],
+        "short_summary": "While real-world applications increasingly demand intricate scene manipulation, existing instruction-guided image editing benchmarks often oversimplify task complexity and lack comprehensive, fine-grained instructions. To bridge this gap, we introduce CompBench, a large-scale benchmark specifically designed for complex instruction-guided image editing. CompBench features challenging editing scenarios that incorporate fine-grained instruction following, spatial and contextual reasoning, thereby enabling comprehensive evaluation of image editing models' precise manipulation capabilities. To construct CompBench, we propose an MLLM-human collaborative framework with tailored task pipelines. Furthermore, we propose an instruction decoupling strategy that disentangles editing intents into four key dimensions: location, appearance, dynamics, and objects, ensuring closer alignment between instructions and complex editing requirements. Extensive evaluations reveal that CompBench exposes fundamental limitations of current image editing models and provides critical insights for the development of next-generation instruction-guided image editing systems. Our project page is available at this https URL."
+      },
+      {
+        "title": "DanceText: A Training-Free Layered Framework for Controllable Multilingual Text Transformation in Images",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.14108",
+        "app_item_id": null,
+        "authors": [
+          "Zhenyu Yu",
+          "Mohd Yamani Idna Idris",
+          "Hua Wang",
+          "Pei Wang",
+          "Rizwan Qureshi",
+          "Shaina Raza",
+          "Aman Chadha",
+          "Yong Xiang",
+          "Zhixiang Chen"
+        ],
+        "short_summary": "We present DanceText, a training-free framework for multilingual text editing in images, designed to support complex geometric transformations and achieve seamless foreground-background integration. While diffusion-based generative models have shown promise in text-guided image synthesis, they often lack controllability and fail to preserve layout consistency under non-trivial manipulations such as rotation, translation, scaling, and warping. To address these limitations, DanceText introduces a layered editing strategy that separates text from the background, allowing geometric transformations to be performed in a modular and controllable manner. A depth-aware module is further proposed to align appearance and perspective between the transformed text and the reconstructed background, enhancing photorealism and spatial consistency. Importantly, DanceText adopts a fully training-free design by integrating pretrained modules, allowing flexible deployment without task-specific fine-tuning. Extensive experiments on the AnyWord-3M benchmark demonstrate that our method achieves superior performance in visual quality, especially under large-scale and complex transformation scenarios. Code is avaible at this https URL."
+      },
+      {
+        "title": "GEditBench v2: A Human-Aligned Benchmark for General Image Editing",
+        "canonical_url": "https://www.alphaxiv.org/abs/2603.28547",
+        "app_item_id": null,
+        "authors": [
+          "Zhangqi Jiang",
+          "Zheng Sun",
+          "Xianfang Zeng",
+          "Yufeng Yang",
+          "Xuanyang Zhang",
+          "Yongliang Wu",
+          "Wei Cheng",
+          "Gang Yu",
+          "Xu Yang",
+          "Bihan Wen"
+        ],
+        "short_summary": "A new benchmark for general image editing, GEditBench v2, is introduced alongside PVC-Judge, an open-source visual consistency assessment model. This work reveals that proprietary models generally lead performance, with FLUX.2 [klein] 9B being the top open-source contender, and highlights a trade-off between instruction following and visual consistency."
+      }
+    ]
+  }
+}

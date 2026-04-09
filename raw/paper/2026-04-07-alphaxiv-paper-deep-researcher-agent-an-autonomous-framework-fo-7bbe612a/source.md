@@ -39,25 +39,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:09:19.851638Z'
-short_summary: The Deep Researcher Agent is an autonomous framework for 24/7 deep learning experimentation, automating the entire research lifecycle. It achieves cost reduction and performance improvement through zero-cost monitoring and optimized memory and architecture.
+short_summary: The Deep Researcher Agent, developed by Xiangyue Zhang at The University of Tokyo, provides an autonomous framework for continuous, 24/7 deep learning experimentation, automating hypothesis generation, code execution, and result analysis. It achieves economic viability through a novel zero-cost monitoring approach and architectural innovations, demonstrating a 10-20x cost reduction and a 52% metric improvement in a target project over 30 days.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.273588Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.728074Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: d9f29d3d031cabe1cf98cacdb2362128b2fcfebd6635afd6cb0f4899fb3730f6
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: c5ee698661cb0b3dc2dee3a36f20834cc2cce6116ff4304bb75caa4b42cb947a
+lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 409dae91f487817c3aa51f127e4b5763c04b77fc2e6785742eebbcda1ceb75bb
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
+  relevance_score: 0.5463
+  source_fit_score: 0.5586
   topic_fit_score: 0.4
   author_fit_score: 0.18
   evidence_fit_score: 1.0
-  confidence_score: 0.45
+  confidence_score: 0.5586
   bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 3 public votes, 0 total votes, 46 visits in the last 7 days.'
   evidence_quotes:
-  - The Deep Researcher Agent is an autonomous framework for 24/7 deep learning experimentation, automating the entire research lifecycle. It achieves cost reductio
+  - The Deep Researcher Agent, developed by Xiangyue Zhang at The University of Tokyo, provides an autonomous framework for continuous, 24/7 deep learning experimen
 ---
 # Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring
 

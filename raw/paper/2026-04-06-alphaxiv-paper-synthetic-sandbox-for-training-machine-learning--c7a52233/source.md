@@ -11,6 +11,7 @@ authors:
 - Jiayi Liu
 - Xiangjun Fan
 - Zhuokai Zhao
+- Hong Yan
 published_at: '2026-04-06T17:19:29Z'
 ingested_at: '2026-04-09T12:07:30.998655Z'
 content_hash: bab9375e1882b278ad65dd2981791c6ac41347e5e96d20036c40b5a7ea54fafa
@@ -44,27 +45,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:30.998660Z'
-short_summary: SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments to enable practical on-policy reinforcement learning for training LLM agents. This approach significantly reduces execution time and improves performance on MLE benchmarks compared to existing methods.
+short_summary: SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning practical for training LLM agents. This approach reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in "Any Medal" rates on MLE-Bench-Lite compared to baseline methods.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.207762Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.669352Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 21e3750ee6503ba31e971c695a9d6dc76ad8ad62e34934e663a56c25fffeb1ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 4c951b56d4477eb0eaa33290d0063c5ad913ae3dbf240e5d495bbf82c2d6418d
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 20fdc8366156f9fc620a7963cb4e4ed48acac7ce8d9a528880e2bddbc514dc42
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 0.5
+  source_fit_score: 0.8
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLM agents, evaluation, and reinforcement learning in the context of machine learning engineering.
+  reason: 'The document directly addresses the user''s favorite topics of LLM agents, evaluation, and reinforcement learning in the context of machine learning engineering. alphaXiv engagement signals: 13 public votes, 3 total votes, 90 visits in the last 7 days.'
   evidence_quotes:
-  - SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments to enable practical on-policy reinforcement learning for tr
-  - SandMLE reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in "Any Medal" rates on MLE-Benc
-  - We observe that sandbox data size is the primary source of this bottleneck.
+  - SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning pr
+  - SandMLE-trained Qwen3 models showed up to 100.7% relative improvement in "Any Medal" rates over base models on MLE-Bench-Lite and surpassed SFT baselines.
+  - 'The primary bottleneck for applying on-policy RL to MLE tasks is the execution latency caused by dataset size, which can be overcome with micro-scale synthetic '
 ---
 # Synthetic Sandbox for Training Machine Learning Engineering Agents
 

@@ -11,6 +11,9 @@ authors:
 - Timur Bagautdinov
 - Lei Xiao
 - Zhaoen Su
+- Shunsuke Saito
+- Xiaogang Jin
+- Junxuan Li
 published_at: '2026-04-08T16:34:07Z'
 ingested_at: '2026-04-09T12:08:26.048007Z'
 content_hash: ee5b73838cac9f5a60bfdae68aebf066873dddacb8b985615407bc9cca0426d6
@@ -43,23 +46,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:08:26.048013Z'
 short_summary: GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs. It achieves this by training a 3D diffusion model natively in 3D using large-scale real-world video data.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.367297Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.801530Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: f9e3fb4d9e39621d2281a66f8e1216a7243e994585b5a96b1f39bc406d6f7d29
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 2e0e57fae12a1595d08ef04d464f5806165d7e4999083678a84011e674ac1237
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: ec5b76e1edb18dfc448ccf316a80f77b99122811006103af65db4227753f1e25
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
+  relevance_score: 1.0
+  source_fit_score: 0.5894
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user''s favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.'
   evidence_quotes:
-  - 'GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs. It achieves this by training a '
+  - GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.
+  - The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale
+  - We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec
 ---
 # GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos
 

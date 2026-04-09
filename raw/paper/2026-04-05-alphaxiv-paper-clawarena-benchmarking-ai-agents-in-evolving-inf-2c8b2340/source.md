@@ -11,6 +11,12 @@ authors:
 - Peng Xia
 - Shi Qiu
 - Yiyang Zhou
+- Jiaqi Liu
+- Jinlong Li
+- Bingzhou Li
+- Zeyu Zheng
+- Cihang Xie
+- Huaxiu Yao
 published_at: '2026-04-05T17:55:23Z'
 ingested_at: '2026-04-09T12:05:37.081412Z'
 content_hash: db2298c8d7a880338353da5dcde28d8340863bda5228770db0d63d6ed9ed4ffe
@@ -44,27 +50,26 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:37.081418Z'
-short_summary: ClawArena is a benchmark for evaluating AI agents in dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments show that underlying language model capabilities are more critical than agent framework design for overall performance.
+short_summary: ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic belief revision, and implicit personalization. Experiments indicate that underlying language model capabilities more significantly impact overall performance (0.154 range) than agent framework design, though sophisticated frameworks like MetaClaw can enhance execution-oriented tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:23.089417Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.567564Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 25539ee84d96827cdd5d01a8c06a34ffe6ba522ec0ce2f49233bf7630212eeb5
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e93d5350ca0b6e7738cf3b1b694de833238fb6e43f6a55799eb0a4fd8a10ca12
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: d6db1ed61e311aa461a7016d08b9016f1c0804338f358f64a04f7872154ee27f
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 1.0
   source_fit_score: 0.8
   topic_fit_score: 1.0
-  author_fit_score: 0.7
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, evaluation, and reasoning by introducing a benchmark for AI agents and analyzing the role of model capabilities versus framework design.
+  reason: 'The document directly addresses favorite topics like language models, evaluation, and reasoning through a new benchmark for AI agents. alphaXiv engagement signals: 20 public votes, 4 total votes, 144 visits in the last 7 days.'
   evidence_quotes:
-  - Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect per
-  - The intrinsic capabilities of the base language model have a more dominant impact on overall agent performance (0.154 range) compared to the design of the agent
   - ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic bel
+  - Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect per
 ---
 # ClawArena: Benchmarking AI Agents in Evolving Information Environments
 

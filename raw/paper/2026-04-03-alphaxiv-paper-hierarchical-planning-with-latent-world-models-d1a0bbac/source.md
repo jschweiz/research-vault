@@ -11,6 +11,11 @@ authors:
 - Soham Chitnis
 - Harsh Sutaria
 - Mido Assran
+- Randall Balestriero
+- Amir Bar
+- Adrien Bardes
+- Yann LeCun
+- Nicolas Ballas
 published_at: '2026-04-03T17:32:36Z'
 ingested_at: '2026-04-09T12:09:11.853148Z'
 content_hash: 999a75ec646e9c7d095d63e251857ef44cdbc48f145f168e1e630a72fb045719
@@ -48,25 +53,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:09:11.853154Z'
-short_summary: Hierarchical Planning with Latent World Models (HWM) uses a top-down strategy to manage long-horizon control by learning latent world models and planning across multiple temporal scales. This approach significantly reduces planning complexity and enables zero-shot control on real-world robotic tasks.
+short_summary: Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:27.314268Z'
-lightweight_enrichment_model: gemma4:e2b
+lightweight_enriched_at: '2026-04-09T16:19:42.539897Z'
+lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 77b446f085b1910ad5eefc29da79068c2867650885d92b1416d1003d679eaa0c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 990ea88cb76887221ee396a7d45ee08a7c07f3ff8c8746b5e5be1ce85b597d70
+lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 51f84a314da57fa6faebb663261d85b926bb494ca42491ca6eb3d5792fb2b404
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
+  relevance_score: 0.5683
+  source_fit_score: 0.6345
   topic_fit_score: 0.4
   author_fit_score: 0.18
   evidence_fit_score: 1.0
-  confidence_score: 0.45
+  confidence_score: 0.6345
   bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 29 public votes, 5 total votes, 332 visits in the last 7 days.'
   evidence_quotes:
-  - Hierarchical Planning with Latent World Models (HWM) uses a top-down strategy to manage long-horizon control by learning latent world models and planning across
+  - Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robus
 ---
 # Hierarchical Planning with Latent World Models
 
