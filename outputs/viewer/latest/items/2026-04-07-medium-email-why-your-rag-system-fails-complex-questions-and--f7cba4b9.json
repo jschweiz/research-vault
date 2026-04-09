@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9",
+  "kind": "blog-post",
+  "source_id": "medium-email",
+  "title": "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)",
+  "source_name": "Medium Email",
+  "organization_name": null,
+  "authors": [
+    "Medium Daily Digest <noreply@medium.com>",
+    "Vivedha Elango"
+  ],
+  "published_at": "2026-04-07T06:40:00Z",
+  "canonical_url": "https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0",
+  "content_type": "post",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)\n\nSource newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-07T06:40:00+00:00\nCanonical URL: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Vivedha Elango in Level Up Coding · 17 min read · 747 claps · 12 responses\n\nUnderstanding the Retrieval and Structuring (RAS)…\n",
+  "outbound_links": [
+    "https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0"
+  ],
+  "score": {
+    "relevance_score": 0.85,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.6375,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document directly addresses a favorite topic (RAG systems) and is highly relevant to the user's interests in LLM evaluation and reasoning.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.3,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.9,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "This post explores why Retrieval-Augmented Generation (RAG) systems struggle with complex questions and proposes that better structure is the solution.",
+        "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "This post explores why Retrieval-Augmented Generation (RAG) systems struggle with complex questions and proposes that better structure is the solution",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f",
+  "asset_paths": [],
+  "raw_doc_path": "raw/blog-post/2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T15:00:19.248990Z",
+  "alphaxiv": null
+}

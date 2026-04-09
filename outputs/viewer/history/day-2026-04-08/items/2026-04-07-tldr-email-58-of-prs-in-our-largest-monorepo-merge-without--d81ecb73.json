@@ -1,0 +1,77 @@
+{
+  "id": "2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73",
+  "kind": "blog-post",
+  "source_id": "tldr-email",
+  "title": "58% of PRs in our largest monorepo merge without human review",
+  "source_name": "TLDR Email",
+  "organization_name": null,
+  "authors": [
+    "TLDR <dan@tldrnewsletter.com>",
+    "TLDR"
+  ],
+  "published_at": "2026-04-07T10:59:25Z",
+  "canonical_url": "https://vercel.com/blog/58-percent-of-prs-in-our-largest-monorepo-merge-without-human-review",
+  "content_type": "post",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# 58% of PRs in our largest monorepo merge without human review\n\nSource newsletter: Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-07T10:59:25+00:00\nCanonical URL: https://vercel.com/blog/58-percent-of-prs-in-our-largest-monorepo-merge-without-human-review\n\n## Newsletter Context\n\nSection: Programming, Design & Data Science\n\nOne of Vercel's oldest and largest Next.js apps is a monorepo that contains multiple critical properties. The repository sees over 400 pull requests per week on average. Until recently, this required human approval before merging, but now, an agent reviews and merges 58% of those pull requests without a human reviewer. This has dropped the average merge time by 62%.\n",
+  "outbound_links": [
+    "https://vercel.com/blog/58-percent-of-prs-in-our-largest-monorepo-merge-without-human-review"
+  ],
+  "score": {
+    "relevance_score": 0.25,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.1,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.3225,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document is about software development automation and agents, which has some indirect relevance to the user's interest in LLM tooling and reasoning, but it does not directly address core LLM architecture or evaluation.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 0.8,
+      "judge_source_fit_score": 0.1,
+      "judge_topic_fit_score": 0.1,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.2,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "In the largest monorepo, an agent now reviews and merges 58% of pull requests without human review, which has reduced the average merge time by 62%.",
+        "Until recently, this required human approval before merging, but now, an agent reviews and merges 58% of those pull requests without a human reviewer.",
+        "This has dropped the average merge time by 62%."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "In the largest monorepo, an agent now reviews and merges 58% of pull requests without human review, which has reduced the average merge time by 62%",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4",
+  "asset_paths": [],
+  "raw_doc_path": "raw/blog-post/2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T15:00:19.440647Z",
+  "alphaxiv": null
+}

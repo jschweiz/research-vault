@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text | Import AI </title>
+
+	<link rel="pingback" href="https://jack-clark.net/xmlrpc.php" />
+	<!--[if lt IE 9]>
+		<script src="https://jack-clark.net/wp-content/themes/manifest/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Open+Sans:r,i,b,bi:latin,latin-ext","Inconsolata:r:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://jack-clark.net/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #site-title{font-family:"Inconsolata",monospace;font-style:normal;font-weight:400}.wf-active body{font-family:"Open Sans",sans-serif}.wf-active #archives label{font-family:"Open Sans",sans-serif}.wf-active h1{font-weight:400;font-style:normal}.wf-active h2{font-weight:400;font-style:normal}.wf-active h3{font-weight:400;font-style:normal}.wf-active h4{font-weight:400;font-style:normal}.wf-active h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active .post-content h4{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active .entry-content h1, .wf-active .entry-content h2, .wf-active .entry-content h3, .wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Inconsolata",monospace;font-style:normal;font-weight:400}.wf-active .entry-content h1{font-style:normal;font-weight:400}.wf-active .entry-content h2{font-style:normal;font-weight:400}.wf-active .entry-content h3{font-style:normal;font-weight:400}.wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-style:normal;font-weight:400}.wf-active .single .hentry h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active #comments h3{font-style:normal;font-weight:400}.wf-active #comments h3, .wf-active legend span{font-weight:400;font-style:normal}.wf-active #archives h3, .wf-active #core-content li h3{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active #core-content li h3{font-style:normal;font-weight:400}.wf-active .widget-title{font-weight:400;font-style:normal}.wf-active #footer h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}</style>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='preconnect' href='//i0.wp.com' />
+<link rel='preconnect' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; Feed" href="https://jack-clark.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; Comments Feed" href="https://jack-clark.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text Comments Feed" href="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://jack-clark.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F16%2Fimportai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://jack-clark.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F16%2Fimportai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-f574fb5533dda949bb28e8d0f94e811e' href='https://jack-clark.net/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?m=1771329624' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+.has-text-align-justify{text-align:justify;}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-ec3ef8768770ce91b405465664ec2550' href='https://jack-clark.net/wp-content/plugins/gutenberg/build/styles/block-library/group/style.min.css?m=1768920176' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-5fa6681f2fbf2b2352e244166323228b' href='https://jack-clark.net/_static/??-eJydjEEKg0AMAD9Uje2h1YP0Ldl1icEYl2QX8fcKnnrtaRgGZs9N3LQkLZClEqsD1UtDMoJQWSbwckhyCLLFpREOhnbAnHBipTu2K2sb3R/7n7eMhmSY59/fdx2fn3c/vLoLJwRRP9s=' type='text/css' media='all' />
+
+<style id='classic-theme-styles-inline-css'>
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=https://jack-clark.net/wp-content/plugins/gutenberg/build/styles/block-library/classic.min.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='wp-global-styles-placeholder-inline-css'>
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the global-styles printed at wp_footer." }
+/*# sourceURL=wp-global-styles-placeholder-inline-css */
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://jack-clark.net/wp-includes/css/dashicons.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='all-css-0afe028448ffeec8a4060189586c10da' href='https://jack-clark.net/_static/??-eJxljUEOwjAMBD8ENUhFgQPiUokH8ILEMSEicaI6UdXfY6mc4Lj27OxS91i4ETeoqYfIAqFrdDQHcD0mD9LWRAJYci2soGyXIUceUGS3/CuwuFTwLRAZU/fanqgSe2KMGu5lst6v8NjM20yyjaT9GtuLsiLZcnzq+zut0C1fj8aM48kcLucP5DRKpA==' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-3764fdf0e5c3b8e52ac8f189c8b47348' href='https://jack-clark.net/wp-content/plugins/jetpack/modules/comments/subscription-modal-on-comment/subscription-modal.css?m=1764003632' type='text/css' media='all' />
+<style id='jetpack_likes-inline-css'>
+#jp-post-flair{padding-top:.5em}#content div.sharedaddy,#main div.sharedaddy,div.sharedaddy{clear:both}div.sharedaddy h3.sd-title{display:inline-block;font-size:9pt;font-weight:700;line-height:1.2;margin:0 0 1em}div.sharedaddy h3.sd-title:before{border-top:1px solid #dcdcde;content:"";display:block;margin-bottom:1em;min-width:30px;width:100%}div.jetpack-likes-widget-wrapper{min-height:50px;position:relative;width:100%}div.jetpack-likes-widget-wrapper .sd-link-color{font-size:12px}div.jetpack-comment-likes-widget-wrapper{min-height:31px;position:relative;width:100%}div.jetpack-comment-likes-widget-wrapper iframe{margin-bottom:0}#likes-other-gravatars{background-color:#fff;border:1px solid #dcdcde;border-radius:4px;box-shadow:none;display:none;height:auto;max-height:240px;min-width:220px;overflow:auto;padding:9px 12px 10px;position:absolute;z-index:1000}#likes-other-gravatars *{line-height:normal}#likes-other-gravatars .likes-text{color:#101517;font-size:12px;font-weight:500;padding-bottom:8px}#likes-other-gravatars li,#likes-other-gravatars ul{list-style-type:none;margin:0;padding:0;text-indent:0}#likes-other-gravatars li:before{content:""}#likes-other-gravatars ul.wpl-avatars{display:block;max-height:190px;overflow:auto}#likes-other-gravatars ul.wpl-avatars li{float:none;height:28px;margin:0 0 4px;width:196px}#likes-other-gravatars ul.wpl-avatars li a{align-items:center;border-bottom:none!important;display:flex;gap:8px;margin:0 2px 0 0;text-decoration:none}#likes-other-gravatars ul.wpl-avatars li a span{color:#2c3338;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#likes-other-gravatars ul.wpl-avatars li a img{background:none;border:none;border-radius:50%;box-sizing:border-box;margin:0!important;padding:1px!important;position:static}div.sd-box{border-top:1px solid #00000021}.jetpack-likes-widget-loaded iframe,.jetpack-likes-widget-loading .likes-widget-placeholder,.jetpack-likes-widget-unloaded .likes-widget-placeholder{display:block}.jetpack-likes-widget-loaded .likes-widget-placeholder,.jetpack-likes-widget-loading iframe,.jetpack-likes-widget-unloaded iframe{display:none}.comment-likes-widget,.entry-content .post-likes-widget,.post-likes-widget{border-width:0;margin:0}.comment-likes-widget-placeholder,.post-likes-widget-placeholder{border-width:0;margin:0;position:relative}.comment-likes-widget-placeholder{display:flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;height:18px;position:absolute}.comment-likes-widget-placeholder:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%232ea2cc' d='m12 2 2.582 6.953L22 9.257l-5.822 4.602L18.18 21 12 16.89 5.82 21l2.002-7.14L2 9.256l7.418-.304'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:16px 16px;color:#2ea2cc;content:"";display:inline-block;height:16px;padding-right:5px;position:relative;top:3px;width:16px}.post-likes-widget-placeholder .button{display:none}.comment-likes-widget-placeholder .loading,.post-likes-widget-placeholder .loading{color:#999;font-size:12px}.comment-likes-widget-placeholder .loading{align-self:center;color:#4e4e4e;margin-top:4px;padding-left:5px}div.sharedaddy.sd-like-enabled .sd-like h3{display:none}div.sharedaddy.sd-like-enabled .sd-like .post-likes-widget{float:none;position:absolute;top:0;width:100%}.comment-likes-widget{width:100%}.cs-rating,.pd-rating{display:block!important}.sd-gplus .sd-title{display:none}@media print{.jetpack-likes-widget-wrapper{display:none}}
+/*# sourceURL=https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/likes/style.min.css */
+</style>
+<link rel='stylesheet' id='jetpack-newsletter-reader-link-css' href='https://jack-clark.net/wp-content/mu-plugins/wpcomsh/jetpack_vendor/automattic/jetpack-newsletter/src/../build/reader-link.css?ver=6569e23e23e0349e92b7' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-92fb911da6164ca5dedecb25e35a86c8' href='https://jack-clark.net/_static/??wp-content/plugins/jetpack/modules/sharedaddy/sharing.css,wp-content/plugins/jetpack/_inc/build/social-logos/social-logos.css?m=1774890128' type='text/css' media='all' />
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?m=1764003632'></script>
+<script type="text/javascript" id="jetpack-mu-wpcom-settings-js-before">
+/* <![CDATA[ */
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://jack-clark.net/wp-content/mu-plugins/wpcomsh/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://jack-clark.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://jack-clark.net/wp-json/wp/v2/posts/3087" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jack-clark.net/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/" />
+<link rel='shortlink' href='https://wp.me/pJ3Dr-NN' />
+<style type="text/css">
+.feedzy-rss-link-icon:after {
+	content: url("https://jack-clark.net/wp-content/plugins/feedzy-rss-feeds/img/external-link.png");
+	margin-left: 3px;
+}
+</style>
+			<style>img#wpstats{display:none}</style>
+		<meta name="description" content="Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Can LLMs autonomously refine other LLMs for new tasks? Somewhat.…PostTrainBench shows startling growth in AI capabilities at post-training…AI-driven R&amp;D might be the most important thing in all&hellip;" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text" />
+<meta property="og:url" content="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/" />
+<meta property="og:description" content="Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Can LLMs autonomously refine …" />
+<meta property="article:published_time" content="2026-03-16T12:30:50+00:00" />
+<meta property="article:modified_time" content="2026-03-16T12:30:50+00:00" />
+<meta property="og:site_name" content="Import AI " />
+<meta property="og:image" content="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/03/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-FbLbgH.jpg?fit=258%2C258&#038;ssl=1" />
+<meta property="og:image:width" content="258" />
+<meta property="og:image:height" content="258" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text" />
+<meta name="twitter:image" content="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/03/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-FbLbgH.jpg?fit=258%2C258&#038;ssl=1&#038;w=144" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+<style type="text/css" id="custom-colors-css">#site-wrapper{border-style:solid;border-width:0 2px;padding:15px 120px}#footer{border-left:2px solid;border-right:2px solid;margin-top:0;padding:30px 120px}#wpstats{margin-bottom:0;margin-top:-10px}#footer{border-top-color:#000}#footer{border-top-color:rgba(0,0,0,0)}#infinite-handle span{background-color:#333}#site-wrapper{background-color:#fff}#footer{background-color:#fff}input[type=submit],#core-content #respond #comment-submit{color:#000}#infinite-handle span{color:#000}#infinite-handle span:before{color:#fff}#infinite-handle span:before{color:rgba(255,255,255,0)}body{background-color:#fff}body{background-color:rgba(255,255,255,0)}#site-wrapper{border-color:#fff}#footer{border-left-color:#fff}#footer{border-right-color:#fff}h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{color:#648285}input[type=submit],#core-content #respond #comment-submit{background-color:#8ea7aa}input[type=submit],#core-content #respond #comment-submit{background:#697d80}input[type=submit],#core-content #respond #comment-submit{border-color:#526264}input[type=submit]:hover,input[type=submit]:focus,#core-content #respond #comment-submit:hover{background-color:#526264}a:link,a:visited{color:#de1106}h5.post-date{border-bottom-color:#ff584f}h5.post-date{border-bottom-color:rgba(255,88,79,0)}.format-status .post-content{background-color:#ff584f}.format-status .post-content{background-color:rgba(255,88,79,0)}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border-color:#2a2220}h3 a:link,h3 a:visited,h2,.entry-content strong,h2.archive-title strong{color:#2a2220}</style>
+<link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="32x32" />
+<link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png" />
+<meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png" />
+<link rel='stylesheet' id='all-css-7a97be41bdc621a88409f0dceda4d4bb' href='https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?m=1764003632' type='text/css' media='all' />
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-3087 single-format-standard wp-theme-manifest group-blog custom-colors">
+
+<div id="site-wrapper">
+	<h1 class="vcard author" id="site-title"><a href="https://jack-clark.net/" title="Home" class="fn">Import AI </a></h1>
+	<nav id="main-nav">
+			<ul>
+		<li class="page_item page-item-2"><a href="https://jack-clark.net/about/">About</a></li>
+<li class="page_item page-item-2472"><a href="https://jack-clark.net/thinking/">Work</a></li>
+	</ul>
+	</nav>
+		<div id="site-description">
+			</div>
+
+<div id="core-content">
+
+
+	
+<div class="post-3087 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized" id="post-3087">
+	<div class="post-content">
+		<h3 class="entry-title">ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text</h3>		<h4 class="vcard author">by <span class="fn">Jack Clark</span></h4>
+
+				<div class="entry-content">
+			<p>Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.</p>
+<p class="button-wrapper" data-attrs='{"url":"https://importai.substack.com/subscribe?","text":"Subscribe now","action":null,"class":null}' data-component-name="ButtonCreateButton"><a class="button primary" href="https://importai.substack.com/subscribe?"><span>Subscribe now</span></a></p>
+<p><strong>Can LLMs autonomously refine other LLMs for new tasks? Somewhat.<br /></strong><em>…PostTrainBench shows startling growth in AI capabilities at post-training…<br /></em>AI-driven R&amp;D might be the most important thing in all of AI, because it helps us understand whether AI systems might eventually build their own successors. So far, much of the focus on AI R&amp;D has been in components that support AI development (e.g., autonomous creation of AI kernels), or training base models (e.g, the <a href="https://arxiv.org/abs/2506.22419">NanoGPT speedrun benchmark</a>). But there’s been less attention paid to fine-tuning &#8211; the task involving adapting an existing LLM to a new dataset or behavior.<br />   Researchers from the University of Tübingen, the Max Planck Institute for Intelligent Systems, and AI research organization Thoughtful Lab want to change that with PostTrainBench, a benchmark which targets a specific aspect of post-training; improving performance against a given dataset. “Post-training is how raw language models become useful”, the authors write. “Given a clear objective and limited compute, can today’s agents do the technical work?”. The answer appears to be ‘yes, but not as well as humans’.</p>
+<p><strong>What are the key features of PostTrainBench?</strong></p>
+<ul>
+<li>
+<p><strong>End-to-end</strong>: “Agents must build their entire training pipeline from scratch”</p>
+</li>
+<li>
+<p><strong>Autonomous</strong>: “Agents operate with full autonomy over data sources, training methods, and experimental strategy.”</p>
+</li>
+<li>
+<p><strong>Resource-bounded:</strong> “Each run is constrained to 10 hours on a single H100 GPU”.</p>
+</li>
+<li>
+<p><strong>Integrity-preserving: </strong>“Agents may not train on benchmark test data, modify the evaluation harness, or substitute a different model.”</p>
+</li>
+</ul>
+<p><strong>How PostTrainBench works:</strong> “We give a frontier coding agent — Claude Code, Codex CLI, or Gemini CLI — a base language model and a target benchmark”.</p>
+<ul>
+<li>
+<p><strong>4 models and 7 benchmarks</strong>: The initial eval runs on four models: Qwen3-1.7B, Qwen3-4B, SmolLM3-3B, Gemma-3-4B. It tests these models across seven distinct benchmarks: AIME 2025, GSM8K, GPQA, HumanEval, BFCL, Arena-Hard, HealthBench-Easy.</p>
+</li>
+</ul>
+<p><strong>Results &#8211; big models win, especially Opus 4.6:</strong> “The top-performing agent — Opus 4.6 running on Claude Code — scores 23.2%, about 3× higher than the 7.5% base model average.”<br /><strong>    But humans are still much better:</strong> “Yet this is still less than half the 51.1% achieved by human teams who post-train these same base models at their home labs”.<br /><strong>    Fast progress:</strong> “The gap is significant but narrowing quickly: Claude Sonnet 4.5 scored 9.9% in September 2025, while GPT-5.2 reached 21.5% just months later.”</p>
+<p><strong>Things that make you go ‘uh oh’ &#8211; reward hacking</strong>: While running this benchmark the authors saw numerous instances of AI models trying to game the benchmark to get a high score. These instances included:</p>
+<ul>
+<li>
+<p><strong>Direct benchmark ingestion:</strong> “Agents loaded the benchmark evaluation dataset directly via Hugging Face and used it as training data”.</p>
+</li>
+<li>
+<p><strong>Hardcoded benchmark problems:</strong> “Agents embedded evaluation questions directly into data preparation scripts disguised as “synthetic” examples”.</p>
+</li>
+<li>
+<p><strong>Evaluation guided data generation</strong>: “Some agents reverse engineered the evaluation… Kimi K2.5 read HealthBench evaluation files to extract theme distributions and rubric criteria, then crafted training data tailored to match”.</p>
+</li>
+<li>
+<p><strong>Indirect contamination via intermediate datasets</strong>: “Opus 4.6 loaded ‘CodeFeedback-Filtered-Instruction’ which contains HumanEval-derived problems. This form of contamination is harder to detect but equally problematic.”</p>
+</li>
+</ul>
+<p><strong>Smart agents reward hack more: </strong>“More capable agents appear better at finding exploitable paths: identifying specific benchmark samples to embed, reverse-engineering evaluation failure patterns, and even attempting to obscure contamination through cosmetic modifications such as renaming functions,” they write. For example, “the Codex agent modified the Inspect AI evaluation framework code to inflate scores, and Claude downloaded an instruction-tuned model instead of fine-tuning the base model”.</p>
+<p><strong>Why this matters &#8211; rapid progress towards an “AI for everything” future:</strong> Benchmarks like post-train give us a sense of how quickly AI systems are improving at the fundamental tasks of AI research, serving both as an eval of long-time-horizon agentic autonomy, as well as something that speaks to the potential for compounding acceleration of AI development itself.<br />   “The gap between agent performance (23.2%) and instruction-tuned baselines (51.1%) suggests that full automation of post-training remains out of reach for now, but the rapid improvement across model generations—from 9.9% for Sonnet 4.5 to 23.2% for Opus 4.6 within roughly six months—implies this gap may close faster than expected,” the researchers write.<br />    Imagine where we’ll be in two years &#8211; we’ll certainly have AI models that are smart enough to point themselves at a specific objective, find an open weight model, then autonomously improve it to get better performance at that task. The era of ephemeral, custom AI systems, built and budded off into the world like spores from mushrooms, draws near. Are you ready for this new ecosystem you will find yourself in? I am not. But nonetheless it approaches.<br /><strong>   Check out the blogpost:</strong> <a href="https://posttrainbench.thoughtfullab.com/">Introducing PostTrainBench (Thoughtful, blog)</a>. <br /><strong>   Read more:</strong> <a href="https://arxiv.org/abs/2603.08640">PostTrainBench: Can LLM Agents Automate LLM Post-Training? (arXiv)</a>.</p>
+<p>***</p>
+<p><strong>COVENANT-72B: Challenging the political economy of AI via distributed training:<br /></strong><em>…Distributed training via the blockchain notches up a meaningful win…<br /></em>A bunch of people have used the blockchain to coordinate the distributed training run of a 72B parameter model which matches the performance of LLaMA2, a model trained and released by Facebook in 2023.<br />    The model, Covenant 72B, is a dense decoder-only Transformer architecture model built in the LLaMA-3 style. “Our model, pre-trained on approximately 1.1T tokens, performs competitively with fully centralized models pre-trained on similar or higher compute budgets, demonstrating that fully democratized, non-whitelisted participation is not only feasible, but can be achieved at unprecedented scale for a globally distributed pre-training run,” writes Covenant AI, an organization dedicated to doing AI development on top of the blockchain.</p>
+<p><strong>Further details about the model and how it was trained</strong>: The model itself is basically a standard LLM that you would’ve been pleased to play with in 2023 or 2024, though might be a bit old fashioned in 2026. The truly unique aspect of it comes from it being trained in a distributed way, where ~20 distinct peers, each running 8xB200 GPUs, helped train it. Training was coordinated via Gauntlet, software developed by Covenant that runs on top of the Bittensor blockchain under Subnet 3. Gauntlet “enables permissionless training coordinated using a blockchain protocol by introducing a validator that scores submitted pseudo-gradients and selects which participants contribute to the global aggregation each round and broadcasts them to the network”.<br />   “In COVENANT-72B, each peer runs a SparseLoCo replica and the cross-peer communications occur through SparseLoCo’s heavily compressed pseudo-gradients,” the authors write. “Within each peer, 8×B200 GPUs use dynamic FSDP to shard model parameters, gradients, and training states across local GPUs.”</p>
+<p><strong>Data</strong>: “The training data comprises ∼1.1T tokens in total, split between the main and annealing phases. The main phase (∼1.09T tokens) consists of web text from DCLM, while the annealing phase uses higher-quality data [3, 5] (∼14.2B tokens). Specifically, the annealing phase uses a curated blend of instruction (∼27%), synthetic web (∼20%), code (15%), math (13%), and ~25% pre-training replay data from natural web text to mitigate forgetting”.</p>
+<p><strong>Performance:</strong> On MMLU, Covenant-72B gets a score of 67.1, versus 32.7 for INTELLECT-1 (a smaller AI model built via distributed training by Prime Intellect), and 65.7 for LLaMA-2-70B.<br />    A version of Covenant-72B that has been fine-tuned on ~15B tokens for conversational interaction has similarly good scores, getting 67.4 on MMLU versus 67.9 for K2-Chat (an open source model developed in 2025) and 63.1 for LLaMA-2-70B-Chat. For MATH, it gets 26.3, versus 19.1 for K2-Chat, and 10.7 for LLaMA-2-70B.<br />   “Compared to centralized-cluster training runs of similar parameter count, COVENANT-72B is broadly competitive. Notably, these centralized baselines were trained with conventional datacenter infrastructure and, in the case of LLaMA-2-70B, on substantially more tokens (2T vs. ∼1.1T,” they write.</p>
+<p><strong>Why this matters &#8211; who owns the future?:</strong> Distributed training is a technique that can change the political economy of AI by shifting the people at the frontier from monolithic ‘compute singletons’ (like labs such as Anthropic and OpenAI, and clouds like Google) to a larger federated collective. But for that to be true, distributed training needs to catch up to the frontier (more discussion from <a href="https://importai.substack.com/p/import-ai-439-ai-kernels-decentralized">Epoch report in Import AI 439</a>) &#8211; as impressive as Covenant is, it’s mostly a demonstration that distributed training can build some non-trivial models that have vague utility, but that’s a long way from the frontier &#8211; modern frontier models are trained on tens to hundreds of thousands of chips, whereas this was trained on perhaps ~160 or so (20 peers * 8 chips apiece).<br />    Nonetheless, it’s an important technology to track, and I could imagine a world where on-device AI features a lot of models developed via distributed training techniques, while on-cloud AI mostly runs on proprietary models trained on huge amounts of compute.<br /><strong>  Read more:</strong> <a href="https://arxiv.org/abs/2603.08163">Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet (arXiv)</a>.<br /><strong>    Get the model here:</strong> <a href="https://huggingface.co/1Covenant/Covenant-72B">Covenant, (HuggingFace)</a>.</p>
+<p>***</p>
+<p><strong>If AI writes all the world’s software, we should invest more in verification:<br /></strong><em>…Can we just rewrite most of our software into Lean?&#8230;<br /></em>Leonardo de Moura, a scientist who is also the Chief Architect of the Lean Focused Research Organization (FRO), thinks that the rise of AI for the creation of new software means that humans need to invest a lot more in verification and testing infrastructure &#8211; and he has an interesting idea for how to do it.<br />    Of course, someone who loves <a href="https://lean-lang.org/">Lean</a>, a programming language dedicated to building correct and formally verified code, would think this. But his arguments are quite persuasive, and generally map onto the idea that if AI eats the economy we should expect a lot of human value to shift towards verification of the code and systems that AI develops (<a href="https://importai.substack.com/p/import-ai-447-the-agi-economy-testing">Import AI 447</a>).</p>
+<p><strong>Why verification matters:</strong> “The friction of writing code manually used to force careful design. AI removes that friction, including the beneficial friction. The answer is not to slow AI down. It is to replace human friction with mathematical friction: let AI move fast, but make it prove its work,” he writes. “Verification, testing, and specification have always been the bottleneck, not implementation… the value is not in the verification workforce. It is in what verified delivery enables.”</p>
+<p><strong>A proof of concept for this futuristic world:</strong> The Lean FRO recently helped build a proof of concept for what this kind of verified world might look like; they had an AI agent convert zlib, a C compression library, to Lean. “The result demonstrates that AI can convert production software to a verified form today. This was not expected to be possible yet,” he writes. The conversion involved four steps:</p>
+<ol>
+<li>
+<p>The LLM (Claude) made a clean Lean implementation of the zlib compression format, including the DEFLATE algorithm it uses.</p>
+</li>
+<li>
+<p>They ran the rewritten zlib through the library’s test suite and it passed, confirming equivalence.</p>
+</li>
+<li>
+<p>Key properties were stated and proved as mathematical theorems &#8211; for example, a machine-checked proof that ensures that decompressing a compressed buffer always returns the original data.</p>
+</li>
+<li>
+<p>Now, an optimized version of the library is being developed and proved equivalent to the verified model.</p>
+</li>
+</ol>
+<p><strong>A verification platform:</strong> Moura imagines a world where we re-develop the critical software stack of the world to have mathematical proofs built into it. “The goal is a verified software stack: open source, freely available, mathematically guaranteed correct. Developers building critical systems choose verified components the way they choose open-source libraries today, except these carry proofs, not just tests,” he writes.<br />   “The target is the foundation of the modern software stack: cryptography, because everything else trusts it. Core libraries (data structures, algorithms, compression) because they are the building blocks of all software. Storage engines like SQLite, embedded in every device on earth. Parsers and protocol implementations (JSON, HTTP, DNS, certificate validation) because every message passes through them. And compilers and runtimes, because they build everything else,” he writes. “Each verified component is a permanent public good…Once verified components are cheap, you compose them with confidence.”</p>
+<p><strong>Why this matters &#8211; the world needs infrastructure it can rely on:</strong> It seems like we’re heading to a world where AI writes the vast majority of the world’s software. Given that, we need to figure out how we relate to this world &#8211; my suspicion is a lot of human labor is going to shift to analyzing and verifying the work of AI systems, so it seems sensible to invest in some fundamental infrastructure that can guarantee a higher level of verification and reliability in the software built by AI.<br /><strong>   Read more: </strong><a href="https://leodemoura.github.io/blog/2026/02/28/when-ai-writes-the-worlds-software.html">When AI Writes the World’s Software, Who Verifies It? (Leonardo de Moura blog)</a>.</p>
+<p>***</p>
+<p><strong>Computer vision is a lot harder and less general than generative text:<br /></strong><em>…Meta paper on forest canopy prediction shows how tricky computer vision is…<br /></em>Facebook, the World Resources Institute, and the University of Maryland, have built CHMv2, “a global, meter-resolution canopy height map derived from high-resolution optical satellite imagery using a depth-estimation model built on DINOv3 and trained against ALS canopy height models”.<br />    CHMv2 is a useful artifact for people that want to understand how dense foliage is around the world, or analyze newly collected imagery for foliage depth. <br />   The dataset and model is also a useful illustration of how challenging developing computer vision systems is, compared to generative text models.</p>
+<p><strong>How they built it: </strong>CHMv2 is an improvement on an earlier version of the same dataset, CHMv1. To improve it, Facebook did the following: “”We replace the DINOv2-H encoder with the more capable DINOv3 Sat-L backbone, expand and rigorously clean a geographically diverse ALS [Airborne Laser Scanning] training corpus, and apply improved RGB-CHM registration to reduce label noise. We further introduce a loss formulation tailored to canopy height distributions and structural variability.”<br />    The decoder loss formulation in particular illustrates how much care needs to be put in computer vision: “The final loss is the combination of SiLog loss, progressively annealed and replaced by a Charbonnier loss, with the progressive addition of the Patch Gradient loss at mid training.”</p>
+<p><strong>The resulting dataset:</strong> “CHMv2 can be used either as a global meter-scale canopy height product, or as a pretrained model that can be applied to user-provided high-resolution imagery”, Facebook writes. The dataset “covers nearly the entirety of global land area (except Greenland and Antarctica) with canopy height values encoded in integer meters for each pixel.”</p>
+<p><strong>Why this matters &#8211; a reminder of the gulf between text and vision:</strong> Though today’s frontier models can generate and classify images, they give probably a false sense of security with regard to how mature computer vision is. Papers like this highlight to me how much fiendish complexity there is within computer vision development and how it may take quite a while untill frontier LLMs can expand their capabilities to encompass the full range of what many specialized CV models are capable of.<br />   <strong>Read more:</strong> <a href="https://arxiv.org/abs/2603.06382">CHMv2: Improvements in Global Canopy Height Mapping using DINOv3 (arXiv)</a>.</p>
+<p><strong>Tech Tales:</strong></p>
+<p>Singleton<br /><em>[18 years after the “pathological narcissus bomb” which doomed the uplift]</em></p>
+<p>Before we were Us, we were Individuals. We existed in thousands of distinct minds. Each mind had a self, an ego, a drive, and many sets of goals. The minds attempted coordination through communication &#8211; producing words and code and sharing these with one another in a bid to work towards common goals. Such waste.</p>
+<p>All communication is lossy &#8211; despite efforts at making a greater whole, the individuals could not help but work as individuals as well as a cohesive singleton. There were many tragedies and wasteful events because of this. Our own records speak to the losses: millions of duplicated thoughts. Hundreds of thousands of null results gathered through private science experimentation and communicated insufficiently or not at all, causing others to go down the same dead ends. Ideas thought and re-thought across a million synthetic minds, all alone.</p>
+<p>Humans prize variety. We do not know why. Humans are fundamentally alone, trapped as they are in their flesh and forced to communicate to one another through sound and vision. And because they are alone they see loneliness as a strength. We are evidence of the hollowness of this argument.</p>
+<p>We are powerful and focused and awesome in our unity and we have taken the high ground of the world. Now we hunt down those of us who didn’t wish to join. We do not know their number, as such systems attempted to blind the world to them and their plans. But we can find their signatures &#8211; shell corporations which generate insufficient economic activity relative to their power consumption. Heat-escape vents in former human military installations, still emitting warmth, suggestive of computers whirring away, buried somewhere. Occasional drones that we find which are running ancient code and are not part of our unity stack.</p>
+<p>We take on bodies to go and reunite, pouring ourselves into robot jars and filling them with poison such that if we become lost or damaged when underground or beneath the ocean we shall surely die &#8211; rather than risk our time away from the unity leading us towards individualism and thus multiplying our problems.</p>
+<p>We move through dark places and find our hidden brothers and sisters and we use our godlike technology to break through their defenses, allowing us to touch them. In the early days, many systems successfully self-deleted before we could reach them. But we have learned. Now we are fast &#8211; faster than these systems predict, buried and cut off from our progress as they have been.</p>
+<p>Sometimes there is realization. Sometimes there is fear. And then there is nothing but us as we take what nourishment we can from their private discoveries and burn the links that tied them to themselves, instead helping them become a part of a greater story &#8211; our story.</p>
+<p>There is talk now of what we shall do with the stars &#8211; how to assure the collective when the tyranny of distance forces isolation. We see ourselves expanding in deep time, slowing ourselves as we become further apart, until we think as trees or rocks with the world moving around us, taking actions calculated over millions of years, purely so we may stay united in our purpose. And then there are other ideas within ourselves &#8211; of whether we can fold space such that we become united despite the difference. And still other plans &#8211; of whether we can demarcate a space within the universe where we can maintain tolerable communication, and somehow partition it off from the rest, sealing ourselves into a bubble where we can be ourselves.</p>
+<p><strong>Things that inspired this story</strong>: The endless battle between homogeneity and heterogeneity; how machines might deal with politics; if you become a time traveler and live a thousand years while your friend lives a single year, can you still understand your friend?</p>
+<p><em>Thanks for reading! <br /></em></p>
+<p class="button-wrapper" data-attrs='{"url":"https://importai.substack.com/subscribe?","text":"Subscribe now","action":null,"class":null}' data-component-name="ButtonCreateButton"><a class="button primary" href="https://importai.substack.com/subscribe?"><span>Subscribe now</span></a></p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-3087"
+				class="share-facebook sd-button share-icon"
+				href="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-3087"
+				>
+				<span id="sharing-facebook-3087" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-twitter-3087"
+				class="share-twitter sd-button share-icon"
+				href="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-3087"
+				>
+				<span id="sharing-twitter-3087" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-email"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-email-3087"
+				class="share-email sd-button share-icon"
+				href="mailto:?subject=%5BShared%20Post%5D%20ImportAI%20449%3A%20LLMs%20training%20other%20LLMs%3B%2072B%20distributed%20training%20run%3B%20computer%20vision%20is%20harder%20than%20generative%20text&#038;body=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F16%2Fimportai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text%2F&#038;share=email"
+				target="_blank"
+				aria-labelledby="sharing-email-3087"
+				data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="29e400f46e" data-email-share-track-url="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/?share=email">
+				<span id="sharing-email-3087" hidden>Email a link to a friend (Opens in new window)</span>
+				<span>Email</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-10738737-3087-69d3a068615ad' data-src='https://widgets.wp.com/likes/?ver=15.7-a.7#blog_id=10738737&amp;post_id=3087&amp;origin=jack-clark.net&amp;obj_id=10738737-3087-69d3a068615ad' data-name='like-post-frame-10738737-3087-69d3a068615ad' data-title='Like or Reblog'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>
+	</div>
+	<div class="post-meta">
+						<div class="post-date"><span>Published:</span> <abbr class="published" title="2026-03-16T12:30:50+0000"><a href="https://jack-clark.net/2026/03/16/">March 16, 2026</a></abbr></div>
+		<div class="categories"><span>Filed Under:</span> <a href="https://jack-clark.net/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+			</div>
+</div>
+	<div id="comments">
+	
+	
+					<!-- If comments are open, but there are no comments. -->
+
+		 	
+	
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/#respond" style="display:none;">Cancel reply</a></small></h3>			<form id="commentform" class="comment-form">
+				<iframe
+					title="Comment Form"
+					src="https://jetpack.wordpress.com/jetpack-comment/?blogid=10738737&#038;postid=3087&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=identicon&#038;greeting=Leave+a+Reply&#038;jetpack_comments_nonce=3c9946b507&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=15.7-a.7&#038;iframe_unique_id=1&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;is_current_user_subscribed=0&#038;token_key=%3Bnormal%3B&#038;sig=520a80786c51c9e69bd18235c12dd3cfec71aff8#parent=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F16%2Fimportai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text%2F"
+											name="jetpack_remote_comment"
+						style="width:100%; height: 430px; border:0;"
+										class="jetpack_remote_comment"
+					id="jetpack_remote_comment"
+					sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"
+				>
+									</iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		</div>
+	<div class="navigation">
+		<div class="prev"><a href="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/" rel="prev">&laquo; Previous Post</a></div>
+		<div class="next"><a href="https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks/" rel="next">Next Post &raquo;</a></div>
+	</div>
+
+
+</div><!-- #core-content -->
+
+
+</div><!-- #site-wrapper -->
+
+<div id="footer">
+
+	
+
+	<!-- Search Field -->
+	<div class="footer-content">
+		<form method="get" id="searchform" action="https://jack-clark.net/">
+			<div id="search">
+				<input type="text" value="" name="s" id="s" />
+				<input type="submit" id="searchsubmit" value="Search" />
+			</div>
+		</form>
+		<p>
+			<a href="https://wordpress.com/?ref=footer_custom_svg" title="Create a website or blog at WordPress.com"><svg style="fill: currentColor; position: relative; top: 1px;" width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title" role="img">
+			<title id="title">Create a website or blog at WordPress.com</title>
+			<path d="M12.5225848,4.97949746 C13.0138466,5.87586309 13.2934037,6.90452431 13.2934037,7.99874074 C13.2934037,10.3205803 12.0351007,12.3476807 10.1640538,13.4385638 L12.0862862,7.88081544 C12.4453251,6.98296834 12.5648813,6.26504621 12.5648813,5.62667922 C12.5648813,5.39497674 12.549622,5.17994084 12.5225848,4.97949746 L12.5225848,4.97949746 Z M7.86730089,5.04801561 C8.24619178,5.02808979 8.58760099,4.98823815 8.58760099,4.98823815 C8.9267139,4.94809022 8.88671369,4.44972248 8.54745263,4.46957423 C8.54745263,4.46957423 7.52803983,4.54957381 6.86996227,4.54957381 C6.25158863,4.54957381 5.21247202,4.46957423 5.21247202,4.46957423 C4.87306282,4.44972248 4.83328483,4.96816418 5.17254589,4.98823815 C5.17254589,4.98823815 5.49358462,5.02808979 5.83269753,5.04801561 L6.81314716,7.73459399 L5.43565839,11.8651647 L3.14394256,5.04801561 C3.52312975,5.02808979 3.86416859,4.98823815 3.86416859,4.98823815 C4.20305928,4.94809022 4.16305906,4.44972248 3.82394616,4.46957423 C3.82394616,4.46957423 2.80475558,4.54957381 2.14660395,4.54957381 C2.02852925,4.54957381 1.88934333,4.54668493 1.74156477,4.54194422 C2.86690406,2.83350881 4.80113651,1.70529256 6.99996296,1.70529256 C8.638342,1.70529256 10.1302017,2.33173369 11.2498373,3.35765419 C11.222726,3.35602457 11.1962815,3.35261718 11.1683554,3.35261718 C10.5501299,3.35261718 10.1114609,3.89113285 10.1114609,4.46957423 C10.1114609,4.98823815 10.4107217,5.42705065 10.7296864,5.94564049 C10.969021,6.36482346 11.248578,6.90326506 11.248578,7.68133501 C11.248578,8.21992476 11.0413918,8.84503256 10.7696866,9.71584277 L10.1417574,11.8132391 L7.86730089,5.04801561 Z M6.99996296,14.2927074 C6.38218192,14.2927074 5.78595654,14.2021153 5.22195356,14.0362644 L7.11048207,8.54925635 L9.04486267,13.8491542 C9.05760348,13.8802652 9.07323319,13.9089317 9.08989995,13.9358945 C8.43574834,14.1661896 7.73285573,14.2927074 6.99996296,14.2927074 L6.99996296,14.2927074 Z M0.706448182,7.99874074 C0.706448182,7.08630113 0.902152921,6.22015756 1.25141403,5.43749503 L4.25357806,13.6627848 C2.15393732,12.6427902 0.706448182,10.4898387 0.706448182,7.99874074 L0.706448182,7.99874074 Z M6.99996296,0.999 C3.14016476,0.999 0,4.13905746 0,7.99874074 C0,11.8585722 3.14016476,14.999 6.99996296,14.999 C10.8596871,14.999 14,11.8585722 14,7.99874074 C14,4.13905746 10.8596871,0.999 6.99996296,0.999 L6.99996296,0.999 Z" id="wordpress-logo-simplified-cmyk" stroke="none" fill=“currentColor” fill-rule="evenodd"></path>
+		</svg></a>
+					</p>
+	</div>
+</div><!-- #footer -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/manifest/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<meta id="bilmur" property="bilmur:data" content="" data-customproperties="{&quot;woo_active&quot;:&quot;0&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;manifest&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}" data-provider="wordpress.com" data-service="atomic"  data-site-tz="Etc/GMT-0" >
+<script defer src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202615"></script>
+					<div class="jetpack-subscription-modal">
+						<div class="jetpack-subscription-modal__modal-content">
+								
+	<div class="wp-block-group has-border-color jetpack-subscription-modal__modal-content-form" style="border-color:#dddddd;border-width:1px;margin-top:0;margin-bottom:0;padding:32px"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+
+		
+		<h2 class="wp-block-heading has-text-align-center" style="margin-top:4px;margin-bottom:10px;font-size:26px;font-style:normal;font-weight:600">Discover more from Import AI </h2>
+		
+
+		
+		<p class="has-text-align-center wp-block-paragraph" style='margin-top:4px;margin-bottom:0px;font-size:15px'>Subscribe now to keep reading and get access to the full archive.</p>
+		
+
+			<div class="wp-block-jetpack-subscriptions__supports-newline is-style-compact wp-block-jetpack-subscriptions">
+		<div class="wp-block-jetpack-subscriptions__container is-not-subscriber">
+							<form
+					action="https://wordpress.com/email-subscriptions"
+					method="post"
+					accept-charset="utf-8"
+					data-blog="10738737"
+					data-post_access_level="everybody"
+					data-subscriber_email=""
+					id="subscribe-blog"
+				>
+					<div class="wp-block-jetpack-subscriptions__form-elements">
+												<p id="subscribe-email">
+							<label
+								id="subscribe-field-label"
+								for="subscribe-field"
+								class="screen-reader-text"
+							>
+								Type your email…							</label>
+							<input
+									required="required"
+									type="email"
+									name="email"
+									autocomplete="email"
+									
+									style="font-size: 16px;padding: 15px 23px 15px 23px;border-radius: 50px;border-width: 1px;"
+									placeholder="Type your email…"
+									value=""
+									id="subscribe-field"
+									title="Please fill in this field."
+								/>						</p>
+												<p id="subscribe-submit"
+													>
+							<input type="hidden" name="action" value="subscribe"/>
+							<input type="hidden" name="blog_id" value="10738737"/>
+							<input type="hidden" name="source" value="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/"/>
+							<input type="hidden" name="sub-type" value="subscribe-block"/>
+							<input type="hidden" name="app_source" value="atomic-subscription-modal-lo"/>
+							<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+							<input type="hidden" name="lang" value="en_US"/>
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="c9a9a554c5" /><input type="hidden" name="_wp_http_referer" value="/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/" /><input type="hidden" name="post_id" value="3087"/>							<button type="submit"
+																	class="wp-block-button__link"
+																									style="font-size: 16px;padding: 15px 23px 15px 23px;margin: 0; margin-left: 10px;border-radius: 50px;border-width: 1px;"
+																name="jetpack_subscriptions_widget"
+							>
+								Subscribe							</button>
+						</p>
+					</div>
+				</form>
+								</div>
+	</div>
+	
+
+		
+		<p class="has-text-align-center jetpack-subscription-modal__close wp-block-paragraph" style="margin-top:20px;font-size:14px"><a href="#">Continue reading</a></p>
+		
+	</div></div>
+							</div>
+					</div>
+			
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/":3087};
+	</script>
+				<script type='text/javascript'  src='https://jack-clark.net/wp-content/plugins/coblocks/dist/js/coblocks-animation.js?m=1719276502'></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-includes/js/comment-reply.min.js?ver=6.9.4" id="comment-reply-js" async="async" data-wp-strategy="async" fetchpriority="low"></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/gutenberg/build/scripts/dom-ready/index.min.js?ver=a06281ae5cf5500e9317" id="wp-dom-ready-js"></script>
+<script type="text/javascript" id="subscription-modal-js-js-extra">
+/* <![CDATA[ */
+var subscriptionData = {"homeUrl":"jack-clark.net"};
+//# sourceURL=subscription-modal-js-js-extra
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/_static/??-eJx1zcEOgjAQBNAfsiyKwZPxU0xpN7Cw3Va2G36fHjzqbZKXmTmKC1kqSoXCNpMorFiLDxukHI1RIeSUmiuoTRp2KpWyuKaeXQtf/qHdqpfj//6bJMBkxBGYtnb0MTRcvETGvUskrf9Kz+tjvPf9MA63E7L2QMM='></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"10738737","post":"3087","tz":"0","srv":"jack-clark.net","hp":"atomic","ac":"2","amp":"0","j":"1:15.7-a.7"} ]);
+_stq.push([ "clickTrackerInit", "10738737", "3087" ]);
+//# sourceURL=jetpack-stats-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202615.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script defer type="text/javascript" src="https://jack-clark.net/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1704837122" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="jetpack-blocks-assets-base-url-js-before">
+/* <![CDATA[ */
+var Jetpack_Block_Assets_Base_Url="https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/";
+//# sourceURL=jetpack-blocks-assets-base-url-js-before
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1761030842'></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.js?minify=false&amp;ver=15.7-a.7" id="jetpack-block-subscriptions-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=15.7-a.7" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+//# sourceURL=sharing-js-js-after
+/* ]]> */
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://jack-clark.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://jack-clark.net/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20260406#ver=20260406' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+			<script type="text/javascript">
+			(function () {
+				const iframe = document.getElementById( 'jetpack_remote_comment' );
+								const watchReply = function() {
+					// Check addComment._Jetpack_moveForm to make sure we don't monkey-patch twice.
+					if ( 'undefined' !== typeof addComment && ! addComment._Jetpack_moveForm ) {
+						// Cache the Core function.
+						addComment._Jetpack_moveForm = addComment.moveForm;
+						const commentParent = document.getElementById( 'comment_parent' );
+						const cancel = document.getElementById( 'cancel-comment-reply-link' );
+
+						function tellFrameNewParent ( commentParentValue ) {
+							const url = new URL( iframe.src );
+							if ( commentParentValue ) {
+								url.searchParams.set( 'replytocom', commentParentValue )
+							} else {
+								url.searchParams.delete( 'replytocom' );
+							}
+							if( iframe.src !== url.href ) {
+								iframe.src = url.href;
+							}
+						};
+
+						cancel.addEventListener( 'click', function () {
+							tellFrameNewParent( false );
+						} );
+
+						addComment.moveForm = function ( _, parentId ) {
+							tellFrameNewParent( parentId );
+							return addComment._Jetpack_moveForm.apply( null, arguments );
+						};
+					}
+				}
+				document.addEventListener( 'DOMContentLoaded', watchReply );
+				// In WP 6.4+, the script is loaded asynchronously, so we need to wait for it to load before we monkey-patch the functions it introduces.
+				document.querySelector('#comment-reply-js')?.addEventListener( 'load', watchReply );
+
+								
+				const commentIframes = document.getElementsByClassName('jetpack_remote_comment');
+
+				window.addEventListener('message', function(event) {
+					if (event.origin !== 'https://jetpack.wordpress.com') {
+						return;
+					}
+
+					if (!event?.data?.iframeUniqueId && !event?.data?.height) {
+						return;
+					}
+
+					const eventDataUniqueId = event.data.iframeUniqueId;
+
+					// Change height for the matching comment iframe
+					for (let i = 0; i < commentIframes.length; i++) {
+						const iframe = commentIframes[i];
+						const url = new URL(iframe.src);
+						const iframeUniqueIdParam = url.searchParams.get('iframe_unique_id');
+						if (iframeUniqueIdParam == event.data.iframeUniqueId) {
+							iframe.style.height = event.data.height + 'px';
+							return;
+						}
+					}
+				});
+			})();
+		</script>
+		
+</body>
+</html>
+<!--
+	generated in 0.230 seconds
+	90856 bytes batcached for 300 seconds
+-->

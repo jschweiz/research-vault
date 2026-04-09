@@ -1,0 +1,75 @@
+{
+  "id": "2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797",
+  "kind": "news",
+  "source_id": "tldr-email",
+  "title": "OpenAI's leadership reportedly disagrees about when to raise money and how to spend it",
+  "source_name": "TLDR Email",
+  "organization_name": null,
+  "authors": [
+    "TLDR <dan@tldrnewsletter.com>",
+    "TLDR"
+  ],
+  "published_at": "2026-04-07T10:59:25Z",
+  "canonical_url": "https://links.tldrnewsletter.com/AaOObO",
+  "content_type": "news",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# OpenAI's leadership reportedly disagrees about when to raise money and how to spend it\n\nSource newsletter: Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-07T10:59:25+00:00\nCanonical URL: https://links.tldrnewsletter.com/AaOObO\n\n## Newsletter Context\n\nSection: Big Tech & Startups\n\nOpenAI's CFO, Sarah Friar, reportedly told colleagues earlier in the year that she didn't believe the company could be ready to go public in 2026. CEO Sam Altman wants to go public as soon as Q4. Friar has previously expressed doubts about whether OpenAI needed to pour so much money into obtaining AI servers, and whether the company's revenue growth would support the commitments. These frictions have led Altman to exclude Friar from some conversations related to the company's financial plans.\n",
+  "outbound_links": [
+    "https://links.tldrnewsletter.com/AaOObO"
+  ],
+  "score": {
+    "relevance_score": 0.4115,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.18,
+    "topic_match_score": 0.18,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.401,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "heuristic",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "Heuristic fallback based on generic profile-fit fallback.",
+      "judge_bucket_hint": "worth_a_skim",
+      "judge_confidence_score": 0.45,
+      "judge_source_fit_score": 0.55,
+      "judge_topic_fit_score": 0.18,
+      "judge_author_fit_score": 0.18,
+      "judge_evidence_fit_score": 0.9675,
+      "judge_model": "heuristic:profile-fallback",
+      "judge_evidence_quotes": [
+        "OpenAI's CFO reportedly disagreed with CEO Sam Altman regarding the timing of a public offering and financial plans. These disagreements led Altman to exclude t"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "OpenAI's CFO reportedly disagreed with CEO Sam Altman regarding the timing of a public offering and financial plans. These disagreements led Altman to exclude the CFO from some financial discussions",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4",
+  "asset_paths": [],
+  "raw_doc_path": "raw/news/2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T15:00:26.416771Z",
+  "alphaxiv": null
+}

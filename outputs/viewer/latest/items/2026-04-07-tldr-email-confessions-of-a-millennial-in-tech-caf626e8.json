@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8",
+  "kind": "article",
+  "source_id": "tldr-email",
+  "title": "Confessions of a Millennial in Tech",
+  "source_name": "TLDR Email",
+  "organization_name": null,
+  "authors": [
+    "TLDR <dan@tldrnewsletter.com>",
+    "TLDR"
+  ],
+  "published_at": "2026-04-07T10:59:25Z",
+  "canonical_url": "https://www.elenaverna.com/p/confessions-of-a-millennial-in-tech",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Confessions of a Millennial in Tech\n\nSource newsletter: Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-07T10:59:25+00:00\nCanonical URL: https://www.elenaverna.com/p/confessions-of-a-millennial-in-tech\n\n## Newsletter Context\n\nSection: Miscellaneous\n\nMillennials may be the last generation that builds their careers around software as a medium. They drove the digital transformation, but unfortunately, they are the sandwich generation that has to explain software to their parents and AI to their kids. It is unknown what will happen to the people whose edge was being good at creating software when software started getting built, configured, and operated by AI. However, it is clear that the advantage is shifting.\n",
+  "outbound_links": [
+    "https://www.elenaverna.com/p/confessions-of-a-millennial-in-tech"
+  ],
+  "score": {
+    "relevance_score": 0.16,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.35,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.333,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 500.3,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document touches on AI and software careers, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 0.8,
+      "judge_source_fit_score": 0.16,
+      "judge_topic_fit_score": 0.35,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.16,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "Millennials may be the last generation focused on software careers, facing challenges explaining software and AI to other generations.",
+        "The advantage in software creation is shifting as AI becomes involved."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "Millennials may be the last generation focused on software careers, facing challenges explaining software and AI to other generations. The advantage in software creation is shifting as AI becomes involved",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T14:34:21.811249Z",
+  "alphaxiv": null
+}

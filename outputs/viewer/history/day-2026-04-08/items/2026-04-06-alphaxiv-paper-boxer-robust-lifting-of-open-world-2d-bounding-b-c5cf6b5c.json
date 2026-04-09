@@ -1,0 +1,277 @@
+{
+  "id": "2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c",
+  "kind": "paper",
+  "source_id": "alphaxiv-paper",
+  "title": "Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D",
+  "source_name": "alphaXiv Papers",
+  "organization_name": null,
+  "authors": [
+    "Daniel DeTone",
+    "Tianwei Shen",
+    "Fan Zhang",
+    "Lingni Ma",
+    "Julian Straub",
+    "Richard Newcombe",
+    "Jakob Engel"
+  ],
+  "published_at": "2026-04-06T22:18:02Z",
+  "canonical_url": "https://www.alphaxiv.org/abs/2604.05212",
+  "content_type": "paper",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D\n\n## alphaXiv Summary\n\nBoxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.05212\n- Source paper: https://arxiv.org/abs/2604.05212\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.05212v1.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.05212v1.png\n- GitHub: https://github.com/facebookresearch/boxer\n- GitHub stars: 2\n- Paper ID: 2604.05212\n- Canonical ID: 2604.05212v1\n- Paper group ID: 019d6b09-94d6-756b-b5fb-6d1c19a026e3\n- Version ID: 019d6b09-951d-7688-abf9-cc6d1e14f3e5\n- Version: v1\n- Version order: 1\n- Published at: 2026-04-06T22:18:02+00:00\n- First published at: 2026-04-06T22:18:02+00:00\n- Updated at: 2026-04-08T03:01:23.286000+00:00\n- License: http://creativecommons.org/licenses/by/4.0/\n- Citations: 0\n\n## Authors\n\n- Daniel DeTone\n- Tianwei Shen\n- Fan Zhang\n- Lingni Ma\n- Julian Straub\n- Richard Newcombe\n- Jakob Engel\n\n## Topics\n\n- Computer Science\n- cs.CV\n- multi-modal-learning\n- object-detection\n- robotics-perception\n- transfer-learning\n- transformers\n- uncertainty-estimation\n- zero-shot-learning\n\n## Metrics\n\n- Visits (all): 45\n- Visits (last 7 days): 45\n- Total votes: 0\n- Public total votes: 1\n- X likes: 0\n\n## Abstract\n\nDetecting and localizing objects in space is a fundamental computer vision problem. While much progress has been made to solve 2D object detection, 3D object localization is much less explored and far from solved, especially for open-world categories. To address this research challenge, we propose Boxer, an algorithm to estimate static 3D bounding boxes (3DBBs) from 2D open-vocabulary object detections, posed images and optional depth either represented as a sparse point cloud or dense depth. At its core is BoxerNet, a transformer-based network which lifts 2D bounding box (2DBB) proposals into 3D, followed by multi-view fusion and geometric filtering to produce globally consistent de-duplicated 3DBBs in metric world space. Boxer leverages the power of existing 2DBB detection algorithms (e.g. DETIC, OWLv2, SAM3) to localize objects in 2D. This allows the main BoxerNet model to focus on lifting to 3D rather than detecting, ultimately reducing the demand for costly annotated 3DBB training data. Extending the CuTR formulation, we incorporate an aleatoric uncertainty for robust regression, a median depth patch encoding to support sparse depth inputs, and large-scale training with over 1.2 million unique 3DBBs. BoxerNet outperforms state-of-the-art baselines in open-world 3DBB lifting, including CuTR in egocentric settings without dense depth (0.532 vs. 0.010 mAP) and on CA-1M with dense depth available (0.412 vs. 0.250 mAP).\n\n## Problem\n\n- Open-world 3D object localization is hindered by the high cost and limited availability of metric 3D bounding box annotations compared to readily available 2D data.\n- Existing 'closed-set' 3D detection methods are often restricted to predefined categories, sensitive to specific camera models or sensor modalities, and struggle with diverse 3D data.\n- There is a lack of a universal interface that effectively integrates powerful open-world 2D semantics with precise metric 3D geometry, adaptable to various geometric cues and camera types.\n\n## Method\n\n- The 3D detection problem is decomposed into two stages: utilizing off-the-shelf open-world 2D detectors for initial localization, followed by a dedicated metric 3D lifting process.\n- A transformer-based network, BoxerNet, is introduced to lift 2D bounding box proposals into 7-DoF 3D bounding boxes, integrating visual features, median depth patch encoding (for diverse depth inputs), and camera calibration information.\n- A multi-view temporal fusion pipeline aggregates per-frame 3D predictions into globally consistent, de-duplicated 3DBBs for the entire scene, employing geometric and semantic filtering, clustering, and rotation-aware averaging.\n\n## Results\n\n- BoxerNet consistently outperforms state-of-the-art baselines, including CuTR and 3D-MOOD, in per-frame 3D bounding box estimation, achieving significant mAP improvements (e.g., 0.296 mAP vs. CuTR's 0.010 mAP on NymeriaPlus with RGB and ground truth 2D boxes).\n- The multi-view temporal fusion stage further enhances performance in per-scene 3D detection, producing more stable and consistent global 3DBBs across datasets (e.g., 0.278 mAP on NymeriaPlus with RGB+Depth for BoxerNet with OWLv2, compared to 0.013 mAP for CuTR).\n- Ablation studies demonstrate the importance of depth input, the aleatoric uncertainty head, and large-scale, diverse training data for Boxer's robustness, with its performance advantage over baselines being most pronounced for smaller, more frequently occurring objects.\n\n## Takeaways\n\n- Decoupling 2D localization from 3D lifting allows for leveraging the scalability and broad semantic coverage of existing open-world 2D detectors, while focusing the core model's capacity on precise 3D geometric estimation.\n- The median depth patch encoding strategy, combined with an aleatoric uncertainty head within BoxerNet's transformer architecture, enables robust performance across various depth input types (sparse or dense) and camera models.\n- Effective multi-view temporal fusion, incorporating both geometric and semantic consistency, is crucial for synthesizing stable, de-duplicated 3D object representations from individual frame predictions into a coherent scene-level understanding.\n\n## Full Overview\n\nSaved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.\n\n## Overview Languages\n\n- de\n- en\n- es\n- fr\n- hi\n- ja\n- ko\n- ru\n- zh\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d6b09-94d6-756b-b5fb-6d1c19a026e3/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d6b09-94d6-756b-b5fb-6d1c19a026e3/transcript.json\n\n## Resources\n\n- GitHub repository: https://github.com/facebookresearch/boxer\n\n## Similar Papers\n\n- BoxDreamer: Dreaming Box Corners for Generalizable Object Pose Estimation (2504.07955v2): A new method for generalizable object pose estimation determines 6D poses for unseen objects using sparse RGB images by predicting 2D projections of 3D bounding box corners with a transformer decoder. It achieves state-of-the-art performance on LINEMOD and YCB-Video datasets, demonstrating particular robustness in sparse-view and occlusion conditions while maintaining real-time inference speed of 17ms per query image.\n- LabelAny3D: Label Any Object 3D in the Wild (2601.01676v1): University of Virginia researchers developed LabelAny3D, an automatic pipeline that leverages vision foundation models to generate high-quality 3D bounding box annotations from single \"in-the-wild\" images. This method enabled the creation of COCO3D, a diverse new benchmark which, when used for training, improved open-vocabulary monocular 3D detection performance on the benchmark by 5.05 AP3D over baselines.\n- LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight (2511.20648v2)\n- Training an Open-Vocabulary Monocular 3D Object Detection Model without 3D Data (2411.15657v1): Researchers from Tsinghua University, NVIDIA Research, and Stanford University developed OVM3D-Det, a framework that trains open-vocabulary 3D object detectors using only RGB images, eliminating the need for expensive 3D data during training. The method demonstrates improved average precision by up to 16.8% on various datasets and exhibits strong zero-shot detection capabilities.\n- OV-Uni3DETR: Towards Unified Open-Vocabulary 3D Object Detection via Cycle-Modality Propagation (2403.19580v2)\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+  "outbound_links": [
+    "https://www.alphaxiv.org/abs/2604.05212",
+    "https://arxiv.org/abs/2604.05212",
+    "https://fetcher.alphaxiv.org/v2/pdf/2604.05212v1.pdf",
+    "https://www.alphaxiv.org/image/2604.05212v1.png",
+    "https://github.com/facebookresearch/boxer",
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://paper-podcasts.alphaxiv.org/019d6b09-94d6-756b-b5fb-6d1c19a026e3/podcast.mp3",
+    "https://paper-podcasts.alphaxiv.org/019d6b09-94d6-756b-b5fb-6d1c19a026e3/transcript.json"
+  ],
+  "score": {
+    "relevance_score": 0.9854,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.55,
+    "author_match_score": 0.0,
+    "topic_match_score": 1.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.6781,
+    "bucket": "worth_a_skim",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 96.95,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.55,
+      "judge_reason": "The document is highly relevant as it focuses on 3D bounding box estimation using transformer-based methods, aligning perfectly with the user's favorite topics of LLM architecture, reasoning, and research tooling. alphaXiv engagement signals: 1 public votes, 0 total votes, 45 visits in the last 7 days.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.5376,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "gemma4:e2b+alphaxiv-metrics-v1",
+      "judge_evidence_quotes": [
+        "Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space.",
+        "Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across div",
+        "BoxerNet consistently outperforms state-of-the-art baselines, including CuTR and 3D-MOOD, in per-frame 3D bounding box estimation, achieving significant mAP imp"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "primary",
+  "parent_id": null,
+  "asset_paths": [
+    "alphaxiv-legacy.json",
+    "alphaxiv-metadata.json",
+    "alphaxiv-overview-status.json",
+    "alphaxiv-overview.json",
+    "alphaxiv-overview.md",
+    "alphaxiv-paper.json",
+    "alphaxiv-preview.json",
+    "alphaxiv-similar-papers.json"
+  ],
+  "raw_doc_path": "raw/paper/2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T16:19:42.596137Z",
+  "alphaxiv": {
+    "short_summary": "Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.",
+    "filed_text": "## Abstract\n\nDetecting and localizing objects in space is a fundamental computer vision problem. While much progress has been made to solve 2D object detection, 3D object localization is much less explored and far from solved, especially for open-world categories. To address this research challenge, we propose Boxer, an algorithm to estimate static 3D bounding boxes (3DBBs) from 2D open-vocabulary object detections, posed images and optional depth either represented as a sparse point cloud or dense depth. At its core is BoxerNet, a transformer-based network which lifts 2D bounding box (2DBB) proposals into 3D, followed by multi-view fusion and geometric filtering to produce globally consistent de-duplicated 3DBBs in metric world space. Boxer leverages the power of existing 2DBB detection algorithms (e.g. DETIC, OWLv2, SAM3) to localize objects in 2D. This allows the main BoxerNet model to focus on lifting to 3D rather than detecting, ultimately reducing the demand for costly annotated 3DBB training data. Extending the CuTR formulation, we incorporate an aleatoric uncertainty for robust regression, a median depth patch encoding to support sparse depth inputs, and large-scale training with over 1.2 million unique 3DBBs. BoxerNet outperforms state-of-the-art baselines in open-world 3DBB lifting, including CuTR in egocentric settings without dense depth (0.532 vs. 0.010 mAP) and on CA-1M with dense depth available (0.412 vs. 0.250 mAP).\n\n## Problem\n\n- Open-world 3D object localization is hindered by the high cost and limited availability of metric 3D bounding box annotations compared to readily available 2D data.\n- Existing 'closed-set' 3D detection methods are often restricted to predefined categories, sensitive to specific camera models or sensor modalities, and struggle with diverse 3D data.\n- There is a lack of a universal interface that effectively integrates powerful open-world 2D semantics with precise metric 3D geometry, adaptable to various geometric cues and camera types.\n\n## Method\n\n- The 3D detection problem is decomposed into two stages: utilizing off-the-shelf open-world 2D detectors for initial localization, followed by a dedicated metric 3D lifting process.\n- A transformer-based network, BoxerNet, is introduced to lift 2D bounding box proposals into 7-DoF 3D bounding boxes, integrating visual features, median depth patch encoding (for diverse depth inputs), and camera calibration information.\n- A multi-view temporal fusion pipeline aggregates per-frame 3D predictions into globally consistent, de-duplicated 3DBBs for the entire scene, employing geometric and semantic filtering, clustering, and rotation-aware averaging.\n\n## Results\n\n- BoxerNet consistently outperforms state-of-the-art baselines, including CuTR and 3D-MOOD, in per-frame 3D bounding box estimation, achieving significant mAP improvements (e.g., 0.296 mAP vs. CuTR's 0.010 mAP on NymeriaPlus with RGB and ground truth 2D boxes).\n- The multi-view temporal fusion stage further enhances performance in per-scene 3D detection, producing more stable and consistent global 3DBBs across datasets (e.g., 0.278 mAP on NymeriaPlus with RGB+Depth for BoxerNet with OWLv2, compared to 0.013 mAP for CuTR).\n- Ablation studies demonstrate the importance of depth input, the aleatoric uncertainty head, and large-scale, diverse training data for Boxer's robustness, with its performance advantage over baselines being most pronounced for smaller, more frequently occurring objects.\n\n## Summary\n\nBoxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.\n\n## Takeaways\n\n- Decoupling 2D localization from 3D lifting allows for leveraging the scalability and broad semantic coverage of existing open-world 2D detectors, while focusing the core model's capacity on precise 3D geometric estimation.\n- The median depth patch encoding strategy, combined with an aleatoric uncertainty head within BoxerNet's transformer architecture, enables robust performance across various depth input types (sparse or dense) and camera models.\n- Effective multi-view temporal fusion, incorporating both geometric and semantic consistency, is crucial for synthesizing stable, de-duplicated 3D object representations from individual frame predictions into a coherent scene-level understanding.",
+    "audio_url": "https://paper-podcasts.alphaxiv.org/019d6b09-94d6-756b-b5fb-6d1c19a026e3/podcast.mp3",
+    "similar_papers": [
+      {
+        "title": "BoxDreamer: Dreaming Box Corners for Generalizable Object Pose Estimation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.07955",
+        "app_item_id": null,
+        "authors": [
+          "Yuanhong Yu",
+          "Xingyi He",
+          "Chen Zhao",
+          "Junhao Yu",
+          "Jiaqi Yang",
+          "Ruizhen Hu",
+          "Yujun Shen",
+          "Xing Zhu",
+          "Xiaowei Zhou",
+          "Sida Peng"
+        ],
+        "short_summary": "A new method for generalizable object pose estimation determines 6D poses for unseen objects using sparse RGB images by predicting 2D projections of 3D bounding box corners with a transformer decoder. It achieves state-of-the-art performance on LINEMOD and YCB-Video datasets, demonstrating particular robustness in sparse-view and occlusion conditions while maintaining real-time inference speed of 17ms per query image."
+      },
+      {
+        "title": "LabelAny3D: Label Any Object 3D in the Wild",
+        "canonical_url": "https://www.alphaxiv.org/abs/2601.01676",
+        "app_item_id": null,
+        "authors": [
+          "Jin Yao",
+          "Radowan Mahmud Redoy",
+          "Sebastian Elbaum",
+          "Matthew B. Dwyer",
+          "Zezhou Cheng"
+        ],
+        "short_summary": "University of Virginia researchers developed LabelAny3D, an automatic pipeline that leverages vision foundation models to generate high-quality 3D bounding box annotations from single \"in-the-wild\" images. This method enabled the creation of COCO3D, a diverse new benchmark which, when used for training, improved open-vocabulary monocular 3D detection performance on the benchmark by 5.05 AP3D over baselines."
+      },
+      {
+        "title": "LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight",
+        "canonical_url": "https://www.alphaxiv.org/abs/2511.20648",
+        "app_item_id": null,
+        "authors": [
+          "Yunze Man",
+          "Shihao Wang",
+          "Guowen Zhang",
+          "Johan Bjorck",
+          "Zhiqi Li",
+          "Liang-Yan Gui",
+          "Jim Fan",
+          "Jan Kautz",
+          "Yu-Xiong Wang",
+          "Zhiding Yu"
+        ],
+        "short_summary": "To act in the world, a model must name what it sees and know where it is in 3D. Today's vision-language models (VLMs) excel at open-ended 2D description and grounding, yet multi-object 3D detection remains largely missing from the VLM toolbox. We present LocateAnything3D, a VLM-native recipe that casts 3D detection as a next-token prediction problem. The key is a short, explicit Chain-of-Sight (CoS) sequence that mirrors how human reason from images: find an object in 2D, then infer its distance, size, and pose. The decoder first emits 2D detections as a visual chain-of-thought, then predicts 3D boxes under an easy-to-hard curriculum: across objects, a near-to-far order reduces early ambiguity and matches ego-centric utility; within each object, a center-from-camera, dimensions, and rotation factorization ranks information by stability and learnability. This VLM-native interface preserves open-vocabulary and visual-prompting capability without specialized heads. On the challenging Omni3D benchmark, our model achieves state-of-the-art results, with 38.90 AP_3D, surpassing the previous best by +13.98 absolute improvement even when the baseline is given ground-truth 2D boxes. It also generalizes zero-shot to held-out categories with strong robustness. By turning 3D detection into a disciplined next-token problem, LocateAnything3D offers a practical foundation for models to perceive in 3D."
+      },
+      {
+        "title": "Training an Open-Vocabulary Monocular 3D Object Detection Model without 3D Data",
+        "canonical_url": "https://www.alphaxiv.org/abs/2411.15657",
+        "app_item_id": null,
+        "authors": [
+          "Rui Huang",
+          "Henry Zheng",
+          "Yan Wang",
+          "Zhuofan Xia",
+          "Marco Pavone",
+          "Gao Huang"
+        ],
+        "short_summary": "Researchers from Tsinghua University, NVIDIA Research, and Stanford University developed OVM3D-Det, a framework that trains open-vocabulary 3D object detectors using only RGB images, eliminating the need for expensive 3D data during training. The method demonstrates improved average precision by up to 16.8% on various datasets and exhibits strong zero-shot detection capabilities."
+      },
+      {
+        "title": "OV-Uni3DETR: Towards Unified Open-Vocabulary 3D Object Detection via Cycle-Modality Propagation",
+        "canonical_url": "https://www.alphaxiv.org/abs/2403.19580",
+        "app_item_id": null,
+        "authors": [
+          "Zhenyu Wang",
+          "Yali Li",
+          "Taichi Liu",
+          "Hengshuang Zhao",
+          "Shengjin Wang"
+        ],
+        "short_summary": "In the current state of 3D object detection research, the severe scarcity of annotated 3D data, substantial disparities across different data modalities, and the absence of a unified architecture, have impeded the progress towards the goal of universality. In this paper, we propose \\textbf{OV-Uni3DETR}, a unified open-vocabulary 3D detector via cycle-modality propagation. Compared with existing 3D detectors, OV-Uni3DETR offers distinct advantages: 1) Open-vocabulary 3D detection: During training, it leverages various accessible data, especially extensive 2D detection images, to boost training diversity. During inference, it can detect both seen and unseen classes. 2) Modality unifying: It seamlessly accommodates input data from any given modality, effectively addressing scenarios involving disparate modalities or missing sensor information, thereby supporting test-time modality switching. 3) Scene unifying: It provides a unified multi-modal model architecture for diverse scenes collected by distinct sensors. Specifically, we propose the cycle-modality propagation, aimed at propagating knowledge bridging 2D and 3D modalities, to support the aforementioned functionalities. 2D semantic knowledge from large-vocabulary learning guides novel class discovery in the 3D domain, and 3D geometric knowledge provides localization supervision for 2D detection images. OV-Uni3DETR achieves the state-of-the-art performance on various scenarios, surpassing existing methods by more than 6\\% on average. Its performance using only RGB images is on par with or even surpasses that of previous point cloud based methods. Code and pre-trained models will be released later."
+      },
+      {
+        "title": "Open Vocabulary Monocular 3D Object Detection",
+        "canonical_url": "https://www.alphaxiv.org/abs/2411.16833",
+        "app_item_id": null,
+        "authors": [
+          "Jin Yao",
+          "Hao Gu",
+          "Xuweiyi Chen",
+          "Jiayun Wang",
+          "Zezhou Cheng"
+        ],
+        "short_summary": "Researchers introduce and investigate Open-Vocabulary Monocular 3D Object Detection (OVMONO3D), a task that aims to identify and localize objects of any category in 3D space from a single RGB image. Their OVMONO3D-LIFT framework, which decouples 2D object recognition from class-agnostic 3D lifting, achieves state-of-the-art performance on novel categories and outperforms previous methods on base categories while also proposing a new target-aware evaluation metric."
+      },
+      {
+        "title": "3D-MOOD: Lifting 2D to 3D for Monocular Open-Set Object Detection",
+        "canonical_url": "https://www.alphaxiv.org/abs/2507.23567",
+        "app_item_id": null,
+        "authors": [
+          "Yung-Hsu Yang",
+          "Luigi Piccinelli",
+          "Mattia Segu",
+          "Siyuan Li",
+          "Rui Huang",
+          "Yuqian Fu",
+          "Marc Pollefeys",
+          "Hermann Blum",
+          "Zuria Bauer"
+        ],
+        "short_summary": "Monocular 3D object detection is valuable for various applications such as robotics and AR/VR. Existing methods are confined to closed-set settings, where the training and testing sets consist of the same scenes and/or object categories. However, real-world applications often introduce new environments and novel object categories, posing a challenge to these methods. In this paper, we address monocular 3D object detection in an open-set setting and introduce the first end-to-end 3D Monocular Open-set Object Detector (3D-MOOD). We propose to lift the open-set 2D detection into 3D space through our designed 3D bounding box head, enabling end-to-end joint training for both 2D and 3D tasks to yield better overall performance. We condition the object queries with geometry prior and overcome the generalization for 3D estimation across diverse scenes. To further improve performance, we design the canonical image space for more efficient cross-dataset training. We evaluate 3D-MOOD on both closed-set settings (Omni3D) and open-set settings (Omni3D to Argoverse 2, ScanNet), and achieve new state-of-the-art results. Code and models are available at this http URL."
+      },
+      {
+        "title": "OpenSight: A Simple Open-Vocabulary Framework for LiDAR-Based Object Detection",
+        "canonical_url": "https://www.alphaxiv.org/abs/2312.08876",
+        "app_item_id": null,
+        "authors": [
+          "Hu Zhang",
+          "Jianhua Xu",
+          "Tao Tang",
+          "Haiyang Sun",
+          "Xin Yu",
+          "Zi Huang",
+          "Kaicheng Yu"
+        ],
+        "short_summary": "Traditional LiDAR-based object detection research primarily focuses on closed-set scenarios, which falls short in complex real-world applications. Directly transferring existing 2D open-vocabulary models with some known LiDAR classes for open-vocabulary ability, however, tends to suffer from over-fitting problems: The obtained model will detect the known objects, even presented with a novel category. In this paper, we propose OpenSight, a more advanced 2D-3D modeling framework for LiDAR-based open-vocabulary detection. OpenSight utilizes 2D-3D geometric priors for the initial discernment and localization of generic objects, followed by a more specific semantic interpretation of the detected objects. The process begins by generating 2D boxes for generic objects from the accompanying camera images of LiDAR. These 2D boxes, together with LiDAR points, are then lifted back into the LiDAR space to estimate corresponding 3D boxes. For better generic object perception, our framework integrates both temporal and spatial-aware constraints. Temporal awareness correlates the predicted 3D boxes across consecutive timestamps, recalibrating the missed or inaccurate boxes. The spatial awareness randomly places some ``precisely'' estimated 3D boxes at varying distances, increasing the visibility of generic objects. To interpret the specific semantics of detected objects, we develop a cross-modal alignment and fusion module to first align 3D features with 2D image embeddings and then fuse the aligned 3D-2D features for semantic decoding. Our experiments indicate that our method establishes state-of-the-art open-vocabulary performance on widely used 3D detection benchmarks and effectively identifies objects for new categories of interest."
+      },
+      {
+        "title": "BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion",
+        "canonical_url": "https://www.alphaxiv.org/abs/2506.15610",
+        "app_item_id": null,
+        "authors": [
+          "Yuqing Lan",
+          "Chenyang Zhu",
+          "Zhirui Gao",
+          "Jiazhao Zhang",
+          "Yihan Cao",
+          "Renjiao Yi",
+          "Yijie Wang",
+          "Kai Xu"
+        ],
+        "short_summary": "Open-vocabulary 3D object detection has gained significant interest due to its critical applications in autonomous driving and embodied AI. Existing detection methods, whether offline or online, typically rely on dense point cloud reconstruction, which imposes substantial computational overhead and memory constraints, hindering real-time deployment in downstream tasks. To address this, we propose a novel reconstruction-free online framework tailored for memory-efficient and real-time 3D detection. Specifically, given streaming posed RGB-D video input, we leverage Cubify Anything as a pre-trained visual foundation model (VFM) for single-view 3D object detection by bounding boxes, coupled with CLIP to capture open-vocabulary semantics of detected objects. To fuse all detected bounding boxes across different views into a unified one, we employ an association module for correspondences of multi-views and an optimization module to fuse the 3D bounding boxes of the same instance predicted in multi-views. The association module utilizes 3D Non-Maximum Suppression (NMS) and a box correspondence matching module, while the optimization module uses an IoU-guided efficient random optimization technique based on particle filtering to enforce multi-view consistency of the 3D bounding boxes while minimizing computational complexity. Extensive experiments on ScanNetV2 and CA-1M datasets demonstrate that our method achieves state-of-the-art performance among online methods. Benefiting from this novel reconstruction-free paradigm for 3D object detection, our method exhibits great generalization abilities in various scenarios, enabling real-time perception even in environments exceeding 1000 square meters."
+      },
+      {
+        "title": "Rooms from Motion: Un-posed Indoor 3D Object Detection as Localization and Mapping",
+        "canonical_url": "https://www.alphaxiv.org/abs/2505.23756",
+        "app_item_id": null,
+        "authors": [
+          "Justin Lazarow",
+          "Kai Kang",
+          "Afshin Dehghan"
+        ],
+        "short_summary": "We revisit scene-level 3D object detection as the output of an object-centric framework capable of both localization and mapping using 3D oriented boxes as the underlying geometric primitive. While existing 3D object detection approaches operate globally and implicitly rely on the a priori existence of metric camera poses, our method, Rooms from Motion (RfM) operates on a collection of un-posed images. By replacing the standard 2D keypoint-based matcher of structure-from-motion with an object-centric matcher based on image-derived 3D boxes, we estimate metric camera poses, object tracks, and finally produce a global, semantic 3D object map. When a priori pose is available, we can significantly improve map quality through optimization of global 3D boxes against individual observations. RfM shows strong localization performance and subsequently produces maps of higher quality than leading point-based and multi-view 3D object detection methods on CA-1M and ScanNet++, despite these global methods relying on overparameterization through point clouds or dense volumes. Rooms from Motion achieves a general, object-centric representation which not only extends the work of Cubify Anything to full scenes but also allows for inherently sparse localization and parametric mapping proportional to the number of objects in a scene."
+      },
+      {
+        "title": "Weak Cube R-CNN: Weakly Supervised 3D Detection using only 2D Bounding Boxes",
+        "canonical_url": "https://www.alphaxiv.org/abs/2504.13297",
+        "app_item_id": null,
+        "authors": [
+          "Andreas Lau Hansen",
+          "Lukas Wanzeck",
+          "Dim P. Papadopoulos"
+        ],
+        "short_summary": "Monocular 3D object detection is an essential task in computer vision, and it has several applications in robotics and virtual reality. However, 3D object detectors are typically trained in a fully supervised way, relying extensively on 3D labeled data, which is labor-intensive and costly to annotate. This work focuses on weakly-supervised 3D detection to reduce data needs using a monocular method that leverages a singlecamera system over expensive LiDAR sensors or multi-camera setups. We propose a general model Weak Cube R-CNN, which can predict objects in 3D at inference time, requiring only 2D box annotations for training by exploiting the relationship between 2D projections of 3D cubes. Our proposed method utilizes pre-trained frozen foundation 2D models to estimate depth and orientation information on a training set. We use these estimated values as pseudo-ground truths during training. We design loss functions that avoid 3D labels by incorporating information from the external models into the loss. In this way, we aim to implicitly transfer knowledge from these large foundation 2D models without having access to 3D bounding box annotations. Experimental results on the SUN RGB-D dataset show increased performance in accuracy compared to an annotation time equalized Cube R-CNN baseline. While not precise for centimetre-level measurements, this method provides a strong foundation for further research."
+      },
+      {
+        "title": "Improving Distant 3D Object Detection Using 2D Box Supervision",
+        "canonical_url": "https://www.alphaxiv.org/abs/2403.09230",
+        "app_item_id": null,
+        "authors": [
+          "Zetong Yang",
+          "Zhiding Yu",
+          "Chris Choy",
+          "Renhao Wang",
+          "Anima Anandkumar",
+          "Jose M. Alvarez"
+        ],
+        "short_summary": "Improving the detection of distant 3d objects is an important yet challenging task. For camera-based 3D perception, the annotation of 3d bounding relies heavily on LiDAR for accurate depth information. As such, the distance of annotation is often limited due to the sparsity of LiDAR points on distant objects, which hampers the capability of existing detectors for long-range scenarios. We address this challenge by considering only 2D box supervision for distant objects since they are easy to annotate. We propose LR3D, a framework that learns to recover the missing depth of distant objects. LR3D adopts an implicit projection head to learn the generation of mapping between 2D boxes and depth using the 3D supervision on close objects. This mapping allows the depth estimation of distant objects conditioned on their 2D boxes, making long-range 3D detection with 2D supervision feasible. Experiments show that without distant 3D annotations, LR3D allows camera-based methods to detect distant objects (over 200m) with comparable accuracy to full 3D supervision. Our framework is general, and could widely benefit 3D detection methods to a large extent."
+      }
+    ]
+  }
+}

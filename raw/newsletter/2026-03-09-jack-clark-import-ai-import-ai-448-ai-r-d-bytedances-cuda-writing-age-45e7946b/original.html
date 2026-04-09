@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>Import AI 448: AI R&amp;D; Bytedance&#8217;s CUDA-writing agent; on-device satellite AI | Import AI </title>
+
+	<link rel="pingback" href="https://jack-clark.net/xmlrpc.php" />
+	<!--[if lt IE 9]>
+		<script src="https://jack-clark.net/wp-content/themes/manifest/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Open+Sans:r,i,b,bi:latin,latin-ext","Inconsolata:r:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://jack-clark.net/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #site-title{font-family:"Inconsolata",monospace;font-style:normal;font-weight:400}.wf-active body{font-family:"Open Sans",sans-serif}.wf-active #archives label{font-family:"Open Sans",sans-serif}.wf-active h1{font-weight:400;font-style:normal}.wf-active h2{font-weight:400;font-style:normal}.wf-active h3{font-weight:400;font-style:normal}.wf-active h4{font-weight:400;font-style:normal}.wf-active h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active .post-content h4{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active .entry-content h1, .wf-active .entry-content h2, .wf-active .entry-content h3, .wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Inconsolata",monospace;font-style:normal;font-weight:400}.wf-active .entry-content h1{font-style:normal;font-weight:400}.wf-active .entry-content h2{font-style:normal;font-weight:400}.wf-active .entry-content h3{font-style:normal;font-weight:400}.wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-style:normal;font-weight:400}.wf-active .single .hentry h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active #comments h3{font-style:normal;font-weight:400}.wf-active #comments h3, .wf-active legend span{font-weight:400;font-style:normal}.wf-active #archives h3, .wf-active #core-content li h3{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}.wf-active #core-content li h3{font-style:normal;font-weight:400}.wf-active .widget-title{font-weight:400;font-style:normal}.wf-active #footer h5{font-family:"Inconsolata",monospace;font-weight:400;font-style:normal}</style>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='preconnect' href='//i0.wp.com' />
+<link rel='preconnect' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; Feed" href="https://jack-clark.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; Comments Feed" href="https://jack-clark.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Import AI  &raquo; Import AI 448: AI R&amp;D; Bytedance&#8217;s CUDA-writing agent; on-device satellite AI Comments Feed" href="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://jack-clark.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F09%2Fimport-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://jack-clark.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F09%2Fimport-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-f574fb5533dda949bb28e8d0f94e811e' href='https://jack-clark.net/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?m=1771329624' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+.has-text-align-justify{text-align:justify;}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-ec3ef8768770ce91b405465664ec2550' href='https://jack-clark.net/wp-content/plugins/gutenberg/build/styles/block-library/group/style.min.css?m=1768920176' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-5fa6681f2fbf2b2352e244166323228b' href='https://jack-clark.net/_static/??-eJydjEEKg0AMAD9Uje2h1YP0Ldl1icEYl2QX8fcKnnrtaRgGZs9N3LQkLZClEqsD1UtDMoJQWSbwckhyCLLFpREOhnbAnHBipTu2K2sb3R/7n7eMhmSY59/fdx2fn3c/vLoLJwRRP9s=' type='text/css' media='all' />
+
+<style id='classic-theme-styles-inline-css'>
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=https://jack-clark.net/wp-content/plugins/gutenberg/build/styles/block-library/classic.min.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='wp-global-styles-placeholder-inline-css'>
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the global-styles printed at wp_footer." }
+/*# sourceURL=wp-global-styles-placeholder-inline-css */
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://jack-clark.net/wp-includes/css/dashicons.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='all-css-0afe028448ffeec8a4060189586c10da' href='https://jack-clark.net/_static/??-eJxljUEOwjAMBD8ENUhFgQPiUokH8ILEMSEicaI6UdXfY6mc4Lj27OxS91i4ETeoqYfIAqFrdDQHcD0mD9LWRAJYci2soGyXIUceUGS3/CuwuFTwLRAZU/fanqgSe2KMGu5lst6v8NjM20yyjaT9GtuLsiLZcnzq+zut0C1fj8aM48kcLucP5DRKpA==' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-3764fdf0e5c3b8e52ac8f189c8b47348' href='https://jack-clark.net/wp-content/plugins/jetpack/modules/comments/subscription-modal-on-comment/subscription-modal.css?m=1764003632' type='text/css' media='all' />
+<style id='jetpack_likes-inline-css'>
+#jp-post-flair{padding-top:.5em}#content div.sharedaddy,#main div.sharedaddy,div.sharedaddy{clear:both}div.sharedaddy h3.sd-title{display:inline-block;font-size:9pt;font-weight:700;line-height:1.2;margin:0 0 1em}div.sharedaddy h3.sd-title:before{border-top:1px solid #dcdcde;content:"";display:block;margin-bottom:1em;min-width:30px;width:100%}div.jetpack-likes-widget-wrapper{min-height:50px;position:relative;width:100%}div.jetpack-likes-widget-wrapper .sd-link-color{font-size:12px}div.jetpack-comment-likes-widget-wrapper{min-height:31px;position:relative;width:100%}div.jetpack-comment-likes-widget-wrapper iframe{margin-bottom:0}#likes-other-gravatars{background-color:#fff;border:1px solid #dcdcde;border-radius:4px;box-shadow:none;display:none;height:auto;max-height:240px;min-width:220px;overflow:auto;padding:9px 12px 10px;position:absolute;z-index:1000}#likes-other-gravatars *{line-height:normal}#likes-other-gravatars .likes-text{color:#101517;font-size:12px;font-weight:500;padding-bottom:8px}#likes-other-gravatars li,#likes-other-gravatars ul{list-style-type:none;margin:0;padding:0;text-indent:0}#likes-other-gravatars li:before{content:""}#likes-other-gravatars ul.wpl-avatars{display:block;max-height:190px;overflow:auto}#likes-other-gravatars ul.wpl-avatars li{float:none;height:28px;margin:0 0 4px;width:196px}#likes-other-gravatars ul.wpl-avatars li a{align-items:center;border-bottom:none!important;display:flex;gap:8px;margin:0 2px 0 0;text-decoration:none}#likes-other-gravatars ul.wpl-avatars li a span{color:#2c3338;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#likes-other-gravatars ul.wpl-avatars li a img{background:none;border:none;border-radius:50%;box-sizing:border-box;margin:0!important;padding:1px!important;position:static}div.sd-box{border-top:1px solid #00000021}.jetpack-likes-widget-loaded iframe,.jetpack-likes-widget-loading .likes-widget-placeholder,.jetpack-likes-widget-unloaded .likes-widget-placeholder{display:block}.jetpack-likes-widget-loaded .likes-widget-placeholder,.jetpack-likes-widget-loading iframe,.jetpack-likes-widget-unloaded iframe{display:none}.comment-likes-widget,.entry-content .post-likes-widget,.post-likes-widget{border-width:0;margin:0}.comment-likes-widget-placeholder,.post-likes-widget-placeholder{border-width:0;margin:0;position:relative}.comment-likes-widget-placeholder{display:flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;height:18px;position:absolute}.comment-likes-widget-placeholder:before{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%232ea2cc' d='m12 2 2.582 6.953L22 9.257l-5.822 4.602L18.18 21 12 16.89 5.82 21l2.002-7.14L2 9.256l7.418-.304'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:16px 16px;color:#2ea2cc;content:"";display:inline-block;height:16px;padding-right:5px;position:relative;top:3px;width:16px}.post-likes-widget-placeholder .button{display:none}.comment-likes-widget-placeholder .loading,.post-likes-widget-placeholder .loading{color:#999;font-size:12px}.comment-likes-widget-placeholder .loading{align-self:center;color:#4e4e4e;margin-top:4px;padding-left:5px}div.sharedaddy.sd-like-enabled .sd-like h3{display:none}div.sharedaddy.sd-like-enabled .sd-like .post-likes-widget{float:none;position:absolute;top:0;width:100%}.comment-likes-widget{width:100%}.cs-rating,.pd-rating{display:block!important}.sd-gplus .sd-title{display:none}@media print{.jetpack-likes-widget-wrapper{display:none}}
+/*# sourceURL=https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/likes/style.min.css */
+</style>
+<link rel='stylesheet' id='jetpack-newsletter-reader-link-css' href='https://jack-clark.net/wp-content/mu-plugins/wpcomsh/jetpack_vendor/automattic/jetpack-newsletter/src/../build/reader-link.css?ver=6569e23e23e0349e92b7' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link rel='stylesheet' id='all-css-92fb911da6164ca5dedecb25e35a86c8' href='https://jack-clark.net/_static/??wp-content/plugins/jetpack/modules/sharedaddy/sharing.css,wp-content/plugins/jetpack/_inc/build/social-logos/social-logos.css?m=1774890128' type='text/css' media='all' />
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?m=1764003632'></script>
+<script type="text/javascript" id="jetpack-mu-wpcom-settings-js-before">
+/* <![CDATA[ */
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://jack-clark.net/wp-content/mu-plugins/wpcomsh/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://jack-clark.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://jack-clark.net/wp-json/wp/v2/posts/3082" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jack-clark.net/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/" />
+<link rel='shortlink' href='https://wp.me/pJ3Dr-NI' />
+<style type="text/css">
+.feedzy-rss-link-icon:after {
+	content: url("https://jack-clark.net/wp-content/plugins/feedzy-rss-feeds/img/external-link.png");
+	margin-left: 3px;
+}
+</style>
+			<style>img#wpstats{display:none}</style>
+		<meta name="description" content="Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI progress is moving faster than even well regarded forecasters can guess:…Ajeya Cotra updates her timelines…“On Jan 14th, I made predictions about AI progress in 2026. My&hellip;" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Import AI 448: AI R&amp;D; Bytedance&#8217;s CUDA-writing agent; on-device satellite AI" />
+<meta property="og:url" content="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/" />
+<meta property="og:description" content="Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI progress is moving faster …" />
+<meta property="article:published_time" content="2026-03-09T12:45:54+00:00" />
+<meta property="article:modified_time" content="2026-03-09T12:45:54+00:00" />
+<meta property="og:site_name" content="Import AI " />
+<meta property="og:image" content="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/03/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-lV3lPz.jpg?fit=258%2C258&#038;ssl=1" />
+<meta property="og:image:width" content="258" />
+<meta property="og:image:height" content="258" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="Import AI 448: AI R&amp;D; Bytedance&#8217;s CUDA-writing agent; on-device satellite AI" />
+<meta name="twitter:image" content="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/03/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-lV3lPz.jpg?fit=258%2C258&#038;ssl=1&#038;w=144" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+<style type="text/css" id="custom-colors-css">#site-wrapper{border-style:solid;border-width:0 2px;padding:15px 120px}#footer{border-left:2px solid;border-right:2px solid;margin-top:0;padding:30px 120px}#wpstats{margin-bottom:0;margin-top:-10px}#footer{border-top-color:#000}#footer{border-top-color:rgba(0,0,0,0)}#infinite-handle span{background-color:#333}#site-wrapper{background-color:#fff}#footer{background-color:#fff}input[type=submit],#core-content #respond #comment-submit{color:#000}#infinite-handle span{color:#000}#infinite-handle span:before{color:#fff}#infinite-handle span:before{color:rgba(255,255,255,0)}body{background-color:#fff}body{background-color:rgba(255,255,255,0)}#site-wrapper{border-color:#fff}#footer{border-left-color:#fff}#footer{border-right-color:#fff}h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{color:#648285}input[type=submit],#core-content #respond #comment-submit{background-color:#8ea7aa}input[type=submit],#core-content #respond #comment-submit{background:#697d80}input[type=submit],#core-content #respond #comment-submit{border-color:#526264}input[type=submit]:hover,input[type=submit]:focus,#core-content #respond #comment-submit:hover{background-color:#526264}a:link,a:visited{color:#de1106}h5.post-date{border-bottom-color:#ff584f}h5.post-date{border-bottom-color:rgba(255,88,79,0)}.format-status .post-content{background-color:#ff584f}.format-status .post-content{background-color:rgba(255,88,79,0)}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border-color:#2a2220}h3 a:link,h3 a:visited,h2,.entry-content strong,h2.archive-title strong{color:#2a2220}</style>
+<link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="32x32" />
+<link rel="icon" href="https://s0.wp.com/i/webclip.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png" />
+<meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png" />
+<link rel='stylesheet' id='all-css-7a97be41bdc621a88409f0dceda4d4bb' href='https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?m=1764003632' type='text/css' media='all' />
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-3082 single-format-standard wp-theme-manifest group-blog custom-colors">
+
+<div id="site-wrapper">
+	<h1 class="vcard author" id="site-title"><a href="https://jack-clark.net/" title="Home" class="fn">Import AI </a></h1>
+	<nav id="main-nav">
+			<ul>
+		<li class="page_item page-item-2"><a href="https://jack-clark.net/about/">About</a></li>
+<li class="page_item page-item-2472"><a href="https://jack-clark.net/thinking/">Work</a></li>
+	</ul>
+	</nav>
+		<div id="site-description">
+			</div>
+
+<div id="core-content">
+
+
+	
+<div class="post-3082 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized" id="post-3082">
+	<div class="post-content">
+		<h3 class="entry-title">Import AI 448: AI R&amp;D; Bytedance&#8217;s CUDA-writing agent; on-device satellite AI</h3>		<h4 class="vcard author">by <span class="fn">Jack Clark</span></h4>
+
+				<div class="entry-content">
+			<p>Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.</p>
+<p class="button-wrapper" data-attrs='{"url":"https://importai.substack.com/subscribe?","text":"Subscribe now","action":null,"class":null}' data-component-name="ButtonCreateButton"><a class="button primary" href="https://importai.substack.com/subscribe?"><span>Subscribe now</span></a></p>
+<p><strong>AI progress is moving faster than even well regarded forecasters can guess:<br /></strong><em>…Ajeya Cotra updates her timelines…<br /></em>“On Jan 14th, I made predictions about AI progress in 2026. My forecasts for software engineering capabilities already feel much too conservative,” writes Ajeya Cotra in a blog. Ajeya is a longtime AI thinker who has done some great work trying to predict timelines to powerful AI. In this post, she explains that AI systems are moving faster than she thought, given the recent METR results putting Opus 4.6 as having a time horizon of 12 hours (Ajeya had predicted ~24 hours for the end of 2026 in January).<br />  “It’s no longer very plausible that after ten whole months of additional progress at the recent blistering pace,9 AI agents would still struggle half the time at 24 hour tasks,” Ajeya writes. “I’d guess that by the end of the year, AI agents will have a time horizon of over 100 hours on the sorts of software tasks in METR’s suite… And once you’re talking about multiple full-time-equivalent weeks of work, I wonder if the whole concept of “time horizon” starts to break down.”</p>
+<p><strong>Why this matters &#8211; all the lights are flashing yellow for a software explosion</strong>: Posts like this as well as 70% of what I cover in this newsletter all point in the direction of AI systems getting extremely good, extremely quickly, and quickly colonizing and growing the economy.<br /><strong>   Read more:</strong> <a href="https://www.planned-obsolescence.org/p/i-underestimated-ai-capabilities">I underestimated AI capabilities (again) (Ajeya Cotra)</a>.</p>
+<p>***</p>
+<p><strong>Want to measure AI R&amp;D, here are 14 ways to do it:<br /></strong><em>…Generating metrics about the most significant property of AI…<br /></em>The biggest thing that could ever happen with artificial intelligence will be when it starts to build itself. This phenomenon which has been often termed recursive self-improvement is often seen by many as an event horizon, beyond which it’ll be increasingly hard to reason about the future. How would we know if we were approaching this point? Researchers with GovAI and the University of Oxford have written a paper laying out 14 distinct metrics which could be measured to help us figure out the extent to which AI companies are succeeding in building and overseeing AI R&amp;D Automation (AIRDA) &#8211; getting AI to build AI, a necessary prerequisite for recursive self-improvement.</p>
+<p><strong>Why care about this</strong>: “AIRDA could accelerate AI progress, bringing forward AI’s benefits but also hastening the arrival of destructive capabilities, including those related to weapons of mass destruction, or other forms of disruption such as unemployment,” they write.</p>
+<p><strong>What are the 14 metrics?</strong></p>
+<ul>
+<li>
+<p>Measure AI performance on AI R&amp;D</p>
+</li>
+<li>
+<p>Measure AI performance on AI R&amp;D relative to humans and human-AI teams</p>
+</li>
+<li>
+<p>Measure ‘oversight red teaming’ &#8211; how well human teams can effectively supervise AI systems that are building themselves</p>
+</li>
+<li>
+<p>Measure misalignment in AIRDA</p>
+</li>
+<li>
+<p>Compute the rate of efficiency improvements on AI R&amp;D tasks</p>
+</li>
+<li>
+<p>Survey staff on how they use AI and what this means for productivity</p>
+</li>
+<li>
+<p>Find out if and how often AI is used in high-stakes decisions</p>
+</li>
+<li>
+<p>Examine where AI researchers spend their time</p>
+</li>
+<li>
+<p>Meta-measure the effectiveness of how well companies can oversee AI development (e.g, the rate of bugs or undesired behaviors that make it through to production even with human oversight)</p>
+</li>
+<li>
+<p>Examine how often AI systems subvert the goals of their human developers</p>
+</li>
+<li>
+<p>Track the headcount of AI researchers at labs, as well as details of their performance</p>
+</li>
+<li>
+<p>Look at the distribution of compute used by AI companies across their AI R&amp;D process and how this changes</p>
+</li>
+<li>
+<p>Examine compute as a share of AI R&amp;D spending</p>
+</li>
+<li>
+<p>Understand the permissions AI systems have and how permissiveness changes over time</p>
+</li>
+</ul>
+<p><strong>Governing AI R&amp;D: </strong>The logical question implied by the above, I hope, is “wow that all sounds very high-stakes and important, what can we do about it”? As I write often in this newsletter, AI measurement is a prerequisite to AI governance. Therefore, with these measures, a few different actors should do a few different things. Specifically:</p>
+<p><strong>Companies</strong> should:</p>
+<ul>
+<li>
+<p><strong>Track differential progress between safety and capabilities research: </strong>Is capabilities research moving at a faster rate than oversight research?</p>
+</li>
+<li>
+<p><strong>Track how AI R&amp;D affects oversight:</strong> Automation could free up humans to invest more of their time in building systems for overseeing the work ofAI systems. On the other hand, AI-driven R&amp;D might create systems which are innately harder for humans to understand, and the volume of activity being done by the AI systems could swamp any oversight systems.</p>
+</li>
+<li>
+<p><strong>Track the actual extent of AI R&amp;D:</strong> You can build metrics which work as proxies for AI R&amp;D &#8211; e.g, many labs today test out how well AI systems can build AI kernels or train AI models. You can also test out how much AI R&amp;D automation is being done in practice by your own organization. Another path is by doing qualitative and quantitative studies of human staff to understand how their own roles are changing, as well as how AI is being used in increasingly high-stakes decisions.</p>
+</li>
+</ul>
+<p><strong>Governments</strong> should:</p>
+<ul>
+<li>
+<p>Develop systems for confidential reporting, potentially in the form of industry-wide aggregates: Once companies are measuring this kind of data, governments should seek to gain access to it so they can understand the shape of AI progress.</p>
+</li>
+</ul>
+<p><strong>Third parties</strong> should:</p>
+<ul>
+<li>
+<p>Estimate metrics using public sources: Look at public reporting to create estimates for things that may relate to AI R&amp;D, like the amount of compute companies have (e.g, both Epoch and SemiAnalysis do this quite well).</p>
+</li>
+<li>
+<p>Create tooling and design surveys: Builds tools that companies could use to generate more telemetry about AI R&amp;D, and conduct surveys of people at companies to gather more insights.</p>
+</li>
+</ul>
+<p><strong>Why this matters</strong>: “An actor has oversight over the AI R&amp;D process to the extent that they (1) understand the process and (2) exercise informed control over it in order to produce desired outputs, such as by reviewing AI-generated outputs for errors”, they write. Therefore, for us as a species to have any ‘warning shots’ about recursive self-improvement and any hope of governing it, we need to be able to measure these aspects of it.<br /><strong>   Read more:</strong> <a href="https://arxiv.org/abs/2603.03992">Measuring AI R&amp;D Automation (arXiv)</a>.</p>
+<p>***</p>
+<p><strong>Indian researchers use edge computing to prototype a citywide camera network:<br /></strong><em>…Traffic surveillance with YOLO, SAM3, and NVIDIA Jetson chips…<br /></em>Researchers with the Indian Institute of Science in Bengaluru have built a software and hardware system for intelligently monitoring the traffic and types of vehicles that flow around the city of Bengaluru. The so-called AI-driven Intelligent Transportation System (AIITS) helps increase the amount of intelligence available to city transport analysts via the use of AI.</p>
+<p><strong>How the AIITS works: </strong>The goal of this project is to unlock “real-time analytics from 1000s of city cameras under strict latency and resource constraints”.<br />    To do this, they scatter a bunch of lightweight GPUs (Jetson Edge accelerators) around the city, co-locating them with traffic cameras. This helps the traffic cameras do intelligent processing at the edge of the network rather than having to send all the extremely bandwidth-intensive data to a central hub for processing; instead, the camera &amp; jetson share insights back to the hub for analysis and re-calibration of the Jetson-based ML models.<br /> <strong>   The software works like this:</strong> video streams from the cameras come in, and a segment anything (SAM3) model segments all the stuff in the video frames, which a Yolo26 model then analyzes and puts labels and bounding boxes around. “Each stream integrates BoT-SORT multi-object tracking, which assigns persistent IDs to detected vehicles across successive frames.”<br />   Once this is done, the resulting intelligence is sent to a remote GPU server which does two things:</p>
+<ul>
+<li>
+<p>1) It takes in the resulting data and uses this to create a kind of weather map of traffic hotspots, as well as making predictions about future traffic.</p>
+</li>
+<li>
+<p>2) It does federated learning; when it detects new vehicle classes and labels them with SAM3, then updates details and broadcasts them out to the edge. “Each Jetson then performs local fine-tuning of the YOLO-based detector, initialized with the current global weights.”</p>
+</li>
+</ul>
+<p><strong>The prototype works: </strong>This system, which was done by simulating 100 cameras in a neighborhood in Bengaluru, works sufficiently well that the authors plan to scale this up to 1,000 streams for a live demonstration. (This experiment was done by building “a distributed testbed that emulates a large urban camera network using hundreds of concurrent Real-Time Streaming Protocol (RTSP) video streams. Each stream is hosted on a heterogeneous cluster of Raspberry Pis”.<br />   “By localizing heavy video analytics at the network periphery, the system avoids centralized bandwidth bottlenecks, enabling sustainable, city-scale traffic sensing,” they write.</p>
+<p><strong>Why this matters &#8211; towards a ‘living city’ via AI:</strong> Papers like this forecast a world where cities come alive with ambient intelligence distributed in equal measure to their existing sensors &#8211; cameras move from being passive monitors to active classifiers, microphones start intelligently listening for a broader range of sounds than gunfire, and road sensors model traffic patterns locally. This kind of intelligence can both create large surveillance architectures and increase the efficiency with which cities operator &#8211; as with so many things with AI, it is all a balance, bounded by the surrounding thicket of norms and laws to choose where between authoritarianism and democracy the resulting capabilities fall.<br />  <strong>Read more</strong>: <a href="https://arxiv.org/abs/2603.05217">Scaling Real-Time Traffic Analytics on Edge-Cloud Fabrics for City-Scale Camera Networks (arXiv)</a>.</p>
+<p>***</p>
+<p><strong>Helping satellites run on-device AI for arctic monitoring:<br /></strong><em>…Frontier models are important, but so are tiny, miniaturized devices for edge computing…<br /></em>Researchers with the German Research Center for Artificial Intelligence have built TinyIceNet, a very small vision model for estimating sea ice thickness from synthetic aperture radar data. TinyIceNet is a proof-of-concept demonstration of how to make very lightweight vision models that could plausibly be deployed onto devices which have very small amounts of power and where bandwidth is expensive, like satellites and robots.</p>
+<p><strong>What is TinyIceNet?</strong> The model is a small vision model whose job is to take Synthetic Aperture Radar (SAR) data of polar regions and other cold places, then characterize the ice thickness and maturity within the SAR data. The idea here is that doing this on-device would be very efficient &#8211; “Instead of downlinking vast volumes of raw imagery, satellites can generate SOD products in near-real-time”.</p>
+<p><strong>How they built it: </strong>TinyIceNet is a simplified U-net architecture vision model trained on the AI4Arctic dataset, which contains ~533 netCDF files, each of which contains SAR images which are associated with a map that indicates the type and thickness of sea ice. The authors carefully design the model to fit into a relatively small computational envelop on a Xilinx chip.<br />   Specifically they use a “AMD Xilinx ZCU102 evaluation board, which integrates the ZCU9EG SoC combining a quad-core ARM Cortex-A53 processor with FPGA fabric, using High-Level Synthesis (HLS) and the DeepEdgeSoC framework”. They use the DeepEdgeSoC toolchain to further improve the efficiency of the model, as the software “provides a library of modular C++ building blocks (e.g., convolutions, pooling, activation functions, and feature map buffers) that can be specialized at compile time using C++ template parameters”.<br />    TinyIceNet was trained for 500 iterations on a single GeForce RTX 4090 GPU using PyTorch 2.4 with CUDA 12.5 support.</p>
+<p><strong>Results:</strong> The authors test out the model on 3 hardware platforms:</p>
+<ul>
+<li>
+<p><strong>RTX 4090</strong>: “Provides the highest throughput at 764.8 fps, benefiting from its large number of CUDA cores and high memory bandwidth. However, this performance comes at a relatively high energy cost of 228.7 mJ per scene, making it unsuitable for power-constrained environments such as satellites.”</p>
+</li>
+<li>
+<p><strong>Jetson AGX Xavier: </strong>“Achieves 47.9 fps but exhibits the highest energy consumption (1218.5 mJ).”</p>
+</li>
+<li>
+<p><strong>Xilinx ZCU102 FPGA</strong>: “Achieves a lower throughput of 7 fps, yet offers a highly competitive energy profile, consuming only 113.6 mJ per scene. Despite the lower frame rate, this energy efficiency makes the FPGA implementation compelling for on-board satellite processing, where power availability is severely restricted”.</p>
+</li>
+</ul>
+<p><strong>Why this matters &#8211; in the future, AI systems will do this stuff automatically</strong>: The amazing thing about this research is that it seems trivial (I mean no offense to the authors) for a modern powerful AI systems to do this: all it required was figuring out a task (stuff a computer vision model into a small computational envelop) and then running some experiments to take an existing architecture, tweak it for a hardware platform, and train it on a dataset, then run some tests.<br />  In a couple of years we might expect AI agents to do this stuff themselves, procuring compute resources to let them develop and distribute small AI systems to arbitrary compute platforms for arbitrary purposes. This is one of the main ways I think we could get a sudden exponential boom in economic activity attributable to AI &#8211; AI systems will get smart enough that they can drastically improve their ability to know about and interact with the physical world through the creation of custom ‘edge computing’ AI systems to give them better sensory data and actuators.<br /><strong>   Read more</strong>: <a href="https://arxiv.org/abs/2603.03075">TinyIceNet: Low-Power SAR Sea Ice Segmentation for On-Board FPGA Inference (arXiv)</a>.</p>
+<p>***</p>
+<p><strong>ByteDance finetunes a Seed1.6 model to be a CUDA-writing agent:<br /></strong><em>…Using AI to finetune AI to write code to train future AI systems…<br /></em>Researchers with ByteDance and Tsinghua University have built CUDA Agent, a fine-tuned AI model for writing GPU programming code. The research is another sign of how people are increasingly using AI to speedup core aspects of AI development. It’s also vaguely notable for the fact that a major Chinese lab and university continues to use US-made chips (NVIDIA H20s) versus homegrown ones.</p>
+<p><strong>What CUDA Agent is: </strong>CUDA agent is a finetuned Seed 1.6 LLM, an MOE model with 23B active parameters and 230B total parameters. Finetuning took place on a cluster of  128 NVIDIA H20 GPUs. CUDA Agent has been developed specifically for writing GPU code by being fine-tuned on a dataset refined out of the underlying PyTorch ‘torch’ and ‘transformers’ software libraries. “The filtered synthesized training dataset contains 6,000 samples, forming CUDA-Agent-Ops-6K, a curated operator-level dataset for training CUDA-capable agents,” the authors write.</p>
+<p><strong>Turning a model into an agent:</strong> In the last year or so, researchers have repeatedly shown that you can increase the performance of an LLM for a given task by giving it access to some specialized tools and some specialized instructions, then letting it operate over time &#8211; this is essentially an AI agent.<br />    The CUDA agent here is the fine-tuned model that has been turned into an agent by adopting the OpenHands framework, then given tools including BashTool, GlobTool, MultiEditTool, TodoWriteTool. The agent runs in a four stage loop:</p>
+<ul>
+<li>
+<p>Analyze performance of the native PyTorch implementation of a given bit of CUDA code using the provided <a href="http://profile.py/">profile.py</a> script</p>
+</li>
+<li>
+<p>Implement custom CUDA operators by rewriting the model in model_new.py</p>
+</li>
+<li>
+<p>Compile and evaluate the optimized model in the provided GPU sandbox environment</p>
+</li>
+<li>
+<p>Repeat the optimization process until the implementation achieves a 5% speedup over the torch.compile baseline</p>
+</li>
+</ul>
+<p><strong>Results: </strong>The resulting agent is very good at CUDA kernel development: “CUDA Agent successfully scales to a context length of 128k tokens and supports up to 200 interaction turns, achieving state-of-the-art performance,” they write. Their finetuning massively boosts performance from a base rate of 74% for Seed1.6, to “100%, 100%, and 92% over torch.compile on the Level-1, Level-2, and Level-3 splits of KernelBench, outperforming advanced proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by approximately 40% in the Level-3 split.”<br />    However, comparing against other base models paints a different story: Claude Opus 4.5 and Gemini 3 Pro base models get 95.2% and 91.2% respectively, suggesting that if they were finetuned, you’d increase their performance as well, and they start from a much stronger baseline.</p>
+<p><strong>Why this matters &#8211; building AI that builds AI:</strong> These results show how modern AI systems are increasingly good at the tasks required to develop and deploy AI systems themselves. This suggests we’re at the beginning of a compounding speedup where new AI models will be used to increase the efficiency of the infrastructure with which their successors will be trained.<br /><strong>   Read more:</strong> <a href="https://arxiv.org/abs/2602.24286">CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation (arXiv)</a>.</p>
+<p>***</p>
+<p><strong>Tech Tales:</strong></p>
+<p>Dandelion Sky<br /><em>[2031, Northern Europe]</em></p>
+<p>We made sand castles and in the distance the blue sky was pockmarked with yellow and red bursts and then seconds later the crumpled sounds of the explosion reached us. We were so used to it we didn’t look up.</p>
+<p>On the way back from the park the air whined as drones flew to replenish the perimeter of the city. We watched them, bird-like in their varieties, some zipping by quick as starlings, and other larger ones moving heavily through the air. There were so many varieties: the football-sized interceptors which died by the thousands each day. The pizza-boxes that worked as communications and AI relays. Then of course the motorbike-sized motherships which could rapidly repopulate areas that were sustaining heavy losses.</p>
+<p>The war had been going on for five years. Our city was like so many across the world &#8211; a nucleus of humans, protected by so many thousands upon thousands of machines, spinning around the periphery, exchanging energy and mass in some bloodless dance with our enemies.</p>
+<p>That night, the city narrated itself through statistics: 3410 interceptors destroyed. A green day: 100% success, with nothing making its way through. Replenishment rate: 4000 and climbing. And promising reports that our military had struck deep in the heart of enemy territory taking out several of their drone factories.</p>
+<p>We drew the blackout curtains in every room except our bedroom. With the kids asleep and my wife passed out beside me I looked out into the darkness, my face occasionally lit by the explosion of some distant drone, and then the room buzzing with the reverberation of the window as the soundwaves reached it.</p>
+<p>But when I woke up the next day, there was something different in the air: silence. And my phone did not work. We drew the shades and looked out and the sky was blue and perfectly clear: not a cloud or a drone in the sky. My wife stared out and her jaw tightened and she clutched our kids close.<br />    “Dada, where are the machines?” my youngest said.<br />    “Yeah Dad, what’s up?” said the older one.<br />    “I don’t know,” I said. “Draw the curtains. We’re going to camp today!”<br />    And I set my wife and kids up in the apartment with pillows in front of the TV and the game console on and a bunch of snacks. The kids were excited and my wife played along.<br />    “I’ll see if I can figure out what’s going on,” I whispered to her. “I won’t go far and I won’t be gone long.”</p>
+<p>Outside, there were a few people who had the same idea as me. None of us knew much. None of our electronic communication systems worked. Which people were even in charge of the drones? None of us knew. They mostly worked via AI. A lot of their decision-making was federated; distributed systems doing what made most sense to them, coordinating only with themselves.<br />    “Maybe they’ve turned off because the war is over?” someone said.<br />    “Maybe they’ve been hacked &#8211; we’re about to be attacked!” said someone else.<br />    “What there was a crash &#8211; they just all broke at once?” said someone else.</p>
+<p>There was nothing to do so I went home. My wife and kids were playing games. I grabbed some binoculars and went up to the fire escape and out onto the roof of the building. And there I stood, looking at a horizon free of machines. Occasionally looking at other people on other buildings doing the same. And eventually I put the binoculars down and I just stood there, listening for the whine of drones. But all I could hear was the wind and, in the distance, muffled birdsong.</p>
+<p><strong>Things that inspired this story</strong>: Gradual disempowerment and what it might mean for moments of crisis; automation and AI; winding the clock forward on the dronewar in Ukraine; war and peace and family.</p>
+<p><em>Thanks for reading!</em></p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-3082"
+				class="share-facebook sd-button share-icon"
+				href="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-3082"
+				>
+				<span id="sharing-facebook-3082" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-twitter-3082"
+				class="share-twitter sd-button share-icon"
+				href="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-3082"
+				>
+				<span id="sharing-twitter-3082" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-email"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-email-3082"
+				class="share-email sd-button share-icon"
+				href="mailto:?subject=%5BShared%20Post%5D%20Import%20AI%20448%3A%20AI%20R%26D%3B%20Bytedance%27s%20CUDA-writing%20agent%3B%20on-device%20satellite%20AI&#038;body=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F09%2Fimport-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai%2F&#038;share=email"
+				target="_blank"
+				aria-labelledby="sharing-email-3082"
+				data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="96e3516935" data-email-share-track-url="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/?share=email">
+				<span id="sharing-email-3082" hidden>Email a link to a friend (Opens in new window)</span>
+				<span>Email</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-10738737-3082-69d3a39ee6cec' data-src='https://widgets.wp.com/likes/?ver=15.7-a.7#blog_id=10738737&amp;post_id=3082&amp;origin=jack-clark.net&amp;obj_id=10738737-3082-69d3a39ee6cec' data-name='like-post-frame-10738737-3082-69d3a39ee6cec' data-title='Like or Reblog'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>
+	</div>
+	<div class="post-meta">
+						<div class="post-date"><span>Published:</span> <abbr class="published" title="2026-03-09T12:45:54+0000"><a href="https://jack-clark.net/2026/03/09/">March 9, 2026</a></abbr></div>
+		<div class="categories"><span>Filed Under:</span> <a href="https://jack-clark.net/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+			</div>
+</div>
+	<div id="comments">
+	
+	
+					<!-- If comments are open, but there are no comments. -->
+
+		 	
+	
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/#respond" style="display:none;">Cancel reply</a></small></h3>			<form id="commentform" class="comment-form">
+				<iframe
+					title="Comment Form"
+					src="https://jetpack.wordpress.com/jetpack-comment/?blogid=10738737&#038;postid=3082&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=identicon&#038;greeting=Leave+a+Reply&#038;jetpack_comments_nonce=c4d7d60b3e&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=15.7-a.7&#038;iframe_unique_id=1&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;is_current_user_subscribed=0&#038;token_key=%3Bnormal%3B&#038;sig=239c17e591ab0a4457f9390768c397b551d624ad#parent=https%3A%2F%2Fjack-clark.net%2F2026%2F03%2F09%2Fimport-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai%2F"
+											name="jetpack_remote_comment"
+						style="width:100%; height: 430px; border:0;"
+										class="jetpack_remote_comment"
+					id="jetpack_remote_comment"
+					sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"
+				>
+									</iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		</div>
+	<div class="navigation">
+		<div class="prev"><a href="https://jack-clark.net/2026/03/02/import-ai-447-the-agi-economy-testing-ais-with-generated-games-and-agent-ecologies/" rel="prev">&laquo; Previous Post</a></div>
+		<div class="next"><a href="https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/" rel="next">Next Post &raquo;</a></div>
+	</div>
+
+
+</div><!-- #core-content -->
+
+
+</div><!-- #site-wrapper -->
+
+<div id="footer">
+
+	
+
+	<!-- Search Field -->
+	<div class="footer-content">
+		<form method="get" id="searchform" action="https://jack-clark.net/">
+			<div id="search">
+				<input type="text" value="" name="s" id="s" />
+				<input type="submit" id="searchsubmit" value="Search" />
+			</div>
+		</form>
+		<p>
+			<a href="https://wordpress.com/?ref=footer_custom_svg" title="Create a website or blog at WordPress.com"><svg style="fill: currentColor; position: relative; top: 1px;" width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title" role="img">
+			<title id="title">Create a website or blog at WordPress.com</title>
+			<path d="M12.5225848,4.97949746 C13.0138466,5.87586309 13.2934037,6.90452431 13.2934037,7.99874074 C13.2934037,10.3205803 12.0351007,12.3476807 10.1640538,13.4385638 L12.0862862,7.88081544 C12.4453251,6.98296834 12.5648813,6.26504621 12.5648813,5.62667922 C12.5648813,5.39497674 12.549622,5.17994084 12.5225848,4.97949746 L12.5225848,4.97949746 Z M7.86730089,5.04801561 C8.24619178,5.02808979 8.58760099,4.98823815 8.58760099,4.98823815 C8.9267139,4.94809022 8.88671369,4.44972248 8.54745263,4.46957423 C8.54745263,4.46957423 7.52803983,4.54957381 6.86996227,4.54957381 C6.25158863,4.54957381 5.21247202,4.46957423 5.21247202,4.46957423 C4.87306282,4.44972248 4.83328483,4.96816418 5.17254589,4.98823815 C5.17254589,4.98823815 5.49358462,5.02808979 5.83269753,5.04801561 L6.81314716,7.73459399 L5.43565839,11.8651647 L3.14394256,5.04801561 C3.52312975,5.02808979 3.86416859,4.98823815 3.86416859,4.98823815 C4.20305928,4.94809022 4.16305906,4.44972248 3.82394616,4.46957423 C3.82394616,4.46957423 2.80475558,4.54957381 2.14660395,4.54957381 C2.02852925,4.54957381 1.88934333,4.54668493 1.74156477,4.54194422 C2.86690406,2.83350881 4.80113651,1.70529256 6.99996296,1.70529256 C8.638342,1.70529256 10.1302017,2.33173369 11.2498373,3.35765419 C11.222726,3.35602457 11.1962815,3.35261718 11.1683554,3.35261718 C10.5501299,3.35261718 10.1114609,3.89113285 10.1114609,4.46957423 C10.1114609,4.98823815 10.4107217,5.42705065 10.7296864,5.94564049 C10.969021,6.36482346 11.248578,6.90326506 11.248578,7.68133501 C11.248578,8.21992476 11.0413918,8.84503256 10.7696866,9.71584277 L10.1417574,11.8132391 L7.86730089,5.04801561 Z M6.99996296,14.2927074 C6.38218192,14.2927074 5.78595654,14.2021153 5.22195356,14.0362644 L7.11048207,8.54925635 L9.04486267,13.8491542 C9.05760348,13.8802652 9.07323319,13.9089317 9.08989995,13.9358945 C8.43574834,14.1661896 7.73285573,14.2927074 6.99996296,14.2927074 L6.99996296,14.2927074 Z M0.706448182,7.99874074 C0.706448182,7.08630113 0.902152921,6.22015756 1.25141403,5.43749503 L4.25357806,13.6627848 C2.15393732,12.6427902 0.706448182,10.4898387 0.706448182,7.99874074 L0.706448182,7.99874074 Z M6.99996296,0.999 C3.14016476,0.999 0,4.13905746 0,7.99874074 C0,11.8585722 3.14016476,14.999 6.99996296,14.999 C10.8596871,14.999 14,11.8585722 14,7.99874074 C14,4.13905746 10.8596871,0.999 6.99996296,0.999 L6.99996296,0.999 Z" id="wordpress-logo-simplified-cmyk" stroke="none" fill=“currentColor” fill-rule="evenodd"></path>
+		</svg></a>
+					</p>
+	</div>
+</div><!-- #footer -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/manifest/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<meta id="bilmur" property="bilmur:data" content="" data-customproperties="{&quot;woo_active&quot;:&quot;0&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;manifest&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}" data-provider="wordpress.com" data-service="atomic"  data-site-tz="Etc/GMT-0" >
+<script defer src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202615"></script>
+					<div class="jetpack-subscription-modal">
+						<div class="jetpack-subscription-modal__modal-content">
+								
+	<div class="wp-block-group has-border-color jetpack-subscription-modal__modal-content-form" style="border-color:#dddddd;border-width:1px;margin-top:0;margin-bottom:0;padding:32px"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+
+		
+		<h2 class="wp-block-heading has-text-align-center" style="margin-top:4px;margin-bottom:10px;font-size:26px;font-style:normal;font-weight:600">Discover more from Import AI </h2>
+		
+
+		
+		<p class="has-text-align-center wp-block-paragraph" style='margin-top:4px;margin-bottom:0px;font-size:15px'>Subscribe now to keep reading and get access to the full archive.</p>
+		
+
+			<div class="wp-block-jetpack-subscriptions__supports-newline is-style-compact wp-block-jetpack-subscriptions">
+		<div class="wp-block-jetpack-subscriptions__container is-not-subscriber">
+							<form
+					action="https://wordpress.com/email-subscriptions"
+					method="post"
+					accept-charset="utf-8"
+					data-blog="10738737"
+					data-post_access_level="everybody"
+					data-subscriber_email=""
+					id="subscribe-blog"
+				>
+					<div class="wp-block-jetpack-subscriptions__form-elements">
+												<p id="subscribe-email">
+							<label
+								id="subscribe-field-label"
+								for="subscribe-field"
+								class="screen-reader-text"
+							>
+								Type your email…							</label>
+							<input
+									required="required"
+									type="email"
+									name="email"
+									autocomplete="email"
+									
+									style="font-size: 16px;padding: 15px 23px 15px 23px;border-radius: 50px;border-width: 1px;"
+									placeholder="Type your email…"
+									value=""
+									id="subscribe-field"
+									title="Please fill in this field."
+								/>						</p>
+												<p id="subscribe-submit"
+													>
+							<input type="hidden" name="action" value="subscribe"/>
+							<input type="hidden" name="blog_id" value="10738737"/>
+							<input type="hidden" name="source" value="https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/"/>
+							<input type="hidden" name="sub-type" value="subscribe-block"/>
+							<input type="hidden" name="app_source" value="atomic-subscription-modal-lo"/>
+							<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+							<input type="hidden" name="lang" value="en_US"/>
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="c9a9a554c5" /><input type="hidden" name="_wp_http_referer" value="/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/" /><input type="hidden" name="post_id" value="3082"/>							<button type="submit"
+																	class="wp-block-button__link"
+																									style="font-size: 16px;padding: 15px 23px 15px 23px;margin: 0; margin-left: 10px;border-radius: 50px;border-width: 1px;"
+																name="jetpack_subscriptions_widget"
+							>
+								Subscribe							</button>
+						</p>
+					</div>
+				</form>
+								</div>
+	</div>
+	
+
+		
+		<p class="has-text-align-center jetpack-subscription-modal__close wp-block-paragraph" style="margin-top:20px;font-size:14px"><a href="#">Continue reading</a></p>
+		
+	</div></div>
+							</div>
+					</div>
+			
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/":3082};
+	</script>
+				<script type='text/javascript'  src='https://jack-clark.net/wp-content/plugins/coblocks/dist/js/coblocks-animation.js?m=1719276502'></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-includes/js/comment-reply.min.js?ver=6.9.4" id="comment-reply-js" async="async" data-wp-strategy="async" fetchpriority="low"></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/gutenberg/build/scripts/dom-ready/index.min.js?ver=a06281ae5cf5500e9317" id="wp-dom-ready-js"></script>
+<script type="text/javascript" id="subscription-modal-js-js-extra">
+/* <![CDATA[ */
+var subscriptionData = {"homeUrl":"jack-clark.net"};
+//# sourceURL=subscription-modal-js-js-extra
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/_static/??-eJx1zcEOgjAQBNAfsiyKwZPxU0xpN7Cw3Va2G36fHjzqbZKXmTmKC1kqSoXCNpMorFiLDxukHI1RIeSUmiuoTRp2KpWyuKaeXQtf/qHdqpfj//6bJMBkxBGYtnb0MTRcvETGvUskrf9Kz+tjvPf9MA63E7L2QMM='></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"10738737","post":"3082","tz":"0","srv":"jack-clark.net","hp":"atomic","ac":"2","amp":"0","j":"1:15.7-a.7"} ]);
+_stq.push([ "clickTrackerInit", "10738737", "3082" ]);
+//# sourceURL=jetpack-stats-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202615.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script defer type="text/javascript" src="https://jack-clark.net/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1704837122" id="akismet-frontend-js"></script>
+<script type="text/javascript" id="jetpack-blocks-assets-base-url-js-before">
+/* <![CDATA[ */
+var Jetpack_Block_Assets_Base_Url="https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/";
+//# sourceURL=jetpack-blocks-assets-base-url-js-before
+/* ]]> */
+</script>
+<script type='text/javascript'  src='https://jack-clark.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1761030842'></script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.js?minify=false&amp;ver=15.7-a.7" id="jetpack-block-subscriptions-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://jack-clark.net/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=15.7-a.7" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+//# sourceURL=sharing-js-js-after
+/* ]]> */
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://jack-clark.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://jack-clark.net/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20260406#ver=20260406' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+			<script type="text/javascript">
+			(function () {
+				const iframe = document.getElementById( 'jetpack_remote_comment' );
+								const watchReply = function() {
+					// Check addComment._Jetpack_moveForm to make sure we don't monkey-patch twice.
+					if ( 'undefined' !== typeof addComment && ! addComment._Jetpack_moveForm ) {
+						// Cache the Core function.
+						addComment._Jetpack_moveForm = addComment.moveForm;
+						const commentParent = document.getElementById( 'comment_parent' );
+						const cancel = document.getElementById( 'cancel-comment-reply-link' );
+
+						function tellFrameNewParent ( commentParentValue ) {
+							const url = new URL( iframe.src );
+							if ( commentParentValue ) {
+								url.searchParams.set( 'replytocom', commentParentValue )
+							} else {
+								url.searchParams.delete( 'replytocom' );
+							}
+							if( iframe.src !== url.href ) {
+								iframe.src = url.href;
+							}
+						};
+
+						cancel.addEventListener( 'click', function () {
+							tellFrameNewParent( false );
+						} );
+
+						addComment.moveForm = function ( _, parentId ) {
+							tellFrameNewParent( parentId );
+							return addComment._Jetpack_moveForm.apply( null, arguments );
+						};
+					}
+				}
+				document.addEventListener( 'DOMContentLoaded', watchReply );
+				// In WP 6.4+, the script is loaded asynchronously, so we need to wait for it to load before we monkey-patch the functions it introduces.
+				document.querySelector('#comment-reply-js')?.addEventListener( 'load', watchReply );
+
+								
+				const commentIframes = document.getElementsByClassName('jetpack_remote_comment');
+
+				window.addEventListener('message', function(event) {
+					if (event.origin !== 'https://jetpack.wordpress.com') {
+						return;
+					}
+
+					if (!event?.data?.iframeUniqueId && !event?.data?.height) {
+						return;
+					}
+
+					const eventDataUniqueId = event.data.iframeUniqueId;
+
+					// Change height for the matching comment iframe
+					for (let i = 0; i < commentIframes.length; i++) {
+						const iframe = commentIframes[i];
+						const url = new URL(iframe.src);
+						const iframeUniqueIdParam = url.searchParams.get('iframe_unique_id');
+						if (iframeUniqueIdParam == event.data.iframeUniqueId) {
+							iframe.style.height = event.data.height + 'px';
+							return;
+						}
+					}
+				});
+			})();
+		</script>
+		
+</body>
+</html>
+<!--
+	generated 5 seconds ago
+	generated in 0.252 seconds
+	served from batcache in 0.003 seconds
+	expires in 295 seconds
+-->
