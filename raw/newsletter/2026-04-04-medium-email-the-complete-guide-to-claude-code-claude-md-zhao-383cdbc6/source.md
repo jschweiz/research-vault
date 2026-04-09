@@ -25,15 +25,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:05:20.625157Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".'
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.036972Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: 0fa9f0b76416ad3acb5234a26554913f1611456d13f933cb7c9111daebbdbc64
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 268142f3e48bbb39d0f91800f9c97947098b2bc387c004691d150ac3f6d72dc3
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditio'
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
 

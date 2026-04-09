@@ -27,11 +27,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:09.769545Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2c6040f671fe5c303d42236c7b7de74d8c6e08afd94a6cad8d734cf57fd1a93c
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

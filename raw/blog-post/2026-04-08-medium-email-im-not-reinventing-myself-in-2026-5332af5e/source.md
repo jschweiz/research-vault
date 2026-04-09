@@ -6,6 +6,7 @@ source_url: https://medium.com/@louchalmer/im-not-reinventing-myself-in-2026-0a4
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Lou Chalmer
 published_at: '2026-04-08T06:40:00Z'
 ingested_at: '2026-04-09T12:05:13.552702Z'
 content_hash: 07f4c3a96592bf245db5cfc78ab571cb2835118bf71799e9378cf907bf3cd3f3
@@ -15,6 +16,9 @@ tags:
 - medium
 - email
 - blog-post
+- fitness
+- health
+- reinvention
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +29,25 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:13.552708Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post discusses a topic related to fitness and health, suggesting a need for caution regarding self-reinvention.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.012978Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 04ada19bba883305ef810c457a601f5a5b902d48d89909cb666fdf38882ed8e5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 9212c1f07b1e49213993c6b9a2b7dda25547451e0176b0b29739f09eacc37aea
+lightweight_score:
+  relevance_score: 0.3936
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.878
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - The post discusses a topic related to fitness and health, suggesting a need for caution regarding self-reinvention.
 ---
 # I’m Not Reinventing Myself in 2026
 

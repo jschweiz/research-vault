@@ -53,11 +53,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:09:11.853154Z'
 short_summary: Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robust long-horizon control directly from high-dimensional observations. This framework successfully performs zero-shot, non-greedy manipulation on a real robot and enhances efficiency and generalization in complex simulated tasks.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 77b446f085b1910ad5eefc29da79068c2867650885d92b1416d1003d679eaa0c
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

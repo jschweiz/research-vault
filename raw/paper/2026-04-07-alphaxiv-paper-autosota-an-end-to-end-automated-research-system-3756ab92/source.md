@@ -59,11 +59,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:47.189123Z'
 short_summary: An end-to-end automated research system named AutoSOTA, developed by Tsinghua University and Zhongguancun Academy, discovers new State-of-the-Art AI models from unstructured research papers. The system autonomously reproduces and optimizes original methods, achieving an average performance improvement of approximately 10% across 105 diverse AI papers within about five hours of execution per paper.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2a443184b97be635237240020191af560c333d1b481272d1b8fd50c4ee5e03be
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

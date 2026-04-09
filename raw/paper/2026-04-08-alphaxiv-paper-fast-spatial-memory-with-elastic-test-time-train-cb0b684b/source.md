@@ -52,11 +52,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:58.538555Z'
 short_summary: Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabilize fast-weight updates in Transformer-based models, enabling robust multi-chunk adaptation for long 4D sequences. Their Fast Spatial Memory (FSM) model, incorporating LaCET, achieved a PSNR of 32.16 and LPIPS of 0.043 for 4D novel view synthesis on the Stereo4D dataset.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a57f58df30f5d19208f667475b160273698ff5fc122303e6328eb5e42feff7c4
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

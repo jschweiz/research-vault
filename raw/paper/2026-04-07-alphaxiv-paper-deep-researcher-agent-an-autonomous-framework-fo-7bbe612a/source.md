@@ -38,11 +38,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:09:19.851638Z'
 short_summary: The Deep Researcher Agent, developed by Xiangyue Zhang at The University of Tokyo, provides an autonomous framework for continuous, 24/7 deep learning experimentation, automating hypothesis generation, code execution, and result analysis. It achieves economic viability through a novel zero-cost monitoring approach and architectural innovations, demonstrating a 10-20x cost reduction and a 52% metric improvement in a target project over 30 days.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d9f29d3d031cabe1cf98cacdb2362128b2fcfebd6635afd6cb0f4899fb3730f6
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

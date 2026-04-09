@@ -56,11 +56,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:09.767575Z'
 short_summary: FlashSAC is an off-policy reinforcement learning algorithm designed for high-dimensional robotic control, integrating rapid training via scaled data throughput and model capacity with stability mechanisms like constrained critic updates. The algorithm consistently reduces wall-clock training time by up to an order of magnitude and achieves higher asymptotic performance across over 60 locomotion and manipulation tasks, including successful sim-to-real humanoid locomotion.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 79992fbb66ed4227d8c5da13ee1bce8908bb258a8939deed18f9535340b100a2
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

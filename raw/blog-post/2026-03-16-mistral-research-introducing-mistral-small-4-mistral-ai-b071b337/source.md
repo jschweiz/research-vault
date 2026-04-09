@@ -4,7 +4,8 @@ kind: blog-post
 title: Introducing Mistral Small 4 | Mistral AI
 source_url: https://mistral.ai/news/mistral-small-4
 source_name: Mistral Research
-authors: []
+authors:
+- Mistral AI
 published_at: '2026-03-16T21:00:00Z'
 ingested_at: '2026-04-09T12:04:22.775200Z'
 content_hash: 6fdbd903176cd2fd51c0c993529634e32b04d84ae69b52d3f3f5131fa2c430e6
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- model
+- multimodal
+- reasoning
+- open-source
+- architecture
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:22.775203Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Mistral Small 4 is a new model that unifies reasoning, multimodal, and coding capabilities into a single, versatile model. It features configurable reasoning effort and is optimized for efficiency and performance across various tasks.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:54.874997Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 50794f7a4d315e286399d418e1f1afcd25900da13b44b6bc74f29375e18e147b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3014f5f95cd8692133e3a6951866c83701a1928483f6655cdbac182826948425
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Mistral Small 4 is a new model that unifies reasoning, multimodal, and coding capabilities into a single, versatile model. It features configurable reasoning ef
 ---
 Introducing
 Mistral Small 4

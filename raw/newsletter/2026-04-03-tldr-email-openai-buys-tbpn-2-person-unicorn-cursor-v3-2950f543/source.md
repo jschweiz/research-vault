@@ -26,15 +26,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:15:32.994521Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.005132Z'
+lightweight_enrichment_model: deterministic:tldr-newsletter
+lightweight_enrichment_input_hash: 817cb4e107342cdc7d19f1205094d7eacde0f27b373e759f47f6115acfef417c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 2156dc30c9f7e8f11322ddbc3a8f2299f767a25757dd2be67726e6069aee1504
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 ---
 # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 

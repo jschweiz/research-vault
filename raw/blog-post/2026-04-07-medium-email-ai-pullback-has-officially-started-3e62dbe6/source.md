@@ -26,11 +26,11 @@ parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:15.565771Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 46d5d58e7202b6096fb86036838aff0d7e7f9d91dac09e96aa5c587392b84e8f
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

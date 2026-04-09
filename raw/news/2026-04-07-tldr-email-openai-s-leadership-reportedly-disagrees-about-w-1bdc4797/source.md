@@ -6,6 +6,7 @@ source_url: https://links.tldrnewsletter.com/AaOObO
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-07T10:59:25Z'
 ingested_at: '2026-04-09T12:05:02.986921Z'
 content_hash: 648ad9db7b3e4ad913240f4c57adb48159e5095506457827f19a6784aed8e90d
@@ -16,6 +17,11 @@ tags:
 - email
 - ai
 - news
+- openai
+- sam altman
+- finance
+- public offering
+- business
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +32,25 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:27.273558Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenAI's CFO reportedly disagreed with CEO Sam Altman regarding the timing of a public offering and financial plans. These disagreements led Altman to exclude the CFO from some financial discussions.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.768177Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1488c7d8aa4570984d8475ff15377943250989350f6cf12426b040930e1e8e2d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: a21425fccc629fc2332617c775a50c26ff7eb5357cc7f486a3f5adb1b5faa7b0
+lightweight_score:
+  relevance_score: 0.4115
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.9675
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - OpenAI's CFO reportedly disagreed with CEO Sam Altman regarding the timing of a public offering and financial plans. These disagreements led Altman to exclude t
 ---
 # OpenAI's leadership reportedly disagrees about when to raise money and how to spend it
 

@@ -11,43 +11,6 @@ authors:
 - Fan Wu
 - Zhiyuan Zhao
 - Tao Chu
-- Yuan Qu
-- Zhenjiang Jin
-- Weijun Zeng
-- Ziyang Miao
-- Bangrui Xu
-- Junbo Niu
-- Mengzhang Cai
-- Jiantao Qiu
-- Qintong Zhang
-- Dongsheng Ma
-- Yuefeng Sun
-- Hejun Dong
-- Wenzheng Zhang
-- Jutao Xiao
-- Jiayong Shi
-- Pengyu Liao
-- Xiaomeng Zhao
-- Huaping Zhong
-- Liqun Wei
-- Jing Yu
-- Jie Yang
-- Wei Li
-- Shasha Wang
-- Qianqian Wu
-- Xuanhe Zhou
-- Weijia Li
-- Zhenxiang Li
-- Zhongying Tu
-- Jiang Wu
-- Lijun Wu
-- Chao Xu
-- Kai Chen
-- Wentao Zhang
-- Yu Qiao
-- Bowen Zhou
-- Dahua Lin
-- Conghui He
 published_at: '2026-04-06T15:44:18Z'
 ingested_at: '2026-04-09T12:06:01.084016Z'
 content_hash: bf4278e22b1c58cd83d43f497aa823269823605408326ec267aa85a5e2586ad1
@@ -56,9 +19,9 @@ tags:
 - paper
 - alphaxiv
 - research
-- Computer Science
-- cs.CL
-- cs.CV
+- computer science
+- cs.cl
+- cs.cv
 - github
 - audio
 - transcript
@@ -85,15 +48,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:01.084022Z'
-short_summary: Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that significantly improves training data quality and implements a progressive training strategy. This approach led to a 95.69 overall score on OmniDocBench v1.6 Full, representing a 2.71-point improvement over the baseline model while maintaining the original 1.2B-parameter architecture.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 while keeping a fixed 1.2B-parameter architecture.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.738971Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6bcb9b9b212041dbd3602f3ac9e884ceed52f805348765862fcb8aeaa5cb31ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3e15d0c52775cffaf0ffd34c4f9cf961300b253dab45ab38be864f58d9eb8aa2
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 while
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
 

@@ -32,13 +32,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:35.387003Z'
 short_summary: Developer relations must be legible to both humans and the machines they work alongside.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:13:11.861715Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.775294Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fecfe76816c3ebfb467c07be6841407894dbd097e0adaddc25388dd426c91ff7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 74b288284f19f8e675ccac1c13e452783ba2766979227a8ceae8ff36d2714170
+lightweight_score:
+  relevance_score: 0.3877
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.8485
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - Developer relations must be legible to both humans and the machines they work alongside.
 ---
 # Developer relations after the cheat code machine
 

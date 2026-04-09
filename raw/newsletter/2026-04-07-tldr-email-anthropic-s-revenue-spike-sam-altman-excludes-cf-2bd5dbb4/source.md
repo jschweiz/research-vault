@@ -26,15 +26,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:15:26.561217Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.344402Z'
+lightweight_enrichment_model: deterministic:tldr-newsletter
+lightweight_enrichment_input_hash: af99fbb6a8c4ef5218de1aa495fae4a0b723c87f1b91ced0be02bf86457610fb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 41a75e6a728f8a2833b3753eb44dd69b3b669de17c9757b31612a0e667e125b2
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖
 

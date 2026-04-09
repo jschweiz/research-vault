@@ -33,13 +33,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:31.434105Z'
 short_summary: This article details the process of building syntaqlite, a set of developer tools for SQLite, using an AI coding agent over three months.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:14:10.293543Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.814284Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5ef7d9583c850c0158e205452ca5323e8384806fffd37056900907467cba4ead
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: aa5a40d921fa1a78c4be3f340124b6dd267672bd3c4d0c7195d1056d395df4df
+lightweight_score:
+  relevance_score: 0.4084
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.952
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - This article details the process of building syntaqlite, a set of developer tools for SQLite, using an AI coding agent over three months.
 ---
 # Eight years of wanting, three months of building with AI
 

@@ -14,6 +14,10 @@ tags:
 - official
 - website
 - blog-post
+- safety
+- bug bounty
+- ai abuse
+- vulnerabilities
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +28,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:37.650576Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenAI has launched a Safety Bug Bounty program to find AI abuse and safety risks, such as agentic vulnerabilities and prompt injection.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.057261Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7f43323c1be49ad714e0cc88ea8c9725503eed53c0a3c1d8dc57f2afc679ea50
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cbd317800a48bf78b33e786cc084927de54d94b7f3699178cee7b7f7b7bfc908
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.9
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses safety and vulnerability topics, which strongly align with the user's favorite topics of language models, evaluation, and reasoning.
+  evidence_quotes:
+  - OpenAI has launched a Safety Bug Bounty program to find AI abuse and safety risks, such as agentic vulnerabilities and prompt injection.
+  - OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 ---
 OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.

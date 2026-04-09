@@ -34,13 +34,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:33.290343Z'
 short_summary: Google DeepMind has released four new vision-capable reasoning models, including 2B, 4B, and 31B parameter sizes, along with a 26B-A4B Mixture-of-Experts model. These models are multi-modal, can process video, and feature native audio input for speech recognition.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:13:27.330687Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.783839Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3c7eac4bda9405798088bf030846c100cfa15f1f06c4988538120bacc682ca57
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3bd0c130969216a9846e2ac2897bb1e0692d7aa611f1cc84322ba8eb9010610c
+lightweight_score:
+  relevance_score: 0.5033
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.9317
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Google DeepMind has released four new vision-capable reasoning models, including 2B, 4B, and 31B parameter sizes, along with a 26B-A4B Mixture-of-Experts model.
 ---
 # Gemma 4: Byte for byte, the most capable open models
 

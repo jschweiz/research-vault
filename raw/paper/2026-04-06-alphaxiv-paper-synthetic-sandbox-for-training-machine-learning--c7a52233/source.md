@@ -53,11 +53,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:30.998660Z'
 short_summary: SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning practical for training LLM agents. This approach reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in "Any Medal" rates on MLE-Bench-Lite compared to baseline methods.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 21e3750ee6503ba31e971c695a9d6dc76ad8ad62e34934e663a56c25fffeb1ec
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

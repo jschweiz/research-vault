@@ -6,6 +6,7 @@ source_url: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-unders
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Kuriko Iwai
 published_at: '2026-04-03T06:40:00Z'
 ingested_at: '2026-04-09T12:05:24.524622Z'
 content_hash: bff34b504ffe49caf37475567c86eb89349af659788fb7cda1a91f253d94e981
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- vector databases
+- embedding pipelines
+- ai
+- mathematics
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,25 @@ doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:24.524630Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.291304Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 04b6fec193168334a6a03f7625a24c13eecf5b56a259d8b55c42b627dd316d4d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: dadc3cd3f42abf299a1308f8170df79b3518c741f83ab4a1f7dde637fd2b7b78
+lightweight_score:
+  relevance_score: 0.4933
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.8815
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
 

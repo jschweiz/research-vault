@@ -25,15 +25,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:05:22.949356Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.975119Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: fb53942c0a5542311056689b117ab50b626ac8c7683e57ab07ab98f2d26a33f3
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 813f834f8d59f06d53b75357e73b4851de210767677c97ad6c908566aa9fbdd7
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
 ---
 # Claude Code is Great | Leo Godin
 

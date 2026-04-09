@@ -11,19 +11,6 @@ authors:
 - Zijian Zhou
 - Shuming Liu
 - Wenyi Wang
-- Ernie Chang
-- Gael Le Lan
-- Junjie Fei
-- Wenxuan Zhang
-- Yasheng Sun
-- Zhipeng Cai
-- Zechun Liu
-- Yunyang Xiong
-- Yining Yang
-- Yuandong Tian
-- Yangyang Shi
-- Vikas Chandra
-- Jürgen Schmidhuber
 published_at: '2026-04-07T20:01:05Z'
 ingested_at: '2026-04-09T12:07:22.423055Z'
 content_hash: 7ca58f9b341f46a47ffdde6176324e58724908f99f0eb073c71ce10f52ae9d39
@@ -33,18 +20,12 @@ tags:
 - alphaxiv
 - research
 - agents
-- Computer Science
-- cs.AI
-- cs.LG
+- computer science
+- cs.ai
+- cs.lg
 - generative-models
 - multi-modal-learning
 - neuro-symbolic-ai
-- reinforcement-learning
-- representation-learning
-- self-supervised-learning
-- video-understanding
-- github
-- audio
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -60,15 +41,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:22.423061Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The goal is to develop the Completely Neural Computer (CNC), a general-purpose realization of this machine form.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.853852Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a7a4f213566a52a5ec4317f1387bb3d07e91c5327cde313632df6b398cf98706
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: f19ed7774379c4aecdc02f6cb75c5f78975ebbcaa078bbe5f2a85b94e0db94c3
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The goal is to develo
 ---
 # Neural Computers
 

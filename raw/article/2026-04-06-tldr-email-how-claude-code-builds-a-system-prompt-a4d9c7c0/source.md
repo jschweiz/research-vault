@@ -33,13 +33,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:31.744953Z'
 short_summary: This article explores how Claude Code builds system prompts, highlighting the complexity of context engineering and the importance of harnesses. It includes a table demonstrating the components of a system prompt.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:14:22.921123Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.824317Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fa8f03ba4862d513caf7c6f07c8aad27105f2d4661683182c08a434255170310
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3cfe4fdabb41f59e3871492bcb8af1dffefb778001113e76005abfcac7697095
+lightweight_score:
+  relevance_score: 0.4086
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.953
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - This article explores how Claude Code builds system prompts, highlighting the complexity of context engineering and the importance of harnesses. It includes a t
 ---
 # How Claude Code Builds a System Prompt
 

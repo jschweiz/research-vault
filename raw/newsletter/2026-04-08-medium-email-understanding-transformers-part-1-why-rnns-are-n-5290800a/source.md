@@ -25,15 +25,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:05:12.711637Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: 'Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Production-Grade RAG Architecture".'
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.379032Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: b012be04af8e021becd83ceef4ec086dd8d84f1c9b347bdb1bf3339f3bd3458b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: adc75ff42fad66cd7c87be15e41f3f3d43f1702995347a7c863821186deac0fb
+lightweight_score:
+  relevance_score: 0.715
+  source_fit_score: 0.55
+  topic_fit_score: 0.84
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 3 favorite-topic matches.
+  evidence_quotes:
+  - 'Medium digest led by "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train". Includes 15 highlighted stories, including "Designing a Pro'
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 

@@ -6,6 +6,7 @@ source_url: https://links.tldrnewsletter.com/p17x7W
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-03T10:59:24Z'
 ingested_at: '2026-04-09T12:05:05.771757Z'
 content_hash: 75e389ff495921bedf311b2922272b0379452ca7084679385314ce5c38ff7a62
@@ -16,6 +17,11 @@ tags:
 - email
 - ai
 - news
+- robotics
+- manipulation
+- zero-shot
+- hand
+- technology
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +32,25 @@ doc_role: derived
 parent_id: 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:33.915263Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Sanctuary AI's robotic hand successfully demonstrated zero-shot in-hand manipulation of a lettered cube, achieving target orientation 10 times without dropping it.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.466765Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b3309355e11aea781d590e20f62ac25a4c3537bdd777b88175055f5011a001e9
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 5599114b5a7a9613a8827a6239f39f7c085d49007acc17380f260f647e25e642
+lightweight_score:
+  relevance_score: 0.4048
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.934
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - 'Sanctuary AI''s robotic hand successfully demonstrated zero-shot in-hand manipulation of a lettered cube, achieving target orientation 10 times without dropping '
 ---
 # Sanctuary AI's robotic hand demonstrates zero-shot in-hand manipulation
 

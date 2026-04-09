@@ -26,11 +26,11 @@ parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-faree
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:19.208618Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2aac7a91c529da7ad82356e9ea2142c9511bcc33cc5df2317daa98d1249605b9
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

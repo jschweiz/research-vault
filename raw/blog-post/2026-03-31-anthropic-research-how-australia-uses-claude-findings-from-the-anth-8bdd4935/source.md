@@ -4,7 +4,13 @@ kind: blog-post
 title: 'How Australia Uses Claude: Findings from the Anthropic Economic Index'
 source_url: https://www.anthropic.com/research/how-australia-uses-claude
 source_name: Anthropic Research
-authors: []
+authors:
+- Peter McCrory
+- Keir Bradwell
+- Ria Strasser Galvis
+- Ryan Heller
+- Eva Lyubich
+- Jennifer Marintez
 published_at: '2026-03-31T00:00:00Z'
 ingested_at: '2026-04-09T12:03:56.402149Z'
 content_hash: 36137ecdd57029edb5b09647e449f7fa4b3833432fd8217ffd2d98e2640fb202
@@ -15,6 +21,11 @@ tags:
 - research
 - website
 - blog-post
+- claude
+- australia
+- economic index
+- ai adoption
+- use cases
 status: active
 asset_paths:
 - original.html
@@ -26,15 +37,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:56.402154Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosphere peers, showing a focus on work and personal tasks, and reflects diverse use-cases across states.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.109223Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c3e7dc7be54410aaff99468b702e14d1d8e99109480ef072a44ab459a1727339
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: b243d73324587e38ebfeed27beccb62fdc5a60231ea3063a5c7aab417a2399e5
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosph
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index
 Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. To mark the occasion, we thought we’d look more closely into how Australians are using Claude.

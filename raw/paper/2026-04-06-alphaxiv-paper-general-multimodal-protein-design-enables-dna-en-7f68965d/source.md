@@ -11,18 +11,6 @@ authors:
 - Daniel Roth
 - Yueming Long
 - Zi-Qi Li
-- Xi Zhang
-- Miruna Cretu
-- Francesca-Zhoufan Li
-- Tanvi Ganapathy
-- Emily Jin
-- Avishek Joey Bose
-- Jason Yang
-- Kirill Neklyudov
-- Yoshua Bengio
-- Alexander Tong
-- Frances H. Arnold
-- Cheng-Hao Liu
 published_at: '2026-04-06T21:21:11Z'
 ingested_at: '2026-04-09T12:06:18.194314Z'
 content_hash: a20d6512e02048a1c9c55939ac3aaa06ffb8e6bf1a6acea84e536e7ed90a6868
@@ -33,16 +21,11 @@ tags:
 - research
 - ai-for-genomics
 - ai-for-health
-- Computer Science
-- cs.LG
+- computer science
+- cs.lg
 - generative-models
 - geometric-deep-learning
 - inference-optimization
-- multi-modal-learning
-- sequence-modeling
-- github
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -61,15 +44,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:18.194319Z'
-short_summary: A multimodal generative model named DISCO was developed to simultaneously design protein sequences and 3D structures, enabling the creation of enzymes for new-to-nature chemical reactions without predefined active sites. It successfully generated highly active carbene transferases, achieving up to 98% yield and 5,170 total turnover numbers for transformations like B-H insertion, and demonstrating evolvability for further optimization.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures to create enzymes for new-to-nature chemical reactions. It demonstrated the ability to design highly active enzymes with novel active-site geometries that are further evolvable.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.703595Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5625c17d024489492b807d1c30ce46dfe3832e649623b254ee4a8decd3d574c5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 42aef8c0ca1b4fed548ef3e9183fb0d5c01ffb7a7c5e096c4a5bfe9ddea74b14
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures to create enzymes for new-to-nature chemica
 ---
 # General Multimodal Protein Design Enables DNA-Encoding of Chemistry
 

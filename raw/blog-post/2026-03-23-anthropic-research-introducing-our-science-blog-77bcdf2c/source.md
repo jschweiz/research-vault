@@ -15,6 +15,9 @@ tags:
 - research
 - website
 - blog-post
+- ai
+- science
+- blog
 status: active
 asset_paths:
 - original.html
@@ -26,15 +29,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:01.495333Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising sociological questions about the role of scientists.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:54.946839Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a8cea54632141613fbfb65a61a4ad24f41ec3884fa3deaca592058cc1dec251c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 5bb8493210a5e5e33848b95fb86b4d8e9fba409513f008e794b2726715e4228d
+lightweight_score:
+  relevance_score: 0.404
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.93
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

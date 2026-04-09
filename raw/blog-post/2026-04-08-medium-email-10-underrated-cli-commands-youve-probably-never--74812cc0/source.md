@@ -6,6 +6,7 @@ source_url: https://medium.com/@minervee/10-underrated-cli-commands-youve-probab
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Medium Daily Digest
 published_at: '2026-04-08T06:40:00Z'
 ingested_at: '2026-04-09T12:05:13.899253Z'
 content_hash: fb850157f9c87debbb6c19969d430c4d6ddc93bb91a31826c5d85cd03ced243d
@@ -15,6 +16,11 @@ tags:
 - medium
 - email
 - blog-post
+- cli
+- commands
+- coding
+- linux
+- software
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +31,25 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:13.899262Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post introduces ten underrated Command Line Interface (CLI) commands that readers may not be familiar with. It serves as a guide to useful and practical CLI tools.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.939909Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aca06e88251cb4854d780a19ef424cc0c1173aacf8f4a1fc8bbdee06deab257f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 883ef68bf99e4b34dca4d1e0e0e3f4a04efedd6a3501db1a78373fa474fb353a
+lightweight_score:
+  relevance_score: 0.3953
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.8865
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - This post introduces ten underrated Command Line Interface (CLI) commands that readers may not be familiar with. It serves as a guide to useful and practical CL
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
 

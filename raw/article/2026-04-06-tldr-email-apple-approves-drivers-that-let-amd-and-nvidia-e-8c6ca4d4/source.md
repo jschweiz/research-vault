@@ -34,13 +34,23 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:30.466251Z'
 short_summary: Apple has approved drivers allowing AMD and Nvidia eGPUs to run on Mac, specifically designed for AI processing rather than gaming. This development has increased demand for high-memory Macs.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:13:57.100130Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.804367Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9e5636d10c0f5a562000e663baabbb4def385192a4f1edaf69276d3bbf4bcb3e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3cb19f3704e9885fa2164003cba2e976b223e1d55d5ab4e08862b79c97e2ec9c
+lightweight_score:
+  relevance_score: 0.5136
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.983
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Apple has approved drivers allowing AMD and Nvidia eGPUs to run on Mac, specifically designed for AI processing rather than gaming. This development has increas
 ---
 # Apple approves drivers that let AMD and Nvidia eGPUs run on Mac — software designed for AI, though, and not built for gaming
 

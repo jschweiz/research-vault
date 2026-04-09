@@ -62,11 +62,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:41.809393Z'
 short_summary: Researchers from Huawei Research and CUHK MMLab introduced AURA, an end-to-end streaming VideoLLM framework capable of continuously processing live video, making autonomous decisions on when to respond, and managing unbounded multimodal context. This framework achieved superior performance on streaming video understanding benchmarks, outperforming existing open-source and proprietary models, and demonstrated an end-to-end latency of approximately 312.2 ms for interactive scenarios.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 81605d81a6da249220a8c39588465872a0a4f3e704fed2a6446980333fe29c8d
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

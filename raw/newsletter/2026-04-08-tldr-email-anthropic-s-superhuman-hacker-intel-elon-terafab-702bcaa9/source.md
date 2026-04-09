@@ -26,15 +26,25 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-09T12:15:17.114567Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TLDR roundup on Anthropic's superhuman hacker, Intel + Elon Terafab, S3 Files. Includes 8 editorial stories across 4 sections, plus 6 quick links.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:57.413536Z'
+lightweight_enrichment_model: deterministic:tldr-newsletter
+lightweight_enrichment_input_hash: 5203b2afb6426f7534eb1ca78bdea4de9324483b6187f7594286ec3db4a5d841
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: e8da42b9633d86d85bfc7b8e80a5a6a6d090cb6b9f6b846df6854c09739da446
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - TLDR roundup on Anthropic's superhuman hacker, Intel + Elon Terafab, S3 Files. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 ---
 # Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁
 

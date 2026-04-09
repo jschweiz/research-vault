@@ -51,11 +51,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:55.041407Z'
 short_summary: Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space. Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across diverse inputs like sparse point clouds or dense depth maps.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 18b213fb655ef96fd3b3f7be9943231a1e29b248057607ec6a6c65437a53607c
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

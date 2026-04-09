@@ -26,11 +26,11 @@ parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-z
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:22.209714Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 460fea9a758c09b53bcecb656b5266a6952ad7b96e51b16aaa21e121f0951db4
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

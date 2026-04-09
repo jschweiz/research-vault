@@ -26,11 +26,11 @@ parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobod
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:16.742636Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 49433aa1a5f6c0cb5d7554617fb951166fc5da5e0dcad1a1b4f683684dc7366f
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

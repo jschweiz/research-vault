@@ -14,6 +14,10 @@ tags:
 - official
 - website
 - blog-post
+- stadler
+- chatgpt
+- knowledge work
+- productivity
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +28,24 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:36.026152Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: STADLER is using ChatGPT to transform knowledge work, resulting in time savings and increased productivity for its 650 employees.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.075586Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ed29c08434520c2df106eb6fadada1ea13f318882963b47aee87b7e561d3b9ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 757f8732a45e7bf47867aa6f2845887bf3b911f2b25ffdd0c41f45b8c1561896
+lightweight_score:
+  relevance_score: 0.3601
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.7107
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - STADLER is using ChatGPT to transform knowledge work, resulting in time savings and increased productivity for its 650 employees.
 ---
 Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.

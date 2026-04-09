@@ -6,6 +6,7 @@ source_url: https://medium.com/@georgejziogas/the-psychology-of-people-who-go-si
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- George J. Ziogas
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:12.343000Z'
 content_hash: 66dd70650575d98d5bc68855d8c11a4ccc42c1a2db10fe6b36fe483c5a7924c8
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- psychology
+- silence
+- hurt
+- emotional health
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,25 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:12.343007Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post explores the psychological reasons why people choose to remain silent when they are experiencing hurt.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.385682Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0935b33d84aa69ff4cd2e5d587de6356b25081d94f8349614ed67ef4d90ee230
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: bcb553d842f790b6b778332ec3dc5856a83b5949834492333157aa9636ff1cbf
+lightweight_score:
+  relevance_score: 0.3949
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.8845
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - The post explores the psychological reasons why people choose to remain silent when they are experiencing hurt.
 ---
 # The Psychology of People Who Go Silent When They’re Hurt
 

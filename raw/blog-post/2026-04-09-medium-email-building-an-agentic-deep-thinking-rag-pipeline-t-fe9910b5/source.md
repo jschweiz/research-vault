@@ -6,6 +6,7 @@ source_url: https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:11.342719Z'
 content_hash: a0ae06ed348e51745602dab4c713ea9a622095d135394e8ac37bad617b0c2434
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- rag pipeline
+- agentic
+- deep-thinking
+- complex queries
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,25 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:11.342725Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post details the construction of an agentic deep-thinking RAG pipeline designed to effectively solve complex queries.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.266959Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 3556186d6eba6fe4965d33792fe2747370ec4324bbc355e305f2d02771d739ed
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 2cba2e744c6a96cbb947dd52870401e5902fbe7a5a668851be87c3a6b8aad79f
+lightweight_score:
+  relevance_score: 0.3973
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.8967
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - This post details the construction of an agentic deep-thinking RAG pipeline designed to effectively solve complex queries.
 ---
 # Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
 

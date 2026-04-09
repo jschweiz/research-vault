@@ -14,6 +14,11 @@ tags:
 - official
 - website
 - blog-post
+- codex
+- pricing
+- chatgpt
+- business
+- enterprise
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +29,24 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:32.962781Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Codex now offers pay-as-you-go pricing for ChatGPT Business and Enterprise, allowing teams more flexible options for adoption and scaling.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:55.171331Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 3b7bfc1832608e973837ed309b92934e99b309ee506cc6c2b2ca27a6e1a61c27
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: bed3d2a863bf657c16f580a40f8616dc8f305b78a4c5c4aa260c0ee3c8eaafa3
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.56
+  topic_fit_score: 0.55
+  author_fit_score: 0.5
+  evidence_fit_score: 0.5
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document is from an OpenAI source and touches on commercial aspects related to LLM products, which aligns moderately with the user's favorite topics and authors.
+  evidence_quotes:
+  - Codex now offers pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.
 ---
 Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.

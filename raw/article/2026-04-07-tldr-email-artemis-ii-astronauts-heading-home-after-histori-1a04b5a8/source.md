@@ -34,13 +34,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:27.587124Z'
 short_summary: Artemis II astronauts are heading home after a historic moon flyby. The crew reached a peak distance of 252,756 miles from Earth and will splash down in the Pacific Ocean.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:14:51.433327Z'
+lightweight_enriched_at: '2026-04-09T14:23:54.844356Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d6ee00f3140795bd33f3e04199f4cd5eb2dbb480fcd09f02f6434be7a8d12bf0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 746e9efbcd92eaadc7c66ecdab9c32b2d9cf44ecf99ab5f834e1014900c83fe1
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about space travel and does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_quotes:
+  - Artemis II astronauts are heading home after a historic moon flyby.
+  - The crew reached a peak distance of 252,756 miles from Earth and will splash down in the Pacific Ocean.
 ---
 # Artemis II astronauts heading home after historic moon flyby
 

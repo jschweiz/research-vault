@@ -26,11 +26,11 @@ parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:23.442961Z'
 short_summary: null
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6a5d7f8a63fd5fc969851795f98784cd51a60d4c39b53de45a4c18c0316a4d36
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

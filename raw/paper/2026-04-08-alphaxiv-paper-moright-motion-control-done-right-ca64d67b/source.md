@@ -54,11 +54,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:07:14.778714Z'
 short_summary: MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 41ba29db2f6a58de385c410a3d03e7c3a77f393597ab04c0b57c3a0d2e6d510a
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null

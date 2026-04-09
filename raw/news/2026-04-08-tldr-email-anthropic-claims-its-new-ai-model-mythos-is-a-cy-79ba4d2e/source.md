@@ -16,6 +16,11 @@ tags:
 - email
 - ai
 - news
+- anthropic
+- cybersecurity
+- mythos
+- security vulnerabilities
+- software
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +31,25 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:18.734897Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it available to technology companies to help them find and patch security flaws in software.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:23:56.796971Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 881345f1786e36f2602ee59d953e34dba5b9ac8eda8f6ed5ad144f1eb0e607f1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: b08518d4ccd4995b5972b52fbc900f87430c50ece40ac267306b92b91f795637
+lightweight_score:
+  relevance_score: 0.4083
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 0.9515
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - 'Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it '
 ---
 # Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'
 

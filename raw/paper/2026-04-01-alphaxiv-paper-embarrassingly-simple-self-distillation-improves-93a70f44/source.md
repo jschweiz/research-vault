@@ -56,11 +56,11 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:39.392818Z'
 short_summary: A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-generated, unverified solutions. This approach improved the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or complex verification.
-lightweight_enrichment_status: pending
+lightweight_enrichment_status: failed
 lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
-lightweight_enrichment_error: null
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 379d3589722369fb82cc2c936e4110cbf2d909b2abc4d2adb6328dbac2b9deff
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
 lightweight_scoring_model: null
 lightweight_scoring_input_hash: null
 lightweight_score: null
