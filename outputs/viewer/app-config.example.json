@@ -1,0 +1,8 @@
+{
+  "mode": "hosted",
+  "apiBaseUrl": "/api",
+  "pairedLocalUrl": "http://mac.local:8000",
+  "hostedViewerUrl": "https://example.github.io/research-vault/",
+  "cloudKit": null,
+  "staticPublishedBasePath": "."
+}

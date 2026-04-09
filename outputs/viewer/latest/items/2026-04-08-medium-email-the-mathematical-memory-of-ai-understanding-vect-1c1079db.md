@@ -2,7 +2,7 @@
 
 Source: Medium Email
 Published: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
 
 ## Summary
 

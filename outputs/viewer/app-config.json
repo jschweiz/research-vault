@@ -1,0 +1,8 @@
+{
+  "apiBaseUrl": "/api",
+  "cloudKit": null,
+  "hostedViewerUrl": null,
+  "mode": "hosted",
+  "pairedLocalUrl": null,
+  "staticPublishedBasePath": "."
+}

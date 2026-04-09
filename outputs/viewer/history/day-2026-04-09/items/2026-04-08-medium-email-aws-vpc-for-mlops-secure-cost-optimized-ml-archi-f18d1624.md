@@ -2,7 +2,7 @@
 
 Source: Medium Email
 Published: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
 
 ## Summary
 

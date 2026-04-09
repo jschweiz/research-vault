@@ -2,7 +2,7 @@
 
 Source: Medium Email
 Published: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
 
 ## Summary
 

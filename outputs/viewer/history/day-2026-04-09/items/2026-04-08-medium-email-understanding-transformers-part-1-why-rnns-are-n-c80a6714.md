@@ -2,7 +2,7 @@
 
 Source: Medium Email
 Published: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
 
 ## Summary
 
