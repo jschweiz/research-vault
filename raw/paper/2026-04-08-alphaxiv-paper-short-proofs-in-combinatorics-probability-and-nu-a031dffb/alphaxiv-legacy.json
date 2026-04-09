@@ -1,0 +1,96 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Boris Alexeev",
+        "id": "01985c82-6c5a-7075-be04-145453f42146",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Moe Putterman",
+        "id": "019c9888-eff1-76ec-abb6-ce108d7f55e3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mehtaab Sawhney",
+        "id": "01985c81-e286-7aa1-9ef2-17d67096921c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mark Sellke",
+        "id": "01985c81-e1bb-7761-ac3a-931bc01ede22",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gregory Valiant",
+        "id": "01985c81-edde-7a82-8159-d557f3c6cd9c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 05:45:35 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 08 2026 02:42:30 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d70c6-47ce-7ce1-9572-e53eb75c0208",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 0,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 0,
+        "visits_count": {
+          "all": 21,
+          "last24Hours": 21,
+          "last30Days": 21,
+          "last7Days": 21,
+          "last90Days": 21
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.06609"
+      },
+      "title": "Short proofs in combinatorics, probability and number theory II",
+      "topics": [
+        "math.CO",
+        "Mathematics",
+        "math.NT",
+        "math.PR"
+      ],
+      "universal_paper_id": "2604.06609",
+      "updated_at": "Thu Apr 09 2026 05:45:35 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We give a quintet of proofs resulting from questions posed by Erd\u0151s. These questions concern ordinary lines in planar point sets, sequences with uniformly small exponential sums, $K_4$-free $4$-critical graphs with few chords in any cycle, a counterexample to a \"fewnomial\" version of the Erd\u0151s--Tur\u00e1n discrepancy bound, and a finiteness theorem for integers $n$ such that $n-a k^2$ is prime for all $k\\leq \\sqrt{n/a}$ coprime to $n$ (for fixed $a\\in\\mathbb Z_+$). Each proof is due to an internal model at OpenAI.",
+      "created_at": "Thu Apr 09 2026 05:45:36 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d70c6-4811-7da7-b491-f18ad09a7268",
+      "imageURL": "image/2604.06609v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Apr 08 2026 02:42:30 GMT+0000 (Coordinated Universal Time)",
+      "title": "Short proofs in combinatorics, probability and number theory II",
+      "universal_paper_id": "2604.06609",
+      "updated_at": "Thu Apr 09 2026 05:45:36 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.06609v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

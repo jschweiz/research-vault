@@ -1,0 +1,148 @@
+{
+  "abstract": "Diffusion models have emerged as the prevailing approach for text-to-image (T2I) and text-to-video (T2V) generation, yet production platforms must increasingly serve both modalities on shared GPU clusters while meeting stringent latency SLOs. Co-serving such heterogeneous workloads is challenging: T2I and T2V requests exhibit vastly different compute demands, parallelism characteristics, and latency requirements, leading to significant SLO violations in existing serving systems. We present GENSERVE, a co-serving system that leverages the inherent predictability of the diffusion process to optimize serving efficiency. A central insight is that diffusion inference proceeds in discrete, predictable steps and is naturally preemptible at step boundaries, opening a new design space for heterogeneity-aware resource management. GENSERVE introduces step-level resource adaptation through three coordinated mechanisms: intelligent video preemption, elastic sequence parallelism with dynamic batching, and an SLO-aware scheduler that jointly optimizes resource allocation across all concurrent requests. Experimental results show that GENSERVE improves the SLO attainment rate by up to 44% over the strongest baseline across diverse configurations.",
+  "author_info": [],
+  "authors": [
+    "Fanjiang Ye",
+    "Zhangke Li",
+    "Xinrui Zhong",
+    "Ethan Ma",
+    "Russell Chen",
+    "Kaijian Wang",
+    "Jingwei Zuo",
+    "Desen Sun",
+    "Ye Cao",
+    "Triston Cao",
+    "Myungjin Lee",
+    "Arvind Krishnamurthy",
+    "Yuke Wang"
+  ],
+  "canonical_id": "2604.04335v1",
+  "first_publication_date": "2026-04-06T01:02:02.000Z",
+  "full_authors": [
+    {
+      "full_name": "Fanjiang Ye",
+      "id": "01985c82-897d-7bfc-864b-6baf32321406",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhangke Li",
+      "id": "019d65b6-6322-7c9d-b246-3b83ea7893b4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xinrui Zhong",
+      "id": "01990e2f-04fe-7c56-b972-1476ad1c268c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ethan Ma",
+      "id": "019cf5af-fb9b-7b80-97f8-08a25855b613",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Russell Chen",
+      "id": "019d65b6-632c-7381-8c64-13d19593ecf5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kaijian Wang",
+      "id": "0198e44d-84c5-7c25-b5cf-4531c65b5f4c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jingwei Zuo",
+      "id": "01985c82-38d4-7eb6-bb63-971360569c5b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Desen Sun",
+      "id": "01985c82-8895-7302-851d-f4b972b699fa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ye Cao",
+      "id": "01985c84-04a1-7b92-b620-55886b52dc9a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Triston Cao",
+      "id": "0198e44d-84cd-7288-8525-cab0857481bd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Myungjin Lee",
+      "id": "01985c82-18b4-7053-b1c2-5ea86148390c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Arvind Krishnamurthy",
+      "id": "01985c81-f9c8-733a-9875-4ed3445afc65",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuke Wang",
+      "id": "01985c82-40ca-7cce-bf2d-88d96ecbaa63",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d65b6-6302-779a-884e-f661b641f942",
+  "image_url": "image/2604.04335v1.png",
+  "metrics": {
+    "public_total_votes": 5,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 35,
+      "last_7_days": 35
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65b6-6302-779a-884e-f661b641f942",
+  "paper_summary": {
+    "keyInsights": [
+      "Diffusion model inference is highly predictable due to a fixed number of denoising steps with stable per-step costs, enabling accurate runtime estimation for proactive scheduling.",
+      "Diffusion models are naturally preemptible at step boundaries because their compact intermediate latent states can be stored in GPU memory with negligible overhead, allowing for fine-grained resource redistribution.",
+      "T2I and T2V workloads have distinct computational profiles and parallelism characteristics (e.g., T2I benefits from batching, T2V from SP) that can be exploited for adaptive resource management."
+    ],
+    "originalProblem": [
+      "Existing serving systems struggle to manage the disparate computational demands and latency targets of T2I and T2V diffusion model requests on shared infrastructure.",
+      "Conventional scheduling policies (e.g., FIFO, SJF) cause head-of-line blocking for latency-sensitive image requests or starvation for long-running video tasks, leading to SLO violations.",
+      "Static resource management and dedicated GPU partitioning for different modalities result in suboptimal GPU utilization and resource fragmentation."
+    ],
+    "results": [
+      "GENSERVE achieved up to 78% overall SLO Attainment Rate (SAR) at a default strictness (\u03c3=1.0), outperforming SRTF (71%) and FCFS (59%), with the highest SAR across varying workloads and arrival rates.",
+      "It reduced the p90 tail latency for image requests by 3.1x compared to FCFS (from 18.0s to 5.8s), effectively mitigating head-of-line blocking.",
+      "The overheads for the DP solver, preemption (pause/resume), and SP reconfiguration were consistently low, typically less than 0.25% of a single 720p video denoising step, confirming practical efficiency."
+    ],
+    "solution": [
+      "GENSERVE employs an SLO-aware online scheduler using a knapsack-style dynamic programming algorithm to jointly optimize resource allocation for all in-flight requests.",
+      "It integrates intelligent video preemption at denoising step boundaries to free up GPUs for urgent image tasks while considering video deadlines and minimal overhead.",
+      "The system utilizes elastic resource allocation, dynamically adjusting Sequence Parallelism (SP) for video tasks and applying SLO-aware dynamic batching for image tasks."
+    ],
+    "summary": "GENSERVE is a co-serving system for heterogeneous text-to-image (T2I) and text-to-video (T2V) diffusion model workloads on shared GPU clusters. It improves Service Level Objective (SLO) attainment rates by up to 44% and reduces image request tail latency by 3.1x through dynamic resource allocation that leverages model-specific execution properties."
+  },
+  "publication_date": "2026-04-06T01:02:02.000Z",
+  "title": "GENSERVE: Efficient Co-Serving of Heterogeneous Diffusion Model Workloads",
+  "topics": [
+    "Computer Science",
+    "cs.DC"
+  ],
+  "universal_paper_id": "2604.04335",
+  "updated_at": "2026-04-07T02:12:24.962Z",
+  "version_id": "019d65b6-6341-7069-ae0a-090a2a235804"
+}

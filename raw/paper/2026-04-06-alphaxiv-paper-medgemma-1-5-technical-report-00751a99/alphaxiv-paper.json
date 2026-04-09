@@ -1,0 +1,21 @@
+{
+  "abstract": "We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities: high-dimensional medical imaging (CT/MRI volumes and histopathology whole slide images), anatomical localization via bounding boxes, multi-timepoint chest X-ray analysis, and improved medical document understanding (lab reports, electronic health records). We detail the innovations required to enable these modalities within a single architecture, including new training data, long-context 3D volume slicing, and whole-slide pathology sampling. Compared to MedGemma 1 4B, MedGemma 1.5 4B demonstrates significant gains in these new areas, improving 3D MRI condition classification accuracy by 11% and 3D CT condition classification by 3% (absolute improvements). In whole slide pathology imaging, MedGemma 1.5 4B achieves a 47% macro F1 gain. Additionally, it improves anatomical localization with a 35% increase in Intersection over Union on chest X-rays and achieves a 4% macro accuracy for longitudinal (multi-timepoint) chest x-ray analysis. Beyond its improved multimodal performance over MedGemma 1, MedGemma 1.5 improves on text-based clinical knowledge and reasoning, improving by 5% on MedQA accuracy and 22% on EHRQA accuracy. It also achieves an average of 18% macro F1 on 4 different lab report information extraction datasets (EHR Datasets 2, 3, 4, and Mendeley Clinical Laboratory Test Reports). Taken together, MedGemma 1.5 serves as a robust, open resource for the community, designed as an improved foundation on which developers can create the next generation of medical AI systems. Resources and tutorials for building upon MedGemma 1.5 can be found at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775500557000,
+  "googleCitationId": null,
+  "groupId": "019d6ab8-4d12-70f6-938a-90e878ef5461",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775500557000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05081",
+  "title": "MedGemma 1.5 Technical Report",
+  "type": "public",
+  "universalId": "2604.05081",
+  "uploader": null,
+  "versionId": "019d6ab8-4d74-79f7-999f-fc6222fe731c",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

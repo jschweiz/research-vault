@@ -1,0 +1,112 @@
+{
+  "abstract": "The rapid advancement of Artificial Intelligence Generated Content (AIGC) has revolutionized video generation, enabling systems ranging from proprietary pioneers like OpenAI's Sora, Google's Veo3, and Bytedance's Seedance to powerful open-source contenders like Wan and HunyuanVideo to synthesize temporally coherent and semantically rich videos. These advancements pave the way for building \"world models\" that simulate real-world dynamics, with applications spanning entertainment, education, and virtual reality. However, existing reviews on video generation often focus on narrow technical fields, e.g., Generative Adversarial Networks (GAN) and diffusion models, or specific tasks (e. g., video editing), lacking a comprehensive perspective on the field's evolution, especially regarding Auto-Regressive (AR) models and integration of multimodal information. To address these gaps, this survey firstly provides a systematic review of the development of video generation technology, tracing its evolution from early GANs to dominant diffusion models, and further to emerging AR-based and multimodal techniques. We conduct an in-depth analysis of the foundational principles, key advancements, and comparative strengths/limitations. Then, we explore emerging trends in multimodal video generation, emphasizing the integration of diverse data types to enhance contextual awareness. Finally, by bridging historical developments and contemporary innovations, this survey offers insights to guide future research in video generation and its applications, including virtual/augmented reality, personalized education, autonomous driving simulations, digital entertainment, and advanced world models, in this rapidly evolving field. For more details, please refer to the project at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Teng Hu",
+    "Jiangning Zhang",
+    "Hongrui Huang",
+    "Ran Yi",
+    "Zihan Su",
+    "Jieyu Weng",
+    "Zhucun Xue",
+    "Lizhuang Ma",
+    "Ming-Hsuan Yang",
+    "Dacheng Tao"
+  ],
+  "canonical_id": "2604.06339v1",
+  "first_publication_date": "2026-04-07T18:17:05.000Z",
+  "full_authors": [
+    {
+      "full_name": "Teng Hu",
+      "id": "01985c82-560d-7dcc-8595-e38ee37df654",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiangning Zhang",
+      "id": "01985c81-f063-7334-ab4b-9458e463470b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hongrui Huang",
+      "id": "01985c82-6c5a-763b-a573-d5c747a0f62f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ran Yi",
+      "id": "01985c81-f8f2-7805-a9b6-d7edeae3476b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zihan Su",
+      "id": "01985c82-3a9b-75d7-b47a-287f19ea728b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jieyu Weng",
+      "id": "01985c83-1b82-7603-9228-b2aa05ed9172",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhucun Xue",
+      "id": "01985c82-13b2-79ed-8804-e41a86c91e7b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lizhuang Ma",
+      "id": "01985c81-e1bb-786b-a662-a57b7ce348db",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ming-Hsuan Yang",
+      "id": "01985c81-d85a-749c-a7e7-b08884070f15",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dacheng Tao",
+      "id": "01985c81-e01e-7815-86a5-c83442f67c87",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 6,
+  "github_url": "https://github.com/sjtuplayer/Awesome-Video-Foundations",
+  "id": "019d7018-9b75-7682-9cf2-1e4cb0789380",
+  "image_url": "image/2604.06339v1.png",
+  "metrics": {
+    "public_total_votes": 0,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 25,
+      "last_7_days": 25
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d7018-9b75-7682-9cf2-1e4cb0789380",
+  "paper_summary": null,
+  "publication_date": "2026-04-07T18:17:05.000Z",
+  "title": "Evolution of Video Generative Foundations",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "generative-models",
+    "image-generation",
+    "multi-modal-learning",
+    "representation-learning",
+    "self-supervised-learning",
+    "sequence-modeling",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.06339",
+  "updated_at": "2026-04-09T02:35:54.101Z",
+  "version_id": "019d7018-9b97-7cf5-a1da-6dabb6ff0602"
+}

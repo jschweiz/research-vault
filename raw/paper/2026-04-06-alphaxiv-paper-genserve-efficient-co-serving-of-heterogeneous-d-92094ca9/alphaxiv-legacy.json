@@ -1,0 +1,142 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Fanjiang Ye",
+        "id": "01985c82-897d-7bfc-864b-6baf32321406",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhangke Li",
+        "id": "019d65b6-6322-7c9d-b246-3b83ea7893b4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xinrui Zhong",
+        "id": "01990e2f-04fe-7c56-b972-1476ad1c268c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ethan Ma",
+        "id": "019cf5af-fb9b-7b80-97f8-08a25855b613",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Russell Chen",
+        "id": "019d65b6-632c-7381-8c64-13d19593ecf5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kaijian Wang",
+        "id": "0198e44d-84c5-7c25-b5cf-4531c65b5f4c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingwei Zuo",
+        "id": "01985c82-38d4-7eb6-bb63-971360569c5b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Desen Sun",
+        "id": "01985c82-8895-7302-851d-f4b972b699fa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ye Cao",
+        "id": "01985c84-04a1-7b92-b620-55886b52dc9a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Triston Cao",
+        "id": "0198e44d-84cd-7288-8525-cab0857481bd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Myungjin Lee",
+        "id": "01985c82-18b4-7053-b1c2-5ea86148390c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Arvind Krishnamurthy",
+        "id": "01985c81-f9c8-733a-9875-4ed3445afc65",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuke Wang",
+        "id": "01985c82-40ca-7cce-bf2d-88d96ecbaa63",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:12:24 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 01:02:02 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65b6-6302-779a-884e-f661b641f942",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 35,
+          "last24Hours": 17,
+          "last30Days": 35,
+          "last7Days": 35,
+          "last90Days": 35
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04335"
+      },
+      "title": "GENSERVE: Efficient Co-Serving of Heterogeneous Diffusion Model Workloads",
+      "topics": [
+        "Computer Science",
+        "cs.DC"
+      ],
+      "universal_paper_id": "2604.04335",
+      "updated_at": "Tue Apr 07 2026 02:12:24 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Diffusion models have emerged as the prevailing approach for text-to-image (T2I) and text-to-video (T2V) generation, yet production platforms must increasingly serve both modalities on shared GPU clusters while meeting stringent latency SLOs. Co-serving such heterogeneous workloads is challenging: T2I and T2V requests exhibit vastly different compute demands, parallelism characteristics, and latency requirements, leading to significant SLO violations in existing serving systems. We present GENSERVE, a co-serving system that leverages the inherent predictability of the diffusion process to optimize serving efficiency. A central insight is that diffusion inference proceeds in discrete, predictable steps and is naturally preemptible at step boundaries, opening a new design space for heterogeneity-aware resource management. GENSERVE introduces step-level resource adaptation through three coordinated mechanisms: intelligent video preemption, elastic sequence parallelism with dynamic batching, and an SLO-aware scheduler that jointly optimizes resource allocation across all concurrent requests. Experimental results show that GENSERVE improves the SLO attainment rate by up to 44% over the strongest baseline across diverse configurations.",
+      "created_at": "Tue Apr 07 2026 02:12:25 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65b6-6341-7069-ae0a-090a2a235804",
+      "imageURL": "image/2604.04335v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Mon Apr 06 2026 01:02:02 GMT+0000 (Coordinated Universal Time)",
+      "title": "GENSERVE: Efficient Co-Serving of Heterogeneous Diffusion Model Workloads",
+      "universal_paper_id": "2604.04335",
+      "updated_at": "Tue Apr 07 2026 02:12:25 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04335v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

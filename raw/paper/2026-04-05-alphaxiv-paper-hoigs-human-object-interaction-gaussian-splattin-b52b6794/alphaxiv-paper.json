@@ -1,0 +1,21 @@
+{
+  "abstract": "Reconstructing dynamic scenes with complex human-object interactions is a fundamental challenge in computer vision and graphics. Existing Gaussian Splatting methods either rely on human pose priors while neglecting dynamic objects, or approximate all motions within a single field, limiting their ability to capture interaction-rich dynamics. To address this gap, we propose Human-Object Interaction Gaussian Splatting (HOIGS), which explicitly models interaction-induced deformation between humans and objects through a cross-attention-based HOI module. Distinct deformation baselines are employed to extract features: HexPlane for humans and Cubic Hermite Spline (CHS) for objects. By integrating these heterogeneous features, HOIGS effectively captures interdependent motions and improves deformation estimation in scenarios involving occlusion, contact, and object manipulation. Comprehensive experiments on multiple datasets demonstrate that our method consistently outperforms state-of-the-art human-centric and 4D Gaussian approaches, highlighting the importance of explicitly modeling human-object interactions for high-fidelity reconstruction.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775377648000,
+  "googleCitationId": null,
+  "groupId": "019d65e0-5172-762c-9262-9a5a696a6ae8",
+  "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "publicationDate": 1775377648000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04016",
+  "title": "HOIGS: Human-Object Interaction Gaussian Splatting",
+  "type": "public",
+  "universalId": "2604.04016",
+  "uploader": null,
+  "versionId": "019d65e0-51ce-7fa0-8f3f-9335508748f8",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

@@ -1,0 +1,96 @@
+{
+  "abstract": "We introduce Full-Duplex-Bench-v3 (FDB-v3), a benchmark for evaluating spoken language models under naturalistic speech conditions and multi-step tool use. Unlike prior work, our dataset consists entirely of real human audio annotated for five disfluency categories, paired with scenarios requiring chained API calls across four task domains. We evaluate six model configurations -- GPT-Realtime, Gemini Live 2.5, Gemini Live 3.1, Grok, Ultravox v0.7, and a traditional Cascaded pipeline (Whisper$\\rightarrow$GPT-4o$\\rightarrow$TTS) -- across accuracy, latency, and turn-taking dimensions. GPT-Realtime leads on Pass@1 (0.600) and interruption avoidance (13.5\\%); Gemini Live 3.1 achieves the fastest latency (4.25~s) but the lowest turn-take rate (78.0\\%); and the Cascaded baseline, despite a perfect turn-take rate, incurs the highest latency (10.12~s). Across all systems, self-correction handling and multi-step reasoning under hard scenarios remain the most consistent failure modes.",
+  "author_info": [],
+  "authors": [
+    "Guan-Ting Lin",
+    "Chen Chen",
+    "Zhehuai Chen",
+    "Hung-yi Lee"
+  ],
+  "canonical_id": "2604.04847v1",
+  "first_publication_date": "2026-04-06T16:46:52.000Z",
+  "full_authors": [
+    {
+      "full_name": "Guan-Ting Lin",
+      "id": "01985c82-1c7c-7a72-9fe2-b0be36d1b832",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chen Chen",
+      "id": "01985c81-dc26-7e63-8ff0-de3298099b81",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhehuai Chen",
+      "id": "01985c82-7f75-780b-9a8d-1f0d409e6c97",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hung-yi Lee",
+      "id": "01985c81-e34e-7b99-904b-629c320079cb",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 149,
+  "github_url": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+  "id": "019d65d7-7768-76e2-8c08-ee63463280b6",
+  "image_url": "image/2604.04847v1.png",
+  "metrics": {
+    "public_total_votes": 7,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 44,
+      "last_7_days": 44
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65d7-7768-76e2-8c08-ee63463280b6",
+  "paper_summary": {
+    "keyInsights": [
+      "Real-time voice agents face significant challenges in dynamically updating internal states and correctly processing mid-utterance self-corrections, often committing to parameters prematurely before user corrections are fully registered.",
+      "There are inherent trade-offs between processing speed, overall accuracy in tool execution, and maintaining natural conversational flow and turn-taking dynamics in full-duplex interactions.",
+      "Different architectural approaches and processing strategies (e.g., eager execution, silent pre-processing, high filler usage) result in distinct behavioral patterns and performance characteristics, each with unique implications for user experience."
+    ],
+    "originalProblem": [
+      "Most existing spoken dialogue systems primarily focus on conversational chat and lack the capacity to invoke external APIs or execute practical actions on behalf of the user.",
+      "Current benchmarks for voice agents often rely on synthetic audio, omit natural speech disfluencies, or are restricted to single-step tasks, failing to represent complex, real-world human-agent interactions.",
+      "Proprietary real-time voice agents, despite their capabilities, lack rigorous evaluation under controlled, reproducible conditions, hindering transparent performance comparisons."
+    ],
+    "results": [
+      "GPT-Realtime exhibited the strongest overall performance with a Task Completion (Pass@1) of 0.600, leading in tool selection F1 (0.876) and argument accuracy (0.680), and maintaining the lowest interruption rate (13.5%).",
+      "Gemini Live 3.1 achieved the fastest task completion latency (4.25 s) but had the lowest turn-take rate (78.0%), while the traditional Cascaded baseline incurred the highest latency (10.12 s) due to sequential processing.",
+      "Performance consistently degraded for all models as scenario difficulty increased and with the presence of disfluencies, particularly self-corrections, where even the top-performing GPT-Realtime scored 0.588."
+    ],
+    "solution": [
+      "Developed Full-Duplex-Bench-v3 (FDB-v3), a benchmark comprising 100 multi-step tool-use scenarios across four diverse task domains, including 21 scenarios specifically designed to test self-correction capabilities.",
+      "Collected and systematically annotated real human audio data, incorporating natural disfluencies like false starts, self-corrections, fillers, pauses, and hesitations, to assess model robustness in realistic acoustic conditions.",
+      "Employed locally executed mock APIs with deterministic, zero-latency responses to isolate model reasoning and parameter-passing from external factors, and a multi-dimensional evaluation framework to assess accuracy, latency, and conversational dynamics."
+    ],
+    "summary": "Full-Duplex-Bench-v3 (FDB-v3) introduces a benchmark for real-time voice agents performing multi-step tool execution using authentic human speech with systematic disfluency annotations. Its evaluation of six leading models quantifies the trade-offs between processing speed, accuracy, and conversational dynamics, revealing persistent challenges in handling dynamic user intent and self-corrections."
+  },
+  "publication_date": "2026-04-06T16:46:52.000Z",
+  "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+  "topics": [
+    "agents",
+    "Computer Science",
+    "conversational-ai",
+    "cs.CL",
+    "data-curation",
+    "eess.AS",
+    "Electrical Engineering and Systems Science",
+    "inference-optimization",
+    "multi-modal-learning",
+    "reasoning",
+    "speech-recognition",
+    "tool-use",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.04847",
+  "updated_at": "2026-04-07T02:48:32.872Z",
+  "version_id": "019d65d7-777f-7eb3-876c-f91e5b030d99"
+}

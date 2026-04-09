@@ -1,0 +1,127 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Taewoo Kim",
+        "id": "01985c81-fa9e-79eb-a480-954e2ac8e2b9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Suwoong Yeom",
+        "id": "019d4be6-6dcd-7768-b178-e53636fd4ccb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jaehyun Pyun",
+        "id": "019d65e0-51bb-7d08-84cd-ba8dbd701e23",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Geonho Cha",
+        "id": "01985c83-4424-7fd5-8e74-02ca4ddcc8ae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dongyoon Wee",
+        "id": "01985c82-aa86-7df2-8586-e78bfa41b112",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Joonsik Nam",
+        "id": "019d4be6-6dcf-77b8-b9c9-c9861353805e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yun-Seong Jeong",
+        "id": "019d65e0-51c9-7983-a4fd-b81b09613699",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kyeongbo Kong",
+        "id": "01985c81-e5aa-723c-abb6-0249ce787c1d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Suk-Ju Kang",
+        "id": "01985c81-e5aa-7670-be0a-f8f54e2a6171",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:58:12 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Sun Apr 05 2026 08:27:28 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65e0-5172-762c-9262-9a5a696a6ae8",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 2,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 2,
+        "visits_count": {
+          "all": 32,
+          "last24Hours": 21,
+          "last30Days": 32,
+          "last7Days": 32,
+          "last90Days": 32
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04016"
+      },
+      "title": "HOIGS: Human-Object Interaction Gaussian Splatting",
+      "topics": [
+        "attention-mechanisms",
+        "Computer Science",
+        "cs.AI",
+        "cs.CV",
+        "geometric-deep-learning",
+        "image-generation",
+        "multi-modal-learning",
+        "neural-rendering",
+        "representation-learning",
+        "transformers",
+        "video-understanding"
+      ],
+      "universal_paper_id": "2604.04016",
+      "updated_at": "Tue Apr 07 2026 02:58:12 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Reconstructing dynamic scenes with complex human-object interactions is a fundamental challenge in computer vision and graphics. Existing Gaussian Splatting methods either rely on human pose priors while neglecting dynamic objects, or approximate all motions within a single field, limiting their ability to capture interaction-rich dynamics. To address this gap, we propose Human-Object Interaction Gaussian Splatting (HOIGS), which explicitly models interaction-induced deformation between humans and objects through a cross-attention-based HOI module. Distinct deformation baselines are employed to extract features: HexPlane for humans and Cubic Hermite Spline (CHS) for objects. By integrating these heterogeneous features, HOIGS effectively captures interdependent motions and improves deformation estimation in scenarios involving occlusion, contact, and object manipulation. Comprehensive experiments on multiple datasets demonstrate that our method consistently outperforms state-of-the-art human-centric and 4D Gaussian approaches, highlighting the importance of explicitly modeling human-object interactions for high-fidelity reconstruction.",
+      "created_at": "Tue Apr 07 2026 02:58:13 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65e0-51ce-7fa0-8f3f-9335508748f8",
+      "imageURL": "image/2604.04016v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "publication_date": "Sun Apr 05 2026 08:27:28 GMT+0000 (Coordinated Universal Time)",
+      "title": "HOIGS: Human-Object Interaction Gaussian Splatting",
+      "universal_paper_id": "2604.04016",
+      "updated_at": "Tue Apr 07 2026 02:58:13 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04016v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

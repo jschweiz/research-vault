@@ -1,0 +1,112 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Yuanchang Liang",
+        "id": "019d65a5-38c4-7610-ba3c-231708b8f11c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaobo Wang",
+        "id": "01985c81-e5a9-7593-bfed-2c3882a22e5b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kai Wang",
+        "id": "01985c81-ef77-7fbf-b357-a79e1baf6559",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuo Wang",
+        "id": "01985c81-e01e-7970-a63e-7d26fdf2efa9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaojiang Peng",
+        "id": "01985c82-4ab0-7ab8-a25b-ec98d6f9bb52",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haoyu Chen",
+        "id": "01985c81-df57-7e8e-89b6-efe6d2d722f8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "David Kim Huat Chua",
+        "id": "019d65a5-38d3-7b83-83b2-b171228f2669",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Prahlad Vadakkepat",
+        "id": "01985c82-fcfe-7f7e-ab61-9ce471d7868e",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 01:53:39 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Sun Apr 05 2026 16:03:32 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65a5-389c-70e4-88c2-1bcd35911ce8",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 9,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 9,
+        "visits_count": {
+          "all": 68,
+          "last24Hours": 18,
+          "last30Days": 68,
+          "last7Days": 68,
+          "last90Days": 68
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04161"
+      },
+      "title": "Adaptive Action Chunking at Inference-time for Vision-Language-Action Models",
+      "topics": [
+        "Computer Science",
+        "cs.RO"
+      ],
+      "universal_paper_id": "2604.04161",
+      "updated_at": "Tue Apr 07 2026 01:53:39 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "In Vision-Language-Action (VLA) models, action chunking (i.e., executing a sequence of actions without intermediate replanning) is a key technique to improve robotic manipulation abilities. However, a large chunk size reduces the model's responsiveness to new information, while a small one increases the likelihood of mode-jumping, jerky behavior resulting from discontinuities between chunks. Therefore, selecting the optimal chunk size is an urgent demand to balance the model's reactivity and consistency. Unfortunately, a dominant trend in current VLA models is an empirical fixed chunk length at inference-time, hindering their superiority and scalability across diverse manipulation tasks. To address this issue, we propose a novel Adaptive Action Chunking (AAC) strategy, which exploits action entropy as the cue to adaptively determine the chunk size based on current predictions. Extensive experiments on a wide range of simulated and real-world robotic manipulation tasks have demonstrated that our approach substantially improves performance over the state-of-the-art alternatives. The videos and source code are publicly available at this https URL.",
+      "created_at": "Tue Apr 07 2026 01:53:40 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65a5-38d7-7228-9f32-b5251dcda7fc",
+      "imageURL": "image/2604.04161v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Sun Apr 05 2026 16:03:32 GMT+0000 (Coordinated Universal Time)",
+      "title": "Adaptive Action Chunking at Inference-time for Vision-Language-Action Models",
+      "universal_paper_id": "2604.04161",
+      "updated_at": "Tue Apr 07 2026 01:53:40 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04161v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

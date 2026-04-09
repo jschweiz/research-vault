@@ -1,0 +1,102 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Hyunsoo Cha",
+        "id": "01985c82-fb73-7faa-a9b7-77e5ac9fe68a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wonjung Woo",
+        "id": "019d65d7-2976-7b9c-8f47-e19b06757cb9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Byungjun Kim",
+        "id": "01985c82-4480-71d7-8185-fb079cdbe942",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hanbyul Joo",
+        "id": "01985c82-02aa-7f0e-807a-e9c6ebed03dc",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:48:12 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 17:59:59 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-2948-7971-afd8-f93154c9ed37",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 10,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 10,
+        "visits_count": {
+          "all": 66,
+          "last24Hours": 17,
+          "last30Days": 66,
+          "last7Days": 66,
+          "last90Days": 66
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "Official Repository for CVPR 2026 paper Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+          "language": "",
+          "stars": 6,
+          "url": "https://github.com/snuvclab/vanast"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04934"
+      },
+      "title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+      "topics": [
+        "Computer Science",
+        "cs.CV",
+        "generative-models",
+        "image-generation",
+        "multi-modal-learning",
+        "neural-rendering",
+        "synthetic-data",
+        "transformers",
+        "zero-shot-learning"
+      ],
+      "universal_paper_id": "2604.04934",
+      "updated_at": "Tue Apr 07 2026 02:48:12 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We present Vanast, a unified framework that generates garment-transferred human animation videos directly from a single human image, garment images, and a pose guidance video. Conventional two-stage pipelines treat image-based virtual try-on and pose-driven animation as separate processes, which often results in identity drift, garment distortion, and front-back inconsistency. Our model addresses these issues by performing the entire process in a single unified step to achieve coherent synthesis. To enable this setting, we construct large-scale triplet supervision. Our data generation pipeline includes generating identity-preserving human images in alternative outfits that differ from garment catalog images, capturing full upper and lower garment triplets to overcome the single-garment-posed video pair limitation, and assembling diverse in-the-wild triplets without requiring garment catalog images. We further introduce a Dual Module architecture for video diffusion transformers to stabilize training, preserve pretrained generative quality, and improve garment accuracy, pose adherence, and identity preservation while supporting zero-shot garment interpolation. Together, these contributions allow Vanast to produce high-fidelity, identity-consistent animation across a wide range of garment types.",
+      "created_at": "Tue Apr 07 2026 02:48:12 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-297d-7bef-98a4-91ac93ad503c",
+      "imageURL": "image/2604.04934v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Apr 06 2026 17:59:59 GMT+0000 (Coordinated Universal Time)",
+      "title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+      "universal_paper_id": "2604.04934",
+      "updated_at": "Tue Apr 07 2026 02:48:12 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04934v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

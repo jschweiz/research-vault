@@ -3355,6 +3355,85 @@
     "version_id": "019cd61f-52e7-7495-8410-3eca3b3b4580"
   },
   {
+    "abstract": "Large Language Models (LLMs) often experience performance degradation during long-running interactions due to increasing context length, memory saturation, and computational overhead. This paper presents an adaptive context compression framework that integrates importance-aware memory selection, coherence-sensitive filtering, and dynamic budget allocation to retain essential conversational information while controlling context growth. The approach is evaluated on LOCOMO, LOCCO, and LongBench benchmarks to assess answer quality, retrieval accuracy, coherence preservation, and efficiency. Experimental results demonstrate that the proposed method achieves consistent improvements in conversational stability and retrieval performance while reducing token usage and inference latency compared with existing memory and compression-based approaches. These findings indicate that adaptive context compression provides an effective balance between long-term memory preservation and computational efficiency in persistent LLM interactions",
+    "author_info": [],
+    "authors": [
+      "Payal Fofadiya",
+      "Sunil Tiwari"
+    ],
+    "canonical_id": "2603.29193v1",
+    "first_publication_date": "2026-03-31T02:57:48.000Z",
+    "full_authors": [
+      {
+        "full_name": "Payal Fofadiya",
+        "id": "019d46d9-64c7-7f34-b0af-064f6890852f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sunil Tiwari",
+        "id": "019878d2-17b8-7a89-871e-bd12ecab0ffc",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019d47a1-3446-7f80-b53a-d28b902d00d2",
+    "image_url": "image/2603.29193v1.png",
+    "metrics": {
+      "public_total_votes": 9,
+      "total_votes": 1,
+      "visits_count": {
+        "all": 37,
+        "last_7_days": 25
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d47a1-3446-7f80-b53a-d28b902d00d2",
+    "paper_summary": {
+      "keyInsights": [
+        "Dynamically integrating semantic relevance, recency, and structural dependencies provides a more effective approach to prioritize context for retention than static pruning methods.",
+        "Formulating context management as a multi-objective optimization problem that includes task quality, coherence, and token reduction enables a practical balance between performance and efficiency.",
+        "Coherence-aware filtering is critical for preventing the loss of vital dialogue information during compression, thereby maintaining conversational stability and consistency in extended interactions."
+      ],
+      "originalProblem": [
+        "Large Language Models (LLMs) experience performance degradation in long-running interactions due to the continuous growth of conversational context.",
+        "Context expansion leads to issues like memory saturation, high computational overhead, and 'context decay,' where earlier crucial information is lost.",
+        "Existing solutions for long-context processing often struggle with dynamic adaptation, maintaining conversational coherence, or balancing efficiency with information preservation under constrained context budgets."
+      ],
+      "results": [
+        "The adaptive compression method demonstrated answer accuracy of 0.89\u20130.91 and coherence scores of 0.95\u20130.96, which matched or slightly exceeded existing memory-based approaches on long-running conversation benchmarks.",
+        "It achieved substantial efficiency gains, including a 25%\u201355% reduction in token usage and a 10%\u201335% improvement in inference latency.",
+        "The framework successfully maintained conversational consistency and long-term memory stability on LOCCO and LOCOMO datasets, with consistency in the range of 4.45\u20134.55 and coherence in 4.50\u20134.60."
+      ],
+      "solution": [
+        "A novel adaptive context compression framework was developed, which models context management as a joint optimization problem balancing memory retention, coherence, and token efficiency.",
+        "The framework employs adaptive importance estimation, combining semantic relevance, recency, and structural dependencies to prioritize essential dialogue turns.",
+        "It dynamically adjusts the token budget based on interaction complexity (dialogue entropy) and uses a multi-objective optimization to balance task quality, coherence preservation, and token reduction."
+      ],
+      "summary": "Researchers from LinkedIn and eBay introduced an adaptive context compression framework for Large Language Models, which dynamically manages conversational history to prevent context decay and improve efficiency in long-running interactions. The framework achieved answer accuracy of 0.89\u20130.91 and coherence scores of 0.95\u20130.96 while reducing token usage by 25%\u201355% and improving latency by 10%\u201335% across multiple benchmarks."
+    },
+    "publication_date": "2026-03-31T02:57:48.000Z",
+    "title": "Developing Adaptive Context Compression Techniques for Large Language Models (LLMs) in Long-Running Interactions",
+    "topics": [
+      "agents",
+      "Computer Science",
+      "conversational-ai",
+      "cs.AI",
+      "cs.CV",
+      "efficient-transformers",
+      "inference-optimization",
+      "lightweight-models",
+      "model-compression",
+      "transformers"
+    ],
+    "universal_paper_id": "2603.29193",
+    "updated_at": "2026-04-01T06:00:40.262Z",
+    "version_id": "019d47a1-3452-759b-841f-18dc39355f78"
+  },
+  {
     "abstract": "Large Language Models (LLMs) have demonstrated remarkable reasoning abilities on complex problems using long Chain-of-Thought (CoT) reasoning. However, they often suffer from overthinking, meaning generating unnecessarily lengthy reasoning steps for simpler problems. This issue may degrade the efficiency of the models and make them difficult to adapt the reasoning depth to the complexity of problems. To address this, we introduce a novel metric Token Entropy Cumulative Average (TECA), which measures the extent of exploration throughout the reasoning process. We further propose a novel reasoning paradigm named \"Explore Briefly, Then Decide\", with an associated Cumulative Entropy Regulation (CER) mechanism. This paradigm leverages TECA to help the model dynamically determine the optimal point to conclude its thought process and provide a final answer, thus achieving efficient reasoning. Experimental results across diverse mathematical benchmarks show that our approach substantially mitigates overthinking without sacrificing problem solving ability. With our thinking paradigm, the average response length decreases by up to 71% on simpler datasets, demonstrating the effectiveness of our method in creating a more efficient and adaptive reasoning process.",
     "author_info": [],
     "authors": [
@@ -3452,85 +3531,6 @@
     "universal_paper_id": "2510.02249",
     "updated_at": "2025-10-03T02:30:41.331Z",
     "version_id": "019d20a2-b483-7a57-8a62-28f2131824ce"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) often experience performance degradation during long-running interactions due to increasing context length, memory saturation, and computational overhead. This paper presents an adaptive context compression framework that integrates importance-aware memory selection, coherence-sensitive filtering, and dynamic budget allocation to retain essential conversational information while controlling context growth. The approach is evaluated on LOCOMO, LOCCO, and LongBench benchmarks to assess answer quality, retrieval accuracy, coherence preservation, and efficiency. Experimental results demonstrate that the proposed method achieves consistent improvements in conversational stability and retrieval performance while reducing token usage and inference latency compared with existing memory and compression-based approaches. These findings indicate that adaptive context compression provides an effective balance between long-term memory preservation and computational efficiency in persistent LLM interactions",
-    "author_info": [],
-    "authors": [
-      "Payal Fofadiya",
-      "Sunil Tiwari"
-    ],
-    "canonical_id": "2603.29193v1",
-    "first_publication_date": "2026-03-31T02:57:48.000Z",
-    "full_authors": [
-      {
-        "full_name": "Payal Fofadiya",
-        "id": "019d46d9-64c7-7f34-b0af-064f6890852f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sunil Tiwari",
-        "id": "019878d2-17b8-7a89-871e-bd12ecab0ffc",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019d47a1-3446-7f80-b53a-d28b902d00d2",
-    "image_url": "image/2603.29193v1.png",
-    "metrics": {
-      "public_total_votes": 9,
-      "total_votes": 1,
-      "visits_count": {
-        "all": 37,
-        "last_7_days": 32
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019d47a1-3446-7f80-b53a-d28b902d00d2",
-    "paper_summary": {
-      "keyInsights": [
-        "Dynamically integrating semantic relevance, recency, and structural dependencies provides a more effective approach to prioritize context for retention than static pruning methods.",
-        "Formulating context management as a multi-objective optimization problem that includes task quality, coherence, and token reduction enables a practical balance between performance and efficiency.",
-        "Coherence-aware filtering is critical for preventing the loss of vital dialogue information during compression, thereby maintaining conversational stability and consistency in extended interactions."
-      ],
-      "originalProblem": [
-        "Large Language Models (LLMs) experience performance degradation in long-running interactions due to the continuous growth of conversational context.",
-        "Context expansion leads to issues like memory saturation, high computational overhead, and 'context decay,' where earlier crucial information is lost.",
-        "Existing solutions for long-context processing often struggle with dynamic adaptation, maintaining conversational coherence, or balancing efficiency with information preservation under constrained context budgets."
-      ],
-      "results": [
-        "The adaptive compression method demonstrated answer accuracy of 0.89\u20130.91 and coherence scores of 0.95\u20130.96, which matched or slightly exceeded existing memory-based approaches on long-running conversation benchmarks.",
-        "It achieved substantial efficiency gains, including a 25%\u201355% reduction in token usage and a 10%\u201335% improvement in inference latency.",
-        "The framework successfully maintained conversational consistency and long-term memory stability on LOCCO and LOCOMO datasets, with consistency in the range of 4.45\u20134.55 and coherence in 4.50\u20134.60."
-      ],
-      "solution": [
-        "A novel adaptive context compression framework was developed, which models context management as a joint optimization problem balancing memory retention, coherence, and token efficiency.",
-        "The framework employs adaptive importance estimation, combining semantic relevance, recency, and structural dependencies to prioritize essential dialogue turns.",
-        "It dynamically adjusts the token budget based on interaction complexity (dialogue entropy) and uses a multi-objective optimization to balance task quality, coherence preservation, and token reduction."
-      ],
-      "summary": "Researchers from LinkedIn and eBay introduced an adaptive context compression framework for Large Language Models, which dynamically manages conversational history to prevent context decay and improve efficiency in long-running interactions. The framework achieved answer accuracy of 0.89\u20130.91 and coherence scores of 0.95\u20130.96 while reducing token usage by 25%\u201355% and improving latency by 10%\u201335% across multiple benchmarks."
-    },
-    "publication_date": "2026-03-31T02:57:48.000Z",
-    "title": "Developing Adaptive Context Compression Techniques for Large Language Models (LLMs) in Long-Running Interactions",
-    "topics": [
-      "agents",
-      "Computer Science",
-      "conversational-ai",
-      "cs.AI",
-      "cs.CV",
-      "efficient-transformers",
-      "inference-optimization",
-      "lightweight-models",
-      "model-compression",
-      "transformers"
-    ],
-    "universal_paper_id": "2603.29193",
-    "updated_at": "2026-04-01T06:00:40.262Z",
-    "version_id": "019d47a1-3452-759b-841f-18dc39355f78"
   },
   {
     "abstract": "While Long Chain-of-Thought (CoT) reasoning significantly improves Large Language Models (LLMs) performance on complex reasoning tasks, the substantial computational and memory costs of generating long CoT sequences limit their efficiency and practicality. Existing studies usually enhance the reasoning efficiency of LLMs by compressing CoT sequences. However, this approach conflicts with test-time scaling, limiting the reasoning capacity of LLMs. In this paper, we propose an efficient reasoning framework that models the reasoning process of LLMs as a state-transition process. Specifically, we first apply a linear attention mechanism to estimate the LLM's reasoning state, which records the historical reasoning information from previous reasoning steps. Then, based on the query prompt and the reasoning state, the LLM can efficiently perform the current reasoning step and update the state. With the linear attention, each token in the current reasoning step can directly retrieve relevant historical reasoning information from the reasoning state, without explicitly attending to tokens in previous reasoning steps. In this way, the computational complexity of attention is reduced from quadratic to linear, significantly improving the reasoning efficiency of LLMs. In addition, we propose a state-based reasoning strategy to mitigate the over-thinking issue caused by noisy reasoning steps. Extensive experiments across multiple datasets and model sizes demonstrate that our framework not only improves the reasoning efficiency of LLMs but also enhances their reasoning performance.",
@@ -4023,84 +4023,6 @@
     "version_id": "0198ab5d-1ae2-7d94-8ae3-5bb0f4cf0ab1"
   },
   {
-    "abstract": "Large Reasoning Models (LRMs) have demonstrated impressive capabilities but suffer from cognitive inefficiencies like \"overthinking\" simple problems and \"underthinking\" complex ones. While existing methods that use supervised fine-tuning (SFT) or reinforcement learning (RL) with token-length rewards can improve efficiency, they often do so at the cost of accuracy. This paper introduces DeepCompress, a novel framework that simultaneously enhances both the accuracy and efficiency of LRMs. We challenge the prevailing approach of consistently favoring shorter reasoning paths, showing that longer responses can contain a broader range of correct solutions for difficult problems. DeepCompress employs an adaptive length reward mechanism that dynamically classifies problems as \"Simple\" or \"Hard\" in real-time based on the model's evolving capability. It encourages shorter, more efficient reasoning for \"Simple\" problems while promoting longer, more exploratory thought chains for \"Hard\" problems. This dual-reward strategy enables the model to autonomously adjust its Chain-of-Thought (CoT) length, compressing reasoning for well-mastered problems and extending it for those it finds challenging. Experimental results on challenging mathematical benchmarks show that DeepCompress consistently outperforms baseline methods, achieving superior accuracy while significantly improving token efficiency.",
-    "author_info": [],
-    "authors": [
-      "Tian Liang",
-      "Wenxiang Jiao",
-      "Zhiwei He",
-      "Jiahao Xu",
-      "Haitao Mi",
-      "Dong Yu"
-    ],
-    "canonical_id": "2510.27419v2",
-    "first_publication_date": "2025-10-31T12:13:11.000Z",
-    "full_authors": [
-      {
-        "full_name": "Tian Liang",
-        "id": "01985c81-e775-768e-8463-a4574ebb1bc0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wenxiang Jiao",
-        "id": "01985c81-e775-7201-afd7-5a21a8734d73",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiwei He",
-        "id": "01985c81-edde-7d00-8f5b-39850eab14e0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiahao Xu",
-        "id": "01985c81-e775-7071-955e-7bce61064de3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Haitao Mi",
-        "id": "01985c81-e34e-717a-bf88-d970d5f2f7c7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dong Yu",
-        "id": "01985c81-e34e-78e2-b0e2-c44582dedbe0",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/Skytliang/DeepCompress",
-    "id": "019a485d-7144-7f18-92e1-a8697b810fa8",
-    "image_url": "image/2510.27419v2.png",
-    "metrics": {
-      "public_total_votes": 7,
-      "total_votes": 1,
-      "visits_count": {
-        "all": 76,
-        "last_7_days": 5
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019a485d-7144-7f18-92e1-a8697b810fa8",
-    "paper_summary": null,
-    "publication_date": "2026-03-23T09:36:31.000Z",
-    "title": "DeepCompress: A Dual Reward Strategy for Dynamically Exploring and Compressing Reasoning Chains",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.CL"
-    ],
-    "universal_paper_id": "2510.27419",
-    "updated_at": "2025-11-03T06:17:54.756Z",
-    "version_id": "019d4cec-7107-799b-877f-0ab71193d90c"
-  },
-  {
     "abstract": "While reasoning-augmented large language models (RLLMs) significantly enhance\ncomplex task performance through extended reasoning chains, they inevitably\nintroduce substantial unnecessary token consumption, particularly for simpler\nproblems where Short Chain-of-Thought (Short CoT) suffices. This overthinking\nphenomenon leads to inefficient resource usage without proportional accuracy\ngains. To address this issue, we propose Self-Route, a dynamic reasoning\nframework that automatically selects between general and reasoning modes based\non model capability estimation. Our approach introduces a lightweight\npre-inference stage to extract capability-aware embeddings from hidden layer\nrepresentations, enabling real-time evaluation of the model's ability to solve\nproblems. We further construct Gradient-10K, a model difficulty\nestimation-based dataset with dense complexity sampling, to train the router\nfor precise capability boundary detection. Extensive experiments demonstrate\nthat Self-Route achieves comparable accuracy to reasoning models while reducing\ntoken consumption by 30-55\\% across diverse benchmarks. The proposed framework\ndemonstrates consistent effectiveness across models with different parameter\nscales and reasoning paradigms, highlighting its general applicability and\npractical value.",
     "author_info": [],
     "authors": [
@@ -4228,111 +4150,82 @@
     "version_id": "01970fbf-b358-74a2-8eeb-c6e2ca30b42c"
   },
   {
-    "abstract": "Large Language Models (LLMs) have shown impressive capabilities in complex reasoning tasks. However, current approaches employ uniform language density for both intermediate reasoning and final answers, leading to computational inefficiency. Our observation found that reasoning process serves a computational function for the model itself, while answering serves a communicative function for human understanding. This distinction enables the use of compressed, symbol-rich language for intermediate computations while maintaining human-readable final explanations. To address this inefficiency, we present Denser: \\underline{D}ual-d\\underline{ens}ity inf\\underline{er}ence, a novel framework that optimizes information density separately for reasoning and answering phases. Our framework implements this through three components: a query processing module that analyzes input problems, a high-density compressed reasoning mechanism for efficient intermediate computations, and an answer generation component that translates compressed reasoning into human-readable solutions. Experimental evaluation across multiple reasoning question answering benchmarks demonstrates that Denser reduces token consumption by up to 62\\% compared to standard Chain-of-Thought methods while preserving or improving accuracy. These efficiency gains are particularly significant for complex multi-step reasoning problems where traditional methods generate extensive explanations.",
+    "abstract": "Large Reasoning Models (LRMs) have demonstrated impressive capabilities but suffer from cognitive inefficiencies like \"overthinking\" simple problems and \"underthinking\" complex ones. While existing methods that use supervised fine-tuning (SFT) or reinforcement learning (RL) with token-length rewards can improve efficiency, they often do so at the cost of accuracy. This paper introduces DeepCompress, a novel framework that simultaneously enhances both the accuracy and efficiency of LRMs. We challenge the prevailing approach of consistently favoring shorter reasoning paths, showing that longer responses can contain a broader range of correct solutions for difficult problems. DeepCompress employs an adaptive length reward mechanism that dynamically classifies problems as \"Simple\" or \"Hard\" in real-time based on the model's evolving capability. It encourages shorter, more efficient reasoning for \"Simple\" problems while promoting longer, more exploratory thought chains for \"Hard\" problems. This dual-reward strategy enables the model to autonomously adjust its Chain-of-Thought (CoT) length, compressing reasoning for well-mastered problems and extending it for those it finds challenging. Experimental results on challenging mathematical benchmarks show that DeepCompress consistently outperforms baseline methods, achieving superior accuracy while significantly improving token efficiency.",
     "author_info": [],
     "authors": [
-      "Zhengyi Zhao",
-      "Shubo Zhang",
-      "Yuxi Zhang",
-      "Huimin Wang",
-      "Binyang Li",
-      "Kam-Fai Wong"
+      "Tian Liang",
+      "Wenxiang Jiao",
+      "Zhiwei He",
+      "Jiahao Xu",
+      "Haitao Mi",
+      "Dong Yu"
     ],
-    "canonical_id": "2512.15358v1",
-    "first_publication_date": "2025-12-17T12:04:05.000Z",
+    "canonical_id": "2510.27419v2",
+    "first_publication_date": "2025-10-31T12:13:11.000Z",
     "full_authors": [
       {
-        "full_name": "Zhengyi Zhao",
-        "id": "01985c82-590b-7321-9c9e-dfa02e96b29c",
+        "full_name": "Tian Liang",
+        "id": "01985c81-e775-768e-8463-a4574ebb1bc0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shubo Zhang",
-        "id": "01985c84-c64f-741d-96f3-bebfe6bc6a42",
+        "full_name": "Wenxiang Jiao",
+        "id": "01985c81-e775-7201-afd7-5a21a8734d73",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yuxi Zhang",
-        "id": "01985c82-ac10-7c9d-840f-2d9667031b2d",
+        "full_name": "Zhiwei He",
+        "id": "01985c81-edde-7d00-8f5b-39850eab14e0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Huimin Wang",
-        "id": "01985c81-f8f2-7b2f-8eb9-65aedc91f0ec",
+        "full_name": "Jiahao Xu",
+        "id": "01985c81-e775-7071-955e-7bce61064de3",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Binyang Li",
-        "id": "01985c82-f3e2-7904-a288-438eafdfd9fc",
+        "full_name": "Haitao Mi",
+        "id": "01985c81-e34e-717a-bf88-d970d5f2f7c7",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Kam-Fai Wong",
-        "id": "01985c81-f8f2-7685-8637-a442d1388fe3",
+        "full_name": "Dong Yu",
+        "id": "01985c81-e34e-78e2-b0e2-c44582dedbe0",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b3010-3d80-79d4-a1e6-b32c1c78496d",
-    "image_url": "image/2512.15358v1.png",
+    "github_stars": 0,
+    "github_url": "https://github.com/Skytliang/DeepCompress",
+    "id": "019a485d-7144-7f18-92e1-a8697b810fa8",
+    "image_url": "image/2510.27419v2.png",
     "metrics": {
-      "public_total_votes": 6,
-      "total_votes": 0,
+      "public_total_votes": 7,
+      "total_votes": 1,
       "visits_count": {
-        "all": 23,
-        "last_7_days": 1
+        "all": 76,
+        "last_7_days": 5
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019b3010-3d80-79d4-a1e6-b32c1c78496d",
-    "paper_summary": {
-      "keyInsights": [
-        "Empirical analysis shows that language used for computational reasoning phases is 4.3 times more information-dense than explanatory phases, yet explanatory language consumes approximately 68% of total tokens.",
-        "There exists a fundamental 'representational mismatch' where LLMs wrap a computational core in verbose natural language, leading to significant inefficiency for structured reasoning tasks.",
-        "Aligning information density with the functional requirement of each processing stage (high-density for internal computation, lower-density for external communication) can yield substantial efficiency and accuracy gains."
-      ],
-      "originalProblem": [
-        "Large Language Models (LLMs) uniformly employ verbose natural language for both internal reasoning steps and external answers, leading to computational inefficiency.",
-        "This undifferentiated use of language, while good for human communication, is suboptimal for the high information density and strict structures required by complex reasoning tasks.",
-        "Existing Test-Time Scaling (TTS) methods enhance reasoning accuracy but exacerbate token consumption and computational costs due to verbose internal explanations."
-      ],
-      "results": [
-        "Denser achieved an average accuracy improvement of 1.8% over the strongest baseline (Self-Verification) across math, logic, code, and general QA benchmarks, with pronounced gains in math and logic.",
-        "The framework reduced token consumption by up to 62% compared to standard Chain-of-Thought methods and decreased computational latency by 27.8% on the GSM8K dataset.",
-        "Performance benefits and efficiency improvements were consistent across various LLM sizes (0.5B to 57B-A14B) and became more pronounced with increasing problem complexity, demonstrating broad applicability and robustness."
-      ],
-      "solution": [
-        "The Denser framework introduces a dual-density inference approach, utilizing compressed, symbolic representations for internal computations and human-readable language for final outputs.",
-        "It employs a Query Analysis Module to classify problem domains, a High-density Reasoning Module for efficient intermediate deductions using compressed language, and a Low-density Answering Module to translate compressed reasoning into user-friendly explanations.",
-        "The approach uses sophisticated prompt engineering and domain-specific compression operators to dynamically adjust language density, optimizing token count while preserving essential computational information."
-      ],
-      "summary": "A dual-density inference framework named Denser optimizes Large Language Model (LLM) reasoning by decoupling internal computational language from external communicative language. This framework reduces token consumption by up to 62% and achieves 27.8% faster inference, while improving reasoning accuracy by an average of 1.8% across diverse benchmarks like math, logic, and coding."
-    },
-    "publication_date": "2025-12-17T12:04:05.000Z",
-    "title": "Dual-Density Inference for Efficient Language Model Reasoning",
+    "paper_group_id": "019a485d-7144-7f18-92e1-a8697b810fa8",
+    "paper_summary": null,
+    "publication_date": "2026-03-23T09:36:31.000Z",
+    "title": "DeepCompress: A Dual Reward Strategy for Dynamically Exploring and Compressing Reasoning Chains",
     "topics": [
-      "chain-of-thought",
       "Computer Science",
-      "cs.CL",
-      "efficient-transformers",
-      "generative-models",
-      "inference-optimization",
-      "reasoning",
-      "representation-learning",
-      "text-generation",
-      "transformers"
+      "cs.AI",
+      "cs.CL"
     ],
-    "universal_paper_id": "2512.15358",
-    "updated_at": "2025-12-18T06:05:29.344Z",
-    "version_id": "019b3010-3d91-76f7-bfc9-baa889e8ce6a"
+    "universal_paper_id": "2510.27419",
+    "updated_at": "2025-11-03T06:17:54.756Z",
+    "version_id": "019d4cec-7107-799b-877f-0ab71193d90c"
   },
   {
     "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in tasks requiring reasoning and multi-step problem-solving through the use of chain-of-thought (CoT) prompting. However, generating the full CoT process results in significantly longer output sequences, leading to increased computational costs and latency during inference. To address this challenge, we propose a novel approach to compress the CoT process through semantic alignment, enabling more efficient decoding while preserving the benefits of CoT reasoning. Our method introduces an auxiliary CoT model that learns to generate and compress the full thought process into a compact special token representation semantically aligned with the original CoT output. This compressed representation is then integrated into the input of the Hidden Chain-of-Thought (HCoT) model. The training process follows a two-stage procedure: First, the CoT model is optimized to generate the compressed token representations aligned with the ground-truth CoT outputs using a contrastive loss. Subsequently, with the CoT model parameters frozen, the HCoT model is fine-tuned to generate accurate subsequent predictions conditioned on the prefix instruction and the compressed CoT representations from the CoT model. Extensive experiments across three challenging domains - mathematical reasoning, agent invocation, and question answering - demonstrate that our semantic compression approach achieves competitive or improved performance compared to the full CoT baseline, while providing significant speedups of at least 1.5x in decoding time. Moreover, incorporating contrastive learning objectives further enhances the quality of the compressed representations, leading to better CoT prompting and improved task accuracy. Our work paves the way for more efficient exploitation of multi-step reasoning capabilities in LLMs across a wide range of applications.",
@@ -4586,6 +4479,113 @@
     "version_id": "01999e46-0eef-7f91-9e90-6662fe7fa3fe"
   },
   {
+    "abstract": "Large Language Models (LLMs) have shown impressive capabilities in complex reasoning tasks. However, current approaches employ uniform language density for both intermediate reasoning and final answers, leading to computational inefficiency. Our observation found that reasoning process serves a computational function for the model itself, while answering serves a communicative function for human understanding. This distinction enables the use of compressed, symbol-rich language for intermediate computations while maintaining human-readable final explanations. To address this inefficiency, we present Denser: \\underline{D}ual-d\\underline{ens}ity inf\\underline{er}ence, a novel framework that optimizes information density separately for reasoning and answering phases. Our framework implements this through three components: a query processing module that analyzes input problems, a high-density compressed reasoning mechanism for efficient intermediate computations, and an answer generation component that translates compressed reasoning into human-readable solutions. Experimental evaluation across multiple reasoning question answering benchmarks demonstrates that Denser reduces token consumption by up to 62\\% compared to standard Chain-of-Thought methods while preserving or improving accuracy. These efficiency gains are particularly significant for complex multi-step reasoning problems where traditional methods generate extensive explanations.",
+    "author_info": [],
+    "authors": [
+      "Zhengyi Zhao",
+      "Shubo Zhang",
+      "Yuxi Zhang",
+      "Huimin Wang",
+      "Binyang Li",
+      "Kam-Fai Wong"
+    ],
+    "canonical_id": "2512.15358v1",
+    "first_publication_date": "2025-12-17T12:04:05.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zhengyi Zhao",
+        "id": "01985c82-590b-7321-9c9e-dfa02e96b29c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shubo Zhang",
+        "id": "01985c84-c64f-741d-96f3-bebfe6bc6a42",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuxi Zhang",
+        "id": "01985c82-ac10-7c9d-840f-2d9667031b2d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huimin Wang",
+        "id": "01985c81-f8f2-7b2f-8eb9-65aedc91f0ec",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Binyang Li",
+        "id": "01985c82-f3e2-7904-a288-438eafdfd9fc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kam-Fai Wong",
+        "id": "01985c81-f8f2-7685-8637-a442d1388fe3",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b3010-3d80-79d4-a1e6-b32c1c78496d",
+    "image_url": "image/2512.15358v1.png",
+    "metrics": {
+      "public_total_votes": 6,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 23,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019b3010-3d80-79d4-a1e6-b32c1c78496d",
+    "paper_summary": {
+      "keyInsights": [
+        "Empirical analysis shows that language used for computational reasoning phases is 4.3 times more information-dense than explanatory phases, yet explanatory language consumes approximately 68% of total tokens.",
+        "There exists a fundamental 'representational mismatch' where LLMs wrap a computational core in verbose natural language, leading to significant inefficiency for structured reasoning tasks.",
+        "Aligning information density with the functional requirement of each processing stage (high-density for internal computation, lower-density for external communication) can yield substantial efficiency and accuracy gains."
+      ],
+      "originalProblem": [
+        "Large Language Models (LLMs) uniformly employ verbose natural language for both internal reasoning steps and external answers, leading to computational inefficiency.",
+        "This undifferentiated use of language, while good for human communication, is suboptimal for the high information density and strict structures required by complex reasoning tasks.",
+        "Existing Test-Time Scaling (TTS) methods enhance reasoning accuracy but exacerbate token consumption and computational costs due to verbose internal explanations."
+      ],
+      "results": [
+        "Denser achieved an average accuracy improvement of 1.8% over the strongest baseline (Self-Verification) across math, logic, code, and general QA benchmarks, with pronounced gains in math and logic.",
+        "The framework reduced token consumption by up to 62% compared to standard Chain-of-Thought methods and decreased computational latency by 27.8% on the GSM8K dataset.",
+        "Performance benefits and efficiency improvements were consistent across various LLM sizes (0.5B to 57B-A14B) and became more pronounced with increasing problem complexity, demonstrating broad applicability and robustness."
+      ],
+      "solution": [
+        "The Denser framework introduces a dual-density inference approach, utilizing compressed, symbolic representations for internal computations and human-readable language for final outputs.",
+        "It employs a Query Analysis Module to classify problem domains, a High-density Reasoning Module for efficient intermediate deductions using compressed language, and a Low-density Answering Module to translate compressed reasoning into user-friendly explanations.",
+        "The approach uses sophisticated prompt engineering and domain-specific compression operators to dynamically adjust language density, optimizing token count while preserving essential computational information."
+      ],
+      "summary": "A dual-density inference framework named Denser optimizes Large Language Model (LLM) reasoning by decoupling internal computational language from external communicative language. This framework reduces token consumption by up to 62% and achieves 27.8% faster inference, while improving reasoning accuracy by an average of 1.8% across diverse benchmarks like math, logic, and coding."
+    },
+    "publication_date": "2025-12-17T12:04:05.000Z",
+    "title": "Dual-Density Inference for Efficient Language Model Reasoning",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.CL",
+      "efficient-transformers",
+      "generative-models",
+      "inference-optimization",
+      "reasoning",
+      "representation-learning",
+      "text-generation",
+      "transformers"
+    ],
+    "universal_paper_id": "2512.15358",
+    "updated_at": "2025-12-18T06:05:29.344Z",
+    "version_id": "019b3010-3d91-76f7-bfc9-baa889e8ce6a"
+  },
+  {
     "abstract": "External memory systems are pivotal for enabling Large Language Model (LLM) agents to maintain persistent knowledge and perform long-horizon decision-making. Existing paradigms typically follow a two-stage process: computationally expensive memory construction (e.g., structuring data into graphs) followed by naive retrieval-augmented generation. However, our empirical analysis reveals two fundamental limitations: complex construction incurs high costs with marginal performance gains, and simple context concatenation fails to bridge the gap between retrieval recall and reasoning accuracy. To address these challenges, we propose CoM (Chain-of-Memory), a novel framework that advocates for a paradigm shift toward lightweight construction paired with sophisticated utilization. CoM introduces a Chain-of-Memory mechanism that organizes retrieved fragments into coherent inference paths through dynamic evolution, utilizing adaptive truncation to prune irrelevant noise. Extensive experiments on the LongMemEval and LoCoMo benchmarks demonstrate that CoM outperforms strong baselines with accuracy gains of 7.5%-10.4%, while drastically reducing computational overhead to approximately 2.7% of token consumption and 6.0% of latency compared to complex memory architectures.",
     "author_info": [],
     "authors": [
@@ -4696,126 +4696,6 @@
     "universal_paper_id": "2601.14287",
     "updated_at": "2026-01-22T02:30:38.186Z",
     "version_id": "019be38a-1da5-76c3-a110-785ba1c81924"
-  },
-  {
-    "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
-    "author_info": [],
-    "authors": [
-      "Yi Yu",
-      "Liuyi Yao",
-      "Yuexiang Xie",
-      "Qingquan Tan",
-      "Jiaqi Feng",
-      "Yaliang Li",
-      "Libing Wu"
-    ],
-    "canonical_id": "2601.01885/sso-callbackv1",
-    "first_publication_date": "2026-01-05T08:24:16.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yi Yu",
-        "id": "01985c81-ef77-7a09-8578-14c58d92a4b9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Liuyi Yao",
-        "id": "01985c81-f9c8-73da-a6be-367f06278ae1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuexiang Xie",
-        "id": "01985c81-e34e-7d1b-bef2-1969ad002c0d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qingquan Tan",
-        "id": "019b9149-78a0-7b59-b9cb-d9ad059f9c43",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaqi Feng",
-        "id": "01985c82-2ed7-7d15-9cee-6616476fea6d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yaliang Li",
-        "id": "01985c81-e34e-7603-ae55-d71b816be5e8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Libing Wu",
-        "id": "01985c82-4656-7ee5-be37-a0920fa7de4f",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b9955-eec6-707b-8760-2d90af429af6",
-    "image_url": "image/2601.01885/sso-callbackv1.png",
-    "metrics": {
-      "public_total_votes": 3,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 25,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": null,
-        "name": "Wuhan University"
-      },
-      {
-        "image": "images/organizations/alibaba.png",
-        "name": "Alibaba Group"
-      }
-    ],
-    "paper_group_id": "019b9955-eec6-707b-8760-2d90af429af6",
-    "paper_summary": {
-      "keyInsights": [
-        "Treating LTM and STM operations as intrinsic, learnable tool-based actions within an LLM's policy enables autonomous and adaptive memory management for complex tasks.",
-        "A progressive three-stage reinforcement learning strategy combined with step-wise GRPO successfully facilitates the learning of sophisticated, long-horizon memory behaviors despite sparse and discontinuous reward signals.",
-        "Optimizing memory management requires a composite reward function that explicitly evaluates both task completion and the quality of memory operations, rather than relying solely on final task performance."
-      ],
-      "originalProblem": [
-        "Large language models (LLMs) face finite context window limitations, hindering their ability to retain and process information over long interactions and complex tasks.",
-        "Existing memory management approaches for LLM agents treat long-term (LTM) and short-term (STM) memory as distinct, loosely coupled modules, leading to fragmented control and suboptimal performance.",
-        "Training unified memory policies for LLM agents is challenging due to the mismatch of standard reinforcement learning assumptions with the sparse and discontinuous rewards inherent in memory operations."
-      ],
-      "results": [
-        "AgeMem consistently achieved the highest average performance across five long-horizon benchmarks, improving task completion by 4.82 to 8.57 percentage points over leading baselines.",
-        "The framework generated higher-quality long-term memories (e.g., MQ of 0.605 on HotpotQA for Qwen3-4B) and demonstrated more efficient short-term context usage, reducing prompt token counts by up to 5.1%.",
-        "Ablation studies confirmed that the progressive RL training and the multi-component reward function were crucial for learning effective, adaptive memory management and coordinating LTM and STM tools."
-      ],
-      "solution": [
-        "Introduced Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management by exposing memory operations as learnable, tool-based actions within the LLM agent's policy.",
-        "Developed a three-stage progressive reinforcement learning strategy for end-to-end training of the agent's memory policy, addressing challenges of sparse and discontinuous rewards.",
-        "Utilized a step-wise Group Relative Policy Optimization (GRPO) to assign credit consistently across long, multi-stage trajectories and a composite reward function for comprehensive evaluation of memory and task performance."
-      ],
-      "summary": "Researchers from Alibaba Group and Wuhan University developed Agentic Memory (AgeMem), a framework enabling large language model agents to autonomously manage both long-term and short-term memory through learnable tool-based actions. This approach, trained with a three-stage progressive reinforcement learning strategy, enhances task completion rates, improves the quality of stored knowledge, and optimizes context utilization across various long-horizon reasoning benchmarks."
-    },
-    "publication_date": "2026-01-05T08:24:16.000Z",
-    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.CL",
-      "reasoning",
-      "reinforcement-learning",
-      "tool-use"
-    ],
-    "universal_paper_id": "2601.01885/sso-callback",
-    "updated_at": "2026-01-07T16:41:44.390Z",
-    "version_id": "019b9955-eef6-7fd5-af83-8dcff68c4770"
   },
   {
     "abstract": "Chain-of-Thought (CoT) reasoning enhances the problem-solving ability of large language models (LLMs) but leads to substantial inference overhead, limiting deployment in resource-constrained settings. This paper investigates efficient CoT transfer across models of different scales and architectures through an adaptive reasoning summarization framework. The proposed method compresses reasoning traces via semantic segmentation with importance scoring, budget-aware dynamic compression, and coherence reconstruction, preserving critical reasoning steps while significantly reducing token usage. Experiments on 7{,}501 medical examination questions across 10 specialties show up to 40% higher accuracy than truncation under the same token budgets. Evaluations on 64 model pairs from eight LLMs (1.5B-32B parameters, including DeepSeek-R1 and Qwen3) confirm strong cross-model transferability. Furthermore, a Gaussian Process-based Bayesian optimization module reduces evaluation cost by 84% and reveals a power-law relationship between model size and cross-domain robustness. These results demonstrate that reasoning summarization provides a practical path toward efficient CoT transfer, enabling advanced reasoning under tight computational constraints. Code will be released upon publication.",
@@ -5050,6 +4930,126 @@
     "universal_paper_id": "2601.01885.pdf",
     "updated_at": "2026-01-10T04:58:38.021Z",
     "version_id": "019ba645-4c7d-76ee-ac14-4263c14a5ce2"
+  },
+  {
+    "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
+    "author_info": [],
+    "authors": [
+      "Yi Yu",
+      "Liuyi Yao",
+      "Yuexiang Xie",
+      "Qingquan Tan",
+      "Jiaqi Feng",
+      "Yaliang Li",
+      "Libing Wu"
+    ],
+    "canonical_id": "2601.01885/sso-callbackv1",
+    "first_publication_date": "2026-01-05T08:24:16.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yi Yu",
+        "id": "01985c81-ef77-7a09-8578-14c58d92a4b9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Liuyi Yao",
+        "id": "01985c81-f9c8-73da-a6be-367f06278ae1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuexiang Xie",
+        "id": "01985c81-e34e-7d1b-bef2-1969ad002c0d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qingquan Tan",
+        "id": "019b9149-78a0-7b59-b9cb-d9ad059f9c43",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaqi Feng",
+        "id": "01985c82-2ed7-7d15-9cee-6616476fea6d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yaliang Li",
+        "id": "01985c81-e34e-7603-ae55-d71b816be5e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Libing Wu",
+        "id": "01985c82-4656-7ee5-be37-a0920fa7de4f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b9955-eec6-707b-8760-2d90af429af6",
+    "image_url": "image/2601.01885/sso-callbackv1.png",
+    "metrics": {
+      "public_total_votes": 3,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 25,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "Wuhan University"
+      },
+      {
+        "image": "images/organizations/alibaba.png",
+        "name": "Alibaba Group"
+      }
+    ],
+    "paper_group_id": "019b9955-eec6-707b-8760-2d90af429af6",
+    "paper_summary": {
+      "keyInsights": [
+        "Treating LTM and STM operations as intrinsic, learnable tool-based actions within an LLM's policy enables autonomous and adaptive memory management for complex tasks.",
+        "A progressive three-stage reinforcement learning strategy combined with step-wise GRPO successfully facilitates the learning of sophisticated, long-horizon memory behaviors despite sparse and discontinuous reward signals.",
+        "Optimizing memory management requires a composite reward function that explicitly evaluates both task completion and the quality of memory operations, rather than relying solely on final task performance."
+      ],
+      "originalProblem": [
+        "Large language models (LLMs) face finite context window limitations, hindering their ability to retain and process information over long interactions and complex tasks.",
+        "Existing memory management approaches for LLM agents treat long-term (LTM) and short-term (STM) memory as distinct, loosely coupled modules, leading to fragmented control and suboptimal performance.",
+        "Training unified memory policies for LLM agents is challenging due to the mismatch of standard reinforcement learning assumptions with the sparse and discontinuous rewards inherent in memory operations."
+      ],
+      "results": [
+        "AgeMem consistently achieved the highest average performance across five long-horizon benchmarks, improving task completion by 4.82 to 8.57 percentage points over leading baselines.",
+        "The framework generated higher-quality long-term memories (e.g., MQ of 0.605 on HotpotQA for Qwen3-4B) and demonstrated more efficient short-term context usage, reducing prompt token counts by up to 5.1%.",
+        "Ablation studies confirmed that the progressive RL training and the multi-component reward function were crucial for learning effective, adaptive memory management and coordinating LTM and STM tools."
+      ],
+      "solution": [
+        "Introduced Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management by exposing memory operations as learnable, tool-based actions within the LLM agent's policy.",
+        "Developed a three-stage progressive reinforcement learning strategy for end-to-end training of the agent's memory policy, addressing challenges of sparse and discontinuous rewards.",
+        "Utilized a step-wise Group Relative Policy Optimization (GRPO) to assign credit consistently across long, multi-stage trajectories and a composite reward function for comprehensive evaluation of memory and task performance."
+      ],
+      "summary": "Researchers from Alibaba Group and Wuhan University developed Agentic Memory (AgeMem), a framework enabling large language model agents to autonomously manage both long-term and short-term memory through learnable tool-based actions. This approach, trained with a three-stage progressive reinforcement learning strategy, enhances task completion rates, improves the quality of stored knowledge, and optimizes context utilization across various long-horizon reasoning benchmarks."
+    },
+    "publication_date": "2026-01-05T08:24:16.000Z",
+    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.CL",
+      "reasoning",
+      "reinforcement-learning",
+      "tool-use"
+    ],
+    "universal_paper_id": "2601.01885/sso-callback",
+    "updated_at": "2026-01-07T16:41:44.390Z",
+    "version_id": "019b9955-eef6-7fd5-af83-8dcff68c4770"
   },
   {
     "abstract": "Language Reasoning Models (LRMs) achieve strong performance by scaling test-time computation but often suffer from ``overthinking'', producing excessively long reasoning traces that increase latency and memory usage. Existing LRMs typically enforce conciseness with uniform length penalties, which over-compress crucial early deduction steps at the sequence level and indiscriminately penalize all queries at the group level. To solve these limitations, we propose \\textbf{\\model}, a dual-level framework for prefix-protected and difficulty-aware compression under hierarchical supervision. At the sequence level, prefix-protected optimization employs decaying mixed rollouts to maintain valid reasoning paths while promoting conciseness. At the group level, difficulty-aware penalty dynamically scales length constraints based on query complexity, maintaining exploration for harder questions while curbing redundancy on easier ones. Extensive experiments on DeepSeek-R1-Distill-Qwen (1.5B/7B) demonstrate that \\model achieves a substantial reduction in token usage (up to \\textbf{55.7\\%}) while simultaneously improving accuracy (up to \\textbf{4.1\\%}) on math benchmarks, with generalization ability to code, science, and general domains.",
@@ -5447,6 +5447,109 @@
     "version_id": "019c75c0-234e-73d7-80ff-49525a7b233e"
   },
   {
+    "abstract": "To support reliable long-term interaction in complex environments, LLM agents require memory systems that efficiently manage historical experiences. Existing approaches either retain full interaction histories via passive context extension, leading to substantial redundancy, or rely on iterative reasoning to filter noise, incurring high token costs. To address this challenge, we introduce SimpleMem, an efficient memory framework based on semantic lossless compression. We propose a three-stage pipeline designed to maximize information density and token utilization: (1) \\textit{Semantic Structured Compression}, which applies entropy-aware filtering to distill unstructured interactions into compact, multi-view indexed memory units; (2) \\textit{Recursive Memory Consolidation}, an asynchronous process that integrates related units into higher-level abstract representations to reduce redundancy; and (3) \\textit{Adaptive Query-Aware Retrieval}, which dynamically adjusts retrieval scope based on query complexity to construct precise context efficiently. Experiments on benchmark datasets show that our method consistently outperforms baseline approaches in accuracy, retrieval efficiency, and inference cost, achieving an average F1 improvement of 26.4% while reducing inference-time token consumption by up to 30-fold, demonstrating a superior balance between performance and efficiency. Code is available at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Jiaqi Liu",
+      "Yaofeng Su",
+      "Peng Xia",
+      "Siwei Han",
+      "Zeyu Zheng",
+      "Cihang Xie",
+      "Mingyu Ding",
+      "Huaxiu Yao"
+    ],
+    "canonical_id": "2601.02553/sso-callbackv1",
+    "first_publication_date": "2026-01-05T21:02:49.000Z",
+    "full_authors": [
+      {
+        "full_name": "Jiaqi Liu",
+        "id": "01985c81-ef77-72be-af8f-b5782b67ffd5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yaofeng Su",
+        "id": "01985c83-4502-7e32-bf74-0cc9bf738028",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Peng Xia",
+        "id": "01985c82-3305-7be5-ae91-842218f29e05",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Siwei Han",
+        "id": "01985c82-8064-7167-a930-ff66a01a42f2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zeyu Zheng",
+        "id": "01985c81-ddbe-79b4-8f05-8d0f36d1242f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cihang Xie",
+        "id": "01985c81-e34e-7b4b-a8da-4a513c2361ac",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mingyu Ding",
+        "id": "01985c81-e4e6-740f-b9bd-b3f7d6bfe950",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Huaxiu Yao",
+        "id": "01985c81-e287-781e-b71b-3daf858a058d",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 243,
+    "github_url": "https://github.com/aiming-lab/SimpleMem",
+    "id": "019ba002-694c-7b5d-842d-ae931f364386",
+    "image_url": "image/2601.02553/sso-callbackv1.png",
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 4,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "UNC-Chapel Hill"
+      }
+    ],
+    "paper_group_id": "019ba002-694c-7b5d-842d-ae931f364386",
+    "paper_summary": null,
+    "publication_date": "2026-01-05T21:02:49.000Z",
+    "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.AI",
+      "inference-optimization",
+      "information-extraction",
+      "representation-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2601.02553/sso-callback",
+    "updated_at": "2026-01-08T23:47:51.244Z",
+    "version_id": "019ba002-6972-72ff-ada7-8ed47225f315"
+  },
+  {
     "abstract": "Large reasoning models (LRMs) achieve strong accuracy through test-time scaling, generating longer chains of thought or sampling multiple solutions, but at steep costs in tokens and latency. We argue that memory is a core ingredient for efficient reasoning: when evidence already exists, models should think less by reusing structured memory instead of recomputing derivations. We present ENGRAM-R, an inference-time memory layer that integrates typed retrieval with compact fact card representations and explicit citation control. On the LoCoMo benchmark, ENGRAM-R reduces input tokens by 85% and reasoning tokens by 75% compared to full context while maintaining high accuracy. On a multi-hop slice of the LongMemEval benchmark, it achieves similar efficiency with substantial accuracy gains. These results show that memory is not only critical for long-horizon correctness but also a practical lever for efficient reasoning under tight compute, memory, and latency budgets.",
     "author_info": [],
     "authors": [
@@ -5604,170 +5707,182 @@
     "version_id": "01979e29-01a8-76f0-9616-aa11aca3f037"
   },
   {
-    "abstract": "To support reliable long-term interaction in complex environments, LLM agents require memory systems that efficiently manage historical experiences. Existing approaches either retain full interaction histories via passive context extension, leading to substantial redundancy, or rely on iterative reasoning to filter noise, incurring high token costs. To address this challenge, we introduce SimpleMem, an efficient memory framework based on semantic lossless compression. We propose a three-stage pipeline designed to maximize information density and token utilization: (1) \\textit{Semantic Structured Compression}, which applies entropy-aware filtering to distill unstructured interactions into compact, multi-view indexed memory units; (2) \\textit{Recursive Memory Consolidation}, an asynchronous process that integrates related units into higher-level abstract representations to reduce redundancy; and (3) \\textit{Adaptive Query-Aware Retrieval}, which dynamically adjusts retrieval scope based on query complexity to construct precise context efficiently. Experiments on benchmark datasets show that our method consistently outperforms baseline approaches in accuracy, retrieval efficiency, and inference cost, achieving an average F1 improvement of 26.4% while reducing inference-time token consumption by up to 30-fold, demonstrating a superior balance between performance and efficiency. Code is available at this https URL.",
+    "abstract": "Large language models (LLMs) are increasingly deployed as agents in dynamic, real-world environments, where success requires both reasoning and effective tool use. A central challenge for agentic tasks is the growing context length, as agents must accumulate long histories of actions and observations. This expansion raises costs and reduces efficiency in long-horizon tasks, yet prior work on context compression has mostly focused on single-step tasks or narrow applications. We introduce Agent Context Optimization (ACON), a unified framework that optimally compresses both environment observations and interaction histories into concise yet informative condensations. ACON leverages compression guideline optimization in natural language space: given paired trajectories where full context succeeds but compressed context fails, capable LLMs analyze the causes of failure, and the compression guideline is updated accordingly. Furthermore, we propose distilling the optimized LLM compressor into smaller models to reduce the overhead of the additional module. Experiments on AppWorld, OfficeBench, and Multi-objective QA show that ACON reduces memory usage by 26-54% (peak tokens) while largely preserving task performance, preserves over 95% of accuracy when distilled into smaller compressors, and enhances smaller LMs as long-horizon agents with up to 46% performance improvement. Our code is available at this https URL.",
     "author_info": [],
     "authors": [
-      "Jiaqi Liu",
-      "Yaofeng Su",
-      "Peng Xia",
-      "Siwei Han",
-      "Zeyu Zheng",
-      "Cihang Xie",
-      "Mingyu Ding",
-      "Huaxiu Yao"
+      "Minki Kang",
+      "Wei-Ning Chen",
+      "Dongge Han",
+      "Huseyin A. Inan",
+      "Lukas Wutschitz",
+      "Yanzhi Chen",
+      "Robert Sim",
+      "Saravan Rajmohan"
     ],
-    "canonical_id": "2601.02553/sso-callbackv1",
-    "first_publication_date": "2026-01-05T21:02:49.000Z",
+    "canonical_id": "2510.00615/sso-callbackv2",
+    "first_publication_date": "2025-10-01T07:43:49.000Z",
     "full_authors": [
       {
-        "full_name": "Jiaqi Liu",
-        "id": "01985c81-ef77-72be-af8f-b5782b67ffd5",
+        "full_name": "Minki Kang",
+        "id": "01985c82-3511-7bad-b0b7-ca0c1b2a07fd",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yaofeng Su",
-        "id": "01985c83-4502-7e32-bf74-0cc9bf738028",
+        "full_name": "Wei-Ning Chen",
+        "id": "01985c82-a355-7a58-ba85-7d6a663c0837",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Peng Xia",
-        "id": "01985c82-3305-7be5-ae91-842218f29e05",
+        "full_name": "Dongge Han",
+        "id": "01985c82-a83d-79fe-ace9-b23157ef6807",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Siwei Han",
-        "id": "01985c82-8064-7167-a930-ff66a01a42f2",
+        "full_name": "Huseyin A. Inan",
+        "id": "01985c82-39ba-72c5-aa82-c8bbbacaf660",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zeyu Zheng",
-        "id": "01985c81-ddbe-79b4-8f05-8d0f36d1242f",
+        "full_name": "Lukas Wutschitz",
+        "id": "01985c82-39ba-7d71-84b6-df2759c8dff7",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Cihang Xie",
-        "id": "01985c81-e34e-7b4b-a8da-4a513c2361ac",
+        "full_name": "Yanzhi Chen",
+        "id": "01985c82-7387-739d-bb28-be1f1de66375",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Mingyu Ding",
-        "id": "01985c81-e4e6-740f-b9bd-b3f7d6bfe950",
+        "full_name": "Robert Sim",
+        "id": "01985c82-222e-7345-8f17-6cfb0b6d3717",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Huaxiu Yao",
-        "id": "01985c81-e287-781e-b71b-3daf858a058d",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 243,
-    "github_url": "https://github.com/aiming-lab/SimpleMem",
-    "id": "019ba002-694c-7b5d-842d-ae931f364386",
-    "image_url": "image/2601.02553/sso-callbackv1.png",
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 4,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": null,
-        "name": "UNC-Chapel Hill"
-      }
-    ],
-    "paper_group_id": "019ba002-694c-7b5d-842d-ae931f364386",
-    "paper_summary": null,
-    "publication_date": "2026-01-05T21:02:49.000Z",
-    "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.AI",
-      "inference-optimization",
-      "information-extraction",
-      "representation-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2601.02553/sso-callback",
-    "updated_at": "2026-01-08T23:47:51.244Z",
-    "version_id": "019ba002-6972-72ff-ada7-8ed47225f315"
-  },
-  {
-    "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
-    "author_info": [],
-    "authors": [
-      "Yi Yu",
-      "Liuyi Yao",
-      "Yuexiang Xie",
-      "Qingquan Tan",
-      "Jiaqi Feng",
-      "Yaliang Li",
-      "Libing Wu"
-    ],
-    "canonical_id": "2601.01885/s1d24djt1gak.phpv1",
-    "first_publication_date": "2026-01-05T08:24:16.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yi Yu",
-        "id": "01985c81-ef77-7a09-8578-14c58d92a4b9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Liuyi Yao",
-        "id": "01985c81-f9c8-73da-a6be-367f06278ae1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuexiang Xie",
-        "id": "01985c81-e34e-7d1b-bef2-1969ad002c0d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qingquan Tan",
-        "id": "019b9149-78a0-7b59-b9cb-d9ad059f9c43",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaqi Feng",
-        "id": "01985c82-2ed7-7d15-9cee-6616476fea6d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yaliang Li",
-        "id": "01985c81-e34e-7603-ae55-d71b816be5e8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Libing Wu",
-        "id": "01985c82-4656-7ee5-be37-a0920fa7de4f",
+        "full_name": "Saravan Rajmohan",
+        "id": "01985c81-ec41-7497-a9cc-8635dde83f2f",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "019c75c0-15e6-73b2-ae42-e286c60a8e3a",
-    "image_url": "image/2601.01885/s1d24djt1gak.phpv1.png",
+    "id": "019bfb5c-eb28-7677-8ea4-fc5a88161bfb",
+    "image_url": "image/2510.00615/sso-callbackv2.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 2,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/kaist.png",
+        "name": "KAIST"
+      },
+      {
+        "image": "images/organizations/university-of-cambridge.svg+xml",
+        "name": "University of Cambridge"
+      },
+      {
+        "image": "images/organizations/microsoft.png",
+        "name": "Microsoft"
+      }
+    ],
+    "paper_group_id": "019bfb5c-eb28-7677-8ea4-fc5a88161bfb",
+    "paper_summary": null,
+    "publication_date": "2025-10-17T06:48:23.000Z",
+    "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "efficient-transformers",
+      "inference-optimization",
+      "knowledge-distillation",
+      "model-compression",
+      "optimization-methods",
+      "reasoning",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2510.00615/sso-callback",
+    "updated_at": "2026-01-26T17:32:09.384Z",
+    "version_id": "019bfb5c-eb54-7d42-a032-4fc98dac94ba"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable reasoning abilities on complex problems using long Chain-of-Thought (CoT) reasoning. However, they often suffer from overthinking, meaning generating unnecessarily lengthy reasoning steps for simpler problems. This issue may degrade the efficiency of the models and make them difficult to adapt the reasoning depth to the complexity of problems. To address this, we introduce a novel metric Token Entropy Cumulative Average (TECA), which measures the extent of exploration throughout the reasoning process. We further propose a novel reasoning paradigm -- Explore Briefly, Then Decide -- with an associated Cumulative Entropy Regulation (CER) mechanism. This paradigm leverages TECA to help the model dynamically determine the optimal point to conclude its thought process and provide a final answer, thus achieving efficient reasoning. Experimental results across diverse mathematical benchmarks show that our approach substantially mitigates overthinking without sacrificing problem-solving ability. With our thinking paradigm, the average response length decreases by up to 71% on simpler datasets, demonstrating the effectiveness of our method in creating a more efficient and adaptive reasoning process.",
+    "author_info": [],
+    "authors": [
+      "Tianyi Jiang",
+      "Yi Bin",
+      "Yujuan Ding",
+      "Kainian Zhu",
+      "Fei Ma",
+      "Jingkuan Song",
+      "Heng Tao Shen"
+    ],
+    "canonical_id": "2510.2249v1",
+    "first_publication_date": "2025-10-02T17:36:50.000Z",
+    "full_authors": [
+      {
+        "full_name": "Tianyi Jiang",
+        "id": "01985c82-a76f-7a80-bc20-6b93129a995e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yi Bin",
+        "id": "01985c82-5507-74be-bed7-7283027bfa0b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yujuan Ding",
+        "id": "01985c82-5507-77dd-bba5-6d9da6a9a987",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kainian Zhu",
+        "id": "0199a7e8-45c3-7fb7-80c1-9dbc5596d1b6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fei Ma",
+        "id": "01985c82-250e-7558-aebf-2021fa39e722",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingkuan Song",
+        "id": "01985c81-ed0e-782a-b5f2-91eb7e809cf7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Heng Tao Shen",
+        "id": "01985c81-ef77-7a33-95f9-0295d7e6bb9a",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019b4fd7-682b-70b3-9f0e-03d2f1f2eb0b",
+    "image_url": "image/2510.2249v1.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
@@ -5778,24 +5893,198 @@
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019c75c0-15e6-73b2-ae42-e286c60a8e3a",
+    "paper_group_id": "019b4fd7-682b-70b3-9f0e-03d2f1f2eb0b",
     "paper_summary": null,
-    "publication_date": "2026-01-05T08:24:16.000Z",
-    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "publication_date": "2025-10-02T17:36:50.000Z",
+    "title": "Explore Briefly, Then Decide: Mitigating LLM Overthinking via Cumulative Entropy Regulation",
     "topics": [
-      "agentic-frameworks",
-      "agents",
       "Computer Science",
+      "cs.AI",
       "cs.CL",
-      "deep-reinforcement-learning",
+      "cs.LG"
+    ],
+    "universal_paper_id": "2510.2249",
+    "updated_at": "2025-12-24T10:11:15.627Z",
+    "version_id": "019b4fd7-6850-72b1-ad3d-eb04a1b8b7b2"
+  },
+  {
+    "abstract": "Chain-of-Thought (CoT) reasoning in large language models (LLMs) significantly improves accuracy on complex tasks, yet incurs excessive memory overhead due to the long think-stage sequences stored in the Key-Value (KV) cache. Unlike traditional generation tasks where all tokens are uniformly important, CoT emphasizes the final answer, rendering conventional KV compression strategies ineffective. In this paper, we present Crystal-KV, an efficient KV cache management framework tailored for CoT reasoning. Our key insight is the answer-first principle. By mapping answer preferences into think-stage attention map, we distinguish between SlipKV, which mainly maintains the reasoning flow but may occasionally introduce misleading context, and CrystalKV, which truly contributes to the correctness of the final answer. Next, we propose an attention-based Least Recently Frequently Used algorithm. It precisely identifies when a SlipKV entry's utility expires and evicts it, retaining CrystalKV without disrupting reasoning flow. Finally, we introduce an adaptive cache budget allocation algorithm. Based on the dynamic proportion of CrystalKV, it estimates the importance of each layer/head and adjusts the KV cache budget during inference, amplifying critical components to improve budget utilization. Results show that Crystal-KV achieves state-of-the-art KV cache compression, significantly improves throughput, and enables faster response time, while maintaining, or even improving, answer accuracy for CoT reasoning.",
+    "author_info": [],
+    "authors": [
+      "Zihan Wang",
+      "Cheng Tang",
+      "Lei Gong",
+      "Cheng Li",
+      "Chao Wang",
+      "teng wang",
+      "Wenqi Lou",
+      "Xuehai Zhou"
+    ],
+    "canonical_id": "2601.16986v1",
+    "first_publication_date": "2026-01-05T07:42:58.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zihan Wang",
+        "id": "01985c81-e41b-7d99-8876-7652abbce57c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cheng Tang",
+        "id": "01985c82-9a8a-7635-96bb-2d66c7a3fed9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lei Gong",
+        "id": "01985c81-d85a-7e96-975c-1abb629ce179",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cheng Li",
+        "id": "01985c81-dc26-74b2-be8e-16f27fa244c7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chao Wang",
+        "id": "01985c81-d85a-76ef-b1ca-5036c14c5707",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "teng wang",
+        "id": "019bfdf8-e030-7e5e-8593-b629a22cce51",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wenqi Lou",
+        "id": "01985c84-183d-7857-85a1-5cf8a3325d1d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuehai Zhou",
+        "id": "01985c81-d85a-75af-932c-63b743e5b68a",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019bfdf8-e003-7e8f-90fc-b41ebe9d863e",
+    "image_url": "image/2601.16986v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 27,
+        "last_7_days": 3
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019bfdf8-e003-7e8f-90fc-b41ebe9d863e",
+    "paper_summary": null,
+    "publication_date": "2026-01-05T07:42:58.000Z",
+    "title": "Crystal-KV: Efficient KV Cache Management for Chain-of-Thought LLMs via Answer-First Principle",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "efficient-transformers",
+      "inference-optimization",
+      "ml-systems",
+      "model-compression",
+      "optimization-methods",
       "reasoning",
-      "reinforcement-learning",
-      "tool-use",
       "transformers"
     ],
-    "universal_paper_id": "2601.01885/s1d24djt1gak.php",
-    "updated_at": "2026-02-19T11:54:08.742Z",
-    "version_id": "019c75c0-1600-7e20-be5f-4055f02c2804"
+    "universal_paper_id": "2601.16986",
+    "updated_at": "2026-01-27T05:41:44.579Z",
+    "version_id": "019bfdf8-e03b-73c6-bfa7-f0f7780dc33c"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) can achieve enhanced complex problem-solving through test-time computing scaling, yet this often entails longer contexts and numerous reasoning token costs. In this paper, we propose an efficient test-time scaling method that trains LLMs on code-related reasoning trajectories, facilitating their reduction of excess thinking tokens while maintaining performance. First, we create Z1-Code-Reasoning-107K, a curated dataset of simple and complex coding problems paired with their short and long solution trajectories. Second, we present a novel Shifted Thinking Window to mitigate overthinking overhead by removing context-delimiting tags (e.g., . . . ) and capping reasoning tokens. Trained with long and short trajectory data and equipped with Shifted Thinking Window, our model, Z1-7B, demonstrates the ability to adjust its reasoning level as the complexity of problems and exhibits efficient test-time scaling across different reasoning tasks that matches R1-Distill-Qwen-7B performance with about 30% of its average thinking tokens. Notably, fine-tuned with only code trajectories, Z1-7B demonstrates generalization to broader reasoning tasks (47.5% on GPQA Diamond). Our analysis of efficient reasoning elicitation also provides valuable insights for future research.",
+    "author_info": [],
+    "authors": [
+      "Zhaojian Yu",
+      "Yinghao Wu",
+      "Yilun Zhao",
+      "Arman Cohan",
+      "Xiao-Ping Zhang"
+    ],
+    "canonical_id": "2504.00810/metadatav1",
+    "first_publication_date": "2025-04-01T14:01:50.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zhaojian Yu",
+        "id": "01985c82-204e-72b6-93a6-78680e04dc8d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yinghao Wu",
+        "id": "01985c82-e1b4-780d-be1b-feabc070ee66",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yilun Zhao",
+        "id": "01985c81-d85a-70af-94c1-cfdb677b53fe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Arman Cohan",
+        "id": "01985c81-d85a-7b9d-ade7-434984955e5f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiao-Ping Zhang",
+        "id": "01985c81-f313-7d4d-b712-b1bdc01d5eee",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 67,
+    "github_url": "https://github.com/efficientscaling/Z1",
+    "id": "019b0fe5-ba7b-7eb7-8739-9ec28924196e",
+    "image_url": "image/2504.00810/metadatav1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019b0fe5-ba7b-7eb7-8739-9ec28924196e",
+    "paper_summary": null,
+    "publication_date": "2025-04-01T14:01:50.000Z",
+    "title": "Z1: Efficient Test-time Scaling with Code",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "data-curation",
+      "fine-tuning",
+      "inference-optimization",
+      "multi-task-learning",
+      "neural-coding",
+      "reasoning",
+      "test-time-inference",
+      "transformers"
+    ],
+    "universal_paper_id": "2504.00810/metadata",
+    "updated_at": "2025-12-12T00:11:12.379Z",
+    "version_id": "019b0fe5-bab9-79e8-986e-c115fe2a566d"
   },
   {
     "abstract": "Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
@@ -6161,6 +6450,92 @@
     "universal_paper_id": "2601.01885?cid=019bc0eb-b511-74ed-adb8-b176fd86da60",
     "updated_at": "2026-01-15T09:17:55.441Z",
     "version_id": "019bc0f2-7ba9-7a06-bbcc-147c772839c7"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) can achieve enhanced complex problem-solving through test-time computing scaling, yet this often entails longer contexts and numerous reasoning token costs. In this paper, we propose an efficient test-time scaling method that trains LLMs on code-related reasoning trajectories, facilitating their reduction of excess thinking tokens while maintaining performance. First, we create Z1-Code-Reasoning-107K, a curated dataset of simple and complex coding problems paired with their short and long solution trajectories. Second, we present a novel Shifted Thinking Window to mitigate overthinking overhead by removing context-delimiting tags (e.g., . . . ) and capping reasoning tokens. Trained with long and short trajectory data and equipped with Shifted Thinking Window, our model, Z1-7B, demonstrates the ability to adjust its reasoning level as the complexity of problems and exhibits efficient test-time scaling across different reasoning tasks that matches R1-Distill-Qwen-7B performance with about 30% of its average thinking tokens. Notably, fine-tuned with only code trajectories, Z1-7B demonstrates generalization to broader reasoning tasks (47.5% on GPQA Diamond). Our analysis of efficient reasoning elicitation also provides valuable insights for future research.",
+    "author_info": [],
+    "authors": [
+      "Zhaojian Yu",
+      "Yinghao Wu",
+      "Yilun Zhao",
+      "Arman Cohan",
+      "Xiao-Ping Zhang"
+    ],
+    "canonical_id": "2504.0810v1",
+    "first_publication_date": "2025-04-01T14:01:50.000Z",
+    "full_authors": [
+      {
+        "full_name": "Zhaojian Yu",
+        "id": "01985c82-204e-72b6-93a6-78680e04dc8d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yinghao Wu",
+        "id": "01985c82-e1b4-780d-be1b-feabc070ee66",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yilun Zhao",
+        "id": "01985c81-d85a-70af-94c1-cfdb677b53fe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Arman Cohan",
+        "id": "01985c81-d85a-7b9d-ade7-434984955e5f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiao-Ping Zhang",
+        "id": "01985c81-f313-7d4d-b712-b1bdc01d5eee",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 67,
+    "github_url": "https://github.com/efficientscaling/Z1",
+    "id": "019b547b-9d58-7d3c-a94f-d402a1e8f592",
+    "image_url": "image/2504.0810v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/tsinghua.png",
+        "name": "Tsinghua University"
+      },
+      {
+        "image": "images/organizations/yale.png",
+        "name": "Yale University"
+      }
+    ],
+    "paper_group_id": "019b547b-9d58-7d3c-a94f-d402a1e8f592",
+    "paper_summary": null,
+    "publication_date": "2025-04-01T14:01:50.000Z",
+    "title": "Z1: Efficient Test-time Scaling with Code",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.CL",
+      "data-curation",
+      "fine-tuning",
+      "inference-optimization",
+      "reasoning",
+      "test-time-inference",
+      "transformers"
+    ],
+    "universal_paper_id": "2504.0810",
+    "updated_at": "2025-12-25T07:49:06.008Z",
+    "version_id": "019b547b-9d88-786f-a365-3537445c376d"
   },
   {
     "abstract": "To support reliable long-term interaction in complex environments, LLM agents require memory systems that efficiently manage historical experiences. Existing approaches either retain full interaction histories via passive context extension, leading to substantial redundancy, or rely on iterative reasoning to filter noise, incurring high token costs. To address this challenge, we introduce SimpleMem, an efficient memory framework based on semantic lossless compression. We propose a three-stage pipeline designed to maximize information density and token utilization: (1) \\textit{Semantic Structured Compression}, which applies entropy-aware filtering to distill unstructured interactions into compact, multi-view indexed memory units; (2) \\textit{Recursive Memory Consolidation}, an asynchronous process that integrates related units into higher-level abstract representations to reduce redundancy; and (3) \\textit{Adaptive Query-Aware Retrieval}, which dynamically adjusts retrieval scope based on query complexity to construct precise context efficiently. Experiments on benchmark datasets show that our method consistently outperforms baseline approaches in accuracy, retrieval efficiency, and inference cost, achieving an average F1 improvement of 26.4% while reducing inference-time token consumption by up to 30-fold, demonstrating a superior balance between performance and efficiency. Code is available at this https URL.",
@@ -6646,109 +7021,96 @@
     "version_id": "019c75c0-1605-7faa-aeed-eb9a6ef8f0f6"
   },
   {
-    "abstract": "Large language models (LLMs) are increasingly deployed as agents in dynamic, real-world environments, where success requires both reasoning and effective tool use. A central challenge for agentic tasks is the growing context length, as agents must accumulate long histories of actions and observations. This expansion raises costs and reduces efficiency in long-horizon tasks, yet prior work on context compression has mostly focused on single-step tasks or narrow applications. We introduce Agent Context Optimization (ACON), a unified framework that optimally compresses both environment observations and interaction histories into concise yet informative condensations. ACON leverages compression guideline optimization in natural language space: given paired trajectories where full context succeeds but compressed context fails, capable LLMs analyze the causes of failure, and the compression guideline is updated accordingly. Furthermore, we propose distilling the optimized LLM compressor into smaller models to reduce the overhead of the additional module. Experiments on AppWorld, OfficeBench, and Multi-objective QA show that ACON reduces memory usage by 26-54% (peak tokens) while largely preserving task performance, preserves over 95% of accuracy when distilled into smaller compressors, and enhances smaller LMs as long-horizon agents with up to 46% performance improvement. Our code is available at this https URL.",
+    "abstract": "Reasoning models have demonstrated remarkable capabilities in solving complex problems by leveraging long chains of thought. However, this more deliberate reasoning comes with substantial computational overhead at inference time. The Long-to-Short (L2S) reasoning problem seeks to maintain high accuracy using fewer tokens, but current training-free model merging approaches rely on scalarized, fixed-hyperparameter arithmetic methods that are highly brittle and force suboptimal compromises. To address this gap, we introduce Evo-L2S, a novel framework that formulates L2S reasoning as a multi-objective optimization challenge. By leveraging evolutionary model merging, Evo-L2S explicitly optimizes the trade-off between accuracy and output length to produce a robust Pareto front of merged models. To make this search computationally tractable for large language models, we propose an entropy-based subset sampling technique that drastically reduces the overhead of fitness estimation. Comprehensive experiments across 1.5B, 7B, and 14B parameter scales on six mathematical reasoning benchmarks demonstrate that Evo-L2S can reduce the length of generated reasoning traces by over 50% while preserving, or even improving, the problem-solving accuracy of the original reasoning models.",
     "author_info": [],
     "authors": [
-      "Minki Kang",
-      "Wei-Ning Chen",
-      "Dongge Han",
-      "Huseyin A. Inan",
-      "Lukas Wutschitz",
-      "Yanzhi Chen",
-      "Robert Sim",
-      "Saravan Rajmohan"
+      "Mario Iacobelli",
+      "Adrian Robert Minut",
+      "Tommaso Mencattini",
+      "Donato Crisostomi",
+      "Andrea Santilli",
+      "Iacopo Masi",
+      "Emanuele Rodol\u00e0"
     ],
-    "canonical_id": "2510.0615v2",
-    "first_publication_date": "2025-10-01T07:43:49.000Z",
+    "canonical_id": "2604.06465v1",
+    "first_publication_date": "2026-04-07T21:07:55.000Z",
     "full_authors": [
       {
-        "full_name": "Minki Kang",
-        "id": "01985c82-3511-7bad-b0b7-ca0c1b2a07fd",
+        "full_name": "Mario Iacobelli",
+        "id": "019d7042-aed3-79c3-91d8-31a3930edfc1",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wei-Ning Chen",
-        "id": "01985c82-a355-7a58-ba85-7d6a663c0837",
+        "full_name": "Adrian Robert Minut",
+        "id": "01985c84-2cf4-7e89-9737-039fca64a143",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Dongge Han",
-        "id": "01985c82-a83d-79fe-ace9-b23157ef6807",
+        "full_name": "Tommaso Mencattini",
+        "id": "01985c84-2cf4-77ac-81ae-51cb478351e0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Huseyin A. Inan",
-        "id": "01985c82-39ba-72c5-aa82-c8bbbacaf660",
+        "full_name": "Donato Crisostomi",
+        "id": "01985c82-c5b7-76e9-ac3d-72dabe6fc79b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Lukas Wutschitz",
-        "id": "01985c82-39ba-7d71-84b6-df2759c8dff7",
+        "full_name": "Andrea Santilli",
+        "id": "01985c82-1c7b-7ce4-8d64-a49256f9d231",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yanzhi Chen",
-        "id": "01985c82-7387-739d-bb28-be1f1de66375",
+        "full_name": "Iacopo Masi",
+        "id": "01985c82-a6a3-72ee-9a1c-40762b2db7fe",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Robert Sim",
-        "id": "01985c82-222e-7345-8f17-6cfb0b6d3717",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Saravan Rajmohan",
-        "id": "01985c81-ec41-7497-a9cc-8635dde83f2f",
+        "full_name": "Emanuele Rodol\u00e0",
+        "id": "01985c82-0ab6-7aed-8fed-c4098d2fd35c",
         "user_id": null,
         "username": null
       }
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "019a4af7-de90-7d2c-9bbe-0ab99f7637e3",
-    "image_url": "image/2510.0615v2.png",
+    "id": "019d7042-aec0-7e85-bb57-09d16159b3af",
+    "image_url": "image/2604.06465v1.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 3,
-        "last_7_days": 0
+        "all": 2,
+        "last_7_days": 2
       },
       "x_likes": 0
     },
-    "organization_info": [
-      {
-        "image": "images/organizations/kaist.png",
-        "name": "KAIST"
-      },
-      {
-        "image": "images/organizations/university-of-cambridge.svg+xml",
-        "name": "University of Cambridge"
-      },
-      {
-        "image": "images/organizations/microsoft.png",
-        "name": "Microsoft"
-      }
-    ],
-    "paper_group_id": "019a4af7-de90-7d2c-9bbe-0ab99f7637e3",
+    "organization_info": [],
+    "paper_group_id": "019d7042-aec0-7e85-bb57-09d16159b3af",
     "paper_summary": null,
-    "publication_date": "2025-10-17T06:48:23.000Z",
-    "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+    "publication_date": "2026-04-07T21:07:55.000Z",
+    "title": "Multi-objective Evolutionary Merging Enables Efficient Reasoning Models",
     "topics": [
       "Computer Science",
       "cs.AI",
-      "cs.CL"
+      "cs.CL",
+      "evolutionary-algorithms",
+      "inference-optimization",
+      "lightweight-models",
+      "model-merging",
+      "optimization-methods",
+      "reasoning",
+      "transformers"
     ],
-    "universal_paper_id": "2510.0615",
-    "updated_at": "2025-11-03T18:25:49.712Z",
-    "version_id": "019a4af7-dea8-7675-a925-99f91b1026ba"
+    "universal_paper_id": "2604.06465",
+    "updated_at": "2026-04-09T03:21:51.552Z",
+    "version_id": "019d7042-aee3-7641-8250-d2efe101a139"
   },
   {
     "abstract": "Despite their remarkable capabilities, Large Language Models (LLMs) struggle to effectively leverage historical interaction information in dynamic and complex environments. Memory systems enable LLMs to move beyond stateless interactions by introducing persistent information storage, retrieval, and utilization mechanisms. However, existing memory systems often introduce substantial time and computational overhead. To this end, we introduce a new memory system called LightMem, which strikes a balance between the performance and efficiency of memory systems. Inspired by the Atkinson-Shiffrin model of human memory, LightMem organizes memory into three complementary stages. First, cognition-inspired sensory memory rapidly filters irrelevant information through lightweight compression and groups information according to their topics. Next, topic-aware short-term memory consolidates these topic-based groups, organizing and summarizing content for more structured access. Finally, long-term memory with sleep-time update employs an offline procedure that decouples consolidation from online inference. On LongMemEval and LoCoMo, using GPT and Qwen backbones, LightMem consistently surpasses strong baselines, improving QA accuracy by up to 7.7% / 29.3%, reducing total token usage by up to 38x / 20.9x and API calls by up to 30x / 55.5x, while purely online test-time costs are even lower, achieving up to 106x / 117x token reduction and 159x / 310x fewer API calls. The code is available at this https URL.",
@@ -6899,7 +7261,7 @@
       "Robert Sim",
       "Saravan Rajmohan"
     ],
-    "canonical_id": "2510.00615/sso-callbackv2",
+    "canonical_id": "2510.0615v2",
     "first_publication_date": "2025-10-01T07:43:49.000Z",
     "full_authors": [
       {
@@ -6953,14 +7315,14 @@
     ],
     "github_stars": null,
     "github_url": null,
-    "id": "019bfb5c-eb28-7677-8ea4-fc5a88161bfb",
-    "image_url": "image/2510.00615/sso-callbackv2.png",
+    "id": "019a4af7-de90-7d2c-9bbe-0ab99f7637e3",
+    "image_url": "image/2510.0615v2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 2,
-        "last_7_days": 1
+        "all": 3,
+        "last_7_days": 0
       },
       "x_likes": 0
     },
@@ -6978,378 +7340,17 @@
         "name": "Microsoft"
       }
     ],
-    "paper_group_id": "019bfb5c-eb28-7677-8ea4-fc5a88161bfb",
+    "paper_group_id": "019a4af7-de90-7d2c-9bbe-0ab99f7637e3",
     "paper_summary": null,
     "publication_date": "2025-10-17T06:48:23.000Z",
     "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
     "topics": [
-      "agentic-frameworks",
-      "agents",
       "Computer Science",
       "cs.AI",
-      "cs.CL",
-      "efficient-transformers",
-      "inference-optimization",
-      "knowledge-distillation",
-      "model-compression",
-      "optimization-methods",
-      "reasoning",
-      "tool-use",
-      "transformers"
+      "cs.CL"
     ],
-    "universal_paper_id": "2510.00615/sso-callback",
-    "updated_at": "2026-01-26T17:32:09.384Z",
-    "version_id": "019bfb5c-eb54-7d42-a032-4fc98dac94ba"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) have demonstrated remarkable reasoning abilities on complex problems using long Chain-of-Thought (CoT) reasoning. However, they often suffer from overthinking, meaning generating unnecessarily lengthy reasoning steps for simpler problems. This issue may degrade the efficiency of the models and make them difficult to adapt the reasoning depth to the complexity of problems. To address this, we introduce a novel metric Token Entropy Cumulative Average (TECA), which measures the extent of exploration throughout the reasoning process. We further propose a novel reasoning paradigm -- Explore Briefly, Then Decide -- with an associated Cumulative Entropy Regulation (CER) mechanism. This paradigm leverages TECA to help the model dynamically determine the optimal point to conclude its thought process and provide a final answer, thus achieving efficient reasoning. Experimental results across diverse mathematical benchmarks show that our approach substantially mitigates overthinking without sacrificing problem-solving ability. With our thinking paradigm, the average response length decreases by up to 71% on simpler datasets, demonstrating the effectiveness of our method in creating a more efficient and adaptive reasoning process.",
-    "author_info": [],
-    "authors": [
-      "Tianyi Jiang",
-      "Yi Bin",
-      "Yujuan Ding",
-      "Kainian Zhu",
-      "Fei Ma",
-      "Jingkuan Song",
-      "Heng Tao Shen"
-    ],
-    "canonical_id": "2510.2249v1",
-    "first_publication_date": "2025-10-02T17:36:50.000Z",
-    "full_authors": [
-      {
-        "full_name": "Tianyi Jiang",
-        "id": "01985c82-a76f-7a80-bc20-6b93129a995e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yi Bin",
-        "id": "01985c82-5507-74be-bed7-7283027bfa0b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yujuan Ding",
-        "id": "01985c82-5507-77dd-bba5-6d9da6a9a987",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kainian Zhu",
-        "id": "0199a7e8-45c3-7fb7-80c1-9dbc5596d1b6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fei Ma",
-        "id": "01985c82-250e-7558-aebf-2021fa39e722",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jingkuan Song",
-        "id": "01985c81-ed0e-782a-b5f2-91eb7e809cf7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Heng Tao Shen",
-        "id": "01985c81-ef77-7a33-95f9-0295d7e6bb9a",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019b4fd7-682b-70b3-9f0e-03d2f1f2eb0b",
-    "image_url": "image/2510.2249v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019b4fd7-682b-70b3-9f0e-03d2f1f2eb0b",
-    "paper_summary": null,
-    "publication_date": "2025-10-02T17:36:50.000Z",
-    "title": "Explore Briefly, Then Decide: Mitigating LLM Overthinking via Cumulative Entropy Regulation",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.LG"
-    ],
-    "universal_paper_id": "2510.2249",
-    "updated_at": "2025-12-24T10:11:15.627Z",
-    "version_id": "019b4fd7-6850-72b1-ad3d-eb04a1b8b7b2"
-  },
-  {
-    "abstract": "Chain-of-Thought (CoT) reasoning in large language models (LLMs) significantly improves accuracy on complex tasks, yet incurs excessive memory overhead due to the long think-stage sequences stored in the Key-Value (KV) cache. Unlike traditional generation tasks where all tokens are uniformly important, CoT emphasizes the final answer, rendering conventional KV compression strategies ineffective. In this paper, we present Crystal-KV, an efficient KV cache management framework tailored for CoT reasoning. Our key insight is the answer-first principle. By mapping answer preferences into think-stage attention map, we distinguish between SlipKV, which mainly maintains the reasoning flow but may occasionally introduce misleading context, and CrystalKV, which truly contributes to the correctness of the final answer. Next, we propose an attention-based Least Recently Frequently Used algorithm. It precisely identifies when a SlipKV entry's utility expires and evicts it, retaining CrystalKV without disrupting reasoning flow. Finally, we introduce an adaptive cache budget allocation algorithm. Based on the dynamic proportion of CrystalKV, it estimates the importance of each layer/head and adjusts the KV cache budget during inference, amplifying critical components to improve budget utilization. Results show that Crystal-KV achieves state-of-the-art KV cache compression, significantly improves throughput, and enables faster response time, while maintaining, or even improving, answer accuracy for CoT reasoning.",
-    "author_info": [],
-    "authors": [
-      "Zihan Wang",
-      "Cheng Tang",
-      "Lei Gong",
-      "Cheng Li",
-      "Chao Wang",
-      "teng wang",
-      "Wenqi Lou",
-      "Xuehai Zhou"
-    ],
-    "canonical_id": "2601.16986v1",
-    "first_publication_date": "2026-01-05T07:42:58.000Z",
-    "full_authors": [
-      {
-        "full_name": "Zihan Wang",
-        "id": "01985c81-e41b-7d99-8876-7652abbce57c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Cheng Tang",
-        "id": "01985c82-9a8a-7635-96bb-2d66c7a3fed9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Lei Gong",
-        "id": "01985c81-d85a-7e96-975c-1abb629ce179",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Cheng Li",
-        "id": "01985c81-dc26-74b2-be8e-16f27fa244c7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chao Wang",
-        "id": "01985c81-d85a-76ef-b1ca-5036c14c5707",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "teng wang",
-        "id": "019bfdf8-e030-7e5e-8593-b629a22cce51",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wenqi Lou",
-        "id": "01985c84-183d-7857-85a1-5cf8a3325d1d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xuehai Zhou",
-        "id": "01985c81-d85a-75af-932c-63b743e5b68a",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019bfdf8-e003-7e8f-90fc-b41ebe9d863e",
-    "image_url": "image/2601.16986v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 27,
-        "last_7_days": 3
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019bfdf8-e003-7e8f-90fc-b41ebe9d863e",
-    "paper_summary": null,
-    "publication_date": "2026-01-05T07:42:58.000Z",
-    "title": "Crystal-KV: Efficient KV Cache Management for Chain-of-Thought LLMs via Answer-First Principle",
-    "topics": [
-      "chain-of-thought",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.LG",
-      "efficient-transformers",
-      "inference-optimization",
-      "ml-systems",
-      "model-compression",
-      "optimization-methods",
-      "reasoning",
-      "transformers"
-    ],
-    "universal_paper_id": "2601.16986",
-    "updated_at": "2026-01-27T05:41:44.579Z",
-    "version_id": "019bfdf8-e03b-73c6-bfa7-f0f7780dc33c"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) can achieve enhanced complex problem-solving through test-time computing scaling, yet this often entails longer contexts and numerous reasoning token costs. In this paper, we propose an efficient test-time scaling method that trains LLMs on code-related reasoning trajectories, facilitating their reduction of excess thinking tokens while maintaining performance. First, we create Z1-Code-Reasoning-107K, a curated dataset of simple and complex coding problems paired with their short and long solution trajectories. Second, we present a novel Shifted Thinking Window to mitigate overthinking overhead by removing context-delimiting tags (e.g., . . . ) and capping reasoning tokens. Trained with long and short trajectory data and equipped with Shifted Thinking Window, our model, Z1-7B, demonstrates the ability to adjust its reasoning level as the complexity of problems and exhibits efficient test-time scaling across different reasoning tasks that matches R1-Distill-Qwen-7B performance with about 30% of its average thinking tokens. Notably, fine-tuned with only code trajectories, Z1-7B demonstrates generalization to broader reasoning tasks (47.5% on GPQA Diamond). Our analysis of efficient reasoning elicitation also provides valuable insights for future research.",
-    "author_info": [],
-    "authors": [
-      "Zhaojian Yu",
-      "Yinghao Wu",
-      "Yilun Zhao",
-      "Arman Cohan",
-      "Xiao-Ping Zhang"
-    ],
-    "canonical_id": "2504.00810/metadatav1",
-    "first_publication_date": "2025-04-01T14:01:50.000Z",
-    "full_authors": [
-      {
-        "full_name": "Zhaojian Yu",
-        "id": "01985c82-204e-72b6-93a6-78680e04dc8d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yinghao Wu",
-        "id": "01985c82-e1b4-780d-be1b-feabc070ee66",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yilun Zhao",
-        "id": "01985c81-d85a-70af-94c1-cfdb677b53fe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Arman Cohan",
-        "id": "01985c81-d85a-7b9d-ade7-434984955e5f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiao-Ping Zhang",
-        "id": "01985c81-f313-7d4d-b712-b1bdc01d5eee",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 67,
-    "github_url": "https://github.com/efficientscaling/Z1",
-    "id": "019b0fe5-ba7b-7eb7-8739-9ec28924196e",
-    "image_url": "image/2504.00810/metadatav1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019b0fe5-ba7b-7eb7-8739-9ec28924196e",
-    "paper_summary": null,
-    "publication_date": "2025-04-01T14:01:50.000Z",
-    "title": "Z1: Efficient Test-time Scaling with Code",
-    "topics": [
-      "Computer Science",
-      "cs.CL",
-      "data-curation",
-      "fine-tuning",
-      "inference-optimization",
-      "multi-task-learning",
-      "neural-coding",
-      "reasoning",
-      "test-time-inference",
-      "transformers"
-    ],
-    "universal_paper_id": "2504.00810/metadata",
-    "updated_at": "2025-12-12T00:11:12.379Z",
-    "version_id": "019b0fe5-bab9-79e8-986e-c115fe2a566d"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) can achieve enhanced complex problem-solving through test-time computing scaling, yet this often entails longer contexts and numerous reasoning token costs. In this paper, we propose an efficient test-time scaling method that trains LLMs on code-related reasoning trajectories, facilitating their reduction of excess thinking tokens while maintaining performance. First, we create Z1-Code-Reasoning-107K, a curated dataset of simple and complex coding problems paired with their short and long solution trajectories. Second, we present a novel Shifted Thinking Window to mitigate overthinking overhead by removing context-delimiting tags (e.g., . . . ) and capping reasoning tokens. Trained with long and short trajectory data and equipped with Shifted Thinking Window, our model, Z1-7B, demonstrates the ability to adjust its reasoning level as the complexity of problems and exhibits efficient test-time scaling across different reasoning tasks that matches R1-Distill-Qwen-7B performance with about 30% of its average thinking tokens. Notably, fine-tuned with only code trajectories, Z1-7B demonstrates generalization to broader reasoning tasks (47.5% on GPQA Diamond). Our analysis of efficient reasoning elicitation also provides valuable insights for future research.",
-    "author_info": [],
-    "authors": [
-      "Zhaojian Yu",
-      "Yinghao Wu",
-      "Yilun Zhao",
-      "Arman Cohan",
-      "Xiao-Ping Zhang"
-    ],
-    "canonical_id": "2504.0810v1",
-    "first_publication_date": "2025-04-01T14:01:50.000Z",
-    "full_authors": [
-      {
-        "full_name": "Zhaojian Yu",
-        "id": "01985c82-204e-72b6-93a6-78680e04dc8d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yinghao Wu",
-        "id": "01985c82-e1b4-780d-be1b-feabc070ee66",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yilun Zhao",
-        "id": "01985c81-d85a-70af-94c1-cfdb677b53fe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Arman Cohan",
-        "id": "01985c81-d85a-7b9d-ade7-434984955e5f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiao-Ping Zhang",
-        "id": "01985c81-f313-7d4d-b712-b1bdc01d5eee",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 67,
-    "github_url": "https://github.com/efficientscaling/Z1",
-    "id": "019b547b-9d58-7d3c-a94f-d402a1e8f592",
-    "image_url": "image/2504.0810v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/tsinghua.png",
-        "name": "Tsinghua University"
-      },
-      {
-        "image": "images/organizations/yale.png",
-        "name": "Yale University"
-      }
-    ],
-    "paper_group_id": "019b547b-9d58-7d3c-a94f-d402a1e8f592",
-    "paper_summary": null,
-    "publication_date": "2025-04-01T14:01:50.000Z",
-    "title": "Z1: Efficient Test-time Scaling with Code",
-    "topics": [
-      "chain-of-thought",
-      "Computer Science",
-      "cs.CL",
-      "data-curation",
-      "fine-tuning",
-      "inference-optimization",
-      "reasoning",
-      "test-time-inference",
-      "transformers"
-    ],
-    "universal_paper_id": "2504.0810",
-    "updated_at": "2025-12-25T07:49:06.008Z",
-    "version_id": "019b547b-9d88-786f-a365-3537445c376d"
+    "universal_paper_id": "2510.0615",
+    "updated_at": "2025-11-03T18:25:49.712Z",
+    "version_id": "019a4af7-dea8-7675-a925-99f91b1026ba"
   }
 ]

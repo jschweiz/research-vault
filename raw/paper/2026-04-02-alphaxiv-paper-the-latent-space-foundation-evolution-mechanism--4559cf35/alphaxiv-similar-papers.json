@@ -342,8 +342,8 @@
     "id": "019b252b-ab50-7523-acf1-f6cd97fa354c",
     "image_url": "image/2512.13564v2.png",
     "metrics": {
-      "public_total_votes": 626,
-      "total_votes": 305,
+      "public_total_votes": 627,
+      "total_votes": 306,
       "visits_count": {
         "all": 13444,
         "last_7_days": 337
@@ -2339,146 +2339,6 @@
     "version_id": "019c57e8-a5cd-754c-b80a-8187641667f5"
   },
   {
-    "abstract": "Embodied multimodal large models (EMLMs) have gained significant attention in\nrecent years due to their potential to bridge the gap between perception,\ncognition, and action in complex, real-world environments. This comprehensive\nreview explores the development of such models, including Large Language Models\n(LLMs), Large Vision Models (LVMs), and other models, while also examining\nother emerging architectures. We discuss the evolution of EMLMs, with a focus\non embodied perception, navigation, interaction, and simulation. Furthermore,\nthe review provides a detailed analysis of the datasets used for training and\nevaluating these models, highlighting the importance of diverse, high-quality\ndata for effective learning. The paper also identifies key challenges faced by\nEMLMs, including issues of scalability, generalization, and real-time\ndecision-making. Finally, we outline future directions, emphasizing the\nintegration of multimodal sensing, reasoning, and action to advance the\ndevelopment of increasingly autonomous systems. By providing an in-depth\nanalysis of state-of-the-art methods and identifying critical gaps, this paper\naims to inspire future advancements in EMLMs and their applications across\ndiverse domains.",
-    "author_info": [],
-    "authors": [
-      "Shoubin Chen",
-      "Zehao Wu",
-      "Kai Zhang",
-      "Chunyu Li",
-      "Baiyang Zhang",
-      "Fei Ma",
-      "Fei Richard Yu",
-      "Qingquan Li"
-    ],
-    "canonical_id": "2502.15336v1",
-    "first_publication_date": "2025-02-21T09:41:27.000Z",
-    "full_authors": [
-      {
-        "full_name": "Shoubin Chen",
-        "id": "01985c84-41f3-7876-b0be-839e985a17f2",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zehao Wu",
-        "id": "01985c82-ff4e-7bf3-bf20-a0ec556771e7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kai Zhang",
-        "id": "01985c81-df57-7e34-8ed7-3a7a6c0e3578",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chunyu Li",
-        "id": "01985c83-561e-7b68-8048-c70dbb0000a9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Baiyang Zhang",
-        "id": "01985c83-238e-766b-bf31-31e6c69b4beb",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fei Ma",
-        "id": "01985c82-250e-7558-aebf-2021fa39e722",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fei Richard Yu",
-        "id": "01985c82-5aea-72f0-8587-868a76aa7bda",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qingquan Li",
-        "id": "01985c82-c2b5-7ea3-937b-df529f277214",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/BurryChen/Embodied-Multimodal-Large-Models",
-    "id": "019527e2-2558-74f8-aa06-16b5035bbb4d",
-    "image_url": "image/2502.15336v1.png",
-    "metrics": {
-      "public_total_votes": 57,
-      "total_votes": 3,
-      "visits_count": {
-        "all": 524,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/sun-yat-sen-university.png",
-        "name": "Sun Yat-Sen University"
-      },
-      {
-        "image": null,
-        "name": "Shenzhen University"
-      },
-      {
-        "image": null,
-        "name": "Institut Polytechnique de Paris"
-      },
-      {
-        "image": null,
-        "name": "ENSTA-Paris"
-      },
-      {
-        "image": null,
-        "name": "Guangdong Laboratory of Artificial Intelligence and Digital Economy"
-      }
-    ],
-    "paper_group_id": "019527e2-2558-74f8-aa06-16b5035bbb4d",
-    "paper_summary": {
-      "keyInsights": [
-        "EMLMs are increasingly integrating LLMs and LVLMs to enhance capabilities in embodied perception, navigation, and interaction.",
-        "Simulation environments and diverse, high-quality multimodal datasets are crucial for training and evaluating EMLMs.",
-        "Key challenges include cross-modal alignment, computational efficiency, generalization, temporal information handling, and dataset diversity."
-      ],
-      "originalProblem": [
-        "Existing literature reviews often focus narrowly on LLMs or LVMs, overlooking their integration with embodied agents.",
-        "Previous reviews either covered embodied intelligence too broadly or too narrowly, lacking a 'full-stack' analysis.",
-        "A systematic and timely overview of Embodied Multimodal Large Models (EMLMs) was needed to consolidate rapid advancements."
-      ],
-      "results": [
-        "The review systematically categorizes EMLM development based on embodied perception, navigation, and interaction, detailing various models and approaches.",
-        "It provides a comprehensive overview of foundational models (LLMs, LVMs, LVLMs) and their role in EMLMs.",
-        "It summarizes critical benchmark datasets and simulation environments essential for EMLM research and development."
-      ],
-      "solution": [
-        "The paper conducts the first systematic review of Embodied Multimodal Large Models (EMLMs).",
-        "It analyzes approximately 300 research papers to provide a 'full-stack' understanding of EMLMs, covering foundational models, embodied components, simulation, and datasets.",
-        "It identifies current main findings, key challenges, and promising future research directions for the field."
-      ],
-      "summary": "This paper presents a comprehensive review of Embodied Multimodal Large Models (EMLMs), analyzing their development, integration of large language and vision models, and the role of datasets and simulation environments. It highlights advancements in embodied perception, navigation, and interaction, while outlining persistent challenges and future research directions."
-    },
-    "publication_date": "2025-02-21T09:41:27.000Z",
-    "title": "Exploring Embodied Multimodal Large Models: Development, Datasets, and  Future Directions",
-    "topics": [
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.RO",
-      "multi-modal-learning",
-      "robotic-control",
-      "robotics-perception",
-      "vision-language-models"
-    ],
-    "universal_paper_id": "2502.15336",
-    "updated_at": "2025-03-03T19:35:54.028Z",
-    "version_id": "019527e2-2558-7c4f-a527-ce1eae720155"
-  },
-  {
     "abstract": "Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear complexity through kernel approximations, recurrent formulations, or fastweight dynamics, thereby enabling scalable inference with reduced computational overhead. Sparse attention techniques, in contrast, limit attention computation to selected subsets of tokens based on fixed patterns, block-wise routing, or clustering strategies, enhancing efficiency while preserving contextual coverage. This survey provides a systematic and comprehensive overview of these developments, integrating both algorithmic innovations and hardware-level considerations. In addition, we analyze the incorporation of efficient attention into largescale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components. By aligning theoretical foundations with practical deployment strategies, this work aims to serve as a foundational reference for advancing the design of scalable and efficient language models.",
     "author_info": [],
     "authors": [
@@ -3634,6 +3494,133 @@
     "version_id": "019cd59c-9a36-7eda-ab06-a48a2abb945e"
   },
   {
+    "abstract": "Understanding the decision-making processes of neural networks is a central goal of mechanistic interpretability. In the context of Large Language Models (LLMs), this involves uncovering the underlying mechanisms and identifying the roles of individual model components such as neurons and attention heads, as well as model abstractions such as the learned sparse features extracted by Sparse Autoencoders (SAEs). A rapidly growing line of work tackles this challenge by using powerful generator models to produce open-vocabulary, natural language concept descriptions for these components. In this paper, we provide the first survey of the emerging field of concept descriptions for model components and abstractions. We chart the key methods for generating these descriptions, the evolving landscape of automated and human metrics for evaluating them, and the datasets that underpin this research. Our synthesis reveals a growing demand for more rigorous, causal evaluation. By outlining the state of the art and identifying key challenges, this survey provides a roadmap for future research toward making models more transparent.",
+    "author_info": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "nM50iv8AAAAJ",
+        "id": "019114ba-7ff7-7e2b-b632-812a6d29581f",
+        "institution": "TU Berlin, BIFOLD, DFKI (Guest)",
+        "linkedinUsername": null,
+        "orcidId": "0009-0008-7408-7483",
+        "publicEmail": null,
+        "realName": "Nils Feldhus",
+        "reputation": 15,
+        "role": "user",
+        "username": "feldhus",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      },
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "-sCedSYAAAAJ",
+        "id": "019a822f-7e07-7d9c-8dd9-727592cb885c",
+        "institution": "TU Berlin, BIFOLD",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Laura Kopf",
+        "reputation": 15,
+        "role": "user",
+        "username": "laura-kopf",
+        "verified": false,
+        "weeklyReputation": 15,
+        "xUsername": null
+      }
+    ],
+    "authors": [
+      "Nils Feldhus",
+      "Laura Kopf"
+    ],
+    "canonical_id": "2510.01048v1",
+    "first_publication_date": "2025-10-01T15:51:44.000Z",
+    "full_authors": [
+      {
+        "full_name": "Nils Feldhus",
+        "id": "01985c81-e775-78cb-94f7-2eb135111800",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Laura Kopf",
+        "id": "01985c82-a0aa-702c-8f1c-8b13ab16d756",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "0199a325-b37b-700c-b71b-4315a6c1adaf",
+    "image_url": "image/2510.01048v1.png",
+    "metrics": {
+      "public_total_votes": 15,
+      "total_votes": 2,
+      "visits_count": {
+        "all": 108,
+        "last_7_days": 2
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": null,
+        "name": "Technische Universit\u00e4t Berlin"
+      },
+      {
+        "image": null,
+        "name": "BIFOLD-Berlin Institute for the Foundations of Learning and Data"
+      }
+    ],
+    "paper_group_id": "0199a325-b37b-700c-b71b-4315a6c1adaf",
+    "paper_summary": {
+      "keyInsights": [
+        "The phenomenon of polysemanticity in individual neurons has driven a shift towards analyzing more monosemantic feature spaces, such as those derived from Sparse Autoencoders (SAEs), or frameworks that explicitly handle multiple concepts per feature.",
+        "Evaluation metrics are evolving towards assessing causal faithfulness\u2014the ability of a description to predict a feature's *effect* on model output\u2014rather than just correlation.",
+        "Despite the goal of human-understandability, human evaluation is underutilized, partly due to cost, ambiguity, and a focus on expert-centric explanations over layperson-accessible ones."
+      ],
+      "originalProblem": [
+        "Understanding the opaque internal workings of Large Language Models (LLMs) is crucial for trust, transparency, and responsible deployment.",
+        "Assigning human-understandable meaning to abstract internal components (neurons, attention heads) of LLMs poses a significant challenge.",
+        "The rapid proliferation of methods for generating natural language concept descriptions for LLM internals lacked a structured overview and standardized evaluation practices."
+      ],
+      "results": [
+        "The survey maps common methods for generating concept descriptions and provides a comprehensive framework for their evaluation, including a detailed analysis of five evaluation families.",
+        "It identifies key challenges in the field, such as high computational and financial costs, potential biases introduced by the 'interpreter' LLMs, and a prevalent bias towards English-language models and text.",
+        "Future research directions are outlined, including the need for standardized benchmarks, scaling interpretability to circuits, and rigorously verifying the causal faithfulness of generated explanations."
+      ],
+      "solution": [
+        "The authors conducted the first comprehensive survey of methods that leverage generative LLMs to produce open-vocabulary natural language concept descriptions for internal model components and abstractions.",
+        "They systematically categorized description targets (native components vs. learned abstractions) and reviewed diverse techniques for generating these descriptions.",
+        "A robust evaluation framework was established, classifying metrics into predictive simulation, input-based, output-based (causal faithfulness), semantic similarity, and human evaluation."
+      ],
+      "summary": "This survey paper by Feldhus and Kopf systematically reviews the emerging field of interpreting language models through natural language concept descriptions, categorizing current methods and evaluation techniques. It highlights a shift towards more monosemantic feature spaces like Sparse Autoencoders due to polysemanticity and identifies a maturation of evaluation metrics towards causal faithfulness."
+    },
+    "publication_date": "2025-10-01T15:51:44.000Z",
+    "title": "Interpreting Language Models Through Concept Descriptions: A Survey",
+    "topics": [
+      "attention-mechanisms",
+      "causal-inference",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "explainable-ai",
+      "generative-models",
+      "mechanistic-interpretability",
+      "model-interpretation",
+      "representation-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2510.01048",
+    "updated_at": "2025-10-02T04:19:41.058Z",
+    "version_id": "0199a325-b392-7031-b2e1-433a502bbf85"
+  },
+  {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
     "author_info": [],
     "authors": [
@@ -4052,133 +4039,6 @@
     "universal_paper_id": "2512.13564/sso-callback",
     "updated_at": "2025-12-16T10:30:15.562Z",
     "version_id": "019b26b5-ed90-74dc-8d78-b8bcfaabb8c0"
-  },
-  {
-    "abstract": "Understanding the decision-making processes of neural networks is a central goal of mechanistic interpretability. In the context of Large Language Models (LLMs), this involves uncovering the underlying mechanisms and identifying the roles of individual model components such as neurons and attention heads, as well as model abstractions such as the learned sparse features extracted by Sparse Autoencoders (SAEs). A rapidly growing line of work tackles this challenge by using powerful generator models to produce open-vocabulary, natural language concept descriptions for these components. In this paper, we provide the first survey of the emerging field of concept descriptions for model components and abstractions. We chart the key methods for generating these descriptions, the evolving landscape of automated and human metrics for evaluating them, and the datasets that underpin this research. Our synthesis reveals a growing demand for more rigorous, causal evaluation. By outlining the state of the art and identifying key challenges, this survey provides a roadmap for future research toward making models more transparent.",
-    "author_info": [
-      {
-        "avatar": null,
-        "blueskyUsername": null,
-        "githubUsername": null,
-        "googleScholarId": "nM50iv8AAAAJ",
-        "id": "019114ba-7ff7-7e2b-b632-812a6d29581f",
-        "institution": "TU Berlin, BIFOLD, DFKI (Guest)",
-        "linkedinUsername": null,
-        "orcidId": "0009-0008-7408-7483",
-        "publicEmail": null,
-        "realName": "Nils Feldhus",
-        "reputation": 15,
-        "role": "user",
-        "username": "feldhus",
-        "verified": false,
-        "weeklyReputation": 0,
-        "xUsername": null
-      },
-      {
-        "avatar": null,
-        "blueskyUsername": null,
-        "githubUsername": null,
-        "googleScholarId": "-sCedSYAAAAJ",
-        "id": "019a822f-7e07-7d9c-8dd9-727592cb885c",
-        "institution": "TU Berlin, BIFOLD",
-        "linkedinUsername": null,
-        "orcidId": null,
-        "publicEmail": null,
-        "realName": "Laura Kopf",
-        "reputation": 15,
-        "role": "user",
-        "username": "laura-kopf",
-        "verified": false,
-        "weeklyReputation": 15,
-        "xUsername": null
-      }
-    ],
-    "authors": [
-      "Nils Feldhus",
-      "Laura Kopf"
-    ],
-    "canonical_id": "2510.01048v1",
-    "first_publication_date": "2025-10-01T15:51:44.000Z",
-    "full_authors": [
-      {
-        "full_name": "Nils Feldhus",
-        "id": "01985c81-e775-78cb-94f7-2eb135111800",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Laura Kopf",
-        "id": "01985c82-a0aa-702c-8f1c-8b13ab16d756",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "0199a325-b37b-700c-b71b-4315a6c1adaf",
-    "image_url": "image/2510.01048v1.png",
-    "metrics": {
-      "public_total_votes": 15,
-      "total_votes": 2,
-      "visits_count": {
-        "all": 108,
-        "last_7_days": 2
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": null,
-        "name": "Technische Universit\u00e4t Berlin"
-      },
-      {
-        "image": null,
-        "name": "BIFOLD-Berlin Institute for the Foundations of Learning and Data"
-      }
-    ],
-    "paper_group_id": "0199a325-b37b-700c-b71b-4315a6c1adaf",
-    "paper_summary": {
-      "keyInsights": [
-        "The phenomenon of polysemanticity in individual neurons has driven a shift towards analyzing more monosemantic feature spaces, such as those derived from Sparse Autoencoders (SAEs), or frameworks that explicitly handle multiple concepts per feature.",
-        "Evaluation metrics are evolving towards assessing causal faithfulness\u2014the ability of a description to predict a feature's *effect* on model output\u2014rather than just correlation.",
-        "Despite the goal of human-understandability, human evaluation is underutilized, partly due to cost, ambiguity, and a focus on expert-centric explanations over layperson-accessible ones."
-      ],
-      "originalProblem": [
-        "Understanding the opaque internal workings of Large Language Models (LLMs) is crucial for trust, transparency, and responsible deployment.",
-        "Assigning human-understandable meaning to abstract internal components (neurons, attention heads) of LLMs poses a significant challenge.",
-        "The rapid proliferation of methods for generating natural language concept descriptions for LLM internals lacked a structured overview and standardized evaluation practices."
-      ],
-      "results": [
-        "The survey maps common methods for generating concept descriptions and provides a comprehensive framework for their evaluation, including a detailed analysis of five evaluation families.",
-        "It identifies key challenges in the field, such as high computational and financial costs, potential biases introduced by the 'interpreter' LLMs, and a prevalent bias towards English-language models and text.",
-        "Future research directions are outlined, including the need for standardized benchmarks, scaling interpretability to circuits, and rigorously verifying the causal faithfulness of generated explanations."
-      ],
-      "solution": [
-        "The authors conducted the first comprehensive survey of methods that leverage generative LLMs to produce open-vocabulary natural language concept descriptions for internal model components and abstractions.",
-        "They systematically categorized description targets (native components vs. learned abstractions) and reviewed diverse techniques for generating these descriptions.",
-        "A robust evaluation framework was established, classifying metrics into predictive simulation, input-based, output-based (causal faithfulness), semantic similarity, and human evaluation."
-      ],
-      "summary": "This survey paper by Feldhus and Kopf systematically reviews the emerging field of interpreting language models through natural language concept descriptions, categorizing current methods and evaluation techniques. It highlights a shift towards more monosemantic feature spaces like Sparse Autoencoders due to polysemanticity and identifies a maturation of evaluation metrics towards causal faithfulness."
-    },
-    "publication_date": "2025-10-01T15:51:44.000Z",
-    "title": "Interpreting Language Models Through Concept Descriptions: A Survey",
-    "topics": [
-      "attention-mechanisms",
-      "causal-inference",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.LG",
-      "explainable-ai",
-      "generative-models",
-      "mechanistic-interpretability",
-      "model-interpretation",
-      "representation-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2510.01048",
-    "updated_at": "2025-10-02T04:19:41.058Z",
-    "version_id": "0199a325-b392-7031-b2e1-433a502bbf85"
   },
   {
     "abstract": "Recent advances in large language models (LLMs) have sparked growing interest in integrating language-driven techniques into trajectory prediction. By leveraging their semantic and reasoning capabilities, LLMs are reshaping how autonomous systems perceive, model, and predict trajectories. This survey provides a comprehensive overview of this emerging field, categorizing recent work into five directions: (1) Trajectory prediction via language modeling paradigms, (2) Direct trajectory prediction with pretrained language models, (3) Language-guided scene understanding for trajectory prediction, (4) Language-driven data generation for trajectory prediction, (5) Language-based reasoning and interpretability for trajectory prediction. For each, we analyze representative methods, highlight core design choices, and identify open challenges. This survey bridges natural language processing and trajectory prediction, offering a unified perspective on how language can enrich trajectory prediction.",
@@ -6037,186 +5897,6 @@
     "version_id": "019c75be-5043-7772-a561-8d07154436a6"
   },
   {
-    "abstract": "Language has long been conceived as an essential tool for human reasoning. The breakthrough of Large Language Models (LLMs) has sparked significant research interest in leveraging these models to tackle complex reasoning tasks. Researchers have moved beyond simple autoregressive token generation by introducing the concept of \"thought\" -- a sequence of tokens representing intermediate steps in the reasoning process. This innovative paradigm enables LLMs' to mimic complex human reasoning processes, such as tree search and reflective thinking. Recently, an emerging trend of learning to reason has applied reinforcement learning (RL) to train LLMs to master reasoning processes. This approach enables the automatic generation of high-quality reasoning trajectories through trial-and-error search algorithms, significantly expanding LLMs' reasoning capacity by providing substantially more training data. Furthermore, recent studies demonstrate that encouraging LLMs to \"think\" with more tokens during test-time inference can further significantly boost reasoning accuracy. Therefore, the train-time and test-time scaling combined to show a new research frontier -- a path toward Large Reasoning Model. The introduction of OpenAI's o1 series marks a significant milestone in this research direction. In this survey, we present a comprehensive review of recent progress in LLM reasoning. We begin by introducing the foundational background of LLMs and then explore the key technical components driving the development of large reasoning models, with a focus on automated data construction, learning-to-reason techniques, and test-time scaling. We also analyze popular open-source projects at building large reasoning models, and conclude with open challenges and future research directions.",
-    "author_info": [],
-    "authors": [
-      "Fengli Xu",
-      "Qianyue Hao",
-      "Zefang Zong",
-      "Jingwei Wang",
-      "Yunke Zhang",
-      "Jingyi Wang",
-      "Xiaochong Lan",
-      "Jiahui Gong",
-      "Tianjian Ouyang",
-      "Fanjin Meng",
-      "Chenyang Shao",
-      "Yuwei Yan",
-      "Qinglong Yang",
-      "Yiwen Song",
-      "Sijian Ren",
-      "Xinyuan Hu",
-      "Yu Li",
-      "Jie Feng",
-      "Chen Gao",
-      "Yong Li"
-    ],
-    "canonical_id": "2501.09686v1v1",
-    "first_publication_date": "2025-01-16T17:37:58.000Z",
-    "full_authors": [
-      {
-        "full_name": "Fengli Xu",
-        "id": "01985c81-f313-7b72-9e42-b29119675fa2",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qianyue Hao",
-        "id": "01985c83-11b9-7dfe-bff3-13a9c9b7f322",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zefang Zong",
-        "id": "01985c82-cd93-754b-a782-f631cc522328",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jingwei Wang",
-        "id": "01985c82-8244-7a23-9b1b-e4daa8e34bd6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yunke Zhang",
-        "id": "01985c82-560f-7a75-a328-c69853114e9c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jingyi Wang",
-        "id": "01985c82-38d5-7b75-a387-0cd29e8e6b8d",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaochong Lan",
-        "id": "01985c82-4810-7345-8009-dc2a93f8c92c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiahui Gong",
-        "id": "01985c83-c43a-7c97-8eb0-59d46d5f9fb3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tianjian Ouyang",
-        "id": "01985c82-42b3-7d81-a28e-238ecdd5a95f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fanjin Meng",
-        "id": "01985c83-c43a-76ba-b464-0a38d5ed68fe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chenyang Shao",
-        "id": "01985c82-5ca3-7571-b5f5-21b6eeefcd05",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuwei Yan",
-        "id": "01985c82-c679-7e0c-8088-8883c4e416a8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qinglong Yang",
-        "id": "01985c81-f313-78e7-a192-2ff9ab92a0d3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yiwen Song",
-        "id": "01985c82-15ac-753f-b363-ae581763eebe",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sijian Ren",
-        "id": "01985c83-c43a-7d80-a4c4-d0ccf6b1a76a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xinyuan Hu",
-        "id": "01985c82-aa86-7516-b349-5706bb932943",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu Li",
-        "id": "01985c81-f153-7485-bf71-a0d00a91ca43",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jie Feng",
-        "id": "01985c82-30ed-7884-9b69-cab0bcd41fc5",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chen Gao",
-        "id": "01985c81-f234-7ef3-a6fa-2e37d5b245dc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yong Li",
-        "id": "01985c81-e5a9-70b5-9f0e-74eda8e2a040",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 0,
-    "github_url": "https://github.com/tsinghua-fib-lab/Awesome-Large-Reasoning-Model",
-    "id": "01947031-78f0-7110-a7ac-44af469df68e",
-    "image_url": null,
-    "metrics": {
-      "public_total_votes": 1,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 9,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "01947031-78f0-7110-a7ac-44af469df68e",
-    "paper_summary": null,
-    "publication_date": "2025-01-16T17:37:58.000Z",
-    "title": "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models",
-    "topics": [
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "deep-reinforcement-learning",
-      "neural-architecture-search",
-      "reinforcement-learning",
-      "self-supervised-learning"
-    ],
-    "universal_paper_id": "2501.09686v1",
-    "updated_at": "2025-03-03T19:37:21.902Z",
-    "version_id": "01947031-78f0-7b54-b5a5-1e50c583ea4b"
-  },
-  {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
     "author_info": [],
     "authors": [
@@ -6587,6 +6267,288 @@
     "universal_paper_id": "2512.13564/5icbw02ra6q2",
     "updated_at": "2026-02-19T11:54:19.850Z",
     "version_id": "019c75c0-41d2-7fac-a30d-58b4c6c565c5"
+  },
+  {
+    "abstract": "Language has long been conceived as an essential tool for human reasoning. The breakthrough of Large Language Models (LLMs) has sparked significant research interest in leveraging these models to tackle complex reasoning tasks. Researchers have moved beyond simple autoregressive token generation by introducing the concept of \"thought\" -- a sequence of tokens representing intermediate steps in the reasoning process. This innovative paradigm enables LLMs' to mimic complex human reasoning processes, such as tree search and reflective thinking. Recently, an emerging trend of learning to reason has applied reinforcement learning (RL) to train LLMs to master reasoning processes. This approach enables the automatic generation of high-quality reasoning trajectories through trial-and-error search algorithms, significantly expanding LLMs' reasoning capacity by providing substantially more training data. Furthermore, recent studies demonstrate that encouraging LLMs to \"think\" with more tokens during test-time inference can further significantly boost reasoning accuracy. Therefore, the train-time and test-time scaling combined to show a new research frontier -- a path toward Large Reasoning Model. The introduction of OpenAI's o1 series marks a significant milestone in this research direction. In this survey, we present a comprehensive review of recent progress in LLM reasoning. We begin by introducing the foundational background of LLMs and then explore the key technical components driving the development of large reasoning models, with a focus on automated data construction, learning-to-reason techniques, and test-time scaling. We also analyze popular open-source projects at building large reasoning models, and conclude with open challenges and future research directions.",
+    "author_info": [],
+    "authors": [
+      "Fengli Xu",
+      "Qianyue Hao",
+      "Zefang Zong",
+      "Jingwei Wang",
+      "Yunke Zhang",
+      "Jingyi Wang",
+      "Xiaochong Lan",
+      "Jiahui Gong",
+      "Tianjian Ouyang",
+      "Fanjin Meng",
+      "Chenyang Shao",
+      "Yuwei Yan",
+      "Qinglong Yang",
+      "Yiwen Song",
+      "Sijian Ren",
+      "Xinyuan Hu",
+      "Yu Li",
+      "Jie Feng",
+      "Chen Gao",
+      "Yong Li"
+    ],
+    "canonical_id": "2501.09686v1v1",
+    "first_publication_date": "2025-01-16T17:37:58.000Z",
+    "full_authors": [
+      {
+        "full_name": "Fengli Xu",
+        "id": "01985c81-f313-7b72-9e42-b29119675fa2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qianyue Hao",
+        "id": "01985c83-11b9-7dfe-bff3-13a9c9b7f322",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zefang Zong",
+        "id": "01985c82-cd93-754b-a782-f631cc522328",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingwei Wang",
+        "id": "01985c82-8244-7a23-9b1b-e4daa8e34bd6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yunke Zhang",
+        "id": "01985c82-560f-7a75-a328-c69853114e9c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jingyi Wang",
+        "id": "01985c82-38d5-7b75-a387-0cd29e8e6b8d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaochong Lan",
+        "id": "01985c82-4810-7345-8009-dc2a93f8c92c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiahui Gong",
+        "id": "01985c83-c43a-7c97-8eb0-59d46d5f9fb3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianjian Ouyang",
+        "id": "01985c82-42b3-7d81-a28e-238ecdd5a95f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fanjin Meng",
+        "id": "01985c83-c43a-76ba-b464-0a38d5ed68fe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chenyang Shao",
+        "id": "01985c82-5ca3-7571-b5f5-21b6eeefcd05",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuwei Yan",
+        "id": "01985c82-c679-7e0c-8088-8883c4e416a8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qinglong Yang",
+        "id": "01985c81-f313-78e7-a192-2ff9ab92a0d3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yiwen Song",
+        "id": "01985c82-15ac-753f-b363-ae581763eebe",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sijian Ren",
+        "id": "01985c83-c43a-7d80-a4c4-d0ccf6b1a76a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xinyuan Hu",
+        "id": "01985c82-aa86-7516-b349-5706bb932943",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Li",
+        "id": "01985c81-f153-7485-bf71-a0d00a91ca43",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jie Feng",
+        "id": "01985c82-30ed-7884-9b69-cab0bcd41fc5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chen Gao",
+        "id": "01985c81-f234-7ef3-a6fa-2e37d5b245dc",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yong Li",
+        "id": "01985c81-e5a9-70b5-9f0e-74eda8e2a040",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 0,
+    "github_url": "https://github.com/tsinghua-fib-lab/Awesome-Large-Reasoning-Model",
+    "id": "01947031-78f0-7110-a7ac-44af469df68e",
+    "image_url": null,
+    "metrics": {
+      "public_total_votes": 1,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 9,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "01947031-78f0-7110-a7ac-44af469df68e",
+    "paper_summary": null,
+    "publication_date": "2025-01-16T17:37:58.000Z",
+    "title": "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models",
+    "topics": [
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "deep-reinforcement-learning",
+      "neural-architecture-search",
+      "reinforcement-learning",
+      "self-supervised-learning"
+    ],
+    "universal_paper_id": "2501.09686v1",
+    "updated_at": "2025-03-03T19:37:21.902Z",
+    "version_id": "01947031-78f0-7b54-b5a5-1e50c583ea4b"
+  },
+  {
+    "abstract": "Recently, tool learning with large language models (LLMs) has emerged as a promising paradigm for augmenting the capabilities of LLMs to tackle highly complex problems. Despite growing attention and rapid advancements in this field, the existing literature remains fragmented and lacks systematic organization, posing barriers to entry for newcomers. This gap motivates us to conduct a comprehensive survey of existing works on tool learning with LLMs. In this survey, we focus on reviewing existing literature from the two primary aspects (1) why tool learning is beneficial and (2) how tool learning is implemented, enabling a comprehensive understanding of tool learning with LLMs. We first explore the \"why\" by reviewing both the benefits of tool integration and the inherent benefits of the tool learning paradigm from six specific aspects. In terms of \"how\", we systematically review the literature according to a taxonomy of four key stages in the tool learning workflow: task planning, tool selection, tool calling, and response generation. Additionally, we provide a detailed summary of existing benchmarks and evaluation methods, categorizing them according to their relevance to different stages. Finally, we discuss current challenges and outline potential future directions, aiming to inspire both researchers and industrial developers to further explore this emerging and promising area. We also maintain a GitHub repository to continually keep track of the relevant papers and resources in this rising area at this https URL.",
+    "author_info": [],
+    "authors": [
+      "Changle Qu",
+      "Sunhao Dai",
+      "Xiaochi Wei",
+      "Hengyi Cai",
+      "Shuaiqiang Wang",
+      "Dawei Yin",
+      "Jun Xu",
+      "Ji-Rong Wen"
+    ],
+    "canonical_id": "2405.17935/sso-callbackv3",
+    "first_publication_date": "2024-05-28T08:01:26.000Z",
+    "full_authors": [
+      {
+        "full_name": "Changle Qu",
+        "id": "01985c81-e842-7ded-bc67-affbcd329a41",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sunhao Dai",
+        "id": "01985c81-e842-7742-b778-2ba0a8316075",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaochi Wei",
+        "id": "01985c81-e842-7cff-b78b-0f8c837d9482",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hengyi Cai",
+        "id": "01985c81-e842-7766-91b1-e2571feb9eae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuaiqiang Wang",
+        "id": "01985c81-e842-703a-97d1-41742c0f1d19",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dawei Yin",
+        "id": "01985c81-e842-7b1c-b52c-de174913aa86",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jun Xu",
+        "id": "01985c81-ddbe-72cb-838f-1cf0b9571a7b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ji-Rong Wen",
+        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 2,
+    "github_url": "https://github.com/ferzaad/Diabetes",
+    "id": "019b4913-2bfe-7d7f-af1e-1b96e97247b5",
+    "image_url": "image/2405.17935/sso-callbackv3.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 2,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/renmin.png",
+        "name": "Renmin University of China"
+      }
+    ],
+    "paper_group_id": "019b4913-2bfe-7d7f-af1e-1b96e97247b5",
+    "paper_summary": null,
+    "publication_date": "2024-11-04T15:07:18.000Z",
+    "title": "Tool Learning with Large Language Models: A Survey",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "reasoning",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2405.17935/sso-callback",
+    "updated_at": "2025-12-23T02:39:11.870Z",
+    "version_id": "019b4913-2c2d-7b46-a5cb-5b3cce0f5136"
   },
   {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
@@ -6962,61 +6924,6 @@
     "version_id": "019c75c0-41f4-7526-aab9-91144ee48549"
   },
   {
-    "abstract": "In the last half-decade, the field of natural language processing (NLP) has undergone two major transitions: the switch to neural networks as the primary modeling paradigm and the homogenization of the training regime (pre-train, then fine-tune). Amidst this process, language models have emerged as NLP's workhorse, displaying increasingly fluent generation capabilities and proving to be an indispensable means of knowledge transfer downstream. Due to the otherwise opaque, black-box nature of such models, researchers have employed aspects of linguistic theory in order to characterize their behavior. Questions central to syntax -- the study of the hierarchical structure of language -- have factored heavily into such work, shedding invaluable insights about models' inherent biases and their ability to make human-like generalizations. In this paper, we attempt to take stock of this growing body of literature. In doing so, we observe a lack of clarity across numerous dimensions, which influences the hypotheses that researchers form, as well as the conclusions they draw from their findings. To remedy this, we urge researchers make careful considerations when investigating coding properties, selecting representations, and evaluating via downstream tasks. Furthermore, we outline the implications of the different types of research questions exhibited in studies on syntax, as well as the inherent pitfalls of aggregate metrics. Ultimately, we hope that our discussion adds nuance to the prospect of studying language models and paves the way for a less monolithic perspective on syntax in this context.",
-    "author_info": [],
-    "authors": [
-      "Artur Kulmizev",
-      "Joakim Nivre"
-    ],
-    "canonical_id": "2110.08887v1",
-    "first_publication_date": "2021-10-17T18:25:23.000Z",
-    "full_authors": [
-      {
-        "full_name": "Artur Kulmizev",
-        "id": "01985c82-7f75-728a-8b92-5ded7fc0b029",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Joakim Nivre",
-        "id": "01985c82-2a91-7da1-8dde-c1dcd90c4ebe",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019a8636-23bf-70dc-87a2-b25caa72fd3e",
-    "image_url": "image/2110.08887v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 2,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019a8636-23bf-70dc-87a2-b25caa72fd3e",
-    "paper_summary": null,
-    "publication_date": "2021-10-17T18:25:23.000Z",
-    "title": "Schr\u00f6dinger's Tree -- On Syntax and Neural Language Models",
-    "topics": [
-      "Computer Science",
-      "cs.CL",
-      "explainable-ai",
-      "model-interpretation",
-      "neural-coding",
-      "representation-learning",
-      "sequence-modeling",
-      "transformers"
-    ],
-    "universal_paper_id": "2110.08887",
-    "updated_at": "2025-11-15T06:31:26.399Z",
-    "version_id": "019a8636-2869-7ba7-95f9-93334998ba29"
-  },
-  {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
     "author_info": [],
     "authors": [
@@ -7068,7 +6975,7 @@
       "Yu-Gang Jiang",
       "Shuicheng Yan"
     ],
-    "canonical_id": "2512.13564/5icbw02ra6q2.jspv2",
+    "canonical_id": "2512.13564/5icbw02ra6q2.htmlv2",
     "first_publication_date": "2025-12-15T17:22:34.000Z",
     "full_authors": [
       {
@@ -7356,19 +7263,19 @@
     ],
     "github_stars": 18252,
     "github_url": "https://github.com/humanlayer/12-factor-agents",
-    "id": "019c75c0-412c-70de-8102-f253aff258be",
-    "image_url": "image/2512.13564/5icbw02ra6q2.jspv2.png",
+    "id": "019c75c0-431d-7a25-a2ce-8e8618fc58c7",
+    "image_url": "image/2512.13564/5icbw02ra6q2.htmlv2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 1,
+        "all": 0,
         "last_7_days": 0
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019c75c0-412c-70de-8102-f253aff258be",
+    "paper_group_id": "019c75c0-431d-7a25-a2ce-8e8618fc58c7",
     "paper_summary": null,
     "publication_date": "2026-01-13T09:33:57.000Z",
     "title": "Memory in the Age of AI Agents",
@@ -7376,95 +7283,135 @@
       "agentic-frameworks",
       "agents",
       "Computer Science",
-      "continual-learning",
       "cs.AI",
       "cs.CL",
-      "information-extraction",
+      "generative-models",
       "multi-agent-learning",
       "multi-modal-learning",
+      "reasoning",
       "reinforcement-learning",
       "representation-learning",
       "transformers"
     ],
-    "universal_paper_id": "2512.13564/5icbw02ra6q2.jsp",
-    "updated_at": "2026-02-19T11:54:19.820Z",
-    "version_id": "019c75c0-41b4-71e5-8d4b-9526208ee0af"
+    "universal_paper_id": "2512.13564/5icbw02ra6q2.html",
+    "updated_at": "2026-02-19T11:54:20.317Z",
+    "version_id": "019c75c0-4447-761b-9b41-582bce90df1f"
   },
   {
-    "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+    "abstract": "Memory is a fundamental component of AI systems, underpinning large language models (LLMs)-based agents. While prior surveys have focused on memory applications with LLMs (e.g., enabling personalized memory in conversational agents), they often overlook the atomic operations that underlie memory dynamics. In this survey, we first categorize memory representations into parametric and contextual forms, and then introduce six fundamental memory operations: Consolidation, Updating, Indexing, Forgetting, Retrieval, and Compression. We map these operations to the most relevant research topics across long-term, long-context, parametric modification, and multi-source memory. By reframing memory systems through the lens of atomic operations and representation types, this survey provides a structured and dynamic perspective on research, benchmark datasets, and tools related to memory in AI, clarifying the functional interplay in LLMs based agents while outlining promising directions for future research\\footnote{The paper list, datasets, methods and tools are available at \\href{this https URL}{this https URL\\_Memory\\_in\\_AI}.}.",
     "author_info": [],
     "authors": [
-      "Theodore R. Sumers",
-      "Shunyu Yao",
-      "Karthik Narasimhan",
-      "Thomas L. Griffiths"
+      "Yiming Du",
+      "Wenyu Huang",
+      "Danna Zheng",
+      "Zhaowei Wang",
+      "Sebastien Montella",
+      "Mirella Lapata",
+      "Kam-Fai Wong",
+      "Jeff Z. Pan"
     ],
-    "canonical_id": "2309.02427/commentsv3",
-    "first_publication_date": "2023-09-05T17:56:20.000Z",
+    "canonical_id": "2505.0675v2",
+    "first_publication_date": "2025-05-01T17:31:33.000Z",
     "full_authors": [
       {
-        "full_name": "Theodore R. Sumers",
-        "id": "01985c82-231f-7475-8e11-1787daa9c782",
+        "full_name": "Yiming Du",
+        "id": "01985c82-590b-7ac1-aa58-32e31532b99e",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shunyu Yao",
-        "id": "01985c81-d97e-7e49-9edf-1bc110f28653",
+        "full_name": "Wenyu Huang",
+        "id": "01985c82-7bbe-7188-b78e-3b2dfabfcafc",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Karthik Narasimhan",
-        "id": "01985c81-d97e-71a0-9363-d9c837760486",
+        "full_name": "Danna Zheng",
+        "id": "01985c81-f062-76e7-b693-720ee980387b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Thomas L. Griffiths",
-        "id": "01985c81-de91-743b-9d41-82912c95d485",
+        "full_name": "Zhaowei Wang",
+        "id": "01985c82-07f2-7226-a3ba-826311d5ec53",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sebastien Montella",
+        "id": "01985c82-b59c-796c-b6de-c887ddf817b4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mirella Lapata",
+        "id": "01985c81-f062-76cb-9f01-1d59d8a7b5ab",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kam-Fai Wong",
+        "id": "01985c81-f8f2-7685-8637-a442d1388fe3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jeff Z. Pan",
+        "id": "01985c81-f062-7f93-8579-5f4e5bd6ed06",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 1044,
-    "github_url": "https://github.com/ysymyth/awesome-language-agents",
-    "id": "0199e183-7a23-7e06-8ae5-6dacbd226ad0",
-    "image_url": "image/2309.02427/commentsv3.png",
+    "github_stars": 326,
+    "github_url": "https://github.com/Elvin-Yiming-Du/Survey_Memory_in_AI",
+    "id": "019b4581-f516-7c9b-925b-6100e68ccf98",
+    "image_url": "image/2505.0675v2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
         "all": 2,
-        "last_7_days": 0
+        "last_7_days": 1
       },
       "x_likes": 0
     },
     "organization_info": [
       {
-        "image": "images/organizations/princeton.jpg",
-        "name": "Princeton University"
+        "image": "images/organizations/chinesehongkong.png",
+        "name": "The Chinese University of Hong Kong"
+      },
+      {
+        "image": null,
+        "name": "The University of Edinburgh"
+      },
+      {
+        "image": "images/organizations/hkust.jpg",
+        "name": "HKUST"
+      },
+      {
+        "image": null,
+        "name": "Huawei UK R&D Ltd."
       }
     ],
-    "paper_group_id": "0199e183-7a23-7e06-8ae5-6dacbd226ad0",
+    "paper_group_id": "019b4581-f516-7c9b-925b-6100e68ccf98",
     "paper_summary": null,
-    "publication_date": "2024-03-15T15:44:11.000Z",
-    "title": "Cognitive Architectures for Language Agents",
+    "publication_date": "2025-05-27T17:38:40.000Z",
+    "title": "Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions",
     "topics": [
-      "agentic-frameworks",
       "agents",
+      "attention-mechanisms",
       "Computer Science",
-      "cs.AI",
+      "continual-learning",
       "cs.CL",
-      "cs.LG",
-      "cs.SC",
-      "neuro-symbolic-ai",
-      "reasoning",
-      "tool-use"
+      "information-extraction",
+      "model-compression",
+      "optimization-methods",
+      "representation-learning",
+      "transformers"
     ],
-    "universal_paper_id": "2309.02427/comments",
-    "updated_at": "2025-10-14T06:58:34.147Z",
-    "version_id": "0199e183-7a5c-7ac7-ae24-6e6fe8b9d98f"
+    "universal_paper_id": "2505.0675",
+    "updated_at": "2025-12-22T10:01:43.446Z",
+    "version_id": "019b4581-f53a-70dd-a2cc-e8f08c6403b9"
   },
   {
     "abstract": "Large Language Models (LLMs) have demonstrated strong generalization across a wide range of tasks. Reasoning with LLMs is central to solving multi-step problems and complex decision-making. To support efficient reasoning, recent studies have shifted attention from explicit chain-of-thought prompting toward implicit reasoning, where reasoning occurs silently via latent structures without emitting intermediate textual steps. Implicit reasoning brings advantages such as lower generation cost, faster inference, and better alignment with internal computation. Although prior surveys have discussed latent representations in the context of reasoning, a dedicated and mechanism-level examination of how reasoning unfolds internally within LLMs remains absent. This survey fills that gap by introducing a taxonomy centered on execution paradigms, shifting the focus from representational forms to computational strategies. We organize existing methods into three execution paradigms based on \\textbf{\\textit{how and where internal computation unfolds}}: latent optimization, signal-guided control, and layer-recurrent execution. We also review structural, behavioral and representation-based evidence that supports the presence of implicit reasoning in LLMs. We further provide a structured overview of the evaluation metrics and benchmarks used in existing works to assess the effectiveness and reliability of implicit reasoning. We maintain a continuously updated project at: this https URL.",
@@ -7590,108 +7537,6 @@
     "version_id": "019aefd8-499b-7d28-8320-b1172b5a421e"
   },
   {
-    "abstract": "Recently, tool learning with large language models (LLMs) has emerged as a promising paradigm for augmenting the capabilities of LLMs to tackle highly complex problems. Despite growing attention and rapid advancements in this field, the existing literature remains fragmented and lacks systematic organization, posing barriers to entry for newcomers. This gap motivates us to conduct a comprehensive survey of existing works on tool learning with LLMs. In this survey, we focus on reviewing existing literature from the two primary aspects (1) why tool learning is beneficial and (2) how tool learning is implemented, enabling a comprehensive understanding of tool learning with LLMs. We first explore the \"why\" by reviewing both the benefits of tool integration and the inherent benefits of the tool learning paradigm from six specific aspects. In terms of \"how\", we systematically review the literature according to a taxonomy of four key stages in the tool learning workflow: task planning, tool selection, tool calling, and response generation. Additionally, we provide a detailed summary of existing benchmarks and evaluation methods, categorizing them according to their relevance to different stages. Finally, we discuss current challenges and outline potential future directions, aiming to inspire both researchers and industrial developers to further explore this emerging and promising area. We also maintain a GitHub repository to continually keep track of the relevant papers and resources in this rising area at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Changle Qu",
-      "Sunhao Dai",
-      "Xiaochi Wei",
-      "Hengyi Cai",
-      "Shuaiqiang Wang",
-      "Dawei Yin",
-      "Jun Xu",
-      "Ji-Rong Wen"
-    ],
-    "canonical_id": "2405.17935/sso-callbackv3",
-    "first_publication_date": "2024-05-28T08:01:26.000Z",
-    "full_authors": [
-      {
-        "full_name": "Changle Qu",
-        "id": "01985c81-e842-7ded-bc67-affbcd329a41",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sunhao Dai",
-        "id": "01985c81-e842-7742-b778-2ba0a8316075",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaochi Wei",
-        "id": "01985c81-e842-7cff-b78b-0f8c837d9482",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hengyi Cai",
-        "id": "01985c81-e842-7766-91b1-e2571feb9eae",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuaiqiang Wang",
-        "id": "01985c81-e842-703a-97d1-41742c0f1d19",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dawei Yin",
-        "id": "01985c81-e842-7b1c-b52c-de174913aa86",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jun Xu",
-        "id": "01985c81-ddbe-72cb-838f-1cf0b9571a7b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ji-Rong Wen",
-        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 2,
-    "github_url": "https://github.com/ferzaad/Diabetes",
-    "id": "019b4913-2bfe-7d7f-af1e-1b96e97247b5",
-    "image_url": "image/2405.17935/sso-callbackv3.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 2,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [
-      {
-        "image": "images/organizations/renmin.png",
-        "name": "Renmin University of China"
-      }
-    ],
-    "paper_group_id": "019b4913-2bfe-7d7f-af1e-1b96e97247b5",
-    "paper_summary": null,
-    "publication_date": "2024-11-04T15:07:18.000Z",
-    "title": "Tool Learning with Large Language Models: A Survey",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "reasoning",
-      "tool-use",
-      "transformers"
-    ],
-    "universal_paper_id": "2405.17935/sso-callback",
-    "updated_at": "2025-12-23T02:39:11.870Z",
-    "version_id": "019b4913-2c2d-7b46-a5cb-5b3cce0f5136"
-  },
-  {
     "abstract": "Large Language Models (LLMs) have demonstrated strong generalization across a wide range of tasks. Reasoning with LLMs is central to solving multi-step problems and complex decision-making. To support efficient reasoning, recent studies have shifted attention from explicit chain-of-thought prompting toward implicit reasoning, where reasoning occurs silently via latent structures without emitting intermediate textual steps. Implicit reasoning brings advantages such as lower generation cost, faster inference, and better alignment with internal computation. Although prior surveys have discussed latent representations in the context of reasoning, a dedicated and mechanism-level examination of how reasoning unfolds internally within LLMs remains absent. This survey fills that gap by introducing a taxonomy centered on execution paradigms, shifting the focus from representational forms to computational strategies. We organize existing methods into three execution paradigms based on \\textbf{\\textit{how and where internal computation unfolds}}: latent optimization, signal-guided control, and layer-recurrent execution. We also review structural, behavioral and representation-based evidence that supports the presence of implicit reasoning in LLMs. We further provide a structured overview of the evaluation metrics and benchmarks used in existing works to assess the effectiveness and reliability of implicit reasoning. We maintain a continuously updated project at: this https URL.",
     "author_info": [],
     "authors": [
@@ -7798,939 +7643,156 @@
     "version_id": "019b64a8-2481-7684-8d46-ea18357db314"
   },
   {
-    "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+    "abstract": "We show a special case of Steenbrink vanishing for rational singularities in positive characteristic. As a consequence, we prove that strongly $F$-regular threefolds and klt threefolds in characteristic $p>41$ satisfy Steenbrink vanishing.",
     "author_info": [],
     "authors": [
-      "Theodore R. Sumers",
-      "Shunyu Yao",
-      "Karthik Narasimhan",
-      "Thomas L. Griffiths"
+      "Tatsuro Kawakami"
     ],
-    "canonical_id": "2309.02427%2fcommentsv3",
-    "first_publication_date": "2023-09-05T17:56:20.000Z",
+    "canonical_id": "2507.04838v1",
+    "first_publication_date": "2025-07-07T10:00:35.000Z",
     "full_authors": [
       {
-        "full_name": "Theodore R. Sumers",
-        "id": "01985c82-231f-7475-8e11-1787daa9c782",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shunyu Yao",
-        "id": "01985c81-d97e-7e49-9edf-1bc110f28653",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Karthik Narasimhan",
-        "id": "01985c81-d97e-71a0-9363-d9c837760486",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Thomas L. Griffiths",
-        "id": "01985c81-de91-743b-9d41-82912c95d485",
+        "full_name": "Tatsuro Kawakami",
+        "id": "01985c82-540a-75b7-82dc-c19d79a9bec5",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 1067,
-    "github_url": "https://github.com/ysymyth/awesome-language-agents",
-    "id": "019aca69-fefa-7f32-847b-7df8bcb1ad27",
-    "image_url": "image/2309.02427%2fcommentsv3.png",
+    "github_stars": null,
+    "github_url": null,
+    "id": "0197e454-89b8-7fd5-afe5-165ea2f567a3",
+    "image_url": "image/2507.04838v1.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 0,
+        "all": 1,
         "last_7_days": 0
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019aca69-fefa-7f32-847b-7df8bcb1ad27",
+    "paper_group_id": "0197e454-89b8-7fd5-afe5-165ea2f567a3",
     "paper_summary": null,
-    "publication_date": "2024-03-15T15:44:11.000Z",
-    "title": "Cognitive Architectures for Language Agents",
+    "publication_date": "2025-07-07T10:00:35.000Z",
+    "title": "On Steenbrink vanishing for rational singularities in positive characteristic",
     "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "cs.LG",
-      "cs.SC",
-      "neuro-symbolic-ai",
-      "reasoning",
-      "tool-use",
-      "transformers"
+      "math.AG",
+      "Mathematics"
     ],
-    "universal_paper_id": "2309.02427%2fcomments",
-    "updated_at": "2025-11-28T12:22:15.546Z",
-    "version_id": "019aca69-ff16-7254-b09b-661ff7cf078c"
+    "universal_paper_id": "2507.04838",
+    "updated_at": "2025-07-08T06:09:26.497Z",
+    "version_id": "0197e454-89b8-7262-be4c-c068415a5fb9"
   },
   {
-    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
+    "abstract": "Large Language Models (LLMs) have shown impressive performance on complex tasks through Chain-of-Thought (CoT) reasoning. However, conventional CoT relies on explicitly verbalized intermediate steps, which constrains its broader applicability, particularly in abstract reasoning tasks beyond language. To address this, there has been growing research interest in \\textit{latent CoT reasoning}, where the reasoning process is embedded within latent spaces. By decoupling reasoning from explicit language generation, latent CoT offers the promise of richer cognitive representations and facilitates more flexible, faster inference. This paper aims to present a comprehensive overview of this emerging paradigm and establish a systematic taxonomy. We analyze recent advances in methods, categorizing them from token-wise horizontal approaches to layer-wise vertical strategies. We then provide in-depth discussions of these methods, highlighting their design principles, applications, and remaining challenges. We hope that our survey provides a structured foundation for advancing this promising direction in LLM reasoning. The relevant papers will be regularly updated at this https URL.",
     "author_info": [],
     "authors": [
-      "Yuyang Hu",
-      "Shichun Liu",
-      "Yanwei Yue",
-      "Guibin Zhang",
-      "Boyang Liu",
-      "Fangyi Zhu",
-      "Jiahang Lin",
-      "Honglin Guo",
-      "Shihan Dou",
-      "Zhiheng Xi",
-      "Senjie Jin",
-      "Jiejun Tan",
-      "Yanbin Yin",
-      "Jiongnan Liu",
-      "Zeyu Zhang",
-      "Zhongxiang Sun",
-      "Yutao Zhu",
-      "Hao Sun",
-      "Boci Peng",
-      "Zhenrong Cheng",
-      "Xuanbo Fan",
-      "Jiaxin Guo",
-      "Xinlei Yu",
-      "Zhenhong Zhou",
-      "Zewen Hu",
-      "Jiahao Huo",
-      "Junhao Wang",
-      "Yuwei Niu",
-      "Yu Wang",
-      "Zhenfei Yin",
-      "Xiaobin Hu",
-      "Yue Liao",
-      "Qiankun Li",
-      "Kun Wang",
-      "Wangchunshu Zhou",
-      "Yixin Liu",
-      "Dawei Cheng",
-      "Qi Zhang",
-      "Tao Gui",
-      "Shirui Pan",
-      "Yan Zhang",
-      "Philip Torr",
-      "Zhicheng Dou",
-      "Ji-Rong Wen",
-      "Xuanjing Huang",
-      "Yu-Gang Jiang",
-      "Shuicheng Yan"
+      "Xinghao Chen",
+      "Anhao Zhao",
+      "Heming Xia",
+      "Xuan Lu",
+      "Hanlin Wang",
+      "Yanjun Chen",
+      "Wei Zhang",
+      "Jian Wang",
+      "Wenjie Li",
+      "Xiaoyu Shen"
     ],
-    "canonical_id": "2512.13564/1zqii59tf8km.phpv2",
-    "first_publication_date": "2025-12-15T17:22:34.000Z",
+    "canonical_id": "2505.16782/sso-callbackv2",
+    "first_publication_date": "2025-05-22T15:26:51.000Z",
     "full_authors": [
       {
-        "full_name": "Yuyang Hu",
-        "id": "01985c82-a275-7f14-9afe-02546e60e768",
+        "full_name": "Xinghao Chen",
+        "id": "01985c81-f312-7f28-b55c-99c968c14f24",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shichun Liu",
-        "id": "01985c82-1e68-79f1-a6e8-151678fbdf00",
+        "full_name": "Anhao Zhao",
+        "id": "01985c82-3d3a-74b4-ad06-8ad5d411917a",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yanwei Yue",
-        "id": "01985c81-eb73-7980-a28e-94e3542a08a0",
+        "full_name": "Heming Xia",
+        "id": "01985c82-19a6-73e8-b25d-f0111b08b967",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Guibin Zhang",
-        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "full_name": "Xuan Lu",
+        "id": "01985c81-e5aa-7c3f-a965-7434633518d0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Boyang Liu",
-        "id": "01985c82-4f4d-73c8-bdd5-8cb7da5af7a9",
+        "full_name": "Hanlin Wang",
+        "id": "01985c82-456b-7944-88e4-1e42e2eb2bb0",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Fangyi Zhu",
-        "id": "01985c84-4b9c-7fbc-8f66-26eab4ca1b1c",
+        "full_name": "Yanjun Chen",
+        "id": "01985c82-3d3a-7aca-b18c-cb68509e16d4",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Jiahang Lin",
-        "id": "019aec63-3a77-7da3-9473-bd6f8c4e1be8",
+        "full_name": "Wei Zhang",
+        "id": "01985c81-dc26-7858-9463-8a3f5ac8fbdb",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Honglin Guo",
-        "id": "01985c81-f818-7577-9062-9e2a089fb891",
+        "full_name": "Jian Wang",
+        "id": "01985c81-e34e-7806-a3b2-4a49d9dc3253",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Shihan Dou",
-        "id": "01985c81-de91-7114-a055-74c71e2e9c9a",
+        "full_name": "Wenjie Li",
+        "id": "01985c81-e775-7a9a-af49-decdba8c5da2",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Zhiheng Xi",
-        "id": "01985c81-de91-70c7-bb29-58e1638581ae",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Senjie Jin",
-        "id": "01985c81-de91-7fb3-bca5-97ba1f8a32ad",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiejun Tan",
-        "id": "01985c82-4656-7519-ba46-b57436306187",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yanbin Yin",
-        "id": "01985c82-763c-7b40-b41c-09f6d0d2db05",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiongnan Liu",
-        "id": "01985c82-4655-7884-9442-24d474188e06",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zeyu Zhang",
-        "id": "01985c81-eea9-7c61-86f0-0375c7fc8685",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhongxiang Sun",
-        "id": "01985c82-689c-7106-b1f8-a11fa888959e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yutao Zhu",
-        "id": "01985c81-e4e6-7003-ba59-2b7a38265f30",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hao Sun",
-        "id": "01985c81-ec41-7258-918e-cc66e3d2ac88",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Boci Peng",
-        "id": "01985c82-31fa-75b4-9574-e3f4f96bcdb6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenrong Cheng",
-        "id": "01991832-828c-7e4b-a795-cd7094377dfa",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xuanbo Fan",
-        "id": "01985c85-45f1-7b23-9c60-5be301db2648",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaxin Guo",
-        "id": "01985c81-ed0d-796d-aef9-cea26b2b5b49",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xinlei Yu",
-        "id": "01985c82-85d8-7a1c-8f25-9dd451f6f9e6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenhong Zhou",
-        "id": "01985c82-09ae-73d8-ad00-9f135e495176",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zewen Hu",
-        "id": "019a890d-0403-79ae-9811-89b0f91b7e92",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiahao Huo",
-        "id": "01985c82-39ba-73f1-9295-8eef70ce781f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Junhao Wang",
-        "id": "01985c81-f312-7433-964a-1bcd8a80b387",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuwei Niu",
-        "id": "01985c82-a8ff-7e27-b622-f44e2cf04757",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu Wang",
-        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenfei Yin",
-        "id": "01985c81-e9dd-7625-a0f9-790f2bc914e7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaobin Hu",
-        "id": "01985c81-e01d-7ba4-abd9-9893501f228a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yue Liao",
-        "id": "01985c81-fca4-71b0-8858-b408652439ee",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qiankun Li",
-        "id": "01985c83-3723-7a4b-9a81-0b06180deed6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kun Wang",
-        "id": "01985c81-e775-7378-ae47-bae233d20e37",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wangchunshu Zhou",
-        "id": "01985c81-ed0e-76b3-a917-0c9ed576add9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yixin Liu",
-        "id": "01985c81-db51-7192-8f0e-e67c390ab8f4",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dawei Cheng",
-        "id": "01985c82-78f2-74ff-a9d5-c3000a72e8f0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qi Zhang",
-        "id": "01985c81-de91-785e-ad20-d4e5e0879f7c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tao Gui",
-        "id": "01985c81-de91-7a6c-8607-9c131b0c37f1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shirui Pan",
-        "id": "01985c81-d97f-7d1d-909a-745b94dde0ad",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yan Zhang",
-        "id": "01985c81-ec41-770c-94ae-6b919034d3e1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Philip Torr",
-        "id": "01985c81-e5a9-7926-a2a8-b0053a3e9747",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhicheng Dou",
-        "id": "01985c81-df57-73f5-815d-fd7045534902",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ji-Rong Wen",
-        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xuanjing Huang",
-        "id": "01985c81-de91-7b15-a469-ed8c32725a2a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu-Gang Jiang",
-        "id": "01985c81-f233-7dc3-9346-2c43af82cef6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuicheng Yan",
-        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "full_name": "Xiaoyu Shen",
+        "id": "01985c81-f153-7cb7-85ad-a3cd5151afe6",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 18251,
-    "github_url": "https://github.com/humanlayer/12-factor-agents",
-    "id": "019c75be-5057-7987-9b26-88223e71fbae",
-    "image_url": "image/2512.13564/1zqii59tf8km.phpv2.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75be-5057-7987-9b26-88223e71fbae",
-    "paper_summary": null,
-    "publication_date": "2026-01-13T09:33:57.000Z",
-    "title": "Memory in the Age of AI Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "multi-agent-learning",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "representation-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2512.13564/1zqii59tf8km.php",
-    "updated_at": "2026-02-19T11:52:12.631Z",
-    "version_id": "019c75be-5192-706e-9869-1187e2fdbf7f"
-  },
-  {
-    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
-    "author_info": [],
-    "authors": [
-      "Yuyang Hu",
-      "Shichun Liu",
-      "Yanwei Yue",
-      "Guibin Zhang",
-      "Boyang Liu",
-      "Fangyi Zhu",
-      "Jiahang Lin",
-      "Honglin Guo",
-      "Shihan Dou",
-      "Zhiheng Xi",
-      "Senjie Jin",
-      "Jiejun Tan",
-      "Yanbin Yin",
-      "Jiongnan Liu",
-      "Zeyu Zhang",
-      "Zhongxiang Sun",
-      "Yutao Zhu",
-      "Hao Sun",
-      "Boci Peng",
-      "Zhenrong Cheng",
-      "Xuanbo Fan",
-      "Jiaxin Guo",
-      "Xinlei Yu",
-      "Zhenhong Zhou",
-      "Zewen Hu",
-      "Jiahao Huo",
-      "Junhao Wang",
-      "Yuwei Niu",
-      "Yu Wang",
-      "Zhenfei Yin",
-      "Xiaobin Hu",
-      "Yue Liao",
-      "Qiankun Li",
-      "Kun Wang",
-      "Wangchunshu Zhou",
-      "Yixin Liu",
-      "Dawei Cheng",
-      "Qi Zhang",
-      "Tao Gui",
-      "Shirui Pan",
-      "Yan Zhang",
-      "Philip Torr",
-      "Zhicheng Dou",
-      "Ji-Rong Wen",
-      "Xuanjing Huang",
-      "Yu-Gang Jiang",
-      "Shuicheng Yan"
-    ],
-    "canonical_id": "2512.13564/1zqii59tf8km.jspv2",
-    "first_publication_date": "2025-12-15T17:22:34.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yuyang Hu",
-        "id": "01985c82-a275-7f14-9afe-02546e60e768",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shichun Liu",
-        "id": "01985c82-1e68-79f1-a6e8-151678fbdf00",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yanwei Yue",
-        "id": "01985c81-eb73-7980-a28e-94e3542a08a0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Guibin Zhang",
-        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Boyang Liu",
-        "id": "01985c82-4f4d-73c8-bdd5-8cb7da5af7a9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Fangyi Zhu",
-        "id": "01985c84-4b9c-7fbc-8f66-26eab4ca1b1c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiahang Lin",
-        "id": "019aec63-3a77-7da3-9473-bd6f8c4e1be8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Honglin Guo",
-        "id": "01985c81-f818-7577-9062-9e2a089fb891",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shihan Dou",
-        "id": "01985c81-de91-7114-a055-74c71e2e9c9a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiheng Xi",
-        "id": "01985c81-de91-70c7-bb29-58e1638581ae",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Senjie Jin",
-        "id": "01985c81-de91-7fb3-bca5-97ba1f8a32ad",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiejun Tan",
-        "id": "01985c82-4656-7519-ba46-b57436306187",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yanbin Yin",
-        "id": "01985c82-763c-7b40-b41c-09f6d0d2db05",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiongnan Liu",
-        "id": "01985c82-4655-7884-9442-24d474188e06",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zeyu Zhang",
-        "id": "01985c81-eea9-7c61-86f0-0375c7fc8685",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhongxiang Sun",
-        "id": "01985c82-689c-7106-b1f8-a11fa888959e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yutao Zhu",
-        "id": "01985c81-e4e6-7003-ba59-2b7a38265f30",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Hao Sun",
-        "id": "01985c81-ec41-7258-918e-cc66e3d2ac88",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Boci Peng",
-        "id": "01985c82-31fa-75b4-9574-e3f4f96bcdb6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenrong Cheng",
-        "id": "01991832-828c-7e4b-a795-cd7094377dfa",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xuanbo Fan",
-        "id": "01985c85-45f1-7b23-9c60-5be301db2648",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiaxin Guo",
-        "id": "01985c81-ed0d-796d-aef9-cea26b2b5b49",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xinlei Yu",
-        "id": "01985c82-85d8-7a1c-8f25-9dd451f6f9e6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenhong Zhou",
-        "id": "01985c82-09ae-73d8-ad00-9f135e495176",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zewen Hu",
-        "id": "019a890d-0403-79ae-9811-89b0f91b7e92",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jiahao Huo",
-        "id": "01985c82-39ba-73f1-9295-8eef70ce781f",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Junhao Wang",
-        "id": "01985c81-f312-7433-964a-1bcd8a80b387",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuwei Niu",
-        "id": "01985c82-a8ff-7e27-b622-f44e2cf04757",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu Wang",
-        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhenfei Yin",
-        "id": "01985c81-e9dd-7625-a0f9-790f2bc914e7",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xiaobin Hu",
-        "id": "01985c81-e01d-7ba4-abd9-9893501f228a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yue Liao",
-        "id": "01985c81-fca4-71b0-8858-b408652439ee",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qiankun Li",
-        "id": "01985c83-3723-7a4b-9a81-0b06180deed6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kun Wang",
-        "id": "01985c81-e775-7378-ae47-bae233d20e37",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wangchunshu Zhou",
-        "id": "01985c81-ed0e-76b3-a917-0c9ed576add9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yixin Liu",
-        "id": "01985c81-db51-7192-8f0e-e67c390ab8f4",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Dawei Cheng",
-        "id": "01985c82-78f2-74ff-a9d5-c3000a72e8f0",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Qi Zhang",
-        "id": "01985c81-de91-785e-ad20-d4e5e0879f7c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Tao Gui",
-        "id": "01985c81-de91-7a6c-8607-9c131b0c37f1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shirui Pan",
-        "id": "01985c81-d97f-7d1d-909a-745b94dde0ad",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yan Zhang",
-        "id": "01985c81-ec41-770c-94ae-6b919034d3e1",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Philip Torr",
-        "id": "01985c81-e5a9-7926-a2a8-b0053a3e9747",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhicheng Dou",
-        "id": "01985c81-df57-73f5-815d-fd7045534902",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Ji-Rong Wen",
-        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Xuanjing Huang",
-        "id": "01985c81-de91-7b15-a469-ed8c32725a2a",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yu-Gang Jiang",
-        "id": "01985c81-f233-7dc3-9346-2c43af82cef6",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Shuicheng Yan",
-        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 18251,
-    "github_url": "https://github.com/humanlayer/12-factor-agents",
-    "id": "019c75be-506a-70bd-9448-d4b04eec978c",
-    "image_url": "image/2512.13564/1zqii59tf8km.jspv2.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 1
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75be-506a-70bd-9448-d4b04eec978c",
-    "paper_summary": null,
-    "publication_date": "2026-01-13T09:33:57.000Z",
-    "title": "Memory in the Age of AI Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "continual-learning",
-      "cs.AI",
-      "cs.CL",
-      "multi-agent-learning",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "representation-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2512.13564/1zqii59tf8km.jsp",
-    "updated_at": "2026-02-19T11:52:12.650Z",
-    "version_id": "019c75be-51b1-7f11-b43f-af5c9d5918c0"
-  },
-  {
-    "abstract": "Memory is a fundamental component of AI systems, underpinning large language models (LLMs)-based agents. While prior surveys have focused on memory applications with LLMs (e.g., enabling personalized memory in conversational agents), they often overlook the atomic operations that underlie memory dynamics. In this survey, we first categorize memory representations into parametric and contextual forms, and then introduce six fundamental memory operations: Consolidation, Updating, Indexing, Forgetting, Retrieval, and Compression. We map these operations to the most relevant research topics across long-term, long-context, parametric modification, and multi-source memory. By reframing memory systems through the lens of atomic operations and representation types, this survey provides a structured and dynamic perspective on research, benchmark datasets, and tools related to memory in AI, clarifying the functional interplay in LLMs based agents while outlining promising directions for future research\\footnote{The paper list, datasets, methods and tools are available at \\href{this https URL}{this https URL\\_Memory\\_in\\_AI}.}.",
-    "author_info": [],
-    "authors": [
-      "Yiming Du",
-      "Wenyu Huang",
-      "Danna Zheng",
-      "Zhaowei Wang",
-      "Sebastien Montella",
-      "Mirella Lapata",
-      "Kam-Fai Wong",
-      "Jeff Z. Pan"
-    ],
-    "canonical_id": "2505.0675v2",
-    "first_publication_date": "2025-05-01T17:31:33.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yiming Du",
-        "id": "01985c82-590b-7ac1-aa58-32e31532b99e",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wenyu Huang",
-        "id": "01985c82-7bbe-7188-b78e-3b2dfabfcafc",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Danna Zheng",
-        "id": "01985c81-f062-76e7-b693-720ee980387b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhaowei Wang",
-        "id": "01985c82-07f2-7226-a3ba-826311d5ec53",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Sebastien Montella",
-        "id": "01985c82-b59c-796c-b6de-c887ddf817b4",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Mirella Lapata",
-        "id": "01985c81-f062-76cb-9f01-1d59d8a7b5ab",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Kam-Fai Wong",
-        "id": "01985c81-f8f2-7685-8637-a442d1388fe3",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jeff Z. Pan",
-        "id": "01985c81-f062-7f93-8579-5f4e5bd6ed06",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": 326,
-    "github_url": "https://github.com/Elvin-Yiming-Du/Survey_Memory_in_AI",
-    "id": "019b4581-f516-7c9b-925b-6100e68ccf98",
-    "image_url": "image/2505.0675v2.png",
+    "github_stars": 289,
+    "github_url": "https://github.com/EIT-NLP/Awesome-Latent-CoT",
+    "id": "019cb2c7-ce86-765b-8b02-b8505d6ecfa4",
+    "image_url": "image/2505.16782/sso-callbackv2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
         "all": 2,
-        "last_7_days": 1
+        "last_7_days": 0
       },
       "x_likes": 0
     },
-    "organization_info": [
-      {
-        "image": "images/organizations/chinesehongkong.png",
-        "name": "The Chinese University of Hong Kong"
-      },
-      {
-        "image": null,
-        "name": "The University of Edinburgh"
-      },
-      {
-        "image": "images/organizations/hkust.jpg",
-        "name": "HKUST"
-      },
-      {
-        "image": null,
-        "name": "Huawei UK R&D Ltd."
-      }
-    ],
-    "paper_group_id": "019b4581-f516-7c9b-925b-6100e68ccf98",
+    "organization_info": [],
+    "paper_group_id": "019cb2c7-ce86-765b-8b02-b8505d6ecfa4",
     "paper_summary": null,
-    "publication_date": "2025-05-27T17:38:40.000Z",
-    "title": "Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions",
+    "publication_date": "2025-11-01T07:41:11.000Z",
+    "title": "Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning",
     "topics": [
-      "agents",
-      "attention-mechanisms",
+      "chain-of-thought",
       "Computer Science",
-      "continual-learning",
       "cs.CL",
-      "information-extraction",
-      "model-compression",
-      "optimization-methods",
+      "neuro-symbolic-ai",
+      "reasoning",
       "representation-learning",
       "transformers"
     ],
-    "universal_paper_id": "2505.0675",
-    "updated_at": "2025-12-22T10:01:43.446Z",
-    "version_id": "019b4581-f53a-70dd-a2cc-e8f08c6403b9"
+    "universal_paper_id": "2505.16782/sso-callback",
+    "updated_at": "2026-03-03T08:19:24.934Z",
+    "version_id": "019cb2c7-ceba-7e40-860f-ddf7bacb56e4"
   },
   {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
@@ -9129,6 +8191,154 @@
     "universal_paper_id": "2512.13564/favicon.ico",
     "updated_at": "2025-12-19T05:21:51.337Z",
     "version_id": "019b350e-a778-7f0e-bc74-3f91bcde480f"
+  },
+  {
+    "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+    "author_info": [],
+    "authors": [
+      "Theodore R. Sumers",
+      "Shunyu Yao",
+      "Karthik Narasimhan",
+      "Thomas L. Griffiths"
+    ],
+    "canonical_id": "2309.02427%2fcommentsv3",
+    "first_publication_date": "2023-09-05T17:56:20.000Z",
+    "full_authors": [
+      {
+        "full_name": "Theodore R. Sumers",
+        "id": "01985c82-231f-7475-8e11-1787daa9c782",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shunyu Yao",
+        "id": "01985c81-d97e-7e49-9edf-1bc110f28653",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Karthik Narasimhan",
+        "id": "01985c81-d97e-71a0-9363-d9c837760486",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Thomas L. Griffiths",
+        "id": "01985c81-de91-743b-9d41-82912c95d485",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 1067,
+    "github_url": "https://github.com/ysymyth/awesome-language-agents",
+    "id": "019aca69-fefa-7f32-847b-7df8bcb1ad27",
+    "image_url": "image/2309.02427%2fcommentsv3.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 0,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019aca69-fefa-7f32-847b-7df8bcb1ad27",
+    "paper_summary": null,
+    "publication_date": "2024-03-15T15:44:11.000Z",
+    "title": "Cognitive Architectures for Language Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "cs.SC",
+      "neuro-symbolic-ai",
+      "reasoning",
+      "tool-use",
+      "transformers"
+    ],
+    "universal_paper_id": "2309.02427%2fcomments",
+    "updated_at": "2025-11-28T12:22:15.546Z",
+    "version_id": "019aca69-ff16-7254-b09b-661ff7cf078c"
+  },
+  {
+    "abstract": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and external environments, and a generalized decision-making process to choose actions. We use CoALA to retrospectively survey and organize a large body of recent work, and prospectively identify actionable directions towards more capable agents. Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence.",
+    "author_info": [],
+    "authors": [
+      "Theodore R. Sumers",
+      "Shunyu Yao",
+      "Karthik Narasimhan",
+      "Thomas L. Griffiths"
+    ],
+    "canonical_id": "2309.02427/commentsv3",
+    "first_publication_date": "2023-09-05T17:56:20.000Z",
+    "full_authors": [
+      {
+        "full_name": "Theodore R. Sumers",
+        "id": "01985c82-231f-7475-8e11-1787daa9c782",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shunyu Yao",
+        "id": "01985c81-d97e-7e49-9edf-1bc110f28653",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Karthik Narasimhan",
+        "id": "01985c81-d97e-71a0-9363-d9c837760486",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Thomas L. Griffiths",
+        "id": "01985c81-de91-743b-9d41-82912c95d485",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 1044,
+    "github_url": "https://github.com/ysymyth/awesome-language-agents",
+    "id": "0199e183-7a23-7e06-8ae5-6dacbd226ad0",
+    "image_url": "image/2309.02427/commentsv3.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 2,
+        "last_7_days": 0
+      },
+      "x_likes": 0
+    },
+    "organization_info": [
+      {
+        "image": "images/organizations/princeton.jpg",
+        "name": "Princeton University"
+      }
+    ],
+    "paper_group_id": "0199e183-7a23-7e06-8ae5-6dacbd226ad0",
+    "paper_summary": null,
+    "publication_date": "2024-03-15T15:44:11.000Z",
+    "title": "Cognitive Architectures for Language Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "cs.SC",
+      "neuro-symbolic-ai",
+      "reasoning",
+      "tool-use"
+    ],
+    "universal_paper_id": "2309.02427/comments",
+    "updated_at": "2025-10-14T06:58:34.147Z",
+    "version_id": "0199e183-7a5c-7ac7-ae24-6e6fe8b9d98f"
   },
   {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
@@ -9901,6 +9111,61 @@
     "version_id": "019b2f98-126a-722a-bea0-8ab3b7332aca"
   },
   {
+    "abstract": "In the last half-decade, the field of natural language processing (NLP) has undergone two major transitions: the switch to neural networks as the primary modeling paradigm and the homogenization of the training regime (pre-train, then fine-tune). Amidst this process, language models have emerged as NLP's workhorse, displaying increasingly fluent generation capabilities and proving to be an indispensable means of knowledge transfer downstream. Due to the otherwise opaque, black-box nature of such models, researchers have employed aspects of linguistic theory in order to characterize their behavior. Questions central to syntax -- the study of the hierarchical structure of language -- have factored heavily into such work, shedding invaluable insights about models' inherent biases and their ability to make human-like generalizations. In this paper, we attempt to take stock of this growing body of literature. In doing so, we observe a lack of clarity across numerous dimensions, which influences the hypotheses that researchers form, as well as the conclusions they draw from their findings. To remedy this, we urge researchers make careful considerations when investigating coding properties, selecting representations, and evaluating via downstream tasks. Furthermore, we outline the implications of the different types of research questions exhibited in studies on syntax, as well as the inherent pitfalls of aggregate metrics. Ultimately, we hope that our discussion adds nuance to the prospect of studying language models and paves the way for a less monolithic perspective on syntax in this context.",
+    "author_info": [],
+    "authors": [
+      "Artur Kulmizev",
+      "Joakim Nivre"
+    ],
+    "canonical_id": "2110.08887v1",
+    "first_publication_date": "2021-10-17T18:25:23.000Z",
+    "full_authors": [
+      {
+        "full_name": "Artur Kulmizev",
+        "id": "01985c82-7f75-728a-8b92-5ded7fc0b029",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Joakim Nivre",
+        "id": "01985c82-2a91-7da1-8dde-c1dcd90c4ebe",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019a8636-23bf-70dc-87a2-b25caa72fd3e",
+    "image_url": "image/2110.08887v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 2,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019a8636-23bf-70dc-87a2-b25caa72fd3e",
+    "paper_summary": null,
+    "publication_date": "2021-10-17T18:25:23.000Z",
+    "title": "Schr\u00f6dinger's Tree -- On Syntax and Neural Language Models",
+    "topics": [
+      "Computer Science",
+      "cs.CL",
+      "explainable-ai",
+      "model-interpretation",
+      "neural-coding",
+      "representation-learning",
+      "sequence-modeling",
+      "transformers"
+    ],
+    "universal_paper_id": "2110.08887",
+    "updated_at": "2025-11-15T06:31:26.399Z",
+    "version_id": "019a8636-2869-7ba7-95f9-93334998ba29"
+  },
+  {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
     "author_info": [],
     "authors": [
@@ -10646,48 +9911,6 @@
     "version_id": "019c75be-4f98-7e85-aba0-a11671bacf00"
   },
   {
-    "abstract": "We show a special case of Steenbrink vanishing for rational singularities in positive characteristic. As a consequence, we prove that strongly $F$-regular threefolds and klt threefolds in characteristic $p>41$ satisfy Steenbrink vanishing.",
-    "author_info": [],
-    "authors": [
-      "Tatsuro Kawakami"
-    ],
-    "canonical_id": "2507.04838v1",
-    "first_publication_date": "2025-07-07T10:00:35.000Z",
-    "full_authors": [
-      {
-        "full_name": "Tatsuro Kawakami",
-        "id": "01985c82-540a-75b7-82dc-c19d79a9bec5",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "0197e454-89b8-7fd5-afe5-165ea2f567a3",
-    "image_url": "image/2507.04838v1.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 1,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "0197e454-89b8-7fd5-afe5-165ea2f567a3",
-    "paper_summary": null,
-    "publication_date": "2025-07-07T10:00:35.000Z",
-    "title": "On Steenbrink vanishing for rational singularities in positive characteristic",
-    "topics": [
-      "math.AG",
-      "Mathematics"
-    ],
-    "universal_paper_id": "2507.04838",
-    "updated_at": "2025-07-08T06:09:26.497Z",
-    "version_id": "0197e454-89b8-7262-be4c-c068415a5fb9"
-  },
-  {
     "abstract": "Large language models (LLMs) are restricted to reason in the \"language space\", where they typically express the reasoning process with a chain-of-thought (CoT) to solve a complex reasoning problem. However, we argue that language space may not always be optimal for reasoning. For example, most word tokens are primarily for textual coherence and not essential for reasoning, while some critical tokens require complex planning and pose huge challenges to LLMs. To explore the potential of LLM reasoning in an unrestricted latent space instead of using natural language, we introduce a new paradigm Coconut (Chain of Continuous Thought). We utilize the last hidden state of the LLM as a representation of the reasoning state (termed \"continuous thought\"). Rather than decoding this into a word token, we feed it back to the LLM as the subsequent input embedding directly in the continuous space. Experiments show that Coconut can effectively augment the LLM on several reasoning tasks. This novel latent reasoning paradigm leads to emergent advanced reasoning patterns: the continuous thought can encode multiple alternative next reasoning steps, allowing the model to perform a breadth-first search (BFS) to solve the problem, rather than prematurely committing to a single deterministic path like CoT. Coconut outperforms CoT in certain logical reasoning tasks that require substantial backtracking during planning, with fewer thinking tokens during inference. These findings demonstrate the promise of latent reasoning and offer valuable insights for future research.",
     "author_info": [],
     "authors": [
@@ -10777,114 +10000,145 @@
     "version_id": "0193b5c7-9440-7c26-b909-cf167c662115"
   },
   {
-    "abstract": "Large Language Models (LLMs) have shown impressive performance on complex tasks through Chain-of-Thought (CoT) reasoning. However, conventional CoT relies on explicitly verbalized intermediate steps, which constrains its broader applicability, particularly in abstract reasoning tasks beyond language. To address this, there has been growing research interest in \\textit{latent CoT reasoning}, where the reasoning process is embedded within latent spaces. By decoupling reasoning from explicit language generation, latent CoT offers the promise of richer cognitive representations and facilitates more flexible, faster inference. This paper aims to present a comprehensive overview of this emerging paradigm and establish a systematic taxonomy. We analyze recent advances in methods, categorizing them from token-wise horizontal approaches to layer-wise vertical strategies. We then provide in-depth discussions of these methods, highlighting their design principles, applications, and remaining challenges. We hope that our survey provides a structured foundation for advancing this promising direction in LLM reasoning. The relevant papers will be regularly updated at this https URL.",
+    "abstract": "The performance of modern AI systems is fundamentally constrained by the quality of their underlying kernels, which translate high-level algorithmic semantics into low-level hardware operations. Achieving near-optimal kernels requires expert-level understanding of hardware architectures and programming models, making kernel engineering a critical but notoriously time-consuming and non-scalable process. Recent advances in large language models (LLMs) and LLM-based agents have opened new possibilities for automating kernel generation and optimization. LLMs are well-suited to compress expert-level kernel knowledge that is difficult to formalize, while agentic systems further enable scalable optimization by casting kernel development as an iterative, feedback-driven loop. Rapid progress has been made in this area. However, the field remains fragmented, lacking a systematic perspective for LLM-driven kernel generation. This survey addresses this gap by providing a structured overview of existing approaches, spanning LLM-based approaches and agentic optimization workflows, and systematically compiling the datasets and benchmarks that underpin learning and evaluation in this domain. Moreover, key open challenges and future research directions are further outlined, aiming to establish a comprehensive reference for the next generation of automated kernel optimization. To keep track of this field, we maintain an open-source GitHub repository at this https URL.",
     "author_info": [],
     "authors": [
-      "Xinghao Chen",
-      "Anhao Zhao",
-      "Heming Xia",
-      "Xuan Lu",
-      "Hanlin Wang",
-      "Yanjun Chen",
-      "Wei Zhang",
-      "Jian Wang",
-      "Wenjie Li",
-      "Xiaoyu Shen"
+      "Yang Yu",
+      "Peiyu Zang",
+      "Chi Hsu Tsai",
+      "Haiming Wu",
+      "Yixin Shen",
+      "Jialing Zhang",
+      "Haoyu Wang",
+      "Zhiyou Xiao",
+      "Jingze Shi",
+      "Yuyu Luo",
+      "Wentao Zhang",
+      "Chunlei Men",
+      "Guang Liu",
+      "Yonghua Lin"
     ],
-    "canonical_id": "2505.16782/sso-callbackv2",
-    "first_publication_date": "2025-05-22T15:26:51.000Z",
+    "canonical_id": "2601.15727.pdfv2",
+    "first_publication_date": "2026-01-22T07:53:52.000Z",
     "full_authors": [
       {
-        "full_name": "Xinghao Chen",
-        "id": "01985c81-f312-7f28-b55c-99c968c14f24",
+        "full_name": "Yang Yu",
+        "id": "01985c81-db50-7769-a650-3d8dbcf4ea5b",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Anhao Zhao",
-        "id": "01985c82-3d3a-74b4-ad06-8ad5d411917a",
+        "full_name": "Peiyu Zang",
+        "id": "019be9b7-b2bd-774b-9a7a-8cdd7416af22",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Heming Xia",
-        "id": "01985c82-19a6-73e8-b25d-f0111b08b967",
+        "full_name": "Chi Hsu Tsai",
+        "id": "019b3488-4063-730e-81e4-960f7b8ea677",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Xuan Lu",
-        "id": "01985c81-e5aa-7c3f-a965-7434633518d0",
+        "full_name": "Haiming Wu",
+        "id": "01985c82-e9b8-7825-a3f7-9a66029d4561",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Hanlin Wang",
-        "id": "01985c82-456b-7944-88e4-1e42e2eb2bb0",
+        "full_name": "Yixin Shen",
+        "id": "01985c83-4a38-7791-b816-6651833acddf",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Yanjun Chen",
-        "id": "01985c82-3d3a-7aca-b18c-cb68509e16d4",
+        "full_name": "Jialing Zhang",
+        "id": "01985c82-8153-74af-8bd9-5734c71793cd",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wei Zhang",
-        "id": "01985c81-dc26-7858-9463-8a3f5ac8fbdb",
+        "full_name": "Haoyu Wang",
+        "id": "01985c81-d97e-73ba-b88b-ce1f75386ccf",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Jian Wang",
-        "id": "01985c81-e34e-7806-a3b2-4a49d9dc3253",
+        "full_name": "Zhiyou Xiao",
+        "id": "01985c84-0a5e-754d-9987-c54cc5e39783",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Wenjie Li",
-        "id": "01985c81-e775-7a9a-af49-decdba8c5da2",
+        "full_name": "Jingze Shi",
+        "id": "01985c82-340f-760c-9eff-faacd668179c",
         "user_id": null,
         "username": null
       },
       {
-        "full_name": "Xiaoyu Shen",
-        "id": "01985c81-f153-7cb7-85ad-a3cd5151afe6",
+        "full_name": "Yuyu Luo",
+        "id": "01985c81-ef78-7880-a2b8-39b224881743",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wentao Zhang",
+        "id": "01985c81-edde-7fe0-bc00-050a798c0ad9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chunlei Men",
+        "id": "01985c82-f0d7-7915-959c-277d93f9e805",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guang Liu",
+        "id": "01985c81-de91-73fa-a59b-525985beac57",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yonghua Lin",
+        "id": "01985c82-31fa-7070-98a3-d31fcbde94f4",
         "user_id": null,
         "username": null
       }
     ],
-    "github_stars": 289,
-    "github_url": "https://github.com/EIT-NLP/Awesome-Latent-CoT",
-    "id": "019cb2c7-ce86-765b-8b02-b8505d6ecfa4",
-    "image_url": "image/2505.16782/sso-callbackv2.png",
+    "github_stars": null,
+    "github_url": null,
+    "id": "019ca75e-89ae-7343-8f38-9bc62f5d22cd",
+    "image_url": "image/2601.15727.pdfv2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
       "visits_count": {
-        "all": 2,
+        "all": 1,
         "last_7_days": 0
       },
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019cb2c7-ce86-765b-8b02-b8505d6ecfa4",
+    "paper_group_id": "019ca75e-89ae-7343-8f38-9bc62f5d22cd",
     "paper_summary": null,
-    "publication_date": "2025-11-01T07:41:11.000Z",
-    "title": "Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning",
+    "publication_date": "2026-01-26T08:47:52.000Z",
+    "title": "Towards Automated Kernel Generation in the Era of LLMs",
     "topics": [
-      "chain-of-thought",
+      "agents",
       "Computer Science",
       "cs.CL",
-      "neuro-symbolic-ai",
-      "reasoning",
-      "representation-learning",
+      "cs.LG",
+      "hardware-aware-algorithms",
+      "inference-optimization",
+      "ml-systems",
+      "optimization-methods",
+      "tool-use",
       "transformers"
     ],
-    "universal_paper_id": "2505.16782/sso-callback",
-    "updated_at": "2026-03-03T08:19:24.934Z",
-    "version_id": "019cb2c7-ceba-7e40-860f-ddf7bacb56e4"
+    "universal_paper_id": "2601.15727.pdf",
+    "updated_at": "2026-03-01T03:08:36.654Z",
+    "version_id": "019ca75e-8a0c-7e52-b9a3-21fd1b25fd66"
   },
   {
     "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
@@ -10938,7 +10192,839 @@
       "Yu-Gang Jiang",
       "Shuicheng Yan"
     ],
-    "canonical_id": "2512.13564/5icbw02ra6q2.htmlv2",
+    "canonical_id": "2512.13564/1zqii59tf8km.phpv2",
+    "first_publication_date": "2025-12-15T17:22:34.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yuyang Hu",
+        "id": "01985c82-a275-7f14-9afe-02546e60e768",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shichun Liu",
+        "id": "01985c82-1e68-79f1-a6e8-151678fbdf00",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanwei Yue",
+        "id": "01985c81-eb73-7980-a28e-94e3542a08a0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guibin Zhang",
+        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Boyang Liu",
+        "id": "01985c82-4f4d-73c8-bdd5-8cb7da5af7a9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fangyi Zhu",
+        "id": "01985c84-4b9c-7fbc-8f66-26eab4ca1b1c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiahang Lin",
+        "id": "019aec63-3a77-7da3-9473-bd6f8c4e1be8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Honglin Guo",
+        "id": "01985c81-f818-7577-9062-9e2a089fb891",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shihan Dou",
+        "id": "01985c81-de91-7114-a055-74c71e2e9c9a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiheng Xi",
+        "id": "01985c81-de91-70c7-bb29-58e1638581ae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Senjie Jin",
+        "id": "01985c81-de91-7fb3-bca5-97ba1f8a32ad",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiejun Tan",
+        "id": "01985c82-4656-7519-ba46-b57436306187",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanbin Yin",
+        "id": "01985c82-763c-7b40-b41c-09f6d0d2db05",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiongnan Liu",
+        "id": "01985c82-4655-7884-9442-24d474188e06",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zeyu Zhang",
+        "id": "01985c81-eea9-7c61-86f0-0375c7fc8685",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhongxiang Sun",
+        "id": "01985c82-689c-7106-b1f8-a11fa888959e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yutao Zhu",
+        "id": "01985c81-e4e6-7003-ba59-2b7a38265f30",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hao Sun",
+        "id": "01985c81-ec41-7258-918e-cc66e3d2ac88",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Boci Peng",
+        "id": "01985c82-31fa-75b4-9574-e3f4f96bcdb6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenrong Cheng",
+        "id": "01991832-828c-7e4b-a795-cd7094377dfa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuanbo Fan",
+        "id": "01985c85-45f1-7b23-9c60-5be301db2648",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaxin Guo",
+        "id": "01985c81-ed0d-796d-aef9-cea26b2b5b49",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xinlei Yu",
+        "id": "01985c82-85d8-7a1c-8f25-9dd451f6f9e6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenhong Zhou",
+        "id": "01985c82-09ae-73d8-ad00-9f135e495176",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zewen Hu",
+        "id": "019a890d-0403-79ae-9811-89b0f91b7e92",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiahao Huo",
+        "id": "01985c82-39ba-73f1-9295-8eef70ce781f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Junhao Wang",
+        "id": "01985c81-f312-7433-964a-1bcd8a80b387",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuwei Niu",
+        "id": "01985c82-a8ff-7e27-b622-f44e2cf04757",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Wang",
+        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenfei Yin",
+        "id": "01985c81-e9dd-7625-a0f9-790f2bc914e7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaobin Hu",
+        "id": "01985c81-e01d-7ba4-abd9-9893501f228a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yue Liao",
+        "id": "01985c81-fca4-71b0-8858-b408652439ee",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qiankun Li",
+        "id": "01985c83-3723-7a4b-9a81-0b06180deed6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kun Wang",
+        "id": "01985c81-e775-7378-ae47-bae233d20e37",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wangchunshu Zhou",
+        "id": "01985c81-ed0e-76b3-a917-0c9ed576add9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yixin Liu",
+        "id": "01985c81-db51-7192-8f0e-e67c390ab8f4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dawei Cheng",
+        "id": "01985c82-78f2-74ff-a9d5-c3000a72e8f0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qi Zhang",
+        "id": "01985c81-de91-785e-ad20-d4e5e0879f7c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tao Gui",
+        "id": "01985c81-de91-7a6c-8607-9c131b0c37f1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shirui Pan",
+        "id": "01985c81-d97f-7d1d-909a-745b94dde0ad",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yan Zhang",
+        "id": "01985c81-ec41-770c-94ae-6b919034d3e1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Philip Torr",
+        "id": "01985c81-e5a9-7926-a2a8-b0053a3e9747",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhicheng Dou",
+        "id": "01985c81-df57-73f5-815d-fd7045534902",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ji-Rong Wen",
+        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuanjing Huang",
+        "id": "01985c81-de91-7b15-a469-ed8c32725a2a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu-Gang Jiang",
+        "id": "01985c81-f233-7dc3-9346-2c43af82cef6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuicheng Yan",
+        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 18251,
+    "github_url": "https://github.com/humanlayer/12-factor-agents",
+    "id": "019c75be-5057-7987-9b26-88223e71fbae",
+    "image_url": "image/2512.13564/1zqii59tf8km.phpv2.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019c75be-5057-7987-9b26-88223e71fbae",
+    "paper_summary": null,
+    "publication_date": "2026-01-13T09:33:57.000Z",
+    "title": "Memory in the Age of AI Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "cs.AI",
+      "cs.CL",
+      "multi-agent-learning",
+      "multi-modal-learning",
+      "reasoning",
+      "reinforcement-learning",
+      "representation-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2512.13564/1zqii59tf8km.php",
+    "updated_at": "2026-02-19T11:52:12.631Z",
+    "version_id": "019c75be-5192-706e-9869-1187e2fdbf7f"
+  },
+  {
+    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
+    "author_info": [],
+    "authors": [
+      "Yuyang Hu",
+      "Shichun Liu",
+      "Yanwei Yue",
+      "Guibin Zhang",
+      "Boyang Liu",
+      "Fangyi Zhu",
+      "Jiahang Lin",
+      "Honglin Guo",
+      "Shihan Dou",
+      "Zhiheng Xi",
+      "Senjie Jin",
+      "Jiejun Tan",
+      "Yanbin Yin",
+      "Jiongnan Liu",
+      "Zeyu Zhang",
+      "Zhongxiang Sun",
+      "Yutao Zhu",
+      "Hao Sun",
+      "Boci Peng",
+      "Zhenrong Cheng",
+      "Xuanbo Fan",
+      "Jiaxin Guo",
+      "Xinlei Yu",
+      "Zhenhong Zhou",
+      "Zewen Hu",
+      "Jiahao Huo",
+      "Junhao Wang",
+      "Yuwei Niu",
+      "Yu Wang",
+      "Zhenfei Yin",
+      "Xiaobin Hu",
+      "Yue Liao",
+      "Qiankun Li",
+      "Kun Wang",
+      "Wangchunshu Zhou",
+      "Yixin Liu",
+      "Dawei Cheng",
+      "Qi Zhang",
+      "Tao Gui",
+      "Shirui Pan",
+      "Yan Zhang",
+      "Philip Torr",
+      "Zhicheng Dou",
+      "Ji-Rong Wen",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Shuicheng Yan"
+    ],
+    "canonical_id": "2512.13564/1zqii59tf8km.jspv2",
+    "first_publication_date": "2025-12-15T17:22:34.000Z",
+    "full_authors": [
+      {
+        "full_name": "Yuyang Hu",
+        "id": "01985c82-a275-7f14-9afe-02546e60e768",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shichun Liu",
+        "id": "01985c82-1e68-79f1-a6e8-151678fbdf00",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanwei Yue",
+        "id": "01985c81-eb73-7980-a28e-94e3542a08a0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guibin Zhang",
+        "id": "01985c81-eb73-7b36-a41c-598f3e7cfbb0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Boyang Liu",
+        "id": "01985c82-4f4d-73c8-bdd5-8cb7da5af7a9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fangyi Zhu",
+        "id": "01985c84-4b9c-7fbc-8f66-26eab4ca1b1c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiahang Lin",
+        "id": "019aec63-3a77-7da3-9473-bd6f8c4e1be8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Honglin Guo",
+        "id": "01985c81-f818-7577-9062-9e2a089fb891",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shihan Dou",
+        "id": "01985c81-de91-7114-a055-74c71e2e9c9a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhiheng Xi",
+        "id": "01985c81-de91-70c7-bb29-58e1638581ae",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Senjie Jin",
+        "id": "01985c81-de91-7fb3-bca5-97ba1f8a32ad",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiejun Tan",
+        "id": "01985c82-4656-7519-ba46-b57436306187",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yanbin Yin",
+        "id": "01985c82-763c-7b40-b41c-09f6d0d2db05",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiongnan Liu",
+        "id": "01985c82-4655-7884-9442-24d474188e06",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zeyu Zhang",
+        "id": "01985c81-eea9-7c61-86f0-0375c7fc8685",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhongxiang Sun",
+        "id": "01985c82-689c-7106-b1f8-a11fa888959e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yutao Zhu",
+        "id": "01985c81-e4e6-7003-ba59-2b7a38265f30",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hao Sun",
+        "id": "01985c81-ec41-7258-918e-cc66e3d2ac88",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Boci Peng",
+        "id": "01985c82-31fa-75b4-9574-e3f4f96bcdb6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenrong Cheng",
+        "id": "01991832-828c-7e4b-a795-cd7094377dfa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuanbo Fan",
+        "id": "01985c85-45f1-7b23-9c60-5be301db2648",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiaxin Guo",
+        "id": "01985c81-ed0d-796d-aef9-cea26b2b5b49",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xinlei Yu",
+        "id": "01985c82-85d8-7a1c-8f25-9dd451f6f9e6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenhong Zhou",
+        "id": "01985c82-09ae-73d8-ad00-9f135e495176",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zewen Hu",
+        "id": "019a890d-0403-79ae-9811-89b0f91b7e92",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiahao Huo",
+        "id": "01985c82-39ba-73f1-9295-8eef70ce781f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Junhao Wang",
+        "id": "01985c81-f312-7433-964a-1bcd8a80b387",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuwei Niu",
+        "id": "01985c82-a8ff-7e27-b622-f44e2cf04757",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu Wang",
+        "id": "01985c81-db51-7d84-99b9-bf51a4436da8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhenfei Yin",
+        "id": "01985c81-e9dd-7625-a0f9-790f2bc914e7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xiaobin Hu",
+        "id": "01985c81-e01d-7ba4-abd9-9893501f228a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yue Liao",
+        "id": "01985c81-fca4-71b0-8858-b408652439ee",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qiankun Li",
+        "id": "01985c83-3723-7a4b-9a81-0b06180deed6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kun Wang",
+        "id": "01985c81-e775-7378-ae47-bae233d20e37",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wangchunshu Zhou",
+        "id": "01985c81-ed0e-76b3-a917-0c9ed576add9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yixin Liu",
+        "id": "01985c81-db51-7192-8f0e-e67c390ab8f4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dawei Cheng",
+        "id": "01985c82-78f2-74ff-a9d5-c3000a72e8f0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Qi Zhang",
+        "id": "01985c81-de91-785e-ad20-d4e5e0879f7c",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tao Gui",
+        "id": "01985c81-de91-7a6c-8607-9c131b0c37f1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shirui Pan",
+        "id": "01985c81-d97f-7d1d-909a-745b94dde0ad",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yan Zhang",
+        "id": "01985c81-ec41-770c-94ae-6b919034d3e1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Philip Torr",
+        "id": "01985c81-e5a9-7926-a2a8-b0053a3e9747",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhicheng Dou",
+        "id": "01985c81-df57-73f5-815d-fd7045534902",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ji-Rong Wen",
+        "id": "01985c81-d85a-7e5e-a42a-8976d33274db",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xuanjing Huang",
+        "id": "01985c81-de91-7b15-a469-ed8c32725a2a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu-Gang Jiang",
+        "id": "01985c81-f233-7dc3-9346-2c43af82cef6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shuicheng Yan",
+        "id": "01985c81-e0ec-7b78-8bae-f780c08ae80f",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": 18251,
+    "github_url": "https://github.com/humanlayer/12-factor-agents",
+    "id": "019c75be-506a-70bd-9448-d4b04eec978c",
+    "image_url": "image/2512.13564/1zqii59tf8km.jspv2.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 1,
+        "last_7_days": 1
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019c75be-506a-70bd-9448-d4b04eec978c",
+    "paper_summary": null,
+    "publication_date": "2026-01-13T09:33:57.000Z",
+    "title": "Memory in the Age of AI Agents",
+    "topics": [
+      "agentic-frameworks",
+      "agents",
+      "Computer Science",
+      "continual-learning",
+      "cs.AI",
+      "cs.CL",
+      "multi-agent-learning",
+      "multi-modal-learning",
+      "reasoning",
+      "reinforcement-learning",
+      "representation-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2512.13564/1zqii59tf8km.jsp",
+    "updated_at": "2026-02-19T11:52:12.650Z",
+    "version_id": "019c75be-51b1-7f11-b43f-af5c9d5918c0"
+  },
+  {
+    "abstract": "Latent reasoning via continuous chain-of-thoughts (Latent CoT) has emerged as a promising alternative to discrete CoT reasoning. Operating in continuous space increases expressivity and has been hypothesized to enable superposition: the ability to maintain multiple candidate solutions simultaneously within a single representation. Despite theoretical arguments, it remains unclear whether language models actually leverage superposition when reasoning using latent CoTs. We investigate this question across three regimes: a training-free regime that constructs latent thoughts as convex combinations of token embeddings, a fine-tuned regime where a base model is adapted to produce latent thoughts, and a from-scratch regime where a model is trained entirely with latent thoughts to solve a given task. Using Logit Lens and entity-level probing to analyze internal representations, we find that only models trained from scratch exhibit signs of using superposition. In the training-free and fine-tuned regimes, we find that the superposition either collapses or is not used at all, with models discovering shortcut solutions instead. We argue that this is due to two complementary phenomena: i) pretraining on natural language data biases models to commit to a token in the last layers ii) capacity has a huge effect on which solutions a model favors. Together, our results offer a unified explanation for when and why superposition arises in continuous chain-of-thought reasoning, and identify the conditions under which it collapses.",
+    "author_info": [],
+    "authors": [
+      "Michael Rizvi-Martel",
+      "Guillaume Rabusseau",
+      "Marius Mosbach"
+    ],
+    "canonical_id": "2604.06374v1",
+    "first_publication_date": "2026-04-07T18:59:32.000Z",
+    "full_authors": [
+      {
+        "full_name": "Michael Rizvi-Martel",
+        "id": "01985c84-2853-7a4e-adc9-0c8b87b883d1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Guillaume Rabusseau",
+        "id": "01985c81-d858-7105-b4ed-b0c6fded67fa",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Marius Mosbach",
+        "id": "01985c81-edde-77dc-ad11-15a9cdaf4c35",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "github_stars": null,
+    "github_url": null,
+    "id": "019d7069-162b-7141-9e22-5953dd66d02f",
+    "image_url": "image/2604.06374v1.png",
+    "metrics": {
+      "public_total_votes": 0,
+      "total_votes": 0,
+      "visits_count": {
+        "all": 3,
+        "last_7_days": 3
+      },
+      "x_likes": 0
+    },
+    "organization_info": [],
+    "paper_group_id": "019d7069-162b-7141-9e22-5953dd66d02f",
+    "paper_summary": {
+      "keyInsights": [
+        "Pretraining for next-token prediction strongly biases models to quickly resolve uncertainty, hindering the maintenance of superposition.",
+        "Models, particularly fine-tuned ones, often learn shortcut solutions that bypass genuine multi-step latent reasoning, even when latent steps are provided.",
+        "True superposition, where latent states encode and utilize parallel reasoning paths, primarily appears in models trained from scratch with careful capacity management on tasks rewarding exploration."
+      ],
+      "originalProblem": [
+        "Traditional Chain-of-Thought reasoning is sequential and commits to a single path, potentially pruning alternative solutions prematurely.",
+        "The \"superposition\" hypothesis suggests latent reasoning in LLMs could simultaneously explore multiple candidate solutions within a single representation.",
+        "There is a lack of clear empirical evidence confirming whether LLMs actually utilize superposition in their continuous latent space."
+      ],
+      "results": [
+        "Off-the-shelf models processing \"forced superposition\" from Soft Thinking quickly collapse initial uncertainty, making soft tokens functionally equivalent to discrete ones early in the forward pass.",
+        "Fine-tuned Coconut models on synthetic graph-traversal tasks often achieve high accuracy by learning shortcuts, showing little reliance on their continuous latent reasoning steps for multi-hop inference.",
+        "Models trained from scratch, especially with constrained capacity, show clear and load-bearing evidence of genuine superposition, with latent states encoding uncertainty and being necessary for task performance."
+      ],
+      "solution": [
+        "Conducted an empirical investigation across three LLM regimes: training-free (Soft Thinking), fine-tuned (Coconut), and models trained from scratch.",
+        "Employed interpretability techniques, including Logit Lens and entity-level probing, to analyze internal hidden representations and belief evolution.",
+        "Examined the impact of pretraining objectives and model capacity on the emergence or collapse of superposition."
+      ],
+      "summary": "Researchers from Mila and Universit\u00e9 de Montr\u00e9al empirically analyzed the \"superposition\" hypothesis in Language Models' latent reasoning, demonstrating that while theoretically promising, genuine parallel exploration of reasoning paths rarely manifests in off-the-shelf or fine-tuned models due to pretraining biases and shortcut learning, only emerging in models trained from scratch under specific capacity constraints."
+    },
+    "publication_date": "2026-04-07T18:59:32.000Z",
+    "title": "The Illusion of Superposition? A Principled Analysis of Latent Thinking in Language Models",
+    "topics": [
+      "chain-of-thought",
+      "Computer Science",
+      "cs.CL",
+      "cs.LG",
+      "fine-tuning",
+      "mechanistic-interpretability",
+      "reasoning",
+      "representation-learning",
+      "transformers"
+    ],
+    "universal_paper_id": "2604.06374",
+    "updated_at": "2026-04-09T04:03:48.395Z",
+    "version_id": "019d7069-1656-7b0c-a449-9ebd5565c5ca"
+  },
+  {
+    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
+    "author_info": [],
+    "authors": [
+      "Yuyang Hu",
+      "Shichun Liu",
+      "Yanwei Yue",
+      "Guibin Zhang",
+      "Boyang Liu",
+      "Fangyi Zhu",
+      "Jiahang Lin",
+      "Honglin Guo",
+      "Shihan Dou",
+      "Zhiheng Xi",
+      "Senjie Jin",
+      "Jiejun Tan",
+      "Yanbin Yin",
+      "Jiongnan Liu",
+      "Zeyu Zhang",
+      "Zhongxiang Sun",
+      "Yutao Zhu",
+      "Hao Sun",
+      "Boci Peng",
+      "Zhenrong Cheng",
+      "Xuanbo Fan",
+      "Jiaxin Guo",
+      "Xinlei Yu",
+      "Zhenhong Zhou",
+      "Zewen Hu",
+      "Jiahao Huo",
+      "Junhao Wang",
+      "Yuwei Niu",
+      "Yu Wang",
+      "Zhenfei Yin",
+      "Xiaobin Hu",
+      "Yue Liao",
+      "Qiankun Li",
+      "Kun Wang",
+      "Wangchunshu Zhou",
+      "Yixin Liu",
+      "Dawei Cheng",
+      "Qi Zhang",
+      "Tao Gui",
+      "Shirui Pan",
+      "Yan Zhang",
+      "Philip Torr",
+      "Zhicheng Dou",
+      "Ji-Rong Wen",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Shuicheng Yan"
+    ],
+    "canonical_id": "2512.13564/5icbw02ra6q2.jspv2",
     "first_publication_date": "2025-12-15T17:22:34.000Z",
     "full_authors": [
       {
@@ -11226,151 +11312,8 @@
     ],
     "github_stars": 18252,
     "github_url": "https://github.com/humanlayer/12-factor-agents",
-    "id": "019c75c0-431d-7a25-a2ce-8e8618fc58c7",
-    "image_url": "image/2512.13564/5icbw02ra6q2.htmlv2.png",
-    "metrics": {
-      "public_total_votes": 0,
-      "total_votes": 0,
-      "visits_count": {
-        "all": 0,
-        "last_7_days": 0
-      },
-      "x_likes": 0
-    },
-    "organization_info": [],
-    "paper_group_id": "019c75c0-431d-7a25-a2ce-8e8618fc58c7",
-    "paper_summary": null,
-    "publication_date": "2026-01-13T09:33:57.000Z",
-    "title": "Memory in the Age of AI Agents",
-    "topics": [
-      "agentic-frameworks",
-      "agents",
-      "Computer Science",
-      "cs.AI",
-      "cs.CL",
-      "generative-models",
-      "multi-agent-learning",
-      "multi-modal-learning",
-      "reasoning",
-      "reinforcement-learning",
-      "representation-learning",
-      "transformers"
-    ],
-    "universal_paper_id": "2512.13564/5icbw02ra6q2.html",
-    "updated_at": "2026-02-19T11:54:20.317Z",
-    "version_id": "019c75c0-4447-761b-9b41-582bce90df1f"
-  },
-  {
-    "abstract": "The performance of modern AI systems is fundamentally constrained by the quality of their underlying kernels, which translate high-level algorithmic semantics into low-level hardware operations. Achieving near-optimal kernels requires expert-level understanding of hardware architectures and programming models, making kernel engineering a critical but notoriously time-consuming and non-scalable process. Recent advances in large language models (LLMs) and LLM-based agents have opened new possibilities for automating kernel generation and optimization. LLMs are well-suited to compress expert-level kernel knowledge that is difficult to formalize, while agentic systems further enable scalable optimization by casting kernel development as an iterative, feedback-driven loop. Rapid progress has been made in this area. However, the field remains fragmented, lacking a systematic perspective for LLM-driven kernel generation. This survey addresses this gap by providing a structured overview of existing approaches, spanning LLM-based approaches and agentic optimization workflows, and systematically compiling the datasets and benchmarks that underpin learning and evaluation in this domain. Moreover, key open challenges and future research directions are further outlined, aiming to establish a comprehensive reference for the next generation of automated kernel optimization. To keep track of this field, we maintain an open-source GitHub repository at this https URL.",
-    "author_info": [],
-    "authors": [
-      "Yang Yu",
-      "Peiyu Zang",
-      "Chi Hsu Tsai",
-      "Haiming Wu",
-      "Yixin Shen",
-      "Jialing Zhang",
-      "Haoyu Wang",
-      "Zhiyou Xiao",
-      "Jingze Shi",
-      "Yuyu Luo",
-      "Wentao Zhang",
-      "Chunlei Men",
-      "Guang Liu",
-      "Yonghua Lin"
-    ],
-    "canonical_id": "2601.15727.pdfv2",
-    "first_publication_date": "2026-01-22T07:53:52.000Z",
-    "full_authors": [
-      {
-        "full_name": "Yang Yu",
-        "id": "01985c81-db50-7769-a650-3d8dbcf4ea5b",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Peiyu Zang",
-        "id": "019be9b7-b2bd-774b-9a7a-8cdd7416af22",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chi Hsu Tsai",
-        "id": "019b3488-4063-730e-81e4-960f7b8ea677",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Haiming Wu",
-        "id": "01985c82-e9b8-7825-a3f7-9a66029d4561",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yixin Shen",
-        "id": "01985c83-4a38-7791-b816-6651833acddf",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jialing Zhang",
-        "id": "01985c82-8153-74af-8bd9-5734c71793cd",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Haoyu Wang",
-        "id": "01985c81-d97e-73ba-b88b-ce1f75386ccf",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Zhiyou Xiao",
-        "id": "01985c84-0a5e-754d-9987-c54cc5e39783",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Jingze Shi",
-        "id": "01985c82-340f-760c-9eff-faacd668179c",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yuyu Luo",
-        "id": "01985c81-ef78-7880-a2b8-39b224881743",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Wentao Zhang",
-        "id": "01985c81-edde-7fe0-bc00-050a798c0ad9",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Chunlei Men",
-        "id": "01985c82-f0d7-7915-959c-277d93f9e805",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Guang Liu",
-        "id": "01985c81-de91-73fa-a59b-525985beac57",
-        "user_id": null,
-        "username": null
-      },
-      {
-        "full_name": "Yonghua Lin",
-        "id": "01985c82-31fa-7070-98a3-d31fcbde94f4",
-        "user_id": null,
-        "username": null
-      }
-    ],
-    "github_stars": null,
-    "github_url": null,
-    "id": "019ca75e-89ae-7343-8f38-9bc62f5d22cd",
-    "image_url": "image/2601.15727.pdfv2.png",
+    "id": "019c75c0-412c-70de-8102-f253aff258be",
+    "image_url": "image/2512.13564/5icbw02ra6q2.jspv2.png",
     "metrics": {
       "public_total_votes": 0,
       "total_votes": 0,
@@ -11381,24 +11324,26 @@
       "x_likes": 0
     },
     "organization_info": [],
-    "paper_group_id": "019ca75e-89ae-7343-8f38-9bc62f5d22cd",
+    "paper_group_id": "019c75c0-412c-70de-8102-f253aff258be",
     "paper_summary": null,
-    "publication_date": "2026-01-26T08:47:52.000Z",
-    "title": "Towards Automated Kernel Generation in the Era of LLMs",
+    "publication_date": "2026-01-13T09:33:57.000Z",
+    "title": "Memory in the Age of AI Agents",
     "topics": [
+      "agentic-frameworks",
       "agents",
       "Computer Science",
+      "continual-learning",
+      "cs.AI",
       "cs.CL",
-      "cs.LG",
-      "hardware-aware-algorithms",
-      "inference-optimization",
-      "ml-systems",
-      "optimization-methods",
-      "tool-use",
+      "information-extraction",
+      "multi-agent-learning",
+      "multi-modal-learning",
+      "reinforcement-learning",
+      "representation-learning",
       "transformers"
     ],
-    "universal_paper_id": "2601.15727.pdf",
-    "updated_at": "2026-03-01T03:08:36.654Z",
-    "version_id": "019ca75e-8a0c-7e52-b9a3-21fd1b25fd66"
+    "universal_paper_id": "2512.13564/5icbw02ra6q2.jsp",
+    "updated_at": "2026-02-19T11:54:19.820Z",
+    "version_id": "019c75c0-41b4-71e5-8d4b-9526208ee0af"
   }
 ]

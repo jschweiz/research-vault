@@ -1,0 +1,359 @@
+{
+  "abstract": "We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities: high-dimensional medical imaging (CT/MRI volumes and histopathology whole slide images), anatomical localization via bounding boxes, multi-timepoint chest X-ray analysis, and improved medical document understanding (lab reports, electronic health records). We detail the innovations required to enable these modalities within a single architecture, including new training data, long-context 3D volume slicing, and whole-slide pathology sampling. Compared to MedGemma 1 4B, MedGemma 1.5 4B demonstrates significant gains in these new areas, improving 3D MRI condition classification accuracy by 11% and 3D CT condition classification by 3% (absolute improvements). In whole slide pathology imaging, MedGemma 1.5 4B achieves a 47% macro F1 gain. Additionally, it improves anatomical localization with a 35% increase in Intersection over Union on chest X-rays and achieves a 4% macro accuracy for longitudinal (multi-timepoint) chest x-ray analysis. Beyond its improved multimodal performance over MedGemma 1, MedGemma 1.5 improves on text-based clinical knowledge and reasoning, improving by 5% on MedQA accuracy and 22% on EHRQA accuracy. It also achieves an average of 18% macro F1 on 4 different lab report information extraction datasets (EHR Datasets 2, 3, 4, and Mendeley Clinical Laboratory Test Reports). Taken together, MedGemma 1.5 serves as a robust, open resource for the community, designed as an improved foundation on which developers can create the next generation of medical AI systems. Resources and tutorials for building upon MedGemma 1.5 can be found at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Andrew Sellergren",
+    "Chufan Gao",
+    "Fereshteh Mahvar",
+    "Timo Kohlberger",
+    "Fayaz Jamil",
+    "Madeleine Traverse",
+    "Alberto Tono",
+    "Bashir Sadjad",
+    "Lin Yang",
+    "Charles Lau",
+    "Liron Yatziv",
+    "Tiffany Chen",
+    "Bram Sterling",
+    "Kenneth Philbrick",
+    "Richa Tiwari",
+    "Yun Liu",
+    "Madhuram Jajoo",
+    "Chandrashekar Sankarapu",
+    "Swapnil Vispute",
+    "Harshad Purandare",
+    "Abhishek Bijay Mishra",
+    "Sam Schmidgall",
+    "Tao Tu",
+    "Anil Palepu",
+    "Chunjong Park",
+    "Tim Strother",
+    "Rahul Thapa",
+    "Yong Cheng",
+    "Preeti Singh",
+    "Kat Black",
+    "Yossi Matias",
+    "Katherine Chou",
+    "Avinatan Hassidim",
+    "Kavi Goel",
+    "Joelle Barral",
+    "Tris Warkentin",
+    "Shravya Shetty",
+    "Dale Webster",
+    "Sunny Virmani",
+    "David F. Steiner",
+    "Can Kirmizibayrak",
+    "Daniel Golden"
+  ],
+  "canonical_id": "2604.05081v1",
+  "first_publication_date": "2026-04-06T18:35:57.000Z",
+  "full_authors": [
+    {
+      "full_name": "Andrew Sellergren",
+      "id": "01985c82-1a97-7b9e-ba44-acc4a500cf35",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chufan Gao",
+      "id": "01985c81-e1bb-7bce-ada9-adfc14cccd20",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fereshteh Mahvar",
+      "id": "01985c83-1455-74d4-9545-fdf0a86288e5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Timo Kohlberger",
+      "id": "01985c81-f8f2-7380-b2dd-5b7b30d57244",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fayaz Jamil",
+      "id": "01985c82-1a97-7d80-b492-9e9e07838b7e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Madeleine Traverse",
+      "id": "01985c85-e25c-7911-8b88-be8152d7172a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Alberto Tono",
+      "id": "01985c82-d70e-7508-9f96-4e5205b2b61e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bashir Sadjad",
+      "id": "01985c85-a1ca-71d5-b3eb-16a4b538f7fb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lin Yang",
+      "id": "01985c81-eea8-748f-852b-b790b987c93a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Charles Lau",
+      "id": "01985c82-4d84-7da7-937d-ac4ddaf66bfc",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Liron Yatziv",
+      "id": "01985c83-1455-7085-a567-6d9b8d646bd9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tiffany Chen",
+      "id": "01985c82-b662-7664-840b-32213540e84a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bram Sterling",
+      "id": "01985c83-1455-756a-80fd-21388236ec1b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kenneth Philbrick",
+      "id": "01985c83-1455-79fa-b468-af7151639932",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Richa Tiwari",
+      "id": "01985c85-e25c-74b8-a3a0-c2089469049e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yun Liu",
+      "id": "01985c81-de91-71a4-8179-c7c209015ab9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Madhuram Jajoo",
+      "id": "019d6ab8-4d49-7749-8421-41642baf81a1",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chandrashekar Sankarapu",
+      "id": "019d6ab8-4d4b-7d2f-b6c6-788c435540ae",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Swapnil Vispute",
+      "id": "01985c84-079c-750a-9dc2-039c220ce8d2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Harshad Purandare",
+      "id": "019d6ab8-4d4e-7c5f-bf65-e890ebb10f81",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Abhishek Bijay Mishra",
+      "id": "019d6ab8-4d50-71cc-91ed-69b8d06f5f71",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sam Schmidgall",
+      "id": "01985c85-6c18-7984-b321-85138f386e27",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tao Tu",
+      "id": "01985c81-de91-7f02-b867-21b9c2bc8039",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Anil Palepu",
+      "id": "01985c81-df57-7695-8097-0e8dc662c0c4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chunjong Park",
+      "id": "01985c82-4d84-7eba-a180-f3aa7d29b20b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tim Strother",
+      "id": "01985c82-4d84-768d-8182-434a0485df0e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Rahul Thapa",
+      "id": "01985c81-d859-7b18-abe3-53478e37a430",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yong Cheng",
+      "id": "01985c81-d85a-7d29-be52-b5570b549e91",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Preeti Singh",
+      "id": "01985c82-6301-7a62-bf6a-2acffece96ba",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kat Black",
+      "id": "01985c81-f062-7604-9f3d-08e66feb3626",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yossi Matias",
+      "id": "01985c81-d858-72be-8442-1eda2ef9be0a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Katherine Chou",
+      "id": "01985c81-df57-78de-b769-15324b833f76",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Avinatan Hassidim",
+      "id": "01985c82-01cb-7242-8849-2d10e37090e0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kavi Goel",
+      "id": "01985c85-e25c-78e5-9b43-cdc839c3118c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Joelle Barral",
+      "id": "01985c81-de91-74c5-b480-68a7d8d5a4fb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tris Warkentin",
+      "id": "01985c81-e0ec-7fb3-a47f-fe9c71e73fe6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shravya Shetty",
+      "id": "01985c82-0ef4-708c-bcf3-7255d410ce52",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dale Webster",
+      "id": "01985c81-de91-735f-a92d-3299cf3ab25a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sunny Virmani",
+      "id": "01985c82-6301-775e-9d2a-e292df94dab9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "David F. Steiner",
+      "id": "01985c82-937b-7c78-afa6-0189b3c3806b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Can Kirmizibayrak",
+      "id": "01985c83-1455-70c6-995e-71538a512429",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Daniel Golden",
+      "id": "01985c82-1a98-7643-ab11-d05021ae3bc3",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d6ab8-4d12-70f6-938a-90e878ef5461",
+  "image_url": "image/2604.05081v1.png",
+  "metrics": {
+    "public_total_votes": 5,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 29,
+      "last_7_days": 29
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6ab8-4d12-70f6-938a-90e878ef5461",
+  "paper_summary": {
+    "keyInsights": [
+      "An efficient 4B parameter model can effectively process and interpret intricate medical data, including 3D CT/MRI volumes, whole-slide pathology images, and longitudinal imaging sequences.",
+      "Domain-specialized foundation models offer a valuable advantage in interpreting nuanced multimodal reasoning for medical AI compared to more generalist models of similar size.",
+      "Careful preprocessing strategies, such as multi-channel windowing for CT and spatially ordered patch extraction for WSIs, are crucial for adapting complex medical data to existing 2D vision encoders while preserving critical information."
+    ],
+    "originalProblem": [
+      "Existing open-weight medical foundation models had limited support for complex, high-dimensional medical data modalities like volumetric 3D CT/MRI and whole slide images (WSIs).",
+      "Comprehensive healthcare AI development was hindered by models primarily focusing on 2D imaging and text, lacking capabilities for fine-grained anatomical localization and multi-timepoint radiology analysis.",
+      "There was a need for an open and robust foundational resource that could interpret a broader spectrum of medical data for advanced clinical applications."
+    ],
+    "results": [
+      "MedGemma 1.5 4B achieved an 11% absolute improvement in macro accuracy for 3D MRI condition classification and a 3% improvement for 3D CT condition classification.",
+      "It showed a 47% macro F1 gain in ROUGE-L score for Whole Slide Pathology Image report generation and a 35% increase in Intersection over Union (IoU) for anatomical localization on chest X-rays.",
+      "The model improved average macro F1 by 18% across four lab report information extraction datasets and increased MedQA accuracy by 5% and EHRQA accuracy by 22%."
+    ],
+    "solution": [
+      "MedGemma 1.5 4B builds upon the MedGemma 1 architecture, integrating a 400M MedSigLIP encoder and a Gemma3 foundation model, with the vision encoder kept frozen during training.",
+      "The model was trained through pretraining, distillation, and reinforcement learning, incorporating extensive new medical domain-specific image-text paired datasets for 3D radiology, WSIs, and various medical documents.",
+      "Specific preprocessing pipelines were developed for volumetric images (slicing, multi-channel windowing for CT, min-max normalization for MRI) and whole slide images (tissue segmentation, spatially ordered patch extraction) to adapt them for the 2D image encoder."
+    ],
+    "summary": "Google Research and Google DeepMind's MedGemma 1.5 expands open-weight medical foundation models to integrate complex high-dimensional medical data such as 3D CT/MRI, whole slide images, and multi-timepoint radiology within an efficient 4B parameter model. It demonstrates notable performance gains, including an 11% macro accuracy increase in 3D MRI condition classification and a 35% rise in IoU for chest X-ray anatomical localization."
+  },
+  "publication_date": "2026-04-06T18:35:57.000Z",
+  "title": "MedGemma 1.5 Technical Report",
+  "topics": [
+    "ai-for-health",
+    "Computer Science",
+    "cs.AI",
+    "fine-tuning",
+    "information-extraction",
+    "multi-modal-learning",
+    "object-detection",
+    "reasoning",
+    "representation-learning",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.05081",
+  "updated_at": "2026-04-08T01:32:36.498Z",
+  "version_id": "019d6ab8-4d74-79f7-999f-fc6222fe731c"
+}

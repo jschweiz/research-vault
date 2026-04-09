@@ -1,0 +1,129 @@
+{
+  "abstract": "Reconstructing dynamic scenes with complex human-object interactions is a fundamental challenge in computer vision and graphics. Existing Gaussian Splatting methods either rely on human pose priors while neglecting dynamic objects, or approximate all motions within a single field, limiting their ability to capture interaction-rich dynamics. To address this gap, we propose Human-Object Interaction Gaussian Splatting (HOIGS), which explicitly models interaction-induced deformation between humans and objects through a cross-attention-based HOI module. Distinct deformation baselines are employed to extract features: HexPlane for humans and Cubic Hermite Spline (CHS) for objects. By integrating these heterogeneous features, HOIGS effectively captures interdependent motions and improves deformation estimation in scenarios involving occlusion, contact, and object manipulation. Comprehensive experiments on multiple datasets demonstrate that our method consistently outperforms state-of-the-art human-centric and 4D Gaussian approaches, highlighting the importance of explicitly modeling human-object interactions for high-fidelity reconstruction.",
+  "author_info": [],
+  "authors": [
+    "Taewoo Kim",
+    "Suwoong Yeom",
+    "Jaehyun Pyun",
+    "Geonho Cha",
+    "Dongyoon Wee",
+    "Joonsik Nam",
+    "Yun-Seong Jeong",
+    "Kyeongbo Kong",
+    "Suk-Ju Kang"
+  ],
+  "canonical_id": "2604.04016v1",
+  "first_publication_date": "2026-04-05T08:27:28.000Z",
+  "full_authors": [
+    {
+      "full_name": "Taewoo Kim",
+      "id": "01985c81-fa9e-79eb-a480-954e2ac8e2b9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Suwoong Yeom",
+      "id": "019d4be6-6dcd-7768-b178-e53636fd4ccb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jaehyun Pyun",
+      "id": "019d65e0-51bb-7d08-84cd-ba8dbd701e23",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Geonho Cha",
+      "id": "01985c83-4424-7fd5-8e74-02ca4ddcc8ae",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dongyoon Wee",
+      "id": "01985c82-aa86-7df2-8586-e78bfa41b112",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Joonsik Nam",
+      "id": "019d4be6-6dcf-77b8-b9c9-c9861353805e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yun-Seong Jeong",
+      "id": "019d65e0-51c9-7983-a4fd-b81b09613699",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kyeongbo Kong",
+      "id": "01985c81-e5aa-723c-abb6-0249ce787c1d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Suk-Ju Kang",
+      "id": "01985c81-e5aa-7670-be0a-f8f54e2a6171",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d65e0-5172-762c-9262-9a5a696a6ae8",
+  "image_url": "image/2604.04016v1.png",
+  "metrics": {
+    "public_total_votes": 2,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 32,
+      "last_7_days": 32
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65e0-5172-762c-9262-9a5a696a6ae8",
+  "paper_summary": {
+    "keyInsights": [
+      "Disentangling human and object representations and applying specialized deformation strategies for each entity (articulated human vs. rigid object) significantly improves the accuracy of complex HOI reconstruction.",
+      "Explicitly modeling bidirectional human-object dependencies through a cross-attention mechanism effectively mitigates interaction artifacts and ensures more physically plausible motion, even in close contact or occlusion.",
+      "Leveraging robust object initialization with diffusion priors and incorporating depth supervision enhances geometric fidelity, particularly for plausibly completing 3D geometry in occluded object regions."
+    ],
+    "originalProblem": [
+      "Human-centric scene reconstruction methods often neglect dynamic objects, leading to artifacts or incomplete representations in human-object interaction scenarios.",
+      "General dynamic scene reconstruction (4D Gaussian Splatting) struggles to capture high-frequency details of human articulation and rigid object movements due to over-smoothing.",
+      "Accurately modeling the complex, interdependent spatial and temporal relationships between humans and objects from monocular video remains a challenge."
+    ],
+    "results": [
+      "HOIGS achieved the highest PSNR and lowest LPIPS across HOSNeRF (PSNR 25.89, LPIPS 0.114), BEHAVE (PSNR 31.51, LPIPS 0.034), and ARCTIC datasets, outperforming 4DGS and human-centric baselines.",
+      "Produced photorealistic novel views without common artifacts such as ghosting, floating geometry, or body-background overlap, maintaining high visual fidelity in interaction regions under severe occlusion.",
+      "Ablation studies confirmed the critical contributions of the CHS-based object deformation (approx. 0.5 PSNR gain) and the explicit cross-attention HOI module (approx. 0.65 PSNR gain) to the overall performance."
+    ],
+    "solution": [
+      "Employs entity-specific deformation baselines: a HexPlane-based model with SMPL-X priors for humans and Cubic Hermite Splines for object motion, tailored to their distinct kinematic properties.",
+      "Introduces a cross-attention-based Human-Object Interaction (HOI) module to explicitly model bidirectional dependencies between humans and objects, incorporating a distance mask to filter non-interacting elements.",
+      "Applies interaction-aware residual corrections to SMPL-X pose parameters and object Gaussian mean offsets, derived from the HOI module, to ensure interaction-consistent trajectories."
+    ],
+    "summary": "The HOIGS framework reconstructs dynamic human-object interactions from monocular video by disentangling human and object motions with entity-specific deformation models and unifying them via a cross-attention interaction module. This approach achieved high visual quality and geometric accuracy on HOSNeRF, BEHAVE, and ARCTIC datasets, effectively reducing common reconstruction artifacts."
+  },
+  "publication_date": "2026-04-05T08:27:28.000Z",
+  "title": "HOIGS: Human-Object Interaction Gaussian Splatting",
+  "topics": [
+    "attention-mechanisms",
+    "Computer Science",
+    "cs.AI",
+    "cs.CV",
+    "geometric-deep-learning",
+    "image-generation",
+    "multi-modal-learning",
+    "neural-rendering",
+    "representation-learning",
+    "transformers",
+    "video-understanding"
+  ],
+  "universal_paper_id": "2604.04016",
+  "updated_at": "2026-04-07T02:58:12.978Z",
+  "version_id": "019d65e0-51ce-7fa0-8f3f-9335508748f8"
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Weakly interacting massive particles provide a well-motivated framework for dark matter, naturally reproducing the observed relic abundance through thermal freeze-out. A recent claim of an indirect-detection signal from the Galactic halo, consistent with dark matter annihilation in the mass range 400--800 GeV, motivates a reexamination of minimal models that can account for such a signal while remaining consistent with existing constraints. In this paper, we analyze the simplest extensions of the Standard Model capable of explaining the signal. We show that electroweak doublet dark matter with Higgs-portal interactions provides a natural and economical explanation. The model predicts annihilation predominantly into longitudinal gauge bosons with characteristic branching fractions and allows for inelastic dark matter with a mass splitting of order 100 keV, intriguingly consistent with a recent direct-detection anomaly. Possible enhancements of the present-day annihilation rate relative to the thermal value are also discussed, including a simple extension with a light scalar field, whose mass can be chosen such that the enhancement is suppressed in dwarf galaxies.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775498400000,
+  "googleCitationId": null,
+  "groupId": "019d6b45-3ab7-754a-b22d-e1b2aabf3d69",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775498400000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05016",
+  "title": "Electroweak Doublet Dark Matter for a Galactic Halo Gamma-Ray Excess",
+  "type": "public",
+  "universalId": "2604.05016",
+  "uploader": null,
+  "versionId": "019d6b45-3ada-7160-a87f-dad6d9cea913",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

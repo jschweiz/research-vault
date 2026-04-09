@@ -1,0 +1,106 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Guan-Ting Lin",
+        "id": "01985c82-1c7c-7a72-9fe2-b0be36d1b832",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chen Chen",
+        "id": "01985c81-dc26-7e63-8ff0-de3298099b81",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhehuai Chen",
+        "id": "01985c82-7f75-780b-9a8d-1f0d409e6c97",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hung-yi Lee",
+        "id": "01985c81-e34e-7b99-904b-629c320079cb",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Apr 06 2026 16:46:52 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-7768-76e2-8c08-ee63463280b6",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 7,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 7,
+        "visits_count": {
+          "all": 44,
+          "last24Hours": 16,
+          "last30Days": 44,
+          "last7Days": 44,
+          "last90Days": 44
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "A Benchmark for Evaluating Turn-Taking and Overlap Handling in Full-Duplex Spoken Dialogue Models",
+          "language": "Python",
+          "stars": 149,
+          "url": "https://github.com/DanielLin94144/Full-Duplex-Bench"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.04847"
+      },
+      "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "topics": [
+        "agents",
+        "Computer Science",
+        "conversational-ai",
+        "cs.CL",
+        "data-curation",
+        "eess.AS",
+        "Electrical Engineering and Systems Science",
+        "inference-optimization",
+        "multi-modal-learning",
+        "reasoning",
+        "speech-recognition",
+        "tool-use",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.04847",
+      "updated_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We introduce Full-Duplex-Bench-v3 (FDB-v3), a benchmark for evaluating spoken language models under naturalistic speech conditions and multi-step tool use. Unlike prior work, our dataset consists entirely of real human audio annotated for five disfluency categories, paired with scenarios requiring chained API calls across four task domains. We evaluate six model configurations -- GPT-Realtime, Gemini Live 2.5, Gemini Live 3.1, Grok, Ultravox v0.7, and a traditional Cascaded pipeline (Whisper$\\rightarrow$GPT-4o$\\rightarrow$TTS) -- across accuracy, latency, and turn-taking dimensions. GPT-Realtime leads on Pass@1 (0.600) and interruption avoidance (13.5\\%); Gemini Live 3.1 achieves the fastest latency (4.25~s) but the lowest turn-take rate (78.0\\%); and the Cascaded baseline, despite a perfect turn-take rate, incurs the highest latency (10.12~s). Across all systems, self-correction handling and multi-step reasoning under hard scenarios remain the most consistent failure modes.",
+      "created_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d65d7-777f-7eb3-876c-f91e5b030d99",
+      "imageURL": "image/2604.04847v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "publication_date": "Mon Apr 06 2026 16:46:52 GMT+0000 (Coordinated Universal Time)",
+      "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "universal_paper_id": "2604.04847",
+      "updated_at": "Tue Apr 07 2026 02:48:32 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.04847v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

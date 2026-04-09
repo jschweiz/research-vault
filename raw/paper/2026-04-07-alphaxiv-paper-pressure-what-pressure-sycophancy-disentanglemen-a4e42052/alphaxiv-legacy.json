@@ -1,0 +1,95 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Muhammad Ahmed Mohsin",
+        "id": "01985c83-0b02-7287-9003-e667a8951f58",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ahsan Bilal",
+        "id": "01985c83-c511-77cc-89e9-e6155485d146",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Muhammad Umer",
+        "id": "01985c83-0b02-7de5-a47e-608e257b0f2f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Emily Fox",
+        "id": "01985c82-acd7-7555-a6e2-be642d59a030",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 05:14:21 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 00:28:17 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b83-52c7-7071-a99d-4d33f88b2b87",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 1,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 1,
+        "visits_count": {
+          "all": 18,
+          "last24Hours": 17,
+          "last30Days": 18,
+          "last7Days": 18,
+          "last90Days": 18
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05279"
+      },
+      "title": "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition",
+      "topics": [
+        "adversarial-robustness",
+        "Computer Science",
+        "cs.AI",
+        "data-curation",
+        "fine-tuning",
+        "human-ai-interaction",
+        "reasoning",
+        "reinforcement-learning",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.05279",
+      "updated_at": "Wed Apr 08 2026 05:14:21 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Large language models exhibit sycophancy, the tendency to shift their stated positions toward perceived user preferences or authority cues regardless of evidence. Standard alignment methods fail to correct this because scalar reward models conflate two distinct failure modes into a single signal: pressure capitulation, where the model changes a correct answer under social pressure, and evidence blindness, where the model ignores the provided context entirely. We operationalise sycophancy through formal definitions of pressure independence and evidence responsiveness, serving as a working framework for disentangled training rather than a definitive characterisation of the phenomenon. We propose the first approach to sycophancy reduction via reward decomposition, introducing a multi-component Group Relative Policy Optimisation (GRPO) reward that decomposes the training signal into five terms: pressure resistance, context fidelity, position consistency, agreement suppression, and factual correctness. We train using a contrastive dataset pairing pressure-free baselines with pressured variants across three authority levels and two opposing evidence contexts. Across five base models, our two-phase pipeline consistently reduces sycophancy on all metric axes, with ablations confirming that each reward term governs an independent behavioural dimension. The learned resistance to pressure generalises beyond our training methodology and prompt structure, reducing answer-priming sycophancy by up to 17 points on SycophancyEval despite the absence of such pressure forms during training.",
+      "created_at": "Wed Apr 08 2026 05:14:21 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b83-52df-7543-99c3-8065cea6f986",
+      "imageURL": "image/2604.05279v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 00:28:17 GMT+0000 (Coordinated Universal Time)",
+      "title": "Pressure, What Pressure? Sycophancy Disentanglement in Language Models via Reward Decomposition",
+      "universal_paper_id": "2604.05279",
+      "updated_at": "Wed Apr 08 2026 05:14:21 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05279v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

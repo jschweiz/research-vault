@@ -2,6 +2,7 @@
 
 - alphaXiv: https://www.alphaxiv.org/abs/2604.02029
 - Audio summary: https://paper-podcasts.alphaxiv.org/019d5109-3b7f-73f9-a4be-07c3791fda3c/podcast.mp3
+- Saved audio file: `alphaxiv-podcast.mp3`
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d5109-3b7f-73f9-a4be-07c3791fda3c/transcript.json
 
 ## Transcript

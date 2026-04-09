@@ -1,0 +1,425 @@
+{
+  "fractionAi": 0.013434284,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 0.9865657,
+  "headline": "Mostly Human Written",
+  "predictionShort": "Human",
+  "state": "done",
+  "updatedAt": 1775705960922,
+  "windows": [
+    {
+      "aiAssistanceScore": 0.06841493,
+      "confidence": "Medium",
+      "endIndex": 1746,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 0,
+      "text": "Next-Scale Generative Reranking: A Tree-based Generative\nRerank Method at Meituan\nShuli Wang\n\u2217\u2020\nMeituan\nChengdu, China\nwangshuli03@meituan.com\nChanghao Li\n\u2217\nMeituan\nChengdu, China\nlichanghao@meituan.com\nKe Fan\nMeituan\nChengdu, China\nfanke08@meituan.com\nSenjie Kou\nMeituan\nChengdu, China\nkousenjie@meituan.com\nJunwei Yin\nMeituan\nChengdu, China\nyinjunwei03@meituan.com\nChi Wang\nMeituan\nChengdu, China\nwangchi06@meituan.com\nYinhua Zhu\nMeituan\nChengdu, China\nzhuyinhua@meituan.com\nHaitao Wang\nMeituan\nChengdu, China\nwanghaitao13@meituan.com\nXingxing Wang\nMeituan\nBeijing, China\nwangxingxing04@meituan.com\nAbstract\nIn modern multi-stage recommendation systems, reranking plays\na critical role by modeling contextual information. Due to inher-\nent challenges such as the combinatorial space complexity, an in-\ncreasing number of methods adopt the generative paradigm: the\ngenerator produces the optimal list during inference, while an eval-\nuator guides the generator\u2019s optimization during the training phase.\nHowever, these methods still face two problems. Firstly, these gen-\nerators fail to produce optimal generation results due to the lack\nof both local and global perspectives, regardless of whether the\ngeneration strategy is autoregressive or non-autoregressive. Sec-\nondly, the goal inconsistency problem between the generator and\nthe evaluator during training complicates the guidance signal and\nleading to suboptimal performance. To address these issues, we\npropose the Next-Scale Generation Reranking (NSGR), a tree-based\ngenerative framework. Specifically, we introduce a next-scale gen-\nerator (NSG) that progressively expands a recommendation list\nfrom user interests in a coarse-to-fine manner, balancing global and\nlocal perspectives. "
+    },
+    {
+      "aiAssistanceScore": 0.067353554,
+      "confidence": "Medium",
+      "endIndex": 3595,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 1745,
+      "text": " Furthermore, we design a multi-scale neighbor\nloss, which leverages a tree-based multi-scale evaluator (MSE) to\nprovide scale-specific guidance to the NSG at each scale. Extensive\nexperiments on public and industrial datasets validate the effective-\nness of NSGR. And NSGR has been successfully deployed on the\nMeituan food delivery platform.\n\u2217 \nBoth authors contributed equally to this research.\n\u2020 \nCorresponding author.\nPermission to make digital or hard copies of all or part of this work for personal or\nclassroom use is granted without fee provided that copies are not made or distributed\nfor profit or commercial advantage and that copies bear this notice and the full citation\non the first page. Copyrights for components of this work owned by others than ACM\nmust be honored. Abstracting with credit is permitted. To copy otherwise, or republish,\nto post on servers or to redistribute to lists, requires prior specific permission and/or a\nfee. Request permissions from permissions@acm.org.\nConference\u201917, Washington, DC, USA\n\u00a9 2018 ACM.\nACM ISBN 978-1-4503-XXXX-X/18/06\nhttps://doi.org/XXXXXXX.XXXXXXX\nCCS Concepts\n\u2022 Information systems \u2192 Retrieval models and ranking; Com-\nputational advertising.\nKeywords\nRecommender Systems, Reranking, Generative Model\nACM Reference Format:\nShuli Wang, Changhao Li, Ke Fan, Senjie Kou, Junwei Yin, Chi Wang, Yin-\nhua Zhu, Haitao Wang, and Xingxing Wang. 2018. Next-Scale Generative\nReranking: A Tree-based Generative Rerank Method at Meituan . In . ACM,\nNew York, NY, USA, 10 pages. https://doi.org/XXXXXXX.XXXXXXX\n1 Introduction\nE-commerce platforms, such as Meituan and Taobao, need to pro-\nvide personalized services from millions of items to their users.\nTo improve recommendation efficiency, a typical personalized rec-\nommendation system consists of three stages: matching, ranking,\nand reranking. "
+    },
+    {
+      "aiAssistanceScore": 0.17089933,
+      "confidence": "Medium",
+      "endIndex": 4828,
+      "label": "Human Written",
+      "pageIndex": 0,
+      "startIndex": 3594,
+      "text": " Ranking models assess items individually, with a\nfocus on feature interactions [10, 13, 17], user preference modeling\n[ 25 , 37 , 38], among other aspects. However, these methods often\noverlook the critical mutual influences among contextual items\nand positional information. Studies [ 1 , 5 , 6 , 23 , 32] have shown that\noptimizing listwise utility during the reranking stage is a more effec-\ntive strategy, as it leverages both position information and mutual\ninfluences among items in the list to improve overall performance.\nThe key challenge of reranking lies in exploring the optimal list\nwithin the vast combinatorial space [21 , 27]. Early listwise methods\n[ 2, 24 , 39 ] improve scoring accuracy by modeling contextual inter-\nactions among items and then apply greedy strategies to reorder\nitems based on these scores. However, such approaches suffer from\nthe \"evaluation-before-reranking\" problem [ 12 , 33 ], which prevents\neffective optimization in the combinatorial space. A straightfor-\nward solution\u2014exhaustively evaluating all possible permutations,\nwhich is globally optimal but computationally infeasible under\nindustrial time constraints. As a result, most existing reranking\narXiv:2604.05314v1 [cs.IR] 7 Apr 2026"
+    },
+    {
+      "aiAssistanceScore": 0.17089933,
+      "confidence": "Medium",
+      "endIndex": 508,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 0,
+      "text": "Conference\u201917, July 2017, Washington, DC, USA Trovato and Tobin, et al.\nPos 1 Pos 2 Pos 3 Pos 4 Pos 1 Pos 2 Pos 3 Pos 4\nOne Step\nPos 1 Pos 2 Pos 3 Pos 4\nCandidate\nItems\nUser\nInterets\n+ +\nStep 4\nCandidate ItemsUser Interets\n+\n+\nStep 3Step 2\nCandidate\nItems\nUser\nInterets\n+ \n+\nStep 1\na) Autoregressive paradigm.\nGenerate one by one.\nb) One-Step paradigm.\nGenerate all in one step.\nd) Next-Scale paradigm (our).\nGenerate scale by scale\nPos 1 Pos 2 Pos 3 Pos 4\nRank\nList\nUser\nInterets \n+\nc) Multi-Step paradigm.\n"
+    },
+    {
+      "aiAssistanceScore": 0.19880967,
+      "confidence": "Medium",
+      "endIndex": 2533,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 507,
+      "text": "\nGenerate all in multi steps.\nStep 1\nStep 2\nStep 1\nStep 2\n+\nFigure 1: Demo of NSGR. When generating a list of length 4, we gradually determine the position of each item from the mixed\nstate of the 4 candidate items.\nframeworks adopt a two-stage architecture [ 11 , 12 , 18 , 27 , 33 ] con-\nsisting of a generator and an evaluator. Within this paradigm, the\ngenerator plays a crucial role [27 ]. While some methods employ\nheuristic generators such as SimHash [ 9] or artificially designed\ndiversity indicators [ 15, 20], these often fail to leverage evaluator\nfeedback, limiting their effectiveness. Recently, generative models\n[12 , 18 , 19 , 27, 32 ] have been adopted as generators, demonstrating\nsuperior performance compared to heuristic approaches.\nCurrent generative reranking methods can be categorized into\nthree types, as illustrated in Figure 1. The first category [2 , 4 , 12, 24 ]\nfollows an autoregressive paradigm, as shown in Figure 1 (a),\nthe items are generated one by one in a left-to-right manner. This\napproach is not only time-consuming but also leads to suboptimal\nresults, as the decoding process only considers previously generated\nitems and ignores information about subsequent ones. The second\ncategory is the one-step paradigm [19 , 27], as shown in Figure 1\n(b), which generates a positional probability matrix for all items in a\nsingle step. While this approach addresses the inefficiency and lack\nof a global perspective seen in autoregressive methods, its overly\ncoarse generation process increases the difficulty of modeling due\nto the lack of a local perspective, especially when the business is\ncomplex. The third category is the multi-step paradigm [ 18 , 32 ],\nas shown in Figure 1 (c), which starts with an initial list (e.g., the list\nproduced by the ranking model) and iteratively swaps 1-2 items to\ngradually transition from the initial list to the optimal list. However,\nthis method is prone to getting trapped in local optima due to the\nnon-monotonic nature of the permutation space.\n"
+    },
+    {
+      "aiAssistanceScore": 0.18592271,
+      "confidence": "Medium",
+      "endIndex": 4661,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 2532,
+      "text": "\nBeyond the limitations of the generator, how to train the genera-\ntor remains a core issue. There is an inherent goal inconsistency\nproblem [32] between the generator and the evaluator: the gener-\nator aims to find the optimal list within the combinatorial space,\nwhile the evaluator is trained to estimate list-wise scores for items.\nThis discrepancy complicates the guidance signal from the evalua-\ntor to the generator, often resulting in the generator only fitting the\nexposure distribution under extreme conditions. Although NLGR\n[ 32 ] attempted to mitigate this by using relative scores of neigh-\nboring lists as guidance for the generator, it still suffers from two\ndrawbacks: 1) it is only applicable to the multi-step generation\nparadigm and cannot be generalized to other paradigms; and 2)\nit remains susceptible to local optima due to the non-monotonic\npermutation space.\nTo address the aforementioned challenges, we propose the Next-\nScale Generation Reranking (NSGR), a tree-based generative frame-\nwork. Specifically, we introduce a next-scale generator (NSG) that\nstarts from the user\u2019s interests, follows a \"one-generates-two, two-\ngenerate-four\" pattern, and progressively refines a complete list\nfrom coarse to fine, balancing both global and local perspectives.\nFurthermore, we design a multi-scale neighbor loss, which leverages\na tree-based multi-scale evaluator (MSE) to provide scale-specific\nguidance to the NSG at each scale. As shown in Figure 1 (d), NSGR\noperates in a coarse-to-fine manner. Taking the generation of a\nlength-4 list as an example, the model incrementally refines the\nplacement of items from a candidate set of four based on the user\u2019s\nglobal interest, scaling its decisions step by step until the full list is\ngenerated.\nThe main contributions of our work are summarized as follows:\n\u2022 We propose a novel generative reranking framework featuring\na next-scale progressive generation mechanism that effectively\nbalances global and local contextual information. To the best of\nour knowledge, this is the first work to introduce the next-scale\ngeneration paradigm in the reranking tasks.\n"
+    },
+    {
+      "aiAssistanceScore": 0.14414848,
+      "confidence": "Medium",
+      "endIndex": 5619,
+      "label": "Human Written",
+      "pageIndex": 1,
+      "startIndex": 4660,
+      "text": "\n\u2022 \nWe design a multi-scale neighbor loss, which leverages a tree-\nbased multi-scale evaluator (MSE) to guide the generator at dif-\nferent scales, to address the goal inconsistency problem between\nevaluator and generator.\n\u2022 Extensive experiments on both public and industrial datasets\ndemonstrate the effectiveness of NSGR, and NSGR has been suc-\ncessfully deployed on Meituan\u2019s food delivery platform.\n2 Related Work\n2.1 Reranking Methods\nIn recommendation systems, the reranking stage focuses on mod-\neling contextual information and identifying the optimal list from\nthe permutation space. Existing reranking approaches can be sys-\ntematically divided into two main categories [21]: generator-based\nmethods [12, 24, 34] and evaluator-based methods [11, 29].\nGenerator-based methods directly produce a final list by captur-\ning mutual influences among items. Also referred to as one-stage\nmethods [ 27, 29 ], these approaches originally relied on behavioral"
+    },
+    {
+      "aiAssistanceScore": 0.14414848,
+      "confidence": "Medium",
+      "endIndex": 996,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 0,
+      "text": "Next-Scale Generative Reranking: A Tree-based Generative Rerank Method at Meituan Conference\u201917, July 2017, Washington, DC, USA\nlogs for training. For example, Seq2Slate [ 4] employs a pointer\nnetwork, while MIRNN [40] uses a GRU to sequentially determine\nitem order. Methods such as PRM [ 24 ] and DLCM [1 ] take an initial\nranked list as input, apply RNN or self-attention to model contextual\nsignals, and output a score for each item. However, such methods\noften suffer from the \"evaluation-before-reranking\" problem [33 ],\nleading to suboptimal performance. Similarly, EXTR [8 ] estimates\nthe predicted CTR (pCTR) for each candidate item in every can-\ndidate position, but remains essentially a point-wise model with\nlimited ability to capture fine-grained context. MIR [34] attempts to\ncapture set-to-list interactions through a permutation-equivariant\nmodule.\nEvaluator-based methods, on the other hand, aim to assess ev-\nery possible permutation using a well-designed context-aware\nmodel. "
+    },
+    {
+      "aiAssistanceScore": 0.16505635,
+      "confidence": "Medium",
+      "endIndex": 3133,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 995,
+      "text": " Due to strict latency requirements in online systems, most\nevaluator-based methods adopt a two-stage architecture that in-\ncludes a filtering stage [11 , 29] or generating stage [27 ] before\nevaluation to reduce the candidate set size. For instance, PRS [ 11 ]\nuses beam search to generate a small set of candidate permutations,\nwhich are then scored by a permutation-wise ranking model. PIER\n[ 29 ] applies SimHash [ 7, 9, 22 ] to select top-K candidates from\nthe full permutation set. In industrial recommender systems, the\nconcept of evaluator-based methods is broader, as any generator-\nbased approach can be used in the first stage within a multi-channel\nretrieval framework [ 27 ]. A key limitation, however, is the inconsis-\ntency between the two stages, which restricts overall effectiveness.\nYOLOR [31 ] addresses this issue in smaller permutation spaces\nby using tree-based enumeration with contextual caching to ex-\nhaustively evaluate permutations, though its applicability remains\nlimited by the size of the permutation space.\n2.2 Generative Reranking Solutions\nSince it is difficult to achieve the optimization of the permutation\nspace in supervised training, some generator-based methods using\nevaluators [12 , 16 ] have become popular in recent years. For ex-\nample, ListCVAE [ 16] utilizes conditional variational autoencoders\n(CVAE) to capture the positional biases of the elements and the\ninterdependencies within the list distribution. GRN [12 ] proposes\nan evaluator-generator framework to replace the greedy strategy.\nStill, it cannot avoid the evaluation-before-reranking problem [ 33 ]\nbecause it takes the rank list as input to the generator. DCDR [ 18 ]\nintroduces diffusion models into the reranking stage and presents\na discrete conditional diffusion reranking framework. NAR4Rec\n[ 27 ] uses a non-autoregressive generative model to speed up se-\nquence generation. NLGR [ 32 ] proposes the use of neighbor loss\nto guide the generator\u2019s training. Even though these generative\nmethods leverage the capabilities of the evaluator, the consistency\nissue between the generator and the evaluator remains unresolved.\n"
+    },
+    {
+      "aiAssistanceScore": 0.16956079,
+      "confidence": "Medium",
+      "endIndex": 3993,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 3132,
+      "text": "\n3 Problem Definition\nLet \ud835\udc48 = {\ud835\udc62\n1\n, \ud835\udc62\n2\n, . . . , \ud835\udc62\n|\ud835\udc48 | \n} represent a set of |\ud835\udc48 | users which con-\nsist of some profile features (e.g. user ID, gender, age) and \ud835\udc4b =\n{\ud835\udc65\n1\n, \ud835\udc65\n2\n, . . . , \ud835\udc65\n|\ud835\udc4b | \n} represent a set of |\ud835\udc4b | items. For each user \ud835\udc62, given\na candidate set with \ud835\udc5b items \ud835\udc46 = {\ud835\udc65\n1\n, \ud835\udc65\n2\n, . . . , \ud835\udc65\n\ud835\udc5b \n}, the reranking\nmodel needs to recommend an ordered list with \ud835\udc5a (\ud835\udc5a \u2264 \ud835\udc5b) items\n\ud835\udc3f = {\ud835\udc65\n1\n, \ud835\udc65\n2\n, . . . , \ud835\udc65\n\ud835\udc5a \n} from O(\ud835\udc34\n\ud835\udc5a\n\ud835\udc5b \n) candidate space to the user.\nEvaluator Objective: The evaluator aims to accurately estimate\nthe listwise utility R (\ud835\udc62, \ud835\udc3f) for each ordered list \ud835\udc3f:\n\ud835\udc38\n\u2217 \n= arg min\n\ud835\udc38\nL (\ud835\udc38 (\ud835\udc62, \ud835\udc3f), R (\ud835\udc62, \ud835\udc3f))\n \n, (1)\nwhere L denotes the loss funtion.\nGenerator Objective: The generator seeks to produce the optimal\nlist \ud835\udc3f\n\u2217 \nwith the highest utility value over the permutation space:\n\ud835\udc3a\n\u2217 \n= arg max\n\ud835\udc3a\n"
+    },
+    {
+      "aiAssistanceScore": 0.17720138,
+      "confidence": "Medium",
+      "endIndex": 5587,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 3992,
+      "text": "\n\ud835\udc38\n\u2217 \n(\ud835\udc3a (\ud835\udc62, \ud835\udc46)), (2)\n\ud835\udc3f\n\u2217 \n= \ud835\udc3a\n\u2217 \n(\ud835\udc62, \ud835\udc46). (3)\n4 Proposed Method\nThis section details the architecture of the proposed NSGR frame-\nwork. As illustrated in Figure 2, NSGR consists of two core com-\nponents: (1) the Next-Scale Generator (NSG) module, which em-\nploys a coarse-to-fine strategy to produce optimal lists (Section\n??); (2) and the Multi-Scale Evaluator (MSE) module, which cap-\ntures multi-scale contextual information to accurately assess list\nvalue (Section 4.1). The training procedure for the NSG module is\nsubsequently elaborated in Section 4.3. Each component is compre-\nhensively described in its respective subsection.\n4.1 Multi-Scale Evaluator\nThe Multi-Scale Evaluator (MSE) module models multi-scale list\ncontextual relationships based on users\u2019 semantic interests. First,\nwe extract the user\u2019s global interest e\n\ud835\udc62 \nby collecting their lifelong\nbehavior sequence: H\n\ud835\udc62 \n= {\ud835\udc65\n1\n, \ud835\udc65\n2\n, ..., \ud835\udc65\n\ud835\udc3b \n}, where \ud835\udc3b represents the\nlength of the user\u2019s lifelong behavior sequence. Inspired by genera-\ntive recommendation, we employ a variant of the transformer\u2014the\nHierarchical Sequential Transduction Unit (HSTU) [36 ]\u2014to extract\nthe user\u2019s semantic interest e\n\ud835\udc62 \n:\ne\n\ud835\udc62 \n= AvgPool \n(\nHSTU(H\n\ud835\udc62 \n))\n \n, (4)\nwhere AvgPool is the average pooling operation. Specifically, each\nuser behavior \ud835\udc65\n\ud835\udc56 \nis mapped to a three-level semantic ID [ 14 , 26 ,\n35 ] to enhance generalization capability. Furthermore, to reduce\ncomputational costs during inference, e\n\ud835\udc62 \nis precomputed offline\nusing the Next Token Prediction (NTP) training approach.\nThen, we enhance the semantic repr"
+    },
+    {
+      "aiAssistanceScore": 0.048765536,
+      "confidence": "Medium",
+      "endIndex": 6482,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 5586,
+      "text": "resentation of candidate items\nusing the user\u2019s global interest. Let X = {x\n1\n, x\n2\n, ..., x\n\ud835\udc5b \n} \u2208 R\n\ud835\udc5b\u00d7\ud835\udc37\nrepresent embeddings of candidate items, H\n\ud835\udc60\u210e\ud835\udc5c\ud835\udc5f\ud835\udc61\n\ud835\udc62 \n= {\ud835\udc65\n1\n, \ud835\udc65\n2\n, ..., \ud835\udc65\n\ud835\udc60 \n}\nrepresent the user\u2019s recent \ud835\udc60 behaviors, and e\n\ud835\udc5c \ndenote the embed-\ndings of other features, where \ud835\udc37 is the dimension of the embedding\nlayer. We use an MLP as a simple feature-crossing unit to extract\nthe semantic embedding for each candidate item:\nx\n\ud835\udc60\n\ud835\udc56 \n= MLP\n\u0010\nx\n\ud835\udc56 \n||TA(x\n\ud835\udc56 \n, H\n\ud835\udc60\u210e\ud835\udc5c\ud835\udc5f\ud835\udc61\n\ud835\udc62 \n)||e\n\ud835\udc62 \n||e\n\ud835\udc5c \n\u0011\n, \u2200\ud835\udc56 \u2208 [\ud835\udc5b], (5)\nwhere X\n\ud835\udc56 \n\u2208 R\n\ud835\udc37 \nis the \ud835\udc56-th candidate item in X, || represents con-\ncatenate operate, and TA represents target attention operate.\nSo we can obtain the list semantic vector L\n\ud835\udc60 \nof each candidate\nlist:\nL\n\ud835\udc60 \n= {x\n\ud835\udc60\n1\n, x\n\ud835\udc60\n2\n, ..., x\n\ud835\udc60\n\ud835\udc5a \n}. (6)\nSubsequently, we extract multi-scale context information of L\n\ud835\udc60 \n.\nFor any position \ud835\udc61 \u2208 [\ud835\udc5a], its mul"
+    },
+    {
+      "aiAssistanceScore": 0.040776886,
+      "confidence": "High",
+      "endIndex": 6515,
+      "label": "Human Written",
+      "pageIndex": 2,
+      "startIndex": 6481,
+      "text": "lti-scale context is calculated by"
+    },
+    {
+      "aiAssistanceScore": 0.040776886,
+      "confidence": "High",
+      "endIndex": 954,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 0,
+      "text": "Conference\u201917, July 2017, Washington, DC, USA Trovato and Tobin, et al.\na_6 b_1 c_5 a_2 b_1 c_7...\nHSTU xL\nNSG Unit\nNext-Scale Generator\na_9 b_7 c_1 a_4 b_5 c_4...\nNot exposed\nMulti-Scale Evaluator\nExposeClick Order\nMulti-Scale\nNeighbor\nLoss\nItem id Item id\nCandidate Items (SID & ID)User Lifelong Sequence (SID)\nNSG Unit\na_1 b_2 c_3 a_10 b_15 c_14\n...\nItem id Item id\nUser Short Sequence (SID & ID)\nTarget-Attention Target-Attention\nEmbedding Layer\nMLP (Parameter Sharing)\nContext\nCache\n...\nMulti-Scale\nAttention\nNSG Unit \nNSG Unit\nSet Attention\n...\nUser\nEmbedding\nSelf-Attention\nFFN\n+PE\nl+1 l+2 r\n...\n+ - + -\n...\nSimilarity\nTop\n...\nTarget-Attention\nFigure 2: The overall architecture of NSGR.\nmulti-scale Self-Attention (SA) [30]:\ne\n(1)\n\ud835\udc61 \n= e\n1,\ud835\udc5a \n= SA(x\n\ud835\udc60\n1 \n||x\n\ud835\udc60\n2 \n||...||x\n\ud835\udc60\n\ud835\udc5a \n),\ne\n(2)\n\ud835\udc61 \n= e\n1,\ud835\udc5a/2 \n= SA(x\n\ud835\udc60\n1 \n||...||x\n\ud835\udc60\n\ud835\udc61 \n||...||x\n\ud835\udc60\n\ud835\udc5a/2\n),\n...\ne\n(\ud835\udc3e )\n\ud835\udc61 \n= e\n\ud835\udc61,\ud835\udc61+1 \n= SA(x\n\ud835\udc60\n\ud835\udc61 \n||x\n\ud835\udc60\n\ud835\udc61+1\n),\n(7)\nwhere \ud835\udc3e = log\n2 \n\ud835\udc5a. Note"
+    },
+    {
+      "aiAssistanceScore": 0.29285482,
+      "confidence": "Low",
+      "endIndex": 2006,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 953,
+      "text": "e that the SA layer in the above formula\ndoes not have position encoding, which can increase reusability and\nreduce calculations. Then we collect multi-scale contextual relation-\nships associated with \ud835\udc65\n\ud835\udc61 \n, denoted as x\n\ud835\udc50\n\ud835\udc61 \n= [\ne\n(1)\n\ud835\udc61 \n; e\n(2)\n\ud835\udc61 \n; . . . ; e\n(log\n2 \n\ud835\udc5a)\n\ud835\udc61 \n] \u2208\nR\nlog\n2 \n\ud835\udc5a\u00b7\ud835\udc37 \n.\nFinally, the position-aware CTR prediction integrates three in-\nformation sources:\n\u02c6\n\ud835\udc66\n\ud835\udc61 \n= \ud835\udf0e\n\u0010\nMLP\n \nx\n\ud835\udc60\n\ud835\udc61\n|{z}\nsemantics\n|| x\n\ud835\udc50\n\ud835\udc61\n|{z}\ncontext\n|| e\n\ud835\udc5d\n\ud835\udc61\n|{z}\nposition\n\u0001\n\u0011\n, (8)\nwhere e\n\ud835\udc5d\n\ud835\udc61 \n\u2208 R\n\ud835\udc37 \nis the positional embedding and \ud835\udf0e is the Sigmoid\nFunction. The list-wise value aggregates all positional predictions:\n\u02c6\n\ud835\udc66\n\ud835\udc3f \n=\n\ud835\udc5a\n\u2211\ufe01\n\ud835\udc61=1\n\u02c6\n\ud835\udc66\n\ud835\udc61 \n. (9)\nThis formulation allows convenient adjustment of scoring met-\nrics according to business needs, such as Impression Rate (IMPR),\nConversion Rate (CVR) and Gross Merchandise Volume (GMV).\n4.2 Next-Scale Generator\nThe Next-Scale Generator (NSG) module generates the optimal list\nwithin the combinatorial space via a hierarchical coarse-to-fine\nprocess. At each step \ud835\udc58, the NSG operat"
+    },
+    {
+      "aiAssistanceScore": 0.5617013,
+      "confidence": "Low",
+      "endIndex": 2698,
+      "label": "AI-Generated",
+      "pageIndex": 3,
+      "startIndex": 2005,
+      "text": "tes on the candidate subset\n\ud835\udc46 \n(\ud835\udc58 )\n\ud835\udc59:\ud835\udc5f \n= {\nx\n\ud835\udc60\n\ud835\udc59 \n, x\n\ud835\udc60\n\ud835\udc59+1\n, . . . , x\n\ud835\udc60\n\ud835\udc5f \n} corresponding to the position interval [\ud835\udc59 :\n\ud835\udc5f ), which could be obtained from Eq. 5, and splits it into two child\nsubsets by computing priority-aware interactions among items\nbefore alignment with the pre-vector.\nItem Priority. For each item x\n\ud835\udc60\n\ud835\udc56 \n\u2208 \ud835\udc46 \n(\ud835\udc58 )\n\ud835\udc59:\ud835\udc5f \n, we compute a priority\nscore:\n\ud835\udc5d \n(\ud835\udc58 )\n\ud835\udc56 \n= MLP\n\ud835\udc5d \n(x\n\ud835\udc60\n\ud835\udc56 \n) \u2208 R, (10)\nwhere a higher \ud835\udc5d\n\ud835\udc56 \nindicates greater individual relevance.\nPairwise Relationship Classification. Each ordered pair (\ud835\udc56, \ud835\udc57) within\n\ud835\udc46 \n(\ud835\udc58 )\n\ud835\udc59:\ud835\udc5f \nis classified into competitive suppression, complementary en-\nhancement, or neutral coexistence:\nr\n(\ud835\udc58"
+    },
+    {
+      "aiAssistanceScore": 0.38508874,
+      "confidence": "Low",
+      "endIndex": 3485,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 2697,
+      "text": "\ufffd )\n\ud835\udc56 \ud835\udc57 \n= \n\u0002\n\ud835\udc5f \nsup\n\ud835\udc56 \ud835\udc57 \n, \ud835\udc5f \nenh\n\ud835\udc56 \ud835\udc57 \n, \ud835\udc5f \nneu\n\ud835\udc56 \ud835\udc57\n\u0003 \n= softmax\n\u0010\nMLP\nrel\n\n[x\n\ud835\udc60\n\ud835\udc56 \n; x\n\ud835\udc60\n\ud835\udc57 \n; x\n\ud835\udc60\n\ud835\udc56 \n\u2212 x\n\ud835\udc60\n\ud835\udc57 \n; x\n\ud835\udc60\n\ud835\udc56 \n\u2299 x\n\ud835\udc60\n\ud835\udc57 \n]\n\u0001\n\u0011\n(11)\nThe three components are mutually exclusive and sum to one.\nAsymmetric Influence Weight. The directed influence of item \ud835\udc56\non item \ud835\udc57 is:\n\ud835\udc64\n\ud835\udc56 \ud835\udc57 \n= \u2212\ud835\udc5f \nsup\n\ud835\udc56 \ud835\udc57 \n\u00b7 ReLU(\ud835\udc5d\n\ud835\udc56 \n\u2212 \ud835\udc5d \n\ud835\udc57 \n) + \ud835\udc5f \nenh\n\ud835\udc56 \ud835\udc57 \n\u00b7 \n\ud835\udc5d\n\ud835\udc56 \n+ \ud835\udc5d \n\ud835\udc57\n2 \n. (12)\nSuppression is asymmetric (higher-priority suppresses lower), while\nenhancement is symmetric. Neutral pairs contribute \ud835\udc64\n\ud835\udc56 \ud835\udc57 \n\u2248 0.\nSet-Conditioned Item Refinement. We condition each item\u2019s re-\nfinement on both pairwise interactions and the subset-level context\n\ud835\udc54\n(\ud835\udc58 \u22121) \n:\n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n= x\n\ud835\udc60\n\ud835\udc57 \n+ \ud835\udc4a\n\u0394 \nMLP\nset\n\u0010 h\nx\n\ud835\udc60\n\ud835\udc57 \n; \n\u00cd\n\ud835\udc56\u2260\ud835\udc57 \n\ud835\udc64 \n(\ud835\udc58 )\n\ud835\udc56 \ud835\udc57 \nx\n\ud835\udc60\n\ud835\udc56 \n; \ud835\udc54\n(\ud835\udc58 \u22121)\ni \u0011\n"
+    },
+    {
+      "aiAssistanceScore": 0.34260413,
+      "confidence": "Low",
+      "endIndex": 3663,
+      "label": "Human Written",
+      "pageIndex": 3,
+      "startIndex": 3484,
+      "text": ", \u2200\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n\u2208 \ud835\udc46 \n(\ud835\udc58 )\n\ud835\udc59:\ud835\udc5f \n.\n(13)\nItem-to-Tree Attention Scoring and Binary Split. We first generate\nthe anchor vector \n\u02dc\n\ud835\udc54\n(\ud835\udc58 ) \nby aggregating the refined representations"
+    },
+    {
+      "aiAssistanceScore": 0.34260413,
+      "confidence": "Low",
+      "endIndex": 572,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 0,
+      "text": "Next-Scale Generative Reranking: A Tree-based Generative Rerank Method at Meituan Conference\u201917, July 2017, Washington, DC, USA\nthrough self-attention, capturing a global set-level view of the cur-\nrent candidate subset:\n\u02dc\n\ud835\udc54\n(\ud835\udc58 ) \n= FFN\n\u0010\nSA\n\n\ud835\udc52\n\ud835\udc62 \n\u2225 \ud835\udc54\n(0) \n\u2225 \u00b7 \u00b7 \u00b7 \u2225 \ud835\udc54\n(\ud835\udc58 \u22121) \n\u0001\n\u0011\n. (14)\nTo further capture item-specific relevance, each refined item \n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57\nqueries the user interest and historical tree nodes via target atten-\ntion, producing a personalized context vector:\n\ud835\udc4e\n(\ud835\udc58 )\n\ud835\udc57 \n= TA\n\u0010\n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n, \n\u0002\n\ud835\udc52\n\ud835\udc62 \n\u2225 \ud835\udc54\n(0) \n\u2225 \u00b7 \u00b7 \u00b7 \u2225 \ud835\udc54\n(\ud835\udc58 \u22121) \n\u0003 \n\u0011\n. (15"
+    },
+    {
+      "aiAssistanceScore": 0.087128945,
+      "confidence": "Medium",
+      "endIndex": 1649,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 571,
+      "text": "5)\nThe relevance score is computed by fusing the anchor vector and\nthe item-specific context:\nSim\n(\ud835\udc58 )\n\ud835\udc57 \n= MLP\nscore\n\u0010 \n\u0002 \n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n; \ud835\udc4e\n(\ud835\udc58 )\n\ud835\udc57 \n; \n\u02dc\n\ud835\udc54\n(\ud835\udc58 ) \n\u0003 \n\u0011\n. (16)\nThe candidate subset is split by ranking Sim\n(\ud835\udc58 )\n\ud835\udc57 \n:\nFlag\n(\ud835\udc58 )\n+ \n= 1\n\u0002\nrank( \ud835\udc57) < \n\ud835\udc5f \u2212\ud835\udc59\n2\n\u0003 \n(17)\n\ud835\udc54\n(\ud835\udc58 )\n+ \n= AvgPool\n\u0010\n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n\u00b7 Flag\n(\ud835\udc58 )\n+\n\u0011\n(18)\n\ud835\udc54\n(\ud835\udc58 )\n\u2212 \n= AvgPool\n\u0010\n\u02c6\n\ud835\udc65\n\ud835\udc60\n\ud835\udc57 \n\u00b7 (1 \u2212 Flag\n(\ud835\udc58 )\n+ \n)\n\u0011\n(19)\nThis process recurses for \ud835\udc3e = log\n2 \n\ud835\udc5a steps, yielding \ud835\udc54\n(\ud835\udc3e ) \n\u2208 R\n\ud835\udc5a\u00d7\ud835\udc37 \n.\nFinal Ranking. The final ranked list can be obtained by aggregat-\ning the Flag\n(\ud835\udc58 )\n+ \nmasks accumulated at each step of the tree traversal,\nas illustrated in Figure 3.\nSelect as expose \n1 1 110 0\nSelect as front \n0 \n1 \n0\n10 0\nSelect as front\nwithin group \n1 \n1 \n0\n00 0\nResult list\nCandidate item set\nFigure 3: Next-scale generation process demo.\n4.3 Training with Multi-Scale Neighbor Loss\nAs mentioned before, the goal inconsistency between the evaluator\nand the generator complicates the transfer of guidance. We will\nintroduce our solution in detail below.\n4.3.1 Training of the MSE"
+    },
+    {
+      "aiAssistanceScore": 0.11312633,
+      "confidence": "Medium",
+      "endIndex": 3161,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 1648,
+      "text": "E. The MSE is tuned to fit the list-\nwise value of items. We train the MSE using real data collected\nfrom online logs, including exposure, click, conversion, and other\nperformance indicators. The loss of MSE is calculated as follows:\nL\n\ud835\udc38 \n= \u2212\n\ud835\udc5a\n\u2211\ufe01\n\ud835\udc61=1\n[\n\ud835\udc66\n\ud835\udc61 \nlog( \n\u02c6\n\ud835\udc66\n\ud835\udc61 \n) + (1 \u2212 \ud835\udc66\n\ud835\udc61 \n) log(1 \u2212 \n\u02c6\n\ud835\udc66\n\ud835\udc61 \n)]\n \n, (20)\nwhere subscript \ud835\udc61 is the index of response items, \ud835\udc66\n\ud835\udc61 \nrepresents the\nreal label, b\ud835\udc66\n\ud835\udc61 \nrepresents the predicted value, \ud835\udc5a is the length of the\npageview list, which includes unexposed items.\n4.3.2 Training of NSG. The NSG is aligned to generate the opti-\nmal list within the permutation space. We leverage the MSE as the\nreward model, to guide the alignment of NSG. However, directly\ntraining the generator is challenging due to the sparsity of the\npermutation space. Inspired by NLGR [32 ] and GRPO [ 28 ], we pro-\npose to use multi-scale neighbor loss (MSNL) to construct relative\nrewards for the generator training.\n+ pull\nGenerated List\n)\n| ...\n(\nNeighbor Lists\nSampling\n( )\nEvaluator\n- push\n- push\nEvaluator\nFigure 4: Multi-scale neighbor loss demo.\nFirst, we collect neighbor lists at multiple scales. As illustrated\nin Figure 4, a list of length 4 contains 7 nodes in its tree structure.\nTherefore, to ensure adequate training of NSG, the construction of\nneighbor lists needs to consider each node across multiple scales.\nFor convenient representation, we define the list generated by NSG\nas \ud835\udc3f\n\ud835\udc54\n, and the neighbor lists as \ud835\udc3f = {\ud835\udc3f\n1\n, \ud835\udc3f\n2\n, ..., \ud835\udc3f\n\ud835\udc42 \n}, where \ud835\udc42 deno"
+    },
+    {
+      "aiAssistanceScore": 0.058120083,
+      "confidence": "High",
+      "endIndex": 4240,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 3160,
+      "text": "otes\nthe number of neighbor lists. These neighbor lists include two\ntypes: one involves swapping positions of items within \ud835\udc3f\n\ud835\udc54\n, and the\nother involves swapping positions between items in \ud835\udc3f\n\ud835\udc54 \nand other\ncandidate items.\nThen, we use MSE to evaluate the list-wise values of \ud835\udc3f\n\ud835\udc54 \nand the\nneighbor list \ud835\udc3f, represented as \ud835\udc5f\n\ud835\udc54 \nand \ud835\udc5f = {\ud835\udc5f \n1\n, \ud835\udc5f \n2\n, ..., \ud835\udc5f\n\ud835\udc42 \n}, respec-\ntively. We use the relative values between \ud835\udc3f\n\ud835\udc54 \nand the neighbor lists\nto guide the training of NSG, expressed as:\n\ud835\udc5f\n\ud835\udc5c \n= \ud835\udc5f\n\ud835\udc5c \n\u2212 \ud835\udc5f\n\ud835\udc54\n, \u2200\ud835\udc5c \u2208 [\ud835\udc42]. (21)\nNote that since NSG and MSE have similar tree structures, we\ncan directly use MSE\u2019s e\n(\ud835\udc58 ) \n(in Eq. 7) to guide NSG\u2019s g\n(\ud835\udc58 ) \n(in Eq.\n??), expressed as:\nL\n\ud835\udc3a \n= \u2212\n\ud835\udc3e\n\u2211\ufe01\n\ud835\udc58=1\n\ud835\udc42\n\u2211\ufe01\n\ud835\udc5c=1\nlog\n1\n\ud835\udc5f\n\ud835\udc5c \n>1\n\ud835\udc5f\n\ud835\udc5c \n\u00b7 exp\n\u0010\ng\n(\ud835\udc58 )\n\ud835\udc5c\n\u22a4\ne\n(\ud835\udc58 )\n\ud835\udc5c \n/\ud835\udf0f\n\u0011\n\u00cd\n\ud835\udc42\n\ud835\udc5c=1 \n1\n\ud835\udc5f\n\ud835\udc5c \n<1\nexp\n\u0010\ng\n(\ud835\udc58 )\n\ud835\udc5c\n\u22a4\ne\n(\ud835\udc58 )\n\ud835\udc5c \n/\ud835\udf0f\n\u0011 \n, (22)\nwhere 1\n(\u00b7) \nis 1 when (\u00b7) is true, else 0. In addition, the multi-scale\nvectors of neighbor lists can also be saved to the Context Cache to\navoid repeated calculations.\nThe parameters of MSE are frozen when training NSG, "
+    },
+    {
+      "aiAssistanceScore": 0.011355639,
+      "confidence": "High",
+      "endIndex": 4522,
+      "label": "Human Written",
+      "pageIndex": 4,
+      "startIndex": 4239,
+      "text": " and the\nHSTU module is pretrained with the Next-Token Prediction task.\n5 Experiments\nTo validate the superior performance of NSGR, we conducted ex-\ntensive offline experiments on the Meituan dataset and verified the\nsuperiority of NSGR in online A/B tests. In this section, we first"
+    },
+    {
+      "aiAssistanceScore": 0.011355639,
+      "confidence": "High",
+      "endIndex": 1422,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 0,
+      "text": "Conference\u201917, July 2017, Washington, DC, USA Trovato and Tobin, et al.\nintroduce the experimental setup, including the dataset and base-\nline. Then we present the results and analysis of various reranking\nmethods in both offline and online A/B tests.\n5.1 Experimental Setup\n5.1.1 Dataset. In order to verify the effectiveness of NSGR, we\nconduct sufficient experiments on both public dataset and indus-\ntrial dataset. For public dataset, we choose Taobao Ad dataset. For\nindustrial dataset, we use real-world data collected from Meituan\nfood delivery platform. Table 1 gives a brief introduction to the\ndatasets.\nTable 1: Statistics of datasets.\nDataset #Users #Items #Records\nTaobao Ad 1,141,729 99,815 26,557,961\nMeituan 5,685,119 17,264,613 242,549,848\n\u2022 Taobao Ad . It is a public dataset collected from the display adver-\ntising system of Taobao. This dataset contains more than 26 mil-\nlion interaction records of 1.14 million users within 8 days. Each\nsample comprises five features: user ID, timestamp, behavior type,\nitem brand ID, and category ID. It includes four behavior types:\nbrowse, cart, like, and buy, and each behavior is timestamped.\nWe use the first 7 days as training samples (20170506-20170512),\nand the 8th day as test samples (20170513).\n\u2022 Meituan. It is an industrial dataset collected from the Meituan\nfood delivery platform during August 2025, which contains 242\nmillion interaction records of"
+    },
+    {
+      "aiAssistanceScore": 0.10447236,
+      "confidence": "Medium",
+      "endIndex": 3389,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 1421,
+      "text": "f 5.6 million users within 15 days.\nThe dataset includes 239 features, three labels: expose, click and\nconversion, and collects all items on the same page as one record.\nWe use the data of the first 14 days as the training set, and the\ndata of the last 1 day as the test set.\nNote that all samples are list-level, that is, each sample contains\nall items in a request list. We filter out samples whose labels are all\n0 or all 1.\n5.1.2 Baseline. The following six state-of-the-art ranking and rerank-\ning methods are chosen for comparative experiments and divided\ninto four groups. We select PRM and GRN as the autoregressive\nparadigm baselines (Group I), NAR4Rec as the one-step paradigm\nbaseline (Group II), DCDR and NLGR as the multi-step paradigm\nbaselines (Group III). YOLOR as evaluator-based baseline method\n(Group IV). A brief introduction of these methods is as follows:\n\u2022 PRM[ 24], autoregressive paradigm, adjusts an initial list by ap-\nplying the self-attention mechanism to capture the mutual influ-\nence between items.\n\u2022 GRN[ 12 ], autoregressive paradigm, is a generative reranking\nmodel which consists of the evaluator for predicting interaction\nprobabilities and the generator for generating reranking results.\n\u2022 NAR4Rec[27 ], one-step paradigm, presents a non-autoRegressive\ngenerative model for reranking Recommendation.\n\u2022 DCDR[ 18], multi-step paradigm, presents a discrete conditional\ndiffusion reranking framework.\nhttps://tianchi.aliyun.com/dataset/56\n\u2022 NLGR[32 ], multi-step paradigm, proposes a utilizing neighbor\nlists model for Generative Reranking.\n\u2022 YOLOR\n[31 ] utilizes a tree-based extraction and context cache to\nperform full calculations in the permutation space of \ud835\udc34\n8\n8\n.\n5.1.3 Evaluation Metrics. We employ multiple metrics to com-\nprehensively evaluate NSGR in offline experiments. These include\nAUC (Area Under the ROC Curve) and GAUC (Group AUC), where\nthe latter is adapted from standard AUC to better suit reranking\nscenarios by"
+    },
+    {
+      "aiAssistanceScore": 0.059578374,
+      "confidence": "Medium",
+      "endIndex": 5261,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 3388,
+      "text": "y computing the average AUC within each list. High\nAUC and GAUC values indicate the model\u2019s effectiveness in rank-\ning positive samples above negative ones, both globally and at the\nintra-list level, reflecting its discriminative capacity across differ-\nent contexts. For online experiments, we use CTR (Click-Through\nRate), CVR (Conversion Rate), GMV (Gross Merchandise Volume)\nand time-cost (ms) as key performance indicators.\nTo assess the consistency between the generator and evaluator\nstages, we adopt HR (Hit Ratio) [ 3]. For a given input, HR equals\n1 only if the generator produces a permutation set that contains\nthe optimal list. Detailed results and analysis of the consistency\nevaluation are provided in Section 5.3.\nIt is important to note that AUC/GAUC and HR capture comple-\nmentary aspects of reranking performance. AUC/GAUC reflects the\nevaluator\u2019s ability to accurately assess the quality of an ordered list,\nwhereas HR measures the generator\u2019s effectiveness in maintaining\nconsistency between the two stages. A deficiency in either metric\ncan impair overall recommendation performance.\n5.1.4 Implementation Details. We implement all the deep learning\nbaselines and NSGR with TensorFlow 1.15.0 using NVIDIA A100-\n80GB GPU. For all comparison models and our NSGR model, we\nadopt Adam as the optimizer with the learning rate fixed to 0.001\nand initialize the model parameters with a normal distribution by\nsetting the mean and standard deviation to 0 and 0.01, respectively.\nThe batch size is 512, the embedding size is 8. The hidden layer\nsizes of MLP in Eq. 8 are (1024, 256, 128). For the Taobao Ad dataset,\nthe length of the ranking list and reranking list are both 4, thus the\nlength of the full permutation is 24. For Metuan dataset, we rerank\n20 items from the initial ranking list which contains 20 candidate\nitems, thus the length of the full perm"
+    },
+    {
+      "aiAssistanceScore": 0.026130889,
+      "confidence": "High",
+      "endIndex": 6194,
+      "label": "Human Written",
+      "pageIndex": 5,
+      "startIndex": 5260,
+      "text": "mutation is \ud835\udc34\n20\n20 \n= 2.43 \u00d7 10\n18\n.\nAll experiments are repeated 5 times, and the averaged results are\nreported.\n5.2 Performance of the Evaluator\nHere we show the results of our proposed method NSGR. All results\nare averaged from 5 experiments. As can be seen in Table 2 and Table\n3, NSGR outperforms baselines, including several recent reranking\nmethods. We have the following observations from the experimen-\ntal results: 1. All re-ranking listwise models (e.g. PRM, GRN) make\ngreat improvements over point-wise models (e.g. DNN, DeepFM) by\nmodeling the mutual influence among contextual items, which ver-\nifies the impact of context on user click behavior. 2. Compared with\ngenerator-based methods(e.g. PRM), evaluator-generator methods\nalso improve the CTR prediction because they evaluate more can-\ndidate lists. 3. Our proposed NSGR brings 0.0045/0.0153 absolute\nAUC and 0.0047/0.0160 absolute GAUC on Taobao/Meituan dataset,"
+    },
+    {
+      "aiAssistanceScore": 0.026130889,
+      "confidence": "High",
+      "endIndex": 188,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 0,
+      "text": "Next-Scale Generative Reranking: A Tree-based Generative Rerank Method at Meituan Conference\u201917, July 2017, Washington, DC, USA\ngains over the state-of-the-art independent baseline, which "
+    },
+    {
+      "aiAssistanceScore": 0.15323007,
+      "confidence": "Medium",
+      "endIndex": 1425,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 187,
+      "text": " is a\nsignificant improvement in the industrial recommendation system.\nTable 2: Comparison between NSGR and baseline methods\non the Taobao Ad dataset.\nModel AUC GAUC Loss\nPRM 0.6052 0.8163 0.1842\nGRN \n0.6101 0.8209 0.1820\nNAR4Rec 0.6306 0.8288 0.1786\nDCDR \n0.6217 0.8288 0.1792\nNLGR 0.6344 0.8311 0.1752\nYOLOR \n0.6351 0.8323 0.1743\nNSGR (Our) 0.6396 0.8389 0.1713\nTable 3: Comparison between NSGR and baseline methods\non Meituan.\nModel AUC GAUC Loss\nPRM 0.8595 0.8573 0.1008\nGRN 0.8643 0.8598 0.1001\nNAR4Rec 0.8711 0.8636 0.0957\nDCDR 0.8695 0.8616 0.0977\nNLGR 0.8732 0.8644 0.0946\nYOLOR 0.8749 0.8669 0.0932\nNSGR (Our) 0.8902 0.8829 0.0842\n5.3 Performance of the Generator\nWe compare the HR (Hit Ratio) of PRM, GRN, NAR4Rec, YOLOR and\nNSGR on Meituan datasets (\ud835\udc34\n20\n20\n). Due to the enormous permutation\nspace of the Meituan dataset, evaluating all possible permutations\nis infeasible, which also poses a challenge to the consistency met-\nrics. We adopt an estimation approach for HR@1% and HR@10%,\nwhich is done by comparing the generator\u2019s target list against 1,000\nrandomly sampled candidate lists. As shown in Figure 4, we have\nthe following observations: 1. NSGR achieves the highest HR@1%\n(0.86) and HR@10% (0.99), significantly ou"
+    },
+    {
+      "aiAssistanceScore": 0.25339046,
+      "confidence": "Medium",
+      "endIndex": 2655,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 1424,
+      "text": "utperforming all base-\nline methods. 2. YOLOR performs second-best, with HR@1% and\nHR@10% reaching 0.82 and 0.93, respectively. Among the earlier\nmethods, NAR4Rec shows better consistency than GRN and PRM.\n3. The results demonstrate that NSGR exhibits superior consistency\nin generating high-quality lists, validating the effectiveness of the\nproposed next-scale generation paradigm.\nTable 4: HR performance comparison on Meituan.\nModel PRM GRN NAR4Rec NLGR YOLOR NSGR\nHR@1% 0.510 0.632 0.658 0.784 0.822 0.861\nHR@10% 0.691 0.844 0.897 0.916 0.943 0.987\nFurthermore, to demonstrate the consistency advantage of NSGR\nmore vividly, we collect 2,000 users\u2019 request logs and build a dedi-\ncated test set within the \ud835\udc34\n8\n8 \n= 40, 320 permutation space. By evalu-\nating every candidate list in \ud835\udc34\n8\n8 \nspace, we assess the performance\nof those reranking methods as authentically as possible. The blue\nhistogram in Figure 5 displays the normalized value distribution\nfor all \ud835\udc34\n8\n8 \nlists, averaged over 2,000 users. The red line denotes the\n[50%, 70%, 80%, 90%, 99%] percentile values, and the green line\nthe comparative model\u2019s value. As shown in Figure 5, we have\nthe following observations: 1. The value distribution in the per-\nmutat"
+    },
+    {
+      "aiAssistanceScore": 0.31152397,
+      "confidence": "Low",
+      "endIndex": 4121,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 2654,
+      "text": "tion space approximates a normal distribution. 2. The greedy\nordering (Greed line) based on ranking scores yields a value of\nonly 0.66, proving large gains from reranking. 3. NSGR achieves a\nsuperior value of 0.978, demonstrating a considerable performance\nlead (YOLOR achieves the optimal value of 1 because we reduce\nthe permutation space from \ud835\udc34\n20\n20 \nto \ud835\udc34\n8\n8\n, enabling it to exhaustively\nevaluate the entire permutation space).\n0.0 0.2 0.4 0.6 0.8 1.0\nList-wise Normalized Value\n0.000\n0.002\n0.004\n0.006\n0.008\n0.010\n0.012\n0.014\n0.016\nRate\n50%\n0.47\n70%\n0.61\n80%\n0.69\n90%\n0.78\n99%\n0.94\nGreed\nYOLOR\nNSGR\nPRM GRN NAR\n4Rec\nDCDR NLGR\nPercent: Value\nModel values\nFigure 5: Performance comparison within the \ud835\udc34\n8\n8 \npermutation\nspace distribution.\nAs shown in Table 5, we evaluate the proximity of the list gener-\nated by NSGR to the optimal list of \ud835\udc34\n8\n8\n. While the exact match rate\n(Same) is 0.689, the accuracy increases significantly to 0.909, 0.933,\nand 0.968 when allowing for total deviation counts of 2, 3, and 4\nitems, respectively. This confirms that NSGR produces lists that are\nvery close to the optimal permutation.\nTable 5: Comparison between the list generated by NSGR and\nthe optimal list.\nModel Same Diff\n2 \nDiff\n3 \nDiff\n4\nNSGR 0.689 0.909 0.933 0.968\n5.4 Result Position Analysis\nWe proceed with a further analysis of the ranking position changes\nproduced by the NSGR. As shown in Figure 6, each subplot shows\nthe probability that an item in a give"
+    },
+    {
+      "aiAssistanceScore": 0.19417381,
+      "confidence": "Medium",
+      "endIndex": 4485,
+      "label": "Human Written",
+      "pageIndex": 6,
+      "startIndex": 4120,
+      "text": "en final position originated\nfrom each of the 20 initial positions. The positional distribution\nanalysis reveals three fundamental characteristics: 1. Each rank-\ning position predominantly retains its originally top-ranked item,\ndemonstrating persistent positional inertia. 2. Allocation probabili-\nties exhibit a consistent decay pattern as positional displacement"
+    },
+    {
+      "aiAssistanceScore": 0.19417381,
+      "confidence": "Medium",
+      "endIndex": 258,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 0,
+      "text": "Conference\u201917, July 2017, Washington, DC, USA Trovato and Tobin, et al.\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.05\n0.10\n0.15\n0.20\n0.25\n0.30\n0.35\n0.40\nProbability\nPosition 0\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.000\n0.025\n0.050\n0.075\n0.100\n0.125\n0.150\n0.175\nProbabil"
+    },
+    {
+      "aiAssistanceScore": 0.17392339,
+      "confidence": "Medium",
+      "endIndex": 1574,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 257,
+      "text": "lity\nPosition 1\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\nProbability\nPosition 2\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\nProbability\nPosition 3\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\nProbability\nPosition 4\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\nProbability\nPosition 5\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\n0.14\nProbability\nPosition 6\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\nProbability\nPosition 7\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.00\n0.02\n0.04\n0.06\n0.08\n0.10\n0.12\n0.14\n0.16\nProbability\nPosition 8\n0 2 4 6 8 10 12 14 16 18\nDigit\n0.000\n0.025\n0.050\n0.075\n0.100\n0.125\n0.150\n0.175\nProbability\nPosition 9\nFigure 6: Positional distribution of Top-10 items following NSGR.\nincreases, adhering to a distance-decay relationship. 3. The distri-\nbution morphology transitions from sharply peaked dominance in\nposition-0 toward flattening distributions in posterior ranks. This\nprogression indicates the presence of diminishing marginal returns:\nearlier positions in the list yield substantially greater utility gains\nthan later ones.\n5.5 Ablation Study\nTo assess the effectiveness of each component in NSGR, we con-\nducted a series of ablation studies using the Taobao Ad and M"
+    },
+    {
+      "aiAssistanceScore": 0.121266745,
+      "confidence": "Medium",
+      "endIndex": 3052,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 1573,
+      "text": "Meituan\ndatasets. Specifically, we build several variants of the NSGR:\n\u2022 \nw/o SID. A variant of NSGR that replaces the SID and HSTU with\nitem id and DIN [38].\n\u2022 w/o MSE unit. A variant of NSGR without the MSE unit (MSEU),\nwhich is replaced by a single global self-attention.\n\u2022 w/o NSG unit. A variant of NSGR without the NSG unit (NSGU),\nwhich is replaced by a single softmax.\n\u2022 \nw/o MSNL. A variant of NSGR that replaces the L\n\ud835\udc3a \nin Eq. 22\nwith \ud835\udc5f\n\ud835\udc54\n.\nTable 6: The contributions of different components of NSGR.\nModel AUC GAUC HR@1%\nw/o SID 0.8761 0.8692 0.834\nw/o MSEU 0.8835 0.8742 0.846\nw/o NSGU 0.8902 0.8829 0.796\nw/o MSNL 0.8902 0.8829 0.772\nNSGR 0.8902 0.8829 0.861\nTable 6 shows the results of the ablation study, and we can\ndraw the following conclusions: 1. The absence of the SID leads\nto a significant performance drop in both the evaluator and the\ngenerator. 2. The MSE unit is crucial for the evaluator, indicating\nthat the multi-scale context possesses stronger context extraction\ncapabilities compared to a single self-attention mechanism. 3. The\nNSG unit is vital for the generator\u2019s performance, but does not affect\nthe evaluator\u2019s performance. 4. The HR of NLGR w/o NSNL drops\nthe most, demonstrating that MSNL is essential for the generator.\n5.6 Hyperparameter Analysis\nWe analyze the sensitivity of two hyperparameters: \ud835\udf0f and \ud835\udefd, corre-\nsponding to the generation process and training process of NLGR.\nAmong them, \ud835\udf0f is the temperature coefficient in Eq."
+    },
+    {
+      "aiAssistanceScore": 0.03551486,
+      "confidence": "High",
+      "endIndex": 4176,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 3051,
+      "text": ". 22, and \ud835\udefd is the\nsampling ratio at each position when constructing the neighbor\nlists \ud835\udc3f. By default, \ud835\udefd = 1 means that each position is sampled 1 time,\nthat is \ud835\udc42 = \ud835\udc5a. The result is shown in Table 7, showing the same\ntrend on the public dataset and industrial dataset and we have the\nfollowing findings:\ni) As the hyperparameter \ud835\udf0f increases within a certain range, the\nHR of NSGR maintains a stable level, first increasing and then\ndecreasing.\nii) We tested several values for \ud835\udefd. When \ud835\udefd < 1, we randomly select\n\ud835\udefd\ud835\udc5a positions in \ud835\udc5a positions to construct rewards. When \ud835\udefd > 1,\nwe construct \ud835\udefd neighbor lists at each position. Increasing \ud835\udefd\nwithin a certain range can quickly improve the HR performance.\nAs \ud835\udefd continues to increase, HR remains stable but increases of-\nfline training time. The results show that counterfactual rewards\nconsidering all positions are important.\nTable 7: Parameter sensitivity analysis on Meituan.\n\ud835\udf0f=0.01 \ud835\udf0f=0.1 \ud835\udf0f=0.5 \ud835\udf0f=1.0 \ud835\udf0f=2.0\nHR@1% 0.842 0.861 0.858 0.851 0.849\nHR@10% 0.977 0.987 0.983 0.980 0.979\n\ud835\udefd=0.1 \ud835\udefd=0.5 \ud835\udefd=1 \ud835\udefd=2 \ud835\udefd=5\nHR@1% 0.823 0.842 0.859 0.861 0.860\nHR@10% 0.951 0.9"
+    },
+    {
+      "aiAssistanceScore": 0.06265872,
+      "confidence": "Medium",
+      "endIndex": 4681,
+      "label": "Human Written",
+      "pageIndex": 7,
+      "startIndex": 4175,
+      "text": "975 0.986 0.987 0.987\n5.7 Performance on Online System\nTo evaluate the online performance of NSGR, we deployed NSGR on\nthe Meituan CPS business as shown in Figure 7. It is worth noting\nthat because the point-wise part of NSGR is exactly the ranking\nmodel, NSGR can directly reuse the e\n\ud835\udc62 \nand x\n\ud835\udc60 \noutput by the ranking\nmodel to reduce calculations and increase link consistency.\nWe also conducted a rigorous A/B test for eight weeks, from\nAugust 2025 to October 2025. Specifically, we assigned NSGR with"
+    },
+    {
+      "aiAssistanceScore": 0.06265872,
+      "confidence": "Medium",
+      "endIndex": 1052,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 0,
+      "text": "Next-Scale Generative Reranking: A Tree-based Generative Rerank Method at Meituan Conference\u201917, July 2017, Washington, DC, USA\nNSG\nSample\nLogs\nOffline\nOnline\nRecommend\nServer\nRequest\nResponse\nUser Request\nItem List\nTrain\nRanking\nServer\nReranking\nServer\nModel\nServer\nMSE\nMulti-Scale\nNeighbor Loss\nBasebone\nFigure 7: Architecture of the online deployment with NSGR.\n30% traffic, while the remaining 70% traffic was assigned to baseline\n\u2013 YOLOR(8) with \ud835\udc34\n8\n8 \npermutation space. Table 8 shows the online\nperformance of NSGR, where NSGR(8) represents NSGR with \ud835\udc34\n8\n8\npermutation space, and NSGR(20) represents NSGR with \ud835\udc34\n20\n20 \npermu-\ntation space. Compared to the baseline model (YOLOR), although\nNSGR (8) shows a slightly negative effect, when the number of\ncandidate items increases from 8 to 20, NSGR (20) achieves a 2.89%\nimprovement in CTR and a 3.15% increase in GMV, representing a\nhighly significant growth for the business. Now, NSGR is deployed\non the Meituan food delivery platform and serves millions of users.\nTable 8: Online A/B test re"
+    },
+    {
+      "aiAssistanceScore": 0.025421968,
+      "confidence": "High",
+      "endIndex": 2578,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 1051,
+      "text": "esult.\nMethod CTR CVR GMV Cost(ms)\nNSGR ( 8 ) -0.42% -0.18% -1.02% -2.1\nNSGR (20) +2.89% +0.58% +3.15% -1.4\n6 Conclusion\nIn this paper, we propose the Next-Scale Generation Reranking\n(NSGR), a tree-based generative framework. Specifically, NSGR uti-\nlizes the Next-Scale Generator (NSG), a tree-based generator that\nprogressively expands a recommendation list from user interests in\na coarse-to-fine manner\u2014ensuring a balance between global rele-\nvance and local coherence. We further design a multi-scale neighbor\nloss, which leverages a tree-based multi-scale evaluator (MSE) to\nprovide scale-specific guidance to the NSG at each scale. Exten-\nsive experiments on public and industrial datasets demonstrate the\neffectiveness of NSGR, which has been successfully deployed on\nMeituan\u2019s food delivery platform.\nReferences\n[1] \nQingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep\nlistwise context model for ranking refinement. In The 41st international ACM\nSIGIR conference on research & development in information retrieval. 135\u2013144.\n[2] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep\nlistwise context model for ranking refinement. In The 41st international ACM\nSIGIR conference on research & development in information retrieval. 135\u2013144.\n[3] Areej Alsini, Du Q Huynh, and Amitava Datta. 2020. Hit ratio: An evaluation\nmetric for hashtag recommendation. arXiv preprint arXiv:2010.01258 (2020).\n[4] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eb"
+    },
+    {
+      "aiAssistanceScore": 0.0063046925,
+      "confidence": "High",
+      "endIndex": 3922,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 2577,
+      "text": "ban,\nXiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2Slate: Re-ranking and slate\noptimization with RNNs. arXiv preprint arXiv:1810.02019 (2018).\n[5] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An\noverview. Learning 11, 23-581 (2010), 81.\n[6] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning\nto rank: from pairwise approach to listwise approach. In Proceedings of the 24th\ninternational conference on Machine learning. 129\u2013136.\n[7] Moses S Charikar. 2002. Similarity estimation techniques from rounding algo-\nrithms. In Proceedings of the thiry-fourth annual ACM symposium on Theory of\ncomputing. 380\u2013388.\n[8] \nChi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian\nXu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. EXTR: Click-Through Rate\nPrediction with Externalities in E-Commerce Sponsored Search. In Proceedings\nof the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining.\n2732\u20132740.\n[9] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou.\n2021. End-to-end user behavior retrieval in click-through rateprediction model.\narXiv preprint arXiv:2108.04468 (2021).\n[10] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra,\nHrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al.\n2016. Wide & "
+    },
+    {
+      "aiAssistanceScore": 0.012558481,
+      "confidence": "High",
+      "endIndex": 5339,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 3921,
+      "text": " deep learning for recommender systems. In Proceedings of the 1st\nworkshop on deep learning for recommender systems. 7\u201310.\n[11] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit recom-\nmender system in the permutation prospective. arXiv preprint arXiv:2102.12057\n(2021).\n[12] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021.\nGRN: Generative Rerank Network for Context-wise Recommendation. arXiv\npreprint arXiv:2104.00860 (2021).\n[13] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017.\nDeepFM: a factorization-machine based neural network for CTR prediction. arXiv\npreprint arXiv:1703.04247 (2017).\n[14] \nYupeng Hou, Jiacheng Li, Ashley Shin, Jinsung Jeon, Abhishek Santhanam, Wei\nShao, Kaveh Hassani, Ning Yao, and Julian McAuley. 2025. Generating long\nsemantic IDs in parallel for recommendation. In Proceedings of the 31st ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining V. 2. 956\u2013966.\n[15] Yanhua Huang, Weikun Wang, Lei Zhang, and Ruiwen Xu. 2021. Sliding spectrum\ndecomposition for diversified recommendation. In Proceedings of the 27th ACM\nSIGKDD conference on knowledge discovery & data mining. 3041\u20133049.\n[16] \nRay Jiang, Sven Gowal, Timothy A Mann, and Danilo J Rezende. 2018. Beyond\ngreedy ranking: Slate optimization via list-CVAE. arXiv preprint arXiv:1803.01682\n(2018).\n[17] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhong"
+    },
+    {
+      "aiAssistanceScore": 0.017749777,
+      "confidence": "High",
+      "endIndex": 6854,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 5338,
+      "text": "gxia Chen, Xing Xie, and\nGuangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature in-\nteractions for recommender systems. In Proceedings of the 24th ACM SIGKDD\ninternational conference on knowledge discovery & data mining. 1754\u20131763.\n[18] \nXiao Lin, Xiaokai Chen, Chenyang Wang, Hantao Shu, Linfeng Song, Biao Li, and\nPeng Jiang. 2024. Discrete conditional diffusion for reranking in recommendation.\nIn Companion Proceedings of the ACM on Web Conference 2024. 161\u2013169.\n[19] Zhijie Lin, Zhuofeng Li, Chenglei Dai, Wentian Bao, Shuai Lin, Enyun Yu, Haoxi-\nang Zhang, and Liang Zhao. 2025. GReF: A Unified Generative Framework for\nEfficient Reranking via Ordered Multi-token Prediction. In Proceedings of the\n34th ACM International Conference on Information and Knowledge Management.\n5879\u20135887.\n[20] Zihan Lin, Hui Wang, Jingshu Mao, Wayne Xin Zhao, Cheng Wang, Peng Jiang,\nand Ji-Rong Wen. 2022. Feature-aware diversified re-ranking with disentangled\nrepresentations for relevant recommendation. In Proceedings of the 28th ACM\nSIGKDD Conference on Knowledge Discovery and Data Mining. 3327\u20133335.\n[21] \nShuchang Liu, Qingpeng Cai, Zhankui He, Bowen Sun, Julian McAuley, Dong\nZheng, Peng Jiang, and Kun Gai. 2023. Generative flow network for listwise rec-\nommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge\nDiscovery and Data Mining. 1524\u20131534.\n[22] Gurmeet Singh Manku, Arvind Jain, and Anish Das Sarma. 2007. Detecting near-\nduplicates for web crawling. In Proceedings of the 16th"
+    },
+    {
+      "aiAssistanceScore": 0.01975061,
+      "confidence": "High",
+      "endIndex": 7997,
+      "label": "Human Written",
+      "pageIndex": 8,
+      "startIndex": 6853,
+      "text": "h international conference on\nWorld Wide Web. 141\u2013150.\n[23] Liang Pang, Jun Xu, Qingyao Ai, Yanyan Lan, Xueqi Cheng, and Jirong Wen.\n2020. Setrank: Learning a permutation-invariant ranking model for information\nretrieval. In Proceedings of the 43rd international ACM SIGIR conference on research\nand development in information retrieval. 499\u2013508.\n[24] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian\nWu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking\nfor recommendation. In Proceedings of the 13th ACM conference on recommender\nsystems. 3\u201311.\n[25] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang\nZhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong\nsequential behavior data for click-through rate prediction. In Proceedings of the\n29th ACM International Conference on Information & Knowledge Management.\n2685\u20132692.\n[26] Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan Hulikal Keshavan,\nTrung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Tran, Jonah Samost, et al.\n2023. Recommender systems with generative retrieval. Advances in Neural"
+    },
+    {
+      "aiAssistanceScore": 0.01975061,
+      "confidence": "High",
+      "endIndex": 286,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 0,
+      "text": "Conference\u201917, July 2017, Washington, DC, USA Trovato and Tobin, et al.\nInformation Processing Systems 36 (2023), 10299\u201310315.\n[27] Yuxin Ren, Qiya Yang, Yichun Wu, Wei Xu, Yalong Wang, and Zhiqiang Zhang.\n2024. Non-autoregressive generative models for reranking recommendation. In\nProc"
+    },
+    {
+      "aiAssistanceScore": 0.020297091,
+      "confidence": "High",
+      "endIndex": 1641,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 285,
+      "text": "ceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and\nData Mining. 5625\u20135634.\n[28] Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei\nZhang, Mingchuan Zhang, YK Li, Yang Wu, et al . 2024. Deepseekmath: Pushing\nthe limits of mathematical reasoning in open language models. arXiv preprint\narXiv:2402.03300 (2024).\n[29] Xiaowen Shi, Fan Yang, Ze Wang, Xiaoxu Wu, Muzhi Guan, Guogang Liao, Wang\nYongkang, Xingxing Wang, and Dong Wang. 2023. PIER: Permutation-Level\nInterest-Based End-to-End Re-ranking Framework in E-commerce. In Proceedings\nof the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining.\n4823\u20134831.\n[30] A Vaswani. 2017. Attention is all you need. Advances in Neural Information\nProcessing Systems (2017).\n[31] Shuli Wang, Yinqiu Huang, Changhao Li, Yuan Zhou, Yonggang Liu, Yongqiang\nZhang, Yinhua Zhu, Haitao Wang, and Xingxing Wang. 2025. You Only Evaluate\nOnce: A Tree-based Rerank Method at Meituan. arXiv preprint arXiv:2508.14420\n(2025).\n[32] Shuli Wang, Xue Wei, Senjie Kou, Chi Wang, Wenshuai Chen, Qi Tang, Yinhua\nZhu, Xiong Xiao, and Xingxing Wang. 2025. NLGR: Utilizing Neighbor Lists\nfor Generative Rerank in Personalized Recommendation Systems. In Companion\nProceedings of the ACM on Web Conference 2025. 530\u2013537.\n[33] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Z"
+    },
+    {
+      "aiAssistanceScore": 0.011055348,
+      "confidence": "High",
+      "endIndex": 2998,
+      "label": "Human Written",
+      "pageIndex": 9,
+      "startIndex": 1640,
+      "text": "Zhang, Qing Liu, Xi-\nuqiang He, and Yong Yu. 2021. Context-aware reranking with utility maximization\nfor recommendation. arXiv preprint arXiv:2110.09059 (2021).\n[34] \nYunjia Xi, Weiwen Liu, Jieming Zhu, Xilong Zhao, Xinyi Dai, Ruiming Tang,\nWeinan Zhang, Rui Zhang, and Yong Yu. 2022. Multi-Level Interaction Reranking\nwith User Behavior History. In Proceedings of the 45th International ACM SIGIR\nConference on Research and Development in Information Retrieval. 1336\u20131346.\n[35] \nWencai Ye, Mingjie Sun, Shaoyun Shi, Peng Wang, Wenjin Wu, and Peng Jiang.\n2025. DAS: Dual-Aligned Semantic IDs Empowered Industrial Recommender\nSystem. arXiv preprint arXiv:2508.10584 (2025).\n[36] \nJiaqi Zhai, Lucy Liao, Xing Liu, Yueming Wang, Rui Li, Xuan Cao, Leon Gao, Zhao-\njie Gong, Fangda Gu, Michael He, et al . 2024. Actions speak louder than words:\nTrillion-parameter sequential transducers for generative recommendations. arXiv\npreprint arXiv:2402.17152 (2024).\n[37] \nGuorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang\nZhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate\nprediction. In Proceedings of the AAAI conference on artificial intelligence, Vol. 33.\n5941\u20135948.\n[38] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui\nYan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network f"
+    }
+  ]
+}

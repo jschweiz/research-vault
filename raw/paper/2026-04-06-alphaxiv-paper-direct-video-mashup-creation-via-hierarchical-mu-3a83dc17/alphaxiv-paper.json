@@ -1,0 +1,21 @@
+{
+  "abstract": "Video mashup creation represents a complex video editing paradigm that recomposes existing footage to craft engaging audio-visual experiences, demanding intricate orchestration across semantic, visual, and auditory dimensions and multiple levels. However, existing automated editing frameworks often overlook the cross-level multimodal orchestration to achieve professional-grade fluidity, resulting in disjointed sequences with abrupt visual transitions and musical misalignment. To address this, we formulate video mashup creation as a Multimodal Coherency Satisfaction Problem (MMCSP) and propose the DIRECT framework. Simulating a professional production pipeline, our hierarchical multi-agent framework decomposes the challenge into three cascade levels: the Screenwriter for source-aware global structural anchoring, the Director for instantiating adaptive editing intent and guidance, and the Editor for intent-guided shot sequence editing with fine-grained optimization. We further introduce Mashup-Bench, a comprehensive benchmark with tailored metrics for visual continuity and auditory alignment. Extensive experiments demonstrate that DIRECT significantly outperforms state-of-the-art baselines in both objective metrics and human subjective evaluation. Project page and code: this https URL",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775496364000,
+  "googleCitationId": null,
+  "groupId": "019d6610-042b-71ab-a992-05e729470973",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775496364000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04875",
+  "title": "DIRECT: Video Mashup Creation via Hierarchical Multi-Agent Planning and Intent-Guided Editing",
+  "type": "public",
+  "universalId": "2604.04875",
+  "uploader": null,
+  "versionId": "019d6610-0475-74bb-a8ad-f15205912a79",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

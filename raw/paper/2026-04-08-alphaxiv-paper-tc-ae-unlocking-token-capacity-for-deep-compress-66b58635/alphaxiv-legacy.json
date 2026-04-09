@@ -1,0 +1,126 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Teng Li",
+        "id": "01985c82-19a6-7a28-bc59-c7ae4c115191",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziyuan Huang",
+        "id": "01985c81-edde-7f66-8dcb-48eed9705ed1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Cong Chen",
+        "id": "01985c82-204e-7383-a0e7-827c4e9017e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yangfu Li",
+        "id": "01985c85-5b82-7e61-bc6d-46964c0863b1",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuanhuiyi Lyu",
+        "id": "01985c82-17c5-78e7-b7ab-8d45a0c2c708",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dandan Zheng",
+        "id": "01985c82-8c36-7457-862d-1b319c25a904",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Chunhua Shen",
+        "id": "01985c81-e5a9-7f08-aab5-b6ff9310b829",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jun Zhang",
+        "id": "01985c81-eddf-7dfb-a99a-988170b34593",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 01:49:27 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 08 2026 17:53:52 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6fee-1731-71db-ba1d-aa89811cba3b",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 0,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 0,
+        "visits_count": {
+          "all": 19,
+          "last24Hours": 19,
+          "last30Days": 19,
+          "last7Days": 19,
+          "last90Days": 19
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "Official repo for \"TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders\"",
+          "language": "Python",
+          "stars": 1,
+          "url": "https://github.com/inclusionAI/TC-AE"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.07340"
+      },
+      "title": "TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders",
+      "topics": [
+        "Computer Science",
+        "cs.CV",
+        "generative-models",
+        "image-generation",
+        "lightweight-models",
+        "model-compression",
+        "representation-learning",
+        "self-supervised-learning",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.07340",
+      "updated_at": "Thu Apr 09 2026 01:49:27 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "We propose TC-AE, a ViT-based architecture for deep compression autoencoders. Existing methods commonly increase the channel number of latent representations to maintain reconstruction quality under high compression ratios. However, this strategy often leads to latent representation collapse, which degrades generative performance. Instead of relying on increasingly complex architectures or multi-stage training schemes, TC-AE addresses this challenge from the perspective of the token space, the key bridge between pixels and image latents, through two complementary innovations: Firstly, we study token number scaling by adjusting the patch size in ViT under a fixed latent budget, and identify aggressive token-to-latent compression as the key factor that limits effective scaling. To address this issue, we decompose token-to-latent compression into two stages, reducing structural information loss and enabling effective token number scaling for generation. Secondly, to further mitigate latent representation collapse, we enhance the semantic structure of image tokens via joint self-supervised training, leading to more generative-friendly latents. With these designs, TC-AE achieves substantially improved reconstruction and generative performance under deep compression. We hope our research will advance ViT-based tokenizer for visual generation.",
+      "created_at": "Thu Apr 09 2026 01:49:27 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6fee-1769-70bb-b8ab-10a31611b960",
+      "imageURL": "image/2604.07340v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Apr 08 2026 17:53:52 GMT+0000 (Coordinated Universal Time)",
+      "title": "TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders",
+      "universal_paper_id": "2604.07340",
+      "updated_at": "Thu Apr 09 2026 01:49:27 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.07340v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

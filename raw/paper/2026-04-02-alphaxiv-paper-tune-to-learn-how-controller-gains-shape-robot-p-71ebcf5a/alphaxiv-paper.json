@@ -1,0 +1,21 @@
+{
+  "abstract": "Position controllers have become the dominant interface for executing learned manipulation policies. Yet a critical design decision remains understudied: how should we choose controller gains for policy learning? The conventional wisdom is to select gains based on desired task compliance or stiffness. However, this logic breaks down when controllers are paired with state-conditioned policies: effective stiffness emerges from the interplay between learned reactions and control dynamics, not from gains alone. We argue that gain selection should instead be guided by learnability: how amenable different gain settings are to the learning algorithm in use. In this work, we systematically investigate how position controller gains affect three core components of modern robot learning pipelines: behavior cloning, reinforcement learning from scratch, and sim-to-real transfer. Through extensive experiments across multiple tasks and robot embodiments, we find that: (1) behavior cloning benefits from compliant and overdamped gain regimes, (2) reinforcement learning can succeed across all gain regimes given compatible hyperparameter tuning, and (3) sim-to-real transfer is harmed by stiff and overdamped gain regimes. These findings reveal that optimal gain selection depends not on the desired task behavior, but on the learning paradigm employed. Project website: this https URL",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775164988000,
+  "googleCitationId": null,
+  "groupId": "019d6082-0c8d-738d-929f-9e9e93152a46",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775164988000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.02523",
+  "title": "Tune to Learn: How Controller Gains Shape Robot Policy Learning",
+  "type": "public",
+  "universalId": "2604.02523",
+  "uploader": null,
+  "versionId": "019d6082-0cca-7dd3-8eed-3c6eef1ae9df",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

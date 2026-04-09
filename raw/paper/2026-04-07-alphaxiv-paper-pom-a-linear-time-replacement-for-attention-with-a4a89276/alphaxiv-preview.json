@@ -1,0 +1,185 @@
+{
+  "abstract": "This paper introduces the Polynomial Mixer (PoM), a novel token mixing mechanism with linear complexity that serves as a drop-in replacement for self-attention. PoM aggregates input tokens into a compact representation through a learned polynomial function, from which each token retrieves contextual information. We prove that PoM satisfies the contextual mapping property, ensuring that transformers equipped with PoM remain universal sequence-to-sequence approximators. We replace standard self-attention with PoM across five diverse domains: text generation, handwritten text recognition, image generation, 3D modeling, and Earth observation. PoM matches the performance of attention-based models while drastically reducing computational cost when working with long sequences. The code is available at this https URL.",
+  "author_info": [],
+  "authors": [
+    "David Picard",
+    "Nicolas Dufour",
+    "Lucas Degeorge",
+    "Arijit Ghosh",
+    "Davide Allegro",
+    "Tom Ravaud",
+    "Yohann Perron",
+    "Corentin Sautier",
+    "Zeynep Sonat Baltaci",
+    "Fei Meng",
+    "Syrine Kalleli",
+    "Marta L\u00f3pez-Rauhut",
+    "Thibaut Loiseau",
+    "S\u00e9gol\u00e8ne Albouy",
+    "Raphael Baena",
+    "Elliot Vincent",
+    "Loic Landrieu"
+  ],
+  "canonical_id": "2604.06129v1",
+  "first_publication_date": "2026-04-07T17:40:37.000Z",
+  "full_authors": [
+    {
+      "full_name": "David Picard",
+      "id": "01985c81-f818-7b87-8b32-db8ceb8179b7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Nicolas Dufour",
+      "id": "01985c82-6fed-7475-8ac4-4819bd677af0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lucas Degeorge",
+      "id": "019a04ac-1db3-791f-8521-e928387a6cc3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Arijit Ghosh",
+      "id": "01985c82-9705-7e15-a5f0-dccc5339f4ab",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Davide Allegro",
+      "id": "01985c83-4795-76e7-bb82-4fd436210a9b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tom Ravaud",
+      "id": "019cf9fe-6e0d-7595-8603-7358e53009a6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yohann Perron",
+      "id": "01985c83-4fa6-71ab-8d31-6cd55c65defe",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Corentin Sautier",
+      "id": "01985c81-e287-7ab2-9498-b8272eb0c75f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zeynep Sonat Baltaci",
+      "id": "01985c84-d3bb-7fc2-8efd-2d0448eaaf06",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fei Meng",
+      "id": "01985c82-7e88-7121-9b9a-1c40206b299e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Syrine Kalleli",
+      "id": "01985c82-5f59-7440-a73d-000e567cee6d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Marta L\u00f3pez-Rauhut",
+      "id": "01985c85-9e3a-7c39-98b3-7ace96b00004",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Thibaut Loiseau",
+      "id": "01985c82-1f59-7d52-a3e8-83af7cb42a12",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "S\u00e9gol\u00e8ne Albouy",
+      "id": "01985c82-5f59-786e-9d78-15ede0953f49",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Raphael Baena",
+      "id": "01985c83-4fa7-71a9-8690-4ad61e44e0a4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Elliot Vincent",
+      "id": "01985c81-fca4-771e-a3d4-06ae9a6e0742",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Loic Landrieu",
+      "id": "01985c82-19a7-7731-8821-9e18b299a6c1",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 23,
+  "github_url": "https://github.com/davidpicard/pom",
+  "id": "019d6b78-ecf4-74d8-b09a-4c8c6cc8b776",
+  "image_url": "image/2604.06129v1.png",
+  "metrics": {
+    "public_total_votes": 4,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 31,
+      "last_7_days": 31
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6b78-ecf4-74d8-b09a-4c8c6cc8b776",
+  "paper_summary": {
+    "keyInsights": [
+      "PoM is theoretically proven to be permutation equivariant and, when combined with positional encoding, forms a universal sequence-to-sequence approximator.",
+      "PoM satisfies the 'contextual mapping property,' allowing each token to derive a unique value from the entire sequence while retaining its identity, crucial for Transformer expressivity.",
+      "The linear computational complexity of PoM ($O(n)$) offers substantial efficiency and scalability advantages over MHA's quadratic complexity ($O(n^2)$) for processing long sequences without sacrificing performance."
+    ],
+    "originalProblem": [
+      "Multi-Head Attention (MHA) in Transformers incurs quadratic computational and memory complexity with respect to the input sequence length.",
+      "This quadratic scaling limits the application of Transformers to tasks involving very long sequences, such as high-resolution images, videos, or extensive text.",
+      "Existing linear-time alternatives often compromise performance, impose fixed sequence lengths, or are limited by causal ordering, restricting their general applicability."
+    ],
+    "results": [
+      "PoM-based models achieved performance on par with or slightly better than MHA across diverse tasks including NLP, OCR, Earth observation, 3D point cloud segmentation, and image generation.",
+      "Models incorporating PoM demonstrated significant speedups, such as 2x faster throughput for image generation and over 300% faster inference for Earth observation compared to MHA baselines.",
+      "PoM's linear scaling enabled efficient processing of entire point clouds without chunking and provided substantial throughput advantages over highly optimized attention (e.g., FlashAttention) for long sequence lengths."
+    ],
+    "solution": [
+      "PoM aggregates input tokens into a compact, shared representation using a learned polynomial function, allowing each token to query this context in a linear-time manner.",
+      "The PolyMorpher block integrates PoM as a drop-in replacement for MHA, preserving the Transformer's residual structure, and can be adapted for causal sequences with O(1) autoregressive inference.",
+      "The architecture ensures all internal operations scale linearly with sequence length, addressing the efficiency bottleneck of MHA."
+    ],
+    "summary": "The Polynomial Mixer (PoM) introduces a linear-time token mixing mechanism as a direct replacement for the quadratically scaling Multi-Head Attention in Transformer architectures. PoM-based models achieve comparable or superior performance across five diverse domains, demonstrating up to 2x faster throughput and significant scalability improvements for long sequence lengths."
+  },
+  "publication_date": "2026-04-07T17:40:37.000Z",
+  "title": "PoM: A Linear-Time Replacement for Attention with the Polynomial Mixer",
+  "topics": [
+    "attention-mechanisms",
+    "Computer Science",
+    "cs.AI",
+    "cs.CV",
+    "efficient-transformers",
+    "image-generation",
+    "lightweight-models",
+    "representation-learning",
+    "sequence-modeling",
+    "text-generation",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.06129",
+  "updated_at": "2026-04-08T05:03:00.340Z",
+  "version_id": "019d6b78-ed3d-75fe-aebe-e6cf7b629578"
+}

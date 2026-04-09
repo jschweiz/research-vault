@@ -1,0 +1,136 @@
+{
+  "abstract": "Large Vision-Language Models (LVLMs) enable sophisticated reasoning over images and videos, yet their inference is hindered by a systemic efficiency barrier known as visual token dominance. This overhead is driven by a multi-regime interplay between high-resolution feature extraction, quadratic attention scaling, and memory bandwidth constraints. We present a systematic taxonomy of efficiency techniques structured around the inference lifecycle, consisting of encoding, prefilling, and decoding. Unlike prior reviews focused on isolated optimizations, we analyze the end-to-end pipeline to reveal how upstream decisions dictate downstream bottlenecks, covering compute-bound visual encoding, the intensive prefilling of massive contexts, and the ''visual memory wall'' in bandwidth-bound decoding. By decoupling the efficiency landscape into the axes of shaping information density, managing long-context attention, and overcoming memory limits, this work provides a structured analysis of how isolated optimizations compose to navigate the trade-off between visual fidelity and system efficiency. The survey concludes by outlining four future frontiers supported by pilot empirical insights, including hybrid compression based on functional unit sensitivity, modality-aware decoding with relaxed verification, progressive state management for streaming continuity, and stage-disaggregated serving through hardware-algorithm co-design. The submitted software contains a snapshot of our literature repository, which is designed to be maintained as a living resource for the community.",
+  "author_info": [],
+  "authors": [
+    "Jun Zhang",
+    "Yicheng Ji",
+    "Feiyang Ren",
+    "Yihang Li",
+    "Bowen Zeng",
+    "Zonghao Chen",
+    "Ke Chen",
+    "Lidan Shou",
+    "Gang Chen",
+    "Huan Li"
+  ],
+  "canonical_id": "2604.05546v1",
+  "first_publication_date": "2026-04-07T07:44:11.000Z",
+  "full_authors": [
+    {
+      "full_name": "Jun Zhang",
+      "id": "01985c81-eddf-7dfb-a99a-988170b34593",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yicheng Ji",
+      "id": "0198df0a-3b8d-77b6-a80e-aacb81546bc9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Feiyang Ren",
+      "id": "01985c85-cd99-719e-888e-23ff32b1aac7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yihang Li",
+      "id": "01985c82-7805-7b46-90bc-4a00494242df",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bowen Zeng",
+      "id": "01985c82-f62c-751a-93bd-0bf0223155eb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zonghao Chen",
+      "id": "01985c82-2623-786d-a0fb-27c43ca5f16c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ke Chen",
+      "id": "01985c82-17c6-7050-a95a-1828b8441212",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Lidan Shou",
+      "id": "01985c82-7acc-7d62-a809-6ff0c24c695f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Gang Chen",
+      "id": "01985c81-e1bb-718a-a890-fbcb4c225fbe",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Huan Li",
+      "id": "01985c82-340e-739c-aa3c-b6797409d3ec",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 7,
+  "github_url": "https://github.com/SuDIS-ZJU/Efficient-LVLMs-Inference",
+  "id": "019d6ac2-22e5-76cd-addd-30e8cdef3bcd",
+  "image_url": "image/2604.05546v1.png",
+  "metrics": {
+    "public_total_votes": 13,
+    "total_votes": 7,
+    "visits_count": {
+      "all": 53,
+      "last_7_days": 53
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6ac2-22e5-76cd-addd-30e8cdef3bcd",
+  "paper_summary": {
+    "keyInsights": [
+      "LVLM inference is a dynamic pipeline characterized by shifting hardware bottlenecks, with compute-bound encoding, mixed compute/memory-bound prefilling, and strictly memory-bound decoding.",
+      "Early optimization of visual token efficiency in the encoding stage offers the highest leverage, as it directly impacts all subsequent LLM layers and the memory footprint of the Key-Value (KV) cache.",
+      "Effective prefilling and decoding strategies necessitate modality-aware policies that apply aggressive compression to visual tokens due to their higher spatiotemporal redundancy, while maintaining conservative approaches for text tokens to preserve semantic integrity.",
+      "Stage-disaggregated serving architectures are crucial for overcoming systemic bottlenecks and maximizing hardware utilization, decoupling compute-intensive encoding from bandwidth-intensive decoding."
+    ],
+    "originalProblem": [
+      "Large Vision-Language Models (LVLMs) face substantial computational and memory challenges during inference due to 'visual token dominance,' where visual inputs generate orders of magnitude more tokens than text.",
+      "This token dominance leads to significant overheads from high-resolution feature extraction, quadratic scaling of attention mechanisms, and constraints imposed by memory bandwidth during decoding.",
+      "Existing research on large model efficiency has primarily focused on Large Language Models (LLMs) or addressed LVLM challenges in fragmented, isolated stages, lacking a holistic, end-to-end systemic analysis of the inference pipeline."
+    ],
+    "results": [
+      "A hybrid KV cache compression scheme on Qwen2.5-VL-7B retained 2.88 average accuracy (vs. 2.93 for full cache) on Video-ChatGPT, while reducing GPU memory from 1.73 GB to 0.40 GB and decoding latency from 58.94 ms/token to 42.08 ms/token.",
+      "Relaxed speculative decoding significantly boosted decoding speedup for Qwen2.5-VL-32B/7B from 1.40x (strict SPECVLM) to 2.61x (random relaxation at 75% probability), retaining 93.6% of original output quality.",
+      "The analysis confirmed that visual token dominance leads to a critical 'visual memory wall' during decoding, where the static KV cache for visual tokens consumes substantial memory, making the decoding stage strictly memory-bound."
+    ],
+    "solution": [
+      "The authors developed a systematic, stage-wise taxonomy of efficiency techniques covering the entire LVLM inference lifecycle: encoding, prefilling, and decoding.",
+      "They conducted a bottleneck analysis for each stage using the Roofline model, identifying encoding as compute-bound, prefilling as mixed compute/memory-bound, and decoding as strictly memory-bound due to the 'visual memory wall'.",
+      "Efficiency techniques were categorized along three axes: shaping information density, managing long-context attention, and overcoming memory limits to provide a structured framework for evaluation.",
+      "Pilot empirical studies were performed to validate forward-looking directions such as hybrid KV cache compression and relaxed speculative decoding."
+    ],
+    "summary": "Researchers from Zhejiang University systematically analyze and categorize efficiency techniques for Large Vision-Language Models (LVLMs), identifying dynamic bottlenecks across encoding, prefilling, and decoding stages. Their work introduces a stage-aware taxonomy and provides empirical insights demonstrating that hybrid KV cache compression and relaxed speculative decoding can significantly reduce memory footprint and boost decoding speed while maintaining performance."
+  },
+  "publication_date": "2026-04-07T07:44:11.000Z",
+  "title": "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
+  "topics": [
+    "Computer Science",
+    "cs.CL",
+    "efficient-transformers",
+    "hardware-aware-algorithms",
+    "inference-optimization",
+    "ml-systems",
+    "model-compression",
+    "model-serving-infrastructure",
+    "vision-language-models"
+  ],
+  "universal_paper_id": "2604.05546",
+  "updated_at": "2026-04-08T01:43:21.061Z",
+  "version_id": "019d6ac2-2326-716f-acb3-fc9356c27573"
+}

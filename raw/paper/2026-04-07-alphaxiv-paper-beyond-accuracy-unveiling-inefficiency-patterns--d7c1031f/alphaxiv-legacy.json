@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "annotation": null,
+      "author": {
+        "avatar": [
+          {
+            "type": "full_size",
+            "url": "avatars/0196bf7e-abed-7fdc-a574-6a0112138b93/a525d1c2-908d-47db-8147-bd44c5fb9436/full.webp"
+          },
+          {
+            "type": "thumbnail",
+            "url": "avatars/0196bf7e-abed-7fdc-a574-6a0112138b93/a525d1c2-908d-47db-8147-bd44c5fb9436/w64.webp"
+          }
+        ],
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": null,
+        "id": "0196bf7e-abed-7fdc-a574-6a0112138b93",
+        "institution": null,
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "nick su",
+        "reputation": 0,
+        "role": "user",
+        "username": "nick-su",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      },
+      "authorResponded": false,
+      "body": "**Accepted to ACL 2026!**\n\nWe introduce **PTE (Prefill Token Equivalents)**, a hardware-aware metric that captures the true inference cost of tool-integrated reasoning, accounting for KV-cache eviction and long tool responses that token counts miss.\n\nKey findings: we identify **4 inefficiency patterns** in TIR and observe that trajectories with higher PTE costs often have *lower* reasoning accuracy, suggesting more tool usage doesn't guarantee better answers.\n\nWould love your thoughts on efficiency-aware agent evaluation!",
+      "date": "2026-04-08T04:56:53.775Z",
+      "endorsements": [],
+      "hasDownvoted": false,
+      "hasFlagged": false,
+      "hasUpvoted": false,
+      "id": "019d6b73-550f-7d21-9c56-69078931a5d7",
+      "isAuthor": false,
+      "paperGroupId": "019d6aec-9f25-7c91-99ac-c15a944420be",
+      "paperTitle": "Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning",
+      "paperVersionId": "019d6aec-9f53-7127-ad7d-b20e94051dd1",
+      "parentCommentId": null,
+      "responses": [],
+      "tag": "general",
+      "title": "Comment",
+      "universalId": "2604.05404v1",
+      "upvotes": 0,
+      "userId": "0196bf7e-abed-7fdc-a574-6a0112138b93",
+      "wasEdited": false
+    }
+  ],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Qisheng Su",
+        "id": "01985c83-57d9-7d9b-9322-ad77317a4d12",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shiting Huang",
+        "id": "01985c83-4502-7a39-9be0-0178023460df",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhen Fang",
+        "id": "01985c82-2a92-735a-bb5b-c471c40218bd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziyan Chen",
+        "id": "01985c82-840c-765e-b35d-511e8368b9c9",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zehui Chen",
+        "id": "01985c82-071b-76c3-82e2-8a2df7048252",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Feng Zhao",
+        "id": "01985c82-071b-741f-84a3-94647ef5b0d5",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:29:45 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 03:55:29 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6aec-9f25-7c91-99ac-c15a944420be",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 3,
+        "questions_count": 1,
+        "total_votes": 1,
+        "upvotes_count": 3,
+        "visits_count": {
+          "all": 23,
+          "last24Hours": 18,
+          "last30Days": 23,
+          "last7Days": 23,
+          "last90Days": 23
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "Python",
+          "stars": 25,
+          "url": "https://github.com/sqs-ustc/tool-reasoning-framework-PTE"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.05404"
+      },
+      "title": "Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning",
+      "topics": [
+        "Computer Science",
+        "cs.PF",
+        "cs.SE"
+      ],
+      "universal_paper_id": "2604.05404",
+      "updated_at": "Wed Apr 08 2026 02:29:45 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "In real-world Tool-Integrated Reasoning (TIR) scenarios, where LLMs interleave reasoning with external tool calls, a major source of inefficiency is that the toolcalls create pauses between LLM requests and cause KV-Cache eviction, forcing recomputation. Also, the long, unfiltered response returned by external tools inflates the KV-Cache, so each decode step spends more time loading the growing cache and thus becomes steadily slower as context length increases. However, existing efficiency metrics like token counts and toolcall counts fail to capture the real model inference latency. To address this, we introduce PTE (Prefill Token Equivalents), a hardware-aware TIR-efficiency metric that unifies internal reasoning and external tool-use costs while explicitly accounting for non-reusable KV-Cache and long-tool-response scenarios. Validation in a high-concurrency industrial setting indicates that PTE aligns significantly better with wall-clock latency than standard token counts, while maintaining consistent efficiency rankings across diverse hardware profiles. We conduct extensive experiments across five TIR benchmarks, quantify their PTE costs, and identify four inefficiency patterns that appear in TIR. We also discover that trajectories with higher PTE costs tend to have lower reasoning correctness, indicating that simply using more tools does not improve the quality of the answer.",
+      "created_at": "Wed Apr 08 2026 02:29:45 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6aec-9f53-7127-ad7d-b20e94051dd1",
+      "imageURL": "image/2604.05404v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 03:55:29 GMT+0000 (Coordinated Universal Time)",
+      "title": "Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning",
+      "universal_paper_id": "2604.05404",
+      "updated_at": "Wed Apr 08 2026 02:29:45 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.05404v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

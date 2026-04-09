@@ -1,0 +1,21 @@
+{
+  "abstract": "Robotic imitation learning faces a fundamental trade-off between modeling long-horizon dependencies and enabling fine-grained closed-loop control. Existing fixed-frequency action chunking approaches struggle to achieve both. Building on this insight, we propose HiPolicy, a hierarchical multi-frequency action chunking framework that jointly predicts action sequences at different frequencies to capture both coarse high-level plans and precise reactive motions. We extract and fuse hierarchical features from history observations aligned to each frequency for multi-frequency chunk generation, and introduce an entropy-guided execution mechanism that adaptively balances long-horizon planning with fine-grained control based on action uncertainty. Experiments on diverse simulated benchmarks and real-world manipulation tasks show that HiPolicy can be seamlessly integrated into existing 2D and 3D generative policies, delivering consistent improvements in performance while significantly enhancing execution efficiency.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775580458000,
+  "googleCitationId": null,
+  "groupId": "019d6b47-b547-771b-af2f-a0ad17e4029a",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775580458000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.06067",
+  "title": "HiPolicy: Hierarchical Multi-Frequency Action Chunking for Policy Learning",
+  "type": "public",
+  "universalId": "2604.06067",
+  "uploader": null,
+  "versionId": "019d6b47-b58d-765e-9ec1-4d9f9e29dd05",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

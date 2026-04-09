@@ -1,0 +1,21 @@
+{
+  "abstract": "Large Vision-Language Models (LVLMs) enable sophisticated reasoning over images and videos, yet their inference is hindered by a systemic efficiency barrier known as visual token dominance. This overhead is driven by a multi-regime interplay between high-resolution feature extraction, quadratic attention scaling, and memory bandwidth constraints. We present a systematic taxonomy of efficiency techniques structured around the inference lifecycle, consisting of encoding, prefilling, and decoding. Unlike prior reviews focused on isolated optimizations, we analyze the end-to-end pipeline to reveal how upstream decisions dictate downstream bottlenecks, covering compute-bound visual encoding, the intensive prefilling of massive contexts, and the ''visual memory wall'' in bandwidth-bound decoding. By decoupling the efficiency landscape into the axes of shaping information density, managing long-context attention, and overcoming memory limits, this work provides a structured analysis of how isolated optimizations compose to navigate the trade-off between visual fidelity and system efficiency. The survey concludes by outlining four future frontiers supported by pilot empirical insights, including hybrid compression based on functional unit sensitivity, modality-aware decoding with relaxed verification, progressive state management for streaming continuity, and stage-disaggregated serving through hardware-algorithm co-design. The submitted software contains a snapshot of our literature repository, which is designed to be maintained as a living resource for the community.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775547851000,
+  "googleCitationId": null,
+  "groupId": "019d6ac2-22e5-76cd-addd-30e8cdef3bcd",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775547851000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05546",
+  "title": "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
+  "type": "public",
+  "universalId": "2604.05546",
+  "uploader": null,
+  "versionId": "019d6ac2-2326-716f-acb3-fc9356c27573",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

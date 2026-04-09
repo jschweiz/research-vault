@@ -1,0 +1,101 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Ziqi Jin",
+        "id": "01985c82-6c59-754d-a878-cbe5add71174",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Lei Wang",
+        "id": "01985c81-de90-79a6-bba5-661a870c8d24",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ziwei Luo",
+        "id": "01985c82-41b5-7911-a253-2bb018d847f0",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aixin Sun",
+        "id": "01985c81-f818-77d2-aa4c-b44edb60a039",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Apr 09 2026 02:06:29 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Apr 08 2026 12:41:37 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ffd-ac90-78a6-b252-019bed84e429",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 0,
+        "questions_count": 0,
+        "total_votes": 0,
+        "upvotes_count": 0,
+        "visits_count": {
+          "all": 25,
+          "last24Hours": 25,
+          "last30Days": 25,
+          "last7Days": 25,
+          "last90Days": 25
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "Official Implementation of MARS",
+          "language": "Python",
+          "stars": 2,
+          "url": "https://github.com/Xalp/MARS"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.07023"
+      },
+      "title": "MARS: Enabling Autoregressive Models Multi-Token Generation",
+      "topics": [
+        "Computer Science",
+        "cs.CL",
+        "efficient-transformers",
+        "fine-tuning",
+        "inference-optimization",
+        "model-serving-infrastructure",
+        "text-generation",
+        "transformers"
+      ],
+      "universal_paper_id": "2604.07023",
+      "updated_at": "Thu Apr 09 2026 02:06:29 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Autoregressive (AR) language models generate text one token at a time, even when consecutive tokens are highly predictable given earlier context. We introduce MARS (Mask AutoRegreSsion), a lightweight fine-tuning method that teaches an instruction-tuned AR model to predict multiple tokens per forward pass. MARS adds no architectural modifications, no extra parameters, and produces a single model that can still be called exactly like the original AR model with no performance degradation. Unlike speculative decoding, which maintains a separate draft model alongside the target, or multi-head approaches such as Medusa, which attach additional prediction heads, MARS requires only continued training on existing instruction data. When generating one token per forward pass, MARS matches or exceeds the AR baseline on six standard benchmarks. When allowed to accept multiple tokens per step, it maintains baseline-level accuracy while achieving 1.5-1.7x throughput. We further develop a block-level KV caching strategy for batch inference, achieving up to 1.71x wall-clock speedup over AR with KV cache on Qwen2.5-7B. Finally, MARS supports real-time speed adjustment via confidence thresholding: under high request load, the serving system can increase throughput on the fly without swapping models or restarting, providing a practical latency-quality knob for deployment.",
+      "created_at": "Thu Apr 09 2026 02:06:29 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6ffd-acd2-7293-a2db-4cbde33702eb",
+      "imageURL": "image/2604.07023v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Wed Apr 08 2026 12:41:37 GMT+0000 (Coordinated Universal Time)",
+      "title": "MARS: Enabling Autoregressive Models Multi-Token Generation",
+      "universal_paper_id": "2604.07023",
+      "updated_at": "Thu Apr 09 2026 02:06:29 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.07023v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Jiyao Zhang",
+        "id": "01985c82-1a98-74a5-ae27-ec8173aed373",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zimu Han",
+        "id": "019d6b47-b576-7f7f-bff1-e7bdfa1002c4",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Junhan Wang",
+        "id": "019d6b47-b578-7b67-a04e-5de1209e7b7f",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xionghao Wu",
+        "id": "019d6b47-b57e-7efc-bdeb-fac868c5a158",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Shihong Lin",
+        "id": "019a8534-603c-7063-9385-2d2ad5477d48",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jinzhou Li",
+        "id": "01985c82-c736-7963-b461-151c5b39a9c3",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hongwei Fan",
+        "id": "01985c83-8ccb-7991-b484-0f61ac956081",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ruihai Wu",
+        "id": "01985c82-4811-7304-b2a6-3c954bea1ded",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dongjiang Li",
+        "id": "01985c82-7805-772f-96da-9e62b18fa475",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hao Dong",
+        "id": "01985c81-e286-74e0-859c-cf4ac2150aaa",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 04:09:14 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 16:47:38 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b47-b547-771b-af2f-a0ad17e4029a",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 2,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 40,
+          "last24Hours": 22,
+          "last30Days": 40,
+          "last7Days": 40,
+          "last90Days": 40
+        }
+      },
+      "podcast_path": null,
+      "resources": {
+        "github": {
+          "description": "",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/HiPolicy/HiPolicy"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.06067"
+      },
+      "title": "HiPolicy: Hierarchical Multi-Frequency Action Chunking for Policy Learning",
+      "topics": [
+        "Computer Science",
+        "cs.RO"
+      ],
+      "universal_paper_id": "2604.06067",
+      "updated_at": "Wed Apr 08 2026 04:09:14 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Robotic imitation learning faces a fundamental trade-off between modeling long-horizon dependencies and enabling fine-grained closed-loop control. Existing fixed-frequency action chunking approaches struggle to achieve both. Building on this insight, we propose HiPolicy, a hierarchical multi-frequency action chunking framework that jointly predicts action sequences at different frequencies to capture both coarse high-level plans and precise reactive motions. We extract and fuse hierarchical features from history observations aligned to each frequency for multi-frequency chunk generation, and introduce an entropy-guided execution mechanism that adaptively balances long-horizon planning with fine-grained control based on action uncertainty. Experiments on diverse simulated benchmarks and real-world manipulation tasks show that HiPolicy can be seamlessly integrated into existing 2D and 3D generative policies, delivering consistent improvements in performance while significantly enhancing execution efficiency.",
+      "created_at": "Wed Apr 08 2026 04:09:14 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6b47-b58d-765e-9ec1-4d9f9e29dd05",
+      "imageURL": "image/2604.06067v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Tue Apr 07 2026 16:47:38 GMT+0000 (Coordinated Universal Time)",
+      "title": "HiPolicy: Hierarchical Multi-Frequency Action Chunking for Policy Learning",
+      "universal_paper_id": "2604.06067",
+      "updated_at": "Wed Apr 08 2026 04:09:14 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.06067v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

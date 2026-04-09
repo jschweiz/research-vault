@@ -1,0 +1,73 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Arthur St\u00e9phanovitch",
+        "id": "01985c82-90b7-7c6b-9b5d-56be4ae1ab25",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Wed Apr 08 2026 02:31:39 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Tue Apr 07 2026 16:46:40 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6aee-5d05-7127-aa57-b0b118840984",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 4,
+        "questions_count": 0,
+        "total_votes": 1,
+        "upvotes_count": 4,
+        "visits_count": {
+          "all": 18,
+          "last24Hours": 16,
+          "last30Days": 18,
+          "last7Days": 18,
+          "last90Days": 18
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.06065"
+      },
+      "title": "Lipschitz regularity in Flow Matching and Diffusion Models: sharp sampling rates and functional inequalities",
+      "topics": [
+        "Mathematics",
+        "math.PR",
+        "math.ST",
+        "Statistics",
+        "stat.ML"
+      ],
+      "universal_paper_id": "2604.06065",
+      "updated_at": "Wed Apr 08 2026 02:31:39 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Under general assumptions on the target distribution $p^\\star$, we establish a sharp Lipschitz regularity theory for flow-matching vector fields and diffusion-model scores, with optimal dependence on time and dimension. As applications, we obtain Wasserstein discretization bounds for Euler-type samplers in dimension $d$: with $N$ discretization steps, the error achieves the optimal rate $\\sqrt{d}/N$ up to logarithmic factors. Moreover, the constants do not deteriorate exponentially with the spatial extent of $p^\\star$. We also show that the one-sided Lipschitz control yields a globally Lipschitz transport map from the standard Gaussian to $p^\\star$, which implies Poincar\u00e9 and log-Sobolev inequalities for a broad class of probability measures.",
+      "created_at": "Wed Apr 08 2026 02:31:39 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6aee-5d19-7ad3-9e7a-470b875071f3",
+      "imageURL": "image/2604.06065v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Tue Apr 07 2026 16:46:40 GMT+0000 (Coordinated Universal Time)",
+      "title": "Lipschitz regularity in Flow Matching and Diffusion Models: sharp sampling rates and functional inequalities",
+      "universal_paper_id": "2604.06065",
+      "updated_at": "Wed Apr 08 2026 02:31:39 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.06065v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

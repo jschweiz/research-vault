@@ -1,0 +1,136 @@
+{
+  "abstract": "Video fundamentally intertwines two crucial axes: the dynamic content of a scene and the camera motion through which it is observed. However, existing generation models often entangle these factors, limiting independent control. In this work, we introduce OmniCamera, a unified framework designed to explicitly disentangle and command these two dimensions. This compositional approach enables flexible video generation by allowing arbitrary pairings of camera and content conditions, unlocking unprecedented creative control. To overcome the fundamental challenges of modality conflict and data scarcity inherent in such a system, we present two key innovations. First, we construct OmniCAM, a novel hybrid dataset combining curated real-world videos with synthetic data that provides diverse paired examples for robust multi-task learning. Second, we propose a Dual-level Curriculum Co-Training strategy that mitigates modality interference and synergistically learns from diverse data sources. This strategy operates on two levels: first, it progressively introduces control modalities by difficulties (condition-level), and second, trains for precise control on synthetic data before adapting to real data for photorealism (data-level). As a result, OmniCamera achieves state-of-the-art performance, enabling flexible control for complex camera movements while maintaining superior visual quality.",
+  "author_info": [],
+  "authors": [
+    "Yukun Wang",
+    "Ruihuang Li",
+    "Jiale Tao",
+    "Shiyuan Yang",
+    "Liyi Chen",
+    "Zhantao Yang",
+    "Handz",
+    "Yulan Guo",
+    "Shuai Shao",
+    "Qinglin Lu"
+  ],
+  "canonical_id": "2604.06010v1",
+  "first_publication_date": "2026-04-07T16:06:02.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yukun Wang",
+      "id": "01985c82-d8c1-7f19-afb5-5f27ea8cc563",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ruihuang Li",
+      "id": "01985c82-19a6-7079-befa-dceebb52c683",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiale Tao",
+      "id": "01985c82-8064-758a-80f8-8c8ed3ffa5ec",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shiyuan Yang",
+      "id": "01985c82-5d81-77b3-8571-26bec026a2e5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Liyi Chen",
+      "id": "01985c82-aa87-798c-8f8f-d4a95b291c59",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhantao Yang",
+      "id": "01985c82-39ba-7108-8d60-7ee29211c3ce",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Handz",
+      "id": "019d6acf-bb90-7ee9-9f50-c47319f0091f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yulan Guo",
+      "id": "01985c81-eea9-7e4e-9c2d-5f95539c0a85",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuai Shao",
+      "id": "01985c81-e775-71a3-b172-e3b3088756f8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qinglin Lu",
+      "id": "01985c82-40ca-744f-b2d9-2451b7fe0a28",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d6acf-bb69-7fa0-b070-a715fa8d2e39",
+  "image_url": "image/2604.06010v1.png",
+  "metrics": {
+    "public_total_votes": 4,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 44,
+      "last_7_days": 44
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6acf-bb69-7fa0-b070-a715fa8d2e39",
+  "paper_summary": {
+    "keyInsights": [
+      "Explicitly decoupling scene content and camera motion is crucial for achieving flexible, precise, and multi-modal control in video generation.",
+      "A hybrid training dataset, leveraging the precision of synthetic data and the realism of curated real-world data, is essential for robust models that excel in both geometric accuracy and visual quality.",
+      "A progressive, dual-level curriculum strategy is effective for stable training of multi-task, multi-modal video generation models, preventing optimization collapse and representation conflicts.",
+      "Conditions with more explicit geometric information (e.g., 3D trajectories) tend to override less precise inputs (e.g., text) when multiple, potentially conflicting, camera conditions are provided."
+    ],
+    "originalProblem": [
+      "Existing video generation models often entangle scene content and camera motion, hindering independent and flexible control and limiting creative possibilities.",
+      "Current camera control methods are typically restricted to a single modality, each with inherent limitations (e.g., text is too coarse, 3D trajectories are hard to acquire), and generally lack unification.",
+      "A significant challenge is the scarcity of high-quality real-world data with precise camera annotations, essential for training models that balance photorealism and accurate control."
+    ],
+    "results": [
+      "Achieved significantly improved motion accuracy for text-controlled camera motion (e.g., 92.4% MotionAcc for T2V vs. 31.4% for baseline) while maintaining competitive visual fidelity.",
+      "Demonstrated highly accurate camera motion control for reference-video and 3D trajectory inputs, outperforming baselines with lower translation and rotation errors (e.g., 2.064 TransErr for T2V vs. 7.542 for AC3D).",
+      "Successfully combined distinct camera conditions for composite effects and maintained high visual quality across all nine multi-task generation combinations using a single parameter-efficient model."
+    ],
+    "solution": [
+      "Proposes OmniCamera, a unified framework that explicitly decouples video generation into independent scene content and camera pose control, supporting nine distinct task combinations within a single model.",
+      "Constructs OmniCAM, a hybrid dataset combining 500K synthetic UE5 videos with precise camera pose annotations and 300K curated real-world videos with estimated trajectories.",
+      "Introduces a Dual-level Curriculum Co-Training strategy, progressively introducing conditioning modalities and integrating synthetic and real data to mitigate modality conflicts and domain gaps.",
+      "Employs 3D Condition Rotary Positional Embeddings (RoPE) to address spatial-temporal ambiguity and disentangle different control modalities effectively."
+    ],
+    "summary": "OmniCamera is a unified framework for multi-task video generation that disentangles scene content from camera pose. It enables arbitrary combinations of three camera conditions (text, 3D trajectory, motion reference video) and three content conditions (text, image, source video), achieving enhanced control and photorealistic output across nine distinct generation tasks using a single model."
+  },
+  "publication_date": "2026-04-07T16:06:02.000Z",
+  "title": "OmniCamera: A Unified Framework for Multi-task Video Generation with Arbitrary Camera Control",
+  "topics": [
+    "Computer Science",
+    "cs.CV",
+    "domain-adaptation",
+    "generative-models",
+    "multi-modal-learning",
+    "multi-task-learning",
+    "representation-learning",
+    "synthetic-data",
+    "transfer-learning"
+  ],
+  "universal_paper_id": "2604.06010",
+  "updated_at": "2026-04-08T01:58:12.073Z",
+  "version_id": "019d6acf-bb9d-7653-85c5-b7e219cdfa78"
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Large reasoning models have recently demonstrated strong performance on complex tasks that require long chain-of-thought reasoning, through supervised fine-tuning on large-scale and high-quality datasets. To construct such datasets, existing pipelines generate long reasoning data from more capable Large Language Models (LLMs) and apply manually heuristic or naturalness-based selection methods to filter high-quality samples. Despite the proven effectiveness of naturalness-based data selection, which ranks data by the average log probability assigned by LLMs, our analysis shows that, when applied to LLM reasoning datasets, it systematically prefers samples with longer reasoning steps (i.e., more tokens per step) rather than higher-quality ones, a phenomenon we term step length confounding. Through quantitative analysis, we attribute this phenomenon to low-probability first tokens in reasoning steps; longer steps dilute their influence, thereby inflating the average log probabilities. To address this issue, we propose two variant methods: ASLEC-DROP, which drops first-token probabilities when computing average log probability, and ASLEC-CASL, which applies a causal debiasing regression to remove the first tokens' confounding effect. Experiments across four LLMs and five evaluation benchmarks demonstrate the effectiveness of our approach in mitigating the step length confounding problem.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775638307000,
+  "googleCitationId": null,
+  "groupId": "019d7019-7fd7-743d-a525-fbffde62b917",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775638307000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.06834",
+  "title": "On the Step Length Confounding in LLM Reasoning Data Selection",
+  "type": "public",
+  "universalId": "2604.06834",
+  "uploader": null,
+  "versionId": "019d7019-801e-7e7f-a6f0-ea51286e0420",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

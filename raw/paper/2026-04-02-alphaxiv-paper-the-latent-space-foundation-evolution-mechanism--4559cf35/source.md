@@ -11,9 +11,41 @@ authors:
 - Tianyu Fu
 - Cheng Yang
 - Chengming Xu
+- Yue Ma
+- Xiaobin Hu
+- Zhe Cao
+- Jie Xu
+- Guibin Zhang
+- Jiale Tao
+- Jiayi Zhang
+- Siyuan Ma
+- Kaituo Feng
+- Haojie Huang
+- Youxing Li
+- Ronghao Chen
+- Huacan Wang
+- Chenglin Wu
+- Zikun Su
+- Xiaogang Xu
+- Kelu Yao
+- Kun Wang
+- Chen Gao
+- Yue Liao
+- Ruqi Huang
+- Tao Jin
+- Cheng Tan
+- Jiangning Zhang
+- Wenqi Ren
+- Yanwei Fu
+- Yong Liu
+- Yu Wang
+- Xiangyu Yue
+- Yu-Gang Jiang
+- Shuicheng Yan
 published_at: '2026-04-02T13:36:37Z'
 ingested_at: '2026-04-07T21:42:16.356067Z'
-content_hash: 7db6863ce7c78f4aece0a14d9e44037a618a88c6ac4d101e9042d22e44ec2139
+content_hash: add3fd395673fc9f24e90442cff266a80c92b76dffb9b9d025d4a73d4bcf56fc
+identity_hash: 49141800f48b4829b496fc16fa1c1df43b802e259ce005cb00bc0a06f06c5135
 tags:
 - paper
 - alphaxiv
@@ -25,6 +57,15 @@ tags:
 - optimization-methods
 - reasoning
 - representation-learning
+- Computer Science
+- cs.AI
+- sequence-modeling
+- text-generation
+- transformers
+- github
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -33,6 +74,7 @@ asset_paths:
 - alphaxiv-overview.json
 - alphaxiv-overview.md
 - alphaxiv-paper.json
+- alphaxiv-podcast.mp3
 - alphaxiv-preview.json
 - alphaxiv-similar-papers.json
 - alphaxiv-transcript.json
@@ -44,28 +86,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.02029
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T09:28:33.862150Z'
-short_summary: '# The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook ## alphaXiv Summary A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.'
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T08:38:00.368147Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4084ba8449c24d8a392ceac9550cc3b33edf241c527a20578beeb1e4967ae28c
+fetched_at: '2026-04-09T09:56:56.992514Z'
+short_summary: A comprehensive survey unifies the fragmented understanding of latent space in language-based models, detailing its conceptual foundation, historical evolution, technical mechanisms, emergent abilities, and future research directions. It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 932d759712b144753a2df549b3043e60efe0258b4cd4e019fff650298b6bc874
-lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, reasoning, and representation-learning, making it a high-priority read.
-  evidence_quotes:
-  - It positions latent space as a machine-native computational substrate enabling enhanced intelligence beyond explicit token-level operations.
-  - From the perspective of Ability, we show how latent space supports a broad capability spectrum spanning Reasoning, Planning, Modeling, Perception, Memory, Colla
-  - The field's evolution shows a progression from early prototypes validating continuous latent reasoning to a current 'outbreak' phase characterized by architectu
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
 
@@ -148,10 +178,10 @@ A comprehensive survey unifies the fragmented understanding of latent space in l
 
 ## Metrics
 
-- Visits (all): 1385
-- Visits (last 7 days): 1385
+- Visits (all): 1508
+- Visits (last 7 days): 1508
 - Total votes: 48
-- Public total votes: 119
+- Public total votes: 132
 - X likes: 0
 
 ## Abstract
@@ -203,6 +233,7 @@ Saved in `alphaxiv-overview.md` and `alphaxiv-overview.json`.
 ## Audio Summary
 
 - MP3: https://paper-podcasts.alphaxiv.org/019d5109-3b7f-73f9-a4be-07c3791fda3c/podcast.mp3
+- Audio asset: `alphaxiv-podcast.mp3`
 - Transcript JSON: https://paper-podcasts.alphaxiv.org/019d5109-3b7f-73f9-a4be-07c3791fda3c/transcript.json
 - Transcript lines: 11
 - Transcript assets: `alphaxiv-transcript.md`, `alphaxiv-transcript.json`

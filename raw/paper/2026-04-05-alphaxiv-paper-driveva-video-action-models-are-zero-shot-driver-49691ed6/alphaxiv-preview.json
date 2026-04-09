@@ -1,0 +1,137 @@
+{
+  "abstract": "Generalization is a central challenge in autonomous driving, as real-world deployment requires robust performance under unseen scenarios, sensor domains, and environmental conditions. Recent world-model-based planning methods have shown strong capabilities in scene understanding and multi-modal future prediction, yet their generalization across datasets and sensor configurations remains limited. In addition, their loosely coupled planning paradigm often leads to poor video-trajectory consistency during visual imagination. To overcome these limitations, we propose DriveVA, a novel autonomous driving world model that jointly decodes future visual forecasts and action sequences in a shared latent generative process. DriveVA inherits rich priors on motion dynamics and physical plausibility from well-pretrained large-scale video generation models to capture continuous spatiotemporal evolution and causal interaction patterns. To this end, DriveVA employs a DiT-based decoder to jointly predict future action sequences (trajectories) and videos, enabling tighter alignment between planning and scene evolution. We also introduce a video continuation strategy to strengthen long-duration rollout consistency. DriveVA achieves an impressive closed-loop performance of 90.9 PDM score on the challenge NAVSIM. Extensive experiments also demonstrate the zero-shot capability and cross-domain generalization of DriveVA, which reduces average L2 error and collision rate by 78.9% and 83.3% on nuScenes and 52.5% and 52.4% on the Bench2drive built on CARLA v2 compared with the state-of-the-art world-model-based planner.",
+  "author_info": [],
+  "authors": [
+    "Mengmeng Liu",
+    "Diankun Zhang",
+    "Jiuming Liu",
+    "Jianfeng Cui",
+    "Hongwei Xie",
+    "Guang Chen",
+    "Hangjun Ye",
+    "Michael Ying Yang",
+    "Francesco Nex",
+    "Hao Cheng"
+  ],
+  "canonical_id": "2604.04198v1",
+  "first_publication_date": "2026-04-05T17:43:16.000Z",
+  "full_authors": [
+    {
+      "full_name": "Mengmeng Liu",
+      "id": "01985c82-b8cb-7e7c-be9f-7b0df1136004",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Diankun Zhang",
+      "id": "01985c82-bfac-72cf-92d7-d540bce3ed32",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiuming Liu",
+      "id": "01985c82-3618-7a51-adc8-36eafeb1b60b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jianfeng Cui",
+      "id": "01985c84-bbcd-7d62-b50a-4c032fbba540",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hongwei Xie",
+      "id": "01985c82-8153-7da8-abdd-89072321dad3",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Guang Chen",
+      "id": "01985c82-3c5b-7cae-ba1a-433a8deab3b4",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hangjun Ye",
+      "id": "01985c85-6b34-782c-9bc7-852776c4a6ca",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Michael Ying Yang",
+      "id": "01985c82-13b2-7d5a-b2fd-70fdfa268af7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Francesco Nex",
+      "id": "01985c82-a5d9-7974-8c31-938490b1a73a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hao Cheng",
+      "id": "01985c81-e5a9-7c87-ac62-9d3067169354",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d65cf-5da1-7c36-a6d4-45ab90624c7d",
+  "image_url": "image/2604.04198v1.png",
+  "metrics": {
+    "public_total_votes": 15,
+    "total_votes": 3,
+    "visits_count": {
+      "all": 103,
+      "last_7_days": 103
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65cf-5da1-7c36-a6d4-45ab90624c7d",
+  "paper_summary": {
+    "keyInsights": [
+      "Integrating spatiotemporal priors from large-scale video generation models directly into an end-to-end planning framework is crucial for achieving strong zero-shot generalization in autonomous driving.",
+      "Jointly modeling future visual imaginations and action sequences within a unified latent space significantly enhances video-trajectory consistency and overall planning performance.",
+      "Dense video-level supervision is essential for substantial improvements in planning and for learning truly transferable priors, rather than treating video prediction as merely an auxiliary loss."
+    ],
+    "originalProblem": [
+      "Autonomous driving models often lack generalization across diverse, unseen scenarios, sensor domains, and environmental conditions, hindering real-world deployment.",
+      "Existing world-model-based planning methods frequently exhibit inconsistency between their visual predictions and planned vehicle actions, leading to misaligned behaviors.",
+      "Current Vision-Language-Action (VLA) models, typically pretrained on static image-text pairs, do not adequately capture the spatiotemporal dynamics and causal interaction patterns required for robust closed-loop planning and cross-dataset transfer."
+    ],
+    "results": [
+      "DriveVA achieved a closed-loop performance of 90.9 PDM score on the NAVSIM v1 benchmark, outperforming existing end-to-end and world-model-based methods.",
+      "The model demonstrated strong zero-shot generalization capabilities, reducing average L2 error by 78.9% and collision rate by 83.3% on nuScenes, and L2 error by 52.5% and collision rate by 52.4% on Bench2Drive, compared to previous state-of-the-art.",
+      "Quantitative analysis using an independent visual odometry system (DPVO) confirmed high video-trajectory consistency, with an average L2 error of 0.15m between predicted trajectories and those reconstructed from generated videos."
+    ],
+    "solution": [
+      "DriveVA unifies video and action modeling by jointly decoding future visual forecasts (videos) and action sequences (trajectories) within a shared latent generative process.",
+      "It leverages a large pre-trained video generation model (Wan2.2-TI2V-5B) as its backbone, integrating its rich spatiotemporal priors into an end-to-end planning framework.",
+      "A single Diffusion Transformer (DiT) decoder places future video latents and action tokens in a shared latent space, enabling bidirectional interaction and mutual conditioning to ensure strong video-trajectory consistency."
+    ],
+    "summary": "DriveVA, an autonomous driving world model developed by researchers including those from the University of Twente and Xiaomi EV, jointly predicts future visual scene evolution and vehicle actions within a shared latent space. The model achieved a 90.9 PDM score on the NAVSIM v1 benchmark and demonstrated zero-shot generalization, reducing average L2 error by 78.9% and collision rate by 83.3% on nuScenes compared to previous state-of-the-art."
+  },
+  "publication_date": "2026-04-05T17:43:16.000Z",
+  "title": "DriveVA: Video Action Models are Zero-Shot Drivers",
+  "topics": [
+    "autonomous-vehicles",
+    "Computer Science",
+    "cs.CV",
+    "cs.RO",
+    "domain-adaptation",
+    "generative-models",
+    "multi-modal-learning",
+    "reinforcement-learning",
+    "robotic-control",
+    "transfer-learning",
+    "transformers",
+    "zero-shot-learning"
+  ],
+  "universal_paper_id": "2604.04198",
+  "updated_at": "2026-04-07T02:39:41.985Z",
+  "version_id": "019d65cf-5dd1-74c8-925c-3705a2cc8712"
+}

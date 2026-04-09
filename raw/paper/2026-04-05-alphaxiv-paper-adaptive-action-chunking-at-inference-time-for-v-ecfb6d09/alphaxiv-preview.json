@@ -1,0 +1,113 @@
+{
+  "abstract": "In Vision-Language-Action (VLA) models, action chunking (i.e., executing a sequence of actions without intermediate replanning) is a key technique to improve robotic manipulation abilities. However, a large chunk size reduces the model's responsiveness to new information, while a small one increases the likelihood of mode-jumping, jerky behavior resulting from discontinuities between chunks. Therefore, selecting the optimal chunk size is an urgent demand to balance the model's reactivity and consistency. Unfortunately, a dominant trend in current VLA models is an empirical fixed chunk length at inference-time, hindering their superiority and scalability across diverse manipulation tasks. To address this issue, we propose a novel Adaptive Action Chunking (AAC) strategy, which exploits action entropy as the cue to adaptively determine the chunk size based on current predictions. Extensive experiments on a wide range of simulated and real-world robotic manipulation tasks have demonstrated that our approach substantially improves performance over the state-of-the-art alternatives. The videos and source code are publicly available at this https URL.",
+  "author_info": [],
+  "authors": [
+    "Yuanchang Liang",
+    "Xiaobo Wang",
+    "Kai Wang",
+    "Shuo Wang",
+    "Xiaojiang Peng",
+    "Haoyu Chen",
+    "David Kim Huat Chua",
+    "Prahlad Vadakkepat"
+  ],
+  "canonical_id": "2604.04161v1",
+  "first_publication_date": "2026-04-05T16:03:32.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yuanchang Liang",
+      "id": "019d65a5-38c4-7610-ba3c-231708b8f11c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaobo Wang",
+      "id": "01985c81-e5a9-7593-bfed-2c3882a22e5b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kai Wang",
+      "id": "01985c81-ef77-7fbf-b357-a79e1baf6559",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuo Wang",
+      "id": "01985c81-e01e-7970-a63e-7d26fdf2efa9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaojiang Peng",
+      "id": "01985c82-4ab0-7ab8-a25b-ec98d6f9bb52",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Haoyu Chen",
+      "id": "01985c81-df57-7e8e-89b6-efe6d2d722f8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "David Kim Huat Chua",
+      "id": "019d65a5-38d3-7b83-83b2-b171228f2669",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Prahlad Vadakkepat",
+      "id": "01985c82-fcfe-7f7e-ab61-9ce471d7868e",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d65a5-389c-70e4-88c2-1bcd35911ce8",
+  "image_url": "image/2604.04161v1.png",
+  "metrics": {
+    "public_total_votes": 9,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 68,
+      "last_7_days": 68
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d65a5-389c-70e4-88c2-1bcd35911ce8",
+  "paper_summary": {
+    "keyInsights": [
+      "Action entropy, derived from parallel sampling of predicted actions, provides a robust and model-agnostic indicator of a VLA model's predictive uncertainty for both continuous and discrete control outputs.",
+      "Dynamically adjusting action chunk sizes based on this uncertainty enables VLA models to adapt their control granularity to specific task phases, leveraging larger chunks for confident, coarse movements and smaller ones for critical, fine-grained manipulations.",
+      "The point of maximum differential in average action entropy, combined with a minimum action magnitude constraint, effectively determines an optimal chunk size at inference time, balancing temporal consistency with reactivity to environmental changes."
+    ],
+    "originalProblem": [
+      "Fixed action chunk sizes in Vision-Language-Action (VLA) models necessitate a trade-off between reactivity to new environmental information (requiring small chunks) and temporal consistency/computational efficiency (benefiting from large chunks).",
+      "The optimal action chunk size varies considerably across different robotic manipulation tasks and even within distinct phases of a single task, making manual empirical tuning challenging and inherently suboptimal.",
+      "Previous adaptive chunking approaches often rely on hand-crafted value functions, require task-specific reward signals unavailable in real-world scenarios, or do not offer true dynamic adaptation, limiting their generalization and practical deployment."
+    ],
+    "results": [
+      "In simulation, AAC improved average success rates by 2.3% on RoboCasa Kitchen (62.0% vs 59.7%) and 0.9% on LIBERO (95.0% vs 94.1%), demonstrating consistent gains across diverse benchmarks and notably a 4% increase in LIBERO-Long tasks.",
+      "Real-world experiments on a robot showed a 15% average increase in success rate (from 67.0% to 82.0%) across banana pick-and-place, emergency button pressing, and long-horizon toy manipulation tasks, attributed to better gripper alignment and precision.",
+      "AAC enhanced robustness in out-of-distribution scenarios and improved operational safety in real-world deployments by preventing collisions and enabling smoother, more precise actions when predictions indicated high uncertainty."
+    ],
+    "solution": [
+      "Introduces Adaptive Action Chunking (AAC), an inference-time strategy that dynamically selects the optimal action chunk size based on the VLA model's predictive uncertainty, without requiring additional training or architectural modifications.",
+      "Utilizes action entropy as a metric to quantify the uncertainty of predicted actions; lower entropy suggests higher reliability for longer action chunks, while higher entropy indicates uncertain predictions warranting smaller chunk sizes and more frequent replanning.",
+      "Calculates average action entropy by sampling multiple candidate action chunks in parallel, using Gaussian differential entropy for continuous control components (translation, rotation) and standard discrete entropy for discrete components (gripper), then identifies the optimal chunk size where the increase in average entropy is maximal, constrained by a minimum action magnitude."
+    ],
+    "summary": "A new inference-time strategy, Adaptive Action Chunking (AAC), allows Vision-Language-Action (VLA) models to dynamically determine action chunk sizes based on predictive uncertainty. This method enhances task success rates on RoboCasa Kitchen and LIBERO benchmarks in simulation, achieving an average 2.3% and 0.9% increase respectively, and improves real-world robot manipulation by 15% across several tasks."
+  },
+  "publication_date": "2026-04-05T16:03:32.000Z",
+  "title": "Adaptive Action Chunking at Inference-time for Vision-Language-Action Models",
+  "topics": [
+    "Computer Science",
+    "cs.RO"
+  ],
+  "universal_paper_id": "2604.04161",
+  "updated_at": "2026-04-07T01:53:39.996Z",
+  "version_id": "019d65a5-38d7-7228-9f32-b5251dcda7fc"
+}

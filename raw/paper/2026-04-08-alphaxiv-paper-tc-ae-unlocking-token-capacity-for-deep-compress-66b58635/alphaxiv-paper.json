@@ -1,0 +1,21 @@
+{
+  "abstract": "We propose TC-AE, a ViT-based architecture for deep compression autoencoders. Existing methods commonly increase the channel number of latent representations to maintain reconstruction quality under high compression ratios. However, this strategy often leads to latent representation collapse, which degrades generative performance. Instead of relying on increasingly complex architectures or multi-stage training schemes, TC-AE addresses this challenge from the perspective of the token space, the key bridge between pixels and image latents, through two complementary innovations: Firstly, we study token number scaling by adjusting the patch size in ViT under a fixed latent budget, and identify aggressive token-to-latent compression as the key factor that limits effective scaling. To address this issue, we decompose token-to-latent compression into two stages, reducing structural information loss and enabling effective token number scaling for generation. Secondly, to further mitigate latent representation collapse, we enhance the semantic structure of image tokens via joint self-supervised training, leading to more generative-friendly latents. With these designs, TC-AE achieves substantially improved reconstruction and generative performance under deep compression. We hope our research will advance ViT-based tokenizer for visual generation.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775670832000,
+  "googleCitationId": null,
+  "groupId": "019d6fee-1731-71db-ba1d-aa89811cba3b",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775670832000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.07340",
+  "title": "TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders",
+  "type": "public",
+  "universalId": "2604.07340",
+  "uploader": null,
+  "versionId": "019d6fee-1769-70bb-b8ab-10a31611b960",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

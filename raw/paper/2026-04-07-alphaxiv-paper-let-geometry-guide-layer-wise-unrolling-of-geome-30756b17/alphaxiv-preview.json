@@ -1,0 +1,107 @@
+{
+  "abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable progress in 2D visual tasks but still exhibit limited physical spatial awareness when processing real-world visual streams. Recently, feed-forward geometric foundation models, which implicitly extract geometric priors, have provided a new pathway to address this issue. However, existing geometry-aware MLLMs are predominantly constrained by the paradigm of single deep-layer extraction and input-level fusion. This flattened fusion leads to the loss of local geometric details and causes semantic mismatches in the early layers. To break this bottleneck, we propose GUIDE (Geometric Unrolling Inside MLLM Early-layers), a progressive geometric priors injection framework. GUIDE performs multi-level sampling within the geometric encoder, comprehensively capturing multi-granularity features ranging from local edges to global topologies. Subsequently, we rigorously align and fuse these multi-level geometric priors step-by-step with the early layers of the MLLM. Building upon the injection of multi-granularity geometric information, this design guides the model to progressively learn the 2D-to-3D transitional process. Furthermore, we introduce a context-aware gating that enables the model to fetch requisite spatial cues based on current semantics, thereby maximizing the utilization efficiency of spatial priors and effectively suppressing redundant geometric noise. Extensive experiments demonstrate that GUIDE significantly outperforms existing baselines on multiple complex spatial reasoning and perception tasks, establishing a novel paradigm for integrating 3D geometric priors into large models.",
+  "author_info": [],
+  "authors": [
+    "Chongyu Wang",
+    "Ting Huang",
+    "Chunyu Sun",
+    "Xinyu Ning",
+    "Di Wang",
+    "Hao Tang"
+  ],
+  "canonical_id": "2604.05695v1",
+  "first_publication_date": "2026-04-07T10:45:28.000Z",
+  "full_authors": [
+    {
+      "full_name": "Chongyu Wang",
+      "id": "01985c82-250e-7d85-884b-14a842a85033",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ting Huang",
+      "id": "01985c82-2a91-72e8-8f8c-16c595a25d66",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chunyu Sun",
+      "id": "01985c84-06a0-7bed-a204-19b586887b51",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xinyu Ning",
+      "id": "01985c82-8064-7fdc-9864-e0bd6503ee89",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Di Wang",
+      "id": "01985c81-db51-7825-970c-d009fddd335d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hao Tang",
+      "id": "01985c81-eea8-7f7a-a747-3336dd4b79cc",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d6b79-1e7a-7e8c-9385-d78f3cd8b982",
+  "image_url": "image/2604.05695v1.png",
+  "metrics": {
+    "public_total_votes": 2,
+    "total_votes": 1,
+    "visits_count": {
+      "all": 31,
+      "last_7_days": 31
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d6b79-1e7a-7e8c-9385-d78f3cd8b982",
+  "paper_summary": {
+    "keyInsights": [
+      "Progressive, layer-wise injection of multi-granularity geometric priors into early MLLM layers is more effective than single-shot input-level fusion for internalizing 2D-to-3D transitional knowledge.",
+      "Unfiltered geometric features can cause catastrophic interference with the MLLM's semantic space, demonstrating the critical role of context-aware gating in dynamically modulating injection strength and suppressing noise.",
+      "There is an optimal injection depth for geometric priors (found to be 6 layers); over-introducing low-level geometric information into deeper, abstract semantic layers leads to performance degradation due to cross-modal mismatches."
+    ],
+    "originalProblem": [
+      "Multimodal Large Language Models (MLLMs) lack robust physical spatial awareness when processing 2D visual streams, hindering tasks requiring precise metric measurements, occlusion understanding, and macroscopic scene layout comprehension.",
+      "Existing geometry-aware MLLMs primarily rely on 'Input-Level Fusion and Deep-Layer Extraction,' which leads to the loss of crucial local geometric details due to deep-layer smoothing.",
+      "Single-shot injection of geometric features to the MLLM entrance creates a bottleneck, preventing continuous access to multi-granularity cues and causing early-layer cross-modal semantic mismatches."
+    ],
+    "results": [
+      "GUIDE-9B achieved an average score of 64.2 on VSI-Bench, outperforming VLM-3R (60.9) and VG LLM-8B* (62.2), and its 5B variant surpassed closed-source models like GPT-5 (55.0) and Gemini-2.5-Pro (53.6).",
+      "On 3D Visual Grounding (ScanRefer), GUIDE-9B achieved 59.6 Acc@0.25 with proposal refinement, establishing a new state-of-the-art for models without explicit 3D inputs and surpassing models utilizing 3D data like LLaVA-3D.",
+      "For 3D Dense Captioning (Scan2Cap), GUIDE-9B attained 81.2 on CIDEr (C@0.5), exceeding strong baselines including VG LLM-8B (80.0) and models with full 3D point cloud inputs like Video-3D LLM (80.0)."
+    ],
+    "solution": [
+      "The GUIDE (Geometric Unrolling Inside MLLM Early-layers) framework progressively injects multi-granularity geometric priors from a parallel geometric encoder into the first few decoder layers of the MLLM.",
+      "It implements strict spatial grid alignment between visual and geometric features and extracts a multi-level stack of features from the geometric encoder, spanning from local edges to global topologies.",
+      "A dual context-aware gating mechanism, composed of token-wise semantic-guided and layer-wise global gates, adaptively modulates the injection strength of geometric features to prevent semantic interference."
+    ],
+    "summary": "The GUIDE framework enhances multimodal large language models (MLLMs) with physical spatial awareness by progressively injecting multi-granularity geometric priors into their early layers, dynamically modulated by a context-aware gating mechanism. This approach led to an average score of 64.2 on VSI-Bench and achieved new state-of-the-art on 3D Visual Grounding (ScanRefer) with 59.6 Acc@0.25 among models using only 2D inputs."
+  },
+  "publication_date": "2026-04-07T10:45:28.000Z",
+  "title": "Let Geometry GUIDE: Layer-wise Unrolling of Geometric Priors in Multimodal LLMs",
+  "topics": [
+    "attention-mechanisms",
+    "Computer Science",
+    "cs.CV",
+    "geometric-deep-learning",
+    "multi-modal-learning",
+    "representation-learning",
+    "robotics-perception",
+    "transformers",
+    "vision-language-models",
+    "visual-reasoning"
+  ],
+  "universal_paper_id": "2604.05695",
+  "updated_at": "2026-04-08T05:03:13.018Z",
+  "version_id": "019d6b79-1e94-773c-87f5-4dba4593f8de"
+}

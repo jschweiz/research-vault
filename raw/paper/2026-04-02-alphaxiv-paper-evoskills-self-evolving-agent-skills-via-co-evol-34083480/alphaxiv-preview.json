@@ -1,0 +1,157 @@
+{
+  "abstract": "Anthropic proposes the concept of skills for LLM agents to tackle multi-step professional tasks that simple tool invocations cannot address. A tool is a single, self-contained function, whereas a skill is a structured bundle of interdependent multi-file artifacts. Currently, skill generation is not only label-intensive due to manual authoring, but also may suffer from human--machine cognitive misalignment, which can lead to degraded agent performance, as evidenced by evaluations on SkillsBench. Therefore, we aim to enable agents to autonomously generate skills. However, existing self-evolving methods designed for tools cannot be directly applied to skills due to their increased complexity. To address these issues, we propose EvoSkills, a self-evolving skills framework that enables agents to autonomously construct complex, multi-file skill packages. Specifically, EvoSkills couples a Skill Generator that iteratively refines skills with a Surrogate Verifier that co-evolves to provide informative and actionable feedback without access to ground-truth test content. On SkillsBench, EvoSkills achieves the highest pass rate among five baselines on both Claude Code and Codex, and also exhibits strong generalization capabilities to six additional LLMs.",
+  "author_info": [],
+  "authors": [
+    "Hanrong Zhang",
+    "Shicheng Fan",
+    "Henry Peng Zou",
+    "Yankai Chen",
+    "Zhenting Wang",
+    "Jiayu Zhou",
+    "Chengze Li",
+    "Wei-Chieh Huang",
+    "Yifei Yao",
+    "Kening Zheng",
+    "Xue Liu",
+    "Xiaoxiao Li",
+    "Philip S. Yu"
+  ],
+  "canonical_id": "2604.01687v1",
+  "first_publication_date": "2026-04-02T06:43:20.000Z",
+  "full_authors": [
+    {
+      "full_name": "Hanrong Zhang",
+      "id": "01985c82-7471-7436-be16-b008de2ab9aa",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shicheng Fan",
+      "id": "019c0cf6-1f4a-7652-bc12-087b39fe8375",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Henry Peng Zou",
+      "id": "01985c81-e41b-7667-8e1e-0a8ebb93d4fb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yankai Chen",
+      "id": "01985c82-7805-792f-a437-b67006d1269a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhenting Wang",
+      "id": "01985c81-dc26-7d95-a0e4-57443182b1e9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiayu Zhou",
+      "id": "01985c82-1c7b-75a6-966f-0bcf69ace0c0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Chengze Li",
+      "id": "01985c82-9b66-7b2d-93cd-c31a128c73d8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wei-Chieh Huang",
+      "id": "01985c83-76c6-75f6-9c39-683d224bb92f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yifei Yao",
+      "id": "01985c82-7471-7cfa-8192-d7f1ba5ece21",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kening Zheng",
+      "id": "01985c82-8a62-7bb4-a274-77b719a6226c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xue Liu",
+      "id": "01985c82-0381-7e74-bf1c-4fd3a6de78bd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaoxiao Li",
+      "id": "01985c81-e0ec-7e9e-834c-f7ec30f6d001",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Philip S. Yu",
+      "id": "01985c81-d97f-756f-9960-c23741aeb025",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d5133-23a8-7777-89af-96ec890f30cb",
+  "image_url": "image/2604.01687v1.png",
+  "metrics": {
+    "public_total_votes": 39,
+    "total_votes": 8,
+    "visits_count": {
+      "all": 395,
+      "last_7_days": 395
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d5133-23a8-7777-89af-96ec890f30cb",
+  "paper_summary": {
+    "keyInsights": [
+      "LLM agents can autonomously generate more effective and reliable skills than human experts, as these self-evolved skills better align with the agent's intrinsic reasoning and execution patterns.",
+      "A co-evolutionary framework, especially with an information-isolated surrogate verifier, provides crucial, actionable feedback for skill refinement without requiring direct ground-truth supervision.",
+      "Self-evolved skills demonstrate strong cross-model transferability, suggesting they encode reusable task structures rather than model-specific artifacts, making them broadly portable."
+    ],
+    "originalProblem": [
+      "Manual human authoring of 'agent skills' is labor-intensive, difficult to scale, and often leads to inconsistent performance due to 'human-machine cognitive misalignment'.",
+      "Existing self-evolving methods for LLM agents focus primarily on atomic tools or function APIs, lacking the capability to generate and refine complex, structured, multi-file skill packages.",
+      "Many self-evolution approaches require ground-truth supervision for failure diagnosis, limiting their applicability in real-world scenarios where such detailed feedback is unavailable."
+    ],
+    "results": [
+      "EvoSkills achieved a 71.1% pass rate on SkillsBench with Claude Opus 4.6, outperforming the no-skill baseline (30.6%) by +40.5 percentage points and human-curated skills (53.5%) by +17.6 percentage points.",
+      "Ablation studies confirmed that removing the surrogate verifier led to a substantial drop in pass rate by -30.0 percentage points, highlighting its critical role in targeted repairs.",
+      "Skills evolved by Claude Opus 4.6 showed strong transferability across six other LLM models, improving their respective no-skill baselines by +36 to +44 percentage points.",
+      "Self-evolved skills outperformed human-curated skills in 9 out of 11 professional domains, including significant gains in Finance (+56.9 pp) and Cybersecurity (+23.2 pp), and corrected degraded performance in Natural Science."
+    ],
+    "solution": [
+      "The EvoSkills framework introduces a co-evolutionary approach, employing a Skill Generator and an information-isolated Surrogate Verifier that iteratively refine skills and their verification mechanisms.",
+      "The Skill Generator autonomously generates and refines multi-file skill bundles by processing task instructions and structured failure diagnostics from the verifier.",
+      "The Surrogate Verifier independently generates and refines a suite of deterministic test assertions, providing dense, actionable feedback and escalating its tests when ground-truth failures occur despite surrogate success."
+    ],
+    "summary": "EvoSkills enables large language model agents to autonomously generate and iteratively refine complex, multi-file skill packages through a co-evolutionary verification framework. This approach yields skills that surpass human-authored versions and exhibit strong transferability across different LLM architectures, effectively bridging the cognitive gap between human-designed workflows and agent execution."
+  },
+  "publication_date": "2026-04-02T06:43:20.000Z",
+  "title": "EvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification",
+  "topics": [
+    "agentic-frameworks",
+    "agents",
+    "Computer Science",
+    "cs.AI",
+    "evolutionary-algorithms",
+    "generative-models",
+    "meta-learning",
+    "multi-agent-learning",
+    "tool-use",
+    "transformers"
+  ],
+  "universal_paper_id": "2604.01687",
+  "updated_at": "2026-04-03T02:36:39.208Z",
+  "version_id": "019d5133-23fb-7e56-9026-bf5a2b6a5923"
+}

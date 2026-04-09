@@ -1,0 +1,21 @@
+{
+  "abstract": "Skill usage has become a core component of modern agent systems and can substantially improve agents' ability to complete complex tasks. In real-world settings, where agents must monitor and interact with numerous personal applications, web browsers, and other environment interfaces, skill libraries can scale to thousands of reusable skills. Scaling to larger skill sets introduces two key challenges. First, loading the full skill set saturates the context window, driving up token costs, hallucination, and latency.\nIn this paper, we present Graph of Skills (GoS), an inference-time structural retrieval layer for large skill libraries. GoS constructs an executable skill graph offline from skill packages, then at inference time retrieves a bounded, dependency-aware skill bundle through hybrid semantic-lexical seeding, reverse-weighted Personalized PageRank, and context-budgeted hydration. On SkillsBench and ALFWorld, GoS improves average reward by 43.6% over the vanilla full skill-loading baseline while reducing input tokens by 37.8%, and generalizes across three model families: Claude Sonnet, GPT-5.2 Codex, and MiniMax. Additional ablation studies across skill libraries ranging from 200 to 2,000 skills further demonstrate that GoS consistently outperforms both vanilla skills loading and simple vector retrieval in balancing reward, token efficiency, and runtime.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775527751000,
+  "googleCitationId": null,
+  "groupId": "019d6b83-5091-782b-b8e7-6c70a2cb0ca0",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775527751000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.05333",
+  "title": "Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
+  "type": "public",
+  "universalId": "2604.05333",
+  "uploader": null,
+  "versionId": "019d6b83-50c2-7f93-afaf-05135067013e",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

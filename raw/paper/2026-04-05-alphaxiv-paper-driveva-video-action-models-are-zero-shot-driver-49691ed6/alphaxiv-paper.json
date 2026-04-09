@@ -1,0 +1,21 @@
+{
+  "abstract": "Generalization is a central challenge in autonomous driving, as real-world deployment requires robust performance under unseen scenarios, sensor domains, and environmental conditions. Recent world-model-based planning methods have shown strong capabilities in scene understanding and multi-modal future prediction, yet their generalization across datasets and sensor configurations remains limited. In addition, their loosely coupled planning paradigm often leads to poor video-trajectory consistency during visual imagination. To overcome these limitations, we propose DriveVA, a novel autonomous driving world model that jointly decodes future visual forecasts and action sequences in a shared latent generative process. DriveVA inherits rich priors on motion dynamics and physical plausibility from well-pretrained large-scale video generation models to capture continuous spatiotemporal evolution and causal interaction patterns. To this end, DriveVA employs a DiT-based decoder to jointly predict future action sequences (trajectories) and videos, enabling tighter alignment between planning and scene evolution. We also introduce a video continuation strategy to strengthen long-duration rollout consistency. DriveVA achieves an impressive closed-loop performance of 90.9 PDM score on the challenge NAVSIM. Extensive experiments also demonstrate the zero-shot capability and cross-domain generalization of DriveVA, which reduces average L2 error and collision rate by 78.9% and 83.3% on nuScenes and 52.5% and 52.4% on the Bench2drive built on CARLA v2 compared with the state-of-the-art world-model-based planner.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775410996000,
+  "googleCitationId": null,
+  "groupId": "019d65cf-5da1-7c36-a6d4-45ab90624c7d",
+  "license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "publicationDate": 1775410996000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04198",
+  "title": "DriveVA: Video Action Models are Zero-Shot Drivers",
+  "type": "public",
+  "universalId": "2604.04198",
+  "uploader": null,
+  "versionId": "019d65cf-5dd1-74c8-925c-3705a2cc8712",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

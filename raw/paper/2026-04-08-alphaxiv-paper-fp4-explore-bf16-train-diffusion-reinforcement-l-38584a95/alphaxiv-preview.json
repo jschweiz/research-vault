@@ -1,0 +1,122 @@
+{
+  "abstract": "Reinforcement-Learning-based post-training has recently emerged as a promising paradigm for aligning text-to-image diffusion models with human preferences. In recent studies, increasing the rollout group size yields pronounced performance improvements, indicating substantial room for further alignment gains. However, scaling rollouts on large-scale foundational diffusion models (e.g., FLUX.1-12B) imposes a heavy computational burden. To alleviate this bottleneck, we explore the integration of FP4 quantization into Diffusion RL rollouts. Yet, we identify that naive quantized pipelines inherently introduce risks of performance degradation. To overcome this dilemma between efficiency and training integrity, we propose Sol-RL (Speed-of-light RL), a novel FP4-empowered Two-stage Reinforcement Learning framework. First, we utilize high-throughput NVFP4 rollouts to generate a massive candidate pool and extract a highly contrastive subset. Second, we regenerate these selected samples in BF16 precision and optimize the policy exclusively on them. By decoupling candidate exploration from policy optimization, Sol-RL integrates the algorithmic mechanisms of rollout scaling with the system-level throughput gains of NVFP4. This synergistic algorithm-hardware design effectively accelerates the rollout phase while reserving high-fidelity samples for optimization. We empirically demonstrate that our framework maintains the training integrity of BF16 precision pipeline while fully exploiting the throughput gains enabled by FP4 arithmetic. Extensive experiments across SANA, FLUX.1, and SD3.5-L substantiate that our approach delivers superior alignment performance across multiple metrics while accelerating training convergence by up to $4.64\\times$, unlocking the power of massive rollout scaling at a fraction of the cost.",
+  "author_info": [],
+  "authors": [
+    "Yitong Li",
+    "Junsong Chen",
+    "Shuchen Xue",
+    "Pengcuo Zeren",
+    "Siyuan Fu",
+    "Dinghao Yang",
+    "Yangyang Tang",
+    "Junjie Bai",
+    "Ping Luo",
+    "Song Han",
+    "Enze Xie"
+  ],
+  "canonical_id": "2604.06916v1",
+  "first_publication_date": "2026-04-08T10:14:47.000Z",
+  "full_authors": [
+    {
+      "full_name": "Yitong Li",
+      "id": "01985c81-ed0e-7d97-a3d3-b3b05d82b39f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junsong Chen",
+      "id": "01985c81-ec41-769b-83bc-dd94949d93b2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Shuchen Xue",
+      "id": "01985c82-5311-753e-8f54-bbbf76a20979",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Pengcuo Zeren",
+      "id": "019d703d-e5a2-7138-9ecc-df326ff7083f",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Siyuan Fu",
+      "id": "01985c83-76c8-7a2d-8f40-3b290b9a9222",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dinghao Yang",
+      "id": "01985c85-651e-71aa-8e06-20f77a48a1ed",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yangyang Tang",
+      "id": "019c9d01-cb8e-7547-8b09-adc923608efd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Junjie Bai",
+      "id": "01985c81-e1bb-7812-a163-e1569513fc60",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ping Luo",
+      "id": "01985c81-dc26-7b66-8e54-6ebc917e4e43",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Song Han",
+      "id": "01985c81-d859-75cb-8d65-ad58a49278b7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Enze Xie",
+      "id": "01985c81-ec41-7a23-a9f3-aaf1a330d832",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 0,
+  "github_url": "https://github.com/lyttttt3333/Sol-RL",
+  "id": "019d703d-e51b-78fc-9d94-ae3da8dab2bc",
+  "image_url": "image/2604.06916v1.png",
+  "metrics": {
+    "public_total_votes": 0,
+    "total_votes": 0,
+    "visits_count": {
+      "all": 15,
+      "last_7_days": 15
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d703d-e51b-78fc-9d94-ae3da8dab2bc",
+  "paper_summary": null,
+  "publication_date": "2026-04-08T10:14:47.000Z",
+  "title": "FP4 Explore, BF16 Train: Diffusion Reinforcement Learning via Efficient Rollout Scaling",
+  "topics": [
+    "Computer Science",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG",
+    "generative-models",
+    "hardware-aware-algorithms",
+    "inference-optimization",
+    "lightweight-models",
+    "model-compression",
+    "multi-modal-learning",
+    "optimization-methods",
+    "reinforcement-learning"
+  ],
+  "universal_paper_id": "2604.06916",
+  "updated_at": "2026-04-09T03:16:37.787Z",
+  "version_id": "019d703d-e5b5-764a-a739-6404d58b4e4c"
+}

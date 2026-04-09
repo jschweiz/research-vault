@@ -11,9 +11,14 @@ authors:
 - Yujie Luo
 - Shuofei Qiao
 - Zhengke Gui
+- Da Zheng
+- Lei Liang
+- Huajun Chen
+- Ningyu Zhang
 published_at: '2026-04-04T10:46:09Z'
 ingested_at: '2026-04-07T21:43:07.714695Z'
-content_hash: bac9eecbde5ba7d6f4b3b2353eb502b49b273ff22df528fc2e4ad49d2f4911bf
+content_hash: 3e67009d3fafc7a518bbf308fb3360abf5a5293e9f6c447de535e088f59d1a5c
+identity_hash: acbfc80bf03e71ccb2cac62d3786b8a0273fc5378fcdefabe767ecb76ba1118f
 tags:
 - paper
 - alphaxiv
@@ -25,6 +30,21 @@ tags:
 - cs.ir
 - cs.lg
 - cs.mm
+- Computer Science
+- cs.AI
+- cs.CL
+- cs.IR
+- cs.LG
+- cs.MM
+- efficient-transformers
+- inference-optimization
+- model-compression
+- optimization-methods
+- reasoning
+- transformers
+- github
+- audio
+- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -43,27 +63,16 @@ canonical_url: https://www.alphaxiv.org/abs/2604.03679
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-08T09:27:32.144187Z'
-short_summary: '# LightThinker++: From Reasoning Compression to Memory Management ## alphaXiv Summary LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts. LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memory management to maintain reasoning fidelity and reduce active context by 60-70% in long-horizon age'
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T08:39:15.846891Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 8cf7707b9a602888ba22cb4bdd6324d569a163571d7f55a25b7a119c4d0c6eaf
+fetched_at: '2026-04-09T09:59:02.296145Z'
+short_summary: LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts. LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memory management to maintain reasoning fidelity and reduce active context by 60-70% in long-horizon agentic tasks.
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2bb863b808da2e9d206f357da4c5a937d92bff3785a60d5312fac7ff85e4421e
-lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM reasoning, memory management, and efficiency, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - LightThinker and LightThinker++ are proposed, enabling large language models to efficiently manage reasoning context by compressing intermediate thoughts.
-  - LightThinker reduces peak token usage by up to 70% and inference time by 26% through implicit compression, while LightThinker++ employs explicit, adaptive memor
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # LightThinker++: From Reasoning Compression to Memory Management
 
@@ -122,10 +131,10 @@ LightThinker and LightThinker++ are proposed, enabling large language models to 
 
 ## Metrics
 
-- Visits (all): 102
-- Visits (last 7 days): 102
+- Visits (all): 147
+- Visits (last 7 days): 147
 - Total votes: 3
-- Public total votes: 10
+- Public total votes: 18
 - X likes: 0
 
 ## Abstract

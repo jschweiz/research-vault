@@ -1,0 +1,21 @@
+{
+  "abstract": "We present Vanast, a unified framework that generates garment-transferred human animation videos directly from a single human image, garment images, and a pose guidance video. Conventional two-stage pipelines treat image-based virtual try-on and pose-driven animation as separate processes, which often results in identity drift, garment distortion, and front-back inconsistency. Our model addresses these issues by performing the entire process in a single unified step to achieve coherent synthesis. To enable this setting, we construct large-scale triplet supervision. Our data generation pipeline includes generating identity-preserving human images in alternative outfits that differ from garment catalog images, capturing full upper and lower garment triplets to overcome the single-garment-posed video pair limitation, and assembling diverse in-the-wild triplets without requiring garment catalog images. We further introduce a Dual Module architecture for video diffusion transformers to stabilize training, preserve pretrained generative quality, and improve garment accuracy, pose adherence, and identity preservation while supporting zero-shot garment interpolation. Together, these contributions allow Vanast to produce high-fidelity, identity-consistent animation across a wide range of garment types.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775498399000,
+  "googleCitationId": null,
+  "groupId": "019d65d7-2948-7971-afd8-f93154c9ed37",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1775498399000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.04934",
+  "title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+  "type": "public",
+  "universalId": "2604.04934",
+  "uploader": null,
+  "versionId": "019d65d7-297d-7bef-98a4-91ac93ad503c",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

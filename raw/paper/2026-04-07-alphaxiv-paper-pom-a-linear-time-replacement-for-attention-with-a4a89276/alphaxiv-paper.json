@@ -1,0 +1,21 @@
+{
+  "abstract": "This paper introduces the Polynomial Mixer (PoM), a novel token mixing mechanism with linear complexity that serves as a drop-in replacement for self-attention. PoM aggregates input tokens into a compact representation through a learned polynomial function, from which each token retrieves contextual information. We prove that PoM satisfies the contextual mapping property, ensuring that transformers equipped with PoM remain universal sequence-to-sequence approximators. We replace standard self-attention with PoM across five diverse domains: text generation, handwritten text recognition, image generation, 3D modeling, and Earth observation. PoM matches the performance of attention-based models while drastically reducing computational cost when working with long sequences. The code is available at this https URL.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1775583637000,
+  "googleCitationId": null,
+  "groupId": "019d6b78-ecf4-74d8-b09a-4c8c6cc8b776",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1775583637000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2604.06129",
+  "title": "PoM: A Linear-Time Replacement for Attention with the Polynomial Mixer",
+  "type": "public",
+  "universalId": "2604.06129",
+  "uploader": null,
+  "versionId": "019d6b78-ed3d-75fe-aebe-e6cf7b629578",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

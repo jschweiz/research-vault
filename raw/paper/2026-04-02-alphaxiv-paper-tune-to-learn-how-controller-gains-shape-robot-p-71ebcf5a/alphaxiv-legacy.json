@@ -1,0 +1,82 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Antonia Bronars",
+        "id": "01985c82-8064-7529-92d1-f5a48563130a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Younghyo Park",
+        "id": "01985c81-e34e-70ba-ba7f-7f41201055e7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Pulkit Agrawal",
+        "id": "01985c81-db51-75ef-bb8c-9ff2abf464cb",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Mon Apr 06 2026 01:57:08 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Thu Apr 02 2026 21:23:08 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6082-0c8d-738d-929f-9e9e93152a46",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 5,
+        "questions_count": 0,
+        "total_votes": 2,
+        "upvotes_count": 5,
+        "visits_count": {
+          "all": 81,
+          "last24Hours": 67,
+          "last30Days": 81,
+          "last7Days": 81,
+          "last90Days": 81
+        }
+      },
+      "podcast_path": null,
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2604.02523"
+      },
+      "title": "Tune to Learn: How Controller Gains Shape Robot Policy Learning",
+      "topics": [
+        "Computer Science",
+        "cs.RO"
+      ],
+      "universal_paper_id": "2604.02523",
+      "updated_at": "Mon Apr 06 2026 01:57:08 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Position controllers have become the dominant interface for executing learned manipulation policies. Yet a critical design decision remains understudied: how should we choose controller gains for policy learning? The conventional wisdom is to select gains based on desired task compliance or stiffness. However, this logic breaks down when controllers are paired with state-conditioned policies: effective stiffness emerges from the interplay between learned reactions and control dynamics, not from gains alone. We argue that gain selection should instead be guided by learnability: how amenable different gain settings are to the learning algorithm in use. In this work, we systematically investigate how position controller gains affect three core components of modern robot learning pipelines: behavior cloning, reinforcement learning from scratch, and sim-to-real transfer. Through extensive experiments across multiple tasks and robot embodiments, we find that: (1) behavior cloning benefits from compliant and overdamped gain regimes, (2) reinforcement learning can succeed across all gain regimes given compatible hyperparameter tuning, and (3) sim-to-real transfer is harmed by stiff and overdamped gain regimes. These findings reveal that optimal gain selection depends not on the desired task behavior, but on the learning paradigm employed. Project website: this https URL",
+      "created_at": "Mon Apr 06 2026 01:57:08 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d6082-0cca-7dd3-8eed-3c6eef1ae9df",
+      "imageURL": "image/2604.02523v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Thu Apr 02 2026 21:23:08 GMT+0000 (Coordinated Universal Time)",
+      "title": "Tune to Learn: How Controller Gains Shape Robot Policy Learning",
+      "universal_paper_id": "2604.02523",
+      "updated_at": "Mon Apr 06 2026 01:57:08 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2604.02523v1.pdf"
+    },
+    "verified_authors": []
+  }
+}
