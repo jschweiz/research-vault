@@ -27,23 +27,24 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:05:11.043891Z'
 short_summary: Medium digest led by "Build a Sleek Sci-Fi Dashboard with Python and Dash". Includes 15 highlighted stories, including "Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.444832Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.005618Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: c2fc47ca1bfbc84e4920fec4b4c9da31cedcd9e3d85a628fb629206e18944afb
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: e9e5682b1525999504a9da0d210ae1234c57d919bdc04240b9cbc76f025f3cae
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document contains highly relevant topics like LLM agents, RAG pipelines, and LLM memory, directly matching the user's favorite topics.
   evidence_quotes:
-  - Medium digest led by "Build a Sleek Sci-Fi Dashboard with Python and Dash". Includes 15 highlighted stories, including "Building an Agentic Deep-Thinking RAG Pi
+  - Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
+  - 'Building LLM Memory from Scratch #4: Knowledge-Graph Memory'
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash | Lee Vaughan in Data Science Collective
 

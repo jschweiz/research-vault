@@ -44,14 +44,14 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:50.157237Z'
-short_summary: A1 is a fully open-source Vision-Language-Action (VLA) framework that efficiently controls robots by adapting the VLM backbone and action head, reducing inference time by up to 72.3%. It achieves state-of-the-art success rates on benchmarks while significantly lowering computational cost.
+short_summary: A1 is a fully open-source Vision-Language-Action (VLA) framework that efficiently controls robots by adaptively accelerating the VLM backbone and action head. It achieves significant reductions in inference time while maintaining high manipulation success rates across various tasks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.889445Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.313241Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 62b869f72fbbbd2fae6c78b2a22179f3f07f73dec6485e5bb42058d350b43078
 lightweight_enrichment_error: null
 lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 8805855ad7424a4aac8da45217c46b6c2a8783f6cbfcee46c32e5ba3a7717483
+lightweight_scoring_input_hash: 6733d9ac2a3e398f068f79e53903251b76ba2c67f5939b90dfd58ef153ca20df
 lightweight_score:
   relevance_score: 0.517
   source_fit_score: 0.55
@@ -62,7 +62,7 @@ lightweight_score:
   bucket_hint: worth_a_skim
   reason: Heuristic fallback based on 1 favorite-topic match.
   evidence_quotes:
-  - A1 is a fully open-source Vision-Language-Action (VLA) framework that efficiently controls robots by adapting the VLM backbone and action head, reducing inferen
+  - A1 is a fully open-source Vision-Language-Action (VLA) framework that efficiently controls robots by adaptively accelerating the VLM backbone and action head. I
 ---
 # A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model
 

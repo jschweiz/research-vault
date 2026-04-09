@@ -28,23 +28,25 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:15:32.994521Z'
 short_summary: TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.005132Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.878844Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 817cb4e107342cdc7d19f1205094d7eacde0f27b373e759f47f6115acfef417c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 2156dc30c9f7e8f11322ddbc3a8f2299f767a25757dd2be67726e6069aee1504
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  relevance_score: 0.85
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly covers favorite topics like LLM architecture, agentic development, and tools like Cursor, aligning perfectly with the user's interests.
   evidence_quotes:
-  - TLDR roundup on OpenAI buys TBPN, 2 person unicorn, Cursor v3. Includes 7 editorial stories across 4 sections, plus 6 quick links.
+  - Cursor 3 brings clarity to the work that agents produce, pulling users up to a higher level of abstraction.
+  - 'The 2nd Phase of Agentic Development: People will start using agents to attack old problems with modern tooling, resulting in new versions of software tools tha'
+  - This post details how to create a coding agent that adapts perfectly to custom workflows by clearly separating concerns.
 ---
 # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 

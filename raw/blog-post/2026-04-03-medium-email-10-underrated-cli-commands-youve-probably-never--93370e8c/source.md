@@ -31,23 +31,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:05:25.022133Z'
 short_summary: This post introduces ten underrated command-line interface (CLI) commands that readers may not be familiar with. It serves as a guide to discovering useful and less commonly known CLI tools.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.206231Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.016034Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 534d75b7ed70828ffcba6e11ecd14c28ff09c6187f34d498ec1fa10627b95fe3
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: dd91b2618c19f46eb9e951cfa8615894e646b17251a4181577bdb0b752b74f27
 lightweight_score:
-  relevance_score: 0.391
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.865
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about CLI commands, which does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
   evidence_quotes:
-  - 'This post introduces ten underrated command-line interface (CLI) commands that readers may not be familiar with. It serves as a guide to discovering useful and '
+  - This post introduces ten underrated command-line interface (CLI) commands that readers may not be familiar with.
+  - It serves as a guide to discovering useful and less commonly known CLI tools.
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
 

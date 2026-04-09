@@ -33,23 +33,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:34.206921Z'
 short_summary: This article features highlights from a conversation about agentic engineering on Lenny's Podcast, discussing the inflection point for AI coding agents and the risks for mid-career engineers.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:54.794251Z'
+lightweight_enriched_at: '2026-04-09T14:34:21.771660Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 967326d274792c0a756ccc12ad8603e4c6b2be1c448f9fc84bef2e5b3fbe63a7
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: e60508c2049262a3279a0d384411e3401a861a47a04d8d010a90045bdeee6f76
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like AI agents and coding, making it highly relevant to the user's interests.
   evidence_quotes:
   - 'This article features highlights from a conversation about agentic engineering on Lenny''s Podcast, discussing the inflection point for AI coding agents and the '
+  - Willison made the leap from traditional software engineering to AI-native development more fully and visibly than almost anyone, documenting everything he learn
+  - This article features highlights from a recent interview with Willison, where he shares why November 2025 was an inflection point for AI coding agents, how he w
 ---
 # Highlights from my conversation about agentic engineering on Lenny's Podcast
 

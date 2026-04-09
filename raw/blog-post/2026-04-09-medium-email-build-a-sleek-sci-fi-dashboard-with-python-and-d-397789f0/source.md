@@ -6,7 +6,6 @@ source_url: https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-with-
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
-- Lee Vaughan
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:11.191433Z'
 content_hash: f14a47f7b2479aa873b1d43e5a4249afc34c3fa0234206dd1d202a6e2b9b1b19
@@ -16,10 +15,6 @@ tags:
 - medium
 - email
 - blog-post
-- python
-- dash
-- data science
-- dashboard
 status: active
 asset_paths: []
 source_id: medium-email
@@ -30,25 +25,15 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:11.191435Z'
-short_summary: This post details how to build a sleek science fiction dashboard using Python and Dash. It serves as an inspiration for creating data-driven visualizations.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:56.215944Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9c6a62b0729a04ba398b423763e4214fad0408281477edafef188c4ec176b443
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: ffce412006d49ddb33de6344b44244649032c5b9ee9101b3edd89f58cad4bc0f
-lightweight_score:
-  relevance_score: 0.3948
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.8838
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - This post details how to build a sleek science fiction dashboard using Python and Dash. It serves as an inspiration for creating data-driven visualizations.
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash
 

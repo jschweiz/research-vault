@@ -31,23 +31,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:04:01.495333Z'
 short_summary: Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising sociological questions about the role of scientists.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:54.946839Z'
+lightweight_enriched_at: '2026-04-09T14:34:21.864488Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a8cea54632141613fbfb65a61a4ad24f41ec3884fa3deaca592058cc1dec251c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 5bb8493210a5e5e33848b95fb86b4d8e9fba409513f008e794b2726715e4228d
 lightweight_score:
-  relevance_score: 0.404
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.93
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of language models, AI in science, and research workflows, aligning perfectly with their interests.
   evidence_quotes:
   - Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising
+  - AI is helping mathematicians to [discover](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) [new proofs](https://www.math.inc/sphere-packing
+  - This blog will discuss the upsides and challenges of the current moment for AI and science, exploring the excitement as it unfolds.
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

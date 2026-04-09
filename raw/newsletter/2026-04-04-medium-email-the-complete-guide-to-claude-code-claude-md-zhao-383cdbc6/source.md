@@ -27,23 +27,24 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:05:20.625157Z'
 short_summary: 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification".'
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.036972Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.895438Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 0fa9f0b76416ad3acb5234a26554913f1611456d13f933cb7c9111daebbdbc64
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 268142f3e48bbb39d0f91800f9c97947098b2bc387c004691d150ac3f6d72dc3
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.75
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
+  bucket_hint: must_read
+  reason: The document contains several highly relevant topics like LLM architecture, reasoning, and agentic AI, making it a high-priority read for the user.
   evidence_quotes:
-  - 'Medium digest led by "The Complete Guide to Claude Code: CLAUDE.md". Includes 15 highlighted stories, including "Can AI Satellite Embeddings Outperform Traditio'
+  - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'
+  - An Operating System For Meaning to Enable Agentic AI
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
 

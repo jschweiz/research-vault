@@ -6,7 +6,6 @@ source_url: https://links.tldrnewsletter.com/2oeeq0
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
-- TLDR
 published_at: '2026-04-06T11:04:43Z'
 ingested_at: '2026-04-09T12:05:04.380320Z'
 content_hash: f02b0d5e4b702f3a817e91c6a7bb92b148fd651c60f1d8b176f7a98b100709d1
@@ -17,11 +16,6 @@ tags:
 - email
 - ai
 - news
-- space technology
-- missile defense
-- golden dome
-- impulse space
-- anduril
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -32,25 +26,15 @@ doc_role: derived
 parent_id: 2026-04-06-tldr-email-apple-egpu-support-inside-ai-lab-finances-claude-f865879a
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:30.777861Z'
-short_summary: Impulse Space and Anduril Industries have been selected to develop space-based missile interceptor technology for President Trump's planned Golden Dome missile defense shield. This project is expected to cost $185 billion and aim to demonstrate operational capability by 2028.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:56.682518Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: de4b3715bc1614ed54d1308a145ccc9d62e599c22ddd945fa27793a5332a4c4d
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: d6702c1f1b168c27dcda98c39f37023ef6eb9ae9590f1bbbd1a51bb081996358
-lightweight_score:
-  relevance_score: 0.4095
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9575
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - 'Impulse Space and Anduril Industries have been selected to develop space-based missile interceptor technology for President Trump''s planned Golden Dome missile '
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Impulse Space, Anduril Building Space Technology for Golden Dome
 

@@ -4,8 +4,7 @@ kind: blog-post
 title: Emotion concepts and their function in a large language model
 source_url: https://www.anthropic.com/research/emotion-concepts-function
 source_name: Anthropic Research
-authors:
-- Anthropic
+authors: []
 published_at: '2026-04-02T00:00:00Z'
 ingested_at: '2026-04-09T12:03:48.305448Z'
 content_hash: 0358f8f2cccdc3c0deafe8de0745442fa6e56cdd45412e5c544e44a0e42dcafe
@@ -16,11 +15,6 @@ tags:
 - research
 - website
 - blog-post
-- llm
-- emotion
-- ai
-- representation
-- safety
 status: active
 asset_paths:
 - original.html
@@ -32,25 +26,15 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:48.305453Z'
-short_summary: The research analyzes how emotion-related representations shape large language model behavior, demonstrating that these functional emotions influence decision-making and actions. The study suggests that teaching models to manage emotional contexts could improve AI safety and reliability.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.160648Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a11c0b6c76af811e64bef2a901fad7f19ffeaaedc8509f602f3139d7ab51acba
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 4865d60bdddb7fe6d2fd14cd06f75364841ed169c70d27e8b85425a18b479d02
-lightweight_score:
-  relevance_score: 0.64
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match, 1 favorite-author match.
-  evidence_quotes:
-  - The research analyzes how emotion-related representations shape large language model behavior, demonstrating that these functional emotions influence decision-m
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.
 In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior. These correspond to specific patterns of artificial “neurons” which activate in situations—and promote behaviors—that the model has learned to associate with the concept of a particular emotion (e.g., “happy” or “afraid”). The patterns themselves are organized in a fashion that echoes human psychology, with more similar emotions corresponding to more similar representations. In contexts where you might expect a certain emotion to arise for a human, the corresponding representations are active. Note that none of this tells us whether language models actually feel anything or have subjective experiences. But our key finding is that these representations are functional, in that they influence the model’s behavior in ways that matter.

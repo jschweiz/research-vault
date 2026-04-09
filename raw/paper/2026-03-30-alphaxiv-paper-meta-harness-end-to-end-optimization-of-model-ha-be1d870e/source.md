@@ -20,12 +20,19 @@ tags:
 - alphaxiv
 - research
 - agents
-- computer science
-- cs.ai
+- Computer Science
+- cs.AI
 - efficient-transformers
 - meta-learning
 - ml-systems
 - optimization-methods
+- reasoning
+- tool-use
+- transformers
+- github
+- audio
+- transcript
+- summary
 status: active
 asset_paths:
 - alphaxiv-ai-detection.json
@@ -48,25 +55,15 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:10.797718Z'
-short_summary: Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves performance in text classification, math reasoning, and agentic coding by accessing uncompressed historical data.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.515354Z'
+short_summary: Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment. The system utilizes an agentic proposer with filesystem access to uncompressed historical code and execution traces, leading to a 7.7-point accuracy improvement in text classification, a 4.7-point average gain in math reasoning, and competitive pass rates on agentic coding benchmarks.
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 42f9fb03cc8ea021162254231ba31cc9e9988d6f2582a7a1579135fd7846f03e
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 6b9aa4aa2c13ad26dbe10e5e6e2203a03364d69f242d01809a76c8212ffb3a54
-lightweight_score:
-  relevance_score: 0.715
-  source_fit_score: 0.55
-  topic_fit_score: 0.84
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 3 favorite-topic matches.
-  evidence_quotes:
-  - Meta-Harness is an end-to-end optimization framework for LLM harnesses, using an agentic proposer to search for optimal code harnesses. This system improves per
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
 

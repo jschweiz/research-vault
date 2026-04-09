@@ -34,23 +34,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:13.196115Z'
 short_summary: An investigation suggests that Adam Back is Satoshi Nakamoto, the creator of Bitcoin. Back is identified as a British cryptographer and a leading figure in the Bitcoin movement.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:56.945248Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.852997Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8010413ad9c8d707b28ee7a0876954ae4d4ef61fa6eaebbdf5b4626e483b79bf
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 685563509b78eff2a72fe99fcf3a74889a15771b3c8ab81957e182a194a8ddb4
 lightweight_score:
-  relevance_score: 0.4053
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9363
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.35
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Bitcoin and cryptography, which does not strongly align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
   evidence_quotes:
-  - 'An investigation suggests that Adam Back is Satoshi Nakamoto, the creator of Bitcoin. Back is identified as a British cryptographer and a leading figure in the '
+  - An investigation suggests that Adam Back is Satoshi Nakamoto, the creator of Bitcoin.
+  - Back is identified as a British cryptographer and a leading figure in the Bitcoin movement.
 ---
 # My Quest to Solve Bitcoin's Great Mystery
 

@@ -48,14 +48,14 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:01.084022Z'
-short_summary: The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 while keeping a fixed 1.2B-parameter architecture.
+short_summary: The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 without modifying the model architecture. This was accomplished through methods like Diversity-and-Difficulty-Aware Sampling and Cross-Model Consistency Verification.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.738971Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.193123Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6bcb9b9b212041dbd3602f3ac9e884ceed52f805348765862fcb8aeaa5cb31ec
 lightweight_enrichment_error: null
 lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 3e15d0c52775cffaf0ffd34c4f9cf961300b253dab45ab38be864f58d9eb8aa2
+lightweight_scoring_input_hash: 2d6e155b9cdaa71c3d12f3520d975e47fb231df7e5215c92fb800584b6ba09c1
 lightweight_score:
   relevance_score: 0.517
   source_fit_score: 0.55
@@ -66,7 +66,7 @@ lightweight_score:
   bucket_hint: worth_a_skim
   reason: Heuristic fallback based on 1 favorite-topic match.
   evidence_quotes:
-  - The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 while
+  - The MinerU2.5-Pro framework advances document parsing by optimizing data engineering and training strategies, achieving a 95.69 score on OmniDocBench v1.6 witho
 ---
 # MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
 

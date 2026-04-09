@@ -18,6 +18,7 @@ tags:
 - blog-post
 - job boom
 - ai
+- economy
 status: active
 asset_paths: []
 source_id: medium-email
@@ -28,25 +29,26 @@ doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:24.773069Z'
-short_summary: The post discusses an unmentioned 800% job boom and points to a bottleneck that is not building AI.
+short_summary: The post discusses an unmentioned 800% job boom and points to a bottleneck beyond building AI.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.273168Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.053315Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e0cd271d17f0fc619017d0ab8382621acdf1a6690ae076d78648f7d893f551d5
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 78bcb7efa8f0b4c7959b54ca83026d981238bc9d3da36351d9f2696c461e72b5
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4d956c3875e048081c69e55399e43e7bc4055d892901bc40a49223021cca6a2c
 lightweight_score:
-  relevance_score: 0.3909
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.8645
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about job booms and the economy, which does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
   evidence_quotes:
-  - The post discusses an unmentioned 800% job boom and points to a bottleneck that is not building AI.
+  - The post discusses an unmentioned 800% job boom and points to a bottleneck beyond building AI.
+  - The bottleneck isn’t building AI anymore. It’s making…
 ---
 # The 800% Job Boom Nobody’s Talking About
 

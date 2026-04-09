@@ -43,23 +43,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:07:22.423061Z'
 short_summary: This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The goal is to develop the Completely Neural Computer (CNC), a general-purpose realization of this machine form.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.853852Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.288126Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a7a4f213566a52a5ec4317f1387bb3d07e91c5327cde313632df6b398cf98706
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: f19ed7774379c4aecdc02f6cb75c5f78975ebbcaa078bbe5f2a85b94e0db94c3
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses core favorite topics like LLM architecture, agents, and memory, and is associated with a favorite author (DeepMind).
   evidence_quotes:
-  - This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The goal is to develo
+  - This paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state.
+  - 'Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explic'
+  - This position paper argues that an integrated episodic memory system is essential for developing large language model (LLM) agents capable of sustained, adaptiv
 ---
 # Neural Computers
 

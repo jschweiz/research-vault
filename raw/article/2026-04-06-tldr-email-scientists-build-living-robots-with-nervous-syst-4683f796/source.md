@@ -34,23 +34,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:31.094195Z'
 short_summary: Scientists are developing living robots called neurobots, which are clusters of living cells that self-organize to move and respond to their environment. Researchers are currently investigating the principles that govern these movements to engineer them for various applications.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:54.834503Z'
+lightweight_enriched_at: '2026-04-09T14:34:21.797454Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a3df80f120ce4ce57b4a5a03ecb84548061794475f71307c884836f46830a3d4
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 134e8949c512e5fa8289a0e0de5cd7430daff9bee5b83c5a875820a580cdfcc1
 lightweight_score:
-  relevance_score: 0.4125
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9725
-  confidence_score: 0.45
+  relevance_score: 0.25
+  source_fit_score: 0.1
+  topic_fit_score: 0.3
+  author_fit_score: 0.0
+  evidence_fit_score: 0.4
+  confidence_score: 0.6
   bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  reason: The document touches on AI and science, which aligns loosely with favorite topics, but lacks specific focus on LLMs, evaluation, or reasoning.
   evidence_quotes:
-  - Scientists are developing living robots called neurobots, which are clusters of living cells that self-organize to move and respond to their environment. Resear
+  - Scientists are developing living robots called neurobots, which are clusters of living cells that self-organize to move and respond to their environment.
+  - Researchers are currently investigating the principles that govern these movements to engineer them for various applications.
 ---
 # Scientists Build Living Robots With Nervous Systems
 

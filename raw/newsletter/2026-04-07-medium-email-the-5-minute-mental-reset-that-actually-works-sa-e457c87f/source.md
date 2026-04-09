@@ -27,23 +27,24 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:05:14.464090Z'
 short_summary: Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.302358Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.951422Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: adedc81abff7c4468adf783465729dd19dc99ca7fb56d622eddfa9589083b47e
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: c8216a6f8f3948118fc79c1b5fff60d912386c32e34a4a3e15eba112e8b08ac6
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.36
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
   bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  reason: The document contains a relevant RAG system failure story, which aligns with the user's interest in LLM evaluation and reasoning, but the overall content is a general mental reset newsletter.
   evidence_quotes:
-  - Medium digest led by "The 5-Minute Mental Reset That Actually Works". Includes 15 highlighted stories, including "Why Your RAG System Fails Complex Questions? (
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
+  - Understanding the Retrieval and Structuring (RAS)…
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
 

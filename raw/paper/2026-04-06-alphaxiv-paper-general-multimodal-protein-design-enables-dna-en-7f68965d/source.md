@@ -44,14 +44,14 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:18.194319Z'
-short_summary: The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures to create enzymes for new-to-nature chemical reactions. It demonstrated the ability to design highly active enzymes with novel active-site geometries that are further evolvable.
+short_summary: The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures, enabling the creation of enzymes for new-to-nature chemical reactions. This approach demonstrates that evolvable enzymes can be designed by conditioning on biomolecules and optimizing across both modalities.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.703595Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.167889Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5625c17d024489492b807d1c30ce46dfe3832e649623b254ee4a8decd3d574c5
 lightweight_enrichment_error: null
 lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 42aef8c0ca1b4fed548ef3e9183fb0d5c01ffb7a7c5e096c4a5bfe9ddea74b14
+lightweight_scoring_input_hash: e13fd784c8823c490ddc240996c6b77ab48f59c7dc76d49b737ad4603b6b5950
 lightweight_score:
   relevance_score: 0.418
   source_fit_score: 0.55
@@ -62,7 +62,7 @@ lightweight_score:
   bucket_hint: worth_a_skim
   reason: Heuristic fallback based on generic profile-fit fallback.
   evidence_quotes:
-  - The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures to create enzymes for new-to-nature chemica
+  - The DISCO model is a multimodal generative framework that simultaneously designs protein sequences and 3D structures, enabling the creation of enzymes for new-t
 ---
 # General Multimodal Protein Design Enables DNA-Encoding of Chemistry
 

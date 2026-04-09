@@ -4,8 +4,7 @@ kind: blog-post
 title: Gradient Labs gives every bank customer an AI account manager
 source_url: https://openai.com/index/gradient-labs
 source_name: OpenAI Website
-authors:
-- Gradient Labs
+authors: []
 published_at: '2026-04-01T02:00:00Z'
 ingested_at: '2026-04-09T12:03:33.705284Z'
 content_hash: 147b623a8f76c54b197df1bd0de564ec1666f9a8a857456bd4f5b46eb5f60591
@@ -15,12 +14,6 @@ tags:
 - official
 - website
 - blog-post
-- ai agents
-- banking support
-- gpt-4.1
-- gpt-5.4
-- low latency
-- ai automation
 status: active
 asset_paths: []
 source_id: openai-website
@@ -31,24 +24,14 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:33.705291Z'
-short_summary: Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.143511Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 449fd0567fcd9261646b52defec986d822017add5a375c82ecce7502c046ef22
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 1122ff8e41faddbde8cd4fc979a224488cfcc023d210af496c98e37eb0615a66
-lightweight_score:
-  relevance_score: 0.3755
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.7875
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.

@@ -6,6 +6,7 @@ source_url: https://medium.com/@canartuc/12-5-million-downloads-a-month-shes-nev
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Han HELOIR YAN, Ph.D.
 published_at: '2026-04-06T06:40:00Z'
 ingested_at: '2026-04-09T12:05:17.722791Z'
 content_hash: cd8562605a914ac06642a9f68ea04951355132edf66433fa6550bd81c409e9c9
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- claude code
+- data science
+- developer
+- coding
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:17.722796Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: A visually impaired developer in Copenhagen maintains a blog post about Claude Code's features, noting that everyone analyzed its features but nobody analyzed its architecture.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:34:22.259532Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f97e9b4933dedd3d8c42c2c01c614a0d45b975240f65196ae5607061e85f9e15
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8d8e29b2fb0968338edafe896bcb0c42cd4011fd3d2e215198de41e178ae0a00
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.6
+  author_fit_score: 0.0
+  evidence_fit_score: 0.5
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on LLM architecture and development, making it relevant to the user's favorite topics, though the focus is on a specific model's features rather than deep architectural reasoning.
+  evidence_quotes:
+  - A visually impaired developer in Copenhagen maintains a blog post about Claude Code's features, noting that everyone analyzed its features but nobody analyzed i
+  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 ---
 # 12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.
 

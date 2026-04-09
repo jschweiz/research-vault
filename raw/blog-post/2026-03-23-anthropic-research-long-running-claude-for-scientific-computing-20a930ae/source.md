@@ -4,8 +4,7 @@ kind: blog-post
 title: Long-running Claude for scientific computing
 source_url: https://www.anthropic.com/research/long-running-Claude
 source_name: Anthropic Research
-authors:
-- Siddharth Mishra-Sharma
+authors: []
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:05.572507Z'
 content_hash: b3284da575bbb7012b72d03b3a2eee668337fc2e5b101050f7f8a342e630f1b6
@@ -16,11 +15,6 @@ tags:
 - research
 - website
 - blog-post
-- ai agents
-- scientific computing
-- claude
-- boltzmann solvers
-- jax
 status: active
 asset_paths:
 - original.html
@@ -32,25 +26,15 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:05.572515Z'
-short_summary: The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological Boltzmann solver.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:54.960905Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4dd4bbbbd52af928f4fcfb3300edcc9cb1328b22f6274005df2fda56b853c0a4
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: c35104f3e917d8b88304b0681d3607ad7faed50662fc56a36e29235017272f88
-lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
-  evidence_quotes:
-  - The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

@@ -28,23 +28,25 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:15:29.787644Z'
 short_summary: TLDR roundup on Apple eGPU support, inside AI lab finances, Claude Code system prompts. Includes 8 editorial stories across 4 sections, plus 5 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.126236Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.936704Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: d0e714ecde1f210fe730c09b0cca7ffa5f4f8ba69dd5f89b8dd7e8c877486e8e
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 56233b0db3e3459509ffce3b8c298b0bb4f875b41eda133efa7e1e5835bc9d11
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM architecture, system prompts, and the financial aspects of major AI labs.
   evidence_quotes:
-  - TLDR roundup on Apple eGPU support, inside AI lab finances, Claude Code system prompts. Includes 8 editorial stories across 4 sections, plus 5 quick links.
+  - How Claude Code Builds a System Prompt
+  - System prompts are often the best manual for how an app is intended to work.
+  - The accidental leak of Claude Code's source code reveals how Claude Code assembles a context and shows how complex context engineering can be, and the importanc
 ---
 # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖
 

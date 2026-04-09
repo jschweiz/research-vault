@@ -46,7 +46,7 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:08:19.071021Z'
 short_summary: Combee is a distributed framework that scales prompt learning for self-improving language model agents by using parallel scan aggregation and augmented shuffling to mitigate context overload. It achieves up to a 17x speedup while maintaining or improving accuracy on benchmarks.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.626469Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.113158Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 153b098927b87d91f75571a61f501cafad685fca59394c1d11acebab42334cf1
 lightweight_enrichment_error: null

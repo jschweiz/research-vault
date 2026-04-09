@@ -33,23 +33,24 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:05:21.980304Z'
 short_summary: This article discusses scaling LangGraph agents by exploring parallelization, subgraphs, and map-reduce trade-offs.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.400222Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.141330Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8bd206fd9e6275e88a8285f491668b1b003d9a8907ca48b95aaf1d117848a837
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 45b97fe45e3376497d6f9903b380531b97830a1f43af7d41aa85b98abac179b0
 lightweight_score:
-  relevance_score: 0.3957
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.8885
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM architecture and reasoning tooling using relevant concepts like LangGraph agents.
   evidence_quotes:
   - This article discusses scaling LangGraph agents by exploring parallelization, subgraphs, and map-reduce trade-offs.
+  - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'
 ---
 # Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs
 

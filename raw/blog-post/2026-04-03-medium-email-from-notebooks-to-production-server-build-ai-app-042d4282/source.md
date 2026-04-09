@@ -31,26 +31,26 @@ doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:24.028732Z'
-short_summary: This post discusses the process of building AI applications by moving from notebooks to a production server, focusing on the correct methodology.
+short_summary: This post provides guidance on building AI applications by transitioning from notebooks to production servers.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.255069Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.043733Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 32de96f2a1d44167bc77f80b13054d07f64dfa1ce7969e21effddccb8ede30a2
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: fa3b2757e42b1be388e114056d756ebba88ba62ebec5ad724b9b7d7a27f410ac
+lightweight_scoring_input_hash: b9b10172452b383be7cb05b4dcddc9b9b7a36866816356960f5ad222adaed876
 lightweight_score:
-  relevance_score: 0.65
+  relevance_score: 0.45
   source_fit_score: 0.3
-  topic_fit_score: 0.8
+  topic_fit_score: 0.6
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
+  evidence_fit_score: 0.7
+  confidence_score: 0.8
   bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics like AI application building and production, though it lacks specific author or source alignment.
+  reason: The document is relevant to the user's interest in building AI applications but does not directly focus on the core topics of LLM architecture or evaluation.
   evidence_quotes:
-  - This post discusses the process of building AI applications by moving from notebooks to a production server, focusing on the correct methodology.
-  - This post discusses the process of building AI applications by moving from notebooks to a production server, focusing on the correct methodology.
+  - This post provides guidance on building AI applications by transitioning from notebooks to production servers.
+  - 'From Notebooks to Production Server: Build AI Applications The Right Way'
 ---
 # From Notebooks to Production Server: Build AI Applications The Right Way
 

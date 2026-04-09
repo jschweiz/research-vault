@@ -28,23 +28,23 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:15:04.973363Z'
 short_summary: TLDR roundup on Meta's AI model, Anthropic's agent platform, code analysis via git ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.476717Z'
+lightweight_enriched_at: '2026-04-09T14:34:23.020919Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 0c3a05b88d452c71c34253ac96faafc31e8414e45e6c8c1d4a8bbb0c464e46a0
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: ec588187c908787882459f1741acefb9d841915573205c0b9dc6bbbc1b813f1b
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly covers favorite topics like language models, agent platforms, and code analysis, and features relevant authors.
   evidence_quotes:
-  - TLDR roundup on Meta's AI model, Anthropic's agent platform, code analysis via git ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
+  - Meta's AI model 🧠, Anthropic's agent platform 🤖, code analysis via git 👨‍💻
 ---
 # Meta's AI model 🧠, Anthropic's agent platform 🤖, code analysis via git 👨‍💻
 

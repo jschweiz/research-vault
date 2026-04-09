@@ -18,7 +18,7 @@ tags:
 - ai safety
 - coding agents
 - misalignment
-- monitoring
+- chain-of-thought
 status: active
 asset_paths: []
 source_id: openai-website
@@ -29,24 +29,26 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:41.337356Z'
-short_summary: OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents by analyzing real-world deployments to detect risks and improve AI safety safeguards.
+short_summary: OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents. This process involves analyzing real-world deployments to detect risks and improve AI safety safeguards.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:54.918883Z'
+lightweight_enriched_at: '2026-04-09T14:34:21.849931Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4130f7c98d723743c1b3b6eb36661657435b45b0ec6a2658bdcd687ca65e0c40
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 98a60248c1c73beccdcaf7aa7bf1266a226938a029d889a9e898e6502487f9ce
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e4ac5e6945a1b09c595a58991923012f5b6bccf24c356f3eb311acb850347a79
 lightweight_score:
-  relevance_score: 0.4998
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
   author_fit_score: 1.0
-  evidence_fit_score: 0.7942
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-author match.
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics (AI safety, evaluation, misalignment) and features a favorite author (OpenAI).
   evidence_quotes:
-  - OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents by analyzing real-world deployments to detect risks and improve AI safet
+  - OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents.
+  - This process involves analyzing real-world deployments to detect risks and improve AI safety safeguards.
+  - How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI s
 ---
 How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.

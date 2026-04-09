@@ -6,7 +6,6 @@ source_url: https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpr
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
-- Nikhil Anand
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:21.755462Z'
 content_hash: d81935c9140c3ff7fe50da79e09ba4936723e1f66e6a17bf85e47c29e20089b9
@@ -16,10 +15,6 @@ tags:
 - medium
 - email
 - blog-post
-- backpropagation
-- neural network
-- ai
-- machine learning
 status: active
 asset_paths: []
 source_id: medium-email
@@ -30,25 +25,15 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:21.755468Z'
-short_summary: This post explores the concept of backpropagation and suggests it is simpler than commonly perceived. It delves into what is actually computed inside a neural network.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:55.357019Z'
+short_summary: null
+lightweight_enrichment_status: failed
+lightweight_enriched_at: null
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 26afdd0550b231fad129d5475eba9ec42667ec0680285b57a28998d965c49af8
-lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 3aaf1f4d82b847b4678ad4a01b0c8c741eb035b413f18c15d82ddce4d9666d58
-lightweight_score:
-  relevance_score: 0.395
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.8852
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - This post explores the concept of backpropagation and suggests it is simpler than commonly perceived. It delves into what is actually computed inside a neural n
+lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Backpropagation is simpler than you think (once you see this)
 

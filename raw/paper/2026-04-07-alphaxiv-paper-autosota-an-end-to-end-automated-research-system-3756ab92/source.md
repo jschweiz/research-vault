@@ -11,16 +11,6 @@ authors:
 - Ruotong Zhao
 - Peijie Liu
 - Hongyuan Su
-- Zhibin Chen
-- Qinglong Yang
-- Anjie Xu
-- Yi Fang
-- Qingbin Zeng
-- Tianxing Li
-- Jingbo Xu
-- Fengli Xu
-- Yong Li
-- Tie-Yan Liu
 published_at: '2026-04-07T07:52:01Z'
 ingested_at: '2026-04-09T12:08:47.189118Z'
 content_hash: 76d58d13ced6281d9d0f6b95d1eae7d82fda514f5e4a0eb3290c8e5dee04cebc
@@ -31,15 +21,11 @@ tags:
 - research
 - agentic-frameworks
 - agents
-- Computer Science
-- cs.CE
-- cs.CL
+- computer science
+- cs.ce
+- cs.cl
 - ml-systems
 - neural-architecture-search
-- optimization-methods
-- training-orchestration
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -58,15 +44,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:08:47.189123Z'
-short_summary: An end-to-end automated research system named AutoSOTA, developed by Tsinghua University and Zhongguancun Academy, discovers new State-of-the-Art AI models from unstructured research papers. The system autonomously reproduces and optimizes original methods, achieving an average performance improvement of approximately 10% across 105 diverse AI papers within about five hours of execution per paper.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: AutoSOTA is an end-to-end automated research system that discovers new State-of-the-Art AI models by autonomously reproducing and optimizing methods across 105 papers. It uses a multi-agent architecture to accelerate the full pipeline of empirical model optimization, leading to significant performance improvements.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T14:34:23.248672Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2a443184b97be635237240020191af560c333d1b481272d1b8fd50c4ee5e03be
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: abb6f632960083f113b402b8f1b6d78021f728a4e9884b6ff153ca57fd1fceef
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - 'AutoSOTA is an end-to-end automated research system that discovers new State-of-the-Art AI models by autonomously reproducing and optimizing methods across 105 '
 ---
 # AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery
 

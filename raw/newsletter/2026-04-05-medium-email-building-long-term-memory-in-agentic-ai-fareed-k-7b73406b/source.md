@@ -27,23 +27,25 @@ index_visibility: hidden
 fetched_at: '2026-04-09T12:05:18.379497Z'
 short_summary: Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s everything you need to know".
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:57.066523Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.908552Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: e12b10aee3eb4976e4d262b8354b2fa864026a867d0d23c7176de44ec3b3dea7
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_model: gemma4:e2b
 lightweight_scoring_input_hash: 1f2d27ecf67f46783e927b8d101edf6957ef3ef2fa19557352b20d4441a18c14
 lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses 'Long-Term Memory in Agentic AI,' which aligns perfectly with the user's favorite topics of LLM architecture, memory, and agentic AI.
   evidence_quotes:
-  - Medium digest led by "Building Long-Term Memory in Agentic AI". Includes 15 highlighted stories, including "I spent 5 hours learning Unity Catalog. Here’s every
+  - Building Long-Term Memory in Agentic AI
+  - HITL, InMemory Feature, Feedback Loop and more
+  - Designing efficient Agentic AI Workflows
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding
 

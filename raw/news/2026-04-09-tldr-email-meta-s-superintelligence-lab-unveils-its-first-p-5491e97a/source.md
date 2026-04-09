@@ -19,9 +19,9 @@ tags:
 - news
 - meta
 - muse spark
-- large language model
+- model
 - social media
-- agent systems
+- agentic systems
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -34,23 +34,25 @@ index_visibility: visible
 fetched_at: '2026-04-09T12:15:05.600667Z'
 short_summary: Meta's Superintelligence Lab has released Muse Spark, its first public AI model. Muse Spark can gather information from social media to link posts to locations or topics, though performance gaps remain in long-horizon agentic systems.
 lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:23:56.914430Z'
+lightweight_enriched_at: '2026-04-09T14:34:22.840593Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 85c0019054efb645aa4c8a6f9667fc67aad4ce6644795cf29ff6cf831fef42a6
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 0c214d4e88022e3ac57c9da1e74a682edfb0ebb79b8c900d6d8ff4922951bf76
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ec8c82709717391d883d15de1199050053b2d0f9ec95de75914e954ef0697d26
 lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like language models and new model releases from major labs.
   evidence_quotes:
-  - 'Meta''s Superintelligence Lab has released Muse Spark, its first public AI model. Muse Spark can gather information from social media to link posts to locations '
+  - Meta's Superintelligence Lab has released Muse Spark, its first public AI model.
+  - Muse Spark can gather information from content posted on social media to link posts to locations or trending topics.
+  - Spark is the first AI model in Meta's Muse family.
 ---
 # Meta's Superintelligence Lab unveils its first public model, Muse Spark
 
