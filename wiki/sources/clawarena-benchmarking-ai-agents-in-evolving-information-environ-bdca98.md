@@ -7,17 +7,19 @@ aliases:
 source_refs:
 - 2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 backlinks:
+- page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 - page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
+- page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
-- page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
+- page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
 - topic:agentic-frameworks
 - topic:artificial-intelligence
+- topic:continual-learning
 - topic:evaluations
-- topic:reasoning
-updated_at: '2026-04-09T12:15:42.519622Z'
+updated_at: '2026-04-09T16:35:04.760500Z'
 managed: true
 ---
 # ClawArena: Benchmarking AI Agents in Evolving Information Environments
@@ -31,9 +33,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-05T17:55:23+00:00
 - Authors: Haonian Ji, Kaiwen Xiong, Siwei Han, Peng Xia, Shi Qiu, Yiyang Zhou, Jiaqi Liu, Jinlong Li, Bingzhou Li, Zeyu Zheng, Cihang Xie, Huaxiu Yao
-- Tags: paper, alphaxiv, research, agentic-frameworks, agents, Computer Science, continual-learning, cs.AI, cs.CL, cs.LG, human-ai-interaction, reasoning
-- Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Reasoning](../topics/reasoning.md), [Evaluations](../topics/evaluations.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Artificial Intelligence](../topics/artificial-intelligence.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, continual-learning, cs.ai, cs.cl, cs.lg
+- Topics: [Agents](../topics/agents.md), [Evaluations](../topics/evaluations.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Continual Learning](../topics/continual-learning.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -43,20 +45,20 @@ ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic in
 ## Topic Map
 
 - [Agents](../topics/agents.md)
-- [Audio](../topics/audio.md)
-- [Reasoning](../topics/reasoning.md)
 - [Evaluations](../topics/evaluations.md)
 - [Agentic Frameworks](../topics/agentic-frameworks.md)
 - [Artificial Intelligence](../topics/artificial-intelligence.md)
+- [Computer Science](../topics/computer-science.md)
+- [Continual Learning](../topics/continual-learning.md)
 
 ## Related Research
 
-- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Audio, Evaluations, Reasoning)
-- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Audio, Reasoning)
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Artificial Intelligence, Audio)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Audio, Reasoning)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Audio)
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Audio)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Artificial Intelligence, Computer Science)
+- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Computer Science, Evaluations)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](autosota-an-end-to-end-automated-research-system-for-state-of-th-79db5b.md) (shared topics: Agentic Frameworks, Agents, Computer Science)
+- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
 
 ## Radar
 

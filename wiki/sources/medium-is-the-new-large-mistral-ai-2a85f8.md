@@ -7,14 +7,12 @@ aliases:
 source_refs:
 - 2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 backlinks:
-- page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
-- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
-- page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
-- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
-- page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
-- topic:large-mistral-ai
-- topic:mistral-ai
-updated_at: '2026-04-09T12:15:42.009284Z'
+- topic:cost-efficiency
+- topic:enterprise
+- topic:evaluations
+- topic:language-models
+- topic:medium-3
+updated_at: '2026-04-09T16:35:03.976565Z'
 managed: true
 ---
 # Medium is the new large. | Mistral AI
@@ -27,28 +25,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/mistral-medium-3
 - Document kind: blog-post
 - Published at: 2025-05-07T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Evaluations](../topics/evaluations.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Large Mistral Ai](../topics/large-mistral-ai.md), [Mistral Ai](../topics/mistral-ai.md)
-- Trend score: 56.46
-- Novelty score: 0.60
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, medium 3, language models, enterprise, cost efficiency, coding
+- Topics: [Evaluations](../topics/evaluations.md), [Coding](../topics/coding.md), [Cost Efficiency](../topics/cost-efficiency.md), [Enterprise](../topics/enterprise.md), [Language Models](../topics/language-models.md), [Medium 3](../topics/medium-3.md)
+- Trend score: 43.25
+- Novelty score: 4.80
+
+## Summary
+
+Mistral Medium 3 is a new class of language models that balances state-of-the-art performance with significantly lower cost and simpler deployment for enterprise use. It excels in professional tasks like coding and multimodal understanding while offering extensive customization capabilities.
 
 ## Topic Map
 
 - [Evaluations](../topics/evaluations.md)
-- [Mistral](../topics/mistral.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Large Mistral Ai](../topics/large-mistral-ai.md)
-- [Mistral Ai](../topics/mistral-ai.md)
+- [Coding](../topics/coding.md)
+- [Cost Efficiency](../topics/cost-efficiency.md)
+- [Enterprise](../topics/enterprise.md)
+- [Language Models](../topics/language-models.md)
+- [Medium 3](../topics/medium-3.md)
 
 ## Related Research
 
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Evaluations, Mistral, Mistral Ai, Official, Website)
-- [Mistral OCR | Mistral AI](mistral-ocr-mistral-ai-eb1d8c.md) (shared topics: Evaluations, Mistral, Mistral Ai, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Evaluations, Mistral, Official, Website)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Enterprise)
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-ed1994.md) (shared topics: Coding)
+- [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Coding)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Evaluations)
+- [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding)
+- [Vibe Coding — Prompts Are All You Need?](vibe-coding-prompts-are-all-you-need-1a0efe.md) (shared topics: Coding)
 
 ## Radar
 

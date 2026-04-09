@@ -7,11 +7,13 @@ aliases:
 source_refs:
 - 2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 backlinks:
-- page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
-- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
-- topic:alignment
+- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
+- topic:ai-safety
 - topic:constitutional-classifiers
-updated_at: '2026-04-09T12:15:42.542400Z'
+- topic:jailbreaks
+- topic:llm-defense
+- topic:safety
+updated_at: '2026-04-09T16:35:03.999672Z'
 managed: true
 ---
 # Constitutional Classifiers: Defending against universal jailbreaks
@@ -24,28 +26,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/constitutional-classifiers
 - Document kind: blog-post
 - Published at: 2025-02-03T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Safety](../topics/safety.md), [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Alignment](../topics/alignment.md), [Constitutional Classifiers](../topics/constitutional-classifiers.md)
-- Trend score: 56.46
-- Novelty score: 3.60
+- Authors: Anthropic
+- Tags: anthropic, official, research, website, blog-post, constitutional classifiers, jailbreaks, ai safety, llm defense, red teaming
+- Topics: [Safety](../topics/safety.md), [Constitutional Classifiers](../topics/constitutional-classifiers.md), [Ai Safety](../topics/ai-safety.md), [Anthropic](../topics/anthropic.md), [Jailbreaks](../topics/jailbreaks.md), [Llm Defense](../topics/llm-defense.md)
+- Trend score: 45.86
+- Novelty score: 1.20
+
+## Summary
+
+The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data, significantly improving robustness against harmful prompts with minimal compute overhead.
 
 ## Topic Map
 
 - [Safety](../topics/safety.md)
-- [Anthropic](../topics/anthropic.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Alignment](../topics/alignment.md)
 - [Constitutional Classifiers](../topics/constitutional-classifiers.md)
+- [Ai Safety](../topics/ai-safety.md)
+- [Anthropic](../topics/anthropic.md)
+- [Jailbreaks](../topics/jailbreaks.md)
+- [Llm Defense](../topics/llm-defense.md)
 
 ## Related Research
 
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official, Safety, Website)
-- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Anthropic, Official, Safety, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Safety, Website)
-- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Safety, Website)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
-- [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Official, Safety, Website)
+- [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Ai Safety, Safety)
+- [A “diff” tool for AI: Finding behavioral differences in new models](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-ab6a23.md) (shared topics: Ai Safety, Anthropic)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Ai Safety, Anthropic)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic)
+- [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Anthropic)
 
 ## Radar
 

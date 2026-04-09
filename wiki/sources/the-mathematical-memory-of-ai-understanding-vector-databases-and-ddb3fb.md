@@ -7,10 +7,12 @@ aliases:
 source_refs:
 - 2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
 backlinks:
+- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
-- topic:ai-understanding
-- topic:mathematical-memory
-updated_at: '2026-04-09T12:15:42.438722Z'
+- topic:embedding-pipelines
+- topic:mathematics
+- topic:vector-databases
+updated_at: '2026-04-09T16:35:04.696699Z'
 managed: true
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
@@ -23,29 +25,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Memory](../topics/memory.md), [Mathematical Memory](../topics/mathematical-memory.md), [Ai Understanding](../topics/ai-understanding.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Kuriko Iwai
+- Tags: newsletter, medium, email, blog-post, vector databases, embedding pipelines, ai, mathematics
+- Topics: [Email](../topics/email.md), [Embedding Pipelines](../topics/embedding-pipelines.md), [Mathematics](../topics/mathematics.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Vector Databases](../topics/vector-databases.md)
 - Trend score: 500.30
 - Novelty score: 6.80
+
+## Summary
+
+This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
 
 ## Topic Map
 
 - [Email](../topics/email.md)
+- [Embedding Pipelines](../topics/embedding-pipelines.md)
+- [Mathematics](../topics/mathematics.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Memory](../topics/memory.md)
-- [Mathematical Memory](../topics/mathematical-memory.md)
-- [Ai Understanding](../topics/ai-understanding.md)
+- [Vector Databases](../topics/vector-databases.md)
 
 ## Related Research
 
-- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](the-mathematical-memory-of-ai-understanding-vector-databases-and-e8bed5.md) (shared topics: Ai Understanding, Email, Mathematical Memory, Medium, Memory, Newsletter)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Email, Medium, Memory, Newsletter)
-- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Email, Medium, Memory, Newsletter)
-- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Email, Medium, Memory, Newsletter)
-- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Email, Medium, Memory, Newsletter)
-- [Building the 14 Key Pillars of Agentic AI](building-the-14-key-pillars-of-agentic-ai-7aebbe.md) (shared topics: Email, Medium, Memory, Newsletter)
+- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](the-mathematical-memory-of-ai-understanding-vector-databases-and-e8bed5.md) (shared topics: Email, Embedding Pipelines, Medium, Newsletter, Vector Databases)
+- [Vector Databases Exist Because SQL Has One Blind Spot](vector-databases-exist-because-sql-has-one-blind-spot-3d9048.md) (shared topics: Email, Medium, Newsletter, Vector Databases)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
+- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
+- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

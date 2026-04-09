@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 backlinks: []
-updated_at: '2026-04-09T12:15:38.311542Z'
+updated_at: '2026-04-09T16:34:00.366759Z'
 managed: true
 ---
 # [Deprecated] Pixtral Large | Mistral AI
@@ -20,28 +20,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/pixtral-large
 - Document kind: blog-post
 - Published at: 2024-11-18T08:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Evaluations](../topics/evaluations.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Computer Vision](../topics/computer-vision.md), [Long Context](../topics/long-context.md)
-- Trend score: 56.46
-- Novelty score: 4.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, multimodal model, pixtral large, mistral large 2, multimodal benchmarks, vision encoder
+- Topics: [Evaluations](../topics/evaluations.md), [Mistral](../topics/mistral.md), [Mistral Large 2](../topics/mistral-large-2.md), [Multimodal Benchmarks](../topics/multimodal-benchmarks.md), [Multimodal Model](../topics/multimodal-model.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 2.40
+
+## Summary
+
+Pixtral Large is a 124B open-weights multimodal model built on Mistral Large 2, demonstrating frontier-class performance in multimodal tasks like document understanding and mathematical reasoning.
 
 ## Topic Map
 
 - [Evaluations](../topics/evaluations.md)
 - [Mistral](../topics/mistral.md)
+- [Mistral Large 2](../topics/mistral-large-2.md)
+- [Multimodal Benchmarks](../topics/multimodal-benchmarks.md)
+- [Multimodal Model](../topics/multimodal-model.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Computer Vision](../topics/computer-vision.md)
-- [Long Context](../topics/long-context.md)
 
 ## Related Research
 
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Medium is the new large. | Mistral AI](medium-is-the-new-large-mistral-ai-2a85f8.md) (shared topics: Evaluations, Mistral, Official, Website)
+- [Mistral Small 3 | Mistral AI](mistral-small-3-mistral-ai-098c06.md) (shared topics: Evaluations, Mistral, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
+- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Mistral, Official)
 
 ## Radar
 

@@ -4,11 +4,15 @@ page_type: topic
 title: Constitutional Classifiers
 aliases:
 - Constitutional Classifiers
+- constitutional classifiers
 source_refs:
 - 2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 backlinks:
 - page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
-updated_at: '2026-04-09T12:15:42.559591Z'
+- topic:ai-safety
+- topic:jailbreaks
+- topic:llm-defense
+updated_at: '2026-04-09T16:35:04.384111Z'
 managed: true
 ---
 # Constitutional Classifiers
@@ -31,11 +35,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Alignment](alignment.md)
+- [Ai Safety](ai-safety.md)
 - [Anthropic](anthropic.md)
-- [Official](official.md)
+- [Jailbreaks](jailbreaks.md)
+- [Llm Defense](llm-defense.md)
 - [Safety](safety.md)
-- [Website](website.md)
 
 ## Leading Sources
 

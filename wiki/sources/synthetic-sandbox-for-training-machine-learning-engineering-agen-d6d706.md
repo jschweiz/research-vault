@@ -7,13 +7,15 @@ aliases:
 source_refs:
 - 2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 backlinks:
-- page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
+- page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
+- page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
+- page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - topic:agentic-frameworks
 - topic:fine-tuning
+- topic:language-modeling
 - topic:reinforcement-learning
-- topic:tool-use
-updated_at: '2026-04-09T12:15:42.605641Z'
+updated_at: '2026-04-09T16:35:04.540015Z'
 managed: true
 ---
 # Synthetic Sandbox for Training Machine Learning Engineering Agents
@@ -27,9 +29,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-06T17:19:29+00:00
 - Authors: Yuhang Zhou, Lizhu Zhang, Yifan Wu, Jiayi Liu, Xiangjun Fan, Zhuokai Zhao, Hong Yan
-- Tags: paper, alphaxiv, research, agentic-frameworks, agents, Computer Science, cs.CL, cs.LG, fine-tuning, ml-systems, multi-agent-learning, reinforcement-learning
-- Topics: [Agents](../topics/agents.md), [Fine-Tuning](../topics/fine-tuning.md), [Audio](../topics/audio.md), [Reinforcement Learning](../topics/reinforcement-learning.md), [Tool Use](../topics/tool-use.md), [Agentic Frameworks](../topics/agentic-frameworks.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.cl, cs.lg, fine-tuning, ml-systems
+- Topics: [Agents](../topics/agents.md), [Fine-Tuning](../topics/fine-tuning.md), [Reinforcement Learning](../topics/reinforcement-learning.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Computer Science](../topics/computer-science.md), [Language Modeling](../topics/language-modeling.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -40,19 +42,19 @@ SandMLE is a framework that creates synthetic, micro-scale machine learning engi
 
 - [Agents](../topics/agents.md)
 - [Fine-Tuning](../topics/fine-tuning.md)
-- [Audio](../topics/audio.md)
 - [Reinforcement Learning](../topics/reinforcement-learning.md)
-- [Tool Use](../topics/tool-use.md)
 - [Agentic Frameworks](../topics/agentic-frameworks.md)
+- [Computer Science](../topics/computer-science.md)
+- [Language Modeling](../topics/language-modeling.md)
 
 ## Related Research
 
-- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](autosota-an-end-to-end-automated-research-system-for-state-of-th-79db5b.md) (shared topics: Agentic Frameworks, Agents, Audio)
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Audio)
-- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agentic Frameworks, Agents, Audio)
-- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Audio, Tool Use)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Agents, Fine-Tuning)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Audio)
+- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](autosota-an-end-to-end-automated-research-system-for-state-of-th-79db5b.md) (shared topics: Agentic Frameworks, Agents, Computer Science, Language Modeling)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Computer Science, Language Modeling)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agentic Frameworks, Agents, Computer Science)
+- [Embarrassingly Simple Self-Distillation Improves Code Generation](embarrassingly-simple-self-distillation-improves-code-generation-c213e5.md) (shared topics: Computer Science, Fine-Tuning, Language Modeling)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Computer Science)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Computer Science)
 
 ## Radar
 

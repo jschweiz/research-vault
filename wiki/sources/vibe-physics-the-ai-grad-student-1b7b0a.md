@@ -8,16 +8,14 @@ source_refs:
 - 2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 backlinks:
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
+- page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
-- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
-- page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
-- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
-- page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
+- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
-- topic:ai-grad
-- topic:ai-grad-student
-- topic:anthropic
-updated_at: '2026-04-09T12:15:42.192761Z'
+- topic:llms
+- topic:physics
+- topic:quantum-field-theory
+updated_at: '2026-04-09T16:35:04.670910Z'
 managed: true
 ---
 # Vibe physics: The AI grad student
@@ -30,28 +28,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/vibe-physics
 - Document kind: blog-post
 - Published at: 2026-03-23T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Ai Grad](../topics/ai-grad.md), [Ai Grad Student](../topics/ai-grad-student.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Authors: Matthew Schwartz
+- Tags: anthropic, official, research, website, blog-post, ai, physics, quantum field theory, machine learning, llms
+- Topics: [Anthropic](../topics/anthropic.md), [Llms](../topics/llms.md), [Machine Learning](../topics/machine-learning.md), [Official](../topics/official.md), [Physics](../topics/physics.md), [Quantum Field Theory](../topics/quantum-field-theory.md)
+- Trend score: 81.00
+- Novelty score: 6.80
+
+## Summary
+
+A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of AI in theoretical physics.
 
 ## Topic Map
 
 - [Anthropic](../topics/anthropic.md)
+- [Llms](../topics/llms.md)
+- [Machine Learning](../topics/machine-learning.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
-- [Ai Grad](../topics/ai-grad.md)
-- [Ai Grad Student](../topics/ai-grad-student.md)
+- [Physics](../topics/physics.md)
+- [Quantum Field Theory](../topics/quantum-field-theory.md)
 
 ## Related Research
 
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Agents, Anthropic, Official, Website)
-- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Agents, Anthropic, Official, Website)
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Agents, Official, Website)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official, Website)
-- [Powering product discovery in ChatGPT](powering-product-discovery-in-chatgpt-42f262.md) (shared topics: Agents, Official, Website)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official)
+- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
+- [Labor market impacts of AI: A new measure and early evidence](labor-market-impacts-of-ai-a-new-measure-and-early-evidence-dcb46b.md) (shared topics: Anthropic, Official)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Anthropic, Official)
+- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

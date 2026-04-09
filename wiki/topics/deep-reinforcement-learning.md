@@ -9,8 +9,9 @@ source_refs:
 - 2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 backlinks:
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
-- topic:machine-learning
-updated_at: '2026-04-09T12:15:42.424269Z'
+- topic:optimization-methods
+- topic:robotics
+updated_at: '2026-04-09T16:35:04.554261Z'
 managed: true
 ---
 # Deep Reinforcement Learning
@@ -34,9 +35,9 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Machine Learning](machine-learning.md)
+- [Optimization Methods](optimization-methods.md)
 - [Reinforcement Learning](reinforcement-learning.md)
 - [Robotics](robotics.md)
 

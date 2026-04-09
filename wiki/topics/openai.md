@@ -6,13 +6,14 @@ aliases:
 - Openai
 - openai
 source_refs:
-- 2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
+- 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
 - 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- 2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- 2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
 - 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - 2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 - 2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 - 2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
-- 2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
 - 2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
 - 2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - 2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
@@ -25,11 +26,9 @@ source_refs:
 - 2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - 2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
 - 2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
-- 2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 backlinks:
 - map:global-ai-research
 - map:trends:rising-topics
-- page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
@@ -42,37 +41,68 @@ backlinks:
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
-- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
 - page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
 - page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
+- page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
-- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
-- topic:agents-misalignment
-- topic:ai-account
-- topic:ai-account-manager
-- topic:ai-action
-- topic:ai-experiences
-- topic:build-safer-ai
+- page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- topic:accountability
+- topic:acquisition
+- topic:agentic-commerce
+- topic:ai-abuse
+- topic:ai-era
+- topic:ai-safety
+- topic:asia
+- topic:bug-bounty
+- topic:business
+- topic:chatgpt
 - topic:child-safety
-- topic:child-safety-blueprint
+- topic:codex
 - topic:coding-agents
-- topic:customer-ai
-- topic:enterprise-ai
-- topic:japan-teen-safety
+- topic:cybersecurity
+- topic:developer-tools
+- topic:developers
+- topic:disaster-response
+- topic:disease
+- topic:fellowship
+- topic:finance
+- topic:finances
+- topic:foundation
+- topic:funding
+- topic:gates-foundation
+- topic:gpt-oss-safeguard
+- topic:industrial-policy
+- topic:investment
+- topic:ipos
+- topic:japan
+- topic:knowledge-work
+- topic:media
+- topic:misalignment
+- topic:model-spec
 - topic:official
-- topic:openai-safety
-- topic:openai-safety-bug
-- topic:openai-safety-fellowship
-- topic:phase-ai
-- topic:put-teen-safety
+- topic:online-safety
+- topic:opportunity
+- topic:policy
+- topic:product-discovery
+- topic:productivity
+- topic:prosperity
+- topic:public-offering
+- topic:roadmap
+- topic:safeguards
 - topic:safety
-- topic:teams-turn-ai
-- topic:turn-ai
+- topic:safety-blueprint
+- topic:shopping
+- topic:social-creation-platform
+- topic:sora
+- topic:stadler
+- topic:technology
+- topic:teen-safety
 - topic:video-generation
 - topic:website
-updated_at: '2026-04-09T12:15:42.534937Z'
+updated_at: '2026-04-09T16:35:04.177070Z'
 managed: true
 ---
 # Openai
@@ -81,14 +111,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 42.05
-- Novelty score: 2.30
-- Items in last 7 days: 4
+- Trend score: 49.76
+- Novelty score: 2.51
+- Items in last 7 days: 6
 - Items in last 30 days: 20
 - Total supporting items: 20
-- Source diversity: 1
+- Source diversity: 2
 - First seen: 2026-03-17T10:00:00+00:00
-- Last seen: 2026-04-08T14:00:00+00:00
+- Last seen: 2026-04-08T10:59:19+00:00
 
 ## Aliases
 
@@ -98,24 +128,25 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Official](official.md)
 - [Website](website.md)
 - [Safety](safety.md)
-- [Agents](agents.md)
-- [Openai Safety](openai-safety.md)
-- [Agents Misalignment](agents-misalignment.md)
-- [Ai Account](ai-account.md)
-- [Ai Account Manager](ai-account-manager.md)
+- [Chatgpt](chatgpt.md)
+- [Codex](codex.md)
+- [Email](email.md)
+- [Newsletter](newsletter.md)
+- [Ai Safety](ai-safety.md)
 
 ## Leading Sources
 
 - OpenAI Website
+- TLDR Email
 
 ## Representative Signals
 
-- [The next phase of enterprise AI](../sources/the-next-phase-of-enterprise-ai-00c367.md)
+- [OpenAI #16: A History and a Proposal](../sources/openai-16-a-history-and-a-proposal-a6e162.md)
 - [Introducing the Child Safety Blueprint](../sources/introducing-the-child-safety-blueprint-be6078.md)
+- [OpenAI's leadership reportedly disagrees about when to raise money and how to spend it](../sources/openai-s-leadership-reportedly-disagrees-about-when-to-raise-mon-29d299.md)
+- [An Inside Look at OpenAI and Anthropic's Finances Ahead of Their IPOs](../sources/an-inside-look-at-openai-and-anthropic-s-finances-ahead-of-their-1c380d.md)
 - [Announcing the OpenAI Safety Fellowship](../sources/announcing-the-openai-safety-fellowship-8b56c7.md)
 - [Industrial policy for the Intelligence Age](../sources/industrial-policy-for-the-intelligence-age-045aa4.md)
-- [OpenAI acquires TBPN](../sources/openai-acquires-tbpn-ceb257.md)
-- [Codex now offers more flexible pricing for teams](../sources/codex-now-offers-more-flexible-pricing-for-teams-4821c6.md)
 
 ## Map Links
 

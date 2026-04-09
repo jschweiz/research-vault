@@ -7,11 +7,24 @@ aliases:
 source_refs:
 - 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 backlinks:
+- page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
+- page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
-- topic:asr-scratch
+- page:2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
+- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
+- page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
+- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
+- page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
+- page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
+- page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
+- page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
+- page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
+- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
 - topic:audio
-- topic:automatic-speech-recognition
-updated_at: '2026-04-09T12:15:42.319049Z'
+- topic:machine-learning
+- topic:python
+updated_at: '2026-04-09T16:35:04.603552Z'
 managed: true
 ---
 # Automatic Speech Recognition (ASR) From Scratch (With Intuition)
@@ -24,29 +37,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@purusharth.19.malik/automatic-speech-recognition-asr-from-scratch-with-intuition-60273efcfe28
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Audio](../topics/audio.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Asr Scratch](../topics/asr-scratch.md), [Automatic Speech Recognition](../topics/automatic-speech-recognition.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Purusharth Malik
+- Tags: newsletter, medium, email, blog-post, asr, speech recognition, python, machine learning, ai
+- Topics: [Audio](../topics/audio.md), [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md)
 - Trend score: 500.30
 - Novelty score: 6.80
+
+## Summary
+
+This post provides an intuitive guide to building Automatic Speech Recognition (ASR) from scratch. It is presented as a newsletter highlight from Medium.
 
 ## Topic Map
 
 - [Audio](../topics/audio.md)
 - [Email](../topics/email.md)
+- [Machine Learning](../topics/machine-learning.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Asr Scratch](../topics/asr-scratch.md)
-- [Automatic Speech Recognition](../topics/automatic-speech-recognition.md)
+- [Python](../topics/python.md)
 
 ## Related Research
 
-- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
+- [From Notebooks to Production Server: Build AI Applications The Right Way](from-notebooks-to-production-server-build-ai-applications-the-ri-b058f9.md) (shared topics: Email, Machine Learning, Medium, Newsletter, Python)
+- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [What Is an LLM? A No-Jargon Introduction](what-is-an-llm-a-no-jargon-introduction-9f47cf.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose](i-built-the-slowest-3d-gaussian-splatting-renderer-on-purpose-bed611.md) (shared topics: Email, Medium, Newsletter, Python)
+- [Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python](andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-c73f58.md) (shared topics: Email, Medium, Newsletter, Python)
+- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Email, Medium, Newsletter, Python)
 
 ## Radar
 

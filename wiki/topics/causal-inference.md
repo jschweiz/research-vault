@@ -13,8 +13,10 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:artificial-intelligence
 - topic:attention-mechanisms
+- topic:cs-gr
+- topic:human-ai-interaction
 - topic:reasoning
-updated_at: '2026-04-09T12:15:42.241034Z'
+updated_at: '2026-04-09T16:35:04.166334Z'
 managed: true
 ---
 # Causal Inference
@@ -39,11 +41,13 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Related Topics
 
 - [Artificial Intelligence](artificial-intelligence.md)
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
-- [Reasoning](reasoning.md)
 - [Agents](agents.md)
 - [Attention Mechanisms](attention-mechanisms.md)
+- [Computer Vision](computer-vision.md)
+- [Cs Gr](cs-gr.md)
+- [Human Ai Interaction](human-ai-interaction.md)
+- [Reasoning](reasoning.md)
 
 ## Leading Sources
 

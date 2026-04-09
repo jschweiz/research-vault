@@ -12,20 +12,22 @@ source_refs:
 - 2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
 - 2026-04-09-medium-email-the-art-of-letting-go-69290282
 - 2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
-- 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
-- 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
-- 2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
-- 2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
 - 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
+- 2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- 2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - 2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - 2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
-- 2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
-- 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-- 2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
-- 2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
-- 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
-- 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
+- 2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
+- 2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- 2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
+- 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 - 2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
+- 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- 2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- 2026-04-07-alphaxiv-paper-neural-computers-503b0501
+- 2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
 backlinks:
 - map:global-ai-research
 - page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
@@ -195,194 +197,413 @@ backlinks:
 - page:2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
 - page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
 - page:2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
-- topic:25-01-mistral-ai
-- topic:3-mistral-ai
+- topic:3d-gaussian-splatting
+- topic:3d-modeling
+- topic:3d-reconstruction
+- topic:accountability
+- topic:acquisition
+- topic:adam-back
+- topic:adoption
+- topic:agent-building
+- topic:agent-design
 - topic:agentic-ai
-- topic:agentic-coding-capabilities
+- topic:agentic-commerce
 - topic:agentic-engineering
 - topic:agentic-frameworks
+- topic:agentic-llm
+- topic:agentic-systems
+- topic:agentic-workflows
 - topic:agents
-- topic:agents-businesses
-- topic:agents-how
-- topic:agents-misalignment
-- topic:agents-not-write
-- topic:agents-parallelization-subgraphs
-- topic:agents-without-any
-- topic:ai-account
-- topic:ai-account-manager
-- topic:ai-action
+- topic:aging
+- topic:ai-abuse
+- topic:ai-adoption
 - topic:ai-advances
 - topic:ai-agents
-- topic:ai-applications
+- topic:ai-automation
 - topic:ai-coding-agents
 - topic:ai-engineering
-- topic:ai-experiences
-- topic:ai-finding
-- topic:ai-finding-behavioral
+- topic:ai-era
 - topic:ai-genomics
-- topic:ai-grad
-- topic:ai-grad-student
 - topic:ai-health
-- topic:ai-helped
-- topic:ai-helped-one
-- topic:ai-job
-- topic:ai-job-threat
 - topic:ai-lab-finances
+- topic:ai-model
 - topic:ai-model-anthropic
-- topic:ai-model-mythos
-- topic:ai-new
-- topic:ai-pullback
-- topic:ai-pullback-has
-- topic:ai-s
-- topic:ai-s-robotic
-- topic:ai-satellite
-- topic:ai-satellite-embeddings
-- topic:ai-understanding
-- topic:ai-zero-shot
-- topic:ai-zero-shot-3d
+- topic:ai-safety
+- topic:ai-tools
 - topic:alignment
 - topic:amazon
 - topic:amd
+- topic:anduril
+- topic:antares
 - topic:anthropic
+- topic:apache-spark
+- topic:api
 - topic:apple
+- topic:arabic
+- topic:architecture
 - topic:artemis-ii
 - topic:artificial-intelligence
-- topic:asr-scratch
+- topic:asia
 - topic:astronauts
 - topic:attention-mechanisms
 - topic:audio
-- topic:automatic-speech-recognition
-- topic:beyond-rlhf
-- topic:build-ai
-- topic:build-ai-applications
-- topic:build-safer-ai
+- topic:australia
+- topic:automation
+- topic:awareness
+- topic:aws
+- topic:backpropagation
+- topic:banking-support
+- topic:bash
+- topic:behavior
+- topic:bitcoin
+- topic:bitcoin-movement
+- topic:boltzmann-solvers
+- topic:bottleneck
+- topic:broadcom
+- topic:bug-bounty
+- topic:building-block-economy
+- topic:building-blocks
 - topic:business
-- topic:can-ai
+- topic:business-simulation
 - topic:career
+- topic:careers
 - topic:causal-inference
+- topic:chatgpt
+- topic:chatgpt-enterprise
 - topic:child-safety
-- topic:child-safety-blueprint
+- topic:china
+- topic:chip-packaging
+- topic:chip-plant
+- topic:claude
 - topic:claude-code
+- topic:claude-opus-3
+- topic:claude-usage
+- topic:cli
+- topic:code
+- topic:code-embedding
 - topic:code-generation
+- topic:codebase
+- topic:codestral
+- topic:codestral-embed
+- topic:codex
+- topic:coding
 - topic:coding-agents
+- topic:coding-model
+- topic:coding-stack
+- topic:commands
+- topic:commit-history
+- topic:communication
+- topic:competition
+- topic:complex-queries
 - topic:computer-science
 - topic:computer-vision
 - topic:constitutional-classifiers
+- topic:context
 - topic:context-engineering
 - topic:continual-learning
 - topic:conversational-ai
+- topic:cost-efficiency
+- topic:cost-optimization
+- topic:cross-architecture
+- topic:cryptography
 - topic:cs-ce
 - topic:cs-gr
-- topic:customer-ai
+- topic:cursor
+- topic:cybersecurity
+- topic:dash
+- topic:dashboard
 - topic:data-curation
+- topic:data-engineering
+- topic:data-loading
 - topic:data-pipelines
+- topic:data-science
+- topic:databricks
+- topic:decameron
+- topic:deep-learning
 - topic:deep-reinforcement-learning
+- topic:deep-thinking
+- topic:design
+- topic:developer
 - topic:developer-experience
 - topic:developer-relations
-- topic:devstral-mistral-ai
-- topic:dismissed-ai
+- topic:developer-tools
+- topic:developers
+- topic:devstral
+- topic:disaster-response
+- topic:disease
+- topic:distance-record
 - topic:distributed-learning
+- topic:docker
+- topic:document-ai
+- topic:document-processing
+- topic:document-understanding
+- topic:doe-approval
+- topic:ec2
+- topic:economic-index
+- topic:economists
+- topic:economy
+- topic:ecosystem
+- topic:education
 - topic:efficiency
+- topic:efficient-transformers
 - topic:egpu
 - topic:email
+- topic:embedding-pipelines
+- topic:emotion
+- topic:enterprise
 - topic:enterprise-ai
 - topic:entrepreneurship
+- topic:environment
 - topic:evaluations
+- topic:exposure
+- topic:feedback
+- topic:feedback-loop
+- topic:fellowship
+- topic:filesystem
+- topic:finance
+- topic:finances
 - topic:fine-tuning
+- topic:fitness
+- topic:formal-proof
+- topic:foundation
+- topic:frontier
+- topic:funding
+- topic:gates-foundation
 - topic:gemma-4
-- topic:gen-1-robotics
-- topic:gen-1-robotics-model
+- topic:gen-1
 - topic:generative-models
 - topic:geometric-deep-learning
+- topic:git
+- topic:github-issues
+- topic:golden-dome
+- topic:google
 - topic:google-deepmind
+- topic:google-earth-engine
+- topic:gpt
+- topic:gpt-4-1
+- topic:gpt-5-4
+- topic:gpt-oss-safeguard
+- topic:guide
+- topic:hackathon
+- topic:hand
+- topic:happiness
+- topic:health
+- topic:helm
 - topic:hierarchical-planning
-- topic:how-ai
-- topic:image-ai
+- topic:high-schoolers
+- topic:hitl
+- topic:human-ai-interaction
+- topic:hurt
+- topic:ide
 - topic:image-generation
-- topic:impacts-ai
+- topic:image-processing
+- topic:impulse-space
+- topic:incremental-loading
+- topic:industrial-policy
 - topic:inference
 - topic:inference-optimization
 - topic:infrastructure
 - topic:instruction-tuning
-- topic:interpretability
-- topic:is-llm
-- topic:its-new-ai
-- topic:japan-teen-safety
+- topic:intel
+- topic:internal-system
+- topic:introduction
+- topic:investment
+- topic:ipos
+- topic:jailbreaks
+- topic:japan
+- topic:jax
+- topic:job-boom
+- topic:job-market
+- topic:jobs
 - topic:knowledge-distillation
-- topic:langgraph-agents
+- topic:knowledge-work
+- topic:kubernetes
+- topic:labor-market
+- topic:lambda
+- topic:langgraph
 - topic:language-modeling
-- topic:large-mistral-ai
-- topic:learning-rl
-- topic:learning-rl-concepts
+- topic:language-models
+- topic:large-3
+- topic:large-language-models
+- topic:law
+- topic:lean-4
+- topic:leanstral
+- topic:learning
+- topic:learning-curves
 - topic:legibility
 - topic:lenny-s-podcast
+- topic:letting-go
+- topic:lightweight-model
+- topic:linux
+- topic:literature
 - topic:living-robots
-- topic:ll-manage-agents
-- topic:llm-no-jargon
+- topic:llm
+- topic:llm-defense
+- topic:llms
+- topic:local-inference
 - topic:long-context
+- topic:loop
+- topic:low-latency
 - topic:mac
 - topic:machine-learning
 - topic:machines
-- topic:magistral-mistral-ai
-- topic:managed-agents
-- topic:mathematical-memory
+- topic:macos
+- topic:magistral
+- topic:manipulation
+- topic:map-reduce
+- topic:mark0-reactor
+- topic:mathematics
+- topic:mcp
+- topic:measurement
+- topic:media
 - topic:medium
+- topic:medium-3
 - topic:memory
+- topic:mental-reset
 - topic:meta
+- topic:meta-learning
+- topic:middle-east
 - topic:millennials
+- topic:mindfulness
+- topic:mini
+- topic:ministral-3
+- topic:misalignment
+- topic:missile-defense
+- topic:mistakes
 - topic:mistral
 - topic:mistral-ai
-- topic:models-mistral-ai
+- topic:mistral-large-2
+- topic:mistral-saba
+- topic:mistral-vibe-cli
+- topic:ml-systems
+- topic:mlops
+- topic:model
+- topic:model-auditing
+- topic:model-deprecation
+- topic:model-diffing
+- topic:model-preservation
+- topic:model-release
+- topic:model-spec
+- topic:models
+- topic:monorepo
+- topic:moon
 - topic:moon-flyby
 - topic:multi-modal-learning
+- topic:multilingual
 - topic:multimodal
+- topic:multimodal-ai
+- topic:multimodal-benchmarks
+- topic:multimodal-model
+- topic:multimodal-reasoning
+- topic:muse-spark
+- topic:mythos
+- topic:nano
 - topic:nasa
 - topic:nervous-systems
+- topic:neural-network
+- topic:neural-networks
 - topic:neurobots
-- topic:new-ai
 - topic:newsletter
+- topic:nuclear-energy
 - topic:object-detection
-- topic:ocr-mistral-ai
+- topic:occupational
+- topic:ocr
 - topic:official
-- topic:open-weight-models
+- topic:online-safety
+- topic:open-source
 - topic:openai
-- topic:openai-safety
-- topic:openai-safety-bug
-- topic:openai-safety-fellowship
-- topic:phase-ai
-- topic:production-grade-rag
-- topic:production-grade-rag-architecture
+- topic:operating-systems
+- topic:opportunity
+- topic:optimization-methods
+- topic:personal-growth
+- topic:philosophy
+- topic:physical-ai
+- topic:physics
+- topic:policy
+- topic:product-design
+- topic:product-discovery
+- topic:production
+- topic:production-apps
+- topic:productivity
 - topic:programming
-- topic:put-teen-safety
-- topic:rag-system-fails
-- topic:ready-ai
+- topic:prompts
+- topic:prosperity
+- topic:psychology
+- topic:public-offering
+- topic:pull-requests
+- topic:pullback
+- topic:python
+- topic:quantum-field-theory
+- topic:reading
+- topic:reality
+- topic:realtime
 - topic:reasoning
+- topic:recruitment
+- topic:regional-language-models
 - topic:reinforcement-learning
+- topic:remote-sensing
+- topic:renderer
+- topic:representation
 - topic:researcher-agent
 - topic:retrieval-augmented-generation
+- topic:rl-concepts
+- topic:rnn
+- topic:roadmap
 - topic:robotics
 - topic:robotics-perception
-- topic:saba-mistral-ai
+- topic:routine
+- topic:s3
+- topic:safeguards
 - topic:safety
-- topic:sanctuary-ai
+- topic:safety-blueprint
+- topic:satellite
 - topic:science
 - topic:search
+- topic:security
+- topic:semantic-scanning
+- topic:shopping
+- topic:social-creation-platform
+- topic:social-media
 - topic:software
+- topic:software-adoption
+- topic:software-construction
+- topic:software-development
 - topic:software-engineering
+- topic:sora
+- topic:spaceflight
+- topic:spacex
+- topic:speech-text
+- topic:speech-understanding
+- topic:sql
 - topic:sqlite
+- topic:stadler
+- topic:startup
 - topic:strategy
+- topic:structure
+- topic:synthetic-data
+- topic:system-improvement
 - topic:system-prompts
-- topic:teams-turn-ai
+- topic:talent
+- topic:taste
 - topic:tech
+- topic:technology
+- topic:teen-safety
+- topic:telehealth
+- topic:terafab
 - topic:tldr
+- topic:tokens
 - topic:tool-use
-- topic:turn-ai
+- topic:transfer-learning
+- topic:transformers
+- topic:unity-catalog
+- topic:vector-databases
 - topic:video-generation
+- topic:vision-language-action
+- topic:voxtral
 - topic:website
-- topic:why-your-rag
 - topic:world-models
 - topic:zhaozhiming-ai
-updated_at: '2026-04-09T12:15:42.088533Z'
+updated_at: '2026-04-09T16:35:03.743118Z'
 managed: true
 ---
 # Rising Topics
@@ -392,43 +613,43 @@ System-generated radar for the fastest-moving topics in the vault. Use it to dec
 ## Fast Movers
 
 - [Email](../topics/email.md) (trend 500.30; 7d 108; 30d 108; sources 2)
-- [Newsletter](../topics/newsletter.md) (trend 495.80; 7d 107; 30d 107; sources 2)
+- [Newsletter](../topics/newsletter.md) (trend 450.80; 7d 97; 30d 97; sources 2)
 - [Medium](../topics/medium.md) (trend 296.65; 7d 63; 30d 63; sources 1)
-- [Agents](../topics/agents.md) (trend 249.90; 7d 49; 30d 58; sources 6)
-- [Tldr](../topics/tldr.md) (trend 175.15; 7d 36; 30d 36; sources 1)
-- [Audio](../topics/audio.md) (trend 119.20; 7d 22; 30d 25; sources 4)
-- [Infrastructure](../topics/infrastructure.md) (trend 87.84; 7d 15; 30d 18; sources 6)
-- [Computer Science](../topics/computer-science.md) (trend 86.55; 7d 16; 30d 17; sources 1)
-- [Memory](../topics/memory.md) (trend 71.65; 7d 13; 30d 13; sources 1)
-- [Website](../topics/website.md) (trend 56.46; 7d 4; 30d 30; sources 3)
-- [Official](../topics/official.md) (trend 56.46; 7d 4; 30d 30; sources 3)
-- [Computer Vision](../topics/computer-vision.md) (trend 55.57; 7d 9; 30d 9; sources 3)
+- [Agents](../topics/agents.md) (trend 155.17; 7d 30; 30d 32; sources 5)
+- [Computer Science](../topics/computer-science.md) (trend 96.95; 7d 18; 30d 20; sources 1)
+- [Machine Learning](../topics/machine-learning.md) (trend 81.00; 7d 14; 30d 15; sources 4)
+- [Computer Vision](../topics/computer-vision.md) (trend 54.80; 7d 9; 30d 9; sources 2)
+- [Tldr](../topics/tldr.md) (trend 53.65; 7d 9; 30d 9; sources 1)
+- [Audio](../topics/audio.md) (trend 53.40; 7d 8; 30d 9; sources 4)
+- [Openai](../topics/openai.md) (trend 49.76; 7d 6; 30d 20; sources 2)
+- [Artificial Intelligence](../topics/artificial-intelligence.md) (trend 47.20; 7d 7; 30d 8; sources 2)
+- [Anthropic](../topics/anthropic.md) (trend 45.86; 7d 7; 30d 14; sources 3)
 
 ## Emerging Topics
 
 - [Email](../topics/email.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
 - [Newsletter](../topics/newsletter.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
 - [Medium](../topics/medium.md) (novelty 6.80; first seen 2026-04-03T06:40:00+00:00)
-- [Agents](../topics/agents.md) (novelty 4.80; first seen 2025-05-21T12:00:00+00:00)
+- [Agents](../topics/agents.md) (novelty 4.80; first seen 2025-07-10T16:00:00+00:00)
+- [Computer Science](../topics/computer-science.md) (novelty 6.80; first seen 2026-03-30T05:33:50+00:00)
+- [Machine Learning](../topics/machine-learning.md) (novelty 6.80; first seen 2026-03-23T00:00:00+00:00)
+- [Computer Vision](../topics/computer-vision.md) (novelty 6.80; first seen 2026-04-03T10:59:24+00:00)
 - [Tldr](../topics/tldr.md) (novelty 6.80; first seen 2026-04-03T10:59:24+00:00)
-- [Audio](../topics/audio.md) (novelty 4.80; first seen 2025-07-15T12:00:00+00:00)
-- [Infrastructure](../topics/infrastructure.md) (novelty 4.80; first seen 2025-02-17T14:00:00+00:00)
-- [Computer Science](../topics/computer-science.md) (novelty 6.80; first seen 2026-04-01T17:39:50+00:00)
 
 ## Expanding Connections
 
-- [Email](../topics/email.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 107)
+- [Email](../topics/email.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 97)
 - [Email](../topics/email.md) <-> [Medium](../topics/medium.md) (co-occurrence 63)
-- [Medium](../topics/medium.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 63)
-- [Official](../topics/official.md) <-> [Website](../topics/website.md) (co-occurrence 51)
-- [Agents](../topics/agents.md) <-> [Email](../topics/email.md) (co-occurrence 40)
-- [Agents](../topics/agents.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 40)
-- [Email](../topics/email.md) <-> [Tldr](../topics/tldr.md) (co-occurrence 36)
-- [Newsletter](../topics/newsletter.md) <-> [Tldr](../topics/tldr.md) (co-occurrence 36)
-- [Agents](../topics/agents.md) <-> [Medium](../topics/medium.md) (co-occurrence 23)
-- [Mistral](../topics/mistral.md) <-> [Official](../topics/official.md) (co-occurrence 20)
-- [Mistral](../topics/mistral.md) <-> [Website](../topics/website.md) (co-occurrence 20)
-- [Official](../topics/official.md) <-> [Openai](../topics/openai.md) (co-occurrence 20)
+- [Medium](../topics/medium.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 54)
+- [Agents](../topics/agents.md) <-> [Email](../topics/email.md) (co-occurrence 22)
+- [Agents](../topics/agents.md) <-> [Newsletter](../topics/newsletter.md) (co-occurrence 20)
+- [Official](../topics/official.md) <-> [Openai](../topics/openai.md) (co-occurrence 17)
+- [Mistral](../topics/mistral.md) <-> [Official](../topics/official.md) (co-occurrence 16)
+- [Agents](../topics/agents.md) <-> [Medium](../topics/medium.md) (co-occurrence 13)
+- [Official](../topics/official.md) <-> [Website](../topics/website.md) (co-occurrence 11)
+- [Email](../topics/email.md) <-> [Machine Learning](../topics/machine-learning.md) (co-occurrence 10)
+- [Agents](../topics/agents.md) <-> [Computer Science](../topics/computer-science.md) (co-occurrence 9)
+- [Email](../topics/email.md) <-> [Tldr](../topics/tldr.md) (co-occurrence 9)
 
 ## Landscape Entry Point
 

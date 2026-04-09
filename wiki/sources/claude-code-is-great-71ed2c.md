@@ -6,8 +6,16 @@ aliases:
 - Claude Code is Great
 source_refs:
 - 2026-04-03-medium-email-claude-code-is-great-a7134001
-backlinks: []
-updated_at: '2026-04-09T12:15:38.142550Z'
+backlinks:
+- page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
+- page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
+- page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
+- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
+- page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
+- topic:claude-code
+- topic:coding
+updated_at: '2026-04-09T16:35:04.594616Z'
 managed: true
 ---
 # Claude Code is Great
@@ -20,26 +28,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@leo-godin/claude-code-is-great-6db35d8685f0
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Leo Godin
+- Tags: newsletter, medium, email, blog-post, claude code, coding
+- Topics: [Claude Code](../topics/claude-code.md), [Coding](../topics/coding.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This is a newsletter highlighting the topic of Claude Code and offering guidance on how to use it effectively.
+
 ## Topic Map
 
+- [Claude Code](../topics/claude-code.md)
+- [Coding](../topics/coding.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
 
 ## Related Research
 
+- [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Claude Code, Coding, Email, Medium)
+- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Claude Code, Email, Medium, Newsletter)
+- [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding, Email, Medium, Newsletter)
+- [Vibe Coding — Prompts Are All You Need?](vibe-coding-prompts-are-all-you-need-1a0efe.md) (shared topics: Coding, Email, Medium, Newsletter)
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-183ac0.md) (shared topics: Coding, Email, Medium, Newsletter)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

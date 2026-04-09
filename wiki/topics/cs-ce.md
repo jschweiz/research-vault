@@ -4,14 +4,14 @@ page_type: topic
 title: Cs Ce
 aliases:
 - Cs Ce
-- cs.CE
+- cs.ce
 source_refs:
 - 2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 backlinks:
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - topic:agentic-frameworks
-- topic:language-modeling
-updated_at: '2026-04-09T12:15:42.310131Z'
+- topic:ml-systems
+updated_at: '2026-04-09T16:35:03.975127Z'
 managed: true
 ---
 # Cs Ce
@@ -31,15 +31,15 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Aliases
 
-- cs.CE
+- cs.ce
 
 ## Related Topics
 
 - [Agentic Frameworks](agentic-frameworks.md)
 - [Agents](agents.md)
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Language Modeling](language-modeling.md)
+- [Ml Systems](ml-systems.md)
 
 ## Leading Sources
 

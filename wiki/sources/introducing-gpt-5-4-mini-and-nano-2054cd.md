@@ -7,12 +7,12 @@ aliases:
 source_refs:
 - 2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 backlinks:
-- page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
-- page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
-- page:2026-03-24-openai-website-powering-product-discovery-in-chatgpt-d58daa6d
-- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
-- topic:multimodal
-updated_at: '2026-04-09T12:15:42.022551Z'
+- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
+- topic:gpt-5-4
+- topic:mini
+- topic:multimodal-reasoning
+- topic:nano
+updated_at: '2026-04-09T16:35:04.704434Z'
 managed: true
 ---
 # Introducing GPT-5.4 mini and nano
@@ -25,28 +25,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://openai.com/index/introducing-gpt-5-4-mini-and-nano
 - Document kind: blog-post
 - Published at: 2026-03-17T10:00:00+00:00
-- Tags: openai, official, website, blog-post
-- Topics: [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Multimodal](../topics/multimodal.md), [Reasoning](../topics/reasoning.md)
-- Trend score: 249.90
-- Novelty score: 5.40
+- Tags: openai, official, website, blog-post, gpt-5.4, mini, nano, coding, multimodal reasoning
+- Topics: [Coding](../topics/coding.md), [Gpt 5 4](../topics/gpt-5-4.md), [Mini](../topics/mini.md), [Multimodal Reasoning](../topics/multimodal-reasoning.md), [Nano](../topics/nano.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 4.80
+
+## Summary
+
+GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.
 
 ## Topic Map
 
+- [Coding](../topics/coding.md)
+- [Gpt 5 4](../topics/gpt-5-4.md)
+- [Mini](../topics/mini.md)
+- [Multimodal Reasoning](../topics/multimodal-reasoning.md)
+- [Nano](../topics/nano.md)
 - [Official](../topics/official.md)
-- [Openai](../topics/openai.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
-- [Multimodal](../topics/multimodal.md)
-- [Reasoning](../topics/reasoning.md)
 
 ## Related Research
 
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Agents, Official, Openai, Website)
-- [Powering product discovery in ChatGPT](powering-product-discovery-in-chatgpt-42f262.md) (shared topics: Agents, Official, Openai, Website)
-- [How we monitor internal coding agents for misalignment](how-we-monitor-internal-coding-agents-for-misalignment-26d158.md) (shared topics: Agents, Official, Openai, Website)
-- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Agents, Official, Reasoning, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai, Website)
-- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai, Website)
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-ed1994.md) (shared topics: Coding)
+- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official)
+- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official)
+- [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Coding)
+- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official)
+- [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding)
 
 ## Radar
 

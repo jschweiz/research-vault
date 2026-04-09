@@ -6,8 +6,10 @@ aliases:
 - I’m Not Reinventing Myself in 2026
 source_refs:
 - 2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
-backlinks: []
-updated_at: '2026-04-09T12:15:37.882684Z'
+backlinks:
+- topic:fitness
+- topic:health
+updated_at: '2026-04-09T16:35:04.023984Z'
 managed: true
 ---
 # I’m Not Reinventing Myself in 2026
@@ -20,15 +22,21 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@louchalmer/im-not-reinventing-myself-in-2026-0a4ca7a5d269
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Lou Chalmer
+- Tags: newsletter, medium, email, blog-post, fitness, health
+- Topics: [Email](../topics/email.md), [Fitness](../topics/fitness.md), [Health](../topics/health.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
+
+## Summary
+
+The post discusses a topic related to fitness and health, suggesting a need for caution regarding self-reinvention.
 
 ## Topic Map
 
 - [Email](../topics/email.md)
+- [Fitness](../topics/fitness.md)
+- [Health](../topics/health.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
 

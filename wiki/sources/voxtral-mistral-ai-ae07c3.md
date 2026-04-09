@@ -7,13 +7,13 @@ aliases:
 source_refs:
 - 2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 backlinks:
-- page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
-- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
-- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
+- page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
-- topic:mistral-ai
-updated_at: '2026-04-09T12:15:42.219043Z'
+- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
+- topic:open-source
+- topic:speech-understanding
+- topic:voxtral
+updated_at: '2026-04-09T16:35:04.183894Z'
 managed: true
 ---
 # Voxtral | Mistral AI
@@ -26,28 +26,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/voxtral
 - Document kind: blog-post
 - Published at: 2025-07-15T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Audio](../topics/audio.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Inference](../topics/inference.md), [Mistral Ai](../topics/mistral-ai.md)
-- Trend score: 119.20
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, voxtral, speech understanding, asr, audio, open source
+- Topics: [Audio](../topics/audio.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Open Source](../topics/open-source.md), [Speech Understanding](../topics/speech-understanding.md), [Voxtral](../topics/voxtral.md)
+- Trend score: 53.40
 - Novelty score: 4.80
+
+## Summary
+
+Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence. Voxtral bridges the gap between open-source ASR systems and proprietary APIs by offering high accuracy and semantic understanding at a lower cost.
 
 ## Topic Map
 
 - [Audio](../topics/audio.md)
 - [Mistral](../topics/mistral.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Inference](../topics/inference.md)
-- [Mistral Ai](../topics/mistral-ai.md)
+- [Open Source](../topics/open-source.md)
+- [Speech Understanding](../topics/speech-understanding.md)
+- [Voxtral](../topics/voxtral.md)
 
 ## Related Research
 
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Audio, Mistral, Mistral Ai, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Audio, Mistral, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Inference, Mistral, Official, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Inference, Mistral, Official, Website)
-- [Introducing Mistral 3 | Mistral AI](introducing-mistral-3-mistral-ai-2b540b.md) (shared topics: Inference, Mistral, Official, Website)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Audio, Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Audio, Mistral, Official)
+- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Mistral, Official, Open Source)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
+- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Mistral, Official)
 
 ## Radar
 

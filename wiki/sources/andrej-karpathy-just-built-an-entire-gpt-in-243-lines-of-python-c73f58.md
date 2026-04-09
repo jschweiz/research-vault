@@ -6,8 +6,16 @@ aliases:
 - Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 source_refs:
 - 2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
-backlinks: []
-updated_at: '2026-04-09T12:15:38.026284Z'
+backlinks:
+- page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
+- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
+- page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
+- page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
+- page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- topic:deep-learning
+- topic:gpt
+- topic:python
+updated_at: '2026-04-09T16:35:04.253636Z'
 managed: true
 ---
 # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
@@ -20,26 +28,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Sumit Pandey
+- Tags: newsletter, medium, email, blog-post, gpt, python, deep learning, ai, pytorch, tensorflow
+- Topics: [Deep Learning](../topics/deep-learning.md), [Email](../topics/email.md), [Gpt](../topics/gpt.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+Andrej Karpathy built an entire GPT model using only 243 lines of Python code.
+
 ## Topic Map
 
+- [Deep Learning](../topics/deep-learning.md)
 - [Email](../topics/email.md)
+- [Gpt](../topics/gpt.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
+- [Python](../topics/python.md)
 
 ## Related Research
 
+- [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Email, Medium, Newsletter, Python)
+- [Understanding Transformers (Part 1): Why RNNs are nearly impossible to train](understanding-transformers-part-1-why-rnns-are-nearly-impossible-6cf668.md) (shared topics: Deep Learning, Email, Medium, Newsletter)
+- [I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose](i-built-the-slowest-3d-gaussian-splatting-renderer-on-purpose-bed611.md) (shared topics: Email, Medium, Newsletter, Python)
+- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Email, Medium, Newsletter, Python)
+- [From Notebooks to Production Server: Build AI Applications The Right Way](from-notebooks-to-production-server-build-ai-applications-the-ri-b058f9.md) (shared topics: Email, Medium, Newsletter, Python)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

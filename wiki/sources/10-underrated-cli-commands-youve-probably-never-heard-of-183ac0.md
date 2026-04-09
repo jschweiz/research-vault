@@ -6,8 +6,16 @@ aliases:
 - 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
 source_refs:
 - 2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
-backlinks: []
-updated_at: '2026-04-09T12:15:38.148901Z'
+backlinks:
+- page:2026-04-03-medium-email-claude-code-is-great-a7134001
+- page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
+- page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
+- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
+- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- topic:cli
+- topic:coding
+- topic:commands
+updated_at: '2026-04-09T16:35:03.828281Z'
 managed: true
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
@@ -20,26 +28,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
+- Tags: newsletter, medium, email, blog-post, cli, commands, coding
+- Topics: [Cli](../topics/cli.md), [Coding](../topics/coding.md), [Commands](../topics/commands.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post introduces ten underrated command-line interface (CLI) commands that readers may not be familiar with. It serves as a guide to discovering useful and less commonly known CLI tools.
+
 ## Topic Map
 
+- [Cli](../topics/cli.md)
+- [Coding](../topics/coding.md)
+- [Commands](../topics/commands.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
 
 ## Related Research
 
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-ed1994.md) (shared topics: Cli, Coding, Commands, Email, Medium)
+- [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding, Email, Medium, Newsletter)
+- [Vibe Coding — Prompts Are All You Need?](vibe-coding-prompts-are-all-you-need-1a0efe.md) (shared topics: Coding, Email, Medium, Newsletter)
+- [Claude Code is Great](claude-code-is-great-71ed2c.md) (shared topics: Coding, Email, Medium, Newsletter)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 - [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

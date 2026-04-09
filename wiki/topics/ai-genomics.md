@@ -12,7 +12,8 @@ backlinks:
 - topic:ai-health
 - topic:generative-models
 - topic:geometric-deep-learning
-updated_at: '2026-04-09T12:15:42.043756Z'
+- topic:inference-optimization
+updated_at: '2026-04-09T16:35:04.330359Z'
 managed: true
 ---
 # Ai Genomics
@@ -37,10 +38,10 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Related Topics
 
 - [Ai Health](ai-health.md)
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Generative Models](generative-models.md)
 - [Geometric Deep Learning](geometric-deep-learning.md)
+- [Inference Optimization](inference-optimization.md)
 
 ## Leading Sources
 

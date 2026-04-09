@@ -1,0 +1,53 @@
+---
+id: topic:guide
+page_type: topic
+title: Guide
+aliases:
+- Guide
+- guide
+source_refs:
+- 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+backlinks:
+- page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+- topic:code
+updated_at: '2026-04-09T16:35:03.889922Z'
+managed: true
+---
+# Guide
+
+System-generated topic page that anchors Codex and the wiki around a stable research concept.
+
+## Signal Summary
+
+- Trend score: 7.65
+- Novelty score: 4.20
+- Items in last 7 days: 1
+- Items in last 30 days: 1
+- Total supporting items: 1
+- Source diversity: 1
+- First seen: 2026-04-04T06:40:00+00:00
+- Last seen: 2026-04-04T06:40:00+00:00
+
+## Aliases
+
+
+## Related Topics
+
+- [Claude](claude.md)
+- [Code](code.md)
+- [Email](email.md)
+- [Medium](medium.md)
+- [Newsletter](newsletter.md)
+
+## Leading Sources
+
+- Medium Email
+
+## Representative Signals
+
+- [The Complete Guide to Claude Code: CLAUDE.md](../sources/the-complete-guide-to-claude-code-claude-md-860c95.md)
+
+## Map Links
+
+- [Rising Topics](../trends/rising-topics.md)
+- [Global AI Research](../maps/global-ai-research.md)

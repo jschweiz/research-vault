@@ -7,11 +7,11 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
 backlinks:
-- page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
-- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
-- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
-- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-updated_at: '2026-04-09T12:15:42.189418Z'
+- page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- topic:hackathon
+- topic:law
+updated_at: '2026-04-09T16:35:03.701900Z'
 managed: true
 ---
 # A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon
@@ -24,28 +24,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@jinghuu/a-lawyer-just-beat-500-developers-at-anthropics-hackathon-140ca074d1a9
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Memory](../topics/memory.md), [Agents](../topics/agents.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
+- Tags: newsletter, medium, email, blog-post, ai, hackathon, law, anthropic
+- Topics: [Anthropic](../topics/anthropic.md), [Email](../topics/email.md), [Hackathon](../topics/hackathon.md), [Law](../topics/law.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+A lawyer successfully competed against 500 developers at Anthropic's hackathon. The post highlights the context and engagement surrounding this event.
+
 ## Topic Map
 
+- [Anthropic](../topics/anthropic.md)
 - [Email](../topics/email.md)
+- [Hackathon](../topics/hackathon.md)
+- [Law](../topics/law.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Memory](../topics/memory.md)
-- [Agents](../topics/agents.md)
 
 ## Related Research
 
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Building the 14 Key Pillars of Agentic AI](building-the-14-key-pillars-of-agentic-ai-7aebbe.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Building Long-Term Memory in Agentic AI](building-long-term-memory-in-agentic-ai-b1118b.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic, Email, Newsletter)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
+- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
+- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

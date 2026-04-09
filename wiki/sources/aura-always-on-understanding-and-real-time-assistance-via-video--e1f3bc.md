@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 backlinks: []
-updated_at: '2026-04-09T12:15:38.042867Z'
+updated_at: '2026-04-09T16:33:58.602557Z'
 managed: true
 ---
 # AURA: Always-On Understanding and Real-Time Assistance via Video Streams
@@ -21,9 +21,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-05T16:53:46+00:00
 - Authors: Xudong Lu, Yang Bo, Jinpeng Chen, Shuhan Li, Xintong Guo, Huankang Guan, Fang Liu, Dunyuan Xu, Peiwen Sun, Heyang Sun, Rui Liu, Hongsheng Li
-- Tags: paper, alphaxiv, research, agents, Computer Science, conversational-ai, cs.CV, inference-optimization, model-deployment-systems, sequence-modeling, video-understanding, vision-language-models
-- Topics: [Audio](../topics/audio.md), [Agents](../topics/agents.md), [Computer Vision](../topics/computer-vision.md), [Inference](../topics/inference.md), [Computer Science](../topics/computer-science.md), [Conversational Ai](../topics/conversational-ai.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agents, computer science, conversational-ai, cs.cv, inference-optimization, model-deployment-systems, sequence-modeling
+- Topics: [Agents](../topics/agents.md), [Computer Vision](../topics/computer-vision.md), [Inference](../topics/inference.md), [Computer Science](../topics/computer-science.md), [Conversational Ai](../topics/conversational-ai.md), [Inference Optimization](../topics/inference-optimization.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -32,21 +32,21 @@ Researchers from Huawei Research and CUHK MMLab introduced AURA, an end-to-end s
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Agents](../topics/agents.md)
 - [Computer Vision](../topics/computer-vision.md)
 - [Inference](../topics/inference.md)
 - [Computer Science](../topics/computer-science.md)
 - [Conversational Ai](../topics/conversational-ai.md)
+- [Inference Optimization](../topics/inference-optimization.md)
 
 ## Related Research
 
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Computer Vision, Inference)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Audio, Computer Science)
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Audio, Computer Science)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Computer Vision, Inference Optimization)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Computer Science, Computer Vision)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Computer Vision)
+- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Computer Science, Inference)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Computer Science, Computer Vision)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Computer Science)
 
 ## Radar
 

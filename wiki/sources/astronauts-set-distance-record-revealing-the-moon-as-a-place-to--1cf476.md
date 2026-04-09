@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
 backlinks: []
-updated_at: '2026-04-09T12:15:37.860889Z'
+updated_at: '2026-04-09T16:33:56.500230Z'
 managed: true
 ---
 # Astronauts set distance record, revealing the Moon as a place to be explored
@@ -20,26 +20,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://arstechnica.com/space/2026/04/astronauts-set-distance-record-revealing-the-moon-as-a-place-to-be-explored
 - Document kind: news
 - Published at: 2026-04-08T10:59:19+00:00
-- Authors: TLDR <dan@tldrnewsletter.com>
-- Tags: newsletter, tldr, email, ai, news
-- Topics: [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Tldr](../topics/tldr.md)
+- Authors: TLDR <dan@tldrnewsletter.com>, TLDR
+- Tags: newsletter, tldr, email, ai, news, astronauts, moon, space, artemis ii, distance record
+- Topics: [Artemis Ii](../topics/artemis-ii.md), [Astronauts](../topics/astronauts.md), [Distance Record](../topics/distance-record.md), [Email](../topics/email.md), [Moon](../topics/moon.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+Astronauts achieved a new distance record by looping behind the Moon, and the Artemis II mission set a new record for the farthest distance traveled into space.
+
 ## Topic Map
 
+- [Artemis Ii](../topics/artemis-ii.md)
+- [Astronauts](../topics/astronauts.md)
+- [Distance Record](../topics/distance-record.md)
 - [Email](../topics/email.md)
+- [Moon](../topics/moon.md)
 - [Newsletter](../topics/newsletter.md)
-- [Tldr](../topics/tldr.md)
 
 ## Related Research
 
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter, Tldr)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter, Tldr)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Tldr)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter, Tldr)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter, Tldr)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Tldr)
+- [Artemis II astronauts heading home after historic moon flyby](artemis-ii-astronauts-heading-home-after-historic-moon-flyby-0ab07f.md) (shared topics: Artemis Ii, Astronauts, Email, Newsletter)
+- [Artemis II, NASA's boldest mission in generations, launches crew to the Moon](artemis-ii-nasa-s-boldest-mission-in-generations-launches-crew-t-93f4a3.md) (shared topics: Artemis Ii, Email, Moon, Newsletter)
+- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
+- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
+- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

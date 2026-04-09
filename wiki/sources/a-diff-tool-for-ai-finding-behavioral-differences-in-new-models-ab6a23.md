@@ -7,11 +7,13 @@ aliases:
 source_refs:
 - 2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 backlinks:
-- page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
-- topic:ai-finding
-- topic:ai-finding-behavioral
-- topic:evaluations
-updated_at: '2026-04-09T12:15:42.076681Z'
+- page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
+- topic:ai-safety
+- topic:alignment
+- topic:cross-architecture
+- topic:model-auditing
+- topic:model-diffing
+updated_at: '2026-04-09T16:35:04.308327Z'
 managed: true
 ---
 # A “diff” tool for AI: Finding behavioral differences in new models
@@ -24,28 +26,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/diff-tool
 - Document kind: blog-post
 - Published at: 2026-03-13T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Evaluations](../topics/evaluations.md), [Ai Finding](../topics/ai-finding.md), [Ai Finding Behavioral](../topics/ai-finding-behavioral.md)
-- Trend score: 56.46
-- Novelty score: 2.00
+- Authors: Anthropic
+- Tags: anthropic, official, research, website, blog-post, model diffing, ai safety, model auditing, cross-architecture, alignment
+- Topics: [Alignment](../topics/alignment.md), [Ai Safety](../topics/ai-safety.md), [Anthropic](../topics/anthropic.md), [Cross Architecture](../topics/cross-architecture.md), [Model Auditing](../topics/model-auditing.md), [Model Diffing](../topics/model-diffing.md)
+- Trend score: 45.86
+- Novelty score: 5.60
+
+## Summary
+
+The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and potential risks. This approach allows researchers to identify 'unknown unknowns' and audit models by detecting features exclusive to specific architectures.
 
 ## Topic Map
 
+- [Alignment](../topics/alignment.md)
+- [Ai Safety](../topics/ai-safety.md)
 - [Anthropic](../topics/anthropic.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Evaluations](../topics/evaluations.md)
-- [Ai Finding](../topics/ai-finding.md)
-- [Ai Finding Behavioral](../topics/ai-finding-behavioral.md)
+- [Cross Architecture](../topics/cross-architecture.md)
+- [Model Auditing](../topics/model-auditing.md)
+- [Model Diffing](../topics/model-diffing.md)
 
 ## Related Research
 
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official, Website)
-- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-7597c7.md) (shared topics: Anthropic, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Evaluations, Official, Website)
-- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Anthropic, Official, Website)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Ai Safety, Anthropic)
+- [Constitutional Classifiers: Defending against universal jailbreaks](constitutional-classifiers-defending-against-universal-jailbreak-6b030e.md) (shared topics: Ai Safety, Anthropic)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic)
+- [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Anthropic)
+- [Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'](anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reck-f522ab.md) (shared topics: Anthropic)
 
 ## Radar
 

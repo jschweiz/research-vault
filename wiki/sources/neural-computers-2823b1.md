@@ -13,20 +13,22 @@ backlinks:
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
+- page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
 - page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
+- page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 - topic:artificial-intelligence
 - topic:computer-science
 - topic:generative-models
-- topic:machine-learning
-updated_at: '2026-04-09T12:15:42.581631Z'
+- topic:multi-modal-learning
+updated_at: '2026-04-09T16:35:04.149912Z'
 managed: true
 ---
 # Neural Computers
@@ -40,28 +42,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-07T20:01:05+00:00
 - Authors: Mingchen Zhuge, Changsheng Zhao, Haozhe Liu, Zijian Zhou, Shuming Liu, Wenyi Wang, Ernie Chang, Gael Le Lan, Junjie Fei, Wenxuan Zhang, Yasheng Sun, Zhipeng Cai, Zechun Liu, Yunyang Xiong, Yining Yang, Yuandong Tian, Yangyang Shi, Vikas Chandra, Jürgen Schmidhuber
-- Tags: paper, alphaxiv, research, agents, Computer Science, cs.AI, cs.LG, generative-models, multi-modal-learning, neuro-symbolic-ai, reinforcement-learning, representation-learning
-- Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Machine Learning](../topics/machine-learning.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agents, computer science, cs.ai, cs.lg, generative-models, multi-modal-learning, neuro-symbolic-ai
+- Topics: [Agents](../topics/agents.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Machine Learning](../topics/machine-learning.md), [Multi Modal Learning](../topics/multi-modal-learning.md)
+- Trend score: 155.17
 - Novelty score: 6.80
+
+## Summary
+
+The paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. The long-term goal is the Completely Neural Computer (CNC), a general-purpose realization of this machine form.
 
 ## Topic Map
 
 - [Agents](../topics/agents.md)
-- [Audio](../topics/audio.md)
 - [Artificial Intelligence](../topics/artificial-intelligence.md)
 - [Computer Science](../topics/computer-science.md)
 - [Generative Models](../topics/generative-models.md)
 - [Machine Learning](../topics/machine-learning.md)
+- [Multi Modal Learning](../topics/multi-modal-learning.md)
 
 ## Related Research
 
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Audio, Computer Science)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Generative Models)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Generative Models)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Generative Models, Multi Modal Learning)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
 
 ## Radar
 

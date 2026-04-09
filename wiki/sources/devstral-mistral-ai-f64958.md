@@ -7,13 +7,11 @@ aliases:
 source_refs:
 - 2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
 backlinks:
-- page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
-- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
-- page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
-- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
-- topic:devstral-mistral-ai
-- topic:mistral-ai
-updated_at: '2026-04-09T12:15:42.374453Z'
+- topic:agentic-llm
+- topic:github-issues
+- topic:llm
+- topic:software-engineering
+updated_at: '2026-04-09T16:35:04.104879Z'
 managed: true
 ---
 # Devstral | Mistral AI
@@ -26,28 +24,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/devstral
 - Document kind: blog-post
 - Published at: 2025-05-21T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Devstral Mistral Ai](../topics/devstral-mistral-ai.md), [Mistral Ai](../topics/mistral-ai.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, agentic llm, software engineering, llm, github issues, swe-bench
+- Topics: [Agentic Llm](../topics/agentic-llm.md), [Github Issues](../topics/github-issues.md), [Llm](../topics/llm.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Software Engineering](../topics/software-engineering.md)
+- Trend score: 45.05
+- Novelty score: 3.60
+
+## Summary
+
+Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on benchmarks like SWE-Bench.
 
 ## Topic Map
 
+- [Agentic Llm](../topics/agentic-llm.md)
+- [Github Issues](../topics/github-issues.md)
+- [Llm](../topics/llm.md)
 - [Mistral](../topics/mistral.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
-- [Devstral Mistral Ai](../topics/devstral-mistral-ai.md)
-- [Mistral Ai](../topics/mistral-ai.md)
+- [Software Engineering](../topics/software-engineering.md)
 
 ## Related Research
 
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Agents, Mistral, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Agents, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Agents, Mistral, Official, Website)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Agents, Mistral, Official, Website)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Llm, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
+- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Mistral, Official)
 
 ## Radar
 

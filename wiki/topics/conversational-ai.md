@@ -9,7 +9,8 @@ source_refs:
 - 2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 backlinks:
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
-updated_at: '2026-04-09T12:15:42.050697Z'
+- topic:inference-optimization
+updated_at: '2026-04-09T16:35:04.432509Z'
 managed: true
 ---
 # Conversational Ai
@@ -34,10 +35,10 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Related Topics
 
 - [Agents](agents.md)
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Computer Vision](computer-vision.md)
 - [Inference](inference.md)
+- [Inference Optimization](inference-optimization.md)
 
 ## Leading Sources
 

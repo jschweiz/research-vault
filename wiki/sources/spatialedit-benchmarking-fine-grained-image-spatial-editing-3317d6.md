@@ -8,21 +8,20 @@ source_refs:
 - 2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 backlinks:
 - page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
-- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
 - page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
-- page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
-- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
+- page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:computer-science
 - topic:computer-vision
 - topic:generative-models
 - topic:geometric-deep-learning
 - topic:image-generation
-updated_at: '2026-04-09T12:15:42.054158Z'
+- topic:synthetic-data
+updated_at: '2026-04-09T16:35:04.816950Z'
 managed: true
 ---
 # SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing
@@ -36,28 +35,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-08T04:54:06+00:00
 - Authors: Yicheng Xiao, Wenhu Zhang, Lin Song, Yukang Chen, Wenbo Li, Nan Jiang, Tianhe Ren, Haokun Lin, Wei Huang, Haoyang Huang, Xiu Li, Nan Duan, Xiaojuan Qi
-- Tags: paper, alphaxiv, research, Computer Science, cs.CV, generative-models, geometric-deep-learning, image-generation, synthetic-data, github, audio
-- Topics: [Audio](../topics/audio.md), [Computer Science](../topics/computer-science.md), [Computer Vision](../topics/computer-vision.md), [Generative Models](../topics/generative-models.md), [Geometric Deep Learning](../topics/geometric-deep-learning.md), [Image Generation](../topics/image-generation.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.cv, generative-models, geometric-deep-learning, image-generation, synthetic-data, github
+- Topics: [Computer Science](../topics/computer-science.md), [Computer Vision](../topics/computer-vision.md), [Generative Models](../topics/generative-models.md), [Geometric Deep Learning](../topics/geometric-deep-learning.md), [Image Generation](../topics/image-generation.md), [Synthetic Data](../topics/synthetic-data.md)
+- Trend score: 96.95
 - Novelty score: 6.80
+
+## Summary
+
+This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Computer Science](../topics/computer-science.md)
 - [Computer Vision](../topics/computer-vision.md)
 - [Generative Models](../topics/generative-models.md)
 - [Geometric Deep Learning](../topics/geometric-deep-learning.md)
 - [Image Generation](../topics/image-generation.md)
+- [Synthetic Data](../topics/synthetic-data.md)
 
 ## Related Research
 
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Computer Vision, Generative Models, Geometric Deep Learning, Image Generation)
-- [General Multimodal Protein Design Enables DNA-Encoding of Chemistry](general-multimodal-protein-design-enables-dna-encoding-of-chemis-734bb9.md) (shared topics: Audio, Computer Science, Generative Models, Geometric Deep Learning)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Audio, Computer Science, Generative Models)
-- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Audio, Computer Science, Computer Vision)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Computer Vision, Generative Models, Geometric Deep Learning, Image Generation)
+- [General Multimodal Protein Design Enables DNA-Encoding of Chemistry](general-multimodal-protein-design-enables-dna-encoding-of-chemis-734bb9.md) (shared topics: Computer Science, Generative Models, Geometric Deep Learning)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Computer Vision)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Computer Science, Computer Vision)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Generative Models)
+- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Computer Science, Computer Vision)
 
 ## Radar
 

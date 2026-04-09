@@ -4,13 +4,16 @@ page_type: topic
 title: Child Safety
 aliases:
 - Child Safety
+- child safety
 - the Child Safety
 source_refs:
 - 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 backlinks:
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
-- topic:child-safety-blueprint
-updated_at: '2026-04-09T12:15:42.518448Z'
+- topic:online-safety
+- topic:roadmap
+- topic:safeguards
+updated_at: '2026-04-09T16:35:03.866050Z'
 managed: true
 ---
 # Child Safety
@@ -34,11 +37,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Child Safety Blueprint](child-safety-blueprint.md)
 - [Official](official.md)
+- [Online Safety](online-safety.md)
 - [Openai](openai.md)
-- [Safety](safety.md)
-- [Website](website.md)
+- [Roadmap](roadmap.md)
+- [Safeguards](safeguards.md)
 
 ## Leading Sources
 

@@ -15,11 +15,12 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 - topic:ai-genomics
 - topic:ai-health
-- topic:computer-science
 - topic:computer-vision
 - topic:generative-models
 - topic:image-generation
-updated_at: '2026-04-09T12:15:42.440164Z'
+- topic:multi-modal-learning
+- topic:synthetic-data
+updated_at: '2026-04-09T16:35:04.238560Z'
 managed: true
 ---
 # Geometric Deep Learning
@@ -43,13 +44,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Generative Models](generative-models.md)
 - [Computer Vision](computer-vision.md)
 - [Image Generation](image-generation.md)
 - [Ai Genomics](ai-genomics.md)
 - [Ai Health](ai-health.md)
+- [Inference Optimization](inference-optimization.md)
+- [Multi Modal Learning](multi-modal-learning.md)
 
 ## Leading Sources
 

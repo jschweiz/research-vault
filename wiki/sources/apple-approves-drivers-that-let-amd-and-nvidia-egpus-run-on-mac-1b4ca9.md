@@ -11,7 +11,7 @@ backlinks:
 - topic:apple
 - topic:egpu
 - topic:mac
-updated_at: '2026-04-09T12:15:42.365939Z'
+updated_at: '2026-04-09T16:35:04.579909Z'
 managed: true
 ---
 # Apple approves drivers that let AMD and Nvidia eGPUs run on Mac — software designed for AI, though, and not built for gaming

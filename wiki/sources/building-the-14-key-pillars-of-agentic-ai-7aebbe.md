@@ -8,18 +8,15 @@ source_refs:
 - 2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
 backlinks:
 - page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
-- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
-- page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
-- page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
+- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
-- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
-- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
-- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 - topic:agentic-ai
 - topic:memory
-updated_at: '2026-04-09T12:15:42.348910Z'
+- topic:search
+updated_at: '2026-04-09T16:35:04.676394Z'
 managed: true
 ---
 # Building the 14 Key Pillars of Agentic AI
@@ -32,29 +29,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Agents](../topics/agents.md), [Agentic Ai](../topics/agentic-ai.md), [Memory](../topics/memory.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
+- Tags: newsletter, medium, email, blog-post, agentic ai, ai, long-term memory, parallelism, retrieval
+- Topics: [Memory](../topics/memory.md), [Search](../topics/search.md), [Agentic Ai](../topics/agentic-ai.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of agentic systems.
+
 ## Topic Map
 
+- [Memory](../topics/memory.md)
+- [Search](../topics/search.md)
+- [Agentic Ai](../topics/agentic-ai.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Agents](../topics/agents.md)
-- [Agentic Ai](../topics/agentic-ai.md)
-- [Memory](../topics/memory.md)
 
 ## Related Research
 
-- [Building Long-Term Memory in Agentic AI](building-long-term-memory-in-agentic-ai-b1118b.md) (shared topics: Agentic Ai, Agents, Email, Medium, Memory, Newsletter)
-- [Agentic AI: Implementing Long-Term Memory](agentic-ai-implementing-long-term-memory-f983fa.md) (shared topics: Agentic Ai, Agents, Email, Medium, Memory, Newsletter)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
+- [Agentic AI: Implementing Long-Term Memory](agentic-ai-implementing-long-term-memory-f983fa.md) (shared topics: Agentic Ai, Email, Medium, Memory, Newsletter)
+- [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](why-your-rag-system-fails-complex-questions-and-how-structure-fi-c23a71.md) (shared topics: Email, Medium, Newsletter, Search)
+- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Email, Medium, Memory, Newsletter)
+- [Building Long-Term Memory in Agentic AI](building-long-term-memory-in-agentic-ai-b1118b.md) (shared topics: Agentic Ai, Email, Medium, Memory)
+- [Vector Databases Exist Because SQL Has One Blind Spot](vector-databases-exist-because-sql-has-one-blind-spot-3d9048.md) (shared topics: Email, Medium, Newsletter, Search)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

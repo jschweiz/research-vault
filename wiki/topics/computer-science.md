@@ -4,6 +4,7 @@ page_type: topic
 title: Computer Science
 aliases:
 - Computer Science
+- computer science
 source_refs:
 - 2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - 2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
@@ -16,23 +17,29 @@ source_refs:
 - 2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 - 2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - 2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
+- 2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - 2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
 - 2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - 2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
+- 2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - 2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - 2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - 2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
+- 2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 backlinks:
 - map:global-ai-research
 - map:trends:rising-topics
+- page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 - page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
+- page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
 - page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
+- page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
@@ -43,8 +50,10 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 - topic:agentic-frameworks
+- topic:agents
 - topic:ai-genomics
 - topic:ai-health
+- topic:alignment
 - topic:artificial-intelligence
 - topic:attention-mechanisms
 - topic:audio
@@ -55,12 +64,16 @@ backlinks:
 - topic:cs-ce
 - topic:cs-gr
 - topic:data-curation
+- topic:deep-learning
 - topic:deep-reinforcement-learning
 - topic:distributed-learning
+- topic:efficient-transformers
+- topic:evaluations
 - topic:fine-tuning
 - topic:generative-models
 - topic:geometric-deep-learning
 - topic:hierarchical-planning
+- topic:human-ai-interaction
 - topic:image-generation
 - topic:inference
 - topic:inference-optimization
@@ -68,14 +81,21 @@ backlinks:
 - topic:knowledge-distillation
 - topic:language-modeling
 - topic:machine-learning
+- topic:meta-learning
+- topic:ml-systems
 - topic:multi-modal-learning
 - topic:multimodal
 - topic:object-detection
+- topic:optimization-methods
+- topic:reinforcement-learning
 - topic:researcher-agent
 - topic:robotics
 - topic:robotics-perception
+- topic:synthetic-data
+- topic:transfer-learning
+- topic:vision-language-action
 - topic:world-models
-updated_at: '2026-04-09T12:15:42.371380Z'
+updated_at: '2026-04-09T16:35:04.685234Z'
 managed: true
 ---
 # Computer Science
@@ -84,13 +104,13 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 86.55
+- Trend score: 96.95
 - Novelty score: 6.80
-- Items in last 7 days: 16
-- Items in last 30 days: 17
-- Total supporting items: 17
+- Items in last 7 days: 18
+- Items in last 30 days: 20
+- Total supporting items: 20
 - Source diversity: 1
-- First seen: 2026-04-01T17:39:50+00:00
+- First seen: 2026-03-30T05:33:50+00:00
 - Last seen: 2026-04-08T17:59:48+00:00
 
 ## Aliases
@@ -98,14 +118,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Audio](audio.md)
-- [Computer Vision](computer-vision.md)
 - [Agents](agents.md)
 - [Artificial Intelligence](artificial-intelligence.md)
+- [Computer Vision](computer-vision.md)
 - [Generative Models](generative-models.md)
-- [Geometric Deep Learning](geometric-deep-learning.md)
+- [Language Modeling](language-modeling.md)
+- [Agentic Frameworks](agentic-frameworks.md)
+- [Audio](audio.md)
 - [Machine Learning](machine-learning.md)
-- [Robotics](robotics.md)
 
 ## Leading Sources
 

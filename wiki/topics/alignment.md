@@ -5,25 +5,27 @@ title: Alignment
 aliases:
 - Alignment
 - alignment
-- constitutional
 - preference optimization
 source_refs:
 - 2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
+- 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
-- 2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
-- 2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
+- 2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 backlinks:
 - map:global-ai-research
-- page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
+- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 - page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
-- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
-- topic:beyond-rlhf
-- topic:constitutional-classifiers
+- page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
+- topic:ai-safety
+- topic:cross-architecture
 - topic:data-curation
+- topic:fellowship
 - topic:language-modeling
-- topic:reinforcement-learning
+- topic:model-auditing
+- topic:model-diffing
 - topic:safety
-updated_at: '2026-04-09T12:15:42.333737Z'
+- topic:website
+updated_at: '2026-04-09T16:35:04.203131Z'
 managed: true
 ---
 # Alignment
@@ -32,42 +34,42 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 22.57
-- Novelty score: 3.60
+- Trend score: 25.50
+- Novelty score: 5.60
 - Items in last 7 days: 3
-- Items in last 30 days: 3
+- Items in last 30 days: 4
 - Total supporting items: 4
-- Source diversity: 3
-- First seen: 2025-02-03T00:00:00+00:00
+- Source diversity: 4
+- First seen: 2026-03-13T00:00:00+00:00
 - Last seen: 2026-04-06T15:44:18+00:00
 
 ## Aliases
 
-- constitutional
 - preference optimization
 
 ## Related Topics
 
-- [Email](email.md)
-- [Medium](medium.md)
-- [Newsletter](newsletter.md)
-- [Reinforcement Learning](reinforcement-learning.md)
 - [Agents](agents.md)
+- [Ai Safety](ai-safety.md)
 - [Anthropic](anthropic.md)
 - [Audio](audio.md)
-- [Beyond Rlhf](beyond-rlhf.md)
+- [Computer Science](computer-science.md)
+- [Computer Vision](computer-vision.md)
+- [Cross Architecture](cross-architecture.md)
+- [Data Curation](data-curation.md)
 
 ## Leading Sources
 
 - Anthropic Research
 - Medium Email
+- OpenAI Website
 - alphaXiv Papers
 
 ## Representative Signals
 
 - [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](../sources/mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md)
-- [Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)](../sources/beyond-rlhf-aligning-llms-with-direct-preference-optimization-dp-b5ab53.md)
-- [Constitutional Classifiers: Defending against universal jailbreaks](../sources/constitutional-classifiers-defending-against-universal-jailbreak-6b030e.md)
+- [Announcing the OpenAI Safety Fellowship](../sources/announcing-the-openai-safety-fellowship-8b56c7.md)
+- [A “diff” tool for AI: Finding behavioral differences in new models](../sources/a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-ab6a23.md)
 
 ## Map Links
 

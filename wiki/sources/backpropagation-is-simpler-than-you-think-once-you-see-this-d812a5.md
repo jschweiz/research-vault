@@ -6,8 +6,16 @@ aliases:
 - Backpropagation is simpler than you think (once you see this)
 source_refs:
 - 2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
-backlinks: []
-updated_at: '2026-04-09T12:15:38.093284Z'
+backlinks:
+- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
+- page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
+- page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
+- page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
+- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
+- topic:backpropagation
+- topic:neural-network
+updated_at: '2026-04-09T16:35:04.323773Z'
 managed: true
 ---
 # Backpropagation is simpler than you think (once you see this)
@@ -20,26 +28,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Nikhil Anand
+- Tags: newsletter, medium, email, blog-post, backpropagation, neural network, ai, machine learning
+- Topics: [Backpropagation](../topics/backpropagation.md), [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Neural Network](../topics/neural-network.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post explores the concept of backpropagation and suggests it is simpler than commonly perceived once the underlying mechanisms are understood.
+
 ## Topic Map
 
+- [Backpropagation](../topics/backpropagation.md)
 - [Email](../topics/email.md)
+- [Machine Learning](../topics/machine-learning.md)
 - [Medium](../topics/medium.md)
+- [Neural Network](../topics/neural-network.md)
 - [Newsletter](../topics/newsletter.md)
 
 ## Related Research
 
+- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [What Is an LLM? A No-Jargon Introduction](what-is-an-llm-a-no-jargon-introduction-9f47cf.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [From Notebooks to Production Server: Build AI Applications The Right Way](from-notebooks-to-production-server-build-ai-applications-the-ri-b058f9.md) (shared topics: Email, Machine Learning, Medium, Newsletter)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Machine Learning, Newsletter)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

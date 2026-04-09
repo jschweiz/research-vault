@@ -10,7 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - topic:agentic-frameworks
-updated_at: '2026-04-09T12:15:42.064506Z'
+updated_at: '2026-04-09T16:34:33.620060Z'
 managed: true
 ---
 # Distributed Learning
@@ -37,8 +37,8 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Agentic Frameworks](agentic-frameworks.md)
 - [Agents](agents.md)
 - [Artificial Intelligence](artificial-intelligence.md)
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
+- [Language Modeling](language-modeling.md)
 
 ## Leading Sources
 

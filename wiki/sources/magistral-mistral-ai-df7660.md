@@ -7,9 +7,17 @@ aliases:
 source_refs:
 - 2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
 backlinks:
-- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
-- topic:magistral-mistral-ai
-updated_at: '2026-04-09T12:15:42.042303Z'
+- page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
+- page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
+- page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
+- page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
+- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
+- topic:magistral
+- topic:mistral-ai
+- topic:multilingual
+- topic:reasoning
+updated_at: '2026-04-09T16:35:04.387002Z'
 managed: true
 ---
 # Magistral | Mistral AI
@@ -22,28 +30,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/magistral
 - Document kind: blog-post
 - Published at: 2025-06-10T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Reasoning](../topics/reasoning.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Infrastructure](../topics/infrastructure.md), [Magistral Mistral Ai](../topics/magistral-mistral-ai.md)
-- Trend score: 87.84
-- Novelty score: 4.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, reasoning model, mistral ai, magistral, open source, multilingual
+- Topics: [Mistral Ai](../topics/mistral-ai.md), [Reasoning](../topics/reasoning.md), [Magistral](../topics/magistral.md), [Mistral](../topics/mistral.md), [Multilingual](../topics/multilingual.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 1.20
+
+## Summary
+
+Magistral is the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning. It is released in two variants, Magistral Small and Magistral Medium, offering versatility across various enterprise and creative applications.
 
 ## Topic Map
 
+- [Mistral Ai](../topics/mistral-ai.md)
 - [Reasoning](../topics/reasoning.md)
+- [Magistral](../topics/magistral.md)
 - [Mistral](../topics/mistral.md)
+- [Multilingual](../topics/multilingual.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Infrastructure](../topics/infrastructure.md)
-- [Magistral Mistral Ai](../topics/magistral-mistral-ai.md)
 
 ## Related Research
 
-- [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Infrastructure, Mistral, Official, Website)
-- [Mistral Saba | Mistral AI](mistral-saba-mistral-ai-b37f9e.md) (shared topics: Infrastructure, Mistral, Official, Website)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Infrastructure, Official, Website)
-- [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Infrastructure, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Infrastructure, Official, Website)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Multilingual, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Multilingual, Official)
+- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Mistral, Mistral Ai, Official)
+- [Codestral 25.01 | Mistral AI](codestral-25-01-mistral-ai-caf9e8.md) (shared topics: Mistral, Mistral Ai, Official)
+- [How we monitor internal coding agents for misalignment](how-we-monitor-internal-coding-agents-for-misalignment-26d158.md) (shared topics: Official, Reasoning)
+- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Mistral, Reasoning)
 
 ## Radar
 

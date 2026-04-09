@@ -9,10 +9,9 @@ source_refs:
 - 2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 backlinks:
 - page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
-- topic:claude-code
 - topic:context-engineering
 - topic:programming
-updated_at: '2026-04-09T12:15:41.950905Z'
+updated_at: '2026-04-09T16:35:04.218080Z'
 managed: true
 ---
 # System Prompts

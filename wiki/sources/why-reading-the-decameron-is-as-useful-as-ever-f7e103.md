@@ -6,8 +6,11 @@ aliases:
 - Why reading “The Decameron” is as useful as ever
 source_refs:
 - 2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
-backlinks: []
-updated_at: '2026-04-09T12:15:38.127469Z'
+backlinks:
+- topic:decameron
+- topic:literature
+- topic:reading
+updated_at: '2026-04-09T16:35:04.717947Z'
 managed: true
 ---
 # Why reading “The Decameron” is as useful as ever
@@ -20,17 +23,24 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Nikolaus Correll
+- Tags: newsletter, medium, email, blog-post, reading, literature, the decameron
+- Topics: [Decameron](../topics/decameron.md), [Email](../topics/email.md), [Literature](../topics/literature.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Reading](../topics/reading.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
+
 ## Topic Map
 
+- [Decameron](../topics/decameron.md)
 - [Email](../topics/email.md)
+- [Literature](../topics/literature.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
+- [Reading](../topics/reading.md)
 
 ## Related Research
 

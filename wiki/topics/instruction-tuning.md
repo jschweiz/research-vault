@@ -10,7 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 - topic:knowledge-distillation
-updated_at: '2026-04-09T12:15:42.179915Z'
+updated_at: '2026-04-09T16:34:47.812493Z'
 managed: true
 ---
 # Instruction Tuning
@@ -34,11 +34,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Fine-Tuning](fine-tuning.md)
 - [Generative Models](generative-models.md)
 - [Knowledge Distillation](knowledge-distillation.md)
+- [Language Modeling](language-modeling.md)
 
 ## Leading Sources
 

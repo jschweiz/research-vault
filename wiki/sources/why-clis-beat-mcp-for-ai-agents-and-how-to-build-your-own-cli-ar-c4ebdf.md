@@ -7,13 +7,14 @@ aliases:
 source_refs:
 - 2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
 backlinks:
-- page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
-- page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
-- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
-- page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
-- topic:agents-how
+- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
+- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
 - topic:ai-agents
-updated_at: '2026-04-09T12:15:42.213169Z'
+- topic:bash
+- topic:cli
+- topic:mcp
+updated_at: '2026-04-09T16:35:04.198254Z'
 managed: true
 ---
 # Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.
@@ -26,29 +27,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Agents](../topics/agents.md), [Ai Agents](../topics/ai-agents.md), [Agents How](../topics/agents-how.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
+- Tags: newsletter, medium, email, blog-post, cli, ai agents, bash, mcp
+- Topics: [Ai Agents](../topics/ai-agents.md), [Bash](../topics/bash.md), [Cli](../topics/cli.md), [Email](../topics/email.md), [Mcp](../topics/mcp.md), [Medium](../topics/medium.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+The post argues that command-line interfaces (CLIs) are superior to MCP for AI agents, suggesting that bash is the better tool. It then provides guidance on building one's own CLI army.
+
 ## Topic Map
 
-- [Email](../topics/email.md)
-- [Medium](../topics/medium.md)
-- [Newsletter](../topics/newsletter.md)
-- [Agents](../topics/agents.md)
 - [Ai Agents](../topics/ai-agents.md)
-- [Agents How](../topics/agents-how.md)
+- [Bash](../topics/bash.md)
+- [Cli](../topics/cli.md)
+- [Email](../topics/email.md)
+- [Mcp](../topics/mcp.md)
+- [Medium](../topics/medium.md)
 
 ## Related Research
 
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-ed1994.md) (shared topics: Cli, Email, Medium)
+- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-183ac0.md) (shared topics: Cli, Email, Medium)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Ai Agents, Email)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium)
+- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium)
 
 ## Radar
 

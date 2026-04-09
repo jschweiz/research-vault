@@ -7,9 +7,6 @@ aliases:
 source_refs:
 - 2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 backlinks:
-- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
-- page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
-- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
@@ -17,7 +14,8 @@ backlinks:
 - topic:multi-modal-learning
 - topic:object-detection
 - topic:robotics-perception
-updated_at: '2026-04-09T12:15:42.528311Z'
+- topic:transfer-learning
+updated_at: '2026-04-09T16:35:03.812896Z'
 managed: true
 ---
 # Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D
@@ -31,9 +29,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-06T22:18:02+00:00
 - Authors: Daniel DeTone, Tianwei Shen, Fan Zhang, Lingni Ma, Julian Straub, Richard Newcombe, Jakob Engel
-- Tags: paper, alphaxiv, research, Computer Science, cs.CV, multi-modal-learning, object-detection, robotics-perception, transfer-learning, transformers, uncertainty-estimation, zero-shot-learning
-- Topics: [Audio](../topics/audio.md), [Computer Vision](../topics/computer-vision.md), [Computer Science](../topics/computer-science.md), [Multi Modal Learning](../topics/multi-modal-learning.md), [Object Detection](../topics/object-detection.md), [Robotics Perception](../topics/robotics-perception.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.cv, multi-modal-learning, object-detection, robotics-perception, transfer-learning, transformers
+- Topics: [Computer Vision](../topics/computer-vision.md), [Computer Science](../topics/computer-science.md), [Multi Modal Learning](../topics/multi-modal-learning.md), [Object Detection](../topics/object-detection.md), [Robotics Perception](../topics/robotics-perception.md), [Transfer Learning](../topics/transfer-learning.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -42,21 +40,21 @@ Boxer introduces an algorithm that robustly lifts open-world 2D bounding box det
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Computer Vision](../topics/computer-vision.md)
 - [Computer Science](../topics/computer-science.md)
 - [Multi Modal Learning](../topics/multi-modal-learning.md)
 - [Object Detection](../topics/object-detection.md)
 - [Robotics Perception](../topics/robotics-perception.md)
+- [Transfer Learning](../topics/transfer-learning.md)
 
 ## Related Research
 
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Audio, Computer Science, Computer Vision)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Computer Vision, Multi Modal Learning)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Computer Vision)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Computer Science, Computer Vision)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Computer Science, Computer Vision)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Multi Modal Learning)
+- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Computer Science, Computer Vision)
 
 ## Radar
 

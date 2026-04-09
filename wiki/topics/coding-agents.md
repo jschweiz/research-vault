@@ -10,8 +10,9 @@ source_refs:
 - 2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 backlinks:
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
-- topic:agents-misalignment
-updated_at: '2026-04-09T12:15:42.509720Z'
+- topic:ai-safety
+- topic:misalignment
+updated_at: '2026-04-09T16:35:04.333511Z'
 managed: true
 ---
 # Coding Agents
@@ -35,11 +36,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Agents](agents.md)
-- [Agents Misalignment](agents-misalignment.md)
+- [Ai Safety](ai-safety.md)
+- [Misalignment](misalignment.md)
 - [Official](official.md)
 - [Openai](openai.md)
-- [Website](website.md)
+- [Reasoning](reasoning.md)
 
 ## Leading Sources
 

@@ -7,11 +7,14 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-bad-analogies-e133a94d
 backlinks:
+- page:2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
+- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
+- page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
 - topic:amazon
 - topic:business
 - topic:entrepreneurship
 - topic:strategy
-updated_at: '2026-04-09T12:15:42.388674Z'
+updated_at: '2026-04-09T16:35:03.906267Z'
 managed: true
 ---
 # Bad Analogies
@@ -45,12 +48,12 @@ Amazon's success has negatively impacted many companies, as the strategy of burn
 
 ## Related Research
 
+- [Intel is going all-in on advanced chip packaging](intel-is-going-all-in-on-advanced-chip-packaging-347ed2.md) (shared topics: Amazon, Email, Newsletter)
+- [OpenAI's leadership reportedly disagrees about when to raise money and how to spend it](openai-s-leadership-reportedly-disagrees-about-when-to-raise-mon-29d299.md) (shared topics: Business, Email, Newsletter)
+- [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](anthropic-boasts-revenue-run-rate-of-30-billion-as-the-claude-de-a9ff0c.md) (shared topics: Business, Email, Newsletter)
+- [How AI Helped One Man (and His Brother) Build a $1.8 Billion Company](how-ai-helped-one-man-and-his-brother-build-a-1-8-billion-compan-6d16d2.md) (shared topics: Business, Email, Newsletter)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

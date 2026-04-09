@@ -7,19 +7,19 @@ aliases:
 source_refs:
 - 2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 backlinks:
-- page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
-- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 - page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
+- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 - page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
-- topic:anthropic
-- topic:data-curation
-- topic:safety
-updated_at: '2026-04-09T12:15:42.315146Z'
+- topic:ai-adoption
+- topic:australia
+- topic:claude
+- topic:economic-index
+updated_at: '2026-04-09T16:35:04.698898Z'
 managed: true
 ---
 # How Australia Uses Claude: Findings from the Anthropic Economic Index
@@ -32,27 +32,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/how-australia-uses-claude
 - Document kind: blog-post
 - Published at: 2026-03-31T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Data Curation](../topics/data-curation.md), [Safety](../topics/safety.md)
-- Trend score: 56.46
-- Novelty score: 3.60
+- Authors: Peter McCrory, Keir Bradwell, Ria Strasser Galvis, Ryan Heller, Eva Lyubich, Jennifer Marintez
+- Tags: anthropic, official, research, website, blog-post, claude, australia, economic index, ai adoption, use cases
+- Topics: [Ai Adoption](../topics/ai-adoption.md), [Anthropic](../topics/anthropic.md), [Australia](../topics/australia.md), [Claude](../topics/claude.md), [Economic Index](../topics/economic-index.md), [Official](../topics/official.md)
+- Trend score: 45.86
+- Novelty score: 4.40
+
+## Summary
+
+Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosphere peers, showing a focus on work and personal tasks, and reflects diverse use-cases across states.
 
 ## Topic Map
 
+- [Ai Adoption](../topics/ai-adoption.md)
 - [Anthropic](../topics/anthropic.md)
+- [Australia](../topics/australia.md)
+- [Claude](../topics/claude.md)
+- [Economic Index](../topics/economic-index.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Data Curation](../topics/data-curation.md)
-- [Safety](../topics/safety.md)
 
 ## Related Research
 
-- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Data Curation, Official, Website)
-- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Anthropic, Official, Safety, Website)
-- [Constitutional Classifiers: Defending against universal jailbreaks](constitutional-classifiers-defending-against-universal-jailbreak-6b030e.md) (shared topics: Anthropic, Official, Safety, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Safety, Website)
-- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Safety, Website)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
+- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-7597c7.md) (shared topics: Ai Adoption, Anthropic, Economic Index)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic, Claude)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official)
+- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Anthropic, Claude)
+- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

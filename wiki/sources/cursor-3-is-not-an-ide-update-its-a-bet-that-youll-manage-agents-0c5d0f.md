@@ -7,13 +7,17 @@ aliases:
 source_refs:
 - 2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
 backlinks:
+- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
+- page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
+- page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
+- page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
 - page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
-- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
-- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
+- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
+- page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
 - page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
-- topic:agents-not-write
-- topic:ll-manage-agents
-updated_at: '2026-04-09T12:15:42.416972Z'
+- topic:cursor
+- topic:ide
+updated_at: '2026-04-09T16:35:03.914472Z'
 managed: true
 ---
 # Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
@@ -26,29 +30,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@han.heloir/cursor-3-is-not-an-ide-update-its-a-bet-that-you-ll-manage-agents-not-write-code-0d2bc51f0dcb
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Agents](../topics/agents.md), [Agents Not Write](../topics/agents-not-write.md), [Ll Manage Agents](../topics/ll-manage-agents.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN
+- Tags: newsletter, medium, email, blog-post, cursor, agents, ide, software development, ai
+- Topics: [Agents](../topics/agents.md), [Cursor](../topics/cursor.md), [Email](../topics/email.md), [Ide](../topics/ide.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+Cursor 3 is not an IDE update but a bet that users will manage agents rather than write code. This post explores the rationale behind Cursor's new interface design.
+
 ## Topic Map
 
+- [Agents](../topics/agents.md)
+- [Cursor](../topics/cursor.md)
 - [Email](../topics/email.md)
+- [Ide](../topics/ide.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Agents](../topics/agents.md)
-- [Agents Not Write](../topics/agents-not-write.md)
-- [Ll Manage Agents](../topics/ll-manage-agents.md)
 
 ## Related Research
 
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium, Newsletter)
 - [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.](why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-ar-c4ebdf.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-40b39c.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [Meet the new Cursor](meet-the-new-cursor-20e326.md) (shared topics: Agents, Cursor, Email, Newsletter)
+- [Agentic AI: Implementing Long-Term Memory](agentic-ai-implementing-long-term-memory-f983fa.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
 backlinks: []
-updated_at: '2026-04-09T12:15:37.871714Z'
+updated_at: '2026-04-09T16:33:56.512058Z'
 managed: true
 ---
 # Why nobody can read anymore
@@ -20,11 +20,15 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@kartscrut/why-nobody-can-read-anymore-1bb6a8331831
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
+- Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
 - Tags: newsletter, medium, email, blog-post
 - Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
+
+## Summary
+
+The post explores the relationship between curiosity, attention, and the decline in reading habits.
 
 ## Topic Map
 

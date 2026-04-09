@@ -7,14 +7,15 @@ aliases:
 source_refs:
 - 2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 backlinks:
+- page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
+- page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
-- page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
 - page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
-- page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
 - topic:agentic-frameworks
 - topic:cs-ce
 - topic:language-modeling
-updated_at: '2026-04-09T12:15:42.143622Z'
+- topic:ml-systems
+updated_at: '2026-04-09T16:35:03.699571Z'
 managed: true
 ---
 # AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery
@@ -28,9 +29,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-07T07:52:01+00:00
 - Authors: Yu Li, Chenyang Shao, Xinyang Liu, Ruotong Zhao, Peijie Liu, Hongyuan Su, Zhibin Chen, Qinglong Yang, Anjie Xu, Yi Fang, Qingbin Zeng, Tianxing Li, Jingbo Xu, Fengli Xu, Yong Li, Tie-Yan Liu
-- Tags: paper, alphaxiv, research, agentic-frameworks, agents, Computer Science, cs.CE, cs.CL, ml-systems, neural-architecture-search, optimization-methods, training-orchestration
-- Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Computer Science](../topics/computer-science.md), [Cs Ce](../topics/cs-ce.md), [Language Modeling](../topics/language-modeling.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.ce, cs.cl, ml-systems, neural-architecture-search
+- Topics: [Agents](../topics/agents.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Computer Science](../topics/computer-science.md), [Cs Ce](../topics/cs-ce.md), [Language Modeling](../topics/language-modeling.md), [Ml Systems](../topics/ml-systems.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -40,20 +41,20 @@ An end-to-end automated research system named AutoSOTA, developed by Tsinghua Un
 ## Topic Map
 
 - [Agents](../topics/agents.md)
-- [Audio](../topics/audio.md)
 - [Agentic Frameworks](../topics/agentic-frameworks.md)
 - [Computer Science](../topics/computer-science.md)
 - [Cs Ce](../topics/cs-ce.md)
 - [Language Modeling](../topics/language-modeling.md)
+- [Ml Systems](../topics/ml-systems.md)
 
 ## Related Research
 
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Audio, Computer Science)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Audio, Computer Science)
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Audio, Computer Science)
-- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Audio, Computer Science)
-- [Synthetic Sandbox for Training Machine Learning Engineering Agents](synthetic-sandbox-for-training-machine-learning-engineering-agen-d6d706.md) (shared topics: Agentic Frameworks, Agents, Audio)
-- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Science, Language Modeling)
+- [Synthetic Sandbox for Training Machine Learning Engineering Agents](synthetic-sandbox-for-training-machine-learning-engineering-agen-d6d706.md) (shared topics: Agentic Frameworks, Agents, Computer Science, Language Modeling)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agentic Frameworks, Agents, Computer Science, Language Modeling)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agentic Frameworks, Agents, Computer Science)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Computer Science)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Computer Science)
+- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Computer Science)
 
 ## Radar
 

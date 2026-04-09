@@ -5,13 +5,44 @@ title: Ai Agents
 aliases:
 - Ai Agents
 - AI Agents And
+- ai agents
 - for AI Agents
 source_refs:
+- 2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- 2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
 - 2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
+- 2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
+- 2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+- 2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 backlinks:
+- page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
+- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
 - page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
-- topic:agents-how
-updated_at: '2026-04-09T12:15:42.399876Z'
+- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
+- page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- topic:adoption
+- topic:agent-design
+- topic:ai-automation
+- topic:anthropic
+- topic:banking-support
+- topic:bash
+- topic:boltzmann-solvers
+- topic:business-simulation
+- topic:chatgpt-enterprise
+- topic:claude
+- topic:cli
+- topic:codex
+- topic:enterprise
+- topic:enterprise-ai
+- topic:frontier
+- topic:gpt-4-1
+- topic:gpt-5-4
+- topic:jax
+- topic:large-language-models
+- topic:low-latency
+- topic:mcp
+updated_at: '2026-04-09T16:35:04.465625Z'
 managed: true
 ---
 # Ai Agents
@@ -20,14 +51,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 7.65
-- Novelty score: 4.20
-- Items in last 7 days: 1
-- Items in last 30 days: 1
-- Total supporting items: 1
-- Source diversity: 1
-- First seen: 2026-04-07T06:40:00+00:00
-- Last seen: 2026-04-07T06:40:00+00:00
+- Trend score: 23.52
+- Novelty score: 1.80
+- Items in last 7 days: 3
+- Items in last 30 days: 5
+- Total supporting items: 6
+- Source diversity: 4
+- First seen: 2025-12-18T00:00:00+00:00
+- Last seen: 2026-04-09T11:02:31+00:00
 
 ## Aliases
 
@@ -36,19 +67,30 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
+- [Anthropic](anthropic.md)
 - [Agents](agents.md)
-- [Agents How](agents-how.md)
+- [Claude](claude.md)
 - [Email](email.md)
-- [Medium](medium.md)
-- [Newsletter](newsletter.md)
+- [Adoption](adoption.md)
+- [Agent Design](agent-design.md)
+- [Ai Automation](ai-automation.md)
+- [Banking Support](banking-support.md)
 
 ## Leading Sources
 
+- Anthropic Research
 - Medium Email
+- OpenAI Website
+- TLDR Email
 
 ## Representative Signals
 
+- [Anthropic launches Claude Managed Agents for businesses](../sources/anthropic-launches-claude-managed-agents-for-businesses-184163.md)
+- [The next phase of enterprise AI](../sources/the-next-phase-of-enterprise-ai-00c367.md)
 - [Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.](../sources/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-ar-c4ebdf.md)
+- [Gradient Labs gives every bank customer an AI account manager](../sources/gradient-labs-gives-every-bank-customer-an-ai-account-manager-ee52e4.md)
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-b8d3ec.md)
+- [Project Vend: Phase two](../sources/project-vend-phase-two-818878.md)
 
 ## Map Links
 

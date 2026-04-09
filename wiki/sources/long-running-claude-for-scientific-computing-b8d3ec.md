@@ -7,20 +7,16 @@ aliases:
 source_refs:
 - 2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 backlinks:
-- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
-- page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
-- page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
-- page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
-- page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
-- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
-- page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
-- page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
-- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
-- topic:anthropic
-- topic:inference
-updated_at: '2026-04-09T12:15:42.295895Z'
+- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
+- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
+- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
+- page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- topic:ai-agents
+- topic:boltzmann-solvers
+- topic:claude
+- topic:jax
+updated_at: '2026-04-09T16:35:04.589881Z'
 managed: true
 ---
 # Long-running Claude for scientific computing
@@ -33,28 +29,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/long-running-Claude
 - Document kind: blog-post
 - Published at: 2026-03-23T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Infrastructure](../topics/infrastructure.md), [Inference](../topics/inference.md)
-- Trend score: 249.90
+- Authors: Siddharth Mishra-Sharma
+- Tags: anthropic, official, research, website, blog-post, ai agents, scientific computing, claude, boltzmann solvers, jax
+- Topics: [Agents](../topics/agents.md), [Ai Agents](../topics/ai-agents.md), [Anthropic](../topics/anthropic.md), [Boltzmann Solvers](../topics/boltzmann-solvers.md), [Claude](../topics/claude.md), [Jax](../topics/jax.md)
+- Trend score: 155.17
 - Novelty score: 4.80
+
+## Summary
+
+The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological Boltzmann solver.
 
 ## Topic Map
 
-- [Anthropic](../topics/anthropic.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
 - [Agents](../topics/agents.md)
-- [Infrastructure](../topics/infrastructure.md)
-- [Inference](../topics/inference.md)
+- [Ai Agents](../topics/ai-agents.md)
+- [Anthropic](../topics/anthropic.md)
+- [Boltzmann Solvers](../topics/boltzmann-solvers.md)
+- [Claude](../topics/claude.md)
+- [Jax](../topics/jax.md)
 
 ## Related Research
 
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Infrastructure, Official, Website)
-- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Agents, Anthropic, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Agents, Inference, Official, Website)
-- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Agents, Anthropic, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Agents, Inference, Official, Website)
-- [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Inference, Infrastructure, Official, Website)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Agents, Ai Agents, Anthropic, Claude)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Claude)
+- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Ai Agents, Anthropic)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents)
 
 ## Radar
 

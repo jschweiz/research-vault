@@ -4,7 +4,8 @@ page_type: topic
 title: Artificial Intelligence
 aliases:
 - Artificial Intelligence
-- cs.AI
+- artificial intelligence
+- cs.ai
 source_refs:
 - 2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - 2026-04-07-alphaxiv-paper-neural-computers-503b0501
@@ -12,10 +13,13 @@ source_refs:
 - 2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 - 2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - 2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
+- 2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - 2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 backlinks:
 - map:global-ai-research
+- map:trends:rising-topics
 - page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
+- page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
@@ -23,16 +27,25 @@ backlinks:
 - page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:agentic-frameworks
+- topic:agents
+- topic:ai-engineering
 - topic:attention-mechanisms
-- topic:audio
 - topic:causal-inference
 - topic:computer-science
+- topic:continual-learning
+- topic:cs-gr
+- topic:deep-learning
 - topic:distributed-learning
+- topic:efficient-transformers
 - topic:evaluations
-- topic:machine-learning
+- topic:human-ai-interaction
+- topic:language-modeling
+- topic:learning
+- topic:meta-learning
+- topic:multi-modal-learning
 - topic:reasoning
 - topic:researcher-agent
-updated_at: '2026-04-09T12:15:42.516647Z'
+updated_at: '2026-04-09T16:35:04.393937Z'
 managed: true
 ---
 # Artificial Intelligence
@@ -41,32 +54,33 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 41.55
+- Trend score: 47.20
 - Novelty score: 6.80
-- Items in last 7 days: 6
-- Items in last 30 days: 7
-- Total supporting items: 7
-- Source diversity: 1
+- Items in last 7 days: 7
+- Items in last 30 days: 8
+- Total supporting items: 8
+- Source diversity: 2
 - First seen: 2026-03-30T05:33:50+00:00
 - Last seen: 2026-04-08T17:59:22+00:00
 
 ## Aliases
 
-- cs.AI
+- cs.ai
 
 ## Related Topics
 
-- [Audio](audio.md)
-- [Agents](agents.md)
 - [Computer Science](computer-science.md)
-- [Reasoning](reasoning.md)
+- [Agents](agents.md)
 - [Agentic Frameworks](agentic-frameworks.md)
 - [Causal Inference](causal-inference.md)
 - [Evaluations](evaluations.md)
+- [Ai Engineering](ai-engineering.md)
 - [Attention Mechanisms](attention-mechanisms.md)
+- [Audio](audio.md)
 
 ## Leading Sources
 
+- Medium Email
 - alphaXiv Papers
 
 ## Representative Signals

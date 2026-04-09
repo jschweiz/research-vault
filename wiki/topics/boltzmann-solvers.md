@@ -1,0 +1,53 @@
+---
+id: topic:boltzmann-solvers
+page_type: topic
+title: Boltzmann Solvers
+aliases:
+- Boltzmann Solvers
+- boltzmann solvers
+source_refs:
+- 2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+backlinks:
+- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+- topic:jax
+updated_at: '2026-04-09T16:35:04.180741Z'
+managed: true
+---
+# Boltzmann Solvers
+
+System-generated topic page that anchors Codex and the wiki around a stable research concept.
+
+## Signal Summary
+
+- Trend score: 2.55
+- Novelty score: 2.00
+- Items in last 7 days: 0
+- Items in last 30 days: 1
+- Total supporting items: 1
+- Source diversity: 1
+- First seen: 2026-03-23T00:00:00+00:00
+- Last seen: 2026-03-23T00:00:00+00:00
+
+## Aliases
+
+
+## Related Topics
+
+- [Agents](agents.md)
+- [Ai Agents](ai-agents.md)
+- [Anthropic](anthropic.md)
+- [Claude](claude.md)
+- [Jax](jax.md)
+
+## Leading Sources
+
+- Anthropic Research
+
+## Representative Signals
+
+- [Long-running Claude for scientific computing](../sources/long-running-claude-for-scientific-computing-b8d3ec.md)
+
+## Map Links
+
+- [Rising Topics](../trends/rising-topics.md)
+- [Global AI Research](../maps/global-ai-research.md)

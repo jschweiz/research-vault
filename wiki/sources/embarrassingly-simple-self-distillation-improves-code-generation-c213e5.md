@@ -8,11 +8,13 @@ source_refs:
 - 2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 backlinks:
 - page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
+- page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - topic:fine-tuning
 - topic:generative-models
 - topic:instruction-tuning
 - topic:knowledge-distillation
-updated_at: '2026-04-09T12:15:42.355014Z'
+- topic:language-modeling
+updated_at: '2026-04-09T16:35:04.473494Z'
 managed: true
 ---
 # Embarrassingly Simple Self-Distillation Improves Code Generation
@@ -26,9 +28,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-01T17:39:50+00:00
 - Authors: Ruixiang Zhang, Richard He Bai, Huangjie Zheng, Navdeep Jaitly, Ronan Collobert, Yizhe Zhang
-- Tags: paper, alphaxiv, research, Computer Science, cs.CL, fine-tuning, generative-models, instruction-tuning, knowledge-distillation, model-interpretation, self-supervised-learning, text-generation
-- Topics: [Fine-Tuning](../topics/fine-tuning.md), [Audio](../topics/audio.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Instruction Tuning](../topics/instruction-tuning.md), [Knowledge Distillation](../topics/knowledge-distillation.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.cl, fine-tuning, generative-models, instruction-tuning, knowledge-distillation, model-interpretation
+- Topics: [Fine-Tuning](../topics/fine-tuning.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Instruction Tuning](../topics/instruction-tuning.md), [Knowledge Distillation](../topics/knowledge-distillation.md), [Language Modeling](../topics/language-modeling.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -38,20 +40,20 @@ A method called Simple Self-Distillation (SSD) enables large language models to 
 ## Topic Map
 
 - [Fine-Tuning](../topics/fine-tuning.md)
-- [Audio](../topics/audio.md)
 - [Computer Science](../topics/computer-science.md)
 - [Generative Models](../topics/generative-models.md)
 - [Instruction Tuning](../topics/instruction-tuning.md)
 - [Knowledge Distillation](../topics/knowledge-distillation.md)
+- [Language Modeling](../topics/language-modeling.md)
 
 ## Related Research
 
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Generative Models)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Generative Models)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Audio, Computer Science, Generative Models)
-- [General Multimodal Protein Design Enables DNA-Encoding of Chemistry](general-multimodal-protein-design-enables-dna-encoding-of-chemis-734bb9.md) (shared topics: Audio, Computer Science, Generative Models)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Audio, Computer Science)
+- [Synthetic Sandbox for Training Machine Learning Engineering Agents](synthetic-sandbox-for-training-machine-learning-engineering-agen-d6d706.md) (shared topics: Computer Science, Fine-Tuning, Language Modeling)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Generative Models)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Computer Science, Generative Models)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Generative Models)
+- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](autosota-an-end-to-end-automated-research-system-for-state-of-th-79db5b.md) (shared topics: Computer Science, Language Modeling)
+- [General Multimodal Protein Design Enables DNA-Encoding of Chemistry](general-multimodal-protein-design-enables-dna-encoding-of-chemis-734bb9.md) (shared topics: Computer Science, Generative Models)
 
 ## Radar
 

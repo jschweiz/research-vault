@@ -7,11 +7,12 @@ aliases:
 source_refs:
 - 2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 backlinks:
+- page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
 - topic:claude-code
 - topic:context-engineering
 - topic:programming
 - topic:system-prompts
-updated_at: '2026-04-09T12:15:42.358987Z'
+updated_at: '2026-04-09T16:35:04.199869Z'
 managed: true
 ---
 # How Claude Code Builds a System Prompt
@@ -45,12 +46,12 @@ This article explores how Claude Code builds system prompts, highlighting the co
 
 ## Related Research
 
+- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter, Programming)
+- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Claude Code, Email, Newsletter)
+- [Claude Code is Great](claude-code-is-great-71ed2c.md) (shared topics: Claude Code, Email, Newsletter)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
 - [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

@@ -7,18 +7,25 @@ aliases:
 source_refs:
 - 2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 backlinks:
+- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
+- page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
+- page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
+- page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
 - page:2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
-- page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
+- page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
-- page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
-- page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
+- page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
+- page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- topic:acquisition
+- topic:media
 - topic:official
-- topic:openai
+- topic:technology
 - topic:website
-updated_at: '2026-04-09T12:15:41.978977Z'
+updated_at: '2026-04-09T16:35:04.744136Z'
 managed: true
 ---
 # OpenAI acquires TBPN
@@ -31,25 +38,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://openai.com/index/openai-acquires-tbpn
 - Document kind: blog-post
 - Published at: 2026-04-02T10:30:00+00:00
-- Tags: openai, official, website, blog-post
-- Topics: [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 56.46
-- Novelty score: 2.30
+- Tags: openai, official, website, blog-post, acquisition, ai, media, technology
+- Topics: [Acquisition](../topics/acquisition.md), [Media](../topics/media.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Technology](../topics/technology.md), [Website](../topics/website.md)
+- Trend score: 49.76
+- Novelty score: 4.20
+
+## Summary
+
+OpenAI acquired TBPN to boost global discussions about AI and support independent media, thereby expanding dialogue with the tech community.
 
 ## Topic Map
 
+- [Acquisition](../topics/acquisition.md)
+- [Media](../topics/media.md)
 - [Official](../topics/official.md)
 - [Openai](../topics/openai.md)
+- [Technology](../topics/technology.md)
 - [Website](../topics/website.md)
 
 ## Related Research
 
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Official, Openai, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai, Website)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai, Website)
-- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai, Website)
-- [Codex now offers more flexible pricing for teams](codex-now-offers-more-flexible-pricing-for-teams-4821c6.md) (shared topics: Official, Openai, Website)
-- [Gradient Labs gives every bank customer an AI account manager](gradient-labs-gives-every-bank-customer-an-ai-account-manager-ee52e4.md) (shared topics: Official, Openai, Website)
+- [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Openai, Website)
+- [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Openai, Website)
+- [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Official, Openai, Website)
+- [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Official, Openai, Website)
+- [Update on the OpenAI Foundation](update-on-the-openai-foundation-08186a.md) (shared topics: Official, Openai, Website)
 
 ## Radar
 

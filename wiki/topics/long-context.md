@@ -7,11 +7,12 @@ aliases:
 - context window
 - long context
 source_refs:
-- 2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
+- 2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 backlinks:
 - map:global-ai-research
-- page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
-updated_at: '2026-04-09T12:15:42.237391Z'
+- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
+- topic:model
+updated_at: '2026-04-09T16:35:04.641720Z'
 managed: true
 ---
 # Long Context
@@ -26,8 +27,8 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - Items in last 30 days: 0
 - Total supporting items: 1
 - Source diversity: 1
-- First seen: 2024-11-18T08:00:00+00:00
-- Last seen: 2024-11-18T08:00:00+00:00
+- First seen: 2025-03-17T12:00:00+00:00
+- Last seen: 2025-03-17T12:00:00+00:00
 
 ## Aliases
 
@@ -35,11 +36,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Computer Vision](computer-vision.md)
-- [Evaluations](evaluations.md)
+- [Inference](inference.md)
 - [Mistral](mistral.md)
+- [Model](model.md)
+- [Multimodal](multimodal.md)
 - [Official](official.md)
-- [Website](website.md)
 
 ## Leading Sources
 
@@ -47,7 +48,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Representative Signals
 
-- [[Deprecated] Pixtral Large | Mistral AI](../sources/deprecated-pixtral-large-mistral-ai-0d8433.md)
+- [Mistral Small 3.1 | Mistral AI](../sources/mistral-small-3-1-mistral-ai-5dc4fa.md)
 
 ## Map Links
 

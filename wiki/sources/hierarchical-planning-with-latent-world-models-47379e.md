@@ -8,11 +8,12 @@ source_refs:
 - 2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 backlinks:
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
+- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
+- topic:audio
 - topic:hierarchical-planning
-- topic:machine-learning
 - topic:robotics
 - topic:world-models
-updated_at: '2026-04-09T12:15:41.954557Z'
+updated_at: '2026-04-09T16:35:04.510204Z'
 managed: true
 ---
 # Hierarchical Planning with Latent World Models
@@ -26,9 +27,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-03T17:32:36+00:00
 - Authors: Wancong Zhang, Basile Terver, Artem Zholus, Soham Chitnis, Harsh Sutaria, Mido Assran, Randall Balestriero, Amir Bar, Adrien Bardes, Yann LeCun, Nicolas Ballas
-- Tags: paper, alphaxiv, research, Computer Science, cs.LG, github, audio, transcript, summary
-- Topics: [Audio](../topics/audio.md), [World Models](../topics/world-models.md), [Computer Science](../topics/computer-science.md), [Machine Learning](../topics/machine-learning.md), [Hierarchical Planning](../topics/hierarchical-planning.md), [Robotics](../topics/robotics.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.lg, github, audio, transcript, summary, hierarchical planning
+- Topics: [Audio](../topics/audio.md), [World Models](../topics/world-models.md), [Hierarchical Planning](../topics/hierarchical-planning.md), [Computer Science](../topics/computer-science.md), [Machine Learning](../topics/machine-learning.md), [Robotics](../topics/robotics.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -39,19 +40,19 @@ Hierarchical Planning with Latent World Models (HWM) introduces a top-down hiera
 
 - [Audio](../topics/audio.md)
 - [World Models](../topics/world-models.md)
+- [Hierarchical Planning](../topics/hierarchical-planning.md)
 - [Computer Science](../topics/computer-science.md)
 - [Machine Learning](../topics/machine-learning.md)
-- [Hierarchical Planning](../topics/hierarchical-planning.md)
 - [Robotics](../topics/robotics.md)
 
 ## Related Research
 
-- [FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control](flashsac-fast-and-stable-off-policy-reinforcement-learning-for-h-2d2665.md) (shared topics: Audio, Computer Science, Machine Learning, Robotics)
 - [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Robotics)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Audio, Computer Science, Machine Learning)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Audio, Computer Science)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science)
+- [FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control](flashsac-fast-and-stable-off-policy-reinforcement-learning-for-h-2d2665.md) (shared topics: Computer Science, Machine Learning, Robotics)
+- [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Audio, Machine Learning)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Machine Learning)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Machine Learning)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Audio, Computer Science)
 
 ## Radar
 

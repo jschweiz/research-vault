@@ -10,7 +10,9 @@ source_refs:
 backlinks:
 - map:global-ai-research
 - page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
-updated_at: '2026-04-09T12:15:42.470521Z'
+- topic:social-creation-platform
+- topic:sora
+updated_at: '2026-04-09T16:35:04.662130Z'
 managed: true
 ---
 # Video Generation
@@ -37,7 +39,8 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Official](official.md)
 - [Openai](openai.md)
 - [Safety](safety.md)
-- [Website](website.md)
+- [Social Creation Platform](social-creation-platform.md)
+- [Sora](sora.md)
 
 ## Leading Sources
 

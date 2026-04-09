@@ -10,21 +10,22 @@ backlinks:
 - page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 - page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
 - page:2025-01-30-mistral-research-mistral-small-3-mistral-ai-5a7173c6
+- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
 - page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
 - page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
-- page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 - page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
 - page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
-- page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
+- page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 - page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
+- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 - page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
-- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
-- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
 - topic:code-generation
-- topic:evaluations
+- topic:formal-proof
+- topic:lean-4
+- topic:leanstral
 - topic:mistral
-updated_at: '2026-04-09T12:15:41.969784Z'
+updated_at: '2026-04-09T16:35:04.709277Z'
 managed: true
 ---
 # Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI
@@ -37,28 +38,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/leanstral
 - Document kind: blog-post
 - Published at: 2026-03-16T16:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Evaluations](../topics/evaluations.md), [Agents](../topics/agents.md), [Code Generation](../topics/code-generation.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, leanstral, open-source, code agent, lean 4, formal proof
+- Topics: [Code Generation](../topics/code-generation.md), [Formal Proof](../topics/formal-proof.md), [Lean 4](../topics/lean-4.md), [Leanstral](../topics/leanstral.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 2.20
+
+## Summary
+
+Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and powerful, offering competitive performance against closed-source models.
 
 ## Topic Map
 
+- [Code Generation](../topics/code-generation.md)
+- [Formal Proof](../topics/formal-proof.md)
+- [Lean 4](../topics/lean-4.md)
+- [Leanstral](../topics/leanstral.md)
 - [Mistral](../topics/mistral.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Evaluations](../topics/evaluations.md)
-- [Agents](../topics/agents.md)
-- [Code Generation](../topics/code-generation.md)
 
 ## Related Research
 
-- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Agents, Code Generation, Evaluations, Mistral, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Agents, Evaluations, Mistral, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Agents, Mistral, Official, Website)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Agents, Mistral, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Evaluations, Mistral, Official, Website)
+- [Codestral 25.01 | Mistral AI](codestral-25-01-mistral-ai-caf9e8.md) (shared topics: Code Generation, Mistral, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
+- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Mistral, Official)
+- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Mistral, Official)
 
 ## Radar
 

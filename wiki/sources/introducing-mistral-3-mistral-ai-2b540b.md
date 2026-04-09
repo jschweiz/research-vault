@@ -7,13 +7,13 @@ aliases:
 source_refs:
 - 2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 backlinks:
-- page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
-- page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
-- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
 - page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
 - topic:efficiency
-- topic:open-weight-models
-updated_at: '2026-04-09T12:15:42.286061Z'
+- topic:large-3
+- topic:ministral-3
+- topic:model-release
+- topic:multimodal-ai
+updated_at: '2026-04-09T16:35:04.475506Z'
 managed: true
 ---
 # Introducing Mistral 3 | Mistral AI
@@ -26,28 +26,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/mistral-3
 - Document kind: blog-post
 - Published at: 2025-12-02T16:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Inference](../topics/inference.md), [Open-Weight Models](../topics/open-weight-models.md), [Efficiency](../topics/efficiency.md)
-- Trend score: 56.46
-- Novelty score: 1.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, model release, multimodal ai, open source, large 3, ministral 3
+- Topics: [Efficiency](../topics/efficiency.md), [Large 3](../topics/large-3.md), [Ministral 3](../topics/ministral-3.md), [Mistral](../topics/mistral.md), [Model Release](../topics/model-release.md), [Multimodal Ai](../topics/multimodal-ai.md)
+- Trend score: 4.72
+- Novelty score: 0.00
+
+## Summary
+
+Mistral 3 introduces a new family of open multimodal and multilingual AI models, including Mistral Large 3 and the Ministral 3 series, emphasizing state-of-the-art performance, efficiency, and open access.
 
 ## Topic Map
 
-- [Mistral](../topics/mistral.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Inference](../topics/inference.md)
-- [Open-Weight Models](../topics/open-weight-models.md)
 - [Efficiency](../topics/efficiency.md)
+- [Large 3](../topics/large-3.md)
+- [Ministral 3](../topics/ministral-3.md)
+- [Mistral](../topics/mistral.md)
+- [Model Release](../topics/model-release.md)
+- [Multimodal Ai](../topics/multimodal-ai.md)
 
 ## Related Research
 
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Efficiency, Inference, Mistral, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Inference, Mistral, Official, Open-Weight Models, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Efficiency, Mistral, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Inference, Mistral, Official, Website)
-- [Voxtral | Mistral AI](voxtral-mistral-ai-ae07c3.md) (shared topics: Inference, Mistral, Official, Website)
-- [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Inference, Mistral, Official, Website)
+- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Efficiency, Mistral)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral)
+- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Efficiency)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral)
 
 ## Radar
 

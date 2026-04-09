@@ -5,13 +5,13 @@ title: Hierarchical Planning
 aliases:
 - Hierarchical Planning
 - Hierarchical Planning with
+- hierarchical planning
 source_refs:
 - 2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 backlinks:
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
-- topic:machine-learning
 - topic:world-models
-updated_at: '2026-04-09T12:15:42.569464Z'
+updated_at: '2026-04-09T16:35:03.934404Z'
 managed: true
 ---
 # Hierarchical Planning

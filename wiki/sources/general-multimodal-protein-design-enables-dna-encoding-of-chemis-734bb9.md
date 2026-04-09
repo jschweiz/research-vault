@@ -14,7 +14,8 @@ backlinks:
 - topic:ai-health
 - topic:generative-models
 - topic:geometric-deep-learning
-updated_at: '2026-04-09T12:15:42.263528Z'
+- topic:inference-optimization
+updated_at: '2026-04-09T16:35:04.663898Z'
 managed: true
 ---
 # General Multimodal Protein Design Enables DNA-Encoding of Chemistry
@@ -28,9 +29,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-06T21:21:11+00:00
 - Authors: Jarrid Rector-Brooks, Théophile Lambert, Marta Skreta, Daniel Roth, Yueming Long, Zi-Qi Li, Xi Zhang, Miruna Cretu, Francesca-Zhoufan Li, Tanvi Ganapathy, Emily Jin, Avishek Joey Bose, Jason Yang, Kirill Neklyudov, Yoshua Bengio, Alexander Tong, Frances H. Arnold, Cheng-Hao Liu
-- Tags: paper, alphaxiv, research, ai-for-genomics, ai-for-health, Computer Science, cs.LG, generative-models, geometric-deep-learning, inference-optimization, multi-modal-learning, sequence-modeling
-- Topics: [Audio](../topics/audio.md), [Ai Genomics](../topics/ai-genomics.md), [Ai Health](../topics/ai-health.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Geometric Deep Learning](../topics/geometric-deep-learning.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, ai-for-genomics, ai-for-health, computer science, cs.lg, generative-models, geometric-deep-learning, inference-optimization
+- Topics: [Ai Genomics](../topics/ai-genomics.md), [Ai Health](../topics/ai-health.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Geometric Deep Learning](../topics/geometric-deep-learning.md), [Inference Optimization](../topics/inference-optimization.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -39,21 +40,21 @@ A multimodal generative model named DISCO was developed to simultaneously design
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Ai Genomics](../topics/ai-genomics.md)
 - [Ai Health](../topics/ai-health.md)
 - [Computer Science](../topics/computer-science.md)
 - [Generative Models](../topics/generative-models.md)
 - [Geometric Deep Learning](../topics/geometric-deep-learning.md)
+- [Inference Optimization](../topics/inference-optimization.md)
 
 ## Related Research
 
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Generative Models, Geometric Deep Learning)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Generative Models, Geometric Deep Learning)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Audio, Computer Science, Generative Models)
-- [Embarrassingly Simple Self-Distillation Improves Code Generation](embarrassingly-simple-self-distillation-improves-code-generation-c213e5.md) (shared topics: Audio, Computer Science, Generative Models)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Audio, Computer Science)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Generative Models, Geometric Deep Learning)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Computer Science, Generative Models, Geometric Deep Learning)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Inference Optimization)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Generative Models)
+- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Computer Science, Inference Optimization)
+- [Embarrassingly Simple Self-Distillation Improves Code Generation](embarrassingly-simple-self-distillation-improves-code-generation-c213e5.md) (shared topics: Computer Science, Generative Models)
 
 ## Radar
 

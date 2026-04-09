@@ -7,9 +7,10 @@ aliases:
 source_refs:
 - 2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
 backlinks:
-- topic:agentic-coding-capabilities
-- topic:models-mistral-ai
-updated_at: '2026-04-09T12:15:42.407066Z'
+- topic:devstral
+- topic:mistral-ai
+- topic:models
+updated_at: '2026-04-09T16:35:04.678207Z'
 managed: true
 ---
 # Upgrading agentic coding capabilities with the new Devstral models | Mistral AI
@@ -22,28 +23,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/devstral-2507
 - Document kind: blog-post
 - Published at: 2025-07-10T16:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Agents](../topics/agents.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agentic Coding Capabilities](../topics/agentic-coding-capabilities.md), [Models Mistral Ai](../topics/models-mistral-ai.md)
-- Trend score: 249.90
+- Authors: Mistral AI, All Hands AI
+- Tags: mistral, official, research, website, blog-post, devstral, coding, models, mistral ai, agentic
+- Topics: [Agents](../topics/agents.md), [Coding](../topics/coding.md), [Devstral](../topics/devstral.md), [Mistral](../topics/mistral.md), [Mistral Ai](../topics/mistral-ai.md), [Models](../topics/models.md)
+- Trend score: 155.17
 - Novelty score: 4.80
+
+## Summary
+
+Mistral AI and All Hands AI released the Devstral models, including Devstral Small 1.1 and Medium, focusing on agentic coding capabilities. These models offer state-of-the-art performance for code agents and are available via API.
 
 ## Topic Map
 
 - [Agents](../topics/agents.md)
+- [Coding](../topics/coding.md)
+- [Devstral](../topics/devstral.md)
 - [Mistral](../topics/mistral.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Agentic Coding Capabilities](../topics/agentic-coding-capabilities.md)
-- [Models Mistral Ai](../topics/models-mistral-ai.md)
+- [Mistral Ai](../topics/mistral-ai.md)
+- [Models](../topics/models.md)
 
 ## Related Research
 
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Agents, Mistral, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Agents, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Agents, Mistral, Official, Website)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Agents, Mistral, Official, Website)
-- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Agents, Mistral, Official, Website)
-- [Devstral | Mistral AI](devstral-mistral-ai-f64958.md) (shared topics: Agents, Mistral, Official, Website)
+- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Devstral, Mistral)
+- [Magistral | Mistral AI](magistral-mistral-ai-df7660.md) (shared topics: Mistral, Mistral Ai)
+- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Mistral, Mistral Ai)
+- [Codestral 25.01 | Mistral AI](codestral-25-01-mistral-ai-caf9e8.md) (shared topics: Mistral, Mistral Ai)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Agents)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents)
 
 ## Radar
 

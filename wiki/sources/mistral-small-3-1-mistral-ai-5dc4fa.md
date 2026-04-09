@@ -8,11 +8,14 @@ source_refs:
 - 2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 backlinks:
 - page:2025-01-30-mistral-research-mistral-small-3-mistral-ai-5a7173c6
-- page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
-- page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
-- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
-updated_at: '2026-04-09T12:15:42.228631Z'
+- page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
+- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
+- topic:inference
+- topic:long-context
+- topic:model
+- topic:multimodal
+updated_at: '2026-04-09T16:35:04.632224Z'
 managed: true
 ---
 # Mistral Small 3.1 | Mistral AI
@@ -25,28 +28,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/mistral-small-3-1
 - Document kind: blog-post
 - Published at: 2025-03-17T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Evaluations](../topics/evaluations.md), [Inference](../topics/inference.md), [Infrastructure](../topics/infrastructure.md)
-- Trend score: 87.84
-- Novelty score: 4.80
+- Tags: mistral, official, research, website, blog-post, model, open source, multimodal, context window, inference
+- Topics: [Inference](../topics/inference.md), [Multimodal](../topics/multimodal.md), [Long Context](../topics/long-context.md), [Mistral](../topics/mistral.md), [Model](../topics/model.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 2.40
+
+## Summary
+
+Mistral Small 3.1 is a new open-source model that improves text performance, multimodal understanding, and context window, outperforming comparable proprietary models. It is designed for versatile generative AI tasks, offering lightweight and fast performance for various applications.
 
 ## Topic Map
 
-- [Mistral](../topics/mistral.md)
-- [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Evaluations](../topics/evaluations.md)
 - [Inference](../topics/inference.md)
-- [Infrastructure](../topics/infrastructure.md)
+- [Multimodal](../topics/multimodal.md)
+- [Long Context](../topics/long-context.md)
+- [Mistral](../topics/mistral.md)
+- [Model](../topics/model.md)
+- [Official](../topics/official.md)
 
 ## Related Research
 
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Evaluations, Inference, Mistral, Official, Website)
-- [Mistral Small 3 | Mistral AI](mistral-small-3-mistral-ai-098c06.md) (shared topics: Evaluations, Inference, Mistral, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Inference, Infrastructure, Official, Website)
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Inference, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Evaluations, Mistral, Official, Website)
+- [Mistral Small 3 | Mistral AI](mistral-small-3-mistral-ai-098c06.md) (shared topics: Inference, Mistral, Model, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Inference, Mistral, Official)
+- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Inference, Mistral, Multimodal)
+- [Mistral OCR | Mistral AI](mistral-ocr-mistral-ai-eb1d8c.md) (shared topics: Mistral, Multimodal, Official)
+- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Inference, Multimodal)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
 
 ## Radar
 

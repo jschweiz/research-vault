@@ -7,53 +7,41 @@ aliases:
 source_refs:
 - 2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
 backlinks:
-- page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
-- page:2026-04-03-medium-email-claude-code-is-great-a7134001
-- page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
+- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
+- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
-- page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
 - page:2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
-- page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
-- page:2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
+- page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
+- page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
 - page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
 - page:2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
 - page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
-- page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
-- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
-- page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
-- page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
-- page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
-- page:2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
+- page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
 - page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
-- page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
-- page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
 - page:2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
 - page:2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
 - page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
-- page:2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
 - page:2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
 - page:2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-f82b8871
-- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
-- page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
-- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
-- page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
-- page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
+- page:2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
+- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
 - page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
 - page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
 - page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
 - page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
-- page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 - page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
-- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
 - page:2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
 - page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
 - page:2026-04-09-medium-email-the-art-of-letting-go-69290282
 - page:2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
+- page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- topic:agents
+- topic:complex-queries
+- topic:deep-thinking
 - topic:medium
-- topic:reasoning
-- topic:retrieval-augmented-generation
-updated_at: '2026-04-09T12:15:41.957715Z'
+updated_at: '2026-04-09T16:35:03.796940Z'
 managed: true
 ---
 # Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
@@ -66,29 +54,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex-queries-af69c5e044db
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Agents](../topics/agents.md), [Reasoning](../topics/reasoning.md), [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
+- Tags: newsletter, medium, email, blog-post, rag pipeline, agentic, deep-thinking, complex queries
+- Topics: [Agents](../topics/agents.md), [Complex Queries](../topics/complex-queries.md), [Deep Thinking](../topics/deep-thinking.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post details the construction of an agentic deep-thinking RAG pipeline designed to effectively solve complex queries.
+
 ## Topic Map
 
+- [Agents](../topics/agents.md)
+- [Complex Queries](../topics/complex-queries.md)
+- [Deep Thinking](../topics/deep-thinking.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Agents](../topics/agents.md)
-- [Reasoning](../topics/reasoning.md)
-- [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
 
 ## Related Research
 
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--1237c7.md) (shared topics: Agents, Email, Medium, Newsletter, Reasoning, Retrieval-Augmented Generation)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Agents, Email, Newsletter, Reasoning)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Designing a Production-Grade RAG Architecture](designing-a-production-grade-rag-architecture-51dd0c.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
-- [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](why-your-rag-system-fails-complex-questions-and-how-structure-fi-c23a71.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
+- [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-40b39c.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--1237c7.md) (shared topics: Agents, Deep Thinking, Email, Medium)
+- [Agentic AI: Implementing Long-Term Memory](agentic-ai-implementing-long-term-memory-f983fa.md) (shared topics: Agents, Email, Medium, Newsletter)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

@@ -7,11 +7,13 @@ aliases:
 source_refs:
 - 2026-04-07-tldr-email-artemis-ii-astronauts-heading-home-after-histori-1a04b5a8
 backlinks:
+- page:2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
+- page:2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
 - topic:artemis-ii
 - topic:astronauts
 - topic:moon-flyby
 - topic:nasa
-updated_at: '2026-04-09T12:15:42.455777Z'
+updated_at: '2026-04-09T16:35:04.613563Z'
 managed: true
 ---
 # Artemis II astronauts heading home after historic moon flyby
@@ -45,12 +47,12 @@ Artemis II astronauts are heading home after a historic moon flyby. The crew rea
 
 ## Related Research
 
+- [Astronauts set distance record, revealing the Moon as a place to be explored](astronauts-set-distance-record-revealing-the-moon-as-a-place-to--1cf476.md) (shared topics: Artemis Ii, Astronauts, Email, Newsletter)
+- [Artemis II, NASA's boldest mission in generations, launches crew to the Moon](artemis-ii-nasa-s-boldest-mission-in-generations-launches-crew-t-93f4a3.md) (shared topics: Artemis Ii, Email, Nasa, Newsletter)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
 - [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

@@ -7,11 +7,14 @@ aliases:
 source_refs:
 - 2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
 backlinks:
-- page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
-- page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
-- topic:mistral-ai
-- topic:ocr-mistral-ai
-updated_at: '2026-04-09T12:15:42.081424Z'
+- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
+- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
+- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- topic:api
+- topic:document-understanding
+- topic:multimodal
+- topic:ocr
+updated_at: '2026-04-09T16:35:04.001298Z'
 managed: true
 ---
 # Mistral OCR | Mistral AI
@@ -24,28 +27,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/mistral-ocr
 - Document kind: blog-post
 - Published at: 2025-03-06T17:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Evaluations](../topics/evaluations.md), [Mistral Ai](../topics/mistral-ai.md), [Ocr Mistral Ai](../topics/ocr-mistral-ai.md)
-- Trend score: 56.46
-- Novelty score: 0.60
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, ocr, document understanding, multimodal, api
+- Topics: [Multimodal](../topics/multimodal.md), [Api](../topics/api.md), [Document Understanding](../topics/document-understanding.md), [Mistral](../topics/mistral.md), [Ocr](../topics/ocr.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 2.40
+
+## Summary
+
+Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multilingual capabilities. It is designed to extract content from various document types and offers features like doc-as-prompt and self-hosting options.
 
 ## Topic Map
 
+- [Multimodal](../topics/multimodal.md)
+- [Api](../topics/api.md)
+- [Document Understanding](../topics/document-understanding.md)
 - [Mistral](../topics/mistral.md)
+- [Ocr](../topics/ocr.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Evaluations](../topics/evaluations.md)
-- [Mistral Ai](../topics/mistral-ai.md)
-- [Ocr Mistral Ai](../topics/ocr-mistral-ai.md)
 
 ## Related Research
 
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Evaluations, Mistral, Mistral Ai, Official, Website)
-- [Medium is the new large. | Mistral AI](medium-is-the-new-large-mistral-ai-2a85f8.md) (shared topics: Evaluations, Mistral, Mistral Ai, Official, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Evaluations, Mistral, Official, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Evaluations, Mistral, Official, Website)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Ocr, Official)
+- [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Mistral, Multimodal, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Mistral, Multimodal)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
 
 ## Radar
 

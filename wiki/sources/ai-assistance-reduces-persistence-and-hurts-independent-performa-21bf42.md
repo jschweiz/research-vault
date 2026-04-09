@@ -16,8 +16,9 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:artificial-intelligence
 - topic:causal-inference
+- topic:human-ai-interaction
 - topic:reasoning
-updated_at: '2026-04-09T12:15:42.178127Z'
+updated_at: '2026-04-09T16:35:03.871935Z'
 managed: true
 ---
 # AI Assistance Reduces Persistence and Hurts Independent Performance
@@ -31,9 +32,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-07T03:41:15+00:00
 - Authors: Grace Liu, Brian Christian, Tsvetomira Dumbalska, Michiel A. Bakker, Rachit Dubey
-- Tags: paper, alphaxiv, research, agents, causal-inference, Computer Science, cs.AI, human-ai-interaction, machine-psychology, reasoning, statistical-learning, github
-- Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Reasoning](../topics/reasoning.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Causal Inference](../topics/causal-inference.md), [Computer Science](../topics/computer-science.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, agents, causal-inference, computer science, cs.ai, human-ai-interaction, machine-psychology, reasoning
+- Topics: [Agents](../topics/agents.md), [Reasoning](../topics/reasoning.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Causal Inference](../topics/causal-inference.md), [Computer Science](../topics/computer-science.md), [Human Ai Interaction](../topics/human-ai-interaction.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -43,20 +44,20 @@ A study employing randomized controlled trials revealed that utilizing AI assist
 ## Topic Map
 
 - [Agents](../topics/agents.md)
-- [Audio](../topics/audio.md)
 - [Reasoning](../topics/reasoning.md)
 - [Artificial Intelligence](../topics/artificial-intelligence.md)
 - [Causal Inference](../topics/causal-inference.md)
 - [Computer Science](../topics/computer-science.md)
+- [Human Ai Interaction](../topics/human-ai-interaction.md)
 
 ## Related Research
 
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Audio, Causal Inference, Computer Science, Reasoning)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agents, Artificial Intelligence, Audio, Reasoning)
-- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Audio, Reasoning)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Causal Inference, Computer Science)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
 
 ## Radar
 

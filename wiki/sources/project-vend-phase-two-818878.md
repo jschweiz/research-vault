@@ -7,10 +7,14 @@ aliases:
 source_refs:
 - 2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 backlinks:
-- page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-updated_at: '2026-04-09T12:15:42.196383Z'
+- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- topic:agent-design
+- topic:ai-agents
+- topic:business-simulation
+- topic:large-language-models
+updated_at: '2026-04-09T16:35:03.932606Z'
 managed: true
 ---
 # Project Vend: Phase two
@@ -23,28 +27,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/project-vend-2
 - Document kind: blog-post
 - Published at: 2025-12-18T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Reasoning](../topics/reasoning.md), [Tool Use](../topics/tool-use.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Authors: Anthropic
+- Tags: anthropic, official, research, website, blog-post, project vend, ai agents, large language models, agent design, business simulation
+- Topics: [Agent Design](../topics/agent-design.md), [Ai Agents](../topics/ai-agents.md), [Anthropic](../topics/anthropic.md), [Business Simulation](../topics/business-simulation.md), [Large Language Models](../topics/large-language-models.md), [Official](../topics/official.md)
+- Trend score: 45.86
+- Novelty score: 1.80
+
+## Summary
+
+Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better performance but also revealing limitations.
 
 ## Topic Map
 
+- [Agent Design](../topics/agent-design.md)
+- [Ai Agents](../topics/ai-agents.md)
 - [Anthropic](../topics/anthropic.md)
+- [Business Simulation](../topics/business-simulation.md)
+- [Large Language Models](../topics/large-language-models.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
-- [Reasoning](../topics/reasoning.md)
-- [Tool Use](../topics/tool-use.md)
 
 ## Related Research
 
-- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Agents, Anthropic, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Agents, Anthropic, Official, Website)
-- [Introducing GPT-5.4 mini and nano](introducing-gpt-5-4-mini-and-nano-2054cd.md) (shared topics: Agents, Official, Reasoning, Website)
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Agents, Official, Website)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official, Website)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Ai Agents, Anthropic)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official)
+- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Ai Agents, Anthropic)
+- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

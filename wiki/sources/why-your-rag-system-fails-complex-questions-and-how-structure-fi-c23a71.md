@@ -8,12 +8,13 @@ source_refs:
 - 2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 backlinks:
 - page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
+- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
+- page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
 - page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
-- page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
-- topic:rag-system-fails
 - topic:retrieval-augmented-generation
-- topic:why-your-rag
-updated_at: '2026-04-09T12:15:42.609140Z'
+- topic:search
+- topic:structure
+updated_at: '2026-04-09T16:35:04.813254Z'
 managed: true
 ---
 # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
@@ -26,26 +27,30 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Rag System Fails](../topics/rag-system-fails.md), [Why Your Rag](../topics/why-your-rag.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Vivedha Elango
+- Tags: newsletter, medium, email, blog-post, rag, retrieval, structure, ai
+- Topics: [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Search](../topics/search.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Structure](../topics/structure.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post explores why Retrieval-Augmented Generation (RAG) systems struggle with complex questions and proposes that better structure is the solution.
+
 ## Topic Map
 
+- [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
+- [Search](../topics/search.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
-- [Rag System Fails](../topics/rag-system-fails.md)
-- [Why Your Rag](../topics/why-your-rag.md)
+- [Structure](../topics/structure.md)
 
 ## Related Research
 
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
-- [Designing a Production-Grade RAG Architecture](designing-a-production-grade-rag-architecture-51dd0c.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--1237c7.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
+- [Building the 14 Key Pillars of Agentic AI](building-the-14-key-pillars-of-agentic-ai-7aebbe.md) (shared topics: Email, Medium, Newsletter, Search)
+- [Vector Databases Exist Because SQL Has One Blind Spot](vector-databases-exist-because-sql-has-one-blind-spot-3d9048.md) (shared topics: Email, Medium, Newsletter, Search)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--1237c7.md) (shared topics: Email, Medium, Retrieval-Augmented Generation, Search)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 - [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)

@@ -6,8 +6,11 @@ aliases:
 - What People in Their 80’s Wish They’d Done Differently at Your Age
 source_refs:
 - 2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
-backlinks: []
-updated_at: '2026-04-09T12:15:38.006664Z'
+backlinks:
+- topic:aging
+- topic:mistakes
+- topic:personal-growth
+updated_at: '2026-04-09T16:35:04.731638Z'
 managed: true
 ---
 # What People in Their 80’s Wish They’d Done Differently at Your Age
@@ -20,17 +23,24 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@thomas-oppong/what-people-in-their-80s-wish-they-d-done-differently-at-your-age-214744e98f93
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Thomas Oppong
+- Tags: newsletter, medium, email, blog-post, personal growth, mistakes, aging, reflection
+- Topics: [Aging](../topics/aging.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Mistakes](../topics/mistakes.md), [Newsletter](../topics/newsletter.md), [Personal Growth](../topics/personal-growth.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
+
 ## Topic Map
 
+- [Aging](../topics/aging.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
+- [Mistakes](../topics/mistakes.md)
 - [Newsletter](../topics/newsletter.md)
+- [Personal Growth](../topics/personal-growth.md)
 
 ## Related Research
 

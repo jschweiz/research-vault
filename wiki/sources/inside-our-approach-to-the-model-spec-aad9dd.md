@@ -7,18 +7,21 @@ aliases:
 source_refs:
 - 2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 backlinks:
-- page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
-- page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
-- page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
+- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
+- page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
 - page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
 - page:2026-03-24-openai-website-helping-developers-build-safer-ai-experiences-fo-d75d7d2e
+- page:2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
-- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
+- page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
-- page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- topic:accountability
+- topic:model-spec
 - topic:safety
-updated_at: '2026-04-09T12:15:42.103175Z'
+- topic:website
+updated_at: '2026-04-09T16:35:03.757509Z'
 managed: true
 ---
 # Inside our approach to the Model Spec
@@ -31,27 +34,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://openai.com/index/our-approach-to-the-model-spec
 - Document kind: blog-post
 - Published at: 2026-03-25T10:00:00+00:00
-- Tags: openai, official, website, blog-post
-- Topics: [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md), [Infrastructure](../topics/infrastructure.md), [Safety](../topics/safety.md)
-- Trend score: 87.84
-- Novelty score: 4.80
+- Authors: OpenAI
+- Tags: openai, official, website, blog-post, model spec, ai, safety, accountability
+- Topics: [Safety](../topics/safety.md), [Accountability](../topics/accountability.md), [Model Spec](../topics/model-spec.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
+- Trend score: 49.76
+- Novelty score: 2.51
+
+## Summary
+
+OpenAI's Model Spec provides a public framework for model behavior, focusing on balancing safety, user freedom, and accountability as AI systems develop.
 
 ## Topic Map
 
+- [Safety](../topics/safety.md)
+- [Accountability](../topics/accountability.md)
+- [Model Spec](../topics/model-spec.md)
 - [Official](../topics/official.md)
 - [Openai](../topics/openai.md)
 - [Website](../topics/website.md)
-- [Infrastructure](../topics/infrastructure.md)
-- [Safety](../topics/safety.md)
 
 ## Related Research
 
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai, Safety, Website)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai, Safety, Website)
 - [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Official, Openai, Safety, Website)
-- [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Official, Openai, Safety, Website)
-- [Creating with Sora Safely](creating-with-sora-safely-29e034.md) (shared topics: Official, Openai, Safety, Website)
-- [OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first](openai-japan-announces-japan-teen-safety-blueprint-to-put-teen-s-3c55db.md) (shared topics: Official, Openai, Safety, Website)
+- [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Openai, Website)
+- [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Openai, Website)
+- [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Openai, Website)
+- [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Official, Openai, Safety)
 
 ## Radar
 

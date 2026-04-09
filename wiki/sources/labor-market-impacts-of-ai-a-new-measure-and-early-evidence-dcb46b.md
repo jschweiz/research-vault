@@ -7,10 +7,14 @@ aliases:
 source_refs:
 - 2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 backlinks:
-- topic:ai-new
-- topic:image-generation
-- topic:impacts-ai
-updated_at: '2026-04-09T12:15:42.080061Z'
+- page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
+- page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
+- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- topic:exposure
+- topic:labor-market
+- topic:measurement
+- topic:occupational
+updated_at: '2026-04-09T16:35:04.310902Z'
 managed: true
 ---
 # Labor market impacts of AI: A new measure and early evidence
@@ -23,28 +27,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://www.anthropic.com/research/labor-market-impacts
 - Document kind: blog-post
 - Published at: 2026-03-05T00:00:00+00:00
-- Tags: anthropic, official, research, website, blog-post
-- Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Website](../topics/website.md), [Ai New](../topics/ai-new.md), [Impacts Ai](../topics/impacts-ai.md), [Image Generation](../topics/image-generation.md)
-- Trend score: 56.46
-- Novelty score: 3.40
+- Tags: anthropic, official, research, website, blog-post, ai, labor market, exposure, occupational, measurement
+- Topics: [Anthropic](../topics/anthropic.md), [Exposure](../topics/exposure.md), [Labor Market](../topics/labor-market.md), [Measurement](../topics/measurement.md), [Occupational](../topics/occupational.md), [Official](../topics/official.md)
+- Trend score: 45.86
+- Novelty score: 1.20
+
+## Summary
+
+The authors introduce a new measure of AI displacement risk based on theoretical LLM capability and real-world usage to quantify AI's impact on labor markets. They find limited evidence that AI has affected employment to date, but note that the measures track with labor market analyst estimates.
 
 ## Topic Map
 
 - [Anthropic](../topics/anthropic.md)
+- [Exposure](../topics/exposure.md)
+- [Labor Market](../topics/labor-market.md)
+- [Measurement](../topics/measurement.md)
+- [Occupational](../topics/occupational.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Ai New](../topics/ai-new.md)
-- [Impacts Ai](../topics/impacts-ai.md)
-- [Image Generation](../topics/image-generation.md)
 
 ## Related Research
 
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official, Website)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official, Website)
-- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-7597c7.md) (shared topics: Anthropic, Official, Website)
-- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Anthropic, Official, Website)
-- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official, Website)
+- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
+- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official)
+- [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-7597c7.md) (shared topics: Anthropic, Labor Market)
+- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official)
+- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
+- [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

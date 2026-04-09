@@ -8,11 +8,12 @@ source_refs:
 - 2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 backlinks:
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
+- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - topic:deep-reinforcement-learning
-- topic:machine-learning
+- topic:optimization-methods
 - topic:reinforcement-learning
 - topic:robotics
-updated_at: '2026-04-09T12:15:42.047555Z'
+updated_at: '2026-04-09T16:35:04.382212Z'
 managed: true
 ---
 # FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control
@@ -26,9 +27,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-06T09:03:41+00:00
 - Authors: Donghu Kim, Youngdo Lee, Minho Park, Kinam Kim, I Made Aswin Nahendra, Takuma Seno, Sehee Min, Daniel Palenicek, Florian Vogt, Danica Kragic, Jan Peters, Jaegul Choo, Hojoon Lee
-- Tags: paper, alphaxiv, research, Computer Science, cs.LG, cs.RO, deep-reinforcement-learning, optimization-methods, reinforcement-learning, robotic-control, transfer-learning, github
-- Topics: [Audio](../topics/audio.md), [Reinforcement Learning](../topics/reinforcement-learning.md), [Robotics](../topics/robotics.md), [Computer Science](../topics/computer-science.md), [Deep Reinforcement Learning](../topics/deep-reinforcement-learning.md), [Machine Learning](../topics/machine-learning.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.lg, cs.ro, deep-reinforcement-learning, optimization-methods, reinforcement-learning, robotic-control
+- Topics: [Reinforcement Learning](../topics/reinforcement-learning.md), [Robotics](../topics/robotics.md), [Computer Science](../topics/computer-science.md), [Deep Reinforcement Learning](../topics/deep-reinforcement-learning.md), [Machine Learning](../topics/machine-learning.md), [Optimization Methods](../topics/optimization-methods.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -37,21 +38,21 @@ FlashSAC is an off-policy reinforcement learning algorithm designed for high-dim
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Reinforcement Learning](../topics/reinforcement-learning.md)
 - [Robotics](../topics/robotics.md)
 - [Computer Science](../topics/computer-science.md)
 - [Deep Reinforcement Learning](../topics/deep-reinforcement-learning.md)
 - [Machine Learning](../topics/machine-learning.md)
+- [Optimization Methods](../topics/optimization-methods.md)
 
 ## Related Research
 
-- [Hierarchical Planning with Latent World Models](hierarchical-planning-with-latent-world-models-47379e.md) (shared topics: Audio, Computer Science, Machine Learning, Robotics)
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Robotics)
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Audio, Computer Science, Machine Learning)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Audio, Computer Science)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science)
+- [Hierarchical Planning with Latent World Models](hierarchical-planning-with-latent-world-models-47379e.md) (shared topics: Computer Science, Machine Learning, Robotics)
+- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Computer Science, Machine Learning)
+- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Computer Science, Robotics)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Machine Learning)
+- [From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability](from-folding-boxes-to-fixing-vacuums-gen-1-robotics-model-hits-9-8d579f.md) (shared topics: Machine Learning, Robotics)
+- [Synthetic Sandbox for Training Machine Learning Engineering Agents](synthetic-sandbox-for-training-machine-learning-engineering-agen-d6d706.md) (shared topics: Computer Science, Reinforcement Learning)
 
 ## Radar
 

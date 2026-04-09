@@ -7,10 +7,11 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 backlinks:
+- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - topic:gemma-4
 - topic:google-deepmind
 - topic:multimodal
-updated_at: '2026-04-09T12:15:42.225834Z'
+updated_at: '2026-04-09T16:35:04.035843Z'
 managed: true
 ---
 # Gemma 4: Byte for byte, the most capable open models
@@ -44,12 +45,12 @@ Google DeepMind has released four new vision-capable reasoning models, including
 
 ## Related Research
 
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Vision, Multimodal)
 - [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Audio, Email)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Vision)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Vision)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Vision)
-- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Audio, Computer Vision)
+- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Multimodal)
+- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Vision)
+- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email)
+- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email)
 
 ## Radar
 

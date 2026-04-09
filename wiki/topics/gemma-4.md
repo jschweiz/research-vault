@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - topic:google-deepmind
-- topic:multimodal
-updated_at: '2026-04-09T12:15:42.231509Z'
+updated_at: '2026-04-09T16:35:03.864684Z'
 managed: true
 ---
 # Gemma 4

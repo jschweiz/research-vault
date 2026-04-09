@@ -6,8 +6,13 @@ aliases:
 - Update on the OpenAI Foundation
 source_refs:
 - 2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
-backlinks: []
-updated_at: '2026-04-09T12:15:38.197273Z'
+backlinks:
+- page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
+- page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
+- topic:disease
+- topic:foundation
+- topic:investment
+updated_at: '2026-04-09T16:35:04.581220Z'
 managed: true
 ---
 # Update on the OpenAI Foundation
@@ -20,25 +25,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://openai.com/index/update-on-the-openai-foundation
 - Document kind: blog-post
 - Published at: 2026-03-24T09:00:00+00:00
-- Tags: openai, official, website, blog-post
-- Topics: [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 56.46
-- Novelty score: 2.30
+- Tags: openai, official, website, blog-post, foundation, investment, disease, ai
+- Topics: [Disease](../topics/disease.md), [Foundation](../topics/foundation.md), [Investment](../topics/investment.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
+- Trend score: 49.76
+- Novelty score: 2.51
+
+## Summary
+
+The OpenAI Foundation plans to invest at least $1 billion across areas including disease curing, economic opportunity, AI resilience, and community programs.
 
 ## Topic Map
 
+- [Disease](../topics/disease.md)
+- [Foundation](../topics/foundation.md)
+- [Investment](../topics/investment.md)
 - [Official](../topics/official.md)
 - [Openai](../topics/openai.md)
 - [Website](../topics/website.md)
 
 ## Related Research
 
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Official, Openai, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai, Website)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai, Website)
-- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai, Website)
 - [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Openai, Website)
-- [Codex now offers more flexible pricing for teams](codex-now-offers-more-flexible-pricing-for-teams-4821c6.md) (shared topics: Official, Openai, Website)
+- [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Openai, Website)
+- [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Openai, Website)
+- [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Official, Openai, Website)
+- [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Official, Openai, Website)
 
 ## Radar
 

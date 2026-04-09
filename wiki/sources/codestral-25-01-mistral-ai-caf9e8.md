@@ -7,9 +7,16 @@ aliases:
 source_refs:
 - 2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
 backlinks:
-- topic:25-01-mistral-ai
+- page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
+- page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
+- page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
+- page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
+- page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
+- topic:ai-model
 - topic:code-generation
-updated_at: '2026-04-09T12:15:42.513610Z'
+- topic:codestral
+- topic:mistral-ai
+updated_at: '2026-04-09T16:35:04.764399Z'
 managed: true
 ---
 # Codestral 25.01 | Mistral AI
@@ -22,28 +29,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/codestral-2501
 - Document kind: blog-post
 - Published at: 2025-01-13T08:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [25 01 Mistral Ai](../topics/25-01-mistral-ai.md), [Mistral Ai](../topics/mistral-ai.md), [Code Generation](../topics/code-generation.md)
-- Trend score: 56.46
-- Novelty score: 1.20
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, codestral, mistral ai, code generation, sota, ai model
+- Topics: [Code Generation](../topics/code-generation.md), [Mistral Ai](../topics/mistral-ai.md), [Ai Model](../topics/ai-model.md), [Codestral](../topics/codestral.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
+- Trend score: 45.05
+- Novelty score: 2.20
+
+## Summary
+
+Mistral AI released Codestral 25.01, a new coding model that is faster and more efficient than its predecessor, making it state-of-the-art for fill-in-the-middle (FIM) tasks.
 
 ## Topic Map
 
+- [Code Generation](../topics/code-generation.md)
+- [Mistral Ai](../topics/mistral-ai.md)
+- [Ai Model](../topics/ai-model.md)
+- [Codestral](../topics/codestral.md)
 - [Mistral](../topics/mistral.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [25 01 Mistral Ai](../topics/25-01-mistral-ai.md)
-- [Mistral Ai](../topics/mistral-ai.md)
-- [Code Generation](../topics/code-generation.md)
 
 ## Related Research
 
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Code Generation, Mistral, Official, Website)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Voxtral | Mistral AI](voxtral-mistral-ai-ae07c3.md) (shared topics: Mistral, Mistral Ai, Official, Website)
-- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Code Generation, Mistral, Official, Website)
-- [Devstral | Mistral AI](devstral-mistral-ai-f64958.md) (shared topics: Mistral, Mistral Ai, Official, Website)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Code Generation, Mistral, Official)
+- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Codestral, Mistral, Official)
+- [Magistral | Mistral AI](magistral-mistral-ai-df7660.md) (shared topics: Mistral, Mistral Ai, Official)
+- [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Mistral, Mistral Ai, Official)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
 
 ## Radar
 

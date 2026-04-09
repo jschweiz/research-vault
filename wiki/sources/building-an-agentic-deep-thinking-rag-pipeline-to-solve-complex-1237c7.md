@@ -8,11 +8,11 @@ source_refs:
 - 2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
 backlinks:
 - page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
-- page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
 - page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
-- topic:reasoning
+- topic:deep-thinking
 - topic:retrieval-augmented-generation
-updated_at: '2026-04-09T12:15:42.273382Z'
+- topic:search
+updated_at: '2026-04-09T16:35:04.388744Z'
 managed: true
 ---
 # Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
@@ -25,29 +25,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex-queries-af69c5e044db
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Agents](../topics/agents.md), [Reasoning](../topics/reasoning.md), [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
+- Tags: newsletter, medium, email, blog-post, rag, agentic, pipeline, deep-thinking, retrieval, reflection
+- Topics: [Agents](../topics/agents.md), [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Search](../topics/search.md), [Deep Thinking](../topics/deep-thinking.md), [Email](../topics/email.md), [Medium](../topics/medium.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This post outlines the construction of an agentic deep-thinking RAG pipeline designed to handle complex queries. It details the process involving planning, retrieval, reflection, critique, and synthesis.
+
 ## Topic Map
 
+- [Agents](../topics/agents.md)
+- [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
+- [Search](../topics/search.md)
+- [Deep Thinking](../topics/deep-thinking.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
-- [Newsletter](../topics/newsletter.md)
-- [Agents](../topics/agents.md)
-- [Reasoning](../topics/reasoning.md)
-- [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md)
 
 ## Related Research
 
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Medium, Newsletter, Reasoning, Retrieval-Augmented Generation)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Agents, Email, Newsletter, Reasoning)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [Designing a Production-Grade RAG Architecture](designing-a-production-grade-rag-architecture-51dd0c.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
-- [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](why-your-rag-system-fails-complex-questions-and-how-structure-fi-c23a71.md) (shared topics: Email, Medium, Newsletter, Retrieval-Augmented Generation)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Deep Thinking, Email, Medium)
+- [Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)](why-your-rag-system-fails-complex-questions-and-how-structure-fi-c23a71.md) (shared topics: Email, Medium, Retrieval-Augmented Generation, Search)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium)
+- [Designing a Production-Grade RAG Architecture](designing-a-production-grade-rag-architecture-51dd0c.md) (shared topics: Email, Medium, Retrieval-Augmented Generation)
+- [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md) (shared topics: Agents, Email, Medium)
+- [Building the 14 Key Pillars of Agentic AI](building-the-14-key-pillars-of-agentic-ai-7aebbe.md) (shared topics: Email, Medium, Search)
 
 ## Radar
 

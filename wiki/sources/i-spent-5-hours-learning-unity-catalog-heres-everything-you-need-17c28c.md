@@ -7,21 +7,12 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
 backlinks:
-- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
-- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
 - page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
-- page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
-- page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
-- page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
-- page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
-- page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
-- page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-- page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
-- page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
-- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
-- page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
-- topic:memory
-updated_at: '2026-04-09T12:15:42.238928Z'
+- page:2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
+- topic:data-engineering
+- topic:databricks
+- topic:unity-catalog
+updated_at: '2026-04-09T16:35:04.438096Z'
 managed: true
 ---
 # I spent 5 hours learning Unity Catalog. Here’s everything you need to know.
@@ -34,28 +25,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@vutrinh274/i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-to-know-cebdfe8b0d69
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Memory](../topics/memory.md), [Agents](../topics/agents.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Vu Trinh
+- Tags: newsletter, medium, email, blog-post, unity catalog, databricks, data engineering, ai
+- Topics: [Data Engineering](../topics/data-engineering.md), [Databricks](../topics/databricks.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Unity Catalog](../topics/unity-catalog.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+The author spent five hours learning about Unity Catalog and is sharing what they found out.
+
 ## Topic Map
 
+- [Data Engineering](../topics/data-engineering.md)
+- [Databricks](../topics/databricks.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Memory](../topics/memory.md)
-- [Agents](../topics/agents.md)
+- [Unity Catalog](../topics/unity-catalog.md)
 
 ## Related Research
 
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide](from-images-to-semantic-3d-gaussian-splatting-with-python-comple-050879.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Building the 14 Key Pillars of Agentic AI](building-the-14-key-pillars-of-agentic-ai-7aebbe.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [Building Long-Term Memory in Agentic AI](building-long-term-memory-in-agentic-ai-b1118b.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
-- [A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon](a-lawyer-just-beat-500-developers-at-anthropics-hackathon-744b6c.md) (shared topics: Agents, Email, Medium, Memory, Newsletter)
+- [Data Engineering: Incremental Data Loading Strategies](data-engineering-incremental-data-loading-strategies-00445f.md) (shared topics: Data Engineering, Email, Medium, Newsletter)
+- [7 Minutes to Understand the New Spark Streaming Feature that Changes Everything](7-minutes-to-understand-the-new-spark-streaming-feature-that-cha-dafd4d.md) (shared topics: Data Engineering, Email, Medium, Newsletter)
+- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
+- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
+- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

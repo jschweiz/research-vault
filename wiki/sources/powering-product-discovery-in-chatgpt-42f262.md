@@ -7,11 +7,13 @@ aliases:
 source_refs:
 - 2026-03-24-openai-website-powering-product-discovery-in-chatgpt-d58daa6d
 backlinks:
-- page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
-- page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
-- page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
-updated_at: '2026-04-09T12:15:42.317465Z'
+- page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
+- topic:agentic-commerce
+- topic:chatgpt
+- topic:product-discovery
+- topic:shopping
+updated_at: '2026-04-09T16:35:03.868796Z'
 managed: true
 ---
 # Powering product discovery in ChatGPT
@@ -24,26 +26,32 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://openai.com/index/powering-product-discovery-in-chatgpt
 - Document kind: blog-post
 - Published at: 2026-03-24T09:00:00+00:00
-- Tags: openai, official, website, blog-post
-- Topics: [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md), [Agents](../topics/agents.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Tags: openai, official, website, blog-post, chatgpt, product discovery, shopping, agentic commerce
+- Topics: [Agentic Commerce](../topics/agentic-commerce.md), [Chatgpt](../topics/chatgpt.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Product Discovery](../topics/product-discovery.md), [Shopping](../topics/shopping.md)
+- Trend score: 49.76
+- Novelty score: 2.51
+
+## Summary
+
+ChatGPT introduces richer, visually immersive shopping through the Agentic Commerce Protocol. This enables product discovery, side-by-side comparisons, and merchant integration.
 
 ## Topic Map
 
+- [Agentic Commerce](../topics/agentic-commerce.md)
+- [Chatgpt](../topics/chatgpt.md)
 - [Official](../topics/official.md)
 - [Openai](../topics/openai.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
+- [Product Discovery](../topics/product-discovery.md)
+- [Shopping](../topics/shopping.md)
 
 ## Related Research
 
-- [The next phase of enterprise AI](the-next-phase-of-enterprise-ai-00c367.md) (shared topics: Agents, Official, Openai, Website)
-- [How we monitor internal coding agents for misalignment](how-we-monitor-internal-coding-agents-for-misalignment-26d158.md) (shared topics: Agents, Official, Openai, Website)
-- [Introducing GPT-5.4 mini and nano](introducing-gpt-5-4-mini-and-nano-2054cd.md) (shared topics: Agents, Official, Openai, Website)
-- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai, Website)
-- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai, Website)
-- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai, Website)
+- [Codex now offers more flexible pricing for teams](codex-now-offers-more-flexible-pricing-for-teams-4821c6.md) (shared topics: Chatgpt, Official, Openai)
+- [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Chatgpt, Official, Openai)
+- [STADLER reshapes knowledge work at a 230-year-old company](stadler-reshapes-knowledge-work-at-a-230-year-old-company-b8010c.md) (shared topics: Chatgpt, Official, Openai)
+- [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai)
+- [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai)
+- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai)
 
 ## Radar
 

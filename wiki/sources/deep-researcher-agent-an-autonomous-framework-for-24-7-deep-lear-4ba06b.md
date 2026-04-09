@@ -8,16 +8,21 @@ source_refs:
 - 2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
 backlinks:
 - page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
-- page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
+- page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
+- page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
+- page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - page:2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
 - page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
+- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:artificial-intelligence
+- topic:audio
+- topic:deep-learning
 - topic:researcher-agent
-updated_at: '2026-04-09T12:15:42.363385Z'
+updated_at: '2026-04-09T16:35:03.898031Z'
 managed: true
 ---
 # Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring
@@ -31,9 +36,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-07T13:16:31+00:00
 - Authors: Xiangyue Zhang
-- Tags: paper, alphaxiv, research, Computer Science, cs.AI, github, audio, summary
-- Topics: [Audio](../topics/audio.md), [Agents](../topics/agents.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Researcher Agent](../topics/researcher-agent.md), [Infrastructure](../topics/infrastructure.md)
-- Trend score: 249.90
+- Tags: paper, alphaxiv, research, computer science, cs.ai, github, audio, summary, deep learning, agent
+- Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Deep Learning](../topics/deep-learning.md), [Researcher Agent](../topics/researcher-agent.md)
+- Trend score: 155.17
 - Novelty score: 6.80
 
 ## Summary
@@ -42,21 +47,21 @@ The Deep Researcher Agent, developed by Xiangyue Zhang at The University of Toky
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Agents](../topics/agents.md)
+- [Audio](../topics/audio.md)
 - [Artificial Intelligence](../topics/artificial-intelligence.md)
 - [Computer Science](../topics/computer-science.md)
+- [Deep Learning](../topics/deep-learning.md)
 - [Researcher Agent](../topics/researcher-agent.md)
-- [Infrastructure](../topics/infrastructure.md)
 
 ## Related Research
 
-- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Audio, Computer Science)
-- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Audio, Computer Science)
-- [AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery](autosota-an-end-to-end-automated-research-system-for-state-of-th-79db5b.md) (shared topics: Agents, Audio, Computer Science)
-- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agents, Artificial Intelligence, Audio)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [AI Assistance Reduces Persistence and Hurts Independent Performance](ai-assistance-reduces-persistence-and-hurts-independent-performa-21bf42.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Combee: Scaling Prompt Learning for Self-Improving Language Model Agents](combee-scaling-prompt-learning-for-self-improving-language-model-b157c0.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [Meta-Harness: End-to-End Optimization of Model Harnesses](meta-harness-end-to-end-optimization-of-model-harnesses-ebb80b.md) (shared topics: Agents, Artificial Intelligence, Computer Science)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Artificial Intelligence, Computer Science)
 
 ## Radar
 

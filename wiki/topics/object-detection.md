@@ -9,9 +9,9 @@ source_refs:
 - 2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 backlinks:
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
-- topic:multi-modal-learning
 - topic:robotics-perception
-updated_at: '2026-04-09T12:15:42.420099Z'
+- topic:transfer-learning
+updated_at: '2026-04-09T16:35:04.784916Z'
 managed: true
 ---
 # Object Detection
@@ -35,11 +35,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Computer Vision](computer-vision.md)
 - [Multi Modal Learning](multi-modal-learning.md)
 - [Robotics Perception](robotics-perception.md)
+- [Transfer Learning](transfer-learning.md)
 
 ## Leading Sources
 

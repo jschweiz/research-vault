@@ -7,8 +7,10 @@ aliases:
 - AI model Anthropic
 source_refs:
 - 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
-backlinks: []
-updated_at: '2026-04-09T12:15:40.505860Z'
+backlinks:
+- topic:infrastructure
+- topic:tldr
+updated_at: '2026-04-09T16:35:04.128588Z'
 managed: true
 ---
 # Ai Model Anthropic

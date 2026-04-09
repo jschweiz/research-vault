@@ -6,8 +6,14 @@ aliases:
 - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 source_refs:
 - 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
-backlinks: []
-updated_at: '2026-04-09T12:15:38.018980Z'
+backlinks:
+- page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
+- page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
+- topic:architecture
+- topic:claude
+- topic:code
+- topic:data-science
+updated_at: '2026-04-09T16:35:04.543244Z'
 managed: true
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
@@ -20,26 +26,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@han.heloir/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN
+- Tags: newsletter, medium, email, blog-post, claude, code, architecture, source code, data science
+- Topics: [Architecture](../topics/architecture.md), [Claude](../topics/claude.md), [Code](../topics/code.md), [Data Science](../topics/data-science.md), [Email](../topics/email.md), [Medium](../topics/medium.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+The post discusses the contrast between analyzing the features of Claude code and analyzing its underlying architecture, referencing five hundred thousand lines of leaked source code.
+
 ## Topic Map
 
+- [Architecture](../topics/architecture.md)
+- [Claude](../topics/claude.md)
+- [Code](../topics/code.md)
+- [Data Science](../topics/data-science.md)
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
-- [Newsletter](../topics/newsletter.md)
 
 ## Related Research
 
-- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
-- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
+- [The Complete Guide to Claude Code: CLAUDE.md](the-complete-guide-to-claude-code-claude-md-860c95.md) (shared topics: Claude, Code, Email, Medium)
+- [Build a Sleek Sci-Fi Dashboard with Python and Dash](build-a-sleek-sci-fi-dashboard-with-python-and-dash-82233f.md) (shared topics: Data Science, Email, Medium)
+- [Designing a Production-Grade RAG Architecture](designing-a-production-grade-rag-architecture-51dd0c.md) (shared topics: Architecture, Email, Medium)
+- [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Data Science, Email, Medium)
+- [Claude Skills for Product Designers](claude-skills-for-product-designers-5451ff.md) (shared topics: Claude, Email, Medium)
+- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Claude, Email)
 
 ## Radar
 

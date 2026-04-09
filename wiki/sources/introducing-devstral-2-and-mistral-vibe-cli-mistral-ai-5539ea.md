@@ -7,19 +7,20 @@ aliases:
 source_refs:
 - 2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 backlinks:
+- page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
+- page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
 - page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
-- page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
 - page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
 - page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
-- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
+- page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
 - page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
-- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
-- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
-- topic:inference
+- topic:coding-model
+- topic:devstral
 - topic:mistral
-- topic:open-weight-models
-updated_at: '2026-04-09T12:15:42.030294Z'
+- topic:mistral-vibe-cli
+- topic:open-source
+updated_at: '2026-04-09T16:35:03.779370Z'
 managed: true
 ---
 # Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI
@@ -32,28 +33,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://mistral.ai/news/devstral-2-vibe-cli
 - Document kind: blog-post
 - Published at: 2025-12-09T12:00:00+00:00
-- Tags: mistral, official, research, website, blog-post
-- Topics: [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Website](../topics/website.md), [Agents](../topics/agents.md), [Inference](../topics/inference.md), [Open-Weight Models](../topics/open-weight-models.md)
-- Trend score: 249.90
-- Novelty score: 4.80
+- Authors: Mistral AI
+- Tags: mistral, official, research, website, blog-post, devstral, mistral vibe cli, coding model, open source, ai
+- Topics: [Coding Model](../topics/coding-model.md), [Devstral](../topics/devstral.md), [Mistral](../topics/mistral.md), [Mistral Vibe Cli](../topics/mistral-vibe-cli.md), [Official](../topics/official.md), [Open Source](../topics/open-source.md)
+- Trend score: 45.05
+- Novelty score: 2.20
+
+## Summary
+
+Mistral AI released Devstral 2, a next-generation open-source coding model, and the Mistral Vibe CLI, a command-line assistant for code automation.
 
 ## Topic Map
 
+- [Coding Model](../topics/coding-model.md)
+- [Devstral](../topics/devstral.md)
 - [Mistral](../topics/mistral.md)
+- [Mistral Vibe Cli](../topics/mistral-vibe-cli.md)
 - [Official](../topics/official.md)
-- [Website](../topics/website.md)
-- [Agents](../topics/agents.md)
-- [Inference](../topics/inference.md)
-- [Open-Weight Models](../topics/open-weight-models.md)
+- [Open Source](../topics/open-source.md)
 
 ## Related Research
 
-- [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Agents, Inference, Mistral, Official, Website)
-- [Introducing Mistral 3 | Mistral AI](introducing-mistral-3-mistral-ai-2b540b.md) (shared topics: Inference, Mistral, Official, Open-Weight Models, Website)
-- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Agents, Mistral, Official, Website)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Agents, Inference, Official, Website)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Agents, Mistral, Official, Website)
-- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Inference, Mistral, Official, Website)
+- [Voxtral | Mistral AI](voxtral-mistral-ai-ae07c3.md) (shared topics: Mistral, Official, Open Source)
+- [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
+- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
+- [Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI](announcing-codestral-25-08-and-the-complete-mistral-coding-stack-cdf219.md) (shared topics: Mistral, Official)
 
 ## Radar
 

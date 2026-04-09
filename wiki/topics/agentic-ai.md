@@ -5,6 +5,7 @@ title: Agentic Ai
 aliases:
 - Agentic Ai
 - Agentic AI
+- agentic ai
 - in Agentic AI
 - of Agentic AI
 source_refs:
@@ -16,11 +17,11 @@ backlinks:
 - page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
-- topic:email
-- topic:medium
+- topic:feedback-loop
+- topic:hitl
 - topic:memory
-- topic:newsletter
-updated_at: '2026-04-09T12:15:41.993283Z'
+- topic:search
+updated_at: '2026-04-09T16:35:03.952520Z'
 managed: true
 ---
 # Agentic Ai
@@ -45,11 +46,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Agents](agents.md)
 - [Email](email.md)
 - [Medium](medium.md)
 - [Memory](memory.md)
 - [Newsletter](newsletter.md)
+- [Agents](agents.md)
+- [Feedback Loop](feedback-loop.md)
+- [Hitl](hitl.md)
+- [Search](search.md)
 
 ## Leading Sources
 

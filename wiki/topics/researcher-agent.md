@@ -9,7 +9,7 @@ source_refs:
 - 2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
 backlinks:
 - page:2026-04-07-alphaxiv-paper-deep-researcher-agent-an-autonomous-framework-fo-7bbe612a
-updated_at: '2026-04-09T12:15:42.057049Z'
+updated_at: '2026-04-09T16:34:21.026750Z'
 managed: true
 ---
 # Researcher Agent
@@ -37,7 +37,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Artificial Intelligence](artificial-intelligence.md)
 - [Audio](audio.md)
 - [Computer Science](computer-science.md)
-- [Infrastructure](infrastructure.md)
+- [Deep Learning](deep-learning.md)
 
 ## Leading Sources
 

@@ -6,8 +6,11 @@ aliases:
 - Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
 source_refs:
 - 2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
-backlinks: []
-updated_at: '2026-04-09T12:15:37.942011Z'
+backlinks:
+- topic:docker
+- topic:helm
+- topic:kubernetes
+updated_at: '2026-04-09T16:35:04.608151Z'
 managed: true
 ---
 # Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
@@ -20,15 +23,22 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Daniel Warfield
+- Tags: newsletter, medium, email, blog-post, docker, kubernetes, helm, software, technology
+- Topics: [Docker](../topics/docker.md), [Email](../topics/email.md), [Helm](../topics/helm.md), [Kubernetes](../topics/kubernetes.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
 - Trend score: 500.30
 - Novelty score: 6.80
 
+## Summary
+
+This article provides an intuitive and exhaustive explanation of Docker, Kubernetes, and Helm. It explores the concepts behind these technologies in detail.
+
 ## Topic Map
 
+- [Docker](../topics/docker.md)
 - [Email](../topics/email.md)
+- [Helm](../topics/helm.md)
+- [Kubernetes](../topics/kubernetes.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
 

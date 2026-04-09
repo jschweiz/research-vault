@@ -6,8 +6,12 @@ aliases:
 - 'Windows vs macOS vs Linux: the time to switch is now'
 source_refs:
 - 2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
-backlinks: []
-updated_at: '2026-04-09T12:15:37.931909Z'
+backlinks:
+- page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
+- topic:linux
+- topic:macos
+- topic:operating-systems
+updated_at: '2026-04-09T16:35:04.660016Z'
 managed: true
 ---
 # Windows vs macOS vs Linux: the time to switch is now
@@ -20,27 +24,33 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Canonical URL: https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
-- Authors: Medium Daily Digest <noreply@medium.com>
-- Tags: newsletter, medium, email, blog-post
-- Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Infrastructure](../topics/infrastructure.md)
+- Authors: Medium Daily Digest <noreply@medium.com>, Kostas Farkonas
+- Tags: newsletter, medium, email, blog-post, windows, macos, linux, operating systems
+- Topics: [Email](../topics/email.md), [Linux](../topics/linux.md), [Macos](../topics/macos.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Operating Systems](../topics/operating-systems.md)
 - Trend score: 500.30
 - Novelty score: 6.80
+
+## Summary
+
+This post discusses the comparison between Windows, macOS, and Linux operating systems, suggesting that the time to switch operating systems is now.
 
 ## Topic Map
 
 - [Email](../topics/email.md)
+- [Linux](../topics/linux.md)
+- [Macos](../topics/macos.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Infrastructure](../topics/infrastructure.md)
+- [Operating Systems](../topics/operating-systems.md)
 
 ## Related Research
 
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Infrastructure, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Infrastructure, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Infrastructure, Newsletter)
 - [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 - [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
+- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Email, Medium, Newsletter)
+- [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

@@ -7,22 +7,21 @@ aliases:
 source_refs:
 - 2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 backlinks:
+- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
+- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
-- page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
-- page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
-- page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
-- page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 - topic:audio
 - topic:computer-science
-- topic:computer-vision
 - topic:inference
 - topic:multimodal
 - topic:robotics
-updated_at: '2026-04-09T12:15:42.413577Z'
+- topic:vision-language-action
+updated_at: '2026-04-09T16:35:03.900644Z'
 managed: true
 ---
 # A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model
@@ -36,9 +35,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-08T08:24:30+00:00
 - Authors: Kaidong Zhang, Jian Zhang, Rongtao Xu, Yu Sun, Shuoshuo Xue, Youpeng Wen, Xiaoyu Guo, Minghao Guo, Weijia Liufu, Liu Zihou, Kangyi Ji, Yangsong Zhang, Jiarun Zhu, Jingzhi Liu, Zihang Li, Ruiyi Chen, Meng Cao, Jingming Zhang, Shen Zhao, Xiaojun Chang, Feng Zheng, Ivan Laptev, Xiaodan Liang
-- Tags: paper, alphaxiv, research, Computer Science, cs.RO, github, audio, summary
-- Topics: [Audio](../topics/audio.md), [Multimodal](../topics/multimodal.md), [Inference](../topics/inference.md), [Robotics](../topics/robotics.md), [Computer Science](../topics/computer-science.md), [Computer Vision](../topics/computer-vision.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, cs.ro, github, audio, summary, vision-language-action, robotics
+- Topics: [Robotics](../topics/robotics.md), [Audio](../topics/audio.md), [Multimodal](../topics/multimodal.md), [Inference](../topics/inference.md), [Computer Science](../topics/computer-science.md), [Vision Language Action](../topics/vision-language-action.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -47,21 +46,21 @@ Researchers from SYSU and MBZUAI developed A1, a fully open-source Vision-Langua
 
 ## Topic Map
 
+- [Robotics](../topics/robotics.md)
 - [Audio](../topics/audio.md)
 - [Multimodal](../topics/multimodal.md)
 - [Inference](../topics/inference.md)
-- [Robotics](../topics/robotics.md)
 - [Computer Science](../topics/computer-science.md)
-- [Computer Vision](../topics/computer-vision.md)
+- [Vision Language Action](../topics/vision-language-action.md)
 
 ## Related Research
 
-- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Audio, Computer Science, Computer Vision, Inference)
-- [Fast Spatial Memory with Elastic Test-Time Training](fast-spatial-memory-with-elastic-test-time-training-7fd9ac.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Science, Computer Vision)
+- [Hierarchical Planning with Latent World Models](hierarchical-planning-with-latent-world-models-47379e.md) (shared topics: Audio, Computer Science, Robotics)
+- [Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring](deep-researcher-agent-an-autonomous-framework-for-24-7-deep-lear-4ba06b.md) (shared topics: Audio, Computer Science)
+- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Science)
+- [FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control](flashsac-fast-and-stable-off-policy-reinforcement-learning-for-h-2d2665.md) (shared topics: Computer Science, Robotics)
+- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Computer Science, Inference)
+- [Gemma 4: Byte for byte, the most capable open models](gemma-4-byte-for-byte-the-most-capable-open-models-50fc7f.md) (shared topics: Audio, Multimodal)
 
 ## Radar
 

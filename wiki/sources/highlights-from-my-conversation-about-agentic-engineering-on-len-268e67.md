@@ -7,10 +7,11 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
 backlinks:
+- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
 - topic:agentic-engineering
 - topic:ai-coding-agents
 - topic:lenny-s-podcast
-updated_at: '2026-04-09T12:15:42.351073Z'
+updated_at: '2026-04-09T16:35:03.918926Z'
 managed: true
 ---
 # Highlights from my conversation about agentic engineering on Lenny's Podcast
@@ -44,12 +45,12 @@ This article features highlights from a conversation about agentic engineering o
 
 ## Related Research
 
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Agents, Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Agents, Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Agents, Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Agents, Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Agents, Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Agents, Email, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Newsletter)
+- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Newsletter)
+- [58% of PRs in our largest monorepo merge without human review](58-of-prs-in-our-largest-monorepo-merge-without-human-review-ae79d8.md) (shared topics: Agents, Email, Newsletter)
+- [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md) (shared topics: Agents, Email, Newsletter)
+- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-40b39c.md) (shared topics: Agents, Email, Newsletter)
+- [Meet the new Cursor](meet-the-new-cursor-20e326.md) (shared topics: Agents, Email, Newsletter)
 
 ## Radar
 

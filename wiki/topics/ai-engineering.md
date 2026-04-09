@@ -5,13 +5,15 @@ title: Ai Engineering
 aliases:
 - Ai Engineering
 - AI Engineering
+- ai engineering
 - for AI Engineering
 source_refs:
 - 2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 backlinks:
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
-- topic:ready-ai
-updated_at: '2026-04-09T12:15:42.540506Z'
+- topic:artificial-intelligence
+- topic:learning
+updated_at: '2026-04-09T16:35:04.344281Z'
 managed: true
 ---
 # Ai Engineering
@@ -35,10 +37,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
+- [Artificial Intelligence](artificial-intelligence.md)
 - [Email](email.md)
+- [Learning](learning.md)
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
-- [Ready Ai](ready-ai.md)
 
 ## Leading Sources
 

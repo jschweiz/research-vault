@@ -7,24 +7,22 @@ aliases:
 source_refs:
 - 2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 backlinks:
-- page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
-- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - page:2026-04-06-alphaxiv-paper-general-multimodal-protein-design-enables-dna-en-7f68965d
 - page:2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
-- page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
+- page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
-- topic:audio
 - topic:computer-science
 - topic:computer-vision
 - topic:continual-learning
 - topic:cs-gr
 - topic:inference-optimization
-updated_at: '2026-04-09T12:15:41.961620Z'
+- topic:machine-learning
+updated_at: '2026-04-09T16:35:04.444874Z'
 managed: true
 ---
 # Fast Spatial Memory with Elastic Test-Time Training
@@ -38,9 +36,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: paper
 - Published at: 2026-04-08T17:59:48+00:00
 - Authors: Ziqiao Ma, Xueyang Yu, Haoyu Zhen, Yuncong Yang, Joyce Chai, Chuang Gan
-- Tags: paper, alphaxiv, research, Computer Science, continual-learning, cs.CV, cs.GR, cs.LG, inference-optimization, neural-rendering, online-learning, optimization-methods
-- Topics: [Audio](../topics/audio.md), [Computer Science](../topics/computer-science.md), [Computer Vision](../topics/computer-vision.md), [Continual Learning](../topics/continual-learning.md), [Cs Gr](../topics/cs-gr.md), [Inference Optimization](../topics/inference-optimization.md)
-- Trend score: 119.20
+- Tags: paper, alphaxiv, research, computer science, continual-learning, cs.cv, cs.gr, cs.lg, inference-optimization, neural-rendering
+- Topics: [Computer Science](../topics/computer-science.md), [Computer Vision](../topics/computer-vision.md), [Continual Learning](../topics/continual-learning.md), [Cs Gr](../topics/cs-gr.md), [Inference Optimization](../topics/inference-optimization.md), [Machine Learning](../topics/machine-learning.md)
+- Trend score: 96.95
 - Novelty score: 6.80
 
 ## Summary
@@ -49,21 +47,21 @@ Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University o
 
 ## Topic Map
 
-- [Audio](../topics/audio.md)
 - [Computer Science](../topics/computer-science.md)
 - [Computer Vision](../topics/computer-vision.md)
 - [Continual Learning](../topics/continual-learning.md)
 - [Cs Gr](../topics/cs-gr.md)
 - [Inference Optimization](../topics/inference-optimization.md)
+- [Machine Learning](../topics/machine-learning.md)
 
 ## Related Research
 
-- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Science, Computer Vision)
-- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Audio, Computer Science, Computer Vision)
+- [MoRight: Motion Control Done Right](moright-motion-control-done-right-47f0f6.md) (shared topics: Computer Science, Computer Vision, Cs Gr)
+- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](aura-always-on-understanding-and-real-time-assistance-via-video--e1f3bc.md) (shared topics: Computer Science, Computer Vision, Inference Optimization)
+- [GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos](genlca-3d-diffusion-for-full-body-avatars-from-in-the-wild-video-d8c0b8.md) (shared topics: Computer Science, Computer Vision)
+- [SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing](spatialedit-benchmarking-fine-grained-image-spatial-editing-3317d6.md) (shared topics: Computer Science, Computer Vision)
+- [Neural Computers](neural-computers-2823b1.md) (shared topics: Computer Science, Machine Learning)
+- [Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D](boxer-robust-lifting-of-open-world-2d-bounding-boxes-to-3d-7de5d7.md) (shared topics: Computer Science, Computer Vision)
 
 ## Radar
 
