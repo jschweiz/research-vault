@@ -11,13 +11,6 @@ authors:
 - Kinam Kim
 - I Made Aswin Nahendra
 - Takuma Seno
-- Sehee Min
-- Daniel Palenicek
-- Florian Vogt
-- Danica Kragic
-- Jan Peters
-- Jaegul Choo
-- Hojoon Lee
 published_at: '2026-04-06T09:03:41Z'
 ingested_at: '2026-04-09T12:06:09.767570Z'
 content_hash: 062ee35f12c0a2a57be5e0664b11fa0d83fa3455ed700d630e24d2f2692028c4
@@ -26,17 +19,13 @@ tags:
 - paper
 - alphaxiv
 - research
-- Computer Science
-- cs.LG
-- cs.RO
+- computer science
+- cs.lg
+- cs.ro
 - deep-reinforcement-learning
 - optimization-methods
 - reinforcement-learning
 - robotic-control
-- transfer-learning
-- github
-- audio
-- summary
 status: active
 asset_paths:
 - alphaxiv-legacy.json
@@ -55,15 +44,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:06:09.767575Z'
-short_summary: FlashSAC is an off-policy reinforcement learning algorithm designed for high-dimensional robotic control, integrating rapid training via scaled data throughput and model capacity with stability mechanisms like constrained critic updates. The algorithm consistently reduces wall-clock training time by up to an order of magnitude and achieves higher asymptotic performance across over 60 locomotion and manipulation tasks, including successful sim-to-real humanoid locomotion.
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: FlashSAC is an off-policy reinforcement learning algorithm that rapidly trains for high-dimensional robotic control by scaling data throughput and model capacity, while incorporating stability mechanisms to ensure robust performance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:29.740092Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 79992fbb66ed4227d8c5da13ee1bce8908bb258a8939deed18f9535340b100a2
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: a26114c24e62bb9f7a3c6db3c03be2e20980d41556ce7af82a4eb2c561af8d0e
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - FlashSAC is an off-policy reinforcement learning algorithm that rapidly trains for high-dimensional robotic control by scaling data throughput and model capacit
 ---
 # FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control
 

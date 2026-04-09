@@ -6,6 +6,7 @@ source_url: https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introductio
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Han HELOIR YAN, Ph.D.
 published_at: '2026-04-06T06:40:00Z'
 ingested_at: '2026-04-09T12:05:17.326171Z'
 content_hash: 216fb65123615cd7d660c1d467d50550323af2596a50c48feabe7c4e7892a857
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- llm
+- ai
+- machine learning
+- introduction
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,25 @@ doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:17.326176Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post provides a beginner-friendly, no-jargon introduction to the concept of Large Language Models (LLMs). It breaks down the basics of how these machines work.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:18.319732Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 34cff3553b56c968059747548343e6ae088c16478071fcd4d408dac234adbcdd
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 00d439a5ff0622e6eceecbc7543507c67012990e09ff0884ad9bb97b40c0a793
+lightweight_score:
+  relevance_score: 0.4944
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.887
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - This post provides a beginner-friendly, no-jargon introduction to the concept of Large Language Models (LLMs). It breaks down the basics of how these machines w
 ---
 # What Is an LLM? A No-Jargon Introduction
 

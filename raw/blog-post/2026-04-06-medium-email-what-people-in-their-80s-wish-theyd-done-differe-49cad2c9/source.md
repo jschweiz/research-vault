@@ -6,6 +6,7 @@ source_url: https://medium.com/@thomas-oppong/what-people-in-their-80s-wish-they
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Thomas Oppong
 published_at: '2026-04-06T06:40:00Z'
 ingested_at: '2026-04-09T12:05:17.130957Z'
 content_hash: 5e4f265f4394a523fafb79ad038308ca9a49455e082d9afc581d39ea2b9f53fe
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- personal growth
+- mistakes
+- aging
+- reflection
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:17.130962Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:18.420019Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 59af3a733bc737ce465bcac0b97e547a1ead57948eda86b14e2a1ea0611b7121
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7168cf8504ebfa0170edf335cc5dc6400d90b4e97f05c763476a632c2a828d34
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about personal growth and aging, which has no relevance to the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_quotes:
+  - The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
+  - The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
 ---
 # What People in Their 80’s Wish They’d Done Differently at Your Age
 

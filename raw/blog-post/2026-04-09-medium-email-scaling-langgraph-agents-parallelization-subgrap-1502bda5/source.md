@@ -6,6 +6,7 @@ source_url: https://medium.com/@linafaik/scaling-langgraph-agents-parallelizatio
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Lina Faik
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:12.174206Z'
 content_hash: 454cc8eace4cc67ad47cd463abf6e3066baab0319b6a37f4bcc41196c15f28bf
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- langgraph
+- agents
+- parallelization
+- map-reduce
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:12.174212Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This article discusses the trade-offs between parallelization, subgraphs, and map-reduce strategies when scaling LangGraph agents.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.129276Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d222c2b383e67cd9bd3d5f9b4bc3d4db456048eed273bfc462536599d1245688
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: bfe959833014017cb4d6490151fc27a4911325407a336d5f9e3b3a9dd8127f3a
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM evaluation and reasoning tooling through the specific focus on LangGraph agents and scaling strategies.
+  evidence_quotes:
+  - This article discusses the trade-offs between parallelization, subgraphs, and map-reduce strategies when scaling LangGraph agents.
+  - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'
 ---
 # Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs
 

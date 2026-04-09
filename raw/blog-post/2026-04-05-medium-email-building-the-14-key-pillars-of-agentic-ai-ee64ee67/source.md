@@ -6,6 +6,7 @@ source_url: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-age
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-05T06:40:00Z'
 ingested_at: '2026-04-09T12:05:18.997280Z'
 content_hash: 83c1b4a242d2c6135e6ce07edeef4f65a40e240a321c32fb9729af1e29c65fa9
@@ -15,6 +16,11 @@ tags:
 - medium
 - email
 - blog-post
+- agentic ai
+- ai
+- long-term memory
+- parallelism
+- retrieval
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:18.997286Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of agentic systems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.494026Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f3eeb6b477863373ab4532b31a8a631d8a291a7db853a0d4d45875028444e10a
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 256b6d96ef50c4b9e77d97e2cdc9c6be6f0f74d8a5c420ffe0c390d6bc8cf1dd
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM architecture and evaluation through the lens of Agentic AI, making it highly relevant.
+  evidence_quotes:
+  - This post outlines the 14 key pillars necessary for building Agentic AI systems.
+  - It touches upon concepts like parallelism, ensembles, and retrieval in the context of agentic systems.
+  - 'Tags: newsletter, medium, email, blog-post, agentic ai, ai, long-term memory, parallelism, retrieval'
 ---
 # Building the 14 Key Pillars of Agentic AI
 

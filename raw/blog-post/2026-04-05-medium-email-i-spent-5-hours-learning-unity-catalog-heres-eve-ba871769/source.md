@@ -6,6 +6,7 @@ source_url: https://medium.com/@vutrinh274/i-spent-5-hours-learning-unity-catalo
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Vu Trinh
 published_at: '2026-04-05T06:40:00Z'
 ingested_at: '2026-04-09T12:05:18.794549Z'
 content_hash: 1df7128310125eb3c392c179c6b0a6f31276ec6208340be6f23009f63f3cc17b
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- unity catalog
+- databricks
+- data engineering
+- ai
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:18.794556Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The author spent five hours learning about Unity Catalog and is sharing what they found out.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.795709Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 148f4200701636546d4349e65eacd4f5e56cd963fb700c5f7a9993e1c97fc545
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3a47e2086246b55c18d95bcfc74a559bc3fcc693bf8528a99c118d83a12e8a91
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about data engineering tooling (Unity Catalog) and does not align with the user's favorite topics of language models, evaluation, or LLM architecture.
+  evidence_quotes:
+  - I spent 5 hours learning about Unity Catalog and is sharing what they found out.
+  - The famous catalog service from Databricks, and it was…
 ---
 # I spent 5 hours learning Unity Catalog. Here’s everything you need to know.
 

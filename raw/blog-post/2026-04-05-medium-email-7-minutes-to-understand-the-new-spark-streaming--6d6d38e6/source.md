@@ -6,6 +6,7 @@ source_url: https://medium.com/@vutrinh274/7-minutes-to-understand-the-new-spark
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Vu Trinh
 published_at: '2026-04-05T06:40:00Z'
 ingested_at: '2026-04-09T12:05:19.416974Z'
 content_hash: 95b8fb94b7a09a2d3453cb79fc482f2a93a56f5677cbf221e34f2545af6a7164
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- spark streaming
+- apache spark
+- low latency
+- data engineering
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:19.416979Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Apache Spark now prioritizes ultra-low latency in its streaming features. This update introduces a new Spark Streaming feature that significantly changes how streaming data is handled.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.349083Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3629647fefad091980dc42fc11ff22dfa62dbac3807e5de00562eadabe806913
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c08548b692550ad6f8a8c90b7b5fe77d6453097a295e8df91f406dd6d9115b39
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Apache Spark streaming, which does not strongly align with the user's favorite topics of language models, evaluation, or LLM architecture.
+  evidence_quotes:
+  - Apache Spark now prioritizes ultra-low latency in its streaming features.
+  - Apache Spark now cares about ultra-low latency.
 ---
 # 7 Minutes to Understand the New Spark Streaming Feature that Changes Everything
 

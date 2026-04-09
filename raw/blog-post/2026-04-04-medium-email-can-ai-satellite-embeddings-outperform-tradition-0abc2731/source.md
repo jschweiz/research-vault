@@ -6,6 +6,7 @@ source_url: https://medium.com/@preet.balaji20/can-ai-satellite-embeddings-outpe
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Preethi Balaji
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:21.080199Z'
 content_hash: 5412ac220f7562711b8f2ce4442ed2827a1804bca5c6220ba66f862439d9dda9
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- ai
+- satellite
+- remote sensing
+- google earth engine
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,27 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:21.080205Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post discusses an experiment using Google Earth Engine to compare AI satellite embeddings against traditional remote sensing classification methods.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.095041Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e7a3b901a4d01058a5e410ca8eed0a3252eb1e80a8803ba7c5d8b77c4499b28e
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d86276c734dc455b6edde7d6cc2e36c441d0368046040eaf6d294d34135a06cd
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.36
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI and evaluation, which aligns with favorite topics, but the specific focus on satellite remote sensing is niche.
+  evidence_quotes:
+  - This post discusses an experiment using Google Earth Engine to compare AI satellite embeddings against traditional remote sensing classification methods.
+  - Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?
+  - A Google Earth Engine based experiment
 ---
 # Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?
 

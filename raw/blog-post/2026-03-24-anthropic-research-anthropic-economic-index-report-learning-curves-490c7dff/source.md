@@ -4,7 +4,8 @@ kind: blog-post
 title: 'Anthropic Economic Index report: Learning curves'
 source_url: https://www.anthropic.com/research/economic-index-march-2026-report
 source_name: Anthropic Research
-authors: []
+authors:
+- Anthropic
 published_at: '2026-03-24T00:00:00Z'
 ingested_at: '2026-04-09T12:03:59.808073Z'
 content_hash: 74e35d0a6dcd03a896813fa7f23d05cccf3543184f3f3e305b498826711d9871
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- economic index
+- claude usage
+- learning curves
+- ai adoption
+- labor market
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:59.808078Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The Anthropic Economic Index report studies Claude usage in February 2026, focusing on learning curves and how user experience shapes the economic value of AI tasks. Findings indicate that high-tenure users demonstrate better success rates and that use cases are diversifying across the platform.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:11.504935Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 57a4d0a569dfab7bd680c79e7ee400c1e3e7c108ff9432e0d7af12fb85fc0fca
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9e9ff3e3f6cea9248588a7f6eb80e0a92078474b24f36d5c69b5f2e2e1058393
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is a research post from Anthropic directly addressing learning curves, usage patterns, and economic impacts of Claude, which aligns perfectly with the user's favorite topics of LLM evaluation and reasoning.
+  evidence_quotes:
+  - We present evidence that high-tenure users have developed habits and strategies that allow them to better harness Claude’s capabilities.
+  - In general, the most seasoned Claude users employ it more often for higher-education tasks and less often for personal use cases.
+  - Most strikingly, people in this higher-tenure group have a 10% higher success rate in their conversations, an association that is not explained by their task se
 ---
 The Anthropic Economic Index uses our privacy-preserving data analysis [system](https://www.anthropic.com/research/clio) to track how Claude is being used across the economy. It’s part of our effort to understand the economic impacts of AI as early as possible, so that researchers and policymakers have adequate time to prepare.
 This latest report studies Claude usage in February 2026, building on the economic primitives framework introduced in our [previous report](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report) (which used data from November 2025). Our sample covers February 5 to February 12, three months following the release of Claude Opus 4.5 and coincident with the release of Claude Opus 4.6.

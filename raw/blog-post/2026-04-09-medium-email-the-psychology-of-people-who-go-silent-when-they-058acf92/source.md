@@ -6,6 +6,7 @@ source_url: https://medium.com/@georgejziogas/the-psychology-of-people-who-go-si
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- George J. Ziogas
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:12.343000Z'
 content_hash: 66dd70650575d98d5bc68855d8c11a4ccc42c1a2db10fe6b36fe483c5a7924c8
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- psychology
+- silent
+- hurt
+- communication
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:12.343007Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post explores the psychological reasons why people choose to remain silent when they are experiencing hurt.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.264357Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0935b33d84aa69ff4cd2e5d587de6356b25081d94f8349614ed67ef4d90ee230
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2b3d3b8830c06ab038cdac2714be38729314a0dc4cfd71bcca3a96e9d7179d08
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about psychology and communication, which has no direct overlap with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  evidence_quotes:
+  - The post explores the psychological reasons why people choose to remain silent when they are experiencing hurt.
+  - Why hurt people stop talking
 ---
 # The Psychology of People Who Go Silent When They’re Hurt
 

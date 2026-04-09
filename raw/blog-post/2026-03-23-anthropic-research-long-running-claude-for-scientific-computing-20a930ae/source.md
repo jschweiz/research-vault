@@ -4,7 +4,8 @@ kind: blog-post
 title: Long-running Claude for scientific computing
 source_url: https://www.anthropic.com/research/long-running-Claude
 source_name: Anthropic Research
-authors: []
+authors:
+- Siddharth Mishra-Sharma
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:05.572507Z'
 content_hash: b3284da575bbb7012b72d03b3a2eee668337fc2e5b101050f7f8a342e630f1b6
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- ai agents
+- scientific computing
+- claude
+- boltzmann solvers
+- jax
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:05.572515Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological Boltzmann solver.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:11.097173Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4dd4bbbbd52af928f4fcfb3300edcc9cb1328b22f6274005df2fda56b853c0a4
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c35104f3e917d8b88304b0681d3607ad7faed50662fc56a36e29235017272f88
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM agentic workflows, reasoning, and scientific computing, aligning perfectly with the user's interests in language models and research tooling.
+  evidence_quotes:
+  - The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological
+  - Anthropic’s [C compiler project] demonstrated a version of this, where Claude worked across roughly 2,000 sessions to build a C compiler capable of compiling th
+  - This post describes how to set up a similar pattern for scientific computing tasks using Claude Code, with a typical academic lab in mind.
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

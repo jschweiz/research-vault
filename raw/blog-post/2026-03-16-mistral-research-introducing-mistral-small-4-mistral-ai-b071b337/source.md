@@ -4,7 +4,8 @@ kind: blog-post
 title: Introducing Mistral Small 4 | Mistral AI
 source_url: https://mistral.ai/news/mistral-small-4
 source_name: Mistral Research
-authors: []
+authors:
+- Mistral AI
 published_at: '2026-03-16T21:00:00Z'
 ingested_at: '2026-04-09T12:04:22.775200Z'
 content_hash: 6fdbd903176cd2fd51c0c993529634e32b04d84ae69b52d3f3f5131fa2c430e6
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- model
+- multimodal
+- reasoning
+- open-source
+- architecture
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:22.775203Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Mistral Small 4 is a new model that unifies reasoning, multimodal, and coding capabilities into a single, versatile model. It features configurable reasoning effort and is optimized for efficiency and performance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:08.985879Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 50794f7a4d315e286399d418e1f1afcd25900da13b44b6bc74f29375e18e147b
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4aab29b076160d834e5855b35e4948043de1b7110384a1a0cb42f0e1d32a3e55
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (LLM architecture, reasoning, multimodal) and features authors from the user's preferred list.
+  evidence_quotes:
+  - Mistral Small 4 is a new model that unifies reasoning, multimodal, and coding capabilities into a single, versatile model.
+  - 'Key architectural details - Mixture of Experts (MoE): 128 experts, with 4 active per token, enabling efficient scaling and specialization.'
+  - 'Mistral Small 4 is designed for: - Developers: Coding automation, codebase exploration, and code agentic workflows. - Enterprises: General chat assistants, docu'
 ---
 Introducing
 Mistral Small 4

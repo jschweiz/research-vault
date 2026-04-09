@@ -4,7 +4,8 @@ kind: blog-post
 title: Industrial policy for the Intelligence Age
 source_url: https://openai.com/index/industrial-policy-for-the-intelligence-age
 source_name: OpenAI Website
-authors: []
+authors:
+- OpenAI
 published_at: '2026-04-06T02:30:00Z'
 ingested_at: '2026-04-09T12:03:31.319309Z'
 content_hash: 15de6949ef111e79cddb5bb49cb0bb5559969c6fcd410fb7f719f11bc6651f56
@@ -14,6 +15,11 @@ tags:
 - official
 - website
 - blog-post
+- industrial policy
+- ai era
+- opportunity
+- prosperity
+- resilient institutions
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +30,24 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:31.319317Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: OpenAI proposes an industrial policy for the AI era focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:18.758558Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ad045ffc91792826cb105d8a11660198fe8589c2bb2494efcc246105144211aa
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 6f9524ff11001067917702cd3a7c23f81dc71b90506972751155f17b5e68138c
+lightweight_score:
+  relevance_score: 0.5009
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 1.0
+  evidence_fit_score: 0.7995
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-author match.
+  evidence_quotes:
+  - OpenAI proposes an industrial policy for the AI era focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intell
 ---
 Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.

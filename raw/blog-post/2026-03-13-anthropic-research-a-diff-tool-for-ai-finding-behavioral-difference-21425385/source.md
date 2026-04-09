@@ -4,7 +4,8 @@ kind: blog-post
 title: 'A “diff” tool for AI: Finding behavioral differences in new models'
 source_url: https://www.anthropic.com/research/diff-tool
 source_name: Anthropic Research
-authors: []
+authors:
+- Anthropic
 published_at: '2026-03-13T00:00:00Z'
 ingested_at: '2026-04-09T12:04:13.824118Z'
 content_hash: 09a1e5343c5efa0fdc0cc3b16ad02f8f05932770c4d6eebb9b7c11eaf9478cb2
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- model diffing
+- ai safety
+- model auditing
+- cross-architecture
+- alignment
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:13.824123Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and potential risks. This approach allows researchers to identify 'unknown unknowns' and audit models by detecting features exclusive to specific architectures.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:08.788216Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 07d77782c6106ad94dc6d5933943ba603973d9ab439b95e3c17c1ee9cc415191
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 8b64080239ec9fe4e16cea018766787d0e3e93ac55611b67ea5506f3723da65a
+lightweight_score:
+  relevance_score: 0.739
+  source_fit_score: 0.55
+  topic_fit_score: 0.62
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 2 favorite-topic matches, 1 favorite-author match.
+  evidence_quotes:
+  - The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.

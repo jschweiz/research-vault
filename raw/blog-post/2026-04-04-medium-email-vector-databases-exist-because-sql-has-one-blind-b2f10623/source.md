@@ -6,6 +6,7 @@ source_url: https://medium.com/@itinasharma/vector-databases-exist-because-sql-h
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Tina Sharma
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:22.443050Z'
 content_hash: add8c4d0b5ed902efe82d13cfe333619616f983856c102a68b9bb3e4afb3db34
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- vector databases
+- sql
+- search
+- ai
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:22.443055Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Vector databases exist to address the architectural gap between exact-match lookups and other search methods.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.197844Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d76cb83f58bf9f2a3da201585c9c52aa0e97997e54975cc2398e224466d030bc
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 337125ff46a7a1235b99e16be0fe0758f9c16c29692e4a78ed8918c92ba98435
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.9
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.95
+  bucket_hint: must_read
+  reason: The document directly addresses vector databases, which aligns strongly with the user's favorite topics of language models and research tooling.
+  evidence_quotes:
+  - Vector databases exist to address the architectural gap between exact-match lookups and other search methods.
+  - Vector databases exist Because SQL Has One Blind Spot
 ---
 # Vector Databases Exist Because SQL Has One Blind Spot
 

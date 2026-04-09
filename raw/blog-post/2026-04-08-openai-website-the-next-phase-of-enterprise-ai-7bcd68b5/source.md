@@ -4,7 +4,8 @@ kind: blog-post
 title: The next phase of enterprise AI
 source_url: https://openai.com/index/next-phase-of-enterprise-ai
 source_name: OpenAI Website
-authors: []
+authors:
+- OpenAI
 published_at: '2026-04-08T14:00:00Z'
 ingested_at: '2026-04-09T12:03:28.958241Z'
 content_hash: 368295e318d0b8889a0e4a7ff15decb9e73ecb237f8618c71dc0c2af9bf5dcae
@@ -14,6 +15,12 @@ tags:
 - official
 - website
 - blog-post
+- enterprise ai
+- adoption
+- frontier
+- chatgpt enterprise
+- codex
+- ai agents
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +31,24 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:28.958248Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:22.696197Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 71b0a5ed0286c67d6dced69d492c7120f88625ddbb0f7a74d40523ca4daa2f50
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2eb8113471b3b40d67e19f36764253f9d104e0896110f2cd4daf733e055af485
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.75
+  topic_fit_score: 0.95
+  author_fit_score: 1.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.
+  evidence_quotes:
+  - OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.
 ---
 OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.

@@ -6,6 +6,7 @@ source_url: https://medium.com/@gratitudedriven/why-youre-still-not-ready-for-ai
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Marina Wyss
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:21.531433Z'
 content_hash: 5b2ca5c8ca6e003270c241676914bda2295d1b5b883656b6e092c02c66e5e1aa
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- ai engineering
+- artificial intelligence
+- technology
+- learning
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:21.531438Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post discusses why individuals are not yet prepared for AI engineering despite ongoing study.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.295134Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 02fee41b395471cfee059945746fd9b1412566aa3cf8f2d986126cd5b45584b5
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9c61b8e0d9a51a4ee20d0f10f590e86fb88e8cfd764cc44979e5b64f6638f98e
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI engineering, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
+  evidence_quotes:
+  - The post discusses why individuals are not yet prepared for AI engineering despite ongoing study.
+  - Why You’re Still Not Ready for AI Engineering
 ---
 # Why You’re Still Not Ready for AI Engineering
 

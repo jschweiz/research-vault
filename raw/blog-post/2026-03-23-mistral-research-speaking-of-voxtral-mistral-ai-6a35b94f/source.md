@@ -4,7 +4,8 @@ kind: blog-post
 title: Speaking of Voxtral | Mistral AI
 source_url: https://mistral.ai/news/voxtral-tts
 source_name: Mistral Research
-authors: []
+authors:
+- Mistral AI
 published_at: '2026-03-23T16:00:00Z'
 ingested_at: '2026-04-09T12:04:21.161613Z'
 content_hash: 957cd0a595dfba093627f1e272986530434737817229e475374011db7b73bfd3
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- text-to-speech
+- multilingual
+- voice generation
+- lightweight model
+- latency
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:21.161617Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Mistral AI released Voxtral TTS, a lightweight text-to-speech model with state-of-the-art performance in multilingual voice generation. It excels at capturing emotional expressiveness and speaker modeling while maintaining low latency for enterprise voice agent workflows.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:11.390434Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 562a355b5ff7ba1e2dbb937d6d1f2d9618cfab7dcda308bcc96355629b4c131e
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3b039e8579d5e24ced3945463a3f6a90e97ee4cbd0942bea857d250200eadc2c
+lightweight_score:
+  relevance_score: 0.517
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - Mistral AI released Voxtral TTS, a lightweight text-to-speech model with state-of-the-art performance in multilingual voice generation. It excels at capturing e
 ---
 Voxtral
 Text-to-Speech

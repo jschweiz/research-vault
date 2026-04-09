@@ -6,6 +6,7 @@ source_url: https://medium.com/@101/claude-skills-for-product-designers-a453a7a8
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-05T06:40:00Z'
 ingested_at: '2026-04-09T12:05:20.136245Z'
 content_hash: 6ab76be1f92c3fe60a37be8f68bbdea29b3be6a094e7c4b34f829dbc9baf005d
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- claude
+- product design
+- ai
+- skills
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:20.136252Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post outlines how to create your first Claude Skill for product designers. It is part of a larger discussion about building long-term memory in agentic AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.602594Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 31e47c20a68a76e508d895bcf789713e5d6ec5f8fb7f4dd0b59a347cfef303aa
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 56aec054cc6b227ad756634f987c321dd3c46da3db4bdba81112938e9ee6325f
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on LLM memory and agentic AI, aligning with favorite topics, but the specific focus on product design skills is a secondary fit.
+  evidence_quotes:
+  - This post outlines how to create your first Claude Skill for product designers.
+  - It is part of a larger discussion about building long-term memory in agentic AI.
 ---
 # Claude Skills for Product Designers
 

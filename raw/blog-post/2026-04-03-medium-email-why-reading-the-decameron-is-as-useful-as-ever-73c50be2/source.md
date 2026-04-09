@@ -6,6 +6,7 @@ source_url: https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Nikolaus Correll
 published_at: '2026-04-03T06:40:00Z'
 ingested_at: '2026-04-09T12:05:23.442957Z'
 content_hash: f4553c5a069cfdab15d01f1a489cac2ec417267f8caada0aae14db338aa42eef
@@ -15,6 +16,9 @@ tags:
 - medium
 - email
 - blog-post
+- reading
+- literature
+- the decameron
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +29,27 @@ doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:23.442961Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:14.606061Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6a5d7f8a63fd5fc969851795f98784cd51a60d4c39b53de45a4c18c0316a4d36
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: df62c1ce361c63a4a54828651f3539a12b6d112a968d00c9e916cbadcca4f6af
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about literature and reading and has no discernible connection to the user's favorite topics of language models, LLM architecture, or research tooling.
+  evidence_quotes:
+  - Why reading “The Decameron” is as useful as ever
+  - The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
+  - The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
 ---
 # Why reading “The Decameron” is as useful as ever
 

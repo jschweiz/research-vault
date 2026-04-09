@@ -6,6 +6,7 @@ source_url: https://medium.com/@zhaozhiming/the-complete-guide-to-claude-code-cl
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- zhaozhiming
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:20.845502Z'
 content_hash: 7a554e33914cdb631ba74835f0641b80641b95b4a96420f7e5de0c27638e50fb
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- claude
+- ai
+- guide
+- code
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:20.845508Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This is a comprehensive guide to the CLAUDE.md file within Claude.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.145118Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2aa28f8639103fd37f107c4ed421444ea45753bd75b31e8114b8fa982b2c654c
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ceb0772fb4a229d1eb74a73f3bc65909a7084f8bd0e4f9483d2f9a996909cb09
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.9
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to favorite topics like LLM evaluation and reasoning, despite the author not matching preferred authors.
+  evidence_quotes:
+  - This is a comprehensive guide to the CLAUDE.md file within Claude…
+  - A comprehensive guide to the CLAUDE.md file in Claude…
 ---
 # The Complete Guide to Claude Code: CLAUDE.md
 

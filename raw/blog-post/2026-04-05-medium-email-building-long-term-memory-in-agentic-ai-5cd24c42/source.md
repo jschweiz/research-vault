@@ -6,6 +6,7 @@ source_url: https://medium.com/@fareedkhandev/building-long-term-memory-in-agent
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-05T06:40:00Z'
 ingested_at: '2026-04-09T12:05:18.586748Z'
 content_hash: 831c52a36c55a7a75d592168b5d1200d3fa417c14659aa2f8c806815afb11b2c
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- agentic ai
+- long-term memory
+- hitl
+- feedback loop
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:18.586753Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post discusses building long-term memory within agentic AI systems, focusing on concepts like HITL, in-memory features, and feedback loops.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.431246Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: c1e3ce500e192872898c2bfacba9ea78802d45bac2fd06dc9bd47a915c886d90
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b743775aa69c6f5986239506bfdc2dedd14e7a9daad03a928ab1557b933f63f9
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like LLM architecture and memory within agentic AI systems, making it highly relevant.
+  evidence_quotes:
+  - The post discusses building long-term memory within agentic AI systems, focusing on concepts like HITL, in-memory features, and feedback loops.
+  - HITL, InMemory Feature, Feedback Loop and more
 ---
 # Building Long-Term Memory in Agentic AI
 

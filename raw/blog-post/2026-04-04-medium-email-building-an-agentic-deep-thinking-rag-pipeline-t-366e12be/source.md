@@ -6,6 +6,7 @@ source_url: https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-04T06:40:00Z'
 ingested_at: '2026-04-09T12:05:22.209709Z'
 content_hash: e8ff03d1f3512431713ed06b54f966993f0ceb6398c1ae49c15b64ef5f2cd16c
@@ -15,6 +16,12 @@ tags:
 - medium
 - email
 - blog-post
+- rag
+- agentic
+- pipeline
+- deep-thinking
+- retrieval
+- reflection
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:22.209714Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post outlines the construction of an agentic deep-thinking RAG pipeline designed to handle complex queries. It details the process involving planning, retrieval, reflection, critique, and synthesis.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:15.036518Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 460fea9a758c09b53bcecb656b5266a6952ad7b96e51b16aaa21e121f0951db4
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0cda15cecfb55141437d62c30eb38a5c790b9984509fe40adb0634cec73f15fb
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses favorite topics like RAG pipelines and agentic systems, making it highly relevant to the user's interests.
+  evidence_quotes:
+  - This post outlines the construction of an agentic deep-thinking RAG pipeline designed to handle complex queries.
+  - It details the process involving planning, retrieval, reflection, critique, and synthesis.
+  - 'Tags: newsletter, medium, email, blog-post, rag, agentic, pipeline, deep-thinking, retrieval, reflection'
 ---
 # Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
 

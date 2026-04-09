@@ -16,6 +16,10 @@ tags:
 - email
 - ai
 - news
+- openai
+- anthropic
+- ipos
+- finances
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-06-tldr-email-apple-egpu-support-inside-ai-lab-finances-claude-f865879a
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:30.119032Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: OpenAI and Anthropic are racing toward record-breaking IPOs, with both companies facing mounting computing costs. The AI arms race continues as both labs release new models at an accelerated pace.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.590207Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0c52e8af209813737b135bef8d7460926bada4ab323e94afd4a5528bcd422204
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: fa0b3b57c223f6312773e4e210a7bc2ab9371b6c2554444686b7f638fb4cde80
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.8
+  author_fit_score: 0.0
+  evidence_fit_score: 0.6
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with favorite topics (LLM companies) but is focused on finance rather than the user's specific interests in evaluation or architecture.
+  evidence_quotes:
+  - OpenAI and Anthropic are racing toward record-breaking IPOs, with both companies facing mounting computing costs.
+  - The AI arms race continues as both labs release new models at an accelerated pace.
 ---
 # An Inside Look at OpenAI and Anthropic's Finances Ahead of Their IPOs
 

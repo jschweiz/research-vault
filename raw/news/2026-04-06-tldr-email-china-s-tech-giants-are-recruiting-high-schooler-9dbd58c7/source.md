@@ -6,6 +6,7 @@ source_url: https://www.sixthtone.com/news/1018378
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-06T11:04:43Z'
 ingested_at: '2026-04-09T12:05:04.906442Z'
 content_hash: 8914b3f166186f2db1656b151ed28132534aae7f8fa3e182b97e536be6b2ceb2
@@ -16,6 +17,11 @@ tags:
 - email
 - ai
 - news
+- china
+- tech
+- recruitment
+- high schoolers
+- talent
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-06-tldr-email-apple-egpu-support-inside-ai-lab-finances-claude-f865879a
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:32.082177Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Chinese tech companies are recruiting high schoolers for research and internships due to a talent shortage in universities. This trend reflects a belief that younger candidates possess greater creativity and problem-solving skills.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.658847Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e093501b2944a2cd7690c3506619fbb73e7692de71261b0bc84701ef47b34bcf
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1a1888ec3b19e880d1bab21d1cc9a12cfa3363a17384c0b50176ecfd300227e1
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about recruitment trends and does not directly align with the user's favorite topics of LLMs, evaluation, or research tooling.
+  evidence_quotes:
+  - Chinese tech companies are recruiting high schoolers for research and internships due to insufficient talent in universities.
+  - Creativity is increasingly valued for roles such as product managers, and it is believed that younger candidates may be more likely to imagine things that do no
 ---
 # China's Tech Giants Are Recruiting High Schoolers
 

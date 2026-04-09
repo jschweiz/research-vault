@@ -6,6 +6,7 @@ source_url: https://medium.com/@leo-godin/claude-code-is-great-6db35d8685f0
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Leo Godin
 published_at: '2026-04-03T06:40:00Z'
 ingested_at: '2026-04-09T12:05:23.184894Z'
 content_hash: 779a1bfc3f4d262661240da7acce7cd947bd6839b968f53ee1a9adc6d008b375
@@ -15,6 +16,8 @@ tags:
 - medium
 - email
 - blog-post
+- claude code
+- coding
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +28,27 @@ doc_role: derived
 parent_id: 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:23.184899Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This is a newsletter highlighting the topic of Claude Code and offering guidance on how to use it effectively.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:13.036369Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 11a1e3421630c1d505af47d36f7af8c4e34186d7512af878461a26b80188a705
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7f7ee124e8fc5024803a7f0a23868fd36ee447fc45d60dc7be757524a5141150
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document is moderately relevant because it touches on LLM-related topics, but the specific focus on 'Claude Code' and coding is less aligned with the user's core interests in LLM architecture and reasoning.
+  evidence_quotes:
+  - Claude Code is Great
+  - This is a newsletter highlighting the topic of Claude Code and offering guidance on how to use it effectively.
+  - 'Tags: newsletter, medium, email, blog-post, claude code, coding'
 ---
 # Claude Code is Great
 

@@ -4,7 +4,8 @@ kind: blog-post
 title: 'Vibe physics: The AI grad student'
 source_url: https://www.anthropic.com/research/vibe-physics
 source_name: Anthropic Research
-authors: []
+authors:
+- Matthew Schwartz
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:09.769523Z'
 content_hash: 7a2292dc885155b51d792a885b93c9eef64e91c3421320cf2f313170bd0482f4
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- ai
+- physics
+- quantum field theory
+- machine learning
+- llms
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:09.769545Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of AI in theoretical physics.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:11.273793Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2c6040f671fe5c303d42236c7b7de74d8c6e08afd94a6cad8d734cf57fd1a93c
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: e6ea2c15d2fbc5f1a77125ed448b17e0870602666797a50f7a2d94fe84a99fec
+lightweight_score:
+  relevance_score: 0.418
+  source_fit_score: 0.55
+  topic_fit_score: 0.18
+  author_fit_score: 0.18
+  evidence_fit_score: 1.0
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on generic profile-fit fallback.
+  evidence_quotes:
+  - A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of A
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

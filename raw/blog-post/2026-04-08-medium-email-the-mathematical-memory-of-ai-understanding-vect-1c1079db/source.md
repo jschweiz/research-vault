@@ -6,6 +6,7 @@ source_url: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-unders
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Kuriko Iwai
 published_at: '2026-04-08T06:40:00Z'
 ingested_at: '2026-04-09T12:05:13.379756Z'
 content_hash: 5ee675262d31fded7502d344392393676dce61c8b6947d99905ec0609df47789
@@ -15,6 +16,10 @@ tags:
 - medium
 - email
 - blog-post
+- vector databases
+- embedding pipelines
+- ai
+- transformers
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +30,25 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:13.379757Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:21.816389Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 80c6b36da21cca59b8db3e7f85dd6f00933c686f1483ecc10e6f01aba55e92ba
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: dee3faaff70c4099320ba5e32ae06bdeae58caa665bf359346dca602e3c88f3a
+lightweight_score:
+  relevance_score: 0.4976
+  source_fit_score: 0.55
+  topic_fit_score: 0.4
+  author_fit_score: 0.18
+  evidence_fit_score: 0.903
+  confidence_score: 0.45
+  bucket_hint: worth_a_skim
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
 

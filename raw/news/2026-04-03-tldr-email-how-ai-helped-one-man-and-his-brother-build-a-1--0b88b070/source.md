@@ -6,6 +6,7 @@ source_url: https://links.tldrnewsletter.com/1Iprz4
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- Matthew Gallagher
 published_at: '2026-04-03T10:59:24Z'
 ingested_at: '2026-04-09T12:05:06.214118Z'
 content_hash: f2ee857bbdf5363a0c40bd6aa9d295794fa0f32fccbc8996f4b5a2be344e475f
@@ -16,6 +17,10 @@ tags:
 - email
 - ai
 - news
+- startup
+- telehealth
+- business
+- ai tools
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:34.809156Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Matthew Gallagher and his brother used AI tools to build a telehealth company, Medvi, which is projected to reach $1.8 billion in sales this year.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.459910Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5e64308b977be642da59127d4e80ab8a88dc03dfe4803ce0ab6af222f5e2ae97
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3d326e0bd88bc109baee3098eb841110b0bbbbc652a425b4509b0d9e48258c60
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.56
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI tools in a business context, which aligns with favorite topics, but lacks deep technical focus or preferred author alignment.
+  evidence_quotes:
+  - Matthew Gallagher and his brother used AI tools to build a telehealth company, Medvi, which is projected to reach $1.8 billion in sales this year.
+  - 'His founder, Matthew Gallagher, used AI tools to write the code that powers the company, produce website copy, generate media for ads, handle customer service, '
+  - The startup is on track to do $1.8 billion in sales this year.
 ---
 # How AI Helped One Man (and His Brother) Build a $1.8 Billion Company
 

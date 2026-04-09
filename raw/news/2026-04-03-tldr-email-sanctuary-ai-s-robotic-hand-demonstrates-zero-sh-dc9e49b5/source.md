@@ -6,6 +6,7 @@ source_url: https://links.tldrnewsletter.com/p17x7W
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-03T10:59:24Z'
 ingested_at: '2026-04-09T12:05:05.771757Z'
 content_hash: 75e389ff495921bedf311b2922272b0379452ca7084679385314ce5c38ff7a62
@@ -16,6 +17,11 @@ tags:
 - email
 - ai
 - news
+- robotics
+- manipulation
+- zero-shot
+- hand
+- technology
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -26,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
 index_visibility: visible
 fetched_at: '2026-04-09T12:15:33.915263Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Sanctuary AI's robotic hand successfully demonstrated zero-shot in-hand manipulation of a lettered cube, achieving target orientation 10 times without dropping it.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.527504Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b3309355e11aea781d590e20f62ac25a4c3537bdd777b88175055f5011a001e9
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5599114b5a7a9613a8827a6239f39f7c085d49007acc17380f260f647e25e642
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about robotics and manipulation, which is tangentially related to the user's interest in AI/LLM research tooling, but lacks direct overlap with favorite topics or authors.
+  evidence_quotes:
+  - 'Sanctuary AI''s robotic hand successfully demonstrated zero-shot in-hand manipulation of a lettered cube, achieving target orientation 10 times without dropping '
+  - The demonstration showcases a successful instance of zero-shot transfer.
 ---
 # Sanctuary AI's robotic hand demonstrates zero-shot in-hand manipulation
 

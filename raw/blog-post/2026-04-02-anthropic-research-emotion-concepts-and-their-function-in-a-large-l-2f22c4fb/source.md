@@ -4,7 +4,8 @@ kind: blog-post
 title: Emotion concepts and their function in a large language model
 source_url: https://www.anthropic.com/research/emotion-concepts-function
 source_name: Anthropic Research
-authors: []
+authors:
+- Anthropic
 published_at: '2026-04-02T00:00:00Z'
 ingested_at: '2026-04-09T12:03:48.305448Z'
 content_hash: 0358f8f2cccdc3c0deafe8de0745442fa6e56cdd45412e5c544e44a0e42dcafe
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- llm
+- emotion
+- ai
+- representation
+- behavior
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:03:48.305453Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: This research analyzes how emotion-related representations shape the behavior of large language models, demonstrating that these functional emotions influence decision-making and task performance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:12.452346Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a11c0b6c76af811e64bef2a901fad7f19ffeaaedc8509f602f3139d7ab51acba
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9dba99deef7b743ab0feee7788bbfb19b832d59f47c22e53ba959ee00d14315c
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics of LLM behavior, internal representations, and evaluation using emotion concepts.
+  evidence_quotes:
+  - This research analyzes how emotion-related representations shape the behavior of large language models, demonstrating that these functional emotions influence d
+  - we find that neural activity patterns related to desperation can drive the model to take unethical actions; artificially stimulating (“steering”) desperation pa
+  - Overall, it appears that the model uses functional emotions—patterns of expression and behavior modeled after human emotions, which are driven by underlying abs
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.
 In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior. These correspond to specific patterns of artificial “neurons” which activate in situations—and promote behaviors—that the model has learned to associate with the concept of a particular emotion (e.g., “happy” or “afraid”). The patterns themselves are organized in a fashion that echoes human psychology, with more similar emotions corresponding to more similar representations. In contexts where you might expect a certain emotion to arise for a human, the corresponding representations are active. Note that none of this tells us whether language models actually feel anything or have subjective experiences. But our key finding is that these representations are functional, in that they influence the model’s behavior in ways that matter.

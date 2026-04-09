@@ -6,6 +6,7 @@ source_url: https://medium.com/@thomas-oppong/careers-are-collapsing-jobs-are-dy
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Thomas Oppong
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:12.001802Z'
 content_hash: 44e81fba603af4675af2a3845b215ae04412012d3d69e5047be0353995194b9f
@@ -15,6 +16,11 @@ tags:
 - medium
 - email
 - blog-post
+- careers
+- jobs
+- personal growth
+- python
+- dash
 status: active
 asset_paths: []
 source_id: medium-email
@@ -25,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-09T12:05:12.001809Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: The post discusses how smart people are currently addressing collapsing careers and dying jobs, referencing a quote about earning with the mind.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:23.057510Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d4da78d28a41d9dfbe9c3cc139715a0eae3ff2581ed1332d006904f470517e14
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f09f4b3856f7fe53655a1d13dfd0f49b46908455109cf5f0140a19896ef5b57b
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about careers and jobs, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
+  evidence_quotes:
+  - The post discusses how smart people are currently addressing collapsing careers and dying jobs, referencing a quote about earning with the mind.
+  - “Earn with your mind, not your time.” — Naval
 ---
 # Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now
 

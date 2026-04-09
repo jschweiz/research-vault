@@ -4,7 +4,8 @@ kind: blog-post
 title: 'Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI'
 source_url: https://mistral.ai/news/leanstral
 source_name: Mistral Research
-authors: []
+authors:
+- Mistral AI
 published_at: '2026-03-16T16:00:00Z'
 ingested_at: '2026-04-09T12:04:24.493329Z'
 content_hash: f3e4617f0d903a0764a7a47bc85b2f459f480eaad3c61f259cdf80e0db543559
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- leanstral
+- open-source
+- code agent
+- lean 4
+- formal proof
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-09T12:04:24.493336Z'
-short_summary: null
-lightweight_enrichment_status: failed
-lightweight_enriched_at: null
+short_summary: Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and powerful, offering competitive performance against closed-source models.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-09T15:00:09.820214Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f30f57e60a3425201aee198e05682df770970e8a60f5cd7f1b7dc8b82142aabf
-lightweight_enrichment_error: 'Ollama lightweight enrichment failed: timed out'
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 00a5090da4aedcaa0f6bbc7f366edf7ee52dce9968ac7e562d1095992fb148dd
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the user's favorite topics (LLM architecture, evaluation, reasoning) by introducing an open-source code agent for formal proof and benchmarking against other models.
+  evidence_quotes:
+  - Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations.
+  - We compare Leanstral against leading coding agents (Claude Opus 4.6, Sonnet 4.6, Haiku 4.5) and open-source models (Qwen3.5 397B-A17B, Kimi-K2.5 1T-A32B, GLM5 7
+  - Leanstral pass@2 reaches a score of 26.3, beating Sonnet by 2.6 points, while costing only $36 to run, compared to Sonnet’s $549.
 ---
 AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review. The time and specialized expertise required to manually verify become the primary impedance of engineering velocity.
 We envision a more helpful generation of coding agents to both carry out their tasks and formally prove their implementations against strict specifications. Instead of debugging machine-generated logic, humans dictate what they want. Today, we are taking the first major step toward that vision.
