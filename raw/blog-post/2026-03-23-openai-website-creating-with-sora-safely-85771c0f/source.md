@@ -28,26 +28,15 @@ canonical_url: https://openai.com/index/creating-with-sora-safely
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:40.579746Z'
+fetched_at: '2026-04-13T18:28:35.492041Z'
 short_summary: OpenAI built Sora 2 and the Sora app with safety as a foundation to address the novel safety challenges posed by the state-of-the-art video model and social creation platform.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T15:00:11.448172Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 72efc05a2e5d972a04367983ef18b3acb9c32b9bf0b94ed332f2469d1e6a9160
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 55b18b48b63b35286e86aa9eba207956eed283fdc258eb7dcc73ecfc14607c95
-lightweight_score:
-  relevance_score: 0.56
-  source_fit_score: 0.75
-  topic_fit_score: 0.65
-  author_fit_score: 1.0
-  evidence_fit_score: 0.6
-  confidence_score: 0.95
-  bucket_hint: worth_a_skim
-  reason: The document is highly relevant due to the author being OpenAI, aligning with the user's favorite authors, and the topic touching upon LLM/AI safety and creation platforms.
-  evidence_quotes:
-  - OpenAI built Sora 2 and the Sora app with safety as a foundation to address the novel safety challenges posed by the state-of-the-art video model and social cre
-  - Our approach is anchored in concrete protections.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 To address the novel safety challenges posed by a state-of-the-art video model as well as a new social creation platform, we’ve built Sora 2 and the Sora app with safety at the foundation. Our approach is anchored in concrete protections.

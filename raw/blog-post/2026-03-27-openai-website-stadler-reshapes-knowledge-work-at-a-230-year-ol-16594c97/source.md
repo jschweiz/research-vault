@@ -27,26 +27,15 @@ canonical_url: https://openai.com/index/stadler
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:36.026152Z'
+fetched_at: '2026-04-13T18:28:30.845293Z'
 short_summary: STADLER is using ChatGPT to transform knowledge work, resulting in time savings and increased productivity for its 650 employees.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T15:00:11.943254Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ed29c08434520c2df106eb6fadada1ea13f318882963b47aee87b7e561d3b9ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 757f8732a45e7bf47867aa6f2845887bf3b911f2b25ffdd0c41f45b8c1561896
-lightweight_score:
-  relevance_score: 0.45
-  source_fit_score: 0.6
-  topic_fit_score: 0.7
-  author_fit_score: 0.0
-  evidence_fit_score: 0.6
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document discusses the use of ChatGPT for knowledge work, which aligns with the user's interest in language models and productivity, but lacks specific focus on LLM architecture or evaluation.
-  evidence_quotes:
-  - STADLER is using ChatGPT to transform knowledge work, resulting in time savings and increased productivity for its 650 employees.
-  - Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.

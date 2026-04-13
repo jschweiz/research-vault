@@ -28,26 +28,15 @@ canonical_url: https://openai.com/index/our-approach-to-the-model-spec
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:36.749080Z'
+fetched_at: '2026-04-13T18:28:31.641253Z'
 short_summary: OpenAI's Model Spec provides a public framework for model behavior, focusing on balancing safety, user freedom, and accountability as AI systems develop.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T15:00:11.711388Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6c17f20620a42cbaeceb2ebb828327e578837fb4eab04bbfdf5943b57c1e7837
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 704c9cc819a8c98a82c4c06e4d66a76a826135cf26806d5326efb826e3cdb19e
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses core favorite topics (model behavior, safety, accountability) and is published by a favorite author (OpenAI).
-  evidence_quotes:
-  - OpenAI's Model Spec provides a public framework for model behavior, focusing on balancing safety, user freedom, and accountability as AI systems develop.
-  - Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.

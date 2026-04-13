@@ -29,25 +29,15 @@ canonical_url: https://openai.com/index/industrial-policy-for-the-intelligence-a
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:31.319317Z'
+fetched_at: '2026-04-13T18:28:26.456143Z'
 short_summary: OpenAI proposes an industrial policy for the AI era focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T15:00:18.758558Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ad045ffc91792826cb105d8a11660198fe8589c2bb2494efcc246105144211aa
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 6f9524ff11001067917702cd3a7c23f81dc71b90506972751155f17b5e68138c
-lightweight_score:
-  relevance_score: 0.5009
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 1.0
-  evidence_fit_score: 0.7995
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-author match.
-  evidence_quotes:
-  - OpenAI proposes an industrial policy for the AI era focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intell
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.

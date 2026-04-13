@@ -30,25 +30,15 @@ canonical_url: https://openai.com/index/next-phase-of-enterprise-ai
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:28.958248Z'
+fetched_at: '2026-04-13T18:28:24.278512Z'
 short_summary: OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T15:00:22.696197Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 71b0a5ed0286c67d6dced69d492c7120f88625ddbb0f7a74d40523ca4daa2f50
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2eb8113471b3b40d67e19f36764253f9d104e0896110f2cd4daf733e055af485
-lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.75
-  topic_fit_score: 0.95
-  author_fit_score: 1.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.
-  evidence_quotes:
-  - OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.
