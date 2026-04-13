@@ -9,7 +9,7 @@ authors:
 - Purusharth Malik
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:11.493405Z'
-content_hash: e1d0c5b2acd9584625b1cdd3a34550901be3077f1a90392f0f8d673b90ec2191
+content_hash: 3e635bc3251ae9c08a11e1a8cb8dd7a4e43cc166a6a48562b97a3091436d1d23
 identity_hash: bd7958089866a9b8522045e0c447d305ffaeb0ccf3a89b72b0d6fe6d1aa44e63
 tags:
 - newsletter
@@ -21,6 +21,7 @@ tags:
 - python
 - machine learning
 - ai
+- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -30,35 +31,23 @@ canonical_url: https://medium.com/@purusharth.19.malik/automatic-speech-recognit
 doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:11.493410Z'
+fetched_at: '2026-04-13T18:18:56.861167Z'
 short_summary: This post provides an intuitive guide to building Automatic Speech Recognition (ASR) from scratch. It is presented as a newsletter highlight from Medium.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:22.753640Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 435d25a28f2ea4df7b2cab03145ee7fe1926644be35dd1dd22f0dd4a47d174be
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c3b8e0db93f59a5ddb2fe7ca42531488bf147fda74e36ac48e5f33abdbf2a850
-lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
-  author_fit_score: 0.0
-  evidence_fit_score: 0.25
-  confidence_score: 0.8
-  bucket_hint: archive
-  reason: The document is about ASR and machine learning, which loosely aligns with favorite topics, but lacks specific focus on LLMs, evaluation, or research tooling.
-  evidence_quotes:
-  - Automatic Speech Recognition (ASR) From Scratch (With Intuition)
-  - This post provides an intuitive guide to building Automatic Speech Recognition (ASR) from scratch.
-  - 'Tags: newsletter, medium, email, blog-post, asr, speech recognition, python, machine learning, ai'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Automatic Speech Recognition (ASR) From Scratch (With Intuition)
 
 Source newsletter: Build a Sleek Sci-Fi Dashboard with Python and Dash | Lee Vaughan in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-09T06:40:00+00:00
-Canonical URL: https://medium.com/@purusharth.19.malik/automatic-speech-recognition-asr-from-scratch-with-intuition-60273efcfe28
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@purusharth.19.malik/automatic-speech-recognition-asr-from-scratch-with-intuition-60273efcfe28
 
 ## Newsletter Context
 

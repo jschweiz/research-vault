@@ -1,0 +1,52 @@
+---
+id: 2026-04-11-medium-email-the-illusion-of-understanding-0f7ba52f
+kind: blog-post
+title: The Illusion of Understanding
+source_url: https://medium.com/@jshen9889/the-illusion-of-understanding-8b083cc1e11e
+source_name: Medium Email
+authors:
+- Medium Daily Digest <noreply@medium.com>
+published_at: '2026-04-11T06:40:00Z'
+ingested_at: '2026-04-13T18:18:16.884206Z'
+content_hash: 9b077bd2b859a6f78d76d110f550b01531b7da93c5dc510ca3e3da463c0f651d
+identity_hash: 40c941813e9f352944dde3e28bddd0397847cbd02fbca29f2e7c044ef07b3468
+tags:
+- newsletter
+- medium
+- email
+- blog-post
+- sub-document
+status: active
+asset_paths: []
+source_id: medium-email
+source_pipeline_id: medium-email
+external_key: 19d7b44d1ebde675::link::https://medium.com/@jshen9889/the-illusion-of-understanding-8b083cc1e11e
+canonical_url: https://medium.com/@jshen9889/the-illusion-of-understanding-8b083cc1e11e
+doc_role: derived
+parent_id: 2026-04-11-medium-email-what-good-writing-looks-like-rita-kind-envy-in-u-477d126b
+index_visibility: visible
+fetched_at: '2026-04-13T18:18:16.884213Z'
+short_summary: null
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
+lightweight_enrichment_error: null
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
+---
+# The Illusion of Understanding
+
+Source newsletter: What good writing looks like | Rita Kind-Envy in UX Collective
+Sender: Medium Daily Digest <noreply@medium.com>
+Published At: 2026-04-11T06:40:00+00:00
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@jshen9889/the-illusion-of-understanding-8b083cc1e11e
+
+## Newsletter Context
+
+Section: Today's highlights
+
+> Stephanie Shen in ILLUMINATION · 12 min read · 515 claps · 19 responses
+
+Wittgenstein, Neuroscience, and Why Language Is Not…

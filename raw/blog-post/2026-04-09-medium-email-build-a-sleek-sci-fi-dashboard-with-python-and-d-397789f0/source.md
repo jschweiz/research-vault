@@ -9,7 +9,7 @@ authors:
 - Lee Vaughan
 published_at: '2026-04-09T06:40:00Z'
 ingested_at: '2026-04-09T12:05:11.191433Z'
-content_hash: f14a47f7b2479aa873b1d43e5a4249afc34c3fa0234206dd1d202a6e2b9b1b19
+content_hash: d004727f24099777358a8f7c1a31971579e3278d09af49f9c270916c4fbef391
 identity_hash: 761c3cba66b66c4cf0b2a9aca986ee0e77cca9f3a5e00a3f8902118141b41912
 tags:
 - newsletter
@@ -20,6 +20,7 @@ tags:
 - dash
 - data science
 - dashboard
+- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -29,34 +30,23 @@ canonical_url: https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-wi
 doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:11.191435Z'
+fetched_at: '2026-04-13T18:18:55.298136Z'
 short_summary: This post details how to build a sleek science fiction dashboard using Python and Dash. It serves as an inspiration for creating data-driven visualizations.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:22.807564Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 9c6a62b0729a04ba398b423763e4214fad0408281477edafef188c4ec176b443
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ffce412006d49ddb33de6344b44244649032c5b9ee9101b3edd89f58cad4bc0f
-lightweight_score:
-  relevance_score: 0.05
-  source_fit_score: 0.0
-  topic_fit_score: 0.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.0
-  confidence_score: 1.0
-  bucket_hint: archive
-  reason: The document is about Python dashboard development and does not align with the user's favorite topics of language models, evaluation, or research tooling.
-  evidence_quotes:
-  - This post details how to build a sleek science fiction dashboard using Python and Dash.
-  - It serves as an inspiration for creating data-driven visualizations.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash
 
 Source newsletter: Build a Sleek Sci-Fi Dashboard with Python and Dash | Lee Vaughan in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-09T06:40:00+00:00
-Canonical URL: https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-with-python-and-dash-0fccf536af3a
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-with-python-and-dash-0fccf536af3a
 
 ## Newsletter Context
 

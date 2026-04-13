@@ -9,7 +9,7 @@ authors:
 - Jose Parreño
 published_at: '2026-04-08T06:40:00Z'
 ingested_at: '2026-04-09T12:05:12.876665Z'
-content_hash: f44536120cf167ff098820eec260cb6e06a8647688b658b854e5704dbf7aa8a1
+content_hash: 12e68ab9d745990a60a4730d85403c63d5442dcf2ce124fcfa04dcc50619f4e8
 identity_hash: 8b7a44536eebe433565824c548e9c1b52c8a6e46f6961a89c654a2ccfd52ebd5
 tags:
 - newsletter
@@ -20,6 +20,7 @@ tags:
 - rnn
 - deep learning
 - neural networks
+- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -29,33 +30,23 @@ canonical_url: https://medium.com/@joparga3/understanding-transformers-part-1-wh
 doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:12.876670Z'
+fetched_at: '2026-04-13T18:19:03.010924Z'
 short_summary: This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Transformers.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:22.214855Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 228cb64992a2e4bf7d97836c335c0df56706fc4131887dd3e77cbbcfb38935f8
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: ad8963cd677ced1fd5f2b84c6bf42c9c3d6c492faf032b81f99dbc6d03fd1a22
-lightweight_score:
-  relevance_score: 0.3991
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9057
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Tran
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train
 
 Source newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
 
 ## Newsletter Context
 

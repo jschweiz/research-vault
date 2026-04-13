@@ -9,7 +9,7 @@ authors:
 - Hussein Jundi
 published_at: '2026-04-07T06:40:00Z'
 ingested_at: '2026-04-09T12:05:15.007534Z'
-content_hash: 65011587340e9825dd7fd8f12103e1d9b00c7784c19590651a779a5087b9d099
+content_hash: e146460e26c9eb66dc30caf0245b045a0c27c3cad10afa490a89983b54f0a646
 identity_hash: 4c2abdbbac0b68d5cad917c0b31ffd738be9d3fdf9015ceb4bc04bbc17c52df0
 tags:
 - newsletter
@@ -20,6 +20,7 @@ tags:
 - incremental loading
 - data loading
 - strategies
+- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -29,34 +30,23 @@ canonical_url: https://medium.com/@husseinjundi/data-engineering-incremental-dat
 doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:15.007540Z'
+fetched_at: '2026-04-13T18:19:12.596070Z'
 short_summary: This post outlines strategies and solution architectures for incremental data loading. It focuses on the principles of incremental data loading in data engineering.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:18.921166Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: c6264c0cd98af16395f934b7060dd7719f145e7d1075e26bf4f6c1d5eec7bb7f
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 59800e33e67f825fa3e5fbb249e5d27620072d3a12bf99e122aa40194612c36d
-lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.0
-  topic_fit_score: 0.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.16
-  confidence_score: 1.0
-  bucket_hint: archive
-  reason: The document is about data engineering strategies, which does not align with the user's favorite topics of language models, evaluation, reasoning, or LLM architecture.
-  evidence_quotes:
-  - This post outlines strategies and solution architectures for incremental data loading.
-  - It focuses on the principles of incremental data loading in data engineering.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Data Engineering: Incremental Data Loading Strategies
 
 Source newsletter: The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-07T06:40:00+00:00
-Canonical URL: https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0
 
 ## Newsletter Context
 

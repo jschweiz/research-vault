@@ -9,7 +9,7 @@ authors:
 - Matt Bentley
 published_at: '2026-04-08T06:40:00Z'
 ingested_at: '2026-04-09T12:05:13.043285Z'
-content_hash: 4697fd45bb71fc9d5eaf5a12db046f33ab73011e90e81fcc867adab6a0345b10
+content_hash: 823f5e5e0977352277298b3e3f5ca18f9ca679b8325fa31dd19ef4afaea5f599
 identity_hash: 8405527ef4f15a55b57586733657eaeb1b2c5587de28ad38e36770b202c88862
 tags:
 - newsletter
@@ -21,6 +21,7 @@ tags:
 - architecture
 - machine learning
 - nlp
+- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -30,35 +31,23 @@ canonical_url: https://medium.com/@mattbentley_67939/designing-a-production-grad
 doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:13.043292Z'
+fetched_at: '2026-04-13T18:19:03.741938Z'
 short_summary: This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs).
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:19.722166Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 9c31b432534bbce4d15cc7e12595c7f45760a4ae5160869e16d51114efb6f7f4
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 03607714e69d32f0a27a048eeb8df503e15069c8dde8ef03391287d55b7cc409
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
-  author_fit_score: 0.5
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses RAG architecture and LLM grounding, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.
-  evidence_quotes:
-  - This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture.
-  - It focuses on techniques and best practices for grounding Large Language Models (LLMs).
-  - 'Tags: newsletter, medium, email, blog-post, rag, llm, architecture, machine learning, nlp'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Designing a Production-Grade RAG Architecture
 
 Source newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
 
 ## Newsletter Context
 
