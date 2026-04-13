@@ -24,6 +24,7 @@ tags:
 - mathematics
 - automated verification
 - gpt 5.4 pro
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -33,28 +34,16 @@ canonical_url: https://arxiv.org/abs/2603.15617
 doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:33.556897Z'
+fetched_at: '2026-04-13T18:13:18.001289Z'
 short_summary: HorizonMath is a new math benchmark designed to test AI systems on solving unknown mathematical problems, featuring automated verification and covering various mathematical domains.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.648054Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: e9ebf968345c9d1b2dc0e6eebf6b89478dc696fe48a5d99dcc28fdf7498bcd8a
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3d68f2b7b6cfcb801abc900f91148d519e443f025c27542b36be966ebe9e8c02
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses AI evaluation and reasoning by introducing a new benchmark designed to test AI systems on solving unknown mathematical problems.
-  evidence_quotes:
-  - 'HorizonMath is a new math benchmark designed to test AI systems on solving unknown mathematical problems, featuring automated verification and covering various '
-  - A core feature of our benchmark is its fully automated, reproducible, and human-free evaluation pipeline”, the authors write. “We automate verification using hi
-  - With HorizonMath, we have another useful benchmark to help us see if AI is about to cross some ‘creativity rubicon’ and begin solving unsolved problems.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # How long will a new math benchmark, HorizonMath, last?
 

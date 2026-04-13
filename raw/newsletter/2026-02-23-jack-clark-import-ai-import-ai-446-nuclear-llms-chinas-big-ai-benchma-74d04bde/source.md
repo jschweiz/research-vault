@@ -30,26 +30,16 @@ canonical_url: https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chin
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T20:16:26.020134Z'
+fetched_at: '2026-04-13T18:15:51.527151Z'
 short_summary: LLMs exhibit aggressive behavior in simulated nuclear crisis games, and a large-scale Chinese benchmark for AI safety evaluation has been developed.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:01:43.430544Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1462cb7c1b7f70ecb92e209a56be2d1e1aba9a8b80602f525310655c207fd904
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: eae28fcf5e44d2f7aa8f7de1dcb5b0aca9a5eb954cc42dd914078564bb216125
-lightweight_score:
-  relevance_score: 0.503
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 0.93
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
-  evidence_quotes:
-  - LLMs exhibit aggressive behavior in simulated nuclear crisis games, and a large-scale Chinese benchmark for AI safety evaluation has been developed.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy
 

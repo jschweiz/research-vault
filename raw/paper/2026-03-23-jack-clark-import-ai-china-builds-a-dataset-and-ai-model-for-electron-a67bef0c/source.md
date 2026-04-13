@@ -26,6 +26,7 @@ tags:
 - dataset
 - machine learning
 - electromagnetic signals
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -35,28 +36,16 @@ canonical_url: https://arxiv.org/abs/2603.08174
 doc_role: derived
 parent_id: 2026-03-23-jack-clark-import-ai-import-ai-450-chinas-electronic-warfare-model-tr-26ab1bcb
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:41.699954Z'
+fetched_at: '2026-04-13T18:14:44.117359Z'
 short_summary: Chinese researchers built a dataset, benchmark, and AI model called MERLIN to improve AI's ability to handle low-signal-to-noise-ratio signals in electronic warfare environments.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.523818Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ddd29db00268c75766e27c07075690e8c7a8fb5df8aabd4a47b21ad33a98b639
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 14e996ed5bfb8f06469d823b1650171e2a22e34697d717c679d733c6465236d8
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.5
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses AI models, datasets, and reasoning in the context of electronic warfare, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - Chinese researchers built a dataset, benchmark, and AI model called MERLIN to improve AI's ability to handle low-signal-to-noise-ratio signals in electronic war
-  - 'The model: The model is MERLIN, multi-modal electromagnetic robust learning, a model trained on the above dataset and which is specifically taught to deal bette'
-  - MERLIN outperforms every single model by a wide margin, with the exception of Qwen-VL-4B-Instruct, which beats it on some perception tasks. MERLIN wins on all r
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # China builds a dataset and AI model for electronic warfare
 

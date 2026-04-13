@@ -24,6 +24,7 @@ tags:
 - llms
 - biosecurity
 - human_uplift
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -33,28 +34,16 @@ canonical_url: https://arxiv.org/abs/2602.23329
 doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:08.632175Z'
+fetched_at: '2026-04-13T18:15:35.950606Z'
 short_summary: Researchers studied how different Large Language Models (LLMs) could improve the skills of novices in bioweapon-related knowledge tasks. They found that LLM access provided a substantial uplift in accuracy for these tasks.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.150252Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a9a774566ecd42a128a2bad06e80c735f6a6fde417c94af7c6007ef0c2cb387b
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d39e90dc3620302734f77818c852756e71c84a0f287161c70ce4266483fbf131
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.65
-  topic_fit_score: 1.0
-  author_fit_score: 0.75
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM performance uplift in complex reasoning tasks, aligning perfectly with the user's favorite topics of language models, evaluation, and reasoning.
-  evidence_quotes:
-  - Researchers studied how different Large Language Models (LLMs) could improve the skills of novices in bioweapon-related knowledge tasks.
-  - 'We found that LLM access provided substantial uplift: novices with LLMs were 4.16× more accurate than controls”.'
-  - LLM access increases novice accuracy from approximately 5% to over 17%”.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # AIs can teach people anything, including how to get better at making bioweapons
 

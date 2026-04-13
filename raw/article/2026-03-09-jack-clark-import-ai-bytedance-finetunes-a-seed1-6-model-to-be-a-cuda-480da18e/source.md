@@ -22,6 +22,7 @@ tags:
 - llm
 - agent
 - machine learning
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,28 +32,16 @@ canonical_url: https://profile.py/
 doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:01.135795Z'
+fetched_at: '2026-04-13T18:15:24.981687Z'
 short_summary: ByteDance researchers fine-tuned a Seed1.6 LLM to create a CUDA-writing agent called CUDA Agent. This agent demonstrated state-of-the-art performance in CUDA kernel development, significantly boosting performance over baseline models.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:42.733531Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: f0f569dd3b1f1b2c3542e8d6a5f21cb7ad819a559d5e5aa4475b8728637d1cc2
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 24676b8ed6fc853f8a412ad28c8820f0a36e0d41a170a7b8872e922d706ae93d
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM fine-tuning, agent development, and reasoning in the context of CUDA programming.
-  evidence_quotes:
-  - ByteDance researchers fine-tuned a Seed1.6 LLM to create a CUDA-writing agent called CUDA Agent.
-  - The research is another sign of how people are increasingly using AI to speedup core aspects of AI development.
-  - CUDA Agent successfully scales to a context length of 128k tokens and supports up to 200 interaction turns, achieving state-of-the-art performance.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # ByteDance finetunes a Seed1.6 model to be a CUDA-writing agent
 

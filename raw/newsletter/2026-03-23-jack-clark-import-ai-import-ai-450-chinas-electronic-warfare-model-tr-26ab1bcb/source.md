@@ -1,7 +1,7 @@
 ---
 id: 2026-03-23-jack-clark-import-ai-import-ai-450-chinas-electronic-warfare-model-tr-26ab1bcb
 kind: newsletter
-title: 'Import AI 450: China’s electronic warfare model; traumatized LLMs; and a scaling law for cyberattacks | Import AI'
+title: 'Import AI 450: China’s electronic warfare model; traumatized LLMs; and a scaling law for cyberattacks'
 source_url: https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks
 source_name: Import AI
 authors:
@@ -13,7 +13,7 @@ authors:
 - National University of Defense Technology
 published_at: '2026-03-23T12:31:45Z'
 ingested_at: '2026-04-09T20:15:40.311319Z'
-content_hash: 020ec0dde0ac179d040e4a275c5a12538f2c89c44224ecf2872d83f5977bbe2f
+content_hash: a721be1dadbff653e97b920cf8ade5ee61c8042250610be1b2694e406db0d429
 identity_hash: 62df6b2874e3e07ed82234bf7614e6b0e1709aa3688bdbdadc09b184a5306a65
 tags:
 - newsletter
@@ -36,26 +36,16 @@ canonical_url: https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T20:15:40.311322Z'
+fetched_at: '2026-04-13T18:14:40.126805Z'
 short_summary: Research explores a cognitive taxonomy for assessing machine intelligence and demonstrates a scaling law for AI cyberattacks. Chinese researchers developed an AI model for electronic warfare that outperforms frontier models.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:43.622948Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 207fc1f2373da4a3e21c5b07d3cb3e7ac11ff3c2a1d46c41fbdc88948519aee3
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: fc7c0384b1611ad6de43377df6ff0a60f453e82f3ff0cec5206abd6e067067a3
-lightweight_score:
-  relevance_score: 0.715
-  source_fit_score: 0.55
-  topic_fit_score: 0.84
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 3 favorite-topic matches.
-  evidence_quotes:
-  - Research explores a cognitive taxonomy for assessing machine intelligence and demonstrates a scaling law for AI cyberattacks. Chinese researchers developed an A
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Import AI 450: China’s electronic warfare model; traumatized LLMs; and a scaling law for cyberattacks
 

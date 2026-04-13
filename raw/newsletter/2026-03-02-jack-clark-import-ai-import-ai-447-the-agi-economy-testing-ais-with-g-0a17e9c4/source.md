@@ -30,28 +30,16 @@ canonical_url: https://jack-clark.net/2026/03/02/import-ai-447-the-agi-economy-t
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T20:16:07.185326Z'
+fetched_at: '2026-04-13T18:15:32.634904Z'
 short_summary: Research explores the economics of AGI, focusing on the need for human verification and the risks of a 'Hollow Economy' driven by AI agents. Other studies examine the dual-use nature of LLMs in teaching and the limitations of AI in generating complex game-playing skills.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:01:43.484667Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4f490f304ae88eca115006b22603577a3dfe344fea492bfd164aeecb28d06c95
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 81d61c0a60f8f6cf98f12978a5ef0c85d448dda9c05c19e0971bda5eacca718e
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses core user interests in AGI economics, AI agents, LLM limitations, and testing methodologies.
-  evidence_quotes:
-  - Research explores the economics of AGI, focusing on the need for human verification and the risks of a 'Hollow Economy' driven by AI agents.
-  - Agents consume real resources to produce output that satisfies measurable proxies while violating unmeasured intent.
-  - LLM access increases novice accuracy from approximately 5% to over 17%.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Import AI 447: The AGI economy; testing AIs with generated games; and agent ecologies
 

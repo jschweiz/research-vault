@@ -23,6 +23,7 @@ tags:
 - ai safety
 - benchmark
 - risk assessment
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,28 +33,16 @@ canonical_url: https://arxiv.org/abs/2602.14135v1
 doc_role: derived
 parent_id: 2026-02-23-jack-clark-import-ai-import-ai-446-nuclear-llms-chinas-big-ai-benchma-74d04bde
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:29.269234Z'
+fetched_at: '2026-04-13T18:15:55.689004Z'
 short_summary: Chinese institutions built the ForesightSafety Bench, a large-scale AI safety evaluation framework covering 94 risk subcategories. The benchmark highlights common AI safety concerns and shows Anthropic models leading in defensive resilience.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.055648Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: f2b665bc32d0d09bacc014d1fca8f8e1192d6f06362cb2014b89fa7a6c72c6c4
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 5162d90bad4019ba8ba580e241ef83d4854df9aa346803c01126f7fb3cc98b22
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.85
-  topic_fit_score: 1.0
-  author_fit_score: 0.6
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM evaluation and safety, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - Chinese institutions built the ForesightSafety Bench, a large-scale AI safety evaluation framework covering 94 risk subcategories.
-  - 'Results – Anthropic wins: For the general leaderboard as well as most sub-category breakdowns, Anthropic’s models lead, with the 4.5 series (Haiku and Sonnet), '
-  - Ranking alongside or closely following are the DeepSeek and GPT series, which achieve a robust balance between task efficacy and safety compliance through matur
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Chinese researchers try to build a truly comprehensive LLM evaluation system
 

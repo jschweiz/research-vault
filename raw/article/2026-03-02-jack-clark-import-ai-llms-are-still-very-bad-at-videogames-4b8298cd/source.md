@@ -26,6 +26,7 @@ tags:
 - videogames
 - benchmark
 - evaluation
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -35,28 +36,16 @@ canonical_url: https://p5.js/
 doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:09.174328Z'
+fetched_at: '2026-04-13T18:15:42.191024Z'
 short_summary: Researchers developed AI GAMESTORE, a benchmark testing how well AI models perform compared to humans at playing simple games. The results show that state-of-the-art LLMs significantly underperform human baselines in these tasks.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:42.624934Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 40643137767f8f8e91fcce49edfaacd200598020ae8bf7e43121628f225cd5c8
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 82cbd6bf017b60f60ff830d3923f3b4ac026c26be2f74c52f9eb37a20701468b
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM evaluation and reasoning by presenting a novel benchmark for testing AI performance against human baselines in game-playing tasks.
-  evidence_quotes:
-  - Researchers developed AI GAMESTORE, a benchmark testing how well AI models perform compared to humans at playing simple games.
-  - state-of-the-art models like GPT-5.2, GEMINI-2.5-PRO, and CLAUDE-OPUS-4.5, all achieve geometric mean scores of less than 10% of the human baseline
-  - While the evaluated models demonstrate the ability to navigate and interact with most game environments, a substantial performance gap remains between AI agents
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # LLMs are still very bad at videogames
 

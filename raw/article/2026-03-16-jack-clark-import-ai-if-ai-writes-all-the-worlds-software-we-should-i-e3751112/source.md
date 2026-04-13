@@ -21,6 +21,7 @@ tags:
 - software
 - lean
 - infrastructure
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -30,28 +31,16 @@ canonical_url: https://lean-lang.org/
 doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:47.004470Z'
+fetched_at: '2026-04-13T18:15:01.523955Z'
 short_summary: If AI writes most of the world's software, humans should invest more in verification and testing infrastructure. This involves creating a verified software stack where critical components are mathematically guaranteed correct.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:42.761200Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a4f77d3da48591d4b61858cfe5a4af8af3778caa85bd706ea22d64dfda166842
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: f137831e98b03d86fe7aa98b7f5540996c0645dcb771e8a9f28d0b4596527ee9
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLMs, verification, and reasoning infrastructure, making it highly relevant.
-  evidence_quotes:
-  - If AI writes most of the world's software, humans should invest more in verification and testing infrastructure.
-  - The friction of writing code manually used to force careful design. AI removes that friction, including the beneficial friction. The answer is not to slow AI do
-  - 'The goal is a verified software stack: open source, freely available, mathematically guaranteed correct.'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # If AI writes all the world’s software, we should invest more in verification
 

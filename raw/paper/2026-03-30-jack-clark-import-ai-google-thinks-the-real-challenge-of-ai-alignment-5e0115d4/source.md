@@ -20,6 +20,7 @@ tags:
 - non-biological intelligence
 - social systems
 - governance
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -29,28 +30,16 @@ canonical_url: https://arxiv.org/abs/2603.20639
 doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:31.432412Z'
+fetched_at: '2026-04-13T18:13:11.453527Z'
 short_summary: Google researchers suggest the main challenge of AI alignment is managing a world populated by non-biological intelligences rather than aligning a single AI system. They argue that future AI governance requires building social institutions, like courts and bureaucracies, to manage these systems effectively.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.609423Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: e5da95fd8316aacface51ba5d35ea95280b925a4edfa241431ff8f478218a4f0
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 6843c1c82d10d8b06c3d5285792199ddde8302ea9913de0fcba5c2b0d728d238
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses AI alignment and governance, which aligns perfectly with the user's favorite topics of LLM architecture and reasoning.
-  evidence_quotes:
-  - Google researchers suggest the main challenge of AI alignment is managing a world populated by non-biological intelligences rather than aligning a single AI sys
-  - But what this paper correctly identifies is that even if we succeed at alignment we’re going to have to then get AI systems to work well within society and to c
-  - Just as human societies rely not on individual virtue but on persistent institutional templates – courtrooms, markets, bureaucracies – defined by roles and norm
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Google thinks the real challenge of AI alignment is dealing with a world made up of mostly non-biological intelligences
 

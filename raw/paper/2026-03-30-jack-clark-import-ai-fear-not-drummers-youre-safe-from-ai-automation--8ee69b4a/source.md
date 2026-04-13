@@ -20,6 +20,7 @@ tags:
 - dexdrummer
 - reinforcement learning
 - robot hands
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -29,28 +30,16 @@ canonical_url: https://arxiv.org/abs/2603.22263
 doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:30.862238Z'
+fetched_at: '2026-04-13T18:13:10.078657Z'
 short_summary: The paper details the development of DexDrummer, a hierarchical policy for teaching robot hands to play drums, focusing on dexterous control and real-world testing.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.554553Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: c13d7da6e16c60665f1e51ff3713ff0a81125c5ada32fd9aac5a5c0f3092560a
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 12ea29ca7043aacca376cb34df037b87eecc5519a7481c5199debf6a60c91b50
-lightweight_score:
-  relevance_score: 0.35
-  source_fit_score: 0.36
-  topic_fit_score: 0.55
-  author_fit_score: 0.0
-  evidence_fit_score: 0.75
-  confidence_score: 0.9
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on robotics and AI evaluation, which aligns with the user's favorite topics, although it does not feature preferred authors or LLM architecture directly.
-  evidence_quotes:
-  - DexDrummer tackles a fiendishly hard robot hand problem…
-  - Robotics in anything approximating a dynamic, rapidly changing environment (for instance, improvising drums with a live band) feels like one of the last frontie
-  - They built DexDrummer “a hierarchical, two-stage policy for drumming” which has a high-level RL policy, as well as a low-level dexterous policy.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Fear not, drummers, you’re safe from AI automation for now
 

@@ -23,6 +23,7 @@ tags:
 - agentic autonomy
 - post-training
 - benchmarking
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,28 +33,16 @@ canonical_url: https://arxiv.org/abs/2506.22419
 doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:46.008843Z'
+fetched_at: '2026-04-13T18:14:57.264721Z'
 short_summary: Researchers developed PostTrainBench to evaluate whether AI agents can autonomously refine other LLMs for new tasks, finding that while agents show progress, full automation of post-training remains challenging.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.429933Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 09789129680768e9b77ce97607e8bb32c4daa7dea2d540352fd1b7c3532ba76a
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b17fc6de1122aaaefeaffb6887470bd006437ab2face504064036fef3740cccb
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM refinement, evaluation, and agentic autonomy, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - Researchers developed PostTrainBench to evaluate whether AI agents can autonomously refine other LLMs for new tasks, finding that while agents show progress, fu
-  - PostTrainBench shows startling growth in AI capabilities at post-training… AI-driven R&D might be the most important thing in all of AI, because it helps us und
-  - The gap between agent performance (23.2%) and instruction-tuned baselines (51.1%) suggests that full automation of post-training remains out of reach for now, b
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Can LLMs autonomously refine other LLMs for new tasks? Somewhat.
 

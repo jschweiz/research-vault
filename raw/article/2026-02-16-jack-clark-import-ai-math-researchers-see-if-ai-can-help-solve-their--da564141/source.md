@@ -26,6 +26,7 @@ tags:
 - benchmark
 - frontier problems
 - creativity
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -35,28 +36,16 @@ canonical_url: https://mathsci.ai/
 doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:42.030370Z'
+fetched_at: '2026-04-13T18:16:18.426585Z'
 short_summary: Mathematicians created 'First Proof,' a benchmark of secret math problems to test AI systems' ability to solve unsolved frontier problems. Current AI systems, including GPT 5.2 Pro and Gemini 3.0 DeepThink, struggle with this test.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:42.463847Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 24115aa90529887e4e9894200e4c58c5749a0de5627507eb948a833b89d903c1
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 21c0070dcb2a15296cf993eabe3f2654b71bb2836bf228f9ec9dc0e23ca7dd5c
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLM evaluation, reasoning, and research tooling by introducing a benchmark for AI problem-solving.
-  evidence_quotes:
-  - Mathematicians created 'First Proof,' a benchmark of secret math problems to test AI systems' ability to solve unsolved frontier problems.
-  - Current AI systems, including GPT 5.2 Pro and Gemini 3.0 DeepThink, struggle with this test.
-  - If AI systems are able to do well at this kind of test, it gives us a clue that they can approximate some of the same creative leaps which humans make.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Math researchers see if AI can help solve their private solutions to frontier problems. The answer: Kind of.
 

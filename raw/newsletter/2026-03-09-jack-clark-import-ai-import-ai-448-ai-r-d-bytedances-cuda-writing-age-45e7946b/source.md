@@ -31,28 +31,16 @@ canonical_url: https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T20:15:56.180588Z'
+fetched_at: '2026-04-13T18:15:14.415532Z'
 short_summary: AI progress is accelerating rapidly, prompting researchers to develop metrics for measuring AI R&D automation and governance. This work explores methods for measuring AI progress and establishing guidelines for responsible AI development.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:01:43.512433Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6069a51315c286d75e10e2de0fa65da6cf433908be280916f008dae3ffc1fee2
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 36b43fdd4a7ce92f65f8f8732c20a316d04d4a8446e28fb2e01428d5768cf30d
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses AI R&D measurement, governance, and specific applications of edge computing and on-device AI, which strongly aligns with the user's favorite topics of LLM evaluation, reasoning, and research tooling.
-  evidence_quotes:
-  - This work explores methods for measuring AI progress and establishing guidelines for responsible AI development.
-  - Researchers with GovAI and the University of Oxford have written a paper laying out 14 distinct metrics which could be measured to help us figure out the extent
-  - The goal of this project is to unlock “real-time analytics from 1000s of city cameras under strict latency and resource constraints”.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Import AI 448: AI R&D; Bytedance’s CUDA-writing agent; on-device satellite AI
 

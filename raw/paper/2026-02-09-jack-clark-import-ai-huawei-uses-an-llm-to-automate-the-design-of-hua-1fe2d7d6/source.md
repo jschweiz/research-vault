@@ -22,6 +22,7 @@ tags:
 - huawei
 - kernel design
 - npu
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,28 +32,16 @@ canonical_url: https://arxiv.org/abs/2601.22760
 doc_role: derived
 parent_id: 2026-02-09-jack-clark-import-ai-import-ai-444-llm-societies-huawei-makes-kernels-6922e476
 index_visibility: visible
-fetched_at: '2026-04-09T20:16:53.047736Z'
+fetched_at: '2026-04-13T18:16:35.902259Z'
 short_summary: Researchers used LLMs to automate the design of kernels for Huawei chip kernels by developing a two-stage pipeline called AscendCraft. This method achieved high compilation success and functional correctness, demonstrating AI's potential to accelerate hardware kernel development.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:43.942798Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 8479aad0f90e54b71f6be56dee79972b3ebfa9b765f2e97f10e602ef1c8eff02
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 684f9bf6a1f2e791dff4ca05678f29e6e210f85cdba16d0e8f25f22d76cfcb1f
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLMs and research tooling in the context of hardware kernel design.
-  evidence_quotes:
-  - Researchers used LLMs to automate the design of kernels for Huawei chip kernels by developing a two-stage pipeline called AscendCraft.
-  - This method achieved high compilation success and functional correctness, demonstrating AI's potential to accelerate hardware kernel development.
-  - 'Nonetheless, the signs are clear: we can use AI to accelerate the optimizing of AI hardware, even for systems which are relatively new and/or underdiscussed in '
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Huawei uses an LLM to automate the design of Huawei chip kernels
 

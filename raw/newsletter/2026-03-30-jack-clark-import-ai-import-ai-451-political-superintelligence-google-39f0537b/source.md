@@ -36,26 +36,16 @@ canonical_url: https://jack-clark.net/2026/03/30/import-ai-451-political-superin
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T20:15:30.008680Z'
+fetched_at: '2026-04-13T18:13:08.440712Z'
 short_summary: Researchers have developed a harness that allows Large Language Models (LLMs) to self-improve through recursive loops and editing, involving collaboration from institutions like Meta, UCBC, and NYU.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:01:43.679282Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fae0615bb18f1d1a8b9827aeecca5740e75467cecbf4358cfd139b85ce74730e
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 4816842416619820e696dbca52cff97529d7473769f97b36c87a1b5ae6c23529
-lightweight_score:
-  relevance_score: 0.616
-  source_fit_score: 0.55
-  topic_fit_score: 0.62
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 2 favorite-topic matches.
-  evidence_quotes:
-  - 'Researchers have developed a harness that allows Large Language Models (LLMs) to self-improve through recursive loops and editing, involving collaboration from '
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Import AI 451: Political superintelligence; Google’s society of minds, and a robot drummer
 

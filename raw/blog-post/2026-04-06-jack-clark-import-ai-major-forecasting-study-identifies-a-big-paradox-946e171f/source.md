@@ -21,6 +21,7 @@ tags:
 - gdp
 - economics
 - scenarios
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -30,27 +31,16 @@ canonical_url: https://forecastingresearch.substack.com/p/forecasting-the-econom
 doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:26.015192Z'
+fetched_at: '2026-04-13T18:12:59.816907Z'
 short_summary: A forecasting study found that while people expect smarter machines, the impact of AI on GDP growth will be minor. Economists and the public generally expect AI to cause only a small increase in GDP by 2030.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:43.202081Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: b66cd31cd6e679692965d9f67f590ba22d75072fec039d067c2ffb73c8bdc4da
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 749d57a6ec600d843a8cc28b30208276f046bd03a672f8616289dda1849b29c9
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI, forecasting, and economics, making it highly relevant to the user's profile.
-  evidence_quotes:
-  - A forecasting study found that while people expect smarter machines, the impact of AI on GDP growth will be minor.
-  - The most surprising finding is that all the surveyed groups expect AI systems are more likely to make moderate to rapid progress in coming years rather than slo
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Major forecasting study identifies a big paradox: people think we’ll get smarter machines but the impact on GDP growth will be minor
 

@@ -22,6 +22,7 @@ tags:
 - startup success
 - business performance
 - ai use cases
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,28 +32,16 @@ canonical_url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6513481
 doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:25.103359Z'
+fetched_at: '2026-04-13T18:12:52.280767Z'
 short_summary: Startups that integrate AI into their internal operations are more successful than those that do not, leading to measurable gains in performance, customer acquisition, and revenue.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:42.788416Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 45cb4ba2311d9c0f2fe0abdfe7378335bb7642e3882c6a912fa86e10a5af3241
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: fa466ce13361356c06a30074e3d8389453b8486a0cf7afa0ce9277dfa8c8f62d
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the success of AI adoption in startups, aligning perfectly with the user's favorite topics of language models, evaluation, and LLM architecture.
-  evidence_quotes:
-  - Business school study shows how startups can benefit from AI adoption…
-  - Treated firms discover 2.7 additional AI use cases (a 44% increase), which span a broader set of activities across the firm and are especially concentrated in p
-  - Treated firms complete 12% more tasks, are 11 percentage points (18%) more likely to acquire paying customers, and ultimately generate 1.9x higher revenues comp
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Startups that adopt AI for internal use are more successful than those that don’t
 

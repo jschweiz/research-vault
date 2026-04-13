@@ -21,6 +21,7 @@ tags:
 - generative text
 - llms
 - philosophy
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -30,27 +31,16 @@ canonical_url: https://arxiv.org/abs/2603.06382
 doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:47.704982Z'
+fetched_at: '2026-04-13T18:15:05.488467Z'
 short_summary: This document discusses the difficulty of computer vision compared to generative text models, using the CHMv2 dataset as an example. It also explores philosophical themes regarding individuality, communication, and the nature of human existence.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.464498Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4d8d4bce30b46bd72e7a91ba3e5179e275baa196298cd79ad83bc7539b5e5e3a
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e7f93177d1d4c3a7e6775c2510c572d2cd9bae588e24ebf75a4a45594ec20f78
-lightweight_score:
-  relevance_score: 0.56
-  source_fit_score: 0.35
-  topic_fit_score: 0.75
-  author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics like LLMs and computer vision, but the author and source do not match the user's preferred authors or sources.
-  evidence_quotes:
-  - This document discusses the difficulty of computer vision compared to generative text models, using the CHMv2 dataset as an example.
-  - Papers like this highlight to me how much fiendish complexity there is within computer vision development and how it may take quite a while untill frontier LLMs
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Computer vision is a lot harder and less general than generative text
 

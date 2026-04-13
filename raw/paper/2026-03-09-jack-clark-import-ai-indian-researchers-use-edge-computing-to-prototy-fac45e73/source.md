@@ -21,6 +21,7 @@ tags:
 - traffic surveillance
 - camera network
 - jetson
+- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -30,28 +31,16 @@ canonical_url: https://arxiv.org/abs/2603.05217
 doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
-fetched_at: '2026-04-09T20:15:57.721485Z'
+fetched_at: '2026-04-13T18:15:17.906725Z'
 short_summary: Indian researchers developed a system using edge computing to prototype a citywide camera network for intelligent traffic monitoring in Bengaluru. This system processes video streams locally using lightweight GPUs to reduce bandwidth and enable real-time analytics.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T22:01:44.343576Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 47c227b837563eb2cb60276c1ce5992f1bdbf3aa355c72c5f402cdfd0e23cf2c
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 23293e1d83de58fcf2afa39b000d33c7ab9d67178d4c63718d22496c04fcd971
-lightweight_score:
-  relevance_score: 0.56
-  source_fit_score: 0.35
-  topic_fit_score: 0.65
-  author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: worth_a_skim
-  reason: The document is highly relevant to the user's interest in AI research and tooling, specifically involving ML models and edge computing, although it does not feature the user's favorite authors.
-  evidence_quotes:
-  - Indian researchers developed a system using edge computing to prototype a citywide camera network for intelligent traffic monitoring in Bengaluru.
-  - To do this, they scatter a bunch of lightweight GPUs (Jetson Edge accelerators) around the city, co-locating them with traffic cameras.
-  - Each Jetson then performs local fine-tuning of the YOLO-based detector, initialized with the current global weights.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Indian researchers use edge computing to prototype a citywide camera network
 
