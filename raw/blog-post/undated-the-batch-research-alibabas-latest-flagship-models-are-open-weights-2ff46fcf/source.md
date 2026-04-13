@@ -30,26 +30,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/alibabas-latest-flagship-mo
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:35.364382Z'
+fetched_at: '2026-04-13T18:33:45.930216Z'
 short_summary: Alibaba released the Qwen3.5 family of open-weights vision-language models, featuring models ranging from 0.8B to 397B parameters. These models demonstrate excellent vision performance and can run on consumer hardware, offering new possibilities for vision-language applications.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:48.937808Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f6c58a7278194e36116e802e3b5f25cc5372d5ec653309fb5f5b761756293200
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 43cce6b9ae5dd9f9c8e83243c45455f1b4b36d8ec104bb29d461db86a4c32541
-lightweight_score:
-  relevance_score: 0.602
-  source_fit_score: 0.55
-  topic_fit_score: 0.62
-  author_fit_score: 0.18
-  evidence_fit_score: 0.93
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 2 favorite-topic matches.
-  evidence_quotes:
-  - Alibaba released the Qwen3.5 family of open-weights vision-language models, featuring models ranging from 0.8B to 397B parameters. These models demonstrate exce
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 The Qwen3.5 family of open-weights vision-language models includes impressive larger models as well as a smaller one that outperforms an OpenAI open-weights model 10 times its size.
 What’s new: Alibaba released the [Qwen3.5](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrV83qgz0W69sMD-6lZ3m4N6ZPm-lCQzzJW41wLD42f7dcGW58ZMPJ40ftmrW7XFk3w6ZzDj3W6ZBkPr6QGgkFN2LLc9vmRT92W4P0sp26RLFlZW5yfsDl5L__JsW7pZFhC3gb_NfW5JhL0g44XKQPW7rZZB95mft7fW2DYXlS4j_8KlW1pVFnZ6rnDkvN5p3yDNvJc43W2j8_YF891JvBW1G5dQ777LCsyW7SgK_J877rgsW3lxFKB4byh66W5-l5PP17SW7dW1ckPTh2f7Ymyf8B9pPM04&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152693723%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=er1%2F5Wy6Ngi84OQdOwkvSW%2F5kV5m%2Fuh7hv6gVSn%2F9jY%3D&reserved=0) family of eight open weights vision-language models. The largest are Qwen3.5-397B-A17B (397 billion parameters, 17 billion active per token), which offers open weights, and Qwen3.5-Plus, a hosted version of Qwen3.5-397B-A17B that supports agentic applications by providing a larger input context and built-in tools that it can select autonomously. Four medium-size models include the open-weights Qwen3.5-122B-A10B, Qwen3.5-35B-A3B, and Qwen3.5-27B, plus Qwen3.5-Flash, a hosted version of Qwen3.5-53B-A3B that’s outfitted for agentic applications. Among the smaller Qwen3.5 members of the family — Qwen3.5-9B, Qwen3.5-4B, Qwen3.5-2B, and Qwen3.5-0.8B — the 9-billion and 4-billion parameter variations rival the performance of much larger models.

@@ -33,26 +33,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/googles-aletheia-uses-gemin
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:41.064651Z'
+fetched_at: '2026-04-13T18:33:52.514321Z'
 short_summary: Google introduced Aletheia, an agentic system using Gemini 3 Deep Think to generate, verify, and revise solutions to unsolved math problems. Researchers found Aletheia solved 212 of Paul Erdős's unsolved problems.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:48.109708Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 18408c29d26fd2badd201bb239ad98f14bb4c3af4c4de2401ed7b94ae93f73dd
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: f8f092304aa9f6e9201ddace60cce084433aa94e3be56887498523e10a5c372d
-lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
-  evidence_quotes:
-  - Google introduced Aletheia, an agentic system using Gemini 3 Deep Think to generate, verify, and revise solutions to unsolved math problems. Researchers found A
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 LLMs have achieved gold-medal performance in math competitions. An agentic system showed strength in mathematical research as well.
 What’s new: Tony Feng, Quoc V. Le, Thang Luong, and colleagues at Google introduced [Aletheia](https://arxiv.org/abs/2602.10177?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-__PLGlWst6ErppMVsgt5XeNmlrvvBPZnQ4ZW6YCtaQ-ifMXNEgKyU1jQoozrmdTu5PemqX), an agent that generated, verified, and revised solutions to previously unsolved math problems. Aletheia is an agentic workflow for math research that uses the latest update of Gemini 3 Deep Think, a specialized reasoning mode of the Gemini 3 Pro model for subscribers to the company’s top-tier AI service. Concurrently, Google made Gemini 3 Deep Think more widely available via API.

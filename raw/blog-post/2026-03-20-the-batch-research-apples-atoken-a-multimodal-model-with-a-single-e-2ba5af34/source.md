@@ -32,26 +32,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/apples-atoken-a-multimodal-
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:31.674509Z'
+fetched_at: '2026-04-13T18:33:42.739853Z'
 short_summary: Apple developed AToken, a multimodal model featuring a single encoder and tokenizer for images, videos, and 3D objects. This model unifies these media types by training to reconstruct inputs and align embeddings to text.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:48.382229Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b92aeedd67dc34ced666ebfa95beb622e17df4613503932ed6dd4c38f66249d3
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 3d124ca857f88192eeff8c5afd2eef10b283bbf850cac9f45240be8309bd58c9
-lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - 'Apple developed AToken, a multimodal model featuring a single encoder and tokenizer for images, videos, and 3D objects. This model unifies these media types by '
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Multimodal models typically use different tokenizers to embed different media types, and different encoders when training to generate media rather than classify it. A team at Apple created a multidimensional tokenizer that maps not just images and videos, but also 3D objects into a shared token space for any of these visual media — and a shared encoder that performs well at both identifying such objects and generating them.
 What’s new: Jiasen Lu, Liangchen Song, and colleagues from Apple trained [AToken,](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrVs3qgz0W6N1vHY6lZ3lsW3TtmBQ4_q2j4V8-y_P62mQRDW1vy8QB8Q9jm0N1v3ZtWT0pF5W1grG5r1lsJLQW6rSddk6dXS-8N5DBYcTYXsqfW70vVdf8pZklJW69q4wp6sZ3psW63KNZ66DSc8_W14lSp229cgnrW8B-TJR80sJkYN54kdymxX_xrW2d2Jxg28lGR5W26Yhlz6T-wG_My3rc1kz3nhW3k2MDQ1p9XvfW970w-V3FpJqfW1lm5QQ57fW7wW20GhL81SLBl9W2GWH5K5bCB95W222_Wq86cL6Nf1m4yd-04&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152868656%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=fRtrHm7VYifErx22LZC8WTufKEb9KmzyhUcvGW2pw6o%3D&reserved=0) a transformer model with an all-purpose visual tokenizer. The new model can both generate and classify images, videos, and 3D, approaching the performance of specialized models for each of these input and output types.

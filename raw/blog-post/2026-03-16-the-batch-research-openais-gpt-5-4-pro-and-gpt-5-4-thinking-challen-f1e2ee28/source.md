@@ -31,28 +31,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/openais-gpt-5-4-pro-and-gpt
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:39.272555Z'
+fetched_at: '2026-04-13T18:33:51.750314Z'
 short_summary: OpenAI's GPT-5.4 models, including the Pro variant, have achieved state-of-the-art performance on various benchmarks, challenging Google's Gemini models. The models are designed to enhance tool use and reasoning, showing strong performance in tasks related to knowledge work and computer use.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:48.279748Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 46f229605d4f75892b5dc4d2d2de84e616cbb6ad6f276b54447226053572579f
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 145a997513a9e045036f102a7b20af9fcbdc53cab4ff4693f431b57b9dd62b70
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.8
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics (LLM performance, evaluation, and architecture) and features favorite authors (OpenAI).
-  evidence_quotes:
-  - OpenAI's GPT-5.4 models, including the Pro variant, have achieved state-of-the-art performance on various benchmarks, challenging Google's Gemini models.
-  - 'GPT-5.4 Pro set to xhigh topped Artificial Analysis’ Coding and Agentic indices (subsets of the Intelligence Index devoted to each broad category), with scores '
-  - OpenAI’s GPT 5.4 has vaulted over Anthropic’s Claude — for the moment — to challenge Google's Gemini for the top spot.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 OpenAI updated its flagship models, extending the ability to use tools and setting the state of the art on a handful of benchmarks, and priced them at the top of the market. Its coding and agentic abilities have enabled Codex, OpenAI’s competitor to Anthropic’s Claude Code, to leap ahead.
 What’s new: GPT-5.4 comes in two variants, Thinking and Pro, both with an expanded context window relative to GPT-5.2. (Only two days elapsed between the launch of GPT-5.3 and GPT-5.4, and OpenAI offered no explanation.) GPT-5.4 models are trained to use computers natively and help agents find and use tools more efficiently, a capability called tool search.

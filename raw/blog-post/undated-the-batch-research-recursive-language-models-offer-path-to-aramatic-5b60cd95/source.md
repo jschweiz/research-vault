@@ -33,26 +33,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/recursive-language-models-o
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:25.936693Z'
+fetched_at: '2026-04-13T18:33:34.645797Z'
 short_summary: Researchers developed Recursive Language Models (RLMs) that process long prompts by offloading context to an external environment and managing it programmatically. This method allows models to maintain high precision when reasoning over extremely long documents.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:50.685250Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9bfb54a11dae4fa01abc0240b81d200120816da4dd332f3d7b5028d1c1532b71
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 6e50efcd893be199490425a71c0af155eea999c145fa36085b38689766a56a3e
-lightweight_score:
-  relevance_score: 0.616
-  source_fit_score: 0.55
-  topic_fit_score: 0.62
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 2 favorite-topic matches.
-  evidence_quotes:
-  - Researchers developed Recursive Language Models (RLMs) that process long prompts by offloading context to an external environment and managing it programmatical
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 When processing long contexts, large language models often lose track of details or devolve into nonsense. Researchers reduced these effects by managing context externally.
 What’s new: MIT’s Alex L. Zhang, Tim Kraska, and Omar Khattab developed [Recursive Language Models](https://arxiv.org/abs/2512.24601?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) (RLMs) that process long prompts encountered in books, web searches, and codebases by offloading prompts to an external environment and managing them programmatically.

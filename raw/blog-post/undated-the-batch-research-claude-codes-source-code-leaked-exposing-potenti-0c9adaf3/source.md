@@ -31,26 +31,16 @@ canonical_url: https://www.deeplearning.ai/the-batch/claude-codes-source-code-le
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T21:59:24.190076Z'
+fetched_at: '2026-04-13T18:33:33.701222Z'
 short_summary: The source code for Claude Code was leaked, exposing over 512,000 lines of code and revealing internal architectural details. The leak also hints at future features like the Kairos subsystem and an 'undercover mode'.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T22:09:49.049876Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5788f1fc69117994c87891956f6283d9c056df3fc0b37771656195b743481eab
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: fff25709d6df8feeb084366c067c614d215b50c36b54f07ba6f67abba7eefd1a
-lightweight_score:
-  relevance_score: 0.517
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
-  evidence_quotes:
-  - The source code for Claude Code was leaked, exposing over 512,000 lines of code and revealing internal architectural details. The leak also hints at future feat
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 The inner workings of the popular coding agent Claude Code are available for all to see.
 What’s new: A recent version of Claude Code’s Node.js package accidentally included a key that [revealed](https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) the code behind its command-line interface. Chaofan Shou, an intern at the blockchain startup Solayer Labs, unlocked the code and published it. Engineers rapidly deciphered its secrets.
