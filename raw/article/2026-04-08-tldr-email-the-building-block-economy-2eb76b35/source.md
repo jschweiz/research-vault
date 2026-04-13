@@ -22,6 +22,7 @@ tags:
 - building blocks
 - open source
 - software adoption
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -31,28 +32,16 @@ canonical_url: https://mitchellh.com/writing/building-block-economy
 doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:02.286723Z'
+fetched_at: '2026-04-13T18:31:10.317320Z'
 short_summary: The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:16:36.948672Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 101d3976ba71a143dc89d4121a6189bb597a918f213af998a1566b48e0eb4ed7
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e39dab92d04ce3ac99506b605b4ae52dce1eb862f5bc042bcdb670ab548041c9
-lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.55
-  author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on software development and adoption, which is tangentially related to LLM/ML tooling, but lacks specific focus on the user's favorite LLM/architecture topics.
-  evidence_quotes:
-  - The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leadi
-  - Agents readily pick open and free software over closed and commercial.
-  - Closed-source, commercial software is at a massive disadvantage.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The Building Block Economy
 

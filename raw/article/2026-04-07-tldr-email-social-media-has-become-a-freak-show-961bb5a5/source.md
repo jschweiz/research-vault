@@ -21,6 +21,7 @@ tags:
 - ecosystem
 - competition
 - environment
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://www.natesilver.net/p/social-media-has-become-a-freak-show
 doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:03.673837Z'
+fetched_at: '2026-04-13T18:31:34.995078Z'
 short_summary: The current social media ecosystem is unhealthy and shrinking. This lack of competition allows strange phenomena to occur, which can become fitness advantages in isolated environments.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:15:43.358251Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 7ed35f7ff48a53526dfbac3877f3d572443c337a74bdd81f149a9bed9fc7189b
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: cf862ee0e66ea8dd48ca5aeafa99b5ba3483239276ed25bd213214f81d02fc17
-lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
-  author_fit_score: 0.0
-  evidence_fit_score: 0.35
-  confidence_score: 0.8
-  bucket_hint: archive
-  reason: The document is about social media and ecosystem dynamics, which has weak topical overlap with the user's focus on LLMs and AI research.
-  evidence_quotes:
-  - The current social media ecosystem is unhealthy and shrinking.
-  - This lack of competition allows strange phenomena to occur, which can become fitness advantages in isolated environments.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Social media has become a freak show
 

@@ -21,6 +21,7 @@ tags:
 - tech
 - software
 - career
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://www.elenaverna.com/p/confessions-of-a-millennial-in-tech
 doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
-fetched_at: '2026-04-09T12:15:28.850261Z'
+fetched_at: '2026-04-13T18:31:34.255027Z'
 short_summary: Millennials may be the last generation focused on software careers, facing challenges explaining software and AI to other generations. The advantage in software creation is shifting as AI becomes involved.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:21.811249Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 1bfc73a14ba885fb72cdec86c05335610f7c3fdd0f2380fb0e79c81cb55b7845
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a3d41e9ff91dfc2204072cbb230eeadecf930c7ddecaebd2931e656919097df9
-lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.35
-  author_fit_score: 0.0
-  evidence_fit_score: 0.16
-  confidence_score: 0.8
-  bucket_hint: archive
-  reason: The document touches on AI and software careers, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
-  evidence_quotes:
-  - Millennials may be the last generation focused on software careers, facing challenges explaining software and AI to other generations.
-  - The advantage in software creation is shifting as AI becomes involved.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Confessions of a Millennial in Tech
 

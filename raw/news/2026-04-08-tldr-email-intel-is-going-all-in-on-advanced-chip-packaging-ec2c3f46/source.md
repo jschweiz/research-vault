@@ -21,6 +21,7 @@ tags:
 - chip packaging
 - google
 - amazon
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,26 +31,16 @@ canonical_url: https://arstechnica.com/gadgets/2026/04/intel-is-going-all-in-on-
 doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
-fetched_at: '2026-04-09T12:15:21.024401Z'
+fetched_at: '2026-04-13T18:31:03.764353Z'
 short_summary: Intel is focusing heavily on advanced chip packaging, which involves combining multiple chiplets onto a single chip. This is driven by the growing demand for custom chips fueled by AI computing power.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:26.758837Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 776ce32718557cc224932b62e61bf5d9cbab4a19eaa76954ab7ea8c9463460c0
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 9fad5253a5c69cc831740a3dddf392c5929512d8359f450c32f96f9608f7a26e
-lightweight_score:
-  relevance_score: 0.4085
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9527
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - Intel is focusing heavily on advanced chip packaging, which involves combining multiple chiplets onto a single chip. This is driven by the growing demand for cu
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Intel is going all-in on advanced chip packaging
 

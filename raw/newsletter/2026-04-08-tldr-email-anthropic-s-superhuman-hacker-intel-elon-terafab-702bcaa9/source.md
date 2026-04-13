@@ -25,28 +25,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6cbf281a180f0
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T12:15:17.114567Z'
+fetched_at: '2026-04-13T18:30:54.406594Z'
 short_summary: TLDR roundup on Anthropic's superhuman hacker, Intel + Elon Terafab, S3 Files. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T14:34:22.992371Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 5203b2afb6426f7534eb1ca78bdea4de9324483b6187f7594286ec3db4a5d841
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: e8da42b9633d86d85bfc7b8e80a5a6a6d090cb6b9f6b846df6854c09739da446
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI, LLMs, and related technology, and features Anthropic, a favorite author.
-  evidence_quotes:
-  - Anthropic claims its new Claude Mythos Preview model is too powerful to be released to the public.
-  - Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos.
-  - OpenAI recently proposed policy for the age of superintelligence.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁
 

@@ -21,6 +21,7 @@ tags:
 - tutoring
 - meta
 - anthropic
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,28 +31,16 @@ canonical_url: https://www.mackenziemorehead.com/the-2-sigma-problem-the-1-1-tut
 doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:01.078805Z'
+fetched_at: '2026-04-13T18:30:39.680877Z'
 short_summary: The technology for 1:1 tutoring has arrived, and studies indicate that even average tutors yield significant score improvements. AI is poised to resolve the conflict between engagement and substantive learning, potentially leading to a superhuman teacher.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:17:35.205662Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 023180fbf2217f84a782cc4f83736ce8e35e4f50221ae270ef88ec9256bb92dd
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: bc0e989f3c4a0a04ab2ce4ed9bd65e975e50931624e3edfe16ce4b4cfd30b423
-lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.45
-  author_fit_score: 0.0
-  evidence_fit_score: 0.55
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI and education, which is tangentially related to the user's interest in language models and research tooling, but lacks direct focus on LLM architecture or evaluation.
-  evidence_quotes:
-  - The technology for 1:1 tutoring has arrived.
-  - With AI, engagement and substantive learning no longer have to be diametrically opposed.
-  - A superhuman teacher will soon be buildable as AI labs continue to improve on accuracy and hallucination problems.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The 2-Sigma Problem: The 1:1 Tutor
 

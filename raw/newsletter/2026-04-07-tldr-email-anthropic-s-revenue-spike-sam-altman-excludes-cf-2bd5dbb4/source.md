@@ -25,28 +25,16 @@ canonical_url: https://mail.google.com/mail/u/0/#inbox/19d6798e228bebe1
 doc_role: primary
 parent_id: null
 index_visibility: hidden
-fetched_at: '2026-04-09T12:15:26.561217Z'
+fetched_at: '2026-04-13T18:31:22.376439Z'
 short_summary: TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context. Includes 8 editorial stories across 4 sections, plus 6 quick links.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T14:34:22.965262Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: af99fbb6a8c4ef5218de1aa495fae4a0b723c87f1b91ced0be02bf86457610fb
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 41a75e6a728f8a2833b3753eb44dd69b3b669de17c9757b31612a0e667e125b2
-lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.3
-  topic_fit_score: 0.95
-  author_fit_score: 0.0
-  evidence_fit_score: 0.85
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document strongly aligns with the user's favorite topics (LLM/AI, evaluation, research tooling) and features favorite authors (Anthropic, OpenAI), making it highly relevant.
-  evidence_quotes:
-  - Anthropic's annual revenue run-rate has spiked from roughly $9 billion at the end of 2025 to more than $30 billion.
-  - OpenAI's CFO, Sarah Friar, reportedly told colleagues earlier in the year that she didn't believe the company could be ready to go public in 2026.
-  - Meta's AI agents weren't making useful edits quickly enough when pointed at one of the company's large-scale data processing pipelines.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖
 

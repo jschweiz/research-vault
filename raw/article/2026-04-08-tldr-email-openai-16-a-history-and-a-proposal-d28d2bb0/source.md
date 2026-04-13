@@ -21,6 +21,7 @@ tags:
 - superintelligence
 - cybersecurity
 - policy
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a
 doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:02.517076Z'
+fetched_at: '2026-04-13T18:31:14.852401Z'
 short_summary: Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:16:11.520345Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 59d95d18fecf0228b7d423e6259e724fff5662779ffda2d9555482f03d477053
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3df8ac9a3c1477c7d18059dc93df3981f1c9e972d2333faade6233f0678e64fa
-lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.95
-  author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.
-  evidence_quotes:
-  - OpenAI has proposed policy for the age of superintelligence.
-  - Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # OpenAI #16: A History and a Proposal
 

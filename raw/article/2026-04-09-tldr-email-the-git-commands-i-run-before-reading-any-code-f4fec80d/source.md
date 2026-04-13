@@ -21,6 +21,7 @@ tags:
 - codebase
 - commit history
 - software development
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,28 +31,16 @@ canonical_url: https://piechowski.io/post/git-commands-before-reading-code
 doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:01.172203Z'
+fetched_at: '2026-04-13T18:30:43.468417Z'
 short_summary: This post introduces five git commands that help diagnose a codebase by examining commit histories to understand authorship, problem clustering, and project health. These commands guide developers on which code to read first and what to look for.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:17:55.543568Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 63998ef16a98af6e8f2dfc14f7b5f7b1741b24617cab8c12e3ec844daa84e7a8
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 61e6702ec110d1a0fff927a5a436a345a6b5e73b4745cf7a4dc242360ae423c0
-lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
-  author_fit_score: 0.0
-  evidence_fit_score: 0.35
-  confidence_score: 0.8
-  bucket_hint: archive
-  reason: The document is about Git commands, which has minimal direct overlap with the user's favorite topics of LLMs, evaluation, and architecture.
-  evidence_quotes:
-  - This post introduces five git commands that help diagnose a codebase by examining commit histories to understand authorship, problem clustering, and project hea
-  - Commit histories can provide a diagnostic picture of a project.
-  - They tell you who built it, where the problems cluster, and whether a team is shipping with confidence or tiptoeing around land mines.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # The Git Commands I Run Before Reading Any Code
 

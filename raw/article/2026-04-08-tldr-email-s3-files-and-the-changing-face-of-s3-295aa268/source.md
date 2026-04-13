@@ -21,6 +21,7 @@ tags:
 - filesystem
 - ec2
 - lambda
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://www.allthingsdistributed.com/2026/04/s3-files-and-the-cha
 doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:02.180973Z'
+fetched_at: '2026-04-13T18:31:06.022968Z'
 short_summary: S3 Files allows developers to mount S3 buckets as filesystems on various compute instances. It provides a familiar directory structure while operating on S3 objects.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:16:24.104347Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 10f7b683b8bf24c448f9bc35608933dc43dde86424273b4163d991b57d8129fc
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9172629f41943dce7a9fe2b024181223b5416495ea323ffea7fbb58399489191
-lightweight_score:
-  relevance_score: 0.25
-  source_fit_score: 0.1
-  topic_fit_score: 0.1
-  author_fit_score: 0.0
-  evidence_fit_score: 0.3
-  confidence_score: 0.8
-  bucket_hint: archive
-  reason: The document is about S3 files and distributed systems, which has tangential relevance to the user's focus on LLMs and reasoning tooling.
-  evidence_quotes:
-  - S3 Files allows developers to mount S3 buckets as filesystems on various compute instances.
-  - S3 Files lets developers mount any S3 bucket or prefix as a filesystem on an EC2 instance, container, or Lambda function.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # S3 Files and the changing face of S3
 

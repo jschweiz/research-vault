@@ -22,6 +22,7 @@ tags:
 - doe approval
 - mark0 reactor
 - reactor demonstrator
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -31,27 +32,16 @@ canonical_url: https://interestingengineering.com/energy/us-antares-doe-approval
 doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:00.959225Z'
+fetched_at: '2026-04-13T18:30:34.784096Z'
 short_summary: The US nuclear startup Antares received Department of Energy approval for its Mark0 reactor demonstrator. The company aims to achieve criticality for its reactor before the 4th of July and plans to work on electricity generation for its Mark1 demonstration next year.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:18:13.807704Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: d4836f8f5483f06c4edbf370f4fc4176172fb37cfb0abc9d30add9b9b154d675
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c0f568ea9d3ee51cb3e0e85c2962dd00bc932980b54ca49df2f6d59f38f2e7de
-lightweight_score:
-  relevance_score: 0.05
-  source_fit_score: 0.0
-  topic_fit_score: 0.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.0
-  confidence_score: 1.0
-  bucket_hint: archive
-  reason: The document is about nuclear energy and does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
-  evidence_quotes:
-  - The US nuclear startup Antares received Department of Energy approval for its Mark0 reactor demonstrator.
-  - The California-headquartered startup is developing microreactors.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator
 

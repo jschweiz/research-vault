@@ -21,6 +21,7 @@ tags:
 - context
 - reality
 - llms
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms
 doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:02.398051Z'
+fetched_at: '2026-04-13T18:31:13.930301Z'
 short_summary: AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage. Taste is achieved by paying close attention to reality and combining it with context and constraints.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:15:58.365946Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: f3ad35b09164fa3834462bd6f51ecb922012eeb2bd9a821684eb9ba1dacfa60b
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d95834ceedbf9f6cffb43996128b6646ff28a2bd3a37b18095e5fbad3efbb0ec
-lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.36
-  topic_fit_score: 0.55
-  author_fit_score: 0.0
-  evidence_fit_score: 0.55
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on LLMs and AI but focuses more on the philosophy of taste and context rather than the technical evaluation or architecture favored by the user.
-  evidence_quotes:
-  - AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.
-  - Taste is achieved by paying close attention to reality and combining it with context and constraints.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Good Taste the Only Real Moat Left
 

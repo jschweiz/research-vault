@@ -21,6 +21,7 @@ tags:
 - tokens
 - tracking
 - internal system
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,28 +31,16 @@ canonical_url: https://gizmodo.com/cast-adrift-meta-employees-have-no-idea-who-t
 doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:01.438510Z'
+fetched_at: '2026-04-13T18:30:48.388274Z'
 short_summary: Meta had an internal system tracking employee token usage, which ranked staff and awarded badges. The system was shut down because the data was shared externally.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:17:03.804874Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 21c3c141b70ec8c678bc638cf47f5b1f727fa7d825a91674cba4a31d6c3fa190
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9fb14a47672261dc72509fc7c17865a2c8f330ba5a37c88d05d213f0b538135c
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses token usage and internal tracking systems at Meta, which aligns perfectly with the user's favorite topics of language models and LLM architecture.
-  evidence_quotes:
-  - Meta had an internal system called Claudeonmics that tracked employees' token usage.
-  - Meta's staff reportedly used up about 60 trillion tokens in just 30 days, with the person in the top spot racking up 281 billion tokens.
-  - Meta has shut down the tracking system due to the data being shared externally.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore
 

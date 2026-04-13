@@ -21,6 +21,7 @@ tags:
 - data pipelines
 - tribal knowledge
 - software engineering
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,27 +31,16 @@ canonical_url: https://engineering.fb.com/2026/04/06/developer-tools/how-meta-us
 doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:03.434958Z'
+fetched_at: '2026-04-13T18:31:33.509323Z'
 short_summary: Meta developed a pre-compute engine using over 50 AI agents to systematically read data pipelines and encode tribal knowledge into structured navigation guides for all code modules.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:15:31.617695Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 6377d1d40d8bfa6632689ffba11740bcbf6c08ec1ad8351dbd6b4da08ea898f8
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b6b2272993bf1482995d5d17b16380552b57c7e75e47c402743b7c860425e529
-lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.85
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 0.95
-  bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics like AI and research tooling, making it relevant, though the specific authors do not match preferences.
-  evidence_quotes:
-  - 'Meta developed a pre-compute engine using over 50 AI agents to systematically read data pipelines and encode tribal knowledge into structured navigation guides '
-  - The system works with most leading models because the knowledge layer is model-agnostic.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines
 

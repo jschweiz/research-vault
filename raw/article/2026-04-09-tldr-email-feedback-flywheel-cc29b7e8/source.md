@@ -21,6 +21,7 @@ tags:
 - loop
 - machine learning
 - system improvement
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -30,28 +31,16 @@ canonical_url: https://martinfowler.com/articles/reduce-friction-ai/feedback-fly
 doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
-fetched_at: '2026-04-09T12:05:01.263826Z'
+fetched_at: '2026-04-13T18:30:44.308686Z'
 short_summary: AI interactions generate signals that can be fed back into a system to improve collective experience. This creates a feedback loop where individual interactions lead to continuous system improvement.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:17:16.887593Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: ac4a720a9b6ca200779e971cf27bdaa415426ea63baf01b5e1a8ff33cf67ae87
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: be6bdc370c3be7ea4b43d50330095c9c88159c75ca8ff41b23cc0c35d5c9bd00
-lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.9
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 0.95
-  bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics like LLM evaluation and system improvement, making it highly relevant despite lacking specific author matches.
-  evidence_quotes:
-  - AI interactions generate signals that can be fed back into a system to improve collective experience.
-  - This creates a feedback loop where individual interactions lead to continuous system improvement.
-  - Every AI interaction generates a signal.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # Feedback Flywheel
 

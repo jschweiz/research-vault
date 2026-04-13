@@ -22,6 +22,7 @@ tags:
 - reliability
 - machine learning
 - physical ai
+- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -31,26 +32,16 @@ canonical_url: https://arstechnica.com/ai/2026/04/generalists-new-physical-robot
 doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
-fetched_at: '2026-04-09T12:15:27.912282Z'
+fetched_at: '2026-04-13T18:31:31.295333Z'
 short_summary: The GEN-1 robotics model has achieved 99% reliability in physical tasks, demonstrating production-level success rates. The system can also improvise new moves in response to disruptions.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:26.273250Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 4e88088edc42a3a18531bcb5ad00f72d500113000f996a477a49e0486e5250e0
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: fb057b76c3ca5492630646a11bef6671f5bba68148df898eaae3e0f5b6fdb674
-lightweight_score:
-  relevance_score: 0.4138
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.979
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - The GEN-1 robotics model has achieved 99% reliability in physical tasks, demonstrating production-level success rates. The system can also improvise new moves i
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 # From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability
 
