@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/mistral-small-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:52.005696Z'
+fetched_at: '2026-04-13T18:25:16.296588Z'
 short_summary: Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust language and instruction following with low latency, making it competitive with larger models and suitable for local deployment.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:19:33.800192Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 74ecb7fb9ba42c2e19fec3254eeb0ca64e29ccd83f1d931c98ac467be95f43ca
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a38282fa94740f21093469f9765ac9ba3e3631a50496341601915d7596a0965b
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.95
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, performance, and open-source models, and features authors from the preferred list.
-  evidence_quotes:
-  - Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust language and instruction following with low latency, making it competitive with l
-  - Mistral Small 3 complements large open-source reasoning models like the recent releases of DeepSeek, and can serve as a strong base model for making reasoning c
-  - Mistral Small 3 is now available on la Plateforme as mistral-small-latest or mistral-small-2501.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today we’re introducing Mistral Small 3, a latency-optimized 24B-parameter model released under the Apache 2.0 license.
 Mistral Small 3 is competitive with larger models such as Llama 3.3 70B or Qwen 32B, and is an excellent open replacement for opaque proprietary models like GPT4o-mini. Mistral Small 3 is on par with Llama 3.3 70B instruct, while being more than 3x faster on the same hardware.

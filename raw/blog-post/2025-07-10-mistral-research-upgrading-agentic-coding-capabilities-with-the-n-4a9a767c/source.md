@@ -32,28 +32,16 @@ canonical_url: https://mistral.ai/news/devstral-2507
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:37.421689Z'
+fetched_at: '2026-04-13T18:23:32.208413Z'
 short_summary: Mistral AI and All Hands AI released the Devstral models, including Devstral Small 1.1 and Medium, focusing on agentic coding capabilities. These models offer state-of-the-art performance for code agents and are available via API.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:22:52.567760Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 758558b12060147ccaaeb075f041318735e66742b01945a1a7ea15609725c24b
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d84499ffe47a280bfb94accc5285120c66ce2ed80eee9031ccd62d5c3fb65266
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.9
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM models, evaluation, and agentic capabilities, and features authors from the user's preferred list.
-  evidence_quotes:
-  - Mistral AI and All Hands AI released the Devstral models, including Devstral Small 1.1 and Medium, focusing on agentic coding capabilities.
-  - Devstral Small 1.1 achieves a score of 53.6% on SWE-Bench Verified, and sets a new state-of-the-art for open models without test-time scaling.
-  - Devstral Medium is available through our public API, and offers exceptional performance at a competitive price point, making it an ideal choice for businesses a
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. These models are released under the collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, with a strong emphasis on generalization to different prompts and agentic scaffolds.
 The new Devstral Small 1.1 is released under the Apache 2.0 license, and is state-of-the-art amongst open models for code agents. Devstral Medium is available through our API, and sets a new point on the cost/performance pareto frontier, surpassing Gemini 2.5 Pro and GPT 4.1 for a quarter of the price.

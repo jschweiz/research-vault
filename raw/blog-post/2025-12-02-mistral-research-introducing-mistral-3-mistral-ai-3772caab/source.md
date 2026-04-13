@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/mistral-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:31.805867Z'
+fetched_at: '2026-04-13T18:22:48.643501Z'
 short_summary: Mistral 3 introduces a new family of open multimodal and multilingual AI models, including Mistral Large 3 and the Ministral 3 series, emphasizing state-of-the-art performance, efficiency, and open access.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:24:04.601755Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 804431b26989be87f62ba0c5a454fcb75d70074274f1d6a816b72d1981fa8dce
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2a7ffa68e76d1e00bb708305188be6284a95e8da5278ea075948174b267da293
-lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, multimodal AI, and state-of-the-art model releases from a favorite author.
-  evidence_quotes:
-  - Mistral 3 introduces a new family of open multimodal and multilingual AI models, including Mistral Large 3 and the Ministral 3 series, emphasizing state-of-the-
-  - Mistral Large 3 is one of the best permissive open weight models in the world, trained from scratch on 3000 of NVIDIA’s H200 GPUs.
-  - 'Mistral Large 3 debuts at #2 in the OSS non-reasoning models category (#6 amongst OSS models overall) on the [LMArena leaderboard](https://lmarena.ai/leaderboar'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Introducing Mistral 3
 The next generation of

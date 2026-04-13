@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/voxtral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:35.733966Z'
+fetched_at: '2026-04-13T18:23:12.453431Z'
 short_summary: Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence. Voxtral bridges the gap between open-source ASR systems and proprietary APIs by offering high accuracy and semantic understanding at a lower cost.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:23:19.096523Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 52fca851b6b5663b27aab975020f67191226e4c146a061e5be1d6a2889f76ada
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9674919898446173c9d72d9725d07f8c411e438ef5d9f8a116207077c25b99da
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.95
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models and evaluation by detailing the release and performance benchmarks of new speech understanding models.
-  evidence_quotes:
-  - Mistral AI released the Voxtral models, state-of-the-art speech understanding models, to provide open, affordable, and production-ready speech intelligence.
-  - Voxtral comprehensively outperforms Whisper large-v3, the current leading open-source Speech Transcription model.
-  - 'Both Voxtral models go beyond simple transcription with capabilities that include: - Long-form context: with a 32k token context length, Voxtral handles audios '
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Voice: the original UI.
 Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships. As digital systems become more capable, voice is returning as our most natural form of human-computer interaction.

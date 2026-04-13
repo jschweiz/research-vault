@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/pixtral-large
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:55.754257Z'
+fetched_at: '2026-04-13T18:25:28.967970Z'
 short_summary: Pixtral Large is a 124B open-weights multimodal model built on Mistral Large 2, demonstrating frontier-class performance in multimodal tasks like document understanding and mathematical reasoning.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:18:45.735393Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a8f23526eb7fd1e8a618258796181dfbec6bd6e964d85d1251d5344aa1e4d2da
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 7e083791d1d7e68573012e0c40d8c2de4b9fd895d90ddcecd3ed69b51b1028b2
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly discusses a new multimodal model (Pixtral Large) and its performance in reasoning and multimodal tasks, aligning perfectly with the user's favorite topics of LLM architecture, evaluation, and reasoning.
-  evidence_quotes:
-  - Pixtral Large is a 124B open-weights multimodal model built on top of Mistral Large 2, demonstrating frontier-class performance in multimodal tasks like documen
-  - On MathVista, which evaluates complex mathematical reasoning over visual data, our model achieves 69.4%, outperforming all other models.
-  - To assess reasoning capabilities over complex charts and documents, we evaluate performance using ChartQA and DocVQA, where Pixtral Large surpasses GPT-4o and G
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Pixtral Large in short:
 - Frontier-class multimodal performance

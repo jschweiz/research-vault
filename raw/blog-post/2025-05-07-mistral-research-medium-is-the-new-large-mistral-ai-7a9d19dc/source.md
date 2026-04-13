@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/mistral-medium-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:44.896312Z'
+fetched_at: '2026-04-13T18:24:27.165394Z'
 short_summary: Mistral Medium 3 is a new class of language models that balances state-of-the-art performance with significantly lower cost and simpler deployment for enterprise use. It excels in professional tasks like coding and multimodal understanding while offering extensive customization capabilities.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:21:26.760369Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 578037d9165139caf8f133d2ebbb590bb1221e945343f424ac2c2586b4cfce14
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 16dacbb21effda5c5cc24c99946d6120fc9e721e5b88ce609bfeb67930cb773e
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.85
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and cost efficiency, and is published by a favorite author.
-  evidence_quotes:
-  - Mistral Medium 3 is a new class of language models that balances state-of-the-art performance with significantly lower cost and simpler deployment for enterpris
-  - Mistral Medium 3 introduces a new class of models that balances - SOTA performance - 8X lower cost - simpler deployability to accelerate enterprise usage
-  - The model beats cost leaders such as DeepSeek v3, both in API and self-deployed systems.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 At Mistral AI, we are continuously pushing the frontier for both open models ([Mistral Small](https://mistral.ai/news/mistral-small-3-1), Mistral Large, Pixtral, many others) as well as enterprise models ([Mistral OCR](https://mistral.ai/news/mistral-ocr), Mistral Saba, Ministral 3B / 8B, and more). All the way from [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b), our models have consistently demonstrated performance of significantly higher-weight and more expensive models. And today, we are excited to announce Mistral Medium 3, pushing efficiency and usability of language models even further.
 Highlights.

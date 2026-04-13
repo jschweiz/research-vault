@@ -30,28 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-ocr-3
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:28.051302Z'
+fetched_at: '2026-04-13T18:22:16.761813Z'
 short_summary: Mistral OCR 3 offers state-of-the-art accuracy for document processing, significantly outperforming previous models by handling handwriting, complex tables, and low-quality scans with high fidelity.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:25:06.591151Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1008ce108877ac0d8fc697aca18d62a4b63f70e847796469e0e72205e3c6bc04
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 93c942fa77bfa5196e511ce07d407b8f72960c0380ceb4413b2ec02462214675
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.95
-  topic_fit_score: 1.0
-  author_fit_score: 0.9
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, evaluation, and research tooling, and is published by a favorite author.
-  evidence_quotes:
-  - Mistral OCR 3 offers state-of-the-art accuracy for document processing, significantly outperforming previous models by handling handwriting, complex tables, and
-  - 'Highlights - Breakthrough performance: 74% overall win rate over Mistral OCR 2 on forms, scanned documents, complex tables, and handwriting.'
-  - Now powers Document AI Playground in [Mistral AI Studio](https://console.mistral.ai/build/document-ai/ocr-playground)
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Achieving a new frontier for both accuracy and efficiency in document processing.
 Tuesday 8:30 pm.

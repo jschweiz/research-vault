@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/mistral-saba
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:50.330790Z'
+fetched_at: '2026-04-13T18:25:07.969422Z'
 short_summary: Mistral Saba is the first specialized regional language model, trained on data from the Middle East and South Asia, designed to provide accurate and culturally relevant responses. It is lightweight, fast, and can be deployed locally, supporting Arabic and many Indian-origin languages.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:20:20.492981Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: bbe19018052f4184b16cbc1808073e7e61e957368a27b8984b7ef3187977a579
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 0a3920106ac93e0fb3a10f01c472aad41e1c64ad5e0ff742b9e3a6dd8bcd0e16
-lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.5
-  topic_fit_score: 0.85
-  author_fit_score: 0.9
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is highly relevant as it discusses a new regional language model, fitting the user's interest in language models and evaluation, and is published by a favorite author.
-  evidence_quotes:
-  - 'Mistral Saba is the first specialized regional language model, trained on data from the Middle East and South Asia, designed to provide accurate and culturally '
-  - Mistral Saba is a 24B parameter model trained on meticulously curated datasets from across the Middle East and South Asia.
-  - Mistral Saba is available as an [API](http://console.mistral.ai), but importantly, it is also available to deploy locally within the security premises of custom
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Making AI ubiquitous requires addressing every culture and language. As AI proliferates globally, many of our customers worldwide have expressed a strong desire for models that are not just fluent but native to regional parlance. While larger, general-purpose models are often proficient in several languages, they lack linguistic nuances, cultural background, and in-depth regional knowledge required to serve use cases with strong regional context.
 In such scenarios, custom-trained models tailored to regional languages can grasp the unique intricacies and insights for delivering precision and authenticity. To that end, we are proud to introduce Mistral Saba, the first of our specialized regional language models.

@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/devstral-2-vibe-cli
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:30.074666Z'
+fetched_at: '2026-04-13T18:22:30.560718Z'
 short_summary: Mistral AI released Devstral 2, a next-generation open-source coding model, and the Mistral Vibe CLI, a command-line assistant for code automation.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:24:25.574632Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: dab577fc603150a03fdd8e8253c50cfa9d84bd2e758c9dbd0b0752cfa06eae17
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ecb8c040bbd06a519ca639fe5b7475922e17067c3819f56b0e18a9f3a15ef199
-lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, open-source models, and research tooling, published by a favorite author.
-  evidence_quotes:
-  - Mistral AI released Devstral 2, a next-generation open-source coding model, and the Mistral Vibe CLI, a command-line assistant for code automation.
-  - 'Devstral 2: SOTA open model for code agents with a fraction of the parameters of its competitors and achieving 72.2% on SWE-bench Verified.'
-  - 'Mistral Vibe CLI: Native, open-source agent in your terminal solving software engineering tasks autonomously.'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Content
 Today, we're releasing Devstral 2—our next-generation coding model family available in two sizes: Devstral 2 (123B) and Devstral Small 2 (24B). Devstral 2 ships under a modified MIT license, while Devstral Small 2 uses Apache 2.0. Both are open-source and permissively licensed to accelerate distributed intelligence.

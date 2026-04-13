@@ -30,28 +30,16 @@ canonical_url: https://mistral.ai/news/codestral-embed
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:40.833564Z'
+fetched_at: '2026-04-13T18:24:10.936013Z'
 short_summary: Codestral Embed is a new embedding model specialized for code, designed to outperform leading code embedders in retrieval tasks. It supports various use cases like retrieval-augmented generation, semantic code search, and duplicate detection.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:22:08.659394Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ef614cf1183a9aa6059ec08f674530ecc87cc4ca99323bcbb7dbfcf244028608
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a2f2b27ba955a8ed4ce48489028a535ed41e70ee189a0be1951fa2751891b307
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is highly relevant as it details a new embedding model specialized for code, directly aligning with the user's favorite topics of language models, evaluation, and research tooling.
-  evidence_quotes:
-  - Codestral Embed is a new embedding model specialized for code, designed to outperform leading code embedders in retrieval tasks.
-  - 'Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.'
-  - Codestral Embed facilitates rapid and efficient context retrieval for code completion, editing, or explanation tasks.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
 Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.

@@ -31,28 +31,16 @@ canonical_url: https://mistral.ai/news/devstral
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:43.317335Z'
+fetched_at: '2026-04-13T18:24:18.593535Z'
 short_summary: Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on benchmarks like SWE-Bench.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:21:47.815538Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 37003b3e652f72e187551412a920c3a8a4c32e5345aad4c63a52d7c3a6bce89c
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a6af9938a87bbf026dae00f24a5acd0a096cbaf7245df2894c3bf7178d1c10c5
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like agentic LLMs, evaluation, and software engineering, and features a favorite author.
-  evidence_quotes:
-  - 'Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on benchmarks like '
-  - 'Devstral is trained to solve real GitHub issues; it runs over code agent scaffolds such as OpenHands or SWE-Agent, which define the interface between the model '
-  - When evaluated under the same test scaffold (OpenHands, provided by [All Hands AI](https://www.all-hands.dev/) 🙌), Devstral exceeds far larger models such as De
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today we introduce Devstral, our agentic LLM for software engineering tasks. Devstral is built under a collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, and outperforms all open-source models on SWE-Bench Verified by a large margin. We release Devstral under the Apache 2.0 license.
 Agentic LLMs for software development

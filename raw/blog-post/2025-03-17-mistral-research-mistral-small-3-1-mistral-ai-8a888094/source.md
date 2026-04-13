@@ -30,28 +30,16 @@ canonical_url: https://mistral.ai/news/mistral-small-3-1
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:46.618530Z'
+fetched_at: '2026-04-13T18:24:35.239116Z'
 short_summary: Mistral Small 3.1 is a new open-source model that improves text performance, multimodal understanding, and context window, outperforming comparable proprietary models. It is designed for versatile generative AI tasks, offering lightweight and fast performance for various applications.
 lightweight_enrichment_status: succeeded
 lightweight_enriched_at: '2026-04-09T12:21:06.231545Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0797e5494b849c000c7e58241e584fa49fd6d8943c10026a2889a631b7cee4bd
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 174f6ed0134024c01550673c680649f18229d668bd9ba61006ccedad066482eb
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.8
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, performance, and open-source models, and is published by a major favorite author.
-  evidence_quotes:
-  - 'Mistral Small 3.1 is a new open-source model that improves text performance, multimodal understanding, and context window, outperforming comparable proprietary '
-  - Mistral Small 3.1 is the first open source model that not only meets, but in fact surpasses, the performance of leading small proprietary models across all thes
-  - We continue to be impressed by how the community builds on top of open Mistral models.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Today we announce Mistral Small 3.1: the best model in its weight class.
 Building on [Mistral Small 3](https://mistral.ai/news/mistral-small-3), this new model comes with improved text performance, multimodal understanding, and an expanded context window of up to 128k tokens. The model outperforms comparable models like Gemma 3 and GPT-4o Mini, while delivering inference speeds of 150 tokens per second.
