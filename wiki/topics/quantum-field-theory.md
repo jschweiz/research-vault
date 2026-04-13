@@ -9,9 +9,8 @@ source_refs:
 - 2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 backlinks:
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- topic:llms
 - topic:physics
-updated_at: '2026-04-09T16:35:04.449724Z'
+updated_at: '2026-04-09T21:02:07.764205Z'
 managed: true
 ---
 # Quantum Field Theory

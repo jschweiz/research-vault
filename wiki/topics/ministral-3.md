@@ -9,11 +9,10 @@ source_refs:
 - 2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 backlinks:
 - page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
-- topic:efficiency
 - topic:large-3
 - topic:model-release
 - topic:multimodal-ai
-updated_at: '2026-04-09T16:35:04.138478Z'
+updated_at: '2026-04-09T21:02:13.154930Z'
 managed: true
 ---
 # Ministral 3

@@ -13,7 +13,7 @@ backlinks:
 - topic:chatgpt
 - topic:product-discovery
 - topic:shopping
-updated_at: '2026-04-09T16:35:03.868796Z'
+updated_at: '2026-04-09T23:08:05.666977Z'
 managed: true
 ---
 # Powering product discovery in ChatGPT
@@ -28,8 +28,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-24T09:00:00+00:00
 - Tags: openai, official, website, blog-post, chatgpt, product discovery, shopping, agentic commerce
 - Topics: [Agentic Commerce](../topics/agentic-commerce.md), [Chatgpt](../topics/chatgpt.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Product Discovery](../topics/product-discovery.md), [Shopping](../topics/shopping.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

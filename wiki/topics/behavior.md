@@ -10,9 +10,8 @@ source_refs:
 backlinks:
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - topic:emotion
-- topic:llm
 - topic:representation
-updated_at: '2026-04-09T16:35:04.280775Z'
+updated_at: '2026-04-09T23:10:02.669825Z'
 managed: true
 ---
 # Behavior

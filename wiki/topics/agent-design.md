@@ -9,10 +9,9 @@ source_refs:
 - 2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 backlinks:
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
-- topic:ai-agents
 - topic:business-simulation
 - topic:large-language-models
-updated_at: '2026-04-09T16:35:04.110236Z'
+updated_at: '2026-04-09T23:10:03.016294Z'
 managed: true
 ---
 # Agent Design

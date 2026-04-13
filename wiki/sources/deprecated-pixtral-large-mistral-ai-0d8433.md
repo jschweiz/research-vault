@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 backlinks: []
-updated_at: '2026-04-09T16:34:00.366759Z'
+updated_at: '2026-04-09T23:08:06.185865Z'
 managed: true
 ---
 # [Deprecated] Pixtral Large | Mistral AI
@@ -23,8 +23,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, multimodal model, pixtral large, mistral large 2, multimodal benchmarks, vision encoder
 - Topics: [Evaluations](../topics/evaluations.md), [Mistral](../topics/mistral.md), [Mistral Large 2](../topics/mistral-large-2.md), [Multimodal Benchmarks](../topics/multimodal-benchmarks.md), [Multimodal Model](../topics/multimodal-model.md), [Official](../topics/official.md)
-- Trend score: 45.05
-- Novelty score: 2.40
+- Trend score: 68.20
+- Novelty score: 1.20
 
 ## Summary
 

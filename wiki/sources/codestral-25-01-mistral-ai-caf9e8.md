@@ -16,7 +16,7 @@ backlinks:
 - topic:code-generation
 - topic:codestral
 - topic:mistral-ai
-updated_at: '2026-04-09T16:35:04.764399Z'
+updated_at: '2026-04-09T23:08:06.179594Z'
 managed: true
 ---
 # Codestral 25.01 | Mistral AI
@@ -32,7 +32,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, codestral, mistral ai, code generation, sota, ai model
 - Topics: [Code Generation](../topics/code-generation.md), [Mistral Ai](../topics/mistral-ai.md), [Ai Model](../topics/ai-model.md), [Codestral](../topics/codestral.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 2.20
 
 ## Summary

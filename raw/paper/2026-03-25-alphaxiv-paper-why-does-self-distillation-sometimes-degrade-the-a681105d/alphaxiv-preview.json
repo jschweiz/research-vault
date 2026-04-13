@@ -1,0 +1,142 @@
+{
+  "abstract": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+  "author_info": [
+    {
+      "avatar": null,
+      "blueskyUsername": null,
+      "githubUsername": null,
+      "googleScholarId": "koDFScAAAAAJ",
+      "id": "019cfb56-85e3-76a7-962f-ad377465fefd",
+      "institution": null,
+      "linkedinUsername": null,
+      "orcidId": null,
+      "publicEmail": null,
+      "realName": "Jeonghye Kim",
+      "reputation": 0,
+      "role": "user",
+      "username": "jeonghye-kim",
+      "verified": false,
+      "weeklyReputation": 0,
+      "xUsername": null
+    }
+  ],
+  "authors": [
+    "Jeonghye Kim",
+    "Xufang Luo",
+    "Minbeom Kim",
+    "Sangmook Lee",
+    "Dohyung Kim",
+    "Jiwon Jeon",
+    "Dongsheng Li",
+    "Yuqing Yang"
+  ],
+  "canonical_id": "2603.24472v1",
+  "first_publication_date": "2026-03-25T16:14:52.000Z",
+  "full_authors": [
+    {
+      "full_name": "Jeonghye Kim",
+      "id": "01985c82-f6ec-7539-b1a3-9bb4b2530cf2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xufang Luo",
+      "id": "01985c82-01cc-70b3-9379-76a1e41dac9d",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Minbeom Kim",
+      "id": "01985c81-fd7f-7bbd-97fc-8bc4026dd334",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Sangmook Lee",
+      "id": "01985c82-897e-76f2-8668-2f38a05fce01",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dohyung Kim",
+      "id": "01985c82-7ca5-7d26-91b4-f17aad327bd7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jiwon Jeon",
+      "id": "01985c84-0a5d-77c9-9687-61dd7a4eccfd",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Dongsheng Li",
+      "id": "01985c81-eea8-70ed-aa26-5182fcc3f6e2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yuqing Yang",
+      "id": "01985c81-df57-782b-88bd-b7a84e0fa59c",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 36,
+  "github_url": "https://github.com/beanie00/self-distillation-analysis",
+  "id": "019d280b-ccb3-73b8-8227-1792bb4dac48",
+  "image_url": "image/2603.24472v1.png",
+  "metrics": {
+    "public_total_votes": 205,
+    "total_votes": 64,
+    "visits_count": {
+      "all": 2314,
+      "last_7_days": 1236
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d280b-ccb3-73b8-8227-1792bb4dac48",
+  "paper_summary": {
+    "keyInsights": [
+      "Richer conditioning contexts in self-distillation monotonically reduce response length and suppress epistemic verbalization (expressions of uncertainty) in LLMs.",
+      "Suppressing epistemic verbalization during training, even with correct solutions, hinders an LLM's ability to perform robust mathematical reasoning and generalize to out-of-distribution problems.",
+      "There exists a trade-off: self-distillation enables rapid optimization and efficiency for tasks with low coverage but becomes detrimental for broad task coverage where epistemic verbalization is crucial for generalization."
+    ],
+    "originalProblem": [
+      "Self-distillation, a post-training method, frequently improves LLM performance and efficiency by producing shorter reasoning traces across various domains.",
+      "Despite reducing response length, self-distillation often leads to performance degradation in mathematical reasoning tasks, contrasting with positive results in other fields.",
+      "The underlying mechanisms for this domain-specific degradation and the role of response length reduction needed investigation."
+    ],
+    "results": [
+      "Solution-guided generation (richer context) reduced average response length from 13,054 to 1,873 tokens and epistemic tokens from 182.5 to 8.8.",
+      "SFT on epistemically suppressed training data degraded DeepSeek-R1-Distill-Qwen-7B's AIME24 score from 54.79 to 20.21, while SFT on epistemically rich data showed no significant change.",
+      "On-policy SDPO frequently resulted in up to 40% performance drops on math benchmarks (e.g., AIME24) across various models (DeepSeek-R1-Distill-Qwen-7B, Qwen3-8B, OLMo-3-7B-Instruct), whereas GRPO maintained or slightly improved performance."
+    ],
+    "solution": [
+      "The study conducted controlled experiments varying the informational richness of the teacher model's conditioning context to observe its impact on response length and epistemic verbalization.",
+      "Researchers performed supervised fine-tuning (SFT) using datasets of correct but epistemically rich versus epistemically suppressed responses to isolate the effect of reasoning style.",
+      "They compared on-policy self-distillation (SDPO) against GRPO (Generalized Reinforcement with Policy Optimization) across different models and task coverage levels in mathematical benchmarks."
+    ],
+    "summary": "Research from Microsoft Research, KAIST, and Seoul National University reveals that while self-distillation consistently shortens LLM reasoning traces, it can degrade mathematical reasoning capabilities, particularly on out-of-distribution tasks. This performance drop is linked to the suppression of \"epistemic verbalization,\" or expressions of uncertainty, which are found to be critical for robust generalization."
+  },
+  "publication_date": "2026-03-25T16:14:52.000Z",
+  "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+  "topics": [
+    "Computer Science",
+    "cs.CL",
+    "cs.LG",
+    "domain-adaptation",
+    "explainable-ai",
+    "fine-tuning",
+    "inference-optimization",
+    "knowledge-distillation",
+    "model-interpretation",
+    "reasoning",
+    "transformers",
+    "uncertainty-estimation"
+  ],
+  "universal_paper_id": "2603.24472",
+  "updated_at": "2026-03-26T02:49:15.187Z",
+  "version_id": "019d280b-ccde-7b4a-a788-fd5a0a09deda"
+}

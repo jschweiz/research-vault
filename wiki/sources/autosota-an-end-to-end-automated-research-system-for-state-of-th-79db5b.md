@@ -15,7 +15,7 @@ backlinks:
 - topic:cs-ce
 - topic:language-modeling
 - topic:ml-systems
-updated_at: '2026-04-09T16:35:03.699571Z'
+updated_at: '2026-04-09T23:08:04.806856Z'
 managed: true
 ---
 # AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery
@@ -31,7 +31,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Yu Li, Chenyang Shao, Xinyang Liu, Ruotong Zhao, Peijie Liu, Hongyuan Su, Zhibin Chen, Qinglong Yang, Anjie Xu, Yi Fang, Qingbin Zeng, Tianxing Li, Jingbo Xu, Fengli Xu, Yong Li, Tie-Yan Liu
 - Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.ce, cs.cl, ml-systems, neural-architecture-search
 - Topics: [Agents](../topics/agents.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Computer Science](../topics/computer-science.md), [Cs Ce](../topics/cs-ce.md), [Language Modeling](../topics/language-modeling.md), [Ml Systems](../topics/ml-systems.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

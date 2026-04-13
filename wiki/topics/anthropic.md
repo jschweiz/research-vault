@@ -6,13 +6,25 @@ aliases:
 - Anthropic
 - anthropic
 source_refs:
+- 2026-04-09-alphasignal-email-anthropic-outlines-managed-agents-system-enablin-33508959
+- 2026-04-09-alphasignal-email-anthropic-launches-managed-agents-to-build-and-d-6eaa7879
 - 2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
 - 2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
+- 2026-04-08-alphasignal-email-anthropic-glasswing-claude-mythos-finds-zero-day-a1374861
+- 2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d
+- 2026-04-08-alphasignal-email-anthropic-adds-autofix-pr-command-to-claude-code-f91275df
 - 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
 - 2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- 2026-04-07-alphasignal-email-anthropic-signs-deal-with-google-and-broadcom-fo-965138a0
 - 2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
+- 2026-04-06-alphasignal-email-anthropic-blocks-openclaw-access-requires-api-ke-b06cbb06
+- 2026-04-06-alphasignal-email-openclaw-adds-video-generation-with-automatic-pr-1eeb518f
+- 2026-04-06-alphasignal-email-anthropic-proposes-model-diffing-to-focus-safety-30982166
+- 2026-04-06-alphasignal-email-anthropic-ends-third-party-agent-like-openclaw-a-10aedfc3
+- 2026-04-06-alphasignal-email-anthropic-enables-claude-to-use-email-documents--1196b03e
 - 2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
 - 2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- 2026-04-03-alphasignal-email-anthropic-finds-emotion-vectors-in-claude-sonnet-31a526f2
 - 2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - 2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - 2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
@@ -38,27 +50,45 @@ backlinks:
 - page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
 - page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- page:2026-04-03-alphasignal-email-anthropic-finds-emotion-vectors-in-claude-sonnet-31a526f2
 - page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
+- page:2026-04-06-alphasignal-email-anthropic-enables-claude-to-use-email-documents--1196b03e
+- page:2026-04-06-alphasignal-email-anthropic-ends-third-party-agent-like-openclaw-a-10aedfc3
+- page:2026-04-06-alphasignal-email-anthropic-proposes-model-diffing-to-focus-safety-30982166
+- page:2026-04-06-alphasignal-email-openclaw-adds-video-generation-with-automatic-pr-1eeb518f
 - page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
+- page:2026-04-07-alphasignal-email-anthropic-signs-deal-with-google-and-broadcom-fo-965138a0
 - page:2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
+- page:2026-04-08-alphasignal-email-anthropic-adds-autofix-pr-command-to-claude-code-f91275df
+- page:2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d
 - page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
 - page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- page:2026-04-09-alphasignal-email-anthropic-launches-managed-agents-to-build-and-d-6eaa7879
+- page:2026-04-09-alphasignal-email-anthropic-outlines-managed-agents-system-enablin-33508959
 - page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
 - page:2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
+- topic:agent-deployment
 - topic:agent-design
+- topic:agents
 - topic:ai-adoption
 - topic:ai-agents
 - topic:ai-safety
 - topic:alignment
+- topic:alphasignal
+- topic:api
+- topic:api-keys
 - topic:australia
 - topic:behavior
 - topic:boltzmann-solvers
 - topic:broadcom
 - topic:business
 - topic:business-simulation
+- topic:causality
 - topic:claude
+- topic:claude-mythos
 - topic:claude-opus-3
 - topic:claude-usage
+- topic:code-cli
 - topic:constitutional-classifiers
 - topic:cross-architecture
 - topic:cybersecurity
@@ -68,11 +98,15 @@ backlinks:
 - topic:efficiency
 - topic:email
 - topic:emotion
+- topic:emotion-vectors
 - topic:enterprise
 - topic:exposure
 - topic:finances
+- topic:glasswing
 - topic:google
 - topic:hackathon
+- topic:hermes-agent
+- topic:infrastructure
 - topic:ipos
 - topic:jailbreaks
 - topic:jax
@@ -80,28 +114,26 @@ backlinks:
 - topic:large-language-models
 - topic:law
 - topic:learning-curves
-- topic:llm
 - topic:llm-defense
-- topic:llms
+- topic:managed-agents
 - topic:measurement
 - topic:meta
+- topic:microsoft-365
 - topic:model-auditing
 - topic:model-deprecation
 - topic:model-diffing
 - topic:model-preservation
 - topic:mythos
-- topic:newsletter
 - topic:occupational
 - topic:official
 - topic:physics
-- topic:policy
 - topic:quantum-field-theory
 - topic:representation
-- topic:safety
+- topic:safety-analysis
 - topic:science
 - topic:security
-- topic:tldr
-updated_at: '2026-04-09T16:35:04.275759Z'
+- topic:video-generation
+updated_at: '2026-04-09T23:10:03.461575Z'
 managed: true
 ---
 # Anthropic
@@ -110,14 +142,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 45.86
-- Novelty score: 1.20
-- Items in last 7 days: 7
-- Items in last 30 days: 14
-- Total supporting items: 18
-- Source diversity: 3
+- Trend score: 104.44
+- Novelty score: 3.26
+- Items in last 7 days: 19
+- Items in last 30 days: 26
+- Total supporting items: 30
+- Source diversity: 4
 - First seen: 2025-02-03T00:00:00+00:00
-- Last seen: 2026-04-09T11:02:31+00:00
+- Last seen: 2026-04-09T16:14:36+00:00
 
 ## Aliases
 
@@ -125,28 +157,28 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Related Topics
 
 - [Email](email.md)
-- [Official](official.md)
+- [Alphasignal](alphasignal.md)
+- [Claude](claude.md)
 - [Newsletter](newsletter.md)
+- [Official](official.md)
+- [Agents](agents.md)
 - [Ai Agents](ai-agents.md)
 - [Ai Safety](ai-safety.md)
-- [Claude](claude.md)
-- [Agents](agents.md)
-- [Ai Adoption](ai-adoption.md)
 
 ## Leading Sources
 
+- AlphaSignal Email
 - Anthropic Research
 - Medium Email
 - TLDR Email
 
 ## Representative Signals
 
+- [Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components](../sources/anthropic-outlines-managed-agents-system-enabling-reliable-execu-8a2e1c.md)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](../sources/anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md)
 - [The 2-Sigma Problem: The 1:1 Tutor](../sources/the-2-sigma-problem-the-1-1-tutor-9725b7.md)
 - [Anthropic launches Claude Managed Agents for businesses](../sources/anthropic-launches-claude-managed-agents-for-businesses-184163.md)
-- [OpenAI #16: A History and a Proposal](../sources/openai-16-a-history-and-a-proposal-a6e162.md)
-- [Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'](../sources/anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reck-f522ab.md)
-- [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](../sources/anthropic-boasts-revenue-run-rate-of-30-billion-as-the-claude-de-a9ff0c.md)
-- [An Inside Look at OpenAI and Anthropic's Finances Ahead of Their IPOs](../sources/an-inside-look-at-openai-and-anthropic-s-finances-ahead-of-their-1c380d.md)
+- [Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure](../sources/anthropic-launches-glasswing-using-claude-mythos-preview-to-dete-7fdb1e.md)
 
 ## Map Links
 

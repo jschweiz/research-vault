@@ -7,7 +7,9 @@ aliases:
 source_refs:
 - 2026-04-07-alphaxiv-paper-ai-assistance-reduces-persistence-and-hurts-inde-17db6a91
 backlinks:
+- page:2026-03-16-the-batch-research-openais-gpt-5-4-pro-and-gpt-5-4-thinking-challen-f1e2ee28
 - page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
+- page:2026-04-02-manual-import-gemma-4-byte-for-byte-the-most-capable-open-mode-20e9cbbb
 - page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
@@ -18,7 +20,7 @@ backlinks:
 - topic:causal-inference
 - topic:human-ai-interaction
 - topic:reasoning
-updated_at: '2026-04-09T16:35:03.871935Z'
+updated_at: '2026-04-09T23:10:03.020523Z'
 managed: true
 ---
 # AI Assistance Reduces Persistence and Hurts Independent Performance
@@ -34,7 +36,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Grace Liu, Brian Christian, Tsvetomira Dumbalska, Michiel A. Bakker, Rachit Dubey
 - Tags: paper, alphaxiv, research, agents, causal-inference, computer science, cs.ai, human-ai-interaction, machine-psychology, reasoning
 - Topics: [Agents](../topics/agents.md), [Reasoning](../topics/reasoning.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Causal Inference](../topics/causal-inference.md), [Computer Science](../topics/computer-science.md), [Human Ai Interaction](../topics/human-ai-interaction.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

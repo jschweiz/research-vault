@@ -11,7 +11,7 @@ backlinks:
 - topic:linux
 - topic:macos
 - topic:operating-systems
-updated_at: '2026-04-09T16:35:04.660016Z'
+updated_at: '2026-04-09T23:08:04.813418Z'
 managed: true
 ---
 # Windows vs macOS vs Linux: the time to switch is now
@@ -21,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@farkonas/windows-vs-macos-vs-linux-the-time-to-switch-is-now-097234445af6
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Kostas Farkonas
-- Tags: newsletter, medium, email, blog-post, windows, macos, linux, operating systems
+- Tags: newsletter, medium, email, blog-post, windows, macos, linux, operating systems, sub-document
 - Topics: [Email](../topics/email.md), [Linux](../topics/linux.md), [Macos](../topics/macos.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Operating Systems](../topics/operating-systems.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

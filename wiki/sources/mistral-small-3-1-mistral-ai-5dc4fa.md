@@ -11,11 +11,9 @@ backlinks:
 - page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
 - page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
 - page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
-- topic:inference
 - topic:long-context
 - topic:model
-- topic:multimodal
-updated_at: '2026-04-09T16:35:04.632224Z'
+updated_at: '2026-04-09T23:10:03.857602Z'
 managed: true
 ---
 # Mistral Small 3.1 | Mistral AI
@@ -30,8 +28,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2025-03-17T12:00:00+00:00
 - Tags: mistral, official, research, website, blog-post, model, open source, multimodal, context window, inference
 - Topics: [Inference](../topics/inference.md), [Multimodal](../topics/multimodal.md), [Long Context](../topics/long-context.md), [Mistral](../topics/mistral.md), [Model](../topics/model.md), [Official](../topics/official.md)
-- Trend score: 45.05
-- Novelty score: 2.40
+- Trend score: 68.20
+- Novelty score: 3.60
 
 ## Summary
 
@@ -53,7 +51,7 @@ Mistral Small 3.1 is a new open-source model that improves text performance, mul
 - [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Inference, Mistral, Multimodal)
 - [Mistral OCR | Mistral AI](mistral-ocr-mistral-ai-eb1d8c.md) (shared topics: Mistral, Multimodal, Official)
 - [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Inference, Multimodal)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md) (shared topics: Inference, Official)
 
 ## Radar
 

@@ -15,7 +15,7 @@ backlinks:
 - page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 - topic:claude-code
 - topic:coding
-updated_at: '2026-04-09T16:35:04.594616Z'
+updated_at: '2026-04-09T23:08:05.487096Z'
 managed: true
 ---
 # Claude Code is Great
@@ -25,13 +25,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@leo-godin/claude-code-is-great-6db35d8685f0
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@leo-godin/claude-code-is-great-6db35d8685f0
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Leo Godin
-- Tags: newsletter, medium, email, blog-post, claude code, coding
-- Topics: [Claude Code](../topics/claude-code.md), [Coding](../topics/coding.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Tags: newsletter, medium, email, blog-post, claude code, coding, sub-document
+- Topics: [Claude Code](../topics/claude-code.md), [Coding](../topics/coding.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -45,15 +45,16 @@ This is a newsletter highlighting the topic of Claude Code and offering guidance
 - [Email](../topics/email.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
+- [Why nobody can read anymore](why-nobody-can-read-anymore-764025.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](the-mathematical-memory-of-ai-understanding-vector-databases-and-e8bed5.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [The 800% Job Boom Nobody’s Talking About](the-800-job-boom-nobodys-talking-about-b904b7.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [I’m Not Reinventing Myself in 2026](im-not-reinventing-myself-in-2026-f19f6a.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [How Claude Code Builds a System Prompt](how-claude-code-builds-a-system-prompt-b8679d.md) (shared topics: Claude Code, Email, Newsletter, Sub Document)
 - [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Claude Code, Coding, Email, Medium)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Claude Code, Email, Medium, Newsletter)
-- [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding, Email, Medium, Newsletter)
-- [Vibe Coding — Prompts Are All You Need?](vibe-coding-prompts-are-all-you-need-1a0efe.md) (shared topics: Coding, Email, Medium, Newsletter)
-- [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-183ac0.md) (shared topics: Coding, Email, Medium, Newsletter)
-- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
 
 ## Radar
 

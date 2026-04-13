@@ -27,7 +27,7 @@ backlinks:
 - topic:knowledge-distillation
 - topic:multi-modal-learning
 - topic:synthetic-data
-updated_at: '2026-04-09T16:35:03.997651Z'
+updated_at: '2026-04-09T23:10:02.739133Z'
 managed: true
 ---
 # Generative Models

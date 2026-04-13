@@ -9,10 +9,9 @@ source_refs:
 - 2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 backlinks:
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
-- topic:gpt-5-4
 - topic:mini
 - topic:nano
-updated_at: '2026-04-09T16:35:04.312525Z'
+updated_at: '2026-04-09T21:02:10.024422Z'
 managed: true
 ---
 # Multimodal Reasoning

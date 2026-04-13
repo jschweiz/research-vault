@@ -14,7 +14,7 @@ backlinks:
 - topic:codex
 - topic:enterprise-ai
 - topic:frontier
-updated_at: '2026-04-09T16:35:03.970820Z'
+updated_at: '2026-04-09T23:08:04.577960Z'
 managed: true
 ---
 # The next phase of enterprise AI
@@ -30,7 +30,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, enterprise ai, adoption, frontier, chatgpt enterprise, codex, ai agents
 - Topics: [Enterprise Ai](../topics/enterprise-ai.md), [Adoption](../topics/adoption.md), [Ai Agents](../topics/ai-agents.md), [Chatgpt Enterprise](../topics/chatgpt-enterprise.md), [Codex](../topics/codex.md), [Frontier](../topics/frontier.md)
-- Trend score: 23.52
+- Trend score: 23.91
 - Novelty score: 4.20
 
 ## Summary
@@ -50,10 +50,10 @@ OpenAI outlines the next phase of enterprise AI, noting accelerating adoption ac
 
 - [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Ai Agents)
 - [Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.](why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-ar-c4ebdf.md) (shared topics: Ai Agents)
+- [OpenAI enables flexible Codex adoption with usage-based pricing and no rate limits](openai-enables-flexible-codex-adoption-with-usage-based-pricing--8212ee.md) (shared topics: Codex)
 - [Codex now offers more flexible pricing for teams](codex-now-offers-more-flexible-pricing-for-teams-4821c6.md) (shared topics: Codex)
 - [Gradient Labs gives every bank customer an AI account manager](gradient-labs-gives-every-bank-customer-an-ai-account-manager-ee52e4.md) (shared topics: Ai Agents)
 - [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Codex)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Ai Agents)
 
 ## Radar
 

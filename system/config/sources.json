@@ -106,6 +106,44 @@
       "url": "https://mistral.ai/news?category=research"
     },
     {
+      "classification_mode": "fixed",
+      "config_json": {
+        "allowed_hosts": [
+          "www.deeplearning.ai",
+          "deeplearning.ai"
+        ],
+        "article_path_prefixes": [
+          "/the-batch/"
+        ],
+        "discovery_mode": "website_index",
+        "exclude_patterns": [
+          "^/the-batch/?$",
+          "^/the-batch/about/?$",
+          "^/the-batch/tag/"
+        ],
+        "website_url": "https://www.deeplearning.ai/the-batch/tag/research/"
+      },
+      "created_at": null,
+      "custom_pipeline_id": "the-batch-research",
+      "decomposition_mode": "none",
+      "description": "DeepLearning.AI The Batch posts discovered from the research tag index.",
+      "enabled": true,
+      "id": "the-batch-research",
+      "max_items": 20,
+      "name": "The Batch Research",
+      "raw_kind": "blog-post",
+      "tags": [
+        "deeplearning-ai",
+        "official",
+        "research",
+        "website",
+        "blog-post"
+      ],
+      "type": "website",
+      "updated_at": null,
+      "url": "https://www.deeplearning.ai/the-batch/tag/research/"
+    },
+    {
       "classification_mode": "written_content_auto",
       "config_json": {
         "senders": [

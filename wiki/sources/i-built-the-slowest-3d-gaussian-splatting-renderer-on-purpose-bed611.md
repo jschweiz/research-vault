@@ -14,7 +14,7 @@ backlinks:
 - topic:3d-gaussian-splatting
 - topic:python
 - topic:renderer
-updated_at: '2026-04-09T16:35:04.738565Z'
+updated_at: '2026-04-09T23:08:05.084125Z'
 managed: true
 ---
 # I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose
@@ -24,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@SaschaKirch/i-built-the-slowest-3d-gaussian-splatting-renderer-on-purpose-a8170b90d9b4
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@SaschaKirch/i-built-the-slowest-3d-gaussian-splatting-renderer-on-purpose-a8170b90d9b4
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Sascha Kirch
-- Tags: newsletter, medium, email, blog-post, 3d gaussian splatting, renderer, python, ai
+- Tags: newsletter, medium, email, blog-post, 3d gaussian splatting, renderer, python, ai, sub-document
 - Topics: [3D Gaussian Splatting](../topics/3d-gaussian-splatting.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md), [Renderer](../topics/renderer.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

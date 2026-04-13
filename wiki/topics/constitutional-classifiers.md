@@ -9,10 +9,9 @@ source_refs:
 - 2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 backlinks:
 - page:2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
-- topic:ai-safety
 - topic:jailbreaks
 - topic:llm-defense
-updated_at: '2026-04-09T16:35:04.384111Z'
+updated_at: '2026-04-09T23:10:03.498052Z'
 managed: true
 ---
 # Constitutional Classifiers

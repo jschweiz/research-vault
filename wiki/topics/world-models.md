@@ -14,7 +14,7 @@ backlinks:
 - map:global-ai-research
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - topic:hierarchical-planning
-updated_at: '2026-04-09T12:15:42.338906Z'
+updated_at: '2026-04-09T23:10:02.630207Z'
 managed: true
 ---
 # World Models

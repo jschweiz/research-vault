@@ -7,42 +7,20 @@ aliases:
 source_refs:
 - 2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
 backlinks:
-- page:2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
-- page:2026-04-03-tldr-email-bad-analogies-e133a94d
-- page:2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
-- page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
-- page:2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
-- page:2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
 - page:2026-04-06-tldr-email-apple-approves-drivers-that-let-amd-and-nvidia-e-8c6ca4d4
-- page:2026-04-06-tldr-email-china-s-tech-giants-are-recruiting-high-schooler-9dbd58c7
-- page:2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
 - page:2026-04-06-tldr-email-eight-years-of-wanting-three-months-of-building--8e15c218
-- page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 - page:2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
 - page:2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
-- page:2026-04-07-tldr-email-artemis-ii-astronauts-heading-home-after-histori-1a04b5a8
-- page:2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8
-- page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
-- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
 - page:2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
-- page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
-- page:2026-04-08-tldr-email-astronauts-set-distance-record-revealing-the-moo-9f728c89
-- page:2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
-- page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
-- page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
 - page:2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
-- page:2026-04-08-tldr-email-the-building-block-economy-2eb76b35
-- page:2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
-- page:2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
 - page:2026-04-09-tldr-email-my-quest-to-solve-bitcoin-s-great-mystery-416b98a3
 - page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
 - topic:antares
 - topic:doe-approval
-- topic:email
 - topic:mark0-reactor
 - topic:newsletter
 - topic:nuclear-energy
-updated_at: '2026-04-09T16:35:04.042439Z'
+updated_at: '2026-04-09T23:10:03.322599Z'
 managed: true
 ---
 # US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator
@@ -56,9 +34,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-09T11:02:31+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, nuclear energy, antares, doe approval, mark0 reactor, reactor demonstrator
+- Tags: newsletter, tldr, email, ai, article, nuclear energy, antares, doe approval, mark0 reactor, reactor demonstrator, sub-document
 - Topics: [Antares](../topics/antares.md), [Doe Approval](../topics/doe-approval.md), [Email](../topics/email.md), [Mark0 Reactor](../topics/mark0-reactor.md), [Newsletter](../topics/newsletter.md), [Nuclear Energy](../topics/nuclear-energy.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -76,12 +54,12 @@ The US nuclear startup Antares received Department of Energy approval for its Ma
 
 ## Related Research
 
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Email, Newsletter)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Newsletter)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Email, Newsletter)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
-- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

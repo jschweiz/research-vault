@@ -11,7 +11,7 @@ backlinks:
 - topic:deep-learning
 - topic:neural-networks
 - topic:rnn
-updated_at: '2026-04-09T16:35:03.845284Z'
+updated_at: '2026-04-09T23:08:04.648555Z'
 managed: true
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train
@@ -21,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Jose Parreño
-- Tags: newsletter, medium, email, blog-post, transformers, rnn, deep learning, neural networks
+- Tags: newsletter, medium, email, blog-post, transformers, rnn, deep learning, neural networks, sub-document
 - Topics: [Deep Learning](../topics/deep-learning.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Neural Networks](../topics/neural-networks.md), [Newsletter](../topics/newsletter.md), [Rnn](../topics/rnn.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

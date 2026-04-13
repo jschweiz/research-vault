@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 backlinks: []
-updated_at: '2026-04-09T16:33:58.602557Z'
+updated_at: '2026-04-09T23:08:05.190189Z'
 managed: true
 ---
 # AURA: Always-On Understanding and Real-Time Assistance via Video Streams
@@ -23,7 +23,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Xudong Lu, Yang Bo, Jinpeng Chen, Shuhan Li, Xintong Guo, Huankang Guan, Fang Liu, Dunyuan Xu, Peiwen Sun, Heyang Sun, Rui Liu, Hongsheng Li
 - Tags: paper, alphaxiv, research, agents, computer science, conversational-ai, cs.cv, inference-optimization, model-deployment-systems, sequence-modeling
 - Topics: [Agents](../topics/agents.md), [Computer Vision](../topics/computer-vision.md), [Inference](../topics/inference.md), [Computer Science](../topics/computer-science.md), [Conversational Ai](../topics/conversational-ai.md), [Inference Optimization](../topics/inference-optimization.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

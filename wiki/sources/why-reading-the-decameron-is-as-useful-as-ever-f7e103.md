@@ -10,7 +10,7 @@ backlinks:
 - topic:decameron
 - topic:literature
 - topic:reading
-updated_at: '2026-04-09T16:35:04.717947Z'
+updated_at: '2026-04-09T23:08:05.449121Z'
 managed: true
 ---
 # Why reading “The Decameron” is as useful as ever
@@ -20,13 +20,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@nikolaus.correll/why-reading-the-decameron-is-as-useful-as-ever-06cf21b76452
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Nikolaus Correll
-- Tags: newsletter, medium, email, blog-post, reading, literature, the decameron
+- Tags: newsletter, medium, email, blog-post, reading, literature, the decameron, sub-document
 - Topics: [Decameron](../topics/decameron.md), [Email](../topics/email.md), [Literature](../topics/literature.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Reading](../topics/reading.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

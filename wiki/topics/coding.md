@@ -16,7 +16,6 @@ source_refs:
 - 2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
 - 2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 backlinks:
-- map:global-ai-research
 - page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 - page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
@@ -32,9 +31,7 @@ backlinks:
 - topic:cost-efficiency
 - topic:developer
 - topic:devstral
-- topic:email
 - topic:enterprise
-- topic:evaluations
 - topic:gpt-5-4
 - topic:language-models
 - topic:linux
@@ -47,7 +44,7 @@ backlinks:
 - topic:prompts
 - topic:rl-concepts
 - topic:software-construction
-updated_at: '2026-04-09T16:35:04.628272Z'
+updated_at: '2026-04-09T23:10:02.451588Z'
 managed: true
 ---
 # Coding

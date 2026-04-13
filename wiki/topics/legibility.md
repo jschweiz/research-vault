@@ -11,7 +11,7 @@ backlinks:
 - page:2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
 - topic:developer-relations
 - topic:machines
-updated_at: '2026-04-09T12:15:42.602235Z'
+updated_at: '2026-04-09T23:08:51.570691Z'
 managed: true
 ---
 # Legibility
@@ -38,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Machines](machines.md)
 - [Newsletter](newsletter.md)
-- [Tldr](tldr.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

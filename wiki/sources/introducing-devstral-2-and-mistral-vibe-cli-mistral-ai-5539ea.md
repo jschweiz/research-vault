@@ -9,7 +9,6 @@ source_refs:
 backlinks:
 - page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 - page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
-- page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
 - page:2025-07-10-mistral-research-upgrading-agentic-coding-capabilities-with-the-n-4a9a767c
 - page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 - page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
@@ -20,7 +19,7 @@ backlinks:
 - topic:mistral
 - topic:mistral-vibe-cli
 - topic:open-source
-updated_at: '2026-04-09T16:35:03.779370Z'
+updated_at: '2026-04-09T23:08:06.096599Z'
 managed: true
 ---
 # Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI
@@ -36,8 +35,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, devstral, mistral vibe cli, coding model, open source, ai
 - Topics: [Coding Model](../topics/coding-model.md), [Devstral](../topics/devstral.md), [Mistral](../topics/mistral.md), [Mistral Vibe Cli](../topics/mistral-vibe-cli.md), [Official](../topics/official.md), [Open Source](../topics/open-source.md)
-- Trend score: 45.05
-- Novelty score: 2.20
+- Trend score: 68.20
+- Novelty score: 3.60
 
 ## Summary
 

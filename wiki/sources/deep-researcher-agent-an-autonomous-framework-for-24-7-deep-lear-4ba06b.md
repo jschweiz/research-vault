@@ -22,7 +22,7 @@ backlinks:
 - topic:audio
 - topic:deep-learning
 - topic:researcher-agent
-updated_at: '2026-04-09T16:35:03.898031Z'
+updated_at: '2026-04-09T23:08:04.743521Z'
 managed: true
 ---
 # Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring
@@ -38,7 +38,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Xiangyue Zhang
 - Tags: paper, alphaxiv, research, computer science, cs.ai, github, audio, summary, deep learning, agent
 - Topics: [Agents](../topics/agents.md), [Audio](../topics/audio.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Deep Learning](../topics/deep-learning.md), [Researcher Agent](../topics/researcher-agent.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

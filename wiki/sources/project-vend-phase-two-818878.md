@@ -7,14 +7,11 @@ aliases:
 source_refs:
 - 2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 backlinks:
-- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - topic:agent-design
-- topic:ai-agents
 - topic:business-simulation
 - topic:large-language-models
-updated_at: '2026-04-09T16:35:03.932606Z'
+updated_at: '2026-04-09T23:10:02.586197Z'
 managed: true
 ---
 # Project Vend: Phase two
@@ -30,8 +27,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, project vend, ai agents, large language models, agent design, business simulation
 - Topics: [Agent Design](../topics/agent-design.md), [Ai Agents](../topics/ai-agents.md), [Anthropic](../topics/anthropic.md), [Business Simulation](../topics/business-simulation.md), [Large Language Models](../topics/large-language-models.md), [Official](../topics/official.md)
-- Trend score: 45.86
-- Novelty score: 1.80
+- Trend score: 104.44
+- Novelty score: 3.26
 
 ## Summary
 

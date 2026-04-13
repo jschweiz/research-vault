@@ -9,8 +9,7 @@ source_refs:
 - 2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
 backlinks:
 - page:2026-04-09-tldr-email-meta-s-superintelligence-lab-unveils-its-first-p-5491e97a
-- topic:agentic-systems
-updated_at: '2026-04-09T16:35:04.725814Z'
+updated_at: '2026-04-09T21:02:09.106419Z'
 managed: true
 ---
 # Muse Spark

@@ -13,7 +13,7 @@ authors:
 - Jennifer Marintez
 published_at: '2026-03-31T00:00:00Z'
 ingested_at: '2026-04-09T12:03:56.402149Z'
-content_hash: 36137ecdd57029edb5b09647e449f7fa4b3833432fd8217ffd2d98e2640fb202
+content_hash: 36866df2835f8e1a25e0358233b5ac85f1e00985741668efaedb030bff160bb2
 identity_hash: 4cafe641626bca2c56ca38eea9b22f522acccbdf3be25e17da6e6e8086ec0e66
 tags:
 - anthropic
@@ -36,28 +36,16 @@ canonical_url: https://www.anthropic.com/research/how-australia-uses-claude
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:56.402154Z'
+fetched_at: '2026-04-13T18:11:04.507912Z'
 short_summary: Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosphere peers, showing a focus on work and personal tasks, and reflects diverse use-cases across states.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:12.173948Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: c3e7dc7be54410aaff99468b702e14d1d8e99109480ef072a44ab459a1727339
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b243d73324587e38ebfeed27beccb62fdc5a60231ea3063a5c7aab417a2399e5
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.8
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM adoption and usage patterns, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - Australia is among the leading per capita adopters of Claude, with usage more than four times what its working-age population would predict.
-  - Australia's Claude use is more diverse than the global aggregate, almost entirely because of a lower share of coding-related work; offsetting gains are spread a
-  - The character of that usage—predominantly work and personal rather than coursework, sophisticated prompts addressing relatively short tasks, and with less deleg
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index
 Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. To mark the occasion, we thought we’d look more closely into how Australians are using Claude.
@@ -99,12 +87,12 @@ url = {https://www.anthropic.com/research/australia-brief-economic-index-march-2
 Acknowledgements
 Keir Bradwell, Ria Strasser Galvis, Ryan Heller, Eva Lyubich, Jennifer Marintez, Maxim Massenkoff, Jared Mueller, Sarah Pollack
 Related content
+Trustworthy agents in practice
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
+[Read more](/research/trustworthy-agents)
 Emotion concepts and their function in a large language model
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 [Read more](/research/emotion-concepts-function)
 Anthropic Economic Index report: Learning curves
 Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 [Read more](/research/economic-index-march-2026-report)
-Introducing our Science Blog
-We’re launching a new blog about AI and science. We’ll share research happening at Anthropic and elsewhere, collaborations with external researchers and labs, and discuss practical workflows for scientists using AI in their own work.
-[Read more](/research/introducing-anthropic-science)

@@ -7,11 +7,12 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 backlinks:
+- page:2026-04-02-manual-import-gemma-4-byte-for-byte-the-most-capable-open-mode-20e9cbbb
 - page:2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3
 - topic:gemma-4
 - topic:google-deepmind
 - topic:multimodal
-updated_at: '2026-04-09T16:35:04.035843Z'
+updated_at: '2026-04-09T23:08:05.418232Z'
 managed: true
 ---
 # Gemma 4: Byte for byte, the most capable open models
@@ -25,9 +26,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-03T10:59:24+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, gemma 4, google deepmind, models, multimodal, vision
+- Tags: newsletter, tldr, email, ai, article, gemma 4, google deepmind, models, multimodal, vision, sub-document
 - Topics: [Multimodal](../topics/multimodal.md), [Computer Vision](../topics/computer-vision.md), [Audio](../topics/audio.md), [Email](../topics/email.md), [Gemma 4](../topics/gemma-4.md), [Google Deepmind](../topics/google-deepmind.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -45,12 +46,12 @@ Google DeepMind has released four new vision-capable reasoning models, including
 
 ## Related Research
 
+- [Meta debuts Muse Spark combining multimodal inputs, tool use, and agent orchestration in one system](meta-debuts-muse-spark-combining-multimodal-inputs-tool-use-and--acb2ab.md) (shared topics: Email, Multimodal)
 - [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Audio, Email)
 - [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Audio, Multimodal)
 - [MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale](mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsin-394662.md) (shared topics: Audio, Computer Vision)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email)
+- [Google launches Agent Skills allowing Gemma 4 to perform tasks across tools and data sources on-device](google-launches-agent-skills-allowing-gemma-4-to-perform-tasks-a-c2054c.md) (shared topics: Email, Gemma 4)
+- [Google introduces open-source Gemma 4 models that run locally and outperform models up to 20× larger](google-introduces-open-source-gemma-4-models-that-run-locally-an-6184ad.md) (shared topics: Email, Gemma 4)
 
 ## Radar
 

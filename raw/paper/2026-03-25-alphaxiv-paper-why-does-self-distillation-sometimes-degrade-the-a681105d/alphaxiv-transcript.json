@@ -1,0 +1,94 @@
+[
+  {
+    "line": "Welcome to Advanced Topics in Language Model Training. Today's lecture is on a paper from Microsoft Research and KAIST titled, 'Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?'. We've seen a lot of recent work, like 'On-Policy Self-Distillation for Reasoning Compression', that uses this technique to create more concise and efficient models. This new research, however, challenges the prevailing assumption that shorter reasoning is always better, especially in complex domains. Yes, Noah?",
+    "speaker": "John"
+  },
+  {
+    "line": "Hi Professor. Could you quickly recap what self-distillation is in this context? I want to make sure I'm on the same page.",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Of course. In this setup, you have a single model acting as both teacher and student. The 'teacher' version gets a richer context\u2014like the ground-truth solution\u2014to generate an ideal reasoning path. The 'student' version, without that extra context, is then trained to mimic the teacher's output distribution. The goal is to distill the teacher's superior reasoning, which is often more direct and concise, into the base student model.",
+    "speaker": "John"
+  },
+  {
+    "line": "Okay, that makes sense. So it's about learning a more efficient way to reason by watching a version of yourself that already knows the answer.",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Exactly. And that leads to the central puzzle of this paper. While this approach has shown success in areas like tool use and some scientific domains, the authors noticed a problem in mathematical reasoning. When they applied self-distillation, the model's responses did get shorter, as expected. But its performance on math problems actually got worse, sometimes significantly. This contradicts the narrative that conciseness equals improvement.",
+    "speaker": "John"
+  },
+  {
+    "line": "So what's their explanation for the drop in performance?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "They introduce a concept they call 'epistemic verbalization'. This refers to the model's explicit expressions of uncertainty during its thought process\u2014tokens like 'Wait', 'Hmm', or 'Let me re-check'. The teacher, having access to the solution, doesn't need to express this uncertainty. It generates a clean, confident path. The student then learns to suppress its own epistemic verbalizations to match this confident style.",
+    "speaker": "John"
+  },
+  {
+    "line": "Wait, I'm confused about why that's a bad thing. Aren't those just filler words? Wouldn't removing them make the reasoning more direct?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's the critical insight. The authors argue these are not just filler. They are functional signals that a reasoning path might be incorrect, prompting the model to explore alternatives or self-correct. When self-distillation removes these signals, it essentially trains the model to be overconfident. It loses the ability to recognize when it's going down a wrong path, which is especially damaging for out-of-distribution problems it hasn't seen before.",
+    "speaker": "John"
+  },
+  {
+    "line": "So you're saying the distillation process isn't just teaching the model the correct steps, it's also teaching it a brittle, overconfident reasoning style?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Precisely. The paper demonstrates this with a few clever experiments. First, they systematically varied the 'information richness' of the context given to the teacher model. When the teacher got the full solution, its output was short and had very few epistemic tokens. When it was unguided, its responses were much longer and full of uncertainty markers. This established a direct link between having the answer and suppressing verbal uncertainty.",
+    "speaker": "John"
+  },
+  {
+    "line": "So they proved that more information leads to less 'thinking out loud'. How did they connect that to performance degradation?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "They conducted a supervised fine-tuning experiment. They created two datasets of correct solutions. One contained the long, uncertain reasoning paths from the unguided model. The other contained the short, confident paths from the solution-guided teacher. When they fine-tuned a model on the confident, epistemically suppressed data, its performance on math benchmarks plummeted. But fine-tuning on the longer, more uncertain data resulted in no performance change. This isolates the reasoning style as the causal factor.",
+    "speaker": "John"
+  },
+  {
+    "line": "That's a really clean experimental design. Did they compare different training algorithms as well?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "They did. They compared SDPO, a self-distillation method, against GRPO, a more standard reinforcement learning algorithm. Across several models, SDPO consistently shortened responses but degraded performance on math benchmarks. GRPO, in contrast, often slightly increased response length and epistemic verbalization, and either maintained or slightly improved performance. It suggests that algorithms which allow for this verbal uncertainty are more robust for these kinds of tasks.",
+    "speaker": "John"
+  },
+  {
+    "line": "Another question on methodology\u2014they mentioned a fixed teacher policy worked better for SDPO. Why would a moving, updated teacher be worse?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's an important detail. They found that an updating teacher creates a negative feedback loop. The student learns to be more confident from the teacher. Then, this more confident student becomes the new teacher in the next iteration. This new, even more confident teacher then trains the student to be even more suppressed. The cycle repeats, amplifying the epistemic suppression and accelerating the performance degradation.",
+    "speaker": "John"
+  },
+  {
+    "line": "The implications here are quite significant. This work directly challenges the prevailing notion that shorter, more confident reasoning chains are universally better. It adds critical nuance to the conversation we've seen in papers like 'Between Underthinking and Overthinking', which pointed out the non-monotonic relationship between reasoning length and accuracy. This paper provides a mechanism\u2014epistemic suppression\u2014to help explain why that relationship exists.",
+    "speaker": "John"
+  },
+  {
+    "line": "So does this mean self-distillation is a poor choice for any complex reasoning task? Or is it specific to math?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Not necessarily. The final piece of their analysis looks at 'task coverage'. They propose that self-distillation is highly effective for in-domain optimization where the task space is narrow and repetitive. By removing uncertainty, it quickly finds a very efficient solution path. However, for broad domains like mathematics that demand generalization to unseen problems, this efficiency becomes a liability. The model needs that uncertainty to navigate novel challenges. So it's a trade-off between in-domain efficiency and out-of-distribution robustness.",
+    "speaker": "John"
+  },
+  {
+    "line": "That makes a lot of sense. It suggests our training objectives should probably be more sophisticated than just rewarding correct final answers.",
+    "speaker": "Noah"
+  },
+  {
+    "line": "I agree. It pushes us to think about how to preserve or even encourage uncertainty-aware reasoning, rather than just pruning it away in the name of efficiency. The main takeaway here is not to mistake confidence for competence in these models. Self-distillation can teach a model to project an image of certainty, but in doing so, it can strip away the very cognitive machinery required for genuine problem-solving when faced with something new. For robust generalization, it seems letting a model 'think out loud', hesitations and all, is critical.",
+    "speaker": "John"
+  },
+  {
+    "line": "Thanks for listening. If you have any further questions, ask our AI assistant or drop a comment.",
+    "speaker": "John"
+  }
+]

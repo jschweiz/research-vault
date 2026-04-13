@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - topic:agentic-ai
 - topic:feedback-loop
-- topic:memory
-updated_at: '2026-04-09T16:35:03.776005Z'
+updated_at: '2026-04-09T21:02:13.570705Z'
 managed: true
 ---
 # Hitl

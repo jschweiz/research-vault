@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-07-tldr-email-confessions-of-a-millennial-in-tech-caf626e8
 - topic:millennials
 - topic:software
-- topic:tech
-updated_at: '2026-04-09T12:15:42.544040Z'
+updated_at: '2026-04-09T23:10:03.741562Z'
 managed: true
 ---
 # Career
@@ -39,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Millennials](millennials.md)
 - [Newsletter](newsletter.md)
 - [Software](software.md)
-- [Tech](tech.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

@@ -12,7 +12,7 @@ backlinks:
 - topic:model-spec
 - topic:safety
 - topic:website
-updated_at: '2026-04-09T16:35:04.058239Z'
+updated_at: '2026-04-09T23:10:02.423847Z'
 managed: true
 ---
 # Accountability

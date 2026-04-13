@@ -16,7 +16,7 @@ backlinks:
 - topic:llm
 - topic:machine-learning
 - topic:retrieval-augmented-generation
-updated_at: '2026-04-09T16:35:04.729065Z'
+updated_at: '2026-04-09T23:08:04.670878Z'
 managed: true
 ---
 # Designing a Production-Grade RAG Architecture
@@ -26,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Matt Bentley
-- Tags: newsletter, medium, email, blog-post, rag, llm, architecture, machine learning, nlp
+- Tags: newsletter, medium, email, blog-post, rag, llm, architecture, machine learning, nlp, sub-document
 - Topics: [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Architecture](../topics/architecture.md), [Email](../topics/email.md), [Llm](../topics/llm.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

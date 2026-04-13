@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
 - topic:optimization-methods
-- topic:robotics
-updated_at: '2026-04-09T16:35:04.554261Z'
+updated_at: '2026-04-09T21:02:13.167478Z'
 managed: true
 ---
 # Deep Reinforcement Learning

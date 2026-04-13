@@ -14,7 +14,7 @@ backlinks:
 - topic:economic-index
 - topic:labor-market
 - topic:learning-curves
-updated_at: '2026-04-09T16:35:03.936387Z'
+updated_at: '2026-04-09T23:08:05.673007Z'
 managed: true
 ---
 # Anthropic Economic Index report: Learning curves
@@ -30,8 +30,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, economic index, claude usage, learning curves, ai adoption, labor market
 - Topics: [Ai Adoption](../topics/ai-adoption.md), [Anthropic](../topics/anthropic.md), [Claude Usage](../topics/claude-usage.md), [Economic Index](../topics/economic-index.md), [Labor Market](../topics/labor-market.md), [Learning Curves](../topics/learning-curves.md)
-- Trend score: 45.86
-- Novelty score: 2.00
+- Trend score: 104.44
+- Novelty score: 3.60
 
 ## Summary
 
@@ -50,10 +50,10 @@ The Anthropic Economic Index report studies Claude usage in February 2026, focus
 
 - [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Ai Adoption, Anthropic, Economic Index)
 - [Labor market impacts of AI: A new measure and early evidence](labor-market-impacts-of-ai-a-new-measure-and-early-evidence-dcb46b.md) (shared topics: Anthropic, Labor Market)
+- [Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components](anthropic-outlines-managed-agents-system-enabling-reliable-execu-8a2e1c.md) (shared topics: Anthropic)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md) (shared topics: Anthropic)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
 - [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic)
-- [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Anthropic)
-- [Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'](anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reck-f522ab.md) (shared topics: Anthropic)
 
 ## Radar
 

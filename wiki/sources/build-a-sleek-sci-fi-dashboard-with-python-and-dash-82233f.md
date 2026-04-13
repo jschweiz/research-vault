@@ -16,7 +16,7 @@ backlinks:
 - topic:dash
 - topic:dashboard
 - topic:data-science
-updated_at: '2026-04-09T16:35:04.692290Z'
+updated_at: '2026-04-09T23:08:04.511008Z'
 managed: true
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash
@@ -26,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-with-python-and-dash-0fccf536af3a
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@lee_vaughan/build-a-sleek-sci-fi-dashboard-with-python-and-dash-0fccf536af3a
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Lee Vaughan
-- Tags: newsletter, medium, email, blog-post, python, dash, data science, dashboard
+- Tags: newsletter, medium, email, blog-post, python, dash, data science, dashboard, sub-document
 - Topics: [Dash](../topics/dash.md), [Dashboard](../topics/dashboard.md), [Data Science](../topics/data-science.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

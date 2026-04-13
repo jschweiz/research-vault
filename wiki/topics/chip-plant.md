@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
 - topic:intel
 - topic:spacex
-- topic:terafab
-updated_at: '2026-04-09T16:35:04.440777Z'
+updated_at: '2026-04-09T23:10:02.627375Z'
 managed: true
 ---
 # Chip Plant
@@ -39,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Intel](intel.md)
 - [Newsletter](newsletter.md)
 - [Spacex](spacex.md)
-- [Terafab](terafab.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

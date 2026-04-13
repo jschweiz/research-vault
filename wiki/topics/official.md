@@ -9,6 +9,9 @@ source_refs:
 - 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 - 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - 2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
+- 2026-04-03-the-batch-research-test-time-training-end-to-end-ttt-e2e-retrains-m-87b314e7
+- 2026-04-03-the-batch-research-google-debuted-lyria-3-an-app-that-turns-text-or-51adf4c3
+- undated-the-batch-research-claude-codes-source-code-leaked-exposing-potenti-0c9adaf3
 - 2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 - 2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
 - 2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
@@ -16,6 +19,9 @@ source_refs:
 - 2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - 2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - 2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- undated-the-batch-research-recursive-language-models-offer-path-to-aramatic-5b60cd95
+- 2026-03-27-the-batch-research-grok-imagine-1-0-sharply-cuts-costs-for-high-qua-f02eca28
+- 2026-03-27-the-batch-research-nvidias-open-nemotron-3-super-120b-a12b-model-se-7cf0f41a
 - 2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - 2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
 - 2026-03-24-openai-website-helping-developers-build-safer-ai-experiences-fo-d75d7d2e
@@ -25,11 +31,16 @@ source_refs:
 - 2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 - 2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
 - 2026-03-23-openai-website-creating-with-sora-safely-85771c0f
+- 2026-03-20-the-batch-research-deepseek-made-upcoming-4-0-model-available-for-p-8f8c21d6
+- undated-the-batch-research-alibabas-latest-flagship-models-are-open-weights-2ff46fcf
 - 2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - 2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
 - 2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - 2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - 2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
+- undated-the-batch-research-inside-feature-auto-encoder-a-diffusion-image-ge-ac0c194f
+- 2026-03-06-the-batch-research-openais-frontier-agent-insights-and-orchestratio-b62f6c9f
+- 2026-03-06-the-batch-research-nano-banana-2-aka-gemini-3-1-flash-image-makes-e-edbe5d36
 - 2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 - 2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - 2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
@@ -67,11 +78,14 @@ backlinks:
 - page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
+- page:2026-03-06-the-batch-research-nano-banana-2-aka-gemini-3-1-flash-image-makes-e-edbe5d36
+- page:2026-03-06-the-batch-research-openais-frontier-agent-insights-and-orchestratio-b62f6c9f
 - page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
+- page:2026-03-20-the-batch-research-deepseek-made-upcoming-4-0-model-available-for-p-8f8c21d6
 - page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 - page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
@@ -82,28 +96,36 @@ backlinks:
 - page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-03-27-the-batch-research-grok-imagine-1-0-sharply-cuts-costs-for-high-qua-f02eca28
+- page:2026-03-27-the-batch-research-nvidias-open-nemotron-3-super-120b-a12b-model-se-7cf0f41a
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
 - page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
+- page:2026-04-03-the-batch-research-google-debuted-lyria-3-an-app-that-turns-text-or-51adf4c3
+- page:2026-04-03-the-batch-research-test-time-training-end-to-end-ttt-e2e-retrains-m-87b314e7
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
+- page:undated-the-batch-research-alibabas-latest-flagship-models-are-open-weights-2ff46fcf
+- page:undated-the-batch-research-claude-codes-source-code-leaked-exposing-potenti-0c9adaf3
+- page:undated-the-batch-research-inside-feature-auto-encoder-a-diffusion-image-ge-ac0c194f
+- page:undated-the-batch-research-recursive-language-models-offer-path-to-aramatic-5b60cd95
 - topic:accountability
 - topic:acquisition
 - topic:agent-design
+- topic:agentic-applications
 - topic:agentic-commerce
 - topic:agentic-llm
-- topic:agentic-workflows
 - topic:ai-abuse
-- topic:ai-adoption
 - topic:ai-era
 - topic:ai-model
+- topic:ai-rivalry
 - topic:ai-safety
+- topic:alibaba
 - topic:anthropic
-- topic:api
 - topic:arabic
 - topic:asia
 - topic:audio
@@ -113,6 +135,7 @@ backlinks:
 - topic:business-simulation
 - topic:chatgpt
 - topic:child-safety
+- topic:chip-export-controls
 - topic:claude-opus-3
 - topic:code-embedding
 - topic:code-generation
@@ -122,7 +145,10 @@ backlinks:
 - topic:coding-agents
 - topic:coding-model
 - topic:coding-stack
-- topic:data-curation
+- topic:context-length
+- topic:copyright
+- topic:deep-learning
+- topic:deeplearning-ai
 - topic:developer-tools
 - topic:developers
 - topic:devstral
@@ -132,9 +158,12 @@ backlinks:
 - topic:document-processing
 - topic:document-understanding
 - topic:economic-index
+- topic:efficiency
+- topic:embeddings
 - topic:emotion
-- topic:evaluations
 - topic:exposure
+- topic:feature-auto-encoder
+- topic:features
 - topic:fellowship
 - topic:formal-proof
 - topic:foundation
@@ -142,21 +171,25 @@ backlinks:
 - topic:gates-foundation
 - topic:github-issues
 - topic:gpt-oss-safeguard
+- topic:grok-imagine
+- topic:image-generation
+- topic:image-generator
 - topic:industrial-policy
 - topic:inference
 - topic:investment
 - topic:japan
+- topic:kairos
 - topic:knowledge-work
-- topic:large-language-models
+- topic:large-language-model
+- topic:leak
 - topic:lean-4
 - topic:leanstral
 - topic:lightweight-model
 - topic:llm
-- topic:llms
 - topic:local-inference
 - topic:long-context
+- topic:lyria-3
 - topic:magistral
-- topic:measurement
 - topic:media
 - topic:middle-east
 - topic:mini
@@ -175,20 +208,26 @@ backlinks:
 - topic:multimodal-benchmarks
 - topic:multimodal-model
 - topic:multimodal-reasoning
+- topic:music-generation
 - topic:nano
+- topic:nano-banana-2
+- topic:nvidia
 - topic:occupational
 - topic:ocr
 - topic:online-safety
 - topic:open-source
 - topic:openai
 - topic:opportunity
+- topic:orchestration
 - topic:physics
+- topic:platform
 - topic:product-discovery
 - topic:productivity
 - topic:prosperity
 - topic:quantum-field-theory
 - topic:realtime
 - topic:reasoning
+- topic:recursive-language-models
 - topic:regional-language-models
 - topic:representation
 - topic:roadmap
@@ -203,10 +242,12 @@ backlinks:
 - topic:stadler
 - topic:technology
 - topic:teen-safety
+- topic:test-time-training
 - topic:video-generation
 - topic:voxtral
 - topic:website
-updated_at: '2026-04-09T16:35:04.518955Z'
+- topic:xai
+updated_at: '2026-04-09T23:10:03.591913Z'
 managed: true
 ---
 # Official
@@ -215,12 +256,12 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 45.05
-- Novelty score: 0.17
-- Items in last 7 days: 3
-- Items in last 30 days: 24
-- Total supporting items: 41
-- Source diversity: 3
+- Trend score: 68.20
+- Novelty score: 0.27
+- Items in last 7 days: 6
+- Items in last 30 days: 33
+- Total supporting items: 52
+- Source diversity: 4
 - First seen: 2024-11-18T08:00:00+00:00
 - Last seen: 2026-04-08T05:00:00+00:00
 
@@ -232,26 +273,27 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Openai](openai.md)
 - [Mistral](mistral.md)
 - [Website](website.md)
+- [Deeplearning Ai](deeplearning-ai.md)
 - [Anthropic](anthropic.md)
 - [Safety](safety.md)
 - [Chatgpt](chatgpt.md)
-- [Ai Safety](ai-safety.md)
-- [Audio](audio.md)
+- [Inference](inference.md)
 
 ## Leading Sources
 
 - Anthropic Research
 - Mistral Research
 - OpenAI Website
+- The Batch Research
 
 ## Representative Signals
 
 - [Introducing the Child Safety Blueprint](../sources/introducing-the-child-safety-blueprint-be6078.md)
 - [Announcing the OpenAI Safety Fellowship](../sources/announcing-the-openai-safety-fellowship-8b56c7.md)
 - [Industrial policy for the Intelligence Age](../sources/industrial-policy-for-the-intelligence-age-045aa4.md)
-- [OpenAI acquires TBPN](../sources/openai-acquires-tbpn-ceb257.md)
-- [Codex now offers more flexible pricing for teams](../sources/codex-now-offers-more-flexible-pricing-for-teams-4821c6.md)
-- [Emotion concepts and their function in a large language model](../sources/emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md)
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](../sources/test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md)
+- [Google Debuted Lyria 3, An App That Turns Text or Images Into 30-Second Songs](../sources/google-debuted-lyria-3-an-app-that-turns-text-or-images-into-30--7835fb.md)
+- [Claude Code’s Source Code Leaked, Exposing Potential Future Features Kairos and autoDream](../sources/claude-codes-source-code-leaked-exposing-potential-future-featur-2d1053.md)
 
 ## Map Links
 

@@ -11,7 +11,7 @@ backlinks:
 - topic:awareness
 - topic:mental-reset
 - topic:pullback
-updated_at: '2026-04-09T16:35:04.504182Z'
+updated_at: '2026-04-09T23:08:04.862734Z'
 managed: true
 ---
 # AI Pullback Has Officially Started
@@ -21,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@wlockett/ai-pullback-has-officially-started-fb6dfa5e4128
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@wlockett/ai-pullback-has-officially-started-fb6dfa5e4128
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Sam Liberty
-- Tags: newsletter, medium, email, blog-post, ai, pullback, mental reset, awareness
+- Tags: newsletter, medium, email, blog-post, ai, pullback, mental reset, awareness, sub-document
 - Topics: [Awareness](../topics/awareness.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Mental Reset](../topics/mental-reset.md), [Newsletter](../topics/newsletter.md), [Pullback](../topics/pullback.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

@@ -14,7 +14,7 @@ backlinks:
 - topic:efficient-transformers
 - topic:evaluations
 - topic:meta-learning
-updated_at: '2026-04-09T16:35:04.240567Z'
+updated_at: '2026-04-09T23:08:05.606224Z'
 managed: true
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
@@ -30,7 +30,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Yoonho Lee, Roshen Nair, Qizheng Zhang, Kangwook Lee, Omar Khattab, Chelsea Finn
 - Tags: paper, alphaxiv, research, agents, computer science, cs.ai, efficient-transformers, meta-learning, ml-systems, optimization-methods
 - Topics: [Agents](../topics/agents.md), [Evaluations](../topics/evaluations.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Efficient Transformers](../topics/efficient-transformers.md), [Meta Learning](../topics/meta-learning.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

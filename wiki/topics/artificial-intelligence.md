@@ -16,8 +16,6 @@ source_refs:
 - 2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - 2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 backlinks:
-- map:global-ai-research
-- map:trends:rising-topics
 - page:2026-03-30-alphaxiv-paper-meta-harness-end-to-end-optimization-of-model-ha-be1d870e
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - page:2026-04-05-alphaxiv-paper-clawarena-benchmarking-ai-agents-in-evolving-inf-2c8b2340
@@ -27,25 +25,21 @@ backlinks:
 - page:2026-04-07-alphaxiv-paper-neural-computers-503b0501
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - topic:agentic-frameworks
-- topic:agents
 - topic:ai-engineering
 - topic:attention-mechanisms
 - topic:causal-inference
 - topic:computer-science
 - topic:continual-learning
 - topic:cs-gr
-- topic:deep-learning
 - topic:distributed-learning
 - topic:efficient-transformers
-- topic:evaluations
 - topic:human-ai-interaction
 - topic:language-modeling
 - topic:learning
 - topic:meta-learning
 - topic:multi-modal-learning
-- topic:reasoning
 - topic:researcher-agent
-updated_at: '2026-04-09T16:35:04.393937Z'
+updated_at: '2026-04-09T23:10:03.299220Z'
 managed: true
 ---
 # Artificial Intelligence

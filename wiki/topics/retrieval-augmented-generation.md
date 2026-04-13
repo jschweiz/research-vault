@@ -17,10 +17,9 @@ backlinks:
 - page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 - page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
 - topic:deep-thinking
-- topic:medium
 - topic:search
 - topic:structure
-updated_at: '2026-04-09T16:35:04.706637Z'
+updated_at: '2026-04-09T23:10:03.137234Z'
 managed: true
 ---
 # Retrieval-Augmented Generation

@@ -9,12 +9,11 @@ source_refs:
 - 2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
 backlinks:
 - page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
-- topic:ai-agents
 - topic:ai-automation
 - topic:gpt-4-1
 - topic:gpt-5-4
 - topic:low-latency
-updated_at: '2026-04-09T16:35:04.425691Z'
+updated_at: '2026-04-09T21:02:07.219463Z'
 managed: true
 ---
 # Banking Support

@@ -7,17 +7,17 @@ aliases:
 source_refs:
 - 2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
 backlinks:
-- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
 - page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
 - page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
 - page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
 - page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
+- page:2026-04-09-alphasignal-email-cursor-enables-running-agents-on-any-machine-whi-455a5afa
 - page:2026-04-09-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-fe9910b5
 - page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
 - topic:cursor
 - topic:ide
-updated_at: '2026-04-09T16:35:03.914472Z'
+updated_at: '2026-04-09T23:10:03.800550Z'
 managed: true
 ---
 # Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
@@ -27,13 +27,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@han.heloir/cursor-3-is-not-an-ide-update-its-a-bet-that-you-ll-manage-agents-not-write-code-0d2bc51f0dcb
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@han.heloir/cursor-3-is-not-an-ide-update-its-a-bet-that-you-ll-manage-agents-not-write-code-0d2bc51f0dcb
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN
-- Tags: newsletter, medium, email, blog-post, cursor, agents, ide, software development, ai
+- Tags: newsletter, medium, email, blog-post, cursor, agents, ide, software development, ai, sub-document
 - Topics: [Agents](../topics/agents.md), [Cursor](../topics/cursor.md), [Email](../topics/email.md), [Ide](../topics/ide.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -51,12 +51,12 @@ Cursor 3 is not an IDE update but a bet that users will manage agents rather tha
 
 ## Related Research
 
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Agents, Cursor, Email, Newsletter)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Medium, Newsletter)
 - [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Medium, Newsletter)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-40b39c.md) (shared topics: Agents, Email, Medium, Newsletter)
 - [Meet the new Cursor](meet-the-new-cursor-20e326.md) (shared topics: Agents, Cursor, Email, Newsletter)
-- [Agentic AI: Implementing Long-Term Memory](agentic-ai-implementing-long-term-memory-f983fa.md) (shared topics: Agents, Email, Medium, Newsletter)
-- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Agents, Email, Newsletter)
 
 ## Radar
 

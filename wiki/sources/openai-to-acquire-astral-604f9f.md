@@ -12,7 +12,7 @@ backlinks:
 - topic:codex
 - topic:developer-tools
 - topic:python
-updated_at: '2026-04-09T16:35:03.942781Z'
+updated_at: '2026-04-09T23:08:05.756784Z'
 managed: true
 ---
 # OpenAI to acquire Astral
@@ -27,7 +27,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-19T00:00:00+00:00
 - Tags: openai, official, website, blog-post, codex, python, developer tools
 - Topics: [Codex](../topics/codex.md), [Developer Tools](../topics/developer-tools.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Python](../topics/python.md), [Website](../topics/website.md)
-- Trend score: 49.76
+- Trend score: 70.25
 - Novelty score: 6.80
 
 ## Summary

@@ -8,7 +8,7 @@ authors:
 - Matthew Schwartz
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:09.769523Z'
-content_hash: 7a2292dc885155b51d792a885b93c9eef64e91c3421320cf2f313170bd0482f4
+content_hash: 3a5ea7f2498cca1e7019fceb17ec9cbb7136e62cd2355b96f4f13f536abdaa0b
 identity_hash: 6710de92c2bcfe6e91356c9c2b1553cdd988a3c8ca376380ba12dd7827098f95
 tags:
 - anthropic
@@ -31,26 +31,16 @@ canonical_url: https://www.anthropic.com/research/vibe-physics
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:09.769545Z'
+fetched_at: '2026-04-13T18:11:38.182982Z'
 short_summary: A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of AI in theoretical physics.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:11.273793Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 2c6040f671fe5c303d42236c7b7de74d8c6e08afd94a6cad8d734cf57fd1a93c
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: e6ea2c15d2fbc5f1a77125ed448b17e0870602666797a50f7a2d94fe84a99fec
-lightweight_score:
-  relevance_score: 0.418
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
-  evidence_quotes:
-  - A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of A
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
@@ -70,7 +60,7 @@ and out would pop the paper. We are not there yet, of course. I tried giving thi
 To go about this scientifically, I encapsulated all the work. The rules were strict:
 My question was: is there a set of prompts, like instructions to a talented G2, that can guide an AI to produce a high-quality physics paper (one that is genuinely interesting and pushes the field forward)?
 I knew from experience that LLMs struggle with context and organization over long projects. So I started by asking Claude to come up with a plan of attack: what tasks needed to be done in what order. I also asked GPT 5.2 and Gemini 3.0. Then, I had all three LLMs merge the best ideas from each, using web interfaces and copying one to another. Next, I gave those merges to Claude, asking it to break the outline into detailed subsections. The result is [here](https://www-cdn.anthropic.com/2595299ccf7f8b9a9c74823c24faaa5d9b216804.pdf). There were 102 separate tasks across seven stages.
-From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.66dc6240-de57-4013-8e2f-55ce282351c2/code), using the extension in VS Code.
+From there, I turned to [Claude Code](https://claude.ai/redirect/website.v1.ae8e2433-ce9e-48a0-b609-5dc2ec208fe5/code), using the extension in VS Code.
 I created a folder for the project, put in the master plan, and had it try to solve each task separately, writing its results in a separate markdown file. Some examples are [Task 1.1: Review BSZ Paper](https://www-cdn.anthropic.com/c993ead637f1a102fe1f5346e89f59e82c579b37.pdf) and [Task 1.2: Review Catani—Webber](https://www-cdn.anthropic.com/94b3c41e52e19ba450fe5e804400ebcf0a88f3d0.pdf).
 This organization step was enormously helpful. Instead of one long conversation or document, Claude maintained a tree of markdown files—one summary per stage, one detailed file per task. Given that LLMs work much better with things they can retrieve rather than things they have to hold in context, this allowed Claude to look things up rather than remember them. When I asked Claude to proceed to the next task, it would read its own previous summary, do the work, and write a new summary. I also had it edit the plan as it went, modifying earlier and later sections as it learned.
 Claude worked through the stages sequentially: kinematics, NLO structure, SCET factorization, anomalous dimensions, resummation, matching, and documentation. Each stage took 15–35 minutes of wall-clock time and about half that in actual compute. The whole thing took roughly 2.5 hours.
@@ -133,6 +123,6 @@ In addition to the growth in interest, the tools themselves have been steadily i
 | CPU hours for simulations | ~40 |
 | Human oversight time | ~50–60 hours |
 [Matthew Schwartz](https://www.physics.harvard.edu/people/facpages/schwartz) is a professor of physics at Harvard University. The paper discussed here is [available on arXiv](https://arxiv.org/abs/2601.02484).
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 - topic:claude-code
 - topic:programming
-- topic:system-prompts
-updated_at: '2026-04-09T12:15:42.067401Z'
+updated_at: '2026-04-09T23:10:02.728581Z'
 managed: true
 ---
 # Context Engineering
@@ -39,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Newsletter](newsletter.md)
 - [Programming](programming.md)
-- [System Prompts](system-prompts.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

@@ -12,8 +12,7 @@ backlinks:
 - page:2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
 - topic:living-robots
 - topic:neurobots
-- topic:science
-updated_at: '2026-04-09T12:15:42.459857Z'
+updated_at: '2026-04-09T23:10:03.931236Z'
 managed: true
 ---
 # Nervous Systems

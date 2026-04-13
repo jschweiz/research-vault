@@ -12,12 +12,10 @@ backlinks:
 - page:2025-01-30-mistral-research-mistral-small-3-mistral-ai-5a7173c6
 - page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
 - page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
-- page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 - page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
 - page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
 - page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 - page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 - page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
 - topic:code-generation
@@ -25,7 +23,7 @@ backlinks:
 - topic:lean-4
 - topic:leanstral
 - topic:mistral
-updated_at: '2026-04-09T16:35:04.709277Z'
+updated_at: '2026-04-09T23:10:03.287921Z'
 managed: true
 ---
 # Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI
@@ -41,7 +39,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, leanstral, open-source, code agent, lean 4, formal proof
 - Topics: [Code Generation](../topics/code-generation.md), [Formal Proof](../topics/formal-proof.md), [Lean 4](../topics/lean-4.md), [Leanstral](../topics/leanstral.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 2.20
 
 ## Summary

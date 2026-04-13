@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
 - topic:data-engineering
-- topic:unity-catalog
-updated_at: '2026-04-09T16:35:03.956540Z'
+updated_at: '2026-04-09T23:10:02.735307Z'
 managed: true
 ---
 # Databricks
@@ -38,7 +37,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
-- [Unity Catalog](unity-catalog.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

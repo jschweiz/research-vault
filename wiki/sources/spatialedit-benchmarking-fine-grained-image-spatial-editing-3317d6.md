@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
 backlinks:
+- page:2026-03-20-the-batch-research-apples-atoken-a-multimodal-model-with-a-single-e-2ba5af34
 - page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
@@ -21,7 +22,7 @@ backlinks:
 - topic:geometric-deep-learning
 - topic:image-generation
 - topic:synthetic-data
-updated_at: '2026-04-09T16:35:04.816950Z'
+updated_at: '2026-04-09T23:10:02.365286Z'
 managed: true
 ---
 # SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing

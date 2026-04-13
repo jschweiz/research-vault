@@ -1,0 +1,67 @@
+---
+id: page:2026-03-20-the-batch-research-deepseek-made-upcoming-4-0-model-available-for-p-8f8c21d6
+page_type: source-note
+title: DeepSeek Made Upcoming 4.0 Model Available for Performance Testing to Huawei but not Nvidia or AMD
+aliases:
+- DeepSeek Made Upcoming 4.0 Model Available for Performance Testing to Huawei but not Nvidia or AMD
+source_refs:
+- 2026-03-20-the-batch-research-deepseek-made-upcoming-4-0-model-available-for-p-8f8c21d6
+backlinks:
+- topic:ai-rivalry
+- topic:chip-export-controls
+- topic:deepseek
+- topic:huawei
+updated_at: '2026-04-09T23:08:05.741704Z'
+managed: true
+---
+# DeepSeek Made Upcoming 4.0 Model Available for Performance Testing to Huawei but not Nvidia or AMD
+
+System-generated source note. Build higher-order synthesis pages around it instead of editing the raw document.
+
+## Metadata
+
+- Source: The Batch Research
+- Canonical URL: https://www.deeplearning.ai/the-batch/deepseek-made-its-upcoming-4-0-model-available-for-performance-testing-to-chinese-chipmakers-but-not-u-s-ones
+- Document kind: blog-post
+- Published at: 2026-03-20T08:48:33-07:00
+- Authors: None
+- Tags: deeplearning-ai, official, research, website, blog-post, ai-rivalry, chip-export-controls, huawei, deepseek
+- Topics: [Ai Rivalry](../topics/ai-rivalry.md), [Chip Export Controls](../topics/chip-export-controls.md), [Deeplearning Ai](../topics/deeplearning-ai.md), [Deepseek](../topics/deepseek.md), [Huawei](../topics/huawei.md), [Official](../topics/official.md)
+- Trend score: 68.20
+- Novelty score: 4.20
+
+## Summary
+
+DeepSeek withheld prerelease access to its upcoming DeepSeek-V4 model from Nvidia and AMD, intensifying the AI rivalry between the U.S. and China. This action highlights the ongoing technological divide and the complex dynamics of international chip export controls.
+
+## Topic Map
+
+- [Ai Rivalry](../topics/ai-rivalry.md)
+- [Chip Export Controls](../topics/chip-export-controls.md)
+- [Deeplearning Ai](../topics/deeplearning-ai.md)
+- [Deepseek](../topics/deepseek.md)
+- [Huawei](../topics/huawei.md)
+- [Official](../topics/official.md)
+
+## Related Research
+
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md) (shared topics: Deeplearning Ai, Official)
+- [Google Debuted Lyria 3, An App That Turns Text or Images Into 30-Second Songs](google-debuted-lyria-3-an-app-that-turns-text-or-images-into-30--7835fb.md) (shared topics: Deeplearning Ai, Official)
+- [Claude Code’s Source Code Leaked, Exposing Potential Future Features Kairos and autoDream](claude-codes-source-code-leaked-exposing-potential-future-featur-2d1053.md) (shared topics: Deeplearning Ai, Official)
+- [Recursive Language Models Offer Path To Dramatically Expand Beyond the Context Window](recursive-language-models-offer-path-to-dramatically-expand-beyo-eade39.md) (shared topics: Deeplearning Ai, Official)
+- [Grok Imagine 1.0 Sharply Cuts Costs for High-Quality Video Generation](grok-imagine-1-0-sharply-cuts-costs-for-high-quality-video-gener-bc473a.md) (shared topics: Deeplearning Ai, Official)
+- [Nvidia’s Open Nemotron 3 Super 120B-A12B Model Sets New Paces In Its Class](nvidias-open-nemotron-3-super-120b-a12b-model-sets-new-paces-in--503103.md) (shared topics: Deeplearning Ai, Official)
+
+## Radar
+
+- [Rising Topics](../trends/rising-topics.md)
+- [Global AI Research](../maps/global-ai-research.md)
+
+## Source Excerpt
+
+DeepSeek, the Chinese developer of outstanding open-weights models, has withheld an upcoming update of its flagship model from U.S. chip makers, a move that intensifies the AI rivalry between the U.S. and China.
+What’s new: DeepSeek has not yet given Nvidia or AMD an opportunity to make sure its upcoming DeepSeek-V4, which is in the final stages of development, will run smoothly on its chips — a departure from the typical practice prior to major model updates. However, it did share a prerelease version of the model with Huawei, giving the Chinese chip maker several weeks to optimize the software for its hardware, Reuters [reported](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrTz5nR3bW50kH_H6lZ3lgVbTDNX3rpF4KW7SHj-X4W1lnhW4ck6PN1NYtXZW7m93m5326gkdW1C2bFf4QR0xFW4smplh5KJ_CSW8C3Pm08qVWMSVmb0qb2YKMP-W6wLHx03wS9njW1RsNDT5LP6ccW3_GgXD7LbT9WW4bxz7645H8mDVy4tgd6r1nDVW7nRGz11x6lVNW6ppT2F2FhrMtW1bBbTb2jmZkPW1J9Gsd6pcrsbW93hpgw3LJqqtVQppDn3LtqGmVJjT7P91jCDZV2c5LF8G2jJ6W2KKXjC8Q2QpVW2zGwGR3ffHQlVQwlzZ7hMfFKW4pWm6d5nHZ-ZW8D_Mhg2RBTVTW1VBv4q6xS_klW5vyfN97VrSQmW3RzK3q3lgY-sW2qhzk87vylCcVDgGYh6FJcYXVzhWbY28LLFyf2FcDmY04&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152825409%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=QRa%2BDxv%2ByA6voVYr4taPU48annEmu8IsX1WK%2FabzzAg%3D&reserved=0) although it did not report DeepSeek’s reasoning for the decision.
+How it works: According to Reuters, chip makers typically examine new models to make sure they run inference efficiently on their hardware. In the past, DeepSeek has worked closely with Nvidia to train its models.
+- An unnamed senior Trump administration official said DeepSeek-V4 was trained in China using Nvidia’s most advanced chips despite U.S. export controls on such products, Reuters
+[reported](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrTz5nR3bW50kH_H6lZ3mPW4vCR9G18w-wVVqg0GJ6h70vjW9dVjKC519_4LV7jtZt1XDR0nW1gdkNv1S6pt1W4x_nGv64547rV57Lf97HSxJhW2RPTbX7PPX9FW7K21L55gL-z4W4gWY6D4QRfVnW5ZMYDv1GPf_6W1n7dlX8BwPhdW2bHd1b3yhHDyW55j44K66QksLW5mRbD45xkl9WW7MfqbY7H7gZ0W1PmkPY8rLhScW8R0Bpp3tSpGfW8X0dpZ8dxzv2W6LpLj27qWsTcN5c8hLhJzyxfV9xWRV62wCnbW8453wC331Gr-VL8F8C3PQ2tRW3Rr0LP2jtxV4W7x0Xg36SsCFqW5KNXZh5Jqvc7W8fKmjr220Z7_W3Ck2nZ4MW2gbW5tTXMd8MzRwrN5hP2Y_yfbCmN6HMHGMhTBqQf6mWnL604&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152838236%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=RrJ1V2WUquqT95Bq6zjgQaPYM4WPVGUekF50eW2VcZw%3D&reserved=0), although it was not able to learn how the official obtained this information. - Nvidia supplied extensive technical assistance to DeepSeek when it trained DeepSeek-V3, achieving “major training efficiency gains,” the chairman of the U.S. House of Representatives Select Committee on China
+[said](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrTz5nR3bW50kH_H6lZ3mYVGw1Kk4MstfHVXQpdY8_8c90N1fpd2jvTspxW9hFDN02BW8jxW1JqDHj2VrPMNW4YGkRB1CVtZyW3Qf7NX22MpgNW50mbKR6RTgdmW1wrtkW95vPCcW7HJVZD3202n-W8shlw739YL70W5dqNzn6mn049N7Xw5B3nkqpvW4ZwgfB71xnZ6W7bYpr-5p77FyW4zFRlF2nLjwVW2drh5M675sQpW8-pbTC56_n40VDhs1771wkH0W3st78b19Fq4mW3m7LFC8nC6TyW4pjLv-7SYqq_W3bX8q552b7yvW4YFm5-98DDGmW8fvkhz8fZpDNW3W4MsY1ttg3sW5R9bbh5N_QqmW6cwv-N4-Rc94W3CC5rP4PT17VW1stGhS4xdCZ6V-HNlk750ppLW7NppZF98wzCVf23t4DY04&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152855076%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsI

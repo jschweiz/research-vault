@@ -6,14 +6,17 @@ aliases:
 - Cursor
 - cursor
 source_refs:
+- 2026-04-09-alphasignal-email-cursor-enables-running-agents-on-any-machine-whi-455a5afa
 - 2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
 - 2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
 backlinks:
 - page:2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
 - page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
+- page:2026-04-09-alphasignal-email-cursor-enables-running-agents-on-any-machine-whi-455a5afa
 - topic:design
 - topic:ide
-updated_at: '2026-04-09T16:35:04.163261Z'
+- topic:mobile
+updated_at: '2026-04-09T23:10:03.769646Z'
 managed: true
 ---
 # Cursor
@@ -22,14 +25,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 15.30
-- Novelty score: 5.40
-- Items in last 7 days: 2
-- Items in last 30 days: 2
-- Total supporting items: 2
-- Source diversity: 2
+- Trend score: 22.95
+- Novelty score: 6.60
+- Items in last 7 days: 3
+- Items in last 30 days: 3
+- Total supporting items: 3
+- Source diversity: 3
 - First seen: 2026-04-03T10:59:24+00:00
-- Last seen: 2026-04-07T06:40:00+00:00
+- Last seen: 2026-04-09T16:14:36+00:00
 
 ## Aliases
 
@@ -39,6 +42,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Agents](agents.md)
 - [Email](email.md)
 - [Newsletter](newsletter.md)
+- [Alphasignal](alphasignal.md)
 - [Data Science](data-science.md)
 - [Design](design.md)
 - [Ide](ide.md)
@@ -46,11 +50,13 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Leading Sources
 
+- AlphaSignal Email
 - Medium Email
 - TLDR Email
 
 ## Representative Signals
 
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](../sources/cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md)
 - [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](../sources/cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md)
 - [Meet the new Cursor](../sources/meet-the-new-cursor-20e326.md)
 

@@ -7,7 +7,7 @@ source_name: Anthropic Research
 authors: []
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:01.495324Z'
-content_hash: a05d97e8dac9fa8cd9a8372ec222002c902e202c53f3ab602b985ebcb1f73b81
+content_hash: a1a20d21d13d0ec3311f7a245c405639d29ba776537ac909efe5afb8d406dc4c
 identity_hash: 568e8979150d977ccb4c5531cde2053d0ef51e6f1aedf7a342bc33c2439434e8
 tags:
 - anthropic
@@ -28,28 +28,16 @@ canonical_url: https://www.anthropic.com/research/introducing-anthropic-science
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:01.495333Z'
+fetched_at: '2026-04-13T18:11:21.391687Z'
 short_summary: Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising sociological questions about the role of scientists.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T14:34:21.864488Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: a8cea54632141613fbfb65a61a4ad24f41ec3884fa3deaca592058cc1dec251c
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 5bb8493210a5e5e33848b95fb86b4d8e9fba409513f008e794b2726715e4228d
-lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.95
-  topic_fit_score: 1.0
-  author_fit_score: 0.8
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of language models, AI in science, and research workflows, aligning perfectly with their interests.
-  evidence_quotes:
-  - Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising
-  - AI is helping mathematicians to [discover](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) [new proofs](https://www.math.inc/sphere-packing
-  - This blog will discuss the upsides and challenges of the current moment for AI and science, exploring the excitement as it unfolds.
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
@@ -63,6 +51,6 @@ We’re publishing two pieces alongside this introduction: Matthew Schwartz’s 
 Anthropic has several initiatives aimed at accelerating scientific progress. Our [AI for Science](https://www.anthropic.com/news/ai-for-science-program) program provides API credits to researchers working on high-impact projects across biology, physics, chemistry, and other fields. [Claude for Life Sciences](https://www.anthropic.com/news/claude-for-life-sciences) is dedicated to making Claude useful for life sciences researchers and R&D teams, with partnerships across research institutions, pharma, and biotech. We recently shared some early [results of these programs](https://www.anthropic.com/news/accelerating-scientific-research). And we’re a [core partner](https://www.anthropic.com/news/genesis-mission-partnership) in the [Genesis Mission](http://genesis.energy.gov/), a multi-billion-dollar initiative across industry, academia, and government to accelerate American science with AI.
 Beyond these dedicated efforts, researchers across Anthropic are working to improve our models' core scientific capabilities and safely accelerate AI-assisted discovery. Many come from biophysics, chemistry, and neuroscience. We'll be reporting on their work and on efforts elsewhere in the field.
 If you have something you want to see covered here, please reach out to us at scienceblog@anthropic.com.
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

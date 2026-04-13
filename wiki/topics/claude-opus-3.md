@@ -9,10 +9,9 @@ source_refs:
 - 2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 backlinks:
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
-- topic:ai-safety
 - topic:model-deprecation
 - topic:model-preservation
-updated_at: '2026-04-09T16:35:03.972443Z'
+updated_at: '2026-04-09T23:10:02.731793Z'
 managed: true
 ---
 # Claude Opus 3

@@ -12,7 +12,7 @@ backlinks:
 - topic:social-creation-platform
 - topic:sora
 - topic:video-generation
-updated_at: '2026-04-09T16:35:03.824136Z'
+updated_at: '2026-04-09T23:08:05.729908Z'
 managed: true
 ---
 # Creating with Sora Safely
@@ -28,8 +28,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, sora, safety, video model, social creation platform
 - Topics: [Safety](../topics/safety.md), [Video Generation](../topics/video-generation.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Social Creation Platform](../topics/social-creation-platform.md), [Sora](../topics/sora.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 3.60
 
 ## Summary
 
@@ -51,7 +51,7 @@ OpenAI built Sora 2 and the Sora app with safety as a foundation to address the 
 - [Introducing the OpenAI Safety Bug Bounty program](introducing-the-openai-safety-bug-bounty-program-c0fc50.md) (shared topics: Official, Openai, Safety)
 - [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Official, Openai, Safety)
 - [Introducing the Child Safety Blueprint](introducing-the-child-safety-blueprint-be6078.md) (shared topics: Official, Openai)
-- [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai)
+- [OpenAI introduces fellowship program for researchers to work on safety, robustness, and alignment topics](openai-introduces-fellowship-program-for-researchers-to-work-on--3d5c2e.md) (shared topics: Openai, Safety)
 
 ## Radar
 

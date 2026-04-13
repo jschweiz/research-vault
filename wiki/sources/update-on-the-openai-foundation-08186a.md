@@ -12,7 +12,7 @@ backlinks:
 - topic:disease
 - topic:foundation
 - topic:investment
-updated_at: '2026-04-09T16:35:04.581220Z'
+updated_at: '2026-04-09T23:08:05.661706Z'
 managed: true
 ---
 # Update on the OpenAI Foundation
@@ -27,8 +27,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-24T09:00:00+00:00
 - Tags: openai, official, website, blog-post, foundation, investment, disease, ai
 - Topics: [Disease](../topics/disease.md), [Foundation](../topics/foundation.md), [Investment](../topics/investment.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

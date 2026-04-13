@@ -8,7 +8,7 @@ authors:
 - Anthropic
 published_at: '2026-03-13T00:00:00Z'
 ingested_at: '2026-04-09T12:04:13.824118Z'
-content_hash: 09a1e5343c5efa0fdc0cc3b16ad02f8f05932770c4d6eebb9b7c11eaf9478cb2
+content_hash: 712cda307ec1e9ae90a632677ddb0eefa6d080b66a5ccc4881ae5354513239b3
 identity_hash: 01ebf4cda131e64dabbe9732f43b3d6715a26a1756584913a90fffc2c8c150ca
 tags:
 - anthropic
@@ -31,26 +31,16 @@ canonical_url: https://www.anthropic.com/research/diff-tool
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:04:13.824123Z'
+fetched_at: '2026-04-13T18:11:46.337149Z'
 short_summary: The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and potential risks. This approach allows researchers to identify 'unknown unknowns' and audit models by detecting features exclusive to specific architectures.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T15:00:08.788216Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 07d77782c6106ad94dc6d5933943ba603973d9ab439b95e3c17c1ee9cc415191
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 8b64080239ec9fe4e16cea018766787d0e3e93ac55611b67ea5506f3723da65a
-lightweight_score:
-  relevance_score: 0.739
-  source_fit_score: 0.55
-  topic_fit_score: 0.62
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 2 favorite-topic matches, 1 favorite-author match.
-  evidence_quotes:
-  - The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.
@@ -101,9 +91,9 @@ This post was authored by Thomas Jiralerspong (Anthropic Fellows Program) and Tr
 Footnotes
 - As with all Anthropic Fellows interpretability research, this paper analyzes the behavior of open-source models. We chose the four models in the study—Llama-3.1-8B-Instruct, Qwen3-8B, GPT-OSS-20B, and DeepSeek-R1-0528-Qwen3-8B—on the basis they would be well-suited to testing whether our Dedicated Feature Crosscoder could detect notable differences in model behavior.
 Related content
+Trustworthy agents in practice
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
+[Read more](/research/trustworthy-agents)
 Emotion concepts and their function in a large language model
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 [Read more](/research/emotion-concepts-function)
-Anthropic Economic Index report: Learning curves
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
-[Read more](/research/economic-index-march-2026-report)

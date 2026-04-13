@@ -14,7 +14,7 @@ backlinks:
 - topic:knowledge-work
 - topic:productivity
 - topic:stadler
-updated_at: '2026-04-09T16:35:04.463683Z'
+updated_at: '2026-04-09T23:08:05.619049Z'
 managed: true
 ---
 # STADLER reshapes knowledge work at a 230-year-old company
@@ -29,8 +29,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-27T22:00:00+00:00
 - Tags: openai, official, website, blog-post, stadler, chatgpt, knowledge work, productivity
 - Topics: [Chatgpt](../topics/chatgpt.md), [Knowledge Work](../topics/knowledge-work.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Productivity](../topics/productivity.md), [Stadler](../topics/stadler.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

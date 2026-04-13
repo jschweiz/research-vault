@@ -7,15 +7,13 @@ aliases:
 source_refs:
 - 2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
 backlinks:
-- page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 - page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
-- page:2026-04-03-medium-email-claude-code-is-great-a7134001
 - page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
 - page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
 - topic:coding
 - topic:prompts
 - topic:software-construction
-updated_at: '2026-04-09T16:35:04.481859Z'
+updated_at: '2026-04-09T23:10:02.880802Z'
 managed: true
 ---
 # Vibe Coding — Prompts Are All You Need?
@@ -25,13 +23,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@alexcpn/vibe-coding-prompts-are-all-you-need-1902215294bb
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@alexcpn/vibe-coding-prompts-are-all-you-need-1902215294bb
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Leo Godin
-- Tags: newsletter, medium, email, blog-post, vibe coding, prompts, ai, coding, software construction
+- Tags: newsletter, medium, email, blog-post, vibe coding, prompts, ai, coding, software construction, sub-document
 - Topics: [Coding](../topics/coding.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Prompts](../topics/prompts.md), [Software Construction](../topics/software-construction.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

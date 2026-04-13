@@ -16,7 +16,7 @@ backlinks:
 - topic:coding
 - topic:commands
 - topic:linux
-updated_at: '2026-04-09T16:35:04.268057Z'
+updated_at: '2026-04-09T23:08:04.684595Z'
 managed: true
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
@@ -26,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
-- Tags: newsletter, medium, email, blog-post, cli, commands, coding, linux, software
+- Tags: newsletter, medium, email, blog-post, cli, commands, coding, linux, software, sub-document
 - Topics: [Cli](../topics/cli.md), [Coding](../topics/coding.md), [Commands](../topics/commands.md), [Email](../topics/email.md), [Linux](../topics/linux.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

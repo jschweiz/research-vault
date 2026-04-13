@@ -1,0 +1,89 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Ian Osband",
+        "id": "01985c81-e911-7e32-b39c-4dc44ed33841",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [
+      {
+        "id": "01985c36-cf10-70b0-87f8-9fd3ea8be353",
+        "image": "images/organizations/deepmind.png",
+        "name": "Google DeepMind"
+      }
+    ],
+    "paper_group": {
+      "citation": {
+        "bibtex": "@misc{osbandSun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)delightfulpolicygradient,\n      title={Delightful Policy Gradient},\n      author={Ian Osband},\n      year={Sun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)},\n      eprint={2603.14608},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2603.14608},\n}"
+      },
+      "created_at": "Tue Mar 17 2026 04:14:10 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Sun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)",
+      "id": "019cfa00-5161-7487-80e3-5f28851a76a1",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 70,
+        "questions_count": 0,
+        "total_votes": 9,
+        "upvotes_count": 70,
+        "visits_count": {
+          "all": 741,
+          "last24Hours": 9,
+          "last30Days": 741,
+          "last7Days": 59,
+          "last90Days": 741
+        }
+      },
+      "podcast_path": "019cfa00-5161-7487-80e3-5f28851a76a1/podcast.mp3",
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2603.14608"
+      },
+      "title": "Delightful Policy Gradient",
+      "topics": [
+        "Computer Science",
+        "cs.AI",
+        "cs.LG",
+        "deep-reinforcement-learning",
+        "Mathematics",
+        "math.OC",
+        "optimization-methods",
+        "reinforcement-learning",
+        "robotic-control",
+        "sequence-modeling",
+        "Statistics",
+        "stat.ML",
+        "transformers"
+      ],
+      "universal_paper_id": "2603.14608",
+      "updated_at": "Tue Mar 17 2026 04:14:10 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Standard policy gradients weight each sampled action by advantage alone, regardless of how likely that action was under the current policy. This creates two pathologies: within a single decision context (e.g. one image or prompt), a rare negative-advantage action can disproportionately distort the update direction; across many such contexts in a batch, the expected gradient over-allocates budget to contexts the policy already handles well. We introduce the \\textit{Delightful Policy Gradient} (DG), which gates each term with a sigmoid of \\emph{delight}, the product of advantage and action surprisal (negative log-probability). For $K$-armed bandits, DG provably improves directional accuracy in a single context and, across multiple contexts, shifts the expected gradient strictly closer to the supervised cross-entropy oracle. This second effect is not variance reduction: it persists even with infinite samples. Empirically, DG outperforms REINFORCE, PPO, and advantage-weighted baselines across MNIST, transformer sequence modeling, and continuous control, with larger gains on harder tasks.",
+      "created_at": "Tue Mar 17 2026 04:14:10 GMT+0000 (Coordinated Universal Time)",
+      "id": "019cfa00-5171-78c2-a0e8-58fbdbb9ced8",
+      "imageURL": "image/2603.14608v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Sun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)",
+      "title": "Delightful Policy Gradient",
+      "universal_paper_id": "2603.14608",
+      "updated_at": "Tue Mar 17 2026 04:14:10 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2603.14608v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

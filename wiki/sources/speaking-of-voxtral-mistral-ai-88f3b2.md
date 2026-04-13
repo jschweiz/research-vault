@@ -27,7 +27,7 @@ backlinks:
 - topic:lightweight-model
 - topic:mistral
 - topic:multilingual
-updated_at: '2026-04-09T16:35:03.820456Z'
+updated_at: '2026-04-09T23:08:05.680497Z'
 managed: true
 ---
 # Speaking of Voxtral | Mistral AI
@@ -43,7 +43,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, text-to-speech, multilingual, voice generation, lightweight model, latency
 - Topics: [Inference](../topics/inference.md), [Audio](../topics/audio.md), [Lightweight Model](../topics/lightweight-model.md), [Mistral](../topics/mistral.md), [Multilingual](../topics/multilingual.md), [Official](../topics/official.md)
-- Trend score: 53.40
+- Trend score: 68.20
 - Novelty score: 4.80
 
 ## Summary

@@ -16,12 +16,8 @@ backlinks:
 - topic:code
 - topic:data-science
 - topic:efficiency
-- topic:inference
-- topic:llm
-- topic:multimodal
-- topic:reasoning
 - topic:retrieval-augmented-generation
-updated_at: '2026-04-09T16:35:03.895903Z'
+updated_at: '2026-04-09T23:10:02.297183Z'
 managed: true
 ---
 # Architecture

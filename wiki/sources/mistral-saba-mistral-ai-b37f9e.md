@@ -11,7 +11,7 @@ backlinks:
 - topic:middle-east
 - topic:mistral-saba
 - topic:regional-language-models
-updated_at: '2026-04-09T16:35:03.794314Z'
+updated_at: '2026-04-09T23:08:06.162468Z'
 managed: true
 ---
 # Mistral Saba | Mistral AI
@@ -27,8 +27,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, regional language models, mistral saba, middle east, south asia, arabic
 - Topics: [Arabic](../topics/arabic.md), [Middle East](../topics/middle-east.md), [Mistral](../topics/mistral.md), [Mistral Saba](../topics/mistral-saba.md), [Official](../topics/official.md), [Regional Language Models](../topics/regional-language-models.md)
-- Trend score: 45.05
-- Novelty score: 0.17
+- Trend score: 68.20
+- Novelty score: 0.27
 
 ## Summary
 

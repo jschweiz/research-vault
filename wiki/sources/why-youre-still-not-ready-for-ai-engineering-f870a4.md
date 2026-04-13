@@ -9,7 +9,7 @@ source_refs:
 backlinks:
 - topic:ai-engineering
 - topic:learning
-updated_at: '2026-04-09T16:35:04.434799Z'
+updated_at: '2026-04-09T23:08:05.265888Z'
 managed: true
 ---
 # Why You’re Still Not Ready for AI Engineering
@@ -19,13 +19,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@gratitudedriven/why-youre-still-not-ready-for-ai-engineering-0dd7e8b103dd
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@gratitudedriven/why-youre-still-not-ready-for-ai-engineering-0dd7e8b103dd
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Marina Wyss
-- Tags: newsletter, medium, email, blog-post, ai engineering, artificial intelligence, technology, learning
+- Tags: newsletter, medium, email, blog-post, ai engineering, artificial intelligence, technology, learning, sub-document
 - Topics: [Ai Engineering](../topics/ai-engineering.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Email](../topics/email.md), [Learning](../topics/learning.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

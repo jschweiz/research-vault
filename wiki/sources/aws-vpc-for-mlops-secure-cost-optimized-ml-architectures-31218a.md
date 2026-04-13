@@ -13,7 +13,7 @@ backlinks:
 - topic:cost-optimization
 - topic:machine-learning
 - topic:mlops
-updated_at: '2026-04-09T16:35:04.038930Z'
+updated_at: '2026-04-09T23:08:04.678138Z'
 managed: true
 ---
 # AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures
@@ -23,13 +23,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
 - Document kind: blog-post
 - Published at: 2026-04-08T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Kuriko Iwai
-- Tags: newsletter, medium, email, blog-post, aws, mlops, vpc, machine learning, security, cost optimization
+- Tags: newsletter, medium, email, blog-post, aws, mlops, vpc, machine learning, security, cost optimization, sub-document
 - Topics: [Aws](../topics/aws.md), [Cost Optimization](../topics/cost-optimization.md), [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Mlops](../topics/mlops.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

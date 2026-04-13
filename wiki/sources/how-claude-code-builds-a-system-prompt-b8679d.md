@@ -7,12 +7,12 @@ aliases:
 source_refs:
 - 2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 backlinks:
+- page:2026-04-03-medium-email-claude-code-is-great-a7134001
 - page:2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
 - topic:claude-code
 - topic:context-engineering
 - topic:programming
-- topic:system-prompts
-updated_at: '2026-04-09T16:35:04.199869Z'
+updated_at: '2026-04-09T23:10:03.124653Z'
 managed: true
 ---
 # How Claude Code Builds a System Prompt
@@ -26,9 +26,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-06T11:04:43+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, system prompts, claude code, context engineering, programming
-- Topics: [Claude Code](../topics/claude-code.md), [Context Engineering](../topics/context-engineering.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Programming](../topics/programming.md), [System Prompts](../topics/system-prompts.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, article, system prompts, claude code, context engineering, programming, sub-document
+- Topics: [Claude Code](../topics/claude-code.md), [Context Engineering](../topics/context-engineering.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Programming](../topics/programming.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -42,16 +42,16 @@ This article explores how Claude Code builds system prompts, highlighting the co
 - [Email](../topics/email.md)
 - [Newsletter](../topics/newsletter.md)
 - [Programming](../topics/programming.md)
-- [System Prompts](../topics/system-prompts.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
+- [Claude Code is Great](claude-code-is-great-71ed2c.md) (shared topics: Claude Code, Email, Newsletter, Sub Document)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter, Programming)
-- [What I Learnt Using Claude Code to Build Production-Ready Apps](what-i-learnt-using-claude-code-to-build-production-ready-apps-217125.md) (shared topics: Claude Code, Email, Newsletter)
-- [Claude Code is Great](claude-code-is-great-71ed2c.md) (shared topics: Claude Code, Email, Newsletter)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Sub Document)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

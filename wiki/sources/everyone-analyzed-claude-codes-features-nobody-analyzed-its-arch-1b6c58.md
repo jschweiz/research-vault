@@ -10,10 +10,9 @@ backlinks:
 - page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
 - page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
 - topic:architecture
-- topic:claude
 - topic:code
 - topic:data-science
-updated_at: '2026-04-09T16:35:04.543244Z'
+updated_at: '2026-04-09T23:10:03.054230Z'
 managed: true
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
@@ -23,13 +22,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@han.heloir/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@han.heloir/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN
-- Tags: newsletter, medium, email, blog-post, claude, code, architecture, source code, data science
+- Tags: newsletter, medium, email, blog-post, claude, code, architecture, source code, data science, sub-document
 - Topics: [Architecture](../topics/architecture.md), [Claude](../topics/claude.md), [Code](../topics/code.md), [Data Science](../topics/data-science.md), [Email](../topics/email.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

@@ -9,8 +9,7 @@ source_refs:
 - 2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 backlinks:
 - page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
-- topic:vector-databases
-updated_at: '2026-04-09T16:35:04.399058Z'
+updated_at: '2026-04-09T23:10:02.572102Z'
 managed: true
 ---
 # Sql
@@ -37,7 +36,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
 - [Search](search.md)
-- [Vector Databases](vector-databases.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

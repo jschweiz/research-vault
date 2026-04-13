@@ -6,6 +6,10 @@ aliases:
 - Newsletter
 - newsletter
 source_refs:
+- 2026-04-09-alphasignal-email-perplexity-rolls-out-startup-competition-focused-96fa2fa0
+- 2026-04-09-alphasignal-email-openai-publishes-child-safety-blueprint-outlinin-ea685e3f
+- 2026-04-09-alphasignal-email-google-introduces-notebooks-to-reduce-repeated-p-bc50e113
+- 2026-04-09-alphasignal-email-cursor-enables-running-agents-on-any-machine-whi-455a5afa
 - 2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
 - 2026-04-09-tldr-email-the-git-commands-i-run-before-reading-any-code-f4fec80d
 - 2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
@@ -23,6 +27,12 @@ source_refs:
 - 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 - 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
 - 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
+- 2026-04-08-alphasignal-email-z-ai-announces-open-source-glm-5-1-coding-model--bcddf463
+- 2026-04-08-alphasignal-email-world-labs-refines-marble-models-for-better-visu-c73a06fb
+- 2026-04-08-alphasignal-email-cognition-releases-swe-1-6-with-parallel-tool-ca-9b67cb6d
+- 2026-04-08-alphasignal-email-anthropic-adds-autofix-pr-command-to-claude-code-f91275df
+- 2026-04-08-alphasignal-email-amazon-introduces-s3-files-enabling-file-system--174140fc
+- 2026-04-08-alphasignal-email-ai2-presents-open-source-wilddet3d-enabling-3d-o-15880951
 - 2026-04-08-tldr-email-the-building-block-economy-2eb76b35
 - 2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
 - 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
@@ -38,6 +48,12 @@ source_refs:
 - 2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
 - 2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
 - 2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
+- 2026-04-07-alphasignal-email-openai-proposes-ai-tax-policy-linking-systems-to-2a605bbd
+- 2026-04-07-alphasignal-email-xai-upgrades-api-with-pay-per-use-pricing-xmcp-s-0feae790
+- 2026-04-07-alphasignal-email-windsurf-launches-adaptive-router-redesigned-mod-cf9b4d17
+- 2026-04-07-alphasignal-email-openai-outlines-industrial-policy-connecting-ai--f8863b34
+- 2026-04-07-alphasignal-email-openai-introduces-fellowship-program-for-researc-14ac4a52
+- 2026-04-07-alphasignal-email-cursor-introduces-warp-decode-where-each-gpu-war-b10d073c
 - 2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
 - 2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
 - 2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
@@ -55,6 +71,17 @@ source_refs:
 - 2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
 - 2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
 - 2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
+- 2026-04-06-alphasignal-email-pika-introduces-video-chat-skill-allowing-agents-ce0ff35d
+- 2026-04-06-alphasignal-email-openclaw-adds-video-generation-with-automatic-pr-1eeb518f
+- 2026-04-06-alphasignal-email-nous-research-integrates-manim-into-hermes-agent-c66d1ebe
+- 2026-04-06-alphasignal-email-netflix-presents-void-an-open-source-framework-e-91ac4018
+- 2026-04-06-alphasignal-email-anthropic-proposes-model-diffing-to-focus-safety-30982166
+- 2026-04-06-alphasignal-email-anthropic-enables-claude-to-use-email-documents--1196b03e
+- 2026-04-06-jack-clark-import-ai-uh-oh-theres-a-scaling-war-for-cyberattacks-as-w-cdadb242
+- 2026-04-06-jack-clark-import-ai-startups-that-adopt-ai-for-internal-use-are-more-1de6e70d
+- 2026-04-06-jack-clark-import-ai-mit-a-rising-tide-of-automation-is-going-to-make-31f1fb2f
+- 2026-04-06-jack-clark-import-ai-major-forecasting-study-identifies-a-big-paradox-946e171f
+- 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 - 2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
 - 2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
 - 2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
@@ -70,42 +97,67 @@ source_refs:
 - 2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
 - 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
 - 2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
+- 2026-04-05-alphasignal-email-work-with-us-a2830696
+- 2026-04-05-alphasignal-email-signup-902ecef8
+- 2026-04-05-alphasignal-email-principal-component-analysis-bf0898a1
+- 2026-04-05-alphasignal-email-kv-cache-transform-coding-a0f74007
+- 2026-04-05-alphasignal-email-indexcache-f4c17fee
+- 2026-04-05-alphasignal-email-follow-on-x-8009c6bd
+- 2026-04-05-alphasignal-email-dynamic-memory-sparsification-9955d182
+- 2026-04-05-alphasignal-email-deepseek-sparse-attention-b4803561
 - 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-- 2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
-- 2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
-- 2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
-- 2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
-- 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-fareed-k-7b73406b
-- 2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
-- 2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
-- 2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
-- 2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
-- 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-zhao-383cdbc6
-- 2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
-- 2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
-- 2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
-- 2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
-- 2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
-- 2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
-- 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
-- 2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
-- 2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
-- 2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
-- 2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
-- 2026-04-03-tldr-email-bad-analogies-e133a94d
-- 2026-04-03-tldr-email-artemis-ii-nasa-s-boldest-mission-in-generations-5cdc9731
-- 2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
-- 2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
-- 2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
-- 2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
-- 2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
-- 2026-04-03-medium-email-claude-code-is-great-leo-godin-888ec05c
-- 2026-04-03-medium-email-claude-code-is-great-a7134001
-- 2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
-- 2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
 backlinks:
 - map:global-ai-research
 - map:trends:rising-topics
+- page:2026-02-02-jack-clark-import-ai-ai-has-all-the-symptoms-of-a-tech-that-could-mea-ddbe0cee
+- page:2026-02-02-jack-clark-import-ai-ai-r-d-could-lead-to-strategic-surprise-78d1f223
+- page:2026-02-02-jack-clark-import-ai-brain-emulation-is-tractable-within-our-lifetime-d0e88b07
+- page:2026-02-02-jack-clark-import-ai-fauna-robotics-launches-a-friendly-programmable--c0269582
+- page:2026-02-02-jack-clark-import-ai-import-a-idea-6783b26f
+- page:2026-02-02-jack-clark-import-ai-one-way-of-seeing-ai-progress-how-hard-its-getti-b88405ad
+- page:2026-02-02-jack-clark-import-ai-russian-researchers-plot-hand-controlled-drones-fe8f4370
+- page:2026-02-09-jack-clark-import-ai-ai-based-chip-design-is-harder-than-you-think-an-333f3a92
+- page:2026-02-09-jack-clark-import-ai-gemini-solves-some-erdos-problems-and-illustrate-f0eb84fe
+- page:2026-02-09-jack-clark-import-ai-google-paper-suggests-that-llms-simulate-multipl-240c0818
+- page:2026-02-09-jack-clark-import-ai-huawei-uses-an-llm-to-automate-the-design-of-hua-1fe2d7d6
+- page:2026-02-16-jack-clark-import-ai-can-ai-agents-independently-do-basic-ai-research-3ef778a6
+- page:2026-02-16-jack-clark-import-ai-economist-dont-worry-about-ai-driven-unemploymen-19032687
+- page:2026-02-16-jack-clark-import-ai-facebook-makes-a-better-recommender-system-and-f-e7ec92ff
+- page:2026-02-16-jack-clark-import-ai-math-researchers-see-if-ai-can-help-solve-their--da564141
+- page:2026-02-16-jack-clark-import-ai-superintelligence-could-save-and-extend-lives-so-430fb582
+- page:2026-02-23-jack-clark-import-ai-ai-systems-are-good-at-some-parts-of-science-but-1d7bd4fd
+- page:2026-02-23-jack-clark-import-ai-chinese-researchers-try-to-build-a-truly-compreh-8bac5c2d
+- page:2026-02-23-jack-clark-import-ai-llms-are-more-trigger-happy-than-humans-in-a-nuc-12330914
+- page:2026-02-23-jack-clark-import-ai-want-to-make-ai-go-better-figure-out-how-to-meas-dcb9a008
+- page:2026-03-02-jack-clark-import-ai-ais-can-teach-people-anything-including-how-to-g-39df0bb2
+- page:2026-03-02-jack-clark-import-ai-chatting-with-ezra-klein-ai-agents-recursive-sel-34591a03
+- page:2026-03-02-jack-clark-import-ai-llms-are-still-very-bad-at-videogames-4b8298cd
+- page:2026-03-02-jack-clark-import-ai-physical-intelligence-shows-off-some-of-its-robo-b58b416c
+- page:2026-03-02-jack-clark-import-ai-the-agi-economy-most-labor-goes-to-the-machines--5bc18134
+- page:2026-03-02-jack-clark-import-ai-what-happens-when-humans-try-to-mess-with-ai-age-c6091226
+- page:2026-03-09-jack-clark-import-ai-ai-progress-is-moving-faster-than-even-well-rega-7aa560e6
+- page:2026-03-09-jack-clark-import-ai-bytedance-finetunes-a-seed1-6-model-to-be-a-cuda-480da18e
+- page:2026-03-09-jack-clark-import-ai-helping-satellites-run-on-device-ai-for-arctic-m-75cb0ac9
+- page:2026-03-09-jack-clark-import-ai-indian-researchers-use-edge-computing-to-prototy-fac45e73
+- page:2026-03-09-jack-clark-import-ai-want-to-measure-ai-r-d-here-are-14-ways-to-do-it-d3211a88
+- page:2026-03-16-jack-clark-import-ai-can-llms-autonomously-refine-other-llms-for-new--e6f5236c
+- page:2026-03-16-jack-clark-import-ai-computer-vision-is-a-lot-harder-and-less-general-3d585cef
+- page:2026-03-16-jack-clark-import-ai-covenant-72b-challenging-the-political-economy-o-5a266f00
+- page:2026-03-16-jack-clark-import-ai-if-ai-writes-all-the-worlds-software-we-should-i-e3751112
+- page:2026-03-23-jack-clark-import-ai-china-builds-a-dataset-and-ai-model-for-electron-a67bef0c
+- page:2026-03-23-jack-clark-import-ai-deepmind-has-a-new-cognitive-taxonomy-for-assess-92f51831
+- page:2026-03-23-jack-clark-import-ai-uk-government-finds-a-scaling-law-for-ai-cyberat-aa501e4c
+- page:2026-03-30-jack-clark-import-ai-ai-might-let-us-build-political-superintelligenc-34706c0a
+- page:2026-03-30-jack-clark-import-ai-fear-not-drummers-youre-safe-from-ai-automation--8ee69b4a
+- page:2026-03-30-jack-clark-import-ai-google-thinks-the-real-challenge-of-ai-alignment-5e0115d4
+- page:2026-03-30-jack-clark-import-ai-how-long-will-a-new-math-benchmark-horizonmath-l-19e5f6c5
+- page:2026-03-30-jack-clark-import-ai-meta-uses-a-harness-to-coax-anthropics-models-in-1a14410a
+- page:2026-04-03-alphasignal-email-andrej-karpathy-shows-llms-building-personal-kno-e16ab33d
+- page:2026-04-03-alphasignal-email-cursor-unveils-cursor-3-to-manage-multiple-codin-075a1aec
+- page:2026-04-03-alphasignal-email-google-introduces-open-source-gemma-4-models-tha-ce0cae0c
+- page:2026-04-03-alphasignal-email-openai-enables-flexible-codex-adoption-with-usag-6af089e2
+- page:2026-04-03-alphasignal-email-perplexity-rolls-out-computer-in-slack-to-orches-9b2fd6d6
+- page:2026-04-03-alphasignal-email-sakana-ai-opens-beta-for-marlin-an-autonomous-as-05adb809
 - page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
 - page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-03-medium-email-claude-code-is-great-a7134001
@@ -128,6 +180,14 @@ backlinks:
 - page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
 - page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
+- page:2026-04-05-alphasignal-email-deepseek-sparse-attention-b4803561
+- page:2026-04-05-alphasignal-email-dynamic-memory-sparsification-9955d182
+- page:2026-04-05-alphasignal-email-follow-on-x-8009c6bd
+- page:2026-04-05-alphasignal-email-indexcache-f4c17fee
+- page:2026-04-05-alphasignal-email-kv-cache-transform-coding-a0f74007
+- page:2026-04-05-alphasignal-email-principal-component-analysis-bf0898a1
+- page:2026-04-05-alphasignal-email-signup-902ecef8
+- page:2026-04-05-alphasignal-email-work-with-us-a2830696
 - page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
 - page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
 - page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
@@ -135,6 +195,16 @@ backlinks:
 - page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
 - page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
 - page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
+- page:2026-04-06-alphasignal-email-anthropic-enables-claude-to-use-email-documents--1196b03e
+- page:2026-04-06-alphasignal-email-anthropic-proposes-model-diffing-to-focus-safety-30982166
+- page:2026-04-06-alphasignal-email-netflix-presents-void-an-open-source-framework-e-91ac4018
+- page:2026-04-06-alphasignal-email-nous-research-integrates-manim-into-hermes-agent-c66d1ebe
+- page:2026-04-06-alphasignal-email-openclaw-adds-video-generation-with-automatic-pr-1eeb518f
+- page:2026-04-06-alphasignal-email-pika-introduces-video-chat-skill-allowing-agents-ce0ff35d
+- page:2026-04-06-jack-clark-import-ai-major-forecasting-study-identifies-a-big-paradox-946e171f
+- page:2026-04-06-jack-clark-import-ai-mit-a-rising-tide-of-automation-is-going-to-make-31f1fb2f
+- page:2026-04-06-jack-clark-import-ai-startups-that-adopt-ai-for-internal-use-are-more-1de6e70d
+- page:2026-04-06-jack-clark-import-ai-uh-oh-theres-a-scaling-war-for-cyberattacks-as-w-cdadb242
 - page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
 - page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
 - page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
@@ -148,6 +218,11 @@ backlinks:
 - page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 - page:2026-04-06-tldr-email-impulse-space-anduril-building-space-technology--8ed9bf0a
 - page:2026-04-06-tldr-email-scientists-build-living-robots-with-nervous-syst-4683f796
+- page:2026-04-07-alphasignal-email-cursor-introduces-warp-decode-where-each-gpu-war-b10d073c
+- page:2026-04-07-alphasignal-email-openai-introduces-fellowship-program-for-researc-14ac4a52
+- page:2026-04-07-alphasignal-email-openai-outlines-industrial-policy-connecting-ai--f8863b34
+- page:2026-04-07-alphasignal-email-windsurf-launches-adaptive-router-redesigned-mod-cf9b4d17
+- page:2026-04-07-alphasignal-email-xai-upgrades-api-with-pay-per-use-pricing-xmcp-s-0feae790
 - page:2026-04-07-medium-email-ai-pullback-has-officially-started-3e62dbe6
 - page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
 - page:2026-04-07-medium-email-data-engineering-incremental-data-loading-strate-ac88f02a
@@ -163,6 +238,12 @@ backlinks:
 - page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
 - page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
 - page:2026-04-07-tldr-email-social-media-has-become-a-freak-show-961bb5a5
+- page:2026-04-08-alphasignal-email-ai2-presents-open-source-wilddet3d-enabling-3d-o-15880951
+- page:2026-04-08-alphasignal-email-amazon-introduces-s3-files-enabling-file-system--174140fc
+- page:2026-04-08-alphasignal-email-anthropic-adds-autofix-pr-command-to-claude-code-f91275df
+- page:2026-04-08-alphasignal-email-cognition-releases-swe-1-6-with-parallel-tool-ca-9b67cb6d
+- page:2026-04-08-alphasignal-email-world-labs-refines-marble-models-for-better-visu-c73a06fb
+- page:2026-04-08-alphasignal-email-z-ai-announces-open-source-glm-5-1-coding-model--bcddf463
 - page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
 - page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
 - page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
@@ -176,6 +257,10 @@ backlinks:
 - page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
 - page:2026-04-08-tldr-email-s3-files-and-the-changing-face-of-s3-295aa268
 - page:2026-04-08-tldr-email-the-building-block-economy-2eb76b35
+- page:2026-04-09-alphasignal-email-cursor-enables-running-agents-on-any-machine-whi-455a5afa
+- page:2026-04-09-alphasignal-email-google-introduces-notebooks-to-reduce-repeated-p-bc50e113
+- page:2026-04-09-alphasignal-email-openai-publishes-child-safety-blueprint-outlinin-ea685e3f
+- page:2026-04-09-alphasignal-email-perplexity-rolls-out-startup-competition-focused-96fa2fa0
 - page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 - page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
 - page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
@@ -193,62 +278,108 @@ backlinks:
 - page:2026-04-09-tldr-email-us-nuclear-startup-antares-gets-doe-approval-for-98cfd608
 - topic:3d-gaussian-splatting
 - topic:3d-modeling
+- topic:3d-object-detection
 - topic:3d-reconstruction
 - topic:adam-back
 - topic:agent-building
+- topic:agent-ecologies
+- topic:agent-ecology
 - topic:agentic-ai
+- topic:agentic-autonomy
 - topic:agentic-engineering
-- topic:agentic-systems
 - topic:agents
+- topic:agi
+- topic:agi-economy
 - topic:aging
 - topic:ai-advances
+- topic:ai-agents
+- topic:ai-alignment
+- topic:ai-assessment
 - topic:ai-coding-agents
+- topic:ai-economy
 - topic:ai-engineering
 - topic:ai-lab-finances
 - topic:ai-model-anthropic
+- topic:ai-policy
+- topic:ai-r-d
+- topic:ai-safety
 - topic:ai-tools
+- topic:ai-use-cases
+- topic:alignment
+- topic:alphasignal
 - topic:amazon
 - topic:amd
+- topic:andrej-karpathy
 - topic:anduril
 - topic:antares
 - topic:anthropic
 - topic:apache-spark
+- topic:api-keys
 - topic:apple
 - topic:artemis-ii
 - topic:astronauts
 - topic:audio
+- topic:automated-verification
 - topic:automation
+- topic:autonomous-assistant
 - topic:awareness
 - topic:backpropagation
+- topic:benchmarking
+- topic:beta
+- topic:biology
+- topic:biosecurity
+- topic:bioweapons
 - topic:bitcoin
 - topic:bitcoin-movement
+- topic:blockchain
+- topic:blueprint
 - topic:bottleneck
+- topic:brain-emulation
 - topic:broadcom
 - topic:building-block-economy
 - topic:building-blocks
 - topic:business
+- topic:business-performance
+- topic:business-research
+- topic:call-performance
+- topic:camera-network
 - topic:career
 - topic:careers
+- topic:child-safety
 - topic:china
+- topic:china-benchmark
+- topic:chip-design
 - topic:chip-packaging
 - topic:chip-plant
 - topic:claude
 - topic:claude-code
 - topic:code
+- topic:code-cli
 - topic:codebase
 - topic:coding
+- topic:coding-agents
+- topic:coding-model
+- topic:cognition
+- topic:cognitive-taxonomy
 - topic:commands
 - topic:commit-history
 - topic:communication
 - topic:competition
 - topic:complex-queries
+- topic:computer-agents
 - topic:context
 - topic:context-engineering
+- topic:creativity
 - topic:cryptography
+- topic:cuda
 - topic:cursor
+- topic:cursor-3
+- topic:cyberattacks
 - topic:cybersecurity
+- topic:daily-limits
 - topic:dash
 - topic:dashboard
+- topic:data-acquisition
 - topic:data-engineering
 - topic:data-loading
 - topic:data-pipelines
@@ -257,57 +388,111 @@ backlinks:
 - topic:decameron
 - topic:deep-learning
 - topic:deep-thinking
+- topic:deepseek-v3-2
 - topic:design
 - topic:developer-experience
 - topic:developer-relations
+- topic:device-ai
+- topic:dexdrummer
+- topic:dimensionality-reduction
 - topic:distance-record
 - topic:docker
 - topic:doe-approval
+- topic:drone-control
+- topic:drones
+- topic:dsa
+- topic:dynamic-memory-sparsification
+- topic:e-commerce
 - topic:ec2
+- topic:economic-growth
+- topic:economic-impact
+- topic:economic-infrastructure
+- topic:economics
 - topic:economists
 - topic:economy
 - topic:ecosystem
+- topic:edge-computing
 - topic:education
+- topic:efficiency
 - topic:egpu
+- topic:electromagnetic-signals
+- topic:electronic-warfare
 - topic:email
 - topic:embedding-pipelines
 - topic:entrepreneurship
 - topic:environment
+- topic:environment-generation
+- topic:erdos-problems
+- topic:evaluations
+- topic:experimentation
+- topic:facebook
 - topic:feedback
+- topic:fellowship-program
+- topic:file-system
+- topic:files
 - topic:filesystem
 - topic:finance
 - topic:finances
 - topic:fitness
+- topic:forecasting
+- topic:frontier-ai
+- topic:frontier-problems
+- topic:gdp
 - topic:gen-1
+- topic:generative-ai
+- topic:generative-text
 - topic:git
+- topic:glm-5-1
 - topic:golden-dome
 - topic:google
 - topic:google-earth-engine
+- topic:governance
 - topic:gpt
+- topic:gpt-5-4-pro
 - topic:guide
 - topic:hackathon
 - topic:hand
 - topic:happiness
+- topic:haptic-gloves
+- topic:hardware
+- topic:harness
 - topic:health
 - topic:helm
 - topic:high-schoolers
+- topic:hollow-economy
+- topic:huawei
+- topic:human-evaluation
+- topic:human-skills
+- topic:human-touch
+- topic:human-uplift
 - topic:hurt
+- topic:hyperagent
 - topic:ide
 - topic:image-processing
 - topic:impulse-space
 - topic:incremental-loading
+- topic:indexcache
+- topic:indexing
 - topic:infrastructure
 - topic:intel
 - topic:internal-system
+- topic:internet-transition
 - topic:introduction
 - topic:ipos
+- topic:jetson
 - topic:job-boom
 - topic:job-market
 - topic:jobs
+- topic:kernel-design
+- topic:knowledge-bases
 - topic:kubernetes
+- topic:kv-cache
+- topic:labbench2
+- topic:labor-market
 - topic:lambda
 - topic:langgraph
 - topic:law
+- topic:lean
 - topic:learning
 - topic:legibility
 - topic:lenny-s-podcast
@@ -315,45 +500,83 @@ backlinks:
 - topic:linux
 - topic:literature
 - topic:living-robots
+- topic:llm
+- topic:llm-evaluation
+- topic:llm-memory
 - topic:llms
+- topic:local
+- topic:long-context
+- topic:long-context-agents
 - topic:loop
 - topic:mac
+- topic:machine-intelligence
 - topic:machine-learning
 - topic:machines
 - topic:macos
+- topic:macroeconomics
+- topic:manim
 - topic:manipulation
 - topic:map-reduce
+- topic:marble-models
 - topic:mark0-reactor
+- topic:math-benchmark
+- topic:math-research
 - topic:mathematics
+- topic:measurement
 - topic:medium
 - topic:memory
+- topic:memory-bottleneck
 - topic:mental-reset
 - topic:meta
+- topic:metrics
+- topic:microsoft-365
 - topic:millennials
 - topic:mindfulness
 - topic:missile-defense
 - topic:mistakes
+- topic:mobile
+- topic:model-diffing
+- topic:model-picker
+- topic:model-training
+- topic:modularity
+- topic:moltbook
 - topic:monorepo
 - topic:moon
 - topic:moon-flyby
 - topic:muse-spark
 - topic:mythos
 - topic:nasa
+- topic:national-security
 - topic:nervous-systems
+- topic:netflix
 - topic:neural-network
 - topic:neural-networks
 - topic:neurobots
+- topic:neuroscience
+- topic:non-biological-intelligence
+- topic:nous-research
+- topic:npu
 - topic:nuclear-energy
+- topic:nuclear-simulation
+- topic:open-source
 - topic:openai
 - topic:operating-systems
+- topic:pca
+- topic:perplexity
 - topic:personal-growth
 - topic:philosophy
 - topic:physical-ai
+- topic:pika
 - topic:policy
+- topic:politics
+- topic:pretraining
+- topic:pricing
 - topic:product-design
 - topic:production
 - topic:production-apps
+- topic:productivity
 - topic:programming
+- topic:progress
 - topic:prompts
 - topic:psychology
 - topic:public-offering
@@ -362,22 +585,41 @@ backlinks:
 - topic:python
 - topic:reading
 - topic:reality
+- topic:reasoning
+- topic:reasoning-loops
+- topic:recommender-systems
 - topic:recruitment
+- topic:regulation
 - topic:reinforcement-learning
 - topic:remote-sensing
 - topic:renderer
 - topic:retrieval-augmented-generation
+- topic:rising-tide
+- topic:risk
+- topic:risk-assessment
 - topic:rl-concepts
 - topic:rnn
+- topic:robot-hands
 - topic:robotics
+- topic:router
 - topic:routine
 - topic:s3
+- topic:safety
+- topic:safety-analysis
 - topic:satellite
+- topic:satellite-monitoring
+- topic:scenarios
 - topic:science
+- topic:sdk
+- topic:sea-ice-estimation
 - topic:search
 - topic:security
+- topic:self-improvement
 - topic:semantic-scanning
+- topic:slack
 - topic:social-media
+- topic:social-systems
+- topic:societies-thought
 - topic:software
 - topic:software-adoption
 - topic:software-construction
@@ -388,24 +630,21 @@ backlinks:
 - topic:sql
 - topic:sqlite
 - topic:startup
+- topic:startup-success
+- topic:strategic-reasoning
+- topic:strategic-surprise
 - topic:strategy
 - topic:structure
-- topic:system-improvement
-- topic:system-prompts
-- topic:talent
-- topic:taste
-- topic:tech
-- topic:technology
-- topic:telehealth
-- topic:terafab
+- topic:sub-document
+- topic:superintelligence
+- topic:technical-interviews
 - topic:tldr
-- topic:tokens
 - topic:tool-use
 - topic:transformers
-- topic:unity-catalog
-- topic:vector-databases
+- topic:video-generation
+- topic:videogames
 - topic:zhaozhiming-ai
-updated_at: '2026-04-09T16:35:04.409523Z'
+updated_at: '2026-04-09T23:10:02.929043Z'
 managed: true
 ---
 # Newsletter
@@ -414,14 +653,14 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 450.80
-- Novelty score: 6.80
-- Items in last 7 days: 97
-- Items in last 30 days: 97
-- Total supporting items: 97
-- Source diversity: 2
-- First seen: 2026-04-03T06:40:00+00:00
-- Last seen: 2026-04-09T11:02:31+00:00
+- Trend score: 655.21
+- Novelty score: 4.80
+- Items in last 7 days: 138
+- Items in last 30 days: 152
+- Total supporting items: 188
+- Source diversity: 4
+- First seen: 2026-02-02T13:31:18+00:00
+- Last seen: 2026-04-09T16:14:36+00:00
 
 ## Aliases
 
@@ -430,25 +669,28 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 - [Email](email.md)
 - [Medium](medium.md)
+- [Policy](policy.md)
+- [Sub Document](sub-document.md)
+- [Alphasignal](alphasignal.md)
 - [Agents](agents.md)
-- [Tldr](tldr.md)
+- [Llms](llms.md)
 - [Machine Learning](machine-learning.md)
-- [Anthropic](anthropic.md)
-- [Infrastructure](infrastructure.md)
-- [Memory](memory.md)
 
 ## Leading Sources
 
+- AlphaSignal Email
+- Import AI
 - Medium Email
 - TLDR Email
 
 ## Representative Signals
 
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](../sources/perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](../sources/openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](../sources/google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](../sources/cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](../sources/us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md)
 - [The Git Commands I Run Before Reading Any Code](../sources/the-git-commands-i-run-before-reading-any-code-7e8ab0.md)
-- [The 2-Sigma Problem: The 1:1 Tutor](../sources/the-2-sigma-problem-the-1-1-tutor-9725b7.md)
-- [My Quest to Solve Bitcoin's Great Mystery](../sources/my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](../sources/meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md)
 
 ## Map Links
 

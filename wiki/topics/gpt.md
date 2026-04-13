@@ -9,8 +9,7 @@ source_refs:
 - 2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
 backlinks:
 - page:2026-04-06-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--fce7a95b
-- topic:deep-learning
-updated_at: '2026-04-09T16:35:04.219491Z'
+updated_at: '2026-04-09T21:02:13.116390Z'
 managed: true
 ---
 # Gpt

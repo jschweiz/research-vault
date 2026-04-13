@@ -8,15 +8,12 @@ source_refs:
 - 2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 backlinks:
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
-- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-04-01-openai-website-gradient-labs-gives-every-bank-customer-an-ai-ac-a0904673
-- page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
 - page:2026-04-09-tldr-email-anthropic-launches-claude-managed-agents-for-bus-bf42c0c8
 - topic:ai-agents
 - topic:boltzmann-solvers
-- topic:claude
 - topic:jax
-updated_at: '2026-04-09T16:35:04.589881Z'
+updated_at: '2026-04-09T23:10:02.697900Z'
 managed: true
 ---
 # Long-running Claude for scientific computing
@@ -32,8 +29,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Siddharth Mishra-Sharma
 - Tags: anthropic, official, research, website, blog-post, ai agents, scientific computing, claude, boltzmann solvers, jax
 - Topics: [Agents](../topics/agents.md), [Ai Agents](../topics/ai-agents.md), [Anthropic](../topics/anthropic.md), [Boltzmann Solvers](../topics/boltzmann-solvers.md), [Claude](../topics/claude.md), [Jax](../topics/jax.md)
-- Trend score: 155.17
-- Novelty score: 4.80
+- Trend score: 223.43
+- Novelty score: 6.80
 
 ## Summary
 
@@ -51,11 +48,11 @@ The post details applying multi-day agentic coding workflows to scientific compu
 ## Related Research
 
 - [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Agents, Ai Agents, Anthropic, Claude)
-- [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Claude)
-- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Ai Agents, Anthropic)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents)
-- [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md) (shared topics: Agents, Anthropic, Claude)
+- [Anthropic ends third-party agent like OpenClaw access under Claude plans, requires credits or API keys](anthropic-ends-third-party-agent-like-openclaw-access-under-clau-881845.md) (shared topics: Agents, Anthropic, Claude)
+- [Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components](anthropic-outlines-managed-agents-system-enabling-reliable-execu-8a2e1c.md) (shared topics: Agents, Anthropic)
+- [Anthropic adds /autofix-pr command to Claude Code CLI to fix PR issues automatically](anthropic-adds-autofix-pr-command-to-claude-code-cli-to-fix-pr-i-441396.md) (shared topics: Anthropic, Claude)
+- [Anthropic enables Claude to use email, documents, and files from Microsoft 365 in conversations](anthropic-enables-claude-to-use-email-documents-and-files-from-m-9a0ac0.md) (shared topics: Anthropic, Claude)
 
 ## Radar
 

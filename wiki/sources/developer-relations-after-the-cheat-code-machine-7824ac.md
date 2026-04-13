@@ -7,12 +7,10 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-developer-relations-after-the-cheat-code-machine-581e67ea
 backlinks:
-- page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
-- page:2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
 - topic:developer-relations
 - topic:legibility
 - topic:machines
-updated_at: '2026-04-09T16:35:03.706715Z'
+updated_at: '2026-04-09T23:10:03.734322Z'
 managed: true
 ---
 # Developer relations after the cheat code machine
@@ -26,9 +24,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-03T10:59:24+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, developer relations, machines, legibility
-- Topics: [Developer Relations](../topics/developer-relations.md), [Email](../topics/email.md), [Legibility](../topics/legibility.md), [Machines](../topics/machines.md), [Newsletter](../topics/newsletter.md), [Tldr](../topics/tldr.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, article, developer relations, machines, legibility, sub-document
+- Topics: [Developer Relations](../topics/developer-relations.md), [Email](../topics/email.md), [Legibility](../topics/legibility.md), [Machines](../topics/machines.md), [Newsletter](../topics/newsletter.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -42,16 +40,16 @@ Developer relations must be legible to both humans and the machines they work al
 - [Legibility](../topics/legibility.md)
 - [Machines](../topics/machines.md)
 - [Newsletter](../topics/newsletter.md)
-- [Tldr](../topics/tldr.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Tldr)
-- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Tldr)
-- [How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines](how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pip-5ed6d6.md) (shared topics: Email, Newsletter, Tldr)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Sub Document)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
+- [World Labs refines Marble models for better visuals and introduces scalable environment generation model](world-labs-refines-marble-models-for-better-visuals-and-introduc-3d3001.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cognition releases SWE-1.6 with parallel tool calls and fewer reasoning loops](cognition-releases-swe-1-6-with-parallel-tool-calls-and-fewer-re-bf6883.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

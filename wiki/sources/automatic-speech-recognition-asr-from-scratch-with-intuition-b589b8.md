@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 backlinks:
+- page:2026-03-23-jack-clark-import-ai-china-builds-a-dataset-and-ai-model-for-electron-a67bef0c
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
@@ -24,7 +25,7 @@ backlinks:
 - topic:audio
 - topic:machine-learning
 - topic:python
-updated_at: '2026-04-09T16:35:04.603552Z'
+updated_at: '2026-04-09T23:10:03.113365Z'
 managed: true
 ---
 # Automatic Speech Recognition (ASR) From Scratch (With Intuition)
@@ -34,13 +35,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@purusharth.19.malik/automatic-speech-recognition-asr-from-scratch-with-intuition-60273efcfe28
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@purusharth.19.malik/automatic-speech-recognition-asr-from-scratch-with-intuition-60273efcfe28
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Purusharth Malik
-- Tags: newsletter, medium, email, blog-post, asr, speech recognition, python, machine learning, ai
+- Tags: newsletter, medium, email, blog-post, asr, speech recognition, python, machine learning, ai, sub-document
 - Topics: [Audio](../topics/audio.md), [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

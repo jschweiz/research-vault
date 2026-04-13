@@ -12,7 +12,7 @@ backlinks:
 - topic:deep-thinking
 - topic:retrieval-augmented-generation
 - topic:search
-updated_at: '2026-04-09T16:35:04.388744Z'
+updated_at: '2026-04-09T23:10:03.242032Z'
 managed: true
 ---
 # Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries
@@ -22,13 +22,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex-queries-af69c5e044db
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@fareedkhandev/building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex-queries-af69c5e044db
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
-- Tags: newsletter, medium, email, blog-post, rag, agentic, pipeline, deep-thinking, retrieval, reflection
+- Tags: newsletter, medium, email, blog-post, rag, agentic, pipeline, deep-thinking, retrieval, reflection, sub-document
 - Topics: [Agents](../topics/agents.md), [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Search](../topics/search.md), [Deep Thinking](../topics/deep-thinking.md), [Email](../topics/email.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

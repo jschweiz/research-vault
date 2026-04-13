@@ -7,15 +7,13 @@ aliases:
 source_refs:
 - 2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
 backlinks:
-- page:2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
-- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
+- page:2026-02-16-jack-clark-import-ai-economist-dont-worry-about-ai-driven-unemploymen-19032687
 - page:2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
 - page:2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
 - page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
 - page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
-- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
 - page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
 - page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
 - page:2026-04-06-medium-email-what-people-in-their-80s-wish-theyd-done-differe-49cad2c9
@@ -24,11 +22,7 @@ backlinks:
 - page:2026-04-07-medium-email-docker-kubernetes-and-helm-intuitively-and-exhau-4f1f6f16
 - page:2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-f82b8871
 - page:2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
-- page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
-- page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
-- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
 - page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
-- page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
 - page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
 - page:2026-04-09-medium-email-the-art-of-letting-go-69290282
 - page:2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
@@ -36,7 +30,7 @@ backlinks:
 - topic:dash
 - topic:jobs
 - topic:medium
-updated_at: '2026-04-09T16:35:04.246711Z'
+updated_at: '2026-04-09T23:10:02.949163Z'
 managed: true
 ---
 # Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now
@@ -46,13 +40,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@thomas-oppong/careers-are-collapsing-jobs-are-dying-the-smartest-people-are-doing-this-right-now-becc742dfee2
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@thomas-oppong/careers-are-collapsing-jobs-are-dying-the-smartest-people-are-doing-this-right-now-becc742dfee2
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Thomas Oppong
-- Tags: newsletter, medium, email, blog-post, careers, jobs, personal growth, python, dash
+- Tags: newsletter, medium, email, blog-post, careers, jobs, personal growth, python, dash, sub-document
 - Topics: [Careers](../topics/careers.md), [Dash](../topics/dash.md), [Email](../topics/email.md), [Jobs](../topics/jobs.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

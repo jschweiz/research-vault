@@ -14,7 +14,7 @@ backlinks:
 - topic:gpt-4-1
 - topic:gpt-5-4
 - topic:low-latency
-updated_at: '2026-04-09T16:35:04.236702Z'
+updated_at: '2026-04-09T23:08:05.546791Z'
 managed: true
 ---
 # Gradient Labs gives every bank customer an AI account manager
@@ -30,7 +30,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Gradient Labs
 - Tags: openai, official, website, blog-post, ai agents, banking support, gpt-4.1, gpt-5.4, low latency, ai automation
 - Topics: [Ai Agents](../topics/ai-agents.md), [Ai Automation](../topics/ai-automation.md), [Banking Support](../topics/banking-support.md), [Gpt 4 1](../topics/gpt-4-1.md), [Gpt 5 4](../topics/gpt-5-4.md), [Low Latency](../topics/low-latency.md)
-- Trend score: 23.52
+- Trend score: 23.91
 - Novelty score: 4.20
 
 ## Summary

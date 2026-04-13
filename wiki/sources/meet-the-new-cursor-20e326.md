@@ -7,13 +7,11 @@ aliases:
 source_refs:
 - 2026-04-03-tldr-email-meet-the-new-cursor-bc44460f
 backlinks:
-- page:2026-04-03-tldr-email-highlights-from-my-conversation-about-agentic-en-1c6fe67a
 - page:2026-04-07-medium-email-cursor-3-is-not-an-ide-update-its-a-bet-that-you-db64ac9b
-- page:2026-04-07-tldr-email-58-of-prs-in-our-largest-monorepo-merge-without--d81ecb73
 - topic:cursor
 - topic:data-science
 - topic:design
-updated_at: '2026-04-09T16:35:03.848752Z'
+updated_at: '2026-04-09T23:10:03.152328Z'
 managed: true
 ---
 # Meet the new Cursor
@@ -27,9 +25,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: blog-post
 - Published at: 2026-04-03T10:59:24+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, blog-post, cursor, programming, design, data science, agents
+- Tags: newsletter, tldr, email, ai, blog-post, cursor, programming, design, data science, agents, sub-document
 - Topics: [Agents](../topics/agents.md), [Cursor](../topics/cursor.md), [Data Science](../topics/data-science.md), [Design](../topics/design.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -47,12 +45,12 @@ Cursor 3 enhances agent output clarity by offering a higher level of abstraction
 
 ## Related Research
 
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Agents, Cursor, Email, Newsletter)
 - [Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.](cursor-3-is-not-an-ide-update-its-a-bet-that-youll-manage-agents-0c5d0f.md) (shared topics: Agents, Cursor, Email, Newsletter)
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Agents, Email, Newsletter)
 - [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents, Email, Newsletter)
 - [Building an Agentic Deep-Thinking RAG Pipeline to Solve Complex Queries](building-an-agentic-deep-thinking-rag-pipeline-to-solve-complex--58c4bb.md) (shared topics: Agents, Email, Newsletter)
 - [Build a Sleek Sci-Fi Dashboard with Python and Dash](build-a-sleek-sci-fi-dashboard-with-python-and-dash-82233f.md) (shared topics: Data Science, Email, Newsletter)
-- [58% of PRs in our largest monorepo merge without human review](58-of-prs-in-our-largest-monorepo-merge-without-human-review-ae79d8.md) (shared topics: Agents, Email, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-40b39c.md) (shared topics: Agents, Email, Newsletter)
 
 ## Radar
 

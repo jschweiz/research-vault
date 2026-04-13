@@ -10,7 +10,7 @@ backlinks:
 - topic:japan
 - topic:safety-blueprint
 - topic:teen-safety
-updated_at: '2026-04-09T16:35:04.746796Z'
+updated_at: '2026-04-09T23:08:05.762677Z'
 managed: true
 ---
 # OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first
@@ -26,8 +26,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI Japan
 - Tags: openai, official, website, blog-post, japan, teen safety, ai, safety blueprint
 - Topics: [Safety Blueprint](../topics/safety-blueprint.md), [Japan](../topics/japan.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Teen Safety](../topics/teen-safety.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

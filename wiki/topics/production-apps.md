@@ -9,9 +9,8 @@ source_refs:
 - 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
 backlinks:
 - page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
-- topic:claude-code
 - topic:software-development
-updated_at: '2026-04-09T16:35:03.857186Z'
+updated_at: '2026-04-09T23:10:03.260490Z'
 managed: true
 ---
 # Production Apps

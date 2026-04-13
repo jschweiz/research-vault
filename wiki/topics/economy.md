@@ -14,8 +14,7 @@ backlinks:
 - topic:economists
 - topic:job-boom
 - topic:job-market
-- topic:policy
-updated_at: '2026-04-09T16:35:04.626422Z'
+updated_at: '2026-04-09T23:08:23.820645Z'
 managed: true
 ---
 # Economy
@@ -45,6 +44,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Job Market](job-market.md)
 - [Medium](medium.md)
 - [Policy](policy.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

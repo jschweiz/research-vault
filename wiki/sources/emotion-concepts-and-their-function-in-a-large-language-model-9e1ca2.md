@@ -13,13 +13,11 @@ backlinks:
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 - page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
+- page:2026-04-03-the-batch-research-test-time-training-end-to-end-ttt-e2e-retrains-m-87b314e7
 - topic:behavior
 - topic:emotion
-- topic:llm
-- topic:official
 - topic:representation
-updated_at: '2026-04-09T16:35:04.756621Z'
+updated_at: '2026-04-09T23:10:03.626678Z'
 managed: true
 ---
 # Emotion concepts and their function in a large language model
@@ -35,8 +33,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, llm, emotion, ai, representation, behavior
 - Topics: [Anthropic](../topics/anthropic.md), [Behavior](../topics/behavior.md), [Emotion](../topics/emotion.md), [Llm](../topics/llm.md), [Official](../topics/official.md), [Representation](../topics/representation.md)
-- Trend score: 45.86
-- Novelty score: 3.60
+- Trend score: 104.44
+- Novelty score: 3.26
 
 ## Summary
 
@@ -53,12 +51,12 @@ This research analyzes how emotion-related representations shape the behavior of
 
 ## Related Research
 
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md) (shared topics: Llm, Official)
 - [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official)
 - [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official)
 - [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
 - [Labor market impacts of AI: A new measure and early evidence](labor-market-impacts-of-ai-a-new-measure-and-early-evidence-dcb46b.md) (shared topics: Anthropic, Official)
 - [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Anthropic, Official)
-- [Project Vend: Phase two](project-vend-phase-two-818878.md) (shared topics: Anthropic, Official)
 
 ## Radar
 

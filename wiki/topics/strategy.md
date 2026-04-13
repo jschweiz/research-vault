@@ -9,9 +9,8 @@ source_refs:
 - 2026-04-03-tldr-email-bad-analogies-e133a94d
 backlinks:
 - page:2026-04-03-tldr-email-bad-analogies-e133a94d
-- topic:amazon
 - topic:entrepreneurship
-updated_at: '2026-04-09T16:35:04.573761Z'
+updated_at: '2026-04-09T23:10:02.495194Z'
 managed: true
 ---
 # Strategy

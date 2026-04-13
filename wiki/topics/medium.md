@@ -184,7 +184,6 @@ backlinks:
 - topic:ide
 - topic:image-processing
 - topic:incremental-loading
-- topic:infrastructure
 - topic:introduction
 - topic:job-boom
 - topic:jobs
@@ -234,11 +233,10 @@ backlinks:
 - topic:software-development
 - topic:sql
 - topic:structure
+- topic:sub-document
 - topic:transformers
-- topic:unity-catalog
-- topic:vector-databases
 - topic:zhaozhiming-ai
-updated_at: '2026-04-09T16:35:04.300165Z'
+updated_at: '2026-04-09T23:10:03.093156Z'
 managed: true
 ---
 # Medium
@@ -264,11 +262,11 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Newsletter](newsletter.md)
 - [Agents](agents.md)
+- [Sub Document](sub-document.md)
 - [Machine Learning](machine-learning.md)
 - [Coding](coding.md)
 - [Memory](memory.md)
 - [Python](python.md)
-- [Retrieval-Augmented Generation](retrieval-augmented-generation.md)
 
 ## Leading Sources
 

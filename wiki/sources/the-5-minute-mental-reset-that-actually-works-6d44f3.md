@@ -11,7 +11,7 @@ backlinks:
 - topic:mental-reset
 - topic:mindfulness
 - topic:routine
-updated_at: '2026-04-09T16:35:04.171927Z'
+updated_at: '2026-04-09T23:08:04.833601Z'
 managed: true
 ---
 # The 5-Minute Mental Reset That Actually Works
@@ -21,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@sa-liberty/the-5-minute-mental-reset-that-actually-works-928116f8b78e
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@sa-liberty/the-5-minute-mental-reset-that-actually-works-928116f8b78e
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Sam Liberty
-- Tags: newsletter, medium, email, blog-post, mental reset, mindfulness, routine, self-care
+- Tags: newsletter, medium, email, blog-post, mental reset, mindfulness, routine, self-care, sub-document
 - Topics: [Email](../topics/email.md), [Medium](../topics/medium.md), [Mental Reset](../topics/mental-reset.md), [Mindfulness](../topics/mindfulness.md), [Newsletter](../topics/newsletter.md), [Routine](../topics/routine.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

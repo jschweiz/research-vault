@@ -13,7 +13,7 @@ backlinks:
 - topic:cross-architecture
 - topic:model-auditing
 - topic:model-diffing
-updated_at: '2026-04-09T16:35:04.308327Z'
+updated_at: '2026-04-09T23:08:05.828170Z'
 managed: true
 ---
 # A “diff” tool for AI: Finding behavioral differences in new models
@@ -29,8 +29,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, model diffing, ai safety, model auditing, cross-architecture, alignment
 - Topics: [Alignment](../topics/alignment.md), [Ai Safety](../topics/ai-safety.md), [Anthropic](../topics/anthropic.md), [Cross Architecture](../topics/cross-architecture.md), [Model Auditing](../topics/model-auditing.md), [Model Diffing](../topics/model-diffing.md)
-- Trend score: 45.86
-- Novelty score: 5.60
+- Trend score: 104.44
+- Novelty score: 4.20
 
 ## Summary
 
@@ -47,12 +47,12 @@ The authors propose a method called model diffing, which uses a specialized tool
 
 ## Related Research
 
+- [Anthropic proposes model diffing to focus safety analysis on features unique to each model](anthropic-proposes-model-diffing-to-focus-safety-analysis-on-fea-9ba943.md) (shared topics: Anthropic, Model Diffing)
 - [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Ai Safety, Anthropic)
 - [Constitutional Classifiers: Defending against universal jailbreaks](constitutional-classifiers-defending-against-universal-jailbreak-6b030e.md) (shared topics: Ai Safety, Anthropic)
+- [Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components](anthropic-outlines-managed-agents-system-enabling-reliable-execu-8a2e1c.md) (shared topics: Anthropic)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md) (shared topics: Anthropic)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
-- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic)
-- [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Anthropic)
-- [Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'](anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reck-f522ab.md) (shared topics: Anthropic)
 
 ## Radar
 

@@ -7,13 +7,12 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 backlinks:
-- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
 - topic:agentic-ai
 - topic:feedback-loop
 - topic:hitl
 - topic:memory
-updated_at: '2026-04-09T16:35:03.788249Z'
+updated_at: '2026-04-09T23:10:03.634471Z'
 managed: true
 ---
 # Building Long-Term Memory in Agentic AI
@@ -23,13 +22,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@fareedkhandev/building-long-term-memory-in-agentic-ai-2941b0cca3bf
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@fareedkhandev/building-long-term-memory-in-agentic-ai-2941b0cca3bf
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
-- Tags: newsletter, medium, email, blog-post, agentic ai, long-term memory, hitl, feedback loop
+- Tags: newsletter, medium, email, blog-post, agentic ai, long-term memory, hitl, feedback loop, sub-document
 - Topics: [Memory](../topics/memory.md), [Agentic Ai](../topics/agentic-ai.md), [Email](../topics/email.md), [Feedback Loop](../topics/feedback-loop.md), [Hitl](../topics/hitl.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

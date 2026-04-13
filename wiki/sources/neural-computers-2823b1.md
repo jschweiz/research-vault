@@ -28,7 +28,7 @@ backlinks:
 - topic:computer-science
 - topic:generative-models
 - topic:multi-modal-learning
-updated_at: '2026-04-09T16:35:04.149912Z'
+updated_at: '2026-04-09T23:08:04.704338Z'
 managed: true
 ---
 # Neural Computers
@@ -44,7 +44,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mingchen Zhuge, Changsheng Zhao, Haozhe Liu, Zijian Zhou, Shuming Liu, Wenyi Wang, Ernie Chang, Gael Le Lan, Junjie Fei, Wenxuan Zhang, Yasheng Sun, Zhipeng Cai, Zechun Liu, Yunyang Xiong, Yining Yang, Yuandong Tian, Yangyang Shi, Vikas Chandra, Jürgen Schmidhuber
 - Tags: paper, alphaxiv, research, agents, computer science, cs.ai, cs.lg, generative-models, multi-modal-learning, neuro-symbolic-ai
 - Topics: [Agents](../topics/agents.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Generative Models](../topics/generative-models.md), [Machine Learning](../topics/machine-learning.md), [Multi Modal Learning](../topics/multi-modal-learning.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

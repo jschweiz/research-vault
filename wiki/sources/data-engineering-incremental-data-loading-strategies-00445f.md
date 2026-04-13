@@ -12,7 +12,7 @@ backlinks:
 - topic:data-engineering
 - topic:data-loading
 - topic:incremental-loading
-updated_at: '2026-04-09T16:35:03.772021Z'
+updated_at: '2026-04-09T23:08:04.847682Z'
 managed: true
 ---
 # Data Engineering: Incremental Data Loading Strategies
@@ -22,13 +22,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@husseinjundi/data-engineering-incremental-data-loading-strategies-bd1a79d98ed0
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Hussein Jundi
-- Tags: newsletter, medium, email, blog-post, data engineering, incremental loading, data loading, strategies
+- Tags: newsletter, medium, email, blog-post, data engineering, incremental loading, data loading, strategies, sub-document
 - Topics: [Data Engineering](../topics/data-engineering.md), [Data Loading](../topics/data-loading.md), [Email](../topics/email.md), [Incremental Loading](../topics/incremental-loading.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

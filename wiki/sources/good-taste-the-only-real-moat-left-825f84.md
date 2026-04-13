@@ -7,11 +7,12 @@ aliases:
 source_refs:
 - 2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
 backlinks:
+- page:2026-03-02-jack-clark-import-ai-llms-are-still-very-bad-at-videogames-4b8298cd
+- page:2026-03-06-the-batch-research-googles-aletheia-uses-gemini-3-deep-think-to-fin-7faeaab3
 - topic:context
 - topic:llms
 - topic:reality
-- topic:taste
-updated_at: '2026-04-09T16:35:04.595925Z'
+updated_at: '2026-04-09T23:10:02.761252Z'
 managed: true
 ---
 # Good Taste the Only Real Moat Left
@@ -25,9 +26,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-08T10:59:19+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, taste, context, reality, llms
-- Topics: [Context](../topics/context.md), [Email](../topics/email.md), [Llms](../topics/llms.md), [Newsletter](../topics/newsletter.md), [Reality](../topics/reality.md), [Taste](../topics/taste.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, article, taste, context, reality, llms, sub-document
+- Topics: [Context](../topics/context.md), [Email](../topics/email.md), [Llms](../topics/llms.md), [Newsletter](../topics/newsletter.md), [Reality](../topics/reality.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -41,16 +42,16 @@ AI has made competent output cheap, giving those who can discern what is true an
 - [Llms](../topics/llms.md)
 - [Newsletter](../topics/newsletter.md)
 - [Reality](../topics/reality.md)
-- [Taste](../topics/taste.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Context, Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Sub Document)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
+- [World Labs refines Marble models for better visuals and introduces scalable environment generation model](world-labs-refines-marble-models-for-better-visuals-and-introduc-3d3001.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

@@ -22,8 +22,7 @@ backlinks:
 - topic:production-apps
 - topic:programming
 - topic:software-development
-- topic:system-prompts
-updated_at: '2026-04-09T16:35:04.006799Z'
+updated_at: '2026-04-09T23:10:03.205685Z'
 managed: true
 ---
 # Claude Code
@@ -50,10 +49,10 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
 - [Coding](coding.md)
+- [Sub Document](sub-document.md)
 - [Context Engineering](context-engineering.md)
 - [Data Science](data-science.md)
 - [Developer](developer.md)
-- [Production Apps](production-apps.md)
 
 ## Leading Sources
 

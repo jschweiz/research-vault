@@ -8,9 +8,8 @@ aliases:
 source_refs:
 - 2026-04-06-tldr-email-apple-egpu-support-inside-ai-lab-finances-claude-f865879a
 backlinks:
-- topic:infrastructure
 - topic:tldr
-updated_at: '2026-04-09T16:35:03.835320Z'
+updated_at: '2026-04-09T21:02:11.635642Z'
 managed: true
 ---
 # Ai Lab Finances

@@ -19,8 +19,7 @@ backlinks:
 - topic:chatgpt
 - topic:codex
 - topic:enterprise
-- topic:official
-updated_at: '2026-04-09T16:35:03.911008Z'
+updated_at: '2026-04-09T23:08:05.514833Z'
 managed: true
 ---
 # Codex now offers more flexible pricing for teams
@@ -35,7 +34,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-04-02T10:00:00+00:00
 - Tags: openai, official, website, blog-post, codex, pricing, chatgpt, business, enterprise
 - Topics: [Business](../topics/business.md), [Chatgpt](../topics/chatgpt.md), [Codex](../topics/codex.md), [Enterprise](../topics/enterprise.md), [Official](../topics/official.md), [Openai](../topics/openai.md)
-- Trend score: 49.76
+- Trend score: 70.25
 - Novelty score: 6.80
 
 ## Summary

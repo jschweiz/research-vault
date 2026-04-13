@@ -12,7 +12,7 @@ backlinks:
 - topic:mini
 - topic:multimodal-reasoning
 - topic:nano
-updated_at: '2026-04-09T16:35:04.704434Z'
+updated_at: '2026-04-09T23:10:03.646212Z'
 managed: true
 ---
 # Introducing GPT-5.4 mini and nano
@@ -27,7 +27,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-17T10:00:00+00:00
 - Tags: openai, official, website, blog-post, gpt-5.4, mini, nano, coding, multimodal reasoning
 - Topics: [Coding](../topics/coding.md), [Gpt 5 4](../topics/gpt-5-4.md), [Mini](../topics/mini.md), [Multimodal Reasoning](../topics/multimodal-reasoning.md), [Nano](../topics/nano.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 4.80
 
 ## Summary

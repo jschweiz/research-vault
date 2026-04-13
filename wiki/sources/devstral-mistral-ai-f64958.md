@@ -9,9 +9,8 @@ source_refs:
 backlinks:
 - topic:agentic-llm
 - topic:github-issues
-- topic:llm
 - topic:software-engineering
-updated_at: '2026-04-09T16:35:04.104879Z'
+updated_at: '2026-04-09T23:10:03.965179Z'
 managed: true
 ---
 # Devstral | Mistral AI
@@ -27,8 +26,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, agentic llm, software engineering, llm, github issues, swe-bench
 - Topics: [Agentic Llm](../topics/agentic-llm.md), [Github Issues](../topics/github-issues.md), [Llm](../topics/llm.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Software Engineering](../topics/software-engineering.md)
-- Trend score: 45.05
-- Novelty score: 3.60
+- Trend score: 68.20
+- Novelty score: 2.40
 
 ## Summary
 
@@ -45,12 +44,12 @@ Devstral is an agentic LLM designed for software engineering tasks, trained to s
 
 ## Related Research
 
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md) (shared topics: Llm, Official)
 - [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Llm, Official)
 - [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral, Official)
 - [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
 - [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
 - [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral, Official)
-- [Introducing: Devstral 2 and Mistral Vibe CLI. | Mistral AI](introducing-devstral-2-and-mistral-vibe-cli-mistral-ai-5539ea.md) (shared topics: Mistral, Official)
 
 ## Radar
 

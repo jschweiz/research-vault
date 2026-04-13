@@ -7,13 +7,11 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
 backlinks:
-- page:2026-04-03-medium-email-claude-code-is-great-a7134001
 - page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
-- page:2026-04-06-tldr-email-how-claude-code-builds-a-system-prompt-a4d9c7c0
 - topic:claude-code
 - topic:production-apps
 - topic:software-development
-updated_at: '2026-04-09T16:35:04.265489Z'
+updated_at: '2026-04-09T23:10:03.855135Z'
 managed: true
 ---
 # What I Learnt Using Claude Code to Build Production-Ready Apps
@@ -23,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@farhadmalik/what-i-learnt-using-claude-code-to-build-production-ready-apps-a27272af0c48
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@farhadmalik/what-i-learnt-using-claude-code-to-build-production-ready-apps-a27272af0c48
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Farhad Malik
-- Tags: newsletter, medium, email, blog-post, claude code, ai, software development, production apps
+- Tags: newsletter, medium, email, blog-post, claude code, ai, software development, production apps, sub-document
 - Topics: [Claude Code](../topics/claude-code.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Production Apps](../topics/production-apps.md), [Software Development](../topics/software-development.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

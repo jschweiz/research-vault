@@ -4,6 +4,7 @@ page_type: topic
 title: Computer Vision
 aliases:
 - Computer Vision
+- Computer vision
 - computer vision
 - cs.cv
 - vision
@@ -17,9 +18,11 @@ source_refs:
 - 2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - 2026-04-03-tldr-email-openai-buys-tbpn-2-person-unicorn-cursor-v3-2950f543
 - 2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
+- 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
+- 2026-03-16-jack-clark-import-ai-computer-vision-is-a-lot-harder-and-less-general-3d585cef
 backlinks:
 - map:global-ai-research
-- map:trends:rising-topics
+- page:2026-03-16-jack-clark-import-ai-computer-vision-is-a-lot-harder-and-less-general-3d585cef
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
@@ -28,6 +31,7 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
 - page:2026-04-08-alphaxiv-paper-moright-motion-control-done-right-ca64d67b
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
+- topic:agentic-autonomy
 - topic:alignment
 - topic:attention-mechanisms
 - topic:audio
@@ -37,20 +41,22 @@ backlinks:
 - topic:conversational-ai
 - topic:cs-gr
 - topic:data-curation
-- topic:gemma-4
 - topic:generative-models
+- topic:generative-text
 - topic:geometric-deep-learning
 - topic:google-deepmind
 - topic:image-generation
 - topic:inference-optimization
 - topic:language-modeling
+- topic:lean-programming
 - topic:multi-modal-learning
-- topic:multimodal
 - topic:object-detection
+- topic:philosophy
 - topic:robotics-perception
 - topic:synthetic-data
+- topic:tldr
 - topic:transfer-learning
-updated_at: '2026-04-09T16:35:03.966413Z'
+updated_at: '2026-04-09T23:10:02.381334Z'
 managed: true
 ---
 # Computer Vision
@@ -59,13 +65,13 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 54.80
+- Trend score: 55.75
 - Novelty score: 6.80
 - Items in last 7 days: 9
-- Items in last 30 days: 9
-- Total supporting items: 9
-- Source diversity: 2
-- First seen: 2026-04-03T10:59:24+00:00
+- Items in last 30 days: 11
+- Total supporting items: 11
+- Source diversity: 3
+- First seen: 2026-03-16T12:30:50+00:00
 - Last seen: 2026-04-08T17:59:48+00:00
 
 ## Aliases
@@ -76,8 +82,8 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 ## Related Topics
 
 - [Computer Science](computer-science.md)
-- [Audio](audio.md)
 - [Agents](agents.md)
+- [Audio](audio.md)
 - [Cs Gr](cs-gr.md)
 - [Email](email.md)
 - [Generative Models](generative-models.md)
@@ -86,6 +92,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Leading Sources
 
+- Import AI
 - TLDR Email
 - alphaXiv Papers
 

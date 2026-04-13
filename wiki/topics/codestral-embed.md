@@ -11,8 +11,7 @@ backlinks:
 - page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
 - topic:code-embedding
 - topic:mistral-ai
-- topic:search
-updated_at: '2026-04-09T16:35:03.968811Z'
+updated_at: '2026-04-09T23:10:03.880349Z'
 managed: true
 ---
 # Codestral Embed

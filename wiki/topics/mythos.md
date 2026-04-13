@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
 - topic:cybersecurity
-- topic:security
-updated_at: '2026-04-09T16:35:04.549840Z'
+updated_at: '2026-04-09T23:10:02.488565Z'
 managed: true
 ---
 # Mythos

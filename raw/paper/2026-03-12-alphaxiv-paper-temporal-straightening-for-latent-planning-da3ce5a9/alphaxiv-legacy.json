@@ -1,0 +1,441 @@
+{
+  "comments": [
+    {
+      "annotation": {
+        "anchorPosition": {
+          "offset": 0,
+          "pageIndex": 17,
+          "spanIndex": 278
+        },
+        "focusPosition": {
+          "offset": 0,
+          "pageIndex": 17,
+          "spanIndex": 337
+        },
+        "highlightColor": "#FFD70040",
+        "highlightRects": [
+          {
+            "pageIndex": 17,
+            "rects": [
+              {
+                "x1": 75.03750000000001,
+                "x2": 122.18800048828126,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 148.25247802734376,
+                "x2": 155.534765625,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 157.14748535156252,
+                "x2": 161.40000000000003,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 164.40750732421878,
+                "x2": 171.68975830078128,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 173.24249267578128,
+                "x2": 177.49500732421876,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 180.50247802734378,
+                "x2": 191.42929687500003,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 204.2700073242188,
+                "x2": 209.1075073242188,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 226.34252929687506,
+                "x2": 241.49260253906255,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 243.225,
+                "x2": 247.2224853515625,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 250.66501464843753,
+                "x2": 257.11215820312503,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 267.1875,
+                "x2": 282.337646484375,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 284.069970703125,
+                "x2": 288.067529296875,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 291.569970703125,
+                "x2": 298.01718750000003,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 308.02500000000003,
+                "x2": 323.17514648437503,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 324.91501464843753,
+                "x2": 328.9125,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 332.40747070312506,
+                "x2": 338.8546875,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 347.04001464843753,
+                "x2": 362.190087890625,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 363.93002929687503,
+                "x2": 367.9275146484375,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 371.36250000000007,
+                "x2": 377.8097167968751,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 385.9949707031251,
+                "x2": 401.1451171875001,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 402.9449707031251,
+                "x2": 406.942529296875,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 410.3775146484375,
+                "x2": 416.82465820312507,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 425.00998535156253,
+                "x2": 440.16013183593753,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 441.89252929687507,
+                "x2": 445.8900146484376,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 449.39252929687507,
+                "x2": 455.83967285156257,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 464.0250000000001,
+                "x2": 479.1751464843751,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 480.90747070312506,
+                "x2": 484.90502929687506,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 488.34748535156257,
+                "x2": 494.7978515625,
+                "y1": 127.97245788574213,
+                "y2": 132.7724578857421
+              },
+              {
+                "x1": 502.980029296875,
+                "x2": 518.1301025390626,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              },
+              {
+                "x1": 519.9224853515625,
+                "x2": 523.919970703125,
+                "y1": 127.21498718261708,
+                "y2": 135.3749725341796
+              }
+            ]
+          }
+        ],
+        "selectedText": "DINOv2 (patch) 14 \u00d7 14 \u00d7 384 \u2717 73.33 \u00b1 3.40 87.33 \u00b1 4.99 63.33 \u00b1 8.22 88.00 \u00b1 1.63 70.00 \u00b1 4.08 88.00 \u00b1 1.63 62.67 \u00b1 4.11 71.33 \u00b1",
+        "type": "highlight"
+      },
+      "author": {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "du6FcYgAAAAJ",
+        "id": "0194e61d-3245-7166-bb17-82bc89c6432f",
+        "institution": "Friedrich-Alexander Universit\u00e4t Erlangen-N\u00fcrnberg",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Shukrullo Nazirjonov",
+        "reputation": 15,
+        "role": "user",
+        "username": "vocdex",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      },
+      "authorResponded": true,
+      "body": "Does DINOv2(patch) model correspond to DINO-WM's best configuration model? If yes, then DINO-WM paper reports 28% for GD and 86% for CEM **open-loop planning** at A5.3 appendix section. Are there any differences in evaluation that I might be misunderstanding?",
+      "date": "2026-03-17T15:41:02.163Z",
+      "endorsements": [],
+      "hasDownvoted": false,
+      "hasFlagged": false,
+      "hasUpvoted": false,
+      "id": "019cfc75-2753-7e57-b98c-818cbc997618",
+      "isAuthor": false,
+      "paperGroupId": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+      "paperTitle": "Temporal Straightening for Latent Planning",
+      "paperVersionId": "019ce5d5-baf8-75f0-b11e-f959653964a2",
+      "parentCommentId": null,
+      "responses": [
+        {
+          "annotation": null,
+          "author": {
+            "avatar": null,
+            "blueskyUsername": null,
+            "githubUsername": null,
+            "googleScholarId": "5BN__1MAAAAJ",
+            "id": "019d04a2-53da-7aee-87d5-a5051579ea6f",
+            "institution": "New York University",
+            "linkedinUsername": null,
+            "orcidId": null,
+            "publicEmail": null,
+            "realName": "Ying Wang",
+            "reputation": 16,
+            "role": "user",
+            "username": "yingwww",
+            "verified": false,
+            "weeklyReputation": 1,
+            "xUsername": null
+          },
+          "authorResponded": false,
+          "body": "Thanks for your question! Yes, DINOv2(patch) is DINO-WM and the reported values are GD. We improve the GD open-loop planning for *all* models by using an Adam optimizer (which helps the most!) and more suitable hyperparameters (see Table 5 in page19).",
+          "date": "2026-03-19T06:02:49.703Z",
+          "endorsements": [],
+          "hasDownvoted": false,
+          "hasFlagged": false,
+          "hasUpvoted": false,
+          "id": "019d04b0-81e7-7576-9379-a51e4cc0fa14",
+          "isAuthor": true,
+          "paperGroupId": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+          "paperTitle": "Temporal Straightening for Latent Planning",
+          "paperVersionId": "019ce5d5-baf8-75f0-b11e-f959653964a2",
+          "parentCommentId": "019cfc75-2753-7e57-b98c-818cbc997618",
+          "responses": [],
+          "tag": "general",
+          "title": null,
+          "universalId": "2603.12231v1",
+          "upvotes": 1,
+          "userId": "019d04a2-53da-7aee-87d5-a5051579ea6f",
+          "wasEdited": false
+        }
+      ],
+      "tag": "general",
+      "title": "Discrepancy in results of DINO-WM",
+      "universalId": "2603.12231v1",
+      "upvotes": 0,
+      "userId": "0194e61d-3245-7166-bb17-82bc89c6432f",
+      "wasEdited": false
+    }
+  ],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Ying Wang",
+        "id": "01985c81-f818-7284-aaf9-bef47bed5751",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Oumayma Bounou",
+        "id": "019a88d9-7df7-7f75-9877-331923462165",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Gaoyue Zhou",
+        "id": "01985c81-e4e6-7837-8d54-93a9c3bf91eb",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Randall Balestriero",
+        "id": "01985c81-e287-7ced-b370-1a9d0540e3b6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tim G. J. Rudner",
+        "id": "01985c81-f062-7a30-a290-be46c6a5e47b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yann LeCun",
+        "id": "01985c81-d97f-7a3d-b9ce-231516b7caee",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Mengye Ren",
+        "id": "01985c81-db50-7d40-9068-e884740e6d17",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [
+      {
+        "id": "01985c36-cf10-7071-9584-f17e58094c17",
+        "image": "images/organizations/university-of-toronto.jpeg",
+        "name": "University of Toronto"
+      },
+      {
+        "id": "01985c36-cf10-75aa-8ee8-74667747ee81",
+        "image": "images/organizations/nyu.png",
+        "name": "New York University"
+      },
+      {
+        "id": "01985c36-cf11-7ead-991c-02899b09ce8f",
+        "image": "images/organizations/brown-university.svg+xml",
+        "name": "Brown University"
+      }
+    ],
+    "paper_group": {
+      "citation": {
+        "bibtex": "@misc{wangThu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)temporalstraighteninglatent,\n      title={Temporal Straightening for Latent Planning},\n      author={Ying Wang and Oumayma Bounou and Gaoyue Zhou and Randall Balestriero and Tim G. J. Rudner and Yann LeCun and Mengye Ren},\n      year={Thu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)},\n      eprint={2603.12231},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2603.12231},\n}"
+      },
+      "created_at": "Fri Mar 13 2026 06:15:15 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Thu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)",
+      "id": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 165,
+        "questions_count": 2,
+        "total_votes": 41,
+        "upvotes_count": 165,
+        "visits_count": {
+          "all": 2687,
+          "last24Hours": 17,
+          "last30Days": 2687,
+          "last7Days": 241,
+          "last90Days": 2687
+        }
+      },
+      "podcast_path": "019ce5d5-babe-7c2c-a055-f41b880028b9/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "Official code base for Temporal Straightening for Latent Planning",
+          "language": "",
+          "stars": 0,
+          "url": "https://github.com/agentic-learning-ai-lab/temporal-straightening"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2603.12231"
+      },
+      "title": "Temporal Straightening for Latent Planning",
+      "topics": [
+        "Computer Science",
+        "cs.LG",
+        "deep-reinforcement-learning",
+        "generative-models",
+        "optimization-methods",
+        "reinforcement-learning",
+        "representation-learning",
+        "robotic-control"
+      ],
+      "universal_paper_id": "2603.12231",
+      "updated_at": "Fri Mar 13 2026 06:15:15 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Learning good representations is essential for latent planning with world models. While pretrained visual encoders produce strong semantic visual features, they are not tailored to planning and contain information irrelevant -- or even detrimental -- to planning. Inspired by the perceptual straightening hypothesis in human visual processing, we introduce temporal straightening to improve representation learning for latent planning. Using a curvature regularizer that encourages locally straightened latent trajectories, we jointly learn an encoder and a predictor. We show that reducing curvature this way makes the Euclidean distance in latent space a better proxy for the geodesic distance and improves the conditioning of the planning objective. We demonstrate empirically that temporal straightening makes gradient-based planning more stable and yields significantly higher success rates across a suite of goal-reaching tasks.",
+      "created_at": "Fri Mar 13 2026 06:15:15 GMT+0000 (Coordinated Universal Time)",
+      "id": "019ce5d5-baf8-75f0-b11e-f959653964a2",
+      "imageURL": "image/2603.12231v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Thu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)",
+      "title": "Temporal Straightening for Latent Planning",
+      "universal_paper_id": "2603.12231",
+      "updated_at": "Fri Mar 13 2026 06:15:15 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2603.12231v1.pdf"
+    },
+    "verified_authors": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "5BN__1MAAAAJ",
+        "id": "019d04a2-53da-7aee-87d5-a5051579ea6f",
+        "institution": "New York University",
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Ying Wang",
+        "reputation": 16,
+        "role": "user",
+        "username": "yingwww",
+        "verified": false,
+        "weeklyReputation": 1,
+        "xUsername": null
+      }
+    ]
+  }
+}

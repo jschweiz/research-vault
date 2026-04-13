@@ -10,8 +10,7 @@ backlinks:
 - topic:china
 - topic:high-schoolers
 - topic:recruitment
-- topic:talent
-updated_at: '2026-04-09T16:35:04.099144Z'
+updated_at: '2026-04-09T23:10:02.895637Z'
 managed: true
 ---
 # China's Tech Giants Are Recruiting High Schoolers
@@ -25,9 +24,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: news
 - Published at: 2026-04-06T11:04:43+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, news, china, tech, recruitment, high schoolers, talent
-- Topics: [China](../topics/china.md), [Email](../topics/email.md), [High Schoolers](../topics/high-schoolers.md), [Newsletter](../topics/newsletter.md), [Recruitment](../topics/recruitment.md), [Talent](../topics/talent.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, news, china, tech, recruitment, high schoolers, talent, sub-document
+- Topics: [China](../topics/china.md), [Email](../topics/email.md), [High Schoolers](../topics/high-schoolers.md), [Newsletter](../topics/newsletter.md), [Recruitment](../topics/recruitment.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -41,16 +40,16 @@ Chinese tech companies are recruiting high schoolers for research and internship
 - [High Schoolers](../topics/high-schoolers.md)
 - [Newsletter](../topics/newsletter.md)
 - [Recruitment](../topics/recruitment.md)
-- [Talent](../topics/talent.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Sub Document)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
+- [World Labs refines Marble models for better visuals and introduces scalable environment generation model](world-labs-refines-marble-models-for-better-visuals-and-introduc-3d3001.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cognition releases SWE-1.6 with parallel tool calls and fewer reasoning loops](cognition-releases-swe-1-6-with-parallel-tool-calls-and-fewer-re-bf6883.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

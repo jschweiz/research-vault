@@ -16,7 +16,7 @@ backlinks:
 - topic:coding
 - topic:data-science
 - topic:developer
-updated_at: '2026-04-09T16:35:04.577026Z'
+updated_at: '2026-04-09T23:10:02.393413Z'
 managed: true
 ---
 # 12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.
@@ -26,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@canartuc/12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-screen-d6c52b1c1aac
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@canartuc/12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-screen-d6c52b1c1aac
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN, Ph.D.
-- Tags: newsletter, medium, email, blog-post, claude code, data science, developer, coding
+- Tags: newsletter, medium, email, blog-post, claude code, data science, developer, coding, sub-document
 - Topics: [Claude Code](../topics/claude-code.md), [Coding](../topics/coding.md), [Data Science](../topics/data-science.md), [Developer](../topics/developer.md), [Email](../topics/email.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

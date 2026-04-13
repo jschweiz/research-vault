@@ -8,6 +8,7 @@ source_refs:
 - 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 backlinks:
 - page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
+- page:2026-03-06-the-batch-research-openais-frontier-agent-insights-and-orchestratio-b62f6c9f
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
@@ -20,18 +21,19 @@ backlinks:
 - page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-03-27-the-batch-research-grok-imagine-1-0-sharply-cuts-costs-for-high-qua-f02eca28
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
 - page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
+- page:2026-04-03-the-batch-research-google-debuted-lyria-3-an-app-that-turns-text-or-51adf4c3
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 - topic:alignment
 - topic:fellowship
 - topic:official
-- topic:openai
 - topic:safety
 - topic:website
-updated_at: '2026-04-09T16:35:03.886479Z'
+updated_at: '2026-04-09T23:10:02.580885Z'
 managed: true
 ---
 # Announcing the OpenAI Safety Fellowship
@@ -46,8 +48,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-04-06T10:00:00+00:00
 - Tags: openai, official, website, blog-post, safety, alignment, research, fellowship
 - Topics: [Alignment](../topics/alignment.md), [Safety](../topics/safety.md), [Fellowship](../topics/fellowship.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 5.60
+- Trend score: 70.25
+- Novelty score: 4.20
 
 ## Summary
 

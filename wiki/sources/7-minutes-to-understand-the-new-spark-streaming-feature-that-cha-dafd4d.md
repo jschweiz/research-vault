@@ -13,7 +13,7 @@ backlinks:
 - topic:apache-spark
 - topic:data-engineering
 - topic:low-latency
-updated_at: '2026-04-09T16:35:04.538040Z'
+updated_at: '2026-04-09T23:08:05.254838Z'
 managed: true
 ---
 # 7 Minutes to Understand the New Spark Streaming Feature that Changes Everything
@@ -23,13 +23,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@vutrinh274/7-minutes-to-understand-the-new-spark-streaming-feature-that-changes-everything-5163c3eb51d2
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@vutrinh274/7-minutes-to-understand-the-new-spark-streaming-feature-that-changes-everything-5163c3eb51d2
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Vu Trinh
-- Tags: newsletter, medium, email, blog-post, spark streaming, apache spark, low latency, data engineering
+- Tags: newsletter, medium, email, blog-post, spark streaming, apache spark, low latency, data engineering, sub-document
 - Topics: [Apache Spark](../topics/apache-spark.md), [Data Engineering](../topics/data-engineering.md), [Email](../topics/email.md), [Low Latency](../topics/low-latency.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

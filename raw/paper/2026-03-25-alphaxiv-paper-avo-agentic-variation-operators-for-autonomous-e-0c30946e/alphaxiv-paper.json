@@ -1,0 +1,21 @@
+{
+  "abstract": "Agentic Variation Operators (AVO) are a new family of evolutionary variation operators that replace the fixed mutation, crossover, and hand-designed heuristics of classical evolutionary search with autonomous coding agents. Rather than confining a language model to candidate generation within a prescribed pipeline, AVO instantiates variation as a self-directed agent loop that can consult the current lineage, a domain-specific knowledge base, and execution feedback to propose, repair, critique, and verify implementation edits. We evaluate AVO on attention, among the most aggressively optimized kernel targets in AI, on NVIDIA Blackwell (B200) GPUs. Over 7 days of continuous autonomous evolution on multi-head attention, AVO discovers kernels that outperform cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5% across the evaluated configurations. The discovered optimizations transfer readily to grouped-query attention, requiring only 30 minutes of additional autonomous adaptation and yielding gains of up to 7.0% over cuDNN and 9.3% over FlashAttention-4. Together, these results show that agentic variation operators move beyond prior LLM-in-the-loop evolutionary pipelines by elevating the agent from candidate generator to variation operator, and can discover performance-critical micro-architectural optimizations that produce kernels surpassing state-of-the-art expert-engineered attention implementations on today's most advanced GPU hardware.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1774457704000,
+  "googleCitationId": null,
+  "groupId": "019d27c8-58f8-7fce-9fa4-284e66418945",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1774457704000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2603.24517",
+  "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
+  "type": "public",
+  "universalId": "2603.24517",
+  "uploader": null,
+  "versionId": "019d27c8-5976-7351-9aff-acb9f4e1028e",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

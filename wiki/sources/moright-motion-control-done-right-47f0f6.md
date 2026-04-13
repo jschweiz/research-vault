@@ -22,7 +22,7 @@ backlinks:
 - topic:computer-science
 - topic:computer-vision
 - topic:cs-gr
-updated_at: '2026-04-09T16:35:03.908542Z'
+updated_at: '2026-04-09T23:10:03.408934Z'
 managed: true
 ---
 # MoRight: Motion Control Done Right

@@ -1,0 +1,21 @@
+{
+  "abstract": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+  "citationBibtex": null,
+  "citationsCount": 0,
+  "firstPublicationDate": 1774455292000,
+  "googleCitationId": "koDFScAAAAAJ:roLk4NBRz8UC",
+  "groupId": "019d280b-ccb3-73b8-8227-1792bb4dac48",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1774455292000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2603.24472",
+  "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+  "type": "public",
+  "universalId": "2603.24472",
+  "uploader": null,
+  "versionId": "019d280b-ccde-7b4a-a788-fd5a0a09deda",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

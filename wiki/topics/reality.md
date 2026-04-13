@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e
 - topic:context
-- topic:taste
-updated_at: '2026-04-09T16:35:04.611518Z'
+updated_at: '2026-04-09T23:10:03.870646Z'
 managed: true
 ---
 # Reality
@@ -38,7 +37,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Llms](llms.md)
 - [Newsletter](newsletter.md)
-- [Taste](taste.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

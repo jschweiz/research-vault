@@ -15,17 +15,18 @@ backlinks:
 - page:2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
 - page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
+- page:2026-03-27-the-batch-research-grok-imagine-1-0-sharply-cuts-costs-for-high-qua-f02eca28
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-03-31-openai-website-accelerating-the-next-phase-of-ai-9f84e2e4
+- page:2026-04-03-the-batch-research-google-debuted-lyria-3-an-app-that-turns-text-or-51adf4c3
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 - topic:acquisition
 - topic:media
-- topic:official
 - topic:technology
 - topic:website
-updated_at: '2026-04-09T16:35:04.744136Z'
+updated_at: '2026-04-09T23:10:02.829806Z'
 managed: true
 ---
 # OpenAI acquires TBPN
@@ -40,8 +41,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-04-02T10:30:00+00:00
 - Tags: openai, official, website, blog-post, acquisition, ai, media, technology
 - Topics: [Acquisition](../topics/acquisition.md), [Media](../topics/media.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Technology](../topics/technology.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 4.20
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

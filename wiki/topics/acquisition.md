@@ -12,7 +12,7 @@ backlinks:
 - topic:media
 - topic:technology
 - topic:website
-updated_at: '2026-04-09T16:35:04.433645Z'
+updated_at: '2026-04-09T23:10:02.850844Z'
 managed: true
 ---
 # Acquisition

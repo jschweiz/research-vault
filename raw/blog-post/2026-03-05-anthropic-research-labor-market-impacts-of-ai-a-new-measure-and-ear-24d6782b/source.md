@@ -7,7 +7,7 @@ source_name: Anthropic Research
 authors: []
 published_at: '2026-03-05T00:00:00Z'
 ingested_at: '2026-04-09T12:03:49.720089Z'
-content_hash: 74723a0256af368d122b546e50e010916eef23be70c6d2f651aa261ec2a33f71
+content_hash: 493198da5c44c486011d1a98c84827ada759365d43610468727cf23a949d3c34
 identity_hash: 57654a47105e906426b2f4cab8eca58486a5a70eb9f6c1aa550902d2fb49aeeb
 tags:
 - anthropic
@@ -30,28 +30,16 @@ canonical_url: https://www.anthropic.com/research/labor-market-impacts
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:49.720113Z'
+fetched_at: '2026-04-13T18:10:25.697367Z'
 short_summary: The authors introduce a new measure of AI displacement risk based on theoretical LLM capability and real-world usage to quantify AI's impact on labor markets. They find limited evidence that AI has affected employment to date, but note that the measures track with labor market analyst estimates.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:26:38.783940Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: f0d8bb1f546bd04701875369e88c803f24444f4a949e7cbe8dc0da0eb3278d8c
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2ac0c51532f5e7e433a0cd07fbd2cf8d221c632a6a9fad7b4df4d169db89385f
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.9
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLM capability, evaluation, and the impact of AI on labor markets.
-  evidence_quotes:
-  - The authors introduce a new measure of AI displacement risk based on theoretical LLM capability and real-world usage to quantify AI's impact on labor markets.
-  - We find limited evidence that AI has affected employment to date, but note that the measures track with labor market analyst estimates.
-  - 'Our new measure, observed exposure, is meant to quantify: of those tasks that LLMs could theoretically speed up, which are actually seeing automated usage in pr'
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Key findings
 - We introduce a new measure of AI displacement risk, observed exposure, that combines theoretical LLM capability and real-world usage data, weighting automated (rather than augmentative) and work-related uses more heavily
@@ -164,9 +152,9 @@ See Fujita, et al. (2024).
 Corrections
 Updated Mar 8, 2026: Corrected Figure 7, which incorrectly reversed the labels between top quartile and zero exposure group inflow rates.
 Related content
+Trustworthy agents in practice
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
+[Read more](/research/trustworthy-agents)
 Emotion concepts and their function in a large language model
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 [Read more](/research/emotion-concepts-function)
-Anthropic Economic Index report: Learning curves
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
-[Read more](/research/economic-index-march-2026-report)

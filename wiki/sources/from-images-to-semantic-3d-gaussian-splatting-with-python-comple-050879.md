@@ -14,7 +14,7 @@ backlinks:
 - topic:3d-gaussian-splatting
 - topic:python
 - topic:semantic-scanning
-updated_at: '2026-04-09T16:35:04.161408Z'
+updated_at: '2026-04-09T23:08:05.218278Z'
 managed: true
 ---
 # From Images to Semantic 3D Gaussian Splatting with Python: Complete Guide
@@ -24,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@florentpoux/from-images-to-semantic-3d-gaussian-splatting-with-python-complete-guide-ff9d3d240847
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@florentpoux/from-images-to-semantic-3d-gaussian-splatting-with-python-complete-guide-ff9d3d240847
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Florent Poux
-- Tags: newsletter, medium, email, blog-post, 3d gaussian splatting, python, semantic scanning, ai
+- Tags: newsletter, medium, email, blog-post, 3d gaussian splatting, python, semantic scanning, ai, sub-document
 - Topics: [3D Gaussian Splatting](../topics/3d-gaussian-splatting.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md), [Semantic Scanning](../topics/semantic-scanning.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

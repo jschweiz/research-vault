@@ -7,23 +7,19 @@ aliases:
 source_refs:
 - 2026-04-09-medium-email-the-art-of-letting-go-69290282
 backlinks:
+- page:2026-03-16-jack-clark-import-ai-computer-vision-is-a-lot-harder-and-less-general-3d585cef
 - page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
-- page:2026-04-03-medium-email-the-800-job-boom-nobodys-talking-about-011815a1
-- page:2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
 - page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
 - page:2026-04-03-medium-email-why-reading-the-decameron-is-as-useful-as-ever-73c50be2
 - page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
 - page:2026-04-04-medium-email-can-ai-satellite-embeddings-outperform-tradition-0abc2731
-- page:2026-04-04-medium-email-scaling-langgraph-agents-parallelization-subgrap-40c091a3
 - page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
-- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-04-medium-email-why-youre-still-not-ready-for-ai-engineering-9c88220f
 - page:2026-04-05-medium-email-7-minutes-to-understand-the-new-spark-streaming--6d6d38e6
 - page:2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
 - page:2026-04-05-medium-email-from-images-to-semantic-3d-gaussian-splatting-wi-314de2ba
-- page:2026-04-05-medium-email-i-spent-5-hours-learning-unity-catalog-heres-eve-ba871769
 - page:2026-04-05-medium-email-what-i-learnt-using-claude-code-to-build-product-2220197d
 - page:2026-04-06-medium-email-how-to-create-3d-models-from-any-image-with-ai-z-855599c1
 - page:2026-04-06-medium-email-i-built-the-slowest-3d-gaussian-splatting-render-f01a214c
@@ -35,20 +31,15 @@ backlinks:
 - page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
 - page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 - page:2026-04-07-medium-email-windows-vs-macos-vs-linux-the-time-to-switch-is--c4f48e5f
-- page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
-- page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
-- page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
 - page:2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714
-- page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
 - page:2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-397789f0
 - page:2026-04-09-medium-email-careers-are-collapsing-jobs-are-dying-the-smarte-96048d69
-- page:2026-04-09-medium-email-scaling-langgraph-agents-parallelization-subgrap-1502bda5
 - page:2026-04-09-medium-email-the-psychology-of-people-who-go-silent-when-they-058acf92
 - topic:happiness
 - topic:letting-go
 - topic:medium
 - topic:philosophy
-updated_at: '2026-04-09T16:35:04.134271Z'
+updated_at: '2026-04-09T23:10:02.512515Z'
 managed: true
 ---
 # The Art of Letting Go
@@ -58,13 +49,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@chris.essey/the-art-of-letting-go-6c7ae93b20da
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@chris.essey/the-art-of-letting-go-6c7ae93b20da
 - Document kind: blog-post
 - Published at: 2026-04-09T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Chris Essey
-- Tags: newsletter, medium, email, blog-post, letting go, philosophy, happiness
+- Tags: newsletter, medium, email, blog-post, letting go, philosophy, happiness, sub-document
 - Topics: [Email](../topics/email.md), [Happiness](../topics/happiness.md), [Letting Go](../topics/letting-go.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Philosophy](../topics/philosophy.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

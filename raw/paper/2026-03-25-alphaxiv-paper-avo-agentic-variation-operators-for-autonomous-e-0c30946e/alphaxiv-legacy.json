@@ -1,0 +1,210 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Terry Chen",
+        "id": "01985c84-1bbe-7e67-afbf-e6b97ec8c414",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zhifan Ye",
+        "id": "01985c82-7e88-7050-8940-49a0515c2868",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Bing Xu",
+        "id": "01985c81-d97e-7fe1-a24f-c89254e269f5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Zihao Ye",
+        "id": "01985c81-f9c8-7c3a-846d-feed272da66e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Timmy Liu",
+        "id": "019b24f0-a809-7e66-8d7c-df2948364b9b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ali Hassani",
+        "id": "01985c81-ed0e-7269-808c-a9fd0e8d7fc2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tianqi Chen",
+        "id": "01985c81-dc26-7863-9105-110074a5b200",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Andrew Kerr",
+        "id": "019d27c8-5947-7bd8-8fd5-b4c8bcfddc74",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Haicheng Wu",
+        "id": "01985c85-194a-7cd3-bfba-e5befe4573ac",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yang Xu",
+        "id": "01985c81-de90-7d36-979c-545300fe9128",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yu-Jung Chen",
+        "id": "019a87b1-6def-7087-9797-b72db6be52a5",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Hanfeng Chen",
+        "id": "01985c83-6d10-7b92-aa97-f900343cca34",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aditya Kane",
+        "id": "01985c82-2ba4-7a92-b5ea-773f77ec2701",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ronny Krashinsky",
+        "id": "01985c82-ac0f-71e0-af10-c9d1e73ec862",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Ming-Yu Liu",
+        "id": "01985c81-f9c8-76d3-8600-b2fbcd84e32e",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Vinod Grover",
+        "id": "01985c83-64e3-71d1-a82e-ce06d65618a7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Luis Ceze",
+        "id": "01985c82-4656-7f59-8ed0-6cba8dba0d55",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Roger Bringmann",
+        "id": "019bf824-b063-7caf-8163-9a4206c8b623",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "John Tran",
+        "id": "01985c81-ff31-70bf-b81c-737e971a1075",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Wei Liu",
+        "id": "01985c81-e4e6-74c2-bbf7-6a8bac6fb966",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Fung Xie",
+        "id": "019a8774-27bc-72cd-9ae5-ce8cf418c8e6",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Michael Lightstone",
+        "id": "01999b61-7294-74da-8110-08b1830ba5e8",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Humphrey Shi",
+        "id": "01985c81-e287-72dd-8c58-c23de2913a86",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Mar 26 2026 01:35:34 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Mar 25 2026 16:55:04 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d27c8-58f8-7fce-9fa4-284e66418945",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 167,
+        "questions_count": 0,
+        "total_votes": 33,
+        "upvotes_count": 167,
+        "visits_count": {
+          "all": 2322,
+          "last24Hours": 19,
+          "last30Days": 2322,
+          "last7Days": 754,
+          "last90Days": 2322
+        }
+      },
+      "podcast_path": "019d27c8-58f8-7fce-9fa4-284e66418945/podcast.mp3",
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2603.24517"
+      },
+      "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
+      "topics": [
+        "agentic-frameworks",
+        "agents",
+        "Computer Science",
+        "cs.LG",
+        "efficient-transformers",
+        "evolutionary-algorithms",
+        "hardware-aware-algorithms",
+        "inference-optimization",
+        "optimization-methods",
+        "transformers"
+      ],
+      "universal_paper_id": "2603.24517",
+      "updated_at": "Thu Mar 26 2026 01:35:34 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Agentic Variation Operators (AVO) are a new family of evolutionary variation operators that replace the fixed mutation, crossover, and hand-designed heuristics of classical evolutionary search with autonomous coding agents. Rather than confining a language model to candidate generation within a prescribed pipeline, AVO instantiates variation as a self-directed agent loop that can consult the current lineage, a domain-specific knowledge base, and execution feedback to propose, repair, critique, and verify implementation edits. We evaluate AVO on attention, among the most aggressively optimized kernel targets in AI, on NVIDIA Blackwell (B200) GPUs. Over 7 days of continuous autonomous evolution on multi-head attention, AVO discovers kernels that outperform cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5% across the evaluated configurations. The discovered optimizations transfer readily to grouped-query attention, requiring only 30 minutes of additional autonomous adaptation and yielding gains of up to 7.0% over cuDNN and 9.3% over FlashAttention-4. Together, these results show that agentic variation operators move beyond prior LLM-in-the-loop evolutionary pipelines by elevating the agent from candidate generator to variation operator, and can discover performance-critical micro-architectural optimizations that produce kernels surpassing state-of-the-art expert-engineered attention implementations on today's most advanced GPU hardware.",
+      "created_at": "Thu Mar 26 2026 01:35:34 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d27c8-5976-7351-9aff-acb9f4e1028e",
+      "imageURL": "image/2603.24517v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Mar 25 2026 16:55:04 GMT+0000 (Coordinated Universal Time)",
+      "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
+      "universal_paper_id": "2603.24517",
+      "updated_at": "Thu Mar 26 2026 01:35:34 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2603.24517v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

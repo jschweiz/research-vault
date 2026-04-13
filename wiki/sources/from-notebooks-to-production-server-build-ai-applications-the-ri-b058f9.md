@@ -14,10 +14,9 @@ backlinks:
 - page:2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
 - page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 - page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
-- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
 - topic:production
 - topic:python
-updated_at: '2026-04-09T16:35:03.892968Z'
+updated_at: '2026-04-09T23:10:02.689820Z'
 managed: true
 ---
 # From Notebooks to Production Server: Build AI Applications The Right Way
@@ -27,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@jeremyarancio/from-notebooks-to-production-server-build-ai-applications-the-right-way-8037203b7028
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@jeremyarancio/from-notebooks-to-production-server-build-ai-applications-the-right-way-8037203b7028
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Jeremy Arancio
-- Tags: newsletter, medium, email, blog-post, ai, python, machine learning, production, software development
+- Tags: newsletter, medium, email, blog-post, ai, python, machine learning, production, software development, sub-document
 - Topics: [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Production](../topics/production.md), [Python](../topics/python.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

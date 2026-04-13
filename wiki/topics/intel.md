@@ -11,13 +11,10 @@ source_refs:
 backlinks:
 - page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
 - page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
-- topic:amazon
 - topic:chip-packaging
 - topic:chip-plant
-- topic:google
 - topic:spacex
-- topic:terafab
-updated_at: '2026-04-09T16:35:04.460750Z'
+updated_at: '2026-04-09T23:10:03.356497Z'
 managed: true
 ---
 # Intel
@@ -47,7 +44,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Chip Plant](chip-plant.md)
 - [Google](google.md)
 - [Spacex](spacex.md)
-- [Terafab](terafab.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

@@ -9,14 +9,13 @@ source_refs:
 backlinks:
 - page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
-- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
 - page:2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 - topic:agentic-ai
 - topic:memory
 - topic:search
-updated_at: '2026-04-09T16:35:04.676394Z'
+updated_at: '2026-04-09T23:10:03.394264Z'
 managed: true
 ---
 # Building the 14 Key Pillars of Agentic AI
@@ -26,13 +25,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
-- Tags: newsletter, medium, email, blog-post, agentic ai, ai, long-term memory, parallelism, retrieval
+- Tags: newsletter, medium, email, blog-post, agentic ai, ai, long-term memory, parallelism, retrieval, sub-document
 - Topics: [Memory](../topics/memory.md), [Search](../topics/search.md), [Agentic Ai](../topics/agentic-ai.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

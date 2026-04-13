@@ -11,11 +11,10 @@ source_refs:
 backlinks:
 - page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
 - page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
-- topic:api
 - topic:document-ai
 - topic:document-processing
 - topic:document-understanding
-updated_at: '2026-04-09T16:35:04.480369Z'
+updated_at: '2026-04-09T23:10:02.352256Z'
 managed: true
 ---
 # Ocr

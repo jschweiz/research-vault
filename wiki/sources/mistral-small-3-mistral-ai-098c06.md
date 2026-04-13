@@ -10,11 +10,9 @@ backlinks:
 - page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 - page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 - page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
-- topic:evaluations
-- topic:inference
 - topic:local-inference
 - topic:model
-updated_at: '2026-04-09T16:35:03.854038Z'
+updated_at: '2026-04-09T23:08:06.173613Z'
 managed: true
 ---
 # Mistral Small 3 | Mistral AI
@@ -30,7 +28,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, model, open-source, performance, latency, local inference
 - Topics: [Inference](../topics/inference.md), [Evaluations](../topics/evaluations.md), [Local Inference](../topics/local-inference.md), [Mistral](../topics/mistral.md), [Model](../topics/model.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 2.40
 
 ## Summary
@@ -51,9 +49,9 @@ Mistral Small 3 is a latency-optimized 24B-parameter model designed for robust l
 - [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Inference, Mistral, Model, Official)
 - [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Inference, Mistral, Official)
 - [[Deprecated] Pixtral Large | Mistral AI](deprecated-pixtral-large-mistral-ai-0d8433.md) (shared topics: Evaluations, Mistral, Official)
+- [Test-Time Training End-to-End (TTT-E2E) Retrains Model Weights to Handle Long Inputs](test-time-training-end-to-end-ttt-e2e-retrains-model-weights-to--b1f1bd.md) (shared topics: Inference, Official)
 - [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Inference, Mistral)
 - [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral, Official)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral, Official)
 
 ## Radar
 

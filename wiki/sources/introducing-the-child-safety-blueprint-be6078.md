@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 backlinks:
+- page:2026-03-06-the-batch-research-openais-frontier-agent-insights-and-orchestratio-b62f6c9f
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
 - page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
@@ -21,7 +22,7 @@ backlinks:
 - topic:openai
 - topic:roadmap
 - topic:safeguards
-updated_at: '2026-04-09T16:35:04.126937Z'
+updated_at: '2026-04-09T23:08:04.691554Z'
 managed: true
 ---
 # Introducing the Child Safety Blueprint
@@ -37,8 +38,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, child safety, ai, roadmap, safeguards, online safety
 - Topics: [Child Safety](../topics/child-safety.md), [Official](../topics/official.md), [Online Safety](../topics/online-safety.md), [Openai](../topics/openai.md), [Roadmap](../topics/roadmap.md), [Safeguards](../topics/safeguards.md)
-- Trend score: 49.76
-- Novelty score: 4.20
+- Trend score: 70.25
+- Novelty score: 5.40
 
 ## Summary
 
@@ -55,12 +56,12 @@ OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developin
 
 ## Related Research
 
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Child Safety, Openai)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Openai)
 - [Industrial policy for the Intelligence Age](industrial-policy-for-the-intelligence-age-045aa4.md) (shared topics: Official, Openai)
 - [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Openai)
 - [Codex now offers more flexible pricing for teams](codex-now-offers-more-flexible-pricing-for-teams-4821c6.md) (shared topics: Official, Openai)
 - [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Openai)
-- [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Openai)
 
 ## Radar
 

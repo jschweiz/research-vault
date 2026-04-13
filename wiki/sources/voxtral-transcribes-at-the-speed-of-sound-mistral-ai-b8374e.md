@@ -9,7 +9,6 @@ source_refs:
 backlinks:
 - page:2024-11-18-mistral-research-deprecated-pixtral-large-mistral-ai-236cab33
 - page:2025-01-13-mistral-research-codestral-25-01-mistral-ai-b8c278ab
-- page:2025-01-30-mistral-research-mistral-small-3-mistral-ai-5a7173c6
 - page:2025-02-17-mistral-research-mistral-saba-mistral-ai-7649c064
 - page:2025-03-06-mistral-research-mistral-ocr-mistral-ai-78ded670
 - page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
@@ -17,7 +16,6 @@ backlinks:
 - page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
 - page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 - page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 - page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
 - page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
@@ -25,7 +23,7 @@ backlinks:
 - topic:multilingual
 - topic:realtime
 - topic:speech-text
-updated_at: '2026-04-09T16:35:04.258981Z'
+updated_at: '2026-04-09T23:08:06.027799Z'
 managed: true
 ---
 # Voxtral transcribes at the speed of sound. | Mistral AI
@@ -40,7 +38,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-02-04T16:00:00+00:00
 - Tags: mistral, official, research, website, blog-post, voxtral, speech-to-text, ai, realtime, multilingual
 - Topics: [Audio](../topics/audio.md), [Mistral](../topics/mistral.md), [Multilingual](../topics/multilingual.md), [Official](../topics/official.md), [Realtime](../topics/realtime.md), [Speech Text](../topics/speech-text.md)
-- Trend score: 53.40
+- Trend score: 68.20
 - Novelty score: 4.80
 
 ## Summary

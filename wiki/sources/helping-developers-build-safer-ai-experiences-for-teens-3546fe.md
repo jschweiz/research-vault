@@ -18,7 +18,7 @@ backlinks:
 - topic:developers
 - topic:gpt-oss-safeguard
 - topic:safety
-updated_at: '2026-04-09T16:35:04.293218Z'
+updated_at: '2026-04-09T23:10:03.024957Z'
 managed: true
 ---
 # Helping developers build safer AI experiences for teens
@@ -34,8 +34,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, ai safety, teen safety, developers, gpt-oss-safeguard
 - Topics: [Safety](../topics/safety.md), [Ai Safety](../topics/ai-safety.md), [Developers](../topics/developers.md), [Gpt Oss Safeguard](../topics/gpt-oss-safeguard.md), [Official](../topics/official.md), [Openai](../topics/openai.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

@@ -8,13 +8,16 @@ aliases:
 source_refs:
 - 2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
 - 2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
+- 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 backlinks:
 - page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
 - page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- topic:automation
+- topic:labor-market
 - topic:mythos
-- topic:policy
+- topic:pretraining
 - topic:security
-updated_at: '2026-04-09T16:35:03.799519Z'
+updated_at: '2026-04-09T23:10:02.836335Z'
 managed: true
 ---
 # Cybersecurity
@@ -23,13 +26,13 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 14.15
-- Novelty score: 5.40
-- Items in last 7 days: 2
-- Items in last 30 days: 2
-- Total supporting items: 2
-- Source diversity: 1
-- First seen: 2026-04-08T10:59:19+00:00
+- Trend score: 21.80
+- Novelty score: 6.60
+- Items in last 7 days: 3
+- Items in last 30 days: 3
+- Total supporting items: 3
+- Source diversity: 2
+- First seen: 2026-04-06T12:31:31+00:00
 - Last seen: 2026-04-08T10:59:19+00:00
 
 ## Aliases
@@ -37,16 +40,18 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
+- [Newsletter](newsletter.md)
 - [Anthropic](anthropic.md)
 - [Email](email.md)
-- [Newsletter](newsletter.md)
+- [Policy](policy.md)
+- [Automation](automation.md)
+- [Labor Market](labor-market.md)
 - [Mythos](mythos.md)
 - [Openai](openai.md)
-- [Policy](policy.md)
-- [Security](security.md)
 
 ## Leading Sources
 
+- Import AI
 - TLDR Email
 
 ## Representative Signals

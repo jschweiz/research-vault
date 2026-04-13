@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
 - topic:economy
 - topic:job-market
-- topic:policy
-updated_at: '2026-04-09T16:35:04.478902Z'
+updated_at: '2026-04-09T21:02:07.631929Z'
 managed: true
 ---
 # Economists

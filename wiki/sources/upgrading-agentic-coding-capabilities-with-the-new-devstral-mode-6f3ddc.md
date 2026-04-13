@@ -10,7 +10,7 @@ backlinks:
 - topic:devstral
 - topic:mistral-ai
 - topic:models
-updated_at: '2026-04-09T16:35:04.678207Z'
+updated_at: '2026-04-09T23:08:06.122366Z'
 managed: true
 ---
 # Upgrading agentic coding capabilities with the new Devstral models | Mistral AI
@@ -26,7 +26,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI, All Hands AI
 - Tags: mistral, official, research, website, blog-post, devstral, coding, models, mistral ai, agentic
 - Topics: [Agents](../topics/agents.md), [Coding](../topics/coding.md), [Devstral](../topics/devstral.md), [Mistral](../topics/mistral.md), [Mistral Ai](../topics/mistral-ai.md), [Models](../topics/models.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 4.80
 
 ## Summary
@@ -48,8 +48,8 @@ Mistral AI and All Hands AI released the Devstral models, including Devstral Sma
 - [Magistral | Mistral AI](magistral-mistral-ai-df7660.md) (shared topics: Mistral, Mistral Ai)
 - [Codestral Embed | Mistral AI](codestral-embed-mistral-ai-1a4c58.md) (shared topics: Mistral, Mistral Ai)
 - [Codestral 25.01 | Mistral AI](codestral-25-01-mistral-ai-caf9e8.md) (shared topics: Mistral, Mistral Ai)
-- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Agents)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Agents)
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Agents)
+- [Meta debuts Muse Spark combining multimodal inputs, tool use, and agent orchestration in one system](meta-debuts-muse-spark-combining-multimodal-inputs-tool-use-and--acb2ab.md) (shared topics: Agents)
 
 ## Radar
 

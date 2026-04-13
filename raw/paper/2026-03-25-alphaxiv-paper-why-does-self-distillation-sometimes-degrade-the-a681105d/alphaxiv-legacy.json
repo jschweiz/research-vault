@@ -1,0 +1,148 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Jeonghye Kim",
+        "id": "01985c82-f6ec-7539-b1a3-9bb4b2530cf2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Xufang Luo",
+        "id": "01985c82-01cc-70b3-9379-76a1e41dac9d",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Minbeom Kim",
+        "id": "01985c81-fd7f-7bbd-97fc-8bc4026dd334",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Sangmook Lee",
+        "id": "01985c82-897e-76f2-8668-2f38a05fce01",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dohyung Kim",
+        "id": "01985c82-7ca5-7d26-91b4-f17aad327bd7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Jiwon Jeon",
+        "id": "01985c84-0a5d-77c9-9687-61dd7a4eccfd",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Dongsheng Li",
+        "id": "01985c81-eea8-70ed-aa26-5182fcc3f6e2",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Yuqing Yang",
+        "id": "01985c81-df57-782b-88bd-b7a84e0fa59c",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [],
+    "paper_group": {
+      "citation": null,
+      "created_at": "Thu Mar 26 2026 02:49:15 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Wed Mar 25 2026 16:14:52 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d280b-ccb3-73b8-8227-1792bb4dac48",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 205,
+        "questions_count": 0,
+        "total_votes": 64,
+        "upvotes_count": 205,
+        "visits_count": {
+          "all": 2314,
+          "last24Hours": 42,
+          "last30Days": 2314,
+          "last7Days": 1236,
+          "last90Days": 2314
+        }
+      },
+      "podcast_path": "019d280b-ccb3-73b8-8227-1792bb4dac48/podcast.mp3",
+      "resources": {
+        "github": {
+          "description": "Codebase for the work \u201cWhy Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?\u201d",
+          "language": "Python",
+          "stars": 36,
+          "url": "https://github.com/beanie00/self-distillation-analysis"
+        }
+      },
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2603.24472"
+      },
+      "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+      "topics": [
+        "Computer Science",
+        "cs.CL",
+        "cs.LG",
+        "domain-adaptation",
+        "explainable-ai",
+        "fine-tuning",
+        "inference-optimization",
+        "knowledge-distillation",
+        "model-interpretation",
+        "reasoning",
+        "transformers",
+        "uncertainty-estimation"
+      ],
+      "universal_paper_id": "2603.24472",
+      "updated_at": "Thu Mar 26 2026 02:49:15 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+      "created_at": "Thu Mar 26 2026 02:49:15 GMT+0000 (Coordinated Universal Time)",
+      "id": "019d280b-ccde-7b4a-a788-fd5a0a09deda",
+      "imageURL": "image/2603.24472v1.png",
+      "is_hidden": false,
+      "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "publication_date": "Wed Mar 25 2026 16:14:52 GMT+0000 (Coordinated Universal Time)",
+      "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+      "universal_paper_id": "2603.24472",
+      "updated_at": "Thu Mar 26 2026 02:49:15 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2603.24472v1.pdf"
+    },
+    "verified_authors": [
+      {
+        "avatar": null,
+        "blueskyUsername": null,
+        "githubUsername": null,
+        "googleScholarId": "koDFScAAAAAJ",
+        "id": "019cfb56-85e3-76a7-962f-ad377465fefd",
+        "institution": null,
+        "linkedinUsername": null,
+        "orcidId": null,
+        "publicEmail": null,
+        "realName": "Jeonghye Kim",
+        "reputation": 0,
+        "role": "user",
+        "username": "jeonghye-kim",
+        "verified": false,
+        "weeklyReputation": 0,
+        "xUsername": null
+      }
+    ]
+  }
+}

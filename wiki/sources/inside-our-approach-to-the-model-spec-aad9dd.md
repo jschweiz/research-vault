@@ -7,7 +7,6 @@ aliases:
 source_refs:
 - 2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 backlinks:
-- page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
 - page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
@@ -20,8 +19,7 @@ backlinks:
 - topic:accountability
 - topic:model-spec
 - topic:safety
-- topic:website
-updated_at: '2026-04-09T16:35:03.757509Z'
+updated_at: '2026-04-09T23:10:02.416213Z'
 managed: true
 ---
 # Inside our approach to the Model Spec
@@ -37,8 +35,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, model spec, ai, safety, accountability
 - Topics: [Safety](../topics/safety.md), [Accountability](../topics/accountability.md), [Model Spec](../topics/model-spec.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

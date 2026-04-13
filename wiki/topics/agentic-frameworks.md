@@ -15,18 +15,15 @@ backlinks:
 - page:2026-04-05-alphaxiv-paper-combee-scaling-prompt-learning-for-self-improvin-f786b4be
 - page:2026-04-06-alphaxiv-paper-synthetic-sandbox-for-training-machine-learning--c7a52233
 - page:2026-04-07-alphaxiv-paper-autosota-an-end-to-end-automated-research-system-3756ab92
-- topic:agents
 - topic:artificial-intelligence
 - topic:computer-science
 - topic:continual-learning
 - topic:cs-ce
 - topic:distributed-learning
-- topic:evaluations
 - topic:fine-tuning
 - topic:language-modeling
 - topic:ml-systems
-- topic:reinforcement-learning
-updated_at: '2026-04-09T16:35:04.652829Z'
+updated_at: '2026-04-09T23:10:02.321682Z'
 managed: true
 ---
 # Agentic Frameworks

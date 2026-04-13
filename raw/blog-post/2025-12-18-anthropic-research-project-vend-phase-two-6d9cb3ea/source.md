@@ -8,7 +8,7 @@ authors:
 - Anthropic
 published_at: '2025-12-18T00:00:00Z'
 ingested_at: '2026-04-09T12:03:51.869049Z'
-content_hash: bd080be3f2e28dca2121ec7552d4b817cccd7b82e0a5880daa6cdde16fc434b2
+content_hash: 1a96c937a7539430a86130d70bdda4ca69b7184c1ef6613d0528a3e976dfe79b
 identity_hash: 8b923d9c2b83731f3b7c29376ede8343dcaba9d95d89473aaf81060e5a257828
 tags:
 - anthropic
@@ -31,28 +31,16 @@ canonical_url: https://www.anthropic.com/research/project-vend-2
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:51.869057Z'
+fetched_at: '2026-04-13T18:10:33.506285Z'
 short_summary: Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better performance but also revealing limitations.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:25:35.944206Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: de30967160a95ac7e9d1ddc7371f776334090cfc4dea8617087a2ab3d672e3bf
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b76b6bc6668129b464a970c9b481fd88266b0f8e8ab55b125e4571c2f5b8a2df
-lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the practical application, limitations, and agent design principles related to large language models and AI agents, which aligns perfectly with the user's favorite topics.
-  evidence_quotes:
-  - Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better perfor
-  - The gap between “capable” and “completely robust” remains wide.
-  - We’ve been talking a lot on our [Engineering Blog](https://www.anthropic.com/engineering) about how to set up AI agents for success, and much of it involves giv
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Subscribe to the Frontier Red Team newsletter
 Get updates on our latest red-teaming research and findings.
@@ -138,6 +126,6 @@ We suspect that many of the problems that the models encountered stemmed from th
 It’s very hard to forecast exactly how things will go for AI agents in the real world; simulations (like Andon Labs’ [Vending-Bench](https://andonlabs.com/evals/vending-bench-2) evaluation) only get you so far. That’s in part why we set up Project Vend: it exposed us to the sheer variety of unexpected situations that can arise when an AI model is given autonomy.
 As society begins to plug AI models into more and more important functions, designing guardrails that are general enough to account for these behaviors—but which aren’t so restrictive that they hold back the model’s economic potential—will become one of our industry’s trickiest and most important challenges.
 Project Vend wouldn’t exist without our partners at [Andon Labs](https://andonlabs.com/), who built the hardware and software infrastructure behind the operation and kept our fridges and shelves stocked. We’re also very grateful to Keir Bradwell and Allison Lattanzio for doing the same in their respective offices, and to Amritha Kini and Ryan O’Holleran for some sales advice.
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
 Get updates on our latest red-teaming research and findings.

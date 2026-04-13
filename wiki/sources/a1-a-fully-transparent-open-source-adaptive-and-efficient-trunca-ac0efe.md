@@ -9,7 +9,9 @@ source_refs:
 backlinks:
 - page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 - page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
+- page:2026-03-20-the-batch-research-apples-atoken-a-multimodal-model-with-a-single-e-2ba5af34
 - page:2026-03-23-mistral-research-speaking-of-voxtral-mistral-ai-6a35b94f
+- page:2026-04-02-manual-import-gemma-4-byte-for-byte-the-most-capable-open-mode-20e9cbbb
 - page:2026-04-03-alphaxiv-paper-hierarchical-planning-with-latent-world-models-d1a0bbac
 - page:2026-04-03-tldr-email-gemma-4-byte-for-byte-the-most-capable-open-mode-492fa7ba
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
@@ -21,7 +23,7 @@ backlinks:
 - topic:multimodal
 - topic:robotics
 - topic:vision-language-action
-updated_at: '2026-04-09T16:35:03.900644Z'
+updated_at: '2026-04-09T23:10:02.794406Z'
 managed: true
 ---
 # A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model

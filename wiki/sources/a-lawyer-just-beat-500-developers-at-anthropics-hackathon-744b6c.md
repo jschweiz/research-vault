@@ -7,11 +7,9 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-a-lawyer-just-beat-500-developers-at-anthropics--226a205a
 backlinks:
-- page:2026-04-06-tldr-email-an-inside-look-at-openai-and-anthropic-s-finance-a61e7e56
-- page:2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e
 - topic:hackathon
 - topic:law
-updated_at: '2026-04-09T16:35:03.701900Z'
+updated_at: '2026-04-09T23:10:03.784643Z'
 managed: true
 ---
 # A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon
@@ -21,13 +19,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@jinghuu/a-lawyer-just-beat-500-developers-at-anthropics-hackathon-140ca074d1a9
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@jinghuu/a-lawyer-just-beat-500-developers-at-anthropics-hackathon-140ca074d1a9
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
-- Tags: newsletter, medium, email, blog-post, ai, hackathon, law, anthropic
+- Tags: newsletter, medium, email, blog-post, ai, hackathon, law, anthropic, sub-document
 - Topics: [Anthropic](../topics/anthropic.md), [Email](../topics/email.md), [Hackathon](../topics/hackathon.md), [Law](../topics/law.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

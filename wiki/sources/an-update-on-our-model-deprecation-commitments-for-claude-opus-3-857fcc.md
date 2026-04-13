@@ -16,7 +16,7 @@ backlinks:
 - topic:claude-opus-3
 - topic:model-deprecation
 - topic:model-preservation
-updated_at: '2026-04-09T16:35:03.850418Z'
+updated_at: '2026-04-09T23:08:05.946010Z'
 managed: true
 ---
 # An update on our model deprecation commitments for Claude Opus 3
@@ -32,8 +32,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, model deprecation, claude opus 3, ai safety, model preservation, retirements
 - Topics: [Ai Safety](../topics/ai-safety.md), [Anthropic](../topics/anthropic.md), [Claude Opus 3](../topics/claude-opus-3.md), [Model Deprecation](../topics/model-deprecation.md), [Model Preservation](../topics/model-preservation.md), [Official](../topics/official.md)
-- Trend score: 45.86
-- Novelty score: 1.20
+- Trend score: 104.44
+- Novelty score: 3.26
 
 ## Summary
 

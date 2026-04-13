@@ -15,7 +15,7 @@ backlinks:
 - topic:fine-tuning
 - topic:language-modeling
 - topic:reinforcement-learning
-updated_at: '2026-04-09T16:35:04.540015Z'
+updated_at: '2026-04-09T23:08:04.918000Z'
 managed: true
 ---
 # Synthetic Sandbox for Training Machine Learning Engineering Agents
@@ -31,7 +31,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Yuhang Zhou, Lizhu Zhang, Yifan Wu, Jiayi Liu, Xiangjun Fan, Zhuokai Zhao, Hong Yan
 - Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.cl, cs.lg, fine-tuning, ml-systems
 - Topics: [Agents](../topics/agents.md), [Fine-Tuning](../topics/fine-tuning.md), [Reinforcement Learning](../topics/reinforcement-learning.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Computer Science](../topics/computer-science.md), [Language Modeling](../topics/language-modeling.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

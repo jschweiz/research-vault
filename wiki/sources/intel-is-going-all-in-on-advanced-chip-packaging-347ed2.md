@@ -9,12 +9,11 @@ source_refs:
 backlinks:
 - page:2026-04-03-tldr-email-bad-analogies-e133a94d
 - page:2026-04-07-tldr-email-anthropic-boasts-revenue-run-rate-of-30-billion--83bc2ca0
-- page:2026-04-08-tldr-email-intel-partners-with-spacex-tesla-to-operate-new--561585e2
 - topic:amazon
 - topic:chip-packaging
 - topic:google
 - topic:intel
-updated_at: '2026-04-09T16:35:04.615470Z'
+updated_at: '2026-04-09T23:10:02.497019Z'
 managed: true
 ---
 # Intel is going all-in on advanced chip packaging
@@ -28,9 +27,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: news
 - Published at: 2026-04-08T10:59:19+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, news, intel, chip packaging, google, amazon
+- Tags: newsletter, tldr, email, ai, news, intel, chip packaging, google, amazon, sub-document
 - Topics: [Amazon](../topics/amazon.md), [Chip Packaging](../topics/chip-packaging.md), [Email](../topics/email.md), [Google](../topics/google.md), [Intel](../topics/intel.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -48,12 +47,12 @@ Intel is focusing heavily on advanced chip packaging, which involves combining m
 
 ## Related Research
 
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Google, Newsletter)
+- [Amazon introduces S3 Files, enabling file system access directly on S3 without duplicating or moving data](amazon-introduces-s3-files-enabling-file-system-access-directly--46d92f.md) (shared topics: Amazon, Email, Newsletter)
 - [Intel Partners With SpaceX, Tesla to Operate New Chip Plant](intel-partners-with-spacex-tesla-to-operate-new-chip-plant-15cbec.md) (shared topics: Email, Intel, Newsletter)
 - [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](anthropic-boasts-revenue-run-rate-of-30-billion-as-the-claude-de-a9ff0c.md) (shared topics: Email, Google, Newsletter)
+- [Google introduces open-source Gemma 4 models that run locally and outperform models up to 20× larger](google-introduces-open-source-gemma-4-models-that-run-locally-an-6184ad.md) (shared topics: Email, Google, Newsletter)
 - [Bad Analogies](bad-analogies-57d622.md) (shared topics: Amazon, Email, Newsletter)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

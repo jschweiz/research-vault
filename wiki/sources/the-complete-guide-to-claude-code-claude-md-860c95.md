@@ -9,10 +9,9 @@ source_refs:
 backlinks:
 - page:2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
 - page:2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
-- topic:claude
 - topic:code
 - topic:guide
-updated_at: '2026-04-09T16:35:04.640061Z'
+updated_at: '2026-04-09T23:10:03.367658Z'
 managed: true
 ---
 # The Complete Guide to Claude Code: CLAUDE.md
@@ -22,13 +21,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@zhaozhiming/the-complete-guide-to-claude-code-claude-md-743d4cbac757
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@zhaozhiming/the-complete-guide-to-claude-code-claude-md-743d4cbac757
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, zhaozhiming
-- Tags: newsletter, medium, email, blog-post, claude, ai, guide, code
+- Tags: newsletter, medium, email, blog-post, claude, ai, guide, code, sub-document
 - Topics: [Claude](../topics/claude.md), [Code](../topics/code.md), [Email](../topics/email.md), [Guide](../topics/guide.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

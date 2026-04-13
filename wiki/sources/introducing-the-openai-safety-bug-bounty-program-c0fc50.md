@@ -18,8 +18,7 @@ backlinks:
 - topic:ai-abuse
 - topic:bug-bounty
 - topic:safety
-- topic:website
-updated_at: '2026-04-09T16:35:03.713264Z'
+updated_at: '2026-04-09T23:10:03.707212Z'
 managed: true
 ---
 # Introducing the OpenAI Safety Bug Bounty program
@@ -34,8 +33,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-25T00:00:00+00:00
 - Tags: openai, official, website, blog-post, safety, bug bounty, ai abuse
 - Topics: [Safety](../topics/safety.md), [Ai Abuse](../topics/ai-abuse.md), [Bug Bounty](../topics/bug-bounty.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

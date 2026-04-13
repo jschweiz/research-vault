@@ -9,12 +9,10 @@ source_refs:
 backlinks:
 - page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 - page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
-- page:2026-03-16-mistral-research-introducing-mistral-small-4-mistral-ai-b071b337
 - topic:api
 - topic:document-understanding
-- topic:multimodal
 - topic:ocr
-updated_at: '2026-04-09T16:35:04.001298Z'
+updated_at: '2026-04-09T23:08:06.157697Z'
 managed: true
 ---
 # Mistral OCR | Mistral AI
@@ -30,8 +28,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, ocr, document understanding, multimodal, api
 - Topics: [Multimodal](../topics/multimodal.md), [Api](../topics/api.md), [Document Understanding](../topics/document-understanding.md), [Mistral](../topics/mistral.md), [Ocr](../topics/ocr.md), [Official](../topics/official.md)
-- Trend score: 45.05
-- Novelty score: 2.40
+- Trend score: 68.20
+- Novelty score: 3.40
 
 ## Summary
 

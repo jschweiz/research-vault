@@ -10,7 +10,6 @@ backlinks:
 - page:2025-12-17-mistral-research-introducing-mistral-ocr-3-mistral-ai-2f4f54ff
 - page:2026-03-17-openai-website-openai-japan-announces-japan-teen-safety-bluepri-4e32c322
 - page:2026-03-19-openai-website-openai-to-acquire-astral-387cb8d8
-- page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
 - page:2026-03-24-openai-website-update-on-the-openai-foundation-f7bebe3f
 - page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
@@ -18,12 +17,11 @@ backlinks:
 - page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
-- page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 - topic:asia
 - topic:disaster-response
 - topic:gates-foundation
 - topic:website
-updated_at: '2026-04-09T16:35:04.701195Z'
+updated_at: '2026-04-09T23:10:03.041505Z'
 managed: true
 ---
 # Helping disaster response teams turn AI into action across Asia
@@ -39,8 +37,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI, Gates Foundation
 - Tags: openai, official, website, blog-post, ai, disaster response, asia, workshop, gates foundation
 - Topics: [Asia](../topics/asia.md), [Disaster Response](../topics/disaster-response.md), [Gates Foundation](../topics/gates-foundation.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.00
 
 ## Summary
 

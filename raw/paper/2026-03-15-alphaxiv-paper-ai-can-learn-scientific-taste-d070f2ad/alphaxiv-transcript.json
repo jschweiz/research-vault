@@ -1,0 +1,66 @@
+[
+  {
+    "line": "Welcome to Advanced Topics in AI Alignment. Today's lecture is on 'OpenMOSS: AI Can Learn Scientific Taste,' a paper from a team primarily at Fudan University. We've seen a lot of recent work on AI for science, with systems like 'DeepScientist' focusing on autonomous execution of research tasks. This paper, however, shifts the focus from execution to a more cognitive ability the authors call 'scientific taste'\u2014essentially, the ability to judge and generate high-impact ideas. It's a move away from the 'how' and towards the 'what' and 'why' of research. Yes, Noah?",
+    "speaker": "John"
+  },
+  {
+    "line": "Hi Professor. So when they say 'scientific taste,' are they proposing a formal definition, or is it more of a conceptual framework?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's a great question. They formalize it quite clearly. They break 'scientific taste' down into two measurable components. First is 'judgement capability,' which is the ability to predict which of two research ideas will have a greater impact. The second is 'ideation capability,' or the ability to generate new ideas that have high potential impact. The core motivation is that current LLMs can generate many novel ideas, but they struggle to distinguish between a genuinely impactful concept and one that's just superficially new.",
+    "speaker": "John"
+  },
+  {
+    "line": "But 'impact' is so subjective and can take years to measure. How do they quantify that for training a model?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "They use a proxy: citation counts. The underlying assumption is that, at a large scale, citations reflect the collective judgment or 'community verdict' on a paper's influence. To address obvious biases, like older papers having more citations or different citation norms across fields, they construct a dataset called SciJudgeBench. It consists of nearly 700,000 pairs of papers from arXiv. Each pair is matched by field and publication date, and the preference label is simply which paper received significantly more citations. This pairwise approach allows the model to learn relative importance rather than predicting an absolute, and often noisy, citation number.",
+    "speaker": "John"
+  },
+  {
+    "line": "So they're framing it as a preference learning problem. That sounds like RLHF.",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Exactly, but with a key twist. Instead of Reinforcement Learning from Human Feedback, they call their method Reinforcement Learning from Community Feedback, or RLCF. It's a three-stage process. The first stage is creating that community feedback dataset, SciJudgeBench. The second stage is training a model called 'Scientific Judge' to learn these preferences. This model acts as a reward model. Given two abstracts, it doesn't just pick one; it generates a reasoning trace explaining its choice before making a judgment. This is trained using an algorithm called Group Relative Policy Optimization, or GRPO, where the reward is simply whether its prediction matches the citation-based label in the dataset.",
+    "speaker": "John"
+  },
+  {
+    "line": "Okay, so Scientific Judge learns to predict community preference. How does that help with generating new ideas?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's the third stage: preference alignment. They train another model, 'Scientific Thinker,' to generate novel research ideas based on a seed paper. Since there's no ground truth for what a 'good idea' is, they use the Scientific Judge as the reward signal. For a given seed, the Thinker generates a batch of new ideas. The Judge then performs a round-robin tournament, comparing all the ideas against each other. An idea's reward is its win rate in this tournament. By optimizing for this reward, the Thinker learns to generate ideas that the Judge, and by extension the scientific community, would likely find impactful.",
+    "speaker": "John"
+  },
+  {
+    "line": "I'm a bit skeptical about the evaluation, especially for the ideation part. The report says they used other strong LLMs as evaluators. Isn't that a bit circular? And how does that setup compare to more structured frameworks like 'AI Idea Bench'?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's a valid critique and one the authors acknowledge. Using LLM evaluators is a practical, scalable solution, but it's not the same as real-world validation. They try to make it robust by using a majority vote from three different proprietary models. Unlike a static benchmark, this allows for evaluating open-ended generation. The results were quite telling, though. The trained Scientific Thinker model had a win rate over 80% against its base, untrained version. And when pitted against ideas from models like GPT-5.2 and Gemini 3 Pro, it showed a significant improvement, jumping from a 30% win rate for the base model to over 54% for the trained one.",
+    "speaker": "John"
+  },
+  {
+    "line": "What about the Judge's generalization? Did it just memorize patterns in the computer science literature on arXiv?",
+    "speaker": "Noah"
+  },
+  {
+    "line": "That's where the results are most interesting. They tested generalization extensively. On temporal out-of-distribution data\u2014papers published after its training cutoff\u2014it maintained strong performance, suggesting it learned durable signals of value. More impressively, when trained only on computer science papers, it showed significant accuracy gains when tested on math, physics, and even biology papers from bioRxiv. It also generalized across metrics. Despite being trained on citations, its judgments showed improved alignment with peer review scores from ICLR conferences. This suggests it's learning a more fundamental concept of scientific value, not just a proxy for citations.",
+    "speaker": "John"
+  },
+  {
+    "line": "So, it's not just about predicting popularity, but capturing some essence of what the community values, which happens to be reflected in both citations and review scores.",
+    "speaker": "Noah"
+  },
+  {
+    "line": "Precisely. The work challenges the idea that scientific taste is some ineffable human quality. It provides empirical evidence that it's a learnable objective. The RLCF paradigm itself is a notable contribution, offering a scalable alternative to RLHF for aligning models in complex domains where community consensus exists but is diffuse. This could be applied beyond science to things like art or policy, wherever large-scale community feedback is available.",
+    "speaker": "John"
+  },
+  {
+    "line": "To wrap up, the main contribution here is both conceptual and methodological. The paper frames scientific taste as a learnable objective and provides the RLCF framework to achieve it. While citations are an imperfect metric and LLM-based evaluation has its limits, the work demonstrates a clear path toward AI that can assist not just in the execution of science, but in the crucial early stages of ideation and evaluation. The key takeaway is that by leveraging large-scale community signals, we can align AI with complex, emergent human values. Thanks for listening. If you have any further questions, ask our AI assistant or drop a comment.",
+    "speaker": "John"
+  }
+]

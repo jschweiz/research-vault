@@ -15,8 +15,7 @@ backlinks:
 - topic:commit-history
 - topic:context-engineering
 - topic:git
-- topic:system-prompts
-updated_at: '2026-04-09T16:35:03.769102Z'
+updated_at: '2026-04-09T23:10:03.875502Z'
 managed: true
 ---
 # Programming
@@ -46,7 +45,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Commit History](commit-history.md)
 - [Context Engineering](context-engineering.md)
 - [Git](git.md)
-- [System Prompts](system-prompts.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

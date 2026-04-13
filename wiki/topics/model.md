@@ -16,9 +16,8 @@ backlinks:
 - topic:agentic-systems
 - topic:inference
 - topic:local-inference
-- topic:long-context
 - topic:muse-spark
-updated_at: '2026-04-09T16:35:03.760456Z'
+updated_at: '2026-04-09T23:10:03.201611Z'
 managed: true
 ---
 # Model

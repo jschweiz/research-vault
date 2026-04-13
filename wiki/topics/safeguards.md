@@ -9,10 +9,9 @@ source_refs:
 - 2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 backlinks:
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
-- topic:child-safety
 - topic:online-safety
 - topic:roadmap
-updated_at: '2026-04-09T16:35:04.263487Z'
+updated_at: '2026-04-09T23:10:03.544282Z'
 managed: true
 ---
 # Safeguards

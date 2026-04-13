@@ -16,9 +16,11 @@ backlinks:
 - page:2026-03-25-openai-website-inside-our-approach-to-the-model-spec-263c2043
 - page:2026-03-25-openai-website-introducing-the-openai-safety-bug-bounty-program-fb38dfaf
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
+- page:2026-03-27-the-batch-research-grok-imagine-1-0-sharply-cuts-costs-for-high-qua-f02eca28
 - page:2026-03-29-openai-website-helping-disaster-response-teams-turn-ai-into-act-c720bf72
 - page:2026-04-02-openai-website-codex-now-offers-more-flexible-pricing-for-teams-22c2ff8b
 - page:2026-04-02-openai-website-openai-acquires-tbpn-86685a01
+- page:2026-04-03-the-batch-research-google-debuted-lyria-3-an-app-that-turns-text-or-51adf4c3
 - page:2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - page:2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
@@ -27,7 +29,7 @@ backlinks:
 - topic:codex
 - topic:funding
 - topic:website
-updated_at: '2026-04-09T16:35:04.826435Z'
+updated_at: '2026-04-09T23:10:02.328882Z'
 managed: true
 ---
 # Accelerating the next phase of AI
@@ -43,8 +45,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, ai, funding, chatgpt, codex
 - Topics: [Chatgpt](../topics/chatgpt.md), [Codex](../topics/codex.md), [Funding](../topics/funding.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Website](../topics/website.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 2.80
 
 ## Summary
 

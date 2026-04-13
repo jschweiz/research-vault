@@ -11,15 +11,14 @@ backlinks:
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 - page:2026-03-23-anthropic-research-introducing-our-science-blog-77bcdf2c
-- page:2026-03-23-anthropic-research-long-running-claude-for-scientific-computing-20a930ae
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
 - page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
+- page:undated-the-batch-research-claude-codes-source-code-leaked-exposing-potenti-0c9adaf3
 - topic:ai-adoption
 - topic:australia
-- topic:claude
 - topic:economic-index
-updated_at: '2026-04-09T16:35:04.698898Z'
+updated_at: '2026-04-09T23:10:03.238504Z'
 managed: true
 ---
 # How Australia Uses Claude: Findings from the Anthropic Economic Index
@@ -35,8 +34,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Peter McCrory, Keir Bradwell, Ria Strasser Galvis, Ryan Heller, Eva Lyubich, Jennifer Marintez
 - Tags: anthropic, official, research, website, blog-post, claude, australia, economic index, ai adoption, use cases
 - Topics: [Ai Adoption](../topics/ai-adoption.md), [Anthropic](../topics/anthropic.md), [Australia](../topics/australia.md), [Claude](../topics/claude.md), [Economic Index](../topics/economic-index.md), [Official](../topics/official.md)
-- Trend score: 45.86
-- Novelty score: 4.40
+- Trend score: 104.44
+- Novelty score: 6.80
 
 ## Summary
 
@@ -54,11 +53,11 @@ Australia is a leading per capita adopter of Claude, with usage more than four t
 ## Related Research
 
 - [Anthropic Economic Index report: Learning curves](anthropic-economic-index-report-learning-curves-7597c7.md) (shared topics: Ai Adoption, Anthropic, Economic Index)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md) (shared topics: Anthropic, Claude)
 - [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic, Claude)
-- [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
-- [Vibe physics: The AI grad student](vibe-physics-the-ai-grad-student-1b7b0a.md) (shared topics: Anthropic, Official)
-- [Long-running Claude for scientific computing](long-running-claude-for-scientific-computing-b8d3ec.md) (shared topics: Anthropic, Claude)
-- [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Anthropic, Official)
+- [Anthropic adds /autofix-pr command to Claude Code CLI to fix PR issues automatically](anthropic-adds-autofix-pr-command-to-claude-code-cli-to-fix-pr-i-441396.md) (shared topics: Anthropic, Claude)
+- [Anthropic ends third-party agent like OpenClaw access under Claude plans, requires credits or API keys](anthropic-ends-third-party-agent-like-openclaw-access-under-clau-881845.md) (shared topics: Anthropic, Claude)
+- [Anthropic enables Claude to use email, documents, and files from Microsoft 365 in conversations](anthropic-enables-claude-to-use-email-documents-and-files-from-m-9a0ac0.md) (shared topics: Anthropic, Claude)
 
 ## Radar
 

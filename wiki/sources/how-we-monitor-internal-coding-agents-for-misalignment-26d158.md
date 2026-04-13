@@ -14,7 +14,7 @@ backlinks:
 - topic:coding-agents
 - topic:misalignment
 - topic:reasoning
-updated_at: '2026-04-09T16:35:04.669252Z'
+updated_at: '2026-04-09T23:10:03.483638Z'
 managed: true
 ---
 # How we monitor internal coding agents for misalignment
@@ -30,8 +30,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, ai safety, coding agents, misalignment, chain-of-thought
 - Topics: [Reasoning](../topics/reasoning.md), [Coding Agents](../topics/coding-agents.md), [Ai Safety](../topics/ai-safety.md), [Misalignment](../topics/misalignment.md), [Official](../topics/official.md), [Openai](../topics/openai.md)
-- Trend score: 49.76
-- Novelty score: 2.51
+- Trend score: 70.25
+- Novelty score: 4.20
 
 ## Summary
 

@@ -10,6 +10,7 @@ source_refs:
 - 2026-04-06-alphaxiv-paper-mineru2-5-pro-pushing-the-limits-of-data-centric-1711e66b
 - 2026-04-06-openai-website-announcing-the-openai-safety-fellowship-047e7bac
 - 2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-a14124dd
+- 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 - 2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
 backlinks:
 - map:global-ai-research
@@ -20,12 +21,12 @@ backlinks:
 - topic:cross-architecture
 - topic:data-curation
 - topic:fellowship
+- topic:harness
 - topic:language-modeling
 - topic:model-auditing
 - topic:model-diffing
 - topic:safety
-- topic:website
-updated_at: '2026-04-09T16:35:04.203131Z'
+updated_at: '2026-04-09T23:10:03.490345Z'
 managed: true
 ---
 # Alignment
@@ -34,12 +35,12 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Signal Summary
 
-- Trend score: 25.50
-- Novelty score: 5.60
+- Trend score: 25.05
+- Novelty score: 3.80
 - Items in last 7 days: 3
-- Items in last 30 days: 4
-- Total supporting items: 4
-- Source diversity: 4
+- Items in last 30 days: 5
+- Total supporting items: 5
+- Source diversity: 5
 - First seen: 2026-03-13T00:00:00+00:00
 - Last seen: 2026-04-06T15:44:18+00:00
 
@@ -49,18 +50,19 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 
 ## Related Topics
 
-- [Agents](agents.md)
 - [Ai Safety](ai-safety.md)
+- [Newsletter](newsletter.md)
+- [Agents](agents.md)
 - [Anthropic](anthropic.md)
 - [Audio](audio.md)
 - [Computer Science](computer-science.md)
 - [Computer Vision](computer-vision.md)
 - [Cross Architecture](cross-architecture.md)
-- [Data Curation](data-curation.md)
 
 ## Leading Sources
 
 - Anthropic Research
+- Import AI
 - Medium Email
 - OpenAI Website
 - alphaXiv Papers

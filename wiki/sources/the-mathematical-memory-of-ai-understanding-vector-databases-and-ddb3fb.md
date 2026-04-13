@@ -7,12 +7,13 @@ aliases:
 source_refs:
 - 2026-04-03-medium-email-the-mathematical-memory-of-ai-understanding-vect-c1cecae0
 backlinks:
-- page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
+- page:2026-03-30-jack-clark-import-ai-how-long-will-a-new-math-benchmark-horizonmath-l-19e5f6c5
+- page:2026-04-08-medium-email-im-not-reinventing-myself-in-2026-5332af5e
 - page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
+- page:2026-04-08-medium-email-why-nobody-can-read-anymore-b9a88fe0
 - topic:embedding-pipelines
 - topic:mathematics
-- topic:vector-databases
-updated_at: '2026-04-09T16:35:04.696699Z'
+updated_at: '2026-04-09T23:10:03.906091Z'
 managed: true
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
@@ -22,13 +23,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Kuriko Iwai
-- Tags: newsletter, medium, email, blog-post, vector databases, embedding pipelines, ai, mathematics
-- Topics: [Email](../topics/email.md), [Embedding Pipelines](../topics/embedding-pipelines.md), [Mathematics](../topics/mathematics.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Vector Databases](../topics/vector-databases.md)
-- Trend score: 500.30
+- Tags: newsletter, medium, email, blog-post, vector databases, embedding pipelines, ai, mathematics, sub-document
+- Topics: [Email](../topics/email.md), [Embedding Pipelines](../topics/embedding-pipelines.md), [Mathematics](../topics/mathematics.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -42,16 +43,16 @@ This post explores the mechanics of vector databases and embedding pipelines, fo
 - [Mathematics](../topics/mathematics.md)
 - [Medium](../topics/medium.md)
 - [Newsletter](../topics/newsletter.md)
-- [Vector Databases](../topics/vector-databases.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
-- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](the-mathematical-memory-of-ai-understanding-vector-databases-and-e8bed5.md) (shared topics: Email, Embedding Pipelines, Medium, Newsletter, Vector Databases)
-- [Vector Databases Exist Because SQL Has One Blind Spot](vector-databases-exist-because-sql-has-one-blind-spot-3d9048.md) (shared topics: Email, Medium, Newsletter, Vector Databases)
-- [The Psychology of People Who Go Silent When They’re Hurt](the-psychology-of-people-who-go-silent-when-theyre-hurt-5ec9c3.md) (shared topics: Email, Medium, Newsletter)
-- [The Art of Letting Go](the-art-of-letting-go-f520a2.md) (shared topics: Email, Medium, Newsletter)
-- [Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs](scaling-langgraph-agents-parallelization-subgraphs-and-map-reduc-940f52.md) (shared topics: Email, Medium, Newsletter)
-- [Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now](careers-are-collapsing-jobs-are-dying-the-smartest-people-are-do-603f96.md) (shared topics: Email, Medium, Newsletter)
+- [The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines](the-mathematical-memory-of-ai-understanding-vector-databases-and-e8bed5.md) (shared topics: Email, Embedding Pipelines, Medium, Newsletter, Sub Document)
+- [Why nobody can read anymore](why-nobody-can-read-anymore-764025.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [The 800% Job Boom Nobody’s Talking About](the-800-job-boom-nobodys-talking-about-b904b7.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [I’m Not Reinventing Myself in 2026](im-not-reinventing-myself-in-2026-f19f6a.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [I spent 5 hours learning Unity Catalog. Here’s everything you need to know.](i-spent-5-hours-learning-unity-catalog-heres-everything-you-need-17c28c.md) (shared topics: Email, Medium, Newsletter, Sub Document)
+- [Vector Databases Exist Because SQL Has One Blind Spot](vector-databases-exist-because-sql-has-one-blind-spot-3d9048.md) (shared topics: Email, Medium, Newsletter, Sub Document)
 
 ## Radar
 

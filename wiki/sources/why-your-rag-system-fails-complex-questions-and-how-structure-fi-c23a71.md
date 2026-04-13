@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-07-medium-email-why-your-rag-system-fails-complex-questions-and--f7cba4b9
 backlinks:
+- page:2026-02-23-jack-clark-import-ai-ai-systems-are-good-at-some-parts-of-science-but-1d7bd4fd
 - page:2026-04-04-medium-email-building-an-agentic-deep-thinking-rag-pipeline-t-366e12be
 - page:2026-04-04-medium-email-vector-databases-exist-because-sql-has-one-blind-b2f10623
 - page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
@@ -14,7 +15,7 @@ backlinks:
 - topic:retrieval-augmented-generation
 - topic:search
 - topic:structure
-updated_at: '2026-04-09T16:35:04.813254Z'
+updated_at: '2026-04-09T23:10:03.796996Z'
 managed: true
 ---
 # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
@@ -24,13 +25,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@vivedhaelango/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Vivedha Elango
-- Tags: newsletter, medium, email, blog-post, rag, retrieval, structure, ai
+- Tags: newsletter, medium, email, blog-post, rag, retrieval, structure, ai, sub-document
 - Topics: [Retrieval-Augmented Generation](../topics/retrieval-augmented-generation.md), [Search](../topics/search.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Structure](../topics/structure.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

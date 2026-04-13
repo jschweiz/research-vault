@@ -1,0 +1,21 @@
+{
+  "abstract": "Standard policy gradients weight each sampled action by advantage alone, regardless of how likely that action was under the current policy. This creates two pathologies: within a single decision context (e.g. one image or prompt), a rare negative-advantage action can disproportionately distort the update direction; across many such contexts in a batch, the expected gradient over-allocates budget to contexts the policy already handles well. We introduce the \\textit{Delightful Policy Gradient} (DG), which gates each term with a sigmoid of \\emph{delight}, the product of advantage and action surprisal (negative log-probability). For $K$-armed bandits, DG provably improves directional accuracy in a single context and, across multiple contexts, shifts the expected gradient strictly closer to the supervised cross-entropy oracle. This second effect is not variance reduction: it persists even with infinite samples. Empirically, DG outperforms REINFORCE, PPO, and advantage-weighted baselines across MNIST, transformer sequence modeling, and continuous control, with larger gains on harder tasks.",
+  "citationBibtex": "@misc{osbandSun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)delightfulpolicygradient,\n      title={Delightful Policy Gradient},\n      author={Ian Osband},\n      year={Sun Mar 15 2026 21:06:37 GMT+0000 (Coordinated Universal Time)},\n      eprint={2603.14608},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2603.14608},\n}",
+  "citationsCount": 0,
+  "firstPublicationDate": 1773608797000,
+  "googleCitationId": null,
+  "groupId": "019cfa00-5161-7487-80e3-5f28851a76a1",
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "publicationDate": 1773608797000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2603.14608",
+  "title": "Delightful Policy Gradient",
+  "type": "public",
+  "universalId": "2603.14608",
+  "uploader": null,
+  "versionId": "019cfa00-5171-78c2-a0e8-58fbdbb9ced8",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

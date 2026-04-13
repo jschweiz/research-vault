@@ -16,8 +16,7 @@ backlinks:
 - topic:magistral
 - topic:mistral-ai
 - topic:multilingual
-- topic:reasoning
-updated_at: '2026-04-09T16:35:04.387002Z'
+updated_at: '2026-04-09T23:10:03.384647Z'
 managed: true
 ---
 # Magistral | Mistral AI
@@ -33,8 +32,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, reasoning model, mistral ai, magistral, open source, multilingual
 - Topics: [Mistral Ai](../topics/mistral-ai.md), [Reasoning](../topics/reasoning.md), [Magistral](../topics/magistral.md), [Mistral](../topics/mistral.md), [Multilingual](../topics/multilingual.md), [Official](../topics/official.md)
-- Trend score: 45.05
-- Novelty score: 1.20
+- Trend score: 68.20
+- Novelty score: 0.60
 
 ## Summary
 

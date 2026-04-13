@@ -7,7 +7,6 @@ aliases:
 source_refs:
 - 2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
 backlinks:
-- page:2026-04-03-medium-email-claude-code-is-great-a7134001
 - page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
 - page:2026-04-04-medium-email-21-reinforcement-learning-rl-concepts-explained--c460b331
 - page:2026-04-07-medium-email-why-clis-beat-mcp-for-ai-agents-and-how-to-build-971d5f15
@@ -15,7 +14,7 @@ backlinks:
 - topic:cli
 - topic:coding
 - topic:commands
-updated_at: '2026-04-09T16:35:03.828281Z'
+updated_at: '2026-04-09T23:10:03.236229Z'
 managed: true
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
@@ -25,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@minervee/10-underrated-cli-commands-youve-probably-never-heard-of-925aa25bdc5a
 - Document kind: blog-post
 - Published at: 2026-04-03T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
-- Tags: newsletter, medium, email, blog-post, cli, commands, coding
+- Tags: newsletter, medium, email, blog-post, cli, commands, coding, sub-document
 - Topics: [Cli](../topics/cli.md), [Coding](../topics/coding.md), [Commands](../topics/commands.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

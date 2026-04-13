@@ -1,0 +1,218 @@
+{
+  "abstract": "Great scientists have strong judgement and foresight, closely tied to what we call scientific taste. Here, we use the term to refer to the capacity to judge and propose research ideas with high potential impact. However, most relative research focuses on improving an AI scientist's executive capability, while enhancing an AI's scientific taste remains underexplored. In this work, we propose Reinforcement Learning from Community Feedback (RLCF), a training paradigm that uses large-scale community signals as supervision, and formulate scientific taste learning as a preference modeling and alignment problem. For preference modeling, we train Scientific Judge on 700K field- and time-matched pairs of high- vs. low-citation papers to judge ideas. For preference alignment, using Scientific Judge as a reward model, we train a policy model, Scientific Thinker, to propose research ideas with high potential impact. Experiments show Scientific Judge outperforms SOTA LLMs (e.g., GPT-5.2, Gemini 3 Pro) and generalizes to future-year test, unseen fields, and peer-review preference. Furthermore, Scientific Thinker proposes research ideas with higher potential impact than baselines. Our findings show that AI can learn scientific taste, marking a key step toward reaching human-level AI scientists.",
+  "author_info": [],
+  "authors": [
+    "Jingqi Tong",
+    "Mingzhe Li",
+    "Hangcheng Li",
+    "Yongzhuo Yang",
+    "Yurong Mou",
+    "Weijie Ma",
+    "Zhiheng Xi",
+    "Hongji Chen",
+    "Xiaoran Liu",
+    "Qinyuan Cheng",
+    "Ming Zhang",
+    "Qiguang Chen",
+    "Weifeng Ge",
+    "Qipeng Guo",
+    "Tianlei Ying",
+    "Tianxiang Sun",
+    "Yining Zheng",
+    "Xinchi Chen",
+    "Jun Zhao",
+    "Ning Ding",
+    "Xuanjing Huang",
+    "Yugang Jiang",
+    "Xipeng Qiu"
+  ],
+  "canonical_id": "2603.14473v1",
+  "first_publication_date": "2026-03-15T16:31:51.000Z",
+  "full_authors": [
+    {
+      "full_name": "Jingqi Tong",
+      "id": "01985c82-40ca-77fe-875e-9fafc475a2c8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mingzhe Li",
+      "id": "01985c82-13b2-7196-94c5-6a5e48816c91",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hangcheng Li",
+      "id": "01985c82-bee7-7ef7-925f-fb18674d3794",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yongzhuo Yang",
+      "id": "019a5c45-e429-7ea0-a525-8e321ce92b94",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yurong Mou",
+      "id": "01985c82-3c5b-70b4-a647-0e698ef6931b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Weijie Ma",
+      "id": "01985c82-84f2-7e4a-9372-d10dd1b16e7a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhiheng Xi",
+      "id": "01985c81-de91-70c7-bb29-58e1638581ae",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hongji Chen",
+      "id": "01985c84-b680-711c-b4b1-ee8c24dad00a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xiaoran Liu",
+      "id": "01985c82-4810-7bbf-9f1d-61e358a85550",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qinyuan Cheng",
+      "id": "01985c81-e4e6-7051-9b7e-1bc8dec67be0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ming Zhang",
+      "id": "01985c81-e774-7c24-a42d-32b45bb38d7c",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qiguang Chen",
+      "id": "01985c81-fa9e-718e-99da-ef7e30571e84",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Weifeng Ge",
+      "id": "01985c82-763c-70ad-a9d6-4d32b9c7fd88",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Qipeng Guo",
+      "id": "01985c81-e911-78fd-bd94-082884cf10ea",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianlei Ying",
+      "id": "019c0928-37d7-76fa-9503-67e565c3482b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianxiang Sun",
+      "id": "01985c81-de91-7a39-84c6-3422d4e5f792",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yining Zheng",
+      "id": "01985c83-21c3-7a02-813f-41081755a7a0",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xinchi Chen",
+      "id": "01985c82-ca34-78fc-8904-1d35603802ff",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Jun Zhao",
+      "id": "01985c81-fa9e-7694-8316-c9ccb9ec08de",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ning Ding",
+      "id": "01985c81-e41b-70ce-b6d3-1150c7017457",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xuanjing Huang",
+      "id": "01985c81-de91-7b15-a469-ed8c32725a2a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yugang Jiang",
+      "id": "01985c82-16b9-7a03-9c04-d4547974c5b9",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Xipeng Qiu",
+      "id": "01985c81-de91-7f94-bc8e-8034bf24ad6c",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 7,
+  "github_url": "https://github.com/tongjingqi/AI-Can-Learn-Scientific-Taste",
+  "id": "019cf974-5d41-74f8-ae60-26cc02fec05f",
+  "image_url": "image/2603.14473v1.png",
+  "metrics": {
+    "public_total_votes": 195,
+    "total_votes": 48,
+    "visits_count": {
+      "all": 3024,
+      "last_7_days": 301
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019cf974-5d41-74f8-ae60-26cc02fec05f",
+  "paper_summary": {
+    "keyInsights": [
+      "\"Scientific taste,\" encompassing the capacity to judge and propose high-impact research, is an empirically learnable objective for AI systems, extending beyond human intuition.",
+      "Large-scale community feedback, specifically citation data, provides a scalable and effective supervisory signal for aligning AI with scientific values in complex, open-ended research domains.",
+      "The learned scientific judgment capability generalizes robustly across different time periods (predicting future paper preferences), diverse scientific fields, and even aligns with independent peer-review evaluation metrics."
+    ],
+    "originalProblem": [
+      "Existing AI agents for scientific research primarily focus on executive tasks like literature search or automated experimentation, lacking the \"scientific taste\" to discern high-impact research ideas.",
+      "Current large language models (LLMs) struggle to consistently differentiate between truly impactful research concepts and those that are superficially novel yet trivial.",
+      "Traditional reinforcement learning methods (RLHF, RLVR) are limited by the high cost of human annotation or the lack of objective, verifiable ground-truth rewards in open-ended scientific domains."
+    ],
+    "results": [
+      "Scientific Judge models, such as SciJudge-Qwen3-30B, achieved an 80.6% accuracy on the in-domain SciJudgeBench, outperforming proprietary LLM baselines including GPT-5.2 and Gemini 3 Pro.",
+      "The models demonstrated significant generalization, showing up to 55.1 percentage point accuracy improvements on temporal out-of-domain data and up to 72.0 percentage point gains on ICLR peer-review preferences.",
+      "Scientific Thinker, trained with Scientific Judge, generated research ideas with higher potential impact, achieving an 81.5% in-domain win rate against its base policy and an average win rate of 54.2% when competing against ideas from strong proprietary LLMs."
+    ],
+    "solution": [
+      "Introduced Reinforcement Learning from Community Feedback (RLCF), a three-stage training paradigm that leverages large-scale, naturally occurring community feedback (citations) as a supervisory signal.",
+      "Developed SciJudgeBench, a dataset comprising 700,000 field- and time-matched paper abstract pairs with citation-based preference labels for training scientific judgment models.",
+      "Trained \"Scientific Judge\" using Group Relative Policy Optimization (GRPO) to predict paper impact and \"Scientific Thinker\" using Scientific Judge as a generative reward model to generate high-impact research ideas via Comparison-Based GRPO."
+    ],
+    "summary": "Researchers from Fudan University and collaborators developed OpenMOSS, an AI framework designed to acquire \"scientific taste\" for judging and generating high-impact research ideas. Their Reinforcement Learning from Community Feedback (RLCF) approach, which uses citation data as supervision, yielded a Scientific Judge model that surpassed leading proprietary LLMs in predicting paper impact and a Scientific Thinker model capable of generating research ideas with superior win rates against strong LLMs."
+  },
+  "publication_date": "2026-03-15T16:31:51.000Z",
+  "title": "AI Can Learn Scientific Taste",
+  "topics": [
+    "Computer Science",
+    "cs.CL"
+  ],
+  "universal_paper_id": "2603.14473",
+  "updated_at": "2026-03-17T01:41:18.785Z",
+  "version_id": "019cf974-5d91-7504-ad4a-89cd6d24f626"
+}

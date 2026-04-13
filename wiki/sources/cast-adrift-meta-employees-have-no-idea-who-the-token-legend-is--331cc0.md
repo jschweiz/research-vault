@@ -7,7 +7,7 @@ aliases:
 source_refs:
 - 2026-04-09-tldr-email-cast-adrift-meta-employees-have-no-idea-who-the--4e8dbc01
 backlinks: []
-updated_at: '2026-04-09T16:33:56.399088Z'
+updated_at: '2026-04-09T23:08:04.443292Z'
 managed: true
 ---
 # Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore
@@ -21,9 +21,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-09T11:02:31+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, meta, tokens, tracking, internal system
-- Topics: [Email](../topics/email.md), [Internal System](../topics/internal-system.md), [Meta](../topics/meta.md), [Newsletter](../topics/newsletter.md), [Tldr](../topics/tldr.md), [Tokens](../topics/tokens.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, article, meta, tokens, tracking, internal system, sub-document
+- Topics: [Email](../topics/email.md), [Internal System](../topics/internal-system.md), [Meta](../topics/meta.md), [Newsletter](../topics/newsletter.md), [Sub Document](../topics/sub-document.md), [Tldr](../topics/tldr.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -36,17 +36,17 @@ Meta had an internal system tracking employee token usage, which ranked staff an
 - [Internal System](../topics/internal-system.md)
 - [Meta](../topics/meta.md)
 - [Newsletter](../topics/newsletter.md)
+- [Sub Document](../topics/sub-document.md)
 - [Tldr](../topics/tldr.md)
-- [Tokens](../topics/tokens.md)
 
 ## Related Research
 
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Meta, Newsletter, Tldr)
-- [How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines](how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pip-5ed6d6.md) (shared topics: Email, Meta, Newsletter, Tldr)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Meta, Newsletter, Sub Document)
+- [How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines](how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pip-5ed6d6.md) (shared topics: Email, Meta, Newsletter, Sub Document)
 - [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Meta, Newsletter)
-- [Developer relations after the cheat code machine](developer-relations-after-the-cheat-code-machine-7824ac.md) (shared topics: Email, Newsletter, Tldr)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
+- [World Labs refines Marble models for better visuals and introduces scalable environment generation model](world-labs-refines-marble-models-for-better-visuals-and-introduc-3d3001.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

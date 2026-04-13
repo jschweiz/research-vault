@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
 - topic:sora
-- topic:video-generation
-updated_at: '2026-04-09T16:35:04.776217Z'
+updated_at: '2026-04-09T23:10:02.350170Z'
 managed: true
 ---
 # Social Creation Platform

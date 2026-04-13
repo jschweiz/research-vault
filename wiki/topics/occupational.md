@@ -10,9 +10,7 @@ source_refs:
 backlinks:
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 - topic:exposure
-- topic:labor-market
-- topic:measurement
-updated_at: '2026-04-09T16:35:04.121813Z'
+updated_at: '2026-04-09T23:10:03.736150Z'
 managed: true
 ---
 # Occupational

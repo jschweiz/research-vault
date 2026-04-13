@@ -11,7 +11,7 @@ backlinks:
 - topic:building-blocks
 - topic:open-source
 - topic:software-adoption
-updated_at: '2026-04-09T16:35:03.795586Z'
+updated_at: '2026-04-09T23:08:04.584259Z'
 managed: true
 ---
 # The Building Block Economy
@@ -25,9 +25,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-08T10:59:19+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, building block economy, software development, building blocks, open source, software adoption
+- Tags: newsletter, tldr, email, ai, article, building block economy, software development, building blocks, open source, software adoption, sub-document
 - Topics: [Building Block Economy](../topics/building-block-economy.md), [Building Blocks](../topics/building-blocks.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Open Source](../topics/open-source.md), [Software Adoption](../topics/software-adoption.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -45,12 +45,12 @@ The most effective way to build software and achieve massive adoption is by crea
 
 ## Related Research
 
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
+- [Ai2 presents open-source WildDet3D enabling 3D object detection from a single image](ai2-presents-open-source-wilddet3d-enabling-3d-object-detection--79899d.md) (shared topics: Email, Newsletter, Open Source)
+- [Netflix presents VOID, an open-source framework enabling video object removal with updated motion](netflix-presents-void-an-open-source-framework-enabling-video-ob-75ef95.md) (shared topics: Email, Newsletter, Open Source)
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Email, Newsletter)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Newsletter)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

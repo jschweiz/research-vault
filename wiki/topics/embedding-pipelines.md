@@ -13,8 +13,7 @@ backlinks:
 - page:2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db
 - topic:mathematics
 - topic:transformers
-- topic:vector-databases
-updated_at: '2026-04-09T16:35:04.336864Z'
+updated_at: '2026-04-09T23:10:02.879092Z'
 managed: true
 ---
 # Embedding Pipelines
@@ -40,7 +39,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
-- [Vector Databases](vector-databases.md)
+- [Sub Document](sub-document.md)
 - [Mathematics](mathematics.md)
 - [Transformers](transformers.md)
 

@@ -7,15 +7,13 @@ aliases:
 source_refs:
 - 2026-04-05-medium-email-claude-skills-for-product-designers-78a4d4a9
 backlinks:
-- page:2026-04-03-medium-email-agentic-ai-implementing-long-term-memory-5bc73363
 - page:2026-04-04-medium-email-the-complete-guide-to-claude-code-claude-md-10919f4c
 - page:2026-04-05-medium-email-building-long-term-memory-in-agentic-ai-5cd24c42
 - page:2026-04-05-medium-email-building-the-14-key-pillars-of-agentic-ai-ee64ee67
 - page:2026-04-06-medium-email-everyone-analyzed-claude-codes-features-nobody-a-9b56c848
-- topic:claude
 - topic:memory
 - topic:product-design
-updated_at: '2026-04-09T16:35:04.117373Z'
+updated_at: '2026-04-09T23:10:03.267267Z'
 managed: true
 ---
 # Claude Skills for Product Designers
@@ -25,13 +23,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@101/claude-skills-for-product-designers-a453a7a8faa7
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@101/claude-skills-for-product-designers-a453a7a8faa7
 - Document kind: blog-post
 - Published at: 2026-04-05T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Fareed Khan
-- Tags: newsletter, medium, email, blog-post, claude, product design, ai, skills
+- Tags: newsletter, medium, email, blog-post, claude, product design, ai, skills, sub-document
 - Topics: [Memory](../topics/memory.md), [Claude](../topics/claude.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Product Design](../topics/product-design.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

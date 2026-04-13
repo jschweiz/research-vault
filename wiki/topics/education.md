@@ -10,7 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-09-tldr-email-the-2-sigma-problem-the-1-1-tutor-52aad428
 - topic:meta
-updated_at: '2026-04-09T16:35:03.860941Z'
+updated_at: '2026-04-09T23:09:00.497614Z'
 managed: true
 ---
 # Education
@@ -37,7 +37,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Meta](meta.md)
 - [Newsletter](newsletter.md)
-- [Tldr](tldr.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

@@ -10,9 +10,8 @@ source_refs:
 backlinks:
 - page:2026-04-08-tldr-email-the-building-block-economy-2eb76b35
 - topic:building-blocks
-- topic:open-source
 - topic:software-adoption
-updated_at: '2026-04-09T16:35:04.327207Z'
+updated_at: '2026-04-09T23:10:03.719249Z'
 managed: true
 ---
 # Building Block Economy

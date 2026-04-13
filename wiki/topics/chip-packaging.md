@@ -10,9 +10,8 @@ source_refs:
 backlinks:
 - page:2026-04-08-tldr-email-intel-is-going-all-in-on-advanced-chip-packaging-ec2c3f46
 - topic:amazon
-- topic:google
 - topic:intel
-updated_at: '2026-04-09T16:35:04.214735Z'
+updated_at: '2026-04-09T23:10:02.824849Z'
 managed: true
 ---
 # Chip Packaging

@@ -14,7 +14,7 @@ backlinks:
 - topic:labor-market
 - topic:measurement
 - topic:occupational
-updated_at: '2026-04-09T16:35:04.310902Z'
+updated_at: '2026-04-09T23:08:05.898283Z'
 managed: true
 ---
 # Labor market impacts of AI: A new measure and early evidence
@@ -29,8 +29,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-05T00:00:00+00:00
 - Tags: anthropic, official, research, website, blog-post, ai, labor market, exposure, occupational, measurement
 - Topics: [Anthropic](../topics/anthropic.md), [Exposure](../topics/exposure.md), [Labor Market](../topics/labor-market.md), [Measurement](../topics/measurement.md), [Occupational](../topics/occupational.md), [Official](../topics/official.md)
-- Trend score: 45.86
-- Novelty score: 1.20
+- Trend score: 104.44
+- Novelty score: 3.26
 
 ## Summary
 

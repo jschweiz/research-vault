@@ -8,12 +8,10 @@ source_refs:
 - 2026-04-03-tldr-email-how-ai-helped-one-man-and-his-brother-build-a-1--0b88b070
 backlinks:
 - page:2026-04-03-tldr-email-bad-analogies-e133a94d
-- page:2026-04-07-tldr-email-openai-s-leadership-reportedly-disagrees-about-w-1bdc4797
 - topic:ai-tools
 - topic:business
 - topic:startup
-- topic:telehealth
-updated_at: '2026-04-09T16:35:04.107094Z'
+updated_at: '2026-04-09T23:10:02.659717Z'
 managed: true
 ---
 # How AI Helped One Man (and His Brother) Build a $1.8 Billion Company
@@ -27,9 +25,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: news
 - Published at: 2026-04-03T10:59:24+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, Matthew Gallagher
-- Tags: newsletter, tldr, email, ai, news, startup, telehealth, business, ai tools
-- Topics: [Ai Tools](../topics/ai-tools.md), [Business](../topics/business.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Startup](../topics/startup.md), [Telehealth](../topics/telehealth.md)
-- Trend score: 500.30
+- Tags: newsletter, tldr, email, ai, news, startup, telehealth, business, ai tools, sub-document
+- Topics: [Ai Tools](../topics/ai-tools.md), [Business](../topics/business.md), [Email](../topics/email.md), [Newsletter](../topics/newsletter.md), [Startup](../topics/startup.md), [Sub Document](../topics/sub-document.md)
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -43,16 +41,16 @@ Matthew Gallagher and his brother used AI tools to build a telehealth company, M
 - [Email](../topics/email.md)
 - [Newsletter](../topics/newsletter.md)
 - [Startup](../topics/startup.md)
-- [Telehealth](../topics/telehealth.md)
+- [Sub Document](../topics/sub-document.md)
 
 ## Related Research
 
-- [OpenAI's leadership reportedly disagrees about when to raise money and how to spend it](openai-s-leadership-reportedly-disagrees-about-when-to-raise-mon-29d299.md) (shared topics: Business, Email, Newsletter)
-- [Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom](anthropic-boasts-revenue-run-rate-of-30-billion-as-the-claude-de-a9ff0c.md) (shared topics: Business, Email, Newsletter)
-- [Bad Analogies](bad-analogies-57d622.md) (shared topics: Business, Email, Newsletter)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
+- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter, Sub Document)
+- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cast Adrift, Meta Employees Have No Idea Who the ‘Token Legend' Is Anymore](cast-adrift-meta-employees-have-no-idea-who-the-token-legend-is--331cc0.md) (shared topics: Email, Newsletter, Sub Document)
+- [Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6](z-ai-announces-open-source-glm-5-1-coding-model-topping-swe-benc-b77584.md) (shared topics: Email, Newsletter, Sub Document)
+- [World Labs refines Marble models for better visuals and introduces scalable environment generation model](world-labs-refines-marble-models-for-better-visuals-and-introduc-3d3001.md) (shared topics: Email, Newsletter, Sub Document)
+- [Cognition releases SWE-1.6 with parallel tool calls and fewer reasoning loops](cognition-releases-swe-1-6-with-parallel-tool-calls-and-fewer-re-bf6883.md) (shared topics: Email, Newsletter, Sub Document)
 
 ## Radar
 

@@ -8,12 +8,10 @@ source_refs:
 - 2025-02-03-anthropic-research-constitutional-classifiers-defending-against-uni-bb6ac706
 backlinks:
 - page:2026-03-13-anthropic-research-a-diff-tool-for-ai-finding-behavioral-difference-21425385
-- topic:ai-safety
 - topic:constitutional-classifiers
 - topic:jailbreaks
 - topic:llm-defense
-- topic:safety
-updated_at: '2026-04-09T16:35:03.999672Z'
+updated_at: '2026-04-09T23:10:02.859902Z'
 managed: true
 ---
 # Constitutional Classifiers: Defending against universal jailbreaks
@@ -29,8 +27,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Anthropic
 - Tags: anthropic, official, research, website, blog-post, constitutional classifiers, jailbreaks, ai safety, llm defense, red teaming
 - Topics: [Safety](../topics/safety.md), [Constitutional Classifiers](../topics/constitutional-classifiers.md), [Ai Safety](../topics/ai-safety.md), [Anthropic](../topics/anthropic.md), [Jailbreaks](../topics/jailbreaks.md), [Llm Defense](../topics/llm-defense.md)
-- Trend score: 45.86
-- Novelty score: 1.20
+- Trend score: 104.44
+- Novelty score: 3.26
 
 ## Summary
 
@@ -50,9 +48,9 @@ The Constitutional Classifiers method defends AI models against universal jailbr
 - [Helping developers build safer AI experiences for teens](helping-developers-build-safer-ai-experiences-for-teens-3546fe.md) (shared topics: Ai Safety, Safety)
 - [A “diff” tool for AI: Finding behavioral differences in new models](a-diff-tool-for-ai-finding-behavioral-differences-in-new-models-ab6a23.md) (shared topics: Ai Safety, Anthropic)
 - [An update on our model deprecation commitments for Claude Opus 3](an-update-on-our-model-deprecation-commitments-for-claude-opus-3-857fcc.md) (shared topics: Ai Safety, Anthropic)
+- [Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components](anthropic-outlines-managed-agents-system-enabling-reliable-execu-8a2e1c.md) (shared topics: Anthropic)
+- [Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration](anthropic-launches-managed-agents-to-build-and-deploy-agents-wit-b8b41d.md) (shared topics: Anthropic)
 - [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Anthropic)
-- [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Anthropic)
-- [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Anthropic)
 
 ## Radar
 

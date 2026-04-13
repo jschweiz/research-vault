@@ -10,14 +10,13 @@ backlinks:
 - page:2025-05-07-mistral-research-medium-is-the-new-large-mistral-ai-7a9d19dc
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-04-03-medium-email-10-underrated-cli-commands-youve-probably-never--93370e8c
-- page:2026-04-03-medium-email-claude-code-is-great-a7134001
 - page:2026-04-03-medium-email-vibe-coding-prompts-are-all-you-need-ca1391ab
 - page:2026-04-06-medium-email-12-5-million-downloads-a-month-shes-never-seen-h-64366209
 - page:2026-04-08-medium-email-10-underrated-cli-commands-youve-probably-never--74812cc0
 - topic:coding
 - topic:reinforcement-learning
 - topic:rl-concepts
-updated_at: '2026-04-09T16:35:03.880628Z'
+updated_at: '2026-04-09T23:10:02.637493Z'
 managed: true
 ---
 # 21 Reinforcement Learning (RL) Concepts Explained In Plain English
@@ -27,13 +26,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@bamania-ashish/21-reinforcement-learning-rl-concepts-explained-in-plain-english-79087514dba1
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@bamania-ashish/21-reinforcement-learning-rl-concepts-explained-in-plain-english-79087514dba1
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Dr. Ashish Bamania
-- Tags: newsletter, medium, email, blog-post, reinforcement learning, rl concepts, ai, coding
+- Tags: newsletter, medium, email, blog-post, reinforcement learning, rl concepts, ai, coding, sub-document
 - Topics: [Reinforcement Learning](../topics/reinforcement-learning.md), [Coding](../topics/coding.md), [Email](../topics/email.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Rl Concepts](../topics/rl-concepts.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

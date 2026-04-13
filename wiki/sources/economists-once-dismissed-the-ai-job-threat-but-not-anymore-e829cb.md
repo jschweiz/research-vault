@@ -7,12 +7,12 @@ aliases:
 source_refs:
 - 2026-04-06-tldr-email-economists-once-dismissed-the-ai-job-threat-but--9b7f5d1c
 backlinks:
-- page:2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0
+- page:2026-02-02-jack-clark-import-ai-ai-has-all-the-symptoms-of-a-tech-that-could-mea-ddbe0cee
+- page:2026-04-06-jack-clark-import-ai-startups-that-adopt-ai-for-internal-use-are-more-1de6e70d
 - topic:economists
 - topic:economy
 - topic:job-market
-- topic:policy
-updated_at: '2026-04-09T16:35:04.796377Z'
+updated_at: '2026-04-09T23:10:02.787701Z'
 managed: true
 ---
 # Economists Once Dismissed the AI Job Threat, but Not Anymore
@@ -26,9 +26,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: news
 - Published at: 2026-04-06T11:04:43+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>
-- Tags: newsletter, tldr, email, ai, news, economists, job market, policy, economy
+- Tags: newsletter, tldr, email, ai, news, economists, job market, policy, economy, sub-document
 - Topics: [Economists](../topics/economists.md), [Economy](../topics/economy.md), [Email](../topics/email.md), [Job Market](../topics/job-market.md), [Newsletter](../topics/newsletter.md), [Policy](../topics/policy.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -48,10 +48,10 @@ While many economists do not see significant evidence of AI job disruption, they
 
 - [OpenAI #16: A History and a Proposal](openai-16-a-history-and-a-proposal-a6e162.md) (shared topics: Email, Newsletter, Policy)
 - [The 800% Job Boom Nobody’s Talking About](the-800-job-boom-nobodys-talking-about-d4b83b.md) (shared topics: Economy, Email, Newsletter)
-- [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
-- [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Email, Newsletter)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Newsletter)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

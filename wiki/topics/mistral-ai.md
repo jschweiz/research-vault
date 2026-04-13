@@ -23,9 +23,8 @@ backlinks:
 - topic:devstral
 - topic:magistral
 - topic:mistral
-- topic:models
 - topic:multilingual
-updated_at: '2026-04-09T16:35:03.727992Z'
+updated_at: '2026-04-09T23:10:02.907976Z'
 managed: true
 ---
 # Mistral Ai

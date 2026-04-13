@@ -7,19 +7,18 @@ aliases:
 source_refs:
 - 2026-04-06-openai-website-industrial-policy-for-the-intelligence-age-4dbb4daa
 backlinks:
+- page:2026-03-06-the-batch-research-openais-frontier-agent-insights-and-orchestratio-b62f6c9f
 - page:2026-03-17-openai-website-introducing-gpt-5-4-mini-and-nano-8afdb503
 - page:2026-03-19-openai-website-how-we-monitor-internal-coding-agents-for-misali-b4b34037
-- page:2026-03-23-openai-website-creating-with-sora-safely-85771c0f
 - page:2026-03-24-openai-website-powering-product-discovery-in-chatgpt-d58daa6d
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
 - page:2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856
 - topic:ai-era
 - topic:industrial-policy
 - topic:official
-- topic:openai
 - topic:opportunity
 - topic:prosperity
-updated_at: '2026-04-09T16:35:04.741453Z'
+updated_at: '2026-04-09T23:10:02.816930Z'
 managed: true
 ---
 # Industrial policy for the Intelligence Age
@@ -35,7 +34,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: OpenAI
 - Tags: openai, official, website, blog-post, industrial policy, ai era, opportunity, prosperity, resilient institutions
 - Topics: [Ai Era](../topics/ai-era.md), [Industrial Policy](../topics/industrial-policy.md), [Official](../topics/official.md), [Openai](../topics/openai.md), [Opportunity](../topics/opportunity.md), [Prosperity](../topics/prosperity.md)
-- Trend score: 49.76
+- Trend score: 70.25
 - Novelty score: 4.20
 
 ## Summary

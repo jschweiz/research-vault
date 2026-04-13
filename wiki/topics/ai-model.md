@@ -12,7 +12,7 @@ backlinks:
 - topic:code-generation
 - topic:codestral
 - topic:mistral-ai
-updated_at: '2026-04-09T16:35:03.770653Z'
+updated_at: '2026-04-09T23:10:02.413204Z'
 managed: true
 ---
 # Ai Model

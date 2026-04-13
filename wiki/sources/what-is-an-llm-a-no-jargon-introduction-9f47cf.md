@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-06-medium-email-what-is-an-llm-a-no-jargon-introduction-5a69f1b8
 backlinks:
+- page:2026-03-09-jack-clark-import-ai-bytedance-finetunes-a-seed1-6-model-to-be-a-cuda-480da18e
 - page:2026-04-03-medium-email-from-notebooks-to-production-server-build-ai-app-042d4282
 - page:2026-04-04-medium-email-backpropagation-is-simpler-than-you-think-once-y-44afe99c
 - page:2026-04-06-medium-email-beyond-rlhf-aligning-llms-with-direct-preference-137fedb8
@@ -15,10 +16,9 @@ backlinks:
 - page:2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4
 - page:2026-04-09-medium-email-automatic-speech-recognition-asr-from-scratch-wi-b2a82ac6
 - page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
-- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
 - topic:introduction
 - topic:llm
-updated_at: '2026-04-09T16:35:04.502416Z'
+updated_at: '2026-04-09T23:10:02.605907Z'
 managed: true
 ---
 # What Is an LLM? A No-Jargon Introduction
@@ -28,13 +28,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduction-adc39a129254
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@hamzamlwh/what-is-an-llm-a-no-jargon-introduction-adc39a129254
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN, Ph.D.
-- Tags: newsletter, medium, email, blog-post, llm, ai, machine learning, introduction
+- Tags: newsletter, medium, email, blog-post, llm, ai, machine learning, introduction, sub-document
 - Topics: [Email](../topics/email.md), [Introduction](../topics/introduction.md), [Llm](../topics/llm.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

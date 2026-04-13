@@ -1,0 +1,135 @@
+{
+  "abstract": "Scaling inference-time compute has emerged as an important driver of LLM performance, making inference efficiency a central focus of model design alongside model quality. While the current Transformer-based models deliver strong model quality, their quadratic compute and linear memory make inference expensive. This has spurred the development of sub-quadratic models with reduced linear compute and constant memory requirements. However, many recent linear models trade off model quality and capability for algorithmic efficiency, failing on tasks such as state tracking. Moreover, their theoretically linear inference remains hardware-inefficient in practice. Guided by an inference-first perspective, we introduce three core methodological improvements inspired by the state space model (SSM) viewpoint of linear models. We combine: (1) a more expressive recurrence derived from SSM discretization, (2) a complex-valued state update rule that enables richer state tracking, and (3) a multi-input, multi-output (MIMO) formulation for better model performance without increasing decode latency. Together with architectural refinements, our Mamba-3 model achieves significant gains across retrieval, state-tracking, and downstream language modeling tasks. At the 1.5B scale, Mamba-3 improves average downstream accuracy by 0.6 percentage points compared to the next best model (Gated DeltaNet), with Mamba-3's MIMO variant further improving accuracy by another 1.2 points for a total 1.8 point gain. Across state-size experiments, Mamba-3 achieves comparable perplexity to Mamba-2 despite using half of its predecessor's state size. Our evaluations demonstrate Mamba-3's ability to advance the performance-efficiency Pareto frontier.",
+  "author_info": [],
+  "authors": [
+    "Aakash Lahoti",
+    "Kevin Y. Li",
+    "Berlin Chen",
+    "Caitlin Wang",
+    "Aviv Bick",
+    "J. Zico Kolter",
+    "Tri Dao",
+    "Albert Gu"
+  ],
+  "canonical_id": "2603.15569v1",
+  "first_publication_date": "2026-03-16T17:30:08.000Z",
+  "full_authors": [
+    {
+      "full_name": "Aakash Lahoti",
+      "id": "01985c81-f152-7570-8512-d58695491263",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Kevin Y. Li",
+      "id": "01985c82-6f05-7fb3-b725-867ee2a15261",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Berlin Chen",
+      "id": "01985c82-9ee6-72c0-81a8-54d7a412630a",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Caitlin Wang",
+      "id": "019a6c64-e4e5-7132-b2f9-ef3d1254a0e7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Aviv Bick",
+      "id": "01985c82-6f05-7763-8fbc-8d91f058a525",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "J. Zico Kolter",
+      "id": "01985c81-db50-7b3d-8934-f658212a4b6b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tri Dao",
+      "id": "01985c81-d857-741c-9e1f-38fae73add32",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Albert Gu",
+      "id": "01985c81-db51-79f2-8a96-34012f0373c7",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019cf9f2-aa5c-71ce-994a-d0e61e0e6ced",
+  "image_url": "image/2603.15569v1.png",
+  "metrics": {
+    "public_total_votes": 179,
+    "total_votes": 60,
+    "visits_count": {
+      "all": 2323,
+      "last_7_days": 190
+    },
+    "x_likes": 0
+  },
+  "organization_info": [
+    {
+      "image": "images/organizations/cmu.jpg",
+      "name": "Carnegie Mellon University"
+    },
+    {
+      "image": "images/organizations/princeton.jpg",
+      "name": "Princeton University"
+    },
+    {
+      "image": null,
+      "name": "Together AI"
+    },
+    {
+      "image": null,
+      "name": "Cartesia AI"
+    }
+  ],
+  "paper_group_id": "019cf9f2-aa5c-71ce-994a-d0e61e0e6ced",
+  "paper_summary": {
+    "keyInsights": [
+      "Rigorous discretization of LTV SSMs, specifically the exponential-trapezoidal method, yields more expressive recurrences that can implicitly handle convolutional aspects, potentially removing the need for explicit short causal convolutions.",
+      "Reintroducing complex-valued states, realized through data-dependent Rotary Position Embeddings (RoPE), is key for linear models to robustly solve state-tracking tasks that require rotational hidden state dynamics.",
+      "Adopting a Multi-Input, Multi-Output (MIMO) formulation in SSMs effectively increases arithmetic intensity during inference, leading to higher hardware utilization and improved practical efficiency without significant latency overhead."
+    ],
+    "originalProblem": [
+      "Transformer-based LLMs incur quadratic computational complexity and linear memory usage during inference, leading to high costs and slow response times at scale and long context lengths.",
+      "Prior sub-quadratic models often compromise model quality or specific capabilities like robust state tracking for algorithmic efficiency.",
+      "Existing linear model inference algorithms frequently exhibit low hardware efficiency due to memory-bound decoding phases and low arithmetic intensity."
+    ],
+    "results": [
+      "Mamba-3 models consistently surpass Mamba-2 and GDN in language modeling quality, with the MIMO variant (R=4) achieving a 1.8 percentage point accuracy gain over GDN at the 1.5B scale.",
+      "The model demonstrated robust performance on synthetic state-tracking tasks, achieving 100% accuracy on Parity and 98.51% on Modular Arithmetic, a capability enabled by its complex-valued state mechanism.",
+      "Optimized Mamba-3 kernels recorded the lowest per-token decode latency among recurrent models (0.156 ms for SISO at 128 state size) and exhibited superior scaling with context length compared to Transformer baselines."
+    ],
+    "solution": [
+      "Introduces an \"exponential-trapezoidal\" discretization method for LTV SSMs, providing a more expressive three-term recurrence with O(\u0394\u00b3) truncation error.",
+      "Reintegrates complex-valued states via data-dependent Rotary Position Embeddings (RoPE) to enhance the model's capacity for complex state-tracking tasks.",
+      "Develops a Multi-Input, Multi-Output (MIMO) SSM formulation to improve hardware utilization and arithmetic intensity during decoding, moving from memory-bound to compute-bound operations."
+    ],
+    "summary": "Mamba-3 introduces a State Space Model architecture featuring exponential-trapezoidal discretization, complex-valued states, and a multi-input, multi-output formulation to improve sequence modeling. It demonstrates superior language modeling quality and enhanced inference efficiency compared to prior linear models like Mamba-2 and GDN, achieving a 1.8 percentage point accuracy gain over GDN at the 1.5B scale and lower decode latency."
+  },
+  "publication_date": "2026-03-16T17:30:08.000Z",
+  "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+  "topics": [
+    "Computer Science",
+    "cs.LG",
+    "hardware-aware-algorithms",
+    "inference-optimization",
+    "lightweight-models",
+    "sequence-modeling",
+    "transformers"
+  ],
+  "universal_paper_id": "2603.15569",
+  "updated_at": "2026-03-17T03:59:16.060Z",
+  "version_id": "019cf9f2-aa94-7f1d-b3ad-5cc013b83abf"
+}

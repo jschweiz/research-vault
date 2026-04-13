@@ -13,7 +13,7 @@ backlinks:
 - page:2026-04-08-medium-email-the-800-job-boom-nobodys-talking-about-319f79fc
 - topic:bottleneck
 - topic:economy
-updated_at: '2026-04-09T16:35:04.159507Z'
+updated_at: '2026-04-09T23:08:28.141089Z'
 managed: true
 ---
 # Job Boom
@@ -39,6 +39,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [Medium](medium.md)
 - [Newsletter](newsletter.md)
+- [Sub Document](sub-document.md)
 - [Bottleneck](bottleneck.md)
 - [Economy](economy.md)
 

@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
 - topic:physical-ai
-- topic:robotics
-updated_at: '2026-04-09T16:35:04.153980Z'
+updated_at: '2026-04-09T21:02:12.900926Z'
 managed: true
 ---
 # Gen 1

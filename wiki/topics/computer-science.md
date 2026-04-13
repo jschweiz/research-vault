@@ -64,11 +64,9 @@ backlinks:
 - topic:cs-ce
 - topic:cs-gr
 - topic:data-curation
-- topic:deep-learning
 - topic:deep-reinforcement-learning
 - topic:distributed-learning
 - topic:efficient-transformers
-- topic:evaluations
 - topic:fine-tuning
 - topic:generative-models
 - topic:geometric-deep-learning
@@ -84,7 +82,6 @@ backlinks:
 - topic:meta-learning
 - topic:ml-systems
 - topic:multi-modal-learning
-- topic:multimodal
 - topic:object-detection
 - topic:optimization-methods
 - topic:reinforcement-learning
@@ -95,7 +92,7 @@ backlinks:
 - topic:transfer-learning
 - topic:vision-language-action
 - topic:world-models
-updated_at: '2026-04-09T16:35:04.685234Z'
+updated_at: '2026-04-09T23:10:03.347310Z'
 managed: true
 ---
 # Computer Science

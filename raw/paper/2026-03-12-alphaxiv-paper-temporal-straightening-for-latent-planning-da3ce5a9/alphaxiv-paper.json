@@ -1,0 +1,21 @@
+{
+  "abstract": "Learning good representations is essential for latent planning with world models. While pretrained visual encoders produce strong semantic visual features, they are not tailored to planning and contain information irrelevant -- or even detrimental -- to planning. Inspired by the perceptual straightening hypothesis in human visual processing, we introduce temporal straightening to improve representation learning for latent planning. Using a curvature regularizer that encourages locally straightened latent trajectories, we jointly learn an encoder and a predictor. We show that reducing curvature this way makes the Euclidean distance in latent space a better proxy for the geodesic distance and improves the conditioning of the planning objective. We demonstrate empirically that temporal straightening makes gradient-based planning more stable and yields significantly higher success rates across a suite of goal-reaching tasks.",
+  "citationBibtex": "@misc{wangThu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)temporalstraighteninglatent,\n      title={Temporal Straightening for Latent Planning},\n      author={Ying Wang and Oumayma Bounou and Gaoyue Zhou and Randall Balestriero and Tim G. J. Rudner and Yann LeCun and Mengye Ren},\n      year={Thu Mar 12 2026 17:49:47 GMT+0000 (Coordinated Universal Time)},\n      eprint={2603.12231},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2603.12231},\n}",
+  "citationsCount": 0,
+  "firstPublicationDate": 1773337787000,
+  "googleCitationId": "5BN__1MAAAAJ:UeHWp8X0CEIC",
+  "groupId": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publicationDate": 1773337787000,
+  "resources": [],
+  "sourceName": "alphaXiv",
+  "sourceUrl": "https://arxiv.org/abs/2603.12231",
+  "title": "Temporal Straightening for Latent Planning",
+  "type": "public",
+  "universalId": "2603.12231",
+  "uploader": null,
+  "versionId": "019ce5d5-baf8-75f0-b11e-f959653964a2",
+  "versionLabel": "v1",
+  "versionOrder": 1,
+  "versions": []
+}

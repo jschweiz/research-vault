@@ -1,0 +1,144 @@
+{
+  "abstract": "Learning good representations is essential for latent planning with world models. While pretrained visual encoders produce strong semantic visual features, they are not tailored to planning and contain information irrelevant -- or even detrimental -- to planning. Inspired by the perceptual straightening hypothesis in human visual processing, we introduce temporal straightening to improve representation learning for latent planning. Using a curvature regularizer that encourages locally straightened latent trajectories, we jointly learn an encoder and a predictor. We show that reducing curvature this way makes the Euclidean distance in latent space a better proxy for the geodesic distance and improves the conditioning of the planning objective. We demonstrate empirically that temporal straightening makes gradient-based planning more stable and yields significantly higher success rates across a suite of goal-reaching tasks.",
+  "author_info": [
+    {
+      "avatar": null,
+      "blueskyUsername": null,
+      "githubUsername": null,
+      "googleScholarId": "5BN__1MAAAAJ",
+      "id": "019d04a2-53da-7aee-87d5-a5051579ea6f",
+      "institution": "New York University",
+      "linkedinUsername": null,
+      "orcidId": null,
+      "publicEmail": null,
+      "realName": "Ying Wang",
+      "reputation": 16,
+      "role": "user",
+      "username": "yingwww",
+      "verified": false,
+      "weeklyReputation": 1,
+      "xUsername": null
+    }
+  ],
+  "authors": [
+    "Ying Wang",
+    "Oumayma Bounou",
+    "Gaoyue Zhou",
+    "Randall Balestriero",
+    "Tim G. J. Rudner",
+    "Yann LeCun",
+    "Mengye Ren"
+  ],
+  "canonical_id": "2603.12231v1",
+  "first_publication_date": "2026-03-12T17:49:47.000Z",
+  "full_authors": [
+    {
+      "full_name": "Ying Wang",
+      "id": "01985c81-f818-7284-aaf9-bef47bed5751",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Oumayma Bounou",
+      "id": "019a88d9-7df7-7f75-9877-331923462165",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Gaoyue Zhou",
+      "id": "01985c81-e4e6-7837-8d54-93a9c3bf91eb",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Randall Balestriero",
+      "id": "01985c81-e287-7ced-b370-1a9d0540e3b6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tim G. J. Rudner",
+      "id": "01985c81-f062-7a30-a290-be46c6a5e47b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yann LeCun",
+      "id": "01985c81-d97f-7a3d-b9ce-231516b7caee",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Mengye Ren",
+      "id": "01985c81-db50-7d40-9068-e884740e6d17",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": 0,
+  "github_url": "https://github.com/agentic-learning-ai-lab/temporal-straightening",
+  "id": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+  "image_url": "image/2603.12231v1.png",
+  "metrics": {
+    "public_total_votes": 165,
+    "total_votes": 41,
+    "visits_count": {
+      "all": 2687,
+      "last_7_days": 241
+    },
+    "x_likes": 0
+  },
+  "organization_info": [
+    {
+      "image": "images/organizations/university-of-toronto.jpeg",
+      "name": "University of Toronto"
+    },
+    {
+      "image": "images/organizations/nyu.png",
+      "name": "New York University"
+    },
+    {
+      "image": "images/organizations/brown-university.svg+xml",
+      "name": "Brown University"
+    }
+  ],
+  "paper_group_id": "019ce5d5-babe-7c2c-a055-f41b880028b9",
+  "paper_summary": {
+    "keyInsights": [
+      "Explicitly promoting \"straighter\" latent trajectories (by penalizing curvature) significantly improves the conditioning of the planning objective's Hessian, enabling more efficient gradient-based optimization.",
+      "Regularizing the latent space geometry creates a more faithful distance metric where Euclidean distances between latent states accurately reflect the true geodesic distances in the environment.",
+      "The \"perceptual straightening hypothesis\" from human vision offers a valuable inspiration for designing latent spaces that facilitate efficient planning in artificial intelligence systems."
+    ],
+    "originalProblem": [
+      "Planning in learned latent spaces often involves highly non-convex objectives, hindering efficient gradient-based optimization and forcing reliance on computationally expensive search methods.",
+      "Euclidean distances in existing curved latent spaces can inaccurately represent true geodesic distances, leading to suboptimal action sequences from planners.",
+      "Current representation learning methods, such as reconstruction or frozen pre-trained features, may not effectively optimize the latent space geometry for efficient temporal dynamics and gradient-based planning."
+    ],
+    "results": [
+      "Temporal straightening consistently improved goal-reaching success rates by 20-60% for open-loop planning and 20-30% for Model Predictive Control with gradient-based optimizers across various 2D environments.",
+      "The method substantially reduced the performance gap between gradient descent and computationally more intensive search-based planning algorithms like CEM, sometimes outperforming unstraightened CEM baselines.",
+      "Learned representations exhibited reduced curvature, and their latent Euclidean distances closely approximated ground-truth environmental geodesic distances, even in environments with non-visual dynamics like Teleported-PointMaze."
+    ],
+    "solution": [
+      "A novel \"temporal straightening\" geometric regularization term is proposed, which explicitly minimizes the angle between consecutive latent velocity vectors.",
+      "A world model, comprising a sensory encoder (e.g., DINOv2 projector or ResNet) and a Vision Transformer predictor, is trained jointly with a prediction loss and this straightening loss.",
+      "For visual features retaining spatial structure, a learnable pooling head aggregates patch-level representations into a global vector before applying the straightening penalty, balancing local detail with global straightness."
+    ],
+    "summary": "Researchers introduced \"temporal straightening,\" a geometric regularization technique that encourages straighter trajectories in latent space, improving representations for model-based reinforcement learning. This method, inspired by the perceptual straightening hypothesis, significantly enhances gradient-based planning performance by creating a latent space where Euclidean distances more accurately reflect true environmental distances, leading to substantial gains in goal-reaching success rates."
+  },
+  "publication_date": "2026-03-12T17:49:47.000Z",
+  "title": "Temporal Straightening for Latent Planning",
+  "topics": [
+    "Computer Science",
+    "cs.LG",
+    "deep-reinforcement-learning",
+    "generative-models",
+    "optimization-methods",
+    "reinforcement-learning",
+    "representation-learning",
+    "robotic-control"
+  ],
+  "universal_paper_id": "2603.12231",
+  "updated_at": "2026-03-13T06:15:15.390Z",
+  "version_id": "019ce5d5-baf8-75f0-b11e-f959653964a2"
+}

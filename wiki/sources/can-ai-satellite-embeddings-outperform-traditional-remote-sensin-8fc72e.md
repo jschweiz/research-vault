@@ -10,7 +10,7 @@ backlinks:
 - topic:google-earth-engine
 - topic:remote-sensing
 - topic:satellite
-updated_at: '2026-04-09T16:35:04.454849Z'
+updated_at: '2026-04-09T23:08:05.294319Z'
 managed: true
 ---
 # Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?
@@ -20,13 +20,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@preet.balaji20/can-ai-satellite-embeddings-outperform-traditional-remote-sensing-classification-4ab2670ba327
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@preet.balaji20/can-ai-satellite-embeddings-outperform-traditional-remote-sensing-classification-4ab2670ba327
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Preethi Balaji
-- Tags: newsletter, medium, email, blog-post, ai, satellite, remote sensing, google earth engine
+- Tags: newsletter, medium, email, blog-post, ai, satellite, remote sensing, google earth engine, sub-document
 - Topics: [Email](../topics/email.md), [Google Earth Engine](../topics/google-earth-engine.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Remote Sensing](../topics/remote-sensing.md), [Satellite](../topics/satellite.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

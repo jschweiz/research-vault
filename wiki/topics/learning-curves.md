@@ -9,11 +9,9 @@ source_refs:
 - 2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
 backlinks:
 - page:2026-03-24-anthropic-research-anthropic-economic-index-report-learning-curves-490c7dff
-- topic:ai-adoption
 - topic:claude-usage
 - topic:economic-index
-- topic:labor-market
-updated_at: '2026-04-09T16:35:04.600443Z'
+updated_at: '2026-04-09T23:10:03.475488Z'
 managed: true
 ---
 # Learning Curves

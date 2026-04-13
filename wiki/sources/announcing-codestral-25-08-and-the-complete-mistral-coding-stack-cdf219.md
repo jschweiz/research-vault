@@ -16,7 +16,7 @@ backlinks:
 - topic:codestral
 - topic:coding-stack
 - topic:enterprise-ai
-updated_at: '2026-04-09T16:35:04.070534Z'
+updated_at: '2026-04-09T23:08:06.110225Z'
 managed: true
 ---
 # Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise | Mistral AI
@@ -32,7 +32,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, coding stack, enterprise ai, codestral, agentic workflows, software development
 - Topics: [Agentic Workflows](../topics/agentic-workflows.md), [Codestral](../topics/codestral.md), [Coding Stack](../topics/coding-stack.md), [Enterprise Ai](../topics/enterprise-ai.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 2.20
 
 ## Summary

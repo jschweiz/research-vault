@@ -13,7 +13,7 @@ backlinks:
 - topic:conversational-ai
 - topic:inference
 - topic:inference-optimization
-updated_at: '2026-04-09T16:35:04.563316Z'
+updated_at: '2026-04-09T23:10:03.892332Z'
 managed: true
 ---
 # AURA: Always-On Understanding and Real-Time Assistance via Video Streams
@@ -29,7 +29,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Xudong Lu, Yang Bo, Jinpeng Chen, Shuhan Li, Xintong Guo, Huankang Guan, Fang Liu, Dunyuan Xu, Peiwen Sun, Heyang Sun, Rui Liu, Hongsheng Li
 - Tags: paper, alphaxiv, research, agents, computer science, conversational-ai, cs.cv, inference-optimization, model-deployment-systems, sequence-modeling
 - Topics: [Agents](../topics/agents.md), [Computer Vision](../topics/computer-vision.md), [Inference](../topics/inference.md), [Computer Science](../topics/computer-science.md), [Conversational Ai](../topics/conversational-ai.md), [Inference Optimization](../topics/inference-optimization.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

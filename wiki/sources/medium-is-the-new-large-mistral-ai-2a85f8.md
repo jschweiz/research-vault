@@ -9,10 +9,9 @@ source_refs:
 backlinks:
 - topic:cost-efficiency
 - topic:enterprise
-- topic:evaluations
 - topic:language-models
 - topic:medium-3
-updated_at: '2026-04-09T16:35:03.976565Z'
+updated_at: '2026-04-09T23:08:06.146063Z'
 managed: true
 ---
 # Medium is the new large. | Mistral AI
@@ -47,11 +46,11 @@ Mistral Medium 3 is a new class of language models that balances state-of-the-ar
 ## Related Research
 
 - [Anthropic launches Claude Managed Agents for businesses](anthropic-launches-claude-managed-agents-for-businesses-184163.md) (shared topics: Enterprise)
+- [Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure](anthropic-launches-glasswing-using-claude-mythos-preview-to-dete-7fdb1e.md) (shared topics: Evaluations)
 - [10 Underrated CLI Commands You’ve (Probably) Never Heard Of](10-underrated-cli-commands-youve-probably-never-heard-of-ed1994.md) (shared topics: Coding)
 - [12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.](12-5-million-downloads-a-month-shes-never-seen-her-code-on-a-scr-8ad5c4.md) (shared topics: Coding)
 - [ClawArena: Benchmarking AI Agents in Evolving Information Environments](clawarena-benchmarking-ai-agents-in-evolving-information-environ-bdca98.md) (shared topics: Evaluations)
 - [21 Reinforcement Learning (RL) Concepts Explained In Plain English](21-reinforcement-learning-rl-concepts-explained-in-plain-english-a95d17.md) (shared topics: Coding)
-- [Vibe Coding — Prompts Are All You Need?](vibe-coding-prompts-are-all-you-need-1a0efe.md) (shared topics: Coding)
 
 ## Radar
 

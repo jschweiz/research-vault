@@ -22,7 +22,7 @@ backlinks:
 - topic:cs-gr
 - topic:inference-optimization
 - topic:machine-learning
-updated_at: '2026-04-09T16:35:04.444874Z'
+updated_at: '2026-04-09T23:10:03.269611Z'
 managed: true
 ---
 # Fast Spatial Memory with Elastic Test-Time Training

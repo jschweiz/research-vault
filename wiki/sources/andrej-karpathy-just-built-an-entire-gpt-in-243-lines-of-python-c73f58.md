@@ -15,7 +15,7 @@ backlinks:
 - topic:deep-learning
 - topic:gpt
 - topic:python
-updated_at: '2026-04-09T16:35:04.253636Z'
+updated_at: '2026-04-09T23:08:05.111327Z'
 managed: true
 ---
 # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
@@ -25,13 +25,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Sumit Pandey
-- Tags: newsletter, medium, email, blog-post, gpt, python, deep learning, ai, pytorch, tensorflow
+- Tags: newsletter, medium, email, blog-post, gpt, python, deep learning, ai, pytorch, tensorflow, sub-document
 - Topics: [Deep Learning](../topics/deep-learning.md), [Email](../topics/email.md), [Gpt](../topics/gpt.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md), [Python](../topics/python.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

@@ -10,12 +10,11 @@ backlinks:
 - page:2025-12-18-anthropic-research-project-vend-phase-two-6d9cb3ea
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
-- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - topic:llms
 - topic:physics
 - topic:quantum-field-theory
-updated_at: '2026-04-09T16:35:04.670910Z'
+updated_at: '2026-04-09T23:10:02.599094Z'
 managed: true
 ---
 # Vibe physics: The AI grad student
@@ -31,8 +30,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Matthew Schwartz
 - Tags: anthropic, official, research, website, blog-post, ai, physics, quantum field theory, machine learning, llms
 - Topics: [Anthropic](../topics/anthropic.md), [Llms](../topics/llms.md), [Machine Learning](../topics/machine-learning.md), [Official](../topics/official.md), [Physics](../topics/physics.md), [Quantum Field Theory](../topics/quantum-field-theory.md)
-- Trend score: 81.00
-- Novelty score: 6.80
+- Trend score: 104.44
+- Novelty score: 4.80
 
 ## Summary
 

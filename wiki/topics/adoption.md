@@ -9,12 +9,11 @@ source_refs:
 - 2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
 backlinks:
 - page:2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5
-- topic:ai-agents
 - topic:chatgpt-enterprise
 - topic:codex
 - topic:enterprise-ai
 - topic:frontier
-updated_at: '2026-04-09T16:35:04.027330Z'
+updated_at: '2026-04-09T23:10:03.203582Z'
 managed: true
 ---
 # Adoption

@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-03-27-openai-website-stadler-reshapes-knowledge-work-at-a-230-year-ol-16594c97
 - topic:knowledge-work
-- topic:productivity
-updated_at: '2026-04-09T16:35:04.225639Z'
+updated_at: '2026-04-09T23:10:02.537859Z'
 managed: true
 ---
 # Stadler

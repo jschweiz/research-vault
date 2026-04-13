@@ -20,7 +20,7 @@ backlinks:
 - topic:image-generation
 - topic:multi-modal-learning
 - topic:synthetic-data
-updated_at: '2026-04-09T16:35:04.238560Z'
+updated_at: '2026-04-09T23:10:03.009801Z'
 managed: true
 ---
 # Geometric Deep Learning

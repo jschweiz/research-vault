@@ -14,7 +14,7 @@ backlinks:
 - topic:fine-tuning
 - topic:llm
 - topic:reinforcement-learning
-updated_at: '2026-04-09T16:35:03.724439Z'
+updated_at: '2026-04-09T23:08:05.104786Z'
 managed: true
 ---
 # Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)
@@ -24,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@kuriko-iwai/beyond-rlhf-aligning-llms-with-direct-preference-optimization-dpo-79f968c9177f
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/beyond-rlhf-aligning-llms-with-direct-preference-optimization-dpo-79f968c9177f
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Han HELOIR YAN, Ph.D.
-- Tags: newsletter, medium, email, blog-post, llm, dpo, rlhf, machine learning, fine-tuning
+- Tags: newsletter, medium, email, blog-post, llm, dpo, rlhf, machine learning, fine-tuning, sub-document
 - Topics: [Reinforcement Learning](../topics/reinforcement-learning.md), [Fine-Tuning](../topics/fine-tuning.md), [Email](../topics/email.md), [Llm](../topics/llm.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

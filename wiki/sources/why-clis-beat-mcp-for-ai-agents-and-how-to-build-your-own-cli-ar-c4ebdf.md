@@ -14,7 +14,7 @@ backlinks:
 - topic:bash
 - topic:cli
 - topic:mcp
-updated_at: '2026-04-09T16:35:04.198254Z'
+updated_at: '2026-04-09T23:08:04.825770Z'
 managed: true
 ---
 # Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.
@@ -24,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Medium Daily Digest
-- Tags: newsletter, medium, email, blog-post, cli, ai agents, bash, mcp
+- Tags: newsletter, medium, email, blog-post, cli, ai agents, bash, mcp, sub-document
 - Topics: [Ai Agents](../topics/ai-agents.md), [Bash](../topics/bash.md), [Cli](../topics/cli.md), [Email](../topics/email.md), [Mcp](../topics/mcp.md), [Medium](../topics/medium.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

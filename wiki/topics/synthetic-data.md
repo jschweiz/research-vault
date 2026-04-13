@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - map:global-ai-research
 - page:2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca
-- topic:image-generation
-updated_at: '2026-04-09T16:35:04.015546Z'
+updated_at: '2026-04-09T21:02:12.841839Z'
 managed: true
 ---
 # Synthetic Data

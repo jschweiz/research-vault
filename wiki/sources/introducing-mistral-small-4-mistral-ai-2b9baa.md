@@ -12,13 +12,13 @@ backlinks:
 - page:2025-03-17-mistral-research-mistral-small-3-1-mistral-ai-8a888094
 - page:2025-06-10-mistral-research-magistral-mistral-ai-f37de11b
 - page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
+- page:2026-04-02-manual-import-gemma-4-byte-for-byte-the-most-capable-open-mode-20e9cbbb
 - topic:architecture
 - topic:efficiency
 - topic:inference
 - topic:mistral
-- topic:multimodal
 - topic:reasoning
-updated_at: '2026-04-09T16:35:04.650179Z'
+updated_at: '2026-04-09T23:10:03.467783Z'
 managed: true
 ---
 # Introducing Mistral Small 4 | Mistral AI
@@ -34,7 +34,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, model, multimodal, reasoning, open-source, architecture
 - Topics: [Multimodal](../topics/multimodal.md), [Reasoning](../topics/reasoning.md), [Inference](../topics/inference.md), [Efficiency](../topics/efficiency.md), [Architecture](../topics/architecture.md), [Mistral](../topics/mistral.md)
-- Trend score: 18.02
+- Trend score: 31.16
 - Novelty score: 5.40
 
 ## Summary
@@ -54,10 +54,10 @@ Mistral Small 4 is a new model that unifies reasoning, multimodal, and coding ca
 
 - [Mistral Small 3.1 | Mistral AI](mistral-small-3-1-mistral-ai-5dc4fa.md) (shared topics: Inference, Mistral, Multimodal)
 - [A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model](a1-a-fully-transparent-open-source-adaptive-and-efficient-trunca-ac0efe.md) (shared topics: Inference, Multimodal)
+- [Gemma 4: Byte for byte, the most capable open models](gemma-4-byte-for-byte-the-most-capable-open-models-24dd40.md) (shared topics: Multimodal, Reasoning)
 - [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Inference, Mistral)
 - [Introducing Mistral 3 | Mistral AI](introducing-mistral-3-mistral-ai-2b540b.md) (shared topics: Efficiency, Mistral)
 - [Magistral | Mistral AI](magistral-mistral-ai-df7660.md) (shared topics: Mistral, Reasoning)
-- [Mistral OCR | Mistral AI](mistral-ocr-mistral-ai-eb1d8c.md) (shared topics: Mistral, Multimodal)
 
 ## Radar
 

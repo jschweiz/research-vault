@@ -10,7 +10,7 @@ backlinks:
 - topic:docker
 - topic:helm
 - topic:kubernetes
-updated_at: '2026-04-09T16:35:04.608151Z'
+updated_at: '2026-04-09T23:08:04.840591Z'
 managed: true
 ---
 # Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
@@ -20,13 +20,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@danielwarfield1/docker-kubernetes-and-helm-intuitively-and-exhaustively-explained-0b45e90169ab
 - Document kind: blog-post
 - Published at: 2026-04-07T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Daniel Warfield
-- Tags: newsletter, medium, email, blog-post, docker, kubernetes, helm, software, technology
+- Tags: newsletter, medium, email, blog-post, docker, kubernetes, helm, software, technology, sub-document
 - Topics: [Docker](../topics/docker.md), [Email](../topics/email.md), [Helm](../topics/helm.md), [Kubernetes](../topics/kubernetes.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

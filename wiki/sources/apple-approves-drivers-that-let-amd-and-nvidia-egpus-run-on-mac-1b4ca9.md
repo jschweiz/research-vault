@@ -11,7 +11,7 @@ backlinks:
 - topic:apple
 - topic:egpu
 - topic:mac
-updated_at: '2026-04-09T16:35:04.579909Z'
+updated_at: '2026-04-09T23:10:03.070425Z'
 managed: true
 ---
 # Apple approves drivers that let AMD and Nvidia eGPUs run on Mac — software designed for AI, though, and not built for gaming
@@ -25,9 +25,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-06T11:04:43+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, apple, egpu, nvidia, amd, mac
+- Tags: newsletter, tldr, email, ai, article, apple, egpu, nvidia, amd, mac, sub-document
 - Topics: [Amd](../topics/amd.md), [Apple](../topics/apple.md), [Egpu](../topics/egpu.md), [Email](../topics/email.md), [Mac](../topics/mac.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -45,12 +45,12 @@ Apple has approved drivers allowing AMD and Nvidia eGPUs to run on Mac, specific
 
 ## Related Research
 
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Email, Newsletter)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Newsletter)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Email, Newsletter)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

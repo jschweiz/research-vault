@@ -11,8 +11,7 @@ backlinks:
 - page:2026-04-06-tldr-email-china-s-tech-giants-are-recruiting-high-schooler-9dbd58c7
 - topic:china
 - topic:high-schoolers
-- topic:talent
-updated_at: '2026-04-09T16:35:04.226837Z'
+updated_at: '2026-04-09T23:10:02.819073Z'
 managed: true
 ---
 # Recruitment
@@ -39,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Email](email.md)
 - [High Schoolers](high-schoolers.md)
 - [Newsletter](newsletter.md)
-- [Talent](talent.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

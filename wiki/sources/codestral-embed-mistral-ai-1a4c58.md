@@ -14,7 +14,7 @@ backlinks:
 - topic:codestral-embed
 - topic:mistral-ai
 - topic:search
-updated_at: '2026-04-09T16:35:03.928139Z'
+updated_at: '2026-04-09T23:08:06.133764Z'
 managed: true
 ---
 # Codestral Embed | Mistral AI
@@ -29,7 +29,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2025-05-28T12:00:00+00:00
 - Tags: mistral, official, research, website, blog-post, codestral embed, mistral ai, code embedding, retrieval, semantic search
 - Topics: [Search](../topics/search.md), [Mistral Ai](../topics/mistral-ai.md), [Code Embedding](../topics/code-embedding.md), [Codestral Embed](../topics/codestral-embed.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md)
-- Trend score: 45.05
+- Trend score: 68.20
 - Novelty score: 4.80
 
 ## Summary

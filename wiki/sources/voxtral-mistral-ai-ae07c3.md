@@ -13,7 +13,7 @@ backlinks:
 - topic:open-source
 - topic:speech-understanding
 - topic:voxtral
-updated_at: '2026-04-09T16:35:04.183894Z'
+updated_at: '2026-04-09T23:08:06.116156Z'
 managed: true
 ---
 # Voxtral | Mistral AI
@@ -29,7 +29,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, voxtral, speech understanding, asr, audio, open source
 - Topics: [Audio](../topics/audio.md), [Mistral](../topics/mistral.md), [Official](../topics/official.md), [Open Source](../topics/open-source.md), [Speech Understanding](../topics/speech-understanding.md), [Voxtral](../topics/voxtral.md)
-- Trend score: 53.40
+- Trend score: 68.20
 - Novelty score: 4.80
 
 ## Summary

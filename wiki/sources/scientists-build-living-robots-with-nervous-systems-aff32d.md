@@ -11,7 +11,7 @@ backlinks:
 - topic:nervous-systems
 - topic:neurobots
 - topic:science
-updated_at: '2026-04-09T12:15:42.039063Z'
+updated_at: '2026-04-09T23:08:05.006506Z'
 managed: true
 ---
 # Scientists Build Living Robots With Nervous Systems
@@ -25,9 +25,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: article
 - Published at: 2026-04-06T11:04:43+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, article, neurobots, living robots, nervous systems, science, technology
+- Tags: newsletter, tldr, email, ai, article, neurobots, living robots, nervous systems, science, technology, sub-document
 - Topics: [Nervous Systems](../topics/nervous-systems.md), [Email](../topics/email.md), [Living Robots](../topics/living-robots.md), [Neurobots](../topics/neurobots.md), [Newsletter](../topics/newsletter.md), [Science](../topics/science.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -45,12 +45,12 @@ Scientists are developing living robots called neurobots, which are clusters of 
 
 ## Related Research
 
+- [Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents](perplexity-rolls-out-startup-competition-focused-on-building-com-6788e5.md) (shared topics: Email, Newsletter)
+- [OpenAI publishes Child Safety Blueprint outlining policies to prevent AI-enabled exploitation and improve safeguards](openai-publishes-child-safety-blueprint-outlining-policies-to-pr-a19d59.md) (shared topics: Email, Newsletter)
+- [Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace](google-introduces-notebooks-to-reduce-repeated-prompts-by-mainta-de3cec.md) (shared topics: Email, Newsletter)
+- [Cursor enables running agents on any machine while controlling them remotely from your phone](cursor-enables-running-agents-on-any-machine-while-controlling-t-27a349.md) (shared topics: Email, Newsletter)
 - [US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator](us-nuclear-startup-antares-gets-doe-approval-for-its-mark0-react-1699ad.md) (shared topics: Email, Newsletter)
 - [The Git Commands I Run Before Reading Any Code](the-git-commands-i-run-before-reading-any-code-7e8ab0.md) (shared topics: Email, Newsletter)
-- [The 2-Sigma Problem: The 1:1 Tutor](the-2-sigma-problem-the-1-1-tutor-9725b7.md) (shared topics: Email, Newsletter)
-- [My Quest to Solve Bitcoin's Great Mystery](my-quest-to-solve-bitcoin-s-great-mystery-656f8f.md) (shared topics: Email, Newsletter)
-- [Meta's Superintelligence Lab unveils its first public model, Muse Spark](meta-s-superintelligence-lab-unveils-its-first-public-model-muse-5c1dbe.md) (shared topics: Email, Newsletter)
-- [Feedback Flywheel](feedback-flywheel-c22a0d.md) (shared topics: Email, Newsletter)
 
 ## Radar
 

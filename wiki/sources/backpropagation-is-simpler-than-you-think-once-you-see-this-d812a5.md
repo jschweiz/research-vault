@@ -12,10 +12,9 @@ backlinks:
 - page:2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
 - page:2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624
 - page:2026-04-09-medium-email-build-self-learning-agents-without-any-fine-tuni-806f6d28
-- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
 - topic:backpropagation
 - topic:neural-network
-updated_at: '2026-04-09T16:35:04.323773Z'
+updated_at: '2026-04-09T23:10:03.787718Z'
 managed: true
 ---
 # Backpropagation is simpler than you think (once you see this)
@@ -25,13 +24,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9
 - Document kind: blog-post
 - Published at: 2026-04-04T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Nikhil Anand
-- Tags: newsletter, medium, email, blog-post, backpropagation, neural network, ai, machine learning
+- Tags: newsletter, medium, email, blog-post, backpropagation, neural network, ai, machine learning, sub-document
 - Topics: [Backpropagation](../topics/backpropagation.md), [Email](../topics/email.md), [Machine Learning](../topics/machine-learning.md), [Medium](../topics/medium.md), [Neural Network](../topics/neural-network.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

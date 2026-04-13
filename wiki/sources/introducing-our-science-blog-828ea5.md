@@ -12,12 +12,11 @@ backlinks:
 - page:2026-02-25-anthropic-research-an-update-on-our-model-deprecation-commitments-f-9d1b9dba
 - page:2026-03-05-anthropic-research-labor-market-impacts-of-ai-a-new-measure-and-ear-24d6782b
 - page:2026-03-23-anthropic-research-vibe-physics-the-ai-grad-student-a88ccd9c
-- page:2026-03-31-anthropic-research-how-australia-uses-claude-findings-from-the-anth-8bdd4935
 - page:2026-04-02-anthropic-research-emotion-concepts-and-their-function-in-a-large-l-2f22c4fb
 - topic:data-curation
 - topic:efficiency
 - topic:science
-updated_at: '2026-04-09T16:35:04.782529Z'
+updated_at: '2026-04-09T23:10:02.964849Z'
 managed: true
 ---
 # Introducing our Science Blog
@@ -32,8 +31,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Published at: 2026-03-23T00:00:00+00:00
 - Tags: anthropic, official, research, website, blog-post, ai, science, blog
 - Topics: [Anthropic](../topics/anthropic.md), [Official](../topics/official.md), [Science](../topics/science.md), [Website](../topics/website.md), [Data Curation](../topics/data-curation.md), [Efficiency](../topics/efficiency.md)
-- Trend score: 45.86
-- Novelty score: 4.20
+- Trend score: 104.44
+- Novelty score: 3.60
 
 ## Summary
 
@@ -51,11 +50,11 @@ Anthropic is launching a new blog to discuss the upsides and challenges of using
 ## Related Research
 
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Website)
+- [Google Debuted Lyria 3, An App That Turns Text or Images Into 30-Second Songs](google-debuted-lyria-3-an-app-that-turns-text-or-images-into-30--7835fb.md) (shared topics: Official, Website)
 - [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Website)
 - [Emotion concepts and their function in a large language model](emotion-concepts-and-their-function-in-a-large-language-model-9e1ca2.md) (shared topics: Anthropic, Official)
 - [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Website)
 - [How Australia Uses Claude: Findings from the Anthropic Economic Index](how-australia-uses-claude-findings-from-the-anthropic-economic-i-147fc4.md) (shared topics: Anthropic, Official)
-- [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Website)
 
 ## Radar
 

@@ -13,7 +13,7 @@ backlinks:
 - topic:ministral-3
 - topic:model-release
 - topic:multimodal-ai
-updated_at: '2026-04-09T16:35:04.475506Z'
+updated_at: '2026-04-09T23:08:06.103316Z'
 managed: true
 ---
 # Introducing Mistral 3 | Mistral AI
@@ -29,8 +29,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, model release, multimodal ai, open source, large 3, ministral 3
 - Topics: [Efficiency](../topics/efficiency.md), [Large 3](../topics/large-3.md), [Ministral 3](../topics/ministral-3.md), [Mistral](../topics/mistral.md), [Model Release](../topics/model-release.md), [Multimodal Ai](../topics/multimodal-ai.md)
-- Trend score: 4.72
-- Novelty score: 0.00
+- Trend score: 18.75
+- Novelty score: 0.80
 
 ## Summary
 
@@ -48,11 +48,11 @@ Mistral 3 introduces a new family of open multimodal and multilingual AI models,
 ## Related Research
 
 - [Introducing Mistral Small 4 | Mistral AI](introducing-mistral-small-4-mistral-ai-2b9baa.md) (shared topics: Efficiency, Mistral)
+- [Cursor introduces warp decode, where each GPU warp computes one output instead of grouping work by experts](cursor-introduces-warp-decode-where-each-gpu-warp-computes-one-o-46e94c.md) (shared topics: Efficiency)
+- [KV Cache Transform Coding](kv-cache-transform-coding-61a137.md) (shared topics: Efficiency)
 - [Speaking of Voxtral | Mistral AI](speaking-of-voxtral-mistral-ai-88f3b2.md) (shared topics: Mistral)
 - [Introducing our Science Blog](introducing-our-science-blog-828ea5.md) (shared topics: Efficiency)
-- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](leanstral-open-source-foundation-for-trustworthy-vibe-coding-mis-d6f053.md) (shared topics: Mistral)
-- [Voxtral transcribes at the speed of sound. | Mistral AI](voxtral-transcribes-at-the-speed-of-sound-mistral-ai-b8374e.md) (shared topics: Mistral)
-- [Introducing Mistral OCR 3 | Mistral AI](introducing-mistral-ocr-3-mistral-ai-0ff4ac.md) (shared topics: Mistral)
+- [Alibaba’s Latest Flagship Qwen3.5 Models Are Open-Weights MoE Performers In Sizes from Less than 1B Parameters](alibabas-latest-flagship-qwen3-5-models-are-open-weights-moe-per-be882e.md) (shared topics: Efficiency)
 
 ## Radar
 

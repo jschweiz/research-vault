@@ -76,6 +76,7 @@ This keeps operational state local while preserving the vault as the durable kno
 - `wiki/`: compiled or curated knowledge pages generated from `raw/`
 - `briefs/`: dated daily brief artifacts, including markdown, JSON, and audio
 - `outputs/`: persistent query answers, slides, charts, health checks, and viewer bundles
+  `outputs/viewer/` is also the deployable static PWA artifact for GitHub Pages.
 - `system/config/`: durable configuration that belongs with the vault, especially `sources.json`
 
 These directories are rebuildable runtime state and are intentionally ignored from Git:

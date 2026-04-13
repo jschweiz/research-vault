@@ -1,0 +1,226 @@
+{
+  "abstract": "Agentic Variation Operators (AVO) are a new family of evolutionary variation operators that replace the fixed mutation, crossover, and hand-designed heuristics of classical evolutionary search with autonomous coding agents. Rather than confining a language model to candidate generation within a prescribed pipeline, AVO instantiates variation as a self-directed agent loop that can consult the current lineage, a domain-specific knowledge base, and execution feedback to propose, repair, critique, and verify implementation edits. We evaluate AVO on attention, among the most aggressively optimized kernel targets in AI, on NVIDIA Blackwell (B200) GPUs. Over 7 days of continuous autonomous evolution on multi-head attention, AVO discovers kernels that outperform cuDNN by up to 3.5% and FlashAttention-4 by up to 10.5% across the evaluated configurations. The discovered optimizations transfer readily to grouped-query attention, requiring only 30 minutes of additional autonomous adaptation and yielding gains of up to 7.0% over cuDNN and 9.3% over FlashAttention-4. Together, these results show that agentic variation operators move beyond prior LLM-in-the-loop evolutionary pipelines by elevating the agent from candidate generator to variation operator, and can discover performance-critical micro-architectural optimizations that produce kernels surpassing state-of-the-art expert-engineered attention implementations on today's most advanced GPU hardware.",
+  "author_info": [],
+  "authors": [
+    "Terry Chen",
+    "Zhifan Ye",
+    "Bing Xu",
+    "Zihao Ye",
+    "Timmy Liu",
+    "Ali Hassani",
+    "Tianqi Chen",
+    "Andrew Kerr",
+    "Haicheng Wu",
+    "Yang Xu",
+    "Yu-Jung Chen",
+    "Hanfeng Chen",
+    "Aditya Kane",
+    "Ronny Krashinsky",
+    "Ming-Yu Liu",
+    "Vinod Grover",
+    "Luis Ceze",
+    "Roger Bringmann",
+    "John Tran",
+    "Wei Liu",
+    "Fung Xie",
+    "Michael Lightstone",
+    "Humphrey Shi"
+  ],
+  "canonical_id": "2603.24517v1",
+  "first_publication_date": "2026-03-25T16:55:04.000Z",
+  "full_authors": [
+    {
+      "full_name": "Terry Chen",
+      "id": "01985c84-1bbe-7e67-afbf-e6b97ec8c414",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zhifan Ye",
+      "id": "01985c82-7e88-7050-8940-49a0515c2868",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Bing Xu",
+      "id": "01985c81-d97e-7fe1-a24f-c89254e269f5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Zihao Ye",
+      "id": "01985c81-f9c8-7c3a-846d-feed272da66e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Timmy Liu",
+      "id": "019b24f0-a809-7e66-8d7c-df2948364b9b",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ali Hassani",
+      "id": "01985c81-ed0e-7269-808c-a9fd0e8d7fc2",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Tianqi Chen",
+      "id": "01985c81-dc26-7863-9105-110074a5b200",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Andrew Kerr",
+      "id": "019d27c8-5947-7bd8-8fd5-b4c8bcfddc74",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Haicheng Wu",
+      "id": "01985c85-194a-7cd3-bfba-e5befe4573ac",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yang Xu",
+      "id": "01985c81-de90-7d36-979c-545300fe9128",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Yu-Jung Chen",
+      "id": "019a87b1-6def-7087-9797-b72db6be52a5",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Hanfeng Chen",
+      "id": "01985c83-6d10-7b92-aa97-f900343cca34",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Aditya Kane",
+      "id": "01985c82-2ba4-7a92-b5ea-773f77ec2701",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ronny Krashinsky",
+      "id": "01985c82-ac0f-71e0-af10-c9d1e73ec862",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Ming-Yu Liu",
+      "id": "01985c81-f9c8-76d3-8600-b2fbcd84e32e",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Vinod Grover",
+      "id": "01985c83-64e3-71d1-a82e-ce06d65618a7",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Luis Ceze",
+      "id": "01985c82-4656-7f59-8ed0-6cba8dba0d55",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Roger Bringmann",
+      "id": "019bf824-b063-7caf-8163-9a4206c8b623",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "John Tran",
+      "id": "01985c81-ff31-70bf-b81c-737e971a1075",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Wei Liu",
+      "id": "01985c81-e4e6-74c2-bbf7-6a8bac6fb966",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Fung Xie",
+      "id": "019a8774-27bc-72cd-9ae5-ce8cf418c8e6",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Michael Lightstone",
+      "id": "01999b61-7294-74da-8110-08b1830ba5e8",
+      "user_id": null,
+      "username": null
+    },
+    {
+      "full_name": "Humphrey Shi",
+      "id": "01985c81-e287-72dd-8c58-c23de2913a86",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019d27c8-58f8-7fce-9fa4-284e66418945",
+  "image_url": "image/2603.24517v1.png",
+  "metrics": {
+    "public_total_votes": 167,
+    "total_votes": 33,
+    "visits_count": {
+      "all": 2322,
+      "last_7_days": 754
+    },
+    "x_likes": 0
+  },
+  "organization_info": [],
+  "paper_group_id": "019d27c8-58f8-7fce-9fa4-284e66418945",
+  "paper_summary": {
+    "keyInsights": [
+      "Elevating LLMs to autonomous \"Agentic Variation Operators\" enables them to engage in complex, iterative engineering workflows, moving beyond mere candidate generation to genuine code optimization.",
+      "Autonomous agents can perform deep hardware-level reasoning, including understanding synchronization, memory ordering, instruction pipeline scheduling, and register allocation, to achieve performance gains.",
+      "Continuous, self-directed evolution over extended durations can uncover highly optimized solutions that surpass expert-engineered baselines and are transferable to related computational tasks."
+    ],
+    "originalProblem": [
+      "Existing LLM-augmented evolutionary search methods restrict LLMs to single-turn candidate generation, limiting their capacity for complex, iterative optimization workflows.",
+      "Optimizing performance-critical computational targets, such as GPU kernels for deep learning, demands intricate, multi-step engineering, which current LLM approaches do not fully support.",
+      "Achieving further performance gains on already aggressively optimized implementations like FlashAttention-4 and cuDNN requires deep, sustained, and iterative interaction with hardware specifics and development environments."
+    ],
+    "results": [
+      "AVO-discovered multi-head attention (MHA) kernels on NVIDIA Blackwell B200 GPUs achieved up to 3.5% higher throughput than cuDNN and 10.5% higher than FlashAttention-4 for causal attention configurations.",
+      "The evolved MHA kernel was autonomously adapted to grouped-query attention (GQA) in approximately 30 minutes, showing up to 7.0% gains over cuDNN and 9.3% over FlashAttention-4 for causal GQA.",
+      "The agent identified specific micro-architectural optimizations, such as branchless accumulator rescaling, correction/MMA pipeline overlap, and register rebalancing across warp groups, illustrating its capacity for fine-grained hardware tuning."
+    ],
+    "solution": [
+      "Introduce Agentic Variation Operators (AVO), which replace traditional evolutionary variation with an autonomous LLM-powered agent, granting it full agency over the optimization process.",
+      "The AVO agent is equipped with planning capabilities, persistent memory, and tool use (e.g., code editing, shell execution, documentation retrieval) to perform self-directed, multi-step optimization loops.",
+      "The agent continuously evolves solutions, performing internal edit-evaluate-diagnose cycles, and commits improved versions to a lineage, guided by a self-supervision mechanism to maintain progress over extended periods."
+    ],
+    "summary": "Agentic Variation Operators (AVO) empower large language models to function as autonomous, iterative optimizers in evolutionary search for high-performance code. This framework successfully discovered multi-head attention kernels on NVIDIA Blackwell B200 GPUs that achieved up to 3.5% higher throughput than cuDNN and 10.5% higher than FlashAttention-4, alongside effective transferability to grouped-query attention."
+  },
+  "publication_date": "2026-03-25T16:55:04.000Z",
+  "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
+  "topics": [
+    "agentic-frameworks",
+    "agents",
+    "Computer Science",
+    "cs.LG",
+    "efficient-transformers",
+    "evolutionary-algorithms",
+    "hardware-aware-algorithms",
+    "inference-optimization",
+    "optimization-methods",
+    "transformers"
+  ],
+  "universal_paper_id": "2603.24517",
+  "updated_at": "2026-03-26T01:35:34.648Z",
+  "version_id": "019d27c8-5976-7351-9aff-acb9f4e1028e"
+}

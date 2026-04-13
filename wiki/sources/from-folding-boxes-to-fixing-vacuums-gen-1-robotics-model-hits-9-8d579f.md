@@ -7,13 +7,14 @@ aliases:
 source_refs:
 - 2026-04-07-tldr-email-from-folding-boxes-to-fixing-vacuums-gen-1-robot-0d3e0b28
 backlinks:
-- page:2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
+- page:2026-02-02-jack-clark-import-ai-fauna-robotics-launches-a-friendly-programmable--c0269582
+- page:2026-02-02-jack-clark-import-ai-russian-researchers-plot-hand-controlled-drones-fe8f4370
+- page:2026-03-30-jack-clark-import-ai-fear-not-drummers-youre-safe-from-ai-automation--8ee69b4a
 - page:2026-04-06-alphaxiv-paper-flashsac-fast-and-stable-off-policy-reinforcemen-78a7e5ed
-- page:2026-04-09-tldr-email-feedback-flywheel-cc29b7e8
 - topic:gen-1
 - topic:physical-ai
 - topic:robotics
-updated_at: '2026-04-09T16:35:03.830412Z'
+updated_at: '2026-04-09T23:10:03.789648Z'
 managed: true
 ---
 # From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability
@@ -27,9 +28,9 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Document kind: news
 - Published at: 2026-04-07T10:59:25+00:00
 - Authors: TLDR <dan@tldrnewsletter.com>, TLDR
-- Tags: newsletter, tldr, email, ai, news, robotics, gen-1, reliability, machine learning, physical ai
+- Tags: newsletter, tldr, email, ai, news, robotics, gen-1, reliability, machine learning, physical ai, sub-document
 - Topics: [Robotics](../topics/robotics.md), [Email](../topics/email.md), [Gen 1](../topics/gen-1.md), [Machine Learning](../topics/machine-learning.md), [Newsletter](../topics/newsletter.md), [Physical Ai](../topics/physical-ai.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary
@@ -51,8 +52,8 @@ The GEN-1 robotics model has achieved 99% reliability in physical tasks, demonst
 - [Build Self-Learning Agents Without Any Fine-Tuning](build-self-learning-agents-without-any-fine-tuning-7c2f7d.md) (shared topics: Email, Machine Learning, Newsletter)
 - [Automatic Speech Recognition (ASR) From Scratch (With Intuition)](automatic-speech-recognition-asr-from-scratch-with-intuition-b589b8.md) (shared topics: Email, Machine Learning, Newsletter)
 - [What Is an LLM? A No-Jargon Introduction](what-is-an-llm-a-no-jargon-introduction-9f47cf.md) (shared topics: Email, Machine Learning, Newsletter)
+- [Principal Component Analysis](principal-component-analysis-5c2348.md) (shared topics: Email, Machine Learning, Newsletter)
 - [Backpropagation is simpler than you think (once you see this)](backpropagation-is-simpler-than-you-think-once-you-see-this-d812a5.md) (shared topics: Email, Machine Learning, Newsletter)
-- [Sanctuary AI's robotic hand demonstrates zero-shot in-hand manipulation](sanctuary-ai-s-robotic-hand-demonstrates-zero-shot-in-hand-manip-07940d.md) (shared topics: Email, Newsletter, Robotics)
 
 ## Radar
 

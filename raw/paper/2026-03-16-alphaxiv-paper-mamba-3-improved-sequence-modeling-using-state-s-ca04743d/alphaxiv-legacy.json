@@ -1,0 +1,140 @@
+{
+  "comments": [],
+  "paper": {
+    "authors": [
+      {
+        "full_name": "Aakash Lahoti",
+        "id": "01985c81-f152-7570-8512-d58695491263",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Kevin Y. Li",
+        "id": "01985c82-6f05-7fb3-b725-867ee2a15261",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Berlin Chen",
+        "id": "01985c82-9ee6-72c0-81a8-54d7a412630a",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Caitlin Wang",
+        "id": "019a6c64-e4e5-7132-b2f9-ef3d1254a0e7",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Aviv Bick",
+        "id": "01985c82-6f05-7763-8fbc-8d91f058a525",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "J. Zico Kolter",
+        "id": "01985c81-db50-7b3d-8934-f658212a4b6b",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Tri Dao",
+        "id": "01985c81-d857-741c-9e1f-38fae73add32",
+        "user_id": null,
+        "username": null
+      },
+      {
+        "full_name": "Albert Gu",
+        "id": "01985c81-db51-79f2-8a96-34012f0373c7",
+        "user_id": null,
+        "username": null
+      }
+    ],
+    "implementation": null,
+    "marimo_implementation": null,
+    "max_version_order": 1,
+    "organization_info": [
+      {
+        "id": "01985c36-cf10-73d4-adbd-97f3d22723a4",
+        "image": "images/organizations/cmu.jpg",
+        "name": "Carnegie Mellon University"
+      },
+      {
+        "id": "01985c36-cf11-7f29-9c64-5d87aaee4b54",
+        "image": "images/organizations/princeton.jpg",
+        "name": "Princeton University"
+      },
+      {
+        "id": "01985c36-d652-7f84-adb1-fde9c35209ad",
+        "image": null,
+        "name": "Together AI"
+      },
+      {
+        "id": "01985c37-05a3-7d3d-baf0-871d185a4622",
+        "image": null,
+        "name": "Cartesia AI"
+      }
+    ],
+    "paper_group": {
+      "citation": {
+        "bibtex": "@misc{lahotiMon Mar 16 2026 17:30:08 GMT+0000 (Coordinated Universal Time)mamba3improvedsequence,\n      title={Mamba-3: Improved Sequence Modeling using State Space Principles},\n      author={Aakash Lahoti and Kevin Y. Li and Berlin Chen and Caitlin Wang and Aviv Bick and J. Zico Kolter and Tri Dao and Albert Gu},\n      year={Mon Mar 16 2026 17:30:08 GMT+0000 (Coordinated Universal Time)},\n      eprint={2603.15569},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2603.15569},\n}"
+      },
+      "created_at": "Tue Mar 17 2026 03:59:16 GMT+0000 (Coordinated Universal Time)",
+      "first_publication_date": "Mon Mar 16 2026 17:30:08 GMT+0000 (Coordinated Universal Time)",
+      "id": "019cf9f2-aa5c-71ce-994a-d0e61e0e6ced",
+      "is_hidden": false,
+      "metrics": {
+        "downvotes_count": 0,
+        "public_total_votes": 179,
+        "questions_count": 0,
+        "total_votes": 60,
+        "upvotes_count": 179,
+        "visits_count": {
+          "all": 2323,
+          "last24Hours": 15,
+          "last30Days": 2323,
+          "last7Days": 190,
+          "last90Days": 2323
+        }
+      },
+      "podcast_path": "019cf9f2-aa5c-71ce-994a-d0e61e0e6ced/podcast.mp3",
+      "resources": {},
+      "source": {
+        "name": "alphaXiv",
+        "url": "https://arxiv.org/abs/2603.15569"
+      },
+      "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+      "topics": [
+        "Computer Science",
+        "cs.LG",
+        "hardware-aware-algorithms",
+        "inference-optimization",
+        "lightweight-models",
+        "sequence-modeling",
+        "transformers"
+      ],
+      "universal_paper_id": "2603.15569",
+      "updated_at": "Tue Mar 17 2026 03:59:16 GMT+0000 (Coordinated Universal Time)",
+      "variant": "public"
+    },
+    "paper_version": {
+      "abstract": "Scaling inference-time compute has emerged as an important driver of LLM performance, making inference efficiency a central focus of model design alongside model quality. While the current Transformer-based models deliver strong model quality, their quadratic compute and linear memory make inference expensive. This has spurred the development of sub-quadratic models with reduced linear compute and constant memory requirements. However, many recent linear models trade off model quality and capability for algorithmic efficiency, failing on tasks such as state tracking. Moreover, their theoretically linear inference remains hardware-inefficient in practice. Guided by an inference-first perspective, we introduce three core methodological improvements inspired by the state space model (SSM) viewpoint of linear models. We combine: (1) a more expressive recurrence derived from SSM discretization, (2) a complex-valued state update rule that enables richer state tracking, and (3) a multi-input, multi-output (MIMO) formulation for better model performance without increasing decode latency. Together with architectural refinements, our Mamba-3 model achieves significant gains across retrieval, state-tracking, and downstream language modeling tasks. At the 1.5B scale, Mamba-3 improves average downstream accuracy by 0.6 percentage points compared to the next best model (Gated DeltaNet), with Mamba-3's MIMO variant further improving accuracy by another 1.2 points for a total 1.8 point gain. Across state-size experiments, Mamba-3 achieves comparable perplexity to Mamba-2 despite using half of its predecessor's state size. Our evaluations demonstrate Mamba-3's ability to advance the performance-efficiency Pareto frontier.",
+      "created_at": "Tue Mar 17 2026 03:59:16 GMT+0000 (Coordinated Universal Time)",
+      "id": "019cf9f2-aa94-7f1d-b3ad-5cc013b83abf",
+      "imageURL": "image/2603.15569v1.png",
+      "is_hidden": false,
+      "license": "http://creativecommons.org/licenses/by/4.0/",
+      "publication_date": "Mon Mar 16 2026 17:30:08 GMT+0000 (Coordinated Universal Time)",
+      "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+      "universal_paper_id": "2603.15569",
+      "updated_at": "Tue Mar 17 2026 03:59:16 GMT+0000 (Coordinated Universal Time)",
+      "version_label": "v1",
+      "version_order": 1
+    },
+    "pdf_info": {
+      "fetcher_url": "https://fetcher.alphaxiv.org/v2/pdf/2603.15569v1.pdf"
+    },
+    "verified_authors": []
+  }
+}

@@ -10,7 +10,7 @@ backlinks:
 - topic:3d-modeling
 - topic:3d-reconstruction
 - topic:image-processing
-updated_at: '2026-04-09T16:35:03.988653Z'
+updated_at: '2026-04-09T23:08:05.092031Z'
 managed: true
 ---
 # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
@@ -20,13 +20,13 @@ System-generated source note. Build higher-order synthesis pages around it inste
 ## Metadata
 
 - Source: Medium Email
-- Canonical URL: https://medium.com/@florentpoux/how-to-create-3d-models-from-any-image-with-ai-zero-shot-3d-reconstruction-21d3023ad81b
+- Canonical URL: https://freedium-mirror.cfd/https://medium.com/@florentpoux/how-to-create-3d-models-from-any-image-with-ai-zero-shot-3d-reconstruction-21d3023ad81b
 - Document kind: blog-post
 - Published at: 2026-04-06T06:40:00+00:00
 - Authors: Medium Daily Digest <noreply@medium.com>, Florent Poux
-- Tags: newsletter, medium, email, blog-post, 3d modeling, ai, 3d reconstruction, image processing
+- Tags: newsletter, medium, email, blog-post, 3d modeling, ai, 3d reconstruction, image processing, sub-document
 - Topics: [3D Modeling](../topics/3d-modeling.md), [3D Reconstruction](../topics/3d-reconstruction.md), [Email](../topics/email.md), [Image Processing](../topics/image-processing.md), [Medium](../topics/medium.md), [Newsletter](../topics/newsletter.md)
-- Trend score: 500.30
+- Trend score: 721.95
 - Novelty score: 6.80
 
 ## Summary

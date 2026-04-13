@@ -7,6 +7,7 @@ aliases:
 source_refs:
 - 2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
 backlinks:
+- page:2026-03-20-the-batch-research-apples-atoken-a-multimodal-model-with-a-single-e-2ba5af34
 - page:2026-04-01-alphaxiv-paper-embarrassingly-simple-self-distillation-improves-93a70f44
 - page:2026-04-05-alphaxiv-paper-aura-always-on-understanding-and-real-time-assis-1479c6fc
 - page:2026-04-06-alphaxiv-paper-boxer-robust-lifting-of-open-world-2d-bounding-b-c5cf6b5c
@@ -22,7 +23,7 @@ backlinks:
 - topic:geometric-deep-learning
 - topic:image-generation
 - topic:multi-modal-learning
-updated_at: '2026-04-09T16:35:03.832889Z'
+updated_at: '2026-04-09T21:02:10.649586Z'
 managed: true
 ---
 # GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos

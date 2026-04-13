@@ -18,7 +18,7 @@ backlinks:
 - topic:artificial-intelligence
 - topic:distributed-learning
 - topic:language-modeling
-updated_at: '2026-04-09T16:35:04.490725Z'
+updated_at: '2026-04-09T23:08:05.135596Z'
 managed: true
 ---
 # Combee: Scaling Prompt Learning for Self-Improving Language Model Agents
@@ -34,7 +34,7 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Hanchen Li, Runyuan He, Qizheng Zhang, Changxiu Ji, Qiuyang Mang, Xiaokun Chen, Lakshya A Agrawal, Wei-Liang Liao, Eric Yang, Alvin Cheung, James Zou, Kunle Olukotun, Ion Stoica, Joseph E. Gonzalez
 - Tags: paper, alphaxiv, research, agentic-frameworks, agents, computer science, cs.ai, cs.cl, cs.lg, distributed-learning
 - Topics: [Agents](../topics/agents.md), [Agentic Frameworks](../topics/agentic-frameworks.md), [Artificial Intelligence](../topics/artificial-intelligence.md), [Computer Science](../topics/computer-science.md), [Distributed Learning](../topics/distributed-learning.md), [Language Modeling](../topics/language-modeling.md)
-- Trend score: 155.17
+- Trend score: 223.43
 - Novelty score: 6.80
 
 ## Summary

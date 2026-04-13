@@ -15,11 +15,10 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c
 - topic:generative-models
 - topic:geometric-deep-learning
-- topic:image-generation
 - topic:object-detection
 - topic:robotics-perception
 - topic:transfer-learning
-updated_at: '2026-04-09T16:35:03.802604Z'
+updated_at: '2026-04-09T21:02:13.100257Z'
 managed: true
 ---
 # Multi Modal Learning

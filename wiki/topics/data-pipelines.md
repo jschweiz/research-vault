@@ -11,7 +11,7 @@ backlinks:
 - page:2026-04-07-tldr-email-how-meta-used-ai-to-map-tribal-knowledge-in-larg-b8370834
 - topic:meta
 - topic:software-engineering
-updated_at: '2026-04-09T12:15:42.450156Z'
+updated_at: '2026-04-09T23:09:03.217171Z'
 managed: true
 ---
 # Data Pipelines
@@ -38,7 +38,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Meta](meta.md)
 - [Newsletter](newsletter.md)
 - [Software Engineering](software-engineering.md)
-- [Tldr](tldr.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

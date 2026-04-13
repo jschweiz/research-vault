@@ -13,9 +13,8 @@ backlinks:
 - page:2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b
 - topic:agentic-frameworks
 - topic:cs-gr
-- topic:evaluations
 - topic:inference-optimization
-updated_at: '2026-04-09T16:35:04.173602Z'
+updated_at: '2026-04-09T21:02:12.250463Z'
 managed: true
 ---
 # Continual Learning

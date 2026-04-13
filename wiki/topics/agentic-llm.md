@@ -10,9 +10,8 @@ source_refs:
 backlinks:
 - page:2025-05-21-mistral-research-devstral-mistral-ai-f4d5cce5
 - topic:github-issues
-- topic:llm
 - topic:software-engineering
-updated_at: '2026-04-09T16:35:04.350892Z'
+updated_at: '2026-04-09T23:10:03.386660Z'
 managed: true
 ---
 # Agentic Llm

@@ -14,7 +14,6 @@ backlinks:
 - page:2025-05-28-mistral-research-codestral-embed-mistral-ai-9aa5a5a7
 - page:2025-07-15-mistral-research-voxtral-mistral-ai-d4863455
 - page:2025-07-30-mistral-research-announcing-codestral-25-08-and-the-complete-mist-98053d11
-- page:2025-12-02-mistral-research-introducing-mistral-3-mistral-ai-3772caab
 - page:2025-12-09-mistral-research-introducing-devstral-2-and-mistral-vibe-cli-mist-3175b131
 - page:2026-02-04-mistral-research-voxtral-transcribes-at-the-speed-of-sound-mistra-4bb4537b
 - page:2026-03-16-mistral-research-leanstral-open-source-foundation-for-trustworthy-1714cec3
@@ -22,7 +21,7 @@ backlinks:
 - topic:document-processing
 - topic:mistral
 - topic:ocr
-updated_at: '2026-04-09T16:35:04.170021Z'
+updated_at: '2026-04-09T23:08:06.089830Z'
 managed: true
 ---
 # Introducing Mistral OCR 3 | Mistral AI
@@ -38,8 +37,8 @@ System-generated source note. Build higher-order synthesis pages around it inste
 - Authors: Mistral AI
 - Tags: mistral, official, research, website, blog-post, ocr, document_ai, ai, document_processing
 - Topics: [Document Ai](../topics/document-ai.md), [Document Processing](../topics/document-processing.md), [Mistral](../topics/mistral.md), [Ocr](../topics/ocr.md), [Official](../topics/official.md), [Website](../topics/website.md)
-- Trend score: 45.05
-- Novelty score: 0.17
+- Trend score: 68.20
+- Novelty score: 0.27
 
 ## Summary
 
@@ -58,10 +57,10 @@ Mistral OCR 3 offers state-of-the-art accuracy for document processing, signific
 
 - [Mistral OCR | Mistral AI](mistral-ocr-mistral-ai-eb1d8c.md) (shared topics: Mistral, Ocr, Official)
 - [Announcing the OpenAI Safety Fellowship](announcing-the-openai-safety-fellowship-8b56c7.md) (shared topics: Official, Website)
+- [Google Debuted Lyria 3, An App That Turns Text or Images Into 30-Second Songs](google-debuted-lyria-3-an-app-that-turns-text-or-images-into-30--7835fb.md) (shared topics: Official, Website)
 - [OpenAI acquires TBPN](openai-acquires-tbpn-ceb257.md) (shared topics: Official, Website)
 - [Accelerating the next phase of AI](accelerating-the-next-phase-of-ai-3bf73f.md) (shared topics: Official, Website)
 - [Helping disaster response teams turn AI into action across Asia](helping-disaster-response-teams-turn-ai-into-action-across-asia-759c27.md) (shared topics: Official, Website)
-- [Inside our approach to the Model Spec](inside-our-approach-to-the-model-spec-aad9dd.md) (shared topics: Official, Website)
 
 ## Radar
 

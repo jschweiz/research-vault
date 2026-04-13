@@ -1,0 +1,80 @@
+{
+  "abstract": "Standard policy gradients weight each sampled action by advantage alone, regardless of how likely that action was under the current policy. This creates two pathologies: within a single decision context (e.g. one image or prompt), a rare negative-advantage action can disproportionately distort the update direction; across many such contexts in a batch, the expected gradient over-allocates budget to contexts the policy already handles well. We introduce the \\textit{Delightful Policy Gradient} (DG), which gates each term with a sigmoid of \\emph{delight}, the product of advantage and action surprisal (negative log-probability). For $K$-armed bandits, DG provably improves directional accuracy in a single context and, across multiple contexts, shifts the expected gradient strictly closer to the supervised cross-entropy oracle. This second effect is not variance reduction: it persists even with infinite samples. Empirically, DG outperforms REINFORCE, PPO, and advantage-weighted baselines across MNIST, transformer sequence modeling, and continuous control, with larger gains on harder tasks.",
+  "author_info": [],
+  "authors": [
+    "Ian Osband"
+  ],
+  "canonical_id": "2603.14608v1",
+  "first_publication_date": "2026-03-15T21:06:37.000Z",
+  "full_authors": [
+    {
+      "full_name": "Ian Osband",
+      "id": "01985c81-e911-7e32-b39c-4dc44ed33841",
+      "user_id": null,
+      "username": null
+    }
+  ],
+  "github_stars": null,
+  "github_url": null,
+  "id": "019cfa00-5161-7487-80e3-5f28851a76a1",
+  "image_url": "image/2603.14608v1.png",
+  "metrics": {
+    "public_total_votes": 70,
+    "total_votes": 9,
+    "visits_count": {
+      "all": 741,
+      "last_7_days": 59
+    },
+    "x_likes": 0
+  },
+  "organization_info": [
+    {
+      "image": "images/organizations/deepmind.png",
+      "name": "Google DeepMind"
+    }
+  ],
+  "paper_group_id": "019cfa00-5161-7487-80e3-5f28851a76a1",
+  "paper_summary": {
+    "keyInsights": [
+      "Delightful Policy Gradient operates through two distinct mechanisms: it reduces directional variance from noisy, low-probability, negative-advantage actions.",
+      "It introduces a beneficial bias that rotates the expected gradient direction closer to a supervised cross-entropy oracle, a property that persists even with infinite samples.",
+      "DG rebalances the expected gradient allocation across multiple contexts, shifting learning budget towards harder, less well-solved scenarios and away from already well-performing ones."
+    ],
+    "originalProblem": [
+      "Standard policy gradient methods are prone to \"pathologies\" that hinder optimal learning, particularly in deep learning settings where gradient direction is crucial.",
+      "Rare actions with negative advantage can disproportionately distort the policy update direction, even if these actions are unlikely to occur under the current policy.",
+      "The gradient budget is suboptimally allocated across diverse decision contexts, often favoring \"easy\" contexts where the policy already performs well, potentially stalling progress on more challenging scenarios."
+    ],
+    "results": [
+      "Theoretically, DG reduces perpendicular variance in single-context settings and shifts the expected gradient closer to the cross-entropy oracle in multi-context scenarios.",
+      "Empirically, DG achieves faster learning and lower classification error in MNIST contextual bandit tasks, closing approximately half the gap to the supervised cross-entropy oracle.",
+      "In Transformer sequence modeling and continuous control environments (DeepMind Control Suite), DG consistently outperforms or matches strong baselines, demonstrating more robust performance on complex tasks and avoiding catastrophic failures."
+    ],
+    "solution": [
+      "The Delightful Policy Gradient (DG) method modifies the standard policy gradient update rule by introducing a \"delight\"-based gating mechanism.",
+      "This gate multiplies each standard policy gradient term, where \"delight\" is defined as the product of action advantage and action surprisal (negative log-probability of the action).",
+      "The gating mechanism adaptively amplifies gradient contributions from rare, positive-advantage actions while significantly attenuating those from rare, negative-advantage actions."
+    ],
+    "summary": "Google DeepMind's Delightful Policy Gradient (DG) reframes policy learning by re-weighting gradient terms based on both action advantage and surprisal, differentiating between rare successful actions and rare detrimental ones. This approach improves learning dynamics, leading to more efficient convergence and better performance across various reinforcement learning tasks, especially in complex settings."
+  },
+  "publication_date": "2026-03-15T21:06:37.000Z",
+  "title": "Delightful Policy Gradient",
+  "topics": [
+    "Computer Science",
+    "cs.AI",
+    "cs.LG",
+    "deep-reinforcement-learning",
+    "Mathematics",
+    "math.OC",
+    "optimization-methods",
+    "reinforcement-learning",
+    "robotic-control",
+    "sequence-modeling",
+    "Statistics",
+    "stat.ML",
+    "transformers"
+  ],
+  "universal_paper_id": "2603.14608",
+  "updated_at": "2026-03-17T04:14:10.785Z",
+  "version_id": "019cfa00-5171-78c2-a0e8-58fbdbb9ced8"
+}

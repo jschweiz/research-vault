@@ -10,8 +10,7 @@ source_refs:
 backlinks:
 - page:2026-04-03-tldr-email-sanctuary-ai-s-robotic-hand-demonstrates-zero-sh-dc9e49b5
 - topic:hand
-- topic:technology
-updated_at: '2026-04-09T16:35:04.156357Z'
+updated_at: '2026-04-09T23:10:03.919764Z'
 managed: true
 ---
 # Manipulation
@@ -38,7 +37,7 @@ System-generated topic page that anchors Codex and the wiki around a stable rese
 - [Hand](hand.md)
 - [Newsletter](newsletter.md)
 - [Robotics](robotics.md)
-- [Technology](technology.md)
+- [Sub Document](sub-document.md)
 
 ## Leading Sources
 

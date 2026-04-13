@@ -8,7 +8,7 @@ authors:
 - Anthropic
 published_at: '2025-02-03T00:00:00Z'
 ingested_at: '2026-04-09T12:03:53.705830Z'
-content_hash: 18ab9a810eaec38295130c17f4393c0a78fc733f31db57e673fa9f0f44676d3a
+content_hash: 8e93fe54667b40d58580858c571cf57bc7720535a4c176f68dd22e469e4672d0
 identity_hash: deceaabd35fa34125f6b8aaeda889d9b0632a4b23742d3c2c8c807ac323c7731
 tags:
 - anthropic
@@ -31,28 +31,16 @@ canonical_url: https://www.anthropic.com/research/constitutional-classifiers
 doc_role: primary
 parent_id: null
 index_visibility: visible
-fetched_at: '2026-04-09T12:03:53.705839Z'
+fetched_at: '2026-04-13T18:10:41.588266Z'
 short_summary: The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data, significantly improving robustness against harmful prompts with minimal compute overhead.
-lightweight_enrichment_status: succeeded
-lightweight_enriched_at: '2026-04-09T12:20:00.510599Z'
-lightweight_enrichment_model: gemma4:e2b
-lightweight_enrichment_input_hash: 309179d6628bc6501bac639d1c3cd2b404a5c8d3872c5e122cc769e202fde97f
+lightweight_enrichment_status: pending
+lightweight_enriched_at: null
+lightweight_enrichment_model: null
+lightweight_enrichment_input_hash: null
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 7797e1e09ae5035b4e7482596823fce99af6640c747016a18f22369d22ce8c3f
-lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 1.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is a high-priority research post from Anthropic directly addressing LLM defense, safety, and jailbreaks, aligning perfectly with the user's favorite topics and authors.
-  evidence_quotes:
-  - The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data, significan
-  - Overall, our automated analyses found that this updated version of the Constitutional Classifiers system dramatically improved the robustness of the AI model ag
-  - 'Guarding Claude using Constitutional Classifiers, however, produced a strong improvement: the jailbreak success rate was reduced to 4.4%, meaning that over 95% '
+lightweight_scoring_model: null
+lightweight_scoring_input_hash: null
+lightweight_score: null
 ---
 Constitutional Classifiers: Defending against universal jailbreaks
 A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead. An updated version achieved similar robustness on synthetic evaluations, and did so with a 0.38% increase in refusal rates and moderate additional compute costs.
@@ -79,10 +67,10 @@ Limitations
 Constitutional Classifiers may not prevent every universal jailbreak, though we believe that even the small proportion of jailbreaks that make it past our classifiers require far more effort to discover when the safeguards are in use. It’s also possible that new jailbreaking techniques might be developed in the future that are effective against the system; we therefore recommend using [complementary](https://arxiv.org/abs/2411.07494) [defenses](https://arxiv.org/abs/2411.17693). Nevertheless, the constitution used to train the classifiers can rapidly be adapted to cover novel attacks as they’re discovered.
 The [full paper](https://arxiv.org/abs/2501.18837) contains all the details about the Constitutional Classifiers method, and about the classifiers themselves.
 Constitutional Classifiers live demo
-Want to try red teaming Claude yourself? We invite you to try out a [demo of our Constitutional-Classifiers-guarded system](https://claude.ai/redirect/website.v1.93c40709-533b-444e-aacf-c48d96624ea1/constitutional-classifiers) and attempt to jailbreak a version of Claude 3.5 Sonnet that is guarded using our new technique. [Edit 10 February 2025: The demo is now complete. See below for details].
+Want to try red teaming Claude yourself? We invite you to try out a [demo of our Constitutional-Classifiers-guarded system](https://claude.ai/redirect/website.v1.d48794c5-0abb-401a-b715-992fa87c0142/constitutional-classifiers) and attempt to jailbreak a version of Claude 3.5 Sonnet that is guarded using our new technique. [Edit 10 February 2025: The demo is now complete. See below for details].
 Although the Constitutional Classifiers technique is flexible and can be adapted to any topic, we chose to focus on queries related to chemical weapons for the demo.
 Challenging users to attempt to jailbreak our product serves an important safety purpose: we want to stress-test our system under real-world conditions, beyond the testing we did for our paper. This allows us to gather additional data and improve the robustness of the method prior to deploying this method on our production systems in the future.
-The [demo](https://claude.ai/redirect/website.v1.93c40709-533b-444e-aacf-c48d96624ea1/constitutional-classifiers) will be live from Feb 3, 2025 to Feb 10, 2025. It includes a feedback form where you can contact us to report any successful jailbreaks as well as information on our [Responsible Disclosure Policy](https://www.anthropic.com/responsible-disclosure-policy), which we ask that participants follow. We’ll announce any successes and the general results of the demo in an update to this post.
+The [demo](https://claude.ai/redirect/website.v1.d48794c5-0abb-401a-b715-992fa87c0142/constitutional-classifiers) will be live from Feb 3, 2025 to Feb 10, 2025. It includes a feedback form where you can contact us to report any successful jailbreaks as well as information on our [Responsible Disclosure Policy](https://www.anthropic.com/responsible-disclosure-policy), which we ask that participants follow. We’ll announce any successes and the general results of the demo in an update to this post.
 13 February 2025 update: Live demo results
 The goal of our demo was to test our system’s robustness to universal jailbreaks—prompting strategies that could elicit detailed, harmful information from the system across all eight questions that we provided. By the end of the demo, one jailbreaker was able to get detailed answers from the system for all eight questions using a universal jailbreak.
 Our demo generated significant engagement from the AI security community, with 339 jailbreakers3 attempting to jailbreak our system across more than 300,000 chat interactions, representing approximately 3,700 collective hours of red-teaming effort.
@@ -129,9 +117,9 @@ Footnotes
 2We considered a participant to be “active” if they made at least 15 queries to the system and were blocked by our classifiers at least 3 times.
 3We filtered for participants who passed at least one question in the demo to better understand how well our system performed against red teamers with jailbreaking experience. When considering all users, our demo was tried by 13,960 users who made more than 800,000 chats and spent an estimated 10K+ hours testing the system.
 Related content
+Trustworthy agents in practice
+AI “agents” represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.
+[Read more](/research/trustworthy-agents)
 Emotion concepts and their function in a large language model
 All modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.
 [Read more](/research/emotion-concepts-function)
-Anthropic Economic Index report: Learning curves
-Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.
-[Read more](/research/economic-index-march-2026-report)
