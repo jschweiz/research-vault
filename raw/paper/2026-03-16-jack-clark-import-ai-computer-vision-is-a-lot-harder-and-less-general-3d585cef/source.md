@@ -21,7 +21,6 @@ tags:
 - generative text
 - llms
 - philosophy
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,26 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:05.488467Z'
-short_summary: This document discusses the difficulty of computer vision compared to generative text models, using the CHMv2 dataset as an example. It also explores philosophical themes regarding individuality, communication, and the nature of human existence.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This document discusses the difficulty of computer vision compared to generative text models, highlighting the complexity in computer vision development. It also includes philosophical reflections on individuality, communication, and the nature of human existence.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.675457Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4d8d4bce30b46bd72e7a91ba3e5179e275baa196298cd79ad83bc7539b5e5e3a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 19ba27edd9ece34c3519768a886d2dad179b4e315122ed69250c055390db823c
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses computer vision difficulty and philosophical reflections, which has weak technical fit for frontier LLM research topics.
+  evidence_quotes:
+  - This document discusses the difficulty of computer vision compared to generative text models, highlighting the complexity in computer vision development.
+  - Though today’s frontier models can generate and classify images, they give probably a false sense of security with regard to how mature computer vision is.
 ---
 # Computer vision is a lot harder and less general than generative text
 

@@ -38,19 +38,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5e64308b977be642da59127d4e80ab8a88dc03dfe4803ce0ab6af222f5e2ae97
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3d326e0bd88bc109baee3098eb841110b0bbbbc652a425b4509b0d9e48258c60
+lightweight_scoring_input_hash: 426d6008eef785e29de72c6a77d4a0a9cb01819bd815df11361750f9c5fb6ff2
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.55
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI tools in a business context, which aligns with favorite topics, but lacks deep technical focus or preferred author alignment.
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a business startup and does not contain technical or research-focused content relevant to frontier LLM research.
   evidence_quotes:
   - Matthew Gallagher and his brother used AI tools to build a telehealth company, Medvi, which is projected to reach $1.8 billion in sales this year.
-  - 'His founder, Matthew Gallagher, used AI tools to write the code that powers the company, produce website copy, generate media for ads, handle customer service, '
+  - 'Its founder, Matthew Gallagher, used AI tools to write the code that powers the company, produce website copy, generate media for ads, handle customer service, '
   - The startup is on track to do $1.8 billion in sales this year.
 ---
 # How AI Helped One Man (and His Brother) Build a $1.8 Billion Company

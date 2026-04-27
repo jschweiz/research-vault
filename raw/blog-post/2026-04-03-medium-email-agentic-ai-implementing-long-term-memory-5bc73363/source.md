@@ -36,18 +36,17 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e27f1e061a11c2ca4d464c09f533f8a2998553182f849fef6c6c05901b085b6b
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2998e84d111ee0ec29eaec793513c17d9e24877579bf9eb6c1d05116414bf92f
+lightweight_scoring_input_hash: 5141b3eefb32ce94faea7814fbced2a32b9b901cee62683f5cd075cb95ef48e5
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 0.65
   source_fit_score: 0.3
-  topic_fit_score: 1.0
+  topic_fit_score: 0.85
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topics of LLM architecture and memory implementation, making it a high-priority read.
+  evidence_fit_score: 0.5
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document directly addresses 'memory' and 'agentic AI,' which aligns well with the user's favorite topics, though the source type is generic.
   evidence_quotes:
-  - 'Agentic AI: Implementing Long-Term Memory'
   - This article discusses implementing long-term memory within Agentic AI systems.
   - It provides context on building complex AI systems.
 ---

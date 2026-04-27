@@ -31,9 +31,21 @@ lightweight_enriched_at: '2026-04-09T14:34:22.978626Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: b012be04af8e021becd83ceef4ec086dd8d84f1c9b347bdb1bf3339f3bd3458b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 52afb0e0db9c35d691f910827ff41f856bf9a71d0ef9622b9043e0cbda2ce177
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document contains several highly relevant topics related to LLM evaluation, reasoning, memory, and RAG architectures, making it a strong fit for a frontier LLM researcher.
+  evidence_quotes:
+  - Designing a Production-Grade RAG Architecture
+  - Agentic AI Evaluation Strategy & Metrics
+  - Fixing 14 Complex RAG Failures with Knowledge Graphs
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 

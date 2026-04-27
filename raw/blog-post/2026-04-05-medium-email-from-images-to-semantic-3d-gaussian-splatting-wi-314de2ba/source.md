@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0d4121112996e868fc95ebb1f183dae4bac842114605a7ed5ccf549fa1d04aa9
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a54e62c487570310ee6896cb6c904d6c45717874d26c6ca56b803101a6d58ed6
+lightweight_scoring_input_hash: 2dce7b360896f4a1c8c2506751c10e3feaf27fe11e3832b3dc9f8ed110679af8
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.45
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.55
-  confidence_score: 0.85
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on AI/ML techniques (3D Gaussian Splatting) which aligns with the user's interest in LLM architecture and research tooling, despite the lack of specific author or source fit.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is highly technical but focuses on 3D Gaussian Splatting, which is not directly aligned with the user's core interests in LLM training, evaluation, reasoning, or memory.
   evidence_quotes:
   - This guide provides a complete walkthrough for building an interactive 3D semantic scanner using Python, focusing on 3D Gaussian Splatting techniques.
   - Build an interactive 3D semantic scanner using Python…

@@ -31,25 +31,25 @@
     "https://paper-podcasts.alphaxiv.org/019d7014-6d53-738d-8883-ffdc0c9a52de/transcript.json"
   ],
   "score": {
-    "relevance_score": 1.0,
+    "relevance_score": 0.998,
     "novelty_score": 1.0,
-    "source_quality_score": 0.5894,
+    "source_quality_score": 0.5725,
     "author_match_score": 0.0,
-    "topic_match_score": 1.0,
+    "topic_match_score": 0.9,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.6884,
-    "bucket": "worth_a_skim",
+    "total_score": 0.72,
+    "bucket": "must_read",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
       "favorite_source_match": false,
       "topic_matches": 0,
       "author_matches": 0,
       "ignored_penalty": 0,
-      "trend_score": 96.95,
+      "trend_score": 98.75,
       "novelty_signal": 6.8,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.0,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.42,
       "judge_reason": "The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user's favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.",
       "judge_bucket_hint": "must_read",
       "judge_confidence_score": 1.0,
@@ -62,7 +62,8 @@
         "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.",
         "The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale",
         "We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec"
-      ]
+      ],
+      "judge_bucket_floor_applied": "must_read"
     }
   },
   "insight": {

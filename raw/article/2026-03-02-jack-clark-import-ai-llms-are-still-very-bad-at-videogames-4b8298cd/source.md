@@ -26,7 +26,6 @@ tags:
 - videogames
 - benchmark
 - evaluation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -37,15 +36,27 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:42.191024Z'
-short_summary: Researchers developed AI GAMESTORE, a benchmark testing how well AI models perform compared to humans at playing simple games. The results show that state-of-the-art LLMs significantly underperform human baselines in these tasks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers built AI GAMESTORE, a benchmark testing how well AI models perform compared to humans at playing simple games, finding that state-of-the-art LLMs significantly underperform human baselines.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.864805Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 40643137767f8f8e91fcce49edfaacd200598020ae8bf7e43121628f225cd5c8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 600801a2d22c9c43db4f9813af515526b2e75ba8738cf131e34c5d7c5c4413a1
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document details a novel benchmark (AI GAMESTORE) and evaluation methods for LLMs, directly addressing the user's interest in evaluation, reasoning, and LLM performance.
+  evidence_quotes:
+  - GAMESTORE highlights a dumb side of modern AI, as well as suggesting a new way to build benchmarks…
+  - state-of-the-art models achieving less than 30% of the human baseline on average, while taking 15-20x more time to compute than humans
+  - State-of-the-art models like GPT-5.2, GEMINI-2.5-PRO, and CLAUDE-OPUS-4.5, all achieve geometric mean scores of less than 10% of the human baseline
 ---
 # LLMs are still very bad at videogames
 

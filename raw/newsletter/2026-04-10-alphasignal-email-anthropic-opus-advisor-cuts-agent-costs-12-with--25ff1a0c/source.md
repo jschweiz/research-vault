@@ -6,6 +6,7 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d780beb0977c87
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-10T15:38:59Z'
 ingested_at: '2026-04-13T18:07:07.277785Z'
 content_hash: 485943ca138027ac19c9f126a69c9037d338bc3b6d79ac39a47cfbcf9bca6f2e
@@ -15,6 +16,12 @@ tags:
 - alphasignal
 - email
 - ai
+- anthropic
+- agent_cost
+- ai_tools
+- claude
+- openai
+- meta
 status: active
 asset_paths:
 - original.html
@@ -26,15 +33,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:07:07.277788Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic introduced an advisor tool for agents that allows smaller models to call Opus only when needed, resulting in a 12% cost reduction for agent execution. The document also discusses advancements in AI systems, including a new model that runs computation internally and updates from various AI announcements.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:27.668133Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 3a8ee27fb97567ee0a6d3dfb1339862bb99a7175d23a6afce6381dc9ef3de536
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ab15d0162b2f63baba848e3713fc231bb9b4df1567222b8c3e9a658621da611c
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agent cost reduction and architectural advancements relevant to LLM efficiency and reasoning, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Anthropic introduced an advisor tool for agents that allows smaller models to call Opus only when needed, resulting in a 12% cost reduction for agent execution.
+  - SWE-bench Multilingual increases by 2.7 points over Sonnet alone
+  - Meta AI proposes a shift from models that use computers to models that act as computers.
 ---
 # 🔄 Anthropic Opus Advisor cuts agent costs 12% with auto-escalation
 

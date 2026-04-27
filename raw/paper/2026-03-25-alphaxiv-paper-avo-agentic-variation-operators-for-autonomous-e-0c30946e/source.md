@@ -70,9 +70,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.499323Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: e95dc82b7d637235ab8a782a5fde3e52ac0b22cfe3230e3b2ee40d9b347c174b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 1db88421e80edf9728a0f48553f8f24b1f6d560739310c6f45cb131e676bc4ca
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses post-training methods, efficiency, and reasoning in LLMs by introducing autonomous agents for evolutionary search and hardware-aware optimization. alphaXiv engagement signals: 167 public votes, 33 total votes, 754 visits in the last 7 days.'
+  evidence_quotes:
+  - Agentic Variation Operators (AVO) empower large language models to function as autonomous, iterative optimizers in evolutionary search for high-performance code
+  - 'The AVO agent is equipped with planning capabilities, persistent memory, and tool use (e.g., code editing, shell execution, documentation retrieval) to perform '
+  - Together, these results show that agentic variation operators move beyond prior LLM-in-the-loop evolutionary pipelines by elevating the agent from candidate gen
 ---
 # AVO: Agentic Variation Operators for Autonomous Evolutionary Search
 

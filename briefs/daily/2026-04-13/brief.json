@@ -1,0 +1,1045 @@
+{
+  "id": "day:2026-04-13",
+  "period_type": "day",
+  "brief_date": "2026-04-13",
+  "week_start": null,
+  "week_end": null,
+  "coverage_start": "2026-04-12",
+  "coverage_end": "2026-04-12",
+  "data_mode": "live",
+  "title": "Research Brief · 2026-04-13",
+  "editorial_note": "The vault has been re-ranked into a concise working brief.",
+  "suggested_follow_ups": [
+    "What concrete follow-on signal would show whether state-of-the-art results on the ARC-AGI-2 benchmark matters beyond the announcement?",
+    "What follow-on signal would show whether How to Design a Production-Ready RAG System (Architecture + Tradeoffs) is material rather than just momentum?",
+    "What follow-on signal would show whether Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks) is material rather than just momentum?",
+    "What follow-on signal would show whether Building the 14 Key Pillars of Agentic AI is material rather than just momentum?",
+    "What follow-on signal would show whether Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python is material rather than just momentum?"
+  ],
+  "audio_brief": {
+    "status": "failed",
+    "script": "Good morning. Here's your calm research briefing for April 13, 2026. The vault has been re-ranked into a concise working brief.\n\nTo start: state-of-the-art results on the ARC-AGI-2 benchmark\n\nTo start: How to Design a Production-Ready RAG System (Architecture + Tradeoffs)\n\nTo start: Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks)\n\nIn the news: Building the 14 Key Pillars of Agentic AI\n\nIn the news: Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python\n\nIn the news: Follow on X\n\nAt the edges: Backpropagation is simpler than you think (once you see this)\n\nAt the edges: NotebookLM: The Best AI Tool to Learn Any Topic Faster\n\nAt the edges: Everyone Is “Learning AI”, But Nobody Really Understands This One Thing.\n\nOne more for later: Work With Us\n\nOne more for later: Decent\n\nOne more for later: Awesome\n\nTo start, this is the item to keep in view this morning. What matters most is this: Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark. In short: Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark. It comes via AlphaSignal Email.\n\nTo start, this is the item to keep in view this morning. What matters most is this: This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other architectural tradeoffs. In short: This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other architectural tradeoffs. It comes via Medium Email.\n\nTo start, this is the item to keep in view this morning. What matters most is this: The author tested the newly launched Claude Code Ultraplan and found that it performs better than expected. In short: The author tested the newly launched Claude Code Ultraplan and found that it performs better than expected. It comes via Medium Email.\n\nIn the faster-moving lane, this is the update worth clocking early. What matters most is this: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI. In short: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI. It comes via Medium Email.\n\nIn the faster-moving lane, this is the update worth clocking early. What matters most is this: Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks. In short: Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks. It comes via Medium Email.\n\nIn the faster-moving lane, this is the update worth clocking early. What matters most is this: This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering. In short: This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering. It comes via AlphaSignal Email.\n\nAt the edges of the main story, this is the signal to keep in the background. What matters most is this: This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable. In short: This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable. It comes via Medium Email.\n\nAt the edges of the main story, this is the signal to keep in the background. What matters most is this: NotebookLM is presented as the best AI tool for learning any topic more quickly. It is positioned as a way to simplify the process of learning both simple and complex subjects. In short: NotebookLM is presented as the best AI tool for learning any topic more quickly. It is positioned as a way to simplify the process of learning both simple and complex subjects. It comes via Medium Email.\n\nAt the edges of the main story, this is the signal to keep in the background. What matters most is this: The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just learning the interface. In short: The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just learning the interface. It comes via Medium Email.\n\nAnd one more read to keep warm for later. What matters most is this: This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering. In short: This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering. It comes via AlphaSignal Email.\n\nAnd one more read to keep warm for later. What matters most is this: This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering. In short: This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering. It comes via AlphaSignal Email.\n\nAnd one more read to keep warm for later. What matters most is this: This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code. In short: This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code. It comes via AlphaSignal Email.\n\nThat is the morning briefing. As you get into the day, keep this question in mind: What concrete follow-on signal would show whether state-of-the-art results on the ARC-AGI-2 benchmark matters beyond the announcement?",
+    "chapters": [
+      {
+        "item_id": "2026-04-12-alphasignal-email-state-of-the-art-results-on-the-arc-agi-2-benchm-ceab2e53",
+        "item_title": "state-of-the-art results on the ARC-AGI-2 benchmark",
+        "section": "editorial_shortlist",
+        "rank": 1,
+        "headline": "To start: state-of-the-art results on the ARC-AGI-2 benchmark",
+        "narration": "To start, this is the item to keep in view this morning. What matters most is this: Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark. In short: Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark. It comes via AlphaSignal Email.",
+        "offset_seconds": 0
+      },
+      {
+        "item_id": "2026-04-12-medium-email-how-to-design-a-production-ready-rag-system-arch-fe6ac4a4",
+        "item_title": "How to Design a Production-Ready RAG System (Architecture + Tradeoffs)",
+        "section": "editorial_shortlist",
+        "rank": 2,
+        "headline": "To start: How to Design a Production-Ready RAG System (Architecture + Tradeoffs)",
+        "narration": "To start, this is the item to keep in view this morning. What matters most is this: This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other architectural tradeoffs. In short: This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other architectural tradeoffs. It comes via Medium Email.",
+        "offset_seconds": 50
+      },
+      {
+        "item_id": "2026-04-12-medium-email-claude-code-ultraplan-launched-i-just-tested-it--546e88d3",
+        "item_title": "Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks)",
+        "section": "editorial_shortlist",
+        "rank": 3,
+        "headline": "To start: Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks)",
+        "narration": "To start, this is the item to keep in view this morning. What matters most is this: The author tested the newly launched Claude Code Ultraplan and found that it performs better than expected. In short: The author tested the newly launched Claude Code Ultraplan and found that it performs better than expected. It comes via Medium Email.",
+        "offset_seconds": 100
+      },
+      {
+        "item_id": "2026-04-12-medium-email-building-the-14-key-pillars-of-agentic-ai-e2951f73",
+        "item_title": "Building the 14 Key Pillars of Agentic AI",
+        "section": "headlines",
+        "rank": 1,
+        "headline": "In the news: Building the 14 Key Pillars of Agentic AI",
+        "narration": "In the faster-moving lane, this is the update worth clocking early. What matters most is this: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI. In short: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI. It comes via Medium Email.",
+        "offset_seconds": 150
+      },
+      {
+        "item_id": "2026-04-12-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--0e08737e",
+        "item_title": "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python",
+        "section": "headlines",
+        "rank": 2,
+        "headline": "In the news: Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python",
+        "narration": "In the faster-moving lane, this is the update worth clocking early. What matters most is this: Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks. In short: Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks. It comes via Medium Email.",
+        "offset_seconds": 200
+      },
+      {
+        "item_id": "2026-04-12-alphasignal-email-follow-on-x-3c92b213",
+        "item_title": "Follow on X",
+        "section": "headlines",
+        "rank": 3,
+        "headline": "In the news: Follow on X",
+        "narration": "In the faster-moving lane, this is the update worth clocking early. What matters most is this: This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering. In short: This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering. It comes via AlphaSignal Email.",
+        "offset_seconds": 250
+      },
+      {
+        "item_id": "2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-c8152b9a",
+        "item_title": "Backpropagation is simpler than you think (once you see this)",
+        "section": "interesting_side_signals",
+        "rank": 1,
+        "headline": "At the edges: Backpropagation is simpler than you think (once you see this)",
+        "narration": "At the edges of the main story, this is the signal to keep in the background. What matters most is this: This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable. In short: This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable. It comes via Medium Email.",
+        "offset_seconds": 300
+      },
+      {
+        "item_id": "2026-04-12-medium-email-notebooklm-the-best-ai-tool-to-learn-any-topic-f-ebcc17ff",
+        "item_title": "NotebookLM: The Best AI Tool to Learn Any Topic Faster",
+        "section": "interesting_side_signals",
+        "rank": 2,
+        "headline": "At the edges: NotebookLM: The Best AI Tool to Learn Any Topic Faster",
+        "narration": "At the edges of the main story, this is the signal to keep in the background. What matters most is this: NotebookLM is presented as the best AI tool for learning any topic more quickly. It is positioned as a way to simplify the process of learning both simple and complex subjects. In short: NotebookLM is presented as the best AI tool for learning any topic more quickly. It is positioned as a way to simplify the process of learning both simple and complex subjects. It comes via Medium Email.",
+        "offset_seconds": 350
+      },
+      {
+        "item_id": "2026-04-12-medium-email-everyone-is-learning-ai-but-nobody-really-unders-d347635a",
+        "item_title": "Everyone Is “Learning AI”, But Nobody Really Understands This One Thing.",
+        "section": "interesting_side_signals",
+        "rank": 3,
+        "headline": "At the edges: Everyone Is “Learning AI”, But Nobody Really Understands This One Thing.",
+        "narration": "At the edges of the main story, this is the signal to keep in the background. What matters most is this: The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just learning the interface. In short: The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just learning the interface. It comes via Medium Email.",
+        "offset_seconds": 400
+      },
+      {
+        "item_id": "2026-04-12-alphasignal-email-work-with-us-20460436",
+        "item_title": "Work With Us",
+        "section": "remaining_reads",
+        "rank": 1,
+        "headline": "One more for later: Work With Us",
+        "narration": "And one more read to keep warm for later. What matters most is this: This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering. In short: This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering. It comes via AlphaSignal Email.",
+        "offset_seconds": 450
+      },
+      {
+        "item_id": "2026-04-12-alphasignal-email-decent-58483240",
+        "item_title": "Decent",
+        "section": "remaining_reads",
+        "rank": 2,
+        "headline": "One more for later: Decent",
+        "narration": "And one more read to keep warm for later. What matters most is this: This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering. In short: This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering. It comes via AlphaSignal Email.",
+        "offset_seconds": 500
+      },
+      {
+        "item_id": "2026-04-12-alphasignal-email-awesome-fa23274f",
+        "item_title": "Awesome",
+        "section": "remaining_reads",
+        "rank": 3,
+        "headline": "One more for later: Awesome",
+        "narration": "And one more read to keep warm for later. What matters most is this: This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code. In short: This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code. It comes via AlphaSignal Email.",
+        "offset_seconds": 550
+      }
+    ],
+    "estimated_duration_seconds": 391,
+    "audio_url": null,
+    "audio_duration_seconds": 391,
+    "provider": null,
+    "voice": null,
+    "error": "Google Cloud TTS is not configured. The audio script was written, but no audio file was generated.",
+    "generated_at": "2026-04-13T20:17:59.833300Z",
+    "metadata": {
+      "generation_mode": "heuristic"
+    }
+  },
+  "generated_at": "2026-04-13T20:17:25.685728Z",
+  "headlines": [
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-building-the-14-key-pillars-of-agentic-ai-e2951f73",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "Building the 14 Key Pillars of Agentic AI",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Fareed Khan"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-agentic-ai-229e50f65986",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI",
+        "bucket": "worth_a_skim",
+        "total_score": 0.45,
+        "score_breakdown": {
+          "relevance_score": 0.4723,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.2917,
+          "author_match_score": 0.2587,
+          "topic_match_score": 0.5175,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document touches on relevant concepts like parallelism and retrieval in the context of AI agents, which aligns with the user's interest in LLM architecture and reasoning, but it is not a primary research paper or deep dive.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.85,
+          "judge_source_fit_score": 0.3,
+          "judge_topic_fit_score": 0.6,
+          "judge_author_fit_score": 0.3,
+          "judge_evidence_fit_score": 0.5,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This post outlines the 14 key pillars necessary for building Agentic AI systems.",
+            "It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI.",
+            "Parallelism, Ensembles, Retrieval and more"
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 1
+    },
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-andrej-karpathy-just-built-an-entire-gpt-in-243--0e08737e",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Andrej Karpathy"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks",
+        "bucket": "worth_a_skim",
+        "total_score": 0.45,
+        "score_breakdown": {
+          "relevance_score": 0.4009,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.171,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.4744,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document touches on LLM implementation and coding but lacks the deep technical focus required by a frontier researcher.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.85,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.55,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.55,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "Andrej Karpathy built an entire GPT model using only 243 lines of Python code.",
+            "This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks.",
+            "No PyTorch. No TensorFlow. Just pure Python and basic…"
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 2
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-follow-on-x-3c92b213",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Follow on X",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=1iqB498z13oGVfP3r&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering",
+        "bucket": "worth_a_skim",
+        "total_score": 0.45,
+        "score_breakdown": {
+          "relevance_score": 0.3709,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.171,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.4744,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is relevant due to its focus on Anthropic's internal data leak and its implications for AI engineering, touching upon the user's interest in LLM development and evaluation.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.85,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.55,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.25,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This is a follow-up communication regarding a newsletter about Anthropic's 512K Line Code Leak and its implications for AI engineering.",
+            "Follow on X Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future"
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 3
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-claude-code-cli-tool-82118d60",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Claude Code CLI tool",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=Iqj51D6Q5ISmpC3k&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error",
+        "bucket": "archive",
+        "total_score": 0.3749,
+        "score_breakdown": {
+          "relevance_score": 0.1948,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.3465,
+          "author_match_score": 0.6656,
+          "topic_match_score": 0.3195,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is about a code leak and does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 0.95,
+          "judge_source_fit_score": 0.36,
+          "judge_topic_fit_score": 0.36,
+          "judge_author_fit_score": 0.75,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error.",
+            "The leak occurred when version 2.1.88 shipped with a 59.8 MB JavaScript source map file that pointed to the unobfuscated original code."
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 4
+    }
+  ],
+  "editorial_shortlist": [
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-state-of-the-art-results-on-the-arc-agi-2-benchm-ceab2e53",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "state-of-the-art results on the ARC-AGI-2 benchmark",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "Poetiq"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=UFFv42xc5EnoLmbZ&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark",
+        "bucket": "must_read",
+        "total_score": 0.72,
+        "score_breakdown": {
+          "relevance_score": 0.8676,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.564,
+          "author_match_score": 0.72,
+          "topic_match_score": 0.928,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 1,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.28,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document directly addresses state-of-the-art results on a benchmark, which aligns perfectly with the user's focus on evaluation and frontier LLM research.",
+          "judge_bucket_hint": "must_read",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.6,
+          "judge_topic_fit_score": 1.0,
+          "judge_author_fit_score": 0.8,
+          "judge_evidence_fit_score": 0.95,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark.",
+            "They reached 54% accuracy at a cost of $30.57 per problem."
+          ],
+          "judge_bucket_floor_applied": "must_read"
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 1
+    },
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-how-to-design-a-production-ready-rag-system-arch-fe6ac4a4",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "How to Design a Production-Ready RAG System (Architecture + Tradeoffs)",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Kuriko Iwai"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@kuriko-iwai/a-technical-roadmap-to-rag-architectures-and-decision-logic-2026-edition-507fb22083d1",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other architectural tradeoffs",
+        "bucket": "worth_a_skim",
+        "total_score": 0.4785,
+        "score_breakdown": {
+          "relevance_score": 0.5945,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.345,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.6562,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is highly relevant to LLM research topics (RAG architecture) and addresses efficiency and system design, making it a valuable read for a frontier LLM researcher, despite the source being a newsletter.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.9,
+          "judge_source_fit_score": 0.36,
+          "judge_topic_fit_score": 0.75,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.75,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This post provides a practical guide to designing a production-ready Retrieval-Augmented Generation (RAG) system, focusing on balancing cost, latency, and other",
+            "A practical guide to balancing cost, latency, and…",
+            "a-technical-roadmap-to-rag-architectures-and-decision-logic-2026-edition-507fb22083d1"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 2
+    },
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-claude-code-ultraplan-launched-i-just-tested-it--546e88d3",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks)",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Joe Njenga"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@joe.njenga/claude-code-ultraplan-launched-i-just-tested-it-and-its-better-than-it-looks-21a628332e97",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "The author tested the newly launched Claude Code Ultraplan and found that it performs better than expected",
+        "bucket": "worth_a_skim",
+        "total_score": 0.45,
+        "score_breakdown": {
+          "relevance_score": 0.3709,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.3435,
+          "author_match_score": 0.6469,
+          "topic_match_score": 0.4744,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is relevant due to its focus on an Anthropic product, aligning with the user's favorite authors, but the content is a product test rather than deep research on frontier LLM training or evaluation methods.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.85,
+          "judge_source_fit_score": 0.36,
+          "judge_topic_fit_score": 0.55,
+          "judge_author_fit_score": 0.75,
+          "judge_evidence_fit_score": 0.25,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "Claude Code Ultraplan Launched: I Just Tested It (And It’s Better Than It Looks)",
+            "Anthropic has added Claude Code ultraplan, and I was…"
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 3
+    }
+  ],
+  "interesting_side_signals": [
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-c8152b9a",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "Backpropagation is simpler than you think (once you see this)",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Nikhil Anand"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable",
+        "bucket": "archive",
+        "total_score": 0.2819,
+        "score_breakdown": {
+          "relevance_score": 0.2015,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.17,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.3062,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 5.4,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document provides a general, intuitive guide to backpropagation, which is foundational but not directly focused on frontier LLM training, evaluation, or advanced reasoning methods.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 0.9,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.35,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.25,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This post provides an intuitive guide to understanding backpropagation in neural networks.",
+            "It aims to make the complex process of computing within a neural network more understandable."
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 1
+    },
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-notebooklm-the-best-ai-tool-to-learn-any-topic-f-ebcc17ff",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "NotebookLM: The Best AI Tool to Learn Any Topic Faster",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Medium Daily Digest"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@frank-andrade/notebooklm-the-best-ai-tool-to-learn-any-topic-faster-ff05e83e4922",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "NotebookLM is presented as the best AI tool for learning any topic more quickly. It is positioned as a way to simplify the process of learning both simple and complex subjects",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 5.4,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is about an AI learning tool and does not directly address the user's focus on frontier LLM training, evaluation, or architecture.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "NotebookLM is presented as the best AI tool for learning any topic more quickly.",
+            "It is positioned as a way to simplify the process of learning both simple and complex subjects."
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 2
+    },
+    {
+      "item": {
+        "id": "2026-04-12-medium-email-everyone-is-learning-ai-but-nobody-really-unders-d347635a",
+        "kind": "blog-post",
+        "source_id": "medium-email",
+        "title": "Everyone Is “Learning AI”, But Nobody Really Understands This One Thing.",
+        "source_name": "Medium Email",
+        "organization_name": null,
+        "authors": [
+          "Medium Daily Digest <noreply@medium.com>",
+          "Nikhil Anand"
+        ],
+        "published_at": "2026-04-12T06:40:00+00:00",
+        "canonical_url": "https://medium.com/@tanmay.bansal20/everyone-is-learning-ai-but-nobody-really-understands-this-one-thing-fb7fbb9a2e08",
+        "content_type": "post",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just learning the interface",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 5.4,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document discusses AI literacy rather than the specific technical research topics favored by the user.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "The post discusses the difference between prompting AI and true AI literacy, suggesting that understanding the underlying principles is more important than just",
+            "Prompting teaches you the interface. AI literacy means…"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 3
+    }
+  ],
+  "remaining_reads": [
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-work-with-us-20460436",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Work With Us",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=10kLFq484h17ok0OD&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is a newsletter update about an Anthropic leak, which is tangential to the user's core focus on LLM training, evaluation, and architecture research.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering.",
+            "Work With Us Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future Sender: AlphaSignal"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 1
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-decent-58483240",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Decent",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/fb/BnsImABK8nxPpbGf?cid=6c0a1b85a97c6485&feedback=Decent",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is a generic newsletter update about an industry leak and does not provide specific, actionable research content for a frontier LLM researcher.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This is a newsletter update regarding Anthropic's 512K Line Code Leak and the future of AI engineering.",
+            "Decent Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 2
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-awesome-fa23274f",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Awesome",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/fb/BnsImABK8nxPpbGf?cid=6c0a1b85a97c6485&feedback=Awesome",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is a newsletter referencing a leak about Anthropic's code, which is not directly technical research material for a frontier LLM researcher.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This is a newsletter titled 'Awesome Decent Not Great' from AlphaSignal, referencing a leak about Anthropic's 512K Line Code.",
+            "Awesome Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future Sender: AlphaSignal"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 3
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-a2a-agent-to-agent-ecosystems-575383f4",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "A2A (Agent to Agent) ecosystems",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=PO1P6NIhzqnMYp5Z&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "The document discusses the evolution of orchestration layers into systems that solve the challenges of Agent to Agent (A2A) ecosystems",
+        "bucket": "archive",
+        "total_score": 0.2548,
+        "score_breakdown": {
+          "relevance_score": 0.1933,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.144,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document discusses agent ecosystems, which is tangentially related to LLM research but lacks direct focus on the user's core interests in training, evaluation, reasoning, or memory.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.16,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.16,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "One area that is worth watching is how these orchestration layers evolve into systems that solve the challenges of A2A (Agent to Agent) ecosystems ."
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 4
+    },
+    {
+      "item": {
+        "id": "2026-04-12-alphasignal-email-signup-65cc3a41",
+        "kind": "article",
+        "source_id": "alphasignal-email",
+        "title": "Signup",
+        "source_name": "AlphaSignal Email",
+        "organization_name": null,
+        "authors": [
+          "AlphaSignal <news@alphasignal.ai>",
+          "AlphaSignal"
+        ],
+        "published_at": "2026-04-12T15:34:02+00:00",
+        "canonical_url": "https://alphasignal.ai/",
+        "content_type": "article",
+        "triage_status": "unread",
+        "read": false,
+        "starred": false,
+        "extraction_confidence": 0.0,
+        "short_summary": "This document is a newsletter titled 'Signup' from AlphaSignal, referencing a previous article about Anthropic's line code leak",
+        "bucket": "archive",
+        "total_score": 0.1998,
+        "score_breakdown": {
+          "relevance_score": 0.082,
+          "novelty_score": 1.0,
+          "source_quality_score": 0.168,
+          "author_match_score": 0.0,
+          "topic_match_score": 0.0,
+          "zotero_affinity_score": 0.0
+        },
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 822.7019,
+          "novelty_signal": 4.3111,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document is a newsletter about a line code leak and offers no direct technical content relevant to frontier LLM research topics.",
+          "judge_bucket_hint": "archive",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.16,
+          "judge_topic_fit_score": 0.0,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.0,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "This document is a newsletter titled 'Signup' from AlphaSignal, referencing a previous article about Anthropic's line code leak.",
+            "Signup Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future Sender: AlphaSignal <news@alphasignal.ai> Published At: 2026-04-12T1"
+          ]
+        },
+        "also_mentioned_in_count": 0
+      },
+      "note": null,
+      "rank": 5
+    }
+  ],
+  "papers_table": []
+}

@@ -17,6 +17,10 @@ tags:
 - email
 - blog-post
 - sub-document
+- reading
+- curiosity
+- attention
+- philosophy
 status: active
 asset_paths: []
 source_id: medium-email
@@ -27,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:07.123718Z'
-short_summary: The post explores the relationship between curiosity, attention, and the decline in reading habits.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The text poses a philosophical question about the decline of reading ability and links it to the fading of curiosity and attention.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.385381Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d016e553cd5a45e1cb61c3232c2647babd40683eff5fa96133ff12e858abde42
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9a7644f13915a95273aef945ea87faaa492c4cf5f4ceb01141983b693529c5d4
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a philosophical blog post about reading and attention, which has no direct technical relevance to frontier LLM research topics.
+  evidence_quotes:
+  - The text poses a philosophical question about the decline of reading ability and links it to the fading of curiosity and attention.
+  - When curiosity fades, attention follows. And when…
 ---
 # Why nobody can read anymore
 

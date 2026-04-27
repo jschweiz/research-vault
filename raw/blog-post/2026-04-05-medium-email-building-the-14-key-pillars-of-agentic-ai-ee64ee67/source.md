@@ -38,20 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f3eeb6b477863373ab4532b31a8a631d8a291a7db853a0d4d45875028444e10a
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 256b6d96ef50c4b9e77d97e2cdc9c6be6f0f74d8a5c420ffe0c390d6bc8cf1dd
+lightweight_scoring_input_hash: dbb66456cf3ca0c35e6f4e67ae4d8053be06e2b7c29818e434e905593b1e7443
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.55
+  source_fit_score: 0.3
+  topic_fit_score: 0.75
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture and evaluation through the lens of Agentic AI, making it highly relevant.
+  evidence_fit_score: 0.6
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on long-term memory and parallelism in agentic systems, which touches upon memory and efficiency topics favored by the user.
   evidence_quotes:
   - This post outlines the 14 key pillars necessary for building Agentic AI systems.
   - It touches upon concepts like parallelism, ensembles, and retrieval in the context of agentic systems.
-  - 'Tags: newsletter, medium, email, blog-post, agentic ai, ai, long-term memory, parallelism, retrieval'
+  - Building Long-Term Memory in Agentic AI
 ---
 # Building the 14 Key Pillars of Agentic AI
 

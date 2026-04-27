@@ -36,9 +36,19 @@ lightweight_enriched_at: '2026-04-09T22:01:43.373369Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fad57080eb58e5057d0189f207f7aa368f8d5def62dbc4ce6ea248bb0b7bb6cf
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: eb6c9f27e087d7a717716461275fcd8389f3ec591dbac29c48630b3d0008ca59
+lightweight_score:
+  relevance_score: 0.6659
+  source_fit_score: 0.24
+  topic_fit_score: 0.7379
+  author_fit_score: 0.12
+  evidence_fit_score: 0.93
+  confidence_score: 0.7296
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: efficiency techniques, memory for llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - The document discusses the economic implications of human preference in the age of AI, the scaling laws for recommender systems, and the potential risks and ben
 ---
 # Import AI 445: Timing superintelligence; AIs solve frontier math proofs; a new ML research benchmark
 

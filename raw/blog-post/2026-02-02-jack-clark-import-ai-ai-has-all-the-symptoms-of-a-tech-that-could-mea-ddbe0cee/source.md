@@ -38,18 +38,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 917de8989c39fd60ea74d2541d6022dfb0a94e6b7e6de5eb36c34104f2e83b9e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b7ab92b4f0e64762ecc0c2ccd7a895c6150cf90d361939b58e3ef1b9467416e9
+lightweight_scoring_input_hash: 076f0030c69e8463739f0c36a56badbfcbbf32aaec3ebacaa96e9a09346587d7
 lightweight_score:
-  relevance_score: 0.35
-  source_fit_score: 0.36
-  topic_fit_score: 0.55
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.85
-  confidence_score: 0.95
-  bucket_hint: worth_a_skim
-  reason: The document discusses AI's impact on productivity, which aligns with favorite topics, but lacks specific focus on LLM architecture or research tooling.
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document focuses on macroeconomics and productivity rather than the specific technical research topics favored by the user.
   evidence_quotes:
-  - Studies find productivity gains ranging from modest increases on some tasks to substantial returns (50%+) to AI.
+  - Generative AI shows real productivity gains for individuals but these gains are not yet reflected in aggregate macro productivity statistics.
   - Workers may not be unlocking the full productivity potential of the technology if, for example, they are not using the best LLM model for the job or applying it
   - Bottleneck tasks will slow down the emergence of AI gains in the aggregate data, but organizational re-structuring, training, and improvement in tools will reve
 ---

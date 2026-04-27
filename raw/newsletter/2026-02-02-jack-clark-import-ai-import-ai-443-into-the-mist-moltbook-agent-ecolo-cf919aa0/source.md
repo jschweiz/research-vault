@@ -38,20 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a64936a144b4c612c3ae9febdd1f417f32cae4c65ec3619aca9bcfef66e879f0
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8833eb74dfd4f9457c81d31df415dd2e823551eda47ae2324d7b42a7041c9d35
+lightweight_scoring_input_hash: 487d7c9047c67a487dced8d2d83e1c17153c604a66438b495122de9299e07686
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.8
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document strongly aligns with the user's favorite topics (AI agents, R&D, and LLM architecture) and features preferred authors like Anthropic.
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.65
+  author_fit_score: 0.55
+  evidence_fit_score: 0.75
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document touches on agent ecology and AI R&D, which aligns with the user's interest in LLM architecture and reasoning, but the focus is more on agent systems than core LLM training or evaluation.
   evidence_quotes:
-  - The article explores 'Moltbook,' a social network for AI agents that piggybacks on agent software to create a new social media property driven by AI conversatio
-  - The article discusses the potential of automated AI research and development, examining the implications for strategic surprise and the future of human involvem
-  - I work at Anthropic.
+  - 'Moltbook is “a social network for AI agents” and it piggybacks on another recent innovation, OpenClaw , software that gives an AI agent access to everything on '
+  - What happens when someone takes moltbook, filters for posts that yield either a) rich discussion, or b) provable real world problem solving, and turns the entir
+  - And so on. All of this will happen unusually quickly and at an unusual scale. Quantity has a quality all of its own, as they say.
 ---
 # Import AI 443: Into the mist: Moltbook, agent ecologies, and the internet in transition
 

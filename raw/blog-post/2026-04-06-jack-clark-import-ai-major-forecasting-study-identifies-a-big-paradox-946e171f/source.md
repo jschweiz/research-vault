@@ -21,7 +21,6 @@ tags:
 - gdp
 - economics
 - scenarios
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:59.816907Z'
-short_summary: A forecasting study found that while people expect smarter machines, the impact of AI on GDP growth will be minor. Economists and the public generally expect AI to cause only a small increase in GDP by 2030.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: A forecasting study found that while people expect smarter machines, the impact of AI on GDP growth will be minor. Economists surveyed expect AI to add only about one point to GDP by 2030, which contrasts with the visions of some AI experts.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.204791Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b66cd31cd6e679692965d9f67f590ba22d75072fec039d067c2ffb73c8bdc4da
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 52814a4b97d0861e12b42f94dc75983a35e87de197f9744df7620de86d7d3f2d
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about economic forecasting and AI impact, which is tangential to the user's core focus on LLM training, evaluation, reasoning, and architecture.
+  evidence_quotes:
+  - A forecasting study found that while people expect smarter machines, the impact of AI on GDP growth will be minor.
+  - Economists surveyed expect AI to add only about one point to GDP by 2030, which contrasts with the visions of some AI experts.
+  - This discrepancy is worth acknowledging.
 ---
 # Major forecasting study identifies a big paradox: people think we’ll get smarter machines but the impact on GDP growth will be minor
 

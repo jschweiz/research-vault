@@ -32,9 +32,21 @@ lightweight_enriched_at: '2026-04-09T14:34:22.992371Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 5203b2afb6426f7534eb1ca78bdea4de9324483b6187f7594286ec3db4a5d841
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 204e0253316f6ecf23e312c21137d8335390ca4b3ad16ab53dc8f91daa31e667
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.45
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI-related developments and infrastructure, which aligns with the user's interests in LLM architecture and tooling, but the content is primarily a general roundup rather than deep technical research.
+  evidence_quotes:
+  - Anthropic claims its new Claude Mythos Preview model is too powerful to be released to the public.
+  - Intel has partnered with SpaceX and Tesla to work on Elon Musk's Terafab project.
+  - S3 Files lets developers mount any S3 bucket or prefix as a filesystem on an EC2 instance, container, or Lambda function.
 ---
 # Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁
 

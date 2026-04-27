@@ -92,16 +92,16 @@ lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 6bcb9b9b212041dbd3602f3ac9e884ceed52f805348765862fcb8aeaa5cb31ec
 lightweight_enrichment_error: null
 lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: b81f90736193d6f5bc570fa592984fb5b6553163383ade14ca4520f02c47b2e4
+lightweight_scoring_input_hash: ae2c202e9582305b436398bb775837cc3b3895c26cb251a82a435b4ee0220953
 lightweight_score:
-  relevance_score: 0.5658
-  source_fit_score: 0.6261
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.7523
+  source_fit_score: 0.5637
+  topic_fit_score: 0.755
+  author_fit_score: 0.12
   evidence_fit_score: 1.0
-  confidence_score: 0.6261
+  confidence_score: 0.735
   bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 16 public votes, 0 total votes, 190 visits in the last 7 days.'
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 1 favorite-topic match. alphaXiv engagement signals: 16 public votes, 0 total votes, 190 visits in the last 7 days.'
   evidence_quotes:
   - Researchers from Shanghai Artificial Intelligence Laboratory advanced document parsing performance by developing MinerU2.5-Pro, a data-centric framework that si
 ---

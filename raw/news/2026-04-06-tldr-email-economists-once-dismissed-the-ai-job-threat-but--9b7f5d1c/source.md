@@ -37,20 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9da47cf7006480d1d3cb44bd14e620215eed4d758e1c73f6ddafb6fb63bcb877
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8fd3d71ee816108b3e772379d16d35441f007219d5f79ce2188733374b108a50
+lightweight_scoring_input_hash: b9ea2e8443254082093291ff3f93a49bf7b47f3d1d8d2a2bd270f76d9041ab16
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.35
-  confidence_score: 0.8
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document discusses the economic impact of AI on jobs, which is tangentially related to the user's interest in LLMs and AI, but lacks focus on the technical or research aspects.
+  reason: The document is about economic policy regarding AI job disruption, which does not align with the user's focus on LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
-  - While many economists do not see much evidence that AI is disrupting the job market, but they are starting to take seriously the possibility that it could happe
-  - AI is expected to grow the economy as the technology improves, but its effect on jobs and the economy is difficult to predict.
-  - Given the potential scale of disruption, economists say it is time to start considering policies to help workers who may be displaced or otherwise harmed by the
+  - While many economists do not see significant evidence of AI job disruption, they are beginning to consider policies to help workers who might be displaced by th
+  - They emphasize the need for immediate policy discussions regarding the potential impact of AI on jobs.
 ---
 # Economists Once Dismissed the AI Job Threat, but Not Anymore
 

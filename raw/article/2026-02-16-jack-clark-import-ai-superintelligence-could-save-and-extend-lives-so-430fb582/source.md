@@ -21,7 +21,6 @@ tags:
 - ai safety
 - risk
 - regulation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,26 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:11.518653Z'
-short_summary: Nick Bostrom argues that pursuing superintelligence is beneficial for saving and extending human lives, suggesting that a brief pause might be most effective only at the very end of development.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Nick Bostrom argues that pursuing superintelligence is beneficial for saving and extending human lives, suggesting that the optimal strategy involves moving quickly toward AGI capability and then pausing only at the final stage for maximum safety deliberation.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.465982Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c650e1ecdd5db26aba39d3f0f63d9ef5c18cde39a09586be51441d2014ba4b03
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7caff172a57fdc0d0af439036d839bc3807a22e073c72745af90fb7c05b261e3
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 1.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (AI safety, reasoning, and risk) but is a philosophical argument rather than a technical deep dive.
+  evidence_quotes:
+  - If the transition to the era of superintelligence goes well, there is tremendous upside both for saving the lives of currently existing individuals and for safe
+  - 'swift to harbor, slow to berth : move quickly towards AGI capability, and then, as we gain more information about the remaining safety challenges and specifics '
 ---
 # Superintelligence could save and extend lives, so we should go for it
 

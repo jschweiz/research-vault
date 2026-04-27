@@ -37,21 +37,19 @@ lightweight_enriched_at: '2026-04-09T22:01:42.383007Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8afc4302923a4f9984008b7ca5476c33e2df80d92e9c1f3e422e7a5f3cba8631
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 81ad3eec4e07b40f3c6249cd1825a99e89a3a8262d0d3b14b4cd3e080df544bb
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 6e1cf71accad3fc07639dfec52a4744bc0aab4eacc3dda3606481beb500bf375
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses core favorite topics like brain emulation, data acquisition, and the physical/digital bottlenecks relevant to LLM architecture and research tooling.
+  relevance_score: 0.1799
+  source_fit_score: 0.24
+  topic_fit_score: 0.0
+  author_fit_score: 0.12
+  evidence_fit_score: 0.9824
+  confidence_score: 0.487
+  bucket_hint: archive
+  reason: Heuristic fallback based on deprioritized by organization or fellowship announcement.
   evidence_quotes:
-  - Brain emulation is decades away, requiring breakthroughs in recording brain activity, reconstructing wiring, and modeling brains.
-  - 'The central challenge of brain emulation is not to store or compute the neurons and parameters, but to acquire the data necessary for setting neuron parameters '
-  - 'Brain emulation is fundamentally not a digital process; core bottlenecks involve physical manipulation of biological tissue, with time requirements dictated by '
+  - Brain emulation is decades away, requiring breakthroughs in recording brain activity, reconstructing wiring, and modeling brains. The primary challenge is acqui
 ---
 # Brain emulation is tractable within our lifetimes
 

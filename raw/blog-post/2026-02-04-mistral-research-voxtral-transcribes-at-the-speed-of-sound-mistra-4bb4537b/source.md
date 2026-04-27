@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T12:25:56.469622Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 00794839d56779e41fa1a5bcd9552221080f35e8042bd472859faa6e44ff8a12
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 010da6eac93bd62e7b03bba190d3ad453211e80a29a452a065a83c3f5316f76e
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.55
+  topic_fit_score: 0.45
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on efficiency and open-weights models, which aligns with the user's interest in LLM efficiency and architecture.
+  evidence_quotes:
+  - 'Best-in-class efficiency: Industry-leading accuracy at a fraction of the cost, with Voxtral Mini Transcribe V2 achieving the lowest word error rate, at the lowe'
+  - 'Open weights: Voxtral Realtime ships under Apache 2.0, deployable on edge for privacy-first applications.'
+  - With a 4B parameter footprint, it runs efficiently on edge devices, ensuring privacy and security for sensitive deployments.
 ---
 Today, we're releasing Voxtral Transcribe 2, two next-generation speech-to-text models with state-of-the-art transcription quality, diarization, and ultra-low latency. The family includes Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications. Voxtral Realtime is open-weights under the Apache 2.0 license.
 We're also launching an [audio playground in Mistral Studio](https://console.mistral.ai/build/audio/speech-to-text) to test transcription instantly, powered by Voxtral Transcribe 2, with diarization and timestamps.

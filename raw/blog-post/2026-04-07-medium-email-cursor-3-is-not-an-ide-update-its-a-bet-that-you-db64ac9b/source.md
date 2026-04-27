@@ -32,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:15.754932Z'
-short_summary: Cursor 3 is not an IDE update but a bet that users will manage agents rather than write code. This post explores the rationale behind Cursor's new interface design.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Cursor 3 is not an IDE update but a bet that users will manage agents rather than write code. The author questions the rationale behind building a new interface from scratch.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.481176Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7e78cb86e130475c9f70912a0639db6486310c4e426f04c9c7e27d448b50a668
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d6225a437d81284811e3efc230758101b7b646934a04502831373971c32fb744
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.16
+  author_fit_score: 0.33
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses agent management and software development, which has weak topical overlap with the user's focus on LLM training, evaluation, reasoning, and architecture.
+  evidence_quotes:
+  - Cursor 3 is not an IDE update. It’s a bet that you’ll manage agents, not write code.
+  - Cursor 3 is not an IDE update but a bet that users will manage agents rather than write code.
+  - Why Cursor built a new interface from scratch, what…
 ---
 # Cursor 3 Is Not an IDE Update. It’s a Bet That You’ll Manage Agents, Not Write Code.
 

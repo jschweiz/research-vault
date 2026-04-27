@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.310033Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d90f0d626a06ad4360d8ef78d7073cafbdfd9bd64b995dbe8f54539b527183c2
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ffb55b34cf8ccf8eb6300aa00281a98335f33e1a16dc807b1e91c003dd1c7b87
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.35
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.6
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document discusses context management and persistence, which aligns with the user's interest in memory and reasoning, but lacks direct focus on frontier LLM training or evaluation methods.
+  evidence_quotes:
+  - Notebooks act as a structured memory layer shared across both apps
+  - Standard chat resets context, which breaks long or multi-step workflows
+  - Avoid repeating prompts to reintroduce files, notes, or prior discussions
 ---
 # Google introduces notebooks to reduce repeated prompts by maintaining context and files within a single workspace
 

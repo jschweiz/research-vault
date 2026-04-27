@@ -1,0 +1,78 @@
+{
+  "id": "2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d",
+  "kind": "article",
+  "source_id": "alphasignal-email",
+  "title": "Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure",
+  "source_name": "AlphaSignal Email",
+  "organization_name": null,
+  "authors": [
+    "AlphaSignal <news@alphasignal.ai>",
+    "AlphaSignal"
+  ],
+  "published_at": "2026-04-08T15:39:23Z",
+  "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure\n\nSource newsletter: 🔍 Anthropic Glasswing: Claude Mythos finds zero-day vulnerabilities\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-08T15:39:23+00:00\nCanonical URL: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b\n\n## Newsletter Context\n\nSection: Top News\n\n> 73,692 Likes\n\nAnthropic introduces Project Glasswing, a coordinated effort to secure critical software using a new frontier model. Claude Mythos Preview shows a step-change in vulnerability discovery, outperforming most human experts.\n\nThe initiative focuses on defensive deployment before such capabilities spread widely.\n\n**What it does**\n\nIt applies AI to automate vulnerability discovery and security testing at scale.\n\n- Scans large codebases to detect zero-day vulnerabilities (unknown security bugs)\n- Simulates exploit paths by chaining multiple weaknesses across system components\n- Works autonomously, reducing reliance on manual security audits and expert review\n\n**Evaluation and benchmarks**\n\nThe model shows higher performance across coding and cybersecurity evaluations.\n\n- Scores 83.1% on CyberGym vulnerability reproduction benchmark\n- Achieves 93.9% on SWE-bench Verified for software engineering tasks\n- Reaches 82.0% on Terminal-Bench 2.0 for agentic command-line workflows\n- Records 79.6% on OSWorld-Verified for real-world computer use scenarios\n\n**Controlled deployment**\n\nAccess is limited due to the model’s dual-use cybersecurity capabilities.\n\n- Restricted to approved partners for defensive security use cases\n- Deployment includes safeguards to block high-risk outputs\n- Future rollout depends on additional safety systems under development\n",
+  "outbound_links": [
+    "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b"
+  ],
+  "score": {
+    "relevance_score": 0.8726,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.564,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.928,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.72,
+    "bucket": "must_read",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 1,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 721.95,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.28,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document directly addresses LLM evaluation, reasoning, and efficiency through a new frontier model application in cybersecurity.",
+      "judge_bucket_hint": "must_read",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.6,
+      "judge_topic_fit_score": 1.0,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 1.0,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "Anthropic launches Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure.",
+        "Scores 83.1% on CyberGym vulnerability reproduction benchmark",
+        "Achieves 93.9% on SWE-bench Verified for software engineering tasks"
+      ],
+      "judge_bucket_floor_applied": "must_read"
+    }
+  },
+  "insight": {
+    "short_summary": "Anthropic launched Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure. This system simulates exploit paths and scans codebases to detect zero-day",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-08-alphasignal-email-anthropic-glasswing-claude-mythos-finds-zero-day-a1374861",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-09T23:07:57.063680Z",
+  "alphaxiv": null
+}

@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.512433Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6069a51315c286d75e10e2de0fa65da6cf433908be280916f008dae3ffc1fee2
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f06d4f8335217579ab33452f502b120e4446f8bb271e54179b99550cd602afe3
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document provides highly relevant, actionable research on measuring AI R&D automation and discusses on-device AI, which aligns strongly with the user's focus on evaluation, efficiency, and LLM architecture.
+  evidence_quotes:
+  - Want to measure AI R&D, here are 14 ways to do it
+  - AI measurement is a prerequisite to AI governance.
+  - Frontier models are important, but so are tiny, miniaturized devices for edge computing…
 ---
 # Import AI 448: AI R&D; Bytedance’s CUDA-writing agent; on-device satellite AI
 

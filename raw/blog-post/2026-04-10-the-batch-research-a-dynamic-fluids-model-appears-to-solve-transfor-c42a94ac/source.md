@@ -4,7 +4,8 @@ kind: blog-post
 title: A Dynamic Fluids Model Appears To Solve Transformers’ Pixellation Problem
 source_url: https://www.deeplearning.ai/the-batch/a-dynamic-fluids-model-appears-to-solve-transformers-pixellation-problem
 source_name: The Batch Research
-authors: []
+authors:
+- Michael McCabe
 published_at: '2026-04-10T10:57:22-07:00'
 ingested_at: '2026-04-13T18:33:23.551531Z'
 content_hash: 085081cceef68f12c99ee5aa58481b7526c37fe02d1bab9efaa147c3cd0e6e87
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- fluid dynamics
+- machine learning
+- transformers
+- simulation
+- aliasing
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:33:23.551537Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Michael McCabe and colleagues released Walrus, a 1.3 billion-parameter model that simulates fluid motion, and introduced a jittering technique to reduce artifacts in transformer-based models. Walrus achieved low error rates in various physical domains and demonstrated error reduction over long time periods.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:18.049034Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 272db15306792eec638c18eb0d69162cab7570b27b08351cdccd0248ddc485fd
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: fbffb4ab81dff7c6b717d77ffe967862e7001af99162fa5c32da5e36f2992483
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.5
+  topic_fit_score: 0.85
+  author_fit_score: 0.5
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant due to its focus on applying transformer-based methods to solve physical simulation problems, which aligns strongly with the user's interest in LLM architecture, reasoning, and efficiency.
+  evidence_quotes:
+  - Simulating complex physical systems through traditional numerical methods is slow and expensive, and simulations based on machine learning are usually specializ
+  - In transformers, these failures also stem from [aliasing](https://arxiv.org/abs/2302.01178?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=
+  - 'Just as LLMs learn to read and predict the most likely next words across a wide range of tasks and languages, transformers trained on diverse data appear to be '
 ---
 Simulating complex physical systems through traditional numerical methods is slow and expensive, and simulations based on machine learning are usually specialized for a specific type of system, such as water in a pipe or atmosphere surrounding a planet. Researchers built a general, transformer-based model for liquids, gases, and plasmas.
 What’s new: Michael McCabe and colleagues at Polymathic AI Collaboration, a multi-institution, multi-disciplinary lab for scientific AI, released [Walrus](https://arxiv.org/abs/2511.15684?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9YEAhfwU9tvGXZx9DP70Gu2s8iB1c9CA6EGtUzUaDTQZ5rjjvwCq1Z9RkKukzCkWlrB-I6), a 1.3 billion-parameter model that simulates how fluids move, interact, and change over time. The model is freely [available](https://github.com/PolymathicAI/walrus?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9YEAhfwU9tvGXZx9DP70Gu2s8iB1c9CA6EGtUzUaDTQZ5rjjvwCq1Z9RkKukzCkWlrB-I6) under an MIT license.

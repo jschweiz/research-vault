@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.000059Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 534e4f9dbdeb2415e37ab068943635d16361369eacefbeeac0d6e540b030ca3a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 97ff700c02280147f7ba198a4f13d8549c0bcb4a5e316d5de810a9bd94f3318e
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document discusses AWS S3 Files, which is relevant to data storage and file systems, but it does not directly address the user's focus areas of LLM training, evaluation, reasoning, memory, or architecture.
+  evidence_quotes:
+  - Amazon Web Services introduced S3 Files to close a long-standing gap between object storage and file systems.
+  - S3 Files removes that step by letting you access S3 like a file system, so existing applications run directly on stored data.
+  - S3 Files creates a file system view over objects.
 ---
 # Amazon introduces S3 Files, enabling file system access directly on S3 without duplicating or moving data
 

@@ -58,9 +58,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.647466Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: a20fd8a9efcfe31acf68eaa7134e10711a928f1ab602ef75dece58006c2bb6cc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: e3a0bb61c73dd6cbfcac49ea20acba2d2e6ca01c5323f3e7aca9c705c0b42d0f
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.5
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses skill internalization using In-Context Reinforcement Learning, which is highly relevant to the user''s focus on LLM agents, reasoning, and efficiency. alphaXiv engagement signals: 155 public votes, 50 total votes, 1996 visits in the last 7 days.'
+  evidence_quotes:
+  - The SKILL0 framework introduces In-Context Reinforcement Learning (ICRL) to enable Large Language Model (LLM) agents to internalize skills into their parameters
+  - This approach yielded superior performance, such as an 87.9% success rate on ALFWorld (+9.7% over AgentOCR), while substantially reducing context token costs by
+  - SKILL0 achieves superior performance, with a 3B model reaching an 87.9% success rate on ALFWorld (+9.7% over AgentOCR) and 40.8% on Search-QA (+6.6%), demonstra
 ---
 # SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization
 

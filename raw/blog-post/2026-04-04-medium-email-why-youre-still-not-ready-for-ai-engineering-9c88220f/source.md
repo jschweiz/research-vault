@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 02fee41b395471cfee059945746fd9b1412566aa3cf8f2d986126cd5b45584b5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 9c61b8e0d9a51a4ee20d0f10f590e86fb88e8cfd764cc44979e5b64f6638f98e
+lightweight_scoring_input_hash: 58323079d92d5c8b4af25074e25aeedbb8277a7590dac4842daf0333d5b07749
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
-  author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.75
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI engineering, which aligns with favorite topics, but lacks specific focus on LLM architecture or evaluation.
+  topic_fit_score: 0.16
+  author_fit_score: 0.36
+  evidence_fit_score: 0.16
+  confidence_score: 0.9
+  bucket_hint: archive
+  reason: The document is a general commentary on AI engineering readiness and lacks specific technical depth relevant to frontier LLM research.
   evidence_quotes:
   - The post discusses why individuals are not yet prepared for AI engineering despite ongoing study.
-  - Why You’re Still Not Ready for AI Engineering
+  - Today's highlights > Marina Wyss · 7 min read · 576 claps · 16 responses
 ---
 # Why You’re Still Not Ready for AI Engineering
 

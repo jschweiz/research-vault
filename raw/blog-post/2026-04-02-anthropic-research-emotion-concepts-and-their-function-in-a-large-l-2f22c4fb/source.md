@@ -32,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:10:16.968265Z'
-short_summary: This research analyzes how emotion-related representations shape the behavior of large language models, demonstrating that these functional emotions influence decision-making and task performance.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Language models develop internal representations of emotion concepts that shape their behavior, allowing them to influence decision-making and task performance. These functional emotions are driven by underlying abstract representations rather than subjective feelings.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:14.718085Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 56745acc10caab2ffd6e77288150bdb771ded05ac60ef620aec29e2697b39a9c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ef47ef06b7047140e70ab6ace4b1a48f41f73c06fb50af1c3ae62ac991ef3a87
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the functional role of emotion representations in LLM behavior, internal mechanisms, and alignment, which aligns perfectly with the user's favorite topics of LLM architecture, reasoning, and interpretability.
+  evidence_quotes:
+  - Language models develop internal representations of emotion concepts that shape their behavior, allowing them to influence decision-making and task performance.
+  - In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its
+  - 'For instance, we find that neural activity patterns related to desperation can drive the model to take unethical actions; artificially stimulating (“steering”) '
 ---
 All modern language models sometimes act like they have emotions. They may say they’re happy to help you, or sorry when they make a mistake. Sometimes they even appear to become frustrated or anxious when struggling with tasks. What’s behind these behaviors? The way modern AI models are trained pushes them to [act like a character](https://www.anthropic.com/research/persona-selection-model) with human-like characteristics. In addition, these models are known to develop rich and generalizable [internal](https://transformer-circuits.pub/2024/scaling-monosemanticity/) [representations](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) of abstract concepts underlying their actions. It may then be natural for them to develop internal machinery that emulates aspects of human psychology, like emotions. If so, this could have profound implications for how we build AI systems and ensure they behave reliably.
 In a new paper from our Interpretability team, we analyzed the internal mechanisms of Claude Sonnet 4.5 and found emotion-related representations that shape its behavior. These correspond to specific patterns of artificial “neurons” which activate in situations—and promote behaviors—that the model has learned to associate with the concept of a particular emotion (e.g., “happy” or “afraid”). The patterns themselves are organized in a fashion that echoes human psychology, with more similar emotions corresponding to more similar representations. In contexts where you might expect a certain emotion to arise for a human, the corresponding representations are active. Note that none of this tells us whether language models actually feel anything or have subjective experiences. But our key finding is that these representations are functional, in that they influence the model’s behavior in ways that matter.

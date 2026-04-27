@@ -4,7 +4,8 @@ kind: blog-post
 title: Introducing our Science Blog
 source_url: https://www.anthropic.com/research/introducing-anthropic-science
 source_name: Anthropic Research
-authors: []
+authors:
+- Anthropic
 published_at: '2026-03-23T00:00:00Z'
 ingested_at: '2026-04-09T12:04:01.495324Z'
 content_hash: a1a20d21d13d0ec3311f7a245c405639d29ba776537ac909efe5afb8d406dc4c
@@ -18,6 +19,7 @@ tags:
 - ai
 - science
 - blog
+- workflows
 status: active
 asset_paths:
 - original.html
@@ -29,15 +31,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:11:21.391687Z'
-short_summary: Anthropic is launching a new blog to discuss the upsides and challenges of using AI in science, exploring how AI is accelerating scientific progress and raising sociological questions about the role of scientists.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is launching a new blog to share work on AI and science, focusing on AI-assisted discoveries, practical workflows, and field notes across the sciences. The blog will explore the excitement and challenges of using AI in scientific progress.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:09.155650Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 04b8639739a38ea6ceaf9cc07a0358c650560a3d80a3f1ec5ec6ff986620ace1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: b54662aec6ed47889712c980dc10582b4887d3d671ab2f363c5e91e9bf2c2675
+lightweight_score:
+  relevance_score: 0.3811
+  source_fit_score: 0.24
+  topic_fit_score: 0.1991
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 0.592
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: hard benchmarks and evals, 1 favorite-author match, benchmark-only signal.'
+  evidence_quotes:
+  - Anthropic is launching a new blog to share work on AI and science, focusing on AI-assisted discoveries, practical workflows, and field notes across the sciences
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

@@ -22,7 +22,6 @@ tags:
 - verilog
 - benchmarks
 - llm evaluation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -34,14 +33,26 @@ parent_id: 2026-02-09-jack-clark-import-ai-import-ai-444-llm-societies-huawei-ma
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:28.452285Z'
 short_summary: Researchers developed ChipBench to evaluate how well modern AI systems can perform real-world chip design tasks in Verilog, finding that frontier models still struggle with general-purpose design.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:33.731525Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: dc0b25dd5fb6a430840d750e1ba273854605ec44d6e08abd534686396015a12a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a98270a714949f4d3348fb1b50cacec3cbeecd0f39ebe1a72d8b4d2d0b8d2f27
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.5
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM evaluation and reasoning by introducing a new benchmark for real-world chip design tasks, which aligns perfectly with the user's favorite topics.
+  evidence_quotes:
+  - Researchers developed ChipBench to evaluate how well modern AI systems can perform real-world chip design tasks in Verilog, finding that frontier models still s
+  - ChipBench shows that no frontier model is great at real world Verilog yet… Researchers with the University of California at San Diego and Columbia University ha
+  - The authors “identify three critical limitations of existing benchmarks that hinder accurate assessment of LLM capabilities for industrial deployment”.
 ---
 # AI-based chip design is harder than you think and benchmarks might be too easy
 

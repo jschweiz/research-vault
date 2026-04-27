@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:12.596070Z'
-short_summary: This post outlines strategies and solution architectures for incremental data loading. It focuses on the principles of incremental data loading in data engineering.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post outlines strategies and solution architectures for incremental data loading in data engineering.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.546439Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 21712e0cb19dfe189d5fd111af05689ba0fe49cea98aacdf26b52d429c021e1c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a10867a09b7a8ad50e57e278a5ccba107edd16e42d9727611223ded74415ed8c
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about data engineering strategies and has no direct relevance to the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - This post outlines strategies and solution architectures for incremental data loading in data engineering.
+  - This post outlines strategies and solution architectures for incremental data loading in data engineering.
 ---
 # Data Engineering: Incremental Data Loading Strategies
 

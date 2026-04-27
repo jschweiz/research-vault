@@ -38,9 +38,20 @@ lightweight_enriched_at: '2026-04-09T23:07:57.108870Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 32245ba321016a833c0d999330df7d23901f11d05c370724051b00931b0868b8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 50e9e0bef4d86474fca888f373de4cf4c58e593823602a08351c5c4e48341451
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (reasoning, evaluation, LLM architecture) but the source is an external newsletter, reducing the source fit.
+  evidence_quotes:
+  - Cognition has released SWE-1.6, which incorporates parallel tool calls and reduced reasoning loops.
+  - Cognition releases SWE-1.6 with parallel tool calls and fewer reasoning loops
 ---
 # Cognition releases SWE-1.6 with parallel tool calls and fewer reasoning loops
 

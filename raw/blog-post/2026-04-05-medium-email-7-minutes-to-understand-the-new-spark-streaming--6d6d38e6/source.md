@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3629647fefad091980dc42fc11ff22dfa62dbac3807e5de00562eadabe806913
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c08548b692550ad6f8a8c90b7b5fe77d6453097a295e8df91f406dd6d9115b39
+lightweight_scoring_input_hash: 53e284d8c3ffa7ee9a57d77b0c4ee67e909ed48aba9eb7600e38472ce82304b3
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about Apache Spark streaming, which does not strongly align with the user's favorite topics of language models, evaluation, or LLM architecture.
+  reason: The document is about Apache Spark streaming features and does not directly address the user's focus areas of LLM training, evaluation, reasoning, memory, or architecture.
   evidence_quotes:
   - Apache Spark now prioritizes ultra-low latency in its streaming features.
   - Apache Spark now cares about ultra-low latency.

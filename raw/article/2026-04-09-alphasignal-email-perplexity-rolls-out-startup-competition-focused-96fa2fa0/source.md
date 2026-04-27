@@ -37,9 +37,20 @@ lightweight_enriched_at: '2026-04-09T23:07:57.391716Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 36e01626f6a7b2cf620c5df555dbcebbfc895a9d47c7a705135bf84c0ef35412
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9413358996d063b3f58e3421a2146b7a0958e6375ff1987619e346f0a658cb8d
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.25
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about a startup competition and does not directly address the user's core interests in LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - Perplexity has launched a startup competition aimed at building companies powered entirely by Computer agents.
+  - Perplexity has launched a startup competition aimed at building companies powered entirely by Computer agents.
 ---
 # Perplexity rolls out startup competition focused on building companies powered entirely by Computer agents
 

@@ -6,7 +6,7 @@ Canonical URL: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a
 
 ## Summary
 
-Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments
+Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The article details these developments and related stories
 
 ## Text
 

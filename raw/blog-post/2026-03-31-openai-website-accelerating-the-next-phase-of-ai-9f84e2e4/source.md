@@ -35,8 +35,18 @@ lightweight_enriched_at: '2026-04-09T15:00:12.253988Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 26f4104367830cb540d7b781c4c3a17215d74c34245fe52270dd36eee34f14ce
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 364f21259c0d589218d0608f753e8f0e0941eccfbc188acfc5f55548d32caece
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 1.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is an organizational announcement about funding and business expansion, which does not directly address the user's focus on LLM research, evaluation, or technical methods.
+  evidence_quotes:
+  - OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in compute, and meet demand for ChatGPT, Codex, and enterprise AI.
 ---
 OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI.

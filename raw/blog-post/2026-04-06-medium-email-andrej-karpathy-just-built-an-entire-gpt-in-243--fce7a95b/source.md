@@ -39,20 +39,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 49433aa1a5f6c0cb5d7554617fb951166fc5da5e0dcad1a1b4f683684dc7366f
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 55e446a18c889e5b5728132593807707bfe88253b63ad6a525e34398e435f897
+lightweight_scoring_input_hash: 5a59c4116c17c4ab6ba503aa637782b1249cb6319803df4686e712cc80a2fa4a
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture and research tooling, making it highly relevant.
+  evidence_fit_score: 0.45
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on LLM building but lacks the specific focus on evaluation, reasoning, or efficiency techniques prioritized by the researcher profile.
   evidence_quotes:
   - Andrej Karpathy built an entire GPT model using only 243 lines of Python code.
-  - Andrej Karpathy built an entire GPT model using only 243 lines of Python code.
   - No PyTorch. No TensorFlow. Just pure Python and basic…
+  - Today's highlights > Sumit Pandey in Towards Deep Learning · 9 min read · 3.6K claps · 49 responses
 ---
 # Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 

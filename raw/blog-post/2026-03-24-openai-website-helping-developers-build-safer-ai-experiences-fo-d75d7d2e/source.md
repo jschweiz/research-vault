@@ -35,8 +35,18 @@ lightweight_enriched_at: '2026-04-09T15:00:11.560786Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6c0b238a640fafd188d3b12fae53bd84c492ca97b6f9cfdd7cad3ad9766ab0b7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9702ef272d1e3c019c9cf71d196a055b600aca63fae3ead062a2285f648f95fb
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 0.75
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about AI safety policies and does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - OpenAI released prompt-based teen safety policies for developers using gpt-oss-safeguard to moderate age-specific risks in AI systems.
 ---
 OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems.

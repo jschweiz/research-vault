@@ -31,9 +31,20 @@ lightweight_enriched_at: '2026-04-09T14:34:22.951422Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: adedc81abff7c4468adf783465729dd19dc99ca7fb56d622eddfa9589083b47e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5bb203d9483480eeb74bc10cf39423fe100848b90d11c2304099c97770beab28
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a general newsletter about mental resets and does not contain specific, high-priority technical content relevant to frontier LLM research.
+  evidence_quotes:
+  - The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
 ---
 # The 5-Minute Mental Reset That Actually Works | Sam Liberty in Age of Awareness
 

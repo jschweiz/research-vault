@@ -7,6 +7,7 @@ source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
 - Sam Liberty
+- Medium Daily Digest
 published_at: '2026-04-07T06:40:00Z'
 ingested_at: '2026-04-09T12:05:15.565765Z'
 content_hash: 4b9a6e7046dc6a137ad62332ff743fb88ace26895a70149d7fcea941b6932bb2
@@ -31,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:14.993497Z'
-short_summary: People are starting to face the reality of artificial intelligence.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: People are starting to face the reality of artificial intelligence, prompting a need for a mental reset.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.425598Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: eff690984e012887758374bc9d866d376635a0f41eb3cb690675542aca3539e5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 181a5133551a217a16eba87f3077e3e1cf274ece0ff95531a81cf9df64bfabdf
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a mental reset and does not address the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - People are starting to face the reality of AI, prompting a need for a mental reset.
+  - Today's highlights > Will Lockett · 6 min read · 8K claps · 291 responses
 ---
 # AI Pullback Has Officially Started
 

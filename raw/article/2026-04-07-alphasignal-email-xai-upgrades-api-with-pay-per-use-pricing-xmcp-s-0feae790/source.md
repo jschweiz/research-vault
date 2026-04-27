@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T23:07:56.954917Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6f4a16b1361449a0f860aae0486aeb15142c8775e3fd3e3cd8e57b1392ca4878
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6af0f20e769e0408f5a64a5304b510dc83b9c6d7d578c58e111d8e873014a571
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is a product announcement and does not contain specific research or technical content relevant to frontier LLM training, evaluation, or reasoning.
+  evidence_quotes:
+  - xAI has upgraded its API with new features including pay-per-use pricing, an XMCP server, SDKs, and a simulation playground.
 ---
 # xAI upgrades API with pay-per-use pricing, XMCP server, SDKs, and simulation playground for all
 

@@ -22,7 +22,6 @@ tags:
 - google
 - broadcom
 - business
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:23.383402Z'
-short_summary: Anthropic's revenue run-rate has spiked to over $30 billion, driven by an expanded partnership with Google and Broadcom. The company will also access significant AI compute capacity from Google in 2027.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic's revenue run-rate has reached $30 billion as the Claude developer expands its partnerships with Google and Broadcom. They will also access significant AI compute capacity from Google.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.815160Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6130503a982294345ab0600917d11d3a26d0135f854a9e5683e7ad9c0dfb19ae
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 81460520f50392a1febab0b5111017060ff71f3910670c4856c513ac048e5585
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a business news update about Anthropic's revenue and partnerships, which does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - Anthropic's revenue run-rate has reached $30 billion as the Claude developer expands its partnerships with Google and Broadcom.
+  - Anthropic will access 3.5 gigawatts of TPU-based AI compute capacity beginning in 2027.
 ---
 # Anthropic boasts revenue run rate of $30 billion as the Claude developer expands its partnership with Google and Broadcom
 

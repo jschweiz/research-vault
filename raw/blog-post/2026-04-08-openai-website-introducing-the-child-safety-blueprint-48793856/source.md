@@ -36,8 +36,19 @@ lightweight_enriched_at: '2026-04-09T15:00:22.590346Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d30ceb6dfc89cf3874624a6bdbf1bd627fad402b94e69947a215a1c28b004bdc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b1a73f45ecef4dc097676ae0847b56c5f88705912f38cb444506586cbb3fddab
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.8
+  evidence_fit_score: 0.1
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about child safety and does not align with the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developing AI responsibly.
+  - This blueprint focuses on safeguards, age-appropriate design, and collaboration to protect and empower young people online.
 ---
 Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online.

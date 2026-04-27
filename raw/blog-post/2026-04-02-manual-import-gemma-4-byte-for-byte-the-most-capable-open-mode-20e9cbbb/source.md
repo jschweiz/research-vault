@@ -39,20 +39,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0f62fef3e96ee9a5bac3782e196dc288fc96ed891aedf1443e643934ff4baeb8
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ccdc4871560415f4306bbfdd9f6025158fc9363fc80e95eef5b0904beef411bf
+lightweight_scoring_input_hash: e6555f7429b02144e8d5ae9415638d8d60786180e6686cfcd8219f86dcd7b325
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5
+  relevance_score: 0.95
+  source_fit_score: 0.9
   topic_fit_score: 1.0
-  author_fit_score: 1.0
+  author_fit_score: 0.95
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document is a high-priority fit as it directly addresses favorite topics (LLM architecture, evaluation, reasoning) and features favorite authors (Google DeepMind).
+  reason: The document directly addresses the user's favorite topics (LLM architecture, evaluation, reasoning, efficiency, memory) by introducing a new, highly capable open model family.
   evidence_quotes:
   - Gemma 4 is Google's most intelligent open models, designed for advanced reasoning and agentic workflows.
-  - Purpose-built for advanced reasoning and agentic workflows, Gemma 4 delivers an unprecedented level of intelligence-per-parameter.
-  - They complement our Gemini models, giving developers the industry's most powerful combination of both open and proprietary tools.
+  - 'Our larger models deliver state-of-the-art performance for their sizes, with the 31B model currently ranking as the #3 open model in the world on the industry-s'
+  - For developers, this new level of intelligence-per-parameter means achieving frontier-level capabilities with significantly less hardware overhead.
 ---
 # Gemma 4: Byte for byte, the most capable open models
 

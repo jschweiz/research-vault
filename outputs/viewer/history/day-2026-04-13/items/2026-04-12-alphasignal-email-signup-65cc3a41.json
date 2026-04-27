@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-12-alphasignal-email-signup-65cc3a41",
+  "kind": "article",
+  "source_id": "alphasignal-email",
+  "title": "Signup",
+  "source_name": "AlphaSignal Email",
+  "organization_name": null,
+  "authors": [
+    "AlphaSignal <news@alphasignal.ai>",
+    "AlphaSignal"
+  ],
+  "published_at": "2026-04-12T15:34:02Z",
+  "canonical_url": "https://alphasignal.ai/",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Signup\n\nSource newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-12T15:34:02+00:00\nCanonical URL: https://alphasignal.ai/\n\n## Newsletter Context\n\nSignup\n",
+  "outbound_links": [
+    "https://alphasignal.ai/"
+  ],
+  "score": {
+    "relevance_score": 0.082,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.168,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.0,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.1998,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 822.7019,
+      "novelty_signal": 4.3111,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document is a newsletter about a line code leak and offers no direct technical content relevant to frontier LLM research topics.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.16,
+      "judge_topic_fit_score": 0.0,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.0,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "This document is a newsletter titled 'Signup' from AlphaSignal, referencing a previous article about Anthropic's line code leak.",
+        "Signup Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future Sender: AlphaSignal <news@alphasignal.ai> Published At: 2026-04-12T1"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "This document is a newsletter titled 'Signup' from AlphaSignal, referencing a previous article about Anthropic's line code leak",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-12-alphasignal-email-signup-65cc3a41/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-13T18:54:07.475001Z",
+  "alphaxiv": null
+}

@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.144902Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1536894f5f04bade689dcff5093a0e5435c72586c1b39d5bf8f8294c2c9924ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ae87ba2a844f6d64c56d3bf242004c26ef447976374dfb5a42fd84328c5cec0b
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM research by detailing a new open-source model, its hybrid architecture, training methods, and performance benchmarks relevant to agentic reasoning and efficiency.
+  evidence_quotes:
+  - Nvidia released Nemotron 3 Super, a competitive open-source large language model designed for agentic applications, featuring a hybrid architecture and extensiv
+  - Nemotron 3 Super’s hybrid architecture interleaves mamba-2, attention, and modified MoE layers with multi-token prediction heads that generate a number of token
+  - 'Reinforcement learning followed in three stages: tasks with objectively verifiable outputs in domains such as math, coding, science, puzzles, and agentic tool u'
 ---
 Nvidia, the dominant supplier of AI chips, released a competitive open-source large language model whose speed tops its size class — the first open-weights leader to come from the United States since last year, when Meta delivered Llama 4.
 What’s new: Nvidia [released](https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) Nemotron 3 Super 120B-A12B, a large language model designed for agentic applications, including not only weights but also training datasets and recipes. It is the second in a planned family of three: Nvidia [released](https://developer.nvidia.com/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) Nemotron 3 Nano-39B-A3B in December 2025, and Nemotron 3 Ultra-500B-A50B is forthcoming.

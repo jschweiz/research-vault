@@ -37,19 +37,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ab02f2897121be9d19cfdc6e0d2b09985f6a4c4250231ba36e3fa8df4665fa18
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c821c2d2652d51102a4799692bded1f6aaa30c6eb91411c05f40ae85ad7f3ee9
+lightweight_scoring_input_hash: 54013b5d005181f1e8a473c629cb52442c4a71f93822837756c048e181234adc
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 0.75
   source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
   bucket_hint: must_read
-  reason: The document directly addresses the user's favorite topic of language models and evaluation by explaining core Reinforcement Learning concepts.
+  reason: The document directly addresses Reinforcement Learning, a favorite topic for the user, and is highly relevant to frontier LLM research.
   evidence_quotes:
-  - This post explains various Reinforcement Learning (RL) concepts in plain English, aiming to simplify complex mathematics for the reader.
   - 21 Reinforcement Learning (RL) Concepts Explained In Plain English
+  - This post explains various Reinforcement Learning (RL) concepts in plain English, aiming to simplify complex mathematics for the reader.
+  - reinforcement learning, rl concepts, ai, coding
 ---
 # 21 Reinforcement Learning (RL) Concepts Explained In Plain English
 

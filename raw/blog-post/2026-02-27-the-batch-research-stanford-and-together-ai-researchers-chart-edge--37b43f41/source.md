@@ -40,19 +40,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2d14f4ce672adfd1280afda299e557a374c79a526998db617b6ce6720a24203d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: c96f2e4f6c165108829e681bad7ad143df1344e98a99a9b88b05b10ef2fe37a5
+lightweight_scoring_input_hash: c096b79e2dd121ec48a1776b96534ce7c6ae2c264b1b01e97552556a5afdea67
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.8
+  relevance_score: 0.95
+  source_fit_score: 0.9
   topic_fit_score: 1.0
   author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM performance, hardware efficiency, and the trade-off between local and cloud computing.
+  reason: This document directly addresses efficiency and performance trade-offs in LLM deployment, which aligns perfectly with the user's favorite topics of efficiency, reasoning, and architecture.
   evidence_quotes:
   - Researchers found that while cloud systems are currently more energy-efficient per user, local systems are rapidly improving in intelligence per watt.
-  - Local systems don’t yet match cloud systems for intelligence per watt, but they are improving as researchers develop smaller models that achieve higher performa
+  - 'We can measure the viability of local versus cloud computing by computing intelligence per watt: the accuracy on a given task divided by the power consumed to a'
   - In simulated hybrid scenarios, power savings exceeded 80 percent.
 ---
 Projected demand for output from large language models is spurring a massive buildout of data centers. Researchers asked whether smaller models running on local devices could meaningfully lighten that load.

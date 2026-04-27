@@ -24,7 +24,6 @@ tags:
 - mathematics
 - automated verification
 - gpt 5.4 pro
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -35,15 +34,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-13T18:13:18.001289Z'
-short_summary: HorizonMath is a new math benchmark designed to test AI systems on solving unknown mathematical problems, featuring automated verification and covering various mathematical domains.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: HorizonMath is a new benchmark designed to test AI systems' ability to solve unknown mathematical problems, featuring automated verification and covering various mathematical domains.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:35.097703Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e9ebf968345c9d1b2dc0e6eebf6b89478dc696fe48a5d99dcc28fdf7498bcd8a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: bb7972de819c81e5513b024d7149b5819ef7e4d66c27de1ffbe5a930051d962b
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's interest in LLM evaluation and reasoning but is presented as a math benchmark rather than direct LLM training or architecture.
+  evidence_quotes:
+  - HorizonMath is a new benchmark designed to test AI systems' ability to solve unknown mathematical problems, featuring automated verification and covering variou
+  - 'Contamination-Proof: “Because the solutions are unknown, they do not exist in any training corpus, and any correct solution produced by a model would therefore '
+  - 'Why this matters – perhaps the first truly creative AI systems will show up in mathematics: AI systems are pushing on the frontiers of math today, with systems '
 ---
 # How long will a new math benchmark, HorizonMath, last?
 

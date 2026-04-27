@@ -29,15 +29,25 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:06.354344Z'
-short_summary: The post discusses a topic related to fitness and health, suggesting a need for caution regarding self-reinvention.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post discusses the idea of not needing to reinvent oneself in 2026, likely in the context of fitness and health.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.162618Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a0b77f32b86860e22a2b79e0856ec46cfa6db36877c589d2da2659bc6c1e30bc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f358fb420f6af8b96ae9409b36ce55997591b15d47de5fe9bccdd7dc5135e885
+lightweight_score:
+  relevance_score: 0.0
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about fitness and health and has no technical relevance to frontier LLM research topics.
+  evidence_quotes:
+  - The post discusses the idea of not needing to reinvent oneself in 2026, likely in the context of fitness and health.
 ---
 # I’m Not Reinventing Myself in 2026
 

@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T22:01:43.564691Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ab786f977c8d6655c0e1fb4e81ff869a4ec5235c528906f44beb4f40827e08dd
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 7dccd9247364ba78cb573688cf097c514a45f0bfa7360707fbd31224d56f9cc6
+lightweight_score:
+  relevance_score: 0.8384
+  source_fit_score: 0.24
+  topic_fit_score: 1.0
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.84
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 2 favorite-topic matches.'
+  evidence_quotes:
+  - Researchers developed PostTrainBench to evaluate autonomous LLM post-training and observed that while agents show progress, the gap between agent performance an
 ---
 # ImportAI 449: LLMs training other LLMs; 72B distributed training run; computer vision is harder than generative text
 

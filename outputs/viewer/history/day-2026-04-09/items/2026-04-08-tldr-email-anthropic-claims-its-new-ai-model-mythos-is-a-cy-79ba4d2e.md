@@ -6,7 +6,7 @@ Canonical URL: https://links.tldrnewsletter.com/gp8rGy
 
 ## Summary
 
-Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch software security vulnerabilities
+Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it available to technology companies to help them find and patch security flaws in
 
 ## Text
 

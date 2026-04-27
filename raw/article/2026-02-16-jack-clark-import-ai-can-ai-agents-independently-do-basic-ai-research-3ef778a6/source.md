@@ -20,7 +20,6 @@ tags:
 - machine learning
 - agents
 - research
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,15 +30,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:17.570329Z'
-short_summary: The AI Research Science Benchmark (AIRS-BENCH) tests how well AI agents can complete diverse machine learning tasks, ranging from code generation to time series forecasting. The benchmark explores potential scaling laws regarding how agent solutions relate to model size and human performance.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The AI Research Science Benchmark (AIRS-BENCH) tests how well AI agents can complete various machine learning tasks sourced from recent papers. The benchmark explores potential scaling laws regarding how agent solutions relate to model size and human performance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.246003Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: aa9c4f4bbc1cf731744bdd7c3e23379a60a360f56943576d425148f3cb6311a1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e22c0d169921ecfebb4267e1be399c2fac028306e2267bced753d3cfd673d516
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document directly addresses frontier LLM evaluation and research methods, which aligns perfectly with the user's focus on evaluation, reasoning, and research tooling.
+  evidence_quotes:
+  - The AI Research Science Benchmark (AIRS-BENCH) tests how well AI agents can complete various machine learning tasks sourced from recent papers.
+  - 'Why this matters – models might produce different solutions to humans, and this is a cool way of studying if there’s a ‘scaling law’ here : One way this could b'
+  - As Blaise Pascal once apocryphally said “I have only made this letter longer because I have not had the time to make it shorter”.
 ---
 # Can AI agents independently do basic AI research tasks? AIRS-BENCH says yes
 

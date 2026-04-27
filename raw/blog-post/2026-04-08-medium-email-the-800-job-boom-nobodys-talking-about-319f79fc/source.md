@@ -30,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:04.783886Z'
-short_summary: The post discusses an overlooked job boom and points to a bottleneck that is not related to building AI.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The bottleneck in AI development is no longer building AI but something else, which is implied by the context of the post.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.212663Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5a881eb25e65082aa70113971b493db2934d7740833e7070713acb24ff759442
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0fbafcffd2fb2964cc142e453a3dc690ef53b26ececf3b27276e08df7104478f
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is a general blog post about the AI bottleneck and does not directly address the user's specific interests in LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - The bottleneck isn’t building AI anymore. It’s making…
+  - The 800% Job Boom Nobody’s Talking About
 ---
 # The 800% Job Boom Nobody’s Talking About
 

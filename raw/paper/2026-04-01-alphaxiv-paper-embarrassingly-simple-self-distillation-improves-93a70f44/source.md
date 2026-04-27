@@ -54,19 +54,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.519302Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 379d3589722369fb82cc2c936e4110cbf2d909b2abc4d2adb6328dbac2b9deff
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: b5994f4b42859d952d9fa1cf0b5cfd105cf3e9bac5f403e01f9dfdb0055a65f9
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: acbba5496b10c86c403f36cc251c595c87feaa5d7fea9ddd3b9a28335820123a
 lightweight_score:
-  relevance_score: 0.7195
-  source_fit_score: 0.7526
-  topic_fit_score: 0.62
-  author_fit_score: 0.18
+  relevance_score: 0.9926
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
   evidence_fit_score: 1.0
-  confidence_score: 0.7526
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 2 favorite-topic matches. alphaXiv engagement signals: 207 public votes, 75 total votes, 3764 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses post-training methods and efficiency for LLMs, which aligns perfectly with the user''s research focus. alphaXiv engagement signals: 207 public votes, 75 total votes, 3764 visits in the last 7 days.'
   evidence_quotes:
   - A method called Simple Self-Distillation (SSD) enables large language models to enhance their code generation performance by training exclusively on self-genera
+  - SSD improves the Qwen3-30B-Instruct model's pass@1 score on LiveCodeBench v6 from 42.4% to 55.3%, demonstrating its efficacy without external supervision or com
+  - SSD alleviates the "precision-exploration conflict" by context-dependently reshaping the model's token distributions, suppressing distractors at "locks" while m
 ---
 # Embarrassingly Simple Self-Distillation Improves Code Generation
 

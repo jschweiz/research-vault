@@ -4,7 +4,8 @@ kind: blog-post
 title: Ten different ways to think about gradual disempowerment
 source_url: https://therealartificialintelligence.substack.com/p/ten-different-ways-of-thinking-about?r=1p7bya&triedRedirect=true
 source_name: Import AI
-authors: []
+authors:
+- David Krueger
 published_at: '2026-04-13T10:02:22Z'
 ingested_at: '2026-04-13T18:12:42.195579Z'
 content_hash: 1b34b38d8f92a5b6fe089103ccdf431630818c03dfccd937aa500d1695e6362d
@@ -17,6 +18,9 @@ tags:
 - website
 - blog-post
 - sub-document
+- gradual disempowerment
+- philosophy
+- technology
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -27,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-13-jack-clark-import-ai-import-ai-453-breaking-ai-agents-mirrorcode-and--91e156f4
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:42.195585Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post explores ten perspectives on 'Gradual Disempowerment,' suggesting that the development of increasingly capable AI systems may lead to humans losing agency and control over their future.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.103788Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: dc167207a945d24a9fac218904491c34a5d71ee0f088e78a509383457140e209
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 83734c8b45e5886bdfa1f55b1ba898e558cb457dc58984a6f90676eef7a38942
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is philosophical and policy-oriented and does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - The post explores ten perspectives on 'Gradual Disempowerment,' suggesting that the development of increasingly capable AI systems may lead to humans losing age
+  - The post is a helpful summary of the different lenses one might use to understand Gradual Disempowerment as a concept.
 ---
 # Ten different ways to think about gradual disempowerment
 

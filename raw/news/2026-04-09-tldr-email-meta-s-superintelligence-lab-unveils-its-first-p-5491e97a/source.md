@@ -22,7 +22,6 @@ tags:
 - model
 - social media
 - agentic systems
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
 fetched_at: '2026-04-13T18:30:32.821679Z'
-short_summary: Meta's Superintelligence Lab has released Muse Spark, its first public AI model. Muse Spark can gather information from social media to link posts to locations or topics, though performance gaps remain in long-horizon agentic systems.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Meta's Superintelligence Lab has released Muse Spark, its first public AI model. Muse Spark can analyze social media content and ranks well in standard thinking, though gaps remain in long-horizon agentic systems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.425514Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 85c0019054efb645aa4c8a6f9667fc67aad4ce6644795cf29ff6cf831fef42a6
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 280fc32d3ee469350125ea63b270fb51c1f9a3f4a3db6bcdf5d9e605ed2af21d
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on a public model release and agentic systems, which aligns with the user's interest in LLM evaluation and agentic systems, but lacks deep technical detail or direct focus on training/reasoning methods.
+  evidence_quotes:
+  - Muse Spark can analyze social media content and ranks well in standard thinking, though gaps remain in long-horizon agentic systems.
+  - However, there are still performance gaps in long-horizon agentic systems and coding workflows.
 ---
 # Meta's Superintelligence Lab unveils its first public model, Muse Spark
 

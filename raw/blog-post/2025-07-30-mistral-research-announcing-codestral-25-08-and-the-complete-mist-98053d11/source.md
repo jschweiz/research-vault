@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:23:41.613904Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9209803fc5ae9d638bfb22fd854c48be447cc7ba4cd9f5c23c8805a5b9ea81a7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 708ce60e75a8729f18ff723bf5270ae93abeec022064728e7df874c9f7305bc0
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.95
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document details a complete, integrated coding stack involving models, memory (embeddings), and agentic workflows, which directly aligns with the user's favorite topics of LLM architecture, reasoning, memory, and research tooling.
+  evidence_quotes:
+  - 'Mistral AI introduces the Mistral coding stack, an integrated system combining code completion, semantic search, and agentic workflows to accelerate enterprise '
+  - It’s an integrated system designed to support enterprise-grade software development across every stage—from code suggestion to autonomous pull requests.
+  - The Mistral coding stack integrates autocomplete, semantic retrieval, and agentic workflows directly into the IDE—while giving platform teams control over deplo
 ---
 How the world’s leading enterprises are using integrated coding solutions from Mistral AI to cut development, review, and testing time by 50%—and why the playbook now fits every company that wants AI-native software development.
 AI-powered coding is taking off, but enterprise adoption still lags due to critical limitations

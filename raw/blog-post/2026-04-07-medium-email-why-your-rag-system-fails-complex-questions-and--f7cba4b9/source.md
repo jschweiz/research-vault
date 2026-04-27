@@ -32,14 +32,25 @@ parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:11.827005Z'
 short_summary: This post explores why Retrieval-Augmented Generation (RAG) systems struggle with complex questions and proposes that better structure is the solution.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.861909Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 7514d5763f11c2287229c1d5cccdcdec2ac49aff65d91a228e1560e8971affe9
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c7d42f634e4e127a3300aedb9f7ed5e4e3a2f7da545cb5085fc45ea366858a87
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on RAG systems, which is relevant to LLM applications, but lacks the deep technical focus required by a frontier LLM researcher.
+  evidence_quotes:
+  - This post explores why Retrieval-Augmented Generation (RAG) systems struggle with complex questions and proposes that better structure is the solution.
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
 ---
 # Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
 

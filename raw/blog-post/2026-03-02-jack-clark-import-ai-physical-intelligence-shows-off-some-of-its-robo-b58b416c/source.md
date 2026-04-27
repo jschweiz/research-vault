@@ -20,7 +20,6 @@ tags:
 - deployment
 - e-commerce
 - vision-language-action
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,15 +30,27 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:43.010534Z'
-short_summary: Physical Intelligence is deploying its AI software on robots for tasks like folding laundry and packaging e-commerce items. This demonstrates how AI can help robots generalize and handle complex, variable tasks.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Physical Intelligence's AI software is being deployed on robots for tasks like folding laundry and e-commerce packaging, demonstrating improvements in handling variability and complex workflows.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.909293Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d64224707bf6a929c3311b8fa8aa20b0d8f73f9980df3977a12617559cd2d80b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 278eb982c3b7f68ec7a187abe13ecddf52b4150dc199ca1e78928c0485241402
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about robotics deployment and vision-language-action models, which is tangentially related to LLM research but does not directly address core LLM topics like reasoning, memory, or architecture.
+  evidence_quotes:
+  - 'Physical Intelligence''s AI software is being deployed on robots for tasks like folding laundry and e-commerce packaging, demonstrating improvements in handling '
+  - Vision-language-action models (VLAs) provide a way to solve this by providing a recipe which improves in performance with data scale rather than engineering hou
+  - Blogs like this from Physical Intelligence show us the beginnings of us having robot brains good enough to help robots generalize more.
 ---
 # Physical Intelligence shows off some of its robot deployments
 

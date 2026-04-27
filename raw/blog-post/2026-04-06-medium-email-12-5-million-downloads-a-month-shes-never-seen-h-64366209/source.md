@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f97e9b4933dedd3d8c42c2c01c614a0d45b975240f65196ae5607061e85f9e15
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8d8e29b2fb0968338edafe896bcb0c42cd4011fd3d2e215198de41e178ae0a00
+lightweight_scoring_input_hash: fc3553c992d3b0bc35f974a792efb1b0d12dd834b02cd4bbff503646a6e62b90
 lightweight_score:
-  relevance_score: 0.45
-  source_fit_score: 0.3
-  topic_fit_score: 0.6
-  author_fit_score: 0.0
-  evidence_fit_score: 0.5
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.35
+  evidence_fit_score: 0.16
   confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on LLM architecture and development, making it relevant to the user's favorite topics, though the focus is on a specific model's features rather than deep architectural reasoning.
+  bucket_hint: archive
+  reason: The document is about a developer's experience with Claude Code features rather than core LLM research topics.
   evidence_quotes:
   - A visually impaired developer in Copenhagen maintains a blog post about Claude Code's features, noting that everyone analyzed its features but nobody analyzed i
-  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+  - 'Source newsletter: Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.'
 ---
 # 12.5 Million Downloads a Month. She’s Never Seen Her Code on a Screen.
 

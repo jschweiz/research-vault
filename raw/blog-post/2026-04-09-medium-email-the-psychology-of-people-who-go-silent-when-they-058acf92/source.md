@@ -21,6 +21,7 @@ tags:
 - hurt
 - communication
 - sub-document
+- emotion
 status: active
 asset_paths: []
 source_id: medium-email
@@ -31,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:00.757861Z'
-short_summary: The post explores the psychological reasons why people choose to remain silent when they are experiencing hurt.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post explores the psychological reasons why people become silent when they are hurt. It delves into the dynamics of communication and emotional response in these situations.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:17.030250Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: acfdb4c800f4763e0aa6c117ce89f2895e9c13211ab4b3496ca2725cc7d4828d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f2e97a795317c6e603e6f49b5c5734384457625f4afb55b19313a721b9ca8570
+lightweight_score:
+  relevance_score: 0.0
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about psychology and communication and has no relevance to frontier LLM research topics.
+  evidence_quotes:
+  - The post explores the psychological reasons why people become silent when they are hurt.
+  - The post delves into the dynamics of communication and emotional response in these situations.
 ---
 # The Psychology of People Who Go Silent When They’re Hurt
 

@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:11.055024Z'
-short_summary: This post outlines an evidence-based routine for a 5-minute mental reset that readers can implement immediately.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post offers an evidence-based routine for a 5-minute mental reset that readers can implement immediately.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.674201Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 063ceded32ca2d2f3ceec6849d89f2f9ef52ac837afda21b28f12d0911e872db
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0ebe5a59187c9da4e9d66dd1ed9fe20fa061f65a3181a35db7c1ac723948fdb9
+lightweight_score:
+  relevance_score: 0.0
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about mental reset and mindfulness, which has no relevance to the user's focus on frontier LLM research topics.
+  evidence_quotes:
+  - This post offers an evidence-based routine for a 5-minute mental reset that readers can implement immediately.
+  - An evidence-based routine you can try right now
 ---
 # The 5-Minute Mental Reset That Actually Works
 

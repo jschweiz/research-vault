@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:07.897419Z'
-short_summary: This post introduces ten underrated Command Line Interface (CLI) commands that readers may not be familiar with. It serves as a guide to useful and practical CLI tools.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post introduces ten underrated Command Line Interface (CLI) commands that readers may not be familiar with. It serves as a guide to discovering useful and less commonly known commands for coding and system administration.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.989981Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 80847216c0f1a34d219c6c514fbc872a8570e5213a7f65b14b7f1e3fa989846c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b897b8105590e2933054c24fcdab24927843606131bab66c3deeb3aa7f2547ed
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about CLI commands and coding, which has no direct relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - This post introduces ten underrated Command Line Interface (CLI) commands that readers may not be familiar with.
+  - It serves as a guide to discovering useful and less commonly known commands for coding and system administration.
 ---
 # 10 Underrated CLI Commands You’ve (Probably) Never Heard Of
 

@@ -37,19 +37,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e7a3b901a4d01058a5e410ca8eed0a3252eb1e80a8803ba7c5d8b77c4499b28e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d86276c734dc455b6edde7d6cc2e36c441d0368046040eaf6d294d34135a06cd
+lightweight_scoring_input_hash: 305b846620dc8713f4859e826276e39fb0703a39a9f37344b230ff93bf31d646
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.36
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.55
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI and evaluation, which aligns with favorite topics, but the specific focus on satellite remote sensing is niche.
+  evidence_fit_score: 0.16
+  confidence_score: 0.9
+  bucket_hint: archive
+  reason: The document is about remote sensing and satellite embeddings, which has weak topical fit for the user's focus on LLM training, evaluation, reasoning, and architecture.
   evidence_quotes:
   - This post discusses an experiment using Google Earth Engine to compare AI satellite embeddings against traditional remote sensing classification methods.
-  - Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?
   - A Google Earth Engine based experiment
 ---
 # Can AI Satellite Embeddings Outperform Traditional Remote Sensing Classification?

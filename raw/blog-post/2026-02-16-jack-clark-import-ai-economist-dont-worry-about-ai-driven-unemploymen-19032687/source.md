@@ -21,7 +21,6 @@ tags:
 - human touch
 - jobs
 - automation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,26 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:09.425431Z'
-short_summary: Even with advanced AI, demand for jobs requiring a 'human touch' persists because people prefer human interaction in certain domains. This suggests a potential rise in human-to-human work and demand for new jobs as the economy evolves.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Even with advanced AI, demand for jobs offering a 'human touch' persists because people prefer human interaction in certain domains. This suggests a potential rise in human-to-human work and demand for new jobs as the economy evolves.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.835123Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e477b861b5f9bd8fcb1f993479fbfe1fafa31b0c096bf0a4dc5cfe4eb9955164
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c67e6256132e9a173ba3ece65ca038518c27e2bd7ff1142dc6f2d565f2da6e9c
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about economics and the human element, which has no direct relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - Even with advanced AI, demand for jobs offering a 'human touch' persists because people prefer human interaction in certain domains.
+  - The reason is that demand will always exist for certain jobs that offer what I call “the human touch.”
 ---
 # Economist: Don’t worry about AI-driven unemployment, because people like paying for the ‘human touch’
 

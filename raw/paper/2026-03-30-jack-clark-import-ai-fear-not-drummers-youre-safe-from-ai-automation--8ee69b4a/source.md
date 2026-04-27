@@ -20,7 +20,6 @@ tags:
 - dexdrummer
 - reinforcement learning
 - robot hands
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,15 +30,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-13T18:13:10.078657Z'
-short_summary: The paper details the development of DexDrummer, a hierarchical policy for teaching robot hands to play drums, focusing on dexterous control and real-world testing.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The paper introduces DexDrummer, a hierarchical, two-stage policy for teaching a robot hand to play the drums. The research explores the challenges of fine-grained low-latency dexterous control in robotics.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.831253Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c13d7da6e16c60665f1e51ff3713ff0a81125c5ada32fd9aac5a5c0f3092560a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c45b2e14a38a10330bc0cad40cd0c90bde777c229261f38004e00867e65dba13
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.35
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.65
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on reinforcement learning and control policies, which aligns with the user's interest in reasoning and LLM training, but the topic is focused on robotics rather than core LLM research.
+  evidence_quotes:
+  - The paper introduces DexDrummer, a hierarchical, two-stage policy for teaching a robot hand to play the drums.
+  - They built DexDrummer “a hierarchical, two-stage policy for drumming” which has a high-level RL policy, as well as a low-level dexterous policy.
+  - This is an area where I’d strongly encourage people to view the videos online to get some calibration about just how fiendishly hard this task is – the robots a
 ---
 # Fear not, drummers, you’re safe from AI automation for now
 

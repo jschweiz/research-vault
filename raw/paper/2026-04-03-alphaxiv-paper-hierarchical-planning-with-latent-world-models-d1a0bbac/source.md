@@ -59,19 +59,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.539897Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 77b446f085b1910ad5eefc29da79068c2867650885d92b1416d1003d679eaa0c
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 51f84a314da57fa6faebb663261d85b926bb494ca42491ca6eb3d5792fb2b404
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 2a49ead630c3f463f80eeb895ea89abb5df6bcbebfd0e125089dbeeec07f48a1
 lightweight_score:
-  relevance_score: 0.5683
-  source_fit_score: 0.6345
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.983
+  source_fit_score: 0.85
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
-  confidence_score: 0.6345
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 29 public votes, 5 total votes, 332 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses core topics like reasoning, efficiency, and planning in embodied AI, aligning perfectly with the user''s focus on LLM research and evaluation. alphaXiv engagement signals: 29 public votes, 5 total votes, 332 visits in the last 7 days.'
   evidence_quotes:
   - Hierarchical Planning with Latent World Models (HWM) introduces a top-down hierarchical planning strategy that operates in learned latent spaces, enabling robus
+  - We demonstrate that this hierarchical approach enables zero-shot control on real-world non-greedy robotic tasks, achieving a 70% success rate on pick-&-place us
+  - The framework demonstrated enhanced zero-shot generalization to out-of-distribution maze layouts, achieving an 83% success rate on hard mazes (D [13, 16]) versu
 ---
 # Hierarchical Planning with Latent World Models
 

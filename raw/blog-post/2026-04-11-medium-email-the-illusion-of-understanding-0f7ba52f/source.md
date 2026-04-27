@@ -6,6 +6,7 @@ source_url: https://medium.com/@jshen9889/the-illusion-of-understanding-8b083cc1
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Stephanie Shen
 published_at: '2026-04-11T06:40:00Z'
 ingested_at: '2026-04-13T18:18:16.884206Z'
 content_hash: 9b077bd2b859a6f78d76d110f550b01531b7da93c5dc510ca3e3da463c0f651d
@@ -16,6 +17,10 @@ tags:
 - email
 - blog-post
 - sub-document
+- illusion of understanding
+- wittgenstein
+- neuroscience
+- language
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +31,25 @@ doc_role: derived
 parent_id: 2026-04-11-medium-email-what-good-writing-looks-like-rita-kind-envy-in-u-477d126b
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:16.884213Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post explores the concept of the illusion of understanding, touching upon Wittgenstein, neuroscience, and the nature of language.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:19.943724Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: abcd91d6ad42458d34995e82f853ced00d44e10045d7980c005d853d6acc9168
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6de5dc3091a433336fda45579d3e047b1f370301728eab44c411fbd58fe4a067
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about philosophy and neuroscience and has no direct relevance to the user's focus on LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - This post explores the concept of the illusion of understanding, touching upon Wittgenstein, neuroscience, and the nature of language.
 ---
 # The Illusion of Understanding
 

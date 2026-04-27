@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0c52e8af209813737b135bef8d7460926bada4ab323e94afd4a5528bcd422204
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: fa0b3b57c223f6312773e4e210a7bc2ab9371b6c2554444686b7f638fb4cde80
+lightweight_scoring_input_hash: ac42374c55609f9f2094c607f05e8a789f7b0a0250d92ffb60e5d0f8cf5ec8cd
 lightweight_score:
-  relevance_score: 0.45
-  source_fit_score: 0.3
-  topic_fit_score: 0.8
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.6
-  confidence_score: 0.9
-  bucket_hint: worth_a_skim
-  reason: The document strongly aligns with favorite topics (LLM companies) but is focused on finance rather than the user's specific interests in evaluation or architecture.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document discusses financial aspects of major AI labs, which is only tangentially related to the user's focus on technical LLM research topics.
   evidence_quotes:
   - OpenAI and Anthropic are racing toward record-breaking IPOs, with both companies facing mounting computing costs.
   - The AI arms race continues as both labs release new models at an accelerated pace.

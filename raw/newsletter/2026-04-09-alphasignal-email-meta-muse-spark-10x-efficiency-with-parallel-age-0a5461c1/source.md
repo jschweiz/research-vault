@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.615295Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 69f1dfd930f23fb899ed29cd5e21f4a862125b229208491b115f9a0152df20c8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 33e176467d79647dad7660e997f6afbbe3ac163298dc4a5ff20acaabe0193049
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agent orchestration, multimodal reasoning, and efficiency techniques, which are highly relevant to the user's focus on LLM reasoning, memory, and efficiency.
+  evidence_quotes:
+  - Meta introduced Muse Spark, a new model combining multimodal inputs, tool use, and agent orchestration.
+  - Instead of one long reasoning chain, multiple agents work in parallel to solve harder problems.
+  - Improves efficiency by 10× vs Llama 4 Maverick during pretraining
 ---
 # ⚡️ Meta Muse Spark: 10x efficiency with parallel agent inference
 

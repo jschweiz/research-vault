@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T22:09:49.049876Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5788f1fc69117994c87891956f6283d9c056df3fc0b37771656195b743481eab
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 62e85744783f75fe740dfa92b113d531cfe8f3c5767c00bd49378a500f38b649
+lightweight_score:
+  relevance_score: 0.8034
+  source_fit_score: 0.24
+  topic_fit_score: 0.93
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.79
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - The source code for Claude Code was leaked, exposing over 512,000 lines of code and revealing internal architectural details. The leak also hints at future feat
 ---
 The inner workings of the popular coding agent Claude Code are available for all to see.
 What’s new: A recent version of Claude Code’s Node.js package accidentally included a key that [revealed](https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) the code behind its command-line interface. Chaofan Shou, an intern at the blockchain startup Solayer Labs, unlocked the code and published it. Engineers rapidly deciphered its secrets.

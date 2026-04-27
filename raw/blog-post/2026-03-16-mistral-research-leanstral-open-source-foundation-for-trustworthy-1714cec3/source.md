@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T15:00:09.820214Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f30f57e60a3425201aee198e05682df770970e8a60f5cd7f1b7dc8b82142aabf
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 59e78db9854ccf164452a30d7b8f7ba7555943cbc9045a7051d8fe30ecac8d2f
+lightweight_score:
+  relevance_score: 0.7523
+  source_fit_score: 0.24
+  topic_fit_score: 0.8505
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.765
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - 'Leanstral is an open-source code agent designed for Lean 4, enabling the formal proof of software implementations. It is designed to be efficient and powerful, '
 ---
 AI agents have proven to be highly capable tools at code generation. Yet, as we push these models to high-stakes domains, ranging from frontier research mathematics to mission-critical software, we encounter a scaling bottleneck: the human review. The time and specialized expertise required to manually verify become the primary impedance of engineering velocity.
 We envision a more helpful generation of coding agents to both carry out their tasks and formally prove their implementations against strict specifications. Instead of debugging machine-generated logic, humans dictate what they want. Today, we are taking the first major step toward that vision.

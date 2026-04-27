@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:22:31.793702Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 154801098cba53ee65504725c33c2ed25494a1a7c6b8665ead0ebedbf7b4de88
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6f1a42c1e90ffc3a71f56b471416a45a362f068d889273abd3adb9f79a422355
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses reasoning models, evaluation, and open-source architecture, which aligns perfectly with the user's favorite topics and research persona.
+  evidence_quotes:
+  - Magistral is the first reasoning model by Mistral AI, designed to excel in domain-specific, transparent, and multilingual reasoning.
+  - The release is supported by our [latest paper](https://arxiv.org/pdf/2506.10910)covering comprehensive evaluations of Magistral, our training infrastructure, re
+  - As we’ve open-sourced Magistral Small, we welcome the community to examine, modify and build upon its architecture and reasoning processes to further accelerate
 ---
 Stands to reason.
 Magistral

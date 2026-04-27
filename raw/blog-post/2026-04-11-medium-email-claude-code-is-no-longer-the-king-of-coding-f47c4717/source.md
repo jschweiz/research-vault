@@ -6,6 +6,7 @@ source_url: https://medium.com/@dreamferus/claude-code-is-no-longer-the-king-of-
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Jacob Ferus
 published_at: '2026-04-11T06:40:00Z'
 ingested_at: '2026-04-13T18:18:24.624787Z'
 content_hash: ab6573ac5943ae8f550e4577160dc57679f91d53ea25072b48f66eb85a21a549
@@ -16,6 +17,9 @@ tags:
 - email
 - blog-post
 - sub-document
+- claude code
+- coding
+- ai
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-11-medium-email-what-good-writing-looks-like-rita-kind-envy-in-u-477d126b
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:24.624795Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Claude Code has fundamentally changed the landscape of coding. The post suggests a shift in the role and dominance of Claude Code in the coding world.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:18.724730Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 381b0163e76c9f19bb58bcdab67d9562b2dfa71bfdbfc6426d6a1210cde1c57c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0553e952f78fb709da4fe9aca9d4845956d644ef13d87837520ef1dc8fd49209
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about coding and Claude Code, which has weak topical relevance to the user's focus on LLM training, evaluation, reasoning, and architecture.
+  evidence_quotes:
+  - Claude Code has fundamentally changed the landscape of coding.
+  - The post suggests a shift in the role and dominance of Claude Code in the coding world.
 ---
 # Claude Code is No Longer the King of Coding
 

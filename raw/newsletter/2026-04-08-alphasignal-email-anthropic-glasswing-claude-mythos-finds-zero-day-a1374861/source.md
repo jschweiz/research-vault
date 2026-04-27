@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.575675Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 533a9c6873cef3a336a11616457ebd49c86f8f341f7d22b595131402e3ad99f5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1a6fa2a935d34f0204d25eaf75ef0ac733404d9316dc96e41c96f2153825a0c8
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM evaluation, security, and agentic reasoning, which aligns perfectly with the user's focus areas.
+  evidence_quotes:
+  - Anthropic introduces Project Glasswing, an initiative using Claude Mythos Preview to automate vulnerability discovery and security testing.
+  - Scores 83.1% on CyberGym vulnerability reproduction benchmark
+  - Z.ai releases GLM-5.1, an open-source model for agent-based software tasks.
 ---
 # 🔍 Anthropic Glasswing: Claude Mythos finds zero-day vulnerabilities
 

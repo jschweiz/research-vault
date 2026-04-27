@@ -57,19 +57,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.612305Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 79992fbb66ed4227d8c5da13ee1bce8908bb258a8939deed18f9535340b100a2
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 6449af71f4a49eb7c889cf6e6cf411f78572d234d7da55960d8cd826b3659a27
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 8d8ea2cb4f71f8f4f130c732ad024c359f3ff5dca380f27e9c858524bfc7d137
 lightweight_score:
-  relevance_score: 0.557
-  source_fit_score: 0.5959
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.8761
+  source_fit_score: 0.65
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.5959
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 14 public votes, 2 total votes, 140 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper is highly relevant as it addresses reinforcement learning, efficiency, and high-dimensional control, aligning perfectly with the user''s favorite topics and preferred authors. alphaXiv engagement signals: 14 public votes, 2 total votes, 140 visits in the last 7 days.'
   evidence_quotes:
   - 'FlashSAC is an off-policy reinforcement learning algorithm designed for high-dimensional robotic control, integrating rapid training via scaled data throughput '
+  - FlashSAC reduced the wall-clock training time for sim-to-real humanoid locomotion by nearly an order of magnitude compared to PPO, achieving stable real-world b
+  - Scaling laws observed in supervised learning can be effectively applied to off-policy RL, where increasing model capacity and data throughput with reduced gradi
 ---
 # FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control
 

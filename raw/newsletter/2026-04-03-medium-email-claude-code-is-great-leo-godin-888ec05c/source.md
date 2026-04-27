@@ -31,21 +31,19 @@ lightweight_enriched_at: '2026-04-09T14:34:22.865437Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: fb53942c0a5542311056689b117ab50b626ac8c7683e57ab07ab98f2d26a33f3
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 813f834f8d59f06d53b75357e73b4851de210767677c97ad6c908566aa9fbdd7
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 37ce965039c0ca29c79171a5b922747541c36d777ddd63bbb2072e0ff197d3e4
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document is highly relevant as it contains multiple articles directly addressing favorite topics like LLM architecture, memory, and reasoning, and features favorite authors.
+  relevance_score: 0.3901
+  source_fit_score: 0.24
+  topic_fit_score: 0.3101
+  author_fit_score: 0.12
+  evidence_fit_score: 0.9904
+  confidence_score: 0.6149
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: memory for llms, 1 favorite-topic match, deprioritized by newsletter or roundup framing.'
   evidence_quotes:
-  - 'Agentic AI: Implementing Long-Term Memory'
-  - 'The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines'
-  - 'The LLM Backbone: Building a RAG-Based GPT from Scratch'
+  - Medium digest led by "Claude Code is Great". Includes 15 highlighted stories, including "Why reading “The Decameron” is as useful as ever".
 ---
 # Claude Code is Great | Leo Godin
 

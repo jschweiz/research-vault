@@ -32,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:10:41.588266Z'
-short_summary: The Constitutional Classifiers method defends AI models against universal jailbreaks by using input and output classifiers trained on synthetic data, significantly improving robustness against harmful prompts with minimal compute overhead.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Constitutional Classifiers system defends AI models against universal jailbreaks by using input and output classifiers trained on principles to filter harmful content. Automated evaluations showed this system reduced jailbreak success rates significantly while maintaining minimal additional compute cost.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.606524Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5602b38c7b3b8d7d9e98d63c7d782c4db9ca03581514589aa0ea952bd0428c56
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d1c958b1c23769594d214647eeb51ea77fda79b7717d443164b67f756ea6513a
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document is a high-priority, technical research paper from Anthropic directly addressing LLM safety, defense, and evaluation methods, which aligns perfectly with the user's focus on evaluation, reasoning, and safety in frontier LLMs.
+  evidence_quotes:
+  - The Constitutional Classifiers system defends AI models against universal jailbreaks by using input and output classifiers trained on principles to filter harmf
+  - Results from automated evaluations We ran a set of automated evaluations where we synthetically generated 10,000 jailbreaking prompts including many of the most
+  - Overall, our automated analyses found that this updated version of the Constitutional Classifiers system dramatically improved the robustness of the AI model ag
 ---
 Constitutional Classifiers: Defending against universal jailbreaks
 A [new paper](https://arxiv.org/abs/2501.18837) from the Anthropic Safeguards Research Team describes a method that defends AI models against universal jailbreaks. A prototype version of the method was robust to thousands of hours of human red teaming for universal jailbreaks, albeit with high overrefusal rates and compute overhead. An updated version achieved similar robustness on synthetic evaluations, and did so with a 0.38% increase in refusal rates and moderate additional compute costs.

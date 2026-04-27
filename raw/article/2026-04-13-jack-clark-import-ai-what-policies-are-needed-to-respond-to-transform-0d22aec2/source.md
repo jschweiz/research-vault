@@ -17,6 +17,9 @@ tags:
 - website
 - article
 - sub-document
+- atlas
+- regulation
+- economic disruption
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -27,15 +30,27 @@ doc_role: derived
 parent_id: 2026-04-13-jack-clark-import-ai-import-ai-453-breaking-ai-agents-mirrorcode-and--91e156f4
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:33.041815Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Windfall Trust published a Policy Atlas to help navigate various policy responses to the economic disruption caused by transformative AI. The Atlas organizes 48 ideas into five categories to make complex policy choices easier to visualize and navigate.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.373948Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 96ffc61209e8dbcc3726f6af890e12d00fba7394fc447634b31ec22ac90180b1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a99b50324c0ee6e77ca140d4e767d750e40feb0ff52cc3a8bdc8c50b8006036e
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about policy and economic disruption, which does not directly align with the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - The Windfall Trust published a Policy Atlas to help navigate various policy responses to the economic disruption caused by transformative AI.
+  - The atlas contains 48 distinct ideas, none of which are particularly novel.
+  - The atlas organizes 48 ideas into five categories to make complex policy choices easier to visualize and navigate.
 ---
 # What policies are needed to respond to transformative AI? Here’s an Atlas to help you navigate them
 

@@ -14,6 +14,10 @@ tags:
 - official
 - website
 - blog-post
+- contest
+- terms and conditions
+- contest rules
+- prize
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +28,26 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:28:22.763488Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This document outlines the official terms and conditions for the OpenAI Full Fan Mode Contest, detailing eligibility, entry steps, judging criteria, and prize information.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:17.140197Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ad0217eeb7897ffa0793fa39d10506816faceaf271b58da545befde5a9894e0f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ff0f92b609b7f0536a59257edf2c49ebc97bf80e43753dcb3191b144c6a1b5a7
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.55
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a contest announcement and provides no technical information relevant to frontier LLM research.
+  evidence_quotes:
+  - This document outlines the official terms and conditions for the OpenAI Full Fan Mode Contest, detailing eligibility, entry steps, judging criteria, and prize i
+  - Explore the official terms and conditions for the OpenAI Full Fan Mode Contest, including eligibility, entry steps, judging criteria, and prize details.
+  - Learn how to participate, submit your entry on Instagram, and win IPL match tickets.
 ---
 Explore the official terms and conditions for the OpenAI Full Fan Mode Contest, including eligibility, entry steps, judging criteria, and prize details. Learn how to participate, submit your entry on Instagram, and win IPL match tickets.

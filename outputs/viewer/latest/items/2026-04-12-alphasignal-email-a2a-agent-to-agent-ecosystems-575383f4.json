@@ -1,0 +1,75 @@
+{
+  "id": "2026-04-12-alphasignal-email-a2a-agent-to-agent-ecosystems-575383f4",
+  "kind": "article",
+  "source_id": "alphasignal-email",
+  "title": "A2A (Agent to Agent) ecosystems",
+  "source_name": "AlphaSignal Email",
+  "organization_name": null,
+  "authors": [
+    "AlphaSignal <news@alphasignal.ai>",
+    "AlphaSignal"
+  ],
+  "published_at": "2026-04-12T15:34:02Z",
+  "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=PO1P6NIhzqnMYp5Z&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# A2A (Agent to Agent) ecosystems\n\nSource newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-12T15:34:02+00:00\nCanonical URL: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=PO1P6NIhzqnMYp5Z&mid=89966dc0-ec27-4d76-8a02-338015fd672e\n\n## Newsletter Context\n\nOne area that is worth watching is how these orchestration layers evolve into systems that solve the challenges of A2A (Agent to Agent) ecosystems .\n",
+  "outbound_links": [
+    "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=PO1P6NIhzqnMYp5Z&mid=89966dc0-ec27-4d76-8a02-338015fd672e"
+  ],
+  "score": {
+    "relevance_score": 0.1933,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.168,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.144,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.2548,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 822.7019,
+      "novelty_signal": 4.3111,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document discusses agent ecosystems, which is tangentially related to LLM research but lacks direct focus on the user's core interests in training, evaluation, reasoning, or memory.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.16,
+      "judge_topic_fit_score": 0.16,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.16,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "One area that is worth watching is how these orchestration layers evolve into systems that solve the challenges of A2A (Agent to Agent) ecosystems ."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "The document discusses the evolution of orchestration layers into systems that solve the challenges of Agent to Agent (A2A) ecosystems",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-12-alphasignal-email-a2a-agent-to-agent-ecosystems-575383f4/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-13T18:54:07.155837Z",
+  "alphaxiv": null
+}

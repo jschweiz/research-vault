@@ -6,6 +6,7 @@ source_url: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-pr
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-08T10:59:19Z'
 ingested_at: '2026-04-09T12:05:02.517071Z'
 content_hash: ee76bec981bd73dc88c6b214a1937b7d68cb66aab46cb471e7c74aba5999d871
@@ -21,7 +22,6 @@ tags:
 - superintelligence
 - cybersecurity
 - policy
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:14.852401Z'
-short_summary: Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The article details these developments and related stories.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:04.399869Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 59d95d18fecf0228b7d423e6259e724fff5662779ffda2d9555482f03d477053
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e4f2b600d495233a9f2453ee943bd86c5ee41e59df0f8d8710c3af284f65c41a
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.33
+  evidence_fit_score: 0.16
+  confidence_score: 0.95
+  bucket_hint: archive
+  reason: The document discusses high-level policy and partnerships rather than the technical research topics preferred by the user.
+  evidence_quotes:
+  - Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos.
+  - OpenAI recently proposed policy for the age of superintelligence.
 ---
 # OpenAI #16: A History and a Proposal
 

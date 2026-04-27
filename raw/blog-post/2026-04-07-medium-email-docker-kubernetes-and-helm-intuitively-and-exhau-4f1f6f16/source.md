@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:14.127455Z'
-short_summary: This article provides an intuitive and exhaustive explanation of Docker, Kubernetes, and Helm. It explores the concepts behind these technologies in detail.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This article provides an intuitive and exhaustive explanation of Docker, Kubernetes, and Helm. It explores the concepts behind these technologies in depth.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.623805Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c9c7b04a2832ff337eb0cd658e917ea25b6e6a71ec37743acd2b278a86ede524
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ae61153bf24ab82c403f95ea797094eb0dfe2a73f7ff48841dc100be029ffd95
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about software infrastructure (Docker, Kubernetes, Helm) and does not directly address the user's focus on LLM training, evaluation, reasoning, memory, or architecture.
+  evidence_quotes:
+  - This article provides an intuitive and exhaustive explanation of Docker, Kubernetes, and Helm.
+  - It explores the concepts behind these technologies in depth.
 ---
 # Docker, Kubernetes, and Helm — Intuitively and Exhaustively Explained
 

@@ -38,18 +38,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 81ec5ddd88efb50a00d46cb705901a840f21c1b23a2c5424b7bb2ec9679b09df
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3395c1db837698548816cf6747241aac68dacd495b64450b7b6ff48a0c2e4453
+lightweight_scoring_input_hash: e8fce4e074d4db48ad1286fb767107c0eeb0db229b017f6cc30dcaf4d1a705ae
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.6
-  topic_fit_score: 1.0
-  author_fit_score: 0.8
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses AI R&D, which aligns perfectly with the user's favorite topics of language models, research, and reasoning.
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.75
+  evidence_fit_score: 0.9
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document discusses the automation of AI R&D, which touches upon efficiency, acceleration, and the limiting factors of AI development, aligning well with the user's focus on LLM research and efficiency.
   evidence_quotes:
-  - Automating AI research and development could lead to a 'strategic surprise' with major implications for national security.
+  - 'Automating AI R&D is a potential source of major strategic surprise : AI R&D could confer a rapidly compounding advantage to whoever is doing it, with significa'
   - As AI R&D accelerates, the returns to the AI doing more and more of the work compound and those of humans diminish, leading to an ever faster rate of research a
   - 'If AI R&D could lead to AI systems evolving 100X faster than those being built by humans, then you end up in a world that has some time travelers in it who are '
 ---

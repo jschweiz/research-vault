@@ -40,9 +40,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.732393Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7cd3fd6bbca7f06dd02202a871f00b9893519fe7c75cd2df6bfeb0b53b4876d5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b3041861d2a94249a2049e0313c6aa233c48d1946ebb485c51f18e3f1ff11120
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.65
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on scaling laws and automation, which are relevant to LLM research, but the focus is on macro-economic and cybersecurity trends rather than core LLM training, evaluation, or reasoning methods.
+  evidence_quotes:
+  - Across frontier models released since 2019, the doubling time is 9.8 months. Restricting to models released since 2024, it steepens to 5.7 months.
+  - AI systems are getting good at hacking. “The best current models achieve 50% success on tasks that take human experts 3.2h, roughly half a working day of profes
+  - We find little evidence of crashing waves, but substantial evidence that rising tides are the primary form of AI automation,” they write.
 ---
 # Import AI 452: Scaling laws for cyberwar; rising tides of AI automation; and a puzzle over gDP forecasting
 

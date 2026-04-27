@@ -22,7 +22,6 @@ tags:
 - automation
 - software development
 - agent
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:32.733667Z'
-short_summary: In the largest monorepo, an agent now reviews and merges 58% of pull requests without human review, which has reduced the average merge time by 62%.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: An agent now reviews and merges 58% of pull requests in a large monorepo without human review, which has reduced the average merge time by 62%.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.948091Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5e77702af47481a1033cfe656ecc92fa531c30947517073fd3b1ec34755566a8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5de010195b51118457ba83fe5cb53c34b3f00b28d37c1f6942af99e3118d0883
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about software development automation and does not directly address the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - 58% of PRs in our largest monorepo merge without human review
+  - An agent now reviews and merges 58% of pull requests in a large monorepo without a human reviewer, which has reduced the average merge time by 62%.
+  - This has dropped the average merge time by 62%.
 ---
 # 58% of PRs in our largest monorepo merge without human review
 

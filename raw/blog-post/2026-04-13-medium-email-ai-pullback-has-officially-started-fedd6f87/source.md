@@ -6,6 +6,7 @@ source_url: https://medium.com/@wlockett/ai-pullback-has-officially-started-fb6d
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Lockett
 published_at: '2026-04-13T06:40:00Z'
 ingested_at: '2026-04-13T18:17:21.723098Z'
 content_hash: fd4c7c999ea9596f7021971a871f32c96b41afa6994df7ace7f4bcdfd5376be7
@@ -16,6 +17,8 @@ tags:
 - email
 - blog-post
 - sub-document
+- ai
+- pullback
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +29,25 @@ doc_role: derived
 parent_id: 2026-04-13-medium-email-data-engineering-incremental-data-loading-strate-bf547e37
 index_visibility: visible
 fetched_at: '2026-04-13T18:17:21.723103Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: People are starting to face the reality of artificial intelligence.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.334759Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5967243e72f33bc7eab17016e5232dfeeffcb8068ffc945732a2a91d8cbec0e0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 63e4e5aad6c006422984fec2c17a8db2ee61cd141359cd215c7ae7edcd4a8d7b
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a generic commentary on the reality of AI and lacks specific technical content relevant to frontier LLM research.
+  evidence_quotes:
+  - People are beginning to confront the reality of AI…
 ---
 # AI Pullback Has Officially Started
 

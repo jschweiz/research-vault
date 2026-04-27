@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:24:25.574632Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: dab577fc603150a03fdd8e8253c50cfa9d84bd2e758c9dbd0b0752cfa06eae17
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7866ad1998bbe428c19c5d147f49e1af7f823ef973d31d8c8fede61cb78d489e
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.9
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM research by introducing a state-of-the-art open-source coding model and associated agent tooling, which aligns perfectly with the user's favorite topics of LLM architecture, evaluation, and reasoning.
+  evidence_quotes:
+  - 'Devstral 2: SOTA open model for code agents with a fraction of the parameters of its competitors and achieving 72.2% on SWE-bench Verified.'
+  - Devstral 2 is a 123B-parameter dense transformer supporting a 256K context window.
+  - 'Mistral Vibe CLI: Native, open-source agent in your terminal solving software engineering tasks autonomously.'
 ---
 Content
 Today, we're releasing Devstral 2—our next-generation coding model family available in two sizes: Devstral 2 (123B) and Devstral Small 2 (24B). Devstral 2 ships under a modified MIT license, while Devstral Small 2 uses Apache 2.0. Both are open-source and permissively licensed to accelerate distributed intelligence.

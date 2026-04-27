@@ -1,0 +1,26 @@
+# Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
+
+Source: Medium Email
+Published: 2026-04-12T06:40:00+00:00
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
+
+## Summary
+
+Andrej Karpathy built an entire GPT model using only 243 lines of Python code. This achievement demonstrates the simplicity of implementing complex AI concepts without relying on major deep learning frameworks
+
+## Text
+
+# Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
+
+Source newsletter: Backpropagation is simpler than you think (once you see this) | Nikhil Anand in AI Advances
+Sender: Medium Daily Digest <noreply@medium.com>
+Published At: 2026-04-12T06:40:00+00:00
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@sumit.ai/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301
+
+## Newsletter Context
+
+Section: Today's highlights
+
+> Sumit Pandey in Towards Deep Learning · 9 min read · 3.7K claps · 50 responses
+
+No PyTorch. No TensorFlow. Just pure Python and basic…

@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fecfe76816c3ebfb467c07be6841407894dbd097e0adaddc25388dd426c91ff7
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 74b288284f19f8e675ccac1c13e452783ba2766979227a8ceae8ff36d2714170
+lightweight_scoring_input_hash: 16f9d7b40ddc0a07cb02c3871ef7df4c56f6edee8698e888c115683c88b78dda
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.55
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI-related themes, but the specific focus on developer relations does not strongly align with the user's favorite topics of LLMs, evaluation, or architecture.
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about developer relations and machine legibility, which has no direct technical relevance to frontier LLM research topics.
   evidence_quotes:
   - Developer relations must be legible to both humans and the machines they work alongside.
   - Devrel has to be legible, not just to humans, but to the machines working alongside them.

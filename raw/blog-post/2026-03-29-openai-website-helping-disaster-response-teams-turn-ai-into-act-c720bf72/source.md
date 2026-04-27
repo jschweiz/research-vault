@@ -37,8 +37,18 @@ lightweight_enriched_at: '2026-04-09T15:00:12.022179Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 39fa5346ff7d0798b03b38ed0106135adc4f3b0635f359d0a79002f45eb66a14
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c3bce589b409356d47e1d4f723a6b76c8a41d776d7aae08a09fa10f319e5ba31
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.5
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a public relations post about a workshop and does not address the user's focus on frontier LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - OpenAI hosted a workshop with the Gates Foundation focused on applying AI to disaster response efforts across Asia.
 ---
 AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation

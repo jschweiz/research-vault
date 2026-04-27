@@ -4,7 +4,8 @@ kind: blog-post
 title: Uh oh, there’s a scaling war for cyberattacks as well!
 source_url: https://lyptusresearch.org/research/offensive-cyber-time-horizons
 source_name: Import AI
-authors: []
+authors:
+- Lyptus Research
 published_at: '2026-04-06T12:31:31Z'
 ingested_at: '2026-04-09T20:15:22.411951Z'
 content_hash: c4b7f45e43734e5e8f0c7f7cb1152d4ad3140c961fc7e35d495ddc7e81a66277
@@ -30,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:51.292829Z'
-short_summary: AI systems are increasingly capable of performing advanced cyberoffense tasks, with frontier models achieving 50% success on tasks that take human experts several hours. This expansion of AI capabilities raises significant policy concerns regarding the repurposing of AI for offensive applications.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems are increasingly capable of performing advanced cyberattack tasks, with frontier models achieving 50% success on tasks that take human experts several hours. This expansion of AI capabilities raises significant policy concerns regarding the repurposing of AI for offensive security and weapon development.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.276897Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d2e8493277050970f6a886e9c42e7d44f4b41ad31d064b0b56e4a856b0c0a3e0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 58d234c0600c87f9b0800449f6f049567b80260955ab5e2a10b62154221445b7
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.55
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI capabilities and scaling laws, which are relevant to the user's interest in LLM evaluation and reasoning, but the focus is on cyberattacks and policy rather than core LLM research methods.
+  evidence_quotes:
+  - Across frontier models released since 2019, the doubling time is 9.8 months. Restricting to models released since 2024, it steepens to 5.7 months.
+  - 'The most recent frontier models in our study, GPT-5.3 Codex and Opus 4.6, sit above both fitted trendlines, achieving 50% success on tasks taking human experts '
+  - AI systems are getting good at hacking.
 ---
 # Uh oh, there’s a scaling war for cyberattacks as well!
 

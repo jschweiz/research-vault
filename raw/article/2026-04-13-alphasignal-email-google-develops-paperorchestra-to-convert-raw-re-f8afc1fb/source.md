@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5471fae9b54622
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-13T16:38:35Z'
 ingested_at: '2026-04-13T18:06:30.587612Z'
 content_hash: 1d9dd865932a87b67428efdc56dafbaaffb9a4da4c3daf78aaed181e1bbb3701
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- paperorchestra
+- multi-agent
+- latex
+- research
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-13-alphasignal-email-anthropic-ultraplan-cloud-planning-local-executi-2c453f7a
 index_visibility: visible
 fetched_at: '2026-04-13T18:06:30.587617Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Google developed PaperOrchestra, a multi-agent framework that converts raw research notes into structured LaTeX papers. It uses specialized agents for outlining, literature retrieval, plotting, and writing to generate full manuscripts.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:07.793217Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 05e897a7c4dfadb9d409b2e383dfac4f59ebc24348aa6de5aeca7af49f626259
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d36b14d7e2e3bc30d75851d242250a8fbf8fd661ee59e926bc17e958ce3998c5
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document directly addresses post-training methods and evaluation for LLMs using a multi-agent framework, which aligns perfectly with the user's favorite topics.
+  evidence_quotes:
+  - PaperOrchestra introduces a multi-agent framework that generates full research manuscripts from unstructured materials like idea summaries and experiment logs.
+  - The evaluation uses a benchmark built from reverse-engineered conference paper inputs.
+  - It addresses a gap where existing systems depend on fixed pipelines and produce shallow literature reviews.
 ---
 # Google develops PaperOrchestra to convert raw research notes into structured LaTeX papers using multi-agent workflows
 

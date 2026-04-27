@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 148f4200701636546d4349e65eacd4f5e56cd963fb700c5f7a9993e1c97fc545
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3a47e2086246b55c18d95bcfc74a559bc3fcc693bf8528a99c118d83a12e8a91
+lightweight_scoring_input_hash: 6c0723a7d6364ffbcc7d70e85aac3ba63b040a04d6dbdb0df8d5f1f564ed3c81
 lightweight_score:
   relevance_score: 0.16
   source_fit_score: 0.16
   topic_fit_score: 0.16
   author_fit_score: 0.0
   evidence_fit_score: 0.16
-  confidence_score: 0.8
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about data engineering tooling (Unity Catalog) and does not align with the user's favorite topics of language models, evaluation, or LLM architecture.
+  reason: The document is about data engineering tooling and does not directly address the user's focus on LLM training, evaluation, or reasoning.
   evidence_quotes:
-  - I spent 5 hours learning about Unity Catalog and is sharing what they found out.
-  - The famous catalog service from Databricks, and it was…
+  - I spent 5 hours learning about Unity Catalog. Here’s everything you need to know.
+  - The author spent five hours learning about Unity Catalog and is sharing what they found out.
 ---
 # I spent 5 hours learning Unity Catalog. Here’s everything you need to know.
 

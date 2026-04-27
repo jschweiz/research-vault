@@ -60,19 +60,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.710631Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 2a443184b97be635237240020191af560c333d1b481272d1b8fd50c4ee5e03be
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: dcad590433546a8def57e3461936e8e8d189b63f2b4317bbd048f28d1013be82
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2d5a43487c3e2b6e30b72a1e084e81f6a246481eb17f0c0315cf6e5f62870a83
 lightweight_score:
-  relevance_score: 0.5465
-  source_fit_score: 0.5593
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
-  confidence_score: 0.5593
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 3 public votes, 0 total votes, 48 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This paper details an end-to-end automated research system for discovering State-of-the-Art AI models, directly addressing the user's interest in LLM discovery, research tooling, and optimization.
   evidence_quotes:
   - An end-to-end automated research system named AutoSOTA, developed by Tsinghua University and Zhongguancun Academy, discovers new State-of-the-Art AI models from
+  - Across these papers, AutoSOTA achieves strong end-to-end performance in both automated replication and subsequent optimization.
+  - Case studies spanning LLM, NLP, computer vision, time series, and optimization further show that the system can move beyond routine hyperparameter tuning to ide
 ---
 # AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery
 

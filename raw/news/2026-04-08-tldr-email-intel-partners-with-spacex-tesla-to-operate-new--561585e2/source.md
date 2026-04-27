@@ -22,7 +22,6 @@ tags:
 - tesla
 - chip plant
 - terafab
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:30:59.858455Z'
-short_summary: Intel has partnered with SpaceX and Tesla to develop a new chip plant called Terafab. This facility will produce high-performance chips for Tesla's robotaxis, Optimus robots, and space applications.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Intel has partnered with SpaceX and Tesla to operate a new chip plant, Terafab. This facility will produce ultra-high-performance chips for Tesla's robotaxis, Optimus robots, and space applications.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.373161Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 544480642df57e244e7a7034f7062cbd0d7e2d997dade257d70f5ff213da6ddb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3bae11f7880692f596a9632753d2622c1731f87c8ad3ba7d31ec3043f6c23a73
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about semiconductor partnerships and does not directly address the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - Intel has partnered with SpaceX and Tesla to work on Elon Musk's Terafab project.
+  - Intel will design, fabricate, and package ultra-high-performance chips at scale.
+  - Terafab will make chips for use in Tesla's robotaxis and Optimus humanoid robots.
 ---
 # Intel Partners With SpaceX, Tesla to Operate New Chip Plant
 

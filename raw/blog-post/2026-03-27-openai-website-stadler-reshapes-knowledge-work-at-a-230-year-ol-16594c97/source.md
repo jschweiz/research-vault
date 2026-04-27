@@ -34,8 +34,19 @@ lightweight_enriched_at: '2026-04-09T15:00:11.943254Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ed29c08434520c2df106eb6fadada1ea13f318882963b47aee87b7e561d3b9ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e76e89b0de03fd3663d21b4e0484bc41448b7cc72c2c012017edc1d2216c040b
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.35
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a generic business case study and does not directly address the user's focus on frontier LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - STADLER is using ChatGPT to transform knowledge work, resulting in time savings and increased productivity for its 650 employees.
+  - Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.
 ---
 Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees.

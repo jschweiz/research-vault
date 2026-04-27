@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5cab7f3aef8cfe
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-10T15:38:59Z'
 ingested_at: '2026-04-13T18:07:12.250570Z'
 content_hash: b47df507c5b97427d75cf725d73b0fdd64ba05ac9a6fd886d51eae176f117686
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- openai
+- chatgpt
+- codex
+- pro tier
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-10-alphasignal-email-anthropic-opus-advisor-cuts-agent-costs-12-with--25ff1a0c
 index_visibility: visible
 fetched_at: '2026-04-13T18:07:12.250576Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenAI introduced a new $100/month ChatGPT Pro tier offering higher Codex limits for extended coding sessions. This update rebalances Codex usage across plans, focusing on sustained development workflows.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.907456Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 53f07aa92722940768dda7d5c2ed1a88fd2e0064edca52dae66e63915710bd3c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cc85d5a5b10c9805d83fde4dddbb3f7688c5c03f2c9414d0679d6919bbf89f5c
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.65
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document touches on LLM capabilities (reasoning, context windows) and efficiency (compute allocation) relevant to the user's interests, but it is a product announcement rather than core research.
+  evidence_quotes:
+  - Pro tier supports longer uninterrupted sessions designed for extended coding workflows
+  - Pro expands model access, limits, and system capacity compared to Plus
+  - Includes access to GPT-5.4 Pro reasoning model with higher compute allocation
 ---
 # OpenAI announces a $100/month ChatGPT Pro tier with higher Codex limits for long coding sessions
 

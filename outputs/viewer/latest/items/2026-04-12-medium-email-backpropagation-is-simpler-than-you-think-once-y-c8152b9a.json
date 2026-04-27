@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-c8152b9a",
+  "kind": "blog-post",
+  "source_id": "medium-email",
+  "title": "Backpropagation is simpler than you think (once you see this)",
+  "source_name": "Medium Email",
+  "organization_name": null,
+  "authors": [
+    "Medium Daily Digest <noreply@medium.com>",
+    "Nikhil Anand"
+  ],
+  "published_at": "2026-04-12T06:40:00Z",
+  "canonical_url": "https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9",
+  "content_type": "post",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Backpropagation is simpler than you think (once you see this)\n\nSource newsletter: Backpropagation is simpler than you think (once you see this) | Nikhil Anand in AI Advances\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-12T06:40:00+00:00\nCanonical URL: https://freedium-mirror.cfd/https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Nikhil Anand in AI Advances · 8 min read · 614 claps · 2 responses\n\nWhat’s actually being computed inside a neural network…\n",
+  "outbound_links": [
+    "https://freedium-mirror.cfd/https://medium.com/@nikhilanandnj/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9"
+  ],
+  "score": {
+    "relevance_score": 0.2015,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.17,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.3062,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.2819,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 822.7019,
+      "novelty_signal": 5.4,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document provides a general, intuitive guide to backpropagation, which is foundational but not directly focused on frontier LLM training, evaluation, or advanced reasoning methods.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 0.9,
+      "judge_source_fit_score": 0.16,
+      "judge_topic_fit_score": 0.35,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.25,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "This post provides an intuitive guide to understanding backpropagation in neural networks.",
+        "It aims to make the complex process of computing within a neural network more understandable."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "This post provides an intuitive guide to understanding backpropagation in neural networks. It aims to make the complex process of computing within a neural network more understandable",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-233ea33e",
+  "asset_paths": [],
+  "raw_doc_path": "raw/blog-post/2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-c8152b9a/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-13T18:54:24.596655Z",
+  "alphaxiv": null
+}

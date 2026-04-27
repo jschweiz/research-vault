@@ -4,7 +4,8 @@ kind: blog-post
 title: AI can reverse engineer software that contains thousands of lines of code
 source_url: https://epoch.ai/blog/mirrorcode-preliminary-results
 source_name: Import AI
-authors: []
+authors:
+- Import AI
 published_at: '2026-04-13T10:02:22Z'
 ingested_at: '2026-04-13T18:12:31.816619Z'
 content_hash: 556b83db1f965311def0e8aefab21896bb97fa8e1474a85dd32fb6cff5e81ce3
@@ -17,6 +18,9 @@ tags:
 - website
 - blog-post
 - sub-document
+- mirrorcode
+- software
+- reverse engineering
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -27,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-13-jack-clark-import-ai-import-ai-453-breaking-ai-agents-mirrorcode-and--91e156f4
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:31.816624Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems, using benchmarks like MirrorCode, demonstrate long-horizon capabilities in autonomously reimplementing complex software. This suggests AI progress in coding tasks may be significantly faster than previously estimated.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.052500Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1523ef342dc017039f22c6e8baabc8634250a918922b339b1e3ba83e502d06fe
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e0fc60570cbf5b7326d26e01e3a3740fdf98511893c7eac3402c4399b5c453f1
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses post-training methods and reasoning capabilities relevant to frontier LLM research, using a relevant benchmark.
+  evidence_quotes:
+  - AI systems, using benchmarks like MirrorCode, demonstrate long-horizon capabilities in autonomously reimplementing complex software.
+  - The results show that AI systems are more capable than most people think at certain types of coding task, suggesting AI progress may be even faster than we prev
+  - 'Today’s AI models are extremely capable at some of these tasks: “Claude Opus 4.6 successfully reimplemented gotree — a bioinformatics toolkit with ~16,000 lines'
 ---
 # AI can reverse engineer software that contains thousands of lines of code
 

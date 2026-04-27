@@ -22,7 +22,6 @@ tags:
 - doe approval
 - mark0 reactor
 - reactor demonstrator
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -34,14 +33,25 @@ parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code
 index_visibility: visible
 fetched_at: '2026-04-13T18:30:34.784096Z'
 short_summary: The US nuclear startup Antares received Department of Energy approval for its Mark0 reactor demonstrator. The company aims to achieve criticality for its reactor before the 4th of July and plans to work on electricity generation for its Mark1 demonstration next year.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.574532Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d4836f8f5483f06c4edbf370f4fc4176172fb37cfb0abc9d30add9b9b154d675
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1323da779b1a0a893629c4cf727826b7a7763ee2cfc9c822e5af63ac806d57ab
+lightweight_score:
+  relevance_score: 0.0
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about nuclear energy and does not align with the user's focus on LLM research topics.
+  evidence_quotes:
+  - The US nuclear startup Antares received Department of Energy approval for its Mark0 reactor demonstrator.
+  - The California-headquartered startup is developing microreactors.
 ---
 # US nuclear startup Antares gets DOE approval for its Mark0 reactor demonstrator
 

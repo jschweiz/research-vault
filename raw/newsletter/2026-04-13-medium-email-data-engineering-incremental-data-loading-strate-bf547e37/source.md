@@ -25,15 +25,26 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:17:19.929805Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: 'Medium digest led by "Data Engineering: Incremental Data Loading Strategies". Includes 15 highlighted stories, including "AI Pullback Has Officially Started".'
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:33.614545Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: 785e8e267825abb6d8bfc082bf1442abc4b70f94c461052fb34d9da01557e4ce
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1f7734818138676b9b85d4f040eb7c1ed0874b13a42f728ed9b5d46cf22a1e9a
+lightweight_score:
+  relevance_score: 0.25
+  source_fit_score: 0.0
+  topic_fit_score: 0.1
+  author_fit_score: 0.0
+  evidence_fit_score: 0.1
+  confidence_score: 0.3
+  bucket_hint: archive
+  reason: The document is a general data engineering newsletter and does not contain specific, high-priority content directly related to frontier LLM training, evaluation, or reasoning.
+  evidence_quotes:
+  - 'Data Engineering: Incremental Data Loading Strategies'
+  - AI Pullback Has Officially Started
 ---
 # Data Engineering: Incremental Data Loading Strategies | Hussein Jundi in Data Engineer Things
 

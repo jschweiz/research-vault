@@ -38,16 +38,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 5ef7d9583c850c0158e205452ca5323e8384806fffd37056900907467cba4ead
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: aa5a40d921fa1a78c4be3f340124b6dd267672bd3c4d0c7195d1056d395df4df
+lightweight_scoring_input_hash: 0f45dca1a4015dfbcc2c46a3afb29c153b00c44177967ae1ea26c6490f915896
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI building but focuses on developer tooling rather than the user's core interests in LLM architecture or research.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document focuses on developer tooling and AI coding agents, which has weak direct relevance to the user's focus on frontier LLM training, evaluation, or architecture.
   evidence_quotes:
   - This article details the process of building syntaqlite, a set of developer tools for SQLite, using an AI coding agent over three months.
   - This post systematically breaks down the developer's experience in building syntaqlite with AI, covering both where AI helped and where it was detrimental.

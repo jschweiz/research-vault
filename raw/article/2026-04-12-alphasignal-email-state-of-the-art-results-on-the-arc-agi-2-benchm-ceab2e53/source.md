@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c64
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- Poetiq
 published_at: '2026-04-12T15:34:02Z'
 ingested_at: '2026-04-13T18:06:57.405519Z'
 content_hash: c0543cdcdd8c4203c99235affe23fde396c022e03242c29243d098205bfd7e23
@@ -17,6 +18,9 @@ tags:
 - ai
 - article
 - sub-document
+- arc-agi-2
+- benchmark
+- deepmind
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91
 index_visibility: visible
 fetched_at: '2026-04-13T18:06:57.405525Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:07.515268Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f5bc15438c5dab191ec0388c3bca998cf4c86e619669f9cfd5f5e3e79dbe20d3
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9e908da78fccde49c6f308c50529a1be2fd7a08ab91b09a2f69805319addbf4a
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses state-of-the-art results on a benchmark, which aligns perfectly with the user's focus on evaluation and frontier LLM research.
+  evidence_quotes:
+  - Poetiq, a startup founded by former DeepMind researchers, achieved state-of-the-art results on the ARC-AGI-2 benchmark.
+  - They reached 54% accuracy at a cost of $30.57 per problem.
 ---
 # state-of-the-art results on the ARC-AGI-2 benchmark
 

@@ -32,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:11:46.337149Z'
-short_summary: The authors propose a method called model diffing, which uses a specialized tool to compare different AI models to automatically find behavioral differences and potential risks. This approach allows researchers to identify 'unknown unknowns' and audit models by detecting features exclusive to specific architectures.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The research introduces a method called model diffing, which uses a 'bilingual dictionary' to compare AI models with different architectures to automatically find behavioral differences and potential risks. This method allows auditors to identify model-exclusive features, such as alignment or censorship mechanisms, by testing how these features control model behavior.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:09.076951Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 5946d711aefe45742a69d4e3c4c2dffba03d3ac481be1b0c26cde3fd2a254134
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ba725577f6198f2972d025bc6b3674f3b154391c06b6dfbb7f3a9dd9961b8c80
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses model auditing, behavioral differences, and cross-architecture comparison, which aligns perfectly with the user's focus on evaluation, reasoning, and LLM architecture.
+  evidence_quotes:
+  - The research introduces a method called model diffing, which uses a 'bilingual dictionary' to compare AI models with different architectures to automatically fi
+  - Cross-architecture model diffing provides a new way to audit these systems by automatically flagging behavioral differences.
+  - Cross-architecture model diffing provides a new way to audit these systems by automatically flagging behavioral differences.
 ---
 A “diff” tool for AI: Finding behavioral differences in new models
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.

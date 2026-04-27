@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T12:22:08.659394Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ef614cf1183a9aa6059ec08f674530ecc87cc4ca99323bcbb7dbfcf244028608
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cc4bd58099f964c4618c3e5a3f448baf258f56935d2319e6827207956867a682
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.75
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it details a new embedding model specialized for code, directly addressing the user's interest in LLM evaluation, reasoning, and tooling within the context of code-related applications.
+  evidence_quotes:
+  - Codestral Embed is a new embedding model specialized for code, designed to outperform leading code embedders in retrieval tasks.
+  - 'Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.'
+  - Codestral Embed facilitates rapid and efficient context retrieval for code completion, editing, or explanation tasks.
 ---
 We are excited to release Codestral Embed, our first embedding model specialized for code. It performs especially well for retrieval use cases on real-world code data.
 Codestral Embed significantly outperforms leading code embedders in the market today: Voyage Code 3, Cohere Embed v4.0 and OpenAI’s large embedding model.

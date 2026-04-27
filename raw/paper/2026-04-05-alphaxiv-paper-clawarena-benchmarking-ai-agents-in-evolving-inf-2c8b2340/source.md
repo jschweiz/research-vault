@@ -57,16 +57,16 @@ lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 25539ee84d96827cdd5d01a8c06a34ffe6ba522ec0ce2f49233bf7630212eeb5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: d6db1ed61e311aa461a7016d08b9016f1c0804338f358f64a04f7872154ee27f
+lightweight_scoring_input_hash: 7d1262071a3c880319364f298defe53b49523368351cdfe3bedb173d8bf476fe
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.8
+  relevance_score: 0.8791
+  source_fit_score: 0.95
   topic_fit_score: 1.0
   author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses favorite topics like language models, evaluation, and reasoning through a new benchmark for AI agents. alphaXiv engagement signals: 20 public votes, 4 total votes, 144 visits in the last 7 days.'
+  reason: 'This paper directly addresses evaluation methods for AI agents, reasoning, and the impact of LLMs on agent performance, which aligns perfectly with the user''s favorite topics. alphaXiv engagement signals: 20 public votes, 4 total votes, 144 visits in the last 7 days.'
   evidence_quotes:
   - ClawArena introduces a benchmark for evaluating AI agents in complex, dynamic information environments, focusing on multi-source conflict reasoning, dynamic bel
   - Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect per

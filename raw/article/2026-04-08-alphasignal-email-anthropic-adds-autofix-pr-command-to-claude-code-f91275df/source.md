@@ -38,9 +38,20 @@ lightweight_enriched_at: '2026-04-09T23:07:57.042326Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 15a88c4d030b4f54c7f14ba232d3b9eaff8ffdb9cf0242c799c830e3d2d38c19
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5e71095399a22dc6d17d83a9fd330fc487c3572835742b19b318dfd8e7a787e1
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a specific Anthropic code command and does not directly address the user's focus on frontier LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - Anthropic introduced the /autofix-pr command to the Claude Code CLI to automatically resolve pull request issues.
+  - 'Anthropic Glasswing: Claude Mythos finds zero-day vulnerabilities'
 ---
 # Anthropic adds /autofix-pr command to Claude Code CLI to fix PR issues automatically
 

@@ -39,16 +39,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 460fea9a758c09b53bcecb656b5266a6952ad7b96e51b16aaa21e121f0951db4
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 0cda15cecfb55141437d62c30eb38a5c790b9984509fe40adb0634cec73f15fb
+lightweight_scoring_input_hash: 7179d33652f85ccb61e7a237e770310dec7549a26f9049be853f01378c0fe2ba
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 0.55
   source_fit_score: 0.3
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like RAG pipelines and agentic systems, making it highly relevant to the user's interests.
+  topic_fit_score: 0.75
+  author_fit_score: 0.3
+  evidence_fit_score: 0.8
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (RAG, reasoning, agentic systems) but is presented as a blog post rather than a deep research paper.
   evidence_quotes:
   - This post outlines the construction of an agentic deep-thinking RAG pipeline designed to handle complex queries.
   - It details the process involving planning, retrieval, reflection, critique, and synthesis.

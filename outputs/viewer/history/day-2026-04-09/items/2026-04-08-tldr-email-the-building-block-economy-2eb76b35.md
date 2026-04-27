@@ -6,7 +6,7 @@ Canonical URL: https://mitchellh.com/writing/building-block-economy
 
 ## Summary
 
-The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software
+Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to better mainline software
 
 ## Text
 

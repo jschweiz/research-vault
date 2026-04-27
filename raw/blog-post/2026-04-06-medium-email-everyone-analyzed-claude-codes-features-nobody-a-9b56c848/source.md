@@ -38,19 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 62caec244313e3928a6e42c072aeb63f26e9bfb8f319e94f097c62cbe50aed73
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 5921ea2c1a5babac10828646ddd64f6c71d3fe2924507ecd20d5e7ca927ebcee
+lightweight_scoring_input_hash: 8d1e38566c4fa68e9fe5e3977c2dd0216cdfce7a7d84fbb2fe0fe9170a9afaf0
 lightweight_score:
-  relevance_score: 0.85
+  relevance_score: 0.65
   source_fit_score: 0.3
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM architecture and code analysis, aligning perfectly with the user's favorite topics and authors.
+  topic_fit_score: 0.95
+  author_fit_score: 0.3
+  evidence_fit_score: 0.8
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics (architecture, LLM internals) but is a specific case study rather than broad research material.
   evidence_quotes:
   - The post discusses the contrast between analyzing the features of Claude code and analyzing its underlying architecture, referencing five hundred thousand lines
-  - 'Tags: newsletter, medium, email, blog-post, claude, code, architecture, source code, data science'
+  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+  - The post discusses the contrast between analyzing the features of Claude code and analyzing its underlying architecture, referencing five hundred thousand lines
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
 

@@ -32,15 +32,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:10:33.506285Z'
-short_summary: Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better performance but also revealing limitations.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better performance but also revealing limitations in robustness.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.691698Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1c487c25301c19120026e4dccec71a0d894cc812d39634702b76e95d626098c1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: d2e47a0445c2ae0df487e31ce665c059f519e96a7df85bed12f1a18b6b2da5c5
+lightweight_score:
+  relevance_score: 0.7871
+  source_fit_score: 0.24
+  topic_fit_score: 0.8351
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 0.7536
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: reasoning in llms, hard benchmarks and evals, 2 favorite-topic matches, 1 favorite-author match.'
+  evidence_quotes:
+  - Phase two of Project Vend involved upgrading the AI model and introducing a CEO agent to Claudius to improve its business interactions, leading to better perfor
 ---
 Subscribe to the Frontier Red Team newsletter
 Get updates on our latest red-teaming research and findings.

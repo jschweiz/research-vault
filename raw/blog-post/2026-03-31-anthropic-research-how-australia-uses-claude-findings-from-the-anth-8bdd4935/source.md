@@ -37,15 +37,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:11:04.507912Z'
-short_summary: Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosphere peers, showing a focus on work and personal tasks, and reflects diverse use-cases across states.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Australia is a leading per capita adopter of Claude, with usage more than four times predicted by its working-age population. Usage patterns align with Anglosphere peers, focusing on work and personal tasks, and reflects a diverse task mix.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:13.524144Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 86820e5b085e6ddb6546f4f7fb2d791424f1d7a4e8d1b8550b537f353e644664
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ee3515d62f0288d4babc1a6f67161ce0011a7bbc5ff6fd8e59051873e561c60d
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.55
+  topic_fit_score: 0.55
+  author_fit_score: 0.75
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document provides interesting, high-level context on LLM adoption and usage patterns, which aligns with the user's interest in evaluation and reasoning, but lacks deep technical detail.
+  evidence_quotes:
+  - Australia is among the leading adopters of Claude, accounting for 1.6% of global Claude.ai traffic.
+  - Australia's use of Claude resembles its Anglosphere peers.
+  - Australia's Computer and Mathematical shortfall of 8.0pp sits right in line with the Anglosphere average of 8.9pp.
 ---
 How Australia Uses Claude: Findings from the Anthropic Economic Index
 Anthropic is expanding to Australia. We’re opening a [new office](https://www.anthropic.com/news/sydney-fourth-office-asia-pacific) in Sydney in the coming weeks, and we’ve signed a [Memorandum of Understanding](https://www.anthropic.com/news/australia-MOU) with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. To mark the occasion, we thought we’d look more closely into how Australians are using Claude.

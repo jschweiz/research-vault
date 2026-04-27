@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T12:21:06.231545Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0797e5494b849c000c7e58241e584fa49fd6d8943c10026a2889a631b7cee4bd
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 61cecc6d5cedfd94105ad60589e5f3c9aa5b34196065668d62212ac91349500f
+lightweight_score:
+  relevance_score: 0.8244
+  source_fit_score: 0.24
+  topic_fit_score: 1.0
+  author_fit_score: 0.12
+  evidence_fit_score: 0.93
+  confidence_score: 0.84
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 2 favorite-topic matches.'
+  evidence_quotes:
+  - 'Mistral Small 3.1 is a new open-source model that improves text performance, multimodal understanding, and context window, outperforming comparable proprietary '
 ---
 Today we announce Mistral Small 3.1: the best model in its weight class.
 Building on [Mistral Small 3](https://mistral.ai/news/mistral-small-3), this new model comes with improved text performance, multimodal understanding, and an expanded context window of up to 128k tokens. The model outperforms comparable models like Gemma 3 and GPT-4o Mini, while delivering inference speeds of 150 tokens per second.

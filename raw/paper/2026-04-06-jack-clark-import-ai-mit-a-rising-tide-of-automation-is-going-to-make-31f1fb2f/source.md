@@ -21,7 +21,6 @@ tags:
 - labor market
 - economics
 - rising tide
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:53.689857Z'
-short_summary: Research from MIT suggests that AI automation is progressing through a 'rising tide' rather than sudden 'crashing waves,' implying gradual, widespread gains across text-based labor tasks. This trend suggests that AI capabilities will expand broadly, potentially leading to substantial economic changes by 2029.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: MIT researchers studied 3,000 text-based labor-market tasks to find that AI automation follows a 'rising tide' pattern rather than 'crashing waves.' They project that AI will reach high success rates across most text-based tasks by 2029, suggesting gradual, widespread automation.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:35.229194Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6c01d85cfce2b3a643a6307ca5dfdc3eb94a5ff83880a806ae5e446c04cf3d71
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9d5f6e27928d6c794805576f24c4a01a3e910c00e765c93c854088966081c46d
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses economic automation trends rather than the core LLM research topics of training, evaluation, reasoning, or memory.
+  evidence_quotes:
+  - MIT researchers studied 3,000 text-based labor-market tasks to find that AI automation follows a 'rising tide' pattern rather than 'crashing waves.'
+  - We find little evidence of crashing waves, but substantial evidence that rising tides are the primary form of AI automation.
+  - Across a large set of realistic and representative labor-market tasks addressable by LLMs, the downward slope between task success and task duration is, on aver
 ---
 # MIT: A rising tide of automation is going to make good enough AI for most text-based tasks by 2029
 

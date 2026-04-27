@@ -22,7 +22,6 @@ tags:
 - machine learning
 - security
 - cost optimization
-- sub-document
 status: active
 asset_paths: []
 source_id: medium-email
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:08.671367Z'
-short_summary: This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps. It focuses on mastering essential AWS VPC settings for these complex systems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.077515Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a6b682257e83f71bd65af821a7b1946d0e959f52dcba29d08a18fc6a07e0cd56
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ef292bea2e579a28b79ac496289994dd68b8111e34ba34d943491f2f9304206f
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.25
+  topic_fit_score: 0.16
+  author_fit_score: 0.33
+  evidence_fit_score: 0.25
+  confidence_score: 0.85
+  bucket_hint: archive
+  reason: The document is about AWS MLOps architecture, which is tangentially related to ML research but does not focus on the core frontier LLM topics like reasoning, memory, or training methods.
+  evidence_quotes:
+  - This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps.
+  - It focuses on mastering essential AWS VPC settings for these complex systems.
+  - Master VPC configurations with 4 essential AWS VPC…
 ---
 # AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures
 

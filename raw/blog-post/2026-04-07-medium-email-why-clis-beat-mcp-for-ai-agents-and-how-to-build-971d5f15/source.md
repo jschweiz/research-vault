@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:13.361559Z'
-short_summary: The post argues that command-line interfaces (CLIs) are superior to MCP for AI agents, suggesting that bash is the better tool. It then provides guidance on building one's own CLI army.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Command-line interfaces (CLIs) are superior to MCP for AI agents, and the post provides instructions on building a CLI army.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.758099Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 01bfa49617b748971dab975ba818117ec37db3eb4b11b7804046440619a07756
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 59410f3f5178e448614a5049c0e50c0ddc187dc8184e836909ae08de33cd44d3
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about AI agents and CLI tools, which has weak topical overlap with the user's focus on LLM training, evaluation, and architecture.
+  evidence_quotes:
+  - Command-line interfaces (CLIs) are superior to MCP for AI agents, and the post provides instructions on building a CLI army.
+  - mcp were a mistake. bash is better.
 ---
 # Why CLIs Beat MCP for AI Agents — And How to Build Your Own CLI Army.
 

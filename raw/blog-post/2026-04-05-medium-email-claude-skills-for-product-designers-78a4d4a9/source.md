@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 31e47c20a68a76e508d895bcf789713e5d6ec5f8fb7f4dd0b59a347cfef303aa
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 56aec054cc6b227ad756634f987c321dd3c46da3db4bdba81112938e9ee6325f
+lightweight_scoring_input_hash: 0bb4a4ab520d755a964d3bec105a0ba5e3c6b52442827698ac9cd416df143823
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on LLM memory and agentic AI, aligning with favorite topics, but the specific focus on product design skills is a secondary fit.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document discusses building long-term memory in agentic AI, which touches on the user's favorite topics but is presented as a product skill guide rather than core research.
   evidence_quotes:
   - This post outlines how to create your first Claude Skill for product designers.
   - It is part of a larger discussion about building long-term memory in agentic AI.

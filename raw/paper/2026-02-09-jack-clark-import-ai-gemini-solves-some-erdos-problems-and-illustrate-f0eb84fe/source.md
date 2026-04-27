@@ -26,7 +26,6 @@ tags:
 - erdős problems
 - llm
 - human evaluation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -37,15 +36,27 @@ doc_role: derived
 parent_id: 2026-02-09-jack-clark-import-ai-import-ai-444-llm-societies-huawei-makes-kernels-6922e476
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:29.991590Z'
-short_summary: Researchers used Google's Gemini-based LLM to attempt solving open Erdős mathematical problems, demonstrating that while AI can generate candidate solutions, human evaluation remains crucial for determining correctness and meaning. The study highlights the challenges of automating math research and the need for human oversight in AI-driven scientific discovery.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: An interdisciplinary group used Google's Gemini-based LLM to attempt solving open Erdős mathematical problems, demonstrating that while AI can generate candidate solutions, human evaluation remains crucial for determining correctness and meaning.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:33.820012Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 9a5724b28048f2a52bddac313c3bc344713ae3c23a112acb707fdf945851c3eb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d3060ec7be507eef85165d8607dea441117194a6787dfa1e8f092c1884baf092
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.8
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics (LLM evaluation, reasoning, and human oversight) and features a top-tier author (DeepMind).
+  evidence_quotes:
+  - An interdisciplinary group used Google's Gemini-based LLM to attempt solving open Erdős mathematical problems, demonstrating that while AI can generate candidat
+  - Large Language Models can easily generate candidate solutions, but the number of experts who can judge the correctness of a solution is relatively small, and ev
+  - 'This paper is a nice example of “O-ring automation” – AI here has massively sped up the art of generating proofs, but it still requires laborious, skilled work '
 ---
 # Gemini solves some Erdős problems – and illustrates the challenges of automating math research with AI
 

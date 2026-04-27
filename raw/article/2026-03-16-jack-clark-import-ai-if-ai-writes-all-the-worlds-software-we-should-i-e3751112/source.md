@@ -21,7 +21,6 @@ tags:
 - software
 - lean
 - infrastructure
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:01.523955Z'
-short_summary: If AI writes most of the world's software, humans should invest more in verification and testing infrastructure. This involves creating a verified software stack where critical components are mathematically guaranteed correct.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The rise of AI writing software necessitates increased investment in verification and testing infrastructure. This involves creating a verified software stack where critical components are mathematically guaranteed correct.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.234831Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a4f77d3da48591d4b61858cfe5a4af8af3778caa85bd706ea22d64dfda166842
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ae3799d7f61d0fc442b73139f9fbedaed5dabed64e04af2479547e83a9c15fec
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's interest in verification, reasoning, and infrastructure for AI-generated software, despite the source being a newsletter.
+  evidence_quotes:
+  - The rise of AI writing software necessitates increased investment in verification and testing infrastructure.
+  - 'It is to replace human friction with mathematical friction: let AI move fast, but make it prove its work.'
+  - 'The goal is a verified software stack: open source, freely available, mathematically guaranteed correct.'
 ---
 # If AI writes all the world’s software, we should invest more in verification
 

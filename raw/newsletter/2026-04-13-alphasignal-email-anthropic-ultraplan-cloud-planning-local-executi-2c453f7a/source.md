@@ -6,6 +6,7 @@ source_url: https://mail.google.com/mail/u/0/#inbox/19d87b58cc66a24b
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-13T16:38:35Z'
 ingested_at: '2026-04-13T18:06:27.943237Z'
 content_hash: 4ccbacd662dc4de08d791506988bdd0e89ebaa4b175bd4fe300e189e0d3caa5e
@@ -15,6 +16,12 @@ tags:
 - alphasignal
 - email
 - ai
+- anthropic
+- claude
+- llm
+- coding
+- paperorchestra
+- multi-agent
 status: active
 asset_paths:
 - original.html
@@ -26,15 +33,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:06:27.943244Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic introduced Ultraplan to enable cloud-based planning and flexible execution for Claude, separating planning from execution. This framework, along with related research, focuses on improving LLM coding behavior and automating research manuscript generation.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:32.067559Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2487cc3c50aea9fbf708d3d46d2702781a9bd4062ef5b2cc8d5ff937c4c13e15
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 86d07154b7227737be4cd375bba73497ea44637064e3e5ec9501cbf666b9df2d
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM coding behavior, multi-agent workflows, and research tooling, which aligns perfectly with the user's favorite topics and research persona.
+  evidence_quotes:
+  - This guideline defines a single CLAUDE.md file that changes how coding models behave during development.
+  - PaperOrchestra introduces a multi-agent framework that generates full research manuscripts from unstructured materials like idea summaries and experiment logs.
+  - The system separates paper writing into specialized agents that execute defined tasks.
 ---
 # 🛠️ Anthropic Ultraplan: Cloud Planning + Local Execution for Claude
 

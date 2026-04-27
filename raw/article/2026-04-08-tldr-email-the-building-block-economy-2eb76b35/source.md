@@ -22,7 +22,6 @@ tags:
 - building blocks
 - open source
 - software adoption
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:10.317320Z'
-short_summary: The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to better mainline software.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.067403Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 101d3976ba71a143dc89d4121a6189bb597a918f213af998a1566b48e0eb4ed7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 65b924021225cf49bfc79a594b9f8803943ea35be7ae2efd38bb830b2ddb4731
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document discusses general software building principles and does not directly address the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to b
+  - Agents readily pick open and free software over closed and commercial.
+  - Closed-source, commercial software is at a massive disadvantage.
 ---
 # The Building Block Economy
 

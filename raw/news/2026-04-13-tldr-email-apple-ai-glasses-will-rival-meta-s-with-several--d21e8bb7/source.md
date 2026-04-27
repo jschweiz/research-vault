@@ -17,6 +17,10 @@ tags:
 - ai
 - news
 - sub-document
+- apple ai glasses
+- meta ai
+- ai wearables
+- smart glasses
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -27,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-13-tldr-email-apple-ai-glasses-meta-ai-s-rise-how-agents-read--fbc04e29
 index_visibility: visible
 fetched_at: '2026-04-13T18:29:44.064137Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Apple is developing its own smart glasses, internally coded N50, to compete with Meta's AI wearables. This is part of a broader strategy involving new AirPods and a camera-equipped pendant.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:27.121044Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 398c6b6bac0b349582eaf99b97b4264470fdbc7203458850ca8f0f27316aab13
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c30e7b4242215d22a75d02a8fa797595d0d043f4d71be32a1448eb70ea297d84
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about consumer AI hardware and does not align with the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - Apple is developing its own smart glasses, internally coded N50, to compete with Meta's AI wearables.
+  - The company is developing its own version of Meta's camera-equipped Ray-Bans internally coded N50.
 ---
 # Apple AI Glasses Will Rival Meta's With Several Styles, Oval Cameras
 

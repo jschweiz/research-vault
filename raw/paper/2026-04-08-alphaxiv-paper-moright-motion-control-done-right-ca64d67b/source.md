@@ -52,20 +52,20 @@ lightweight_enriched_at: '2026-04-09T16:19:42.825512Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 41ba29db2f6a58de385c410a3d03e7c3a77f393597ab04c0b57c3a0d2e6d510a
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 91b103460671cc829d597bbf96f035c34642d168466f27052c254163cbf33194
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7e70f1eca917ac99487554a13d2bba433952e795d523b76dee57178d96cbd1c2
 lightweight_score:
-  relevance_score: 0.9845
-  source_fit_score: 0.8
+  relevance_score: 0.85
+  source_fit_score: 0.75
   topic_fit_score: 1.0
-  author_fit_score: 0.7
+  author_fit_score: 0.5
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.'
+  reason: This paper directly addresses motion causality reasoning and controllable video generation, which aligns perfectly with the user's favorite topics of reasoning, evaluation, and LLM-related research.
   evidence_quotes:
   - MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable
-  - It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonica
+  - We further decompose motion into active (user-driven) and passive (causal outcomes), training the model to learn motion causality from data.
   - It achieved the highest Physical Commonsense score on WISA and successfully performed both forward (predicting consequences from actions) and inverse (inferring
 ---
 # MoRight: Motion Control Done Right

@@ -38,9 +38,20 @@ lightweight_enriched_at: '2026-04-09T23:07:56.803159Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 852d7d596b65701e7bf61a42c1afe8a2cfbc7a7658114df1ceccead193f8548e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e77136b5425eff4b7b03360d82fea63ac5ad279793df998f5ca17ef6b5452866
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.35
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.9
+  bucket_hint: archive
+  reason: The document is about infrastructure deals and does not directly address the user's core interests in LLM training, evaluation, reasoning, or memory.
+  evidence_quotes:
+  - Anthropic has reached an agreement with Google and Broadcom to secure gigawatt-scale TPU capacity necessary to power its Claude models.
+  - Anthropic has reached an agreement with Google and Broadcom to secure gigawatt-scale TPU capacity necessary to power its Claude models.
 ---
 # Anthropic signs deal with Google and Broadcom for gigawatt-scale TPU capacity to power Claude models
 

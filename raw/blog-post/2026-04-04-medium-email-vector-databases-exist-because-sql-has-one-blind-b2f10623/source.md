@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d76cb83f58bf9f2a3da201585c9c52aa0e97997e54975cc2398e224466d030bc
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 337125ff46a7a1235b99e16be0fe0758f9c16c29692e4a78ed8918c92ba98435
+lightweight_scoring_input_hash: 6926ec7eed4dfd2ab61f2fa22be24d55a9185f8bbb13035af3b6a66d073827c8
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.9
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.95
-  bucket_hint: must_read
-  reason: The document directly addresses vector databases, which aligns strongly with the user's favorite topics of language models and research tooling.
+  evidence_fit_score: 0.3
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on search and AI architecture, which aligns with the user's interests, but lacks specific focus on frontier LLM training, evaluation, or reasoning methods.
   evidence_quotes:
   - Vector databases exist to address the architectural gap between exact-match lookups and other search methods.
-  - Vector databases exist Because SQL Has One Blind Spot
+  - Vector databases exist because SQL has one blind spot.
 ---
 # Vector Databases Exist Because SQL Has One Blind Spot
 

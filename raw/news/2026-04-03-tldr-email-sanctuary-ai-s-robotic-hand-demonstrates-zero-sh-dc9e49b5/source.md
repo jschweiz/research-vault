@@ -39,18 +39,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b3309355e11aea781d590e20f62ac25a4c3537bdd777b88175055f5011a001e9
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 5599114b5a7a9613a8827a6239f39f7c085d49007acc17380f260f647e25e642
+lightweight_scoring_input_hash: 6157410ef1edcd7b4f1b0759d460b08a38b04045540c47e309536c7834c58f6b
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about robotics and manipulation, which is tangentially related to the user's interest in AI/LLM research tooling, but lacks direct overlap with favorite topics or authors.
+  reason: The document is about robotics and manipulation, which does not align with the user's focus on LLM training, evaluation, reasoning, memory, or architecture.
   evidence_quotes:
   - 'Sanctuary AI''s robotic hand successfully demonstrated zero-shot in-hand manipulation of a lettered cube, achieving target orientation 10 times without dropping '
+  - The manipulation took place entirely at the fingertips without the support of the palm.
   - The demonstration showcases a successful instance of zero-shot transfer.
 ---
 # Sanctuary AI's robotic hand demonstrates zero-shot in-hand manipulation

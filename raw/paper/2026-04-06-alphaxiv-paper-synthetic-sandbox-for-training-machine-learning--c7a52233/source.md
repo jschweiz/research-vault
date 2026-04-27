@@ -52,20 +52,20 @@ lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 21e3750ee6503ba31e971c695a9d6dc76ad8ad62e34934e663a56c25fffeb1ec
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 20fdc8366156f9fc620a7963cb4e4ed48acac7ce8d9a528880e2bddbc514dc42
+lightweight_scoring_input_hash: fe0034a56d790a5394292df6123e7a04533c8859e031c8622945b66d7adf1c1c
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.8
+  relevance_score: 0.9757
+  source_fit_score: 1.0
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.75
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses the user''s favorite topics of LLM agents, evaluation, and reinforcement learning in the context of machine learning engineering. alphaXiv engagement signals: 13 public votes, 3 total votes, 90 visits in the last 7 days.'
+  reason: 'This paper directly addresses post-training methods, reinforcement learning, and efficiency techniques for training LLM agents, aligning perfectly with the user''s favorite topics and research persona. alphaXiv engagement signals: 13 public votes, 3 total votes, 90 visits in the last 7 days.'
   evidence_quotes:
   - SandMLE is a framework that creates synthetic, micro-scale machine learning engineering environments, making on-policy trajectory-wise reinforcement learning pr
-  - SandMLE-trained Qwen3 models showed up to 100.7% relative improvement in "Any Medal" rates over base models on MLE-Bench-Lite and surpassed SFT baselines.
-  - 'The primary bottleneck for applying on-policy RL to MLE tasks is the execution latency caused by dataset size, which can be overcome with micro-scale synthetic '
+  - This approach reduces average code execution time by 13.7 times, enabling Qwen3 models to achieve up to a 100.7% relative improvement in "Any Medal" rates on ML
+  - 'We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates '
 ---
 # Synthetic Sandbox for Training Machine Learning Engineering Agents
 

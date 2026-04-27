@@ -25,15 +25,26 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:18:33.473403Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: 'Medium digest led by "Understanding Retrieval in RAG Systems: Why Chunk Size Matters". Includes 15 highlighted stories, including "Building Claude Code with Harness Engineering".'
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:27.839924Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: e14a8449d9c03cfc4de8b19f62fd56597566394d5d6088e14ec361a8b4c853fe
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f55574d1eb46a09319c6cd9f38d38b4183ede752a3408bb788ff26e36f37918c
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on RAG evaluation, which touches upon LLM evaluation and retrieval, but it lacks direct focus on frontier LLM training or core architecture.
+  evidence_quotes:
+  - 'Understanding Retrieval in RAG Systems: Why Chunk Size Matters'
+  - 'How to Evaluate Retrieval Quality in RAG Pipelines: Precision@k, Recall@k, and F1@k'
 ---
 # Understanding Retrieval in RAG Systems: Why Chunk Size Matters | Sarah Lea in Towards AI
 

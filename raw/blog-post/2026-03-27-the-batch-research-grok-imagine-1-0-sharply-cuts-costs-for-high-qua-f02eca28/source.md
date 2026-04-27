@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T22:09:48.617433Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: af860e996038a1e2e68ea379fbf72e0b769517a5b9ef46dfbab307e569626bcc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 08a8e613b7283a06b049a691b290056fd50de5aeee3f893db2e7edaff6fdef5c
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.4
+  topic_fit_score: 0.85
+  author_fit_score: 0.8
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document is highly relevant as it discusses a new text-to-video model, cost efficiency, and performance benchmarks, directly aligning with the user's focus on LLM evaluation, efficiency, and reasoning.
+  evidence_quotes:
+  - Grok Imagine 1.0, a video generator that produces high-quality video clips from text and images, topping independent quality rankings at a lower cost than compe
+  - Topped Artificial Analysis Video Arena in both text-to-video and image-to-video at launch
+  - Third-party benchmarks show Grok Imagine 1.0 matches or exceeds leading models on quality at a lower cost than premium competitors, a combination that lowers th
 ---
 xAI launched a video generator that topped an independent quality ranking at a fraction of competitors’ prices.
 What’s new: [Grok Imagine 1.0](https://x.ai/news/grok-imagine-api?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) takes text with images and/or video, and produces video clips that can include dialogue, sound effects, and music.

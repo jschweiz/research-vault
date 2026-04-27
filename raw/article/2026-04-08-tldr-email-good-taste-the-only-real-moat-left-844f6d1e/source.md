@@ -33,14 +33,25 @@ parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafa
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:13.930301Z'
 short_summary: AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage. Taste is achieved by paying close attention to reality and combining it with context and constraints.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:03.214914Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f3ad35b09164fa3834462bd6f51ecb922012eeb2bd9a821684eb9ba1dacfa60b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: da2c47469fd0b568de547d6460d764016ace74dcdc7b676082779b6596e9c422
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a philosophical reflection on taste and reality, which has very weak technical relevance to the user's focus on LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.
+  - Taste is achieved by paying close attention to reality and combining it with context and constraints.
 ---
 # Good Taste the Only Real Moat Left
 

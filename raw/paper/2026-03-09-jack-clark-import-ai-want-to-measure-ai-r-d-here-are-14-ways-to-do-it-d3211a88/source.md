@@ -22,7 +22,6 @@ tags:
 - metrics
 - governance
 - automation
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:16.223667Z'
-short_summary: Researchers have laid out 14 metrics to measure the success of AI companies in building and overseeing AI R&D Automation (AIRDA), which is a prerequisite for recursive self-improvement. The document suggests that AI measurement is essential for AI governance, requiring actions from companies, governments, and third parties.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers from GovAI and the University of Oxford propose 14 metrics to measure the success of AI companies in building and overseeing AI R&D Automation (AIRDA). They argue that AI measurement is a prerequisite for AI governance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.531672Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6bdc1719cc9a4b896c58b899ac1a4ee168fba47704867fe35b3913488be8389a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d1f3ec1023a2b6196a4a46878fd0bc76b315a1a088b226dc18481cd05a9e5c78
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses metrics and measurement for AI R&D, which aligns perfectly with the user's favorite topics of evaluation, reasoning, and research tooling for frontier LLMs.
+  evidence_quotes:
+  - Researchers from GovAI and the University of Oxford propose 14 metrics to measure the success of AI companies in building and overseeing AI R&D Automation (AIRD
+  - They argue that AI measurement is a prerequisite for AI governance.
+  - AI measurement is a prerequisite to AI governance.
 ---
 # Want to measure AI R&D, here are 14 ways to do it
 

@@ -26,15 +26,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:29:43.202977Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TLDR roundup on Apple AI glasses, Meta AI's rise, how agents read docs. Includes 8 editorial stories across 4 sections, plus 6 quick links.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:33.667493Z'
+lightweight_enrichment_model: deterministic:tldr-newsletter
+lightweight_enrichment_input_hash: 72e3b1e5296f79421dc9afefc90aa6ba16b630de61f2b251ec412e87267dff5c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 84b3cdabd3986e146511c0e33de048fef2a27babcc5e69608a3da7faf1b1ab8c
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
+  author_fit_score: 0.0
+  evidence_fit_score: 0.35
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document contains some relevant topics like agentic optimization and LLM competition but is primarily a general newsletter roundup.
+  evidence_quotes:
+  - Agentic Engine Optimization is the practice of structuring, formatting, and serving technical content so that AI coding agents can actually use it.
+  - OpenAI no longer dominates the conversation in the AI industry. Claude Code is the tool everyone is talking about, despite other strong alternatives.
+  - Meta is working on an AI-powered search engine to power its Meta AI feature in an effort to rely less on its competitors' search engines.
 ---
 # Apple AI glasses 👓, Meta AI's rise 📈, how agents read docs 🤖
 

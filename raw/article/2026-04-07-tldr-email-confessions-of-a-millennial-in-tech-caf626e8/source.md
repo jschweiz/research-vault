@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:34.255027Z'
-short_summary: Millennials may be the last generation focused on software careers, facing challenges explaining software and AI to other generations. The advantage in software creation is shifting as AI becomes involved.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Millennials may be the last generation building careers around software, facing challenges as AI changes the landscape. The advantage in software creation is shifting due to AI's involvement.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.567940Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1bfc73a14ba885fb72cdec86c05335610f7c3fdd0f2380fb0e79c81cb55b7845
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ee975ecd1fe291b7179629d52bf37a2b8d2b4fc77db41a2914adb393856ccf6b
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is entirely focused on career reflections and the impact of AI on the millennial generation, which has no direct technical relevance to frontier LLM research topics.
+  evidence_quotes:
+  - Millennials may be the last generation that builds their careers around software as a medium.
+  - They drove the digital transformation, but unfortunately, they are the sandwich generation that has to explain software to their parents and AI to their kids.
 ---
 # Confessions of a Millennial in Tech
 

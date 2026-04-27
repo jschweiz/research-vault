@@ -33,20 +33,20 @@ lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 817cb4e107342cdc7d19f1205094d7eacde0f27b373e759f47f6115acfef417c
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 2156dc30c9f7e8f11322ddbc3a8f2299f767a25757dd2be67726e6069aee1504
+lightweight_scoring_input_hash: e2c362742c50e5c0ca8d071a6a3c3ad59c6149dcc13cf5d9f7717c7002f4ce2a
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly covers favorite topics like LLM architecture, agentic development, and tools like Cursor, aligning perfectly with the user's interests.
+  evidence_fit_score: 0.35
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document contains tangential mentions of agentic engineering and AI coding agents, which aligns with the user's interest in reasoning and research tooling, but the primary focus is on business news and general tech announcements.
   evidence_quotes:
-  - Cursor 3 brings clarity to the work that agents produce, pulling users up to a higher level of abstraction.
-  - 'The 2nd Phase of Agentic Development: People will start using agents to attack old problems with modern tooling, resulting in new versions of software tools tha'
-  - This post details how to create a coding agent that adapts perfectly to custom workflows by clearly separating concerns.
+  - Highlights from my conversation about agentic engineering on Lenny's Podcast
+  - Meet the new Cursor
+  - The 2nd Phase of Agentic Development
 ---
 # OpenAI buys TBPN 💰, 2 person unicorn 🦄, Cursor v3 🤖
 

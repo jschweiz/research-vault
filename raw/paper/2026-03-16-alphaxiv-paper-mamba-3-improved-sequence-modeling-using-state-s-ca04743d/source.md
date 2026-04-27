@@ -56,9 +56,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.412441Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 61b06231527509631bdaae70639dd5fba1d9de3f0ded57fa9c1e9210634c1f35
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: c1100502d131670c00c1471d2e51a1c1663407f5632fd45db9b68f7eb15bf716
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses core topics like LLM architecture, efficiency, and sequence modeling, making it highly relevant for a frontier LLM researcher. alphaXiv engagement signals: 179 public votes, 60 total votes, 190 visits in the last 7 days.'
+  evidence_quotes:
+  - Mamba-3 introduces a State Space Model architecture featuring exponential-trapezoidal discretization, complex-valued states, and a multi-input, multi-output for
+  - Mamba-3 models consistently surpass Mamba-2 and GDN in language modeling quality, with the MIMO variant (R=4) achieving a 1.8 percentage point accuracy gain ove
+  - The model demonstrated robust performance on synthetic state-tracking tasks, achieving 100% accuracy on Parity and 98.51% on Modular Arithmetic, a capability en
 ---
 # Mamba-3: Improved Sequence Modeling using State Space Principles
 

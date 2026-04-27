@@ -36,18 +36,19 @@ lightweight_enriched_at: '2026-04-09T15:00:16.346790Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 24d06f7c3628da78803f6b3e06062699c3a05cba1a4e121e242e9c27490bfdff
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 535f2408beac9e8a9a9f211de248f755dbbfb056210783684609fb23e647c770
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9e8bdec6298b1cc030009a0f62e9954ac84333891abbb62f3d9edac5483417d4
 lightweight_score:
-  relevance_score: 0.3978
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.899
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.33
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about 3D rendering and Python implementation, which is tangentially related to LLM research but lacks direct focus on the core LLM topics like evaluation, reasoning, or architecture.
   evidence_quotes:
+  - I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose
   - The author built a deliberately slow, crystal-clear Python implementation of a 3D Gaussian Splatting renderer.
 ---
 # I Built the Slowest 3D Gaussian Splatting Renderer… On Purpose

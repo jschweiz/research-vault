@@ -39,16 +39,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: de4b3715bc1614ed54d1308a145ccc9d62e599c22ddd945fa27793a5332a4c4d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d6702c1f1b168c27dcda98c39f37023ef6eb9ae9590f1bbbd1a51bb081996358
+lightweight_scoring_input_hash: 9265fbf805e0d63e2fedf2c9675cf654e6d380bf9b4b8f13d737f46d717021fd
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.0
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about space technology and missile defense, which has very weak overlap with the user's favorite topics of language models, evaluation, reasoning, and LLM architecture.
+  reason: The document is about space technology and missile defense, which has no direct relevance to the user's focus on frontier LLM research topics.
   evidence_quotes:
   - 'Impulse Space and Anduril Industries have been selected to develop space-based missile interceptor technology for President Trump''s planned Golden Dome missile '
   - This project is expected to cost $185 billion and aim to demonstrate operational capability by 2028.

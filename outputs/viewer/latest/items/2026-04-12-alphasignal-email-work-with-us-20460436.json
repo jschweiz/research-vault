@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-12-alphasignal-email-work-with-us-20460436",
+  "kind": "article",
+  "source_id": "alphasignal-email",
+  "title": "Work With Us",
+  "source_name": "AlphaSignal Email",
+  "organization_name": null,
+  "authors": [
+    "AlphaSignal <news@alphasignal.ai>",
+    "AlphaSignal"
+  ],
+  "published_at": "2026-04-12T15:34:02Z",
+  "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=10kLFq484h17ok0OD&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Work With Us\n\nSource newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-12T15:34:02+00:00\nCanonical URL: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=10kLFq484h17ok0OD&mid=89966dc0-ec27-4d76-8a02-338015fd672e\n\n## Newsletter Context\n\nWork With Us\n",
+  "outbound_links": [
+    "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=10kLFq484h17ok0OD&mid=89966dc0-ec27-4d76-8a02-338015fd672e"
+  ],
+  "score": {
+    "relevance_score": 0.1933,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.168,
+    "author_match_score": 0.0,
+    "topic_match_score": 0.144,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.2548,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 822.7019,
+      "novelty_signal": 4.3111,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document is a newsletter update about an Anthropic leak, which is tangential to the user's core focus on LLM training, evaluation, and architecture research.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 1.0,
+      "judge_source_fit_score": 0.16,
+      "judge_topic_fit_score": 0.16,
+      "judge_author_fit_score": 0.0,
+      "judge_evidence_fit_score": 0.16,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering.",
+        "Work With Us Source newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future Sender: AlphaSignal"
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "This is a newsletter update from AlphaSignal, referencing a recent leak about Anthropic's line code and the future of AI engineering",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-12-alphasignal-email-work-with-us-20460436/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-13T18:54:07.555946Z",
+  "alphaxiv": null
+}

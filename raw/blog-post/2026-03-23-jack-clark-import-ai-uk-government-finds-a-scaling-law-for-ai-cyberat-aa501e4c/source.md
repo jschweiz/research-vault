@@ -21,7 +21,6 @@ tags:
 - scaling law
 - frontier ai
 - security
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-23-jack-clark-import-ai-import-ai-450-chinas-electronic-warfare-model-tr-26ab1bcb
 index_visibility: visible
 fetched_at: '2026-04-13T18:14:41.926931Z'
-short_summary: The UK government tested frontier AI systems on simulated cyberattack scenarios, finding that larger models and increased compute significantly improve performance in multi-step attacks. This suggests that AI systems are rapidly improving their ability to conduct end-to-end cyberoffense.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The UK government's AI security institute tested frontier AI systems on simulated cyber ranges to assess their ability to conduct multi-step cyber-attacks. The results show that scaling up AI models significantly improves performance in these attack scenarios.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:09.816018Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c3cbd205690cb6d0390b312efd54b8c17968695c2ec61a72ac3737a5877ecbb8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8c08836f6742eda06556f335c9b15baf5318d6ae9be4a3c5fded18c874e15171
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses scaling laws for frontier AI systems in the context of multi-step cyberattacks, which aligns perfectly with the user's interest in LLM evaluation, reasoning, and efficiency.
+  evidence_quotes:
+  - The results show that scaling up AI models significantly improves performance in these attack scenarios.
+  - 'Each successive model generation outperforms its predecessor at fixed token budgets: on our corporate network range, average steps completed at 10M tokens rose '
+  - Increasing from 10M to 100M tokens yields gains of up to 59%.
 ---
 # UK government finds a scaling law for AI cyberattacks – and it’s going up and to the right!
 

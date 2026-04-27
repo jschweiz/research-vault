@@ -21,7 +21,6 @@ tags:
 - forecasting
 - timelines
 - software engineering
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:15.197886Z'
-short_summary: AI progress is accelerating faster than expected, challenging previous forecasts regarding AI capabilities and timelines. This rapid advancement suggests AI systems are quickly growing and colonizing the economy.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Ajeya Cotra updates her timelines on AI progress, noting that AI systems are advancing much faster than previously forecast. She suggests that AI agents may achieve time horizons of over 100 hours on software tasks, raising questions about the concept of time horizon.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.027537Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f9eadadffa5d09ddc26092e5a7df006443f09e4a4a15d49f76b073cceff109d4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 035cf954712e906532a422a9ffd68bcc9319c4e2440d7c40f6498b1d1b1cd551
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.35
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document discusses AI progress and time horizons, which touches on the user's interest in LLM capabilities and reasoning, but it is a high-level analysis rather than deep technical research.
+  evidence_quotes:
+  - Ajeya Cotra updates her timelines on AI progress, noting that AI systems are advancing much faster than previously forecast.
+  - I’d guess that by the end of the year, AI agents will have a time horizon of over 100 hours on the sorts of software tasks in METR’s suite…
+  - I wonder if the whole concept of “time horizon” starts to break down.”
 ---
 # AI progress is moving faster than even well regarded forecasters can guess
 

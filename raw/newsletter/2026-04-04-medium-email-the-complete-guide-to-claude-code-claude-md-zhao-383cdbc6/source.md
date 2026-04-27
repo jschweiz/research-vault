@@ -32,19 +32,19 @@ lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 0fa9f0b76416ad3acb5234a26554913f1611456d13f933cb7c9111daebbdbc64
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 268142f3e48bbb39d0f91800f9c97947098b2bc387c004691d150ac3f6d72dc3
+lightweight_scoring_input_hash: 561b5aec2bfe964d1c2ffa046744d97d0f96d3e7199f034bf52b3f9eb8642c00
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: must_read
-  reason: The document contains several highly relevant topics like LLM architecture, reasoning, and agentic AI, making it a high-priority read for the user.
+  evidence_fit_score: 0.45
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document contains several relevant topics like Reinforcement Learning and LangGraph Agents, which align with the user's interests, but the source is a general newsletter and lacks deep technical focus.
   evidence_quotes:
+  - 21 Reinforcement Learning (RL) Concepts Explained In Plain English
   - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'
-  - An Operating System For Meaning to Enable Agentic AI
 ---
 # The Complete Guide to Claude Code: CLAUDE.md | zhaozhiming in AI Advances
 

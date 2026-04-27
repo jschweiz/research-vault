@@ -39,20 +39,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3c7eac4bda9405798088bf030846c100cfa15f1f06c4988538120bacc682ca57
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3bd0c130969216a9846e2ac2897bb1e0692d7aa611f1cc84322ba8eb9010610c
+lightweight_scoring_input_hash: 083f6872d1bf40d001defb696bcde1e6d478856b074b62fed2e803036c1fe118
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
+  relevance_score: 0.85
+  source_fit_score: 0.3
   topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 0.95
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models and architecture, and the authors are associated with Google DeepMind, which aligns perfectly with the user's profile.
+  reason: The document directly addresses new, multi-modal reasoning models from Google DeepMind, which aligns perfectly with the user's favorite topics of LLM architecture and evaluation.
   evidence_quotes:
   - Google DeepMind has released four new vision-capable reasoning models, including 2B, 4B, and 31B parameter sizes, along with a 26B-A4B Mixture-of-Experts model.
-  - The models are multi-modal, can process video, and feature native audio input for speech recognition.
   - The models are multi-modal beyond just images and can process video at variable resolutions.
+  - The two smaller models feature native audio input for speech recognition and understanding.
 ---
 # Gemma 4: Byte for byte, the most capable open models
 

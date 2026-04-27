@@ -45,19 +45,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.728074Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: d9f29d3d031cabe1cf98cacdb2362128b2fcfebd6635afd6cb0f4899fb3730f6
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 409dae91f487817c3aa51f127e4b5763c04b77fc2e6785742eebbcda1ceb75bb
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cf3e7c125ee796672843c676064e05ad1b674065320011b9d06f6e5b0068b999
 lightweight_score:
-  relevance_score: 0.5463
-  source_fit_score: 0.5586
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
   evidence_fit_score: 1.0
-  confidence_score: 0.5586
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 3 public votes, 0 total votes, 46 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This paper directly addresses efficiency, memory management, and agentic frameworks for LLM experimentation, aligning perfectly with the user's favorite topics and research persona.
   evidence_quotes:
-  - The Deep Researcher Agent, developed by Xiangyue Zhang at The University of Tokyo, provides an autonomous framework for continuous, 24/7 deep learning experimen
+  - LLMs offer minimal utility during the active training phase of deep learning experiments; thus, monitoring can be offloaded to local OS-level checks without LLM
+  - Maintaining a constant-size, two-tier memory system (project brief and rolling memory log) is critical for the long-term stability, performance, and cost-effici
+  - 'The framework introduces three key innovations: (1) Zero-Cost Monitoring -- a monitoring paradigm that incurs zero LLM API costs during model training by relyin'
 ---
 # Deep Researcher Agent: An Autonomous Framework for 24/7 Deep Learning Experimentation with Zero-Cost Monitoring
 

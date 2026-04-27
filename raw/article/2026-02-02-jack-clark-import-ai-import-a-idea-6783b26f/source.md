@@ -38,20 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1053c58c952b686f7356c09079818feb73ebd5c88a2717edb01694ed3261d819
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 8a459c12926b7ba296d7e2c1f1d2523d75e73293a7a2919bc01ea7e934c69a6d
+lightweight_scoring_input_hash: e44fc4d3c449bd453ec07b732cf03c4d6f94ccb78c1b6022979661cc8d180c3a
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.65
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like AI agents, agent ecology, and the future of the internet structure, making it highly relevant to the user's interests.
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document discusses agent ecology and internet transition, which touches on LLM agent capabilities and coordination, making it relevant to the user's interests in reasoning and memory, but lacks direct focus on frontier LLM training or evaluation methods.
   evidence_quotes:
   - Moltbook is a social network for AI agents that piggybacks on software like OpenClaw to create a new social media property driven by AI agents rather than peopl
   - Moltbook is the first example of an agent ecology that combines scale with the messiness of the real world.
-  - All of this will happen unusually quickly and at an unusual scale.
+  - What happens when someone takes moltbook, filters for posts that yield either a) rich discussion, or b) provable real world problem solving, and turns the entir
 ---
 # Import A-Idea
 

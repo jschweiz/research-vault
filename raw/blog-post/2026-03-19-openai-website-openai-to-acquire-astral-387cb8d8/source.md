@@ -34,19 +34,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1d4f5495501a4d28e28cc1232a7bd0dcb7fe3da696577b630995703680b4bfa5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ae4bcc521a3c19a99848620c003ec85941d09e503502f5fe1766060a09978c32
+lightweight_scoring_input_hash: b885401e135cc7ff2b54aa3a93b56520dba308bc991c88bd608c2381b128d8d0
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.55
-  topic_fit_score: 0.55
-  author_fit_score: 0.75
-  evidence_fit_score: 0.36
-  confidence_score: 0.85
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to the author being OpenAI, which aligns with the user's favorite authors, but the specific topic is focused on developer tools rather than the user's core interests in LLM architecture or evaluation.
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 1.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a business acquisition and developer tools, which has very low technical relevance to the user's focus on LLM research, evaluation, or architecture.
   evidence_quotes:
   - OpenAI is accelerating the growth of Codex to power the next generation of Python developer tools.
   - OpenAI to acquire Astral
-  - OpenAI official website posts discovered from the public site feed.
+  - Accelerates Codex growth to power the next generation of Python developer tools
 ---
 Accelerates Codex growth to power the next generation of Python developer tools

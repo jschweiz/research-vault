@@ -1,0 +1,76 @@
+{
+  "id": "2026-04-12-alphasignal-email-claude-code-cli-tool-82118d60",
+  "kind": "article",
+  "source_id": "alphasignal-email",
+  "title": "Claude Code CLI tool",
+  "source_name": "AlphaSignal Email",
+  "organization_name": null,
+  "authors": [
+    "AlphaSignal <news@alphasignal.ai>",
+    "AlphaSignal"
+  ],
+  "published_at": "2026-04-12T15:34:02Z",
+  "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=Iqj51D6Q5ISmpC3k&mid=89966dc0-ec27-4d76-8a02-338015fd672e",
+  "content_type": "article",
+  "extraction_confidence": 0.0,
+  "cleaned_text": "# Claude Code CLI tool\n\nSource newsletter: 🔍 Anthropic's 512K Line Code Leak Reveals AI Engineering's Future\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-12T15:34:02+00:00\nCanonical URL: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=Iqj51D6Q5ISmpC3k&mid=89966dc0-ec27-4d76-8a02-338015fd672e\n\n## Newsletter Context\n\nOn March 30, 2026, an npm packaging error leaked roughly 512,000 lines of TypeScript from Anthropic's flagship Claude Code CLI tool . The leak occurred when version 2.1.88 shipped with a 59.8 MB JavaScript source map file that pointed to the unobfuscated original code.\n",
+  "outbound_links": [
+    "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c6485&lid=Iqj51D6Q5ISmpC3k&mid=89966dc0-ec27-4d76-8a02-338015fd672e"
+  ],
+  "score": {
+    "relevance_score": 0.1948,
+    "novelty_score": 1.0,
+    "source_quality_score": 0.3465,
+    "author_match_score": 0.6656,
+    "topic_match_score": 0.3195,
+    "zotero_affinity_score": 0.0,
+    "total_score": 0.3749,
+    "bucket": "archive",
+    "reason_trace": {
+      "scoring_mode": "ollama_judge",
+      "favorite_source_match": false,
+      "topic_matches": 0,
+      "author_matches": 0,
+      "ignored_penalty": 0,
+      "trend_score": 822.7019,
+      "novelty_signal": 6.8,
+      "heuristic_topic_match_score": 0.0,
+      "heuristic_author_match_score": 0.0,
+      "heuristic_source_score": 0.24,
+      "judge_reason": "The document is about a code leak and does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.",
+      "judge_bucket_hint": "archive",
+      "judge_confidence_score": 0.95,
+      "judge_source_fit_score": 0.36,
+      "judge_topic_fit_score": 0.36,
+      "judge_author_fit_score": 0.75,
+      "judge_evidence_fit_score": 0.16,
+      "judge_model": "gemma4:e2b",
+      "judge_evidence_quotes": [
+        "A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error.",
+        "The leak occurred when version 2.1.88 shipped with a 59.8 MB JavaScript source map file that pointed to the unobfuscated original code."
+      ]
+    }
+  },
+  "insight": {
+    "short_summary": "A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error",
+    "why_it_matters": null,
+    "whats_new": null,
+    "caveats": null,
+    "follow_up_questions": [],
+    "contribution": null,
+    "method": null,
+    "result": null,
+    "limitation": null,
+    "possible_extension": null,
+    "deeper_summary": null,
+    "experiment_ideas": []
+  },
+  "also_mentioned_in": [],
+  "doc_role": "derived",
+  "parent_id": "2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91",
+  "asset_paths": [],
+  "raw_doc_path": "raw/article/2026-04-12-alphasignal-email-claude-code-cli-tool-82118d60/source.md",
+  "lightweight_enrichment_status": "succeeded",
+  "lightweight_enriched_at": "2026-04-13T18:54:07.302089Z",
+  "alphaxiv": null
+}

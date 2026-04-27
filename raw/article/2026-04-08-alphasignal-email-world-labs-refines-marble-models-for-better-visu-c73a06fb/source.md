@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T23:07:57.150607Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b5f401a38d3812429c554a212af75ef76a5349e8d4e36a530d3ef236ab818292
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 41049dcbfa7f1c49c48eee8e9ef2d499cc7b30c9338293a55e6a90a9f7f4fd38
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses model visuals and environment generation, which is tangentially related to LLM research but lacks direct focus on core LLM topics like reasoning, memory, or efficiency.
+  evidence_quotes:
+  - World Labs has refined Marble models to improve visuals and introduced a scalable environment generation model.
 ---
 # World Labs refines Marble models for better visuals and introduces scalable environment generation model
 

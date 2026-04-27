@@ -36,7 +36,7 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6a5d7f8a63fd5fc969851795f98784cd51a60d4c39b53de45a4c18c0316a4d36
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: df62c1ce361c63a4a54828651f3539a12b6d112a968d00c9e916cbadcca4f6af
+lightweight_scoring_input_hash: b3485add6bc574bde5e635885f9f3abe865d50562d5115812b4130ca5ddbc887
 lightweight_score:
   relevance_score: 0.05
   source_fit_score: 0.0
@@ -45,10 +45,9 @@ lightweight_score:
   evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about literature and reading and has no discernible connection to the user's favorite topics of language models, LLM architecture, or research tooling.
+  reason: The document is about literature and is completely irrelevant to the user's focus on LLM research, evaluation, or architecture.
   evidence_quotes:
   - Why reading “The Decameron” is as useful as ever
-  - The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
   - The author reflects on the enduring usefulness of reading "The Decameron" in the current era.
 ---
 # Why reading “The Decameron” is as useful as ever

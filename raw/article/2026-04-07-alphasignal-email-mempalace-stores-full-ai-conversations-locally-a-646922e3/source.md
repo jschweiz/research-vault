@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:56.846838Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6f30434df91e5e3b536902f626067b53e086ba0ac9cf0638fe50abd04aca6208
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 710018d0243e8177f0c4dd9c0ffeeb30f0d54cbaff9e2a1c329572cbe31730b7
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document directly addresses memory, reasoning, and local context management, which are core favorite topics for a frontier LLM researcher.
+  evidence_quotes:
+  - MemPalace is an open-source memory layer for LLM workflows that stores full AI conversations locally using a structured memory system instead of summaries.
+  - 'It fixes a common issue: your past chats, decisions, and debugging steps disappear after each session.'
+  - It reports a 100% LongMemEval score (500/500) and 96.6% without API calls using local retrieval.
 ---
 # MemPalace stores full AI conversations locally and retrieves them with a structured memory system instead of summaries
 

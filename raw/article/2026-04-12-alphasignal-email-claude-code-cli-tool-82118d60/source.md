@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=6c0a1b85a97c64
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-12T15:34:02Z'
 ingested_at: '2026-04-13T18:06:56.546842Z'
 content_hash: df98855cb91c1a9357ff2e6f26b750f1ebc7f70d59d968b2a758395665334e74
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- claude
+- code
+- cli
+- typescript
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-12-alphasignal-email-anthropic-s-512k-line-code-leak-reveals-ai-engin-ce364a91
 index_visibility: visible
 fetched_at: '2026-04-13T18:06:56.546847Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:07.302089Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 9d562980695ebe741e8d6e2343238b04e8e53f6b1de3fa83c2dc4acad17837c3
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 41418ab2f6bbe66fbfebbc05ee3250ec7e7a2814f9ed569f73aa32e0a8b8eeea
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.36
+  author_fit_score: 0.75
+  evidence_fit_score: 0.16
+  confidence_score: 0.95
+  bucket_hint: archive
+  reason: The document is about a code leak and does not directly address the user's focus on LLM training, evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - A leak from Anthropic's Claude Code CLI tool revealed approximately 512,000 lines of TypeScript code during an npm packaging error.
+  - The leak occurred when version 2.1.88 shipped with a 59.8 MB JavaScript source map file that pointed to the unobfuscated original code.
 ---
 # Claude Code CLI tool
 

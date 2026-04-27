@@ -62,21 +62,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.629055Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 5625c17d024489492b807d1c30ce46dfe3832e649623b254ee4a8decd3d574c5
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 745e96db040fa5244dc78f4c86f886746640a995352995009496089ff286ed46
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: dcfee2e29514214ce82db22d1cbcf2f168221619e5af6df147c409125153d7d8
 lightweight_score:
-  relevance_score: 0.9924
-  source_fit_score: 0.75
+  relevance_score: 0.85
+  source_fit_score: 0.65
   topic_fit_score: 1.0
   author_fit_score: 0.85
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses favorite topics like generative models and protein design, featuring authors from preferred organizations. alphaXiv engagement signals: 3 public votes, 1 total votes, 65 visits in the last 7 days.'
+  reason: This paper directly addresses multimodal generative modeling and inference optimization, which aligns perfectly with the user's favorite topics of LLM architecture, evaluation, and efficiency.
   evidence_quotes:
   - A multimodal generative model named DISCO was developed to simultaneously design protein sequences and 3D structures, enabling the creation of enzymes for new-t
   - DISCO achieved high co-designability (approximately 90% refolding accuracy) and demonstrated superior diversity and novelty compared to existing methods in unco
-  - The document features authors including Yoshua Bengio, Frances H. Arnold, and Yoshua Bengio.
+  - Advanced inference strategies are crucial for improving the quality, diversity, and co-designability of generated proteins in multimodal diffusion models, leadi
 ---
 # General Multimodal Protein Design Enables DNA-Encoding of Chemistry
 

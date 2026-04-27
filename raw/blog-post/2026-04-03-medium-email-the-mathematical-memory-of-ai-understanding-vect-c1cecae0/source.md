@@ -37,19 +37,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 04b6fec193168334a6a03f7625a24c13eecf5b56a259d8b55c42b627dd316d4d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: dadc3cd3f42abf299a1308f8170df79b3518c741f83ab4a1f7dde637fd2b7b78
+lightweight_scoring_input_hash: 8cc475a79a5387d1bd2e98562f03d07b3a0920c0ab1525fd862579fbf314571b
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture and reasoning tooling through the lens of vector databases and embedding pipelines.
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's interest in memory and evaluation mechanics, though the source is a general newsletter.
   evidence_quotes:
   - This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
   - Explore the mechanics of vector databases, text…
+  - 'The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines'
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
 

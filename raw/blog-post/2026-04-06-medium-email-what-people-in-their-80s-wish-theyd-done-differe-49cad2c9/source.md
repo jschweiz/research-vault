@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 59af3a733bc737ce465bcac0b97e547a1ead57948eda86b14e2a1ea0611b7121
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 7168cf8504ebfa0170edf335cc5dc6400d90b4e97f05c763476a632c2a828d34
+lightweight_scoring_input_hash: ed60ea23b93831797c1a0ae12da112b50bf843ab9d46d660057b8b4b161b5314
 lightweight_score:
-  relevance_score: 0.05
+  relevance_score: 0.0
   source_fit_score: 0.0
   topic_fit_score: 0.0
   author_fit_score: 0.0
   evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about personal growth and aging, which has no relevance to the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is entirely about personal growth and aging and has no relevance to frontier LLM research topics.
   evidence_quotes:
   - The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
-  - The post discusses life-changing mistakes people in their 80s regret not making, focusing on personal growth.
+  - The post discusses life-changing mistakes you’re probably making…
 ---
 # What People in Their 80’s Wish They’d Done Differently at Your Age
 

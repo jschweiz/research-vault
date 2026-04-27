@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:23:19.096523Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 52fca851b6b5663b27aab975020f67191226e4c146a061e5be1d6a2889f76ada
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3e2b3b63a07c877f43558ba886f44068684d91361b40e6e10a65f14f2726f41f
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.65
+  topic_fit_score: 0.75
+  author_fit_score: 0.8
+  evidence_fit_score: 0.9
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant due to its focus on state-of-the-art speech understanding models, benchmarks, and multimodal capabilities relevant to LLM research and evaluation.
+  evidence_quotes:
+  - Voxtral bridges this gap. It offers state-of-the-art accuracy and native semantic understanding in the open, at less than half the price of comparable APIs.
+  - Voxtral comprehensively outperforms Whisper large-v3, the current leading open-source Speech Transcription model.
+  - Voxtral Small is competitive with GPT-4o-mini and Gemini 2.5 Flash across all tasks, achieving state-of-the-art performance in Speech Translation.
 ---
 Voice: the original UI.
 Voice was humanity’s first interface—long before writing or typing, it let us share ideas, coordinate work, and build relationships. As digital systems become more capable, voice is returning as our most natural form of human-computer interaction.

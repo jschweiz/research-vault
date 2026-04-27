@@ -4,7 +4,8 @@ kind: blog-post
 title: Google’s AlphaGenome Interprets DNA That Regulates Genetic Expression
 source_url: https://www.deeplearning.ai/the-batch/googles-alphagenome-interprets-dna-that-regulates-genetic-expression
 source_name: The Batch Research
-authors: []
+authors:
+- None
 published_at: '2026-04-10T10:55:56-07:00'
 ingested_at: '2026-04-13T18:33:24.446041Z'
 content_hash: 9f5b519ed32354cbdf6201adb1d20eccb48caf57e9c98b901fd2eefb2d570051
@@ -15,6 +16,10 @@ tags:
 - research
 - website
 - blog-post
+- dna
+- genomics
+- alphagenome
+- gene_expression
 status: active
 asset_paths:
 - original.html
@@ -26,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:33:24.446043Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AlphaGenome is an open-weights model that interprets the 98 percent of the human and mouse genomes that regulate gene expression. It uses a combination of CNNs, transformers, and CNN decoders to find properties like gene boundaries and RNA production rates.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:18.143360Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: a154e0dba841cd282385acbf3eb374a90482c0bd588aa3e48b31f4de19a7ac66
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: fc85d78c2797e6ae6ef372d3a3cd016a2ab737cda5e0691af6af712fe29f6321
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is highly technical and focuses on genomics, which has weak direct overlap with the user's core LLM research topics, although it involves model architecture.
+  evidence_quotes:
+  - AlphaGenome is an open-weights model that interprets the 98 percent of the human and mouse genomes that regulate gene expression.
+  - 'Architecture: convolutional neural network (CNN) encoder, transformer, CNN decoder'
+  - Across 50 evaluations, AlphaGenome matched or exceeded earlier models in 47 of them
 ---
 An open-weights model could help scientists compare the impact of genetic variations, identify mutations that cause diseases, and develop treatments.
 What’s new: [AlphaGenome](https://www.nature.com/articles/s41586-025-10014-0?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9YEAhfwU9tvGXZx9DP70Gu2s8iB1c9CA6EGtUzUaDTQZ5rjjvwCq1Z9RkKukzCkWlrB-I6) interprets the 98 percent of the human and mouse genomes that don’t code for proteins but regulate gene expression and other functions. It finds properties such as where in a DNA sequence a gene begins and ends; how much RNA it directs a cell to produce; and where, as a cell reads a gene, it skips over parts of the gene sequence, a process in which errors can cause a variety of diseases.

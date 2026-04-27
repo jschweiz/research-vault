@@ -33,20 +33,20 @@ lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: d0e714ecde1f210fe730c09b0cca7ffa5f4f8ba69dd5f89b8dd7e8c877486e8e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 56233b0db3e3459509ffce3b8c298b0bb4f875b41eda133efa7e1e5835bc9d11
+lightweight_scoring_input_hash: 2db68ec0a998383ed3c40d47777ba510449f86771a43a531e51cca92ebe3eb01
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture, system prompts, and the financial aspects of major AI labs.
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.55
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document contains some relevant topics like system prompts and AI economics, but it lacks deep technical focus on frontier LLM training or evaluation methods.
   evidence_quotes:
   - How Claude Code Builds a System Prompt
-  - System prompts are often the best manual for how an app is intended to work.
-  - The accidental leak of Claude Code's source code reveals how Claude Code assembles a context and shows how complex context engineering can be, and the importanc
+  - OpenAI and Anthropic are racing toward potentially record-breaking IPOs by the end of the year.
+  - Apple has signed drivers for Nvidia eGPUs.
 ---
 # Apple eGPU support ⚡, inside AI lab finances 💰, Claude Code system prompts 🤖
 

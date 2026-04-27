@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:21:47.815538Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 37003b3e652f72e187551412a920c3a8a4c32e5345aad4c63a52d7c3a6bce89c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0512cd20fc6c97a15303900d8fe7ac2a72bfac4532ffd41af45afff6202cb337
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.6
+  topic_fit_score: 0.95
+  author_fit_score: 0.9
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agentic LLMs and performance evaluation, which aligns perfectly with the user's favorite topics and research persona.
+  evidence_quotes:
+  - 'Devstral is an agentic LLM designed for software engineering tasks, trained to solve real GitHub issues and outperforming open-source models on benchmarks like '
+  - Devstral achieves a score of 46.8% on SWE-Bench Verified, outperforming prior open-source SoTA models by more than 6% points.
+  - When evaluated under the same test scaffold (OpenHands, provided by [All Hands AI](https://www.all-hands.dev/) 🙌), Devstral exceeds far larger models such as De
 ---
 Today we introduce Devstral, our agentic LLM for software engineering tasks. Devstral is built under a collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, and outperforms all open-source models on SWE-Bench Verified by a large margin. We release Devstral under the Apache 2.0 license.
 Agentic LLMs for software development

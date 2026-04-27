@@ -17,25 +17,25 @@
     "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal"
   ],
   "score": {
-    "relevance_score": 0.65,
+    "relevance_score": 0.6786,
     "novelty_score": 1.0,
-    "source_quality_score": 0.55,
+    "source_quality_score": 0.2925,
     "author_match_score": 0.0,
-    "topic_match_score": 0.95,
+    "topic_match_score": 0.8312,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.57,
-    "bucket": "worth_a_skim",
+    "total_score": 0.72,
+    "bucket": "must_read",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
       "favorite_source_match": false,
       "topic_matches": 0,
       "author_matches": 0,
       "ignored_penalty": 0,
-      "trend_score": 500.3,
+      "trend_score": 721.95,
       "novelty_signal": 6.8,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.0,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.24,
       "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
       "judge_bucket_hint": "must_read",
       "judge_confidence_score": 0.9,
@@ -47,11 +47,12 @@
       "judge_evidence_quotes": [
         "OpenAI has proposed policy for the age of superintelligence.",
         "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
-      ]
+      ],
+      "judge_bucket_floor_applied": "must_read"
     }
   },
   "insight": {
-    "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments",
+    "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The article details these developments and related stories",
     "why_it_matters": null,
     "whats_new": null,
     "caveats": null,
@@ -70,6 +71,6 @@
   "asset_paths": [],
   "raw_doc_path": "raw/article/2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0/source.md",
   "lightweight_enrichment_status": "succeeded",
-  "lightweight_enriched_at": "2026-04-09T12:16:11.520345Z",
+  "lightweight_enriched_at": "2026-04-13T18:54:04.399869Z",
   "alphaxiv": null
 }

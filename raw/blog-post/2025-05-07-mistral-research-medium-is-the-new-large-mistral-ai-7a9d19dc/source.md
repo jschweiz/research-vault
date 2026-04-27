@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:21:26.760369Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 578037d9165139caf8f133d2ebbb590bb1221e945343f424ac2c2586b4cfce14
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a9073cf5949942d050437ef3352d4bcbb9cd08a9ac09ba427a35659a896d58cb
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM performance, efficiency, and enterprise customization, aligning perfectly with the user's favorite topics and authors.
+  evidence_quotes:
+  - Mistral Medium 3 introduces a new class of models that balances - SOTA performance - 8X lower cost - simpler deployability to accelerate enterprise usage
+  - Mistral Medium 3 delivers frontier performance while being an order of magnitude less expensive.
+  - Mistral Medium 3 is designed to be frontier-class, particularly in categories of professional use.
 ---
 At Mistral AI, we are continuously pushing the frontier for both open models ([Mistral Small](https://mistral.ai/news/mistral-small-3-1), Mistral Large, Pixtral, many others) as well as enterprise models ([Mistral OCR](https://mistral.ai/news/mistral-ocr), Mistral Saba, Ministral 3B / 8B, and more). All the way from [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b), our models have consistently demonstrated performance of significantly higher-weight and more expensive models. And today, we are excited to announce Mistral Medium 3, pushing efficiency and usability of language models even further.
 Highlights.

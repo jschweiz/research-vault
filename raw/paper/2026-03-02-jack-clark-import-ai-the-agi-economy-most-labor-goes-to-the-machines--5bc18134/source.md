@@ -23,7 +23,6 @@ tags:
 - economics
 - verification
 - ai_agents
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -34,15 +33,27 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:33.517976Z'
-short_summary: The AGI economy shifts labor from machines to human verification, requiring investment in systems for monitoring and verifying AI actions. This shift necessitates new infrastructure and policy to ensure human control and benefit from AI-driven economic growth.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The AGI economy suggests that as machines take over most labor, human value shifts to monitoring and verifying AI agents. This requires investing in verification infrastructure and policy to ensure humanity remains in control of the economic transition.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.376012Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0241e138f3c0bb92b100ae53ab55d7e13ac68501171c1dfda934f63af42858a4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d429d907ea64583f672b0e8f7d1ca98bae4a0ed609f9e32344b9ef2858472b36
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the critical need for verification infrastructure and agent oversight, which aligns perfectly with the user's focus on evaluation, reasoning, and memory in frontier LLM research.
+  evidence_quotes:
+  - In an economy where autonomous agents act with broad agency rather than narrow instructions, the binding constraint on growth is no longer intelligence. It is h
+  - Ensuring humanity remains the architect of its intelligence requires that verification capacity scale commensurately with AI capabilities—through aggressive inv
+  - 'To set society and individuals up well, people should be doing the following things: - Invest in observability: Deploying tools that compress high-dimensional a'
 ---
 # The AGI economy – most labor goes to the machines, and humans shift to verification
 

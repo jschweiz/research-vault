@@ -38,16 +38,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 8bd206fd9e6275e88a8285f491668b1b003d9a8907ca48b95aaf1d117848a837
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 45b97fe45e3376497d6f9903b380531b97830a1f43af7d41aa85b98abac179b0
+lightweight_scoring_input_hash: e37138d12e0e8ba1db8620d9445beafd9e62a363d369e436442d80d98ff49b33
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture and reasoning tooling using relevant concepts like LangGraph agents.
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on agent scaling and parallelization, which touches upon reasoning and efficiency, but the specific framework (LangGraph) and authors do not align perfectly with the user's core focus on foundational LLM training or architecture.
   evidence_quotes:
   - This article discusses scaling LangGraph agents by exploring parallelization, subgraphs, and map-reduce trade-offs.
   - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'

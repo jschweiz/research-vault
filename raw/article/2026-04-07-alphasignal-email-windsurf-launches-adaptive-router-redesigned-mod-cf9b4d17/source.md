@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T23:07:56.931569Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: d07b48f1c9923fd4a8637e1ff4c406f92b81cf04a8d01acd5f1c4f7b2f9899ec
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2e2b2343556691d5744ca8af68e180c9a5805a157af6d7d9abf2f9c6a8f097ed
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a product launch and does not directly address the user's focus on frontier LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - Windsurf has launched an Adaptive router, a redesigned model picker, and removed daily limits for Max users.
 ---
 # Windsurf launches Adaptive router, redesigned model picker, and removes daily limits for Max users
 

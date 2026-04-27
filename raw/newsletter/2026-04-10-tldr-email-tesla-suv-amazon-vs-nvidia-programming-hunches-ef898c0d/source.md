@@ -26,15 +26,26 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:30:04.551990Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: TLDR roundup on Tesla SUV, Amazon vs Nvidia, programming hunches ‍. Includes 8 editorial stories across 4 sections, plus 6 quick links.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:28.101917Z'
+lightweight_enrichment_model: deterministic:tldr-newsletter
+lightweight_enrichment_input_hash: da0e41db7fcc599ce11a2495ef12978fddfcaccfa20122030ddd02229abcf277
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6edcfbe37b39b0362b674a48ca9fd2a5e0a1755742df8941f11aee83bf9f0b4d
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.9
+  bucket_hint: archive
+  reason: The document is a general business and tech roundup and lacks specific, actionable content directly related to frontier LLM research topics.
+  evidence_quotes:
+  - TLDR roundup on Tesla SUV, Amazon vs Nvidia, programming hunches ‍.
+  - TLDR roundup on Tesla SUV, Amazon vs Nvidia, programming hunches 👨‍💻
 ---
 # Tesla SUV 🚙, Amazon vs Nvidia ⚡, programming hunches 👨‍💻
 

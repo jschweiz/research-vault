@@ -36,19 +36,20 @@ lightweight_enriched_at: '2026-04-09T15:00:16.132439Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 02296e2398b3c9967c2d6e4d77c5e1100adf0fb0cdb77fb5689bc662a4c375bd
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 127908a9744eb7f766c239bfc33a4563155aaf3ae5979482bfb745aba2c24e40
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 271049e50ddbe786ab6058866da4e9601888cbf82764e9ab53e36ebff4187643
 lightweight_score:
-  relevance_score: 0.4002
-  source_fit_score: 0.55
-  topic_fit_score: 0.18
-  author_fit_score: 0.18
-  evidence_fit_score: 0.9112
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on generic profile-fit fallback.
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about 3D reconstruction and image processing, which has no direct relevance to the user's focus on frontier LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
   - This post teaches how to create accurate 3D point clouds from photos using AI for zero-shot 3D reconstruction.
+  - How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
 ---
 # How to Create 3D Models From ANY Image with AI (Zero-Shot 3D Reconstruction)
 

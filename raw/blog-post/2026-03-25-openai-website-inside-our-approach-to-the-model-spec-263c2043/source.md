@@ -35,8 +35,19 @@ lightweight_enriched_at: '2026-04-09T15:00:11.711388Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6c17f20620a42cbaeceb2ebb828327e578837fb4eab04bbfdf5943b57c1e7837
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 62981af4dc65178d8b30d630fc506a50f262fc3578e010dc2eaec39d5d65dfb8
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.55
+  topic_fit_score: 0.55
+  author_fit_score: 0.75
+  evidence_fit_score: 0.4
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on model behavior and safety, aligning with the user's interest in LLM evaluation and interpretability, but it is a high-level framework rather than deep technical research.
+  evidence_quotes:
+  - OpenAI's Model Spec provides a public framework for model behavior, focusing on balancing safety, user freedom, and accountability as AI systems develop.
+  - Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.
 ---
 Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.

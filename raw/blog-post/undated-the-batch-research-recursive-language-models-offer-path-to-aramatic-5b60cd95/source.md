@@ -40,9 +40,19 @@ lightweight_enriched_at: '2026-04-09T22:09:50.685250Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9bfb54a11dae4fa01abc0240b81d200120816da4dd332f3d7b5028d1c1532b71
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: b990df9479702b5c019b71dcf2088b0d7a3eaa4f4530eb6c95d8d57e06104529
+lightweight_score:
+  relevance_score: 0.8277
+  source_fit_score: 0.24
+  topic_fit_score: 1.0
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.8165
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: reasoning in llms, memory for llms, 2 favorite-topic matches.'
+  evidence_quotes:
+  - Researchers developed Recursive Language Models (RLMs) that process long prompts by offloading context to an external environment and managing it programmatical
 ---
 When processing long contexts, large language models often lose track of details or devolve into nonsense. Researchers reduced these effects by managing context externally.
 What’s new: MIT’s Alex L. Zhang, Tim Kraska, and Omar Khattab developed [Recursive Language Models](https://arxiv.org/abs/2512.24601?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9o2Recq645Sh94dkQERF-s-TPwoF7fmy7Bw20yk8Bg7em33UUSAF9nnQ3hCwDYUj56R_zz) (RLMs) that process long prompts encountered in books, web searches, and codebases by offloading prompts to an external environment and managing them programmatically.

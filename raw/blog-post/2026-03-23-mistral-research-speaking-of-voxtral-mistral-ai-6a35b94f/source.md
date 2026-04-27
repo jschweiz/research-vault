@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T15:00:11.390434Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 562a355b5ff7ba1e2dbb937d6d1f2d9618cfab7dcda308bcc96355629b4c131e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 3309d03d01a86c284876fd5bfc576d321d9110e1bb1da96eb58c2440505a658a
+lightweight_score:
+  relevance_score: 0.6909
+  source_fit_score: 0.24
+  topic_fit_score: 0.755
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.735
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - Mistral AI released Voxtral TTS, a lightweight text-to-speech model with state-of-the-art performance in multilingual voice generation. It excels at capturing e
 ---
 Voxtral
 Text-to-Speech

@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.190325Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1e746a7cb2a4f7a34cac0d9d0e128dbc44164628ec23f6a8affbaa35533ad4fb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 401df57673978e3d7afedb9de9b67bc3f1a155a3f7823a0cf1fc555484f4980b
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.55
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document details a new open-source coding model and its performance on benchmarks, which is highly relevant to the user's focus on LLM evaluation, reasoning, and efficiency.
+  evidence_quotes:
+  - Z.ai releases GLM-5.1, an open-source model for agent-based software tasks.
+  - It runs coding agents that execute, test, and refine code over time.
+  - Scores 58.4 on SWE-Bench Pro , ranking first among open models
 ---
 # Z.ai announces open-source GLM-5.1 coding model topping SWE-Bench Pro and beating GPT-5.4 and Opus 4.6
 

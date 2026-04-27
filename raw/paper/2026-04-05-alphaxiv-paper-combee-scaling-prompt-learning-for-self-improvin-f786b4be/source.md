@@ -59,20 +59,20 @@ lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 153b098927b87d91f75571a61f501cafad685fca59394c1d11acebab42334cf1
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: e802b73b4013bc67b6e83f0daf7901199edadf5de70db9cdd82b0ca99cc99725
+lightweight_scoring_input_hash: 677245efa61b6a0f46ed2987c56e0bf70d6b336c1ba8c75a42c51c9138c38237
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5899
+  relevance_score: 0.9751
+  source_fit_score: 0.9
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses the user''s favorite topics of LLM agents, scaling, and evaluation, making it a high-priority read. alphaXiv engagement signals: 12 public votes, 2 total votes, 114 visits in the last 7 days.'
+  reason: 'This paper directly addresses scaling prompt learning and agentic frameworks, which aligns perfectly with the user''s favorite topics of LLM agents, evaluation, and efficiency. alphaXiv engagement signals: 12 public votes, 2 total votes, 114 visits in the last 7 days.'
   evidence_quotes:
   - Combee presents a distributed framework for scaling prompt learning in self-improving language model agents.
-  - Combee speeds up learning and enables running many agents in parallel while learning from their aggregate traces without quality degradation.
-  - Combee achieved up to a 17x speedup in training time over sequential prompt learning baselines across various agentic and domain-specific benchmarks.
+  - It effectively tackles the "context overload" challenge in parallel aggregation, yielding up to a 17x speedup compared to sequential methods while preserving or
+  - Combee achieves up to a 17x speedup in training time over sequential prompt learning baselines across various agentic and domain-specific benchmarks.
 ---
 # Combee: Scaling Prompt Learning for Self-Improving Language Model Agents
 

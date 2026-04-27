@@ -18,25 +18,25 @@
     "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms"
   ],
   "score": {
-    "relevance_score": 0.36,
+    "relevance_score": 0.3987,
     "novelty_score": 1.0,
-    "source_quality_score": 0.55,
+    "source_quality_score": 0.342,
     "author_match_score": 0.0,
-    "topic_match_score": 0.55,
+    "topic_match_score": 0.4675,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.423,
-    "bucket": "archive",
+    "total_score": 0.45,
+    "bucket": "worth_a_skim",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
       "favorite_source_match": false,
       "topic_matches": 0,
       "author_matches": 0,
       "ignored_penalty": 0,
-      "trend_score": 500.3,
+      "trend_score": 721.95,
       "novelty_signal": 6.8,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.0,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.24,
       "judge_reason": "The document touches on LLMs and AI but focuses more on the philosophy of taste and context rather than the technical evaluation or architecture favored by the user.",
       "judge_bucket_hint": "worth_a_skim",
       "judge_confidence_score": 0.8,
@@ -48,7 +48,8 @@
       "judge_evidence_quotes": [
         "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.",
         "Taste is achieved by paying close attention to reality and combining it with context and constraints."
-      ]
+      ],
+      "judge_bucket_floor_applied": "worth_a_skim"
     }
   },
   "insight": {
@@ -71,6 +72,6 @@
   "asset_paths": [],
   "raw_doc_path": "raw/article/2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e/source.md",
   "lightweight_enrichment_status": "succeeded",
-  "lightweight_enriched_at": "2026-04-09T12:15:58.365946Z",
+  "lightweight_enriched_at": "2026-04-13T18:54:03.214914Z",
   "alphaxiv": null
 }

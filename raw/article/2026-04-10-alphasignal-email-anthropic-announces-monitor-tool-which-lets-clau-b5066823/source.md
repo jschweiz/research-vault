@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5cab7f3aef8cfe
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-10T15:38:59Z'
 ingested_at: '2026-04-13T18:07:16.410474Z'
 content_hash: be47707d5fb2d597f0fa16ba970b889adc411ec4968dc465a05be5a2a94ca16f
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- anthropic
+- claude
+- monitor tool
+- background scripts
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-10-alphasignal-email-anthropic-opus-advisor-cuts-agent-costs-12-with--25ff1a0c
 index_visibility: visible
 fetched_at: '2026-04-13T18:07:16.410483Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic has announced a new Monitor tool that allows Claude to run background scripts and wake on events.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.614675Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6b677ff018918f2a16ff04695b42eb07f5ded62b0a6b6535fe61f89e5dd378e2
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e44ddb82f51a00701d8edcc965c31ddc3796a9e997561bdba598fe35d6089bb3
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.45
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is moderately relevant as it touches on LLM agent capabilities, which aligns with the user's interest in reasoning and tooling, but lacks deep technical detail or direct focus on frontier LLM training/evaluation.
+  evidence_quotes:
+  - Anthropic has announced a new Monitor tool that allows Claude to run background scripts and wake on events.
+  - Anthropic announces Monitor tool which lets Claude run background scripts and wake on events
 ---
 # Anthropic announces Monitor tool which lets Claude run background scripts and wake on events
 

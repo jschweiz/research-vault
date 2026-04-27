@@ -67,19 +67,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.764120Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 62b869f72fbbbd2fae6c78b2a22179f3f07f73dec6485e5bb42058d350b43078
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 4e78175d71015d53029baae7a8ae2ecb207c6ecb50b13cd0f0fb1a5cedd5e86b
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7d0c744ca360c5125bc1b7c0b6c8300db288425c00513cafa2f377cac8c7dec4
 lightweight_score:
-  relevance_score: 0.5519
-  source_fit_score: 0.5783
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.95
+  source_fit_score: 0.9
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
   evidence_fit_score: 1.0
-  confidence_score: 0.5783
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 0 total votes, 72 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This paper directly addresses efficiency, reasoning, and evaluation in the context of Vision-Language-Action models, aligning perfectly with the user's focus on LLM research and evaluation.
   evidence_quotes:
-  - 'Researchers from SYSU and MBZUAI developed A1, a fully open-source Vision-Language-Action (VLA) framework designed for efficient, real-time robotic control. A1 '
+  - A1, a fully open-source Vision-Language-Action (VLA) framework designed for efficient, real-time robotic control.
+  - A1 adaptively accelerates both its VLM backbone and flow-matching action head, achieving up to a 72.3% reduction in inference time while maintaining high manipu
+  - A1 achieves state-of-the-art success rates while significantly reducing inference cost (e.g., up to 72% lower per-episode latency for flow-matching inference an
 ---
 # A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model
 

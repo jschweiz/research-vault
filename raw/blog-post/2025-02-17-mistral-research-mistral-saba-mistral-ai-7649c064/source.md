@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:20:20.492981Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: bbe19018052f4184b16cbc1808073e7e61e957368a27b8984b7ef3187977a579
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e9dd857462251e48bd7c6def9a49b717b3bef5cbc8fa19404e2745b5ae5d34c5
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.25
+  topic_fit_score: 0.45
+  author_fit_score: 0.55
+  evidence_fit_score: 0.6
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document discusses a specialized regional language model, which touches upon LLM capabilities but is not directly focused on frontier training, evaluation, or core architectural research.
+  evidence_quotes:
+  - 'Mistral Saba is the first specialized regional language model, trained on data from the Middle East and South Asia, designed to provide accurate and culturally '
+  - Mistral Saba is a 24B parameter model trained on meticulously curated datasets from across the Middle East and South Asia.
+  - Mistral Saba is lightweight, fast, and can be deployed locally, supporting Arabic and many Indian-origin languages.
 ---
 Making AI ubiquitous requires addressing every culture and language. As AI proliferates globally, many of our customers worldwide have expressed a strong desire for models that are not just fluent but native to regional parlance. While larger, general-purpose models are often proficient in several languages, they lack linguistic nuances, cultural background, and in-depth regional knowledge required to serve use cases with strong regional context.
 In such scenarios, custom-trained models tailored to regional languages can grasp the unique intricacies and insights for delivering precision and authenticity. To that end, we are proud to introduce Mistral Saba, the first of our specialized regional language models.

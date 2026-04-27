@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T22:09:48.528058Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 161d751bafe72b95c48c92f0d28e8b8c62dd8af11f368961d16be998840c6500
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: 37585836b0837944926b7feee6b484350fcca813258b6fbe747d761088f2ccc9
+lightweight_score:
+  relevance_score: 0.6909
+  source_fit_score: 0.24
+  topic_fit_score: 0.755
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.735
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - DeepSeek withheld prerelease access to its upcoming DeepSeek-V4 model from Nvidia and AMD, intensifying the AI rivalry between the U.S. and China. This action h
 ---
 DeepSeek, the Chinese developer of outstanding open-weights models, has withheld an upcoming update of its flagship model from U.S. chip makers, a move that intensifies the AI rivalry between the U.S. and China.
 What’s new: DeepSeek has not yet given Nvidia or AMD an opportunity to make sure its upcoming DeepSeek-V4, which is in the final stages of development, will run smoothly on its chips — a departure from the typical practice prior to major model updates. However, it did share a prerelease version of the model with Huawei, giving the Chinese chip maker several weeks to optimize the software for its hardware, Reuters [reported](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.deeplearning.ai%2Fe3t%2FCtc%2FLX%2B113%2FcJhC404%2FVVB8zD6XLF9xW70l18b5DsD2CW7TctdS5LQfpgMQqrTz5nR3bW50kH_H6lZ3lgVbTDNX3rpF4KW7SHj-X4W1lnhW4ck6PN1NYtXZW7m93m5326gkdW1C2bFf4QR0xFW4smplh5KJ_CSW8C3Pm08qVWMSVmb0qb2YKMP-W6wLHx03wS9njW1RsNDT5LP6ccW3_GgXD7LbT9WW4bxz7645H8mDVy4tgd6r1nDVW7nRGz11x6lVNW6ppT2F2FhrMtW1bBbTb2jmZkPW1J9Gsd6pcrsbW93hpgw3LJqqtVQppDn3LtqGmVJjT7P91jCDZV2c5LF8G2jJ6W2KKXjC8Q2QpVW2zGwGR3ffHQlVQwlzZ7hMfFKW4pWm6d5nHZ-ZW8D_Mhg2RBTVTW1VBv4q6xS_klW5vyfN97VrSQmW3RzK3q3lgY-sW2qhzk87vylCcVDgGYh6FJcYXVzhWbY28LLFyf2FcDmY04&data=05%7C02%7C%7C2780d0079cbb44819f1e08de855014d6%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094776152825409%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=QRa%2BDxv%2ByA6voVYr4taPU48annEmu8IsX1WK%2FabzzAg%3D&reserved=0) although it did not report DeepSeek’s reasoning for the decision.

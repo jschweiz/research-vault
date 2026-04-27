@@ -20,7 +20,6 @@ tags:
 - labbench2
 - biology
 - retrieval
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,15 +30,27 @@ doc_role: derived
 parent_id: 2026-02-23-jack-clark-import-ai-import-ai-446-nuclear-llms-chinas-big-ai-benchma-74d04bde
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:00.669651Z'
-short_summary: AI systems have uneven scientific capabilities, showing weaknesses in areas like cross-referencing biological data and understanding scientific figures. Improvements are needed in retrieval, handling exact inputs, and developing scientific 'taste' for AI to be more useful to scientists.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems show uneven capabilities in science, with notable weaknesses in tasks like cross-referencing biological databases and understanding figures, though they perform well in searching full-text papers.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.584698Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 993049cc4175c136ce5856b624ea6dd6999a69646c6f4b20584de09def455639
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: dfcc80cbc64c90bba2d84bd16753e095005d9e29e975a670b17c80f4902e119d
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to evaluation and reasoning in LLMs, focusing on scientific capabilities and benchmark limitations.
+  evidence_quotes:
+  - AI systems show uneven capabilities in science, with notable weaknesses in tasks like cross-referencing biological databases and understanding figures, though t
+  - LABBench2 shows some of the holes in frontier models – no model is very good at cross-referencing multiple biological databases to come up with an answer, nor a
+  - 'Areas of improvement: LABBench2 highlights a few areas where AI systems need to improve to become more useful to scientists.'
 ---
 # AI systems are good at some parts of science, but their capabilities are very unevenly distributed
 

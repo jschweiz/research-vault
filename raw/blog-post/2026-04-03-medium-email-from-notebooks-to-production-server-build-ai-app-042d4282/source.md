@@ -38,19 +38,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 32de96f2a1d44167bc77f80b13054d07f64dfa1ce7969e21effddccb8ede30a2
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b9b10172452b383be7cb05b4dcddc9b9b7a36866816356960f5ad222adaed876
+lightweight_scoring_input_hash: f20a20ac5f633e2e75e1898f85358ff490cb21f53db9d0263452566580953c27
 lightweight_score:
-  relevance_score: 0.45
-  source_fit_score: 0.3
-  topic_fit_score: 0.6
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.7
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant to the user's interest in building AI applications but does not directly focus on the core topics of LLM architecture or evaluation.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document focuses on general AI application deployment rather than the specific frontier LLM research topics preferred by the user.
   evidence_quotes:
   - This post provides guidance on building AI applications by transitioning from notebooks to production servers.
-  - 'From Notebooks to Production Server: Build AI Applications The Right Way'
 ---
 # From Notebooks to Production Server: Build AI Applications The Right Way
 

@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:59.211792Z'
-short_summary: The post discusses how smart people are currently addressing collapsing careers and dying jobs, referencing a quote about earning with the mind.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post discusses how the smartest people are currently addressing collapsing careers and dying jobs by focusing on earning with their minds rather than their time.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.763007Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e9cda67595a6789af679c92584ff3cc0658eb6a90924d7533390c361df577102
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8156d965878c3f5aa8db3f389ec441f49dd5d66e40d4100ab26a091987208a59
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about career and personal growth and has no technical relevance to frontier LLM research.
+  evidence_quotes:
+  - 'The post discusses how the smartest people are currently addressing collapsing careers and dying jobs by focusing on earning with their minds rather than their '
+  - “Earn with your mind, not your time.” — Naval
 ---
 # Careers Are Collapsing. Jobs Are Dying. The Smartest People Are Doing This Right Now
 

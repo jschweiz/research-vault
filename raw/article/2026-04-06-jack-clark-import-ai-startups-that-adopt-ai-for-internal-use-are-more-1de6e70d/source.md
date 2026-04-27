@@ -22,7 +22,6 @@ tags:
 - startup success
 - business performance
 - ai use cases
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-06-jack-clark-import-ai-import-ai-452-scaling-laws-for-cyberwar-rising-t-279314ef
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:52.280767Z'
-short_summary: Startups that integrate AI into their internal operations are more successful than those that do not, leading to measurable gains in performance, customer acquisition, and revenue.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Startups that integrate AI into their internal operations are more successful than those that do not. This adoption leads to measurable performance gains, including increased task completion, customer acquisition, and higher revenue.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.329649Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 45cb4ba2311d9c0f2fe0abdfe7378335bb7642e3882c6a912fa86e10a5af3241
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: d263d25e058a9ee7e445be77cf331e9b07171b59f7a8228ed82d548afb46ea89
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is focused on business adoption and success rather than frontier LLM training, evaluation, or core research tooling.
+  evidence_quotes:
+  - Business school study shows how startups can benefit from AI adoption…
+  - Across 515 high-growth startups, we run a field experiment in which treated firms receive information about how other firms have reorganized production around A
+  - We find that treated firms discover 2.7 additional AI use cases (a 44% increase), which span a broader set of activities across the firm and are especially conc
 ---
 # Startups that adopt AI for internal use are more successful than those that don’t
 

@@ -36,19 +36,21 @@ lightweight_enriched_at: '2026-04-09T15:00:18.319732Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 34cff3553b56c968059747548343e6ae088c16478071fcd4d408dac234adbcdd
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback
-lightweight_scoring_input_hash: 00d439a5ff0622e6eceecbc7543507c67012990e09ff0884ad9bb97b40c0a793
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 49d6b73e098554ece057b3f17c108c46e7116973b756c7c4691f6e12a8165beb
 lightweight_score:
-  relevance_score: 0.4944
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 0.887
-  confidence_score: 0.45
-  bucket_hint: worth_a_skim
-  reason: Heuristic fallback based on 1 favorite-topic match.
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.35
+  author_fit_score: 0.33
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a generic introduction to LLMs and lacks the technical depth required by a frontier LLM researcher focusing on advanced topics like evaluation, reasoning, or efficiency.
   evidence_quotes:
-  - This post provides a beginner-friendly, no-jargon introduction to the concept of Large Language Models (LLMs). It breaks down the basics of how these machines w
+  - This post provides a beginner-friendly, no-jargon introduction to the concept of Large Language Models (LLMs).
+  - It breaks down the basics of how these machines work.
+  - What Is an LLM? A No-Jargon Introduction
 ---
 # What Is an LLM? A No-Jargon Introduction
 

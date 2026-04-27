@@ -18,25 +18,25 @@
     "https://mitchellh.com/writing/building-block-economy"
   ],
   "score": {
-    "relevance_score": 0.36,
+    "relevance_score": 0.3997,
     "novelty_score": 1.0,
-    "source_quality_score": 0.55,
+    "source_quality_score": 0.172,
     "author_match_score": 0.0,
-    "topic_match_score": 0.55,
+    "topic_match_score": 0.4675,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.423,
-    "bucket": "archive",
+    "total_score": 0.45,
+    "bucket": "worth_a_skim",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
       "favorite_source_match": false,
       "topic_matches": 0,
       "author_matches": 0,
       "ignored_penalty": 0,
-      "trend_score": 500.3,
+      "trend_score": 721.95,
       "novelty_signal": 6.8,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.0,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.24,
       "judge_reason": "The document touches on software development and adoption, which is tangentially related to LLM/ML tooling, but lacks specific focus on the user's favorite LLM/architecture topics.",
       "judge_bucket_hint": "worth_a_skim",
       "judge_confidence_score": 0.8,
@@ -49,11 +49,12 @@
         "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leadi",
         "Agents readily pick open and free software over closed and commercial.",
         "Closed-source, commercial software is at a massive disadvantage."
-      ]
+      ],
+      "judge_bucket_floor_applied": "worth_a_skim"
     }
   },
   "insight": {
-    "short_summary": "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software",
+    "short_summary": "Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to better mainline software",
     "why_it_matters": null,
     "whats_new": null,
     "caveats": null,
@@ -72,6 +73,6 @@
   "asset_paths": [],
   "raw_doc_path": "raw/article/2026-04-08-tldr-email-the-building-block-economy-2eb76b35/source.md",
   "lightweight_enrichment_status": "succeeded",
-  "lightweight_enriched_at": "2026-04-09T12:16:36.948672Z",
+  "lightweight_enriched_at": "2026-04-13T18:54:06.067403Z",
   "alphaxiv": null
 }

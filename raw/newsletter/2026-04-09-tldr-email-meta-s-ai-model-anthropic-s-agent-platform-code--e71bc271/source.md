@@ -32,9 +32,21 @@ lightweight_enriched_at: '2026-04-09T14:34:23.020919Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: 0c3a05b88d452c71c34253ac96faafc31e8414e45e6c8c1d4a8bbb0c464e46a0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 769383a4d608b98abfbe5e5b36cd3d41e2ee2f0875693c342e5db430110e479a
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.7
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document provides relevant high-level updates on LLM agents, models, and code analysis, fitting the user's favorite topics, but the source is a general newsletter.
+  evidence_quotes:
+  - Muse Spark is the first AI model in Meta's Muse family.
+  - Claude Managed Agents is a suite of composable APIs aimed at developers and enterprise teams looking to build and deploy cloud-hosted AI agents at scale.
+  - The Git Commands I Run Before Reading Any Code
 ---
 # Meta's AI model 🧠, Anthropic's agent platform 🤖, code analysis via git 👨‍💻
 

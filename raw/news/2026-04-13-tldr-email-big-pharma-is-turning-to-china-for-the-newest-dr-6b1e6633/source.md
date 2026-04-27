@@ -6,6 +6,7 @@ source_url: https://links.tldrnewsletter.com/6Mjg1G
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-13T11:02:26Z'
 ingested_at: '2026-04-13T18:29:46.126930Z'
 content_hash: 1b5d72bd46518240eb3188762f7772c6ec44459eb78fd780070326c98bf4ecc7
@@ -17,6 +18,10 @@ tags:
 - ai
 - news
 - sub-document
+- big pharma
+- china
+- drug development
+- biotechs
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -27,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-13-tldr-email-apple-ai-glasses-meta-ai-s-rise-how-agents-read--fbc04e29
 index_visibility: visible
 fetched_at: '2026-04-13T18:29:46.126934Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Big pharmaceutical companies and investors are acquiring rights to promising Chinese drug candidates. This shift has raised national security concerns in the US regarding dependence on China's medicine supply.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:27.334807Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 132ea8985002d16ef74f25dcb7630290d2a279202a7ebdf3949b87b6e3e4c95a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5d83f0836b9aafc2a2abccbabf645e683f52ee6a25f5b075bf8eac4dc460f04d
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about pharmaceutical business and geopolitics, which has no direct relevance to the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - Big pharmaceutical companies and investors are spending billions to lock up rights to promising Chinese-originated drug candidates.
+  - The shift has stirred up national security concerns in the US.
 ---
 # Big Pharma Is Turning to China for the Newest Drug Ideas
 

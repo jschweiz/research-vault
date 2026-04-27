@@ -36,16 +36,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e0cd271d17f0fc619017d0ab8382621acdf1a6690ae076d78648f7d893f551d5
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 4d956c3875e048081c69e55399e43e7bc4055d892901bc40a49223021cca6a2c
+lightweight_scoring_input_hash: cf66e9c8169dea11a71434d5eb995ee737d8d9c31a987f93a4af7158a59795ce
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
-  confidence_score: 0.8
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about job booms and the economy, which does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is about the job market and does not align with the user's focus on LLM research, evaluation, or architecture.
   evidence_quotes:
   - The post discusses an unmentioned 800% job boom and points to a bottleneck beyond building AI.
   - The bottleneck isn’t building AI anymore. It’s making…

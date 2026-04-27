@@ -49,19 +49,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.686825Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 58457881c468cab5ff09a1bbf79ca9e8eddfa38db4a1353544262d5fbbc00390
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 95c26c81ca1631d81a51366de03c9581dae449383d30fd630d7299bb1b871d08
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 035369ce21912806dd2a11b3c240cc6708a310e3cb505a9e6a53749cd057d3cc
 lightweight_score:
-  relevance_score: 0.5456
-  source_fit_score: 0.5563
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.85
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
   evidence_fit_score: 1.0
-  confidence_score: 0.5563
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 1 total votes, 56 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The paper provides causal evidence on how AI assistance impacts human reasoning and persistence, which directly aligns with the user's favorite topics of reasoning, evaluation, and LLM interaction.
   evidence_quotes:
   - A study employing randomized controlled trials revealed that utilizing AI assistance, even for a short period, diminishes individuals' ability to solve problems
+  - AI assistance causally impairs subsequent unassisted task performance, leading to lower solve rates once the AI is removed.
+  - AI assistance causally reduces persistence, as indicated by a higher propensity to skip problems when the aid is no longer available.
 ---
 # AI Assistance Reduces Persistence and Hurts Independent Performance
 

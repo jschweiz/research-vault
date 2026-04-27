@@ -39,19 +39,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: cd9e08b294caf9232dfc960d814db98d93bbbe4ec55d15a755fc9bc4a89bfb93
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: edeca4b042f0577ec2363b234c894484b53fbeb6c47d63c4ff276fadc0e3cb21
+lightweight_scoring_input_hash: 0ce34f3b6dffd73539baa41f80d52a04ad03441064366eed9984538a070901d0
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about spaceflight and does not align with the user's favorite topics of language models, evaluation, or research tooling.
+  reason: The document is about spaceflight and does not align with the user's focus on LLM research, evaluation, or architecture.
   evidence_quotes:
-  - Three Americans and one Canadian launched into orbit on the Space Launch System rocket for the Artemis II mission.
-  - This mission tests NASA's transportation system to get astronauts to the Moon and back.
+  - Artemis II, NASA's boldest mission in generations, launches crew to the Moon
 ---
 # Artemis II, NASA's boldest mission in generations, launches crew to the Moon
 

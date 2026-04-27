@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.484667Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 4f490f304ae88eca115006b22603577a3dfe344fea492bfd164aeecb28d06c95
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0bd09887944a298758d375ea3fd188b432cd359187662c21a902aca2a277998d
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics of LLM evaluation, reasoning, and agent ecologies, making it highly relevant for a frontier LLM researcher.
+  evidence_quotes:
+  - 'We model the AGI transition as the collision of two racing cost curves: an exponentially decaying Cost to Automate and a biologically bottlenecked Cost to Verif'
+  - LLM access increases novice accuracy from approximately 5% to over 17%.
+  - state-of-the-art models achieving less than 30% of the human baseline on average, while taking 15-20x more time to compute than humans.
 ---
 # Import AI 447: The AGI economy; testing AIs with generated games; and agent ecologies
 

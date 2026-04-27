@@ -32,20 +32,19 @@ lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: 8255c13ba7a6035479dc58517640a72afc61b2b92ab46ce2f00c345292eeaa78
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 811de43e094eb58b2558e624af0c0eb7f36219c7551a0c701d04f6b2bca0df0c
+lightweight_scoring_input_hash: 2808c0952da84762ed19cd02aa0b19ee99fadaf5afef3bd1c891d2d7b7c7a577
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.5
-  topic_fit_score: 1.0
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.85
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses LLM architecture and code analysis, aligning perfectly with the user's favorite topics and authors.
+  evidence_fit_score: 0.7
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document contains several relevant LLM and reasoning-related topics, making it a worthwhile skim for a frontier LLM researcher.
   evidence_quotes:
-  - Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
-  - I Turned Claude Code Into an Operating System. Here’s the Blueprint.
-  - How to configure Claude Code with hooks, skills…
+  - 'Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)'
+  - How to build an Over-Engineered Retrieval System
 ---
 # Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture. | Han HELOIR YAN, Ph.D. ☕️ in Data Science Collective
 

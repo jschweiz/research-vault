@@ -31,9 +31,20 @@ lightweight_enriched_at: '2026-04-09T14:34:23.005618Z'
 lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: c2fc47ca1bfbc84e4920fec4b4c9da31cedcd9e3d85a628fb629206e18944afb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 96f371c311f7bf39dc36845e1499ecff71d0943b00ddc1cd6f189aa3e0915684
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.65
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document contains a highly relevant piece on building LLM memory, which directly aligns with the user's favorite topics, but the source is a general newsletter.
+  evidence_quotes:
+  - 'Building LLM Memory from Scratch #4: Knowledge-Graph Memory'
+  - 'Scaling LangGraph Agents: Parallelization, Subgraphs, and Map-Reduce Trade-Offs'
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash | Lee Vaughan in Data Science Collective
 

@@ -55,20 +55,20 @@ lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 42f9fb03cc8ea021162254231ba31cc9e9988d6f2582a7a1579135fd7846f03e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 15d584712741884c5caae493055702b84ae45461bad184faf15c77d23f5afdbc
+lightweight_scoring_input_hash: 14cff6e309fd24e00ba0019e5cdeeb00d42b0770626f0c6e2822026fd09d4bc9
 lightweight_score:
   relevance_score: 1.0
-  source_fit_score: 0.7704
+  source_fit_score: 1.0
   topic_fit_score: 1.0
   author_fit_score: 0.8
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses favorite topics like LLM systems, optimization, and reasoning, and features authors from preferred organizations. alphaXiv engagement signals: 388 public votes, 116 total votes, 6164 visits in the last 7 days.'
+  reason: 'This paper directly addresses optimization frameworks for LLM harnesses, reasoning, and agentic systems, aligning perfectly with the user''s favorite topics and authors. alphaXiv engagement signals: 1 X likes, 388 public votes, 116 total votes.'
   evidence_quotes:
   - Meta-Harness provides an end-to-end optimization framework for LLM harnesses, the external code that dictates how models interact with their environment.
   - On online text classification, Meta-Harness improves over a state-of-the-art context management system by 7.7 points while using 4x fewer context tokens.
-  - On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level math problems by 4.7 points on average across five held-ou
+  - On retrieval-augmented math reasoning, a single discovered harness improves accuracy on 200 IMO-level math problems by an average of 4.7 points across five held
 ---
 # Meta-Harness: End-to-End Optimization of Model Harnesses
 

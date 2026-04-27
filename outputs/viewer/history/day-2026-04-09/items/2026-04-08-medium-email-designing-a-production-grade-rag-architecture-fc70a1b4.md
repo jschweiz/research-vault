@@ -6,7 +6,7 @@ Canonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939
 
 ## Summary
 
-This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs)
+This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs) using these systems
 
 ## Text
 
@@ -15,7 +15,7 @@ This post discusses designing a production-grade Retrieval-Augmented Generation 
 Source newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa
 
 ## Newsletter Context
 

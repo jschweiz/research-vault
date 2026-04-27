@@ -51,17 +51,17 @@ lightweight_enriched_at: '2026-04-09T16:19:42.596137Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 18b213fb655ef96fd3b3f7be9943231a1e29b248057607ec6a6c65437a53607c
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: d7d500917bbb81f54be5ba6ee5a499ea5720eec8f6953f63142a7af35bd280d7
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a3f47f3b526c00fef8aa12764a7c800407d2001fc06795a468841b15b960bf34
 lightweight_score:
-  relevance_score: 0.9854
-  source_fit_score: 0.5376
+  relevance_score: 0.85
+  source_fit_score: 0.75
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.75
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document is highly relevant as it focuses on 3D bounding box estimation using transformer-based methods, aligning perfectly with the user''s favorite topics of LLM architecture, reasoning, and research tooling. alphaXiv engagement signals: 1 public votes, 0 total votes, 45 visits in the last 7 days.'
+  reason: The paper directly addresses 3D object localization using transformer-based methods, which aligns perfectly with the user's favorite topics of LLM architecture, reasoning, and evaluation.
   evidence_quotes:
   - Boxer introduces an algorithm that robustly lifts open-world 2D bounding box detections to static, global 3D bounding boxes in metric world space.
   - Its transformer-based BoxerNet, trained on a large dataset, improves 3D bounding box estimation over prior methods, particularly for smaller objects, across div

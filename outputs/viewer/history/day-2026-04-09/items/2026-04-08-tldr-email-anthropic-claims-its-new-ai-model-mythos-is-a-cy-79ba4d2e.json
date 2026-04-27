@@ -17,25 +17,25 @@
     "https://links.tldrnewsletter.com/gp8rGy"
   ],
   "score": {
-    "relevance_score": 0.85,
+    "relevance_score": 0.8611,
     "novelty_score": 1.0,
-    "source_quality_score": 0.6,
+    "source_quality_score": 0.564,
     "author_match_score": 0.0,
-    "topic_match_score": 0.95,
+    "topic_match_score": 0.855,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.6375,
-    "bucket": "worth_a_skim",
+    "total_score": 0.72,
+    "bucket": "must_read",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
       "favorite_source_match": false,
       "topic_matches": 0,
       "author_matches": 0,
       "ignored_penalty": 0,
-      "trend_score": 500.3,
+      "trend_score": 721.95,
       "novelty_signal": 6.8,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.0,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.24,
       "judge_reason": "The document strongly aligns with the user's favorite topics (AI, evaluation, security) and features a favorite author (Anthropic).",
       "judge_bucket_hint": "must_read",
       "judge_confidence_score": 1.0,
@@ -48,11 +48,12 @@
         "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch softw",
         "The model specializes in identifying security vulnerabilities in software.",
         "Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs."
-      ]
+      ],
+      "judge_bucket_floor_applied": "must_read"
     }
   },
   "insight": {
-    "short_summary": "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch software security vulnerabilities",
+    "short_summary": "Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it available to technology companies to help them find and patch security flaws in",
     "why_it_matters": null,
     "whats_new": null,
     "caveats": null,
@@ -71,6 +72,6 @@
   "asset_paths": [],
   "raw_doc_path": "raw/news/2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e/source.md",
   "lightweight_enrichment_status": "succeeded",
-  "lightweight_enriched_at": "2026-04-09T15:00:26.476734Z",
+  "lightweight_enriched_at": "2026-04-13T18:54:26.089456Z",
   "alphaxiv": null
 }

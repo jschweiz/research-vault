@@ -49,9 +49,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.354946Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 11708f34295b8c3d5b72be7bd91c10dc0d0ad88f98ca9150666c7d323eb1543c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: bf40ba356f81100ce0267030187a0d14fad3585d4496098e4bc90bc328ea9012
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses reinforcement learning and optimization methods, which are core favorite topics for a frontier LLM researcher. alphaXiv engagement signals: 70 public votes, 9 total votes, 59 visits in the last 7 days.'
+  evidence_quotes:
+  - Google DeepMind's Delightful Policy Gradient (DG) reframes policy learning by re-weighting gradient terms based on both action advantage and surprisal, differen
+  - 'Empirically, DG outperforms REINFORCE, PPO, and advantage-weighted baselines across MNIST, transformer sequence modeling, and continuous control, demonstrating '
+  - This approach improves learning dynamics, leading to more efficient convergence and better performance across various reinforcement learning tasks, especially i
 ---
 # Delightful Policy Gradient
 

@@ -36,18 +36,17 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 06bc4d329eac6431c6cb037eb3450fda8f59f7c4abe86ab7d937e39f1b4fd98e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: f5b1e7fefa98f04518ba1873e522fbbe23952f74fe25c44702e170d514742ccc
+lightweight_scoring_input_hash: 70c4dee7214c29a1eb09a990a82a5e076f654a0dd0a953b2c9a3821a9ffbe6f9
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.35
-  topic_fit_score: 0.16
-  author_fit_score: 0.75
-  evidence_fit_score: 0.36
-  confidence_score: 0.8
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.5
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about safety blueprints and does not directly align with the user's favorite topics of language models, evaluation, or architecture.
+  reason: The document is about safety blueprints and does not align with the user's focus on LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
   - OpenAI Japan has announced the Japan Teen Safety Blueprint, which introduces enhanced age protections, parental controls, and well-being safeguards for teens us
-  - OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using gener
 ---
 OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI.

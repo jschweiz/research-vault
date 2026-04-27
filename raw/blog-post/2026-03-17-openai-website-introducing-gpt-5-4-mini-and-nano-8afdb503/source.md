@@ -36,16 +36,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 04522bb690200fbbea1574ff71a96f9a61e502b01444b1edfea86f610a7a27bb
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 70e2e970a4f0c6abf564a2b7ec1f9e7205c329bc0edae67aabdfd98fb6ecd65f
+lightweight_scoring_input_hash: 0b65f3afd584efddb5a750cfdf2cdc22ea74f37849701a4f74c47fc5cbc5468b
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
-  author_fit_score: 0.9
-  evidence_fit_score: 1.0
+  relevance_score: 0.65
+  source_fit_score: 0.55
+  topic_fit_score: 0.95
+  author_fit_score: 0.8
+  evidence_fit_score: 0.9
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like language models, reasoning, and optimization, and is published by a favorite author.
+  reason: The document directly addresses LLM capabilities, reasoning, and efficiency, which aligns perfectly with the user's favorite topics and research persona.
   evidence_quotes:
   - GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.
 ---

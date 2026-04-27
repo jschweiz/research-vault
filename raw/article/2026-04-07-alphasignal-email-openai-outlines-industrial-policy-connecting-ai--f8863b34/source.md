@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:56.909766Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 96ebe9f622fedfb1498054b2b86ef7ec1e26a2a3db61b198a074114e233bf94e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c0493dba9abf686ed698d1646696e0e449a9ff5763e15c22755d33c8b0c27cb2
+lightweight_score:
+  relevance_score: 0.25
+  source_fit_score: 0.1
+  topic_fit_score: 0.1
+  author_fit_score: 0.0
+  evidence_fit_score: 0.3
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses high-level economic policy related to AI rather than the specific technical research topics favored by the user.
+  evidence_quotes:
+  - OpenAI released a policy reframing AI as economic infrastructure, not just software.
+  - The central idea connects AI-generated value directly to public systems through access, taxation, and shared capital.
+  - 'The policy outlines concrete system-level mechanisms: - Right to AI: free or low-cost access to foundational models, compute, and training infrastructure'
 ---
 # OpenAI outlines industrial policy connecting AI output, taxation, and public capital through system-level economic mechanisms
 

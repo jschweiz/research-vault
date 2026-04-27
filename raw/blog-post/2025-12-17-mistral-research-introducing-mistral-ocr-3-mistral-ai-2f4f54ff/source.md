@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T12:25:06.591151Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1008ce108877ac0d8fc697aca18d62a4b63f70e847796469e0e72205e3c6bc04
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: a421a2641cc0288f84823da43ab588909df4c627240e345374ac69904611772b
+lightweight_score:
+  relevance_score: 0.6009
+  source_fit_score: 0.24
+  topic_fit_score: 0.575
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.685
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms.'
+  evidence_quotes:
+  - Mistral OCR 3 offers state-of-the-art accuracy for document processing, significantly outperforming previous models by handling handwriting, complex tables, and
 ---
 Achieving a new frontier for both accuracy and efficiency in document processing.
 Tuesday 8:30 pm.

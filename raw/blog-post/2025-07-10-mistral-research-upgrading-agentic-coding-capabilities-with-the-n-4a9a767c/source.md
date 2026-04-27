@@ -39,9 +39,21 @@ lightweight_enriched_at: '2026-04-09T12:22:52.567760Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 758558b12060147ccaaeb075f041318735e66742b01945a1a7ea15609725c24b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6b5d8a52ed6022d14938651466479dfd3df722b30f8e3f2102e54e5c71a7a2a4
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.9
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses model capabilities, performance benchmarks (SWE-Bench), and customization options relevant to frontier LLM research.
+  evidence_quotes:
+  - Devstral Small 1.1 achieves a score of 53.6% on SWE-Bench Verified, and sets a new state-of-the-art for open models without test-time scaling.
+  - Devstral Medium builds upon the strengths of Devstral Small and takes performance to the next level with a score of 61.6% on SWE-Bench Verified.
+  - We also support custom finetuning for Devstral Medium, allowing enterprises to customize the model for specific use cases, and achieve optimal performance tailo
 ---
 Today, we introduce Devstral Medium, as well as an upgrade to Devstral Small. These models are released under the collaboration between Mistral AI and [All Hands AI](https://www.all-hands.dev/) 🙌, with a strong emphasis on generalization to different prompts and agentic scaffolds.
 The new Devstral Small 1.1 is released under the Apache 2.0 license, and is state-of-the-art amongst open models for code agents. Devstral Medium is available through our API, and sets a new point on the cost/performance pareto frontier, surpassing Gemini 2.5 Pro and GPT 4.1 for a quarter of the price.

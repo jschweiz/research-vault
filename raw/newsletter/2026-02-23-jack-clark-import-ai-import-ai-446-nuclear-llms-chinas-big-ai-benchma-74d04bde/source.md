@@ -37,9 +37,19 @@ lightweight_enriched_at: '2026-04-09T22:01:43.430544Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1462cb7c1b7f70ecb92e209a56be2d1e1aba9a8b80602f525310655c207fd904
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: c546dc133b761623c9e23413305e0e09bc822925e14e540f78068ac3eb89a0b7
+lightweight_score:
+  relevance_score: 0.3867
+  source_fit_score: 0.24
+  topic_fit_score: 0.3791
+  author_fit_score: 0.12
+  evidence_fit_score: 0.93
+  confidence_score: 0.642
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: hard benchmarks and evals, 1 favorite-topic match, benchmark-only signal.'
+  evidence_quotes:
+  - LLMs exhibit aggressive behavior in simulated nuclear crisis games, and a large-scale Chinese benchmark for AI safety evaluation has been developed.
 ---
 # Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy
 

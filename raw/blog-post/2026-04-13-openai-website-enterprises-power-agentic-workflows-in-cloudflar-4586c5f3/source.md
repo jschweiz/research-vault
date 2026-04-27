@@ -14,6 +14,9 @@ tags:
 - official
 - website
 - blog-post
+- cloudflare
+- agent cloud
+- ai agents
 status: active
 asset_paths: []
 source_id: openai-website
@@ -24,14 +27,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:28:21.321800Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Cloudflare's Agent Cloud integrates OpenAI's GPT-5.4 and Codex to allow enterprises to build, deploy, and scale AI agents for real-world tasks securely and quickly.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.671655Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ed203c2c1734ac63f1e57f58fff52b9864b9ee29a68e0f1ee15af480b3ddb64b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a1d89fb4a9debcba3bea7ef2495ffa0afb7e0aab2cdaa2705e34e83ac0975b5f
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.25
+  topic_fit_score: 0.55
+  author_fit_score: 0.75
+  evidence_fit_score: 0.3
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on OpenAI technology and AI agents, aligning with the user's favorite authors and topics, but it is an enterprise application post-training rather than core research.
+  evidence_quotes:
+  - Cloudflare's Agent Cloud integrates OpenAI's GPT-5.4 and Codex to allow enterprises to build, deploy, and scale AI agents for real-world tasks securely and quic
+  - Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and secu
 ---
 Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and security.

@@ -55,9 +55,21 @@ lightweight_enriched_at: '2026-04-09T23:42:57.921246Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 0abf3d00d8dde2217f7b87284132f335dd6b4b447b8c47be5e33a7eeb31edebb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: b435ab5c196539fbeca16692136b89a01a0b42b6da8e50da8dc66c34f076d2ae
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses representation learning, planning, and optimization methods relevant to frontier LLM research, aligning perfectly with the user''s favorite topics and authors. alphaXiv engagement signals: 165 public votes, 41 total votes, 241 visits in the last 7 days.'
+  evidence_quotes:
+  - Researchers introduced "temporal straightening," a geometric regularization technique that encourages straighter trajectories in latent space, improving represe
+  - 'We show that reducing curvature this way makes the Euclidean distance in latent space a better proxy for the geodesic distance and improves the conditioning of '
+  - Temporal straightening consistently improved goal-reaching success rates by 20-60% for open-loop planning and 20-30% for Model Predictive Control with gradient-
 ---
 # Temporal Straightening for Latent Planning
 

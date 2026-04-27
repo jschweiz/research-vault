@@ -33,14 +33,25 @@ parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-c
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:33.509323Z'
 short_summary: Meta developed a pre-compute engine using over 50 AI agents to systematically read data pipelines and encode tribal knowledge into structured navigation guides for all code modules.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.735033Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6377d1d40d8bfa6632689ffba11740bcbf6c08ec1ad8351dbd6b4da08ea898f8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4f8b77c86d81b8efc6711d6548d89e66a5a0cad35c784a9a88f7288822c73dfd
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on AI agents and data pipelines, which aligns with the user's interest in LLM tooling and efficiency, but lacks direct focus on frontier LLM training or evaluation methods.
+  evidence_quotes:
+  - 'Meta developed a pre-compute engine using over 50 AI agents to systematically read data pipelines and encode tribal knowledge into structured navigation guides '
+  - The system works with most leading models because the knowledge layer is model-agnostic.
 ---
 # How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines
 

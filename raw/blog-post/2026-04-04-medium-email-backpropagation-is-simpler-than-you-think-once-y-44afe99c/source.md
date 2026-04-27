@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 26afdd0550b231fad129d5475eba9ec42667ec0680285b57a28998d965c49af8
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ddbadbdce9c9d277504d7eca5d5a0bc7ce7804641acc062c6765aed00d32609b
+lightweight_scoring_input_hash: a426cf19b79badc542562e07392e71d99689b6ef4ec832f29b1af209c92e344e
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.35
   author_fit_score: 0.0
-  evidence_fit_score: 0.75
-  confidence_score: 0.85
-  bucket_hint: worth_a_skim
-  reason: The document is relevant to favorite topics like LLM architecture and machine learning but focuses on a foundational concept (backpropagation) rather than advanced evaluation or tooling.
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses a foundational ML concept (backpropagation) which is relevant to the user's interests but lacks specific focus on frontier LLM training, evaluation, or reasoning methods.
   evidence_quotes:
   - This post explores the concept of backpropagation and suggests it is simpler than commonly perceived once the underlying mechanisms are understood.
   - What’s actually being computed inside a neural network…

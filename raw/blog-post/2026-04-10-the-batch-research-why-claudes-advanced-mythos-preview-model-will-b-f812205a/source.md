@@ -15,6 +15,11 @@ tags:
 - research
 - website
 - blog-post
+- claude
+- anthropic
+- ai
+- security
+- vulnerabilities
 status: active
 asset_paths:
 - original.html
@@ -26,15 +31,25 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:33:25.279498Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic is preparing a limited-release model, Claude Mythos Preview, which demonstrates superior capability in identifying and exploiting code vulnerabilities. The company is funding a consortium to help secure software against these risks as the model's capabilities grow.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:18.227430Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: dc0a428f0525c85255a7e74d5d0879d0a4628fc3912ca92268a896275ff331e5
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: d762f729fcf1d5244c07c4ac5a9870e26d4fe43ff48e039f05113c0dd4b5df27
+lightweight_score:
+  relevance_score: 0.7338
+  source_fit_score: 0.24
+  topic_fit_score: 0.8435
+  author_fit_score: 0.12
+  evidence_fit_score: 0.93
+  confidence_score: 0.7628
+  bucket_hint: worth_a_skim
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, reasoning in llms, 1 favorite-topic match.'
+  evidence_quotes:
+  - Anthropic is preparing a limited-release model, Claude Mythos Preview, which demonstrates superior capability in identifying and exploiting code vulnerabilities
 ---
 Anthropic took unusual steps to prepare the world for a forthcoming large language model that it said poses extraordinary risks to cybersecurity.
 What’s new: [Claude Mythos Preview](https://red.anthropic.com/2026/mythos-preview/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9YEAhfwU9tvGXZx9DP70Gu2s8iB1c9CA6EGtUzUaDTQZ5rjjvwCq1Z9RkKukzCkWlrB-I6), which is not generally available, broadly outperforms the two-month-old Claude Opus 4.6, but it’s “strikingly capable” of identifying and exploiting vulnerabilities in existing code, Anthropic said. The company detailed its capabilities in a [model card](https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9YEAhfwU9tvGXZx9DP70Gu2s8iB1c9CA6EGtUzUaDTQZ5rjjvwCq1Z9RkKukzCkWlrB-I6) that fills 244 pages — the first time it has published a model card without making the model itself available commercially. Anthropic did not announce plans for a commercial release.

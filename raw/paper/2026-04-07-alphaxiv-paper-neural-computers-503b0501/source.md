@@ -60,21 +60,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.746039Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: a7a4f213566a52a5ec4317f1387bb3d07e91c5327cde313632df6b398cf98706
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: deae6f803d10426b74f8906561f048f8f93b981ea84b5043412a2c62ac410922
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6043818a297a225c768c0486ce3f7b43f52c7977cf834406bebf08ec86404e80
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5942
+  relevance_score: 0.95
+  source_fit_score: 0.8
   topic_fit_score: 1.0
-  author_fit_score: 0.8
+  author_fit_score: 1.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document directly addresses core favorite topics like machine forms, agents, and memory, and features authors from the user''s preferred list. alphaXiv engagement signals: 0 public votes, 0 total votes, 48 visits in the last 7 days.'
+  reason: This paper directly addresses the user's favorite topics of LLM agents, memory, and reasoning by proposing a new machine form to unify computation, memory, and I/O.
   evidence_quotes:
   - The paper proposes Neural Computers (NCs), an emerging machine form that unifies computation, memory, and I/O in a learned runtime state.
   - 'Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explic'
-  - We outline a roadmap toward CNCs around these challenges.
+  - This position paper argues that an integrated episodic memory system is essential for developing large language model (LLM) agents capable of sustained, adaptiv
 ---
 # Neural Computers
 

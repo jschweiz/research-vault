@@ -25,15 +25,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:17:39.498856Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Medium digest led by "Backpropagation is simpler than you think (once you see this)". Includes 15 highlighted stories, including "Building the 14 Key Pillars of Agentic AI".
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:30.767232Z'
+lightweight_enrichment_model: deterministic:medium-newsletter
+lightweight_enrichment_input_hash: 002173df93bc64b732f65ed23ffc456e6332c52429852540b7352144047cddf7
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4f946842b0bdfe89a64217565b351957c433cde3fe6e742f123b1da521c33af7
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.55
+  evidence_fit_score: 0.36
+  confidence_score: 0.75
+  bucket_hint: worth_a_skim
+  reason: The document contains several relevant topics like RAG systems and agentic AI, which align with the user's interests in LLM evaluation and tooling, but the content is a digest rather than deep research.
+  evidence_quotes:
+  - How to Design a Production-Ready RAG System (Architecture + Tradeoffs)
+  - Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
+  - Building the 14 Key Pillars of Agentic AI
 ---
 # Backpropagation is simpler than you think (once you see this) | Nikhil Anand in AI Advances
 

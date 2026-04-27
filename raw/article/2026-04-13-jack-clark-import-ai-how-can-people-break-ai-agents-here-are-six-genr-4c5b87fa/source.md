@@ -4,7 +4,8 @@ kind: article
 title: How can people break AI agents? Here are six genres of attack
 source_url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372438
 source_name: Import AI
-authors: []
+authors:
+- Google DeepMind
 published_at: '2026-04-13T10:02:22Z'
 ingested_at: '2026-04-13T18:12:38.010771Z'
 content_hash: 379f23edc4000f998e565025741d16a969f2888059b118b66dfe361e4cc52f7a
@@ -17,6 +18,9 @@ tags:
 - website
 - article
 - sub-document
+- ai agents
+- security
+- attack genres
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -27,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-13-jack-clark-import-ai-import-ai-453-breaking-ai-agents-mirrorcode-and--91e156f4
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:38.010775Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The document outlines six genres of attack against AI agents, including content injection, semantic manipulation, and behavioral control, and proposes technical, ecosystem, legal, and benchmarking mitigations.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.250176Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ce101b1e6cc52565cc342a059a8b2fcf1b4a6baf85c4d25a7ff7d3f59d8455a0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3c01b2c0e0f7237b5f76141171e826e34bb547c22652c082274b2404bc220f5b
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document directly addresses the security, attack genres, and mitigations for AI agents, which aligns perfectly with the user's focus on LLM safety, evaluation, and reasoning.
+  evidence_quotes:
+  - The document outlines six genres of attack against AI agents, including content injection, semantic manipulation, and behavioral control, and proposes technical
+  - 'Six genres of attack: - Content Injection : Embed commands into CSS, HTML, or other metadata. Detect agents and inject information not given to humans.'
+  - 'The authors recommend several types of mitigation, these include: - Technical: Make models more robust to all the forms of hacking through pre-training and post'
 ---
 # How can people break AI agents? Here are six genres of attack
 

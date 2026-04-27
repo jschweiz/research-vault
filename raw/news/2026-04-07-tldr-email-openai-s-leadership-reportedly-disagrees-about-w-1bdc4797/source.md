@@ -22,7 +22,6 @@ tags:
 - finance
 - public offering
 - business
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:24.198304Z'
-short_summary: OpenAI's CFO reportedly disagreed with CEO Sam Altman regarding the timing of a public offering and financial plans. These disagreements led Altman to exclude the CFO from some financial discussions.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: OpenAI's leadership reportedly disagrees on the timing and allocation of raising money for the company. This disagreement stems from differing views on the company's readiness and revenue growth.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.033696Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 1488c7d8aa4570984d8475ff15377943250989350f6cf12426b040930e1e8e2d
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2175c3c68765e7058b8b0d649eb7623d8fc084c69395463bd730b5be53af0f47
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.5
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about corporate finance and business strategy, which has no direct relevance to the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - OpenAI's leadership reportedly disagrees on the timing and allocation of raising money for the company.
+  - This disagreement stems from differing views on the company's readiness and revenue growth.
 ---
 # OpenAI's leadership reportedly disagrees about when to raise money and how to spend it
 

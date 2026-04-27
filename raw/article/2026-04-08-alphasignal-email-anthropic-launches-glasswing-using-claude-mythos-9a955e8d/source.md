@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.063680Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 629200105f344e30459db311ccddaad6176ff22766c14362591ec2bfd02db12a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: c368fc9e4e47af9a6103f3380e1ba5cabe9048e1dfce4b6a2caf413b85cbd943
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM evaluation, reasoning, and efficiency through a new frontier model application in cybersecurity.
+  evidence_quotes:
+  - Anthropic launches Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure.
+  - Scores 83.1% on CyberGym vulnerability reproduction benchmark
+  - Achieves 93.9% on SWE-bench Verified for software engineering tasks
 ---
 # Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure
 

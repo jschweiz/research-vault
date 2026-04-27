@@ -54,19 +54,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.845193Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 27331e44509bd1b0a746ecf64390531fe1aada469982bae72b8e20242d41b8c1
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 07de89163bc4bad555afff479427e350289fc5d67513dc4adce80743cfa18e07
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3794a74c11edb8ff77bc9406a5689480ba939f9729e6423a30a977a50fbabf96
 lightweight_score:
-  relevance_score: 0.5485
-  source_fit_score: 0.5665
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
-  evidence_fit_score: 1.0
-  confidence_score: 0.5665
+  relevance_score: 0.65
+  source_fit_score: 0.55
+  topic_fit_score: 0.85
+  author_fit_score: 0.5
+  evidence_fit_score: 0.95
+  confidence_score: 0.9
   bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.'
+  reason: The document is highly relevant due to its focus on benchmarking and synthetic data generation for generative models, aligning well with the user's interest in evaluation, reasoning, and efficiency.
   evidence_quotes:
-  - 'This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It '
+  - We introduce SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation.
+  - To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that ren
+  - Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks.
 ---
 # SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing
 

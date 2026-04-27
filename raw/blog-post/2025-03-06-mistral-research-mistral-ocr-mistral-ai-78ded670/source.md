@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T12:20:46.853904Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1bcbc7328c2782484feb3c08b2f2fa48b23fa3f938e949046a9277f15ce72320
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ae5042b7a1d36c46c2fc421c2b3ce3a2a2ec26542968a16e548ff6c0a0970ccd
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.55
+  topic_fit_score: 0.45
+  author_fit_score: 0.8
+  evidence_fit_score: 0.75
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on multimodal document understanding and benchmarking, which aligns with the user's interest in LLM evaluation and reasoning, though it is a specific application rather than core architecture research.
+  evidence_quotes:
+  - Mistral OCR is an Optical Character Recognition API that excels at understanding complex documents, including images, tables, and equations, with strong multili
+  - Mistral OCR has consistently outperformed other leading OCR models in rigorous benchmark tests.
+  - Mistral OCR excels in understanding complex document elements, including interleaved imagery, mathematical expressions, tables, and advanced layouts such as LaT
 ---
 Throughout history, advancements in information abstraction and retrieval have driven human progress. From hieroglyphs to papyri, the printing press to digitization, each leap has made human knowledge more accessible and actionable, fueling further innovation.
 Today, we’re at the precipice of the next big leap—to unlock the collective intelligence of all digitized information. Approximately [90%](https://resources.data.gov/glossary/unstructured-data/) of the world’s organizational data is stored as documents, and to harness this potential, we are introducing [Mistral OCR](https://docs.mistral.ai/capabilities/document/).

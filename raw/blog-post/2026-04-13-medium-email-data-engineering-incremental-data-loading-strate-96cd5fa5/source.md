@@ -6,6 +6,7 @@ source_url: https://medium.com/@husseinjundi/data-engineering-incremental-data-l
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Hussein Jundi
 published_at: '2026-04-13T06:40:00Z'
 ingested_at: '2026-04-13T18:17:20.686646Z'
 content_hash: 4cbafcfc543ad1310e0760516b9510dee47d7a81bec09bf55325542b3d9259cf
@@ -16,6 +17,9 @@ tags:
 - email
 - blog-post
 - sub-document
+- data engineering
+- incremental loading
+- data strategies
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-13-medium-email-data-engineering-incremental-data-loading-strate-bf547e37
 index_visibility: visible
 fetched_at: '2026-04-13T18:17:20.686651Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post outlines strategies and solution architectures for incremental data loading. It focuses on the concepts within the context of Data Engineer Things.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.436170Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 45a25d23d3c58e834b900c84392cb25832be3828e55c443718b66a5bde43437f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 594ab6905c4f4bd894322d225b1cdd9c111a2f62add55dc03da9a68d846faa77
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about data engineering strategies and has no direct relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - This post outlines strategies and solution architectures for incremental data loading.
+  - It focuses on the concepts within the context of Data Engineer Things.
 ---
 # Data Engineering: Incremental Data Loading Strategies
 

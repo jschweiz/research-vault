@@ -23,7 +23,6 @@ tags:
 - agentic autonomy
 - post-training
 - benchmarking
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -34,15 +33,27 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-13T18:14:57.264721Z'
-short_summary: Researchers developed PostTrainBench to evaluate whether AI agents can autonomously refine other LLMs for new tasks, finding that while agents show progress, full automation of post-training remains challenging.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed PostTrainBench to evaluate whether AI agents can autonomously refine other LLMs for new tasks. While agents show promise, the gap between agent performance and human performance suggests full automation of post-training is not yet achievable.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.626776Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 09789129680768e9b77ce97607e8bb32c4daa7dea2d540352fd1b7c3532ba76a
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4a6a18072729fd90f42dcf8bac0c7783175a53568f431c6a26182ea045514de5
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses post-training methods, benchmarking, and agentic autonomy, which aligns perfectly with the user's favorite topics of LLM evaluation, post-training, and research tooling.
+  evidence_quotes:
+  - Researchers developed PostTrainBench to evaluate whether AI agents can autonomously refine other LLMs for new tasks.
+  - Post-training is how raw language models become useful”, the authors write.
+  - PostTrainBench shows startling growth in AI capabilities at post-training…
 ---
 # Can LLMs autonomously refine other LLMs for new tasks? Somewhat.
 

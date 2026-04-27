@@ -6,6 +6,7 @@ source_url: https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changi
 source_name: TLDR Email
 authors:
 - TLDR <dan@tldrnewsletter.com>
+- TLDR
 published_at: '2026-04-08T10:59:19Z'
 ingested_at: '2026-04-09T12:05:02.180963Z'
 content_hash: 942e011e53dec7935c911334e3b742af32003e1be15199385e1c69973966eae1
@@ -21,7 +22,6 @@ tags:
 - filesystem
 - ec2
 - lambda
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -32,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:06.022968Z'
-short_summary: S3 Files allows developers to mount S3 buckets as filesystems on various compute instances. It provides a familiar directory structure while operating on S3 objects.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: S3 Files allows developers to mount S3 buckets as filesystems on various AWS services like EC2, containers, or Lambda. It provides a familiar directory structure for applications while operating on S3 objects.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:05.760459Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 10f7b683b8bf24c448f9bc35608933dc43dde86424273b4163d991b57d8129fc
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4a779e2a3c61ca210b1b223dd68159da1102244b7343a97623121123f40332e5
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about AWS S3 Files and does not directly address the user's focus on frontier LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - S3 Files allows developers to mount S3 buckets as filesystems on various AWS services like EC2, containers, or Lambda.
+  - S3 Files lets developers mount any S3 bucket or prefix as a filesystem on an EC2 instance, container, or Lambda function.
+  - From an application's perspective, S3 files is a mounted directory, but from S3's perspective, the data is objects in a bucket.
 ---
 # S3 Files and the changing face of S3
 

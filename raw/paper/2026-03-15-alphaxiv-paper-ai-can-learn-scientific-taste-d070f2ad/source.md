@@ -69,9 +69,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.250105Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: b6b1ee3b586d94365aa1bd326295fdf3edefe4a1c81a05bf3dc5b8bdf910a24b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: 1c8530e01c6b4bdda143a817fbbe305b3842436e1b40f11b40840f8b192301a8
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses post-training methods, reasoning, and evaluation for LLMs using Reinforcement Learning from Community Feedback. alphaXiv engagement signals: 195 public votes, 48 total votes, 301 visits in the last 7 days.'
+  evidence_quotes:
+  - Their Reinforcement Learning from Community Feedback (RLCF) approach, which uses citation data as supervision, yielded a Scientific Judge model that surpassed l
+  - Scientific Judge models, such as SciJudge-Qwen3-30B, achieved an 80.6% accuracy on the in-domain SciJudgeBench, outperforming proprietary LLM baselines includin
+  - The models demonstrated significant generalization, showing up to 55.1 percentage point accuracy improvements on temporal out-of-domain data and up to 72.0 perc
 ---
 # AI Can Learn Scientific Taste
 

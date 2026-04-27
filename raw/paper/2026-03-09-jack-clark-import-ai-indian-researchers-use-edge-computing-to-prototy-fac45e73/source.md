@@ -21,7 +21,6 @@ tags:
 - traffic surveillance
 - camera network
 - jetson
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:17.906725Z'
-short_summary: Indian researchers developed a system using edge computing to prototype a citywide camera network for intelligent traffic monitoring in Bengaluru. This system processes video streams locally using lightweight GPUs to reduce bandwidth and enable real-time analytics.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Indian researchers developed a system using edge computing and Jetson chips to prototype a citywide camera network for real-time traffic surveillance. This system processes video streams locally at the edge to reduce bandwidth bottlenecks and enable intelligent traffic analysis.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.474385Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 47c227b837563eb2cb60276c1ce5992f1bdbf3aa355c72c5f402cdfd0e23cf2c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 8a2585c95c7bc58a649a3ec8568fed331eb1c9d6ccc7e57ab2a94be1ab38a80a
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.75
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its focus on distributed ML and edge computing, which touches upon efficiency and reasoning in LLM deployment, though it does not directly focus on core LLM training or evaluation methods.
+  evidence_quotes:
+  - To do this, they scatter a bunch of lightweight GPUs (Jetson Edge accelerators) around the city, co-locating them with traffic cameras.
+  - Each stream integrates BoT-SORT multi-object tracking, which assigns persistent IDs to detected vehicles across successive frames.
+  - Each Jetson then performs local fine-tuning of the YOLO-based detector, initialized with the current global weights.
 ---
 # Indian researchers use edge computing to prototype a citywide camera network
 

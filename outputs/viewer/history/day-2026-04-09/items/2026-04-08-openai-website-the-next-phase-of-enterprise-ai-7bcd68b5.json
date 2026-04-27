@@ -15,13 +15,13 @@
   "cleaned_text": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.\n",
   "outbound_links": [],
   "score": {
-    "relevance_score": 0.75,
+    "relevance_score": 0.7771,
     "novelty_score": 1.0,
-    "source_quality_score": 0.75,
-    "author_match_score": 1.0,
-    "topic_match_score": 0.95,
+    "source_quality_score": 0.699,
+    "author_match_score": 0.95,
+    "topic_match_score": 0.855,
     "zotero_affinity_score": 0.0,
-    "total_score": 0.73,
+    "total_score": 0.72,
     "bucket": "must_read",
     "reason_trace": {
       "scoring_mode": "ollama_judge",
@@ -29,11 +29,11 @@
       "topic_matches": 0,
       "author_matches": 1,
       "ignored_penalty": 0,
-      "trend_score": 24.4458,
+      "trend_score": 23.9063,
       "novelty_signal": 4.2,
       "heuristic_topic_match_score": 0.0,
       "heuristic_author_match_score": 0.5,
-      "heuristic_source_score": 0.55,
+      "heuristic_source_score": 0.24,
       "judge_reason": "The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.",
       "judge_bucket_hint": "must_read",
       "judge_confidence_score": 1.0,
@@ -44,7 +44,8 @@
       "judge_model": "gemma4:e2b",
       "judge_evidence_quotes": [
         "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
-      ]
+      ],
+      "judge_bucket_floor_applied": "must_read"
     }
   },
   "insight": {

@@ -6,7 +6,7 @@ Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-m
 
 ## Summary
 
-This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI
+This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory of AI
 
 ## Text
 
@@ -15,7 +15,7 @@ This post explores the mechanics of vector databases and embedding pipelines, fo
 Source newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004
 
 ## Newsletter Context
 

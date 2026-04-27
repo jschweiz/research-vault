@@ -21,7 +21,6 @@ tags:
 - distributed training
 - blockchain
 - model training
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-16-jack-clark-import-ai-importai-449-llms-training-other-llms-72b-distri-4e9550da
 index_visibility: visible
 fetched_at: '2026-04-13T18:14:58.281991Z'
-short_summary: Covenant-72B is a 72B parameter LLM trained via a distributed run involving 20 peers, demonstrating that fully democratized, non-whitelisted participation is feasible for large-scale pre-training.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Covenant-72B is a 72B parameter LLM trained via a distributed process using blockchain coordination, demonstrating that democratized training is feasible at scale. The training involved ~1.1T tokens and was coordinated by ~20 peers running distributed GPU setups.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.731980Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c2733862b0396e7ddb8cfd4e556d62d75b11a2ea349681f799374ccda0e1b392
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 35c62a77ef88b14bcfb2a1311f0cf6fa0abedeef01612c857185150188ff9ed6
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses distributed training methods for LLMs, which aligns perfectly with the user's favorite topics of LLM training, efficiency, and research tooling.
+  evidence_quotes:
+  - Covenant-72B is a 72B parameter LLM trained via a distributed process using blockchain coordination, demonstrating that democratized training is feasible at sca
+  - The training involved ~1.1T tokens and was coordinated by ~20 peers running distributed GPU setups.
+  - Distributed training is a technique that can change the political economy of AI by shifting the people at the frontier from monolithic ‘compute singletons’ (lik
 ---
 # COVENANT-72B: Challenging the political economy of AI via distributed training
 

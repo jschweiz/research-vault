@@ -38,16 +38,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fa8f03ba4862d513caf7c6f07c8aad27105f2d4661683182c08a434255170310
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3cfe4fdabb41f59e3871492bcb8af1dffefb778001113e76005abfcac7697095
+lightweight_scoring_input_hash: 8b5546bf8c6fe6f8465a903591782d5608c8463dea0cdc9a72c2b6087cb3167d
 lightweight_score:
-  relevance_score: 0.75
-  source_fit_score: 0.3
-  topic_fit_score: 1.0
+  relevance_score: 0.25
+  source_fit_score: 0.1
+  topic_fit_score: 0.3
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses system prompts and context engineering, which aligns perfectly with the user's favorite topics of LLM evaluation and architecture.
+  evidence_fit_score: 0.35
+  confidence_score: 0.8
+  bucket_hint: worth_a_skim
+  reason: The document touches on context engineering, which is relevant to LLM prompting, but lacks the deep technical focus required by a frontier LLM researcher.
   evidence_quotes:
   - This article explores how Claude Code builds system prompts, highlighting the complexity of context engineering and the importance of harnesses.
   - The accidental leak of Claude Code's source code reveals how Claude Code assembles a context and shows how complex context engineering can be, and the importanc

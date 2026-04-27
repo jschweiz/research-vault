@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:03.010924Z'
-short_summary: This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Transformers.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post provides an introduction to the concept of Transformers and explains why Recurrent Neural Networks (RNNs) are difficult to train.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.337536Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 81439035f23112945dba1116c18379688ee942a6c7f8daf4b5bcc7d7b3c734ee
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 10fec2732badb7771b9c25bf0b93754fc8700d2e2630d8d0b1615c36f85fb810
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.0
+  evidence_fit_score: 0.6
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (LLM architecture) and is foundational, but the source type is a newsletter, reducing its priority.
+  evidence_quotes:
+  - This post provides an introduction to the concept of Transformers and explains why Recurrent Neural Networks (RNNs) are difficult to train.
+  - 'Understanding Transformers (Part 1): Why RNNs are nearly impossible to train'
 ---
 # Understanding Transformers (Part 1): Why RNNs are nearly impossible to train
 

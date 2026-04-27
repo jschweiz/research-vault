@@ -21,7 +21,6 @@ tags:
 - llms
 - economic impact
 - ai economy
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,26 @@ doc_role: derived
 parent_id: 2026-03-02-jack-clark-import-ai-import-ai-447-the-agi-economy-testing-ais-with-g-0a17e9c4
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:34.348211Z'
-short_summary: This is a conversation between the author and Ezra Klein discussing the economic impacts and policy possibilities of the AI economy, focusing on AI agents and their potential influence on the broader economy.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This is a conversation between the author and Ezra Klein about the economic impacts and policy possibilities of the AI economy, focusing on AI agents and recursive self-improvement.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.795112Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e5c8ffdcbed775b5b8409697ca43c904e76bda09126736099bcda8986cb13803
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f1fc73cd0441cb2bd3a4d66a2703bd6f26950a9be9d910fcf0ff6a3b3abff539
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document focuses on economic and policy impacts of AI agents rather than the technical research, evaluation, or architecture topics preferred by the user.
+  evidence_quotes:
+  - This is a conversation between the author and Ezra Klein about the economic impacts and policy possibilities of the AI economy, focusing on AI agents and recurs
+  - A long conversation about the economic impacts and policy possibilities of the AI economy…
 ---
 # Chatting with Ezra Klein: AI agents, recursive self-improvement, and the personalities of LLMs
 

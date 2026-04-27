@@ -35,8 +35,18 @@ lightweight_enriched_at: '2026-04-09T15:00:12.518606Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3b7bfc1832608e973837ed309b92934e99b309ee506cc6c2b2ca27a6e1a61c27
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 406159d8628218b741e8201289e4e67fe3fb2413373bcf36a8b4203e71c0d8c6
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.5
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a commercial announcement about pricing and does not address the user's focus on frontier LLM research topics.
+  evidence_quotes:
+  - Codex now offers pay-as-you-go pricing for ChatGPT Business and Enterprise, allowing teams more flexible options for adoption and scaling.
 ---
 Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.

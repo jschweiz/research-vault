@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5471fae9b54622
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-13T16:38:35Z'
 ingested_at: '2026-04-13T18:06:28.751691Z'
 content_hash: d73525bb98226d512709197812a61f4074321c24922b15a5447a5b5ba585738c
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- anthropic
+- ultraplan
+- claude
+- cli
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-13-alphasignal-email-anthropic-ultraplan-cloud-planning-local-executi-2c453f7a
 index_visibility: visible
 fetched_at: '2026-04-13T18:06:28.751706Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Anthropic introduced Ultraplan to enable cloud-based planning and flexible execution of tasks across CLI and web environments. This feature allows users to draft, review, and iterate on multi-step plans remotely.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:07.749089Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e4ae49b25ef11ab349d13b98e04bb4d70ca06540a972f9c18799a433abfed0b1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9839ac28d5f1e53e90c1b83dfb6eb59a176c90e5ebd19950ed3873623c01dd8a
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.36
+  topic_fit_score: 0.55
+  author_fit_score: 0.55
+  evidence_fit_score: 0.75
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document discusses planning and execution features relevant to LLM workflows, fitting the user's interest in reasoning and tooling, but it is not a core research paper or evaluation.
+  evidence_quotes:
+  - Anthropic introduced Ultraplan to enable cloud-based planning and flexible execution of tasks across CLI and web environments.
+  - This feature allows users to draft, review, and iterate on multi-step plans remotely.
+  - Ultraplan solves a limitation of terminal-only workflows, where long plans are hard to review or revise in parts.
 ---
 # Anthropic introduces Ultraplan, enabling cloud-based planning and flexible execution across CLI and web environments
 

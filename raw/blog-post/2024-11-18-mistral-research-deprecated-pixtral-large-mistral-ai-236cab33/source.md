@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T12:18:45.735393Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a8f23526eb7fd1e8a618258796181dfbec6bd6e964d85d1251d5344aa1e4d2da
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ab0db5de7666cf5f10770bef9d88a90905c7aafe5f7aa9670224bd2a10dc6e5a
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document details frontier multimodal model performance and reasoning benchmarks, which directly aligns with the user's favorite topics of evaluation, reasoning, and LLM architecture.
+  evidence_quotes:
+  - On MathVista, which evaluates complex mathematical reasoning over visual data, our model achieves 69.4%, outperforming all other models.
+  - To assess reasoning capabilities over complex charts and documents, we evaluate performance using ChartQA and DocVQA, where Pixtral Large surpasses GPT-4o and G
+  - Pixtral Large also outperforms a number of proprietary models, such as GPT-4o (August '24).
 ---
 Pixtral Large in short:
 - Frontier-class multimodal performance

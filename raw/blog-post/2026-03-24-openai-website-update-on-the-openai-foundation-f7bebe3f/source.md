@@ -34,8 +34,18 @@ lightweight_enriched_at: '2026-04-09T14:34:21.922712Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7b2dbf7c1db81076ff8ec68994f36c11d9b770de1e9091dad0c9860c1c2638a0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e4b4f14369eccf77c47d8566c541af5017b81f355c3dfc4d60b236b646581947
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.7
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a general organizational update and does not address the user's specific interests in LLM training, evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - The OpenAI Foundation plans to invest at least $1 billion across areas including disease curing, economic opportunity, AI resilience, and community programs.
 ---
 The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs.

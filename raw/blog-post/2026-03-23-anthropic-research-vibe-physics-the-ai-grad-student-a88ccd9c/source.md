@@ -32,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:11:38.182982Z'
-short_summary: A physics professor supervised an AI (Claude) through a real research calculation to resum the Sudakov shoulder in the C-parameter, exploring the potential of AI in theoretical physics.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The author supervised Claude through a real research calculation to see if AI could tackle theoretical physics problems, specifically resumming the Sudakov shoulder in the C-parameter. The process involved using multiple LLMs and code tools to guide the AI through the complex steps of writing a high-quality physics paper.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:09.584635Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: be3aef7f7a087f4464f45268017e50d570e3dd66393fa832363f3cf4b7ee7f42
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 66ed5aa0bff38871ff56f6aa7e72bfdf689dcf7b6ab51461c1499d64a397be6b
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses the use of LLMs and code tools for complex, end-to-end research, which aligns perfectly with the user's favorite topics of LLM research, reasoning, and research tooling.
+  evidence_quotes:
+  - The process involved using multiple LLMs and code tools to guide the AI through the complex steps of writing a high-quality physics paper.
+  - 'I wanted to see if I could coach the model to succeed: to show, rather than tell it.'
+  - 'I encapsulated all the work. The rules were strict: My question was: is there a set of prompts, like instructions to a talented G2, that can guide an AI to prod'
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

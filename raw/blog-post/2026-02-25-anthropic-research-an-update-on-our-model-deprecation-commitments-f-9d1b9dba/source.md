@@ -39,16 +39,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: ff954d80be7c9af421e998f7230bec79114a5d7f64dda04357235e82334f2054
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 41a05436f5fba8e34fd638d57ae8a20f8b2d9e306bdb4bf76a24efd1cebcad5e
+lightweight_scoring_input_hash: 8c513660469eb51e425c20b8285df0434a434cd10ffc3f94fadb374307b3ab56
 lightweight_score:
-  relevance_score: 0.95
-  source_fit_score: 1.0
-  topic_fit_score: 1.0
+  relevance_score: 0.65
+  source_fit_score: 0.75
+  topic_fit_score: 0.95
   author_fit_score: 1.0
-  evidence_fit_score: 1.0
+  evidence_fit_score: 0.9
   confidence_score: 1.0
-  bucket_hint: must_read
-  reason: The document directly addresses model deprecation commitments, model preservation, and the model's reflections, which aligns perfectly with the user's favorite topics of LLM architecture and evaluation.
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant as it discusses model deprecation, preservation, and model preferences, which directly aligns with the user's favorite topics of LLM architecture, memory, and evaluation.
   evidence_quotes:
   - 'Anthropic is navigating the deprecation of Claude Opus 3 by committing to preserve model weights and exploring ways to honor the model''s preferences, including '
   - We recently described how we’re navigating this process in our [commitments on model deprecation and preservation](https://www.anthropic.com/research/deprecatio

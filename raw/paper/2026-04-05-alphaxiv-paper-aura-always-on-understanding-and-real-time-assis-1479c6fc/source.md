@@ -60,21 +60,19 @@ lightweight_enriched_at: '2026-04-09T16:19:42.550867Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 81605d81a6da249220a8c39588465872a0a4f3e704fed2a6446980333fe29c8d
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 44a7a3517161755de03809540ab43bb12322ad9e3dbe9cc9e97f6da22465ba1b
+lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: dee9995de2d31e8f9a1e60ce63af00b02f5af6d699a9e89013f8edec419a3fee
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.8
+  relevance_score: 0.8987
+  source_fit_score: 0.5582
   topic_fit_score: 1.0
-  author_fit_score: 0.0
+  author_fit_score: 0.12
   evidence_fit_score: 1.0
-  confidence_score: 1.0
+  confidence_score: 0.84
   bucket_hint: must_read
-  reason: 'The document is highly relevant as it focuses on VideoLLMs, streaming frameworks, and multimodal context management, aligning perfectly with the user''s favorite topics of language models, evaluation, and reasoning. alphaXiv engagement signals: 15 public votes, 2 total votes, 159 visits in the last 7 days.'
+  reason: 'Heuristic fallback based on rubric matches: post-training techniques, rl for llms, 2 favorite-topic matches. alphaXiv engagement signals: 15 public votes, 2 total votes, 159 visits in the last 7 days.'
   evidence_quotes:
   - Researchers from Huawei Research and CUHK MMLab introduced AURA, an end-to-end streaming VideoLLM framework capable of continuously processing live video, makin
-  - 'AURA demonstrated state-of-the-art performance on StreamingBench (73.1% accuracy, 10.4% higher than MiniCPM-o-4.5), OVO-Bench (65.3% accuracy, 4.2% higher than '
-  - A dual sliding-window context management strategy is effective for handling unbounded video and text inputs in streaming VideoLLMs, balancing the retention of c
 ---
 # AURA: Always-On Understanding and Real-Time Assistance via Video Streams
 

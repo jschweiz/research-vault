@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T23:07:57.287488Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: c59040903037e1d75ab5d8b4f325ddb0293c663d2656478b60184161a9485e71
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 19845785116f0e7146ee799756b2ee50375933a65cb08581e246ad814fd31103
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document discusses remote agent control, which is tangentially related to LLM agents but lacks deep technical focus on frontier LLM training, evaluation, or reasoning methods.
+  evidence_quotes:
+  - Cursor allows users to run agents on any machine and control them remotely via their phone.
 ---
 # Cursor enables running agents on any machine while controlling them remotely from your phone
 

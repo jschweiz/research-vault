@@ -22,7 +22,6 @@ tags:
 - space
 - artemis ii
 - distance record
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:04.661430Z'
-short_summary: Astronauts achieved a new distance record by looping behind the Moon, and the Artemis II mission set a new record for the farthest distance traveled into space.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Astronauts achieved a new distance record, bringing the Orion spacecraft closest to the Moon. The Artemis II mission also set a record for the farthest distance traveled into space.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.143627Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: b451f75471fb1d24aedd1c634606d47d2d956961e9f27370987ced8c77aa3896
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e3a30be70d3247436b2ef7d03b1f4cc6274bece238659d985c0be3906496eb42
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about space exploration and does not relate to the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - Astronauts achieved a new distance record, bringing the Orion spacecraft closest to the Moon.
+  - The Artemis II mission also set a record for the farthest distance traveled into space.
 ---
 # Astronauts set distance record, revealing the Moon as a place to be explored
 

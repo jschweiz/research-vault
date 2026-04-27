@@ -37,9 +37,20 @@ lightweight_enriched_at: '2026-04-09T23:07:57.259529Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 3d90f96c4de5e12f03e305e0e8d8b4dbb695db3a695858fb48333bb5caacb499
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6409f3e9f6a282a5b780257fdfbfb4b1157c23dd6b554cd9c57fba447578048f
+lightweight_score:
+  relevance_score: 0.56
+  source_fit_score: 0.36
+  topic_fit_score: 0.75
+  author_fit_score: 0.36
+  evidence_fit_score: 0.6
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is highly relevant to the user's favorite topics (LLM architecture, reasoning, and research tooling) by discussing a specific system (Managed Agents) from Anthropic, though the source is an external newsletter.
+  evidence_quotes:
+  - Anthropic has outlined a Managed Agents system designed to ensure reliable execution through decoupled infrastructure components.
+  - Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components
 ---
 # Anthropic outlines Managed Agents system enabling reliable execution with decoupled infrastructure components
 

@@ -31,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-13T18:13:09.187719Z'
-short_summary: AI could lead to a 'political superintelligence' that helps people advocate for themselves and craft policy, but achieving this requires intentional work on governance, transparency, and human oversight.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI can help people advocate for themselves in politics and craft policy, potentially leading to a 'political superintelligence.' This requires intentional work on the information, representation, and governance layers of AI systems to ensure they serve society effectively.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:12.279476Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4b66d3e8a8a6f8705ff7107df13e1c02f874ef6e95ef3c2e526e67728ab6092b
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 91f0729c7729b93ffe4d8925b7c27975686b205568c8657531fd13d818504e03
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.25
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document discusses high-level political superintelligence and governance, which is only tangentially related to the user's focus on LLM training, evaluation, and efficiency.
+  evidence_quotes:
+  - AI can help people advocate for themselves in politics and craft policy, potentially leading to a 'political superintelligence.'
+  - AI is like the printing press, to a point. Instead of making information cheap and easily available, it makes intelligence cheap and easily available.
+  - We need a way to write the rules so that, when political superintelligence arrives, we the people are able to harness it.
 ---
 # AI might let us build “political superintelligence”
 

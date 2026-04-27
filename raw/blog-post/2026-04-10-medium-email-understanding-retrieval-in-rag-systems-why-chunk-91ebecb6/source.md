@@ -6,6 +6,7 @@ source_url: https://medium.com/@schuerch_sarah/understanding-retrieval-in-rag-sy
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Sarah Lea
 published_at: '2026-04-10T06:40:00Z'
 ingested_at: '2026-04-13T18:18:34.352760Z'
 content_hash: c5b1b2d80c66c77176893a5879169b28be8f8ca6cc0988a920dd4926f3cc6b70
@@ -16,6 +17,10 @@ tags:
 - email
 - blog-post
 - sub-document
+- rag systems
+- retrieval
+- chunk size
+- ai
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-10-medium-email-understanding-retrieval-in-rag-systems-why-chunk-1c6c4dda
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:34.352765Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post provides a guide on retrieval in RAG systems, focusing on the importance of chunk size in effective retrieval.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:17.579245Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4cbe9c888d338946f2b28963e28cd3be1d569c58defb7ab7c2f3a8f751630540
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 51dec12e4367ddd3f4c326fe20a41c8c79bcea10bfd7dd6baa5cc1951c472df2
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document is relevant to LLM evaluation and reasoning tooling via RAG systems, but the specific topic of chunk size is a practical implementation detail rather than frontier research.
+  evidence_quotes:
+  - This post provides a guide on retrieval in RAG systems, focusing on the importance of chunk size in effective retrieval.
+  - 'Understanding Retrieval in RAG Systems: Why Chunk Size Matters'
 ---
 # Understanding Retrieval in RAG Systems: Why Chunk Size Matters
 

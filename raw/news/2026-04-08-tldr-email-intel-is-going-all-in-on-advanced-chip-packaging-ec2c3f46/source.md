@@ -32,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:03.764353Z'
-short_summary: Intel is focusing heavily on advanced chip packaging, which involves combining multiple chiplets onto a single chip. This is driven by the growing demand for custom chips fueled by AI computing power.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Intel is focusing on advanced chip packaging, which involves combining multiple chiplets onto a single chip. The company is reportedly discussing advanced packaging services with Google and Amazon to meet growing AI demand.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.248871Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 776ce32718557cc224932b62e61bf5d9cbab4a19eaa76954ab7ea8c9463460c0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: f107c18cab915d4ab747f1efc7e910fb80c70f8bb441b9e3afd54216bc0076c1
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about chip packaging and AI demand, which is tangentially related to LLM research but lacks direct focus on the user's favorite topics like evaluation, reasoning, or efficiency.
+  evidence_quotes:
+  - Intel is focusing on advanced chip packaging, which involves combining multiple chiplets onto a single chip.
+  - Intel is reportedly in ongoing talks with Google and Amazon for its advanced packaging services.
 ---
 # Intel is going all-in on advanced chip packaging
 

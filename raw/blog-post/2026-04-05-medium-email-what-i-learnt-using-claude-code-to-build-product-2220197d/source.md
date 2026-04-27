@@ -37,20 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2aac7a91c529da7ad82356e9ea2142c9511bcc33cc5df2317daa98d1249605b9
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 5641cf34128f8c747bd0ce6d08bf64866f2be693de0c2ba8f4e5f6a7106d0cfa
+lightweight_scoring_input_hash: 1b766b5175393b6182b37a7aae4df2a77f0f675ec4a46f8748b049b0bfe84eac
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document is relevant due to its focus on AI application (Claude Code) which touches on the user's favorite topics, but the specific authors and focus are not a strong match.
+  evidence_fit_score: 0.16
+  confidence_score: 0.9
+  bucket_hint: archive
+  reason: The document is about application building using Claude Code, which has weak direct relevance to frontier LLM research topics like training, evaluation, or architecture.
   evidence_quotes:
   - This post provides a practical guide on using Claude Code to build production-ready applications.
   - It covers the building blocks and hidden aspects of this process.
-  - What I Learnt Using Claude Code to Build Production-Ready Apps
 ---
 # What I Learnt Using Claude Code to Build Production-Ready Apps
 

@@ -8,8 +8,8 @@
     "week_start": null,
     "week_end": null,
     "title": "Research Brief · 2026-04-09",
-    "generated_at": "2026-04-09T16:21:55.296620Z",
-    "published_at": "2026-04-09T21:57:48.556200Z",
+    "generated_at": "2026-04-13T20:10:39.965421Z",
+    "published_at": "2026-04-13T20:10:40.097510Z",
     "has_audio": false,
     "schema_version": 3
   },
@@ -27,7 +27,14 @@
         "coverage_end": "2026-04-07"
       }
     ],
-    "weeks": []
+    "weeks": [
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "coverage_start": "2026-04-06",
+        "coverage_end": "2026-04-12"
+      }
+    ]
   },
   "available_editions": [
     {
@@ -38,8 +45,8 @@
       "week_start": null,
       "week_end": null,
       "title": "Research Brief · 2026-04-09",
-      "generated_at": "2026-04-09T16:21:55.296620Z",
-      "published_at": "2026-04-09T21:57:48.556200Z",
+      "generated_at": "2026-04-13T20:10:39.965421Z",
+      "published_at": "2026-04-13T20:10:40.097510Z",
       "has_audio": false,
       "schema_version": 3
     },
@@ -70,14 +77,111 @@
     "editorial_note": "The vault has been re-ranked into a concise working brief.",
     "suggested_follow_ups": [
       "Which baseline or replication would most quickly validate the claim in MoRight: Motion Control Done Right?",
-      "What follow-on signal would show whether The next phase of enterprise AI is material rather than just momentum?",
       "What follow-on signal would show whether Designing a Production-Grade RAG Architecture is material rather than just momentum?",
-      "Which baseline or replication would most quickly validate the claim in GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos?",
+      "What concrete follow-on signal would show whether Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure matters beyond the announcement?",
+      "What concrete follow-on signal would show whether OpenAI #16: A History and a Proposal matters beyond the announcement?",
       "What concrete follow-on signal would show whether Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning' matters beyond the announcement?"
     ],
     "audio_brief": null,
-    "generated_at": "2026-04-09T16:21:55.296620Z",
+    "generated_at": "2026-04-13T20:10:39.965421Z",
     "headlines": [
+      {
+        "item": {
+          "id": "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0",
+          "kind": "article",
+          "source_id": "tldr-email",
+          "title": "OpenAI #16: A History and a Proposal",
+          "source_name": "TLDR Email",
+          "organization_name": null,
+          "authors": [
+            "TLDR <dan@tldrnewsletter.com>"
+          ],
+          "published_at": "2026-04-08T10:59:19Z",
+          "canonical_url": "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal",
+          "content_type": "article",
+          "extraction_confidence": 0.0,
+          "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The article details these developments and related stories",
+          "bucket": "must_read",
+          "total_score": 0.72,
+          "reason_trace": {
+            "scoring_mode": "ollama_judge",
+            "favorite_source_match": false,
+            "topic_matches": 0,
+            "author_matches": 0,
+            "ignored_penalty": 0,
+            "trend_score": 721.95,
+            "novelty_signal": 6.8,
+            "heuristic_topic_match_score": 0.0,
+            "heuristic_author_match_score": 0.0,
+            "heuristic_source_score": 0.24,
+            "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
+            "judge_bucket_hint": "must_read",
+            "judge_confidence_score": 0.9,
+            "judge_source_fit_score": 0.3,
+            "judge_topic_fit_score": 0.95,
+            "judge_author_fit_score": 0.0,
+            "judge_evidence_fit_score": 0.8,
+            "judge_model": "gemma4:e2b",
+            "judge_evidence_quotes": [
+              "OpenAI has proposed policy for the age of superintelligence.",
+              "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
+            ],
+            "judge_bucket_floor_applied": "must_read"
+          },
+          "also_mentioned_in_count": 0
+        },
+        "note": null,
+        "rank": 1
+      },
+      {
+        "item": {
+          "id": "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e",
+          "kind": "news",
+          "source_id": "tldr-email",
+          "title": "Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'",
+          "source_name": "TLDR Email",
+          "organization_name": null,
+          "authors": [
+            "TLDR <dan@tldrnewsletter.com>"
+          ],
+          "published_at": "2026-04-08T10:59:19Z",
+          "canonical_url": "https://links.tldrnewsletter.com/gp8rGy",
+          "content_type": "news",
+          "extraction_confidence": 0.0,
+          "short_summary": "Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it available to technology companies to help them find and patch security flaws in",
+          "bucket": "must_read",
+          "total_score": 0.72,
+          "reason_trace": {
+            "scoring_mode": "ollama_judge",
+            "favorite_source_match": false,
+            "topic_matches": 0,
+            "author_matches": 0,
+            "ignored_penalty": 0,
+            "trend_score": 721.95,
+            "novelty_signal": 6.8,
+            "heuristic_topic_match_score": 0.0,
+            "heuristic_author_match_score": 0.0,
+            "heuristic_source_score": 0.24,
+            "judge_reason": "The document strongly aligns with the user's favorite topics (AI, evaluation, security) and features a favorite author (Anthropic).",
+            "judge_bucket_hint": "must_read",
+            "judge_confidence_score": 1.0,
+            "judge_source_fit_score": 0.6,
+            "judge_topic_fit_score": 0.95,
+            "judge_author_fit_score": 0.0,
+            "judge_evidence_fit_score": 0.9,
+            "judge_model": "gemma4:e2b",
+            "judge_evidence_quotes": [
+              "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch softw",
+              "The model specializes in identifying security vulnerabilities in software.",
+              "Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs."
+            ],
+            "judge_bucket_floor_applied": "must_read"
+          },
+          "also_mentioned_in_count": 0
+        },
+        "note": null,
+        "rank": 2
+      },
       {
         "item": {
           "id": "2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c",
@@ -102,19 +206,19 @@
           "content_type": "paper",
           "extraction_confidence": 0.0,
           "short_summary": "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs. It achieves this by training a 3D diffusion model natively in 3D using large-scale real-world video data.",
-          "bucket": "worth_a_skim",
-          "total_score": 0.6884,
+          "bucket": "must_read",
+          "total_score": 0.72,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user's favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.",
             "judge_bucket_hint": "must_read",
             "judge_confidence_score": 1.0,
@@ -127,102 +231,8 @@
               "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.",
               "The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale",
               "We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec"
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "note": null,
-        "rank": 1
-      },
-      {
-        "item": {
-          "id": "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e",
-          "kind": "news",
-          "source_id": "tldr-email",
-          "title": "Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'",
-          "source_name": "TLDR Email",
-          "organization_name": null,
-          "authors": [
-            "TLDR <dan@tldrnewsletter.com>"
-          ],
-          "published_at": "2026-04-08T10:59:19Z",
-          "canonical_url": "https://links.tldrnewsletter.com/gp8rGy",
-          "content_type": "news",
-          "extraction_confidence": 0.0,
-          "short_summary": "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch software security vulnerabilities",
-          "bucket": "worth_a_skim",
-          "total_score": 0.6375,
-          "reason_trace": {
-            "scoring_mode": "ollama_judge",
-            "favorite_source_match": false,
-            "topic_matches": 0,
-            "author_matches": 0,
-            "ignored_penalty": 0,
-            "trend_score": 500.3,
-            "novelty_signal": 6.8,
-            "heuristic_topic_match_score": 0.0,
-            "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "The document strongly aligns with the user's favorite topics (AI, evaluation, security) and features a favorite author (Anthropic).",
-            "judge_bucket_hint": "must_read",
-            "judge_confidence_score": 1.0,
-            "judge_source_fit_score": 0.6,
-            "judge_topic_fit_score": 0.95,
-            "judge_author_fit_score": 0.0,
-            "judge_evidence_fit_score": 0.9,
-            "judge_model": "gemma4:e2b",
-            "judge_evidence_quotes": [
-              "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch softw",
-              "The model specializes in identifying security vulnerabilities in software.",
-              "Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs."
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "note": null,
-        "rank": 2
-      },
-      {
-        "item": {
-          "id": "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0",
-          "kind": "article",
-          "source_id": "tldr-email",
-          "title": "OpenAI #16: A History and a Proposal",
-          "source_name": "TLDR Email",
-          "organization_name": null,
-          "authors": [
-            "TLDR <dan@tldrnewsletter.com>"
-          ],
-          "published_at": "2026-04-08T10:59:19Z",
-          "canonical_url": "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal",
-          "content_type": "article",
-          "extraction_confidence": 0.0,
-          "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments",
-          "bucket": "worth_a_skim",
-          "total_score": 0.57,
-          "reason_trace": {
-            "scoring_mode": "ollama_judge",
-            "favorite_source_match": false,
-            "topic_matches": 0,
-            "author_matches": 0,
-            "ignored_penalty": 0,
-            "trend_score": 500.3,
-            "novelty_signal": 6.8,
-            "heuristic_topic_match_score": 0.0,
-            "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
-            "judge_bucket_hint": "must_read",
-            "judge_confidence_score": 0.9,
-            "judge_source_fit_score": 0.3,
-            "judge_topic_fit_score": 0.95,
-            "judge_author_fit_score": 0.0,
-            "judge_evidence_fit_score": 0.8,
-            "judge_model": "gemma4:e2b",
-            "judge_evidence_quotes": [
-              "OpenAI has proposed policy for the age of superintelligence.",
-              "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
-            ]
+            ],
+            "judge_bucket_floor_applied": "must_read"
           },
           "also_mentioned_in_count": 0
         },
@@ -231,44 +241,45 @@
       },
       {
         "item": {
-          "id": "2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856",
+          "id": "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5",
           "kind": "blog-post",
           "source_id": "openai-website",
-          "title": "Introducing the Child Safety Blueprint",
+          "title": "The next phase of enterprise AI",
           "source_name": "OpenAI Website",
           "organization_name": null,
           "authors": [
             "OpenAI"
           ],
-          "published_at": "2026-04-08T05:00:00Z",
-          "canonical_url": "https://openai.com/index/introducing-child-safety-blueprint",
+          "published_at": "2026-04-08T14:00:00Z",
+          "canonical_url": "https://openai.com/index/next-phase-of-enterprise-ai",
           "content_type": "post",
           "extraction_confidence": 0.0,
-          "short_summary": "OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developing AI responsibly. This blueprint focuses on safeguards, age-appropriate design, and collaboration to protect and empower young people online",
-          "bucket": "worth_a_skim",
-          "total_score": 0.5095,
+          "short_summary": "OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents",
+          "bucket": "must_read",
+          "total_score": 0.72,
           "reason_trace": {
-            "scoring_mode": "heuristic",
+            "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 1,
             "ignored_penalty": 0,
-            "trend_score": 68.1968,
+            "trend_score": 23.9063,
             "novelty_signal": 4.2,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.5,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "Heuristic fallback based on 1 favorite-author match.",
-            "judge_bucket_hint": "worth_a_skim",
-            "judge_confidence_score": 0.45,
-            "judge_source_fit_score": 0.55,
-            "judge_topic_fit_score": 0.18,
+            "heuristic_source_score": 0.24,
+            "judge_reason": "The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.",
+            "judge_bucket_hint": "must_read",
+            "judge_confidence_score": 1.0,
+            "judge_source_fit_score": 0.75,
+            "judge_topic_fit_score": 0.95,
             "judge_author_fit_score": 1.0,
-            "judge_evidence_fit_score": 0.7953,
-            "judge_model": "heuristic:profile-fallback",
+            "judge_evidence_fit_score": 0.9,
+            "judge_model": "gemma4:e2b",
             "judge_evidence_quotes": [
-              "OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developing AI responsibly. This blueprint focuses on safeguards, age-appropriate design, "
-            ]
+              "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
+            ],
+            "judge_bucket_floor_applied": "must_read"
           },
           "also_mentioned_in_count": 0
         },
@@ -301,18 +312,18 @@
           "extraction_confidence": 0.0,
           "short_summary": "MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.",
           "bucket": "must_read",
-          "total_score": 0.7853,
+          "total_score": 0.7665,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 2,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.56,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.",
             "judge_bucket_hint": "must_read",
             "judge_confidence_score": 1.0,
@@ -334,52 +345,6 @@
       },
       {
         "item": {
-          "id": "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5",
-          "kind": "blog-post",
-          "source_id": "openai-website",
-          "title": "The next phase of enterprise AI",
-          "source_name": "OpenAI Website",
-          "organization_name": null,
-          "authors": [
-            "OpenAI"
-          ],
-          "published_at": "2026-04-08T14:00:00Z",
-          "canonical_url": "https://openai.com/index/next-phase-of-enterprise-ai",
-          "content_type": "post",
-          "extraction_confidence": 0.0,
-          "short_summary": "OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents",
-          "bucket": "must_read",
-          "total_score": 0.73,
-          "reason_trace": {
-            "scoring_mode": "ollama_judge",
-            "favorite_source_match": false,
-            "topic_matches": 0,
-            "author_matches": 1,
-            "ignored_penalty": 0,
-            "trend_score": 24.4458,
-            "novelty_signal": 4.2,
-            "heuristic_topic_match_score": 0.0,
-            "heuristic_author_match_score": 0.5,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.",
-            "judge_bucket_hint": "must_read",
-            "judge_confidence_score": 1.0,
-            "judge_source_fit_score": 0.75,
-            "judge_topic_fit_score": 0.95,
-            "judge_author_fit_score": 1.0,
-            "judge_evidence_fit_score": 0.9,
-            "judge_model": "gemma4:e2b",
-            "judge_evidence_quotes": [
-              "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "note": null,
-        "rank": 2
-      },
-      {
-        "item": {
           "id": "2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4",
           "kind": "blog-post",
           "source_id": "medium-email",
@@ -394,20 +359,20 @@
           "canonical_url": "https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa",
           "content_type": "post",
           "extraction_confidence": 0.0,
-          "short_summary": "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs)",
-          "bucket": "worth_a_skim",
-          "total_score": 0.7175,
+          "short_summary": "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs) using these systems",
+          "bucket": "must_read",
+          "total_score": 0.72,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 2,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 500.3,
+            "trend_score": 721.95,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.56,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.24,
             "judge_reason": "The document directly addresses RAG architecture and LLM grounding, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.",
             "judge_bucket_hint": "must_read",
             "judge_confidence_score": 1.0,
@@ -420,7 +385,58 @@
               "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture.",
               "It focuses on techniques and best practices for grounding Large Language Models (LLMs).",
               "Tags: newsletter, medium, email, blog-post, rag, llm, architecture, machine learning, nlp"
-            ]
+            ],
+            "judge_bucket_floor_applied": "must_read"
+          },
+          "also_mentioned_in_count": 0
+        },
+        "note": null,
+        "rank": 2
+      },
+      {
+        "item": {
+          "id": "2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d",
+          "kind": "article",
+          "source_id": "alphasignal-email",
+          "title": "Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure",
+          "source_name": "AlphaSignal Email",
+          "organization_name": null,
+          "authors": [
+            "AlphaSignal <news@alphasignal.ai>",
+            "AlphaSignal"
+          ],
+          "published_at": "2026-04-08T15:39:23Z",
+          "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b",
+          "content_type": "article",
+          "extraction_confidence": 0.0,
+          "short_summary": "Anthropic launched Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure. This system simulates exploit paths and scans codebases to detect zero-day",
+          "bucket": "must_read",
+          "total_score": 0.72,
+          "reason_trace": {
+            "scoring_mode": "ollama_judge",
+            "favorite_source_match": false,
+            "topic_matches": 1,
+            "author_matches": 0,
+            "ignored_penalty": 0,
+            "trend_score": 721.95,
+            "novelty_signal": 6.8,
+            "heuristic_topic_match_score": 0.28,
+            "heuristic_author_match_score": 0.0,
+            "heuristic_source_score": 0.24,
+            "judge_reason": "The document directly addresses LLM evaluation, reasoning, and efficiency through a new frontier model application in cybersecurity.",
+            "judge_bucket_hint": "must_read",
+            "judge_confidence_score": 1.0,
+            "judge_source_fit_score": 0.6,
+            "judge_topic_fit_score": 1.0,
+            "judge_author_fit_score": 0.0,
+            "judge_evidence_fit_score": 1.0,
+            "judge_model": "gemma4:e2b",
+            "judge_evidence_quotes": [
+              "Anthropic launches Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure.",
+              "Scores 83.1% on CyberGym vulnerability reproduction benchmark",
+              "Achieves 93.9% on SWE-bench Verified for software engineering tasks"
+            ],
+            "judge_bucket_floor_applied": "must_read"
           },
           "also_mentioned_in_count": 0
         },
@@ -429,6 +445,52 @@
       }
     ],
     "interesting_side_signals": [
+      {
+        "item": {
+          "id": "2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856",
+          "kind": "blog-post",
+          "source_id": "openai-website",
+          "title": "Introducing the Child Safety Blueprint",
+          "source_name": "OpenAI Website",
+          "organization_name": null,
+          "authors": [
+            "OpenAI"
+          ],
+          "published_at": "2026-04-08T05:00:00Z",
+          "canonical_url": "https://openai.com/index/introducing-child-safety-blueprint",
+          "content_type": "post",
+          "extraction_confidence": 0.0,
+          "short_summary": "OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developing AI responsibly. This blueprint focuses on safeguards, age-appropriate design, and collaboration to protect and empower young people online",
+          "bucket": "worth_a_skim",
+          "total_score": 0.5095,
+          "reason_trace": {
+            "scoring_mode": "heuristic",
+            "favorite_source_match": false,
+            "topic_matches": 0,
+            "author_matches": 1,
+            "ignored_penalty": 0,
+            "trend_score": 70.2473,
+            "novelty_signal": 5.4,
+            "heuristic_topic_match_score": 0.0,
+            "heuristic_author_match_score": 0.5,
+            "heuristic_source_score": 0.24,
+            "judge_reason": "Heuristic fallback based on 1 favorite-author match.",
+            "judge_bucket_hint": "worth_a_skim",
+            "judge_confidence_score": 0.45,
+            "judge_source_fit_score": 0.55,
+            "judge_topic_fit_score": 0.18,
+            "judge_author_fit_score": 1.0,
+            "judge_evidence_fit_score": 0.7953,
+            "judge_model": "heuristic:profile-fallback",
+            "judge_evidence_quotes": [
+              "OpenAI has introduced a Child Safety Blueprint, which is a roadmap for developing AI responsibly. This blueprint focuses on safeguards, age-appropriate design, "
+            ]
+          },
+          "also_mentioned_in_count": 0
+        },
+        "note": null,
+        "rank": 1
+      },
       {
         "item": {
           "id": "2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db",
@@ -445,7 +507,7 @@
           "canonical_url": "https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004",
           "content_type": "post",
           "extraction_confidence": 0.0,
-          "short_summary": "This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI",
+          "short_summary": "This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory of AI",
           "bucket": "worth_a_skim",
           "total_score": 0.4598,
           "reason_trace": {
@@ -454,11 +516,11 @@
             "topic_matches": 1,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 500.3,
+            "trend_score": 721.95,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.28,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.24,
             "judge_reason": "Heuristic fallback based on 1 favorite-topic match.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.45,
@@ -474,7 +536,7 @@
           "also_mentioned_in_count": 0
         },
         "note": null,
-        "rank": 1
+        "rank": 2
       },
       {
         "item": {
@@ -492,20 +554,20 @@
           "canonical_url": "https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124",
           "content_type": "post",
           "extraction_confidence": 0.0,
-          "short_summary": "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps",
-          "bucket": "archive",
-          "total_score": 0.423,
+          "short_summary": "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps. It focuses on mastering essential AWS VPC settings for these complex systems",
+          "bucket": "worth_a_skim",
+          "total_score": 0.45,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 500.3,
+            "trend_score": 721.95,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.24,
             "judge_reason": "The document is relevant due to its focus on ML architecture and security, aligning with favorite topics, but the specific focus on AWS VPC is a niche application.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.85,
@@ -517,54 +579,8 @@
             "judge_evidence_quotes": [
               "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps.",
               "Master VPC configurations with 4 essential AWS VPC…"
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "note": null,
-        "rank": 2
-      },
-      {
-        "item": {
-          "id": "2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714",
-          "kind": "blog-post",
-          "source_id": "medium-email",
-          "title": "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train",
-          "source_name": "Medium Email",
-          "organization_name": null,
-          "authors": [
-            "Medium Daily Digest <noreply@medium.com>",
-            "Jose Parreño"
-          ],
-          "published_at": "2026-04-08T06:40:00Z",
-          "canonical_url": "https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960",
-          "content_type": "post",
-          "extraction_confidence": 0.0,
-          "short_summary": "This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Transformers",
-          "bucket": "archive",
-          "total_score": 0.3972,
-          "reason_trace": {
-            "scoring_mode": "heuristic",
-            "favorite_source_match": false,
-            "topic_matches": 0,
-            "author_matches": 0,
-            "ignored_penalty": 0,
-            "trend_score": 500.3,
-            "novelty_signal": 6.8,
-            "heuristic_topic_match_score": 0.0,
-            "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "Heuristic fallback based on generic profile-fit fallback.",
-            "judge_bucket_hint": "worth_a_skim",
-            "judge_confidence_score": 0.45,
-            "judge_source_fit_score": 0.55,
-            "judge_topic_fit_score": 0.18,
-            "judge_author_fit_score": 0.18,
-            "judge_evidence_fit_score": 0.9057,
-            "judge_model": "heuristic:profile-fallback",
-            "judge_evidence_quotes": [
-              "This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Tran"
-            ]
+            ],
+            "judge_bucket_floor_applied": "worth_a_skim"
           },
           "also_mentioned_in_count": 0
         },
@@ -612,18 +628,18 @@
           "extraction_confidence": 0.0,
           "short_summary": "Researchers from SYSU and MBZUAI developed A1, a fully open-source Vision-Language-Action (VLA) framework designed for efficient, real-time robotic control. A1 adaptively accelerates both its VLM backbone and flow-matching action head, achieving up to a 72.3% reduction in inference time while maintaining high manipulation success rates across diverse real-world and simulated tasks.",
           "bucket": "worth_a_skim",
-          "total_score": 0.5043,
+          "total_score": 0.4803,
           "reason_trace": {
             "scoring_mode": "heuristic",
             "favorite_source_match": false,
             "topic_matches": 2,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
-            "novelty_signal": 6.8,
+            "trend_score": 98.75,
+            "novelty_signal": 4.8,
             "heuristic_topic_match_score": 0.56,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 0 total votes, 72 visits in the last 7 days.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.5783,
@@ -640,57 +656,6 @@
         },
         "note": null,
         "rank": 1
-      },
-      {
-        "item": {
-          "id": "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b",
-          "kind": "paper",
-          "source_id": "alphaxiv-paper",
-          "title": "Fast Spatial Memory with Elastic Test-Time Training",
-          "source_name": "alphaXiv Papers",
-          "organization_name": null,
-          "authors": [
-            "Ziqiao Ma",
-            "Xueyang Yu",
-            "Haoyu Zhen",
-            "Yuncong Yang",
-            "Joyce Chai",
-            "Chuang Gan"
-          ],
-          "published_at": "2026-04-08T17:59:48Z",
-          "canonical_url": "https://www.alphaxiv.org/abs/2604.07350",
-          "content_type": "paper",
-          "extraction_confidence": 0.0,
-          "short_summary": "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabilize fast-weight updates in Transformer-based models, enabling robust multi-chunk adaptation for long 4D sequences. Their Fast Spatial Memory (FSM) model, incorporating LaCET, achieved a PSNR of 32.16 and LPIPS of 0.043 for 4D novel view synthesis on the Stereo4D dataset.",
-          "bucket": "worth_a_skim",
-          "total_score": 0.4961,
-          "reason_trace": {
-            "scoring_mode": "heuristic",
-            "favorite_source_match": false,
-            "topic_matches": 2,
-            "author_matches": 0,
-            "ignored_penalty": 0,
-            "trend_score": 96.95,
-            "novelty_signal": 6.8,
-            "heuristic_topic_match_score": 0.56,
-            "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.",
-            "judge_bucket_hint": "worth_a_skim",
-            "judge_confidence_score": 0.5308,
-            "judge_source_fit_score": 0.55,
-            "judge_topic_fit_score": 0.4,
-            "judge_author_fit_score": 0.18,
-            "judge_evidence_fit_score": 1.0,
-            "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
-            "judge_evidence_quotes": [
-              "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabiliz"
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "note": null,
-        "rank": 2
       },
       {
         "item": {
@@ -728,11 +693,11 @@
             "topic_matches": 1,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.28,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.5665,
@@ -743,6 +708,57 @@
             "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
             "judge_evidence_quotes": [
               "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It "
+            ]
+          },
+          "also_mentioned_in_count": 0
+        },
+        "note": null,
+        "rank": 2
+      },
+      {
+        "item": {
+          "id": "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b",
+          "kind": "paper",
+          "source_id": "alphaxiv-paper",
+          "title": "Fast Spatial Memory with Elastic Test-Time Training",
+          "source_name": "alphaXiv Papers",
+          "organization_name": null,
+          "authors": [
+            "Ziqiao Ma",
+            "Xueyang Yu",
+            "Haoyu Zhen",
+            "Yuncong Yang",
+            "Joyce Chai",
+            "Chuang Gan"
+          ],
+          "published_at": "2026-04-08T17:59:48Z",
+          "canonical_url": "https://www.alphaxiv.org/abs/2604.07350",
+          "content_type": "paper",
+          "extraction_confidence": 0.0,
+          "short_summary": "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabilize fast-weight updates in Transformer-based models, enabling robust multi-chunk adaptation for long 4D sequences. Their Fast Spatial Memory (FSM) model, incorporating LaCET, achieved a PSNR of 32.16 and LPIPS of 0.043 for 4D novel view synthesis on the Stereo4D dataset.",
+          "bucket": "worth_a_skim",
+          "total_score": 0.4721,
+          "reason_trace": {
+            "scoring_mode": "heuristic",
+            "favorite_source_match": false,
+            "topic_matches": 2,
+            "author_matches": 0,
+            "ignored_penalty": 0,
+            "trend_score": 98.75,
+            "novelty_signal": 6.8,
+            "heuristic_topic_match_score": 0.56,
+            "heuristic_author_match_score": 0.0,
+            "heuristic_source_score": 0.42,
+            "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.",
+            "judge_bucket_hint": "worth_a_skim",
+            "judge_confidence_score": 0.5308,
+            "judge_source_fit_score": 0.55,
+            "judge_topic_fit_score": 0.4,
+            "judge_author_fit_score": 0.18,
+            "judge_evidence_fit_score": 1.0,
+            "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
+            "judge_evidence_quotes": [
+              "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabiliz"
             ]
           },
           "also_mentioned_in_count": 0
@@ -766,20 +782,20 @@
           "canonical_url": "https://mitchellh.com/writing/building-block-economy",
           "content_type": "article",
           "extraction_confidence": 0.0,
-          "short_summary": "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software",
-          "bucket": "archive",
-          "total_score": 0.423,
+          "short_summary": "Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to better mainline software",
+          "bucket": "worth_a_skim",
+          "total_score": 0.45,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 500.3,
+            "trend_score": 721.95,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.24,
             "judge_reason": "The document touches on software development and adoption, which is tangentially related to LLM/ML tooling, but lacks specific focus on the user's favorite LLM/architecture topics.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.8,
@@ -792,7 +808,8 @@
               "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leadi",
               "Agents readily pick open and free software over closed and commercial.",
               "Closed-source, commercial software is at a massive disadvantage."
-            ]
+            ],
+            "judge_bucket_floor_applied": "worth_a_skim"
           },
           "also_mentioned_in_count": 0
         },
@@ -816,19 +833,19 @@
           "content_type": "article",
           "extraction_confidence": 0.0,
           "short_summary": "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage. Taste is achieved by paying close attention to reality and combining it with context and constraints",
-          "bucket": "archive",
-          "total_score": 0.423,
+          "bucket": "worth_a_skim",
+          "total_score": 0.45,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 500.3,
+            "trend_score": 721.95,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.24,
             "judge_reason": "The document touches on LLMs and AI but focuses more on the philosophy of taste and context rather than the technical evaluation or architecture favored by the user.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.8,
@@ -840,7 +857,8 @@
             "judge_evidence_quotes": [
               "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.",
               "Taste is achieved by paying close attention to reality and combining it with context and constraints."
-            ]
+            ],
+            "judge_bucket_floor_applied": "worth_a_skim"
           },
           "also_mentioned_in_count": 0
         },
@@ -873,18 +891,18 @@
           "extraction_confidence": 0.0,
           "short_summary": "MoRight, developed by researchers at NVIDIA and the University of Illinois Urbana-Champaign, introduces a Diffusion Transformer-based framework for controllable video generation. It achieves disentangled control of camera and object motion while integrating motion causality reasoning, allowing users to define object actions in a canonical view, independently adjust camera viewpoints, and infer physically plausible action-consequence relationships.",
           "bucket": "must_read",
-          "total_score": 0.7853,
+          "total_score": 0.7665,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 2,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.56,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.",
             "judge_bucket_hint": "must_read",
             "judge_confidence_score": 1.0,
@@ -929,19 +947,19 @@
           "content_type": "paper",
           "extraction_confidence": 0.0,
           "short_summary": "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs. It achieves this by training a 3D diffusion model natively in 3D using large-scale real-world video data.",
-          "bucket": "worth_a_skim",
-          "total_score": 0.6884,
+          "bucket": "must_read",
+          "total_score": 0.72,
           "reason_trace": {
             "scoring_mode": "ollama_judge",
             "favorite_source_match": false,
             "topic_matches": 0,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.0,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user's favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.",
             "judge_bucket_hint": "must_read",
             "judge_confidence_score": 1.0,
@@ -954,7 +972,8 @@
               "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.",
               "The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale",
               "We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec"
-            ]
+            ],
+            "judge_bucket_floor_applied": "must_read"
           },
           "also_mentioned_in_count": 0
         },
@@ -1001,18 +1020,18 @@
           "extraction_confidence": 0.0,
           "short_summary": "Researchers from SYSU and MBZUAI developed A1, a fully open-source Vision-Language-Action (VLA) framework designed for efficient, real-time robotic control. A1 adaptively accelerates both its VLM backbone and flow-matching action head, achieving up to a 72.3% reduction in inference time while maintaining high manipulation success rates across diverse real-world and simulated tasks.",
           "bucket": "worth_a_skim",
-          "total_score": 0.5043,
+          "total_score": 0.4803,
           "reason_trace": {
             "scoring_mode": "heuristic",
             "favorite_source_match": false,
             "topic_matches": 2,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
-            "novelty_signal": 6.8,
+            "trend_score": 98.75,
+            "novelty_signal": 4.8,
             "heuristic_topic_match_score": 0.56,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 0 total votes, 72 visits in the last 7 days.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.5783,
@@ -1028,58 +1047,6 @@
           "also_mentioned_in_count": 0
         },
         "rank": 3,
-        "zotero_tags": [],
-        "credibility_score": null
-      },
-      {
-        "item": {
-          "id": "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b",
-          "kind": "paper",
-          "source_id": "alphaxiv-paper",
-          "title": "Fast Spatial Memory with Elastic Test-Time Training",
-          "source_name": "alphaXiv Papers",
-          "organization_name": null,
-          "authors": [
-            "Ziqiao Ma",
-            "Xueyang Yu",
-            "Haoyu Zhen",
-            "Yuncong Yang",
-            "Joyce Chai",
-            "Chuang Gan"
-          ],
-          "published_at": "2026-04-08T17:59:48Z",
-          "canonical_url": "https://www.alphaxiv.org/abs/2604.07350",
-          "content_type": "paper",
-          "extraction_confidence": 0.0,
-          "short_summary": "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabilize fast-weight updates in Transformer-based models, enabling robust multi-chunk adaptation for long 4D sequences. Their Fast Spatial Memory (FSM) model, incorporating LaCET, achieved a PSNR of 32.16 and LPIPS of 0.043 for 4D novel view synthesis on the Stereo4D dataset.",
-          "bucket": "worth_a_skim",
-          "total_score": 0.4961,
-          "reason_trace": {
-            "scoring_mode": "heuristic",
-            "favorite_source_match": false,
-            "topic_matches": 2,
-            "author_matches": 0,
-            "ignored_penalty": 0,
-            "trend_score": 96.95,
-            "novelty_signal": 6.8,
-            "heuristic_topic_match_score": 0.56,
-            "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
-            "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.",
-            "judge_bucket_hint": "worth_a_skim",
-            "judge_confidence_score": 0.5308,
-            "judge_source_fit_score": 0.55,
-            "judge_topic_fit_score": 0.4,
-            "judge_author_fit_score": 0.18,
-            "judge_evidence_fit_score": 1.0,
-            "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
-            "judge_evidence_quotes": [
-              "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabiliz"
-            ]
-          },
-          "also_mentioned_in_count": 0
-        },
-        "rank": 4,
         "zotero_tags": [],
         "credibility_score": null
       },
@@ -1119,11 +1086,11 @@
             "topic_matches": 1,
             "author_matches": 0,
             "ignored_penalty": 0,
-            "trend_score": 96.95,
+            "trend_score": 98.75,
             "novelty_signal": 6.8,
             "heuristic_topic_match_score": 0.28,
             "heuristic_author_match_score": 0.0,
-            "heuristic_source_score": 0.55,
+            "heuristic_source_score": 0.42,
             "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.",
             "judge_bucket_hint": "worth_a_skim",
             "judge_confidence_score": 0.5665,
@@ -1134,6 +1101,58 @@
             "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
             "judge_evidence_quotes": [
               "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It "
+            ]
+          },
+          "also_mentioned_in_count": 0
+        },
+        "rank": 4,
+        "zotero_tags": [],
+        "credibility_score": null
+      },
+      {
+        "item": {
+          "id": "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b",
+          "kind": "paper",
+          "source_id": "alphaxiv-paper",
+          "title": "Fast Spatial Memory with Elastic Test-Time Training",
+          "source_name": "alphaXiv Papers",
+          "organization_name": null,
+          "authors": [
+            "Ziqiao Ma",
+            "Xueyang Yu",
+            "Haoyu Zhen",
+            "Yuncong Yang",
+            "Joyce Chai",
+            "Chuang Gan"
+          ],
+          "published_at": "2026-04-08T17:59:48Z",
+          "canonical_url": "https://www.alphaxiv.org/abs/2604.07350",
+          "content_type": "paper",
+          "extraction_confidence": 0.0,
+          "short_summary": "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabilize fast-weight updates in Transformer-based models, enabling robust multi-chunk adaptation for long 4D sequences. Their Fast Spatial Memory (FSM) model, incorporating LaCET, achieved a PSNR of 32.16 and LPIPS of 0.043 for 4D novel view synthesis on the Stereo4D dataset.",
+          "bucket": "worth_a_skim",
+          "total_score": 0.4721,
+          "reason_trace": {
+            "scoring_mode": "heuristic",
+            "favorite_source_match": false,
+            "topic_matches": 2,
+            "author_matches": 0,
+            "ignored_penalty": 0,
+            "trend_score": 98.75,
+            "novelty_signal": 6.8,
+            "heuristic_topic_match_score": 0.56,
+            "heuristic_author_match_score": 0.0,
+            "heuristic_source_score": 0.42,
+            "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.",
+            "judge_bucket_hint": "worth_a_skim",
+            "judge_confidence_score": 0.5308,
+            "judge_source_fit_score": 0.55,
+            "judge_topic_fit_score": 0.4,
+            "judge_author_fit_score": 0.18,
+            "judge_evidence_fit_score": 1.0,
+            "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
+            "judge_evidence_quotes": [
+              "Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabiliz"
             ]
           },
           "also_mentioned_in_count": 0
@@ -1177,13 +1196,13 @@
         "https://paper-podcasts.alphaxiv.org/019d6ff4-39fa-7566-9a26-8a93c1dce29b/transcript.json"
       ],
       "score": {
-        "relevance_score": 0.9845,
+        "relevance_score": 0.9861,
         "novelty_score": 1.0,
-        "source_quality_score": 0.8,
-        "author_match_score": 0.7,
-        "topic_match_score": 1.0,
+        "source_quality_score": 0.762,
+        "author_match_score": 0.63,
+        "topic_match_score": 0.956,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.7853,
+        "total_score": 0.7665,
         "bucket": "must_read",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
@@ -1191,11 +1210,11 @@
           "topic_matches": 2,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 96.95,
+          "trend_score": 98.75,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.56,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.42,
           "judge_reason": "The document directly addresses favorite topics like LLM architecture, reasoning, and research tooling through a Diffusion Transformer framework for controllable video generation. alphaXiv engagement signals: 1 public votes, 1 total votes, 49 visits in the last 7 days.",
           "judge_bucket_hint": "must_read",
           "judge_confidence_score": 1.0,
@@ -1448,78 +1467,6 @@
         ]
       }
     },
-    "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5": {
-      "id": "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5",
-      "kind": "blog-post",
-      "source_id": "openai-website",
-      "title": "The next phase of enterprise AI",
-      "source_name": "OpenAI Website",
-      "organization_name": null,
-      "authors": [
-        "OpenAI"
-      ],
-      "published_at": "2026-04-08T14:00:00Z",
-      "canonical_url": "https://openai.com/index/next-phase-of-enterprise-ai",
-      "content_type": "post",
-      "extraction_confidence": 0.0,
-      "cleaned_text": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.\n",
-      "outbound_links": [],
-      "score": {
-        "relevance_score": 0.75,
-        "novelty_score": 1.0,
-        "source_quality_score": 0.75,
-        "author_match_score": 1.0,
-        "topic_match_score": 0.95,
-        "zotero_affinity_score": 0.0,
-        "total_score": 0.73,
-        "bucket": "must_read",
-        "reason_trace": {
-          "scoring_mode": "ollama_judge",
-          "favorite_source_match": false,
-          "topic_matches": 0,
-          "author_matches": 1,
-          "ignored_penalty": 0,
-          "trend_score": 24.4458,
-          "novelty_signal": 4.2,
-          "heuristic_topic_match_score": 0.0,
-          "heuristic_author_match_score": 0.5,
-          "heuristic_source_score": 0.55,
-          "judge_reason": "The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.",
-          "judge_bucket_hint": "must_read",
-          "judge_confidence_score": 1.0,
-          "judge_source_fit_score": 0.75,
-          "judge_topic_fit_score": 0.95,
-          "judge_author_fit_score": 1.0,
-          "judge_evidence_fit_score": 0.9,
-          "judge_model": "gemma4:e2b",
-          "judge_evidence_quotes": [
-            "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
-          ]
-        }
-      },
-      "insight": {
-        "short_summary": "OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents",
-        "why_it_matters": null,
-        "whats_new": null,
-        "caveats": null,
-        "follow_up_questions": [],
-        "contribution": null,
-        "method": null,
-        "result": null,
-        "limitation": null,
-        "possible_extension": null,
-        "deeper_summary": null,
-        "experiment_ideas": []
-      },
-      "also_mentioned_in": [],
-      "doc_role": "primary",
-      "parent_id": null,
-      "asset_paths": [],
-      "raw_doc_path": "raw/blog-post/2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5/source.md",
-      "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:22.696197Z",
-      "alphaxiv": null
-    },
     "2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4": {
       "id": "2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4",
       "kind": "blog-post",
@@ -1535,30 +1482,30 @@
       "canonical_url": "https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa",
       "content_type": "post",
       "extraction_confidence": 0.0,
-      "cleaned_text": "# Designing a Production-Grade RAG Architecture\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Matt Bentley in Level Up Coding · 15 min read · 464 claps · 11 responses\n\nTechniques and best practices for grounding LLMs in…\n",
+      "cleaned_text": "# Designing a Production-Grade RAG Architecture\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://freedium-mirror.cfd/https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Matt Bentley in Level Up Coding · 15 min read · 464 claps · 11 responses\n\nTechniques and best practices for grounding LLMs in…\n",
       "outbound_links": [
         "https://medium.com/@mattbentley_67939/designing-a-production-grade-rag-architecture-bee5a4e4d9aa"
       ],
       "score": {
-        "relevance_score": 0.95,
+        "relevance_score": 0.9571,
         "novelty_score": 1.0,
-        "source_quality_score": 0.55,
-        "author_match_score": 0.5,
-        "topic_match_score": 1.0,
+        "source_quality_score": 0.474,
+        "author_match_score": 0.45,
+        "topic_match_score": 0.956,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.7175,
-        "bucket": "worth_a_skim",
+        "total_score": 0.72,
+        "bucket": "must_read",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 2,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
+          "trend_score": 721.95,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.56,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "The document directly addresses RAG architecture and LLM grounding, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.",
           "judge_bucket_hint": "must_read",
           "judge_confidence_score": 1.0,
@@ -1571,11 +1518,12 @@
             "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture.",
             "It focuses on techniques and best practices for grounding Large Language Models (LLMs).",
             "Tags: newsletter, medium, email, blog-post, rag, llm, architecture, machine learning, nlp"
-          ]
+          ],
+          "judge_bucket_floor_applied": "must_read"
         }
       },
       "insight": {
-        "short_summary": "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs)",
+        "short_summary": "This post discusses designing a production-grade Retrieval-Augmented Generation (RAG) architecture. It focuses on techniques and best practices for grounding Large Language Models (LLMs) using these systems",
         "why_it_matters": null,
         "whats_new": null,
         "caveats": null,
@@ -1594,7 +1542,238 @@
       "asset_paths": [],
       "raw_doc_path": "raw/blog-post/2026-04-08-medium-email-designing-a-production-grade-rag-architecture-fc70a1b4/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:19.722166Z",
+      "lightweight_enriched_at": "2026-04-13T18:54:16.121125Z",
+      "alphaxiv": null
+    },
+    "2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d": {
+      "id": "2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d",
+      "kind": "article",
+      "source_id": "alphasignal-email",
+      "title": "Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure",
+      "source_name": "AlphaSignal Email",
+      "organization_name": null,
+      "authors": [
+        "AlphaSignal <news@alphasignal.ai>",
+        "AlphaSignal"
+      ],
+      "published_at": "2026-04-08T15:39:23Z",
+      "canonical_url": "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b",
+      "content_type": "article",
+      "extraction_confidence": 0.0,
+      "cleaned_text": "# Anthropic launches Glasswing, using Claude Mythos Preview to detect vulnerabilities across critical infrastructure\n\nSource newsletter: 🔍 Anthropic Glasswing: Claude Mythos finds zero-day vulnerabilities\nSender: AlphaSignal <news@alphasignal.ai>\nPublished At: 2026-04-08T15:39:23+00:00\nCanonical URL: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b\n\n## Newsletter Context\n\nSection: Top News\n\n> 73,692 Likes\n\nAnthropic introduces Project Glasswing, a coordinated effort to secure critical software using a new frontier model. Claude Mythos Preview shows a step-change in vulnerability discovery, outperforming most human experts.\n\nThe initiative focuses on defensive deployment before such capabilities spread widely.\n\n**What it does**\n\nIt applies AI to automate vulnerability discovery and security testing at scale.\n\n- Scans large codebases to detect zero-day vulnerabilities (unknown security bugs)\n- Simulates exploit paths by chaining multiple weaknesses across system components\n- Works autonomously, reducing reliance on manual security audits and expert review\n\n**Evaluation and benchmarks**\n\nThe model shows higher performance across coding and cybersecurity evaluations.\n\n- Scores 83.1% on CyberGym vulnerability reproduction benchmark\n- Achieves 93.9% on SWE-bench Verified for software engineering tasks\n- Reaches 82.0% on Terminal-Bench 2.0 for agentic command-line workflows\n- Records 79.6% on OSWorld-Verified for real-world computer use scenarios\n\n**Controlled deployment**\n\nAccess is limited due to the model’s dual-use cybersecurity capabilities.\n\n- Restricted to approved partners for defensive security use cases\n- Deployment includes safeguards to block high-risk outputs\n- Future rollout depends on additional safety systems under development\n",
+      "outbound_links": [
+        "https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=60d1ab77a0d96ec8&lid=6eNrgOxAS9w13Chw&mid=f67ed4e7-2faa-4e37-adf1-feae44acc66b"
+      ],
+      "score": {
+        "relevance_score": 0.8726,
+        "novelty_score": 1.0,
+        "source_quality_score": 0.564,
+        "author_match_score": 0.0,
+        "topic_match_score": 0.928,
+        "zotero_affinity_score": 0.0,
+        "total_score": 0.72,
+        "bucket": "must_read",
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 1,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 721.95,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.28,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document directly addresses LLM evaluation, reasoning, and efficiency through a new frontier model application in cybersecurity.",
+          "judge_bucket_hint": "must_read",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.6,
+          "judge_topic_fit_score": 1.0,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 1.0,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "Anthropic launches Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure.",
+            "Scores 83.1% on CyberGym vulnerability reproduction benchmark",
+            "Achieves 93.9% on SWE-bench Verified for software engineering tasks"
+          ],
+          "judge_bucket_floor_applied": "must_read"
+        }
+      },
+      "insight": {
+        "short_summary": "Anthropic launched Project Glasswing, which uses Claude Mythos Preview to automate vulnerability discovery and security testing across critical infrastructure. This system simulates exploit paths and scans codebases to detect zero-day",
+        "why_it_matters": null,
+        "whats_new": null,
+        "caveats": null,
+        "follow_up_questions": [],
+        "contribution": null,
+        "method": null,
+        "result": null,
+        "limitation": null,
+        "possible_extension": null,
+        "deeper_summary": null,
+        "experiment_ideas": []
+      },
+      "also_mentioned_in": [],
+      "doc_role": "derived",
+      "parent_id": "2026-04-08-alphasignal-email-anthropic-glasswing-claude-mythos-finds-zero-day-a1374861",
+      "asset_paths": [],
+      "raw_doc_path": "raw/article/2026-04-08-alphasignal-email-anthropic-launches-glasswing-using-claude-mythos-9a955e8d/source.md",
+      "lightweight_enrichment_status": "succeeded",
+      "lightweight_enriched_at": "2026-04-09T23:07:57.063680Z",
+      "alphaxiv": null
+    },
+    "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0": {
+      "id": "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0",
+      "kind": "article",
+      "source_id": "tldr-email",
+      "title": "OpenAI #16: A History and a Proposal",
+      "source_name": "TLDR Email",
+      "organization_name": null,
+      "authors": [
+        "TLDR <dan@tldrnewsletter.com>"
+      ],
+      "published_at": "2026-04-08T10:59:19Z",
+      "canonical_url": "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal",
+      "content_type": "article",
+      "extraction_confidence": 0.0,
+      "cleaned_text": "# OpenAI #16: A History and a Proposal\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal\n\n## Newsletter Context\n\nSection: Miscellaneous\n\nAnthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos. The New Yorker recently published a massive article about Sam Altman and his lack of trustworthiness. OpenAI recently proposed policy for the age of superintelligence. The company has purchased tech show TBPN, and while everyone vows that it will stay the same, that's unlikely to happen. This article gets into the details of each story.\n",
+      "outbound_links": [
+        "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal"
+      ],
+      "score": {
+        "relevance_score": 0.6786,
+        "novelty_score": 1.0,
+        "source_quality_score": 0.2925,
+        "author_match_score": 0.0,
+        "topic_match_score": 0.8312,
+        "zotero_affinity_score": 0.0,
+        "total_score": 0.72,
+        "bucket": "must_read",
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 721.95,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
+          "judge_bucket_hint": "must_read",
+          "judge_confidence_score": 0.9,
+          "judge_source_fit_score": 0.3,
+          "judge_topic_fit_score": 0.95,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.8,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "OpenAI has proposed policy for the age of superintelligence.",
+            "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
+          ],
+          "judge_bucket_floor_applied": "must_read"
+        }
+      },
+      "insight": {
+        "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The article details these developments and related stories",
+        "why_it_matters": null,
+        "whats_new": null,
+        "caveats": null,
+        "follow_up_questions": [],
+        "contribution": null,
+        "method": null,
+        "result": null,
+        "limitation": null,
+        "possible_extension": null,
+        "deeper_summary": null,
+        "experiment_ideas": []
+      },
+      "also_mentioned_in": [],
+      "doc_role": "derived",
+      "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
+      "asset_paths": [],
+      "raw_doc_path": "raw/article/2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0/source.md",
+      "lightweight_enrichment_status": "succeeded",
+      "lightweight_enriched_at": "2026-04-13T18:54:04.399869Z",
+      "alphaxiv": null
+    },
+    "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e": {
+      "id": "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e",
+      "kind": "news",
+      "source_id": "tldr-email",
+      "title": "Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'",
+      "source_name": "TLDR Email",
+      "organization_name": null,
+      "authors": [
+        "TLDR <dan@tldrnewsletter.com>"
+      ],
+      "published_at": "2026-04-08T10:59:19Z",
+      "canonical_url": "https://links.tldrnewsletter.com/gp8rGy",
+      "content_type": "news",
+      "extraction_confidence": 0.0,
+      "cleaned_text": "# Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://links.tldrnewsletter.com/gp8rGy\n\n## Newsletter Context\n\nSection: Big Tech & Startups\n\nAnthropic claims its new Claude Mythos Preview model is too powerful to be released to the public. The model specializes in identifying security vulnerabilities in software. Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs. The move is aimed at raising awareness of AI threats and giving good actors a head start on the process of securing their code.\n",
+      "outbound_links": [
+        "https://links.tldrnewsletter.com/gp8rGy"
+      ],
+      "score": {
+        "relevance_score": 0.8611,
+        "novelty_score": 1.0,
+        "source_quality_score": 0.564,
+        "author_match_score": 0.0,
+        "topic_match_score": 0.855,
+        "zotero_affinity_score": 0.0,
+        "total_score": 0.72,
+        "bucket": "must_read",
+        "reason_trace": {
+          "scoring_mode": "ollama_judge",
+          "favorite_source_match": false,
+          "topic_matches": 0,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 721.95,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.0,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document strongly aligns with the user's favorite topics (AI, evaluation, security) and features a favorite author (Anthropic).",
+          "judge_bucket_hint": "must_read",
+          "judge_confidence_score": 1.0,
+          "judge_source_fit_score": 0.6,
+          "judge_topic_fit_score": 0.95,
+          "judge_author_fit_score": 0.0,
+          "judge_evidence_fit_score": 0.9,
+          "judge_model": "gemma4:e2b",
+          "judge_evidence_quotes": [
+            "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch softw",
+            "The model specializes in identifying security vulnerabilities in software.",
+            "Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs."
+          ],
+          "judge_bucket_floor_applied": "must_read"
+        }
+      },
+      "insight": {
+        "short_summary": "Anthropic claims its new Claude Mythos model, which specializes in identifying security vulnerabilities, is too powerful for public release. They are making it available to technology companies to help them find and patch security flaws in",
+        "why_it_matters": null,
+        "whats_new": null,
+        "caveats": null,
+        "follow_up_questions": [],
+        "contribution": null,
+        "method": null,
+        "result": null,
+        "limitation": null,
+        "possible_extension": null,
+        "deeper_summary": null,
+        "experiment_ideas": []
+      },
+      "also_mentioned_in": [],
+      "doc_role": "derived",
+      "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
+      "asset_paths": [],
+      "raw_doc_path": "raw/news/2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e/source.md",
+      "lightweight_enrichment_status": "succeeded",
+      "lightweight_enriched_at": "2026-04-13T18:54:26.089456Z",
       "alphaxiv": null
     },
     "2026-04-08-alphaxiv-paper-genlca-3d-diffusion-for-full-body-avatars-from-i-a129272c": {
@@ -1630,25 +1809,25 @@
         "https://paper-podcasts.alphaxiv.org/019d7014-6d53-738d-8883-ffdc0c9a52de/transcript.json"
       ],
       "score": {
-        "relevance_score": 1.0,
+        "relevance_score": 0.998,
         "novelty_score": 1.0,
-        "source_quality_score": 0.5894,
+        "source_quality_score": 0.5725,
         "author_match_score": 0.0,
-        "topic_match_score": 1.0,
+        "topic_match_score": 0.9,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.6884,
-        "bucket": "worth_a_skim",
+        "total_score": 0.72,
+        "bucket": "must_read",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 0,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 96.95,
+          "trend_score": 98.75,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.0,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.42,
           "judge_reason": "The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user's favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.",
           "judge_bucket_hint": "must_read",
           "judge_confidence_score": 1.0,
@@ -1661,7 +1840,8 @@
             "GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.",
             "The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale",
             "We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec"
-          ]
+          ],
+          "judge_bucket_floor_applied": "must_read"
         }
       },
       "insight": {
@@ -1913,61 +2093,58 @@
         ]
       }
     },
-    "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e": {
-      "id": "2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e",
-      "kind": "news",
-      "source_id": "tldr-email",
-      "title": "Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'",
-      "source_name": "TLDR Email",
+    "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5": {
+      "id": "2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5",
+      "kind": "blog-post",
+      "source_id": "openai-website",
+      "title": "The next phase of enterprise AI",
+      "source_name": "OpenAI Website",
       "organization_name": null,
       "authors": [
-        "TLDR <dan@tldrnewsletter.com>"
+        "OpenAI"
       ],
-      "published_at": "2026-04-08T10:59:19Z",
-      "canonical_url": "https://links.tldrnewsletter.com/gp8rGy",
-      "content_type": "news",
+      "published_at": "2026-04-08T14:00:00Z",
+      "canonical_url": "https://openai.com/index/next-phase-of-enterprise-ai",
+      "content_type": "post",
       "extraction_confidence": 0.0,
-      "cleaned_text": "# Anthropic Claims Its New AI Model, Mythos, Is a Cybersecurity ‘Reckoning'\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://links.tldrnewsletter.com/gp8rGy\n\n## Newsletter Context\n\nSection: Big Tech & Startups\n\nAnthropic claims its new Claude Mythos Preview model is too powerful to be released to the public. The model specializes in identifying security vulnerabilities in software. Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs. The move is aimed at raising awareness of AI threats and giving good actors a head start on the process of securing their code.\n",
-      "outbound_links": [
-        "https://links.tldrnewsletter.com/gp8rGy"
-      ],
+      "cleaned_text": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.\n",
+      "outbound_links": [],
       "score": {
-        "relevance_score": 0.85,
+        "relevance_score": 0.7771,
         "novelty_score": 1.0,
-        "source_quality_score": 0.6,
-        "author_match_score": 0.0,
-        "topic_match_score": 0.95,
+        "source_quality_score": 0.699,
+        "author_match_score": 0.95,
+        "topic_match_score": 0.855,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.6375,
-        "bucket": "worth_a_skim",
+        "total_score": 0.72,
+        "bucket": "must_read",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 0,
-          "author_matches": 0,
+          "author_matches": 1,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
-          "novelty_signal": 6.8,
+          "trend_score": 23.9063,
+          "novelty_signal": 4.2,
           "heuristic_topic_match_score": 0.0,
-          "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
-          "judge_reason": "The document strongly aligns with the user's favorite topics (AI, evaluation, security) and features a favorite author (Anthropic).",
+          "heuristic_author_match_score": 0.5,
+          "heuristic_source_score": 0.24,
+          "judge_reason": "The document directly addresses enterprise AI adoption, which aligns strongly with the user's favorite topics of language models and LLM applications, and is published by a favorite author.",
           "judge_bucket_hint": "must_read",
           "judge_confidence_score": 1.0,
-          "judge_source_fit_score": 0.6,
+          "judge_source_fit_score": 0.75,
           "judge_topic_fit_score": 0.95,
-          "judge_author_fit_score": 0.0,
+          "judge_author_fit_score": 1.0,
           "judge_evidence_fit_score": 0.9,
           "judge_model": "gemma4:e2b",
           "judge_evidence_quotes": [
-            "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch softw",
-            "The model specializes in identifying security vulnerabilities in software.",
-            "Anthropic is making the model available to more than 40 technology companies to use to find and patch security vulnerabilities in critical software programs."
-          ]
+            "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
+          ],
+          "judge_bucket_floor_applied": "must_read"
         }
       },
       "insight": {
-        "short_summary": "Anthropic claims its new Claude Mythos model is too powerful for public release, but is making it available to technology companies to help find and patch software security vulnerabilities",
+        "short_summary": "OpenAI outlines the next phase of enterprise AI, noting accelerating adoption across industries through tools like Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents",
         "why_it_matters": null,
         "whats_new": null,
         "caveats": null,
@@ -1981,87 +2158,12 @@
         "experiment_ideas": []
       },
       "also_mentioned_in": [],
-      "doc_role": "derived",
-      "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
+      "doc_role": "primary",
+      "parent_id": null,
       "asset_paths": [],
-      "raw_doc_path": "raw/news/2026-04-08-tldr-email-anthropic-claims-its-new-ai-model-mythos-is-a-cy-79ba4d2e/source.md",
+      "raw_doc_path": "raw/blog-post/2026-04-08-openai-website-the-next-phase-of-enterprise-ai-7bcd68b5/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:26.476734Z",
-      "alphaxiv": null
-    },
-    "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0": {
-      "id": "2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0",
-      "kind": "article",
-      "source_id": "tldr-email",
-      "title": "OpenAI #16: A History and a Proposal",
-      "source_name": "TLDR Email",
-      "organization_name": null,
-      "authors": [
-        "TLDR <dan@tldrnewsletter.com>"
-      ],
-      "published_at": "2026-04-08T10:59:19Z",
-      "canonical_url": "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal",
-      "content_type": "article",
-      "extraction_confidence": 0.0,
-      "cleaned_text": "# OpenAI #16: A History and a Proposal\n\nSource newsletter: Anthropic's superhuman hacker 🤖, Intel + Elon Terafab ⚡, S3 Files 📁\nSender: TLDR <dan@tldrnewsletter.com>\nPublished At: 2026-04-08T10:59:19+00:00\nCanonical URL: https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal\n\n## Newsletter Context\n\nSection: Miscellaneous\n\nAnthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos. The New Yorker recently published a massive article about Sam Altman and his lack of trustworthiness. OpenAI recently proposed policy for the age of superintelligence. The company has purchased tech show TBPN, and while everyone vows that it will stay the same, that's unlikely to happen. This article gets into the details of each story.\n",
-      "outbound_links": [
-        "https://thezvi.wordpress.com/2026/04/07/openai-16-a-history-and-a-proposal"
-      ],
-      "score": {
-        "relevance_score": 0.65,
-        "novelty_score": 1.0,
-        "source_quality_score": 0.55,
-        "author_match_score": 0.0,
-        "topic_match_score": 0.95,
-        "zotero_affinity_score": 0.0,
-        "total_score": 0.57,
-        "bucket": "worth_a_skim",
-        "reason_trace": {
-          "scoring_mode": "ollama_judge",
-          "favorite_source_match": false,
-          "topic_matches": 0,
-          "author_matches": 0,
-          "ignored_penalty": 0,
-          "trend_score": 500.3,
-          "novelty_signal": 6.8,
-          "heuristic_topic_match_score": 0.0,
-          "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
-          "judge_reason": "The document directly addresses favorite topics like LLM/AI policy and features favorite authors (OpenAI, Anthropic), making it highly relevant.",
-          "judge_bucket_hint": "must_read",
-          "judge_confidence_score": 0.9,
-          "judge_source_fit_score": 0.3,
-          "judge_topic_fit_score": 0.95,
-          "judge_author_fit_score": 0.0,
-          "judge_evidence_fit_score": 0.8,
-          "judge_model": "gemma4:e2b",
-          "judge_evidence_quotes": [
-            "OpenAI has proposed policy for the age of superintelligence.",
-            "Anthropic has partnered with several cybersecurity companies to fix zero-day exploits found by Claude Mythos."
-          ]
-        }
-      },
-      "insight": {
-        "short_summary": "Anthropic has partnered with cybersecurity companies, and OpenAI has proposed policy for the age of superintelligence. The newsletter details these developments",
-        "why_it_matters": null,
-        "whats_new": null,
-        "caveats": null,
-        "follow_up_questions": [],
-        "contribution": null,
-        "method": null,
-        "result": null,
-        "limitation": null,
-        "possible_extension": null,
-        "deeper_summary": null,
-        "experiment_ideas": []
-      },
-      "also_mentioned_in": [],
-      "doc_role": "derived",
-      "parent_id": "2026-04-08-tldr-email-anthropic-s-superhuman-hacker-intel-elon-terafab-702bcaa9",
-      "asset_paths": [],
-      "raw_doc_path": "raw/article/2026-04-08-tldr-email-openai-16-a-history-and-a-proposal-d28d2bb0/source.md",
-      "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T12:16:11.520345Z",
+      "lightweight_enriched_at": "2026-04-09T15:00:22.696197Z",
       "alphaxiv": null
     },
     "2026-04-08-openai-website-introducing-the-child-safety-blueprint-48793856": {
@@ -2095,11 +2197,11 @@
           "topic_matches": 0,
           "author_matches": 1,
           "ignored_penalty": 0,
-          "trend_score": 68.1968,
-          "novelty_signal": 4.2,
+          "trend_score": 70.2473,
+          "novelty_signal": 5.4,
           "heuristic_topic_match_score": 0.0,
           "heuristic_author_match_score": 0.5,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "Heuristic fallback based on 1 favorite-author match.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.45,
@@ -2151,7 +2253,7 @@
       "canonical_url": "https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004",
       "content_type": "post",
       "extraction_confidence": 0.0,
-      "cleaned_text": "# The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Kuriko Iwai · 15 min read · 407 claps · 6 responses\n\nExplore the mechanics of vector databases, text…\n",
+      "cleaned_text": "# The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Kuriko Iwai · 15 min read · 407 claps · 6 responses\n\nExplore the mechanics of vector databases, text…\n",
       "outbound_links": [
         "https://medium.com/@kuriko-iwai/the-mathematical-memory-of-ai-understanding-vector-databases-and-embedding-pipelines-85bd5fc13004"
       ],
@@ -2170,11 +2272,11 @@
           "topic_matches": 1,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
+          "trend_score": 721.95,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.28,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "Heuristic fallback based on 1 favorite-topic match.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.45,
@@ -2189,7 +2291,7 @@
         }
       },
       "insight": {
-        "short_summary": "This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI",
+        "short_summary": "This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory of AI",
         "why_it_matters": null,
         "whats_new": null,
         "caveats": null,
@@ -2208,7 +2310,7 @@
       "asset_paths": [],
       "raw_doc_path": "raw/blog-post/2026-04-08-medium-email-the-mathematical-memory-of-ai-understanding-vect-1c1079db/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:21.816389Z",
+      "lightweight_enriched_at": "2026-04-13T18:54:16.255277Z",
       "alphaxiv": null
     },
     "2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624": {
@@ -2226,30 +2328,30 @@
       "canonical_url": "https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124",
       "content_type": "post",
       "extraction_confidence": 0.0,
-      "cleaned_text": "# AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Kuriko Iwai · 12 min read · 235 claps · 2 responses\n\nMaster VPC configurations with 4 essential AWS VPC…\n",
+      "cleaned_text": "# AWS VPC for MLOps: Secure & Cost-Optimized ML Architectures\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Kuriko Iwai · 12 min read · 235 claps · 2 responses\n\nMaster VPC configurations with 4 essential AWS VPC…\n",
       "outbound_links": [
         "https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124"
       ],
       "score": {
-        "relevance_score": 0.36,
+        "relevance_score": 0.4019,
         "novelty_score": 1.0,
-        "source_quality_score": 0.55,
+        "source_quality_score": 0.3435,
         "author_match_score": 0.0,
-        "topic_match_score": 0.55,
+        "topic_match_score": 0.4744,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.423,
-        "bucket": "archive",
+        "total_score": 0.45,
+        "bucket": "worth_a_skim",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 0,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
+          "trend_score": 721.95,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.0,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "The document is relevant due to its focus on ML architecture and security, aligning with favorite topics, but the specific focus on AWS VPC is a niche application.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.85,
@@ -2261,11 +2363,12 @@
           "judge_evidence_quotes": [
             "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps.",
             "Master VPC configurations with 4 essential AWS VPC…"
-          ]
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
         }
       },
       "insight": {
-        "short_summary": "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps",
+        "short_summary": "This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps. It focuses on mastering essential AWS VPC settings for these complex systems",
         "why_it_matters": null,
         "whats_new": null,
         "caveats": null,
@@ -2284,82 +2387,7 @@
       "asset_paths": [],
       "raw_doc_path": "raw/blog-post/2026-04-08-medium-email-aws-vpc-for-mlops-secure-cost-optimized-ml-archi-f18d1624/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:19.637272Z",
-      "alphaxiv": null
-    },
-    "2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714": {
-      "id": "2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714",
-      "kind": "blog-post",
-      "source_id": "medium-email",
-      "title": "Understanding Transformers (Part 1): Why RNNs are nearly impossible to train",
-      "source_name": "Medium Email",
-      "organization_name": null,
-      "authors": [
-        "Medium Daily Digest <noreply@medium.com>",
-        "Jose Parreño"
-      ],
-      "published_at": "2026-04-08T06:40:00Z",
-      "canonical_url": "https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960",
-      "content_type": "post",
-      "extraction_confidence": 0.0,
-      "cleaned_text": "# Understanding Transformers (Part 1): Why RNNs are nearly impossible to train\n\nSource newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective\nSender: Medium Daily Digest <noreply@medium.com>\nPublished At: 2026-04-08T06:40:00+00:00\nCanonical URL: https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960\n\n## Newsletter Context\n\nSection: Today's highlights\n\n> Jose Parreño in Data Science Collective · 15 min read · 347 claps · 4 responses\n\nA gentle walkthrough in how Recurrent Neural Networks…\n",
-      "outbound_links": [
-        "https://medium.com/@joparga3/understanding-transformers-part-1-why-rnns-are-nearly-impossible-to-train-30d1986f5960"
-      ],
-      "score": {
-        "relevance_score": 0.3991,
-        "novelty_score": 1.0,
-        "source_quality_score": 0.55,
-        "author_match_score": 0.18,
-        "topic_match_score": 0.18,
-        "zotero_affinity_score": 0.0,
-        "total_score": 0.3972,
-        "bucket": "archive",
-        "reason_trace": {
-          "scoring_mode": "heuristic",
-          "favorite_source_match": false,
-          "topic_matches": 0,
-          "author_matches": 0,
-          "ignored_penalty": 0,
-          "trend_score": 500.3,
-          "novelty_signal": 6.8,
-          "heuristic_topic_match_score": 0.0,
-          "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
-          "judge_reason": "Heuristic fallback based on generic profile-fit fallback.",
-          "judge_bucket_hint": "worth_a_skim",
-          "judge_confidence_score": 0.45,
-          "judge_source_fit_score": 0.55,
-          "judge_topic_fit_score": 0.18,
-          "judge_author_fit_score": 0.18,
-          "judge_evidence_fit_score": 0.9057,
-          "judge_model": "heuristic:profile-fallback",
-          "judge_evidence_quotes": [
-            "This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Tran"
-          ]
-        }
-      },
-      "insight": {
-        "short_summary": "This post provides a walkthrough of how Recurrent Neural Networks work, focusing on why they are nearly impossible to train in the context of understanding Transformers",
-        "why_it_matters": null,
-        "whats_new": null,
-        "caveats": null,
-        "follow_up_questions": [],
-        "contribution": null,
-        "method": null,
-        "result": null,
-        "limitation": null,
-        "possible_extension": null,
-        "deeper_summary": null,
-        "experiment_ideas": []
-      },
-      "also_mentioned_in": [],
-      "doc_role": "derived",
-      "parent_id": "2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a",
-      "asset_paths": [],
-      "raw_doc_path": "raw/blog-post/2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-c80a6714/source.md",
-      "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T15:00:22.214855Z",
+      "lightweight_enriched_at": "2026-04-13T18:54:16.077515Z",
       "alphaxiv": null
     },
     "2026-04-08-alphaxiv-paper-a1-a-fully-transparent-open-source-adaptive-and--5f38d6e3": {
@@ -2414,9 +2442,9 @@
         "novelty_score": 1.0,
         "source_quality_score": 0.5783,
         "author_match_score": 0.18,
-        "topic_match_score": 0.56,
+        "topic_match_score": 0.4,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.5043,
+        "total_score": 0.4803,
         "bucket": "worth_a_skim",
         "reason_trace": {
           "scoring_mode": "heuristic",
@@ -2424,11 +2452,11 @@
           "topic_matches": 2,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 96.95,
-          "novelty_signal": 6.8,
+          "trend_score": 98.75,
+          "novelty_signal": 4.8,
           "heuristic_topic_match_score": 0.56,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.42,
           "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 5 public votes, 0 total votes, 72 visits in the last 7 days.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.5783,
@@ -2716,6 +2744,298 @@
         ]
       }
     },
+    "2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca": {
+      "id": "2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca",
+      "kind": "paper",
+      "source_id": "alphaxiv-paper",
+      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+      "source_name": "alphaXiv Papers",
+      "organization_name": null,
+      "authors": [
+        "Yicheng Xiao",
+        "Wenhu Zhang",
+        "Lin Song",
+        "Yukang Chen",
+        "Wenbo Li",
+        "Nan Jiang",
+        "Tianhe Ren",
+        "Haokun Lin",
+        "Wei Huang",
+        "Haoyang Huang",
+        "Xiu Li",
+        "Nan Duan",
+        "Xiaojuan Qi"
+      ],
+      "published_at": "2026-04-08T04:54:06Z",
+      "canonical_url": "https://www.alphaxiv.org/abs/2604.04911",
+      "content_type": "paper",
+      "extraction_confidence": 0.0,
+      "cleaned_text": "# SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.04911\n- Source paper: https://arxiv.org/abs/2604.04911\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.04911v2.png\n- GitHub: https://github.com/EasonXiao-888/SpatialEdit\n- GitHub stars: 44\n- Paper ID: 2604.04911\n- Canonical ID: 2604.04911v2\n- Paper group ID: 019d65d7-b155-731f-9120-a8ca4f7ce509\n- Version ID: 019d6fa8-81b1-7850-bf9b-aa94872dd1e4\n- Version: v2\n- Version order: 2\n- Published at: 2026-04-08T04:54:06+00:00\n- First published at: 2026-04-06T17:54:42+00:00\n- Updated at: 2026-04-07T02:48:47.701000+00:00\n- License: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\n- Citations: 0\n\n## Authors\n\n- Yicheng Xiao\n- Wenhu Zhang\n- Lin Song\n- Yukang Chen\n- Wenbo Li\n- Nan Jiang\n- Tianhe Ren\n- Haokun Lin\n- Wei Huang\n- Haoyang Huang\n- Xiu Li\n- Nan Duan\n- Xiaojuan Qi\n\n## Topics\n\n- Computer Science\n- cs.CV\n- generative-models\n- geometric-deep-learning\n- image-generation\n- synthetic-data\n\n## Metrics\n\n- Visits (all): 74\n- Visits (last 7 days): 74\n- Total votes: 1\n- Public total votes: 7\n- X likes: 0\n\n## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json\n\n## Resources\n\n- GitHub repository: https://github.com/EasonXiao-888/SpatialEdit\n\n## Similar Papers\n\n- ImgEdit: A Unified Image Editing Dataset and Benchmark (2505.20275v1): Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction.\n- VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space (2508.19247v1): VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance.\n- BlobCtrl: Taming Controllable Blob for Element-level Image Editing (2503.13434v2)\n- I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing (2408.14180v2): I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models.\n- BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing (2506.17450v2): BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
+      "outbound_links": [
+        "https://www.alphaxiv.org/abs/2604.04911",
+        "https://arxiv.org/abs/2604.04911",
+        "https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf",
+        "https://www.alphaxiv.org/image/2604.04911v2.png",
+        "https://github.com/EasonXiao-888/SpatialEdit",
+        "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
+        "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json"
+      ],
+      "score": {
+        "relevance_score": 0.5485,
+        "novelty_score": 1.0,
+        "source_quality_score": 0.5665,
+        "author_match_score": 0.18,
+        "topic_match_score": 0.4,
+        "zotero_affinity_score": 0.0,
+        "total_score": 0.4775,
+        "bucket": "worth_a_skim",
+        "reason_trace": {
+          "scoring_mode": "heuristic",
+          "favorite_source_match": false,
+          "topic_matches": 1,
+          "author_matches": 0,
+          "ignored_penalty": 0,
+          "trend_score": 98.75,
+          "novelty_signal": 6.8,
+          "heuristic_topic_match_score": 0.28,
+          "heuristic_author_match_score": 0.0,
+          "heuristic_source_score": 0.42,
+          "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.",
+          "judge_bucket_hint": "worth_a_skim",
+          "judge_confidence_score": 0.5665,
+          "judge_source_fit_score": 0.5665,
+          "judge_topic_fit_score": 0.4,
+          "judge_author_fit_score": 0.18,
+          "judge_evidence_fit_score": 1.0,
+          "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
+          "judge_evidence_quotes": [
+            "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It "
+          ]
+        }
+      },
+      "insight": {
+        "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
+        "why_it_matters": null,
+        "whats_new": null,
+        "caveats": null,
+        "follow_up_questions": [],
+        "contribution": null,
+        "method": null,
+        "result": null,
+        "limitation": null,
+        "possible_extension": null,
+        "deeper_summary": null,
+        "experiment_ideas": []
+      },
+      "also_mentioned_in": [],
+      "doc_role": "primary",
+      "parent_id": null,
+      "asset_paths": [
+        "alphaxiv-legacy.json",
+        "alphaxiv-metadata.json",
+        "alphaxiv-paper.json",
+        "alphaxiv-preview.json",
+        "alphaxiv-similar-papers.json"
+      ],
+      "raw_doc_path": "raw/paper/2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca/source.md",
+      "lightweight_enrichment_status": "succeeded",
+      "lightweight_enriched_at": "2026-04-09T16:19:42.845193Z",
+      "alphaxiv": {
+        "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
+        "filed_text": "## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.",
+        "audio_url": "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
+        "similar_papers": [
+          {
+            "title": "ImgEdit: A Unified Image Editing Dataset and Benchmark",
+            "canonical_url": "https://www.alphaxiv.org/abs/2505.20275",
+            "app_item_id": null,
+            "authors": [
+              "Yang Ye",
+              "Xianyi He",
+              "Zongjian Li",
+              "Bin Lin",
+              "Shenghai Yuan",
+              "Zhiyuan Yan",
+              "Bohan Hou",
+              "Li Yuan"
+            ],
+            "short_summary": "Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction."
+          },
+          {
+            "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space",
+            "canonical_url": "https://www.alphaxiv.org/abs/2508.19247",
+            "app_item_id": null,
+            "authors": [
+              "Lin Li",
+              "Zehuan Huang",
+              "Haoran Feng",
+              "Gengxiong Zhuang",
+              "Rui Chen",
+              "Chunchao Guo",
+              "Lu Sheng"
+            ],
+            "short_summary": "VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance."
+          },
+          {
+            "title": "BlobCtrl: Taming Controllable Blob for Element-level Image Editing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2503.13434",
+            "app_item_id": null,
+            "authors": [
+              "Yaowei Li",
+              "Lingen Li",
+              "Zhaoyang Zhang",
+              "Xiaoyu Li",
+              "Guangzhi Wang",
+              "Hongxiang Li",
+              "Xiaodong Cun",
+              "Ying Shan",
+              "Yuexian Zou"
+            ],
+            "short_summary": "As user expectations for image editing continue to rise, the demand for flexible, fine-grained manipulation of specific visual elements presents a challenge for current diffusion-based methods. In this work, we present BlobCtrl, a framework for element-level image editing based on a probabilistic blob-based representation. Treating blobs as visual primitives, BlobCtrl disentangles layout from appearance, affording fine-grained, controllable object-level manipulation. Our key contributions are twofold: (1) an in-context dual-branch diffusion model that separates foreground and background processing, incorporating blob representations to explicitly decouple layout and appearance, and (2) a self-supervised disentangle-then-reconstruct training paradigm with an identity-preserving loss function, along with tailored strategies to efficiently leverage blob-image pairs. To foster further research, we introduce BlobData for large-scale training and BlobBench, a benchmark for systematic evaluation. Experimental results demonstrate that BlobCtrl achieves state-of-the-art performance in a variety of element-level editing tasks, such as object addition, removal, scaling, and replacement, while maintaining computational efficiency. Project Webpage: this https URL"
+          },
+          {
+            "title": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2408.14180",
+            "app_item_id": null,
+            "authors": [
+              "Yiwei Ma",
+              "Jiayi Ji",
+              "Ke Ye",
+              "Weihuang Lin",
+              "Zhibin Wang",
+              "Yonghan Zheng",
+              "Qiang Zhou",
+              "Xiaoshuai Sun",
+              "Rongrong Ji"
+            ],
+            "short_summary": "I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models."
+          },
+          {
+            "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2506.17450",
+            "app_item_id": null,
+            "authors": [
+              "Jiacheng Chen",
+              "Ramin Mehran",
+              "Xuhui Jia",
+              "Saining Xie",
+              "Sanghyun Woo"
+            ],
+            "short_summary": "BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%."
+          },
+          {
+            "title": "FlowDrag: 3D-aware Drag-based Image Editing with Mesh-guided Deformation Vector Flow Fields",
+            "canonical_url": "https://www.alphaxiv.org/abs/2507.08285",
+            "app_item_id": null,
+            "authors": [
+              "Gwanhyeong Koo",
+              "Sunjae Yoon",
+              "Younghwan Lee",
+              "Ji Woo Hong",
+              "Chang D. Yoo"
+            ],
+            "short_summary": "Drag-based editing allows precise object manipulation through point-based control, offering user convenience. However, current methods often suffer from a geometric inconsistency problem by focusing exclusively on matching user-defined points, neglecting the broader geometry and leading to artifacts or unstable edits. We propose FlowDrag, which leverages geometric information for more accurate and coherent transformations. Our approach constructs a 3D mesh from the image, using an energy function to guide mesh deformation based on user-defined drag points. The resulting mesh displacements are projected into 2D and incorporated into a UNet denoising process, enabling precise handle-to-target point alignment while preserving structural integrity. Additionally, existing drag-editing benchmarks provide no ground truth, making it difficult to assess how accurately the edits match the intended transformations. To address this, we present VFD (VidFrameDrag) benchmark dataset, which provides ground-truth frames using consecutive shots in a video dataset. FlowDrag outperforms existing drag-based editing methods on both VFD Bench and DragBench."
+          },
+          {
+            "title": "MotionEdit: Benchmarking and Learning Motion-Centric Image Editing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2512.10284",
+            "app_item_id": null,
+            "authors": [
+              "Yixin Wan",
+              "Lei Ke",
+              "Wenhao Yu",
+              "Kai-Wei Chang",
+              "Dong Yu"
+            ],
+            "short_summary": "This research introduces MotionEdit, a high-quality dataset and benchmark specifically for motion-centric image editing, alongside MotionNFT, a learning framework that integrates optical flow-based rewards to guide diffusion models. MotionNFT enhanced the MLLM-rated overall quality score of FLUX.1 Kontext by 10.68% and improved motion alignment scores for both FLUX.1 Kontext and Qwen-Image-Edit."
+          },
+          {
+            "title": "Training-free Geometric Image Editing on Diffusion Models",
+            "canonical_url": "https://www.alphaxiv.org/abs/2507.23300",
+            "app_item_id": null,
+            "authors": [
+              "Hanshen Zhu",
+              "Zhen Zhu",
+              "Kaile Zhang",
+              "Yiming Gong",
+              "Yuliang Liu",
+              "Xiang Bai"
+            ],
+            "short_summary": "This work introduces a decoupled pipeline for geometric image editing that separates object transformation, source region inpainting, and target region refinement. Its training-free diffusion-based module, FreeFine, leverages novel attention, perturbation, and content generation techniques to produce high-fidelity, artifact-free edits, consistently outperforming existing methods across 2D, 3D, and structural completion tasks on the new GeoBench benchmark."
+          },
+          {
+            "title": "FireRed-Image-Edit-1.0 Techinical Report",
+            "canonical_url": "https://www.alphaxiv.org/abs/2602.13344",
+            "app_item_id": null,
+            "authors": [
+              "Super Intelligence Team",
+              "Changhao Qiao",
+              "Chao Hui",
+              "Chen Li",
+              "Cunzheng Wang",
+              "Dejia Song",
+              "Jiale Zhang",
+              "Jing Li",
+              "Qiang Xiang",
+              "Runqi Wang",
+              "Shuang Sun",
+              "Wei Zhu",
+              "Xu Tang",
+              "Yao Hu",
+              "Yibo Chen",
+              "Yuhao Huang",
+              "Yuxuan Duan",
+              "Zhiyi Chen",
+              "Ziyuan Guo"
+            ],
+            "short_summary": "Xiaohongshu Inc.'s Super Intelligence Team developed FireRed-Image-Edit-1.0, an instruction-based image editing model that achieves competitive performance against both open-source and commercial systems by systematically optimizing data, training, and evaluation rather than solely relying on large model parameters. The model demonstrates superior prompt following and consistency preservation across general, text-centric, creative, and try-on editing tasks."
+          },
+          {
+            "title": "CompBench: Benchmarking Complex Instruction-guided Image Editing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2505.12200",
+            "app_item_id": null,
+            "authors": [],
+            "short_summary": "While real-world applications increasingly demand intricate scene manipulation, existing instruction-guided image editing benchmarks often oversimplify task complexity and lack comprehensive, fine-grained instructions. To bridge this gap, we introduce CompBench, a large-scale benchmark specifically designed for complex instruction-guided image editing. CompBench features challenging editing scenarios that incorporate fine-grained instruction following, spatial and contextual reasoning, thereby enabling comprehensive evaluation of image editing models' precise manipulation capabilities. To construct CompBench, we propose an MLLM-human collaborative framework with tailored task pipelines. Furthermore, we propose an instruction decoupling strategy that disentangles editing intents into four key dimensions: location, appearance, dynamics, and objects, ensuring closer alignment between instructions and complex editing requirements. Extensive evaluations reveal that CompBench exposes fundamental limitations of current image editing models and provides critical insights for the development of next-generation instruction-guided image editing systems. Our project page is available at this https URL."
+          },
+          {
+            "title": "DanceText: A Training-Free Layered Framework for Controllable Multilingual Text Transformation in Images",
+            "canonical_url": "https://www.alphaxiv.org/abs/2504.14108",
+            "app_item_id": null,
+            "authors": [
+              "Zhenyu Yu",
+              "Mohd Yamani Idna Idris",
+              "Hua Wang",
+              "Pei Wang",
+              "Rizwan Qureshi",
+              "Shaina Raza",
+              "Aman Chadha",
+              "Yong Xiang",
+              "Zhixiang Chen"
+            ],
+            "short_summary": "We present DanceText, a training-free framework for multilingual text editing in images, designed to support complex geometric transformations and achieve seamless foreground-background integration. While diffusion-based generative models have shown promise in text-guided image synthesis, they often lack controllability and fail to preserve layout consistency under non-trivial manipulations such as rotation, translation, scaling, and warping. To address these limitations, DanceText introduces a layered editing strategy that separates text from the background, allowing geometric transformations to be performed in a modular and controllable manner. A depth-aware module is further proposed to align appearance and perspective between the transformed text and the reconstructed background, enhancing photorealism and spatial consistency. Importantly, DanceText adopts a fully training-free design by integrating pretrained modules, allowing flexible deployment without task-specific fine-tuning. Extensive experiments on the AnyWord-3M benchmark demonstrate that our method achieves superior performance in visual quality, especially under large-scale and complex transformation scenarios. Code is avaible at this https URL."
+          },
+          {
+            "title": "GEditBench v2: A Human-Aligned Benchmark for General Image Editing",
+            "canonical_url": "https://www.alphaxiv.org/abs/2603.28547",
+            "app_item_id": null,
+            "authors": [
+              "Zhangqi Jiang",
+              "Zheng Sun",
+              "Xianfang Zeng",
+              "Yufeng Yang",
+              "Xuanyang Zhang",
+              "Yongliang Wu",
+              "Wei Cheng",
+              "Gang Yu",
+              "Xu Yang",
+              "Bihan Wen"
+            ],
+            "short_summary": "A new benchmark for general image editing, GEditBench v2, is introduced alongside PVC-Judge, an open-source visual consistency assessment model. This work reveals that proprietary models generally lead performance, with FLUX.2 [klein] 9B being the top open-source contender, and highlights a trade-off between instruction following and visual consistency."
+          }
+        ]
+      }
+    },
     "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b": {
       "id": "2026-04-08-alphaxiv-paper-fast-spatial-memory-with-elastic-test-time-train-cb0b684b",
       "kind": "paper",
@@ -2751,9 +3071,9 @@
         "novelty_score": 1.0,
         "source_quality_score": 0.55,
         "author_match_score": 0.18,
-        "topic_match_score": 0.56,
+        "topic_match_score": 0.4,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.4961,
+        "total_score": 0.4721,
         "bucket": "worth_a_skim",
         "reason_trace": {
           "scoring_mode": "heuristic",
@@ -2761,11 +3081,11 @@
           "topic_matches": 2,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 96.95,
+          "trend_score": 98.75,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.56,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.42,
           "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.5308,
@@ -3008,298 +3328,6 @@
         ]
       }
     },
-    "2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca": {
-      "id": "2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca",
-      "kind": "paper",
-      "source_id": "alphaxiv-paper",
-      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
-      "source_name": "alphaXiv Papers",
-      "organization_name": null,
-      "authors": [
-        "Yicheng Xiao",
-        "Wenhu Zhang",
-        "Lin Song",
-        "Yukang Chen",
-        "Wenbo Li",
-        "Nan Jiang",
-        "Tianhe Ren",
-        "Haokun Lin",
-        "Wei Huang",
-        "Haoyang Huang",
-        "Xiu Li",
-        "Nan Duan",
-        "Xiaojuan Qi"
-      ],
-      "published_at": "2026-04-08T04:54:06Z",
-      "canonical_url": "https://www.alphaxiv.org/abs/2604.04911",
-      "content_type": "paper",
-      "extraction_confidence": 0.0,
-      "cleaned_text": "# SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing\n\n## Metadata\n\n- alphaXiv URL: https://www.alphaxiv.org/abs/2604.04911\n- Source paper: https://arxiv.org/abs/2604.04911\n- PDF: https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf\n- Cover image: https://www.alphaxiv.org/image/2604.04911v2.png\n- GitHub: https://github.com/EasonXiao-888/SpatialEdit\n- GitHub stars: 44\n- Paper ID: 2604.04911\n- Canonical ID: 2604.04911v2\n- Paper group ID: 019d65d7-b155-731f-9120-a8ca4f7ce509\n- Version ID: 019d6fa8-81b1-7850-bf9b-aa94872dd1e4\n- Version: v2\n- Version order: 2\n- Published at: 2026-04-08T04:54:06+00:00\n- First published at: 2026-04-06T17:54:42+00:00\n- Updated at: 2026-04-07T02:48:47.701000+00:00\n- License: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\n- Citations: 0\n\n## Authors\n\n- Yicheng Xiao\n- Wenhu Zhang\n- Lin Song\n- Yukang Chen\n- Wenbo Li\n- Nan Jiang\n- Tianhe Ren\n- Haokun Lin\n- Wei Huang\n- Haoyang Huang\n- Xiu Li\n- Nan Duan\n- Xiaojuan Qi\n\n## Topics\n\n- Computer Science\n- cs.CV\n- generative-models\n- geometric-deep-learning\n- image-generation\n- synthetic-data\n\n## Metrics\n\n- Visits (all): 74\n- Visits (last 7 days): 74\n- Total votes: 1\n- Public total votes: 7\n- X likes: 0\n\n## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.\n\n## Audio Summary\n\n- MP3: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3\n- Transcript JSON: https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json\n\n## Resources\n\n- GitHub repository: https://github.com/EasonXiao-888/SpatialEdit\n\n## Similar Papers\n\n- ImgEdit: A Unified Image Editing Dataset and Benchmark (2505.20275v1): Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction.\n- VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space (2508.19247v1): VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance.\n- BlobCtrl: Taming Controllable Blob for Element-level Image Editing (2503.13434v2)\n- I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing (2408.14180v2): I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models.\n- BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing (2506.17450v2): BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%.\n- Full similar-paper payload saved in `alphaxiv-similar-papers.json`.\n",
-      "outbound_links": [
-        "https://www.alphaxiv.org/abs/2604.04911",
-        "https://arxiv.org/abs/2604.04911",
-        "https://fetcher.alphaxiv.org/v2/pdf/2604.04911v2.pdf",
-        "https://www.alphaxiv.org/image/2604.04911v2.png",
-        "https://github.com/EasonXiao-888/SpatialEdit",
-        "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
-        "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
-        "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/transcript.json"
-      ],
-      "score": {
-        "relevance_score": 0.5485,
-        "novelty_score": 1.0,
-        "source_quality_score": 0.5665,
-        "author_match_score": 0.18,
-        "topic_match_score": 0.4,
-        "zotero_affinity_score": 0.0,
-        "total_score": 0.4775,
-        "bucket": "worth_a_skim",
-        "reason_trace": {
-          "scoring_mode": "heuristic",
-          "favorite_source_match": false,
-          "topic_matches": 1,
-          "author_matches": 0,
-          "ignored_penalty": 0,
-          "trend_score": 96.95,
-          "novelty_signal": 6.8,
-          "heuristic_topic_match_score": 0.28,
-          "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
-          "judge_reason": "Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 7 public votes, 1 total votes, 74 visits in the last 7 days.",
-          "judge_bucket_hint": "worth_a_skim",
-          "judge_confidence_score": 0.5665,
-          "judge_source_fit_score": 0.5665,
-          "judge_topic_fit_score": 0.4,
-          "judge_author_fit_score": 0.18,
-          "judge_evidence_fit_score": 1.0,
-          "judge_model": "heuristic:profile-fallback+alphaxiv-metrics-v1",
-          "judge_evidence_quotes": [
-            "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It "
-          ]
-        }
-      },
-      "insight": {
-        "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
-        "why_it_matters": null,
-        "whats_new": null,
-        "caveats": null,
-        "follow_up_questions": [],
-        "contribution": null,
-        "method": null,
-        "result": null,
-        "limitation": null,
-        "possible_extension": null,
-        "deeper_summary": null,
-        "experiment_ideas": []
-      },
-      "also_mentioned_in": [],
-      "doc_role": "primary",
-      "parent_id": null,
-      "asset_paths": [
-        "alphaxiv-legacy.json",
-        "alphaxiv-metadata.json",
-        "alphaxiv-paper.json",
-        "alphaxiv-preview.json",
-        "alphaxiv-similar-papers.json"
-      ],
-      "raw_doc_path": "raw/paper/2026-04-08-alphaxiv-paper-spatialedit-benchmarking-fine-grained-image-spat-406cb2ca/source.md",
-      "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T16:19:42.845193Z",
-      "alphaxiv": {
-        "short_summary": "This paper introduces SpatialEdit-Bench, a benchmark for fine-grained image spatial editing, and SpatialEdit-16B, a baseline model for spatial manipulation. It uses a synthetic dataset to evaluate perceptual plausibility and geometric fidelity in spatial editing tasks.",
-        "filed_text": "## Abstract\n\nImage spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public at this https URL.",
-        "audio_url": "https://paper-podcasts.alphaxiv.org/019d65d7-b155-731f-9120-a8ca4f7ce509/podcast.mp3",
-        "similar_papers": [
-          {
-            "title": "ImgEdit: A Unified Image Editing Dataset and Benchmark",
-            "canonical_url": "https://www.alphaxiv.org/abs/2505.20275",
-            "app_item_id": null,
-            "authors": [
-              "Yang Ye",
-              "Xianyi He",
-              "Zongjian Li",
-              "Bin Lin",
-              "Shenghai Yuan",
-              "Zhiyuan Yan",
-              "Bohan Hou",
-              "Li Yuan"
-            ],
-            "short_summary": "Peking University and Peng Cheng Laboratory developed ImgEdit, a 1.2-million-pair high-quality dataset and a comprehensive benchmark, to close the performance gap between open and closed-source image editing models. Their trained ImgEdit-E1 model demonstrates state-of-the-art performance among open-source systems, particularly in novel tasks like identity-consistent object extraction."
-          },
-          {
-            "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D Space",
-            "canonical_url": "https://www.alphaxiv.org/abs/2508.19247",
-            "app_item_id": null,
-            "authors": [
-              "Lin Li",
-              "Zehuan Huang",
-              "Haoran Feng",
-              "Gengxiong Zhuang",
-              "Rui Chen",
-              "Chunchao Guo",
-              "Lu Sheng"
-            ],
-            "short_summary": "VoxHammer offers a training-free framework for precise and coherent 3D local editing, operating directly within native 3D latent space. It achieves superior unedited region preservation, with a Chamfer Distance of 0.012 and a masked PSNR of 41.68, and also introduces the human-annotated Edit3D-Bench dataset for evaluating 3D editing performance."
-          },
-          {
-            "title": "BlobCtrl: Taming Controllable Blob for Element-level Image Editing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2503.13434",
-            "app_item_id": null,
-            "authors": [
-              "Yaowei Li",
-              "Lingen Li",
-              "Zhaoyang Zhang",
-              "Xiaoyu Li",
-              "Guangzhi Wang",
-              "Hongxiang Li",
-              "Xiaodong Cun",
-              "Ying Shan",
-              "Yuexian Zou"
-            ],
-            "short_summary": "As user expectations for image editing continue to rise, the demand for flexible, fine-grained manipulation of specific visual elements presents a challenge for current diffusion-based methods. In this work, we present BlobCtrl, a framework for element-level image editing based on a probabilistic blob-based representation. Treating blobs as visual primitives, BlobCtrl disentangles layout from appearance, affording fine-grained, controllable object-level manipulation. Our key contributions are twofold: (1) an in-context dual-branch diffusion model that separates foreground and background processing, incorporating blob representations to explicitly decouple layout and appearance, and (2) a self-supervised disentangle-then-reconstruct training paradigm with an identity-preserving loss function, along with tailored strategies to efficiently leverage blob-image pairs. To foster further research, we introduce BlobData for large-scale training and BlobBench, a benchmark for systematic evaluation. Experimental results demonstrate that BlobCtrl achieves state-of-the-art performance in a variety of element-level editing tasks, such as object addition, removal, scaling, and replacement, while maintaining computational efficiency. Project Webpage: this https URL"
-          },
-          {
-            "title": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2408.14180",
-            "app_item_id": null,
-            "authors": [
-              "Yiwei Ma",
-              "Jiayi Ji",
-              "Ke Ye",
-              "Weihuang Lin",
-              "Zhibin Wang",
-              "Yonghan Zheng",
-              "Qiang Zhou",
-              "Xiaoshuai Sun",
-              "Rongrong Ji"
-            ],
-            "short_summary": "I²EBench introduces a comprehensive, multi-dimensional benchmark for evaluating instruction-based image editing models, featuring 16 fine-grained dimensions and leveraging Multimodal Large Language Models (MLLMs) for high-level assessment and SSIM for low-level tasks. This benchmark demonstrates strong alignment with human perception, achieving Pearson correlation coefficients of 0.75 to 0.99 across dimensions when assessing 8 state-of-the-art IIE models."
-          },
-          {
-            "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2506.17450",
-            "app_item_id": null,
-            "authors": [
-              "Jiacheng Chen",
-              "Ramin Mehran",
-              "Xuhui Jia",
-              "Saining Xie",
-              "Sanghyun Woo"
-            ],
-            "short_summary": "BlenderFusion is a framework from Google DeepMind that integrates generative models with 3D graphics software like Blender to enable precise, 3D-aware visual editing and generative compositing. It achieves fine-grained, disentangled control over objects, camera, and background, yielding higher fidelity outputs compared to previous methods, with a human preference of 87.04%."
-          },
-          {
-            "title": "FlowDrag: 3D-aware Drag-based Image Editing with Mesh-guided Deformation Vector Flow Fields",
-            "canonical_url": "https://www.alphaxiv.org/abs/2507.08285",
-            "app_item_id": null,
-            "authors": [
-              "Gwanhyeong Koo",
-              "Sunjae Yoon",
-              "Younghwan Lee",
-              "Ji Woo Hong",
-              "Chang D. Yoo"
-            ],
-            "short_summary": "Drag-based editing allows precise object manipulation through point-based control, offering user convenience. However, current methods often suffer from a geometric inconsistency problem by focusing exclusively on matching user-defined points, neglecting the broader geometry and leading to artifacts or unstable edits. We propose FlowDrag, which leverages geometric information for more accurate and coherent transformations. Our approach constructs a 3D mesh from the image, using an energy function to guide mesh deformation based on user-defined drag points. The resulting mesh displacements are projected into 2D and incorporated into a UNet denoising process, enabling precise handle-to-target point alignment while preserving structural integrity. Additionally, existing drag-editing benchmarks provide no ground truth, making it difficult to assess how accurately the edits match the intended transformations. To address this, we present VFD (VidFrameDrag) benchmark dataset, which provides ground-truth frames using consecutive shots in a video dataset. FlowDrag outperforms existing drag-based editing methods on both VFD Bench and DragBench."
-          },
-          {
-            "title": "MotionEdit: Benchmarking and Learning Motion-Centric Image Editing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2512.10284",
-            "app_item_id": null,
-            "authors": [
-              "Yixin Wan",
-              "Lei Ke",
-              "Wenhao Yu",
-              "Kai-Wei Chang",
-              "Dong Yu"
-            ],
-            "short_summary": "This research introduces MotionEdit, a high-quality dataset and benchmark specifically for motion-centric image editing, alongside MotionNFT, a learning framework that integrates optical flow-based rewards to guide diffusion models. MotionNFT enhanced the MLLM-rated overall quality score of FLUX.1 Kontext by 10.68% and improved motion alignment scores for both FLUX.1 Kontext and Qwen-Image-Edit."
-          },
-          {
-            "title": "Training-free Geometric Image Editing on Diffusion Models",
-            "canonical_url": "https://www.alphaxiv.org/abs/2507.23300",
-            "app_item_id": null,
-            "authors": [
-              "Hanshen Zhu",
-              "Zhen Zhu",
-              "Kaile Zhang",
-              "Yiming Gong",
-              "Yuliang Liu",
-              "Xiang Bai"
-            ],
-            "short_summary": "This work introduces a decoupled pipeline for geometric image editing that separates object transformation, source region inpainting, and target region refinement. Its training-free diffusion-based module, FreeFine, leverages novel attention, perturbation, and content generation techniques to produce high-fidelity, artifact-free edits, consistently outperforming existing methods across 2D, 3D, and structural completion tasks on the new GeoBench benchmark."
-          },
-          {
-            "title": "FireRed-Image-Edit-1.0 Techinical Report",
-            "canonical_url": "https://www.alphaxiv.org/abs/2602.13344",
-            "app_item_id": null,
-            "authors": [
-              "Super Intelligence Team",
-              "Changhao Qiao",
-              "Chao Hui",
-              "Chen Li",
-              "Cunzheng Wang",
-              "Dejia Song",
-              "Jiale Zhang",
-              "Jing Li",
-              "Qiang Xiang",
-              "Runqi Wang",
-              "Shuang Sun",
-              "Wei Zhu",
-              "Xu Tang",
-              "Yao Hu",
-              "Yibo Chen",
-              "Yuhao Huang",
-              "Yuxuan Duan",
-              "Zhiyi Chen",
-              "Ziyuan Guo"
-            ],
-            "short_summary": "Xiaohongshu Inc.'s Super Intelligence Team developed FireRed-Image-Edit-1.0, an instruction-based image editing model that achieves competitive performance against both open-source and commercial systems by systematically optimizing data, training, and evaluation rather than solely relying on large model parameters. The model demonstrates superior prompt following and consistency preservation across general, text-centric, creative, and try-on editing tasks."
-          },
-          {
-            "title": "CompBench: Benchmarking Complex Instruction-guided Image Editing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2505.12200",
-            "app_item_id": null,
-            "authors": [],
-            "short_summary": "While real-world applications increasingly demand intricate scene manipulation, existing instruction-guided image editing benchmarks often oversimplify task complexity and lack comprehensive, fine-grained instructions. To bridge this gap, we introduce CompBench, a large-scale benchmark specifically designed for complex instruction-guided image editing. CompBench features challenging editing scenarios that incorporate fine-grained instruction following, spatial and contextual reasoning, thereby enabling comprehensive evaluation of image editing models' precise manipulation capabilities. To construct CompBench, we propose an MLLM-human collaborative framework with tailored task pipelines. Furthermore, we propose an instruction decoupling strategy that disentangles editing intents into four key dimensions: location, appearance, dynamics, and objects, ensuring closer alignment between instructions and complex editing requirements. Extensive evaluations reveal that CompBench exposes fundamental limitations of current image editing models and provides critical insights for the development of next-generation instruction-guided image editing systems. Our project page is available at this https URL."
-          },
-          {
-            "title": "DanceText: A Training-Free Layered Framework for Controllable Multilingual Text Transformation in Images",
-            "canonical_url": "https://www.alphaxiv.org/abs/2504.14108",
-            "app_item_id": null,
-            "authors": [
-              "Zhenyu Yu",
-              "Mohd Yamani Idna Idris",
-              "Hua Wang",
-              "Pei Wang",
-              "Rizwan Qureshi",
-              "Shaina Raza",
-              "Aman Chadha",
-              "Yong Xiang",
-              "Zhixiang Chen"
-            ],
-            "short_summary": "We present DanceText, a training-free framework for multilingual text editing in images, designed to support complex geometric transformations and achieve seamless foreground-background integration. While diffusion-based generative models have shown promise in text-guided image synthesis, they often lack controllability and fail to preserve layout consistency under non-trivial manipulations such as rotation, translation, scaling, and warping. To address these limitations, DanceText introduces a layered editing strategy that separates text from the background, allowing geometric transformations to be performed in a modular and controllable manner. A depth-aware module is further proposed to align appearance and perspective between the transformed text and the reconstructed background, enhancing photorealism and spatial consistency. Importantly, DanceText adopts a fully training-free design by integrating pretrained modules, allowing flexible deployment without task-specific fine-tuning. Extensive experiments on the AnyWord-3M benchmark demonstrate that our method achieves superior performance in visual quality, especially under large-scale and complex transformation scenarios. Code is avaible at this https URL."
-          },
-          {
-            "title": "GEditBench v2: A Human-Aligned Benchmark for General Image Editing",
-            "canonical_url": "https://www.alphaxiv.org/abs/2603.28547",
-            "app_item_id": null,
-            "authors": [
-              "Zhangqi Jiang",
-              "Zheng Sun",
-              "Xianfang Zeng",
-              "Yufeng Yang",
-              "Xuanyang Zhang",
-              "Yongliang Wu",
-              "Wei Cheng",
-              "Gang Yu",
-              "Xu Yang",
-              "Bihan Wen"
-            ],
-            "short_summary": "A new benchmark for general image editing, GEditBench v2, is introduced alongside PVC-Judge, an open-source visual consistency assessment model. This work reveals that proprietary models generally lead performance, with FLUX.2 [klein] 9B being the top open-source contender, and highlights a trade-off between instruction following and visual consistency."
-          }
-        ]
-      }
-    },
     "2026-04-08-tldr-email-the-building-block-economy-2eb76b35": {
       "id": "2026-04-08-tldr-email-the-building-block-economy-2eb76b35",
       "kind": "article",
@@ -3320,25 +3348,25 @@
         "https://mitchellh.com/writing/building-block-economy"
       ],
       "score": {
-        "relevance_score": 0.36,
+        "relevance_score": 0.3997,
         "novelty_score": 1.0,
-        "source_quality_score": 0.55,
+        "source_quality_score": 0.172,
         "author_match_score": 0.0,
-        "topic_match_score": 0.55,
+        "topic_match_score": 0.4675,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.423,
-        "bucket": "archive",
+        "total_score": 0.45,
+        "bucket": "worth_a_skim",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 0,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
+          "trend_score": 721.95,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.0,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "The document touches on software development and adoption, which is tangentially related to LLM/ML tooling, but lacks specific focus on the user's favorite LLM/architecture topics.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.8,
@@ -3351,11 +3379,12 @@
             "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leadi",
             "Agents readily pick open and free software over closed and commercial.",
             "Closed-source, commercial software is at a massive disadvantage."
-          ]
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
         }
       },
       "insight": {
-        "short_summary": "The most effective way to build software and achieve massive adoption is by creating building blocks that encourage others to build quantity over quality, leading to better mainline software",
+        "short_summary": "Building software and achieving massive adoption is best done by creating building blocks that encourage others to build quantity over quality, which leads to better mainline software",
         "why_it_matters": null,
         "whats_new": null,
         "caveats": null,
@@ -3374,7 +3403,7 @@
       "asset_paths": [],
       "raw_doc_path": "raw/article/2026-04-08-tldr-email-the-building-block-economy-2eb76b35/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T12:16:36.948672Z",
+      "lightweight_enriched_at": "2026-04-13T18:54:06.067403Z",
       "alphaxiv": null
     },
     "2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e": {
@@ -3397,25 +3426,25 @@
         "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms"
       ],
       "score": {
-        "relevance_score": 0.36,
+        "relevance_score": 0.3987,
         "novelty_score": 1.0,
-        "source_quality_score": 0.55,
+        "source_quality_score": 0.342,
         "author_match_score": 0.0,
-        "topic_match_score": 0.55,
+        "topic_match_score": 0.4675,
         "zotero_affinity_score": 0.0,
-        "total_score": 0.423,
-        "bucket": "archive",
+        "total_score": 0.45,
+        "bucket": "worth_a_skim",
         "reason_trace": {
           "scoring_mode": "ollama_judge",
           "favorite_source_match": false,
           "topic_matches": 0,
           "author_matches": 0,
           "ignored_penalty": 0,
-          "trend_score": 500.3,
+          "trend_score": 721.95,
           "novelty_signal": 6.8,
           "heuristic_topic_match_score": 0.0,
           "heuristic_author_match_score": 0.0,
-          "heuristic_source_score": 0.55,
+          "heuristic_source_score": 0.24,
           "judge_reason": "The document touches on LLMs and AI but focuses more on the philosophy of taste and context rather than the technical evaluation or architecture favored by the user.",
           "judge_bucket_hint": "worth_a_skim",
           "judge_confidence_score": 0.8,
@@ -3427,7 +3456,8 @@
           "judge_evidence_quotes": [
             "AI has made competent output cheap, giving those who can discern what is true and worth pushing an advantage.",
             "Taste is achieved by paying close attention to reality and combining it with context and constraints."
-          ]
+          ],
+          "judge_bucket_floor_applied": "worth_a_skim"
         }
       },
       "insight": {
@@ -3450,7 +3480,7 @@
       "asset_paths": [],
       "raw_doc_path": "raw/article/2026-04-08-tldr-email-good-taste-the-only-real-moat-left-844f6d1e/source.md",
       "lightweight_enrichment_status": "succeeded",
-      "lightweight_enriched_at": "2026-04-09T12:15:58.365946Z",
+      "lightweight_enriched_at": "2026-04-13T18:54:03.214914Z",
       "alphaxiv": null
     }
   }

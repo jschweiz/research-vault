@@ -38,9 +38,19 @@ lightweight_enriched_at: '2026-04-09T22:09:48.279748Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 46f229605d4f75892b5dc4d2d2de84e616cbb6ad6f276b54447226053572579f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: afb7ab4dace82ad5522c8c7ce2bb02e0c31b9f53f3f8a5b7cc00741a19f2d5d7
+lightweight_score:
+  relevance_score: 0.8738
+  source_fit_score: 0.24
+  topic_fit_score: 0.93
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 0.79
+  bucket_hint: must_read
+  reason: 'Heuristic fallback based on rubric matches: rl for llms, reasoning in llms, 1 favorite-topic match, 1 favorite-author match.'
+  evidence_quotes:
+  - OpenAI's GPT-5.4 models, including the Pro variant, have achieved state-of-the-art performance on various benchmarks, challenging Google's Gemini models. The mo
 ---
 OpenAI updated its flagship models, extending the ability to use tools and setting the state of the art on a handful of benchmarks, and priced them at the top of the market. Its coding and agentic abilities have enabled Codex, OpenAI’s competitor to Anthropic’s Claude Code, to leap ahead.
 What’s new: GPT-5.4 comes in two variants, Thinking and Pro, both with an expanded context window relative to GPT-5.2. (Only two days elapsed between the launch of GPT-5.3 and GPT-5.4, and OpenAI offered no explanation.) GPT-5.4 models are trained to use computers natively and help agents find and use tools more efficiently, a capability called tool search.

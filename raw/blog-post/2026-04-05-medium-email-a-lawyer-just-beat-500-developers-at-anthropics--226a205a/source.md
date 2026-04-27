@@ -37,19 +37,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 1f4a583234ab2a8527e3669c3aa65721b382ba21e29e5ecf8e46b66e0640c344
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 92bb0040534f94e95321f1f61b9ef74d7dc6726fedca05aa94b3115a25b295c4
+lightweight_scoring_input_hash: d9741dc807210d3a28b0638c8babb327f3a39ddaa31de6c993c8af036d69f522
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.35
   author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.75
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI and Anthropic, which aligns with favorite topics, but the specific focus on a legal hackathon is not directly related to the user's core interests in LLM architecture or evaluation.
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is tangentially related to LLM agentic AI and memory, but lacks the deep technical focus required by a frontier LLM researcher.
   evidence_quotes:
-  - A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon
   - Building Long-Term Memory in Agentic AI
+  - A lawyer successfully competed against 500 developers at Anthropic's hackathon.
 ---
 # A Lawyer Just Beat 500 Developers at Anthropic’s Hackathon
 

@@ -55,9 +55,21 @@ lightweight_enriched_at: '2026-04-09T23:42:59.564975Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: 61a3c7eed424da5cc30990c8b1aaddcee85b6a5eb23b332a711de91198a93be0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
+lightweight_scoring_input_hash: b3d6802d6640073b8a2a449706ce1ecc1567c61c9a253e6962acb635752ed4dd
+lightweight_score:
+  relevance_score: 1.0
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: 'This paper directly addresses the user''s favorite topics of reasoning, evaluation, and efficiency by investigating how self-distillation impacts mathematical reasoning and generalization. alphaXiv engagement signals: 205 public votes, 64 total votes, 1236 visits in the last 7 days.'
+  evidence_quotes:
+  - Research from Microsoft Research, KAIST, and Seoul National University reveals that while self-distillation consistently shortens LLM reasoning traces, it can d
+  - This performance drop is linked to the suppression of "epistemic verbalization," or expressions of uncertainty, which are found to be critical for robust genera
+  - Suppressing epistemic verbalization during training, even with correct solutions, hinders an LLM's ability to perform robust mathematical reasoning and generali
 ---
 # Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?
 

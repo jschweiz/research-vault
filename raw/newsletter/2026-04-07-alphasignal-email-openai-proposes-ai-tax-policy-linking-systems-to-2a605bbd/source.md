@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.537740Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 038defff98127872dab3d8dd9665e75083f7b499b4ad323820ef5422e252dc00
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 46cf19b62c22f1029527f0482cdb4eaf91c1ee03160ab34cbb71f823bec90ef7
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.75
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses system-level mechanisms, memory systems, and efficiency techniques highly relevant to frontier LLM research.
+  evidence_quotes:
+  - The document outlines system-level changes including rights, tax shifts, and audit layers for AI systems.
+  - MemPalace is an open-source memory layer for LLM workflows.
+  - It reports a 100% LongMemEval score (500/500) and 96.6% without API calls using local retrieval.
 ---
 # 🏛️ OpenAI proposes AI tax policy linking systems to economic infrastru
 

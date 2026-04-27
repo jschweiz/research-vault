@@ -50,19 +50,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.789351Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: a57f58df30f5d19208f667475b160273698ff5fc122303e6328eb5e42feff7c4
 lightweight_enrichment_error: null
-lightweight_scoring_model: heuristic:profile-fallback+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: 303cd866a6418af14d341d5fc7cd464e64b91214a13c4851c5cb27854fc3fd70
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2c959bf526aa438f98897587519353c6438902168139bf05813c460c0afe5315
 lightweight_score:
-  relevance_score: 0.5387
-  source_fit_score: 0.55
-  topic_fit_score: 0.4
-  author_fit_score: 0.18
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
   evidence_fit_score: 1.0
-  confidence_score: 0.5308
-  bucket_hint: worth_a_skim
-  reason: 'Heuristic fallback based on 1 favorite-topic match. alphaXiv engagement signals: 1 public votes, 1 total votes, 54 visits in the last 7 days.'
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This paper directly addresses memory, efficiency, and adaptation techniques relevant to frontier LLM research, aligning perfectly with the user's favorite topics and authors.
   evidence_quotes:
   - Researchers from MIT-IBM Watson AI Lab, University of Michigan, and University of Massachusetts Amherst developed Elastic Test-Time Training (LaCET) to stabiliz
+  - We propose Elastic Test-Time Training inspired by elastic weight consolidation, that stabilizes LaCT fast-weight updates with a Fisher-weighted elastic prior ar
+  - The FSM architecture, with its LaCET backbone and combined Plücker ray/timestamp map inputs, can efficiently compress visual observations into unified 4D repres
 ---
 # Fast Spatial Memory with Elastic Test-Time Training
 

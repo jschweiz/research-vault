@@ -37,9 +37,21 @@ lightweight_enriched_at: '2026-04-09T22:09:48.737804Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 919ac45216eb64241f39ea643226533fd76619fd592dec8cd01450782c821843
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 345705e3edc7bcb2d063d5e903cc1d380b37ef8505ec49196048e7310739bfbc
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 0.0
+  evidence_fit_score: 0.36
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is about music generation and copyright safeguards, which is tangentially related to LLM training but does not directly address the user's core interests in LLM architecture, reasoning, or efficiency.
+  evidence_quotes:
+  - Google introduced Lyria 3, a music generator that creates 30-second audio clips from text or images, incorporating features like style specification and multipl
+  - The model includes safeguards to avoid copyright violations by licensing training data and watermarking synthetic media.
+  - 'Architecture: Latent diffusion model'
 ---
 Google added a music generator to Gemini and YouTube, putting a model that produces synthetic songs in front of hundreds of millions of users.
 What’s new: [Lyria 3](https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-9SKOdKwZtszt2gyZnkk-z2Pc5ri4XwTsPdzj93-7ldUp5XLi9VCALlqgWZ3fVVC1T5uOag) takes text descriptions or images and generates 30-second audio clips that can include instruments, singing voices, and song lyrics in several languages. Google took measures to ensure that the model’s output doesn’t violate copyrights: licensing its training data, filtering outputs for similarity to copyrighted works, and avoiding reproduction of an artist’s sonic likeness.

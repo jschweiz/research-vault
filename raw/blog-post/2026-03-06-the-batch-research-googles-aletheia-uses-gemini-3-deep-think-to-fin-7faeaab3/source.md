@@ -40,9 +40,21 @@ lightweight_enriched_at: '2026-04-09T22:09:48.109708Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 18408c29d26fd2badd201bb239ad98f14bb4c3af4c4de2401ed7b94ae93f73dd
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 64347c00e8832dc34020a6d88faa7509c72e98ca2aa6010f48a45a99bb2af2d4
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agentic systems and LLM reasoning, which aligns perfectly with the user's favorite topics of reasoning, LLM architecture, and research tooling.
+  evidence_quotes:
+  - Google introduced Aletheia, an agentic system using Gemini 3 Deep Think to generate, verify, and revise solutions to unsolved math problems.
+  - Aletheia is an agentic workflow for math research that uses the latest update of Gemini 3 Deep Think, a specialized reasoning mode of the Gemini 3 Pro model for
+  - Agentic systems are becoming useful mathematical tools that can work with mathematicians to help generate new methods, roadmaps, and the like.
 ---
 LLMs have achieved gold-medal performance in math competitions. An agentic system showed strength in mathematical research as well.
 What’s new: Tony Feng, Quoc V. Le, Thang Luong, and colleagues at Google introduced [Aletheia](https://arxiv.org/abs/2602.10177?utm_campaign=The%20Batch&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-__PLGlWst6ErppMVsgt5XeNmlrvvBPZnQ4ZW6YCtaQ-ifMXNEgKyU1jQoozrmdTu5PemqX), an agent that generated, verified, and revised solutions to previously unsolved math problems. Aletheia is an agentic workflow for math research that uses the latest update of Gemini 3 Deep Think, a specialized reasoning mode of the Gemini 3 Pro model for subscribers to the company’s top-tier AI service. Concurrently, Google made Gemini 3 Deep Think more widely available via API.

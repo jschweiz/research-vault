@@ -39,20 +39,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 9e5636d10c0f5a562000e663baabbb4def385192a4f1edaf69276d3bbf4bcb3e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 3cb19f3704e9885fa2164003cba2e976b223e1d55d5ab4e08862b79c97e2ec9c
+lightweight_scoring_input_hash: 131f77aa7d488da120fc4204fcb1ce62435fee04008e13fd208ece8eaa224283
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.56
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI and hardware, which aligns with favorite topics, but the focus is on eGPU drivers rather than core LLM architecture or evaluation.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about hardware drivers and eGPU support, which has only a tangential connection to the user's focus on LLM training, evaluation, or architecture.
   evidence_quotes:
   - Apple has approved drivers allowing AMD and Nvidia eGPUs to run on Mac, specifically designed for AI processing rather than gaming.
   - Users can now pair their eGPUs with Macs for AI LLM processing without having to use workarounds like disabling System Integrity Protection.
-  - High-end Apple computers have become popular for use with AI agents like OpenClaw.
+  - The demand has been so high that delivery times for Macs with massive amounts of memory have increased to up to six weeks.
 ---
 # Apple approves drivers that let AMD and Nvidia eGPUs run on Mac — software designed for AI, though, and not built for gaming
 

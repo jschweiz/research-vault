@@ -20,7 +20,6 @@ tags:
 - non-biological intelligence
 - social systems
 - governance
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -31,15 +30,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-13T18:13:11.453527Z'
-short_summary: Google researchers suggest the main challenge of AI alignment is managing a world populated by non-biological intelligences rather than aligning a single AI system. They argue that future AI governance requires building social institutions, like courts and bureaucracies, to manage these systems effectively.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Google researchers suggest the main challenge of AI alignment is managing a world populated by non-biological intelligences rather than aligning a single AI system. They argue that future AI governance requires designing social institutions to manage these complex, cooperative, and competitive interactions.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.989496Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e5da95fd8316aacface51ba5d35ea95280b925a4edfa241431ff8f478218a4f0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2747366c3ad897b7955f645d67a41219fa1f458ed2e5a4665eaa134fd0a018d0
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics of alignment, social systems, and governance, making it highly relevant for a frontier LLM researcher.
+  evidence_quotes:
+  - Google researchers suggest the main challenge of AI alignment is managing a world populated by non-biological intelligences rather than aligning a single AI sys
+  - But what this paper correctly identifies is that even if we succeed at alignment we’re going to have to then get AI systems to work well within society and to c
+  - Just as human societies rely not on individual virtue but on persistent institutional templates – courtrooms, markets, bureaucracies – defined by roles and norm
 ---
 # Google thinks the real challenge of AI alignment is dealing with a world made up of mostly non-biological intelligences
 

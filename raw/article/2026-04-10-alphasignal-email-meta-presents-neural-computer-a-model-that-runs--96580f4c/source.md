@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5cab7f3aef8cfe
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-10T15:38:59Z'
 ingested_at: '2026-04-13T18:07:15.556343Z'
 content_hash: 46eb5050e56953e1f2ccb8e06bc85bb3a13d45730c4958f84327d01843921d91
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- meta
+- neural computer
+- model
+- computation
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-10-alphasignal-email-anthropic-opus-advisor-cuts-agent-costs-12-with--25ff1a0c
 index_visibility: visible
 fetched_at: '2026-04-13T18:07:15.556349Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Meta AI proposes Neural Computer, a model that executes tasks directly from learned behavior rather than calling external APIs or tools. This system learns full interaction loops from recorded computer usage to handle computation, memory, and I/O internally.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.864486Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 6e5a302ab47ac469cd9c0f5fb04ec1fccfa2adf11fc1fcc78d8b5c96b2cab28f
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7528cc17335e3949218190fa818306aff1ecb24b09d31c954982c499d39daa3e
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses post-training methods, memory, and reasoning in LLMs, making it highly relevant to a frontier LLM researcher.
+  evidence_quotes:
+  - Meta AI proposes a shift from models that use computers to models that act as computers.
+  - The model learns full interaction loops from recorded computer usage.
+  - Fails on multi-step reasoning tasks with dependencies across steps
 ---
 # Meta presents Neural Computer, a model that runs computation, memory, and I/O inside one learned system
 

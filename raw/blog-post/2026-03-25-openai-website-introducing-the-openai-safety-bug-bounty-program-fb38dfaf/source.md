@@ -33,8 +33,19 @@ lightweight_enriched_at: '2026-04-09T15:00:11.861689Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7f43323c1be49ad714e0cc88ea8c9725503eed53c0a3c1d8dc57f2afc679ea50
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5f4ce846161e1b7bf47918b24e64edd73c655ae07c102acba65a22ce2d40549c
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.36
+  topic_fit_score: 0.16
+  author_fit_score: 0.75
+  evidence_fit_score: 0.36
+  confidence_score: 0.95
+  bucket_hint: archive
+  reason: The document is about safety and bug bounties, which is tangential to the user's core focus on LLM training, evaluation, and architecture.
+  evidence_quotes:
+  - OpenAI has launched a Safety Bug Bounty program to find AI abuse and safety risks, such as prompt injection and data exfiltration.
+  - OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 ---
 OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.

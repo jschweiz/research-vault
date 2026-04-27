@@ -32,20 +32,19 @@ lightweight_enrichment_model: deterministic:medium-newsletter
 lightweight_enrichment_input_hash: e12b10aee3eb4976e4d262b8354b2fa864026a867d0d23c7176de44ec3b3dea7
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 1f2d27ecf67f46783e927b8d101edf6957ef3ef2fa19557352b20d4441a18c14
+lightweight_scoring_input_hash: f21eebea31abd790da2c995675888c71838332cfe9c126f0a2100a35faa89b2b
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.3
+  relevance_score: 0.75
+  source_fit_score: 0.5
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.9
-  confidence_score: 1.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.95
   bucket_hint: must_read
-  reason: The document directly addresses 'Long-Term Memory in Agentic AI,' which aligns perfectly with the user's favorite topics of LLM architecture, memory, and agentic AI.
+  reason: The document directly addresses 'memory' and 'agentic AI' which aligns perfectly with the user's favorite topics of memory and LLM agents.
   evidence_quotes:
   - Building Long-Term Memory in Agentic AI
   - HITL, InMemory Feature, Feedback Loop and more
-  - Designing efficient Agentic AI Workflows
 ---
 # Building Long-Term Memory in Agentic AI | Fareed Khan in Level Up Coding
 

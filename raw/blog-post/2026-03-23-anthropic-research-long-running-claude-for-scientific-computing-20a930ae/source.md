@@ -33,14 +33,24 @@ parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:11:29.807085Z'
 short_summary: The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological Boltzmann solver.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:09.459086Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: c1ca17c4878356a1e5e4c07cc2957adb905fd2045543ad2786ef96a2933b15ff
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: heuristic:profile-fallback
+lightweight_scoring_input_hash: e2096c95b7987f83b8bed9712eab7c0b467bb03f99cf8e26eebc1d09766910c9
+lightweight_score:
+  relevance_score: 0.3534
+  source_fit_score: 0.24
+  topic_fit_score: 0.23
+  author_fit_score: 0.12
+  evidence_fit_score: 1.0
+  confidence_score: 0.57
+  bucket_hint: archive
+  reason: Heuristic fallback based on 1 favorite-topic match.
+  evidence_quotes:
+  - The post details applying multi-day agentic coding workflows to scientific computing tasks, using Claude to implement a differentiable version of a cosmological
 ---
 Subscribe to Anthropic Science
 Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.

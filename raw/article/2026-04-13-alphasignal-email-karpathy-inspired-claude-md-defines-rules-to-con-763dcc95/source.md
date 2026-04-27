@@ -6,6 +6,7 @@ source_url: https://app.alphasignal.ai/c?uid=BnsImABK8nxPpbGf&cid=5471fae9b54622
 source_name: AlphaSignal Email
 authors:
 - AlphaSignal <news@alphasignal.ai>
+- AlphaSignal
 published_at: '2026-04-13T16:38:35Z'
 ingested_at: '2026-04-13T18:06:29.522963Z'
 content_hash: 5be8b468a45d99a5c3dc104048969075567eec68047e3f8b2d1504c5b4b71da0
@@ -17,6 +18,10 @@ tags:
 - ai
 - article
 - sub-document
+- llm
+- coding
+- claude
+- rules
 status: active
 asset_paths: []
 source_id: alphasignal-email
@@ -27,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-13-alphasignal-email-anthropic-ultraplan-cloud-planning-local-executi-2c453f7a
 index_visibility: visible
 fetched_at: '2026-04-13T18:06:29.522968Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The CLAUDE.md file establishes rules to control LLM coding behavior, aiming to reduce errors by forcing models to state assumptions, limit code scope, and require explicit validation.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:07.887771Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 14060ffd1dfb7292536a8e82c00e44e8485e78e7324d7f4132a00c54739718ca
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 1879ce33d35c3de37b8408f0ae7cf421850550930743f17da9bd15b306057b31
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM coding behavior and error reduction, which aligns perfectly with the user's interest in LLM evaluation, reasoning, and tooling.
+  evidence_quotes:
+  - This guideline defines a single CLAUDE.md file that changes how coding models behave during development.
+  - It targets issues identified by Andrej Karpathy, such as silent assumptions, overbuilt code, and unintended edits.
+  - It addresses consistent failure patterns in LLM coding systems.
 ---
 # Karpathy-inspired CLAUDE.md defines rules to control LLM coding behavior and reduce errors
 

@@ -43,9 +43,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.679282Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: fae0615bb18f1d1a8b9827aeecca5740e75467cecbf4358cfd139b85ce74730e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cb54df9d0a5489046b81569f0fe89dc4541c422ab4e6dd992c522e797082dd9f
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM self-improvement methods and alignment challenges, which are high-priority topics for the user.
+  evidence_quotes:
+  - 'Researchers have developed a harness that allows Large Language Models (LLMs) to self-improve through recursive loops and editing, involving collaboration from '
+  - Meta uses a harness to coax Anthropic’s models into self-improvement
+  - Meta uses a harness to coax Anthropic’s models into self-improvement
 ---
 # Import AI 451: Political superintelligence; Google’s society of minds, and a robot drummer
 

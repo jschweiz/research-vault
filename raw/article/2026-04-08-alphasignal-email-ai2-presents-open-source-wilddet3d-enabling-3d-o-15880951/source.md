@@ -37,9 +37,20 @@ lightweight_enriched_at: '2026-04-09T23:07:56.975770Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: b4ffc76d03f58e607f69d0b1b1e5c6d78aa7c7ac4aad80c72ead9e518226f13e
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: cd6ff14ab994e4671ecd8c25eb8ecbd47c5ec3c18837d038ba1e608de48c0db7
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about 3D object detection and does not align with the user's focus on LLM training, evaluation, reasoning, memory, or architecture.
+  evidence_quotes:
+  - Ai2 introduced open-source WildDet3D, a method for 3D object detection from a single image.
+  - Ai2 introduced open-source WildDet3D, a method for 3D object detection from a single image.
 ---
 # Ai2 presents open-source WildDet3D enabling 3D object detection from a single image
 

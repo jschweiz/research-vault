@@ -39,20 +39,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 179e2ed448d6e022c9e008c5d1386284c19dee7382102d4716965c4891c1f30e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: d613c7b6834fde4cb99c191bb7951c2e9dd07609137af851d5b11f728460dc6f
+lightweight_scoring_input_hash: c0c97445f52eacd8062e52f045088b3293d1d9987ea8f1529467959e806ced1a
 lightweight_score:
-  relevance_score: 0.36
-  source_fit_score: 0.16
-  topic_fit_score: 0.36
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.55
-  confidence_score: 0.8
-  bucket_hint: worth_a_skim
-  reason: The document discusses AI agents and tooling, which aligns with favorite topics, but the specific focus is on programming interfaces rather than core LLM architecture or evaluation.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about a programming tool and agent interface, which has weak direct relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
-  - Cursor 3 enhances agent output clarity by offering a higher level of abstraction, making it faster, cleaner, and more powerful.
+  - Cursor 3 enhances agent output clarity by offering a higher level of abstraction, making it faster, cleaner,
   - The new interface supports multi-workspace functionality, allowing users to work with agents across different repositories.
-  - Cursor 3 brings clarity to the work that agents produce, pulling users up to a higher level of abstraction.
 ---
 # Meet the new Cursor
 

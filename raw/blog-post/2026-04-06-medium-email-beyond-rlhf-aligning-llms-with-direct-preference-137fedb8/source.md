@@ -38,20 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 7fcfdb643342b8b20054c9b533e82be92adecb2c18f0a4de6b5b65a5af78e97d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ea51b873597b9326d3b7a31d40eb666d1de00160d6cec17431543ac58f08ac1e
+lightweight_scoring_input_hash: 82628190adc9b8d9f0d8ac2e1cb0f7dc233a7b49247a57ccc59c472b945b7342
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 0.85
   source_fit_score: 0.3
   topic_fit_score: 1.0
-  author_fit_score: 0.0
-  evidence_fit_score: 1.0
+  author_fit_score: 0.75
+  evidence_fit_score: 0.95
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses LLM alignment and fine-tuning methods (DPO vs RLHF), which perfectly matches the user's favorite topics.
+  reason: The document directly addresses a high-priority topic (alignment/fine-tuning) using a modern, relevant technique (DPO) relevant to frontier LLM research.
   evidence_quotes:
   - This post discusses aligning Large Language Models (LLMs) using Direct Preference Optimization (DPO) as an alternative to Reinforcement Learning from Human Feed
   - It is part of a series focusing on LLM fine-tuning and quality factors.
-  - 'Tags: newsletter, medium, email, blog-post, llm, dpo, rlhf, machine learning, fine-tuning'
+  - 'Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)'
 ---
 # Beyond RLHF: Aligning LLMs with Direct Preference Optimization (DPO)
 

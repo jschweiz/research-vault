@@ -31,15 +31,25 @@ doc_role: derived
 parent_id: 2026-04-07-medium-email-the-5-minute-mental-reset-that-actually-works-sa-e457c87f
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:16.513405Z'
-short_summary: This post discusses the comparison between Windows, macOS, and Linux operating systems, suggesting that the time to switch operating systems is now.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post discusses the current state of computer operating systems, focusing on Windows, macOS, and Linux, and suggests that the time to switch operating systems is now.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:15.904988Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: af32ff3a22a24734652707408a71a0e33b4ba8458e30b2beadf486b758553598
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b7032ea8a1cafb548f13620f92b2df2acf7c45a3cd77e7260db9fe283d1b74c2
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about operating systems and is entirely irrelevant to the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - The post discusses the current state of computer operating systems, focusing on Windows, macOS, and Linux, and suggests that the time to switch operating system
 ---
 # Windows vs macOS vs Linux: the time to switch is now
 

@@ -21,7 +21,6 @@ tags:
 - satellite monitoring
 - sea ice estimation
 - edge computing
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-03-09-jack-clark-import-ai-import-ai-448-ai-r-d-bytedances-cuda-writing-age-45e7946b
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:24.084210Z'
-short_summary: Researchers developed TinyIceNet, a lightweight vision model for estimating sea ice thickness from Synthetic Aperture Radar data, designed to run efficiently on resource-constrained devices like satellites.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed TinyIceNet, a lightweight vision model for estimating sea ice thickness from Synthetic Aperture Radar (SAR) data, designed to run efficiently on-device, such as satellites or FPGAs.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.425273Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 709b5a49b3a4a98d930fae7fc197ac52da9c4dad236aef5d96eadb7c7055f302
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a7a412576468d849189a2ab2e06e57f8d85c0c01b23d7eb17e753b29317f5779
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's interest in LLM efficiency and reasoning by detailing an on-device vision model optimized for edge computing.
+  evidence_quotes:
+  - Researchers developed TinyIceNet, a lightweight vision model for estimating sea ice thickness from Synthetic Aperture Radar (SAR) data, designed to run efficien
+  - TinyIceNet is a proof-of-concept demonstration of how to make very lightweight vision models that could plausibly be deployed onto devices which have very small
+  - The idea here is that doing this on-device would be very efficient – “Instead of downlinking vast volumes of raw imagery, satellites can generate SOD products i
 ---
 # Helping satellites run on-device AI for arctic monitoring
 

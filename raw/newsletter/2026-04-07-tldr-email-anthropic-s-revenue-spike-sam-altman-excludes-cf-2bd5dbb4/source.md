@@ -32,9 +32,21 @@ lightweight_enriched_at: '2026-04-09T14:34:22.965262Z'
 lightweight_enrichment_model: deterministic:tldr-newsletter
 lightweight_enrichment_input_hash: af99fbb6a8c4ef5218de1aa495fae4a0b723c87f1b91ced0be02bf86457610fb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 275d7b379670f4c88557c0e334825da4344526055197a5f9c8762c9c11d2fd68
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.0
+  topic_fit_score: 0.16
+  author_fit_score: 0.55
+  evidence_fit_score: 0.16
+  confidence_score: 0.8
+  bucket_hint: archive
+  reason: The document is a general business and tech newsletter and lacks specific, high-priority technical content relevant to frontier LLM research.
+  evidence_quotes:
+  - TLDR roundup on Anthropic's revenue spike, Sam Altman excludes CFO, how Meta builds context.
+  - Anthropic's annual revenue run-rate has spiked from roughly $9 billion at the end of 2025 to more than $30 billion.
+  - how Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines
 ---
 # Anthropic's revenue spike 📈, Sam Altman excludes CFO💼, how Meta builds context 🤖
 

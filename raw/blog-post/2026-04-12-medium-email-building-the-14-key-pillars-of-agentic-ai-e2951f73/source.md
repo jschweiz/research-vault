@@ -6,6 +6,7 @@ source_url: https://medium.com/@fareedkhandev/building-the-14-key-pillars-of-age
 source_name: Medium Email
 authors:
 - Medium Daily Digest <noreply@medium.com>
+- Fareed Khan
 published_at: '2026-04-12T06:40:00Z'
 ingested_at: '2026-04-13T18:17:46.797283Z'
 content_hash: 41d9cb619faf0bfefc6370fda5b443019e756447635ea7c7d5c2ebf63c3443ae
@@ -16,6 +17,11 @@ tags:
 - email
 - blog-post
 - sub-document
+- agentic ai
+- ai
+- machine learning
+- parallelism
+- retrieval
 status: active
 asset_paths: []
 source_id: medium-email
@@ -26,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-12-medium-email-backpropagation-is-simpler-than-you-think-once-y-233ea33e
 index_visibility: visible
 fetched_at: '2026-04-13T18:17:46.797288Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post outlines the 14 key pillars necessary for building Agentic AI systems. It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:24.707107Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 65e63c52032e0705d00c0db449fc6dcfa6b2961d5f306cf05a0aaaae91ee3577
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 77fcaf0caaa81894752512b2085cf449a45e7d50bbcfc0d986dd85ace6eec74b
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.6
+  author_fit_score: 0.3
+  evidence_fit_score: 0.5
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document touches on relevant concepts like parallelism and retrieval in the context of AI agents, which aligns with the user's interest in LLM architecture and reasoning, but it is not a primary research paper or deep dive.
+  evidence_quotes:
+  - This post outlines the 14 key pillars necessary for building Agentic AI systems.
+  - It touches upon concepts like parallelism, ensembles, and retrieval in the context of advanced AI.
+  - Parallelism, Ensembles, Retrieval and more
 ---
 # Building the 14 Key Pillars of Agentic AI
 

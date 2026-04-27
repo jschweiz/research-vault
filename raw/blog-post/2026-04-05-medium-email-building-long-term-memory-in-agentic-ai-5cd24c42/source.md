@@ -37,16 +37,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: c1e3ce500e192872898c2bfacba9ea78802d45bac2fd06dc9bd47a915c886d90
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: b743775aa69c6f5986239506bfdc2dedd14e7a9daad03a928ab1557b933f63f9
+lightweight_scoring_input_hash: 84b7c0e0226bba3e09ddeb0f3468c1b19541240c4b2dcaf43c8b6b5e481a4282
 lightweight_score:
-  relevance_score: 0.95
+  relevance_score: 0.75
   source_fit_score: 0.3
   topic_fit_score: 1.0
   author_fit_score: 0.0
-  evidence_fit_score: 1.0
-  confidence_score: 1.0
+  evidence_fit_score: 0.8
+  confidence_score: 0.95
   bucket_hint: must_read
-  reason: The document directly addresses favorite topics like LLM architecture and memory within agentic AI systems, making it highly relevant.
+  reason: The document directly addresses memory and agentic AI, which aligns perfectly with the user's favorite topics of memory and agentic systems.
   evidence_quotes:
   - The post discusses building long-term memory within agentic AI systems, focusing on concepts like HITL, in-memory features, and feedback loops.
   - HITL, InMemory Feature, Feedback Loop and more

@@ -21,7 +21,6 @@ tags:
 - codebase
 - commit history
 - software development
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code--e71bc271
 index_visibility: visible
 fetched_at: '2026-04-13T18:30:43.468417Z'
-short_summary: This post introduces five git commands that help diagnose a codebase by examining commit histories to understand authorship, problem clustering, and project health. These commands guide developers on which code to read first and what to look for.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post introduces five git commands that help diagnose a codebase by examining commit histories. These commands reveal who built the code, where problems cluster, and the team's development status.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:06.486878Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 63998ef16a98af6e8f2dfc14f7b5f7b1741b24617cab8c12e3ec844daa84e7a8
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 0ce4df87468ea77e866fdc689dc861689cee8b8d424ca8f99798c0bfcd144b86
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Git commands and software development, which has very low relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - This post introduces five git commands that help diagnose a codebase by examining commit histories.
+  - Commit histories can provide a diagnostic picture of a project.
+  - They tell you who built it, where the problems cluster, and whether a team is shipping with confidence or tiptoeing around land mines.
 ---
 # The Git Commands I Run Before Reading Any Code
 

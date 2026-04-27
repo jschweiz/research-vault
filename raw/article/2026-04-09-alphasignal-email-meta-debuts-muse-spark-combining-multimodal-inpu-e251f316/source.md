@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.332221Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 689471445564c4a9f69f6cd5d015979d87adda31b9ccb6ebcfd3863ab0194507
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3cd7034240937fd36a419888e78f2510576344ec992a27d9e64064ed89a3541b
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses multimodal inputs, agent orchestration, and efficiency, which aligns perfectly with the user's favorite topics of LLM architecture, reasoning, and efficiency.
+  evidence_quotes:
+  - Meta introduced Muse Spark, a new model that combines multimodal inputs, tool use, and agent orchestration into a single system.
+  - Muse Spark processes text and images together and runs structured reasoning across them.
+  - Improves efficiency by 10× vs Llama 4 Maverick during pretraining
 ---
 # Meta debuts Muse Spark combining multimodal inputs, tool use, and agent orchestration in one system
 

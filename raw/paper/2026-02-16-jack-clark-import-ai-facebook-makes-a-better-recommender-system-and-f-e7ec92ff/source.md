@@ -21,7 +21,6 @@ tags:
 - scaling laws
 - machine learning
 - facebook
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -32,15 +31,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:10.282255Z'
-short_summary: Facebook developed a recommendation system called Kunlun and discovered scaling laws for these models, making it easier to invest compute for better results. This work demonstrates predictable scaling behavior for recommender systems, which are crucial for advertising and social platforms.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Facebook developed a recommendation system called Kunlun and discovered scaling laws for these models, making it easier to invest compute for better results. This work demonstrates predictable scaling behavior for recommender systems, optimizing societal AI systems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.128575Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 076478be8032df12c7e1a774159b7fb34d4cead839cc039b7bfa8b0a2188c3af
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6e84cd9d82e0a0435138ebb454033efcc7bb7e1e5b983e46909a226dc7c7066e
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.3
+  topic_fit_score: 0.65
+  author_fit_score: 0.0
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document is relevant due to its discussion of scaling laws and efficiency in large-scale ML systems, which aligns with the user's interest in LLM training and efficiency.
+  evidence_quotes:
+  - 'Recommender models also tend to be a lot less efficient than LLMs: Recommendation systems achieve only 3-15% Model FLOPs Utilization (MFU), compared to 40-60% f'
+  - The key insight in the paper is that Kunlun models scale predictably, exhibiting the kind of power-law scaling behavior that language models exhibit.
+  - In Facebook experiments, they discover reliable scaling laws for both NE gains in terms of the amount of gigaflops dumped into training the model, as well as re
 ---
 # Facebook makes a better recommender system, and figures out some recommender scaling laws
 

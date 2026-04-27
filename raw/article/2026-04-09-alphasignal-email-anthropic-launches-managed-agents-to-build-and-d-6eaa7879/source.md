@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:57.234381Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2a520b989d362a30c545dd55dfa52340fc7cfca1b80c49911212a2fd054c5248
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 6f57cd0bb7da04349ba2f1bb47b70623194b82106fee81187c32c6c87bbc4a10
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.5
+  topic_fit_score: 1.0
+  author_fit_score: 0.5
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agent deployment and infrastructure, which aligns strongly with the user's interest in LLM agents, reasoning, and research tooling.
+  evidence_quotes:
+  - Anthropic has introduced Claude Managed Agents, an API suite that allows users to build and deploy cloud-hosted agents with built-in production infrastructure.
+  - This system automates agent execution, handling tasks, tool calling, and error recovery automatically.
+  - It replaces backend engineering work with a managed system for agent execution.
 ---
 # Anthropic launches Managed Agents to build and deploy agents without managing infrastructure or orchestration
 

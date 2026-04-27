@@ -38,9 +38,21 @@ lightweight_enriched_at: '2026-04-09T23:07:56.823063Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 0fd175b75c614a7f844acf96fc08666d361ed602e2b230a181bea63cf43e5186
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: ee78d2b9022bdab9342c0d092bf7df4e77a4ab69b4553df5d2a7ed1b340ce00c
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.95
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document details a novel efficiency technique for Mixture-of-Experts (MoE) models, directly addressing efficiency and hardware utilization in LLM inference.
+  evidence_quotes:
+  - Cursor introduced warp decode to improve efficiency in mixture-of-experts models by having each GPU warp compute one output instead of grouping work by experts.
+  - Achieve 1.84× higher throughput on Blackwell GPUs during token generation
+  - Produce outputs 1.4× closer to FP32 reference than standard MoE decode
 ---
 # Cursor introduces warp decode, where each GPU warp computes one output instead of grouping work by experts
 

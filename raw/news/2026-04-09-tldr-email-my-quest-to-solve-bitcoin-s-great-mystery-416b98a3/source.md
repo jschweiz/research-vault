@@ -22,7 +22,6 @@ tags:
 - cryptography
 - adam back
 - bitcoin movement
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -34,14 +33,25 @@ parent_id: 2026-04-09-tldr-email-meta-s-ai-model-anthropic-s-agent-platform-code
 index_visibility: visible
 fetched_at: '2026-04-13T18:30:45.470927Z'
 short_summary: An investigation suggests that Adam Back is Satoshi Nakamoto, the creator of Bitcoin. Back is identified as a British cryptographer and a leading figure in the Bitcoin movement.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:26.482380Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8010413ad9c8d707b28ee7a0876954ae4d4ef61fa6eaebbdf5b4626e483b79bf
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 49de5e0ebbfc705512920eb274e53adc04da7b26338033767f330be5bbe8abc1
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about Bitcoin and cryptography, which does not align with the user's focus on frontier LLM research topics.
+  evidence_quotes:
+  - An investigation suggests that Adam Back is Satoshi Nakamoto, the creator of Bitcoin.
+  - Back is identified as a British cryptographer and a leading figure in the Bitcoin movement.
 ---
 # My Quest to Solve Bitcoin's Great Mystery
 

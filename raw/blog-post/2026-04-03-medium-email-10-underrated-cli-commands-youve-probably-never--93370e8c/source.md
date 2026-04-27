@@ -36,16 +36,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 534d75b7ed70828ffcba6e11ecd14c28ff09c6187f34d498ec1fa10627b95fe3
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: dd91b2618c19f46eb9e951cfa8615894e646b17251a4181577bdb0b752b74f27
+lightweight_scoring_input_hash: 3dd3369c6105f198840b0c792349088a8703805b66a3112a882ff1f2e9bc2076
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
-  topic_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about CLI commands, which does not align with the user's favorite topics of language models, evaluation, reasoning, or research tooling.
+  reason: The document is about CLI commands and has no direct relevance to the user's focus on LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
   - This post introduces ten underrated command-line interface (CLI) commands that readers may not be familiar with.
   - It serves as a guide to discovering useful and less commonly known CLI tools.

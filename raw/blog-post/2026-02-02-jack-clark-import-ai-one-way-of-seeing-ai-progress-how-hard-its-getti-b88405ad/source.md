@@ -38,20 +38,20 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 66cd8ae2a2d473deaf82fa8be4e14af14fe5b0c8b4e3f6c58c5a6e9d437ebb3e
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a9cb2ef932ae07b304d7566ea48ff4b45b87b495dac1128c9c066b9fc7ebadcd
+lightweight_scoring_input_hash: 90a2b0d21ff206ca9d6ebe6859c4639f836cbf2ffee397994e9cdbca1dae0e72
 lightweight_score:
-  relevance_score: 0.85
-  source_fit_score: 0.75
+  relevance_score: 0.75
+  source_fit_score: 0.6
   topic_fit_score: 1.0
   author_fit_score: 1.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: The document directly addresses AI evaluation and testing, which aligns perfectly with the user's favorite topics of language models, evaluation, and reasoning.
+  reason: The document directly addresses evaluation methods and the distinction between human and AI capabilities, which aligns perfectly with the user's favorite topics of evaluation and reasoning in LLMs.
   evidence_quotes:
   - Anthropic is redesigning its technical interviews and take-home tests because advanced AI systems are now capable of outperforming human candidates.
-  - 'In Anthropic’s case, it found a way to keep outrunning its systems by designing a much weirder take-home test loosely inspired by programming puzzle games from '
-  - Anthropic shares details on how its own AI systems are breaking its favorite technical interview questions…
+  - 'When given the same time limit, Claude Opus 4 outperformed most human applicants. That still allowed us to distinguish the strongest candidates—but then Claude '
+  - In a sense, this is an attempt to go ‘off distribution’ to outsmart an AI, while still having a test that holds signal for evaluating human applicants.
 ---
 # One way of seeing AI progress – how hard it’s getting to design technical interviews
 

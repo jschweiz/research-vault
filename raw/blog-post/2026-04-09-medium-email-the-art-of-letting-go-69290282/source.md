@@ -30,15 +30,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:57.640033Z'
-short_summary: This post explores the theme of letting go, referencing a quote about the desire for happiness.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The post explores the concept of letting go in the context of seeking happiness, referencing a quote from the Buddha.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.933014Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 0276445da3ec5cfc17ca6bde218c4f36bb366f56eac7da542b13c57fb0fbc4cb
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 798221bc687aad0e88fdcd9501de799380618121a04c55521119624d470250b3
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is entirely about philosophy and happiness and has no technical relevance to frontier LLM research topics.
+  evidence_quotes:
+  - The post explores the concept of letting go in the context of seeking happiness, referencing a quote from the Buddha.
+  - A man once said to the Buddha, “I want happiness.”
 ---
 # The Art of Letting Go
 

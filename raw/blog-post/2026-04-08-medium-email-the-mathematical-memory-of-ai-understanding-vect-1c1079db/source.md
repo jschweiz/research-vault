@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-08-medium-email-understanding-transformers-part-1-why-rnns-are-n-5290800a
 index_visibility: visible
 fetched_at: '2026-04-13T18:19:05.579885Z'
-short_summary: This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory aspect of AI.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory of AI.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.255277Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 829323cbbf23f23667533649207986a376f1e43ac934ac08bb30472ce23779f6
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 5ab480b2763d7f888a384eeb218a172cfbb91d88cf5d079bcc637b37771ca640
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.5
+  topic_fit_score: 0.9
+  author_fit_score: 0.0
+  evidence_fit_score: 0.85
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document strongly aligns with the user's favorite topics of memory and evaluation, making it relevant for a frontier LLM researcher.
+  evidence_quotes:
+  - This post explores the mechanics of vector databases and embedding pipelines, focusing on the mathematical memory of AI.
+  - Explore the mechanics of vector databases, text…
 ---
 # The Mathematical Memory of AI: Understanding Vector Databases and Embedding Pipelines
 

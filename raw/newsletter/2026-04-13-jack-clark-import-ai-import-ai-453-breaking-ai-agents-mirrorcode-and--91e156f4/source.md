@@ -4,7 +4,8 @@ kind: newsletter
 title: 'Import AI 453: Breaking AI agents; MirrorCode; and ten views on gradual disempowerment | Import AI'
 source_url: https://jack-clark.net/2026/04/13/import-ai-453-breaking-ai-agents-mirrorcode-and-ten-views-on-gradual-disempowerment
 source_name: Import AI
-authors: []
+authors:
+- Ryan Greenblatt
 published_at: '2026-04-13T10:02:22Z'
 ingested_at: '2026-04-13T18:12:30.973692Z'
 content_hash: 37c5bd566c97aa5b9df3647db68afcbb290247d903e6b4ea18326156654289a2
@@ -15,6 +16,10 @@ tags:
 - analysis
 - policy
 - website
+- ai agents
+- mirrorcode
+- ai safety
+- software engineering
 status: active
 asset_paths:
 - original.html
@@ -26,15 +31,27 @@ doc_role: primary
 parent_id: null
 index_visibility: hidden
 fetched_at: '2026-04-13T18:12:30.973698Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI systems like MirrorCode demonstrate long-horizon capabilities in reimplementing complex software, and researchers are exploring the necessary policies and safety measures to manage the risks posed by transformative AI agents.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:33.532815Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4a90081f2d9b6af3d5d2d944453ac35a03395b81395d9b17ddf22785c8454215
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 2857d989c5a9ffd85805c5c61940cc196074b9d509e7194d9adbfcacf143979d
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.4
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.95
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses AI agents, benchmarking, and the policy/safety implications, which aligns perfectly with the user's focus on evaluation, reasoning, and safety in frontier LLMs.
+  evidence_quotes:
+  - AI systems like MirrorCode demonstrate long-horizon capabilities in reimplementing complex software, and researchers are exploring the necessary policies and sa
+  - AI measurement organizations METR and Epoch have built MirrorCode, a benchmark meant to test out how well AI models can autonomously reimplement complex existin
+  - The results show that AI systems are more capable than most people think at certain types of coding task, suggesting AI progress may be even faster than we prev
 ---
 # Import AI 453: Breaking AI agents; MirrorCode; and ten views on gradual disempowerment
 

@@ -31,15 +31,26 @@ doc_role: derived
 parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-and-d-bff2b399
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:55.298136Z'
-short_summary: This post details how to build a sleek science fiction dashboard using Python and Dash. It serves as an inspiration for creating data-driven visualizations.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post details how to build a sleek science fiction dashboard using Python and Dash. It serves as a guide for creating interactive data visualizations.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.518302Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 70ab79a5f8ba67031d53373044cacd936f0be1e9f3138d13a8f5ab5ad1d0e97c
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 46930b0c1547037896867881f6892ff5850ae16412db5d841f8bac59ace4e69b
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about building a dashboard with Python and Dash, which has no direct relevance to frontier LLM research topics like training, evaluation, or reasoning.
+  evidence_quotes:
+  - This post details how to build a sleek science fiction dashboard using Python and Dash.
+  - It serves as a guide for creating interactive data visualizations.
 ---
 # Build a Sleek Sci-Fi Dashboard with Python and Dash
 

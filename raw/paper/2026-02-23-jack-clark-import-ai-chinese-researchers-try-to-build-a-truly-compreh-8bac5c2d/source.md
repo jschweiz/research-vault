@@ -23,7 +23,6 @@ tags:
 - ai safety
 - benchmark
 - risk assessment
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -34,15 +33,26 @@ doc_role: derived
 parent_id: 2026-02-23-jack-clark-import-ai-import-ai-446-nuclear-llms-chinas-big-ai-benchma-74d04bde
 index_visibility: visible
 fetched_at: '2026-04-13T18:15:55.689004Z'
-short_summary: Chinese institutions built the ForesightSafety Bench, a large-scale AI safety evaluation framework covering 94 risk subcategories. The benchmark highlights common AI safety concerns and shows Anthropic models leading in defensive resilience.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Chinese institutions built the ForesightSafety Bench, a large-scale AI safety evaluation framework covering 94 risk subcategories. The benchmark highlights common AI safety concerns across different nations and emphasizes the need for measurement in AI governance.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.178371Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: f2b665bc32d0d09bacc014d1fca8f8e1192d6f06362cb2014b89fa7a6c72c6c4
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 85702fe132205fd020b823435c119fe2dce3cb6f650d3d5e05148f16340c88db
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.5
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This document details a large-scale AI safety evaluation framework, directly addressing the user's interest in evaluation, reasoning, and frontier LLM safety.
+  evidence_quotes:
+  - ForesightSafety Bench shows the surprising overlap between East and West on AI safety issues…
+  - 'The benchmark includes a lot of tests relating to the further afield AI safety concerns which fascinate Western frontier labs, including evaluations for things '
 ---
 # Chinese researchers try to build a truly comprehensive LLM evaluation system
 

@@ -40,9 +40,21 @@ lightweight_enriched_at: '2026-04-09T22:01:43.320477Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 61aee55d1cddaf767125afdb1db9f82a078ce7c02009f6bb3d76f4c7a5d7a2ce
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: fd5242173041dd64d2195b4dd75257d445cb6c45b0efd6c2d0443b573ee1e1f1
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.35
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses LLM reasoning, evaluation, and the challenges of applying LLMs to hard scientific tasks, aligning perfectly with the user's favorite topics and research persona.
+  evidence_quotes:
+  - Research suggests that LLMs exhibit 'societies of thought' by simulating multiple perspectives and engaging in social reasoning, and that AI-based chip design r
+  - In tests on DeepSeek-R1 and QwQ-32B (one wonders why the Google researchers didn’t touch Google models here…) they find that “enhanced reasoning emerges not fro
+  - The authors find that models embody a variety of conversational styles, including question and answering, perspective shifts, reconciliation, and conflict of pe
 ---
 # Import AI 444: LLM societies; Huawei makes kernels with AI; ChipBench
 

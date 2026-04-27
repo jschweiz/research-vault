@@ -22,7 +22,6 @@ tags:
 - reliability
 - machine learning
 - physical ai
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:31.295333Z'
-short_summary: The GEN-1 robotics model has achieved 99% reliability in physical tasks, demonstrating production-level success rates. The system can also improvise new moves in response to disruptions.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The GEN-1 robotics model achieved 99% reliability in physical tasks, demonstrating production-level success rates. The system was trained using over half a million hours of physical interaction data.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:25.952800Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 4e88088edc42a3a18531bcb5ad00f72d500113000f996a477a49e0486e5250e0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 40f1d2e019a8978720deeb0cd80df4600b251d6fdd77900457935861f3b3845e
+lightweight_score:
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about robotics and physical AI, which is tangentially related to LLM research but does not directly address the user's core interests in LLM training, evaluation, reasoning, or architecture.
+  evidence_quotes:
+  - From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability
+  - The GEN-1 robotics model achieved 99% reliability in physical tasks, demonstrating production-level success rates.
+  - The system was trained using over half a million hours of physical interaction data.
 ---
 # From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability
 

@@ -4,7 +4,8 @@ kind: blog-post
 title: Trustworthy agents in practice
 source_url: https://www.anthropic.com/research/trustworthy-agents
 source_name: Anthropic Research
-authors: []
+authors:
+- Anthropic
 published_at: '2026-04-09T00:00:00Z'
 ingested_at: '2026-04-13T18:10:56.885678Z'
 content_hash: 12f13afbe357ae8862028f90f67ac4c8acd38c11d614d8aab759a92c1d431327
@@ -15,6 +16,11 @@ tags:
 - research
 - website
 - blog-post
+- agents
+- trustworthy
+- ai
+- security
+- prompt injection
 status: active
 asset_paths:
 - original.html
@@ -26,15 +32,27 @@ doc_role: primary
 parent_id: null
 index_visibility: visible
 fetched_at: '2026-04-13T18:10:56.885684Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: This post discusses the risks and principles for building trustworthy AI agents, focusing on human control, alignment, security, transparency, and privacy. It details how agents work, the components they are built from, and the need for broader ecosystem standards.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.429202Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 2acedb090646ff41c1f92c717daeca726ba7719d32d29ac33fa9e5d2db6d3c02
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 3675eba9ed264f1a1867149705a2b8708a58513c536e1713acd8261f56288533
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 1.0
+  topic_fit_score: 1.0
+  author_fit_score: 1.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses agentic systems, security, and alignment, which are highly relevant to a frontier LLM researcher focusing on reasoning, memory, and evaluation.
+  evidence_quotes:
+  - This post discusses the risks and principles for building trustworthy AI agents, focusing on human control, alignment, security, transparency, and privacy.
+  - Agents are already making real productivity gains [for] [our] [customers] and [inside Anthropic].
+  - 'The practical difference between this and a chatbot is that an agent operates in a self-directed loop: it plans, acts, observes the result, adjusts, and repeats'
 ---
 Trustworthy agents in practice
 AI “agents” represent the latest major shift in how people and organizations are using AI. A couple of years ago, AI models were only broadly available as chatbots—simple question-and-answer machines. Now, through products like [Claude Code](https://claude.com/product/claude-code) and [Claude Cowork](https://claude.com/product/cowork), AI models can do much more: they can write and execute code, manage files, and complete tasks that span multiple applications. This represents a new frontier for governance.

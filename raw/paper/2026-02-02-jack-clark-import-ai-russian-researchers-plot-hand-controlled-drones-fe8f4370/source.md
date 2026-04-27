@@ -38,20 +38,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 6da5bccb13431e533a0256922100a16ecf8d962f225f9bebed3256d9fc1aeb0d
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a49aac13fad7cb389820a5055cb82cf6d1ae4f1b41d462fdab72a172a5c24d41
+lightweight_scoring_input_hash: c6f9e3f1bb5eaef22c6665ad3e49dbc197a5552d3d3c74b3518d27a5d4aa5768
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.85
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.45
   author_fit_score: 0.0
-  evidence_fit_score: 0.95
-  confidence_score: 1.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
   bucket_hint: worth_a_skim
-  reason: The document strongly aligns with the user's favorite topics of LLM architecture and reasoning tooling, although it does not feature preferred authors.
+  reason: The document is relevant due to its focus on human-robot interaction and control interfaces, which touches upon the user's interest in LLM reasoning and multi-modal interfaces, but it lacks direct focus on LLM training, evaluation, or architecture.
   evidence_quotes:
   - Russian researchers developed a prototype system using haptic gloves to allow a human operator to control a drone, demonstrating basic actions like gripping and
-  - The research is a basic demonstration of how you can use a cheap glove loaded with internal measurement unit (IMU) sensors to control a drone.
-  - 'We can easily imagine a future where people pilot remote robots, flying or otherwise, via rich, intuitive multi-modal interfaces composed of gloves and goggles '
+  - They test out how well people can use the glove to do some basic tasks like flying around an obstacle course and operating the gripper.
 ---
 # Russian researchers plot hand-controlled drones
 

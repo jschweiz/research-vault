@@ -22,7 +22,6 @@ tags:
 - huawei
 - kernel design
 - npu
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -33,15 +32,27 @@ doc_role: derived
 parent_id: 2026-02-09-jack-clark-import-ai-import-ai-444-llm-societies-huawei-makes-kernels-6922e476
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:35.902259Z'
-short_summary: Researchers used LLMs to automate the design of kernels for Huawei chip kernels by developing a two-stage pipeline called AscendCraft. This method achieved high compilation success and functional correctness, demonstrating AI's potential to accelerate hardware kernel development.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers with Nanjing University and Huawei used LLMs to automate the design of kernels for AscendC Huawei chips by developing a two-stage pipeline called AscendCraft.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.072673Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 8479aad0f90e54b71f6be56dee79972b3ebfa9b765f2e97f10e602ef1c8eff02
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e8ec3ad77a175fc3fcc590335d2c566dd1acc5e018868fd395f3e4e332f8db5b
+lightweight_score:
+  relevance_score: 0.65
+  source_fit_score: 0.3
+  topic_fit_score: 0.95
+  author_fit_score: 0.3
+  evidence_fit_score: 0.9
+  confidence_score: 0.95
+  bucket_hint: worth_a_skim
+  reason: The document directly addresses LLM application in hardware design, which aligns strongly with the user's interest in LLM architecture and reasoning, though the specific focus is on domain-specific code generation rather than core LLM training or evaluation.
+  evidence_quotes:
+  - Researchers with Nanjing University and Huawei used LLMs to automate the design of kernels for AscendC Huawei chips by developing a two-stage pipeline called As
+  - AscendCraft is software for automating the generation of code for Huawei kernels.
+  - AscendCraft achieves 98.1% compilation success and 90.4% functional correctness.
 ---
 # Huawei uses an LLM to automate the design of Huawei chip kernels
 

@@ -26,7 +26,6 @@ tags:
 - dataset
 - machine learning
 - electromagnetic signals
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -37,15 +36,27 @@ doc_role: derived
 parent_id: 2026-03-23-jack-clark-import-ai-import-ai-450-chinas-electronic-warfare-model-tr-26ab1bcb
 index_visibility: visible
 fetched_at: '2026-04-13T18:14:44.117359Z'
-short_summary: Chinese researchers built a dataset, benchmark, and AI model called MERLIN to improve AI's ability to handle low-signal-to-noise-ratio signals in electronic warfare environments.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Chinese researchers built a dataset, benchmark, and AI model called MERLIN to improve AI's ability to handle low-signal-to-noise-ratio signals in electronic warfare environments. MERLIN significantly outperformed other frontier models in both perception and reasoning tasks related to electromagnetic signals.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:34.781925Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: ddd29db00268c75766e27c07075690e8c7a8fb5df8aabd4a47b21ad33a98b639
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 4bd14643068f8158886151149c62f7d25e474f0ada8d57ccdfb8e05c06ff53ec
+lightweight_score:
+  relevance_score: 0.85
+  source_fit_score: 0.6
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier LLM evaluation and reasoning by showcasing a model (MERLIN) that significantly outperforms other frontier models on complex reasoning tasks.
+  evidence_quotes:
+  - MERLIN significantly outperformed other frontier models in both perception and reasoning tasks related to electromagnetic signals.
+  - MERLIN wins on all reasoning tasks.
+  - 'Performance: MERLIN does extremely well in tests against frontier models, including GPT-5, Claude-4-Sonnet, DeepSeek-v3.2-exp, Qwen3-Next-80b-A3B, Gemini-2.5-Pr'
 ---
 # China builds a dataset and AI model for electronic warfare
 

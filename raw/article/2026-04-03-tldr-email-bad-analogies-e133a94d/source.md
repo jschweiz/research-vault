@@ -38,19 +38,19 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: e81ef755977ac880cee335dd057a025a92a6ba366387df677b90c58611e0d1b1
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: a6319aa222536f39ebf30ceee399428c08e84223195c29970173657e1eef52e9
+lightweight_scoring_input_hash: 44bdc9f3aa59f0d54a454b21c79463d9c25d42b959141f32cc5a6618e356b40a
 lightweight_score:
-  relevance_score: 0.16
-  source_fit_score: 0.16
+  relevance_score: 0.05
+  source_fit_score: 0.0
   topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.16
+  evidence_fit_score: 0.0
   confidence_score: 1.0
   bucket_hint: archive
-  reason: The document is about business strategy and Amazon, which does not align with the user's favorite topics of language models, evaluation, or LLM architecture.
+  reason: The document is about business strategy and Amazon, which has no direct relevance to frontier LLM research topics like evaluation, reasoning, or architecture.
   evidence_quotes:
   - Amazon's success has done a great deal of harm to a lot of companies.
-  - Amazon is a bad example of why it is okay to burn loads of cash during growth.
+  - The strategy doesn't always work out, especially if it is not executed correctly.
 ---
 # Bad Analogies
 

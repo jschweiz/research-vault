@@ -34,8 +34,18 @@ lightweight_enriched_at: '2026-04-09T14:34:22.005263Z'
 lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: f22c21aba4012133fcf54f32f45236e9cbaef2587511632fab26ce2f25124408
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: b30f418603268a14d34561012c415bdffddffec66d9361a94d5bfba919620f43
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.1
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is an acquisition announcement and does not contain technical research relevant to the user's focus on LLM training, evaluation, or architecture.
+  evidence_quotes:
+  - OpenAI acquired TBPN to boost global discussions about AI and support independent media, thereby expanding dialogue with the tech community.
 ---
 OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.

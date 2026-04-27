@@ -39,16 +39,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: a3df80f120ce4ce57b4a5a03ecb84548061794475f71307c884836f46830a3d4
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 134e8949c512e5fa8289a0e0de5cd7430daff9bee5b83c5a875820a580cdfcc1
+lightweight_scoring_input_hash: 54095cf794036bcee28503b6554a06933baa874f2d87cf2380988437a2d7d6cb
 lightweight_score:
-  relevance_score: 0.25
-  source_fit_score: 0.1
-  topic_fit_score: 0.3
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
   author_fit_score: 0.0
-  evidence_fit_score: 0.4
-  confidence_score: 0.6
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI and science, which aligns loosely with favorite topics, but lacks specific focus on LLMs, evaluation, or reasoning.
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about biological robotics and does not align with the user's focus on LLM training, evaluation, reasoning, or architecture.
   evidence_quotes:
   - Scientists are developing living robots called neurobots, which are clusters of living cells that self-organize to move and respond to their environment.
   - Researchers are currently investigating the principles that govern these movements to engineer them for various applications.

@@ -26,7 +26,6 @@ tags:
 - benchmark
 - frontier problems
 - creativity
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -37,15 +36,27 @@ doc_role: derived
 parent_id: 2026-02-16-jack-clark-import-ai-import-ai-445-timing-superintelligence-ais-solve-74f2ca81
 index_visibility: visible
 fetched_at: '2026-04-13T18:16:18.426585Z'
-short_summary: Mathematicians created 'First Proof,' a benchmark of secret math problems to test AI systems' ability to solve unsolved frontier problems. Current AI systems, including GPT 5.2 Pro and Gemini 3.0 DeepThink, struggle with this test.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Mathematicians created 'First Proof,' a benchmark of ten unsolved math questions drawn from their research, to test the ability of AI systems to solve problems without public solutions. The test suggests that AI may approximate human creative leaps in solving frontier scientific problems.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:53:59.385728Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 24115aa90529887e4e9894200e4c58c5749a0de5627507eb948a833b89d903c1
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 63918a187462b9f404b2312b45d3c9b72b4abc81d83c6f6dd708e4c2ee354338
+lightweight_score:
+  relevance_score: 0.75
+  source_fit_score: 0.3
+  topic_fit_score: 1.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.9
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: The document directly addresses frontier evaluation and the limits of current AI systems in solving complex scientific problems, which aligns perfectly with the user's focus on evaluation and reasoning.
+  evidence_quotes:
+  - 'Today’s AI systems can’t yet do it: Neither GPT 5.2 Pro or Gemini 3.0 DeepThink can solve FirstProof – yet.'
+  - The main reason to care about First Proof is that it is ecologically valid when it comes to sampling frontier human creativity circa January 2026 – these are so
+  - If AI systems are able to do well at this kind of test, it gives us a clue that they can approximate some of the same creative leaps which humans make.
 ---
 # Math researchers see if AI can help solve their private solutions to frontier problems. The answer: Kind of.
 

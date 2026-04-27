@@ -38,16 +38,16 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 00c66c7773e317d41a55fedf56830b0f80e59cdf0d6322360094b933a858ebfa
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: 71e0bd9a2471d3fc805cf9bb6e39ac98eb1bc2f861cbb18696d902ec1001730f
+lightweight_scoring_input_hash: 7ad35f9a2be640735511e6bea633cc6cdf26be0fdb2a98e7b65adcc6d495b55e
 lightweight_score:
-  relevance_score: 0.36
+  relevance_score: 0.16
   source_fit_score: 0.16
-  topic_fit_score: 0.55
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.36
-  confidence_score: 0.75
-  bucket_hint: worth_a_skim
-  reason: The document touches on AI/coding topics but lacks specific focus on the user's favorite LLM architecture or research tooling.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about coding prompts and software construction techniques, which has weak topical overlap with the user's focus on LLM training, evaluation, reasoning, and architecture.
   evidence_quotes:
   - This post discusses 'Vibe Coding' and the idea that prompts are sufficient for coding tasks.
   - It references a related article about using software construction techniques.

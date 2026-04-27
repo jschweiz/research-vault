@@ -50,21 +50,21 @@ lightweight_enriched_at: '2026-04-09T16:19:42.801530Z'
 lightweight_enrichment_model: deterministic:alphaxiv-metadata
 lightweight_enrichment_input_hash: f9e3fb4d9e39621d2281a66f8e1216a7243e994585b5a96b1f39bc406d6f7d29
 lightweight_enrichment_error: null
-lightweight_scoring_model: gemma4:e2b+alphaxiv-metrics-v1
-lightweight_scoring_input_hash: ec5b76e1edb18dfc448ccf316a80f77b99122811006103af65db4227753f1e25
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: a83587cb26eb990823f635fb29e5513f05499730334998e46fecd04a91bd5b5c
 lightweight_score:
-  relevance_score: 1.0
-  source_fit_score: 0.5894
+  relevance_score: 0.75
+  source_fit_score: 0.5
   topic_fit_score: 1.0
   author_fit_score: 0.0
   evidence_fit_score: 1.0
   confidence_score: 1.0
   bucket_hint: must_read
-  reason: 'The document is highly relevant as it focuses on generative models and 3D representation, aligning perfectly with the user''s favorite topics. alphaXiv engagement signals: 0 public votes, 0 total votes, 42 visits in the last 7 days.'
+  reason: The document is highly relevant as it addresses generative modeling and multi-modal learning, which aligns perfectly with the user's favorite topics of LLM research and evaluation.
   evidence_quotes:
-  - GenLCA is a diffusion-based generative model that creates and edits photorealistic full-body avatars from text and image inputs.
+  - We present GenLCA, a diffusion-based generative model for generating and editing photorealistic full-body avatars from text and image inputs.
   - The core idea is a novel paradigm that enables training a full-body 3D diffusion model from partially observable 2D data, allowing the training dataset to scale
-  - We then train a flow-based diffusion model on the token dataset, inherently maintaining the photorealism and animatability provided by the pretrained avatar rec
+  - Our approach effectively enables the use of large-scale real-world video data to train a diffusion model natively in 3D.
 ---
 # GenLCA: 3D Diffusion for Full-Body Avatars from In-the-Wild Videos
 

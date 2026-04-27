@@ -32,14 +32,25 @@ parent_id: 2026-04-09-medium-email-build-a-sleek-sci-fi-dashboard-with-python-an
 index_visibility: visible
 fetched_at: '2026-04-13T18:18:58.417516Z'
 short_summary: This post discusses building self-learning agents that improve over time without requiring fine-tuning. It introduces methods for creating agents that learn dynamically.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:16.608923Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 9eaa735382509b392f534c678c6df3329c6852f4236da8c56922fea7e96372ff
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 03d81348174d7a2daeecf097c47252abeb791070929e90608bcf40d5ec5fa94b
+lightweight_score:
+  relevance_score: 0.36
+  source_fit_score: 0.16
+  topic_fit_score: 0.55
+  author_fit_score: 0.0
+  evidence_fit_score: 0.55
+  confidence_score: 0.85
+  bucket_hint: worth_a_skim
+  reason: The document discusses agent building, which touches on memory and reasoning, making it relevant but not directly focused on frontier LLM training or evaluation methods.
+  evidence_quotes:
+  - This post discusses building self-learning agents that improve over time without requiring fine-tuning.
+  - It introduces methods for creating agents that learn dynamically.
 ---
 # Build Self-Learning Agents Without Any Fine-Tuning
 

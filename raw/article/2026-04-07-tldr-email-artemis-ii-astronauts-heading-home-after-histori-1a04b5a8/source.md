@@ -22,7 +22,6 @@ tags:
 - astronauts
 - nasa
 - space travel
-- sub-document
 status: active
 asset_paths: []
 source_id: tldr-email
@@ -33,15 +32,26 @@ doc_role: derived
 parent_id: 2026-04-07-tldr-email-anthropic-s-revenue-spike-sam-altman-excludes-cf-2bd5dbb4
 index_visibility: visible
 fetched_at: '2026-04-13T18:31:25.440392Z'
-short_summary: Artemis II astronauts are heading home after a historic moon flyby. The crew reached a peak distance of 252,756 miles from Earth and will splash down in the Pacific Ocean.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: The Artemis II crew completed a historic moon flyby, surpassing the Apollo 13 distance record. They are scheduled to splash down in the Pacific Ocean off San Diego, California.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:00.466113Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: d6ee00f3140795bd33f3e04199f4cd5eb2dbb480fcd09f02f6434be7a8d12bf0
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 9a9ac4f9f3fa899651b62beec37972657c099432d2b3e5acd2838f2523658d47
+lightweight_score:
+  relevance_score: 0.05
+  source_fit_score: 0.0
+  topic_fit_score: 0.0
+  author_fit_score: 0.0
+  evidence_fit_score: 0.0
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is about space travel and does not align with the user's focus on LLM research, evaluation, or architecture.
+  evidence_quotes:
+  - The Artemis II crew completed a historic moon flyby, surpassing the Apollo 13 distance record.
+  - They are scheduled to splash down in the Pacific Ocean off San Diego, California, on Friday at 8:07 PM.
 ---
 # Artemis II astronauts heading home after historic moon flyby
 

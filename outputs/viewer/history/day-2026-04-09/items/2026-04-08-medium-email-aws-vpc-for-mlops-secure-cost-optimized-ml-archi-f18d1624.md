@@ -6,7 +6,7 @@ Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-v
 
 ## Summary
 
-This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps
+This post discusses using AWS VPC configurations to create secure and cost-optimized machine learning architectures for MLOps. It focuses on mastering essential AWS VPC settings for these complex systems
 
 ## Text
 
@@ -15,7 +15,7 @@ This post discusses using AWS VPC configurations to create secure and cost-optim
 Source newsletter: Understanding Transformers (Part 1): Why RNNs are nearly impossible to train | Jose Parreño in Data Science Collective
 Sender: Medium Daily Digest <noreply@medium.com>
 Published At: 2026-04-08T06:40:00+00:00
-Canonical URL: https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
+Canonical URL: https://freedium-mirror.cfd/https://medium.com/@kuriko-iwai/aws-vpc-for-mlops-secure-cost-optimized-ml-architectures-7dd9a36c7124
 
 ## Newsletter Context
 

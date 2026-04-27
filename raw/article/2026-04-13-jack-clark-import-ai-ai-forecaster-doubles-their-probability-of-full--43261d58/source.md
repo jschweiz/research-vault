@@ -4,7 +4,8 @@ kind: article
 title: AI forecaster doubles their probability of full AI R&D automation by end of 2028
 source_url: https://x.com/eli_lifland/status/2039773600555979251
 source_name: Import AI
-authors: []
+authors:
+- Ryan Greenblatt
 published_at: '2026-04-13T10:02:22Z'
 ingested_at: '2026-04-13T18:12:41.363812Z'
 content_hash: 0cf565f688a9305ad06ceefcc9e52da28c2802a3c7035a3d0ddb497b98f8f879
@@ -17,6 +18,9 @@ tags:
 - website
 - article
 - sub-document
+- forecasting
+- research
+- automation
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -27,15 +31,27 @@ doc_role: derived
 parent_id: 2026-04-13-jack-clark-import-ai-import-ai-453-breaking-ai-agents-mirrorcode-and--91e156f4
 index_visibility: visible
 fetched_at: '2026-04-13T18:12:41.363819Z'
-short_summary: null
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: AI researcher and forecaster Ryan Greenblatt has doubled his estimate, believing AI progress will allow full AI R&D automation by the end of 2028.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:08.201712Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: e4796ad703de12fd9d358049ecd72fc276d918ff11c28a16fa8741d92eebb805
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: e77b027c42bb6253db9eea53ca0ddd1e1db0b4dc32f1642e6854805e35ae25db
+lightweight_score:
+  relevance_score: 0.45
+  source_fit_score: 0.2
+  topic_fit_score: 0.85
+  author_fit_score: 0.0
+  evidence_fit_score: 0.7
+  confidence_score: 0.9
+  bucket_hint: worth_a_skim
+  reason: The document discusses AI progress and R&D automation, which aligns strongly with the user's favorite topics of LLM research and reasoning, though it is a high-level forecast rather than deep technical evaluation.
+  evidence_quotes:
+  - 'Ryan Greenblatt, an AI researcher and forecaster, believes AI progress in 2026 will be faster than in 2025, and he now has doubled his estimate from 15% to 30% '
+  - This type of loop means that even if sometimes the AI gets confused or makes bad calls, there is some correcting factor and mistakes usually aren’t critical.
+  - AI has gotten so good at them that he thinks “we’re well into the superexponential progress on 50% reliability time-horizon regime”
 ---
 # AI forecaster doubles their probability of full AI R&D automation by end of 2028
 

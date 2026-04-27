@@ -37,18 +37,18 @@ lightweight_enrichment_model: gemma4:e2b
 lightweight_enrichment_input_hash: 2aa28f8639103fd37f107c4ed421444ea45753bd75b31e8114b8fa982b2c654c
 lightweight_enrichment_error: null
 lightweight_scoring_model: gemma4:e2b
-lightweight_scoring_input_hash: ceb0772fb4a229d1eb74a73f3bc65909a7084f8bd0e4f9483d2f9a996909cb09
+lightweight_scoring_input_hash: f10d4c1d1b0be4e0ab89229fdde8965feb5ad41d626f6e2aacb1997fa02e0088
 lightweight_score:
-  relevance_score: 0.65
-  source_fit_score: 0.3
-  topic_fit_score: 0.9
+  relevance_score: 0.16
+  source_fit_score: 0.16
+  topic_fit_score: 0.16
   author_fit_score: 0.0
-  evidence_fit_score: 0.8
-  confidence_score: 0.9
-  bucket_hint: worth_a_skim
-  reason: The document is highly relevant to favorite topics like LLM evaluation and reasoning, despite the author not matching preferred authors.
+  evidence_fit_score: 0.16
+  confidence_score: 1.0
+  bucket_hint: archive
+  reason: The document is a guide to a specific file within Claude and does not directly address the user's focus on frontier LLM training, evaluation, or architecture.
   evidence_quotes:
-  - This is a comprehensive guide to the CLAUDE.md file within Claude…
+  - This is a comprehensive guide to the CLAUDE.md file within Claude.
   - A comprehensive guide to the CLAUDE.md file in Claude…
 ---
 # The Complete Guide to Claude Code: CLAUDE.md

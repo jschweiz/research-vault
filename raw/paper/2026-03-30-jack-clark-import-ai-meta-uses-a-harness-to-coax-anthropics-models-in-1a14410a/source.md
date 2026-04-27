@@ -26,7 +26,6 @@ tags:
 - self-improvement
 - hyperagent
 - agent
-- sub-document
 status: active
 asset_paths: []
 source_id: jack-clark-import-ai
@@ -37,15 +36,27 @@ doc_role: derived
 parent_id: 2026-03-30-jack-clark-import-ai-import-ai-451-political-superintelligence-google-39f0537b
 index_visibility: visible
 fetched_at: '2026-04-13T18:13:17.233912Z'
-short_summary: Researchers developed a 'hyperagent' harness that allows Large Language Models (LLMs) to self-improve performance across various tasks by iteratively modifying their prompts and system mechanisms.
-lightweight_enrichment_status: pending
-lightweight_enriched_at: null
-lightweight_enrichment_model: null
-lightweight_enrichment_input_hash: null
+short_summary: Researchers developed a 'hyperagent' harness that allows Large Language Models (LLMs) to self-improve performance on arbitrary tasks by iteratively improving their prompts and system mechanisms.
+lightweight_enrichment_status: succeeded
+lightweight_enriched_at: '2026-04-13T18:54:35.174146Z'
+lightweight_enrichment_model: gemma4:e2b
+lightweight_enrichment_input_hash: 39e200cdb3b404a527a763812d3cfc7b0e7094302a0e470bafc186206e71b805
 lightweight_enrichment_error: null
-lightweight_scoring_model: null
-lightweight_scoring_input_hash: null
-lightweight_score: null
+lightweight_scoring_model: gemma4:e2b
+lightweight_scoring_input_hash: 7eac47e9797fb041553ac7223fa52926d1d9986ad49dc377abbaba9129b25cfe
+lightweight_score:
+  relevance_score: 0.95
+  source_fit_score: 0.8
+  topic_fit_score: 1.0
+  author_fit_score: 0.8
+  evidence_fit_score: 1.0
+  confidence_score: 1.0
+  bucket_hint: must_read
+  reason: This paper directly addresses self-improvement mechanisms and agentic systems, which aligns perfectly with the user's favorite topics of LLM architecture, reasoning, and self-improvement.
+  evidence_quotes:
+  - Researchers developed a 'hyperagent' harness that allows Large Language Models (LLMs) to self-improve performance on arbitrary tasks by iteratively improving th
+  - Crucially, the meta-level modification procedure is itself editable, enabling metacognitive self-modification, improving not only task-solving behavior, but als
+  - Hyperagents work over generations, so one hyperagent begets a few hyperagents and the ones which do the best on the task will themselves spawn some more hyperag
 ---
 # Meta uses a harness to coax Anthropic’s models into self-improvement
 
